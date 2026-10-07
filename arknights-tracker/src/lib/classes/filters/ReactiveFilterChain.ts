@@ -75,8 +75,6 @@ export class ReactiveFilterChain<TEntity, TFilter extends IReactiveFilter<TEntit
     }
 
     public notify(): void {
-        console.debug("notified");
-
         this._pendingNotify = false;
 
         for (const run of [...this._subscribers]) {

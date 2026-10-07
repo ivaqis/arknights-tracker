@@ -2,7 +2,7 @@ import type { IComparator } from "$lib/classes/comparators/IComparator";
 import type { IComparatorChain } from "$lib/classes/comparators/IComparatorChain";
 
 export class ComparatorChain<T, TComparator extends IComparator<T> = IComparator<T>> implements IComparatorChain<T, TComparator> {
-    private _order: readonly TComparator[] = [];
+    private _order: TComparator[] = [];
 
     public constructor() {
     }
@@ -12,7 +12,7 @@ export class ComparatorChain<T, TComparator extends IComparator<T> = IComparator
     }
 
     public setOrder(order: readonly TComparator[]): void {
-        this._order = order;
+        this._order = [...order];
     }
 
     public compare(a: T, b: T): number {

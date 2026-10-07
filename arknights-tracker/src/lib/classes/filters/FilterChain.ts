@@ -1,6 +1,5 @@
 import type { IFilter } from "$lib/classes/filters/IFilter";
 import type { IFilterChain } from "$lib/classes/filters/IFilterChain";
-import type { Readable } from "svelte/store";
 
 export class FilterChain<TEntity, TFilter extends IFilter<TEntity> = IFilter<TEntity>> implements IFilterChain<TEntity, TFilter> {
     private readonly _chain: TFilter[][] = [[]];

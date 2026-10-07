@@ -375,8 +375,7 @@ export const itemSortParams = createPersistentStore("itemSortParams", getDefault
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
 
 export const foodSortParams = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
-export const foodFilters = writable({});
-export const foodFilters2 = getFoodFilters();
+export const foodFilters = getFoodFilters();
 export const foodSearch = writable("");
 
 export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);

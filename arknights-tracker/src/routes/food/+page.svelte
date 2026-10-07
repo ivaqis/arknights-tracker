@@ -1,10 +1,18 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
-    import { FoodComparator } from "$lib/classes/comparators/items/FoodComparator";
+    import { FieldManyValuesComparator } from "$lib/classes/comparators/FieldManyValuesComparator";
+    import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator";
+    import type { IFieldValueComparator } from "$lib/classes/comparators/IFieldValueComparator";
+    import type { ILocaleComparator } from "$lib/classes/comparators/ILocaleComparator";
+    import type { IReactiveComparator } from "$lib/classes/comparators/IReactiveComparator";
     import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
-    import type { IFoodComparator } from "$lib/classes/comparators/items/IFoodComparator";
-    import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+    import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator";
+    import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain";
+    import { FilterSelector } from "$lib/classes/filters/FilterSelector";
+    import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
     import type { IFilter } from "$lib/classes/filters/IFilter";
+    import type { IFilterChain } from "$lib/classes/filters/IFilterChain";
+    import type { IFilterSelector } from "$lib/classes/filters/IFilterSelector";
     import type { IReactiveFilterChain } from "$lib/classes/filters/IReactiveFilterChain";
     import type { ISearchFilter } from "$lib/classes/filters/ISearchFilter";
     import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain";
@@ -14,6 +22,7 @@
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+    import type { Rarity } from "$lib/classes/Rarity";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -31,9 +40,9 @@
     import { t } from "$lib/i18n";
     import type { FoodFilterGroup, FoodFilterValue } from "$lib/stores/filters/food/FoodFilterValueMap";
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
-    import { foodFilters2, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
+    import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
-    import { isListItemsEqual } from "$lib/utils/collectionUtils";
+    import { getMapByList, isListItemsEqual } from "$lib/utils/collectionUtils";
     import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
 
@@ -118,10 +127,10 @@
 
     /// OVERVIEW TAB
 
-    const rarityFilter = foodFilters2[FoodFieldComparatorName.RARITY];
-    const buffFilter = foodFilters2[FoodFieldComparatorName.BUFF];
-    const equipCondFilter = foodFilters2[FoodFieldComparatorName.EQUIP_COND];
-    const targetTypeFilter = foodFilters2[FoodFieldComparatorName.TARGET_TYPE];
+    const rarityFilter = foodFilters[FoodFieldComparatorName.RARITY];
+    const buffFilter = foodFilters[FoodFieldComparatorName.BUFF];
+    const equipCondFilter = foodFilters[FoodFieldComparatorName.EQUIP_COND];
+    const targetTypeFilter = foodFilters[FoodFieldComparatorName.TARGET_TYPE];
 
     const nameFilter: ISearchFilter<IFood> = new SearchFilter(food => $t(food.i18nKey).toLowerCase());
     const idFilter: ISearchFilter<IFood> = new SearchFilter(food => food.gameId.toLowerCase());
@@ -165,15 +174,40 @@
         .and(targetTypeFilter)
         .and(searchChain);
 
-    const comparator: IFoodComparator = new FoodComparator(item => $t(item.i18nKey));
+    const rarityComparator: IFieldValueComparator<IFood, Rarity> = new FieldValueComparator(food => food.rarity);
+    const buffComparator: IFieldValueComparator<IFood> = new FieldManyValuesComparator(food => food.buffs.map(buff => buff.buffId));
+    const equipCondComparator: IFieldValueComparator<IFood, EquipableItemConditionType | "null"> = new FieldValueComparator(food => food.tactical?.condType ?? "null");
+    const targetTypeComparator: IFieldValueComparator<IFood, UsableTargetType> = new FieldValueComparator(food => food.targetType);
+    const nameComparator: ILocaleComparator<IFood> = new LocaleComparator(food => $t(food.i18nKey));
+
+    const comparator = new ReactiveNamedComparatorChain<IFood, FoodFieldComparatorName>(getComparator);
 
     $: {
-        comparator.setComparatorsOrder($foodSortParams.sortFieldOrder);
-        comparator.rarityComparator.setValueOrder($foodSortParams.sortFieldParams.rarity);
-        comparator.buffComparator.setValueOrder($foodSortParams.sortFieldParams.buff);
-        comparator.equipCondComparator.setValueOrder($foodSortParams.sortFieldParams.equipCond);
-        comparator.targetTypeComparator.setValueOrder($foodSortParams.sortFieldParams.targetType);
-        comparator.localeComparator.isReversed = $foodSortParams.sortFieldParams.locale === LocaleOrder.Z_A;
+        comparator.beginManual();
+
+        comparator.setOrderAliased($foodSortParams.sortFieldOrder);
+        rarityComparator.setValueOrder($foodSortParams.sortFieldParams.rarity);
+        buffComparator.setValueOrder($foodSortParams.sortFieldParams.buff);
+        equipCondComparator.setValueOrder($foodSortParams.sortFieldParams.equipCond);
+        targetTypeComparator.setValueOrder($foodSortParams.sortFieldParams.targetType);
+        nameComparator.order = $foodSortParams.sortFieldParams.locale;
+
+        comparator.endManual();
+    }
+
+    function getComparator(name: FoodFieldComparatorName): IReactiveComparator<IFood> {
+        switch (name) {
+            case FoodFieldComparatorName.RARITY:
+                return rarityComparator;
+            case FoodFieldComparatorName.BUFF:
+                return buffComparator;
+            case FoodFieldComparatorName.EQUIP_COND:
+                return equipCondComparator;
+            case FoodFieldComparatorName.TARGET_TYPE:
+                return targetTypeComparator;
+            case FoodFieldComparatorName.LOCALE:
+                return nameComparator;
+        }
     }
 
     let sortDirection: SortDirection = "asc";
@@ -199,10 +233,10 @@
     function resetFilters() {
         filterChain.beginManual();
 
-        foodFilters2.buff.clear();
-        foodFilters2.equipCond.clear();
-        foodFilters2.targetType.clear();
-        foodFilters2.rarity.clear();
+        foodFilters.buff.clear();
+        foodFilters.equipCond.clear();
+        foodFilters.targetType.clear();
+        foodFilters.rarity.clear();
 
         filterChain.endManual();
     }
@@ -236,8 +270,6 @@
         return true;
     }
 
-
-
     let isFilterActive = false;
 
     $: isFilterActive = !$rarityFilter.isEmpty
@@ -248,65 +280,63 @@
 
     /// COMPARISON TAB
 
-    let selectedCondTypeSet: Set<CondType> = new Set();
-    let selectedBuffSet: Set<string> = new Set();
-    let selectedTargetTypeSet: Set<UsableTargetType> = new Set();
+    const tableCondTypeFilter: IFilterSelector<IFood, CondType> = new FilterSelector($foodSortParams.sortFieldParams.equipCond, food => food.tactical?.condType ?? "null");
+    const tableBuffFilter: IFilterSelector<IFood> = new FilterSelectorMany($foodSortParams.sortFieldParams.buff, food => food.buffs.map(buff => buff.buffId));
+    const tableTargetTypeFilter: IFilterSelector<IFood, UsableTargetType> = new FilterSelector($foodSortParams.sortFieldParams.targetType, food => food.targetType);
+
+    const tableGeneralFilter: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .and(tableCondTypeFilter)
+        .and(tableBuffFilter)
+        .and(tableTargetTypeFilter);
+
+    const excludeCondTypeFilter: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .and(tableBuffFilter)
+        .and(tableTargetTypeFilter);
+    const excludeBuffFilter: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .and(tableCondTypeFilter)
+        .and(tableTargetTypeFilter);
+    const excludeTargetTypeFilter: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .and(tableCondTypeFilter)
+        .and(tableBuffFilter);
 
     let selectedBuffList: string[];
 
-    $: selectedBuffList = $foodSortParams.sortFieldParams.buff.filter(buff => selectedBuffSet.has(buff));
+    $: selectedBuffList = $foodSortParams.sortFieldParams.buff.filter(buff => $tableBuffFilter.isSelected(buff));
 
     let filteredTableItems: IFood[];
 
-    $: filteredTableItems = getFilteredTableItems(allItems, selectedCondTypeSet, selectedBuffSet, selectedTargetTypeSet);
+    $: filteredTableItems = getFilteredTableItems(allItems, $tableGeneralFilter);
 
-    let availableCondTypeFilters: CondType[];
-    let availableBuffFilters: string[];
-    let availableTargetTypeFilters: UsableTargetType[];
+    $: tableCondTypeFilter.paramList = getAvailableCondTypeFilters(allItems, $foodSortParams.sortFieldParams.equipCond, $excludeCondTypeFilter);
+    $: tableBuffFilter.paramList = getAvailableBuffFilters(allItems, $foodSortParams.sortFieldParams.buff, $excludeBuffFilter);
+    $: tableTargetTypeFilter.paramList = getAvailableTargetTypeFilters(allItems, $foodSortParams.sortFieldParams.targetType, $excludeTargetTypeFilter);
 
-    $: availableCondTypeFilters = getAvailableCondTypeFilters(allItems, $foodSortParams.sortFieldParams.equipCond, selectedBuffSet, selectedTargetTypeSet);
-    $: availableBuffFilters = getAvailableBuffFilters(allItems, $foodSortParams.sortFieldParams.buff, selectedCondTypeSet, selectedTargetTypeSet);
-    $: availableTargetTypeFilters = getAvailableTargetTypeFilters(allItems, $foodSortParams.sortFieldParams.targetType, selectedCondTypeSet, selectedBuffSet);
-
-    function getFilteredTableItems(allItems: readonly IFood[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>, selectedTargetTypeSet: Set<UsableTargetType>): IFood[] {
-        return allItems.filter(item => {
-            return filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
-                && filterCheck(selectedTargetTypeSet, item.targetType)
-                && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId));
-        });
+    function getFilteredTableItems(allItems: readonly IFood[], filter: IFilter<IFood>): IFood[] {
+        return allItems.filter(item => filter.satisfies(item));
     }
 
-    function getAvailableCondTypeFilters(allItems: readonly IFood[], allFilters: readonly CondType[], selectedBuffSet: Set<string>, selectedTargetTypeSet: Set<UsableTargetType>): CondType[] {
-        const filteredItems = allItems.filter(item =>
-            filterCheck(selectedTargetTypeSet, item.targetType)
-            && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId))
-        );
+    function getAvailableCondTypeFilters(allItems: readonly IFood[], allFilters: CondType[], filter: IFilter<IFood>): CondType[] {
+        const filteredItems = allItems.filter(item => filter.satisfies(item));
 
-        return allFilters.filter(
-            filter => filteredItems.some(item => (item.tactical?.condType ?? "null") === filter)
-        );
+        const map = Map.groupBy(filteredItems, item => item.tactical?.condType ?? "null");
+
+        return allFilters.filter(filter => map.has(filter));
     }
 
-    function getAvailableBuffFilters(allItems: readonly IFood[], allFilters: readonly string[], selectedCondTypeSet: Set<CondType>, selectedTargetTypeSet: Set<UsableTargetType>): string[] {
-        const filteredItems = allItems.filter(item =>
-            filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
-            && filterCheck(selectedTargetTypeSet, item.targetType)
-        );
+    function getAvailableBuffFilters(allItems: readonly IFood[], allFilters: readonly string[], filter: IFilter<IFood>): string[] {
+        const filteredItems = allItems.filter(item => filter.satisfies(item));
 
-        return allFilters.filter(
-            filter => filteredItems.some(item => item.hasBuff(filter))
-        );
+        const map = getMapByList(filteredItems, item => item.buffs.map(buff => buff.buffId));
+
+        return allFilters.filter(filter => map.has(filter));
     }
 
-    function getAvailableTargetTypeFilters(allItems: readonly IFood[], allFilters: readonly UsableTargetType[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>): UsableTargetType[] {
-        const filteredItems = allItems.filter(item =>
-            filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
-            && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId))
-        );
+    function getAvailableTargetTypeFilters(allItems: readonly IFood[], allFilters: readonly UsableTargetType[], filter: IFilter<IFood>): UsableTargetType[] {
+        const filteredItems = allItems.filter(item => filter.satisfies(item));
 
-        return allFilters.filter(
-            filter => filteredItems.some(item => item.targetType === filter)
-        );
+        const map = Map.groupBy(filteredItems, item => item.targetType);
+
+        return allFilters.filter(filter => map.has(filter));
     }
 
 
@@ -374,7 +404,7 @@
 
                     <FoodFilterDropdown
                         slot="filterDropdown"
-                        filters={foodFilters2}
+                        filters={foodFilters}
                         onFilterReset={resetFilters}
                     />
 
@@ -429,7 +459,7 @@
                     foodList={filteredTableItems}
                     condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
                     targetTypeOrderList={$foodSortParams.sortFieldParams.targetType}
-                    selectedCondTypeSet={selectedCondTypeSet}
+                    condTypeSelector={tableCondTypeFilter}
                     buffList={selectedBuffList}
                     selectItemFn={selectItem}
                     selectedItem={selectedItem}
@@ -464,12 +494,9 @@
                         <div class="md:mt-[135px]">
 
                             <FoodComparisonTableSelector
-                                condTypeList={availableCondTypeFilters}
-                                buffList={availableBuffFilters}
-                                targetTypeList={availableTargetTypeFilters}
-                                bind:selectedCondTypeSet={selectedCondTypeSet}
-                                bind:selectedBuffSet={selectedBuffSet}
-                                bind:selectedTargetTypeSet={selectedTargetTypeSet}
+                                condTypeSelector={tableCondTypeFilter}
+                                buffSelector={tableBuffFilter}
+                                targetTypeSelector={tableTargetTypeFilter}
                             />
 
                         </div>
