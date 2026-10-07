@@ -11,7 +11,6 @@
     import { FilterSelector } from "$lib/classes/filters/FilterSelector";
     import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
     import type { IFilter } from "$lib/classes/filters/IFilter";
-    import type { IFilterChain } from "$lib/classes/filters/IFilterChain";
     import type { IFilterSelector } from "$lib/classes/filters/IFilterSelector";
     import type { IReactiveFilterChain } from "$lib/classes/filters/IReactiveFilterChain";
     import type { ISearchFilter } from "$lib/classes/filters/ISearchFilter";
@@ -43,7 +42,6 @@
     import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
     import { getMapByList, isListItemsEqual } from "$lib/utils/collectionUtils";
-    import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
 
     type CondType = EquipableItemConditionType | "null";
