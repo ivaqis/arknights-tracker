@@ -6,7 +6,7 @@
 
     export let selector: ISelector<T>;
     export let getLocaleFn: ((param: T) => string) | undefined = undefined;
-    export let paramBox: Component<TextParamBoxProps<T>>;
+    export let paramBox: Component<TextParamBoxProps<NoInfer<T>>>;
 
     let getBoxStyleMode: (param: T) => ParamBoxStyle;
 
@@ -27,7 +27,7 @@
 <div class="flex flex-wrap gap-2">
 
     {#each $selector.paramList as param (param)}
-        
+
         <button 
             class="rounded"
             on:click={() => selector.select(param)}

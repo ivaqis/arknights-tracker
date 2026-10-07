@@ -1,6 +1,8 @@
 // src/lib/stores/filterStore.js
 
-import { writable } from 'svelte/store';
+import { FilterSelector } from "$lib/classes/filters/FilterSelector.ts";
+import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany.ts";
+import { get, writable } from "svelte/store";
 
 function createPersistentStore(key, startValue) {
     const isBrowser = typeof window !== 'undefined';
@@ -332,10 +334,19 @@ export function getDefaultFoodSortParams() {
                 "user",
                 "team",
             ],
-            rarity: [1, 2, 3, 4, 5],
+            rarity: [2, 3, 4, 5],
             locale: "a-z"
         }
     }
+}
+
+export function getFoodFilters() {
+    return {
+        rarity: new FilterSelector(get(foodSortParams).sortFieldParams.rarity, food => food.rarity),
+        buff: new FilterSelectorMany(get(foodSortParams).sortFieldParams.buff, food => food.buffs.map(buff => buff.buffId)),
+        equipCond: new FilterSelector(get(foodSortParams).sortFieldParams.equipCond, food => food.tactical?.condType ?? "null"),
+        targetType: new FilterSelector(get(foodSortParams).sortFieldParams.targetType, food => food.targetType)
+    };
 }
 
 export const equipmentFilters = writable({});
@@ -363,9 +374,10 @@ export const itemSearch = writable("");
 export const itemSortParams = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
 
-export const foodFilters = writable({});
-export const foodSearch = writable("");
 export const foodSortParams = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
+export const foodFilters = writable({});
+export const foodFilters2 = getFoodFilters();
+export const foodSearch = writable("");
 
 export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
 export const recordsExcludedBanners = createPersistentStore('recordsExcludedBanners', []);

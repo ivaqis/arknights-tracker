@@ -169,6 +169,12 @@ export class BaseSelector<TParam extends string | number = string> implements IB
         return this._paramSet.values().toArray();
     }
 
+    public notify() {
+        for (const run of [...this._subscribers]) {
+            run(this);
+        }
+    }
+
     protected touch(): void {
         if (this._batchDepth > 0) {
             this._batchChanged = true;
@@ -244,11 +250,5 @@ export class BaseSelector<TParam extends string | number = string> implements IB
         const deleted = this._selectedParamQueue.splice(0, difference);
 
         deleted.forEach(param => this._selectedParamSet.delete(param));
-    }
-
-    private notify() {
-        for (const run of [...this._subscribers]) {
-            run(this);
-        }
     }
 }

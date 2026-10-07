@@ -33,7 +33,7 @@ export abstract class ASearchFilter<TEntity> implements ISearchFilter<TEntity> {
 
     public abstract satisfies(entity: TEntity): boolean;
 
-    protected notify() {
+    public notify() {
         for (const run of [...this._subscribers]) {
             run(this);
         }

@@ -10,8 +10,31 @@ export class ReactiveFilterChain<TEntity, TFilter extends IReactiveFilter<TEntit
     private readonly _subscribers: Set<Subscriber<this>> = new Set();
     private readonly _filterUnsubscribers: Map<TFilter, Unsubscriber> = new Map();
 
+    private _manualMode: boolean = false;
+    private _pendingNotify: boolean = false;
+
     public constructor() {
         super();
+    }
+
+    public get manualMode(): boolean {
+        return this._manualMode;
+    }
+
+    public beginManual(): this {
+        this._manualMode = true;
+
+        return this;
+    }
+
+    public endManual(): this {
+        this._manualMode = false;
+
+        if (this._pendingNotify) {
+            this.notify();
+        }
+
+        return this;
     }
 
     public subscribe(run: Subscriber<this>): Unsubscriber {
@@ -37,7 +60,7 @@ export class ReactiveFilterChain<TEntity, TFilter extends IReactiveFilter<TEntit
         super.and(filter);
 
         this.watch(filter);
-        this.notify();
+        this.autoNotify();
 
         return this;
     }
@@ -46,15 +69,29 @@ export class ReactiveFilterChain<TEntity, TFilter extends IReactiveFilter<TEntit
         super.or(filter);
 
         this.watch(filter);
-        this.notify();
+        this.autoNotify();
 
         return this;
     }
 
-    protected notify() {
+    public notify(): void {
+        console.debug("notified");
+
+        this._pendingNotify = false;
+
         for (const run of [...this._subscribers]) {
             run(this);
         }
+    }
+
+    protected autoNotify() {
+        if (this._manualMode) {
+            this._pendingNotify = true;
+
+            return;
+        }
+
+        this.notify();
     }
 
     private watch(filter: TFilter) {
@@ -71,7 +108,7 @@ export class ReactiveFilterChain<TEntity, TFilter extends IReactiveFilter<TEntit
                 return;
             }
 
-            this.notify();
+            this.autoNotify();
         });
 
         this._filterUnsubscribers.set(filter, unsub);

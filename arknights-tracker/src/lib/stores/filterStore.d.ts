@@ -1,3 +1,4 @@
+import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
 import type { FoodSelectedFilterMap } from "$lib/stores/filters/food/FoodSelectedFilterMap";
 import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
 import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
@@ -13,5 +14,6 @@ declare const itemSortParams: Writable<RecipeSortParams>;
 declare const itemGroupMode: Writable<boolean>;
 
 declare const foodFilters: Writable<FoodSelectedFilterMap>;
+declare const foodFilters2: FoodFilters;
 declare const foodSearch: Writable<string>;
 declare const foodSortParams: Writable<FoodSortParams>;

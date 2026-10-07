@@ -1,8 +1,15 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { FoodComparator } from "$lib/classes/comparators/items/FoodComparator";
+    import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
     import type { IFoodComparator } from "$lib/classes/comparators/items/IFoodComparator";
     import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+    import type { IFilter } from "$lib/classes/filters/IFilter";
+    import type { IReactiveFilterChain } from "$lib/classes/filters/IReactiveFilterChain";
+    import type { ISearchFilter } from "$lib/classes/filters/ISearchFilter";
+    import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain";
+    import { SearchFilter } from "$lib/classes/filters/SearchFilter";
+    import { SearchFilterMany } from "$lib/classes/filters/SearchFilterMany";
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
@@ -23,9 +30,8 @@
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
     import { t } from "$lib/i18n";
     import type { FoodFilterGroup, FoodFilterValue } from "$lib/stores/filters/food/FoodFilterValueMap";
-    import type { FoodSelectedFilterMap } from "$lib/stores/filters/food/FoodSelectedFilterMap";
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
-    import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
+    import { foodFilters2, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
     import { isListItemsEqual } from "$lib/utils/collectionUtils";
     import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
@@ -112,35 +118,72 @@
 
     /// OVERVIEW TAB
 
+    const rarityFilter = foodFilters2[FoodFieldComparatorName.RARITY];
+    const buffFilter = foodFilters2[FoodFieldComparatorName.BUFF];
+    const equipCondFilter = foodFilters2[FoodFieldComparatorName.EQUIP_COND];
+    const targetTypeFilter = foodFilters2[FoodFieldComparatorName.TARGET_TYPE];
+
+    const nameFilter: ISearchFilter<IFood> = new SearchFilter(food => $t(food.i18nKey).toLowerCase());
+    const idFilter: ISearchFilter<IFood> = new SearchFilter(food => food.gameId.toLowerCase());
+    const buffNameFilter: ISearchFilter<IFood> = new SearchFilterMany(food => food.buffs.map(buff => $t(buff.i18nKey).toLowerCase()));
+    const buffIdFilter: ISearchFilter<IFood> = new SearchFilterMany(food => food.buffs.map(buff => buff.buffId.toLowerCase()));
+
+    $: {
+        const searchLower = $foodSearch.toLowerCase();
+
+        searchChain.beginManual();
+
+        nameFilter.searchString = searchLower;
+        idFilter.searchString = searchLower;
+        buffNameFilter.searchString = searchLower;
+        buffIdFilter.searchString = searchLower;
+
+        searchChain.endManual();
+    }
+
+    $: {
+        filterChain.beginManual();
+
+        rarityFilter.paramList = $foodSortParams.sortFieldParams[FoodFieldComparatorName.RARITY];
+        buffFilter.paramList = $foodSortParams.sortFieldParams[FoodFieldComparatorName.BUFF];
+        equipCondFilter.paramList = $foodSortParams.sortFieldParams[FoodFieldComparatorName.EQUIP_COND];
+        targetTypeFilter.paramList = $foodSortParams.sortFieldParams[FoodFieldComparatorName.TARGET_TYPE];
+
+        filterChain.endManual();
+    }
+
+    const searchChain: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .or(nameFilter)
+        .or(idFilter)
+        .or(buffNameFilter)
+        .or(buffIdFilter);
+
+    const filterChain: IReactiveFilterChain<IFood> = new ReactiveFilterChain()
+        .and(rarityFilter)
+        .and(buffFilter)
+        .and(equipCondFilter)
+        .and(targetTypeFilter)
+        .and(searchChain);
+
     const comparator: IFoodComparator = new FoodComparator(item => $t(item.i18nKey));
+
+    $: {
+        comparator.setComparatorsOrder($foodSortParams.sortFieldOrder);
+        comparator.rarityComparator.setValueOrder($foodSortParams.sortFieldParams.rarity);
+        comparator.buffComparator.setValueOrder($foodSortParams.sortFieldParams.buff);
+        comparator.equipCondComparator.setValueOrder($foodSortParams.sortFieldParams.equipCond);
+        comparator.targetTypeComparator.setValueOrder($foodSortParams.sortFieldParams.targetType);
+        comparator.localeComparator.isReversed = $foodSortParams.sortFieldParams.locale === LocaleOrder.Z_A;
+    }
 
     let sortDirection: SortDirection = "asc";
 
     let filteredItems: IFood[];
 
-    $: filteredItems = getFilteredItems(allItems, $foodSortParams, sortDirection, $foodFilters, $foodSearch);
+    $: filteredItems = getFilteredItems(allItems, sortDirection, $filterChain);
 
-    function getFilteredItems(items: readonly IFood[], sortParams: FoodSortParams, sortDirection: SortDirection, filters: FoodSelectedFilterMap, searchQuery: string) {
-        comparator.setComparatorsOrder(sortParams.sortFieldOrder);
-        comparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
-        comparator.buffComparator.setValueOrder(sortParams.sortFieldParams.buff);
-        comparator.equipCondComparator.setValueOrder(sortParams.sortFieldParams.equipCond);
-        comparator.targetTypeComparator.setValueOrder(sortParams.sortFieldParams.targetType);
-        comparator.localeComparator.isReversed = sortParams.sortFieldParams.locale === LocaleOrder.Z_A;
-
-        const searchLower = searchQuery.trim().toLowerCase();
-
-        const result: IFood[] = items.filter(item => {
-            return filterCheck(filters.rarity, item.rarity)
-                && filterCheck(filters.equipCond, item.tactical?.condType ?? "null")
-                && filterCheck(filters.targetType, item.targetType)
-                && filterCheckMany(filters.buff, item.buffs.map(buff => buff.buffId))
-                && (!searchLower
-                    || item.gameId.toLowerCase().includes(searchLower)
-                    || $t(item.i18nKey).toLowerCase().includes(searchLower)
-                    || item.buffs.some(buff => buff.buffId.toLowerCase().includes(searchLower) || $t(buff.i18nKey).toLowerCase().includes(searchLower))
-                );
-        });
+    function getFilteredItems(items: readonly IFood[], sortDirection: SortDirection, filter: IFilter<IFood>) {
+        const result: IFood[] = items.filter(item => filter.satisfies(item));
 
         const reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
@@ -151,6 +194,17 @@
 
     function resetSort() {
         $foodSortParams = getDefaultFoodSortParams();
+    }
+
+    function resetFilters() {
+        filterChain.beginManual();
+
+        foodFilters2.buff.clear();
+        foodFilters2.equipCond.clear();
+        foodFilters2.targetType.clear();
+        foodFilters2.rarity.clear();
+
+        filterChain.endManual();
     }
 
     function checkSortParams(current: FoodSortParams, defaultParams: FoodSortParams): boolean {
@@ -186,8 +240,10 @@
 
     let isFilterActive = false;
 
-    $: isFilterActive = Object.values($foodFilters)
-        .some((set) => set.size > 0);
+    $: isFilterActive = !$rarityFilter.isEmpty
+        || !$buffFilter.isEmpty
+        || !$targetTypeFilter.isEmpty
+        || !$equipCondFilter.isEmpty;
 
 
     /// COMPARISON TAB
@@ -305,7 +361,7 @@
                     showFilterDropdownButton={true}
                     showSearchInput={true}
                     isFilterActive={isFilterActive}
-                    onFilterReset={() => $foodFilters = {}}
+                    onFilterReset={resetFilters}
                     bind:sortDirection={sortDirection}
                     bind:searchString={$foodSearch}
                 >
@@ -318,9 +374,8 @@
 
                     <FoodFilterDropdown
                         slot="filterDropdown"
-                        filters={$foodSortParams.sortFieldParams}
-                        onFilterReset={() => $foodFilters = {}}
-                        bind:selectedFilters={$foodFilters}
+                        filters={foodFilters2}
+                        onFilterReset={resetFilters}
                     />
 
                 </DataToolbar>

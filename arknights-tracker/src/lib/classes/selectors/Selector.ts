@@ -9,6 +9,10 @@ export class Selector<TParam extends string | number = string>
         super(paramList, limit);
     }
 
+    public get paramList(): readonly TParam[] {
+        return super.paramList;
+    }
+
     public set paramList(value: readonly TParam[]) {
         this.batch(() => {
             this.applyParamList(value);
