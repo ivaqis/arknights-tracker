@@ -25,7 +25,7 @@
         essenceWeaponSearch,
         getWeaponFilters,
         getWeaponSortOptions
-    } from "$lib/stores/filterStore.js";
+    } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";

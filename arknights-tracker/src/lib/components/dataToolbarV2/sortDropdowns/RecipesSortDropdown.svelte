@@ -10,7 +10,7 @@
     import { t } from "$lib/i18n";
     import type { RecipeSortFieldParamGroup } from "$lib/stores/filters/recipes/RecipeSortParamMap";
     import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
-    import { getDefaultItemSortParams } from "$lib/stores/filterStore.js";
+    import { getDefaultItemSortParams } from "$lib/stores/filterStore";
 
     export let sortParams: RecipeSortParams;
 

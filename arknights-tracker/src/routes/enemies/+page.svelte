@@ -17,7 +17,7 @@
     import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { t } from "$lib/i18n";
     import { enemies } from "$lib/data/enemies.js";
-    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore.js";
+    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore";
 
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -169,7 +169,8 @@
     let initialRender = true;
 
     $: {
-        const _trigger = [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
+        void [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
+
         if (initialRender) {
             initialRender = false;
         } else {

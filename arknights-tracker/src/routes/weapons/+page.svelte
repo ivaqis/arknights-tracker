@@ -21,7 +21,7 @@
         weaponFilters,
         weaponOwnedOnly,
         weaponSearch
-    } from "$lib/stores/filterStore.js";
+    } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";

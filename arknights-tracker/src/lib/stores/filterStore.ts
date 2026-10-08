@@ -1,23 +1,44 @@
-// src/lib/stores/filterStore.js
+import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
+import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
+import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+import { FilterSelector } from "$lib/classes/filters/FilterSelector";
+import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
+import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
+import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
+import type { EnemySortOption } from "$lib/stores/filters/enemies/EnemySortOption";
+import type { EquipmentFilterOptions } from "$lib/stores/filters/equipment/EquipmentFilterOptions";
+import type { EquipmentSelectedFilters } from "$lib/stores/filters/equipment/EquipmentSelectedFilters";
+import type { EquipmentSortOption } from "$lib/stores/filters/equipment/EquipmentSortOption";
+import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
+import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
+import type { OperatorFilterOptions } from "$lib/stores/filters/operators/OperatorFilterOptions";
+import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/OperatorSelectedFilters";
+import type { OperatorSortOption } from "$lib/stores/filters/operators/OperatorSortOption";
+import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
+import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
+import type { WeaponFilterOptions } from "$lib/stores/filters/weapon/WeaponFilterOptions";
+import type { WeaponSelectedFilters } from "$lib/stores/filters/weapon/WeaponSelectedFilters";
+import type { WeaponSortOption } from "$lib/stores/filters/weapon/WeaponSortOption";
+import { get, type Writable, writable } from "svelte/store";
 
-import { FilterSelector } from "$lib/classes/filters/FilterSelector.ts";
-import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany.ts";
-import { get, writable } from "svelte/store";
-
-function createPersistentStore(key, startValue) {
-    const isBrowser = typeof window !== 'undefined';
+function createPersistentStore<T>(key: string, startValue: T): Writable<T> {
+    const isBrowser = typeof window !== "undefined";
     const storedValue = isBrowser ? localStorage.getItem(key) : null;
-    const initial = storedValue !== null ? JSON.parse(storedValue) : startValue;
+    const initial = storedValue !== null ? JSON.parse(storedValue) as T : startValue;
     const store = writable(initial);
+
     if (isBrowser) {
         store.subscribe(value => {
             localStorage.setItem(key, JSON.stringify(value));
         });
     }
+
     return store;
 }
 
-export function getOperatorFilters() {
+export function getOperatorFilters(): OperatorFilterOptions {
     return {
         rarity: [6, 5, 4],
         class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
@@ -47,7 +68,7 @@ export function getOperatorFilters() {
     };
 }
 
-export function getWeaponFilters() {
+export function getWeaponFilters(): WeaponFilterOptions {
     return {
         rarity: [6, 5, 4, 3],
         type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
@@ -92,7 +113,7 @@ export function getWeaponFilters() {
     };
 }
 
-export function getEquipmentFilters() {
+export function getEquipmentFilters(): EquipmentFilterOptions {
     return {
         rarity: [5, 4, 3, 2, 1],
         partType: ["body", "hand", "edc"],
@@ -166,37 +187,37 @@ export function getEquipmentFilters() {
     };
 }
 
-export function getEnemyFilters() {
+export function getEnemyFilters(): EnemyFilterOptions {
     return {
         rarity: [6, 5, 4, 3]
     };
 }
 
-export function getOperatorSortOptions() {
+export function getOperatorSortOptions(): OperatorSortOption[] {
     return ["rarity", "class", "element", "weapon"];
 }
 
-export function getWeaponSortOptions() {
+export function getWeaponSortOptions(): WeaponSortOption[] {
     return ["rarity", "type"];
 }
 
-export function getEquipmentSortOptions() {
+export function getEquipmentSortOptions(): EquipmentSortOption[] {
     return ["rarity"];
 }
 
-export function getEnemySortOptions() {
+export function getEnemySortOptions(): EnemySortOption[] {
     return ["rarity"];
 }
 
-export function getDefaultItemSortParams() {
+export function getDefaultItemSortParams(): RecipeSortParams {
     return {
         sortFieldOrder: [
-            "itemGroups",
-            "itemTypes",
-            "events",
-            "rarity",
-            "itemMaterials",
-            "localeName"
+            ItemFieldComparatorName.ITEM_GROUP,
+            ItemFieldComparatorName.ITEM_TYPE,
+            ItemFieldComparatorName.EVENT,
+            ItemFieldComparatorName.RARITY,
+            ItemFieldComparatorName.ITEM_MATERIAL,
+            ItemFieldComparatorName.LOCALE_NAME
         ],
         sortFieldParams: {
             itemGroups: ["nature", "product", "usable", "gatherable", "device", "nurturance", "facility", "other"],
@@ -284,19 +305,19 @@ export function getDefaultItemSortParams() {
             ],
             rarity: [1, 2, 3, 4, 5, 6],
             events: ["nonEvent", "ev4-v1.2", "ev3-v1.5"],
-            localeName: "a-z"
+            localeName: LocaleOrder.A_Z
         }
     };
 }
 
-export function getDefaultFoodSortParams() {
+export function getDefaultFoodSortParams(): FoodSortParams {
     return {
         sortFieldOrder: [
-            "buff",
-            "targetType",
-            "equipCond",
-            "rarity",
-            "locale",
+            FoodFieldComparatorName.BUFF,
+            FoodFieldComparatorName.TARGET_TYPE,
+            FoodFieldComparatorName.EQUIP_COND,
+            FoodFieldComparatorName.RARITY,
+            FoodFieldComparatorName.LOCALE
         ],
         sortFieldParams: {
             buff: [
@@ -323,24 +344,24 @@ export function getDefaultFoodSortParams() {
                 "buff_common_dispel_potion",
             ],
             equipCond: [
-                "char_hp",
-                "char_down",
-                "arts_reaction",
-                "ult_energy",
-                "damage",
+                EquipableItemConditionType.CHAR_HP,
+                EquipableItemConditionType.CHAR_DOWN,
+                EquipableItemConditionType.ARTS_REACTION,
+                EquipableItemConditionType.ULT_ENERGY,
+                EquipableItemConditionType.DAMAGE_TAKEN,
                 "null"
             ],
             targetType: [
-                "user",
-                "team",
+                UsableTargetType.USER,
+                UsableTargetType.TEAM
             ],
             rarity: [2, 3, 4, 5],
-            locale: "a-z"
+            locale: LocaleOrder.A_Z
         }
-    }
+    };
 }
 
-export function getFoodFilters() {
+export function getFoodFilters(): FoodFilters {
     return {
         rarity: new FilterSelector(get(foodSortParams).sortFieldParams.rarity, food => food.rarity),
         buff: new FilterSelectorMany(get(foodSortParams).sortFieldParams.buff, food => food.buffs.map(buff => buff.buffId)),
@@ -349,40 +370,40 @@ export function getFoodFilters() {
     };
 }
 
-export const equipmentFilters = writable({});
-export const equipmentSearch = writable("");
-export const equipmentGroupMode = createPersistentStore('equipmentGroupMode', true);
+export const equipmentFilters: Writable<EquipmentSelectedFilters> = writable({});
+export const equipmentSearch: Writable<string> = writable("");
+export const equipmentGroupMode: Writable<boolean> = createPersistentStore("equipmentGroupMode", true);
 
-export const weaponFilters = writable({});
-export const weaponSearch = writable("");
-export const weaponOwnedOnly = writable(false);
+export const weaponFilters: Writable<WeaponSelectedFilters> = writable({});
+export const weaponSearch: Writable<string> = writable("");
+export const weaponOwnedOnly: Writable<boolean> = writable(false);
 
-export const essenceWeaponFilters = writable({});
-export const essenceWeaponSearch = writable("");
-export const essenceWeaponOwnedOnly = writable(false);
+export const essenceWeaponFilters: Writable<WeaponSelectedFilters> = writable({});
+export const essenceWeaponSearch: Writable<string> = writable("");
+export const essenceWeaponOwnedOnly: Writable<boolean> = writable(false);
 
-export const operatorFilters = writable({});
-export const operatorSearch = writable("");
-export const operatorOwnedOnly = writable(false);
+export const operatorFilters: Writable<OperatorSelectedFilters> = writable({});
+export const operatorSearch: Writable<string> = writable("");
+export const operatorOwnedOnly: Writable<boolean> = writable(false);
 
-export const enemyFilters = writable({});
-export const enemySearch = writable("");
-export const enemyGroupMode = createPersistentStore('enemyGroupMode', true);
+export const enemyFilters: Writable<EnemySelectedFilters> = writable({});
+export const enemySearch: Writable<string> = writable("");
+export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGroupMode", true);
 
-export const itemFilters = writable({});
-export const itemSearch = writable("");
-export const itemSortParams = createPersistentStore("itemSortParams", getDefaultItemSortParams());
-export const itemGroupMode = createPersistentStore('itemGroupMode', true);
+export const itemFilters: Writable<RecipeSelectedFilterMap> = writable({});
+export const itemSearch: Writable<string> = writable("");
+export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
+export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
 
-export const foodSortParams = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
-export const foodFilters = getFoodFilters();
-export const foodSearch = writable("");
+export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
+export const foodFilters: FoodFilters = getFoodFilters();
+export const foodSearch: Writable<string> = writable("");
 
-export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
-export const recordsExcludedBanners = createPersistentStore('recordsExcludedBanners', []);
-export const recordsShowMonthlyChart = createPersistentStore('recordsShowMonthlyChart', true);
-export const recordsShowRating = createPersistentStore('recordsShowRating', true);
-export const recordsShowTotalCost = createPersistentStore('recordsShowTotalCost', true);
-export const recordsMaxCols = createPersistentStore('recordsMaxCols', 3);
-export const recordsEnableDragDrop = createPersistentStore('recordsEnableDragDrop', false);
-export const recordsCardsOrder = createPersistentStore('recordsCardsOrder', []);
+export const recordsExcludedBannerTypes: Writable<string[]> = createPersistentStore("recordsExcludedBannerTypes", []);
+export const recordsExcludedBanners: Writable<string[]> = createPersistentStore("recordsExcludedBanners", []);
+export const recordsShowMonthlyChart: Writable<boolean> = createPersistentStore("recordsShowMonthlyChart", true);
+export const recordsShowRating: Writable<boolean> = createPersistentStore("recordsShowRating", true);
+export const recordsShowTotalCost: Writable<boolean> = createPersistentStore("recordsShowTotalCost", true);
+export const recordsMaxCols: Writable<number> = createPersistentStore("recordsMaxCols", 3);
+export const recordsEnableDragDrop: Writable<boolean> = createPersistentStore("recordsEnableDragDrop", false);
+export const recordsCardsOrder: Writable<string[]> = createPersistentStore("recordsCardsOrder", []);

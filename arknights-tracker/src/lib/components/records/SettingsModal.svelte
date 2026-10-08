@@ -14,7 +14,7 @@
     recordsShowMonthlyChart,
     recordsShowRating,
     recordsShowTotalCost
-  } from "$lib/stores/filterStore.js";
+  } from "$lib/stores/filterStore";
   import { addNotification } from "$lib/stores/index.js";
   import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
   import { pullData } from "$lib/stores/pulls.js";
