@@ -1,10 +1,11 @@
 import { ASearchFilter } from "$lib/classes/filters/ASearchFilter";
+import type { SearchFilterOptions } from "$lib/classes/filters/SearchFilterOptions";
 
 export class SearchFilter<TEntity> extends ASearchFilter<TEntity> {
     private readonly _getStringFn: (entity: TEntity) => string;
 
-    public constructor(getStringFn: (entity: TEntity) => string) {
-        super();
+    public constructor(getStringFn: (entity: TEntity) => string, options?: SearchFilterOptions) {
+        super(options);
 
         this._getStringFn = getStringFn;
     }
@@ -16,6 +17,6 @@ export class SearchFilter<TEntity> extends ASearchFilter<TEntity> {
 
         const str = this._getStringFn(entity);
 
-        return str.includes(this.searchString);
+        return this.normalize(str).includes(this.searchString);
     }
 }

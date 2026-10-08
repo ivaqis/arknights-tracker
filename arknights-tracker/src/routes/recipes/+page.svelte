@@ -80,14 +80,17 @@
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { t } from "$lib/i18n";
     import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
+    import type { RecipeGroupField } from "$lib/stores/filters/recipes/RecipeGroupField";
     import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
     import {
         getDefaultItemSortParams,
         itemFilters,
         itemGroupMode,
+        itemGroupOption,
         itemSearch,
         itemSortParams
     } from "$lib/stores/filterStore";
+    import { currentLocale, normalizeLocale } from "$lib/stores/locale";
     import { getMapByList } from "$lib/utils/collectionUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
@@ -151,7 +154,7 @@
     const groupComparator: IFieldValueComparator<IItem, ItemGroup> = new FieldValueComparator(item => item.groupId);
     const typeComparator: IFieldValueComparator<IItem, ItemType> = new FieldValueComparator(item => item.type);
     const materialComparator: IFieldValueComparator<IItem, ItemMaterial | "nonMaterial"> = new FieldValueComparator(item => item.material ?? "nonMaterial");
-    const nameComparator: ILocaleComparator<IItem> = new LocaleComparator(item => $t(item.i18nKey));
+    const nameComparator: ILocaleComparator<IItem> = new LocaleComparator(item => $t(item.i18nKey), normalizeLocale($currentLocale));
 
     const comparatorChain: IReactiveNamedComparatorChain<IItem, ItemFieldComparatorName> = new ReactiveNamedComparatorChain(getComparator);
 
@@ -169,16 +172,24 @@
         comparatorChain.endManual();
     }
 
+    $: {
+        const normalized = normalizeLocale($currentLocale);
+
+        nameComparator.locale = normalized;
+        groupLocaleComparator.locale = normalized;
+    }
+
     let sortDirection: SortDirection = "asc";
+    let reverseMultiplier: number = 1;
+
+    $: reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
     let filteredItems: IItem[];
 
-    $: filteredItems = getFilteredItems(craftableItems, $comparatorChain, sortDirection, $filterChain);
+    $: filteredItems = getFilteredItems(craftableItems, $comparatorChain, reverseMultiplier, $filterChain);
 
-    function getFilteredItems(items: readonly IItem[], comparator: IComparator<IItem>, sortDirection: SortDirection, filter: IFilter<IItem>): IItem[] {
+    function getFilteredItems(items: readonly IItem[], comparator: IComparator<IItem>, reverseMultiplier: number, filter: IFilter<IItem>): IItem[] {
         const result: IItem[] = items.filter(item => filter.satisfies(item));
-
-        const reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
         result.sort((a, b) => comparator.compare(a, b) * reverseMultiplier);
 
@@ -282,104 +293,121 @@
         || !typeFilter.isEmpty
         || !materialFilter.isEmpty;
 
-    let groupField: RecipeFilterGroup;
-    let groupedItems: DisplayedItemGroup[];
+    let groupField: RecipeGroupField;
 
-    $: groupField = getGroupField($itemSortParams);
-
-    $: groupedItems = $itemGroupMode ? getDisplayedItemGroups(groupField, filteredItems) : [];
-
-    function getGroupField(sortParams: RecipeSortParams): RecipeFilterGroup {
-        let sortFieldName = sortParams.sortFieldOrder[0];
-
-        if (sortFieldName === ItemFieldComparatorName.LOCALE_NAME) {
-            sortFieldName = sortParams.sortFieldOrder[1];
-        }
-
-        return sortFieldName as RecipeFilterGroup;
+    $: if ($itemGroupOption === "inherit_sort") {
+        groupField = $itemSortParams.sortFieldOrder[0];
+    } else {
+        groupField = $itemGroupOption;
     }
 
-    interface GroupedItemList<T> {
-        order: T[];
-        map: Map<T, IItem[]>;
+    const groupRarityComparator = new FieldValueComparator<[Rarity, unknown], Rarity>(([a, b]) => a);
+    const groupEventComparator = new FieldValueComparator<[string, unknown]>(([a, b]) => a);
+    const groupGroupComparator = new FieldValueComparator<[ItemGroup, unknown], ItemGroup>(([a, b]) => a);
+    const groupTypeComparator = new FieldValueComparator<[ItemType, unknown], ItemType>(([a, b]) => a);
+    const groupMaterialComparator = new FieldValueComparator<[ItemMaterial | "nonMaterial", unknown], ItemMaterial | "nonMaterial">(([a, b]) => a);
+    const groupLocaleComparator = new LocaleComparator<[string, unknown]>(([a, b]) => a, normalizeLocale($currentLocale));
+
+    $: {
+        groupRarityComparator.setValueOrder($itemSortParams.sortFieldParams.rarity);
+        groupEventComparator.setValueOrder($itemSortParams.sortFieldParams.events);
+        groupGroupComparator.setValueOrder($itemSortParams.sortFieldParams.itemGroups);
+        groupTypeComparator.setValueOrder($itemSortParams.sortFieldParams.itemTypes);
+        groupMaterialComparator.setValueOrder($itemSortParams.sortFieldParams.itemMaterials);
+        groupLocaleComparator.order = $itemSortParams.sortFieldParams.localeName;
     }
+
+    let groupedItems: DisplayedItemGroup[] = [];
+
+    $: groupedItems = groupItems(filteredItems, reverseMultiplier, groupField);
 
     interface DisplayedItemGroup {
         title: string;
         list: IItem[];
     }
 
-    function groupItems<T extends RecipeFilterGroup>(items: Iterable<IItem>, getValueFn: (item: IItem) => RecipeFilterValue<T>): GroupedItemList<RecipeFilterValue<T>> {
-        const order: RecipeFilterValue<T>[] = [];
-        const map: Map<RecipeFilterValue<T>, IItem[]> = new Map();
-
-        for (const item of items) {
-            const value = getValueFn(item);
-
-            let list = map.get(value);
-
-            if (!list) {
-                order.push(value);
-                list = [];
-                map.set(value, list);
-            }
-
-            list.push(item);
-        }
-
-        return {
-            order,
-            map
-        };
-    }
-
-    function getGroupValue<K extends RecipeFilterGroup>(group: K, item: IItem): RecipeFilterValue<K> {
-        switch (group) {
-            case ItemFieldComparatorName.RARITY: return item.rarity as RecipeFilterValue<K>;
-            case ItemFieldComparatorName.ITEM_MATERIAL: return (item.material ?? "nonMaterial") as RecipeFilterValue<K>;
-            case ItemFieldComparatorName.ITEM_TYPE: return item.type as RecipeFilterValue<K>;
-            case ItemFieldComparatorName.ITEM_GROUP: return item.groupId as RecipeFilterValue<K>;
-            case ItemFieldComparatorName.EVENT: return (itemEventMap.get(item.gameId)?.id ?? "nonEvent") as RecipeFilterValue<K>;
+    function groupItems(items: Iterable<IItem>, reverseMultiplier: number, field: RecipeGroupField): DisplayedItemGroup[] {
+        switch (field) {
+            case "rarity": return groupByRarity(items, reverseMultiplier);
+            case "events": return groupByEvent(items, reverseMultiplier);
+            case "itemGroups": return groupByGroup(items, reverseMultiplier);
+            case "itemTypes": return groupByType(items, reverseMultiplier);
+            case "itemMaterials": return groupByMaterial(items, reverseMultiplier);
+            case "localeName": return groupByName(items, reverseMultiplier);
         }
     }
 
-    function getGroupTitle<K extends RecipeFilterGroup>(group: K, value: RecipeFilterValue<K>): string {
-        switch (group) {
-            case ItemFieldComparatorName.RARITY: return String(value);
-            case ItemFieldComparatorName.ITEM_MATERIAL: return $t(`sort.itemMaterials.${value}`);
-            case ItemFieldComparatorName.ITEM_TYPE: return $t(`sort.itemTypes.${value}`);
-            case ItemFieldComparatorName.ITEM_GROUP: return $t(`sort.itemGroups.${value}`);
-            case ItemFieldComparatorName.EVENT:
-                if (value === "nonEvent") {
-                    return $t("sort.events.nonEvent");
-                }
+    function groupByRarity(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => item.rarity);
 
-                const eventKey = factoryEventStorage.byId.get(value as string)?.i18nKey;
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupRarityComparator.compare(a, b) * reverseMultiplier);
 
-                return $t(eventKey ?? `events.${value}`);
-        }
+        return sorted.map(([key, list]) => ({
+            title: String(key),
+            list
+        }));
     }
 
-    function getDisplayedItemGroups(groupField: RecipeFilterGroup, items: Iterable<IItem>): DisplayedItemGroup[] {
-        const getValueFn = (item: IItem) => getGroupValue(groupField, item);
+    function groupByEvent(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => itemEventMap.get(item.gameId)?.id ?? "nonEvent");
 
-        const groupedItems = groupItems(items, getValueFn);
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupEventComparator.compare(a, b) * reverseMultiplier);
 
-        const groupList: DisplayedItemGroup[] = [];
-
-        for (const groupId of groupedItems.order) {
-            const items = groupedItems.map.get(groupId)!;
-            const title = getGroupTitle(groupField, groupId);
-
-            groupList.push({
-                title,
-                list: items
-            });
-        }
-
-        return groupList;
+        return sorted.map(([key, list]) => ({
+            title: $t(factoryEventStorage.byId.get(key)?.title ?? "sort.events.nonEvent"),
+            list
+        }));
     }
 
+    function groupByGroup(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => item.groupId);
+
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupGroupComparator.compare(a, b) * reverseMultiplier);
+
+        return sorted.map(([key, list]) => ({
+            title: $t(`sort.itemGroups.${key}`),
+            list
+        }));
+    }
+
+    function groupByType(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => item.type);
+
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupTypeComparator.compare(a, b) * reverseMultiplier);
+
+        return sorted.map(([key, list]) => ({
+            title: $t(`sort.itemTypes.${key}`),
+            list
+        }));
+    }
+
+    function groupByMaterial(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => item.material ?? "nonMaterial");
+
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupMaterialComparator.compare(a, b) * reverseMultiplier);
+
+        return sorted.map(([key, list]) => ({
+            title: $t(`sort.itemMaterials.${key}`),
+            list
+        }));
+    }
+
+    function groupByName(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
+        const groups = Map.groupBy(items, item => $t(item.i18nKey).at(0)!.toUpperCase());
+
+        const sorted = groups.entries().toArray();
+        sorted.sort((a, b) => groupLocaleComparator.compare(a, b) * reverseMultiplier);
+
+        return sorted.map(([key, list]) => ({
+            title: key,
+            list
+        }));
+    }
 
     let groupDisplayLimit = 2;
     let flatDisplayLimit = 40;

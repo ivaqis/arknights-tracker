@@ -6,4 +6,6 @@ export interface ILocaleComparator<T> extends IReactiveComparator<T> {
     set isReversed(value: boolean);
     get order(): LocaleOrder;
     set order(value: LocaleOrder);
+    get locale(): string;
+    set locale(value: string);
 }

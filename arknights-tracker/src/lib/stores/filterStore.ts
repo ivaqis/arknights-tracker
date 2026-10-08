@@ -22,6 +22,7 @@ import type { OperatorFilterOptions } from "$lib/stores/filters/operators/Operat
 import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/OperatorSelectedFilters";
 import type { OperatorSortOption } from "$lib/stores/filters/operators/OperatorSortOption";
 import type { RecipeFilters } from "$lib/stores/filters/recipes/RecipeFilters";
+import type { RecipeGroupOption } from "$lib/stores/filters/recipes/RecipeGroupField";
 import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
 import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
 import type { WeaponFilterOptions } from "$lib/stores/filters/weapon/WeaponFilterOptions";
@@ -421,6 +422,7 @@ export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGro
 export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
+export const itemGroupOption: Writable<RecipeGroupOption> = createPersistentStore("itemGroupOption", "inherit_sort");
 export const itemFilters: RecipeFilters = getItemFilters(factoryEventStorage.list);
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());

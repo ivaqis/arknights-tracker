@@ -5,11 +5,36 @@ import type { Subscriber, Unsubscriber } from "svelte/store";
 export class LocaleComparator<T> implements ILocaleComparator<T> {
     private readonly _subscribers: Set<Subscriber<this>> = new Set();
     private readonly _getStringFn: (value: T) => string;
+    private readonly _options: Intl.CollatorOptions;
 
+    private _collator: Intl.Collator;
+    private _locale: string;
     private _isReversed: boolean = false;
 
-    public constructor(getStringFn: (value: T) => string) {
+    public constructor(getStringFn: (value: T) => string, locale: string = "en-US", options?: Intl.CollatorOptions) {
         this._getStringFn = getStringFn;
+        this._locale = locale;
+        this._options = options ?? {
+            usage: "sort",
+            numeric: true,
+            sensitivity: "accent"
+        };
+        this._collator = this.createCollator(locale);
+    }
+
+    public get locale(): string {
+        return this._locale;
+    }
+
+    public set locale(value: string) {
+        if (this._locale === value) {
+            return;
+        }
+
+        this._locale = value;
+        this._collator = this.createCollator(value);
+
+        this.notify();
     }
 
     public get isReversed(): boolean {
@@ -38,7 +63,7 @@ export class LocaleComparator<T> implements ILocaleComparator<T> {
         const strA = this._getStringFn(a);
         const strB = this._getStringFn(b);
 
-        const result = strA.localeCompare(strB);
+        const result = this._collator.compare(strA, strB);
 
         return this._isReversed ? -result : result;
     }
@@ -57,5 +82,9 @@ export class LocaleComparator<T> implements ILocaleComparator<T> {
         for (const run of [...this._subscribers]) {
             run(this);
         }
+    }
+
+    private createCollator(locale: string): Intl.Collator {
+        return new Intl.Collator(locale, this._options);
     }
 }
