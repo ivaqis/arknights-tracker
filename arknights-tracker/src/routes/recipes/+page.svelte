@@ -102,6 +102,7 @@
         itemSortParams
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
+    import { groupPreservingOrder, groupPreservingOrderAndName } from "$lib/utils/collectionUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
@@ -324,94 +325,32 @@
 
     let groupedItems: DisplayedItemGroup[] = [];
 
-    $: groupedItems = groupItems(filteredItems, reverseMultiplier, groupField);
+    $: groupedItems = groupItems(filteredItems, groupField);
 
     interface DisplayedItemGroup {
         title: string;
         list: IItem[];
     }
 
-    function groupItems(items: Iterable<IItem>, reverseMultiplier: number, field: RecipeGroupField): DisplayedItemGroup[] {
+    function groupItems(items: Iterable<IItem>, field: RecipeGroupField): DisplayedItemGroup[] {
         switch (field) {
-            case "rarity": return groupByRarity(items, reverseMultiplier);
-            case "events": return groupByEvent(items, reverseMultiplier);
-            case "itemGroups": return groupByGroup(items, reverseMultiplier);
-            case "itemTypes": return groupByType(items, reverseMultiplier);
-            case "itemMaterials": return groupByMaterial(items, reverseMultiplier);
-            case "localeName": return groupByName(items, reverseMultiplier);
+            case "rarity":
+                return groupPreservingOrderAndName(items, item => item.rarity, key => String(key));
+            case "events":
+                return groupPreservingOrderAndName(
+                    items,
+                    item => itemEventMap.get(item.gameId)?.id ?? "nonEvent",
+                    key => $t(factoryEventStorage.byId.get(key)?.title ?? "sort.events.nonEvent")
+                );
+            case "itemGroups":
+                return groupPreservingOrderAndName(items, item => item.groupId, key => $t(`sort.itemGroups.${key}`));
+            case "itemTypes":
+                return groupPreservingOrderAndName(items, item => item.type, key => $t(`sort.itemTypes.${key}`));
+            case "itemMaterials":
+                return groupPreservingOrderAndName(items, item => item.material ?? "nonMaterial", key => $t(`sort.itemMaterials.${key}`));
+            case "localeName":
+                return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key);
         }
-    }
-
-    function groupByRarity(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => item.rarity);
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupRarityComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: String(key),
-            list
-        }));
-    }
-
-    function groupByEvent(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => itemEventMap.get(item.gameId)?.id ?? "nonEvent");
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupEventComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: $t(factoryEventStorage.byId.get(key)?.title ?? "sort.events.nonEvent"),
-            list
-        }));
-    }
-
-    function groupByGroup(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => item.groupId);
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupGroupComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: $t(`sort.itemGroups.${key}`),
-            list
-        }));
-    }
-
-    function groupByType(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => item.type);
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupTypeComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: $t(`sort.itemTypes.${key}`),
-            list
-        }));
-    }
-
-    function groupByMaterial(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => item.material ?? "nonMaterial");
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupMaterialComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: $t(`sort.itemMaterials.${key}`),
-            list
-        }));
-    }
-
-    function groupByName(items: Iterable<IItem>, reverseMultiplier: number): DisplayedItemGroup[] {
-        const groups = Map.groupBy(items, item => $t(item.i18nKey).at(0)!.toUpperCase());
-
-        const sorted = groups.entries().toArray();
-        sorted.sort((a, b) => groupLocaleComparator.compare(a, b) * reverseMultiplier);
-
-        return sorted.map(([key, list]) => ({
-            title: key,
-            list
-        }));
     }
 
     let groupDisplayLimit = 2;

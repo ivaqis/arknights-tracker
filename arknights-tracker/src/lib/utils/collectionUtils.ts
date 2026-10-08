@@ -73,3 +73,36 @@ export function isListItemsEqual<T>(listA: readonly T[], listB: readonly T[]): b
 
     return set.size === 0;
 }
+
+export function groupPreservingOrder<T, K>(items: Iterable<T>, getKeyFn: (item: T) => K): [K, T[]][] {
+    const order: K[] = [];
+    const map: Map<K, T[]> = new Map();
+
+    for (const item of items) {
+        const key = getKeyFn(item);
+
+        let itemList = map.get(key);
+
+        if (!itemList) {
+            itemList = [];
+            map.set(key, itemList);
+            order.push(key);
+        }
+
+        itemList.push(item);
+    }
+
+    return order.map(key => [key, map.get(key)!]);
+}
+
+export function groupPreservingOrderAndName<T, K>(items: Iterable<T>,
+                                                  getKeyFn: (item: T) => K,
+                                                  getNameFn: (key: K) => string
+): { title: string; list: T[] }[] {
+    const groups = groupPreservingOrder(items, getKeyFn);
+
+    return groups.map(([key, list]) => ({
+        title: getNameFn(key),
+        list
+    }));
+}
