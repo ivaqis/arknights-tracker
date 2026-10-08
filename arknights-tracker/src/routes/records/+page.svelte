@@ -16,7 +16,7 @@
     recordsShowMonthlyChart,
     recordsShowRating,
     recordsShowTotalCost
-  } from "$lib/stores/filterStore.js";
+  } from "$lib/stores/filterStore";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { t } from "$lib/i18n";
   import Button from "$lib/components/Button.svelte";

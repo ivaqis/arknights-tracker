@@ -13,7 +13,7 @@
         operatorFilters,
         operatorOwnedOnly,
         operatorSearch
-    } from "$lib/stores/filterStore.js";
+    } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { filterCheck, filterCheckLowerCase, getBaseSkillMappedFilter } from "$lib/utils/filterUtils";
@@ -112,7 +112,8 @@
     }
 
     $: filteredOperators = (() => {
-        const _ = characterDetailsMap;
+        void characterDetailsMap;
+
         return allOperators
             .filter((op) => {
                 if (showOwnedOnly) {

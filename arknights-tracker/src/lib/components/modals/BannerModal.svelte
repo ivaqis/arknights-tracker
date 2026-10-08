@@ -13,7 +13,7 @@
     import { weapons } from "$lib/data/weapons.js";
     import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { pullData } from "$lib/stores/pulls.js";
     import { createEventDispatcher, onMount } from "svelte";
 

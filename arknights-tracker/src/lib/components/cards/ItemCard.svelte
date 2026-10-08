@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { craftableItemsList } from "$lib/data/crafts/craftableItemsList";
     import { goto } from "$app/navigation";
 

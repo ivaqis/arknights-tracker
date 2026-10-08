@@ -5,6 +5,7 @@
     import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+    import type { ISelector } from "$lib/classes/selectors/ISelector";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { CardSize } from "$lib/components/cards/CardSize";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
@@ -37,7 +38,7 @@
     export let buffList: readonly string[];
     export let condTypeOrderList: readonly CondType[];
     export let targetTypeOrderList: readonly UsableTargetType[];
-    export let selectedCondTypeSet: Set<CondType>;
+    export let condTypeSelector: ISelector<CondType>;
     export let selectItemFn: (item: IItem) => void;
     export let selectedItem: IFood | null = null;
 
@@ -291,7 +292,7 @@
     let displayedCondTypeTitles: DisplayedCondTypeTitle[] = [];
 
     $: displayedBuffTitles = getDisplayedBuffTitles(foodList, buffList);
-    $: displayedCondTypeTitles = getDisplayedCondTypeTitles(condTypeOrderList, selectedCondTypeSet);
+    $: displayedCondTypeTitles = getDisplayedCondTypeTitles(condTypeOrderList, $condTypeSelector);
 
     function getDisplayedBuffTitles(foodList: readonly IFood[], buffList: readonly string[]): DisplayedBuffTitle[] {
         const result: DisplayedBuffTitle[] = [];
@@ -332,10 +333,10 @@
         };
     }
 
-    function getDisplayedCondTypeTitles(condTypeOrderList: readonly CondType[], selectedCondTypeSet: Set<CondType>): DisplayedCondTypeTitle[] {
+    function getDisplayedCondTypeTitles(condTypeOrderList: readonly CondType[], condTypeSelector: ISelector<CondType>): DisplayedCondTypeTitle[] {
         return condTypeOrderList
             .map(condType => condParamFieldOrder[condType])
-            .filter(entry => entry !== undefined && selectedCondTypeSet.has(entry.condType));
+            .filter(entry => entry !== undefined && condTypeSelector.isSelected(entry.condType));
     }
 
 </script>

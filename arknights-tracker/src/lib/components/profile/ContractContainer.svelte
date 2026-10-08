@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale.js";
+    import { currentLocale } from "$lib/stores/locale";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";

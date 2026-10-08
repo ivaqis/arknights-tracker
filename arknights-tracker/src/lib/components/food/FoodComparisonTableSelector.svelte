@@ -1,50 +1,17 @@
 <script lang="ts">
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
-    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
+    import type { ISelector } from "$lib/classes/selectors/ISelector";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import { t } from "$lib/i18n";
 
-    export let condTypeList: CondType[];
-    export let buffList: string[];
-    export let targetTypeList: UsableTargetType[];
-
-    export let selectedCondTypeSet: Set<CondType>;
-    export let selectedBuffSet: Set<string>;
-    export let selectedTargetTypeSet: Set<UsableTargetType>;
+    export let condTypeSelector: ISelector<CondType>;
+    export let buffSelector: ISelector<string>;
+    export let targetTypeSelector: ISelector<UsableTargetType>;
 
     type CondType = EquipableItemConditionType | "null";
-
-    function toggleCondTypeList() {
-        if (selectedCondTypeSet.size === 0) {
-            condTypeList.forEach(item => selectedCondTypeSet.add(item));
-        } else {
-            selectedCondTypeSet.clear();
-        }
-
-        selectedCondTypeSet = selectedCondTypeSet;
-    }
-
-    function toggleBuffList() {
-        if (selectedBuffSet.size === 0) {
-            buffList.forEach(item => selectedBuffSet.add(item));
-        } else {
-            selectedBuffSet.clear();
-        }
-
-        selectedBuffSet = selectedBuffSet;
-    }
-
-    function toggleTargetTypeList() {
-        if (selectedTargetTypeSet.size === 0) {
-            targetTypeList.forEach(item => selectedTargetTypeSet.add(item));
-        } else {
-            selectedTargetTypeSet.clear();
-        }
-
-        selectedTargetTypeSet = selectedTargetTypeSet;
-    }
 
     function getBuffLocale(buffId: string): string {
         return $t(`buffNames.${buffId}`);
@@ -62,16 +29,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleTargetTypeList()}
+            onClick={() => targetTypeSelector.toggleAll()}
         >
             {$t("sort.targetType")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={targetTypeList}
+        <ParamSelector
+            selector={targetTypeSelector}
             paramBox={TextParamBox}
-            getLocaleFunc={param => $t(UsableTargetType.getI18nKey(param as UsableTargetType))}
-            bind:selectedParamSet={selectedTargetTypeSet}
+            getLocaleFn={param => $t(UsableTargetType.getI18nKey(param))}
         />
 
     </div>
@@ -80,16 +46,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={toggleCondTypeList}
+            onClick={() => condTypeSelector.toggleAll()}
         >
             {$t("sort.equipCondTitle")}
         </GroupTitle>
 
-        <SelectableParamList
+        <ParamSelector
+            selector={condTypeSelector}
             paramBox={TextParamBox}
-            paramList={condTypeList}
-            getLocaleFunc={param => getEquipCondLocale(param as CondType)}
-            bind:selectedParamSet={selectedCondTypeSet}
+            getLocaleFn={param => getEquipCondLocale(param)}
         />
 
     </div>
@@ -98,16 +63,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={toggleBuffList}
+            onClick={() => buffSelector.toggleAll()}
         >
             {$t("sort.buffTitle")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={buffList}
+        <ParamSelector
+            selector={buffSelector}
             paramBox={TextParamBox}
-            getLocaleFunc={buffId => getBuffLocale(buffId as string)}
-            bind:selectedParamSet={selectedBuffSet}
+            getLocaleFn={buffId => getBuffLocale(buffId)}
         />
 
     </div>

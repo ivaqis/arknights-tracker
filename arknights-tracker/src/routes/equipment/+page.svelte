@@ -27,7 +27,7 @@
         equipmentSearch,
         getEquipmentFilters,
         getEquipmentSortOptions
-    } from "$lib/stores/filterStore.js";
+    } from "$lib/stores/filterStore";
     import { currentLocale } from "$lib/stores/locale";
     import { manualPotentials } from "$lib/stores/potentials";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
@@ -385,7 +385,7 @@
     let initialRender = true;
 
     $: {
-        const _trigger = [
+        void [
             searchQuery,
             selectedFilters,
             sortField,
@@ -393,6 +393,7 @@
             showOwnedOnly,
             isGrouped,
         ];
+
         if (initialRender) {
             initialRender = false;
         } else {

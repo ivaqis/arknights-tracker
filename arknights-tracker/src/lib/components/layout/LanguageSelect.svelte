@@ -1,5 +1,5 @@
 <script>
-    import { currentLocale, currentUiLocale, languages, uiLanguages, isSupported } from "$lib/stores/locale.js";
+    import { currentLocale, currentUiLocale, languages, uiLanguages, isSupported } from "$lib/stores/locale";
     import { slide } from "svelte/transition";
     import { t } from "$lib/i18n";
 

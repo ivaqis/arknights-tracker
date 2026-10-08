@@ -1,0 +1,41 @@
+import type { ISearchFilter } from "$lib/classes/filters/ISearchFilter";
+import type { Subscriber, Unsubscriber } from "svelte/store";
+
+export abstract class ASearchFilter<TEntity> implements ISearchFilter<TEntity> {
+    private readonly _subscribers: Set<Subscriber<this>> = new Set();
+
+    private _searchString: string = "";
+
+    protected constructor() {}
+
+    public get searchString(): string {
+        return this._searchString;
+    }
+
+    public set searchString(value: string) {
+        if (this._searchString === value) {
+            return;
+        }
+
+        this._searchString = value;
+        this.notify();
+    }
+
+    public subscribe(run: Subscriber<this>): Unsubscriber {
+        run(this);
+
+        this._subscribers.add(run);
+
+        return () => {
+            this._subscribers.delete(run);
+        };
+    }
+
+    public abstract satisfies(entity: TEntity): boolean;
+
+    public notify() {
+        for (const run of [...this._subscribers]) {
+            run(this);
+        }
+    }
+}

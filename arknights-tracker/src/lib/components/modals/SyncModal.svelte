@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore.js";
     import { accountStore } from "$lib/stores/accounts.js";
     import { pullData } from "$lib/stores/pulls.js";
