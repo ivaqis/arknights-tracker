@@ -26,7 +26,10 @@
       "leaderboard": "Leaderboard for Arknights: Endfield.",
       "settings": "Goyfield settings.",
       "profile": "Player profile on Goyfield.",
-      "userProfile": "Public player profile of {username} on Goyfield."
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
     }
   },
   "hints": {

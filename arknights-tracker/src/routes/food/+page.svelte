@@ -341,16 +341,10 @@
 </script>
 
 <svelte:head>
-
-    <title>
-        {$t("pages.food")} - Goyfield
-    </title>
-
-    <meta
-        property="og:title"
-        content={`${$t("pages.food")} - Goyfield`}
-    />
-
+    <title>{$t("pages.food")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.food")} />
+    <meta property="og:title" content={`${$t("pages.food")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.food")} />
 </svelte:head>
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">

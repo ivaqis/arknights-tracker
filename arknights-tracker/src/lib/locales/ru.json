@@ -26,7 +26,10 @@
       "leaderboard": "Таблица лидеров Arknights: Endfield.",
       "settings": "Настройки Goyfield.",
       "profile": "Профиль игрока на Goyfield.",
-      "userProfile": "Публичный профиль игрока {username} на Goyfield."
+      "userProfile": "Публичный профиль игрока {username} на Goyfield.",
+      "food": "База данных еды и провианта в Arknights: Endfield.",
+      "foodDetail": "Характеристики и эффекты блюда {name} в Arknights: Endfield.",
+      "achievements": "Трекер и база данных достижений в Arknights: Endfield."
     }
   },
   "hints": {
