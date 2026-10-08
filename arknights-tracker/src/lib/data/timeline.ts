@@ -1403,5 +1403,20 @@ export const rawEvents: GenericEventData[] = [
         type: "signIn",
         iconPosition: 30,
         version: "1.5"
+    },
+    {
+        id: "ev17-v1.5",
+        title: "events.inkwashedWorldSignIn",
+        name: "Inkwashed World Sign-In",
+        startTime: "2026-10-08 22:00:00",
+        endTime: "2026-10-14 17:00:00",
+        endTimeAsia: "2026-10-15 04:00:00",
+        icon: "ev17-v1.5.webp",
+        url: "https://x.com/AKEndfield/status/2107682329699512675?s=20",
+        color: "#9fa45eff",
+        layer: 12,
+        type: "signIn",
+        iconPosition: 30,
+        version: "1.5"
     }
 ];
