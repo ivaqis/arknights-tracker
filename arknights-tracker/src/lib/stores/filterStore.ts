@@ -1,10 +1,15 @@
 import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
 import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
 import { FilterSelector } from "$lib/classes/filters/FilterSelector";
 import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
 import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+import { ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
+import { ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
+import { ItemType } from "$lib/classes/gameData/items/ItemType";
 import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
 import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
 import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
 import type { EnemySortOption } from "$lib/stores/filters/enemies/EnemySortOption";
@@ -16,11 +21,13 @@ import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
 import type { OperatorFilterOptions } from "$lib/stores/filters/operators/OperatorFilterOptions";
 import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/OperatorSelectedFilters";
 import type { OperatorSortOption } from "$lib/stores/filters/operators/OperatorSortOption";
+import type { RecipeFilters } from "$lib/stores/filters/recipes/RecipeFilters";
 import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
 import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
 import type { WeaponFilterOptions } from "$lib/stores/filters/weapon/WeaponFilterOptions";
 import type { WeaponSelectedFilters } from "$lib/stores/filters/weapon/WeaponSelectedFilters";
 import type { WeaponSortOption } from "$lib/stores/filters/weapon/WeaponSortOption";
+import { getMapByList } from "$lib/utils/collectionUtils";
 import { get, type Writable, writable } from "svelte/store";
 
 function createPersistentStore<T>(key: string, startValue: T): Writable<T> {
@@ -220,87 +227,96 @@ export function getDefaultItemSortParams(): RecipeSortParams {
             ItemFieldComparatorName.LOCALE_NAME
         ],
         sortFieldParams: {
-            itemGroups: ["nature", "product", "usable", "gatherable", "device", "nurturance", "facility", "other"],
+            itemGroups: [
+                ItemGroup.NATURE,
+                ItemGroup.PRODUCT,
+                ItemGroup.USABLE,
+                ItemGroup.GATHERABLE,
+                ItemGroup.DEVICE,
+                ItemGroup.NURTURANCE,
+                ItemGroup.FACILITY,
+                ItemGroup.OTHER
+            ],
             itemTypes: [
-                "spcstone",
-                "mushroom",
-                "crylplant",
-                "ore",
-                "liquid",
-                "gas",
-                "plant",
-                "plant_seed",
-                "plant_special",
-                "wood",
-                "ingot",
-                "powder",
-                "compressed_powder",
-                "part",
-                "component",
-                "battery",
-                "bottle",
-                "jar",
-                "balloon_recycle",
-                "hulu",
-                "tool",
-                "lung_box",
-                "lung",
-                "xiranite_radar",
-                "xiranite_nexus",
-                "arrow_chip",
-                "muck",
-                "full_bottle",
-                "full_gas_jar",
-                "bomb",
-                "hp_recovery",
-                "food",
-                "special_food",
-                "insect",
-                "drop",
-                "miner",
-                "gas_miner",
-                "pump",
-                "crafter",
-                "power",
-                "vaporizer",
-                "soil",
-                "battle",
-                "sanity",
-                "other"
+                ItemType.SPECIAL_STONE,
+                ItemType.MUSHROOM,
+                ItemType.CRYLPLANT,
+                ItemType.ORE,
+                ItemType.LIQUID,
+                ItemType.GAS,
+                ItemType.PLANT,
+                ItemType.PLANT_SEED,
+                ItemType.PLANT_SPECIAL,
+                ItemType.WOOD,
+                ItemType.INGOT,
+                ItemType.POWDER,
+                ItemType.COMPRESSED_POWDER,
+                ItemType.PART,
+                ItemType.COMPONENT,
+                ItemType.BATTERY,
+                ItemType.BOTTLE,
+                ItemType.JAR,
+                ItemType.BALLOON_RECYCLE,
+                ItemType.HULU,
+                ItemType.TOOL,
+                ItemType.LUNG_BOX,
+                ItemType.LUNG,
+                ItemType.XIRANITE_RADAR,
+                ItemType.XIRANITE_NEXUS,
+                ItemType.ARROW_CHIP,
+                ItemType.MUCK,
+                ItemType.FULL_BOTTLE,
+                ItemType.FULL_GAS_JAR,
+                ItemType.BOMB,
+                ItemType.HP_RECOVERY,
+                ItemType.FOOD,
+                ItemType.SPECIAL_FOOD,
+                ItemType.INSECT,
+                ItemType.DROP,
+                ItemType.MINER,
+                ItemType.GAS_MINER,
+                ItemType.PUMP,
+                ItemType.CRAFTER,
+                ItemType.POWER,
+                ItemType.VAPORIZER,
+                ItemType.SOIL,
+                ItemType.BATTLE,
+                ItemType.SANITY,
+                ItemType.OTHER
             ],
             itemMaterials: [
-                "water",
-                "acid",
-                "inert",
-                "sewage",
-                "originium",
-                "amethyst",
-                "iron",
-                "originium_enr",
-                "amethyst_enr",
-                "iron_enr",
-                "xiranite",
-                "xiranite_enr",
-                "copper",
-                "copper_enr",
-                "copper_xiranite",
-                "copper_poly",
-                "carbon",
-                "carbon_enr",
-                "plant_flower_1",
-                "plant_flower_2",
-                "plant_flower_3",
-                "plant_grass_1",
-                "plant_grass_2",
-                "plant_flower_spc_1",
-                "plant_flower_spc_2",
-                "plant_grass_spc_1",
-                "plant_grass_spc_2",
-                "plant_bbflower_1",
-                "plant_sp_1",
-                "plant_sp_2",
-                "plant_sp_3",
-                "plant_sp_4",
+                ItemMaterial.WATER,
+                ItemMaterial.ACID,
+                ItemMaterial.INERT,
+                ItemMaterial.SEWAGE,
+                ItemMaterial.ORIGINIUM,
+                ItemMaterial.AMETHYST,
+                ItemMaterial.IRON,
+                ItemMaterial.ORIGINIUM_ENR,
+                ItemMaterial.AMETHYST_ENR,
+                ItemMaterial.IRON_ENR,
+                ItemMaterial.XIRANITE,
+                ItemMaterial.XIRANITE_ENR,
+                ItemMaterial.COPPER,
+                ItemMaterial.COPPER_ENR,
+                ItemMaterial.COPPER_XIRANITE,
+                ItemMaterial.COPPER_POLY,
+                ItemMaterial.CARBON,
+                ItemMaterial.CARBON_ENR,
+                ItemMaterial.PLANT_FLOWER_1,
+                ItemMaterial.PLANT_FLOWER_2,
+                ItemMaterial.PLANT_FLOWER_3,
+                ItemMaterial.PLANT_GRASS_1,
+                ItemMaterial.PLANT_GRASS_2,
+                ItemMaterial.PLANT_FLOWER_SPC_1,
+                ItemMaterial.PLANT_FLOWER_SPC_2,
+                ItemMaterial.PLANT_GRASS_SPC_1,
+                ItemMaterial.PLANT_GRASS_SPC_2,
+                ItemMaterial.PLANT_BBFLOWER_1,
+                ItemMaterial.PLANT_SP_1,
+                ItemMaterial.PLANT_SP_2,
+                ItemMaterial.PLANT_SP_3,
+                ItemMaterial.PLANT_SP_4,
                 "nonMaterial"
             ],
             rarity: [1, 2, 3, 4, 5, 6],
@@ -308,6 +324,18 @@ export function getDefaultItemSortParams(): RecipeSortParams {
             localeName: LocaleOrder.A_Z
         }
     };
+}
+
+export function getItemFilters(events: Iterable<IFactoryEvent>): RecipeFilters {
+    const eventMap = getMapByList(events, event => event.eventItemIds);
+
+    return {
+        rarity: new FilterSelector(get(itemSortParams).sortFieldParams.rarity, item => item.rarity),
+        itemGroups: new FilterSelector(get(itemSortParams).sortFieldParams.itemGroups, item => item.groupId),
+        itemTypes: new FilterSelector(get(itemSortParams).sortFieldParams.itemTypes, item => item.type),
+        itemMaterials: new FilterSelector(get(itemSortParams).sortFieldParams.itemMaterials, item => item.material ?? "nonMaterial"),
+        events: new FilterSelector(get(itemSortParams).sortFieldParams.events, item => eventMap.get(item.gameId)?.id ?? "nonEvent"),
+    }
 }
 
 export function getDefaultFoodSortParams(): FoodSortParams {
@@ -390,10 +418,10 @@ export const enemyFilters: Writable<EnemySelectedFilters> = writable({});
 export const enemySearch: Writable<string> = writable("");
 export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGroupMode", true);
 
-export const itemFilters: Writable<RecipeSelectedFilterMap> = writable({});
 export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
+export const itemFilters: RecipeFilters = getItemFilters(factoryEventStorage.list);
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
 export const foodFilters: FoodFilters = getFoodFilters();

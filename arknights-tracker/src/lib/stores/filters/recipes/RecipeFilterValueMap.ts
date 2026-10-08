@@ -5,9 +5,9 @@ import type { ItemType } from "$lib/classes/gameData/items/ItemType";
 import type { Rarity } from "$lib/classes/Rarity";
 
 export interface RecipeFilterValueMap {
-    [ItemFieldComparatorName.ITEM_GROUP]: `${ItemGroup}`;
-    [ItemFieldComparatorName.ITEM_TYPE]: `${ItemType}`;
-    [ItemFieldComparatorName.ITEM_MATERIAL]: `${ItemMaterial}` | "nonMaterial";
+    [ItemFieldComparatorName.ITEM_GROUP]: ItemGroup;
+    [ItemFieldComparatorName.ITEM_TYPE]: ItemType;
+    [ItemFieldComparatorName.ITEM_MATERIAL]: ItemMaterial | "nonMaterial";
     [ItemFieldComparatorName.RARITY]: Rarity;
     [ItemFieldComparatorName.EVENT]: string | "nonEvent";
 }

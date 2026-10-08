@@ -1,14 +1,25 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
-    import type { IItemComparator } from "$lib/classes/comparators/items/IItemComparator";
-    import { ItemComparator } from "$lib/classes/comparators/items/ItemComparator";
+    import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator";
+    import type { IComparator } from "$lib/classes/comparators/IComparator";
+    import type { IFieldValueComparator } from "$lib/classes/comparators/IFieldValueComparator";
+    import type { ILocaleComparator } from "$lib/classes/comparators/ILocaleComparator";
+    import type { IReactiveComparator } from "$lib/classes/comparators/IReactiveComparator";
+    import type { IReactiveNamedComparatorChain } from "$lib/classes/comparators/IReactiveNamedComparatorChain";
     import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
-    import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+    import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator";
+    import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain";
     import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
     import type { IMachineCraftFactory } from "$lib/classes/factories/recipes/IMachineCraftFactory";
     import type { IManualCraftFactory } from "$lib/classes/factories/recipes/IManualCraftFactory";
     import { MachineCraftFactory } from "$lib/classes/factories/recipes/MachineCraftFactory";
     import { ManualCraftFactory } from "$lib/classes/factories/recipes/ManualCraftFactory";
+    import type { IFilter } from "$lib/classes/filters/IFilter";
+    import type { IFilterSelector } from "$lib/classes/filters/IFilterSelector";
+    import type { IReactiveFilterChain } from "$lib/classes/filters/IReactiveFilterChain";
+    import type { ISearchFilter } from "$lib/classes/filters/ISearchFilter";
+    import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain";
+    import { SearchFilter } from "$lib/classes/filters/SearchFilter";
     import { CrafterModeName } from "$lib/classes/gameData/buildings/crafters/CrafterModeName";
     import type { ICrafter } from "$lib/classes/gameData/buildings/crafters/ICrafter";
     import type { IMiner } from "$lib/classes/gameData/buildings/miners/IMiner";
@@ -22,6 +33,7 @@
     import type { ItemType } from "$lib/classes/gameData/items/ItemType";
     import { RecipeType } from "$lib/classes/gameData/recipes/RecipeType";
     import { RecipeSource } from "$lib/classes/gameData/recipes/sources/RecipeSource";
+    import type { Rarity } from "$lib/classes/Rarity";
     import { GasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/GasEnvRecipeSearcher";
     import type { IGasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/IGasEnvRecipeSearcher";
     import type { IMachineCraftSearcher } from "$lib/classes/searchers/recipes/IMachineCraftSearcher";
@@ -65,12 +77,9 @@
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
     import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
-    import { fullBottleStorage } from "$lib/dataStorages/items/fullBottleStorage";
-    import { fullJarStorage } from "$lib/dataStorages/items/fullJarStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { t } from "$lib/i18n";
     import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
-    import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
     import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
     import {
         getDefaultItemSortParams,
@@ -80,7 +89,6 @@
         itemSortParams
     } from "$lib/stores/filterStore";
     import { getMapByList } from "$lib/utils/collectionUtils";
-    import { filterCheck } from "$lib/utils/filterUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
@@ -96,34 +104,79 @@
 
     const itemEventMap = getEventByItemIdMap(factoryEventStorage.list);
 
-    const comparator: IItemComparator = new ItemComparator(factoryEventStorage, fullBottleStorage, fullJarStorage, item => $t(item.i18nKey));
+    const rarityFilter: IFilterSelector<IItem, Rarity> = itemFilters[ItemFieldComparatorName.RARITY];
+    const eventFilter: IFilterSelector<IItem, string | "nonEvent"> = itemFilters[ItemFieldComparatorName.EVENT];
+    const groupFilter: IFilterSelector<IItem, ItemGroup> = itemFilters[ItemFieldComparatorName.ITEM_GROUP];
+    const typeFilter: IFilterSelector<IItem, ItemType> = itemFilters[ItemFieldComparatorName.ITEM_TYPE];
+    const materialFilter: IFilterSelector<IItem, ItemMaterial | "nonMaterial"> = itemFilters[ItemFieldComparatorName.ITEM_MATERIAL];
+
+    const nameFilter: ISearchFilter<IItem> = new SearchFilter(item => $t(item.i18nKey));
+    const idFilter: ISearchFilter<IItem> = new SearchFilter(item => item.gameId);
+
+    const searchChain: IReactiveFilterChain<IItem> = new ReactiveFilterChain()
+        .or(nameFilter)
+        .or(idFilter);
+
+    const filterChain: IReactiveFilterChain<IItem> = new ReactiveFilterChain()
+        .and(searchChain)
+        .and(rarityFilter)
+        .and(groupFilter)
+        .and(typeFilter)
+        .and(materialFilter)
+        .and(eventFilter);
+
+    $: {
+        searchChain.beginManual();
+
+        nameFilter.searchString = $itemSearch;
+        idFilter.searchString = $itemSearch;
+
+        searchChain.endManual();
+    }
+
+    $: {
+        filterChain.beginManual();
+
+        rarityFilter.paramList = $itemSortParams.sortFieldParams.rarity;
+        eventFilter.paramList = $itemSortParams.sortFieldParams.events;
+        groupFilter.paramList = $itemSortParams.sortFieldParams.itemGroups;
+        typeFilter.paramList = $itemSortParams.sortFieldParams.itemTypes;
+        materialFilter.paramList = $itemSortParams.sortFieldParams.itemMaterials;
+
+        filterChain.endManual();
+    }
+
+    const rarityComparator: IFieldValueComparator<IItem, Rarity> = new FieldValueComparator(item => item.rarity);
+    const eventComparator: IFieldValueComparator<IItem, string | "nonEvent"> = new FieldValueComparator(item => itemEventMap.get(item.gameId)?.id ?? "nonEvent");
+    const groupComparator: IFieldValueComparator<IItem, ItemGroup> = new FieldValueComparator(item => item.groupId);
+    const typeComparator: IFieldValueComparator<IItem, ItemType> = new FieldValueComparator(item => item.type);
+    const materialComparator: IFieldValueComparator<IItem, ItemMaterial | "nonMaterial"> = new FieldValueComparator(item => item.material ?? "nonMaterial");
+    const nameComparator: ILocaleComparator<IItem> = new LocaleComparator(item => $t(item.i18nKey));
+
+    const comparatorChain: IReactiveNamedComparatorChain<IItem, ItemFieldComparatorName> = new ReactiveNamedComparatorChain(getComparator);
+
+    $: {
+        comparatorChain.beginManual();
+
+        comparatorChain.setOrderAliased($itemSortParams.sortFieldOrder);
+        rarityComparator.setValueOrder($itemSortParams.sortFieldParams.rarity);
+        eventComparator.setValueOrder($itemSortParams.sortFieldParams.events);
+        groupComparator.setValueOrder($itemSortParams.sortFieldParams.itemGroups);
+        typeComparator.setValueOrder($itemSortParams.sortFieldParams.itemTypes);
+        materialComparator.setValueOrder($itemSortParams.sortFieldParams.itemMaterials);
+        nameComparator.order = $itemSortParams.sortFieldParams.localeName;
+
+        comparatorChain.endManual();
+    }
 
     let sortDirection: SortDirection = "asc";
 
     let filteredItems: IItem[];
 
-    $: filteredItems = getFilteredItems(craftableItems, $itemSortParams, sortDirection, $itemFilters, $itemSearch);
+    $: filteredItems = getFilteredItems(craftableItems, $comparatorChain, sortDirection, $filterChain);
 
-    function getFilteredItems(items: readonly IItem[], sortParams: RecipeSortParams, sortDirection: SortDirection, filters: RecipeSelectedFilterMap, searchQuery: string): IItem[] {
-        comparator.setComparatorsOrder(sortParams.sortFieldOrder);
-        comparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
-        comparator.eventComparator.setValueOrder(sortParams.sortFieldParams.events);
-        comparator.groupComparator.setValueOrder(sortParams.sortFieldParams.itemGroups as ItemGroup[]);
-        comparator.typeComparator.setValueOrder(sortParams.sortFieldParams.itemTypes as ItemType[]);
-        comparator.materialComparator.setValueOrder(sortParams.sortFieldParams.itemMaterials as ItemMaterial[]);
-        comparator.localeComparator.isReversed = sortParams.sortFieldParams.localeName === LocaleOrder.Z_A;
-
-        const result: IItem[] = items.filter(item => {
-
-            return filterCheck(filters.rarity, item.rarity)
-                && filterCheck(filters.events, itemEventMap.get(item.gameId)?.id ?? "nonEvent")
-                && filterCheck(filters.itemGroups, item.groupId)
-                && filterCheck(filters.itemTypes, item.type)
-                && filterCheck(filters.itemMaterials, item.material)
-                && (!searchQuery
-                    || item.gameId.includes(searchQuery)
-                    || $t(item.i18nKey).includes(searchQuery));
-        });
+    function getFilteredItems(items: readonly IItem[], comparator: IComparator<IItem>, sortDirection: SortDirection, filter: IFilter<IItem>): IItem[] {
+        const result: IItem[] = items.filter(item => filter.satisfies(item));
 
         const reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
@@ -132,12 +185,41 @@
         return result;
     }
 
+    function getComparator(name: ItemFieldComparatorName): IReactiveComparator<IItem> {
+        switch (name) {
+            case ItemFieldComparatorName.RARITY:
+                return rarityComparator;
+            case ItemFieldComparatorName.EVENT:
+                return eventComparator;
+            case ItemFieldComparatorName.ITEM_GROUP:
+                return groupComparator;
+            case ItemFieldComparatorName.ITEM_TYPE:
+                return typeComparator;
+            case ItemFieldComparatorName.ITEM_MATERIAL:
+                return materialComparator;
+            case ItemFieldComparatorName.LOCALE_NAME:
+                return nameComparator;
+        }
+    }
+
     function getEventByItemIdMap(events: Iterable<IFactoryEvent>): Map<string, IFactoryEvent> {
         return getMapByList(events, event => event.eventItemIds);
     }
 
     function resetSort() {
         $itemSortParams = getDefaultItemSortParams();
+    }
+
+    function resetFilters() {
+        filterChain.beginManual();
+
+        rarityFilter.clear();
+        eventFilter.clear();
+        groupFilter.clear();
+        typeFilter.clear();
+        materialFilter.clear();
+
+        filterChain.endManual();
     }
 
     function checkSortParams(currentSortParams: RecipeSortParams, defaultSortParams: RecipeSortParams) {
@@ -194,8 +276,11 @@
     }
 
     let isFilterActive = false;
-    $: isFilterActive = Object.values($itemFilters)
-        .some((set) => set.size > 0);
+    $: isFilterActive = !rarityFilter.isEmpty
+        || !eventFilter.isEmpty
+        || !groupFilter.isEmpty
+        || !typeFilter.isEmpty
+        || !materialFilter.isEmpty;
 
     let groupField: RecipeFilterGroup;
     let groupedItems: DisplayedItemGroup[];
@@ -306,9 +391,9 @@
     $: displayedItems = !$itemGroupMode ? filteredItems.slice(0, flatDisplayLimit) : [];
 
     $: {
-        const _trigger = [
+        void [
             $itemSearch,
-            $itemFilters,
+            $filterChain,
             $itemSortParams,
             sortDirection,
             $itemGroupMode
@@ -469,7 +554,7 @@
                 showSearchInput={true}
                 showGroupButton={true}
                 isFilterActive={isFilterActive}
-                onFilterReset={() => $itemFilters = {}}
+                onFilterReset={resetFilters}
                 bind:isGrouped={$itemGroupMode}
                 bind:searchString={$itemSearch}
                 bind:sortDirection={sortDirection}
@@ -483,8 +568,8 @@
 
                 <RecipesFilterDropdown
                     slot="filterDropdown"
-                    filters={$itemSortParams.sortFieldParams}
-                    bind:selectedFilters={$itemFilters}
+                    filters={itemFilters}
+                    onFilterReset={resetFilters}
                 />
 
             </DataToolbar>
