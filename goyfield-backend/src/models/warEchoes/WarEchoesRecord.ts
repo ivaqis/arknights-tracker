@@ -40,7 +40,7 @@ export class WarEchoesRecord implements IEntityClass<WarEchoesRecordEntity> {
             return null;
         }
 
-        let groupId = warEchoesGroupRecords.getGroupId(dungeonId) || fallbackGroupId;
+        let groupId = fallbackGroupId || warEchoesGroupRecords.getGroupId(dungeonId);
 
         if (!groupId) {
             logger.warn(`WarEchoes groupId not found: ${dungeonId}`);

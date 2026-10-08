@@ -366,6 +366,7 @@
             const data = await fetchLeaderboard({
                 event: selectedEvent,
                 dungeonId: (selectedEvent === 'monument' || selectedEvent === 'echoesOfWar') ? currentDungeonId : undefined,
+                groupId: selectedEvent === 'echoesOfWar' ? `s${selectedWarEchoesSeason}_w${selectedWarEchoesCycle}` : undefined,
                 serverId: serverFilter,
                 charCountFilter: teamSizeFilter ? String(teamSizeFilter) : '',
                 sortField: sortField === "default" ? undefined : sortField,
@@ -391,6 +392,15 @@
 
     $: if (currentDungeonId !== prevDungeon) {
         prevDungeon = currentDungeonId;
+        currentPage = 1;
+        loadLeaderboard();
+    }
+
+    let prevWarEchoesGroup = `s${selectedWarEchoesSeason}_w${selectedWarEchoesCycle}`;
+    $: currentWarEchoesGroup = `s${selectedWarEchoesSeason}_w${selectedWarEchoesCycle}`;
+
+    $: if (selectedEvent === 'echoesOfWar' && currentWarEchoesGroup !== prevWarEchoesGroup) {
+        prevWarEchoesGroup = currentWarEchoesGroup;
         currentPage = 1;
         loadLeaderboard();
     }

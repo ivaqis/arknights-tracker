@@ -73,8 +73,8 @@ export class WarEchoesLeaderboardSearcher {
         });
     }
 
-    public async findPublicRuns(dungeonId: string, serverId: string | null, sortField: WarEchoesLeaderboardSortField, sortOrder: SortOrder, filters: MonumentFilters, take?: number, skip?: number): Promise<WarEchoesLeaderboardRecord[]> {
-        const records = await this._database.warEchoesLeaderboard.findByDungeonIdIncludeGameProfileAndUser(dungeonId, true, serverId, sortField, sortOrder, filters, take, skip);
+    public async findPublicRuns(dungeonId: string, serverId: string | null, sortField: WarEchoesLeaderboardSortField, sortOrder: SortOrder, filters: MonumentFilters, take?: number, skip?: number, groupId?: string): Promise<WarEchoesLeaderboardRecord[]> {
+        const records = await this._database.warEchoesLeaderboard.findByDungeonIdIncludeGameProfileAndUser(dungeonId, true, serverId, sortField, sortOrder, filters, take, skip, groupId);
 
         return records.map(record => {
             const profile = {
@@ -97,7 +97,7 @@ export class WarEchoesLeaderboardSearcher {
         return await this._database.warEchoesLeaderboard.countByGroupId(groupId, difficulty, true, serverId, minCount, filters);
     }
 
-    public async countPublicRuns(dungeonId: string, serverId: string | null, filters: MonumentFilters): Promise<number> {
-        return await this._database.warEchoesLeaderboard.countByDungeonId(dungeonId, true, serverId, filters);
+    public async countPublicRuns(dungeonId: string, serverId: string | null, filters: MonumentFilters, groupId?: string): Promise<number> {
+        return await this._database.warEchoesLeaderboard.countByDungeonId(dungeonId, true, serverId, filters, groupId);
     }
 }

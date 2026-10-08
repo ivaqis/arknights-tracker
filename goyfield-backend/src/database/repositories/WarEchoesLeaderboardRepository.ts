@@ -40,8 +40,8 @@ export class WarEchoesLeaderboardRepository extends Repository {
         return this._warEchoesTable.findIncludeGameProfileAndUser(id);
     }
 
-    public async findByGameUid(gameUid: string, dungeonId?: string): Promise<UserWarEchoesLeaderboardRecord[]> {
-        return this._warEchoesTable.findByGameUid(gameUid, dungeonId);
+    public async findByGameUid(gameUid: string, dungeonId?: string, groupId?: string): Promise<UserWarEchoesLeaderboardRecord[]> {
+        return this._warEchoesTable.findByGameUid(gameUid, dungeonId, groupId);
     }
 
     public async findByDungeonId(dungeonId: string): Promise<UserWarEchoesLeaderboardRecord[]> {
@@ -71,13 +71,14 @@ export class WarEchoesLeaderboardRepository extends Repository {
                                                           sortOrder: SortOrder,
                                                           filters: MonumentFilters,
                                                           take?: number,
-                                                          skip?: number
+                                                          skip?: number,
+                                                          groupId?: string
     ): Promise<{
         record: UserWarEchoesLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
-        const ids = await this._warEchoesTable.findIdsByDungeonId(dungeonId, publicOnly, serverId, sortField, sortOrder, filters, take, skip);
+        const ids = await this._warEchoesTable.findIdsByDungeonId(dungeonId, publicOnly, serverId, sortField, sortOrder, filters, take, skip, groupId);
 
         return await this._warEchoesTable.findManyIncludeGameProfileAndUser(ids);
     }
@@ -108,8 +109,8 @@ export class WarEchoesLeaderboardRepository extends Repository {
         return this._warEchoesTable.countByGroupId(groupId, difficulty, publicOnly, serverId, minCount, filters);
     }
 
-    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
-        return this._warEchoesTable.countByDungeonId(dungeonId, publicOnly, serverId, filters);
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters, groupId?: string): Promise<number> {
+        return this._warEchoesTable.countByDungeonId(dungeonId, publicOnly, serverId, filters, groupId);
     }
 
     public async create(gameUid: string, data: WarEchoesRecord): Promise<UserWarEchoesLeaderboardRecord> {
@@ -133,8 +134,8 @@ export class WarEchoesLeaderboardRepository extends Repository {
         return this._warEchoesTable.delete(id);
     }
 
-    public async deleteByGameUid(gameUid: string, dungeonId?: string): Promise<void> {
-        return this._warEchoesTable.deleteByGameUid(gameUid, dungeonId);
+    public async deleteByGameUid(gameUid: string, dungeonId?: string, groupId?: string): Promise<void> {
+        return this._warEchoesTable.deleteByGameUid(gameUid, dungeonId, groupId);
     }
 
     public async findCharactersByRecordId(recordId: string, charId?: string): Promise<UserWarEchoesCharacterRecord[]> {
@@ -145,16 +146,16 @@ export class WarEchoesLeaderboardRepository extends Repository {
         return this._characterTable.findByUserGroupId(userGroupId);
     }
 
-    public async getCharactersUsageByDungeonId(dungeonId: string): Promise<Amount[]> {
-        return this._characterTable.getCharactersUsageByDungeonId(dungeonId);
+    public async getCharactersUsageByDungeonId(dungeonId: string, groupId?: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersUsageByDungeonId(dungeonId, groupId);
     }
 
     public async getCharactersUsageByGroupId(groupId: string, difficulty: string): Promise<Amount[]> {
         return this._characterTable.getCharactersUsageByGroupId(groupId, difficulty);
     }
 
-    public async getCharactersNumberInRecordByDungeonId(dungeonId: string): Promise<Amount[]> {
-        return this._characterTable.getCharactersNumberInRecordByDungeonId(dungeonId);
+    public async getCharactersNumberInRecordByDungeonId(dungeonId: string, groupId?: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersNumberInRecordByDungeonId(dungeonId, groupId);
     }
 
     public async getCharactersNumberInRecordByGroupId(groupId: string, difficulty: string): Promise<Amount[]> {
