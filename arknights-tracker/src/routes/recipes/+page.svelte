@@ -1,3 +1,17 @@
+<script module lang="ts">
+    import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
+    import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
+    import { getItemFilters } from "$lib/stores/filterStore";
+    import { getMapByList } from "$lib/utils/collectionUtils";
+
+    const itemEventMap = getEventByItemIdMap(factoryEventStorage.list);
+    const itemFilters = getItemFilters(itemEventMap);
+
+    function getEventByItemIdMap(events: Iterable<IFactoryEvent>): Map<string, IFactoryEvent> {
+        return getMapByList(events, event => event.eventItemIds);
+    }
+</script>
+
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator";
@@ -9,7 +23,6 @@
     import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
     import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator";
     import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain";
-    import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
     import type { IMachineCraftFactory } from "$lib/classes/factories/recipes/IMachineCraftFactory";
     import type { IManualCraftFactory } from "$lib/classes/factories/recipes/IManualCraftFactory";
     import { MachineCraftFactory } from "$lib/classes/factories/recipes/MachineCraftFactory";
@@ -75,7 +88,6 @@
     import { hubCraftDataStorage } from "$lib/dataStorages/crafts/hubCraftDataStorage";
     import { machineCraftDataStorage } from "$lib/dataStorages/crafts/machineCraftDataStorage";
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
-    import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { t } from "$lib/i18n";
@@ -84,17 +96,26 @@
     import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
     import {
         getDefaultItemSortParams,
-        itemFilters,
         itemGroupMode,
         itemGroupOption,
         itemSearch,
         itemSortParams
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
-    import { getMapByList } from "$lib/utils/collectionUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
+
+    const defaultSortParams = getDefaultItemSortParams();
+
+    $: {
+        let isSortParamsCorrect = $itemSortParams ? checkSortParams($itemSortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect item sort params");
+            resetSort();
+        }
+    }
 
     let selectedItem: IItem | null;
 
@@ -104,8 +125,6 @@
         .map(itemId => itemStorage.byGameId.get(itemId))
         .filter(item => item !== undefined)
         .toArray();
-
-    const itemEventMap = getEventByItemIdMap(factoryEventStorage.list);
 
     const rarityFilter: IFilterSelector<IItem, Rarity> = itemFilters[ItemFieldComparatorName.RARITY];
     const eventFilter: IFilterSelector<IItem, string | "nonEvent"> = itemFilters[ItemFieldComparatorName.EVENT];
@@ -213,10 +232,6 @@
         }
     }
 
-    function getEventByItemIdMap(events: Iterable<IFactoryEvent>): Map<string, IFactoryEvent> {
-        return getMapByList(events, event => event.eventItemIds);
-    }
-
     function resetSort() {
         $itemSortParams = getDefaultItemSortParams();
     }
@@ -276,22 +291,12 @@
         return set.size === 0;
     }
 
-    const defaultSortParams = getDefaultItemSortParams();
-    $: {
-        let isSortParamsCorrect = $itemSortParams ? checkSortParams($itemSortParams, defaultSortParams) : true;
-
-        if (!isSortParamsCorrect) {
-            console.log("Incorrect item sort params");
-            resetSort();
-        }
-    }
-
     let isFilterActive = false;
-    $: isFilterActive = !rarityFilter.isEmpty
-        || !eventFilter.isEmpty
-        || !groupFilter.isEmpty
-        || !typeFilter.isEmpty
-        || !materialFilter.isEmpty;
+    $: isFilterActive = !$rarityFilter.isEmpty
+        || !$eventFilter.isEmpty
+        || !$groupFilter.isEmpty
+        || !$typeFilter.isEmpty
+        || !$materialFilter.isEmpty;
 
     let groupField: RecipeGroupField;
 
@@ -301,12 +306,12 @@
         groupField = $itemGroupOption;
     }
 
-    const groupRarityComparator = new FieldValueComparator<[Rarity, unknown], Rarity>(([a, b]) => a);
-    const groupEventComparator = new FieldValueComparator<[string, unknown]>(([a, b]) => a);
-    const groupGroupComparator = new FieldValueComparator<[ItemGroup, unknown], ItemGroup>(([a, b]) => a);
-    const groupTypeComparator = new FieldValueComparator<[ItemType, unknown], ItemType>(([a, b]) => a);
-    const groupMaterialComparator = new FieldValueComparator<[ItemMaterial | "nonMaterial", unknown], ItemMaterial | "nonMaterial">(([a, b]) => a);
-    const groupLocaleComparator = new LocaleComparator<[string, unknown]>(([a, b]) => a, normalizeLocale($currentLocale));
+    const groupRarityComparator = new FieldValueComparator<[Rarity, unknown], Rarity>(([a]) => a);
+    const groupEventComparator = new FieldValueComparator<[string, unknown]>(([a]) => a);
+    const groupGroupComparator = new FieldValueComparator<[ItemGroup, unknown], ItemGroup>(([a]) => a);
+    const groupTypeComparator = new FieldValueComparator<[ItemType, unknown], ItemType>(([a]) => a);
+    const groupMaterialComparator = new FieldValueComparator<[ItemMaterial | "nonMaterial", unknown], ItemMaterial | "nonMaterial">(([a]) => a);
+    const groupLocaleComparator = new LocaleComparator<[string, unknown]>(([a]) => a, normalizeLocale($currentLocale));
 
     $: {
         groupRarityComparator.setValueOrder($itemSortParams.sortFieldParams.rarity);

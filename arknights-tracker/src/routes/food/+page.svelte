@@ -1,3 +1,10 @@
+<script module lang="ts">
+    import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
+    import { getFoodFilters } from "$lib/stores/filterStore";
+
+    const foodFilters: FoodFilters = getFoodFilters();
+</script>
+
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { FieldManyValuesComparator } from "$lib/classes/comparators/FieldManyValuesComparator";
@@ -39,7 +46,7 @@
     import { t } from "$lib/i18n";
     import type { FoodFilterGroup, FoodFilterValue } from "$lib/stores/filters/food/FoodFilterValueMap";
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
-    import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
+    import { foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
     import { getMapByList, isListItemsEqual } from "$lib/utils/collectionUtils";
     import { onMount } from "svelte";

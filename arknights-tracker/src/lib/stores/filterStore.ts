@@ -327,9 +327,7 @@ export function getDefaultItemSortParams(): RecipeSortParams {
     };
 }
 
-export function getItemFilters(events: Iterable<IFactoryEvent>): RecipeFilters {
-    const eventMap = getMapByList(events, event => event.eventItemIds);
-
+export function getItemFilters(eventMap: Map<string, IFactoryEvent>): RecipeFilters {
     return {
         rarity: new FilterSelector(get(itemSortParams).sortFieldParams.rarity, item => item.rarity),
         itemGroups: new FilterSelector(get(itemSortParams).sortFieldParams.itemGroups, item => item.groupId),
@@ -423,10 +421,8 @@ export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
 export const itemGroupOption: Writable<RecipeGroupOption> = createPersistentStore("itemGroupOption", "inherit_sort");
-export const itemFilters: RecipeFilters = getItemFilters(factoryEventStorage.list);
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
-export const foodFilters: FoodFilters = getFoodFilters();
 export const foodSearch: Writable<string> = writable("");
 
 export const recordsExcludedBannerTypes: Writable<string[]> = createPersistentStore("recordsExcludedBannerTypes", []);
