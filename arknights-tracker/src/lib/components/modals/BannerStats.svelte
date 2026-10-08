@@ -2,7 +2,7 @@
     import { t } from "$lib/i18n";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";

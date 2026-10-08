@@ -16,7 +16,7 @@
     recordsShowTotalCost
   } from "$lib/stores/filterStore";
   import { addNotification } from "$lib/stores/index.js";
-  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { pullData } from "$lib/stores/pulls.js";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { onDestroy } from "svelte";

@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale.js";
+    import { currentLocale } from "$lib/stores/locale";
     import { fade } from "svelte/transition";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";

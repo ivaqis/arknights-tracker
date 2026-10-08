@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { browser } from "$app/environment";
     import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale.js";
+    import { currentLocale } from "$lib/stores/locale";
     import { fetchLeaderboard, fetchLeaderboardRun, getAvatarUrl } from "$lib/api.js";
     import { user } from "$lib/stores/cloudStore.js";
     import { addNotification } from "$lib/stores/notifications.js";

@@ -1,7 +1,7 @@
 <script>
     import { createEventDispatcher } from "svelte";
     import { t } from "$lib/i18n";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { fade } from "svelte/transition";
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";

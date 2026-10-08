@@ -4,7 +4,7 @@
     import { bannerTypes } from "$lib/data/bannerTypes.js";
     import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { pullData } from "$lib/stores/pulls.js";
     import { getWeaponCategory } from "$lib/utils/importUtils";
     import Button from "../Button.svelte";
