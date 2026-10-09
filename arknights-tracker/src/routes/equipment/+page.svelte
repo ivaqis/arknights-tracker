@@ -277,14 +277,6 @@
     let allFilters = getEquipmentFilters();
     allFilters.pack = availablePacks;
 
-    // onMount(() => {
-    //     const allEquip = Object.values(equipment);
-    //     const packs = [...new Set(allEquip.map(e => e.pack).filter(Boolean))];
-    //     const stats = [...new Set(allEquip.flatMap(e => e.displayAttr?.map(a => a.attrType)).filter(Boolean))];
-    //     console.log("const hardcodedPacks =", JSON.stringify(packs));
-    //     console.log("const hardcodedStats =", JSON.stringify(stats));
-    // });
-
     $: filteredEquipment = getFilteredItems(allEquipment, isNumericActive ? $statsNumericChain : $statsAnyChain, $comparatorChain, sortDirection === "desc" ? 1 : -1);
 
     function getFilteredItems(allItems, filter, comparator, reverseMultiplier) {
@@ -295,22 +287,14 @@
         return filteredItems;
     }
 
-    const mainStats = new Set([
-        "Str",
-        "Agi",
-        "Wisd",
-        "Will",
-        "Main",
-        "Sub"
-    ]);
-
     function getPartTypeId(partType) {
         switch (partType) {
             case 0: return "body";
             case 1: return "hand";
             case 2: return "edc";
-            default: return "";
         }
+
+        throw new Error(`Unknown part type: ${partType}`);
     }
 
     let isFilterActive = false;
@@ -367,14 +351,9 @@
             case "localeName":
                 return groupPreservingOrderAndName(filteredList, item => $t(`equipment.${item.id}`).at(0).toUpperCase(), key => key);
         }
-    }
 
-    // $: groupedEquipment = filteredEquipment.reduce((groups, eq) => {
-    //     const packKey = eq.pack || "none";
-    //     if (!groups[packKey]) groups[packKey] = [];
-    //     groups[packKey].push(eq);
-    //     return groups;
-    // }, {});
+        throw new Error(`Unknown group field: ${field}`);
+    }
 
     $: groupedArray = groupEquip(filteredEquipment, groupField);
 
