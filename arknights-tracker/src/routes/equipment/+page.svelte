@@ -20,6 +20,7 @@
     import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain.ts";
     import { SearchFilter } from "$lib/classes/filters/SearchFilter.ts";
     import EquipmentSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EquipmentSortDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
@@ -328,6 +329,26 @@
         excludeThirdAttrChain.endManual();
 
         selectedAttrType = "any"
+    }
+
+    const groupOptions = [
+        "inherit_sort",
+        "rarity",
+        "partType",
+        "pack",
+        "level",
+        "localeName",
+    ];
+
+    function getGroupOptionTitle(option) {
+        switch (option) {
+            case "partType":
+                return $t("systemNames.equipmentType");
+            case "localeName":
+                return $t("sort.localeNameTitle");
+        }
+
+        return $t(`sort.${option}`);
     }
 
     let groupField;
@@ -660,7 +681,7 @@
                 showSortDirectionButton={true}
                 showFilterDropdownButton={true}
                 showSearchInput={true}
-                showGroupButton={true}
+                showGroupDropdownButton={true}
                 showExportExcelButton={true}
                 isFilterActive={isFilterActive}
                 onFilterReset={resetFilters}
@@ -682,6 +703,14 @@
                     onFilterReset={resetFilters}
                     bind:selectedAttrType={selectedAttrType}
                 />
+
+                <SortSelectorDropdown
+                    slot="groupDropdown"
+                    optionList={groupOptions}
+                    getLocaleFunc={getGroupOptionTitle}
+                    bind:selectedOption={$equipmentGroupOption}
+                />
+
             </DataToolbar>
         </div>
 

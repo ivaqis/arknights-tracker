@@ -69,6 +69,7 @@
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import RecipesFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/RecipesFilterDropdown.svelte";
     import RecipesSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/RecipesSortDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import BuildingRecipeGroup from "$lib/components/recipes/formulas/BuildingRecipeGroup.svelte";
     import CrafterModeRecipeGroup from "$lib/components/recipes/formulas/CrafterModeRecipeGroup.svelte";
@@ -92,7 +93,7 @@
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { t } from "$lib/i18n";
     import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
-    import type { RecipeGroupField } from "$lib/stores/filters/recipes/RecipeGroupField";
+    import type { RecipeGroupField, RecipeGroupOption } from "$lib/stores/filters/recipes/RecipeGroupField";
     import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
     import {
         getDefaultItemSortParams,
@@ -295,6 +296,33 @@
         || !$groupFilter.isEmpty
         || !$typeFilter.isEmpty
         || !$materialFilter.isEmpty;
+
+    const groupOptions: readonly RecipeGroupOption[] = [
+        "inherit_sort",
+        "rarity",
+        "events",
+        "itemGroups",
+        "itemTypes",
+        "itemMaterials",
+        "localeName",
+    ] as const;
+
+    function getGroupOptionTitle(option: RecipeGroupOption) {
+        switch (option) {
+            case "itemGroups":
+                return $t("sort.itemGroup");
+            case "events":
+                return $t("sort.eventsTitle");
+            case "itemTypes":
+                return $t("sort.itemTypesTitle");
+            case "itemMaterials":
+                return $t("sort.itemMaterialsTitle");
+            case "localeName":
+                return $t("sort.localeNameTitle");
+            default:
+                return $t(`sort.${option}`);
+        }
+    }
 
     let groupField: RecipeGroupField;
 
@@ -505,7 +533,7 @@
                 showSortDirectionButton={true}
                 showFilterDropdownButton={true}
                 showSearchInput={true}
-                showGroupButton={true}
+                showGroupDropdownButton={true}
                 isFilterActive={isFilterActive}
                 onFilterReset={resetFilters}
                 bind:isGrouped={$itemGroupMode}
@@ -523,6 +551,13 @@
                     slot="filterDropdown"
                     filters={itemFilters}
                     onFilterReset={resetFilters}
+                />
+
+                <SortSelectorDropdown
+                    slot="groupDropdown"
+                    optionList={groupOptions}
+                    getLocaleFunc={getGroupOptionTitle}
+                    bind:selectedOption={$itemGroupOption}
                 />
 
             </DataToolbar>

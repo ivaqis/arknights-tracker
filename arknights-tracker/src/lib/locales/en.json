@@ -665,6 +665,8 @@
     "attribute3": "Attribute 3",
     "title": "Sort",
     "filters": "Filters",
+    "grouping": "Grouping",
+    "inherit_sort": "Inherit sort",
     "skillMaterials": "Skill Materials",
     "any": "[Any]",
     "stats": "Attributes",
