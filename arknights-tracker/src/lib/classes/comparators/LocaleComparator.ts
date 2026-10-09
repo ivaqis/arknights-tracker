@@ -1,9 +1,11 @@
+import { AReactiveComparator } from "$lib/classes/comparators/AReactiveComparator";
 import type { ILocaleComparator } from "$lib/classes/comparators/ILocaleComparator";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
-import type { Subscriber, Unsubscriber } from "svelte/store";
 
-export class LocaleComparator<T> implements ILocaleComparator<T> {
-    private readonly _subscribers: Set<Subscriber<this>> = new Set();
+export class LocaleComparator<T>
+    extends AReactiveComparator<T>
+    implements ILocaleComparator<T> {
+
     private readonly _getStringFn: (value: T) => string;
     private readonly _options: Intl.CollatorOptions;
 
@@ -12,6 +14,8 @@ export class LocaleComparator<T> implements ILocaleComparator<T> {
     private _isReversed: boolean = false;
 
     public constructor(getStringFn: (value: T) => string, locale: string = "en-US", options?: Intl.CollatorOptions) {
+        super();
+
         this._getStringFn = getStringFn;
         this._locale = locale;
         this._options = options ?? {
@@ -66,22 +70,6 @@ export class LocaleComparator<T> implements ILocaleComparator<T> {
         const result = this._collator.compare(strA, strB);
 
         return this._isReversed ? -result : result;
-    }
-
-    public subscribe(run: Subscriber<this>): Unsubscriber {
-        run(this);
-
-        this._subscribers.add(run);
-
-        return () => {
-            this._subscribers.delete(run);
-        }
-    }
-
-    public notify(): void {
-        for (const run of [...this._subscribers]) {
-            run(this);
-        }
     }
 
     private createCollator(locale: string): Intl.Collator {

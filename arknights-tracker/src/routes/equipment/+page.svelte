@@ -1,14 +1,25 @@
 <script module>
+    import { getEquipmentFilters2 } from "$lib/stores/filterStore.ts";
+
     let savedDisplayLimit = 4;
     let savedFlatDisplayLimit = 60;
     let savedSortField = "rarity";
     let savedSortDirection = "desc";
     let savedSelectedAttrType = "any";
+
+    const equipFilters = getEquipmentFilters2();
 </script>
 
 <script>
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";
+    import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator.ts";
+    import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator.ts";
+    import { NumberComparator } from "$lib/classes/comparators/NumberComparator.ts";
+    import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain.ts";
+    import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain.ts";
+    import { SearchFilter } from "$lib/classes/filters/SearchFilter.ts";
+    import EquipmentSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EquipmentSortDropdown.svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
@@ -16,26 +27,63 @@
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EquipmentFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EquipmentFilterDropdown.svelte";
-    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import { equipment } from "$lib/data/items/equipment.js";
     import { t } from "$lib/i18n";
-    import { accountStore } from "$lib/stores/accounts";
     import {
         equipmentFilters,
-        equipmentGroupMode,
-        equipmentSearch,
+        equipmentGroupMode, equipmentGroupOption,
+        equipmentSearch, equipmentSortParams, getAllEquipmentStatsGrouped, getDefaultEquipmentSortParams,
         getEquipmentFilters,
-        getEquipmentSortOptions
     } from "$lib/stores/filterStore";
     import { currentLocale } from "$lib/stores/locale";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
+    import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
     import { onDestroy, onMount } from "svelte";
 
     $: selectedFilters = $equipmentFilters;
     $: searchQuery = $equipmentSearch;
     $: isGrouped = $equipmentGroupMode;
+
+    const defaultSortParams = getDefaultEquipmentSortParams();
+
+    $: {
+        let isSortParamsCorrect = $equipmentSortParams ? checkSortParams($equipmentSortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect equip sort params");
+
+            resetSort();
+        }
+    }
+
+    function checkSortParams(current, defaultParams) {
+        if (!current || !current.sortFieldParams || !current.sortFieldOrder) {
+            return false;
+        }
+
+        const fieldOrder = isListItemsEqual(current.sortFieldOrder, defaultParams.sortFieldOrder);
+
+        if (!fieldOrder) {
+            return false;
+        }
+
+        const { locale, level, ...rest } = defaultParams.sortFieldParams;
+        const keys = Object.keys(rest);
+
+        for (const key of keys) {
+            if (!(key in current.sortFieldParams)) {
+                return false;
+            }
+
+            const check = isListItemsEqual(current.sortFieldParams[key], defaultParams.sortFieldParams[key]);
+
+            if (!check) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 
     const allEquipment = Object.entries(equipment || {}).map(([id, data]) => ({
         id,
@@ -99,6 +147,121 @@
         }
     }
 
+    const allStats = getAllEquipmentStatsGrouped();
+
+    const rarityFilter = equipFilters.rarity;
+    const partTypeFilter = equipFilters.partType;
+    const packFilter = equipFilters.pack;
+    const statsAnyFilter = equipFilters.stats_any;
+    const stats1Filter = equipFilters.stats_1;
+    const stats2Filter = equipFilters.stats_2;
+    const stats3Filter = equipFilters.stats_3;
+
+    const nameFilter = new SearchFilter(item => $t(`equipment.${item.id}`));
+    const idFilter = new SearchFilter(item => item.id);
+
+    let isNumericActive;
+
+    const searchChain = new ReactiveFilterChain()
+        .or(nameFilter)
+        .or(idFilter);
+
+    const noDynamicChain = new ReactiveFilterChain()
+        .and(searchChain)
+        .and(rarityFilter)
+        .and(partTypeFilter)
+        .and(packFilter);
+
+    const excludeFirstAttrChain = new ReactiveFilterChain()
+        .and(stats2Filter)
+        .and(stats3Filter);
+    const excludeSecondAttrChain = new ReactiveFilterChain()
+        .and(stats1Filter)
+        .and(stats3Filter);
+    const excludeThirdAttrChain = new ReactiveFilterChain()
+        .and(stats1Filter)
+        .and(stats2Filter);
+
+    const statsAnyChain = new ReactiveFilterChain()
+        .and(noDynamicChain)
+        .and(statsAnyFilter);
+    const statsNumericChain = new ReactiveFilterChain()
+        .and(noDynamicChain)
+        .and(stats1Filter)
+        .and(stats2Filter)
+        .and(stats3Filter);
+
+    $: isNumericActive = !$stats1Filter.isEmpty || !$stats2Filter.isEmpty || !$stats3Filter.isEmpty;
+
+    $: {
+        searchChain.beginManual();
+
+        nameFilter.searchString = $equipmentSearch;
+        idFilter.searchString = $equipmentSearch;
+
+        searchChain.endManual();
+    }
+
+    $: {
+        noDynamicChain.beginManual();
+
+        rarityFilter.paramList = $equipmentSortParams.sortFieldParams.rarity;
+        partTypeFilter.paramList = $equipmentSortParams.sortFieldParams.partType;
+        packFilter.paramList = $equipmentSortParams.sortFieldParams.pack;
+
+        noDynamicChain.endManual();
+    }
+
+    $: stats1Filter.groups = getAvailableStats(allEquipment, allStats, $excludeFirstAttrChain, item => item.displayAttr.length >= 3 ? item.displayAttr[1].attrType : "NoAttr");
+    $: stats2Filter.groups = getAvailableStats(allEquipment, allStats, $excludeSecondAttrChain, item => item.displayAttr.length >= 4 ? item.displayAttr[2].attrType : "NoAttr");
+    $: stats3Filter.groups = getAvailableStats(allEquipment, allStats, $excludeThirdAttrChain, item => item.displayAttr.length >= 2 ? item.displayAttr.at(-1).attrType : "NoAttr");
+
+    function getAvailableStats(allItems, allGroups, filter, getStatFn) {
+        const filteredItems = allItems.filter(item => filter.satisfies(item));
+
+        const map = Map.groupBy(filteredItems, item => getStatFn(item));
+
+        return allGroups
+            .map(group => group.filter(attr => map.has(attr)))
+            .filter(group => group.length > 0);
+    }
+
+    const rarityComparator = new FieldValueComparator(item => item.rarity);
+    const partTypeComparator = new FieldValueComparator(item => item.partType === 0 ? "body" : item.partType === 1 ? "hand" : "edc");
+    const packComparator = new FieldValueComparator(item => item.pack || "none");
+    const levelComparator = new NumberComparator(item => item.level, $equipmentSortParams.sortFieldParams.level);
+    const nameComparator = new LocaleComparator(item => $t(`equipment.${item.id}`));
+
+    const comparatorChain = new ReactiveNamedComparatorChain(getComparator);
+
+    $: {
+        comparatorChain.beginManual();
+
+        comparatorChain.setOrderAliased($equipmentSortParams.sortFieldOrder);
+        rarityComparator.setValueOrder($equipmentSortParams.sortFieldParams.rarity);
+        partTypeComparator.setValueOrder($equipmentSortParams.sortFieldParams.partType);
+        packComparator.setValueOrder($equipmentSortParams.sortFieldParams.pack);
+        levelComparator.direction = $equipmentSortParams.sortFieldParams.level;
+        nameComparator.order = $equipmentSortParams.sortFieldParams.localeName;
+
+        comparatorChain.endManual();
+    }
+
+    function getComparator(name) {
+        switch (name) {
+            case "rarity":
+                return rarityComparator;
+            case "partType":
+                return partTypeComparator;
+            case "pack":
+                return packComparator;
+            case "level":
+                return levelComparator;
+            case "localeName":
+                return nameComparator;
+        }
+    }
+
     let sortField = savedSortField;
     let sortDirection = savedSortDirection;
     let searchQuery = "";
@@ -122,131 +285,14 @@
     //     console.log("const hardcodedStats =", JSON.stringify(stats));
     // });
 
-    const { selectedId } = accountStore;
+    $: filteredEquipment = getFilteredItems(allEquipment, isNumericActive ? $statsNumericChain : $statsAnyChain, $comparatorChain, sortDirection === "desc" ? 1 : -1);
 
-    $: filteredEquipment = (() => {
-        const baseFiltered = [...allEquipment].filter((eq) => {
-            if (showOwnedOnly) {
-                const activeId = $selectedId;
-                const manualPots = $manualPotentials[activeId] || {};
-                const finalPot =
-                    manualPots[eq.id] !== undefined ? manualPots[eq.id] : -1;
-                if (finalPot < 0) return false;
-            }
+    function getFilteredItems(allItems, filter, comparator, reverseMultiplier) {
+        const filteredItems = allItems.filter(item => filter.satisfies(item));
 
-            const locName = ($t(`equipment.${eq.id}`) || "").toLowerCase();
-            const query = searchQuery.toLowerCase().trim();
-            const idName = (eq.id || "").toLowerCase();
-            const matchesSearch =
-                !query || locName.includes(query) || idName.includes(query);
-            if (!matchesSearch) return false;
+        filteredItems.sort((a, b) => comparator.compare(a, b) * reverseMultiplier);
 
-            const itemRarity = eq.rarity || 1;
-            const matchesRarity = filterCheck(selectedFilters.rarity, itemRarity);
-
-            const itemPartType = eq.partType !== undefined ? eq.partType : 0;
-            const matchesPart = filterCheck(selectedFilters.partType, getPartTypeId(itemPartType));
-
-            const itemPack = eq.pack || "none";
-            const matchesPack = filterCheck(selectedFilters.pack, itemPack);
-
-            const allItemAttributes = [
-                ...(eq.displayAttr || []),
-            ].map((a) => String(a.attrType || "").toLowerCase());
-
-            const passesAny = allItemAttributes.some((stat) => filterCheckLowerCase(selectedFilters.stats_any, stat));
-
-            if (!passesAny) return false;
-
-            const passesMain = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
-            const passesSub = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
-            const passesSpecial = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
-
-            if (!(passesMain && passesSub && passesSpecial)) {
-                return false;
-            }
-
-            return matchesRarity && matchesPart && matchesPack;
-        });
-
-        const sortLogic = (a, b) => {
-            let diff = 0;
-            if (sortField === "rarity") {
-                const rarityA = a.rarity !== undefined ? a.rarity : 1;
-                const rarityB = b.rarity !== undefined ? b.rarity : 1;
-                diff = rarityA - rarityB;
-            } else if (sortField === "level") {
-                const lvlA = a.level !== undefined ? a.level : 1;
-                const lvlB = b.level !== undefined ? b.level : 1;
-                diff = lvlA - lvlB;
-            } else if (sortField === "partType") {
-                const partA = a.partType !== undefined ? a.partType : 0;
-                const partB = b.partType !== undefined ? b.partType : 0;
-                diff = partA - partB;
-            } else if (sortField === "pack") {
-                const packA = String(a.pack || "none").toLowerCase();
-                const packB = String(b.pack || "none").toLowerCase();
-                diff = packA.localeCompare(packB);
-            } else {
-                let valA = a[sortField] || "";
-                let valB = b[sortField] || "";
-                diff = String(valA).localeCompare(String(valB));
-            }
-
-            if (diff === 0) {
-                const partA = a.partType !== undefined ? a.partType : 0;
-                const partB = b.partType !== undefined ? b.partType : 0;
-                diff = partA - partB;
-
-                if (diff === 0) {
-                    diff = (a.id || "").localeCompare(b.id || "");
-                }
-                return diff;
-            }
-
-            return sortDirection === "asc" ? diff : -diff;
-        };
-
-        return baseFiltered.sort(sortLogic);
-    })();
-
-    $: equipmentFilteredByAttr12 = allEquipment.filter((eq) => {
-        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
-
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
-
-        return passesAttr1 && passesAttr2;
-    });
-
-    $: equipmentFilteredByAttr23 = allEquipment.filter((eq) => {
-        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
-
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
-
-        return passesAttr2 && passesAttr3;
-    });
-
-    $: equipmentFilteredByAttr13 = allEquipment.filter((eq) => {
-        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
-
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
-
-        return passesAttr1 && passesAttr3;
-    });
-
-    $: if (equipmentFilteredByAttr12 && equipmentFilteredByAttr23 && equipmentFilteredByAttr13) {
-        let attrFilters1 = getEquipmentAttrSet(equipmentFilteredByAttr23, 1);
-        let attrFilters2 = getEquipmentAttrSet(equipmentFilteredByAttr13, 2);
-        let attrFilters3 = getEquipmentAttrSet(equipmentFilteredByAttr12, 3);
-
-        allFilters.stats_1 = getFilteredAttrGroupList(allFilters.stats, attrFilters1);
-        allFilters.stats_2 = getFilteredAttrGroupList(allFilters.stats, attrFilters2);
-        allFilters.stats_3 = getFilteredAttrGroupList(allFilters.stats, attrFilters3);
-
-        forceUpdateFilterList();
+        return filteredItems;
     }
 
     const mainStats = new Set([
@@ -258,79 +304,6 @@
         "Sub"
     ]);
 
-    function getMainStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType) && Number.isInteger(a.values[0]));
-
-        if (candidates.length > 2) {
-            console.log(candidates);
-            throw new Error(`2 or less candidates expected: ${candidates.length}`);
-        }
-
-        candidates.sort((a, b) => b.values[0] - a.values[0]);
-
-        return candidates[0] ?? null;
-    }
-
-    function getSubStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType) && Number.isInteger(a.values[0]));
-
-        if (candidates.length > 2) {
-            console.log(candidates);
-            throw new Error(`2 or less candidates expected: ${candidates.length}`);
-        }
-
-        candidates.sort((a, b) => b.values[0] - a.values[0]);
-
-        return candidates[1] ?? null;
-    }
-
-    function getSpecialStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => (!mainStats.has(a.attrType) || a.values.some(v => !Number.isInteger(v))) && a.attrType !== "Def");
-
-        if (candidates.length > 1) {
-            console.log(candidates);
-            throw new Error(`Only 1 candidate expected: ${candidates.length}`)
-        }
-
-        return candidates[0] ?? null;
-    }
-
-    function getFilteredAttrGroupList(allAttrGroupList, attrSet) {
-        let groupList = [];
-
-        for (let group of allAttrGroupList) {
-            let list = [];
-
-            for (let attr of group) {
-
-                if (attrSet.has(attr)) {
-                    list.push(attr);
-                }
-            }
-
-            groupList.push(list);
-        }
-
-        return groupList;
-    }
-
-    function getEquipmentAttrSet(equipmentList, attrIndex) {
-        let set = new Set();
-
-        for (let eq of equipmentList) {
-            let attr = attrIndex === 1 ? getMainStat(eq.displayAttr)?.attrType ?? "NoAttr"
-                : attrIndex === 2 ? getSubStat(eq.displayAttr)?.attrType ?? "NoAttr"
-                : attrIndex === 3 ? getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr"
-                : null;
-
-            if (attr) {
-                set.add(attr);
-            }
-        }
-
-        return set;
-    }
-
     function getPartTypeId(partType) {
         switch (partType) {
             case 0: return "body";
@@ -340,44 +313,70 @@
         }
     }
 
-    function forceUpdateFilterList() {
-        allFilters = allFilters;
-    }
-
     let isFilterActive = false;
     $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0);
 
+    function resetSort() {
+        $equipmentSortParams = getDefaultEquipmentSortParams();
+    }
+
     function resetFilters() {
-        $equipmentFilters = {};
+        noDynamicChain.beginManual();
+        statsNumericChain.beginManual();
+        statsAnyChain.beginManual();
+        excludeFirstAttrChain.beginManual();
+        excludeSecondAttrChain.beginManual();
+        excludeThirdAttrChain.beginManual();
+
+        rarityFilter.clear();
+        partTypeFilter.clear();
+        packFilter.clear();
+        statsAnyFilter.clear();
+        stats1Filter.clear();
+        stats2Filter.clear();
+        stats3Filter.clear();
+
+        noDynamicChain.endManual();
+        statsNumericChain.endManual();
+        statsAnyChain.endManual();
+        excludeFirstAttrChain.endManual();
+        excludeSecondAttrChain.endManual();
+        excludeThirdAttrChain.endManual();
+
         selectedAttrType = "any"
     }
 
-    $: groupedEquipment = filteredEquipment.reduce((groups, eq) => {
-        const packKey = eq.pack || "none";
-        if (!groups[packKey]) groups[packKey] = [];
-        groups[packKey].push(eq);
-        return groups;
-    }, {});
+    let groupField;
 
-    $: groupedArray = Object.entries(groupedEquipment)
-        .map(([pack, items]) => ({
-            pack,
-            items,
-            maxRarity: Math.max(...items.map((i) => i.rarity || 1)),
-        }))
-        .sort((a, b) => {
-            const isNoneA = a.pack === "none" || a.pack === "";
-            const isNoneB = b.pack === "none" || b.pack === "";
+    $: if ($equipmentGroupOption === "inherit_sort") {
+        groupField = $equipmentSortParams.sortFieldOrder[0];
+    } else {
+        groupField = $equipmentGroupOption;
+    }
 
-            if (isNoneA && !isNoneB) return 1;
-            if (!isNoneA && isNoneB) return -1;
-            if (sortDirection === "desc") {
-                return (
-                    b.maxRarity - a.maxRarity || a.pack.localeCompare(b.pack)
-                );
-            }
-            return a.maxRarity - b.maxRarity || a.pack.localeCompare(b.pack);
-        });
+    function groupEquip(filteredList, field) {
+        switch (field) {
+            case "rarity":
+                return groupPreservingOrderAndName(filteredList, item => item.rarity, key => String(key));
+            case "partType":
+                return groupPreservingOrderAndName(filteredList, item => getPartTypeId(item.partType), key => $t(`equipmentTypes.${key}`));
+            case "pack":
+                return groupPreservingOrderAndName(filteredList, item => item.pack || "none", key => $t(`packs.${key}`));
+            case "level":
+                return groupPreservingOrderAndName(filteredList, item => item.level, key => String(key));
+            case "localeName":
+                return groupPreservingOrderAndName(filteredList, item => $t(`equipment.${item.id}`).at(0).toUpperCase(), key => key);
+        }
+    }
+
+    // $: groupedEquipment = filteredEquipment.reduce((groups, eq) => {
+    //     const packKey = eq.pack || "none";
+    //     if (!groups[packKey]) groups[packKey] = [];
+    //     groups[packKey].push(eq);
+    //     return groups;
+    // }, {});
+
+    $: groupedArray = groupEquip(filteredEquipment, groupField);
 
     let displayLimit = savedDisplayLimit;
     let flatDisplayLimit = savedFlatDisplayLimit;
@@ -691,16 +690,17 @@
                 bind:isGrouped={$equipmentGroupMode}
                 bind:sortDirection={sortDirection}
             >
-                <SortSelectorDropdown
+
+                <EquipmentSortDropdown
                     slot="sortDropdown"
-                    optionList={getEquipmentSortOptions()}
-                    bind:selectedOption={sortField}
+                    bind:sortParams={$equipmentSortParams}
+                    onSortReset={resetSort}
                 />
 
                 <EquipmentFilterDropdown
                     slot="filterDropdown"
-                    filters={allFilters}
-                    bind:selectedFilters={$equipmentFilters}
+                    filters={equipFilters}
+                    onFilterReset={resetFilters}
                     bind:selectedAttrType={selectedAttrType}
                 />
             </DataToolbar>
@@ -714,14 +714,14 @@
                             <h3
                                 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk"
                             >
-                                {$t(`packs.${group.pack}`) || group.pack}
+                                {group.title}
                             </h3>
                         </div>
 
                         <div
                             class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start"
                         >
-                            {#each group.items as eq (eq.id)}
+                            {#each group.list as eq (eq.id)}
                                 {#if $splitEquipmentView}
                                     <button
                                         tabindex="0"

@@ -1,21 +1,26 @@
 import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
 import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+import { EquipmentComparatorName } from "$lib/classes/comparators/names/EquipmentComparatorName";
 import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
 import { FilterSelector } from "$lib/classes/filters/FilterSelector";
 import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
+import { GroupedFilterSelector } from "$lib/classes/filters/GroupedFilterSelector";
+import { GroupedFilterSelectorMany } from "$lib/classes/filters/GroupedFilterSelectorMany";
 import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
 import { ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
 import { ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
 import { ItemType } from "$lib/classes/gameData/items/ItemType";
 import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
-import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
 import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
 import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
 import type { EnemySortOption } from "$lib/stores/filters/enemies/EnemySortOption";
 import type { EquipmentFilterOptions } from "$lib/stores/filters/equipment/EquipmentFilterOptions";
+import type { EquipmentFilters } from "$lib/stores/filters/equipment/EquipmentFilters";
+import type { EquipmentGroupOption } from "$lib/stores/filters/equipment/EquipmentGroupField";
 import type { EquipmentSelectedFilters } from "$lib/stores/filters/equipment/EquipmentSelectedFilters";
 import type { EquipmentSortOption } from "$lib/stores/filters/equipment/EquipmentSortOption";
+import type { EquipmentSortParams } from "$lib/stores/filters/equipment/EquipmentSortParams";
 import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
 import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
 import type { OperatorFilterOptions } from "$lib/stores/filters/operators/OperatorFilterOptions";
@@ -23,12 +28,10 @@ import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/Oper
 import type { OperatorSortOption } from "$lib/stores/filters/operators/OperatorSortOption";
 import type { RecipeFilters } from "$lib/stores/filters/recipes/RecipeFilters";
 import type { RecipeGroupOption } from "$lib/stores/filters/recipes/RecipeGroupField";
-import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
 import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
 import type { WeaponFilterOptions } from "$lib/stores/filters/weapon/WeaponFilterOptions";
 import type { WeaponSelectedFilters } from "$lib/stores/filters/weapon/WeaponSelectedFilters";
 import type { WeaponSortOption } from "$lib/stores/filters/weapon/WeaponSortOption";
-import { getMapByList } from "$lib/utils/collectionUtils";
 import { get, type Writable, writable } from "svelte/store";
 
 function createPersistentStore<T>(key: string, startValue: T): Writable<T> {
@@ -125,7 +128,33 @@ export function getEquipmentFilters(): EquipmentFilterOptions {
     return {
         rarity: [5, 4, 3, 2, 1],
         partType: ["body", "hand", "edc"],
-        pack: [],
+        pack: [
+            "suit_spellburst",
+            "suit_generaltype",
+            "suit_crush_fracture",
+            "suit_expend_spell01",
+            "suit_combo_cd01",
+            "suit_atb01",
+            "suit_atk02",
+            "suit_attri01",
+            "suit_burst01",
+            "suit_criti01",
+            "suit_fire_natr01",
+            "suit_heal01",
+            "suit_phy01",
+            "suit_poise01",
+            "suit_pulse_cryst01",
+            "suit_usp02",
+            "suit_agi01",
+            "suit_atk01",
+            "suit_str01",
+            "suit_usp01",
+            "suit_will01",
+            "suit_wisd01",
+            "suit_stragi01",
+            "suit_wisdwill01",
+            "none"
+        ],
         stats_any: [
             [
                 "Def",
@@ -192,6 +221,137 @@ export function getEquipmentFilters(): EquipmentFilterOptions {
         stats_1: [],
         stats_2: [],
         stats_3: []
+    };
+}
+
+export function getDefaultEquipmentSortParams(): EquipmentSortParams {
+    return {
+        sortFieldOrder: [
+            EquipmentComparatorName.PACK,
+            EquipmentComparatorName.RARITY,
+            EquipmentComparatorName.PART_TYPE,
+            EquipmentComparatorName.LEVEL,
+            EquipmentComparatorName.LOCALE_NAME
+        ],
+        sortFieldParams: {
+            rarity: [5, 4, 3, 2, 1],
+            partType: ["body", "hand", "edc"],
+            pack: [
+                "suit_spellburst",
+                "suit_generaltype",
+                "suit_crush_fracture",
+                "suit_expend_spell01",
+                "suit_combo_cd01",
+                "suit_atb01",
+                "suit_atk02",
+                "suit_attri01",
+                "suit_burst01",
+                "suit_criti01",
+                "suit_fire_natr01",
+                "suit_heal01",
+                "suit_phy01",
+                "suit_poise01",
+                "suit_pulse_cryst01",
+                "suit_usp02",
+                "suit_agi01",
+                "suit_atk01",
+                "suit_str01",
+                "suit_usp01",
+                "suit_will01",
+                "suit_wisd01",
+                "suit_stragi01",
+                "suit_wisdwill01",
+                "none"
+            ],
+            level: "desc",
+            localeName: LocaleOrder.A_Z
+        }
+    };
+}
+
+export function getAllEquipmentStatsGrouped(): string[][] {
+    return [
+        [
+            "Def",
+            "Str",
+            "Agi",
+            "Wisd",
+            "Will",
+            "Atk",
+            "CriticalRate",
+            "UltimateSpGainScalar",
+            "OriginiumArts",
+            "Main",
+            "Sub",
+            "NoAttr",
+        ],
+        [
+            "NormalSkillEfficiency",
+            "ComboSkillEfficiency",
+            "UltimateSkillEfficiency",
+            "SpellDamageIncrease",
+            "AllSkillDamageIncrease"
+        ],
+        [
+            "PhysicalDamageIncrease",
+            "AttrDamageToBrokenUnitIncrease",
+            "NormalAttackDamageIncrease",
+            "CrystAndPulseDamageIncrease",
+            "FireAndNaturalDamageIncrease"
+        ],
+        [
+            "MaxHp",
+            "AllDamageTakenScalar",
+            "HealOutputIncrease"
+        ]
+    ];
+}
+
+export function getEquipmentFilters2(): EquipmentFilters {
+    return {
+        rarity: new FilterSelector(get(equipmentSortParams).sortFieldParams.rarity, item => item.rarity),
+        partType: new FilterSelector(get(equipmentSortParams).sortFieldParams.partType, item => item.partType === 0 ? "body" : item.partType === 1 ? "hand" : "edc"),
+        pack: new FilterSelector(get(equipmentSortParams).sortFieldParams.pack, item => item.pack || "none"),
+        stats_any: new GroupedFilterSelectorMany(
+            [
+                [
+                    "Def",
+                    "Str",
+                    "Agi",
+                    "Wisd",
+                    "Will",
+                    "Atk",
+                    "CriticalRate",
+                    "UltimateSpGainScalar",
+                    "OriginiumArts",
+                    "Main",
+                    "Sub",
+                ],
+                [
+                    "NormalSkillEfficiency",
+                    "ComboSkillEfficiency",
+                    "UltimateSkillEfficiency",
+                    "SpellDamageIncrease",
+                    "AllSkillDamageIncrease"
+                ],
+                [
+                    "PhysicalDamageIncrease",
+                    "AttrDamageToBrokenUnitIncrease",
+                    "NormalAttackDamageIncrease",
+                    "CrystAndPulseDamageIncrease",
+                    "FireAndNaturalDamageIncrease"
+                ],
+                [
+                    "MaxHp",
+                    "AllDamageTakenScalar",
+                    "HealOutputIncrease"
+                ]
+            ],
+            item => item.displayAttr.map((attr: any) => attr.attrType)
+        ),
+        stats_1: new GroupedFilterSelector([], item => item.displayAttr.length >= 3 ? item.displayAttr[1].attrType : "NoAttr"),
+        stats_2: new GroupedFilterSelector([], item => item.displayAttr.length >= 4 ? item.displayAttr[2].attrType : "NoAttr"),
+        stats_3: new GroupedFilterSelector([], item => item.displayAttr.length >= 2 ? item.displayAttr.at(-1).attrType : "NoAttr"),
     };
 }
 
@@ -398,8 +558,10 @@ export function getFoodFilters(): FoodFilters {
 }
 
 export const equipmentFilters: Writable<EquipmentSelectedFilters> = writable({});
+export const equipmentSortParams: Writable<EquipmentSortParams> = createPersistentStore("equipmentSortParams", getDefaultEquipmentSortParams());
 export const equipmentSearch: Writable<string> = writable("");
 export const equipmentGroupMode: Writable<boolean> = createPersistentStore("equipmentGroupMode", true);
+export const equipmentGroupOption: Writable<EquipmentGroupOption> = createPersistentStore("equipmentGroupOption", "pack");
 
 export const weaponFilters: Writable<WeaponSelectedFilters> = writable({});
 export const weaponSearch: Writable<string> = writable("");

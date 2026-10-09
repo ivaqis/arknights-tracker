@@ -643,6 +643,7 @@
     "striker": "Штурмовик"
   },
   "sort": {
+    "level": "Уровень",
     "equipCondTitle": "Тип условия",
     "targetType": "Тип цели",
     "buffTitle": "Эффект",

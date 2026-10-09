@@ -643,6 +643,7 @@
     "striker": "Striker"
   },
   "sort": {
+    "level": "Level",
     "equipCondTitle": "Condition Type",
     "targetType": "Target Type",
     "buffTitle": "Effect",

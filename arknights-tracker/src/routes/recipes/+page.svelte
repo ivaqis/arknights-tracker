@@ -102,7 +102,7 @@
         itemSortParams
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
-    import { groupPreservingOrder, groupPreservingOrderAndName } from "$lib/utils/collectionUtils";
+    import { groupPreservingOrderAndName } from "$lib/utils/collectionUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
@@ -193,10 +193,7 @@
     }
 
     $: {
-        const normalized = normalizeLocale($currentLocale);
-
-        nameComparator.locale = normalized;
-        groupLocaleComparator.locale = normalized;
+        nameComparator.locale = normalizeLocale($currentLocale);
     }
 
     let sortDirection: SortDirection = "asc";
@@ -305,22 +302,6 @@
         groupField = $itemSortParams.sortFieldOrder[0];
     } else {
         groupField = $itemGroupOption;
-    }
-
-    const groupRarityComparator = new FieldValueComparator<[Rarity, unknown], Rarity>(([a]) => a);
-    const groupEventComparator = new FieldValueComparator<[string, unknown]>(([a]) => a);
-    const groupGroupComparator = new FieldValueComparator<[ItemGroup, unknown], ItemGroup>(([a]) => a);
-    const groupTypeComparator = new FieldValueComparator<[ItemType, unknown], ItemType>(([a]) => a);
-    const groupMaterialComparator = new FieldValueComparator<[ItemMaterial | "nonMaterial", unknown], ItemMaterial | "nonMaterial">(([a]) => a);
-    const groupLocaleComparator = new LocaleComparator<[string, unknown]>(([a]) => a, normalizeLocale($currentLocale));
-
-    $: {
-        groupRarityComparator.setValueOrder($itemSortParams.sortFieldParams.rarity);
-        groupEventComparator.setValueOrder($itemSortParams.sortFieldParams.events);
-        groupGroupComparator.setValueOrder($itemSortParams.sortFieldParams.itemGroups);
-        groupTypeComparator.setValueOrder($itemSortParams.sortFieldParams.itemTypes);
-        groupMaterialComparator.setValueOrder($itemSortParams.sortFieldParams.itemMaterials);
-        groupLocaleComparator.order = $itemSortParams.sortFieldParams.localeName;
     }
 
     let groupedItems: DisplayedItemGroup[] = [];
