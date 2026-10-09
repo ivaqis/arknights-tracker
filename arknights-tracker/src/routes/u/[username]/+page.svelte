@@ -18,22 +18,69 @@
     import { onDestroy } from "svelte";
     import { fade } from "svelte/transition";
 
+    export let data;
+
     $: username = $page.params.username;
     $: initialChar = $page.url.searchParams.get("char") || $page.url.searchParams.get("operator");
     $: urlServer = $page.url.searchParams.get("server");
     $: urlUid = $page.url.searchParams.get("uid");
     $: urlAcc = $page.url.searchParams.get("acc") || $page.url.searchParams.get("account");
 
-    let profile = null;
-    let loading = true;
+    let profile = data?.profile ?? null;
+    let loading = !data?.profile;
     let errorMsg = "";
     let selectedGameUid = null;
     let favoriteGameUid = "";
     let linkCopied = false;
     let copiedUid = null;
     let showFullAvatarModal = false;
+    let currentLoadedName = data?.profile ? (data.username || username) : "";
 
-    $: if (username) {
+    function setupProfile(p) {
+        profile = p;
+        if (!p) return;
+        favoriteGameUid = profile.favorite_game_uid || "";
+        if (profile.details && profile.details.length > 0) {
+            const sortedList = [...profile.details].sort((a, b) => {
+                if (favoriteGameUid) {
+                    if (a.game_uid === favoriteGameUid) return -1;
+                    if (b.game_uid === favoriteGameUid) return 1;
+                }
+                const levelA = a.info?.base?.level ?? a.level ?? 1;
+                const levelB = b.info?.base?.level ?? b.level ?? 1;
+                return levelB - levelA;
+            });
+
+            const accIdx = parseInt(urlAcc || "", 10);
+            if (urlUid && profile.details.some(d => d.game_uid === urlUid)) {
+                selectedGameUid = urlUid;
+            } else if (!isNaN(accIdx) && accIdx >= 1 && accIdx <= sortedList.length) {
+                selectedGameUid = sortedList[accIdx - 1].game_uid;
+            } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer)) {
+                const matched = profile.details.find(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer);
+                selectedGameUid = matched ? matched.game_uid : sortedList[0].game_uid;
+            } else if (initialChar && sortedList.some(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar))) {
+                const matchedCharAcc = sortedList.find(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar));
+                selectedGameUid = matchedCharAcc ? matchedCharAcc.game_uid : sortedList[0].game_uid;
+            } else {
+                const fav = favoriteGameUid;
+                const hasFav = sortedList.some(d => d.game_uid === fav);
+                selectedGameUid = hasFav ? fav : sortedList[0].game_uid;
+            }
+        }
+    }
+
+    if (data?.profile) {
+        setupProfile(data.profile);
+    }
+
+    $: if (data?.profile && data.username !== currentLoadedName) {
+        currentLoadedName = data.username;
+        setupProfile(data.profile);
+        loading = false;
+        errorMsg = "";
+    } else if (!data?.profile && username && username !== currentLoadedName) {
+        currentLoadedName = username;
         loadProfile(username);
     }
 
@@ -41,41 +88,12 @@
         loading = true;
         errorMsg = "";
         try {
-            const data = await getUserProfileByName(name);
-            if (!data) {
+            const res = await getUserProfileByName(name);
+            if (!res) {
                 errorMsg = "Profile not found";
                 profile = null;
             } else {
-                profile = data;
-                favoriteGameUid = profile.favorite_game_uid || "";
-                if (profile.details && profile.details.length > 0) {
-                    const sortedList = [...profile.details].sort((a, b) => {
-                        if (favoriteGameUid) {
-                            if (a.game_uid === favoriteGameUid) return -1;
-                            if (b.game_uid === favoriteGameUid) return 1;
-                        }
-                        const levelA = a.info?.base?.level ?? a.level ?? 1;
-                        const levelB = b.info?.base?.level ?? b.level ?? 1;
-                        return levelB - levelA;
-                    });
-
-                    const accIdx = parseInt(urlAcc || "", 10);
-                    if (urlUid && profile.details.some(d => d.game_uid === urlUid)) {
-                        selectedGameUid = urlUid;
-                    } else if (!isNaN(accIdx) && accIdx >= 1 && accIdx <= sortedList.length) {
-                        selectedGameUid = sortedList[accIdx - 1].game_uid;
-                    } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer)) {
-                        const matched = profile.details.find(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer);
-                        selectedGameUid = matched ? matched.game_uid : sortedList[0].game_uid;
-                    } else if (initialChar && sortedList.some(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar))) {
-                        const matchedCharAcc = sortedList.find(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar));
-                        selectedGameUid = matchedCharAcc ? matchedCharAcc.game_uid : sortedList[0].game_uid;
-                    } else {
-                        const fav = favoriteGameUid;
-                        const hasFav = sortedList.some(d => d.game_uid === fav);
-                        selectedGameUid = hasFav ? fav : sortedList[0].game_uid;
-                    }
-                }
+                setupProfile(res);
             }
         } catch (e) {
             errorMsg = e.message || "Failed to load profile";
@@ -132,6 +150,13 @@
     }
     $: pageTitle = username ? `${username} - ${$t("pages.profile")} - Goyfield` : `${$t("pages.profile")} - Goyfield`;
     $: pageDescription = $t("seo.descriptions.userProfile", { username: username || "" });
+    $: rawAvatar = getAvatarUrl(profile?.picture) || activeAccount?.info?.base?.avatarUrl || "";
+    $: ogImage = (() => {
+        if (!rawAvatar) return `${$page.url.origin}/images/og-image.jpg`;
+        if (rawAvatar.startsWith("http://") || rawAvatar.startsWith("https://")) return rawAvatar;
+        const origin = ($page?.url?.origin && $page.url.origin !== "null") ? $page.url.origin : "https://goyfield.moe";
+        return `${origin}${rawAvatar.startsWith("/") ? "" : "/"}${rawAvatar}`;
+    })();
 </script>
 
 <svelte:head>
@@ -139,6 +164,11 @@
     <meta name="description" content={pageDescription} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <div class="max-w-[1550px] w-full mx-auto pb-20">

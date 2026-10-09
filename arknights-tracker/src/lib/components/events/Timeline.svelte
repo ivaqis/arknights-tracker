@@ -169,12 +169,14 @@
             connectRight: false,
         }));
 
+        let maxL = 0;
         tempEvents.forEach((e) => {
             const l = e.layer || 0;
-            if (l > maxLayerIndex) maxLayerIndex = l;
+            if (l > maxL) maxL = l;
             if (!groupedByLayer[l]) groupedByLayer[l] = [];
             groupedByLayer[l].push(e);
         });
+        maxLayerIndex = maxL;
 
         const lines = [];
 
@@ -211,18 +213,17 @@
     }
 
     $: contentHeight =
-        (maxLayerIndex + 1) * (ROW_HEIGHT + GAP_HEIGHT) +
-        HEADER_HEIGHT_PX +
-        EVENT_TOP_OFFSET +
-        8;
+        processedEvents.length > 0
+            ? maxLayerIndex * (ROW_HEIGHT + GAP_HEIGHT) +
+              ROW_HEIGHT +
+              HEADER_HEIGHT_PX +
+              EVENT_TOP_OFFSET +
+              4
+            : HEADER_HEIGHT_PX + 40;
 
     function handleClickOutside(event) {
-        //if (!showTimezoneMenu) return;
         const clickedBadge = event.target.closest("[data-timezone-badge]");
         const clickedMenu = event.target.closest("[data-timezone-menu]");
-        //if (!clickedBadge && !clickedMenu) {
-        //    showTimezoneMenu = false;
-        //}
     }
 
     function getVariant(item) {
@@ -248,10 +249,6 @@
         const utc = date.getTime() + date.getTimezoneOffset() * 60000;
         return new Date(utc + 3600000 * targetOffset);
     }
-
-    $: TIMELINE_HEIGHT = `clamp(70%, ${contentHeight}px, 99%)`;
-
-    let innerHeight;
 
     let now = new Date();
     let timerInterval;
@@ -368,6 +365,33 @@
         node.style.cursor = "grab";
         node.style.userSelect = "none";
 
+        const mouseMoveHandler = (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+
+            if (rafId) cancelAnimationFrame(rafId);
+
+            rafId = requestAnimationFrame(() => {
+                const x = e.pageX - node.offsetLeft;
+                const y = e.pageY - node.offsetTop;
+                const walkX = (x - startX) * 1.5;
+                const walkY = (y - startY) * 1.5;
+                node.scrollLeft = scrollLeftStart - walkX;
+                if (node.scrollHeight > node.clientHeight) {
+                    node.scrollTop = scrollTopStart - walkY;
+                }
+                targetScrollLeft = node.scrollLeft;
+            });
+        };
+
+        const mouseUpHandler = () => {
+            if (!isDown) return;
+            isDown = false;
+            node.style.cursor = "grab";
+            window.removeEventListener("mousemove", mouseMoveHandler);
+            window.removeEventListener("mouseup", mouseUpHandler);
+        };
+
         const mouseDownHandler = (e) => {
             if (e.button === 1) {
                 e.preventDefault();
@@ -387,49 +411,19 @@
             scrollTopStart = node.scrollTop;
 
             if (rafId) cancelAnimationFrame(rafId);
-        };
 
-        const mouseLeaveHandler = () => {
-            isDown = false;
-            node.style.cursor = "grab";
-        };
-
-        const mouseUpHandler = () => {
-            isDown = false;
-            node.style.cursor = "grab";
-        };
-
-        const mouseMoveHandler = (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-
-            if (rafId) cancelAnimationFrame(rafId);
-
-            rafId = requestAnimationFrame(() => {
-                const x = e.pageX - node.offsetLeft;
-                const y = e.pageY - node.offsetTop;
-
-                const walkX = (x - startX) * 1.5;
-                const walkY = (y - startY) * 1.5;
-
-                node.scrollLeft = scrollLeftStart - walkX;
-                node.scrollTop = scrollTopStart - walkY;
-                targetScrollLeft = node.scrollLeft;
-            });
+            window.addEventListener("mousemove", mouseMoveHandler);
+            window.addEventListener("mouseup", mouseUpHandler);
         };
 
         node.addEventListener("mousedown", mouseDownHandler);
-        node.addEventListener("mouseleave", mouseLeaveHandler);
-        node.addEventListener("mouseup", mouseUpHandler);
-        node.addEventListener("mousemove", mouseMoveHandler);
 
         return {
             destroy() {
                 if (rafId) cancelAnimationFrame(rafId);
                 node.removeEventListener("mousedown", mouseDownHandler);
-                node.removeEventListener("mouseleave", mouseLeaveHandler);
-                node.removeEventListener("mouseup", mouseUpHandler);
-                node.removeEventListener("mousemove", mouseMoveHandler);
+                window.removeEventListener("mousemove", mouseMoveHandler);
+                window.removeEventListener("mouseup", mouseUpHandler);
             },
         };
     }
@@ -446,6 +440,9 @@
 
     function handleWheel(e) {
         if (e.shiftKey) return;
+        if (bodyContainer && bodyContainer.scrollHeight > bodyContainer.clientHeight + 2) {
+            return;
+        }
         if (e.deltaY !== 0) {
             e.preventDefault();
 
@@ -655,13 +652,10 @@
     }
 </script>
 
-<svelte:window bind:innerHeight />
-
 <div
-    class="w-full max-w-full flex flex-col relative overflow-hidden"
-    style="height: {TIMELINE_HEIGHT};"
+    class="w-full max-w-full max-h-full flex flex-col relative overflow-hidden"
+    style="height: {contentHeight + 18}px;"
 >
-    <!-- 1. ХЕДЕР -->
     <div
         class="absolute left-0 right-0 z-40 pointer-events-none overflow-hidden max-w-full"
     >
@@ -673,7 +667,6 @@
                 class="overflow-hidden flex flex-col relative"
             >
                 <div class="relative" style="width: {totalWidth}px">
-                    <!-- МЕСЯЦЫ -->
                     <div class="flex h-10 border-b border-gray-600/30">
                         {#each months as month}
                             <div
@@ -690,7 +683,6 @@
                             </div>
                         {/each}
                     </div>
-                    <!-- БЕЙДЖ НА ЛИНИИ МЕСЯЦЕВ -->
                     <div
                         class="absolute top-0 left-0 h-10 z-20 flex items-center pointer-events-none"
                     >
@@ -702,7 +694,7 @@
                         >
                             <button
                                 data-timezone-badge
-                                class="bg-[#FACC15] text-white hover:text-gray-800 text-[10px] bg-opacity-[18%] font-bold px-3 py-1 rounded-full whitespace-nowrap shadow-md border border-yellow-600 hover:bg-yellow-400"
+                                class="backdrop-blur-sm bg-[#FACC15] text-white hover:text-gray-800 text-[10px] bg-opacity-[18%] font-bold px-3 py-1 rounded-full whitespace-nowrap shadow-md border border-yellow-600 hover:bg-yellow-400"
                             >
                                 &lt; {currentTimeData.dd}
                                 {$t(`weekdays.${currentTimeData.dayKey}`)}
@@ -711,7 +703,6 @@
                         </div>
                     </div>
 
-                    <!-- ДНИ -->
                     <div class="flex h-8 text-gray-400 text-xs">
                         {#each days as day}
                             <div
@@ -731,13 +722,12 @@
         </div>
     </div>
 
-    <!-- 2. ТЕЛО (СЕТКА + ЛИНИЯ + СОБЫТИЯ) -->
     <div
         bind:this={bodyContainer}
         use:dragScroll
         on:scroll={handleScroll}
         on:wheel={handleWheel}
-        class="overflow-x-auto overflow-y-auto custom-scrollbar flex-grow relative w-full outline-none"
+        class="mt-0.5 ml-0.5 rounded-tl-xl overflow-x-auto overflow-y-auto custom-scrollbar flex-grow relative w-full outline-none"
         style="scrollbar-gutter: stable;"
     >
         <div

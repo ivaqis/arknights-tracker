@@ -1052,12 +1052,22 @@
                     <div
                         role="button"
                         tabindex="0"
-                        class="relative w-full h-full rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                        class="relative w-full h-full rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 group {dimmedWeaponIds.has(
+                            customWeapon.id,
+                        )
+                            ? 'opacity-40 grayscale-[60%]'
+                            : 'opacity-100 grayscale-0'}"
                         on:click|preventDefault|stopPropagation={() => toggleWeaponSelection(customWeapon.id)}
                         on:keydown={(e) => e.key === "Enter" && toggleWeaponSelection(customWeapon.id)}
                     >
-                        <div class="relative w-full h-full rounded-[6px] overflow-hidden bg-white dark:bg-[#2a2a2a] group border border-gray-300 dark:border-[#333]">
-                            <div class="absolute inset-0 bg-gradient-to-br from-[#4F4F4F] to-[#323232] dark:from-[#3a3a3a] dark:to-[#1a1a1a]"></div>
+                        <div
+                            class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
+                        ></div>
+
+                        <div class="relative w-full h-full rounded-[6px] overflow-hidden bg-white dark:bg-[#2a2a2a]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-[#4a4a4a] to-[#2d2d2d] dark:from-[#3a3a3a] dark:to-[#1a1a1a] transition-all duration-200 group-hover:from-[#5E5E5E] group-hover:to-[#3E3E3E] dark:group-hover:from-[#404040] dark:group-hover:to-[#2C2C2C]"
+                            ></div>
 
                             <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
                                 <Icon name="sword" class="w-10 h-10 text-white/50 drop-shadow-md" />

@@ -309,7 +309,8 @@ async function getPublicUidFromToken(token) {
     }
 }
 
-export async function getUserProfile(uid, token = null) {
+export async function getUserProfile(uid, token = null, customFetch = fetch) {
+    const fetcher = customFetch || fetch;
     try {
         const headers = {};
         if (token) {
@@ -320,12 +321,12 @@ export async function getUserProfile(uid, token = null) {
             targetUid = await getPublicUidFromToken(token);
             if (!targetUid) return null;
         }
-        let res = await fetch(`${API_BASE}/user/profile/get?uid=${encodeURIComponent(targetUid)}`, { headers });
+        let res = await fetcher(`${API_BASE}/user/profile/get?uid=${encodeURIComponent(targetUid)}`, { headers });
         if (res.status === 404 && token && targetUid === uid) {
             const listUid = await getPublicUidFromToken(token);
             if (listUid && listUid !== targetUid) {
                 targetUid = listUid;
-                res = await fetch(`${API_BASE}/user/profile/get?uid=${encodeURIComponent(targetUid)}`, { headers });
+                res = await fetcher(`${API_BASE}/user/profile/get?uid=${encodeURIComponent(targetUid)}`, { headers });
             }
         }
         if (!res.ok) return null;
@@ -337,8 +338,8 @@ export async function getUserProfile(uid, token = null) {
     }
 }
 
-export async function getUserProfileByName(name, token = null) {
-    return getUserProfile(name, token);
+export async function getUserProfileByName(name, token = null, customFetch = fetch) {
+    return getUserProfile(name, token, customFetch);
 }
 
 export async function createUserProfile(idToken, name, isPrivate = false, avatarImage = null, filename = null, backgroundId = null, hideUid = true) {
