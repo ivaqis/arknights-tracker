@@ -98,10 +98,11 @@ export function groupPreservingOrder<T, K>(items: Iterable<T>, getKeyFn: (item: 
 export function groupPreservingOrderAndName<T, K>(items: Iterable<T>,
                                                   getKeyFn: (item: T) => K,
                                                   getNameFn: (key: K) => string
-): { title: string; list: T[] }[] {
+): { key: K; title: string; list: T[] }[] {
     const groups = groupPreservingOrder(items, getKeyFn);
 
     return groups.map(([key, list]) => ({
+        key,
         title: getNameFn(key),
         list
     }));

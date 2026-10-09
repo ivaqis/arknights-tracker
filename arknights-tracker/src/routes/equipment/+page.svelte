@@ -689,12 +689,35 @@
             {#if isGrouped}
                 {#each displayedGroups as group}
                     <div class="flex flex-col gap-1 animate-fadeIn">
-                        <div class="flex items-center gap-3 pb-2">
-                            <h3
-                                class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk"
-                            >
+                        <div class="flex items-center gap-2 pb-2">
+
+                            {#if groupField === "partType"}
+                                <Icon
+                                    name={group.key}
+                                    class="h-5 w-5 text-[#21272C] dark:text-[#E4E4E4]"
+                                />
+                            {/if}
+
+
+                            <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk">
+
+                                {#if groupField === "level"}
+                                    <span class="text-xs">
+                                        LV.
+                                    </span>
+                                {/if}
+
                                 {group.title}
+
                             </h3>
+
+                            {#if groupField === "rarity"}
+                                <Icon
+                                    name="star"
+                                    class="h-5 w-5 text-[#21272C] dark:text-[#E4E4E4]"
+                                />
+                            {/if}
+
                         </div>
 
                         <div
