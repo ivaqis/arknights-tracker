@@ -291,6 +291,9 @@
 
 <svelte:head>
     <title>{$t('pages.achievements')} - Goyfield</title>
+    <meta name="description" content={$t('seo.descriptions.achievements')} />
+    <meta property="og:title" content={`${$t('pages.achievements')} - Goyfield`} />
+    <meta property="og:description" content={$t('seo.descriptions.achievements')} />
 </svelte:head>
 
 <div class="w-full min-h-screen text-gray-100 flex flex-col">

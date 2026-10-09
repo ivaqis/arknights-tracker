@@ -31,13 +31,14 @@ export class UserWarEchoesCharactersTable extends Table<Prisma.UserWarEchoesChar
         return entities.map(e => new UserWarEchoesCharacterRecord(e));
     }
 
-    public async getCharactersUsageByDungeonId(dungeonId: string): Promise<Amount[]> {
+    public async getCharactersUsageByDungeonId(dungeonId: string, groupId?: string): Promise<Amount[]> {
         const query = Prisma.sql`
             SELECT C."charId" char_id, count(DISTINCT C."recordId") n
             FROM "UserWarEchoesCharacter" C
             WHERE C."recordId" IN (SELECT L.id
                                    FROM "UserWarEchoesLeaderboard" L
-                                   WHERE L."dungeonId" = ${dungeonId})
+                                   WHERE L."dungeonId" = ${dungeonId}
+                                   ${groupId ? Prisma.sql`AND L."groupId" = ${groupId}` : Prisma.sql``})
             GROUP BY C."charId"
             ORDER BY n DESC`;
 
@@ -78,14 +79,15 @@ export class UserWarEchoesCharactersTable extends Table<Prisma.UserWarEchoesChar
         });
     }
 
-    public async getCharactersNumberInRecordByDungeonId(dungeonId: string): Promise<Amount[]> {
+    public async getCharactersNumberInRecordByDungeonId(dungeonId: string, groupId?: string): Promise<Amount[]> {
         const query = Prisma.sql`
             SELECT CharCount.n, count(*)
             FROM (SELECT count(DISTINCT C."charId") n
                   FROM "UserWarEchoesCharacter" C
                   WHERE C."recordId" IN (SELECT L.id
                                          FROM "UserWarEchoesLeaderboard" L
-                                         WHERE L."dungeonId" = ${dungeonId})
+                                         WHERE L."dungeonId" = ${dungeonId}
+                                         ${groupId ? Prisma.sql`AND L."groupId" = ${groupId}` : Prisma.sql``})
                   GROUP BY C."recordId") as CharCount
             GROUP BY CharCount.n
             ORDER BY CharCount.n DESC`;

@@ -536,6 +536,10 @@ export async function fetchLeaderboard(params = 'contract') {
                 charCountFilter
             });
 
+            if (options.groupId) {
+                query.set('groupId', options.groupId);
+            }
+
             const res = await fetch(`${endpoint}?${query.toString()}`);
             if (!res.ok) throw new Error(`Failed to fetch ${eventType} leaderboard`);
             const json = await res.json();

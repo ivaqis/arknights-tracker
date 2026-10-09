@@ -1033,52 +1033,6 @@
             <div
                 class="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-4 justify-start pb-8"
             >
-                {#each displayedWeapons as wp (wp.id)}
-                    {@const isSelected = selectedWeaponIds.has(wp.id)}
-                    {@const isPrimary = primaryWeaponId === wp.id}
-
-                    <div
-                        role="button"
-                        tabindex="0"
-                        class="relative w-full h-full rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 {dimmedWeaponIds.has(
-                            wp.id,
-                        )
-                            ? 'opacity-40 grayscale-[60%]'
-                            : 'opacity-100 grayscale-0'}"
-                        on:click|preventDefault|stopPropagation={() =>
-                            toggleWeaponSelection(wp.id)}
-                        on:keydown={(e) =>
-                            e.key === "Enter" && toggleWeaponSelection(wp.id)}
-                    >
-                        <WeaponCard
-                            weapon={wp}
-                            isNew={wp.isNew}
-                            asLink={false}
-                            className="w-full h-full"
-                            hidePot={false}
-                        />
-
-                        {#if isSelected}
-                            <div
-                                class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
-                            ></div>
-
-                            <button
-                                class="absolute -top-2.5 -right-2.5 w-8 h-8 rounded-full flex items-center justify-center shadow-lg z-30 transition-colors border-2 {isPrimary
-                                    ? 'bg-[#F9B90C] border-[#F9B90C] text-black'
-                                    : 'bg-[#2A2A2A] border-[#444] text-gray-400 hover:bg-[#333] hover:text-white'}"
-                                on:click|preventDefault|stopPropagation={() =>
-                                    setPrimaryWeapon(wp.id)}
-                                title={isPrimary
-                                    ? $t("essencesPage.primaryWeapon")
-                                    : $t("essencesPage.makePrimary")}
-                            >
-                                <Icon name="favorite" class="w-5 h-5" />
-                            </button>
-                        {/if}
-                    </div>
-                {/each}
-
                 {#if !customWeapon}
                     <div class="relative w-full h-full aspect-square">
                         <Tooltip text={$t("essencesPage.addCustomWeapon")} class="w-full h-full block">
@@ -1151,6 +1105,52 @@
                         {/if}
                     </div>
                 {/if}
+
+                {#each displayedWeapons as wp (wp.id)}
+                    {@const isSelected = selectedWeaponIds.has(wp.id)}
+                    {@const isPrimary = primaryWeaponId === wp.id}
+
+                    <div
+                        role="button"
+                        tabindex="0"
+                        class="relative w-full h-full rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 {dimmedWeaponIds.has(
+                            wp.id,
+                        )
+                            ? 'opacity-40 grayscale-[60%]'
+                            : 'opacity-100 grayscale-0'}"
+                        on:click|preventDefault|stopPropagation={() =>
+                            toggleWeaponSelection(wp.id)}
+                        on:keydown={(e) =>
+                            e.key === "Enter" && toggleWeaponSelection(wp.id)}
+                    >
+                        <WeaponCard
+                            weapon={wp}
+                            isNew={wp.isNew}
+                            asLink={false}
+                            className="w-full h-full"
+                            hidePot={false}
+                        />
+
+                        {#if isSelected}
+                            <div
+                                class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
+                            ></div>
+
+                            <button
+                                class="absolute -top-2.5 -right-2.5 w-8 h-8 rounded-full flex items-center justify-center shadow-lg z-30 transition-colors border-2 {isPrimary
+                                    ? 'bg-[#F9B90C] border-[#F9B90C] text-black'
+                                    : 'bg-[#2A2A2A] border-[#444] text-gray-400 hover:bg-[#333] hover:text-white'}"
+                                on:click|preventDefault|stopPropagation={() =>
+                                    setPrimaryWeapon(wp.id)}
+                                title={isPrimary
+                                    ? $t("essencesPage.primaryWeapon")
+                                    : $t("essencesPage.makePrimary")}
+                            >
+                                <Icon name="favorite" class="w-5 h-5" />
+                            </button>
+                        {/if}
+                    </div>
+                {/each}
             </div>
 
             {#if displayLimit < filteredWeapons.length}

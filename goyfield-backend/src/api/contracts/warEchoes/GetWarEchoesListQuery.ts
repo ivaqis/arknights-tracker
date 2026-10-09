@@ -4,6 +4,7 @@ import { SortOrder } from "@models/SortOrder.js";
 
 export interface GetWarEchoesListQuery {
     dungeonId: string;
+    groupId?: string;
     sortField: WarEchoesLeaderboardSortField;
     sortOrder: SortOrder;
     serverId: GameServerId | "all";

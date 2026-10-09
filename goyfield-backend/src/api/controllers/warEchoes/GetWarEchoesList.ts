@@ -22,6 +22,7 @@ export class GetWarEchoesList extends Controller<
     private readonly _database: Database = database;
 
     private readonly _dungeonId: string;
+    private readonly _groupId?: string;
     private readonly _sortField: WarEchoesLeaderboardSortField;
     private readonly _sortOrder: SortOrder;
     private readonly _serverId: GameServerId | "all";
@@ -34,6 +35,7 @@ export class GetWarEchoesList extends Controller<
         super(req, res);
 
         this._dungeonId = req.query.dungeonId;
+        this._groupId = req.query.groupId;
         this._sortField = req.query.sortField;
         this._sortOrder = req.query.sortOrder;
         this._serverId = req.query.serverId;
@@ -55,10 +57,10 @@ export class GetWarEchoesList extends Controller<
             charCount: this._charCountFilter.length === 0 ? null : this._charCountFilter
         };
 
-        const count = await searcher.countPublicRuns(this._dungeonId, serverId, filters);
+        const count = await searcher.countPublicRuns(this._dungeonId, serverId, filters, this._groupId);
 
-        const charFilters = await this._database.warEchoesLeaderboard.getCharactersUsageByDungeonId(this._dungeonId);
-        const charCountFilters = await this._database.warEchoesLeaderboard.getCharactersNumberInRecordByDungeonId(this._dungeonId);
+        const charFilters = await this._database.warEchoesLeaderboard.getCharactersUsageByDungeonId(this._dungeonId, this._groupId);
+        const charCountFilters = await this._database.warEchoesLeaderboard.getCharactersNumberInRecordByDungeonId(this._dungeonId, this._groupId);
 
         const filterData = {
             charCount: charCountFilters,
@@ -75,7 +77,7 @@ export class GetWarEchoesList extends Controller<
             return;
         }
 
-        const list = await searcher.findPublicRuns(this._dungeonId, serverId, this._sortField, this._sortOrder, filters, take, skip);
+        const list = await searcher.findPublicRuns(this._dungeonId, serverId, this._sortField, this._sortOrder, filters, take, skip, this._groupId);
 
         this.data = {
             list: list.map(item => item.getEntity()),

@@ -152,7 +152,7 @@ model UserWarEchoesLeaderboard {
 
     userWarEchoesCharacters UserWarEchoesCharacter[]
 
-    @@unique([gameUid, dungeonId])
+    @@unique([gameUid, groupId, dungeonId])
     @@index([gameUid, dungeonId])
     @@index([dungeonId])
     @@index([groupId, difficulty])

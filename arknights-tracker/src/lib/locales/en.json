@@ -26,7 +26,10 @@
       "leaderboard": "Leaderboard for Arknights: Endfield.",
       "settings": "Goyfield settings.",
       "profile": "Player profile on Goyfield.",
-      "userProfile": "Public player profile of {username} on Goyfield."
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
     }
   },
   "hints": {
@@ -566,7 +569,11 @@
     "trialOfTheBow": "Trial of the Bow",
     "protocolPassGloomwald": "Protocol Pass: Gloomwald",
     "orbipomMerge": "OrbiPom! MERGE!",
-    "fletchedIrontipSignIn": "Fletched Irontip Sign-In"
+    "fletchedIrontipSignIn": "Fletched Irontip Sign-In",
+    "orbiPomMerge": "OrbiPom! MERGE!",
+    "purryBigFelineRawr": "Purry Big Feline! RAWR!",
+    "echoingBellOfAndOldCity": "Echoing Bell of an Old City",
+    "inkwashedWorldSignIn": "Inkwashed World Sign-In"
   },
   "mouths": {
     "january": "January",

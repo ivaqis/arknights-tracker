@@ -187,7 +187,7 @@ export class SyncProfile extends Controller<
     }
 
     private async updateWarEchoesRecord(record: WarEchoesRecord, gameUid: string): Promise<void> {
-        const existedRecord = (await this._database.warEchoesLeaderboard.findByGameUid(gameUid, record.dungeonId))[0] ?? null;
+        const existedRecord = (await this._database.warEchoesLeaderboard.findByGameUid(gameUid, record.dungeonId, record.groupId))[0] ?? null;
         const existedRecordData = existedRecord ? existedRecord.data : null;
 
         if (existedRecordData && existedRecordData.ts === record.ts) {

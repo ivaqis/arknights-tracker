@@ -161,11 +161,12 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
         };
     }
 
-    public async findByGameUid(gameUid: string, dungeonId?: string): Promise<UserWarEchoesLeaderboardRecord[]> {
+    public async findByGameUid(gameUid: string, dungeonId?: string, groupId?: string): Promise<UserWarEchoesLeaderboardRecord[]> {
         const entities = await this.table.findMany({
             where: {
                 gameUid: gameUid,
-                dungeonId: dungeonId
+                dungeonId: dungeonId,
+                groupId: groupId
             }
         });
 
@@ -260,7 +261,8 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
                                     sortOrder: SortOrder,
                                     filters: MonumentFilters,
                                     take?: number,
-                                    skip?: number
+                                    skip?: number,
+                                    groupId?: string
     ): Promise<string[]> {
         const query = Prisma.sql`
             SELECT DISTINCT L.id, G.level, L."clearTimeSec" clear_time_sec, CharCount.n count
@@ -272,6 +274,7 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
                                  FROM "UserWarEchoesCharacter" C3
                                  GROUP BY C3."recordId") CharCount ON CharCount."recordId" = L.id
             WHERE L."dungeonId" = ${dungeonId}
+                ${groupId ? Prisma.sql`AND L."groupId" = ${groupId}` : Prisma.sql``}
                 ${serverId ? Prisma.sql`AND G."serverId" = ${serverId}` : Prisma.sql``}
                 ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ", ")})` : Prisma.sql``}
@@ -370,12 +373,12 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
                       ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
                       ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}
                   GROUP BY l."userGroupId"
-                  HAVING count (l.id) >= ${minCount}) a`;
+                  HAVING count(DISTINCT l.id) >= ${minCount}) a`;
 
         return Number(entities[0].group_count);
     }
 
-    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters, groupId?: string): Promise<number> {
         const query = Prisma.sql`
             SELECT count(DISTINCT L.id)
             FROM "UserWarEchoesLeaderboard" L
@@ -386,6 +389,7 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
                                  FROM "UserWarEchoesCharacter" C3
                                  GROUP BY C3."recordId") CharCount ON CharCount."recordId" = L.id
             WHERE L."dungeonId" = ${dungeonId}
+                ${groupId ? Prisma.sql`AND L."groupId" = ${groupId}` : Prisma.sql``}
                 ${serverId ? Prisma.sql`AND Game."serverId" = ${serverId}` : Prisma.sql``}
                 ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
@@ -420,11 +424,12 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
         });
     }
 
-    public async deleteByGameUid(gameUid: string, dungeonId?: string): Promise<void> {
+    public async deleteByGameUid(gameUid: string, dungeonId?: string, groupId?: string): Promise<void> {
         await this.table.deleteMany({
             where: {
                 gameUid,
-                dungeonId
+                dungeonId,
+                groupId
             }
         });
     }

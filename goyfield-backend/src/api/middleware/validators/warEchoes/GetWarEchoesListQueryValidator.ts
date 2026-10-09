@@ -20,6 +20,7 @@ export class GetWarEchoesListQueryValidator extends Validator<GetWarEchoesListQu
     private static getRules(): ValidationRule<GetWarEchoesListQuery>[] {
         return [
             this.getDungeonIdRule(),
+            this.getGroupIdRule(),
             this.getSortFieldRule(),
             this.getSortOrderRule(),
             this.getServerIdRule(),
@@ -28,6 +29,13 @@ export class GetWarEchoesListQueryValidator extends Validator<GetWarEchoesListQu
             this.getCharsFilterRule(),
             this.getCharCountFilterRule()
         ];
+    }
+
+    private static getGroupIdRule(): ValidationRule<GetWarEchoesListQuery> {
+        return new ValidationRule(
+            item => item.groupId === undefined || typeof item.groupId === "string",
+            "groupId must be a string"
+        );
     }
 
     private static getCharsFilterRule(): ValidationRule<GetWarEchoesListQuery> {
