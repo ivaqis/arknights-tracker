@@ -1,15 +1,44 @@
+import { AReactiveComparator } from "$lib/classes/comparators/AReactiveComparator";
 import type { ILocaleComparator } from "$lib/classes/comparators/ILocaleComparator";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
-import type { Subscriber, Unsubscriber } from "svelte/store";
 
-export class LocaleComparator<T> implements ILocaleComparator<T> {
-    private readonly _subscribers: Set<Subscriber<this>> = new Set();
+export class LocaleComparator<T>
+    extends AReactiveComparator<T>
+    implements ILocaleComparator<T> {
+
     private readonly _getStringFn: (value: T) => string;
+    private readonly _options: Intl.CollatorOptions;
 
+    private _collator: Intl.Collator;
+    private _locale: string;
     private _isReversed: boolean = false;
 
-    public constructor(getStringFn: (value: T) => string) {
+    public constructor(getStringFn: (value: T) => string, locale: string = "en-US", options?: Intl.CollatorOptions) {
+        super();
+
         this._getStringFn = getStringFn;
+        this._locale = locale;
+        this._options = options ?? {
+            usage: "sort",
+            numeric: true,
+            sensitivity: "accent"
+        };
+        this._collator = this.createCollator(locale);
+    }
+
+    public get locale(): string {
+        return this._locale;
+    }
+
+    public set locale(value: string) {
+        if (this._locale === value) {
+            return;
+        }
+
+        this._locale = value;
+        this._collator = this.createCollator(value);
+
+        this.notify();
     }
 
     public get isReversed(): boolean {
@@ -38,24 +67,12 @@ export class LocaleComparator<T> implements ILocaleComparator<T> {
         const strA = this._getStringFn(a);
         const strB = this._getStringFn(b);
 
-        const result = strA.localeCompare(strB);
+        const result = this._collator.compare(strA, strB);
 
         return this._isReversed ? -result : result;
     }
 
-    public subscribe(run: Subscriber<this>): Unsubscriber {
-        run(this);
-
-        this._subscribers.add(run);
-
-        return () => {
-            this._subscribers.delete(run);
-        }
-    }
-
-    public notify(): void {
-        for (const run of [...this._subscribers]) {
-            run(this);
-        }
+    private createCollator(locale: string): Intl.Collator {
+        return new Intl.Collator(locale, this._options);
     }
 }

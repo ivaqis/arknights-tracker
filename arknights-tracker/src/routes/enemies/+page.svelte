@@ -1,13 +1,26 @@
 <script module>
+    import { getEnemyFilters2 } from "$lib/stores/filterStore.ts";
+
     let savedDisplayLimit = 4;
     let savedFlatDisplayLimit = 60;
     let savedSortField = "rarity";
     let savedSortDirection = "desc";
+
+    const enemyFilters = getEnemyFilters2();
 </script>
 
 <script>
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";
+    import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator.ts";
+    import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator.ts";
+    import { EnemyComparatorName } from "$lib/classes/comparators/names/EnemyComparatorName.ts";
+    import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain.ts";
+    import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain.ts";
+    import { SearchFilter } from "$lib/classes/filters/SearchFilter.ts";
+    import EnemySortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EnemySortDropdown.svelte";
+    import { currentLocale, normalizeLocale } from "$lib/stores/locale.ts";
+    import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
     import { onMount, onDestroy } from "svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -17,21 +30,64 @@
     import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { t } from "$lib/i18n";
     import { enemies } from "$lib/data/enemies.js";
-    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore";
+    import {
+        enemySearch,
+        enemyGroupMode,
+        getEnemyFilters,
+        enemySortParams, getDefaultEnemySortParams, enemyGroupOption
+    } from "$lib/stores/filterStore";
 
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import { filterCheck } from "$lib/utils/filterUtils";
+
+    const defaultSortParams = getDefaultEnemySortParams();
+
+    $: {
+        let isSortParamsCorrect = $enemySortParams ? checkSortParams($enemySortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect enemy sort params");
+
+            resetSort();
+        }
+    }
+
+    function checkSortParams(current, defaultParams) {
+        if (!current || !current.sortFieldParams || !current.sortFieldOrder) {
+            return false;
+        }
+
+        const fieldOrder = isListItemsEqual(current.sortFieldOrder, defaultParams.sortFieldOrder);
+
+        if (!fieldOrder) {
+            return false;
+        }
+
+        const { locale, ...rest } = defaultParams.sortFieldParams;
+        const keys = Object.keys(rest);
+
+        for (const key of keys) {
+            if (!(key in current.sortFieldParams)) {
+                return false;
+            }
+
+            const check = isListItemsEqual(current.sortFieldParams[key], defaultParams.sortFieldParams[key]);
+
+            if (!check) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 
     $: searchQuery = $enemySearch || "";
     $: isGrouped = $enemyGroupMode || false;
-    $: selectedFilters = $enemyFilters;
 
     const allEnemies = Object.values(enemies || {}).filter(
         (e) => e && e.id
     );
 
-    let sortFieldList = ["rarity"];
     let sortField = savedSortField;
     let sortDirection = savedSortDirection;
     let filters = getEnemyFilters();
@@ -91,77 +147,139 @@
         }
     }
 
-    $: filteredEnemies = (() => {
-        const baseFiltered = allEnemies.filter((enemy) => {
-            const translationKey = `enemies.${enemy.id}`;
-            const translatedName = $t(translationKey);
+    const nameFilter = new SearchFilter(enemy => $t(`enemies.${enemy.id}`));
+    const idFilter = new SearchFilter(enemy => enemy.id);
 
-            if (translatedName === translationKey) return false;
+    const rarityFilter = enemyFilters.rarity;
+    const groupIdFilter = enemyFilters.groupId;
 
-            const matchesRarity = filterCheck(selectedFilters.rarity, enemy.rarity);
-            if (!matchesRarity) return false;
+    const searchChain = new ReactiveFilterChain()
+        .or(nameFilter)
+        .or(idFilter);
 
-            const locName = translatedName.toLowerCase();
-            const query = searchQuery.toLowerCase().trim();
-            const baseName = (enemy.name || "").toLowerCase();
-            const idName = enemy.id.toLowerCase();
-            
-            return !query ||
-                baseName.includes(query) ||
-                locName.includes(query) ||
-                idName.includes(query);
-        });
+    const filterChain = new ReactiveFilterChain()
+        .and(rarityFilter)
+        .and(groupIdFilter)
+        .and(searchChain);
 
-        return baseFiltered.sort((a, b) => {
-            let diff = 0;
+    $: {
+        searchChain.beginManual();
 
-            if (sortField === "rarity") {
-                const rarA = a.rarity || 0;
-                const rarB = b.rarity || 0;
-                diff = rarA - rarB;
-            } else {
-                let valA = a[sortField] || "";
-                let valB = b[sortField] || "";
-                diff = String(valA).localeCompare(String(valB));
-            }
-            
-            if (diff === 0) {
-                return a.id.localeCompare(b.id);
-            }
+        nameFilter.searchString = $enemySearch;
+        idFilter.searchString = $enemySearch;
 
-            return sortDirection === "asc" ? diff : -diff;
-        });
-    })();
+        searchChain.endManual();
+    }
+
+    $: {
+        filterChain.beginManual();
+
+        groupIdFilter.paramList = $enemySortParams.sortFieldParams.groupId;
+        rarityFilter.paramList = $enemySortParams.sortFieldParams.rarity;
+
+        filterChain.endManual();
+    }
+
+    const rarityComparator = new FieldValueComparator(enemy => enemy.rarity);
+    const groupIdComparator = new FieldValueComparator(enemy => enemy.groupId || "none");
+    const nameComparator = new LocaleComparator(enemy => $t(`enemies.${enemy.id}`));
+
+    const comparatorChain = new ReactiveNamedComparatorChain(getComparator);
+
+    $: {
+        comparatorChain.beginManual();
+
+        comparatorChain.setOrderAliased($enemySortParams.sortFieldOrder);
+        rarityComparator.setValueOrder($enemySortParams.sortFieldParams.rarity);
+        groupIdComparator.setValueOrder($enemySortParams.sortFieldParams.groupId);
+        nameComparator.order = $enemySortParams.sortFieldParams.locale;
+
+        comparatorChain.endManual();
+    }
+
+    $: nameComparator.locale = normalizeLocale($currentLocale);
+
+    function getComparator(name) {
+        switch (name) {
+            case EnemyComparatorName.RARITY:
+                return rarityComparator;
+            case EnemyComparatorName.GROUP_ID:
+                return groupIdComparator;
+            case EnemyComparatorName.LOCALE:
+                return nameComparator;
+        }
+    }
+
+    let revereMultiplier;
+
+    $: revereMultiplier = sortDirection === "asc" ? -1 : 1;
+
+    $: filteredEnemies = filterEnemies(allEnemies, $filterChain, $comparatorChain, revereMultiplier);
+
+    function filterEnemies(allEnemies, filter, comparator, reverseMultiplier) {
+        const filtered = allEnemies.filter(enemy => `enemies.${enemy.id}` !== $t(`enemies.${enemy.id}`) && filter.satisfies(enemy));
+
+        filtered.sort((a, b) => comparator.compare(a, b) * reverseMultiplier);
+
+        return filtered;
+    }
+
+    function resetSort() {
+        $enemySortParams = getDefaultEnemySortParams();
+    }
+
+    function resetFilters() {
+        filterChain.beginManual();
+
+        groupIdFilter.clear();
+        rarityFilter.clear();
+
+        filterChain.endManual();
+    }
 
     let isFilterActive = false;
-    $: isFilterActive = Object.values(selectedFilters)
-        .some((set) => set.size > 0);
+    $: isFilterActive = !$rarityFilter.isEmpty || !$groupIdFilter.isEmpty;
 
-    $: groupedEnemies = filteredEnemies.reduce((groups, e) => {
-        const groupKey = e.groupId || "none";
-        if (!groups[groupKey]) groups[groupKey] = [];
-        groups[groupKey].push(e);
-        return groups;
-    }, {});
+    const groupOptions = [
+        "inherit_sort",
+        "rarity",
+        "groupId",
+        "locale",
+    ];
 
-    $: groupedArray = Object.entries(groupedEnemies)
-        .map(([groupId, items]) => ({
-            groupId,
-            items,
-            maxRarity: Math.max(...items.map((i) => i.rarity || 1)),
-        }))
-        .sort((a, b) => {
-            const isNoneA = a.groupId === "none" || a.groupId === "";
-            const isNoneB = b.groupId === "none" || b.groupId === "";
+    function getGroupOptionTitle(option) {
+        switch (option) {
+            case "groupId":
+                return $t("sort.enemyGroupTitle");
+            case "locale":
+                return $t("sort.localeNameTitle");
+        }
 
-            if (isNoneA && !isNoneB) return 1;
-            if (!isNoneA && isNoneB) return -1;
-            
-            if (sortDirection === "desc") {
-                return b.maxRarity - a.maxRarity || a.groupId.localeCompare(b.groupId);
-            }
-            return a.maxRarity - b.maxRarity || a.groupId.localeCompare(b.groupId);
-        });
+        return $t(`sort.${option}`);
+    }
+
+    let groupField;
+
+    $: if ($enemyGroupOption === "inherit_sort") {
+        groupField = $enemySortParams.sortFieldOrder[0];
+    } else {
+        groupField = $enemyGroupOption;
+    }
+
+    $: groupedArray = groupEnemies(filteredEnemies, groupField);
+
+    function groupEnemies(filteredEnemies, groupField) {
+        switch (groupField) {
+            case "rarity":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.rarity, String);
+            case "groupId":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.groupId || "none", key => $t(`enemiesGroups.${key}`));
+            case "locale":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => $t(`enemies.${enemy.id}`).at(0).toUpperCase(), key => key);
+        }
+
+        throw new Error(`Unknown group field: ${groupField}`);
+    }
 
     let displayLimit = savedDisplayLimit;
     let flatDisplayLimit = savedFlatDisplayLimit;
@@ -169,7 +287,7 @@
     let initialRender = true;
 
     $: {
-        void [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
+        void [searchQuery, $enemySortParams, sortDirection, isGrouped, $filterChain];
 
         if (initialRender) {
             initialRender = false;
@@ -240,42 +358,65 @@
                 showSortDirectionButton={true}
                 showFilterDropdownButton={true}
                 showSearchInput={true}
-                showGroupButton={true}
+                onFilterReset={resetFilters}
                 isFilterActive={isFilterActive}
-                onFilterReset={() => $enemyFilters = {}}
+                showGroupDropdownButton={true}
                 bind:isGrouped={$enemyGroupMode}
                 bind:searchString={$enemySearch}
                 bind:sortDirection={sortDirection}
             >
-                <SortSelectorDropdown
+
+                <EnemySortDropdown
                     slot="sortDropdown"
-                    optionList={sortFieldList}
-                    bind:selectedOption={sortField}
+                    bind:sortParams={$enemySortParams}
+                    onSortReset={resetSort}
                 />
 
                 <EnemyFilterDropdown
                     slot="filterDropdown"
-                    filters={filters}
-                    bind:selectedFilters={$enemyFilters}
+                    filters={enemyFilters}
                 />
+
+                <SortSelectorDropdown
+                    bind:selectedOption={$enemyGroupOption}
+                    optionList={groupOptions}
+                    slot="groupDropdown"
+                    getLocaleFunc={getGroupOptionTitle}
+                />
+
             </DataToolbar>
         </div>
 
         <div class="w-full {$splitEquipmentView ? '' : 'xl:w-[85%]'} pb-12 flex flex-col gap-5 relative">
             {#if isGrouped}
-                {#each displayedGroups as group}
+                {#each displayedGroups as group (group.key)}
+
                     <div class="flex flex-col gap-1 animate-fadeIn">
-                        <div class="flex items-center mb-2 {group.groupId === "none" ? 'gap-0' : 'gap-3'}">
-                            <Icon name={group.groupId.replace('wiki_group_monster_', '')} class="text-gray-700 dark:text-gray-300 {group.groupId === "none" ? 'w-0 h-0' : 'w-6 h-6'}" />
+
+                        <div class="flex items-center mb-2 gap-2">
+
+                            {#if groupField === "groupId" && group.key !== "none"}
+                                <Icon
+                                    name={group.key.replace("wiki_group_monster_", "")}
+                                    class="text-gray-700 dark:text-gray-300 {group.groupId === "none" ? 'w-0 h-0' : 'w-6 h-6'}"
+                                />
+                            {/if}
+
                             <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk">
-                                {group.groupId === "none" 
-                                    ? ($t("global.noData") || "No data") 
-                                    : ($t(`enemiesGroups.${group.groupId}`) || group.groupId)}
+                                {group.title}
                             </h3>
+
+                            {#if groupField === "rarity"}
+                                <Icon
+                                    name="star"
+                                    class="h-5 w-5 text-[#21272C] dark:text-[#E4E4E4]"
+                                />
+                            {/if}
+
                         </div>
 
                         <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
-                            {#each group.items as enemy (enemy.id)}
+                            {#each group.list as enemy (enemy.id)}
                                 {#if $splitEquipmentView}
                                     <button
                                         tabindex="0"
@@ -283,7 +424,14 @@
                                         class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
                                         on:click|preventDefault|stopPropagation={() => selectEnemy(enemy.id)}
                                     >
-                                        <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} asLink={false} className="w-full h-full" />
+                                        <WeaponCard
+                                            weapon={enemy}
+                                            isEnemy={true}
+                                            hideDarkness={true}
+                                            hidePot={false}
+                                            asLink={false}
+                                            className="w-full h-full"
+                                        />
                                         {#if selectedEnemyId === enemy.id}
                                             <div
                                                 class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
@@ -292,7 +440,12 @@
                                     </button>
                                 {:else}
                                     <div class="flex justify-center transition-transform">
-                                        <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false}/>
+                                        <WeaponCard
+                                            weapon={enemy}
+                                            isEnemy={true}
+                                            hideDarkness={true}
+                                            hidePot={false}
+                                        />
                                     </div>
                                 {/if}
                             {/each}

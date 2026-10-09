@@ -1,44 +1,16 @@
 <script lang="ts">
-    import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
-    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
     import { t } from "$lib/i18n";
-    import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
-    import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
-    import type { RecipeSortParamMap } from "$lib/stores/filters/recipes/RecipeSortParamMap";
+    import type { RecipeFilters } from "$lib/stores/filters/recipes/RecipeFilters";
 
-    export let filters: RecipeSortParamMap;
+    export let filters: RecipeFilters;
 
-    export let selectedFilters: RecipeSelectedFilterMap = {};
-
-    export let onFilterReset = () => { selectedFilters = {} };
-
-    function toggleFilterGroup<K extends RecipeFilterGroup>(groupName: K) {
-        if (!selectedFilters[groupName]) {
-            selectedFilters[groupName] = new Set() as RecipeSelectedFilterMap[K];
-        }
-
-        const set = selectedFilters[groupName]!;
-        const filterParams = filters[groupName] as RecipeFilterValue<K>[];
-
-        if (set.size === 0) {
-            for (const filter of filterParams) {
-                set.add(filter);
-            }
-        } else {
-            set.clear();
-        }
-
-        forceFiltersUpdate();
-    }
-
-    function forceFiltersUpdate() {
-        selectedFilters = selectedFilters;
-    }
+    export let onFilterReset: () => void;
 
 </script>
 
@@ -51,15 +23,14 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup(ItemFieldComparatorName.RARITY)}
+            onClick={() => filters.rarity.toggleAll()}
         >
             {$t("sort.rarity")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.rarity}
+        <ParamSelector
+            selector={filters.rarity}
             paramBox={RarityParamBox}
-            bind:selectedParamSet={selectedFilters.rarity}
         />
 
     </div>
@@ -68,16 +39,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup(ItemFieldComparatorName.EVENT)}
+            onClick={() => filters.events.toggleAll()}
         >
             {$t("sort.eventsTitle")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.events}
+        <ParamSelector
+            selector={filters.events}
             paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(factoryEventStorage.byId.get(String(param))?.title ?? "sort.events.nonEvent")}
-            bind:selectedParamSet={selectedFilters.events}
+            getLocaleFn={(param) => $t(factoryEventStorage.byId.get(String(param))?.title ?? "sort.events.nonEvent")}
         />
 
     </div>
@@ -86,16 +56,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_GROUP)}
+            onClick={() => filters.itemGroups.toggleAll()}
         >
             {$t("sort.itemGroup")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.itemGroups}
+        <ParamSelector
+            selector={filters.itemGroups}
             paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemGroups.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemGroups}
+            getLocaleFn={(param) => $t(`sort.itemGroups.${param}`)}
         />
 
     </div>
@@ -104,16 +73,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_TYPE)}
+            onClick={() => filters.itemTypes.toggleAll()}
         >
             {$t("sort.itemTypesTitle")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.itemTypes}
+        <ParamSelector
+            selector={filters.itemTypes}
             paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemTypes.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemTypes}
+            getLocaleFn={(param) => $t(`sort.itemTypes.${param}`)}
         />
 
     </div>
@@ -122,16 +90,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_MATERIAL)}
+            onClick={() => filters.itemMaterials.toggleAll()}
         >
             {$t("sort.itemMaterialsTitle")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.itemMaterials}
+        <ParamSelector
+            selector={filters.itemMaterials}
             paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemMaterials.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemMaterials}
+            getLocaleFn={(param) => $t(`sort.itemMaterials.${param}`)}
         />
 
     </div>

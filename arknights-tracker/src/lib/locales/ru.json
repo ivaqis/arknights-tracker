@@ -650,6 +650,8 @@
     "striker": "Штурмовик"
   },
   "sort": {
+    "enemyGroupTitle": "Фракция",
+    "level": "Уровень",
     "equipCondTitle": "Тип условия",
     "targetType": "Тип цели",
     "buffTitle": "Эффект",
@@ -671,6 +673,8 @@
     "attribute3": "Атрибут 3",
     "title": "Сортировка",
     "filters": "Фильтры",
+    "grouping": "Группировка",
+    "inherit_sort": "Как в сортировке",
     "skillMaterials": "Материалы для скиллов",
     "any": "[Любой]",
     "stats": "Атрибуты",
@@ -2126,6 +2130,7 @@
     "TherResistance": "Эфирная СОПР"
   },
   "enemiesGroups": {
+    "none": "Нет данных",
     "wiki_group_monster_angel": "Аггелы",
     "wiki_group_monster_landbreaker": "Землекрушители",
     "wiki_group_monster_hongshan": "Разбойники-цанцзэй",

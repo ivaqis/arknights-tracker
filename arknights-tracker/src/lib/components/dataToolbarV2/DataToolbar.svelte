@@ -8,6 +8,7 @@
     export let showFilterDropdownButton: boolean = false;
     export let showSearchInput: boolean = false;
     export let showGroupButton: boolean = false;
+    export let showGroupDropdownButton: boolean = false;
     export let showExportExcelButton: boolean = false;
 
     // bindable
@@ -21,12 +22,14 @@
 
     let isFilterDropdownOpen = false;
     let isSortDropdownOpen = false;
+    let isGroupDropdownOpen = false;
 
     function toggleFilterDropdown() {
         isFilterDropdownOpen = !isFilterDropdownOpen;
 
         if (isFilterDropdownOpen) {
             isSortDropdownOpen = false;
+            isGroupDropdownOpen = false;
         }
     }
 
@@ -35,12 +38,23 @@
 
         if (isSortDropdownOpen) {
             isFilterDropdownOpen = false;
+            isGroupDropdownOpen = false;
+        }
+    }
+
+    function toggleGroupDropdown() {
+        isGroupDropdownOpen = !isGroupDropdownOpen;
+
+        if (isGroupDropdownOpen) {
+            isSortDropdownOpen = false;
+            isFilterDropdownOpen = false;
         }
     }
 
     function closeAllDropdown() {
         isFilterDropdownOpen = false;
         isSortDropdownOpen = false;
+        isGroupDropdownOpen = false;
     }
 
     function toggleSortDirection() {
@@ -260,6 +274,55 @@
             />
 
         </button>
+
+    {/if}
+
+    {#if showGroupDropdownButton}
+
+        <div class="relative">
+
+            <button
+                class="absolute left-0 top-0 h-[40px] w-[40px] flex shrink-0 items-center justify-center rounded-full transition-colors cursor-pointer {
+                isGrouped
+                    ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]'
+                    : 'bg-gray-200 text-gray-400 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#787878] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'
+            }"
+                on:click={toggleGrouping}
+                title="Toggle Grouping"
+            >
+
+                <Icon
+                    name="list"
+                    class="w-5 h-5 pointer-events-none"
+                />
+
+            </button>
+
+            <button
+                class="h-[40px] dark:bg-[#383838] dark:border dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
+                on:click|stopPropagation={toggleGroupDropdown}
+            >
+
+                <span class="text-sm font-medium ml-8 dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
+                    {$t("sort.grouping")}
+                </span>
+
+                <Icon
+                    name="arrowDown"
+                    class="w-3 h-3 text-gray-500 transition-transform {isGroupDropdownOpen ? 'rotate-180' : ''}"
+                />
+
+            </button>
+
+            {#if isGroupDropdownOpen}
+
+                <div class="absolute top-12 left-0 min-w-full z-[60]">
+                    <slot name="groupDropdown"/>
+                </div>
+
+            {/if}
+
+        </div>
 
     {/if}
 

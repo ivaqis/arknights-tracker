@@ -1,3 +1,10 @@
+<script module lang="ts">
+    import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
+    import { getFoodFilters } from "$lib/stores/filterStore";
+
+    const foodFilters: FoodFilters = getFoodFilters();
+</script>
+
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { FieldManyValuesComparator } from "$lib/classes/comparators/FieldManyValuesComparator";
@@ -20,7 +27,8 @@
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
-    import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
+    import type { NamedGroupEntry } from "$lib/classes/NamedGroupEntry";
     import type { Rarity } from "$lib/classes/Rarity";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
@@ -29,6 +37,7 @@
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import FoodFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/FoodFilterDropdown.svelte";
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import FoodComparisonTable from "$lib/components/food/FoodComparisonTable.svelte";
     import FoodComparisonTableSelector from "$lib/components/food/FoodComparisonTableSelector.svelte";
     import FoodDetailView from "$lib/components/food/FoodDetailView.svelte";
@@ -38,11 +47,25 @@
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
     import { t } from "$lib/i18n";
     import type { FoodFilterGroup, FoodFilterValue } from "$lib/stores/filters/food/FoodFilterValueMap";
+    import type { FoodGroupField, FoodGroupOption } from "$lib/stores/filters/food/FoodGroupField";
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
-    import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
+    import {
+        foodGroupMode,
+        foodGroupOption,
+        foodSearch,
+        foodSortParams,
+        getDefaultFoodSortParams
+    } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
-    import { getMapByList, isListItemsEqual } from "$lib/utils/collectionUtils";
+    import {
+        getMapByList,
+        groupManyCustomOrder,
+        groupManyPreservingOrder, groupPreservingOrderAndName,
+        isListItemsEqual,
+        nameGroups
+    } from "$lib/utils/collectionUtils";
     import { onMount } from "svelte";
+    import { currentLocale, normalizeLocale } from "$lib/stores/locale.js";
 
     type CondType = EquipableItemConditionType | "null";
 
@@ -116,7 +139,8 @@
         const url = `/food?${search}`;
 
         goto(url, {
-            replaceState: true
+            replaceState: true,
+            noScroll: true,
         });
     }
 
@@ -192,6 +216,8 @@
 
         comparator.endManual();
     }
+
+    $: nameComparator.locale = normalizeLocale($currentLocale);
 
     function getComparator(name: FoodFieldComparatorName): IReactiveComparator<IFood> {
         switch (name) {
@@ -274,6 +300,72 @@
         || !$buffFilter.isEmpty
         || !$targetTypeFilter.isEmpty
         || !$equipCondFilter.isEmpty;
+
+    const groupOptions: readonly FoodGroupOption[] = [
+        "inherit_sort",
+        "rarity",
+        "targetType",
+        "equipCond",
+        "buff",
+        "locale"
+    ];
+
+    function getGroupOptionTitle(option: FoodGroupOption): string {
+        switch (option) {
+            case FoodFieldComparatorName.RARITY:
+                return $t("sort.rarity");
+            case FoodFieldComparatorName.LOCALE:
+                return $t("sort.localeNameTitle");
+            case FoodFieldComparatorName.BUFF:
+                return $t("sort.buffTitle");
+            case FoodFieldComparatorName.EQUIP_COND:
+                return $t("sort.equipCondTitle");
+            case FoodFieldComparatorName.TARGET_TYPE:
+                return $t("sort.targetType");
+        }
+
+        return $t(`sort.${option}`);
+    }
+
+    let groupField: FoodGroupField;
+    let isInheritSortBuff: boolean;
+
+    $: if ($foodGroupOption === "inherit_sort") {
+        groupField = $foodSortParams.sortFieldOrder[0];
+    } else {
+        groupField = $foodGroupOption;
+    }
+
+    $: isInheritSortBuff = $foodGroupOption === "inherit_sort" && groupField === "buff";
+
+    let groupedItems: NamedGroupEntry<IFood, string | Rarity>[];
+
+    $: groupedItems = groupItems(filteredItems, groupField, isInheritSortBuff);
+
+    function groupItems(items: Iterable<IFood>, field: FoodGroupField, isInheritSortBuff: boolean) {
+        if (isInheritSortBuff) {
+            return nameGroups(
+                groupManyCustomOrder(items, item => item.buffs.map(buff => buff.buffId), $foodSortParams.sortFieldParams.buff),
+                key => $t(`buffNames.${key}`)
+            );
+        }
+
+        switch (field) {
+            case "buff":
+                return nameGroups(
+                    groupManyPreservingOrder(items, item => item.buffs.map(buff => buff.buffId)),
+                    key => $t(`buffNames.${key}`)
+                );
+            case "rarity":
+                return groupPreservingOrderAndName(items, item => item.rarity, key => String(key));
+            case "equipCond":
+                return groupPreservingOrderAndName(items, item => item.tactical?.condType ?? "null", key => $t(EquipableItemConditionType.getI18nKey(key)));
+            case "targetType":
+                return groupPreservingOrderAndName(items, item => item.targetType, key => $t(UsableTargetType.getI18nKey(key)));
+            case "locale":
+                return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key);
+        }
+    }
 
 
     /// COMPARISON TAB
@@ -382,8 +474,10 @@
                     showSortDirectionButton={true}
                     showFilterDropdownButton={true}
                     showSearchInput={true}
+                    showGroupDropdownButton={true}
                     isFilterActive={isFilterActive}
                     onFilterReset={resetFilters}
+                    bind:isGrouped={$foodGroupMode}
                     bind:sortDirection={sortDirection}
                     bind:searchString={$foodSearch}
                 >
@@ -400,46 +494,119 @@
                         onFilterReset={resetFilters}
                     />
 
+                    <SortSelectorDropdown
+                        slot="groupDropdown"
+                        optionList={groupOptions}
+                        getLocaleFunc={getGroupOptionTitle}
+                        bind:selectedOption={$foodGroupOption}
+                    />
+
                 </DataToolbar>
 
             </div>
 
             <div class="w-full pb-8">
 
-                <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
+                {#if $foodGroupMode}
 
-                    {#each filteredItems as item}
+                    {#each groupedItems as group (group.key)}
 
-                        {#if $splitEquipmentView}
+                        <div class="flex flex-col gap-1 animate-fadeIn pb-5">
 
-                            <button
-                                tabindex="0"
-                                class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
-                                on:click|preventDefault|stopPropagation={() => selectItem(item)}
-                            >
+                            <div class="flex items-center gap-2 mb-2">
+
+                                <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk pl-0.5">
+                                    {group.title}
+                                </h3>
+
+                                {#if groupField === "rarity"}
+
+                                    <Icon
+                                        name="star"
+                                        class="h-5 w-5 text-[#21272C] dark:text-[#E4E4E4]"
+                                    />
+
+                                {/if}
+
+                            </div>
+
+                            <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
+
+                                {#each group.list as item (item.gameId)}
+
+                                    {#if $splitEquipmentView}
+
+                                        <button
+                                            tabindex="0"
+                                            class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                                            on:click|preventDefault|stopPropagation={() => selectItem(item)}
+                                        >
+
+                                            <ItemStackCard
+                                                item={item}
+                                                highlight={item.gameId === data.itemId}
+                                                showHoverEffect={true}
+                                            />
+
+                                        </button>
+
+                                    {:else}
+
+                                        <ItemStackCard
+                                            item={item}
+                                            highlight={item.gameId === data.itemId}
+                                            url="/food/{item.gameId}"
+                                            showHoverEffect={true}
+                                        />
+
+                                    {/if}
+
+                                {/each}
+
+                            </div>
+
+                        </div>
+
+                    {/each}
+
+                {:else}
+
+                    <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
+
+                        {#each filteredItems as item (item.gameId)}
+
+                            {#if $splitEquipmentView}
+
+                                <button
+                                    tabindex="0"
+                                    class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                                    on:click|preventDefault|stopPropagation={() => selectItem(item)}
+                                >
+
+                                    <ItemStackCard
+                                        item={item}
+                                        highlight={item.gameId === data.itemId}
+                                        showHoverEffect={true}
+                                    />
+
+                                </button>
+
+                            {:else}
 
                                 <ItemStackCard
                                     item={item}
                                     highlight={item.gameId === data.itemId}
+                                    url="/food/{item.gameId}"
                                     showHoverEffect={true}
                                 />
 
-                            </button>
+                            {/if}
 
-                        {:else}
+                        {/each}
 
-                            <ItemStackCard
-                                item={item}
-                                highlight={item.gameId === data.itemId}
-                                url="/food/{item.gameId}"
-                                showHoverEffect={true}
-                            />
+                    </div>
 
-                        {/if}
-
-                    {/each}
-
-                </div>
+                {/if}
 
             </div>
 

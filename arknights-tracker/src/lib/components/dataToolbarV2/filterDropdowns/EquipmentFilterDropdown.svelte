@@ -1,44 +1,35 @@
-<script>
+<script lang="ts">
+    import type { IGroupedFilterSelector } from "$lib/classes/filters/IGroupedFilterSelector";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import CategorySelector from "$lib/components/dataToolbarV2/filterDropdowns/CategorySelector.svelte";
-    import GroupedSelectableParamList
-        from "$lib/components/dataToolbarV2/filterDropdowns/GroupedSelectableParamList.svelte";
-    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import EquipSkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/EquipSkillParamBox.svelte";
     import EquipTypeParamBox from "$lib/components/dataToolbarV2/paramBoxes/EquipTypeParamBox.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import GroupedParamSelector from "$lib/components/selectors/GroupedParamSelector.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import { t } from "$lib/i18n";
+    import type { EquipmentFilters } from "$lib/stores/filters/equipment/EquipmentFilters";
 
-    export let filters = {};
+    type Category = "any" | 1 | 2 | 3;
 
-    export let selectedFilters = {};
-    export let selectedAttrType = "any";
+    export let filters: EquipmentFilters;
 
-    export let onFilterReset = () => {
-        selectedFilters = {};
-        selectedAttrType = "any";
-    };
+    export let selectedAttrType: Category = "any";
 
-    function toggleFilterGroup(groupName) {
-        if (!selectedFilters[groupName]) {
-            selectedFilters[groupName] = new Set();
-        }
+    export let onFilterReset: () => void;
 
-        let set = selectedFilters[groupName];
+    let stats_any: IGroupedFilterSelector<any>;
+    let stats_1: IGroupedFilterSelector<any>;
+    let stats_2: IGroupedFilterSelector<any>;
+    let stats_3: IGroupedFilterSelector<any>;
 
-        if (set.size === 0) {
-
-            for (let filter of filters[groupName]) {
-                set.add(filter);
-            }
-
-        } else {
-            set.clear();
-        }
-
-        forceFiltersUpdate();
+    $: {
+        stats_any = filters.stats_any;
+        stats_1 = filters.stats_1;
+        stats_2 = filters.stats_2;
+        stats_3 = filters.stats_3;
     }
 
     function resetStatsFilter() {
@@ -49,20 +40,16 @@
     }
 
     function resetStatsAny() {
-        selectedFilters.stats_any = new Set();
+        filters.stats_any.clear();
     }
 
     function resetStatsNumerable() {
-        selectedFilters.stats_1 = new Set();
-        selectedFilters.stats_2 = new Set();
-        selectedFilters.stats_3 = new Set();
+        filters.stats_1.clear();
+        filters.stats_2.clear();
+        filters.stats_3.clear();
     }
 
-    function forceFiltersUpdate() {
-        selectedFilters = selectedFilters;
-    }
-
-    function getCategoryLocale(category) {
+    function getCategoryLocale(category: Category) {
         switch (category) {
             case "any": return $t("essencesPage.anyAttr");
             case 1: return $t("sort.mainAttribute");
@@ -71,13 +58,11 @@
         }
     }
 
+    $: isAnySelected = !$stats_any.isEmpty;
 
-
-    $: isAnySelected = selectedFilters.stats_any?.size > 0;
-
-    $: isNumerableSelected = selectedFilters.stats_1?.size > 0
-        || selectedFilters.stats_2?.size > 0
-        || selectedFilters.stats_3?.size > 0;
+    $: isNumerableSelected = !$stats_1.isEmpty
+        || !$stats_2.isEmpty
+        || !$stats_3.isEmpty;
 
     $: if (isAnySelected) {
         resetStatsNumerable();
@@ -90,19 +75,19 @@
     $: highlighted = (() => {
         const list = [];
 
-        if (selectedFilters.stats_any?.size > 0) {
+        if (!$stats_any.isEmpty) {
             list.push("any");
         }
 
-        if (selectedFilters.stats_1?.size > 0) {
+        if (!$stats_1.isEmpty) {
             list.push(1);
         }
 
-        if (selectedFilters.stats_2?.size > 0) {
+        if (!$stats_2.isEmpty) {
             list.push(2);
         }
 
-        if (selectedFilters.stats_3?.size > 0) {
+        if (!$stats_3.isEmpty) {
             list.push(3);
         }
 
@@ -120,15 +105,14 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("rarity")}
+            onClick={() => filters.rarity.toggleAll()}
         >
             {$t("sort.rarity")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.rarity}
+        <ParamSelector
             paramBox={RarityParamBox}
-            bind:selectedParamSet={selectedFilters.rarity}
+            selector={filters.rarity}
         />
 
     </div>
@@ -137,15 +121,16 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("partType")}
+            onClick={() => filters.partType.toggleAll()}
         >
             {$t("systemNames.equipmentType")}
         </GroupTitle>
 
-        <SelectableParamList
+
+        <ParamSelector
             paramBox={EquipTypeParamBox}
-            paramList={filters.partType}
-            bind:selectedParamSet={selectedFilters.partType}
+            selector={filters.partType}
+            getLocaleFn={(paramId) => $t(`equipmentTypes.${paramId}`)}
         />
 
     </div>
@@ -168,34 +153,30 @@
 
         {#if selectedAttrType === "any"}
 
-            <GroupedSelectableParamList
+            <GroupedParamSelector
+                selector={stats_any}
                 paramBox={EquipSkillParamBox}
-                paramGroups={filters.stats_any}
-                bind:selectedParamSet={selectedFilters.stats_any}
             />
 
         {:else if selectedAttrType === 1}
 
-            <GroupedSelectableParamList
+            <GroupedParamSelector
+                selector={stats_1}
                 paramBox={EquipSkillParamBox}
-                paramGroups={filters.stats_1}
-                bind:selectedParamSet={selectedFilters.stats_1}
             />
 
         {:else if selectedAttrType === 2}
 
-            <GroupedSelectableParamList
+            <GroupedParamSelector
+                selector={stats_2}
                 paramBox={EquipSkillParamBox}
-                paramGroups={filters.stats_2}
-                bind:selectedParamSet={selectedFilters.stats_2}
             />
 
         {:else if selectedAttrType === 3}
 
-            <GroupedSelectableParamList
+            <GroupedParamSelector
+                selector={stats_3}
                 paramBox={EquipSkillParamBox}
-                paramGroups={filters.stats_3}
-                bind:selectedParamSet={selectedFilters.stats_3}
             />
 
         {/if}
@@ -206,16 +187,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("pack")}
+            onClick={() => filters.pack.toggleAll()}
         >
             {$t("sort.pack")}
         </GroupTitle>
 
-        <SelectableParamList
+        <ParamSelector
             paramBox={TextParamBox}
-            paramList={filters.pack}
-            getLocaleFunc={(pack) => $t(`packs.${pack}`)}
-            bind:selectedParamSet={selectedFilters.pack}
+            selector={filters.pack}
+            getLocaleFn={(pack) => $t(`packs.${pack}`)}
         />
 
     </div>

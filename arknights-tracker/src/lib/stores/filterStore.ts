@@ -1,22 +1,35 @@
 import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
 import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+import { EnemyComparatorName } from "$lib/classes/comparators/names/EnemyComparatorName";
+import { EquipmentComparatorName } from "$lib/classes/comparators/names/EquipmentComparatorName";
+import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
 import { FilterSelector } from "$lib/classes/filters/FilterSelector";
 import { FilterSelectorMany } from "$lib/classes/filters/FilterSelectorMany";
+import { GroupedFilterSelector } from "$lib/classes/filters/GroupedFilterSelector";
+import { GroupedFilterSelectorMany } from "$lib/classes/filters/GroupedFilterSelectorMany";
 import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+import { ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
+import { ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
+import { ItemType } from "$lib/classes/gameData/items/ItemType";
 import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
+import type { EnemyFilters } from "$lib/stores/filters/enemies/EnemyFilters";
+import type { EnemyGroupOption } from "$lib/stores/filters/enemies/EnemyGroupField";
 import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
-import type { EnemySortOption } from "$lib/stores/filters/enemies/EnemySortOption";
-import type { EquipmentFilterOptions } from "$lib/stores/filters/equipment/EquipmentFilterOptions";
+import type { EnemySortParams } from "$lib/stores/filters/enemies/EnemySortParams";
+import type { EquipmentFilters } from "$lib/stores/filters/equipment/EquipmentFilters";
+import type { EquipmentGroupOption } from "$lib/stores/filters/equipment/EquipmentGroupField";
 import type { EquipmentSelectedFilters } from "$lib/stores/filters/equipment/EquipmentSelectedFilters";
-import type { EquipmentSortOption } from "$lib/stores/filters/equipment/EquipmentSortOption";
+import type { EquipmentSortParams } from "$lib/stores/filters/equipment/EquipmentSortParams";
 import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
+import type { FoodGroupOption } from "$lib/stores/filters/food/FoodGroupField";
 import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
 import type { OperatorFilterOptions } from "$lib/stores/filters/operators/OperatorFilterOptions";
 import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/OperatorSelectedFilters";
 import type { OperatorSortOption } from "$lib/stores/filters/operators/OperatorSortOption";
-import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
+import type { RecipeFilters } from "$lib/stores/filters/recipes/RecipeFilters";
+import type { RecipeGroupOption } from "$lib/stores/filters/recipes/RecipeGroupField";
 import type { RecipeSortParams } from "$lib/stores/filters/recipes/RecipeSortParams";
 import type { WeaponFilterOptions } from "$lib/stores/filters/weapon/WeaponFilterOptions";
 import type { WeaponSelectedFilters } from "$lib/stores/filters/weapon/WeaponSelectedFilters";
@@ -113,77 +126,134 @@ export function getWeaponFilters(): WeaponFilterOptions {
     };
 }
 
-export function getEquipmentFilters(): EquipmentFilterOptions {
+export function getDefaultEquipmentSortParams(): EquipmentSortParams {
     return {
-        rarity: [5, 4, 3, 2, 1],
-        partType: ["body", "hand", "edc"],
-        pack: [],
-        stats_any: [
-            [
-                "Def",
-                "Str",
-                "Agi",
-                "Wisd",
-                "Will",
-                "Atk",
-                "CriticalRate",
-                "UltimateSpGainScalar",
-                "OriginiumArts",
-                "Main",
-                "Sub",
-            ], [
-                "NormalSkillEfficiency",
-                "ComboSkillEfficiency",
-                "UltimateSkillEfficiency",
-                "SpellDamageIncrease",
-                "AllSkillDamageIncrease"
-            ], [
-                "PhysicalDamageIncrease",
-                "AttrDamageToBrokenUnitIncrease",
-                "NormalAttackDamageIncrease",
-                "CrystAndPulseDamageIncrease",
-                "FireAndNaturalDamageIncrease"
-            ], [
-                "MaxHp",
-                "AllDamageTakenScalar",
-                "HealOutputIncrease"
-            ]
+        sortFieldOrder: [
+            EquipmentComparatorName.PACK,
+            EquipmentComparatorName.RARITY,
+            EquipmentComparatorName.PART_TYPE,
+            EquipmentComparatorName.LEVEL,
+            EquipmentComparatorName.LOCALE_NAME
         ],
-        stats: [
-            [
-                "Def",
-                "Str",
-                "Agi",
-                "Wisd",
-                "Will",
-                "Atk",
-                "CriticalRate",
-                "UltimateSpGainScalar",
-                "OriginiumArts",
-                "Main",
-                "Sub",
-                "NoAttr",
-            ], [
-                "NormalSkillEfficiency",
-                "ComboSkillEfficiency",
-                "UltimateSkillEfficiency",
-                "SpellDamageIncrease",
-                "AllSkillDamageIncrease"
-            ], [
-                "PhysicalDamageIncrease",
-                "AttrDamageToBrokenUnitIncrease",
-                "NormalAttackDamageIncrease",
-                "CrystAndPulseDamageIncrease",
-                "FireAndNaturalDamageIncrease"
-            ], [
-                "MaxHp",
-                "AllDamageTakenScalar",
-                "HealOutputIncrease"
-            ]
+        sortFieldParams: {
+            rarity: [5, 4, 3, 2, 1],
+            partType: ["body", "hand", "edc"],
+            pack: [
+                "suit_spellburst",
+                "suit_generaltype",
+                "suit_crush_fracture",
+                "suit_expend_spell01",
+                "suit_combo_cd01",
+                "suit_atb01",
+                "suit_atk02",
+                "suit_attri01",
+                "suit_burst01",
+                "suit_criti01",
+                "suit_fire_natr01",
+                "suit_heal01",
+                "suit_phy01",
+                "suit_poise01",
+                "suit_pulse_cryst01",
+                "suit_usp02",
+                "suit_agi01",
+                "suit_atk01",
+                "suit_str01",
+                "suit_usp01",
+                "suit_will01",
+                "suit_wisd01",
+                "suit_stragi01",
+                "suit_wisdwill01",
+                "none"
+            ],
+            level: "desc",
+            localeName: LocaleOrder.A_Z
+        }
+    };
+}
+
+export function getAllEquipmentStatsGrouped(): string[][] {
+    return [
+        [
+            "Def",
+            "Str",
+            "Agi",
+            "Wisd",
+            "Will",
+            "Atk",
+            "CriticalRate",
+            "UltimateSpGainScalar",
+            "OriginiumArts",
+            "Main",
+            "Sub",
+            "NoAttr",
         ],
-        stats_1: [],
-        stats_2: [],
-        stats_3: []
+        [
+            "NormalSkillEfficiency",
+            "ComboSkillEfficiency",
+            "UltimateSkillEfficiency",
+            "SpellDamageIncrease",
+            "AllSkillDamageIncrease"
+        ],
+        [
+            "PhysicalDamageIncrease",
+            "AttrDamageToBrokenUnitIncrease",
+            "NormalAttackDamageIncrease",
+            "CrystAndPulseDamageIncrease",
+            "FireAndNaturalDamageIncrease"
+        ],
+        [
+            "MaxHp",
+            "AllDamageTakenScalar",
+            "HealOutputIncrease"
+        ]
+    ];
+}
+
+export function getEquipmentFilters(): EquipmentFilters {
+    return {
+        rarity: new FilterSelector(get(equipmentSortParams).sortFieldParams.rarity, item => item.rarity),
+        partType: new FilterSelector(get(equipmentSortParams).sortFieldParams.partType, item => item.partType === 0 ? "body" : item.partType === 1 ? "hand" : "edc"),
+        pack: new FilterSelector(get(equipmentSortParams).sortFieldParams.pack, item => item.pack || "none"),
+        stats_any: new GroupedFilterSelectorMany(
+            [
+                [
+                    "Def",
+                    "Str",
+                    "Agi",
+                    "Wisd",
+                    "Will",
+                    "Atk",
+                    "CriticalRate",
+                    "UltimateSpGainScalar",
+                    "OriginiumArts",
+                    "Main",
+                    "Sub",
+                ],
+                [
+                    "NormalSkillEfficiency",
+                    "ComboSkillEfficiency",
+                    "UltimateSkillEfficiency",
+                    "SpellDamageIncrease",
+                    "AllSkillDamageIncrease"
+                ],
+                [
+                    "PhysicalDamageIncrease",
+                    "AttrDamageToBrokenUnitIncrease",
+                    "NormalAttackDamageIncrease",
+                    "CrystAndPulseDamageIncrease",
+                    "FireAndNaturalDamageIncrease"
+                ],
+                [
+                    "MaxHp",
+                    "AllDamageTakenScalar",
+                    "HealOutputIncrease"
+                ]
+            ],
+            item => item.displayAttr.map((attr: any) => attr.attrType)
+        ),
+        stats_1: new GroupedFilterSelector([], item => item.displayAttr.length >= 3 ? item.displayAttr[1].attrType : "NoAttr"),
+        stats_2: new GroupedFilterSelector([], item => item.displayAttr.length >= 4 ? item.displayAttr[2].attrType : "NoAttr"),
+        stats_3: new GroupedFilterSelector([], item => item.displayAttr.length >= 2 ? item.displayAttr.at(-1).attrType : "NoAttr"),
     };
 }
 
@@ -201,12 +271,35 @@ export function getWeaponSortOptions(): WeaponSortOption[] {
     return ["rarity", "type"];
 }
 
-export function getEquipmentSortOptions(): EquipmentSortOption[] {
-    return ["rarity"];
+export function getDefaultEnemySortParams(): EnemySortParams {
+    return {
+        sortFieldOrder: [
+            EnemyComparatorName.GROUP_ID,
+            EnemyComparatorName.RARITY,
+            EnemyComparatorName.LOCALE
+        ],
+        sortFieldParams: {
+            rarity: [6, 5, 4, 3],
+            groupId: [
+                "wiki_group_monster_witchcraft",
+                "wiki_group_monster_js",
+                "wiki_group_monster_kl",
+                "wiki_group_monster_angel",
+                "wiki_group_monster_landbreaker",
+                "wiki_group_monster_hongshan",
+                "wiki_group_monster_animal",
+                "none"
+            ],
+            locale: LocaleOrder.A_Z
+        }
+    };
 }
 
-export function getEnemySortOptions(): EnemySortOption[] {
-    return ["rarity"];
+export function getEnemyFilters2(): EnemyFilters {
+    return {
+        rarity: new FilterSelector(get(enemySortParams).sortFieldParams.rarity, enemy => enemy.rarity),
+        groupId: new FilterSelector(get(enemySortParams).sortFieldParams.groupId, enemy => enemy.groupId || "none")
+    };
 }
 
 export function getDefaultItemSortParams(): RecipeSortParams {
@@ -220,87 +313,96 @@ export function getDefaultItemSortParams(): RecipeSortParams {
             ItemFieldComparatorName.LOCALE_NAME
         ],
         sortFieldParams: {
-            itemGroups: ["nature", "product", "usable", "gatherable", "device", "nurturance", "facility", "other"],
+            itemGroups: [
+                ItemGroup.NATURE,
+                ItemGroup.PRODUCT,
+                ItemGroup.USABLE,
+                ItemGroup.GATHERABLE,
+                ItemGroup.DEVICE,
+                ItemGroup.NURTURANCE,
+                ItemGroup.FACILITY,
+                ItemGroup.OTHER
+            ],
             itemTypes: [
-                "spcstone",
-                "mushroom",
-                "crylplant",
-                "ore",
-                "liquid",
-                "gas",
-                "plant",
-                "plant_seed",
-                "plant_special",
-                "wood",
-                "ingot",
-                "powder",
-                "compressed_powder",
-                "part",
-                "component",
-                "battery",
-                "bottle",
-                "jar",
-                "balloon_recycle",
-                "hulu",
-                "tool",
-                "lung_box",
-                "lung",
-                "xiranite_radar",
-                "xiranite_nexus",
-                "arrow_chip",
-                "muck",
-                "full_bottle",
-                "full_gas_jar",
-                "bomb",
-                "hp_recovery",
-                "food",
-                "special_food",
-                "insect",
-                "drop",
-                "miner",
-                "gas_miner",
-                "pump",
-                "crafter",
-                "power",
-                "vaporizer",
-                "soil",
-                "battle",
-                "sanity",
-                "other"
+                ItemType.SPECIAL_STONE,
+                ItemType.MUSHROOM,
+                ItemType.CRYLPLANT,
+                ItemType.ORE,
+                ItemType.LIQUID,
+                ItemType.GAS,
+                ItemType.PLANT,
+                ItemType.PLANT_SEED,
+                ItemType.PLANT_SPECIAL,
+                ItemType.WOOD,
+                ItemType.INGOT,
+                ItemType.POWDER,
+                ItemType.COMPRESSED_POWDER,
+                ItemType.PART,
+                ItemType.COMPONENT,
+                ItemType.BATTERY,
+                ItemType.BOTTLE,
+                ItemType.JAR,
+                ItemType.BALLOON_RECYCLE,
+                ItemType.HULU,
+                ItemType.TOOL,
+                ItemType.LUNG_BOX,
+                ItemType.LUNG,
+                ItemType.XIRANITE_RADAR,
+                ItemType.XIRANITE_NEXUS,
+                ItemType.ARROW_CHIP,
+                ItemType.MUCK,
+                ItemType.FULL_BOTTLE,
+                ItemType.FULL_GAS_JAR,
+                ItemType.BOMB,
+                ItemType.HP_RECOVERY,
+                ItemType.FOOD,
+                ItemType.SPECIAL_FOOD,
+                ItemType.INSECT,
+                ItemType.DROP,
+                ItemType.MINER,
+                ItemType.GAS_MINER,
+                ItemType.PUMP,
+                ItemType.CRAFTER,
+                ItemType.POWER,
+                ItemType.VAPORIZER,
+                ItemType.SOIL,
+                ItemType.BATTLE,
+                ItemType.SANITY,
+                ItemType.OTHER
             ],
             itemMaterials: [
-                "water",
-                "acid",
-                "inert",
-                "sewage",
-                "originium",
-                "amethyst",
-                "iron",
-                "originium_enr",
-                "amethyst_enr",
-                "iron_enr",
-                "xiranite",
-                "xiranite_enr",
-                "copper",
-                "copper_enr",
-                "copper_xiranite",
-                "copper_poly",
-                "carbon",
-                "carbon_enr",
-                "plant_flower_1",
-                "plant_flower_2",
-                "plant_flower_3",
-                "plant_grass_1",
-                "plant_grass_2",
-                "plant_flower_spc_1",
-                "plant_flower_spc_2",
-                "plant_grass_spc_1",
-                "plant_grass_spc_2",
-                "plant_bbflower_1",
-                "plant_sp_1",
-                "plant_sp_2",
-                "plant_sp_3",
-                "plant_sp_4",
+                ItemMaterial.WATER,
+                ItemMaterial.ACID,
+                ItemMaterial.INERT,
+                ItemMaterial.SEWAGE,
+                ItemMaterial.ORIGINIUM,
+                ItemMaterial.AMETHYST,
+                ItemMaterial.IRON,
+                ItemMaterial.ORIGINIUM_ENR,
+                ItemMaterial.AMETHYST_ENR,
+                ItemMaterial.IRON_ENR,
+                ItemMaterial.XIRANITE,
+                ItemMaterial.XIRANITE_ENR,
+                ItemMaterial.COPPER,
+                ItemMaterial.COPPER_ENR,
+                ItemMaterial.COPPER_XIRANITE,
+                ItemMaterial.COPPER_POLY,
+                ItemMaterial.CARBON,
+                ItemMaterial.CARBON_ENR,
+                ItemMaterial.PLANT_FLOWER_1,
+                ItemMaterial.PLANT_FLOWER_2,
+                ItemMaterial.PLANT_FLOWER_3,
+                ItemMaterial.PLANT_GRASS_1,
+                ItemMaterial.PLANT_GRASS_2,
+                ItemMaterial.PLANT_FLOWER_SPC_1,
+                ItemMaterial.PLANT_FLOWER_SPC_2,
+                ItemMaterial.PLANT_GRASS_SPC_1,
+                ItemMaterial.PLANT_GRASS_SPC_2,
+                ItemMaterial.PLANT_BBFLOWER_1,
+                ItemMaterial.PLANT_SP_1,
+                ItemMaterial.PLANT_SP_2,
+                ItemMaterial.PLANT_SP_3,
+                ItemMaterial.PLANT_SP_4,
                 "nonMaterial"
             ],
             rarity: [1, 2, 3, 4, 5, 6],
@@ -308,6 +410,16 @@ export function getDefaultItemSortParams(): RecipeSortParams {
             localeName: LocaleOrder.A_Z
         }
     };
+}
+
+export function getItemFilters(eventMap: Map<string, IFactoryEvent>): RecipeFilters {
+    return {
+        rarity: new FilterSelector(get(itemSortParams).sortFieldParams.rarity, item => item.rarity),
+        itemGroups: new FilterSelector(get(itemSortParams).sortFieldParams.itemGroups, item => item.groupId),
+        itemTypes: new FilterSelector(get(itemSortParams).sortFieldParams.itemTypes, item => item.type),
+        itemMaterials: new FilterSelector(get(itemSortParams).sortFieldParams.itemMaterials, item => item.material ?? "nonMaterial"),
+        events: new FilterSelector(get(itemSortParams).sortFieldParams.events, item => eventMap.get(item.gameId)?.id ?? "nonEvent"),
+    }
 }
 
 export function getDefaultFoodSortParams(): FoodSortParams {
@@ -371,8 +483,10 @@ export function getFoodFilters(): FoodFilters {
 }
 
 export const equipmentFilters: Writable<EquipmentSelectedFilters> = writable({});
+export const equipmentSortParams: Writable<EquipmentSortParams> = createPersistentStore("equipmentSortParams", getDefaultEquipmentSortParams());
 export const equipmentSearch: Writable<string> = writable("");
 export const equipmentGroupMode: Writable<boolean> = createPersistentStore("equipmentGroupMode", true);
+export const equipmentGroupOption: Writable<EquipmentGroupOption> = createPersistentStore("equipmentGroupOption", "pack");
 
 export const weaponFilters: Writable<WeaponSelectedFilters> = writable({});
 export const weaponSearch: Writable<string> = writable("");
@@ -387,17 +501,20 @@ export const operatorSearch: Writable<string> = writable("");
 export const operatorOwnedOnly: Writable<boolean> = writable(false);
 
 export const enemyFilters: Writable<EnemySelectedFilters> = writable({});
+export const enemySortParams: Writable<EnemySortParams> = createPersistentStore("enemySortParams", getDefaultEnemySortParams());
 export const enemySearch: Writable<string> = writable("");
 export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGroupMode", true);
+export const enemyGroupOption: Writable<EnemyGroupOption> = createPersistentStore("enemyGroupOption", "groupId");
 
-export const itemFilters: Writable<RecipeSelectedFilterMap> = writable({});
 export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
+export const itemGroupOption: Writable<RecipeGroupOption> = createPersistentStore("itemGroupOption", "inherit_sort");
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
-export const foodFilters: FoodFilters = getFoodFilters();
 export const foodSearch: Writable<string> = writable("");
+export const foodGroupMode: Writable<boolean> = createPersistentStore("foodGroupMode", false);
+export const foodGroupOption: Writable<FoodGroupOption> = createPersistentStore("foodGroupOption", "inherit_sort");
 
 export const recordsExcludedBannerTypes: Writable<string[]> = createPersistentStore("recordsExcludedBannerTypes", []);
 export const recordsExcludedBanners: Writable<string[]> = createPersistentStore("recordsExcludedBanners", []);

@@ -1,17 +1,17 @@
-<script>
+<script lang="ts" generics="T extends string | number">
     import { t } from "$lib/i18n";
 
-    export let optionList = [];
-    export let getLocaleFunc = (option) => $t(`sort.${option}`);
+    export let optionList: readonly T[];
+    export let getLocaleFunc: (param: T) => string = (option) => $t(`sort.${option}`);
 
     // bindable
-    export let selectedOption;
+    export let selectedOption: T;
 
-    function selectOption(option) {
+    function selectOption(option: T) {
         selectedOption = option;
     }
 
-    $: isOptionSelected = (option) => option === selectedOption;
+    $: isOptionSelected = (option: T) => option === selectedOption;
 </script>
 
 <div class="min-w-full py-1 flex flex-col bg-white dark:bg-[#383838] rounded-xl shadow-xl border border-gray-100 dark:border-[#444444] overflow-hidden">

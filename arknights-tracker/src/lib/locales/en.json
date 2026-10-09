@@ -650,6 +650,8 @@
     "striker": "Striker"
   },
   "sort": {
+    "enemyGroupTitle": "Faction",
+    "level": "Level",
     "equipCondTitle": "Condition Type",
     "targetType": "Target Type",
     "buffTitle": "Effect",
@@ -671,6 +673,8 @@
     "attribute3": "Attribute 3",
     "title": "Sort",
     "filters": "Filters",
+    "grouping": "Grouping",
+    "inherit_sort": "Inherit sort",
     "skillMaterials": "Skill Materials",
     "any": "[Any]",
     "stats": "Attributes",
@@ -2122,6 +2126,7 @@
     "TherResistance": "Æther Resistance"
   },
   "enemiesGroups": {
+    "none": "No Data",
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Landbreakers",
     "wiki_group_monster_hongshan": "Cangzei Pirates",
