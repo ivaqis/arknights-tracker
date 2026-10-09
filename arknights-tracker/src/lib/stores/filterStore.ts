@@ -1,6 +1,7 @@
 import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
 import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
 import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+import { EnemyComparatorName } from "$lib/classes/comparators/names/EnemyComparatorName";
 import { EquipmentComparatorName } from "$lib/classes/comparators/names/EquipmentComparatorName";
 import type { IFactoryEvent } from "$lib/classes/events/IFactoryEvent";
 import { FilterSelector } from "$lib/classes/filters/FilterSelector";
@@ -13,13 +14,13 @@ import { ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
 import { ItemType } from "$lib/classes/gameData/items/ItemType";
 import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
+import type { EnemyFilters } from "$lib/stores/filters/enemies/EnemyFilters";
+import type { EnemyGroupOption } from "$lib/stores/filters/enemies/EnemyGroupField";
 import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
-import type { EnemySortOption } from "$lib/stores/filters/enemies/EnemySortOption";
-import type { EquipmentFilterOptions } from "$lib/stores/filters/equipment/EquipmentFilterOptions";
+import type { EnemySortParams } from "$lib/stores/filters/enemies/EnemySortParams";
 import type { EquipmentFilters } from "$lib/stores/filters/equipment/EquipmentFilters";
 import type { EquipmentGroupOption } from "$lib/stores/filters/equipment/EquipmentGroupField";
 import type { EquipmentSelectedFilters } from "$lib/stores/filters/equipment/EquipmentSelectedFilters";
-import type { EquipmentSortOption } from "$lib/stores/filters/equipment/EquipmentSortOption";
 import type { EquipmentSortParams } from "$lib/stores/filters/equipment/EquipmentSortParams";
 import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
 import type { FoodGroupOption } from "$lib/stores/filters/food/FoodGroupField";
@@ -125,106 +126,6 @@ export function getWeaponFilters(): WeaponFilterOptions {
     };
 }
 
-export function getEquipmentFilters(): EquipmentFilterOptions {
-    return {
-        rarity: [5, 4, 3, 2, 1],
-        partType: ["body", "hand", "edc"],
-        pack: [
-            "suit_spellburst",
-            "suit_generaltype",
-            "suit_crush_fracture",
-            "suit_expend_spell01",
-            "suit_combo_cd01",
-            "suit_atb01",
-            "suit_atk02",
-            "suit_attri01",
-            "suit_burst01",
-            "suit_criti01",
-            "suit_fire_natr01",
-            "suit_heal01",
-            "suit_phy01",
-            "suit_poise01",
-            "suit_pulse_cryst01",
-            "suit_usp02",
-            "suit_agi01",
-            "suit_atk01",
-            "suit_str01",
-            "suit_usp01",
-            "suit_will01",
-            "suit_wisd01",
-            "suit_stragi01",
-            "suit_wisdwill01",
-            "none"
-        ],
-        stats_any: [
-            [
-                "Def",
-                "Str",
-                "Agi",
-                "Wisd",
-                "Will",
-                "Atk",
-                "CriticalRate",
-                "UltimateSpGainScalar",
-                "OriginiumArts",
-                "Main",
-                "Sub",
-            ], [
-                "NormalSkillEfficiency",
-                "ComboSkillEfficiency",
-                "UltimateSkillEfficiency",
-                "SpellDamageIncrease",
-                "AllSkillDamageIncrease"
-            ], [
-                "PhysicalDamageIncrease",
-                "AttrDamageToBrokenUnitIncrease",
-                "NormalAttackDamageIncrease",
-                "CrystAndPulseDamageIncrease",
-                "FireAndNaturalDamageIncrease"
-            ], [
-                "MaxHp",
-                "AllDamageTakenScalar",
-                "HealOutputIncrease"
-            ]
-        ],
-        stats: [
-            [
-                "Def",
-                "Str",
-                "Agi",
-                "Wisd",
-                "Will",
-                "Atk",
-                "CriticalRate",
-                "UltimateSpGainScalar",
-                "OriginiumArts",
-                "Main",
-                "Sub",
-                "NoAttr",
-            ], [
-                "NormalSkillEfficiency",
-                "ComboSkillEfficiency",
-                "UltimateSkillEfficiency",
-                "SpellDamageIncrease",
-                "AllSkillDamageIncrease"
-            ], [
-                "PhysicalDamageIncrease",
-                "AttrDamageToBrokenUnitIncrease",
-                "NormalAttackDamageIncrease",
-                "CrystAndPulseDamageIncrease",
-                "FireAndNaturalDamageIncrease"
-            ], [
-                "MaxHp",
-                "AllDamageTakenScalar",
-                "HealOutputIncrease"
-            ]
-        ],
-        stats_1: [],
-        stats_2: [],
-        stats_3: []
-    };
-}
-
 export function getDefaultEquipmentSortParams(): EquipmentSortParams {
     return {
         sortFieldOrder: [
@@ -308,7 +209,7 @@ export function getAllEquipmentStatsGrouped(): string[][] {
     ];
 }
 
-export function getEquipmentFilters2(): EquipmentFilters {
+export function getEquipmentFilters(): EquipmentFilters {
     return {
         rarity: new FilterSelector(get(equipmentSortParams).sortFieldParams.rarity, item => item.rarity),
         partType: new FilterSelector(get(equipmentSortParams).sortFieldParams.partType, item => item.partType === 0 ? "body" : item.partType === 1 ? "hand" : "edc"),
@@ -370,12 +271,35 @@ export function getWeaponSortOptions(): WeaponSortOption[] {
     return ["rarity", "type"];
 }
 
-export function getEquipmentSortOptions(): EquipmentSortOption[] {
-    return ["rarity"];
+export function getDefaultEnemySortParams(): EnemySortParams {
+    return {
+        sortFieldOrder: [
+            EnemyComparatorName.GROUP_ID,
+            EnemyComparatorName.RARITY,
+            EnemyComparatorName.LOCALE
+        ],
+        sortFieldParams: {
+            rarity: [6, 5, 4, 3],
+            groupId: [
+                "wiki_group_monster_witchcraft",
+                "wiki_group_monster_js",
+                "wiki_group_monster_kl",
+                "wiki_group_monster_angel",
+                "wiki_group_monster_landbreaker",
+                "wiki_group_monster_hongshan",
+                "wiki_group_monster_animal",
+                "none"
+            ],
+            locale: LocaleOrder.A_Z
+        }
+    };
 }
 
-export function getEnemySortOptions(): EnemySortOption[] {
-    return ["rarity"];
+export function getEnemyFilters2(): EnemyFilters {
+    return {
+        rarity: new FilterSelector(get(enemySortParams).sortFieldParams.rarity, enemy => enemy.rarity),
+        groupId: new FilterSelector(get(enemySortParams).sortFieldParams.groupId, enemy => enemy.groupId || "none")
+    };
 }
 
 export function getDefaultItemSortParams(): RecipeSortParams {
@@ -577,8 +501,10 @@ export const operatorSearch: Writable<string> = writable("");
 export const operatorOwnedOnly: Writable<boolean> = writable(false);
 
 export const enemyFilters: Writable<EnemySelectedFilters> = writable({});
+export const enemySortParams: Writable<EnemySortParams> = createPersistentStore("enemySortParams", getDefaultEnemySortParams());
 export const enemySearch: Writable<string> = writable("");
 export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGroupMode", true);
+export const enemyGroupOption: Writable<EnemyGroupOption> = createPersistentStore("enemyGroupOption", "groupId");
 
 export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());

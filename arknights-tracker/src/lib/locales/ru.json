@@ -643,6 +643,7 @@
     "striker": "Штурмовик"
   },
   "sort": {
+    "enemyGroupTitle": "Фракция",
     "level": "Уровень",
     "equipCondTitle": "Тип условия",
     "targetType": "Тип цели",
@@ -2122,6 +2123,7 @@
     "TherResistance": "Эфирная СОПР"
   },
   "enemiesGroups": {
+    "none": "Нет данных",
     "wiki_group_monster_angel": "Аггелы",
     "wiki_group_monster_landbreaker": "Землекрушители",
     "wiki_group_monster_hongshan": "Разбойники-цанцзэй",

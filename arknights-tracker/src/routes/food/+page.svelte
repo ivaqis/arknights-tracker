@@ -65,6 +65,7 @@
         nameGroups
     } from "$lib/utils/collectionUtils";
     import { onMount } from "svelte";
+    import { currentLocale, normalizeLocale } from "$lib/stores/locale.js";
 
     type CondType = EquipableItemConditionType | "null";
 
@@ -216,6 +217,8 @@
         comparator.endManual();
     }
 
+    $: nameComparator.locale = normalizeLocale($currentLocale);
+
     function getComparator(name: FoodFieldComparatorName): IReactiveComparator<IFood> {
         switch (name) {
             case FoodFieldComparatorName.RARITY:
@@ -356,7 +359,7 @@
             case "rarity":
                 return groupPreservingOrderAndName(items, item => item.rarity, key => String(key));
             case "equipCond":
-                return groupPreservingOrderAndName(items, item => item.tactical?.condType ?? "null", key => $t(EquipableItemConditionType.getI18nKey(key)))
+                return groupPreservingOrderAndName(items, item => item.tactical?.condType ?? "null", key => $t(EquipableItemConditionType.getI18nKey(key)));
             case "targetType":
                 return groupPreservingOrderAndName(items, item => item.targetType, key => $t(UsableTargetType.getI18nKey(key)));
             case "locale":

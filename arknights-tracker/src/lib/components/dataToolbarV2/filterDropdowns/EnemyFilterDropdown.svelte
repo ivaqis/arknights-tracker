@@ -1,37 +1,16 @@
-<script>
+<script lang="ts">
+    import { EnemyComparatorName } from "$lib/classes/comparators/names/EnemyComparatorName";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
-    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
+    import EnemyGroupParamBox from "$lib/components/dataToolbarV2/paramBoxes/EnemyGroupParamBox.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import { t } from "$lib/i18n";
+    import type { EnemyFilters } from "$lib/stores/filters/enemies/EnemyFilters";
 
-    export let filters = {};
+    export let filters: EnemyFilters;
 
-    export let selectedFilters = {};
-
-    export let onFilterReset = () => selectedFilters = {};
-
-    function toggleFilterGroup(groupName) {
-        if (!selectedFilters[groupName]) {
-            selectedFilters[groupName] = new Set();
-        }
-
-        let set = selectedFilters[groupName];
-
-        if (set.size === 0) {
-            for (let filter of filters[groupName]) {
-                set.add(filter);
-            }
-        } else {
-            set.clear();
-        }
-
-        forceFiltersUpdate();
-    }
-
-    function forceFiltersUpdate() {
-        selectedFilters = selectedFilters;
-    }
+    export let onFilterReset: () => void;
 
 </script>
 
@@ -44,15 +23,30 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("rarity")}
+            onClick={() => filters[EnemyComparatorName.RARITY].toggleAll()}
         >
             {$t("sort.rarity")}
         </GroupTitle>
 
-        <SelectableParamList
-            paramList={filters.rarity}
+        <ParamSelector
             paramBox={RarityParamBox}
-            bind:selectedParamSet={selectedFilters.rarity}
+            selector={filters[EnemyComparatorName.RARITY]}
+        />
+
+    </div>
+
+    <div class="flex flex-col items-start gap-2">
+
+        <GroupTitle
+            asButton={true}
+            onClick={() => filters[EnemyComparatorName.GROUP_ID].toggleAll()}
+        >
+            {$t("sort.enemyGroupTitle")}
+        </GroupTitle>
+
+        <ParamSelector
+            paramBox={EnemyGroupParamBox}
+            selector={filters[EnemyComparatorName.GROUP_ID]}
         />
 
     </div>

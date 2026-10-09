@@ -1,5 +1,5 @@
 <script module>
-    import { getEquipmentFilters2 } from "$lib/stores/filterStore.ts";
+    import { getEquipmentFilters } from "$lib/stores/filterStore.ts";
 
     let savedDisplayLimit = 4;
     let savedFlatDisplayLimit = 60;
@@ -7,7 +7,7 @@
     let savedSortDirection = "desc";
     let savedSelectedAttrType = "any";
 
-    const equipFilters = getEquipmentFilters2();
+    const equipFilters = getEquipmentFilters();
 </script>
 
 <script>
@@ -35,9 +35,8 @@
         equipmentFilters,
         equipmentGroupMode, equipmentGroupOption,
         equipmentSearch, equipmentSortParams, getAllEquipmentStatsGrouped, getDefaultEquipmentSortParams,
-        getEquipmentFilters,
     } from "$lib/stores/filterStore";
-    import { currentLocale } from "$lib/stores/locale";
+    import { currentLocale, normalizeLocale } from "$lib/stores/locale";
     import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
     import { onDestroy, onMount } from "svelte";
 
@@ -248,6 +247,8 @@
         comparatorChain.endManual();
     }
 
+    $: nameComparator.locale = normalizeLocale($currentLocale);
+
     function getComparator(name) {
         switch (name) {
             case "rarity":
@@ -269,14 +270,6 @@
     let showOwnedOnly = false;
 
     let selectedAttrType = savedSelectedAttrType;
-
-    const availablePacks = [
-        ...new Set( allEquipment.map((eq) => eq.pack).filter((pack) => pack) ),
-        "none"
-    ];
-
-    let allFilters = getEquipmentFilters();
-    allFilters.pack = availablePacks;
 
     $: filteredEquipment = getFilteredItems(allEquipment, isNumericActive ? $statsNumericChain : $statsAnyChain, $comparatorChain, sortDirection === "desc" ? 1 : -1);
 
