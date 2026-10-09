@@ -22,6 +22,7 @@ import type { EquipmentSelectedFilters } from "$lib/stores/filters/equipment/Equ
 import type { EquipmentSortOption } from "$lib/stores/filters/equipment/EquipmentSortOption";
 import type { EquipmentSortParams } from "$lib/stores/filters/equipment/EquipmentSortParams";
 import type { FoodFilters } from "$lib/stores/filters/food/FoodFilters";
+import type { FoodGroupOption } from "$lib/stores/filters/food/FoodGroupField";
 import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
 import type { OperatorFilterOptions } from "$lib/stores/filters/operators/OperatorFilterOptions";
 import type { OperatorSelectedFilters } from "$lib/stores/filters/operators/OperatorSelectedFilters";
@@ -586,6 +587,8 @@ export const itemGroupOption: Writable<RecipeGroupOption> = createPersistentStor
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
 export const foodSearch: Writable<string> = writable("");
+export const foodGroupMode: Writable<boolean> = createPersistentStore("foodGroupMode", false);
+export const foodGroupOption: Writable<FoodGroupOption> = createPersistentStore("foodGroupOption", "inherit_sort");
 
 export const recordsExcludedBannerTypes: Writable<string[]> = createPersistentStore("recordsExcludedBannerTypes", []);
 export const recordsExcludedBanners: Writable<string[]> = createPersistentStore("recordsExcludedBanners", []);

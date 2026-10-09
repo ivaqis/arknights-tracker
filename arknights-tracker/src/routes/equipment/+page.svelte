@@ -716,7 +716,7 @@
 
         <div class="w-full {$splitEquipmentView ? '' : 'xl:w-[69%]'} pb-12 flex flex-col gap-5 relative">
             {#if isGrouped}
-                {#each displayedGroups as group}
+                {#each displayedGroups as group (group.key)}
                     <div class="flex flex-col gap-1 animate-fadeIn">
                         <div class="flex items-center gap-2 pb-2">
 
