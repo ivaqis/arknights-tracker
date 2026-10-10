@@ -650,6 +650,7 @@
     "striker": "Striker"
   },
   "sort": {
+    "sortGroups": "Groups in sort order",
     "enemyGroupTitle": "Faction",
     "level": "Level",
     "equipCondTitle": "Condition Type",
@@ -674,7 +675,7 @@
     "title": "Sort",
     "filters": "Filters",
     "grouping": "Grouping",
-    "inherit_sort": "Inherit sort",
+    "inherit_sort": "First Sorting Parameter",
     "skillMaterials": "Skill Materials",
     "any": "[Any]",
     "stats": "Attributes",

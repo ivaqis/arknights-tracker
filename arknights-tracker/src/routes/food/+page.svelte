@@ -36,8 +36,9 @@
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import FoodFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/FoodFilterDropdown.svelte";
+    import type { GroupSelectEvent } from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectEvent";
+    import GroupSelectorDropdown from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectorDropdown.svelte";
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
-    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import FoodComparisonTable from "$lib/components/food/FoodComparisonTable.svelte";
     import FoodComparisonTableSelector from "$lib/components/food/FoodComparisonTableSelector.svelte";
     import FoodDetailView from "$lib/components/food/FoodDetailView.svelte";
@@ -51,7 +52,7 @@
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
     import {
         foodGroupMode,
-        foodGroupOption,
+        foodGroupOption, foodGroupSort,
         foodSearch,
         foodSortParams,
         getDefaultFoodSortParams
@@ -265,6 +266,11 @@
         filterChain.endManual();
     }
 
+    function resetGroup() {
+        $foodGroupSort = false;
+        $foodGroupOption = "inherit_sort";
+    }
+
     function checkSortParams(current: FoodSortParams, defaultParams: FoodSortParams): boolean {
         if (!current || !current.sortFieldParams || !current.sortFieldOrder) {
             return false;
@@ -338,11 +344,23 @@
 
     $: isInheritSortBuff = $foodGroupOption === "inherit_sort" && groupField === "buff";
 
-    let groupedItems: NamedGroupEntry<IFood, string | Rarity>[];
+    const groupRarityComparator: IFieldValueComparator<NamedGroupEntry<IFood, Rarity>, Rarity> = new FieldValueComparator(entry => entry.key);
+    const groupBuffComparator: IFieldValueComparator<NamedGroupEntry<IFood, string>> = new FieldValueComparator(entry => entry.key);
+    const groupEquipCondComparator: IFieldValueComparator<NamedGroupEntry<IFood, EquipableItemConditionType | "null">, EquipableItemConditionType | "null"> = new FieldValueComparator(entry => entry.key);
+    const groupTargetTypeComparator: IFieldValueComparator<NamedGroupEntry<IFood, UsableTargetType>, UsableTargetType> = new FieldValueComparator(entry => entry.key);
+    const groupNameComparator: ILocaleComparator<NamedGroupEntry<IFood, string>> = new LocaleComparator(entry => entry.key, normalizeLocale($currentLocale));
 
-    $: groupedItems = groupItems(filteredItems, groupField, isInheritSortBuff);
+    $: {
+        groupRarityComparator.setValueOrder($foodSortParams.sortFieldParams.rarity);
+        groupBuffComparator.setValueOrder($foodSortParams.sortFieldParams.buff);
+        groupEquipCondComparator.setValueOrder($foodSortParams.sortFieldParams.equipCond);
+        groupTargetTypeComparator.setValueOrder($foodSortParams.sortFieldParams.targetType);
+        groupNameComparator.order = $foodSortParams.sortFieldParams.locale;
+    }
 
-    function groupItems(items: Iterable<IFood>, field: FoodGroupField, isInheritSortBuff: boolean) {
+    $: groupNameComparator.locale = normalizeLocale($currentLocale);
+
+    function groupItems(items: Iterable<IFood>, field: FoodGroupField, isInheritSortBuff: boolean): NamedGroupEntry<IFood, string | Rarity>[] {
         if (isInheritSortBuff) {
             return nameGroups(
                 groupManyCustomOrder(items, item => item.buffs.map(buff => buff.buffId), $foodSortParams.sortFieldParams.buff),
@@ -367,6 +385,42 @@
         }
     }
 
+    let groupItemsAndSort: (items: Iterable<IFood>, field: FoodGroupField) => NamedGroupEntry<IFood, string | Rarity>[];
+
+    $: groupItemsAndSort = (items, field) => {
+        switch (field) {
+            case "buff":
+                return nameGroups(
+                    groupManyPreservingOrder(items, item => item.buffs.map(buff => buff.buffId)),
+                    key => $t(`buffNames.${key}`)
+                )
+                    .sort((a, b) => $groupBuffComparator.compare(a, b));
+            case "rarity":
+                return groupPreservingOrderAndName(items, item => item.rarity, key => String(key))
+                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+            case "equipCond":
+                return groupPreservingOrderAndName(items, item => item.tactical?.condType ?? "null", key => $t(EquipableItemConditionType.getI18nKey(key)))
+                    .sort((a, b) => $groupEquipCondComparator.compare(a, b));
+            case "targetType":
+                return groupPreservingOrderAndName(items, item => item.targetType, key => $t(UsableTargetType.getI18nKey(key)))
+                    .sort((a, b) => $groupTargetTypeComparator.compare(a, b));
+            case "locale":
+                return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key)
+                    .sort((a, b) => $groupNameComparator.compare(a, b));
+        }
+    };
+
+    let groupedItems: NamedGroupEntry<IFood, string | Rarity>[];
+
+    $: groupedItems = $foodGroupSort ? groupItemsAndSort(filteredItems, groupField) : groupItems(filteredItems, groupField, isInheritSortBuff);
+
+    function onGroupSelect(event: GroupSelectEvent<FoodGroupOption>) {
+        if (event.previousOption === event.newOption) {
+            $foodGroupMode = !$foodGroupMode;
+        } else {
+            $foodGroupMode = true;
+        }
+    }
 
     /// COMPARISON TAB
 
@@ -494,11 +548,14 @@
                         onFilterReset={resetFilters}
                     />
 
-                    <SortSelectorDropdown
+                    <GroupSelectorDropdown
                         slot="groupDropdown"
+                        getLocaleFn={getGroupOptionTitle}
                         optionList={groupOptions}
-                        getLocaleFunc={getGroupOptionTitle}
+                        onResetButtonClick={resetGroup}
+                        onOptionSelect={onGroupSelect}
                         bind:selectedOption={$foodGroupOption}
+                        bind:isGroupSortActive={$foodGroupSort}
                     />
 
                 </DataToolbar>
