@@ -236,15 +236,16 @@
     }
 
     let sortDirection: SortDirection = "asc";
+    let reverseMultiplier: number = 1;
+
+    $: reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
     let filteredItems: IFood[];
 
-    $: filteredItems = getFilteredItems(allItems, sortDirection, $filterChain);
+    $: filteredItems = getFilteredItems(allItems, reverseMultiplier, $filterChain);
 
-    function getFilteredItems(items: readonly IFood[], sortDirection: SortDirection, filter: IFilter<IFood>) {
+    function getFilteredItems(items: readonly IFood[], reverseMultiplier: number, filter: IFilter<IFood>) {
         const result: IFood[] = items.filter(item => filter.satisfies(item));
-
-        const reverseMultiplier = sortDirection === "desc" ? -1 : 1;
 
         result.sort((a, b) => comparator.compare(a, b) * reverseMultiplier);
 
@@ -394,19 +395,19 @@
                     groupManyPreservingOrder(items, item => item.buffs.map(buff => buff.buffId)),
                     key => $t(`buffNames.${key}`)
                 )
-                    .sort((a, b) => $groupBuffComparator.compare(a, b));
+                    .sort((a, b) => $groupBuffComparator.compare(a, b) * reverseMultiplier);
             case "rarity":
                 return groupPreservingOrderAndName(items, item => item.rarity, key => String(key))
-                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+                    .sort((a, b) => $groupRarityComparator.compare(a, b) * reverseMultiplier);
             case "equipCond":
                 return groupPreservingOrderAndName(items, item => item.tactical?.condType ?? "null", key => $t(EquipableItemConditionType.getI18nKey(key)))
-                    .sort((a, b) => $groupEquipCondComparator.compare(a, b));
+                    .sort((a, b) => $groupEquipCondComparator.compare(a, b) * reverseMultiplier);
             case "targetType":
                 return groupPreservingOrderAndName(items, item => item.targetType, key => $t(UsableTargetType.getI18nKey(key)))
-                    .sort((a, b) => $groupTargetTypeComparator.compare(a, b));
+                    .sort((a, b) => $groupTargetTypeComparator.compare(a, b) * reverseMultiplier);
             case "locale":
                 return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key)
-                    .sort((a, b) => $groupNameComparator.compare(a, b));
+                    .sort((a, b) => $groupNameComparator.compare(a, b) * reverseMultiplier);
         }
     };
 

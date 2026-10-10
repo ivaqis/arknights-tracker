@@ -210,11 +210,11 @@
         }
     }
 
-    let revereMultiplier;
+    let reverseMultiplier;
 
-    $: revereMultiplier = sortDirection === "asc" ? -1 : 1;
+    $: reverseMultiplier = sortDirection === "asc" ? -1 : 1;
 
-    $: filteredEnemies = filterEnemies(allEnemies, $filterChain, $comparatorChain, revereMultiplier);
+    $: filteredEnemies = filterEnemies(allEnemies, $filterChain, $comparatorChain, reverseMultiplier);
 
     function filterEnemies(allEnemies, filter, comparator, reverseMultiplier) {
         const filtered = allEnemies.filter(enemy => `enemies.${enemy.id}` !== $t(`enemies.${enemy.id}`) && filter.satisfies(enemy));
@@ -302,13 +302,13 @@
         switch (groupField) {
             case "rarity":
                 return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.rarity, String)
-                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+                    .sort((a, b) => $groupRarityComparator.compare(a, b) * reverseMultiplier);
             case "groupId":
                 return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.groupId || "none", key => $t(`enemiesGroups.${key}`))
-                    .sort((a, b) => $groupGroupIdComparator.compare(a, b));
+                    .sort((a, b) => $groupGroupIdComparator.compare(a, b) * reverseMultiplier);
             case "locale":
                 return groupPreservingOrderAndName(filteredEnemies, enemy => $t(`enemies.${enemy.id}`).at(0).toUpperCase(), key => key)
-                    .sort((a, b) => $groupNameComparator.compare(a, b));
+                    .sort((a, b) => $groupNameComparator.compare(a, b) * reverseMultiplier);
         }
 
         throw new Error(`Unknown group field: ${groupField}`);
