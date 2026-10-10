@@ -46,6 +46,7 @@
     import type { ItemType } from "$lib/classes/gameData/items/ItemType";
     import { RecipeType } from "$lib/classes/gameData/recipes/RecipeType";
     import { RecipeSource } from "$lib/classes/gameData/recipes/sources/RecipeSource";
+    import type { NamedGroupEntry } from "$lib/classes/NamedGroupEntry";
     import type { Rarity } from "$lib/classes/Rarity";
     import { GasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/GasEnvRecipeSearcher";
     import type { IGasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/IGasEnvRecipeSearcher";
@@ -68,8 +69,9 @@
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import RecipesFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/RecipesFilterDropdown.svelte";
+    import type { GroupSelectEvent } from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectEvent";
+    import GroupSelectorDropdown from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectorDropdown.svelte";
     import RecipesSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/RecipesSortDropdown.svelte";
-    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import BuildingRecipeGroup from "$lib/components/recipes/formulas/BuildingRecipeGroup.svelte";
     import CrafterModeRecipeGroup from "$lib/components/recipes/formulas/CrafterModeRecipeGroup.svelte";
@@ -98,7 +100,7 @@
     import {
         getDefaultItemSortParams,
         itemGroupMode,
-        itemGroupOption,
+        itemGroupOption, itemGroupSort,
         itemSearch,
         itemSortParams
     } from "$lib/stores/filterStore";
@@ -247,6 +249,11 @@
         filterChain.endManual();
     }
 
+    function resetGroup() {
+        $itemGroupSort = false;
+        $itemGroupOption = "inherit_sort";
+    }
+
     function checkSortParams(currentSortParams: RecipeSortParams, defaultSortParams: RecipeSortParams) {
         if (!currentSortParams || !currentSortParams.sortFieldOrder || !currentSortParams.sortFieldParams) {
             return false;
@@ -332,16 +339,25 @@
         groupField = $itemGroupOption;
     }
 
-    let groupedItems: DisplayedItemGroup[] = [];
+    const groupRarityComparator: IFieldValueComparator<NamedGroupEntry<IItem, Rarity>, Rarity> = new FieldValueComparator(entry => entry.key);
+    const groupEventComparator: IFieldValueComparator<NamedGroupEntry<IItem, string | "nonEvent">, string | "nonEvent"> = new FieldValueComparator(entry => entry.key);
+    const groupGroupComparator: IFieldValueComparator<NamedGroupEntry<IItem, ItemGroup>, ItemGroup> = new FieldValueComparator(entry => entry.key);
+    const groupTypeComparator: IFieldValueComparator<NamedGroupEntry<IItem, ItemType>, ItemType> = new FieldValueComparator(entry => entry.key);
+    const groupMaterialComparator: IFieldValueComparator<NamedGroupEntry<IItem, ItemMaterial | "nonMaterial">, ItemMaterial | "nonMaterial"> = new FieldValueComparator(entry => entry.key);
+    const groupNameComparator: ILocaleComparator<NamedGroupEntry<IItem, string>> = new LocaleComparator(entry => entry.key, normalizeLocale($currentLocale));
 
-    $: groupedItems = groupItems(filteredItems, groupField);
-
-    interface DisplayedItemGroup {
-        title: string;
-        list: IItem[];
+    $: {
+        groupRarityComparator.setValueOrder($itemSortParams.sortFieldParams.rarity);
+        groupEventComparator.setValueOrder($itemSortParams.sortFieldParams.events);
+        groupGroupComparator.setValueOrder($itemSortParams.sortFieldParams.itemGroups);
+        groupTypeComparator.setValueOrder($itemSortParams.sortFieldParams.itemTypes);
+        groupMaterialComparator.setValueOrder($itemSortParams.sortFieldParams.itemMaterials);
+        groupNameComparator.order = $itemSortParams.sortFieldParams.localeName;
     }
 
-    function groupItems(items: Iterable<IItem>, field: RecipeGroupField): DisplayedItemGroup[] {
+    $: groupNameComparator.locale = normalizeLocale($currentLocale);
+
+    function groupItems(items: Iterable<IItem>, field: RecipeGroupField): NamedGroupEntry<IItem, string | Rarity>[] {
         switch (field) {
             case "rarity":
                 return groupPreservingOrderAndName(items, item => item.rarity, key => String(key));
@@ -362,10 +378,56 @@
         }
     }
 
+    let groupItemsAndSort: (items: Iterable<IItem>, field: RecipeGroupField) => NamedGroupEntry<IItem, string | Rarity>[];
+
+    $: groupItemsAndSort = (items, field) => {
+        switch (field) {
+            case "rarity":
+                return groupPreservingOrderAndName(items, item => item.rarity, key => String(key))
+                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+            case "events":
+                return groupPreservingOrderAndName(
+                    items,
+                    item => itemEventMap.get(item.gameId)?.id ?? "nonEvent",
+                    key => $t(factoryEventStorage.byId.get(key)?.title ?? "sort.events.nonEvent")
+                )
+                    .sort((a, b) => $groupEventComparator.compare(a, b));
+            case "itemGroups":
+                return groupPreservingOrderAndName(items, item => item.groupId, key => $t(`sort.itemGroups.${key}`))
+                    .sort((a, b) => $groupGroupComparator.compare(a, b));
+
+            case "itemTypes":
+                return groupPreservingOrderAndName(items, item => item.type, key => $t(`sort.itemTypes.${key}`))
+                    .sort((a, b) => $groupTypeComparator.compare(a, b));
+
+            case "itemMaterials":
+                return groupPreservingOrderAndName(items, item => item.material ?? "nonMaterial", key => $t(`sort.itemMaterials.${key}`))
+                    .sort((a, b) => $groupMaterialComparator.compare(a, b));
+
+            case "localeName":
+                return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key)
+                    .sort((a, b) => $groupNameComparator.compare(a, b));
+
+        }
+    };
+
+    let groupedItems: NamedGroupEntry<IItem, string | Rarity>[] = [];
+
+    $: groupedItems = $itemGroupSort ? groupItemsAndSort(filteredItems, groupField) : groupItems(filteredItems, groupField);
+
+    function onGroupSelect(event: GroupSelectEvent<RecipeGroupOption>) {
+        if (event.previousOption === event.newOption) {
+            $itemGroupMode = !$itemGroupMode;
+        } else {
+            $itemGroupMode = true;
+        }
+    }
+
+
     let groupDisplayLimit = 2;
     let flatDisplayLimit = 40;
 
-    let displayedGroups: DisplayedItemGroup[] = [];
+    let displayedGroups: NamedGroupEntry<IItem, string | Rarity>[] = [];
     let displayedItems: IItem[] = [];
 
     $: displayedGroups = $itemGroupMode ? groupedItems.slice(0, groupDisplayLimit) : [];
@@ -553,10 +615,13 @@
                     onFilterReset={resetFilters}
                 />
 
-                <SortSelectorDropdown
+                <GroupSelectorDropdown
                     slot="groupDropdown"
+                    getLocaleFn={getGroupOptionTitle}
+                    onOptionSelect={onGroupSelect}
+                    onResetButtonClick={resetGroup}
                     optionList={groupOptions}
-                    getLocaleFunc={getGroupOptionTitle}
+                    bind:isGroupSortActive={$itemGroupSort}
                     bind:selectedOption={$itemGroupOption}
                 />
 

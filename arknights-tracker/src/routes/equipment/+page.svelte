@@ -19,8 +19,8 @@
     import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain.ts";
     import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain.ts";
     import { SearchFilter } from "$lib/classes/filters/SearchFilter.ts";
+    import GroupSelectorDropdown from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectorDropdown.svelte";
     import EquipmentSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EquipmentSortDropdown.svelte";
-    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
@@ -33,7 +33,7 @@
     import { t } from "$lib/i18n";
     import {
         equipmentFilters,
-        equipmentGroupMode, equipmentGroupOption,
+        equipmentGroupMode, equipmentGroupOption, equipmentGroupSort,
         equipmentSearch, equipmentSortParams, getAllEquipmentStatsGrouped, getDefaultEquipmentSortParams,
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
@@ -324,6 +324,11 @@
         selectedAttrType = "any"
     }
 
+    function resetGroup() {
+        $equipmentGroupOption = "pack";
+        $equipmentGroupSort = false;
+    }
+
     const groupOptions = [
         "inherit_sort",
         "rarity",
@@ -352,6 +357,22 @@
         groupField = $equipmentGroupOption;
     }
 
+    const groupRarityComparator = new FieldValueComparator(entry => entry.key);
+    const groupPartTypeComparator = new FieldValueComparator(entry => entry.key);
+    const groupPackComparator = new FieldValueComparator(entry => entry.key);
+    const groupLevelComparator = new NumberComparator(entry => entry.key);
+    const groupNameComparator = new LocaleComparator(entry => entry.key, normalizeLocale($currentLocale));
+
+    $: {
+        groupRarityComparator.setValueOrder($equipmentSortParams.sortFieldParams.rarity);
+        groupPartTypeComparator.setValueOrder($equipmentSortParams.sortFieldParams.partType);
+        groupPackComparator.setValueOrder($equipmentSortParams.sortFieldParams.pack);
+        groupLevelComparator.direction = $equipmentSortParams.sortFieldParams.level;
+        groupNameComparator.order = $equipmentSortParams.sortFieldParams.localeName;
+    }
+
+    $: groupNameComparator.locale = normalizeLocale($currentLocale);
+
     function groupEquip(filteredList, field) {
         switch (field) {
             case "rarity":
@@ -369,7 +390,39 @@
         throw new Error(`Unknown group field: ${field}`);
     }
 
-    $: groupedArray = groupEquip(filteredEquipment, groupField);
+    let groupEquipAndSort;
+
+    $: groupEquipAndSort = (filteredList, field) => {
+        switch (field) {
+            case "rarity":
+                return groupPreservingOrderAndName(filteredList, item => item.rarity, key => String(key))
+                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+            case "partType":
+                return groupPreservingOrderAndName(filteredList, item => getPartTypeId(item.partType), key => $t(`equipmentTypes.${key}`))
+                    .sort((a, b) => $groupPartTypeComparator.compare(a, b));
+            case "pack":
+                return groupPreservingOrderAndName(filteredList, item => item.pack || "none", key => $t(`packs.${key}`))
+                    .sort((a, b) => $groupPackComparator.compare(a, b));
+            case "level":
+                return groupPreservingOrderAndName(filteredList, item => item.level, key => String(key))
+                    .sort((a, b) => $groupLevelComparator.compare(a, b));
+            case "localeName":
+                return groupPreservingOrderAndName(filteredList, item => $t(`equipment.${item.id}`).at(0).toUpperCase(), key => key)
+                    .sort((a, b) => $groupNameComparator.compare(a, b));
+        }
+
+        throw new Error(`Unknown group field: ${field}`);
+    };
+
+    $: groupedArray = $equipmentGroupSort ? groupEquipAndSort(filteredEquipment, groupField) : groupEquip(filteredEquipment, groupField);
+
+    function onGroupSelect(event) {
+        if (event.previousOption === event.newOption) {
+            $equipmentGroupMode = !$equipmentGroupMode;
+        } else {
+            $equipmentGroupMode = true;
+        }
+    }
 
     let displayLimit = savedDisplayLimit;
     let flatDisplayLimit = savedFlatDisplayLimit;
@@ -697,10 +750,13 @@
                     bind:selectedAttrType={selectedAttrType}
                 />
 
-                <SortSelectorDropdown
+                <GroupSelectorDropdown
                     slot="groupDropdown"
+                    getLocaleFn={getGroupOptionTitle}
+                    onOptionSelect={onGroupSelect}
+                    onResetButtonClick={resetGroup}
                     optionList={groupOptions}
-                    getLocaleFunc={getGroupOptionTitle}
+                    bind:isGroupSortActive={$equipmentGroupSort}
                     bind:selectedOption={$equipmentGroupOption}
                 />
 

@@ -18,6 +18,7 @@
     import { ReactiveNamedComparatorChain } from "$lib/classes/comparators/ReactiveNamedComparatorChain.ts";
     import { ReactiveFilterChain } from "$lib/classes/filters/ReactiveFilterChain.ts";
     import { SearchFilter } from "$lib/classes/filters/SearchFilter.ts";
+    import GroupSelectorDropdown from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectorDropdown.svelte";
     import EnemySortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EnemySortDropdown.svelte";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale.ts";
     import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
@@ -27,14 +28,13 @@
     import EnemyDetailsView from "$lib/components/enemies/EnemyDetailsView.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EnemyFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EnemyFilterDropdown.svelte";
-    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { t } from "$lib/i18n";
     import { enemies } from "$lib/data/enemies.js";
     import {
         enemySearch,
         enemyGroupMode,
         getEnemyFilters,
-        enemySortParams, getDefaultEnemySortParams, enemyGroupOption
+        enemySortParams, getDefaultEnemySortParams, enemyGroupOption, enemyGroupSort
     } from "$lib/stores/filterStore";
 
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
@@ -237,6 +237,11 @@
         filterChain.endManual();
     }
 
+    function resetGroup() {
+        $enemyGroupOption = "groupId";
+        $enemyGroupSort = false;
+    }
+
     let isFilterActive = false;
     $: isFilterActive = !$rarityFilter.isEmpty || !$groupIdFilter.isEmpty;
 
@@ -266,7 +271,17 @@
         groupField = $enemyGroupOption;
     }
 
-    $: groupedArray = groupEnemies(filteredEnemies, groupField);
+    const groupRarityComparator = new FieldValueComparator(entry => entry.key);
+    const groupGroupIdComparator = new FieldValueComparator(entry => entry.key);
+    const groupNameComparator = new LocaleComparator(entry => entry.key, normalizeLocale($currentLocale));
+
+    $: {
+        groupRarityComparator.setValueOrder($enemySortParams.sortFieldParams.rarity);
+        groupGroupIdComparator.setValueOrder($enemySortParams.sortFieldParams.groupId);
+        groupNameComparator.order = $enemySortParams.sortFieldParams.locale;
+    }
+
+    $: groupNameComparator.locale = normalizeLocale($currentLocale);
 
     function groupEnemies(filteredEnemies, groupField) {
         switch (groupField) {
@@ -279,6 +294,34 @@
         }
 
         throw new Error(`Unknown group field: ${groupField}`);
+    }
+
+    let groupEnemiesAndSort;
+
+    $: groupEnemiesAndSort = (filteredEnemies, groupField) => {
+        switch (groupField) {
+            case "rarity":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.rarity, String)
+                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+            case "groupId":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => enemy.groupId || "none", key => $t(`enemiesGroups.${key}`))
+                    .sort((a, b) => $groupGroupIdComparator.compare(a, b));
+            case "locale":
+                return groupPreservingOrderAndName(filteredEnemies, enemy => $t(`enemies.${enemy.id}`).at(0).toUpperCase(), key => key)
+                    .sort((a, b) => $groupNameComparator.compare(a, b));
+        }
+
+        throw new Error(`Unknown group field: ${groupField}`);
+    };
+
+    $: groupedArray = $enemyGroupSort ? groupEnemiesAndSort(filteredEnemies, groupField) : groupEnemies(filteredEnemies, groupField);
+
+    function onGroupSelect(event) {
+        if (event.previousOption === event.newOption) {
+            $enemyGroupMode = !$enemyGroupMode;
+        } else {
+            $enemyGroupMode = true;
+        }
     }
 
     let displayLimit = savedDisplayLimit;
@@ -377,11 +420,14 @@
                     filters={enemyFilters}
                 />
 
-                <SortSelectorDropdown
-                    bind:selectedOption={$enemyGroupOption}
-                    optionList={groupOptions}
+                <GroupSelectorDropdown
                     slot="groupDropdown"
-                    getLocaleFunc={getGroupOptionTitle}
+                    getLocaleFn={getGroupOptionTitle}
+                    onOptionSelect={onGroupSelect}
+                    onResetButtonClick={resetGroup}
+                    optionList={groupOptions}
+                    bind:isGroupSortActive={$enemyGroupSort}
+                    bind:selectedOption={$enemyGroupOption}
                 />
 
             </DataToolbar>

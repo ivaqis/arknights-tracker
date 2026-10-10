@@ -16,7 +16,6 @@ import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTarge
 import type { EnemyFilterOptions } from "$lib/stores/filters/enemies/EnemyFilterOptions";
 import type { EnemyFilters } from "$lib/stores/filters/enemies/EnemyFilters";
 import type { EnemyGroupOption } from "$lib/stores/filters/enemies/EnemyGroupField";
-import type { EnemySelectedFilters } from "$lib/stores/filters/enemies/EnemySelectedFilters";
 import type { EnemySortParams } from "$lib/stores/filters/enemies/EnemySortParams";
 import type { EquipmentFilters } from "$lib/stores/filters/equipment/EquipmentFilters";
 import type { EquipmentGroupOption } from "$lib/stores/filters/equipment/EquipmentGroupField";
@@ -487,6 +486,7 @@ export const equipmentSortParams: Writable<EquipmentSortParams> = createPersiste
 export const equipmentSearch: Writable<string> = writable("");
 export const equipmentGroupMode: Writable<boolean> = createPersistentStore("equipmentGroupMode", true);
 export const equipmentGroupOption: Writable<EquipmentGroupOption> = createPersistentStore("equipmentGroupOption", "pack");
+export const equipmentGroupSort: Writable<boolean> = createPersistentStore("equipmentGroupSort", false);
 
 export const weaponFilters: Writable<WeaponSelectedFilters> = writable({});
 export const weaponSearch: Writable<string> = writable("");
@@ -500,21 +500,23 @@ export const operatorFilters: Writable<OperatorSelectedFilters> = writable({});
 export const operatorSearch: Writable<string> = writable("");
 export const operatorOwnedOnly: Writable<boolean> = writable(false);
 
-export const enemyFilters: Writable<EnemySelectedFilters> = writable({});
 export const enemySortParams: Writable<EnemySortParams> = createPersistentStore("enemySortParams", getDefaultEnemySortParams());
 export const enemySearch: Writable<string> = writable("");
 export const enemyGroupMode: Writable<boolean> = createPersistentStore("enemyGroupMode", true);
 export const enemyGroupOption: Writable<EnemyGroupOption> = createPersistentStore("enemyGroupOption", "groupId");
+export const enemyGroupSort: Writable<boolean> = createPersistentStore("enemyGroupSort", false);
 
 export const itemSearch: Writable<string> = writable("");
 export const itemSortParams: Writable<RecipeSortParams> = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode: Writable<boolean> = createPersistentStore("itemGroupMode", true);
 export const itemGroupOption: Writable<RecipeGroupOption> = createPersistentStore("itemGroupOption", "inherit_sort");
+export const itemGroupSort: Writable<boolean> = createPersistentStore("itemGroupSort", false);
 
 export const foodSortParams: Writable<FoodSortParams> = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
 export const foodSearch: Writable<string> = writable("");
 export const foodGroupMode: Writable<boolean> = createPersistentStore("foodGroupMode", false);
 export const foodGroupOption: Writable<FoodGroupOption> = createPersistentStore("foodGroupOption", "inherit_sort");
+export const foodGroupSort: Writable<boolean> = createPersistentStore("foodGroupSort", false);
 
 export const recordsExcludedBannerTypes: Writable<string[]> = createPersistentStore("recordsExcludedBannerTypes", []);
 export const recordsExcludedBanners: Writable<string[]> = createPersistentStore("recordsExcludedBanners", []);
