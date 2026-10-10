@@ -384,29 +384,29 @@
         switch (field) {
             case "rarity":
                 return groupPreservingOrderAndName(items, item => item.rarity, key => String(key))
-                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+                    .sort((a, b) => $groupRarityComparator.compare(a, b) * reverseMultiplier);
             case "events":
                 return groupPreservingOrderAndName(
                     items,
                     item => itemEventMap.get(item.gameId)?.id ?? "nonEvent",
                     key => $t(factoryEventStorage.byId.get(key)?.title ?? "sort.events.nonEvent")
                 )
-                    .sort((a, b) => $groupEventComparator.compare(a, b));
+                    .sort((a, b) => $groupEventComparator.compare(a, b) * reverseMultiplier);
             case "itemGroups":
                 return groupPreservingOrderAndName(items, item => item.groupId, key => $t(`sort.itemGroups.${key}`))
-                    .sort((a, b) => $groupGroupComparator.compare(a, b));
+                    .sort((a, b) => $groupGroupComparator.compare(a, b) * reverseMultiplier);
 
             case "itemTypes":
                 return groupPreservingOrderAndName(items, item => item.type, key => $t(`sort.itemTypes.${key}`))
-                    .sort((a, b) => $groupTypeComparator.compare(a, b));
+                    .sort((a, b) => $groupTypeComparator.compare(a, b) * reverseMultiplier);
 
             case "itemMaterials":
                 return groupPreservingOrderAndName(items, item => item.material ?? "nonMaterial", key => $t(`sort.itemMaterials.${key}`))
-                    .sort((a, b) => $groupMaterialComparator.compare(a, b));
+                    .sort((a, b) => $groupMaterialComparator.compare(a, b) * reverseMultiplier);
 
             case "localeName":
                 return groupPreservingOrderAndName(items, item => $t(item.i18nKey).at(0)!.toUpperCase(), key => key)
-                    .sort((a, b) => $groupNameComparator.compare(a, b));
+                    .sort((a, b) => $groupNameComparator.compare(a, b) * reverseMultiplier);
 
         }
     };

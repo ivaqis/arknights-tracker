@@ -268,10 +268,13 @@
     let sortDirection = savedSortDirection;
     let searchQuery = "";
     let showOwnedOnly = false;
+    let reverseMultiplier = 1;
+
+    $: reverseMultiplier = sortDirection === "desc" ? 1 : -1;
 
     let selectedAttrType = savedSelectedAttrType;
 
-    $: filteredEquipment = getFilteredItems(allEquipment, isNumericActive ? $statsNumericChain : $statsAnyChain, $comparatorChain, sortDirection === "desc" ? 1 : -1);
+    $: filteredEquipment = getFilteredItems(allEquipment, isNumericActive ? $statsNumericChain : $statsAnyChain, $comparatorChain, reverseMultiplier);
 
     function getFilteredItems(allItems, filter, comparator, reverseMultiplier) {
         const filteredItems = allItems.filter(item => filter.satisfies(item));
@@ -396,19 +399,19 @@
         switch (field) {
             case "rarity":
                 return groupPreservingOrderAndName(filteredList, item => item.rarity, key => String(key))
-                    .sort((a, b) => $groupRarityComparator.compare(a, b));
+                    .sort((a, b) => $groupRarityComparator.compare(a, b) * reverseMultiplier);
             case "partType":
                 return groupPreservingOrderAndName(filteredList, item => getPartTypeId(item.partType), key => $t(`equipmentTypes.${key}`))
-                    .sort((a, b) => $groupPartTypeComparator.compare(a, b));
+                    .sort((a, b) => $groupPartTypeComparator.compare(a, b) * reverseMultiplier);
             case "pack":
                 return groupPreservingOrderAndName(filteredList, item => item.pack || "none", key => $t(`packs.${key}`))
-                    .sort((a, b) => $groupPackComparator.compare(a, b));
+                    .sort((a, b) => $groupPackComparator.compare(a, b) * reverseMultiplier);
             case "level":
                 return groupPreservingOrderAndName(filteredList, item => item.level, key => String(key))
-                    .sort((a, b) => $groupLevelComparator.compare(a, b));
+                    .sort((a, b) => $groupLevelComparator.compare(a, b) * reverseMultiplier);
             case "localeName":
                 return groupPreservingOrderAndName(filteredList, item => $t(`equipment.${item.id}`).at(0).toUpperCase(), key => key)
-                    .sort((a, b) => $groupNameComparator.compare(a, b));
+                    .sort((a, b) => $groupNameComparator.compare(a, b) * reverseMultiplier);
         }
 
         throw new Error(`Unknown group field: ${field}`);
