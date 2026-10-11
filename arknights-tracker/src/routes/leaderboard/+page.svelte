@@ -754,7 +754,7 @@
 
                         <div class="flex flex-col justify-between items-start md:items-end gap-4 min-w-0 md:max-w-md">
                             {#if currentDungeonLocale.description}
-                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)] dark:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
+                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug">
                                     {currentDungeonLocale.description}
                                 </p>
                             {/if}
@@ -1248,7 +1248,7 @@
                             }
                             return list;
                         })()}
-                        <div class="grid grid-cols-2 justify-items-center min-[450px]:flex min-[450px]:flex-row min-[450px]:justify-center gap-2 sm:gap-3 max-w-max mx-auto">
+                        <div class="flex flex-nowrap items-center justify-center gap-1.5 sm:gap-3 max-w-max mx-auto">
                             {#each teamChars as char}
                                 {@const op = char ? getOperatorData(char) : null}
                                 {@const charHref = (selectedEntry && op) ? `/u/${selectedEntry.user.name}?char=${op.id}${selectedEntry.serverId ? `&server=${selectedEntry.serverId}` : ''}` : null}

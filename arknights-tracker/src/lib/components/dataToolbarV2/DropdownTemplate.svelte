@@ -15,13 +15,13 @@
     on:keydown|stopPropagation
 >
 
-    <div class="flex justify-between">
+    <div class="flex justify-between items-center">
 
         <slot name="top" />
 
         {#if showResetButton}
 
-            <div class="flex justify-end">
+            <div class="flex justify-end items-center">
 
                 <ResetButton
                     onClick={onResetButton}

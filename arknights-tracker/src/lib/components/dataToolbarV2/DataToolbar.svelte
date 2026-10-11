@@ -73,14 +73,14 @@
 
 <svelte:window on:click={closeAllDropdown}/>
 
-<div class="flex flex-wrap gap-3 items-center w-full mb-6 {isFilterDropdownOpen || isSortDropdownOpen ? 'z-60' : 'z-40'}">
+<div class="flex flex-wrap gap-3 items-center w-full mb-6 {isFilterDropdownOpen || isSortDropdownOpen || isGroupDropdownOpen ? 'z-60' : 'z-40'}">
 
     {#if showSortDropdownButton}
 
         <div class="relative">
 
             <button
-                class="h-[40px] dark:bg-[#383838] dark:border dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
+                class="h-[40px] dark:bg-[#383838] dark:border dark:border-[#444444] hover:bg-gray-300 hover:dark:bg-[#373737] px-4 bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
                 on:click|stopPropagation={toggleSortDropdown}
             >
 
@@ -112,7 +112,7 @@
     {#if showSortDirectionButton}
 
         <button
-            class="h-[40px] px-4 bg-gray-200 dark:border dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors cursor-pointer"
+            class="h-[40px] px-4 bg-gray-200 hover:bg-gray-300 dark:border dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full flex items-center gap-2 transition-colors cursor-pointer"
             on:click={toggleSortDirection}
         >
 
@@ -231,7 +231,7 @@
             <input
                 type="text"
                 bind:value={searchString}
-                class="w-full h-[40px] dark:border dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
+                class="w-full h-[40px] dark:border dark:text-[#E0E0E0] hover:bg-gray-300 dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
                 placeholder={$t("sort.search")}
             />
 
@@ -281,38 +281,52 @@
 
         <div class="relative">
 
-            <button
-                class="absolute left-0 top-0 h-[40px] w-[40px] flex shrink-0 items-center justify-center rounded-full transition-colors cursor-pointer {
-                isGrouped
-                    ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]'
-                    : 'bg-gray-200 text-gray-400 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#787878] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'
-            }"
-                on:click={toggleGrouping}
-                title="Toggle Grouping"
+            <div
+                class="flex items-center h-[40px] rounded-full bg-gray-200 dark:bg-[#383838] dark:border dark:border-[#444444] transition-colors"
             >
 
-                <Icon
-                    name="list"
-                    class="w-5 h-5 pointer-events-none"
-                />
+                <div class="flex items-center justify-center px-1.5 h-full rounded-l-full">
 
-            </button>
+                    <button
+                        class="flex items-center justify-center w-[32px] h-[32px] rounded-full transition-colors cursor-pointer {
+                            isGrouped
+                                ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]'
+                                : 'bg-black/10 text-gray-500 hover:bg-black/20 dark:bg-white/10 dark:text-[#A0A0A0] dark:hover:bg-white/20'
+                        }"
+                        on:click={toggleGrouping}
+                        title={$t("sort.grouping")}
+                    >
 
-            <button
-                class="h-[40px] dark:bg-[#383838] dark:border dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
-                on:click|stopPropagation={toggleGroupDropdown}
-            >
+                        <Icon
+                            name="list"
+                            class="w-4 h-4 pointer-events-none"
+                        />
 
-                <span class="text-sm font-medium ml-8 dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
-                    {$t("sort.grouping")}
-                </span>
+                    </button>
 
-                <Icon
-                    name="arrowDown"
-                    class="w-3 h-3 text-gray-500 transition-transform {isGroupDropdownOpen ? 'rotate-180' : ''}"
-                />
+                </div>
 
-            </button>
+                <div
+                    class="w-[1px] h-4 bg-gray-400/40 dark:bg-[#555555] shrink-0 pointer-events-none"
+                ></div>
+
+                <button
+                    class="h-full pl-3 pr-4 rounded-r-full flex items-center gap-2 hover:bg-gray-300 hover:dark:bg-[#373737] transition-colors min-w-[110px] justify-between cursor-pointer select-none"
+                    on:click|stopPropagation={toggleGroupDropdown}
+                >
+
+                    <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
+                        {$t("sort.grouping")}
+                    </span>
+
+                    <Icon
+                        name="arrowDown"
+                        class="w-3 h-3 text-gray-500 transition-transform {isGroupDropdownOpen ? 'rotate-180' : ''}"
+                    />
+
+                </button>
+
+            </div>
 
             {#if isGroupDropdownOpen}
 
@@ -329,7 +343,7 @@
     {#if showExportExcelButton}
 
         <button
-            class="h-[40px] px-4 rounded-full border border-gray-200 dark:border-[#444] dark:bg-[#383838] hover:dark:bg-[#444] text-gray-700 dark:text-[#E0E0E0] hover:text-[#1D6F42] hover:border-[#1D6F42] dark:hover:text-green-400 dark:hover:border-green-500 hover:bg-green-50/50 dark:hover:bg-green-950/20 transition-all flex items-center justify-center gap-2 text-sm shadow-sm cursor-pointer whitespace-nowrap shrink-0"
+            class="h-[40px] bg-gray-200 px-4 rounded-full dark:bg-[#383838] hover:bg-gray-300 hover:dark:bg-[#373737]text-gray-700 dark:text-[#E0E0E0] dark:border-[#444444] dark:border hover:text-[#0B8140] dark:hover:text-green-400 transition-all flex items-center justify-center gap-2 text-sm shadow-sm cursor-pointer whitespace-nowrap shrink-0"
             on:click={onExportExcel}
         >
 

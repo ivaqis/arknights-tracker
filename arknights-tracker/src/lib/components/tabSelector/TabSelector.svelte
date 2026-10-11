@@ -22,7 +22,7 @@
     }
 </script>
 
-<div class="flex gap-6">
+<div class="flex gap-6 border-b border-gray-200 dark:border-[#333]">
 
     {#each tabList as tab}
 

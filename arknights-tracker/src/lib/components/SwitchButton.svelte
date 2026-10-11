@@ -10,10 +10,10 @@
     role="switch"
     aria-label="switch"
     aria-checked={isActive}
-    class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {
+    class="relative inline-flex h-6 w-11 items-center shrink-0 rounded-full transition-colors focus:outline-none {
         isActive
             ? 'bg-[#F9B90C]'
-            : 'bg-gray-300 dark:bg-[#555]'
+            : 'bg-gray-300 hover:bg-[#C6C9CF] dark:bg-[#555]'
     }"
     on:click={toggle}
 >

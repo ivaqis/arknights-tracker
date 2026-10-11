@@ -522,7 +522,7 @@
 
         {#if data.tab === FoodTabType.OVERVIEW}
 
-            <div class="mb-4 mt-4">
+            <div class="mt-5">
 
                 <DataToolbar
                     showSortDropdownButton={true}
