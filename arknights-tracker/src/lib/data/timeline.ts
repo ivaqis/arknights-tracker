@@ -1447,7 +1447,7 @@ export const rawEvents: GenericEventData[] = [
         color: "#68C19A",
         layer: 1,
         type: "inGame",
-        iconPosition: 30,
+        iconPosition: 50,
         version: "1.6"
     },
     {
@@ -1627,6 +1627,36 @@ export const rawEvents: GenericEventData[] = [
         layer: 8,
         type: "inGame",
         iconPosition: 40,
+        version: "1.6"
+    },
+    {
+        id: "ev12-v1.6",
+        title: "events.",
+        name: "Spirit's Restoration",
+        startTime: "2026-10-14 22:00:00",
+        startTimeAsia: "2026-10-15 11:00:00",
+        endTime: "2026-11-05 11:59:59",
+        icon: "ev12-v1.6.webp",
+        url: "",
+        color: "#76c668ff",
+        layer: 0,
+        type: "signIn",
+        iconPosition: 27,
+        version: "1.6"
+    },
+    {
+        id: "ev13-v1.6",
+        title: "events.",
+        name: "The Stars Are With Me",
+        startTime: "2026-11-05 12:00:00",
+        endTime: "2026-11-25 17:00:00",
+        endTimeAsia: "2026-11-26 04:00:00",
+        icon: "ev13-v1.6.webp",
+        url: "",
+        color: "#d2cc59ff",
+        layer: 0,
+        type: "signIn",
+        iconPosition: 27,
         version: "1.6"
     }
 ];
