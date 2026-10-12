@@ -9,6 +9,9 @@
 
     export let rewards = [];
     export let className = "";
+    export let size = "sm";
+
+    $: isLarge = size === "md";
 
     const allItemsList = [...currencies, ...progression];
 
@@ -39,7 +42,7 @@
               const rarityA = getItemRarity(a.id);
               const rarityB = getItemRarity(b.id);
               if (rarityB !== rarityA) return rarityB - rarityA;
-              return (b.count || 0) - (a.count || 0);
+              return (Number(b.count) || 0) - (Number(a.count) || 0);
           })
         : [];
 </script>
@@ -49,15 +52,17 @@
         {#each sortedRewards as reward}
             <Tooltip text={$t(`items.${reward.id}`)}>
                 <div
-                    class="flex items-center rounded-full px-2 py-0.5 border text-[11px] transition-colors {getRarityStyle(
+                    class="flex items-center rounded-full border transition-colors {isLarge ? 'px-[9px] py-[2px] text-[12px]' : 'px-2 py-0.5 text-[11px]'} {getRarityStyle(
                         reward.id,
                     )}"
                 >
-                    <span class="font-bold mr-1">{reward.count}</span>
+                    {#if reward.count && Number(reward.count) > 0}
+                        <span class="font-bold {isLarge ? 'mr-1.5' : 'mr-1'}">{reward.count}</span>
+                    {/if}
                     <Image
                         id={reward.id}
                         variant="item"
-                        size={16}
+                        size={isLarge ? 20 : 16}
                         className="object-contain"
                     />
                 </div>

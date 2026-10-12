@@ -15,15 +15,15 @@
     $: isMaxPot = pot >= 5;
 </script>
 
-<div class="relative flex items-center justify-center shrink-0 {className}" style="width: {size}px; height: {size}px;">
-    <svg width={size} height={size} viewBox="0 0 68 66" fill="none" class="transition-all duration-300 overflow-visible">
+<div class=" relative flex items-center justify-center shrink-0 {className}" style="width: {size}px; height: {size}px;">
+    <svg width={size} height={size} viewBox="0 0 68 66" fill="none" class="transition-all duration-300 overflow-visible filter drop-shadow-[-1px_1px_0_rgba(0,0,0,0.4)]">
     {#each potPaths as d, i}
         {@const isActive = i < pot}
         {@const isNext = i === pot}
         {@const isYellowState = isNext}
 
         {@const fill = isMaxPot ? "#FEFEFE" : isYellowState ? "#FEDE28" : isActive ? "#FFFDFE" : "rgba(255, 255, 255, 0.35)"}
-        {@const stroke = isMaxPot ? "#FDD835" : isYellowState ? "#FEDE28" : isActive ? "#FFFDFE" : "rgba(255, 255, 255, 0.65)"}
+        {@const stroke = isMaxPot ? "#FDD835" : isYellowState ? "#FEDE28" : isActive ? "#FFFDFE" : "rgba(255, 255, 255, 0.45)"}
         {@const strokeWidth = isMaxPot ? "1.0" : "1.5"}
 
         {@const glowClass = isMaxPot

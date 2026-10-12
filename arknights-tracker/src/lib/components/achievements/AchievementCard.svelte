@@ -191,7 +191,7 @@
         </div>
     {/if}
 
-    <div class="relative z-10 flex flex-col md:flex-row gap-4 md:gap-5 items-start">
+    <div class="relative z-10 flex flex-col md:flex-row gap-4 md:gap-5 mx-1.5 items-start">
         <div class="flex flex-col items-center shrink-0 w-24 md:w-28">
             <div class="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center relative">
                 <Image

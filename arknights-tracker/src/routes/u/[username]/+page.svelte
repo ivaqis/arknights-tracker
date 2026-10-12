@@ -13,7 +13,7 @@
     import { characters } from "$lib/data/characters.js";
     import { t } from "$lib/i18n";
     import { addNotification } from "$lib/stores/notifications.js";
-    import { isPageLoading } from "$lib/stores/pageLoading.js";
+    import { hasProfileBackground, isPageLoading } from "$lib/stores/pageLoading.js";
     import { getServerLabel } from "$lib/utils/profileUtils.js";
     import { onDestroy } from "svelte";
     import { fade } from "svelte/transition";
@@ -103,8 +103,10 @@
     }
 
     $: isPageLoading.set(loading);
+    $: hasProfileBackground.set(!!profile?.background);
     onDestroy(() => {
         isPageLoading.set(false);
+        hasProfileBackground.set(false);
     });
 
     $: sortedDetails = (() => {
@@ -174,11 +176,11 @@
 <div class="max-w-[1550px] w-full mx-auto pb-20">
     {#if profile && profile.background}
         <div class="fixed inset-0 w-[100vw] h-[100vh] pointer-events-none z-0 flex items-center justify-center overflow-hidden">
-            <div class="w-full h-full object-cover opacity-65 dark:opacity-55 transform scale-105">
+            <div class="w-full h-full object-cover dark:opacity-75 transform scale-105">
                 <Image id={profile.background} variant="operator-art" size="100%" />
             </div>
             <div class="absolute inset-0 bg-black/5 dark:bg-black/15 z-10"></div>
-            <div class="absolute bottom-0 left-0 right-0 h-[30vh] bg-gradient-to-t dark:from-[#2a2a2a] from-[#F0F2F4] to-transparent z-10"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-[30vh] bg-gradient-to-t dark:from-[#2a2a2a] from-[#F0F2F4]/40 to-transparent z-10"></div>
         </div>
     {/if}
     {#if loading}
@@ -205,7 +207,7 @@
         </div>
     {:else if profile}
         <div class="space-y-6 relative z-10" in:fade>
-            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <div class="relative group shrink-0 w-28 h-28">
                         <button
@@ -232,20 +234,22 @@
                         </button>
                     </div>
 
-                    <div class="flex flex-col gap-1 relative">
-                        <div class="flex items-center gap-2">
-                            <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk">
+                    <div class="flex flex-col gap-1 relative min-w-0 flex-1">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk leading-tight break-words [word-break:break-word] max-w-full">
                                 {profile.name}
                             </h1>
-                            <Tooltip text={$t("profile.copy_profile_link")}>
-                                <button on:click={handleCopyProfileLink} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
-                                    {#if linkCopied}
-                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                                    {:else}
-                                        <Icon name="link" class="w-4 h-4" />
-                                    {/if}
-                                </button>
-                            </Tooltip>
+                            <div class="flex items-center gap-1.5 shrink-0">
+                                <Tooltip text={$t("profile.copy_profile_link")}>
+                                    <button on:click={handleCopyProfileLink} class="w-7 h-7 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 border border-black/5 dark:border-white/10 backdrop-blur-sm text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all flex items-center justify-center">
+                                        {#if linkCopied}
+                                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                        {:else}
+                                            <Icon name="link" class="w-4 h-4" />
+                                        {/if}
+                                    </button>
+                                </Tooltip>
+                            </div>
                         </div>
                         {#if profile.avatar_strike === 1}
                             <span class="text-[10px] text-orange-400 font-bold flex items-center gap-1 mt-1">
@@ -345,7 +349,7 @@
 
                 </div>
             {:else}
-                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
+                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
                     {$t("profile.no_connected_accounts")}
                 </div>
             {/if}

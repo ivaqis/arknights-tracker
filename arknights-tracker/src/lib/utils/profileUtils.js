@@ -386,7 +386,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
                 }
             });
             for (let i = 0; i < Math.min(activeNodesCount, levels.length); i++) {
-                const match = levels[i]?.match(/\+(\d+)/);
+                const match = levels[i]?.match(/(\d+)/);
                 if (match) totalValue += Number.parseInt(match[1], 10);
             }
             const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
@@ -395,7 +395,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
             const blackboard = staticDetails?.blackboard || {};
             const currentBlackboard = blackboard[bbKey] || blackboard?.indicator || {};
             description = interpolateBlackboard(description, currentBlackboard);
-            description = description.replace(/([-+]\s*)\d+(?:\.\d+)?/, `$1${totalValue}`);
+            description = description.replace(/([-+]?\s*)(\d+(?:\.\d+)?)/, `$1${totalValue}`);
 
             const attrType = staticDetails?.indicatorType || staticDetails?.mainAttribute || "str";
             const localImageId = `icon_attribute_${attrType}`;
@@ -566,7 +566,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         abilityNodes.forEach(node => {
             if (hasNode(node.id)) {
                 activeNodesCount++;
-                const valMatch = node.desc?.match(/\+(\d+)/);
+                const valMatch = node.desc?.match(/(\d+)/);
                 if (valMatch) {
                     totalValue += Number.parseInt(valMatch[1], 10);
                 }
@@ -597,7 +597,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         const currentBlackboard = blackboard[bbKey] || blackboard?.indicator || {};
         description = interpolateBlackboard(description, currentBlackboard);
 
-        description = description.replace(/([-+]\s*)\d+(?:\.\d+)?/, `$1${totalValue}`);
+        description = description.replace(/([-+]?\s*)(\d+(?:\.\d+)?)/, `$1${totalValue}`);
 
         const getAttributeType = (desc) => {
             if (!desc) return "str";

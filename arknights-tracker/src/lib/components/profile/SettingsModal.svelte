@@ -5,6 +5,7 @@
     import Image from "$lib/components/Image.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
     import Select from "$lib/components/Select.svelte";
+    import SwitchButton from "$lib/components/SwitchButton.svelte";
 
     export let isOpen = false;
     export let isPrivate = false;
@@ -36,36 +37,20 @@
             <span class="text-sm text-gray-700 dark:text-gray-300 font-sdk pr-4 select-text">
                 {$t("profile.settings_hide_data")}
             </span>
-            <!-- svelte-ignore a11y_click_events_have_key_events -->
-            <!-- svelte-ignore a11y_no_static_element_interactions -->
-            <div
+            <SwitchButton
+                isActive={isPrivate}
                 on:click={() => dispatch("togglePrivate")}
-                class="w-12 h-6 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 shrink-0
-                {isPrivate ? 'bg-[#FFE145]' : 'bg-gray-300 dark:bg-gray-600'}"
-            >
-                <div
-                    class="bg-white dark:bg-[#1a1a1a] w-4 h-4 rounded-full shadow-md transform transition-transform duration-300
-                    {isPrivate ? 'translate-x-6' : 'translate-x-0'}"
-                ></div>
-            </div>
+            />
         </div>
 
         <div class="flex items-center justify-between mb-6">
             <span class="text-sm text-gray-700 dark:text-gray-300 font-sdk pr-4 select-text">
                 {$t("profile.settings_hide_uid")}
             </span>
-            <!-- svelte-ignore a11y_click_events_have_key_events -->
-            <!-- svelte-ignore a11y_no_static_element_interactions -->
-            <div
+            <SwitchButton
+                isActive={hideUid}
                 on:click={() => dispatch("toggleHideUid")}
-                class="w-12 h-6 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 shrink-0
-                {hideUid ? 'bg-[#FFE145]' : 'bg-gray-300 dark:bg-gray-600'}"
-            >
-                <div
-                    class="bg-white dark:bg-[#1a1a1a] w-4 h-4 rounded-full shadow-md transform transition-transform duration-300
-                    {hideUid ? 'translate-x-6' : 'translate-x-0'}"
-                ></div>
-            </div>
+            />
         </div>
 
         <div class="mb-4 relative z-50">

@@ -144,7 +144,7 @@
 </script>
 
 <div class="w-full">
-    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col`}>
+    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col`}>
         {#if !hideHeader}
             <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
                 <div class="flex items-center gap-2">

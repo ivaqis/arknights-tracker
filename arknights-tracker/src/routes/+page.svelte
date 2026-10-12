@@ -1235,13 +1235,13 @@
                             <Icon name="star" class="w-3 h-3 fill-yellow-500 text-yellow-500" />
                         </div>
                     </th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon")}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue")}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed")}</th>
                 </tr>
             </thead>
             <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">
@@ -1270,7 +1270,7 @@
                                 {/if}
                             </div>
                         </td>
-                        {#each ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as day}
+                        {#each ["thu", "fri", "sat", "sun", "mon", "tue", "wed"] as day}
                             {@const dayWeaponIds = weaponRotations.dailyTemplates[w.dailyTemplate][day] || []}
                             {@const isCurrentDay = isCurrentWeek && day === currentDayKey}
                             <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/40 dark:bg-yellow-400/30 ring-1 ring-inset ring-yellow-500/60 font-black' : ''}">

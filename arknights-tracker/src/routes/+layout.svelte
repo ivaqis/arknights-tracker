@@ -11,7 +11,7 @@
     import SupportModal from "$lib/components/modals/SupportModal.svelte";
     import SyncModal from "$lib/components/modals/SyncModal.svelte";
     import { isI18nReady, t } from "$lib/i18n";
-    import { addNotification, isPageLoading } from "$lib/stores";
+    import { addNotification, hasProfileBackground, isPageLoading } from "$lib/stores";
     import { initAuth, justSynced, user } from "$lib/stores/cloudStore";
     import { currentLocale } from "$lib/stores/locale";
     import { isDarkMode } from "$lib/stores/theme";
@@ -87,6 +87,7 @@
     }
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
     $: visuallyCollapsed = isCollapsed && !isMobileMenuOpen;
+    $: isProfile = ($page.url.pathname.startsWith("/profile") || $page.url.pathname.startsWith("/u/")) && $hasProfileBackground;
 
     function handleKeydown(e) {
         if (e.key === "Escape") {
@@ -207,7 +208,9 @@
         <aside
             class="
             fixed top-0 bottom-0 left-0 h-full
-            bg-white dark:bg-[#343434] dark:border-[#3F3F3F] border-r border-gray-100
+            {isProfile
+                ? 'bg-white/60 dark:bg-[#1e1e1e]/40 backdrop-blur-md border-r border-black/5 dark:border-white/10'
+                : 'bg-white dark:bg-[#343434] dark:border-[#3F3F3F] border-r border-gray-100'}
             flex flex-col justify-between
             py-5
             z-[10000] shadow-2xl md:shadow-none
@@ -281,7 +284,7 @@
                     ] as item}
                         {#if item.type === "divider"}
                             <div
-                                class="h-px bg-gray-200 dark:bg-[#444444] my-1 mx-2"
+                                class="h-px {isProfile ? 'bg-black/10 dark:bg-white/10' : 'bg-gray-200 dark:bg-[#444444]'} my-1 mx-2"
                             ></div>
                         {:else}
                             <a
@@ -298,8 +301,12 @@
                                 (item.path === '/'
                                     ? $page.url.pathname === '/'
                                     : true)
-                                    ? 'bg-gray-200 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD]'
-                                    : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737]'}
+                                    ? (isProfile
+                                        ? 'bg-black/10 dark:bg-white/15 text-gray-900 dark:text-[#FDFDFD]'
+                                        : 'bg-gray-200 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD]')
+                                    : (isProfile
+                                        ? 'text-gray-600 dark:text-gray-300 hover:bg-black/5 dark:hover:bg-white/10'
+                                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737]')}
                             "
                                 title={visuallyCollapsed ? $t(item.label) : ""}
                             >
@@ -311,7 +318,7 @@
                                         ? $page.url.pathname === '/'
                                         : true)
                                         ? 'text-gray-900 dark:text-white'
-                                        : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
+                                        : 'text-gray-500 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
                                 >
                                     <Icon
                                         name={item.icon}
@@ -361,7 +368,7 @@
                 {:else}
                     <button
                         on:click={toggleThemeSmall}
-                        class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-[#FFE145] dark:hover:text-[#FFE145] transition-colors"
+                        class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 {isProfile ? 'hover:bg-black/5 dark:hover:bg-white/10' : 'hover:bg-gray-100 dark:hover:bg-[#444]'} hover:text-[#FFE145] dark:hover:text-[#FFE145] transition-colors"
                         title={$isDarkMode
                             ? $t("sidebar.theme_light")
                             : $t("sidebar.theme_dark")}
@@ -375,7 +382,7 @@
 
                     <button
                         on:click={() => setSidebarState(false)}
-                        class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-black dark:hover:text-white transition-colors"
+                        class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 {isProfile ? 'hover:bg-black/5 dark:hover:bg-white/10' : 'hover:bg-gray-100 dark:hover:bg-[#444]'} hover:text-black dark:hover:text-white transition-colors"
                         title="Change Language"
                     >
                         <Icon name="globe" style="width:22px; height:22px;" />
@@ -455,7 +462,7 @@
                         </div>
 
                         <div
-                            class="hidden xl:block w-px min-h-[60px] bg-gray-300 dark:bg-[#444444]"
+                            class="hidden xl:block w-px min-h-[60px] bg-gray-500/20 dark:bg-[#444444]"
                         ></div>
 
                         <div class="flex flex-col gap-3 min-w-[200px]">
@@ -517,7 +524,7 @@
                         </div>
 
                         <div
-                            class="hidden xl:block w-px min-h-[60px] bg-gray-300 dark:bg-[#444444]"
+                            class="hidden xl:block w-px min-h-[60px] bg-gray-500/20 dark:bg-[#444444]"
                         ></div>
 
                         <div class="flex flex-col gap-3 min-w-[200px]">
@@ -537,7 +544,7 @@
                         </div>
 
                         <div
-                            class="hidden xl:block w-px min-h-[60px] bg-gray-300 dark:bg-[#444444]"
+                            class="hidden xl:block w-px min-h-[60px] bg-gray-500/20 dark:bg-[#444444]"
                         ></div>
 
                         <div class="flex flex-col gap-3 min-w-[200px]">

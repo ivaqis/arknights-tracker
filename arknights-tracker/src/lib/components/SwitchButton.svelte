@@ -1,8 +1,14 @@
 <script>
+    import { createEventDispatcher } from "svelte";
+
     export let isActive = false;
 
-    function toggle() {
+    const dispatch = createEventDispatcher();
+
+    function toggle(event) {
         isActive = !isActive;
+        dispatch("click", event);
+        dispatch("change", isActive);
     }
 </script>
 
@@ -13,7 +19,7 @@
     class="relative inline-flex h-6 w-11 items-center shrink-0 rounded-full transition-colors focus:outline-none {
         isActive
             ? 'bg-[#F9B90C]'
-            : 'bg-gray-300 hover:bg-[#C6C9CF] dark:bg-[#555]'
+            : 'bg-gray-300 hover:bg-[#C6C9CF] dark:bg-[#555] hover:dark:bg-[#5B5B5B]'
     }"
     on:click={toggle}
 >

@@ -17,4 +17,5 @@ export interface EventData<T extends GameEventType> extends IData {
     readonly iconPosition: number;
     readonly version: string;
     readonly isPermanent?: boolean;
+    readonly rewards?: readonly any[];
 }

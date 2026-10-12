@@ -28,7 +28,7 @@
     import { accountStore } from "$lib/stores/accounts.js";
     import { login, logout, user } from "$lib/stores/cloudStore.js";
     import { addNotification } from "$lib/stores/notifications.js";
-    import { isPageLoading } from "$lib/stores/pageLoading.js";
+    import { hasProfileBackground, isPageLoading } from "$lib/stores/pageLoading.js";
     import { getServerLabel } from "$lib/utils/profileUtils.js";
     import { onDestroy, onMount } from "svelte";
     import { fade } from "svelte/transition";
@@ -414,8 +414,10 @@
     });
 
     $: isPageLoading.set(loading);
+    $: hasProfileBackground.set(!!profile?.background);
     onDestroy(() => {
         isPageLoading.set(false);
+        hasProfileBackground.set(false);
     });
 
     async function handleGoogleLogin() {
@@ -714,11 +716,11 @@
 <div class="max-w-[1550px] w-full mx-auto pb-20">
     {#if profile && profile.background}
         <div class="fixed inset-0 w-[100vw] h-[100vh] pointer-events-none z-0 flex items-center justify-center overflow-hidden">
-            <div class="w-full h-full object-cover opacity-65 dark:opacity-55 transform scale-105">
+            <div class="w-full h-full object-cover dark:opacity-75 transform scale-105">
                 <Image id={profile.background} variant="operator-art" size="100%" />
             </div>
             <div class="absolute inset-0 bg-black/5 dark:bg-black/15 z-10"></div>
-            <div class="absolute bottom-0 left-0 right-0 h-[30vh] bg-gradient-to-t dark:from-[#2a2a2a] from-[#F0F2F4] to-transparent z-10"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-[30vh] bg-gradient-to-t dark:from-[#2a2a2a] from-[#F0F2F4]/40 to-transparent z-10"></div>
         </div>
     {/if}
     {#if loading}
@@ -834,7 +836,7 @@
         </div>
     {:else if profile}
         <div class="space-y-6 relative z-10" in:fade>
-            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <div class="relative group shrink-0 w-28 h-28">
                         <button
@@ -856,7 +858,7 @@
                                     class="w-full h-full object-cover"
                                 />
                             {:else}
-                                <div class="w-full h-full bg-white/10 flex items-center justify-center text-white/50 text-3xl font-bold">
+                                <div class="w-full h-full bg-gray-300/30 dark:bg-white/10 flex items-center justify-center text-gray-300 dark:text-white/50 text-3xl font-bold">
                                     {profile.name ? profile.name[0].toUpperCase() : "?"}
                                 </div>
                             {/if}
@@ -881,7 +883,7 @@
                                     type="text"
                                     value={newProfileName}
                                     on:input={handleNameInput}
-                                    class="bg-white/10 border border-white/20 text-white rounded px-2 py-1 outline-none font-mono text-xl w-full min-w-0 max-w-[150px] sm:max-w-xs"
+                                    class="bg-gray-300/40 dark:bg-white/10 border-gray-400 dark:border-white/20 text-gray-900 dark:text-white rounded px-2 py-1 outline-none font-mono text-xl w-full min-w-0 max-w-[150px] sm:max-w-xs"
                                     on:keydown={(e) => { if (e.key === "Enter") handleUpdateName(); else if (e.key === "Escape") handleCancelEditName(); }}
                                 />
                                 <Tooltip text={$t("settings.account.cancel")}>
@@ -907,24 +909,26 @@
                                 </p>
                             {/if}
                         {:else}
-                            <div class="flex items-center gap-2">
-                                <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk leading-tight break-words [word-break:break-word] max-w-full">
                                     {profile.name}
                                 </h1>
-                                <Tooltip text={$t("profile.edit_nickname")}>
-                                    <button on:click={() => { newProfileName = profile.name || ""; isEditingName = true; }} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
-                                        <Icon name="pen" class="w-4 h-4" />
-                                    </button>
-                                </Tooltip>
-                                <Tooltip text={$t("profile.copy_profile_link")}>
-                                    <button on:click={handleCopyProfileLink} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
-                                        {#if linkCopied}
-                                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                                        {:else}
-                                            <Icon name="link" class="w-4 h-4" />
-                                        {/if}
-                                    </button>
-                                </Tooltip>
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <Tooltip text={$t("profile.edit_nickname")}>
+                                        <button on:click={() => { newProfileName = profile.name || ""; isEditingName = true; }} class="w-7 h-7 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 border border-black/5 dark:border-white/10 backdrop-blur-sm text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all flex items-center justify-center">
+                                            <Icon name="pen" class="w-4 h-4" />
+                                        </button>
+                                    </Tooltip>
+                                    <Tooltip text={$t("profile.copy_profile_link")}>
+                                        <button on:click={handleCopyProfileLink} class="w-7 h-7 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 border border-black/5 dark:border-white/10 backdrop-blur-sm text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all flex items-center justify-center">
+                                            {#if linkCopied}
+                                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                            {:else}
+                                                <Icon name="link" class="w-4 h-4" />
+                                            {/if}
+                                        </button>
+                                    </Tooltip>
+                                </div>
                             </div>
                         {/if}
                         {#if profile.avatar_strike === 1}
@@ -936,7 +940,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-center gap-4">
+                <div class="flex flex-wrap items-center justify-end gap-4">
                     {#if sortedDetails && sortedDetails.length > 0}
                         {#each sortedDetails as d}
                             <div
@@ -944,7 +948,7 @@
                                 on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') selectedGameUid = d.game_uid; }}
                                 role="button"
                                 tabindex="0"
-                                class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[255px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
+                                class="w-full md:w-auto {!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[255px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
                                 {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-gray-400/20'}"
                             >
                                 <Tooltip
@@ -984,7 +988,7 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
                                     </div>
-                                    <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
+                                    <div class="text-[10px] text-[#5B5B5B] dark:text-gray-400 font-mono truncate flex items-center gap-1">
                                         <span>UID: {d.game_uid}</span>
                                         <Tooltip text={$t("profile.copy_uid")}>
                                             <button 
@@ -1054,13 +1058,13 @@
                         {#if activeAccount?.records_uid || activeAccount?.pulls}
                             <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
                         {:else}
-                            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
-                                <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
+                            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
+                                <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/15 dark:border-[#444444]/15'} pb-3">
                                     {$t("profile.stats")}
                                 </h2>
-                                <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/50 dark:border-[#444444]/50 rounded-lg bg-gray-50/20 dark:bg-[#2e2e2e]/20 text-xs text-gray-500 dark:text-gray-400 backdrop-blur-sm px-4">
-                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                    <p class="italic">
+                                <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/10 dark:border-[#444444]/20 rounded-lg bg-gray-400/10 dark:bg-[#2e2e2e]/10 text-xs text-gray-500 dark:text-gray-400 px-4">
+                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-70" />
+                                    <p class="italic text-shadow-xl">
                                         {$t("profile.bind_to_view_luck")}
                                     </p>
                                 </div>
@@ -1085,7 +1089,7 @@
 
                 </div>
             {:else}
-                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
+                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
                     {$t("profile.no_connected_accounts")}
                 </div>
             {/if}

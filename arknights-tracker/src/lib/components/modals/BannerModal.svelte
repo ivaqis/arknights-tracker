@@ -861,6 +861,7 @@
                                             {/if}
                                         </div>
                                         <ItemTags
+                                            size="md"
                                             rewards={group.items ||
                                                 group.rewards ||
                                                 (group.id ? [group] : [])}
@@ -870,7 +871,7 @@
                             </div>
                         {:else}
                             <div class="flex flex-wrap gap-2">
-                                <ItemTags rewards={banner.rewards} />
+                                <ItemTags size="md" rewards={banner.rewards} />
                             </div>
                         {/if}
                     </div>

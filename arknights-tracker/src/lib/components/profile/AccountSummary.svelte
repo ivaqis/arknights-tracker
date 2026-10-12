@@ -41,8 +41,8 @@
     ];
 </script>
 
-<div class="{profileBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 shadow-sm min-w-0 flex flex-col backdrop-blur-sm">
-    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-2 font-sdk border-b {profileBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
+<div class="{profileBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 shadow-sm min-w-0 flex flex-col backdrop-blur-sm">
+    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-2 font-sdk border-b {profileBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/15 dark:border-[#444444]/15'} pb-3">
         {$t("profile.overview")}
     </h2>
     <div class="space-y-1 px-1">

@@ -1005,7 +1005,7 @@
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
-    <div bind:this={cardElement} in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative {isExporting ? 'bg-[#181818] border-none' : 'bg-black/30 dark:bg-black/40 border border-white/10'} backdrop-blur-md rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
+    <div bind:this={cardElement} in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative {isExporting ? 'bg-[#181818] border-none' : 'bg-black/55 dark:bg-black/45'} backdrop-blur-md rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
         
         <div
             class="absolute inset-0 pointer-events-none z-0 rounded-2xl"
@@ -1024,7 +1024,7 @@
         <div class="relative z-10 grid grid-cols-12 gap-8 items-stretch">
             <div class="col-span-7 relative flex flex-col rounded-xl justify-between">
                 <div class="z-10">
-                    <div class="flex flex-col gap-2 mb-2">
+                    <div class="flex flex-col gap-2 mb-4">
                         <div class="flex items-start justify-between w-full gap-2">
                             <div class="flex flex-col gap-2 w-full">
                                 <div class="flex items-center justify-between w-full">
