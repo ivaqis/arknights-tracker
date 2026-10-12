@@ -114,7 +114,8 @@ export class Banner {
             const gameData = gameBannerMap.get(data.gameId ?? data.id);
 
             if (!gameData) {
-                throw new Error(`Game data for banner not found: ${data.gameId ?? data.id}`);
+                console.warn(`Game data for banner not found: ${data.gameId ?? data.id}`);
+                continue;
             }
 
             result.push(new Banner(gameData, data));
