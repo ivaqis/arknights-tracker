@@ -62,11 +62,11 @@ export const weaponRotations = {
       ],
       "tue": [
         "freedomToProselytize",
-        "monaihe"
+        "sunderingSteel"
       ],
       "wed": [
         "ancientCanal",
-        "objArtsIdentifier"
+        "monaihe"
       ]
     },
     "C": {
@@ -403,7 +403,7 @@ export const weaponRotations = {
       "endDate": "2026/10/15",
       "weekly6": "chivalricVirtues",
       "weekly5": "objVelocitous",
-      "dailyTemplate": "C"
+      "dailyTemplate": "B"
     }
   ]
 };

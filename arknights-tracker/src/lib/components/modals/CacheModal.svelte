@@ -4,6 +4,7 @@
   import { t } from "$lib/i18n";
   import { browser } from "$app/environment";
   import { addNotification } from "$lib/stores/notifications";
+  import { achievementStore } from "$lib/stores/achievementStore";
 
   import Button from "$lib/components/Button.svelte";
   import Icon from "$lib/components/Icon.svelte";
@@ -19,8 +20,8 @@
   let potentialsSize = 0;
   let avatarSize = 0;
   let preferencesSize = 0;
+  let achievementsSize = 0;
   let otherLocalStorageSize = 0;
-  let imageCacheSize = 0;
 
   let showClearAllConfirm = false;
   let showClearCategoryConfirm = false;
@@ -38,17 +39,27 @@
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
   }
 
+  function isAchievementKey(key) {
+    return (
+      key === "tracked_achievements" ||
+      key.includes("achievement") ||
+      key.includes("medal")
+    );
+  }
+
   function isPullKey(key) {
     return (
       key.startsWith("ark_tracker_") ||
       key.startsWith("ark_accounts") ||
       key.startsWith("ark_pulls") ||
+      key.startsWith("ark_banner_") ||
       key.startsWith("headhunt_") ||
       key.startsWith("saved_accounts") ||
       key.includes("token") ||
       key === "ark_active_uid" ||
       key === "ark_last_sync" ||
       key === "ark_local_last_modified" ||
+      key === "ark_ignore_cloud_ts" ||
       key === "user_uid"
     );
   }
@@ -75,6 +86,8 @@
       key.includes("sidebar") ||
       key.includes("Mode") ||
       key.includes("Params") ||
+      key.includes("Option") ||
+      key.includes("Sort") ||
       key.includes("records") ||
       key.includes("server") ||
       key.includes("locale") ||
@@ -84,7 +97,10 @@
       key.includes("sub_") ||
       key.includes("cookie") ||
       key.includes("PotHint") ||
-      key.includes("useServerTime")
+      key.includes("useServerTime") ||
+      key.includes("leaderboard") ||
+      key.includes("audio_lang") ||
+      key.startsWith("last_selected_")
     );
   }
 
@@ -95,8 +111,8 @@
     potentialsSize = 0;
     avatarSize = 0;
     preferencesSize = 0;
+    achievementsSize = 0;
     otherLocalStorageSize = 0;
-    imageCacheSize = 0;
 
     try {
       for (let i = 0; i < localStorage.length; i++) {
@@ -105,7 +121,9 @@
         const val = localStorage.getItem(key) || "";
         const bytes = new Blob([key + val]).size;
 
-        if (isPullKey(key)) {
+        if (isAchievementKey(key)) {
+          achievementsSize += bytes;
+        } else if (isPullKey(key)) {
           pullsSize += bytes;
         } else if (isPotentialKey(key)) {
           potentialsSize += bytes;
@@ -115,32 +133,6 @@
           preferencesSize += bytes;
         } else {
           otherLocalStorageSize += bytes;
-        }
-      }
-
-      if ("caches" in window) {
-        const cacheNames = await caches.keys();
-        for (const name of cacheNames) {
-          const cache = await caches.open(name);
-          const requests = await cache.keys();
-          for (const req of requests) {
-            try {
-              const res = await cache.match(req);
-              if (res) {
-                const blob = await res.blob();
-                imageCacheSize += blob.size;
-              }
-            } catch (e) {}
-          }
-        }
-      }
-
-      if (imageCacheSize === 0 && typeof window !== "undefined" && "performance" in window) {
-        const resources = performance.getEntriesByType("resource");
-        for (const res of resources) {
-          if (res.initiatorType === "img" || (res.name && res.name.match(/\.(webp|png|jpg|jpeg|svg|gif)($|\?)/i))) {
-            imageCacheSize += res.transferSize || res.encodedBodySize || res.decodedBodySize || 0;
-          }
         }
       }
     } catch (err) {
@@ -156,24 +148,22 @@
   async function confirmClearCategory() {
     if (!browser || !categoryToClear) return;
     try {
-      if (categoryToClear.id === "images") {
-        if ("caches" in window) {
-          const cacheNames = await caches.keys();
-          await Promise.all(cacheNames.map(name => caches.delete(name)));
-        }
-      } else {
-        const filterFn =
-          categoryToClear.id === "pulls" ? isPullKey :
-          categoryToClear.id === "potentials" ? isPotentialKey :
-          categoryToClear.id === "avatar" ? isAvatarKey :
-          categoryToClear.id === "preferences" ? isPrefKey :
-          (key) => !isPullKey(key) && !isPotentialKey(key) && !isAvatarKey(key) && !isPrefKey(key);
+      if (categoryToClear.id === "achievements") {
+        achievementStore.set({});
+      }
 
-        for (let i = localStorage.length - 1; i >= 0; i--) {
-          const key = localStorage.key(i);
-          if (key && filterFn(key)) {
-            localStorage.removeItem(key);
-          }
+      const filterFn =
+        categoryToClear.id === "achievements" ? isAchievementKey :
+        categoryToClear.id === "pulls" ? isPullKey :
+        categoryToClear.id === "potentials" ? isPotentialKey :
+        categoryToClear.id === "avatar" ? isAvatarKey :
+        categoryToClear.id === "preferences" ? isPrefKey :
+        (key) => !isAchievementKey(key) && !isPullKey(key) && !isPotentialKey(key) && !isAvatarKey(key) && !isPrefKey(key);
+
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const key = localStorage.key(i);
+        if (key && filterFn(key)) {
+          localStorage.removeItem(key);
         }
       }
       addNotification(
@@ -192,11 +182,8 @@
   async function clearAll() {
     if (!browser) return;
     try {
+      achievementStore.set({});
       localStorage.clear();
-      if ("caches" in window) {
-        const cacheNames = await caches.keys();
-        await Promise.all(cacheNames.map(name => caches.delete(name)));
-      }
       addNotification("success", $t("settings.cache.successClearAll"));
       await calculateStorage();
     } catch (e) {
@@ -218,7 +205,7 @@
     return Math.round(pct) + "%";
   }
 
-  $: totalCalculated = pullsSize + potentialsSize + avatarSize + preferencesSize + otherLocalStorageSize + imageCacheSize;
+  $: totalCalculated = pullsSize + potentialsSize + avatarSize + preferencesSize + achievementsSize + otherLocalStorageSize;
 
   $: categories = [
     {
@@ -232,11 +219,11 @@
       colorDot: "bg-blue-500"
     },
     {
-      id: "images",
-      title: $t("settings.cache.images"),
-      desc: $t("settings.cache.imagesDesc"),
-      size: imageCacheSize,
-      percent: totalCalculated > 0 ? (imageCacheSize / totalCalculated) * 100 : 0,
+      id: "achievements",
+      title: $t("settings.cache.achievements"),
+      desc: $t("settings.cache.achievementsDesc"),
+      size: achievementsSize,
+      percent: totalCalculated > 0 ? (achievementsSize / totalCalculated) * 100 : 0,
       colorBg: "bg-emerald-500/10 dark:bg-emerald-950/30",
       colorBorder: "border-emerald-200 dark:border-emerald-800/60",
       colorDot: "bg-emerald-500"
