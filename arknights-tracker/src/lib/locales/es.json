@@ -1213,7 +1213,8 @@
     "liino": "Liino",
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
-    "purrchena": "Purrchena"
+    "purrchena": "Purrchena",
+    "si": "Si"
   },
   "weaponsList": {
     "custom_weapon": "Arma personalizada",
@@ -1296,7 +1297,10 @@
     "bedazzlingNightDebut": "Debut nocturno deslumbrante",
     "umbraOfFrigidEventide": "Sombra del gélido crepúsculo",
     "sufferingsEnd": "Fin del sufrimiento",
-    "dessertMoment": "Momento del postre"
+    "dessertMoment": "Momento del postre",
+    "jadeVessel": "Vasija de jade",
+    "longHeritage": "Tradición ancestral",
+    "complexedIndustry": "Industria compleja"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -1421,7 +1425,14 @@
     "world_energy_point12_4": "Aluvión energético severo: Bosque Nevado",
     "world_energy_point12_5": "Aluvión energético severo: Bosque Nevado",
     "world_energy_point12_6": "Aluvión energético severo: Bosque Nevado",
-    "world_energy_point12_7": "Aluvión energético severo: Bosque Nevado"
+    "world_energy_point12_7": "Aluvión energético severo: Bosque Nevado",
+    "world_energy_point13_4": "Aluvión energético severo: Pintura de Si",
+    "world_energy_point13_7": "Aluvión energético severo: Pintura de Si",
+    "world_energy_point13_1": "Aluvión energético: Pintura de Si",
+    "world_energy_point13_2": "Aluvión energético: Pintura de Si",
+    "world_energy_point13_3": "Aluvión energético: Pintura de Si",
+    "world_energy_point13_5": "Aluvión energético severo: Pintura de Si",
+    "world_energy_point13_6": "Aluvión energético severo: Pintura de Si"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Subterráneo",
@@ -1515,7 +1526,12 @@
     "tatget_002_endurance": "Objetivo estándar",
     "tatget_003_expand": "Objetivo con Barrera",
     "tatget_004_armor": "Objetivo pesado",
-    "tatget_005_shield": "Escudo de Energía"
+    "tatget_005_shield": "Escudo de Energía",
+    "eny_0134_jsspsi": "Si",
+    "eny_0130_inkbiter": "Reserva de la fortuna",
+    "eny_0131_inkscroll": "Pergamino de tácticas",
+    "eny_0132_inkkirin": "Purga a fuego lento",
+    "eny_0133_inklion": "Medida de la crin"
   },
   "essencesPage": {
     "optimizer": "Optimizador de farmeo",
@@ -1811,7 +1827,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "Comunicador de Baluarte profundo",
     "item_equip_t4_suit_spellburst_hand_01": "Guanteletes de Baluarte profundo",
     "item_equip_t4_suit_usp02_edc_05": "Losa de refuerzo de Xiranita eterna T1",
-    "item_equip_t4_suit_usp02_edc_06": "Losa pesada de Xiranita eterna"
+    "item_equip_t4_suit_usp02_edc_06": "Losa pesada de Xiranita eterna",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "Losa de armadura de Laboratorios Pulso",
+    "item_equip_t4_suit_usp02_body_06": "Armadura MOD de Xiranita eterna",
+    "item_equip_t4_suit_usp02_hand_05": "Guantes canalizadores de Xiranita eterna",
+    "item_equip_t4_suit_atk02_body_05": "Armadura blanda Yinglung tipo 50",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "Armadura ligera de Laboratorios Pulso",
+    "item_equip_t4_parts_wuling00_body_06": "Armadura CEC para Trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_hand_06": "Guantes CEC para Trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_edc_06": "Sierra mecánica CEC para Trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling02_body_03": "Armadura de acero del Trotagrietas",
+    "item_equip_t4_parts_wuling02_body_04": "Overol del Trotagrietas",
+    "item_equip_t4_parts_wuling02_edc_02": "Hoja de plata del Trotagrietas",
+    "item_equip_t4_suit_usp02_edc_07": "Telémetro de Xiranita eterna",
+    "item_equip_t4_parts_wuling02_hand_03": "Vendas del Trotagrietas",
+    "item_equip_t4_parts_wuling02_hand_04": "Guanteletes del Trotagrietas",
+    "item_equip_t4_suit_atk02_edc_06": "Baliza Yinglung tipo 50",
+    "item_equip_t4_suit_atk02_hand_03": "Guantes Yinglung tipo 50",
+    "item_equip_t4_suit_usp02_body_05": "Overol de Xiranita eterna",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "Guanteletes ligeros de Laboratorios Pulso"
   },
   "packs": {
     "none": "No establecido",
@@ -1923,7 +1957,13 @@
     "ElectricResistance": "Resistencia eléctrica",
     "HeatResistance": "Resistencia al calor",
     "TherResistance": "Resistencia al Éter",
-    "NoAttr": "Sin atributo"
+    "NoAttr": "Sin atributo",
+    "NatureDmgReduction": "Reducción de DAÑ por naturaleza",
+    "HeatDmgReduction": "Reducción de DAÑ por calor",
+    "TherDmgReduction": "Reducción de DAÑ por éter",
+    "PhysicalDmgReduction": "Reducción de DAÑ físico",
+    "CryoDmgReduction": "Reducción de DAÑ criogénico",
+    "ElectricDmgReduction": "Reducción de DAÑ eléctrico"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
@@ -1932,7 +1972,9 @@
     "wiki_group_monster_animal": "Vida silvestre",
     "wiki_group_monster_kl": "Sombras contaminadas",
     "wiki_group_monster_js": "Fundita",
-    "wiki_group_monster_witchcraft": "Creación de hechicería"
+    "wiki_group_monster_witchcraft": "Creación de hechicería",
+    "wiki_group_monster_else": "Otras",
+    "wiki_group_monster_ml": "Aparición"
   },
   "resitances": {
     "heatRez": "Resistencia al calor",
@@ -2727,7 +2769,8 @@
     "indie_group_h04": "Manifestación de turbiedad",
     "indie_group_h05": "Los abandonados por la tierra",
     "indie_group_h06": "Aulladores del peñasco",
-    "indie_group_h07": "Marcado por sombras oscuras"
+    "indie_group_h07": "Marcado por sombras oscuras",
+    "indie_group_h08": "Murmullos del bosque profundo"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Técnica de Xiranita",
@@ -2770,13 +2813,19 @@
     "indie_hard026": "Carnicería feroz de las sombras",
     "indie_hard027": "Arco del destello sombrío",
     "indie_hard028": "Rugido repentino del olvido",
-    "indie_hard029": "Fijación Triaggelada"
+    "indie_hard029": "Fijación Triaggelada",
+    "indie_hard032": "Odio que se extiende",
+    "indie_hard030": "Sombras que atan",
+    "indie_hard031": "Artesanías de madera que enlazan",
+    "indie_hard033": "Criaturas que excavan"
   },
   "warEchoesSeasons": {
     "1": "Temporada de remembranza",
     "2": "Temporada de delirio",
     "3": "Temporada de Virtualidad",
-    "4": "Temporada de ilusión"
+    "4": "Temporada de ilusión",
+    "5": "Temporada de fantasía",
+    "6": "Temporada de fervor"
   },
   "warEchoesCycles": {
     "1_1": "Ciclo de Remembranza I",
@@ -2790,7 +2839,13 @@
     "3_3": "Ciclo de Virtualidad III",
     "4_1": "Ciclo de ilusión I",
     "4_2": "Ciclo de ilusión II",
-    "4_3": "Ciclo de ilusión III"
+    "4_3": "Ciclo de ilusión III",
+    "5_1": "Ciclo de fantasía I",
+    "5_2": "Ciclo de fantasía II",
+    "5_3": "Ciclo de fantasía III",
+    "6_1": "Ciclo de fervor I",
+    "6_2": "Ciclo de fervor II",
+    "6_3": "Ciclo de fervor III"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "Cortador de agua plateado: Brutal",
@@ -2834,7 +2889,25 @@
     "indie_battletower013": "Decapitación poderosa: Normal",
     "indie_battletower014_ex": "Maquinaciones bestiales: Brutal",
     "indie_battletower014_s": "Maquinaciones bestiales: Difícil",
-    "indie_battletower014": "Maquinaciones bestiales: Normal"
+    "indie_battletower014": "Maquinaciones bestiales: Normal",
+    "indie_battletower019_ex": "Archivo de constructo: Espectro - Brutal",
+    "indie_battletower016_s": "Archivo de lancero con guja: Yinglung - Difícil",
+    "indie_battletower015_s": "Archivo de Sombra contaminada: Estruendo - Difícil",
+    "indie_battletower015_ex": "Archivo de Sombra contaminada: Estruendo - Brutal",
+    "indie_battletower015": "Archivo de Sombra contaminada: Estruendo - Normal",
+    "indie_battletower016_ex": "Archivo de lancero con guja: Yinglung - Brutal",
+    "indie_battletower016": "Archivo de lancero con guja: Yinglung - Normal",
+    "indie_battletower017_ex": "Archivo de vengador: Rompehuesos - Brutal",
+    "indie_battletower017_s": "Archivo de vengador: Rompehuesos - Difícil",
+    "indie_battletower017": "Archivo de vengador: Rompehuesos - Normal",
+    "indie_battletower018_ex": "Archivo de bestia: Empalizada de Qingbo - Brutal",
+    "indie_battletower018_s": "Archivo de bestia: Empalizada de Qingbo - Difícil",
+    "indie_battletower018": "Archivo de bestia: Empalizada de Qingbo - Normal",
+    "indie_battletower019_s": "Archivo de constructo: Espectro - Difícil",
+    "indie_battletower019": "Archivo de constructo: Espectro - Normal",
+    "indie_battletower020_ex": "Archivo de defensa: Escudo - Brutal",
+    "indie_battletower020_s": "Archivo de defensa: Escudo - Difícil",
+    "indie_battletower020": "Archivo de defensa: Escudo - Normal"
   },
   "warEchoesDiff": {
     "normal": "Normal",

@@ -1212,7 +1212,8 @@
     "liino": "Liino",
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
-    "purrchena": "Purrchena"
+    "purrchena": "Purrchena",
+    "si": "Si"
   },
   "weaponsList": {
     "custom_weapon": "Arma Personalizzata",
@@ -1295,7 +1296,10 @@
     "bedazzlingNightDebut": "Debutto notturno abbagliante",
     "umbraOfFrigidEventide": "Ombra del gelido crepuscolo",
     "sufferingsEnd": "Fine della sofferenza",
-    "dessertMoment": "Momento del dolce"
+    "dessertMoment": "Momento del dolce",
+    "jadeVessel": "Contenitore di giada",
+    "longHeritage": "Eredità antica",
+    "complexedIndustry": "Industria complessa"
   },
   "cookies": {
     "title": "Utilizziamo i cookie",
@@ -1420,7 +1424,14 @@
     "world_energy_point12_4": "Sedimento energetico ostico: Foresta innevata",
     "world_energy_point12_5": "Sedimento energetico ostico: Foresta innevata",
     "world_energy_point12_6": "Sedimento energetico ostico: Foresta innevata",
-    "world_energy_point12_7": "Sedimento energetico ostico: Foresta innevata"
+    "world_energy_point12_7": "Sedimento energetico ostico: Foresta innevata",
+    "world_energy_point13_4": "Sedimento energetico ostico: Dipinto di Si",
+    "world_energy_point13_7": "Sedimento energetico ostico: Dipinto di Si",
+    "world_energy_point13_1": "Sedimento energetico: Dipinto di Si",
+    "world_energy_point13_2": "Sedimento energetico: Dipinto di Si",
+    "world_energy_point13_3": "Sedimento energetico: Dipinto di Si",
+    "world_energy_point13_5": "Sedimento energetico ostico: Dipinto di Si",
+    "world_energy_point13_6": "Sedimento energetico ostico: Dipinto di Si"
   },
   "enemies": {
     "eny_0007_mimicw": "Drago delle sabbie",
@@ -1514,7 +1525,12 @@
     "tatget_002_endurance": "Bersaglio standard",
     "tatget_003_expand": "Bersaglio barriera",
     "tatget_004_armor": "Bersaglio pesante",
-    "tatget_005_shield": "Scudo energetico"
+    "tatget_005_shield": "Scudo energetico",
+    "eny_0134_jsspsi": "Si",
+    "eny_0130_inkbiter": "Scorta della fortuna",
+    "eny_0131_inkscroll": "Pergamena della Strategia",
+    "eny_0132_inkkirin": "Purga della calura",
+    "eny_0133_inklion": "Misura crinita"
   },
   "essencesPage": {
     "optimizer": "Ottimizzatore farming",
@@ -1810,7 +1826,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "Comunicatore del bastione profondo",
     "item_equip_t4_suit_spellburst_hand_01": "Coprimani del bastione profondo",
     "item_equip_t4_suit_usp02_edc_05": "Placca di sostegno di xiranite eterna T1",
-    "item_equip_t4_suit_usp02_edc_06": "Placca pesante di xiranite eterna"
+    "item_equip_t4_suit_usp02_edc_06": "Placca pesante di xiranite eterna",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "Lastra corazzata a impulsi",
+    "item_equip_t4_suit_usp02_body_06": "Armatura MOD di xiranite eterna",
+    "item_equip_t4_suit_usp02_hand_05": "Guanti di canalizzazione di xiranite eterna",
+    "item_equip_t4_suit_atk02_body_05": "Armatura flessibile Yinglung tipo 50",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "Armatura leggera a impulsi",
+    "item_equip_t4_parts_wuling00_body_06": "Armatura da combattimento ravvicinato per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_06": "Coprimani da combattimento ravvicinato per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_06": "Seghetto da combattimento ravvicinato per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling02_body_03": "Armatura d'acciaio da pioniere di spaccature",
+    "item_equip_t4_parts_wuling02_body_04": "Tenuta da pioniere di spaccature",
+    "item_equip_t4_parts_wuling02_edc_02": "Lama d'argento da pioniere di spaccature",
+    "item_equip_t4_suit_usp02_edc_07": "Telemetro di xiranite eterna",
+    "item_equip_t4_parts_wuling02_hand_03": "Fasce da pioniere di spaccature",
+    "item_equip_t4_parts_wuling02_hand_04": "Coprimani da pioniere di spaccature",
+    "item_equip_t4_suit_atk02_edc_06": "Segnalatore Yinglung tipo 50",
+    "item_equip_t4_suit_atk02_hand_03": "Guanti Yinglung tipo 50",
+    "item_equip_t4_suit_usp02_body_05": "Tenuta di xiranite eterna",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "Coprimani leggeri a impulsi"
   },
   "packs": {
     "none": "Senza set",
@@ -1922,7 +1956,13 @@
     "ElectricResistance": "Resistenza all'elettricità",
     "HeatResistance": "Resistenza al fuoco",
     "TherResistance": "Resistenza all'Æther",
-    "NoAttr": "Nessun attributo"
+    "NoAttr": "Nessun attributo",
+    "NatureDmgReduction": "Riduzione dei danni da natura",
+    "HeatDmgReduction": "Riduzione dei danni da fuoco",
+    "TherDmgReduction": "Riduzione dei danni da Æther",
+    "PhysicalDmgReduction": "Riduzione dei danni fisici",
+    "CryoDmgReduction": "Riduzione dei danni da ghiaccio",
+    "ElectricDmgReduction": "Riduzione dei danni da elettricità"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
@@ -1931,7 +1971,9 @@
     "wiki_group_monster_animal": "Fauna",
     "wiki_group_monster_kl": "Ombre contaminanti",
     "wiki_group_monster_js": "Foundite",
-    "wiki_group_monster_witchcraft": "Creatura stregata"
+    "wiki_group_monster_witchcraft": "Creatura stregata",
+    "wiki_group_monster_else": "Altri",
+    "wiki_group_monster_ml": "Apparizione"
   },
   "resitances": {
     "heatRez": "Resistenza al fuoco",
@@ -2726,7 +2768,8 @@
     "indie_group_h04": "Manifesto di torbidità",
     "indie_group_h05": "Rinnegati da Terra",
     "indie_group_h06": "Ulularocce della rupe",
-    "indie_group_h07": "Il segno delle Ombre oscure"
+    "indie_group_h07": "Il segno delle Ombre oscure",
+    "indie_group_h08": "Sussurri della foresta profonda"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Tecnica di xiranite",
@@ -2769,13 +2812,19 @@
     "indie_hard026": "Carneficina selvaggia dell'ombra",
     "indie_hard027": "Arco della vampa d'ombra",
     "indie_hard028": "Ruggito improvviso dell'oblio",
-    "indie_hard029": "Mira tri-Aggeloi"
+    "indie_hard029": "Mira tri-Aggeloi",
+    "indie_hard032": "Odio che si diffonde",
+    "indie_hard030": "Uniti dalle ombre",
+    "indie_hard031": "Uniti dal bosco",
+    "indie_hard033": "Creature che scavano"
   },
   "warEchoesSeasons": {
     "1": "Stagione del ricordo",
     "2": "Stagione del delirio",
     "3": "Stagione della virtualità",
-    "4": "Stagione dell'illusione"
+    "4": "Stagione dell'illusione",
+    "5": "Stagione della fantasia",
+    "6": "Stagione del fervore"
   },
   "warEchoesCycles": {
     "1_1": "Ciclo del ricordo I",
@@ -2789,7 +2838,13 @@
     "3_3": "Ciclo della virtualità Ⅲ",
     "4_1": "Ciclo dell'illusione Ⅰ",
     "4_2": "Ciclo dell'illusione Ⅱ",
-    "4_3": "Ciclo dell'illusione Ⅲ"
+    "4_3": "Ciclo dell'illusione Ⅲ",
+    "5_1": "Ciclo della fantasia Ⅰ",
+    "5_2": "Ciclo della fantasia II",
+    "5_3": "Ciclo della fantasia III",
+    "6_1": "Ciclo del fervore Ⅰ",
+    "6_2": "Ciclo del fervore II",
+    "6_3": "Ciclo del fervore III"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "Tagliacque d'argento: Brutale",
@@ -2833,7 +2888,25 @@
     "indie_battletower013": "Decapitazione potente: Normale",
     "indie_battletower014_ex": "Intrighi bestiali: Brutale",
     "indie_battletower014_s": "Intrighi bestiali: Difficile",
-    "indie_battletower014": "Intrighi bestiali: Normale"
+    "indie_battletower014": "Intrighi bestiali: Normale",
+    "indie_battletower019_ex": "Dossier sui costrutti: Spettro - Brutale",
+    "indie_battletower016_s": "Dossier sul falcione: Yinglung - Difficile",
+    "indie_battletower015_s": "Dossier sull'ombra contaminante: Tuono - Difficile",
+    "indie_battletower015_ex": "Dossier sull'ombra contaminante: Tuono - Brutale",
+    "indie_battletower015": "Dossier sull'ombra contaminante: Tuono - Normale",
+    "indie_battletower016_ex": "Dossier sul falcione: Yinglung - Brutale",
+    "indie_battletower016": "Dossier sul falcione: Yinglung - Normale",
+    "indie_battletower017_ex": "Dossier sulla vendetta: Spacca-Ossa - Brutale",
+    "indie_battletower017_s": "Dossier sulla vendetta: Spacca-Ossa - Difficile",
+    "indie_battletower017": "Dossier sulla vendetta: Spacca-Ossa - Normale",
+    "indie_battletower018_ex": "Dossier sulle bestie: Palizzata di Qingbo - Brutale",
+    "indie_battletower018_s": "Dossier sulle bestie: Palizzata di Qingbo - Difficile",
+    "indie_battletower018": "Dossier sulle bestie: Palizzata di Qingbo - Normale",
+    "indie_battletower019_s": "Dossier sui costrutti: Spettro - Difficile",
+    "indie_battletower019": "Dossier sui costrutti: Spettro - Normale",
+    "indie_battletower020_ex": "Dossier sulla difesa: Scudo - Brutale",
+    "indie_battletower020_s": "Dossier sulla difesa: Scudo - Difficile",
+    "indie_battletower020": "Dossier sulla difesa: Scudo - Normale"
   },
   "warEchoesDiff": {
     "normal": "Normale",

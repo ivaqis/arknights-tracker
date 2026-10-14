@@ -40,7 +40,7 @@
     "battleSkill": {
       "name": "Từ Chối Dịch Vụ Phân Tán",
       "description": "Triệu hồi một <@ba.key>Tinh Thể Phụ Trợ</> quay quanh cán viên đang điều khiển trong một thời gian. \nSau khi cán viên đang điều khiển thực hiện <#ba.lastcombo>Đòn Dứt Điểm</> lên kẻ địch, <@ba.key>Tinh Thể Phụ Trợ</> sẽ hồi HP cho cán viên đó. Hiệu ứng này có thể kích hoạt 2 lần. Thuộc tính Ý Chí sẽ tăng lượng hồi HP. \nKhi cán viên đang điều khiển đã đầy HP khi kích hoạt hồi HP thì thay bằng <#ba.spellenhance>Tăng ST Thuật Pháp</>. Hiệu ứng này không cho phép cộng dồn.",
-      "baseTreatment": "Hồi Phục Căn Cứ",
+      "baseTreatment": "Hồi Phục Cơ Bản",
       "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
       "auxiliaryCrystalDurationS": "Thời Gian Hiệu Lực Của Tinh Thể Phụ Trợ (giây)",
       "artsAmp": "Tăng ST Thuật Pháp",
@@ -319,7 +319,7 @@
       {
         "voId": "chr_0011_seraph_mono_about_line03",
         "title": "Chủ Đề: Ba Nhánh Của Tu Hội",
-        "text": "Tu Hội hiện có ba nhánh: Hội Luận, Chân Lý và Tái Khởi. Tôi thuộc nhóm Hội Luận. Chúng tôi tin tính toán và phân tích ngôn ngữ là con đường dẫn đến phúc lành. Tái Khởi rải rác khắp Talos-II, là những tín đồ vũ trang háo hức khám phá tàn tích của nền văn minh cổ. Còn Chân Lý chuyên nghiên cứu linh hồn và trái tim. Họ chạm khắc tượng, sao chép kinh sách và dẫn dắt linh hồn lạc lối quay về."
+        "text": "Tu Hội hiện có ba nhánh: Hội Luận, Chân Lý và Tái Khởi. Tôi thuộc nhóm Hội Luận. Chúng tôi tin tính toán và phân tích ngôn ngữ là con đường dẫn đến phúc lành. Tái Khởi rải rác khắp Talos-II, là những tín đồ vũ trang háo hức khám phá tàn tích của nền văn minh cổ. Còn Chân Lý chuyên nghiên cứu linh hồn và trái tim. Họ nghiền ngẫm thánh kinh, sao chép kinh sách và dẫn dắt linh hồn lạc lối quay về."
       },
       {
         "voId": "chr_0011_seraph_explore_point_common_01",

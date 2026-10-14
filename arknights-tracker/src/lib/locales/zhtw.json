@@ -1251,7 +1251,8 @@
     "liino": "梨諾",
     "typhoeus": "提弗洛斯",
     "endministrator": "管理員",
-    "purrchena": "噗切娜"
+    "purrchena": "噗切娜",
+    "si": "祀"
   },
   "weaponsList": {
     "custom_weapon": "自訂武器",
@@ -1334,7 +1335,10 @@
     "bedazzlingNightDebut": "曜夜的首演",
     "umbraOfFrigidEventide": "寒夜幽影",
     "sufferingsEnd": "苦難的盡頭",
-    "dessertMoment": "點心時刻"
+    "dessertMoment": "點心時刻",
+    "jadeVessel": "玉中身",
+    "longHeritage": "悠久傳承",
+    "complexedIndustry": "聚合工業"
   },
   "cookies": {
     "title": "我們使用 Cookie",
@@ -1459,7 +1463,14 @@
     "world_energy_point12_4": "重度能量淤積點·雪松林",
     "world_energy_point12_5": "重度能量淤積點·雪松林",
     "world_energy_point12_6": "重度能量淤積點·雪松林",
-    "world_energy_point12_7": "重度能量淤積點·雪松林"
+    "world_energy_point12_7": "重度能量淤積點·雪松林",
+    "world_energy_point13_4": "重度能量淤積點·祀的畫",
+    "world_energy_point13_7": "重度能量淤積點·祀的畫",
+    "world_energy_point13_1": "能量淤積點·祀的畫",
+    "world_energy_point13_2": "能量淤積點·祀的畫",
+    "world_energy_point13_3": "能量淤積點·祀的畫",
+    "world_energy_point13_5": "重度能量淤積點·祀的畫",
+    "world_energy_point13_6": "重度能量淤積點·祀的畫"
   },
   "enemies": {
     "eny_0007_mimicw": "潛地虯獸",
@@ -1553,7 +1564,12 @@
     "tatget_002_endurance": "標準標靶",
     "tatget_003_expand": "屏障標靶",
     "tatget_004_armor": "重型標靶",
-    "tatget_005_shield": "能量護盾"
+    "tatget_005_shield": "能量護盾",
+    "eny_0134_jsspsi": "祀",
+    "eny_0130_inkbiter": "存祿",
+    "eny_0131_inkscroll": "用奇",
+    "eny_0132_inkkirin": "解燥",
+    "eny_0133_inklion": "行度"
   },
   "essencesPage": {
     "optimizer": "刷取優化器",
@@ -1849,7 +1865,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "險關通訊器",
     "item_equip_t4_suit_spellburst_hand_01": "險關手甲",
     "item_equip_t4_suit_usp02_edc_05": "長息加固板·I",
-    "item_equip_t4_suit_usp02_edc_06": "長息重護板"
+    "item_equip_t4_suit_usp02_edc_06": "長息重護板",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "脈衝式護甲板",
+    "item_equip_t4_suit_usp02_body_06": "長息改裝護甲",
+    "item_equip_t4_suit_usp02_hand_05": "長息導能護手",
+    "item_equip_t4_suit_atk02_body_05": "50式應龍軟甲",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "脈衝式輕甲",
+    "item_equip_t4_parts_wuling00_body_06": "集成實訓刃裝護甲",
+    "item_equip_t4_parts_wuling00_hand_06": "集成實訓刃裝護手",
+    "item_equip_t4_parts_wuling00_edc_06": "集成實訓刃裝短鋸",
+    "item_equip_t4_parts_wuling02_body_03": "涉淵鋼甲",
+    "item_equip_t4_parts_wuling02_body_04": "涉淵防護服",
+    "item_equip_t4_parts_wuling02_edc_02": "涉淵白刃",
+    "item_equip_t4_suit_usp02_edc_07": "長息測距儀",
+    "item_equip_t4_parts_wuling02_hand_03": "涉淵裹手",
+    "item_equip_t4_parts_wuling02_hand_04": "涉淵手甲",
+    "item_equip_t4_suit_atk02_edc_06": "50式應龍信標",
+    "item_equip_t4_suit_atk02_hand_03": "50式應龍手套",
+    "item_equip_t4_suit_usp02_body_05": "長息防護服",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "脈衝式輕護手"
   },
   "packs": {
     "none": "無套裝",
@@ -1961,7 +1995,13 @@
     "ElectricResistance": "電磁抗性",
     "HeatResistance": "灼熱抗性",
     "TherResistance": "超域抗性",
-    "NoAttr": "無屬性"
+    "NoAttr": "無屬性",
+    "NatureDmgReduction": "自然傷害減免",
+    "HeatDmgReduction": "灼熱傷害減免",
+    "TherDmgReduction": "超域傷害減免",
+    "PhysicalDmgReduction": "物理傷害減免",
+    "CryoDmgReduction": "寒冷傷害減免",
+    "ElectricDmgReduction": "電磁傷害減免"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "天使",
@@ -1970,7 +2010,9 @@
     "wiki_group_monster_animal": "野外生物",
     "wiki_group_monster_kl": "蝕影",
     "wiki_group_monster_js": "造裔",
-    "wiki_group_monster_witchcraft": "巫術造物"
+    "wiki_group_monster_witchcraft": "巫術造物",
+    "wiki_group_monster_else": "其他",
+    "wiki_group_monster_ml": "化物"
   },
   "resitances": {
     "heatRez": "灼熱抗性",
@@ -2765,7 +2807,8 @@
     "indie_group_h04": "濁流具現",
     "indie_group_h05": "大地的棄子",
     "indie_group_h06": "山中見犼",
-    "indie_group_h07": "幽影刻形"
+    "indie_group_h07": "幽影刻形",
+    "indie_group_h08": "深林囈語"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壤工藝",
@@ -2808,13 +2851,19 @@
     "indie_hard026": "獸影生殺",
     "indie_hard027": "暗曜白霆",
     "indie_hard028": "沛然轟鳴",
-    "indie_hard029": "三角定位"
+    "indie_hard029": "三角定位",
+    "indie_hard032": "怨怒延展",
+    "indie_hard030": "受縛之影",
+    "indie_hard031": "相引之骸",
+    "indie_hard033": "蟲傀呼應"
   },
   "warEchoesSeasons": {
     "1": "追憶賽季",
     "2": "譫妄賽季",
     "3": "虛像賽季",
-    "4": "錯視賽季"
+    "4": "錯視賽季",
+    "5": "異想賽季",
+    "6": "狂熱賽季"
   },
   "warEchoesCycles": {
     "1_1": "追憶輪換 I",
@@ -2828,7 +2877,13 @@
     "3_3": "虛像輪換III",
     "4_1": "錯視輪換I",
     "4_2": "錯視輪換II",
-    "4_3": "錯視輪換III"
+    "4_3": "錯視輪換III",
+    "5_1": "異想輪換I",
+    "5_2": "異想輪換II",
+    "5_3": "異想輪換III",
+    "6_1": "狂熱輪換I",
+    "6_2": "狂熱輪換II",
+    "6_3": "狂熱輪換III"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "白刃穿水·殘酷",
@@ -2872,7 +2927,25 @@
     "indie_battletower013": "斬首蓄勢·普通",
     "indie_battletower014_ex": "野獸詭計·殘酷",
     "indie_battletower014_s": "野獸詭計·困難",
-    "indie_battletower014": "野獸詭計·普通"
+    "indie_battletower014": "野獸詭計·普通",
+    "indie_battletower019_ex": "造物紀錄：傀·殘酷",
+    "indie_battletower016_s": "長刃紀錄：應龍·困難",
+    "indie_battletower015_s": "蝕影紀錄：雷聲·困難",
+    "indie_battletower015_ex": "蝕影紀錄：雷聲·殘酷",
+    "indie_battletower015": "蝕影紀錄：雷聲·普通",
+    "indie_battletower016_ex": "長刃紀錄：應龍·殘酷",
+    "indie_battletower016": "長刃紀錄：應龍·普通",
+    "indie_battletower017_ex": "復仇紀錄：碾骨·殘酷",
+    "indie_battletower017_s": "復仇紀錄：碾骨·困難",
+    "indie_battletower017": "復仇紀錄：碾骨·普通",
+    "indie_battletower018_ex": "獸群紀錄：清波寨·殘酷",
+    "indie_battletower018_s": "獸群紀錄：清波寨·困難",
+    "indie_battletower018": "獸群紀錄：清波寨·普通",
+    "indie_battletower019_s": "造物紀錄：傀·困難",
+    "indie_battletower019": "造物紀錄：傀·普通",
+    "indie_battletower020_ex": "防衛紀錄：盾片·殘酷",
+    "indie_battletower020_s": "防衛紀錄：盾片·困難",
+    "indie_battletower020": "防衛紀錄：盾片·普通"
   },
   "warEchoesDiff": {
     "normal": "普通",

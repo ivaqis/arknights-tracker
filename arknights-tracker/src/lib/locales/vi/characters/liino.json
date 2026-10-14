@@ -39,13 +39,13 @@
     "battleSkill": {
       "name": "Tiêu Điểm Chói Rạng",
       "description": "Liino gây <@ba.pulse>ST Điện</> lên kẻ địch, sau đó vào <@ba.key>Tư Thế Ca Sĩ</>. Khi tư thế này đang có hiệu lực, nếu có kẻ địch ở gần, Liino sẽ định kỳ thực hiện Đòn Tấn Công Bổ Sung, gây <@ba.pulse>ST Điện</> lên kẻ địch.\n<@ba.key>Tư Thế Ca Sĩ</>: Khi tư thế này đang có hiệu lực, Liino ban Tăng Cường Tấn Công cho toàn đội. Sau khi vào trận, Liino cũng sẽ liên tục cung cấp <@ba.heal>Hồi Phục HP</> cho cán viên trong phạm vi.\n<@ba.info>Trong thời gian Tư Thế Ca Sĩ đang kích hoạt, KN chiến đấu của cô sẽ được thay bằng Kết Thúc Tư Thế. Thi triển kỹ năng này sẽ kết thúc Tư Thế Ca Sĩ sớm mà không tiêu hao Điểm Kỹ Năng, sau đó KN chiến đấu sẽ bước vào thời gian hồi chiêu ngắn.</>",
-      "1stAtkMultiplier": "Hệ Số Đòn Tấn Công Đầu",
+      "firstAtkMultiplier": "Hệ Số Đòn Tấn Công Đầu",
       "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
       "additionalAtkIntervalS": "Thời Gian Giữa Các Đòn Tấn Công Bổ Sung (giây)",
-      "beatIntervalS": "Khoảng Lặng Giữa Nhịp (giây)",
-      "vocalistStanceDurationS": "Hiệu Lực Tư Thế Ca Sĩ (giây)",
+      "beatIntervalS": "Thời Gian Giữa Các Nhịp (giây)",
+      "vocalistStanceDurationS": "Thời Gian Hiệu Lực Tư Thế Ca Sĩ (giây)",
       "atkBoost": "Tăng Cường Tấn Công",
-      "baseTreatment": "Hồi Phục Căn Cứ",
+      "baseTreatment": "Hồi Phục Cơ Bản",
       "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn",
       "stagger": "Suy Sụp"
     },
@@ -55,7 +55,7 @@
       "dmgMultiplier": "Hệ Số ST",
       "stagger": "Suy Sụp",
       "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
-      "baseTreatment": "Hồi Phục Căn Cứ",
+      "baseTreatment": "Hồi Phục Cơ Bản",
       "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn"
     },
     "ultimate": {
@@ -66,10 +66,10 @@
       "atkBoost": "Tăng Cường Tấn Công",
       "ampIncreasePerWill": "Tăng ST Cường Hóa Theo Ý Chí",
       "maxAmpFromWill": "Tăng TỐI ĐA từ Ý Chí",
-      "baseTreatmentFor1stTreatment": "Hồi Phục Căn Cứ cho lần Chữa Trị Đầu Tiên",
+      "baseTreatmentFor1stTreatment": "Hồi Phục Cơ Bản cho lần Chữa Trị Đầu Tiên",
       "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn",
       "dmgMultiplierPerBeat": "Hệ Số ST Mỗi Nhịp",
-      "baseTreatmentPerBeat": "Hồi Phục Căn Cứ Mỗi Nhịp",
+      "baseTreatmentPerBeat": "Hồi Phục Cơ Bản Mỗi Nhịp",
       "beatIntervalS": "Khoảng Lặng Giữa Nhịp (giây)",
       "cosmovoiceStanceDurationS": "Thời Gian Duy Trì Tư Thế Giọng Ca Vũ Trụ (giây)",
       "electrifyingExtravaganzaStagger": "Suy Sụp Đại Tiệc Điện Quang"

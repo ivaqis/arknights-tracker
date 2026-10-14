@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Dazzling Focus",
       "description": "Liino deals <@ba.pulse>Electric DMG</> to enemies and then enters her <@ba.key>Vocalist Stance</>. While this stance is active, if there are enemies nearby, Liino will perform an Additional ATK (that deals <@ba.pulse>Electric DMG</> to enemies) on a regular basis.\n<@ba.key>Vocalist Stance</>: While this stance is active, Liino grants the entire team an ATK Boost. After entering battle, Liino will also grant continuous <@ba.heal>HP Treatment</> to operators within range.\n<@ba.info>During Vocalist Stance, her battle skill is replaced with End Stance. Casting this will end her Vocalist Stance early without consuming any SP, after which the battle skill will enter a short cooldown.</>",
-      "1stAtkMultiplier": "1st ATK Multiplier",
+      "firstAtkMultiplier": "First ATK Multiplier",
       "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
       "additionalAtkIntervalS": "Additional ATK Interval (s)",
       "beatIntervalS": "Beat Interval (s)",

@@ -44,9 +44,9 @@
     "comboSkill": {
       "name": "Giải Cứu Vùng Cực",
       "description": "KÍCH HOẠT LIÊN HOÀN: Sau khi cán viên đang điều khiển bị tấn công và HP giảm xuống dưới {trigger_hp_ratio:0%}. \nSnowshine ném một Trợ Thủ Cứu Nạn Đồng Tuyết về phía cán viên đang điều khiển. Khi đến chỗ mục tiêu, Trợ Thủ lập tức <@ba.heal>Hồi Phục HP</> với lượng cực lớn cho cán viên gần đó và liên tục <@ba.heal>Hồi Phục HP</> cho cán viên trong vùng ảnh hưởng. \nThuộc tính Ý Chí sẽ làm tăng lượng hồi phục HP.",
-      "initialBaseTreatment": "Hồi Phục Căn Cứ Ban Đầu",
+      "initialBaseTreatment": "Hồi Phục Cơ Bản Ban Đầu",
       "initialTreatmentIncreasePerWill": "Tăng Hồi Phục Ban Đầu Theo Ý Chí",
-      "baseTreatmentOverTime": "Hồi Phục Căn Cứ Theo Thời Gian",
+      "baseTreatmentOverTime": "Hồi Phục Cơ Bản Theo Thời Gian",
       "treatmentOverTimeIncreasePerWill": "Tăng Hồi Phục Theo Thời Gian Theo Ý Chí",
       "treatmentOverTimeIntervalS": "Thời Gian Giữa Các Lần Hồi Phục (giây)",
       "durationS": "Thời Gian Hiệu Lực (giây)",

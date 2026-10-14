@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Enfoque deslumbrante",
       "description": "Liino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos y luego entra en su <@ba.key>Postura de vocalista</>. Mientras esta postura está activa, si hay enemigos cerca, Liino realizará un ATQ adicional que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos periódicamente.\n<@ba.key>Postura de vocalista</>: Mientras esta postura está activa, Liino otorga un Refuerzo de ATQ a todo el equipo. Tras entrar en combate, Liino también otorgará <@ba.heal>Tratamiento de PV</> continuo a los operadores dentro del alcance.\n<@ba.info>Durante la Postura de vocalista, su habilidad de batalla se reemplaza por Postura final. Al lanzar esta habilidad, la Postura de vocalista terminará antes de tiempo sin consumir PH, después la habilidad de batalla entrará en un breve tiempo de enfriamiento.</>",
-      "1stAtkMultiplier": "Multiplicador del 1.er ATQ",
+      "firstAtkMultiplier": "Multiplicador de ATQ inicial",
       "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
       "additionalAtkIntervalS": "Intervalo de ATQ adicional (s)",
       "beatIntervalS": "Intervalo de Pulso (s)",
@@ -51,7 +51,7 @@
     },
     "comboSkill": {
       "name": "Armónicos deleitables",
-      "description": "ACTIVACIÓN DE COMBO: Mientras <@ba.key>Postura de vocalista</> está activa, se <#ba.spellstatus>consume</> una <#ba.consume>Reacción a artes</> o se aplica una a un enemigo.\nLiino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos, otorga <@ba.heal>Tratamiento de PV</> al operador controlado y obtiene Energía máxima adicional.\nLanzar la habilidad de combo <@ba.key>Armónicos deleitables</> no interrumpe <@ba.key>Postura de vocalista</>.",
+      "description": "ACTIVACIÓN DE COMBO: Mientras <@ba.key>Postura de vocalista</> está activa, se <#ba.consume>consume</> una <#ba.spellstatus>Reacción a artes</> o se aplica una a un enemigo.\nLiino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos, otorga <@ba.heal>Tratamiento de PV</> al operador controlado y obtiene Energía máxima adicional.\nLanzar la habilidad de combo <@ba.key>Armónicos deleitables</> no interrumpe <@ba.key>Postura de vocalista</>.",
       "dmgMultiplier": "Multiplicador de DAÑ",
       "stagger": "Tambaleo",
       "ultimateEnergyGain": "Ganancia de Energía máxima",

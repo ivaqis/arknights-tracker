@@ -1,5 +1,491 @@
 export const warEchoesSeasons = [
     {
+        "id": "6",
+        "name": "Season of Fervor",
+        "startTime": "2026-11-05 12:00:00",
+        "endTime": "2026-11-26 06:00:00",
+        "weeks": [
+            {
+                "id": "1",
+                "name": "Cycle of Fervor Ⅰ",
+                "startTime": "2026-11-05 12:00:00",
+                "endTime": "2026-11-12 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower017",
+                        "hardId": "indie_battletower017_s",
+                        "brutalId": "indie_battletower017_ex",
+                        "name": "Avenger File: Bonekrusher - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0066_lbhunt2",
+                            "eny_0075_lbroshan_settlement"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower019",
+                        "hardId": "indie_battletower019_s",
+                        "brutalId": "indie_battletower019_ex",
+                        "name": "Construct File: Geist - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0127_bigents"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower005",
+                        "hardId": "indie_battletower005_s",
+                        "brutalId": "indie_battletower005_ex",
+                        "name": "Pulverizing Ammunition",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0093_hshog",
+                            "eny_0055_hscrane"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Cycle of Fervor Ⅱ",
+                "startTime": "2026-11-12 04:00:00",
+                "endTime": "2026-11-19 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower020",
+                        "hardId": "indie_battletower020_s",
+                        "brutalId": "indie_battletower020_ex",
+                        "name": "Defense File: Shield - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0074_lbshield"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower006",
+                        "hardId": "indie_battletower006_s",
+                        "brutalId": "indie_battletower006_ex",
+                        "name": "Scars of Landbreaking",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0074_lbshield",
+                            "eny_0023_aghornb",
+                            "eny_0047_firebat",
+                            "eny_0018_lbtough"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower014",
+                        "hardId": "indie_battletower014_s",
+                        "brutalId": "indie_battletower014_ex",
+                        "name": "Beastly Schemes",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0112_jzmonk",
+                            "eny_0113_jzogre"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Cycle of Fervor Ⅲ",
+                "startTime": "2026-11-19 04:00:00",
+                "endTime": "2026-11-26 06:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower008",
+                        "hardId": "indie_battletower008_s",
+                        "brutalId": "indie_battletower008_ex",
+                        "name": "Brief History of War",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0007_mimicw",
+                            "eny_0027_agscorp",
+                            "eny_0048_hvybow",
+                            "eny_0073_slimerg"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower016",
+                        "hardId": "indie_battletower016_s",
+                        "brutalId": "indie_battletower016_ex",
+                        "name": "Glaiver File: Yinglung - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0124_kltdcap"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower007",
+                        "hardId": "indie_battletower007_s",
+                        "brutalId": "indie_battletower007_ex",
+                        "name": "Howling of Undying Beasts",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0082_hsbear"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Season of Phantasia",
+        "startTime": "2026-10-15 06:00:00",
+        "endTime": "2026-11-05 12:00:00",
+        "weeks": [
+            {
+                "id": "1",
+                "name": "Cycle of Phantasia Ⅰ",
+                "startTime": "2026-10-15 06:00:00",
+                "endTime": "2026-10-22 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower015",
+                        "hardId": "indie_battletower015_s",
+                        "brutalId": "indie_battletower015_ex",
+                        "name": "Blightshade File: Thunderclap - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0120_klbear"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower018",
+                        "hardId": "indie_battletower018_s",
+                        "brutalId": "indie_battletower018_ex",
+                        "name": "Beast File: Qingbo Stockade - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0055_hscrane",
+                            "eny_0093_hshog",
+                            "eny_0070_agscorp2"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower011",
+                        "hardId": "indie_battletower011_s",
+                        "brutalId": "indie_battletower011_ex",
+                        "name": "Grievously Besieged",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0023_aghornb",
+                            "eny_0047_firebat",
+                            "eny_0093_hshog"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Cycle of Phantasia Ⅱ",
+                "startTime": "2026-10-22 04:00:00",
+                "endTime": "2026-10-29 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower016",
+                        "hardId": "indie_battletower016_s",
+                        "brutalId": "indie_battletower016_ex",
+                        "name": "Glaiver File: Yinglung - Normal",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0124_kltdcap"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower001",
+                        "hardId": "indie_battletower001_s",
+                        "brutalId": "indie_battletower001_ex",
+                        "name": "Silver Watercutter",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0106_wgthorns2",
+                            "eny_0105_wgslime2",
+                            "eny_0091_wgshoal"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower010",
+                        "hardId": "indie_battletower010_s",
+                        "brutalId": "indie_battletower010_ex",
+                        "name": "Wall of Shields",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0118_klhog",
+                            "eny_0089_wgreflec"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Cycle of Phantasia Ⅲ",
+                "startTime": "2026-10-29 04:00:00",
+                "endTime": "2026-11-05 12:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower004",
+                        "hardId": "indie_battletower004_s",
+                        "brutalId": "indie_battletower004_ex",
+                        "name": "Age of Axes",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0068_lbtough2"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower003",
+                        "hardId": "indie_battletower003_s",
+                        "brutalId": "indie_battletower003_ex",
+                        "name": "Skirmishers' Æthillu",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0033_lbhunt",
+                            "eny_0095_ethillu"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower012",
+                        "hardId": "indie_battletower012_s",
+                        "brutalId": "indie_battletower012_ex",
+                        "name": "Inorganic Fervor",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0063_agmelee2",
+                            "eny_0101_agfly2",
+                            "eny_0021_agmelee",
+                            "eny_0071_sandb"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "4",
         "name": "Season of Illusion",
         "startTime": "2026-09-24 12:00:00",

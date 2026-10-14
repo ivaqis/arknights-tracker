@@ -386,8 +386,8 @@
       "name": "เครื่องนำทาง"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "ความ​เข้มข้น​ของ​เวท​ <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</> DMG ที่​ก่อ​ด้วย​อัล​ติ​เมท​<@ba.key>​ลำดับ​แห่ง​การระเบิด​</>​จะ​เพิ่มขึ้น​เป็น​ <@ba.vup>{atk_scale}</> เท่า​จาก​เดิม",
+      "name": "ผู้บัญชาการ​แห่ง​ออ​ริ​จิ​เนียม"
     },
     "potential5": {
       "description": "???",

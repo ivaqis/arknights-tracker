@@ -14,7 +14,7 @@
     "blocTag": "Seš’qa",
     "expertTags": [
       "Situationsbezogene Analyse",
-      "Beweglich-keit"
+      "Beweglichkeit"
     ],
     "giftPreferTags": [
       "Von Wuling-Schwertkämpfern empfohlen"
@@ -117,7 +117,7 @@
         "description": "Situationsbezogene Analyse: Einsicht des Bewahrers \nEr ist geschickt darin, etwas zu enthüllen, egal wie sorgfältig es verborgen wurde."
       },
       "expert2": {
-        "name": "Beweglich-keit",
+        "name": "Beweglichkeit",
         "description": "Beweglichkeit: Hämosensibler Tracker \nKein lebendes Wesen voller Blut könnte ihm jemals entkommen."
       },
       "hobby1": {

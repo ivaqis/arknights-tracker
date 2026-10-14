@@ -35,6 +35,18 @@
     },
     "plating": null
   },
+  "achv_bat_defeat_bigtree": {
+    "name": "「樹海を静めし者」",
+    "category": "戦闘褒章",
+    "group": "戦闘技術褒章",
+    "levels": {
+      "2": {
+        "desc": "樹海の怒を倒す",
+        "completeDesc": "貴殿は樹海の怒りを鎮め、忠実なる造物に積もった怨念と憤りを晴らしました。この天地は、再び静寂と平和を取り戻しました。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_tundra_documents": {
     "name": "谷地調査勲章",
     "category": "探索褒章",
@@ -71,6 +83,18 @@
     },
     "plating": null
   },
+  "achv_hide_accidental_injury": {
+    "name": "「望まぬ雷害」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "1": {
+        "desc": "解燥との戦闘中、味方の雷雲によるダメージを受ける",
+        "completeDesc": "もしかすると、これはただ、解燥が優しさで熱気を和らげてくれているだけなのかもしれません。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_tundra_fixablerobot": {
     "name": "「Deltaを救う者」",
     "category": "探索褒章",
@@ -87,6 +111,18 @@
       "3": {
         "desc": "四号谷地でDeltaロボットを43体修理する",
         "completeDesc": "大量のバイナリデータを受信しました。解読の結果、送信者はあなたを「Deltaを救う者」、「ロボットの救済者」、「四号谷地のロボット王」として崇めたがっているようです。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "「灰となれ、記憶の残骸よ」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「灰となれ、記憶の残骸よ」を完了する",
+        "completeDesc": "炎の中で変わる記憶の痕跡。\n過去の断片に阻まれながらも、レーヴァテインと共に「無限回廊」を抜けました。"
       }
     },
     "plating": null
@@ -115,6 +151,42 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_campfire_3": {
+    "name": "武陵定着勲章Ⅲ",
+    "category": "探索褒章",
+    "group": "武陵褒章",
+    "levels": {
+      "1": {
+        "desc": "蔵剣谷、応龍関と北部封鎖区域で協約転送ポイントを22カ所解放する",
+        "completeDesc": "武陵の協約ネットワークを多く構築しました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "武陵工業開拓勲章Ⅱ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "1": {
+        "desc": "武陵工業計画の技術研究を25項目完了する",
+        "completeDesc": "武陵工業計画のさらなる研究を完了しました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "「頭上の剣」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "北部封鎖区域でエネルギー体を5つ除去する",
+        "completeDesc": "危地に身を置く以上、振舞いは慎重であるべきでしょう。しかしあなたは、頭上に吊られし剣を繋ぐ錠を解き放ちました。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_balloon": {
     "name": "空中回収勲章",
     "category": "探索褒章",
@@ -126,6 +198,20 @@
       }
     },
     "plating": null
+  },
+  "achv_fac_domain_shop": {
+    "name": "定期取引勲章",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "2": {
+        "desc": "商品取引で物資を15回販売する",
+        "completeDesc": "物資を複数回販売しました。\n直感と鋭い観察眼、そして迅速な調達のおかげで、各地で深刻な物資不足が発生することはありませんでした。"
+      }
+    },
+    "plating": {
+      "desc": "1回の商品取引で、対象商品販売の利益率が500%以上になる"
+    }
   },
   "achv_adv_wuling_blackhole_clean": {
     "name": "裂け目消滅勲章",
@@ -165,6 +251,38 @@
     },
     "plating": null
   },
+  "achv_growth_world_level": {
+    "name": "熟練探索勲章",
+    "category": "成長褒章",
+    "group": "成長褒章",
+    "levels": {
+      "1": {
+        "desc": "探索レベルを2にする",
+        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。"
+      },
+      "2": {
+        "desc": "探索レベルを4にする",
+        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。\n厳しい環境の先には、より多くの可能性が広がっています。"
+      },
+      "3": {
+        "desc": "探索レベルを7にする",
+        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。\n今、頂点へと辿り着きました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "「協約ε·20.00m」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "20m以上の高さから落下して敵に命中する",
+        "completeDesc": "空に浮かんでいたのは、軌道浮遊物ではなく、あなたとそのオペレーターでした。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_box_3": {
     "name": "武陵資源勲章Ⅲ",
     "category": "探索褒章",
@@ -173,6 +291,18 @@
       "2": {
         "desc": "蔵剣谷、応龍関と北部封鎖区域で資源箱を151個開ける",
         "completeDesc": "武陵の多くの資源箱を開けました。どんな場所に隠された物資も、あなたは見逃しません。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_4": {
+    "name": "異境資源勲章",
+    "category": "探索褒章",
+    "group": "武陵褒章",
+    "levels": {
+      "2": {
+        "desc": "雪松林とスーの絵で資源箱を140個開ける",
+        "completeDesc": "武陵の多くの資源箱を開けました。あなたは散らばっていたいくつもの光を回収しました。"
       }
     },
     "plating": null
@@ -201,6 +331,32 @@
     },
     "plating": null
   },
+  "achv_bat_hard_8": {
+    "name": "「深き森の囁き」",
+    "category": "戦闘褒章",
+    "group": "協約空間褒章",
+    "levels": {
+      "2": {
+        "desc": "「映像の記念碑」で「深き森の囁き」の全ステージをノーマルモードでクリアする",
+        "completeDesc": "貴殿は、怒り狂う深き森の囁きに耳を傾け、再び記念碑に己の名を刻みました。"
+      }
+    },
+    "plating": {
+      "desc": "「映像の記念碑」で「深き森の囁き」の全ステージをハードモードでクリアする"
+    }
+  },
+  "achv_fac_blackbox_2": {
+    "name": "模擬空間勲章Ⅱ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "3": {
+        "desc": "模擬空間を計30項目手動で完了する",
+        "completeDesc": "大量の模擬空間を完了し、武陵に関する工業知識を多く習得しました。改めて工業知識へのあなたの熱意に感謝します。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_campfire_2": {
     "name": "武陵定着勲章Ⅱ",
     "category": "探索褒章",
@@ -213,14 +369,58 @@
     },
     "plating": null
   },
-  "achv_adv_wuling_campfire_3": {
-    "name": "武陵定着勲章Ⅲ",
+  "achv_growth_equip_enhance": {
+    "name": "完璧装備勲章",
+    "category": "成長褒章",
+    "group": "成長褒章",
+    "levels": {
+      "3": {
+        "desc": "1個の装備のすべての効果を最大まで精密加工する",
+        "completeDesc": "この装備はあなたの傷も、栄光も、命までも──始まりから終わりまで、すべてを背負ってきました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_4": {
+    "name": "武陵定着勲章Ⅳ",
     "category": "探索褒章",
     "group": "武陵褒章",
     "levels": {
       "1": {
-        "desc": "蔵剣谷、応龍関と北部封鎖区域で協約転送ポイントを22カ所解放する",
-        "completeDesc": "武陵の協約ネットワークを多く構築しました。"
+        "desc": "雪松林とスーの絵で協約転送ポイントを18カ所解放する",
+        "completeDesc": "武陵の協約ネットワークを多く構築しました。たとえそれが異境にあろうとも。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "一蓮托生勲章",
+    "category": "建設褒章",
+    "group": "帝江号褒章",
+    "levels": {
+      "1": {
+        "desc": "5人のオペレーターを信頼度100%にする",
+        "completeDesc": "命を託せる仲間たちに出会いました。"
+      },
+      "2": {
+        "desc": "10人のオペレーターを信頼度100%にする",
+        "completeDesc": "命を託せる多くの仲間に出会いました。\nあなたは共に歩む者を惹きつける力があります。"
+      },
+      "3": {
+        "desc": "20人のオペレーターを信頼度100%にする",
+        "completeDesc": "命を託せるとても多くの仲間に出会いました。\nいつか、この星全体があなたを信じるのでしょう。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "「全方位顕現」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "「征服者」ネファリスが周囲を静止させたとき、操作中のオペレーターは空中で停止する",
+        "completeDesc": "彼女の野心と傲慢さは恐ろしいものですが、あなたは絶望に閉ざされてもなお、己の勇気をあらゆる方向へ示しました。"
       }
     },
     "plating": null
@@ -263,6 +463,18 @@
       "desc": "景玉谷と武陵城でオーリレンを合計81個集める"
     }
   },
+  "achv_hide_waterwheel_top": {
+    "name": "「水は天より流る」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "清波砦にある大きな水車の頂上に到着する",
+        "completeDesc": "清波砦の水車の頂へと登り、「水は天より流る」という奇景を目の当たりにしました。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_ether_2": {
     "name": "「欠片の再集結」Ⅱ",
     "category": "探索褒章",
@@ -275,6 +487,26 @@
     },
     "plating": null
   },
+  "achv_bat_eny_building_kill": {
+    "name": "自動殲滅勲章",
+    "category": "戦闘褒章",
+    "group": "戦闘技術褒章",
+    "levels": {
+      "1": {
+        "desc": "戦闘設備を使用して敵を10体倒す",
+        "completeDesc": "貴殿の戦闘設備は、その力を発揮し始めています。"
+      },
+      "2": {
+        "desc": "戦闘設備を使用して敵を100体倒す",
+        "completeDesc": "貴殿の戦闘設備は、安定して敵を制圧しています。"
+      },
+      "3": {
+        "desc": "戦闘設備を使用して敵を500体倒す",
+        "completeDesc": "これほど効率的な破壊兵器を持っているなら、もはや貴殿が自ら危険に立ち向かう必要はないでしょう。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_ether_3": {
     "name": "「欠片の再集結」Ⅲ",
     "category": "探索褒章",
@@ -283,6 +515,18 @@
       "2": {
         "desc": "蔵剣谷、応龍関と北部封鎖区域でオーリレンを59個集める",
         "completeDesc": "始まりの失われし欠片が、あなたの手で多く集いました。失われた欠片にあなたの呼び声が届いています。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_4": {
+    "name": "「欠片の再集結」Ⅳ",
+    "category": "探索褒章",
+    "group": "武陵褒章",
+    "levels": {
+      "2": {
+        "desc": "雪松林とスーの絵でオーリレンを41個集める",
+        "completeDesc": "始まりの失われし欠片が、あなたの手で多く集いました。異境にあるいく筋もの光と影にすぎなかったのかもしれません。それでも、あなたの手に収まってこそ、この古き品々は本来の意味を得るのでしょう。"
       }
     },
     "plating": null
@@ -311,6 +555,18 @@
     },
     "plating": null
   },
+  "achv_bat_dung_char": {
+    "name": "オペレーター訓練勲章",
+    "category": "戦闘褒章",
+    "group": "協約空間褒章",
+    "levels": {
+      "1": {
+        "desc": "オペレーター訓練を5個クリアする",
+        "completeDesc": "貴殿はオペレーターの戦い方を心に刻んでいます。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_floor_2": {
     "name": "「パタパタ羽獣・その2」",
     "category": "探索褒章",
@@ -319,6 +575,30 @@
       "1": {
         "desc": "清波砦、首礎、首礎内部と実験区域で感圧板を6カ所有効にする",
         "completeDesc": "巧みな身のこなしで感圧板の間をさらに飛び回り、見事に完璧なバランスを取り戻した。\n「お見事、自在羽獣のようだ！」"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_password": {
+    "name": "「灯を結ぶ妙筆」",
+    "category": "探索褒章",
+    "group": "武陵褒章",
+    "levels": {
+      "2": {
+        "desc": "スーの絵で灯柱のからくりを11個解除する",
+        "completeDesc": "スーが残した小さな謎を数多く解きました。絵の中を歩き続ければ、墨魎にも子供心があることを知るでしょう。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "「獣王の降伏」",
+    "category": "戦闘褒章",
+    "group": "戦闘技術褒章",
+    "levels": {
+      "2": {
+        "desc": "大山吼獣を倒す",
+        "completeDesc": "貴殿は、群れの長を制圧しました。いっそ――新たな王に就いてみてはいかがでしょう？"
       }
     },
     "plating": null
@@ -347,6 +627,18 @@
     },
     "plating": null
   },
+  "achv_quest_yvonne": {
+    "name": "「ラブ、スクリーム&試作モデル」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「ラブ、スクリーム&試作モデル」を完了する",
+        "completeDesc": "遅れて届いた「塗料」。\nタタの痕跡を辿って描いた落書きの数々に、イヴォンヌは再会を見出しました。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_hyper_clean": {
     "name": "過剰活性化除去勲章",
     "category": "探索褒章",
@@ -371,6 +663,30 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_paint": {
+    "name": "「絵巻修復師」",
+    "category": "探索褒章",
+    "group": "武陵褒章",
+    "levels": {
+      "2": {
+        "desc": "スーの絵でスーの旧作を16点修復する",
+        "completeDesc": "あの食いしん坊たちの口から絵巻の欠けた部分を取り戻しました。あなたは絶妙な一手を打って、絵の中に平和をもたらしました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_jsspsi_reverse_color": {
+    "name": "「余白」",
+    "category": "戦闘褒章",
+    "group": "戦闘技術褒章",
+    "levels": {
+      "2": {
+        "desc": "スーは天地墨画のモノクロ状態で絵による攻撃を発動し、操作中のオペレーターはその攻撃によるダメージを受けない",
+        "completeDesc": "白を知りて黒を守り、退くをもって前へ進む。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_watergun_1": {
     "name": "「軌道激流」",
     "category": "探索褒章",
@@ -382,6 +698,20 @@
       }
     },
     "plating": null
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "武陵拠点開拓勲章Ⅱ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "2": {
+        "desc": "武陵のすべての拠点を支援計画に追加する",
+        "completeDesc": "武陵のすべての拠点が支援計画に追加されました。\n自然と人間の関係はあなたの尽力によって、見事な調和を保っています。"
+      }
+    },
+    "plating": {
+      "desc": "武陵のすべての拠点を最高レベルにする"
+    }
   },
   "achv_bat_charged": {
     "name": "中断技能勲章",
@@ -403,6 +733,34 @@
     },
     "plating": null
   },
+  "achv_bat_defeat_palesent": {
+    "name": "「白亜・潰滅」",
+    "category": "戦闘褒章",
+    "group": "戦闘技術褒章",
+    "levels": {
+      "3": {
+        "desc": "「危機禍影・白亜・アンゲロミラ」をクリアする",
+        "completeDesc": "協約空間の幻影において、貴殿は再び白亜の巨像を打ち砕きました。"
+      }
+    },
+    "plating": {
+      "desc": "240秒以内に「危機禍影・白亜・アンゲロミラ」をクリアする"
+    }
+  },
+  "achv_event_wuling_challenge_dung_03": {
+    "name": "「絵巻外の残光」",
+    "category": "特殊褒章",
+    "group": "特殊褒章",
+    "levels": {
+      "2": {
+        "desc": "「密境の探索者」で「絵巻外の残光」の全ステージをクリアする",
+        "completeDesc": "貴殿はバラバラになった協約空間をひとつひとつ踏破し、絵巻の外、水墨の痕に秘められた数多の過去を余すことなく手中に収めた。"
+      }
+    },
+    "plating": {
+      "desc": "「密境の探索者」で「絵巻外の残光」の全ステージを全目標達成する"
+    }
+  },
   "achv_bat_charged_hsbear": {
     "name": "「雷断」",
     "category": "戦闘褒章",
@@ -411,6 +769,18 @@
       "2": {
         "desc": "戦闘中、天鼓の咆哮による音波を中断させる",
         "completeDesc": "貴殿は、雷鳴の喉首を締め上げました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "「異常移動」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "3": {
+        "desc": "ジップライン、発射装置、ロープで合計10,000m移動する",
+        "completeDesc": "帝江号は地上浮遊移動装置の開発を計画中です。"
       }
     },
     "plating": null
@@ -449,18 +819,6 @@
       "desc": "240秒以内に「危機禍影・トリアンゲロス」をクリアする"
     }
   },
-  "achv_bat_defeat_bigtree": {
-    "name": "「樹海を静めし者」",
-    "category": "戦闘褒章",
-    "group": "戦闘技術褒章",
-    "levels": {
-      "2": {
-        "desc": "樹海の怒を倒す",
-        "completeDesc": "貴殿は樹海の怒りを鎮め、忠実なる造物に積もった怨念と憤りを晴らしました。この天地は、再び静寂と平和を取り戻しました。"
-      }
-    },
-    "plating": null
-  },
   "achv_bat_defeat_dodge_jzogre": {
     "name": "「風を裂いて進む者」",
     "category": "戦闘褒章",
@@ -481,6 +839,44 @@
       "2": {
         "desc": "戦闘中、「イーサルー」が復活してから2秒以内に倒す",
         "completeDesc": "貴殿は表象を見抜き、不安定な存在を払い除けました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_5": {
+    "name": "「死の争鳴」",
+    "category": "戦闘褒章",
+    "group": "協約空間褒章",
+    "levels": {
+      "2": {
+        "desc": "「映像の記念碑」で「死の争鳴」の全ステージをノーマルモードでクリアする",
+        "completeDesc": "貴殿は、雷鳴の声や死の面影を越えて紛争に直面し、再び記念碑に己の名を刻みました。"
+      }
+    },
+    "plating": {
+      "desc": "「映像の記念碑」で「死の争鳴」の全ステージをハードモードでクリアする"
+    }
+  },
+  "achv_hide_spaceship_v1d6": {
+    "name": "「一望千頃」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "1": {
+        "desc": "展望の浮島に到着する",
+        "completeDesc": "紆余曲折を経て、ついに人類の科学技術の粋を集めた最高峰を目にすることができました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "「冬の夢は霧の中に」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「冬の夢は霧の中に」を完了する",
+        "completeDesc": "探し求める眼差しとともに矢の導きに従い、冷たい風が霧と夢をかすめていく……かの声は、雪の森にこだまする。"
       }
     },
     "plating": null
@@ -511,17 +907,33 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_jzmking": {
-    "name": "「獣王の降伏」",
+  "achv_bat_defeat_jsspsi": {
+    "name": "「かくて知る、万象一新」",
     "category": "戦闘褒章",
     "group": "戦闘技術褒章",
     "levels": {
-      "2": {
-        "desc": "大山吼獣を倒す",
-        "completeDesc": "貴殿は、群れの長を制圧しました。いっそ――新たな王に就いてみてはいかがでしょう？"
+      "3": {
+        "desc": "「危機禍影・スー」をクリアする",
+        "completeDesc": "協約空間の幻では、天地万物ことごとく丹青の妙にあり、澄みきった心を持つ貴殿ならば、万象が一新されゆくさまを知ることでしょう。"
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "200秒以内に「危機禍影・スー」をクリアする"
+    }
+  },
+  "achv_event_clean": {
+    "name": "「清浄無垢」",
+    "category": "特殊褒章",
+    "group": "特殊褒章",
+    "levels": {
+      "2": {
+        "desc": "「塵一掃」の全任務を完了する",
+        "completeDesc": "貴殿の働きにより、清掃員たちが汚れに立ち向かう苦労は取り除かれた。"
+      }
+    },
+    "plating": {
+      "desc": "120秒以内に「清掃コンテスト：発射装置」をクリアする"
+    }
   },
   "achv_bat_defeat_klbear": {
     "name": "「噪雷の弔い」",
@@ -549,20 +961,6 @@
       "desc": "200秒以内に「危機禍影・ネファリス」をクリアする"
     }
   },
-  "achv_bat_defeat_palesent": {
-    "name": "「白亜・潰滅」",
-    "category": "戦闘褒章",
-    "group": "戦闘技術褒章",
-    "levels": {
-      "3": {
-        "desc": "「危機禍影・白亜・アンゲロミラ」をクリアする",
-        "completeDesc": "協約空間の幻影において、貴殿は再び白亜の巨像を打ち砕きました。"
-      }
-    },
-    "plating": {
-      "desc": "240秒以内に「危機禍影・白亜・アンゲロミラ」をクリアする"
-    }
-  },
   "achv_bat_defeat_rodin": {
     "name": "「骨拳粉砕」",
     "category": "戦闘褒章",
@@ -576,6 +974,30 @@
     "plating": {
       "desc": "120秒以内に「危機狂影・ロダン」をクリアする"
     }
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "武陵取引専門家勲章Ⅲ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "3": {
+        "desc": "武陵取引券を25,000,000枚獲得する",
+        "completeDesc": "大量の武陵取引券を獲得しました。\n手元に券がたくさん集まるほど、大勢の人が必要な物資を手にしています。まさに大きな功績です。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m4": {
+    "name": "「我執を観る」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：第二章-プロセスⅧ「試練3・道なき道」を完了する",
+        "completeDesc": "己を悟り、傷を癒す。"
+      }
+    },
+    "plating": null
   },
   "achv_bat_defeat_ruanyi": {
     "name": "「怒れる枝、再び朽ちる」",
@@ -591,14 +1013,14 @@
       "desc": "200秒以内に「危機禍影・ルアン・イー」をクリアする"
     }
   },
-  "achv_bat_dung_char": {
-    "name": "オペレーター訓練勲章",
-    "category": "戦闘褒章",
-    "group": "協約空間褒章",
+  "achv_quest_camille": {
+    "name": "「死の舞踏」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
     "levels": {
-      "1": {
-        "desc": "オペレーター訓練を5個クリアする",
-        "completeDesc": "貴殿はオペレーターの戦い方を心に刻んでいます。"
+      "2": {
+        "desc": "サブ任務「死の舞踏」を完了する",
+        "completeDesc": "追跡、鮮血、未だに疼く古傷……それらを胸に抱きながら、カミーユは誓った――その血は必ず管理人と共に在るのだと。"
       }
     },
     "plating": null
@@ -627,6 +1049,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "武陵工業開拓勲章Ⅲ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "1": {
+        "desc": "武陵工業計画の技術研究を34項目完了する",
+        "completeDesc": "武陵工業計画のさらなる研究を完了しました。\nあなたはタロⅡの技術の最前線へ進んでいます。"
+      }
+    },
+    "plating": null
+  },
   "achv_bat_enemyspawner": {
     "name": "超域排除勲章",
     "category": "戦闘褒章",
@@ -635,6 +1069,38 @@
       "2": {
         "desc": "探索レベル7に到達したあと、異なる重度超域活性点を5個クリアする",
         "completeDesc": "大地に積もった超域エネルギーは消え去りました。しかし、それは再び集まります。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "谷地取引専門家勲章",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "1": {
+        "desc": "谷地取引券を20,000,000枚獲得する",
+        "completeDesc": "わずかな谷地取引券を獲得しました。"
+      },
+      "2": {
+        "desc": "谷地取引券を40,000,000枚獲得する",
+        "completeDesc": "多くの谷地取引券を獲得しました。"
+      },
+      "3": {
+        "desc": "谷地取引券を80,000,000枚獲得する",
+        "completeDesc": "大量の谷地取引券を獲得しました。\n手元に券がたくさん集まるほど、大勢の人が必要な物資を手にしています。まさに大きな功績です。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l10m3": {
+    "name": "「記念日」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「記念日」を完了する",
+        "completeDesc": "妙なるかな、妙なるかな。羽獣に詩興を抱き、煙は人の心に宿る。"
       }
     },
     "plating": null
@@ -651,22 +1117,14 @@
     },
     "plating": null
   },
-  "achv_bat_eny_building_kill": {
-    "name": "自動殲滅勲章",
-    "category": "戦闘褒章",
-    "group": "戦闘技術褒章",
+  "achv_quest_e6m1": {
+    "name": "「初めての武陵城」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
     "levels": {
-      "1": {
-        "desc": "戦闘設備を使用して敵を10体倒す",
-        "completeDesc": "貴殿の戦闘設備は、その力を発揮し始めています。"
-      },
-      "2": {
-        "desc": "戦闘設備を使用して敵を100体倒す",
-        "completeDesc": "貴殿の戦闘設備は、安定して敵を制圧しています。"
-      },
       "3": {
-        "desc": "戦闘設備を使用して敵を500体倒す",
-        "completeDesc": "これほど効率的な破壊兵器を持っているなら、もはや貴殿が自ら危険に立ち向かう必要はないでしょう。"
+        "desc": "新たな街へ到達する",
+        "completeDesc": "武陵城に到着しました。"
       }
     },
     "plating": null
@@ -737,6 +1195,18 @@
       "desc": "「映像の記念碑」で「灼ける傷跡」の全ステージをハードモードでクリアする"
     }
   },
+  "achv_hide_open_treasure": {
+    "name": "「獣の贈り物」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "スマーティの「プレゼント」を見つける",
+        "completeDesc": "友情？信頼？この愛らしい小動物の瞳に映るあなたは、もうとっくに「友だち」なのです。"
+      }
+    },
+    "plating": null
+  },
   "achv_bat_hard_4": {
     "name": "「濁流具現」",
     "category": "戦闘褒章",
@@ -749,20 +1219,6 @@
     },
     "plating": {
       "desc": "「映像の記念碑」で「濁流具現」の全ステージをハードモードでクリアする"
-    }
-  },
-  "achv_bat_hard_5": {
-    "name": "「死の争鳴」",
-    "category": "戦闘褒章",
-    "group": "協約空間褒章",
-    "levels": {
-      "2": {
-        "desc": "「映像の記念碑」で「死の争鳴」の全ステージをノーマルモードでクリアする",
-        "completeDesc": "貴殿は、雷鳴の声や死の面影を越えて紛争に直面し、再び記念碑に己の名を刻みました。"
-      }
-    },
-    "plating": {
-      "desc": "「映像の記念碑」で「死の争鳴」の全ステージをハードモードでクリアする"
     }
   },
   "achv_bat_hard_6": {
@@ -792,6 +1248,18 @@
     "plating": {
       "desc": "「映像の記念碑」で「刻まれた影」の全ステージをハードモードでクリアする"
     }
+  },
+  "achv_hide_slime": {
+    "name": "「四皇会戦」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "2": {
+        "desc": "オリジムシを4体蹴り落とす",
+        "completeDesc": "4体のオリジムシの引っ越しを手伝いました。"
+      }
+    },
+    "plating": null
   },
   "achv_bat_magical_AS": {
     "name": "武力顕現勲章",
@@ -839,7 +1307,7 @@
     "group": "戦闘技術褒章",
     "levels": {
       "2": {
-        "desc": "戦闘中、切雲老に束縛された味方オペレーターを1回解放する。",
+        "desc": "戦闘中、切雲老に拘束された味方オペレーターを1回解放する。",
         "completeDesc": "以前から、一部の滄賊による誘拐の悪行は耳にしていましたが、少なくとも、あなたは彼らを成功させませんでした。"
       }
     },
@@ -857,19 +1325,29 @@
     },
     "plating": null
   },
-  "achv_event_clean": {
-    "name": "「清浄無垢」",
-    "category": "特殊褒章",
-    "group": "特殊褒章",
+  "achv_quest_e0m2": {
+    "name": "「復活」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
     "levels": {
-      "2": {
-        "desc": "「塵一掃」の全任務を完了する",
-        "completeDesc": "貴殿の働きにより、清掃員たちが汚れに立ち向かう苦労は取り除かれた。"
+      "3": {
+        "desc": "メイン任務：序章「プロセス・復活」を完了する",
+        "completeDesc": "タロⅡへ帰還しました。"
       }
     },
-    "plating": {
-      "desc": "120秒以内に「清掃コンテスト：発射装置」をクリアする"
-    }
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "「風波を越えて」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：第二章-プロセスⅥ「終わり、始まる」を完了する",
+        "completeDesc": "あなたが戻ってくるこの日を、ゾアン・ファンイはずっと待っていました。"
+      }
+    },
+    "plating": null
   },
   "achv_event_contingency_contract_0": {
     "name": "「再度燃焼」",
@@ -879,6 +1357,18 @@
       "3": {
         "desc": "危機契約再燃試験作戦で評価値20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>以上の挑戦をクリアする",
         "completeDesc": "過去の協力関係は取り戻され、古き契約に再び火が灯った。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "「アイテムバトル？」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
+    "levels": {
+      "1": {
+        "desc": "操作中のオペレータをバナナで転ばせる",
+        "completeDesc": "バナナの皮を捨てた動物は、明らかに「アイテム使用不可」のルールから逸脱しているようです。"
       }
     },
     "plating": null
@@ -897,6 +1387,26 @@
       "desc": "120秒以内に「最終試験」をクリアする"
     }
   },
+  "achv_growth_char_potential_1": {
+    "name": "潜在解放勲章",
+    "category": "成長褒章",
+    "group": "成長褒章",
+    "levels": {
+      "1": {
+        "desc": "潜在をすべて解放したオペレーターを1人育成する",
+        "completeDesc": "1人のオペレーターの潜在をすべて解放しました。"
+      },
+      "2": {
+        "desc": "潜在をすべて解放したオペレーターを10人育成する",
+        "completeDesc": "一部のオペレーターの潜在をすべて解放しました。\n自らを見つめ直すことこそが、力を高めるための第1歩です。"
+      },
+      "3": {
+        "desc": "潜在をすべて解放したオペレーターを15人育成する",
+        "completeDesc": "一部のオペレーターの潜在をすべて解放しました。\n彼らは限界を超えましたが、これは始まりに過ぎないと信じています。"
+      }
+    },
+    "plating": null
+  },
   "achv_event_formula": {
     "name": "「大きな救いの星」",
     "category": "特殊褒章",
@@ -911,6 +1421,18 @@
       "desc": "「集成支援・小さな救いの星」期間中、支援成果券を計800,000枚入手し、息壌玉ひょうたんを計20,000個提出する"
     }
   },
+  "achv_quest_e11m4": {
+    "name": "「過去へ繋ぐ」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "息壌橋で天険を越える",
+        "completeDesc": "息壌が橋となり、過去と現在を結び合わせました。道はあなたのために開いています。"
+      }
+    },
+    "plating": null
+  },
   "achv_event_formula2": {
     "name": "「龍泡泡大量発生中」",
     "category": "特殊褒章",
@@ -924,6 +1446,32 @@
     "plating": {
       "desc": "「集成支援・龍泡泡出撃」期間中、支援成果券を計800,000枚入手し、重息壌龍泡泡を計20,000個提出する"
     }
+  },
+  "achv_event_gambling_dungeon_1": {
+    "name": "「演武と計算」",
+    "category": "特殊褒章",
+    "group": "特殊褒章",
+    "levels": {
+      "2": {
+        "desc": "演算の1ゲームで最大ボーナス≥500,000",
+        "completeDesc": "貴殿は卓越した作戦能力に加え、優れた計算能力、そして羨まれるほどの幸運まで持ち合わせている。"
+      }
+    },
+    "plating": {
+      "desc": "「百趣演武」で演武事録を15項目完了する"
+    }
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "武陵取引専門家勲章Ⅳ",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "3": {
+        "desc": "武陵取引券を80,000,000枚獲得する",
+        "completeDesc": "膨大な量の武陵取引券を獲得しました。\n取引券が増えるほど、視野はさらに冴え渡る――武陵の山水を行き交う品々は、もはやあなたの目から逃れられません。"
+      }
+    },
+    "plating": null
   },
   "achv_event_racingdungeon_1": {
     "name": "「奇景探検家」",
@@ -1029,38 +1577,6 @@
     },
     "plating": null
   },
-  "achv_fac_blackbox_2": {
-    "name": "模擬空間勲章Ⅱ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "3": {
-        "desc": "模擬空間を計30項目手動で完了する",
-        "completeDesc": "大量の模擬空間を完了し、武陵に関する工業知識を多く習得しました。改めて工業知識へのあなたの熱意に感謝します。"
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_coupon_tundra": {
-    "name": "谷地取引専門家勲章",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "1": {
-        "desc": "谷地取引券を20,000,000枚獲得する",
-        "completeDesc": "わずかな谷地取引券を獲得しました。"
-      },
-      "2": {
-        "desc": "谷地取引券を40,000,000枚獲得する",
-        "completeDesc": "多くの谷地取引券を獲得しました。"
-      },
-      "3": {
-        "desc": "谷地取引券を80,000,000枚獲得する",
-        "completeDesc": "大量の谷地取引券を獲得しました。\n手元に券がたくさん集まるほど、大勢の人が必要な物資を手にしています。まさに大きな功績です。"
-      }
-    },
-    "plating": null
-  },
   "achv_fac_coupon_wuling_1": {
     "name": "武陵取引専門家勲章",
     "category": "建設褒章",
@@ -1085,30 +1601,6 @@
     },
     "plating": null
   },
-  "achv_fac_coupon_wuling_3": {
-    "name": "武陵取引専門家勲章Ⅲ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "3": {
-        "desc": "武陵取引券を25,000,000枚獲得する",
-        "completeDesc": "大量の武陵取引券を獲得しました。\n手元に券がたくさん集まるほど、大勢の人が必要な物資を手にしています。まさに大きな功績です。"
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_coupon_wuling_4": {
-    "name": "武陵取引専門家勲章Ⅳ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "3": {
-        "desc": "武陵取引券を80,000,000枚獲得する",
-        "completeDesc": "膨大な量の武陵取引券を獲得しました。\n取引券が増えるほど、視野はさらに冴え渡る――武陵の山水を行き交う品々は、もはやあなたの目から逃れられません。"
-      }
-    },
-    "plating": null
-  },
   "achv_fac_coupon_wuling_5": {
     "name": "武陵取引専門家勲章Ⅴ",
     "category": "建設褒章",
@@ -1117,6 +1609,18 @@
       "3": {
         "desc": "武陵取引券を100,000,000枚獲得する",
         "completeDesc": "さらなる武陵取引券を獲得しました。\nあらゆる者の需要が満たされ、あなたは苦難の中にあってなお、武陵の経済秩序を守り抜きました。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "谷地工業開拓勲章",
+    "category": "建設褒章",
+    "group": "集成工業褒章",
+    "levels": {
+      "3": {
+        "desc": "基礎工業計画のすべての技術研究を完了する",
+        "completeDesc": "基礎工業計画の研究をすべて完了しました。\nあなたの尽力により、集成工業システムは四号谷地に完全対応しました。"
       }
     },
     "plating": null
@@ -1135,19 +1639,51 @@
       "desc": "荷物耐久値を削らない状態で、精密部品（ワレモノ注意）の配達を20回完了する"
     }
   },
-  "achv_fac_domain_shop": {
-    "name": "定期取引勲章",
+  "achv_quest_liino": {
+    "name": "「Like a Shooting Star」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「Like a Shooting Star」を完了する",
+        "completeDesc": "エンドフィールド工業は「アイドル」を抱えることに……リハーサルに公演、まあ……これから忙しくなりそうです。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_inn_management": {
+    "name": "食通も唸る勲章",
     "category": "建設褒章",
     "group": "集成工業褒章",
     "levels": {
       "2": {
-        "desc": "商品取引で物資を15回販売する",
-        "completeDesc": "物資を複数回販売しました。\n直感と鋭い観察眼、そして迅速な調達のおかげで、各地で深刻な物資不足が発生することはありませんでした。"
+        "desc": "5つのテーマで営業格付けを★5にする（プレオープンを除く）",
+        "completeDesc": "この武陵にはもう、縁縁荘であなたの料理の腕前に異を唱えられる食通はいない。"
       }
     },
     "plating": {
-      "desc": "1回の商品取引で、対象商品販売の利益率が500%以上になる"
+      "desc": "レシピを累計40個入手する"
     }
+  },
+  "achv_growth_char_count_1": {
+    "name": "雇用人脈勲章",
+    "category": "成長褒章",
+    "group": "成長褒章",
+    "levels": {
+      "1": {
+        "desc": "オペレーターを5人獲得する",
+        "completeDesc": "何人かのオペレーターと初めて出会いました。"
+      },
+      "2": {
+        "desc": "オペレーターを10人獲得する",
+        "completeDesc": "何人かのオペレーターと初めて出会いました。チームは徐々に姿を現しつつあります。"
+      },
+      "3": {
+        "desc": "オペレーターを20人獲得する",
+        "completeDesc": "何人かのオペレーターと初めて出会いました。チームの規模も拡充され、より複雑な戦術立案が可能となりました。"
+      }
+    },
+    "plating": null
   },
   "achv_fac_kite_station": {
     "name": "環境観測勲章",
@@ -1203,19 +1739,17 @@
       "desc": "天王原建設支援拠点と心臓修復施設を最高レベルにする"
     }
   },
-  "achv_fac_settlement_wuling_2": {
-    "name": "武陵拠点開拓勲章Ⅱ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
+  "achv_hide_cave_v1d5": {
+    "name": "「巨大氷柱」",
+    "category": "極秘褒章",
+    "group": "極秘褒章",
     "levels": {
-      "2": {
-        "desc": "武陵のすべての拠点を支援計画に追加する",
-        "completeDesc": "武陵のすべての拠点が支援計画に追加されました。\n自然と人間の関係はあなたの尽力によって、見事な調和を保っています。"
+      "1": {
+        "desc": "雪松林の小さな岩窟の地下に進む",
+        "completeDesc": "鋭いあなたは周囲に置かれた「アイスピッケル」に気づきました。"
       }
     },
-    "plating": {
-      "desc": "武陵のすべての拠点を最高レベルにする"
-    }
+    "plating": null
   },
   "achv_fac_simulation_training": {
     "name": "「演武頂点」",
@@ -1230,26 +1764,6 @@
     "plating": {
       "desc": "オーバーフローを1回発生させた状態で、戦力ポイントが10の演算をクリアする"
     }
-  },
-  "achv_fac_spaceship_fever_point": {
-    "name": "一蓮托生勲章",
-    "category": "建設褒章",
-    "group": "帝江号褒章",
-    "levels": {
-      "1": {
-        "desc": "5人のオペレーターを信頼度100%にする",
-        "completeDesc": "命を託せる仲間たちに出会いました。"
-      },
-      "2": {
-        "desc": "10人のオペレーターを信頼度100%にする",
-        "completeDesc": "命を託せる多くの仲間に出会いました。\nあなたは共に歩む者を惹きつける力があります。"
-      },
-      "3": {
-        "desc": "20人のオペレーターを信頼度100%にする",
-        "completeDesc": "命を託せるとても多くの仲間に出会いました。\nいつか、この星全体があなたを信じるのでしょう。"
-      }
-    },
-    "plating": null
   },
   "achv_fac_spaceship_gift": {
     "name": "誠心誠意勲章",
@@ -1283,6 +1797,26 @@
     },
     "plating": null
   },
+  "achv_side_mission_count": {
+    "name": "人助け勲章",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "1": {
+        "desc": "探索任務を30件完了する",
+        "completeDesc": "多くの人々の問題を解決しました。"
+      },
+      "2": {
+        "desc": "探索任務を40件完了する",
+        "completeDesc": "多くの人々の問題を解決しました。\n作戦任務ではなく、見返りも求めない助け合いでした。"
+      },
+      "3": {
+        "desc": "探索任務を50件完了する",
+        "completeDesc": "多くの人々の問題を解決しました。\n助けられた人々も、今後は他の誰かを助けることでしょう。タロⅡでは、お互いに支え合って生きていかねばなりません。"
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_jinlong_1": {
     "name": "武陵工業開拓勲章Ⅰ",
     "category": "建設褒章",
@@ -1295,30 +1829,6 @@
     },
     "plating": null
   },
-  "achv_fac_techtree_jinlong_2": {
-    "name": "武陵工業開拓勲章Ⅱ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "1": {
-        "desc": "武陵工業計画の技術研究を25項目完了する",
-        "completeDesc": "武陵工業計画のさらなる研究を完了しました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_jinlong_3": {
-    "name": "武陵工業開拓勲章Ⅲ",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "1": {
-        "desc": "武陵工業計画の技術研究を34項目完了する",
-        "completeDesc": "武陵工業計画のさらなる研究を完了しました。\nあなたはタロⅡの技術の最前線へ進んでいます。"
-      }
-    },
-    "plating": null
-  },
   "achv_fac_techtree_jinlong_4": {
     "name": "武陵工業開拓勲章Ⅳ",
     "category": "建設褒章",
@@ -1327,18 +1837,6 @@
       "1": {
         "desc": "武陵工業計画の技術研究を47項目完了する",
         "completeDesc": "武陵工業計画のさらなる研究を完了しました。\nあなたの思惑はいかなる時も、足元の大地に還元されています。"
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_tundra": {
-    "name": "谷地工業開拓勲章",
-    "category": "建設褒章",
-    "group": "集成工業褒章",
-    "levels": {
-      "3": {
-        "desc": "基礎工業計画のすべての技術研究を完了する",
-        "completeDesc": "基礎工業計画の研究をすべて完了しました。\nあなたの尽力により、集成工業システムは四号谷地に完全対応しました。"
       }
     },
     "plating": null
@@ -1356,6 +1854,30 @@
     "plating": {
       "desc": "「ティフォロスの射場」で、すべての上級訓練をクリアし、日常訓練・04を★3でクリアする"
     }
+  },
+  "achv_quest_e11m1": {
+    "name": "「開封」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：第二章-プロセスⅦ「荒波を越えて」を完了する",
+        "completeDesc": "あなたは、破滅に立ち向かう覚悟を決めました。長らく封じられてなお、それは絶望の具現そのものです。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "「赤騎士」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「赤騎士」を完了する",
+        "completeDesc": "人々は子どもたちの王国を越え、荷を下ろし、歩みを止めました。\n膝に残った擦り傷や、置き去りにされた子どもの日々を、誰が思い出したでしょうか。"
+      }
+    },
+    "plating": null
   },
   "achv_growth_adventure_level": {
     "name": "千磨百錬勲章",
@@ -1377,42 +1899,14 @@
     },
     "plating": null
   },
-  "achv_growth_char_count_1": {
-    "name": "雇用人脈勲章",
-    "category": "成長褒章",
-    "group": "成長褒章",
+  "achv_quest_e12m1": {
+    "name": "「丹青に入る」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
     "levels": {
-      "1": {
-        "desc": "オペレーターを5人獲得する",
-        "completeDesc": "何人かのオペレーターと初めて出会いました。"
-      },
-      "2": {
-        "desc": "オペレーターを10人獲得する",
-        "completeDesc": "何人かのオペレーターと初めて出会いました。チームは徐々に姿を現しつつあります。"
-      },
       "3": {
-        "desc": "オペレーターを20人獲得する",
-        "completeDesc": "何人かのオペレーターと初めて出会いました。チームの規模も拡充され、より複雑な戦術立案が可能となりました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_char_potential_1": {
-    "name": "潜在解放勲章",
-    "category": "成長褒章",
-    "group": "成長褒章",
-    "levels": {
-      "1": {
-        "desc": "潜在をすべて解放したオペレーターを1人育成する",
-        "completeDesc": "1人のオペレーターの潜在をすべて解放しました。"
-      },
-      "2": {
-        "desc": "潜在をすべて解放したオペレーターを10人育成する",
-        "completeDesc": "一部のオペレーターの潜在をすべて解放しました。\n自らを見つめ直すことこそが、力を高めるための第1歩です。"
-      },
-      "3": {
-        "desc": "潜在をすべて解放したオペレーターを15人育成する",
-        "completeDesc": "一部のオペレーターの潜在をすべて解放しました。\n彼らは限界を超えましたが、これは始まりに過ぎないと信じています。"
+        "desc": "メイン任務：第二章-プロセスⅧ「画中の宿屋」を完了する",
+        "completeDesc": "丹青の妙を目に、山へ向かう。"
       }
     },
     "plating": null
@@ -1433,38 +1927,6 @@
       "3": {
         "desc": "オペレーターのスキルを20個特化段階3にする",
         "completeDesc": "一部のオペレーターが戦闘スキルを極めました。それぞれ異なる専門と分野を持ちながらも、彼らを1つの未来へと導いています。"
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_equip_enhance": {
-    "name": "完璧装備勲章",
-    "category": "成長褒章",
-    "group": "成長褒章",
-    "levels": {
-      "3": {
-        "desc": "1個の装備のすべての効果を最大まで精密加工する",
-        "completeDesc": "この装備はあなたの傷も、栄光も、命までも──始まりから終わりまで、すべてを背負ってきました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_world_level": {
-    "name": "熟練探索勲章",
-    "category": "成長褒章",
-    "group": "成長褒章",
-    "levels": {
-      "1": {
-        "desc": "探索レベルを2にする",
-        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。"
-      },
-      "2": {
-        "desc": "探索レベルを4にする",
-        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。\n厳しい環境の先には、より多くの可能性が広がっています。"
-      },
-      "3": {
-        "desc": "探索レベルを7にする",
-        "completeDesc": "より高い探索レベルに到達したことを示す勲章です。\n今、頂点へと辿り着きました。"
       }
     },
     "plating": null
@@ -1503,30 +1965,6 @@
       "desc": "武器1個のスキル合計レベルを25にする"
     }
   },
-  "achv_hide_aether_lock_clean": {
-    "name": "「頭上の剣」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "2": {
-        "desc": "北部封鎖区域でエネルギー体を5つ除去する",
-        "completeDesc": "危地に身を置く以上、振舞いは慎重であるべきでしょう。しかしあなたは、頭上に吊られし剣を繋ぐ錠を解き放ちました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_banana": {
-    "name": "「アイテムバトル？」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "1": {
-        "desc": "操作中のオペレータをバナナで転ばせる",
-        "completeDesc": "バナナの皮を捨てた動物は、明らかに「アイテム使用不可」のルールから逸脱しているようです。"
-      }
-    },
-    "plating": null
-  },
   "achv_hide_cave": {
     "name": "「落とし穴チェック係」",
     "category": "極秘褒章",
@@ -1535,42 +1973,6 @@
       "2": {
         "desc": "鉱山エリアの脆い地面をすべて崩す",
         "completeDesc": "わざと仕掛けられた罠ではありません。責任者の特定と確保に向けて、工業団連盟が調査中です。ご安心ください。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_cave_v1d5": {
-    "name": "「巨大氷柱」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "1": {
-        "desc": "雪松林の小さな岩窟の地下に進む",
-        "completeDesc": "鋭いあなたは周囲に置かれた「アイスピッケル」に気づきました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_fly": {
-    "name": "「異常移動」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "3": {
-        "desc": "ジップライン、発射装置、ロープで合計10,000m移動する",
-        "completeDesc": "帝江号は地上浮遊移動装置の開発を計画中です。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_jump_hit": {
-    "name": "「協約ε·20.00m」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "2": {
-        "desc": "20m以上の高さから落下して敵に命中する",
-        "completeDesc": "空に浮かんでいたのは、軌道浮遊物ではなく、あなたとそのオペレーターでした。"
       }
     },
     "plating": null
@@ -1587,26 +1989,14 @@
     },
     "plating": null
   },
-  "achv_hide_open_treasure": {
-    "name": "「獣の贈り物」",
+  "achv_hide_three_dragon": {
+    "name": "「天下第一の龍」",
     "category": "極秘褒章",
     "group": "極秘褒章",
     "levels": {
-      "2": {
-        "desc": "スマーティの「プレゼント」を見つける",
-        "completeDesc": "友情？信頼？この愛らしい小動物の瞳に映るあなたは、もうとっくに「友だち」なのです。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_paralyze": {
-    "name": "「全方位顕現」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "2": {
-        "desc": "「征服者」ネファリスが周囲を静止させたとき、操作中のオペレーターは空中で停止する",
-        "completeDesc": "彼女の野心と傲慢さは恐ろしいものですが、あなたは絶望に閉ざされてもなお、己の勇気をあらゆる方向へ示しました。"
+      "1": {
+        "desc": "龍の形をした線画墨魎をすべて集める",
+        "completeDesc": "どうやら、彼らはまだ誰が一番かっこいいかで言い争っているようです。"
       }
     },
     "plating": null
@@ -1647,30 +2037,6 @@
     },
     "plating": null
   },
-  "achv_hide_slime": {
-    "name": "「四皇会戦」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "2": {
-        "desc": "オリジムシを4体蹴り落とす",
-        "completeDesc": "4体のオリジムシの引っ越しを手伝いました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_waterwheel_top": {
-    "name": "「水は天より流る」",
-    "category": "極秘褒章",
-    "group": "極秘褒章",
-    "levels": {
-      "2": {
-        "desc": "清波砦にある大きな水車の頂上に到着する",
-        "completeDesc": "清波砦の水車の頂へと登り、「水は天より流る」という奇景を目の当たりにしました。"
-      }
-    },
-    "plating": null
-  },
   "achv_quest_aglina": {
     "name": "「トランスポーターからの手紙」",
     "category": "物語褒章",
@@ -1679,54 +2045,6 @@
       "2": {
         "desc": "サブ任務「トランスポーターからの手紙」を完了する",
         "completeDesc": "いくつかの荷物と、些細な出来事。\n黄昏の空の下で出会い、空白の手紙には思い出がいっぱいに刻まれていきます。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_camille": {
-    "name": "「死の舞踏」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「死の舞踏」を完了する",
-        "completeDesc": "追跡、鮮血、未だに疼く古傷……それらを胸に抱きながら、カミーユは誓った――その血は必ず管理人と共に在るのだと。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e0m2": {
-    "name": "「復活」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "メイン任務：序章「プロセス・復活」を完了する",
-        "completeDesc": "タロⅡへ帰還しました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e10m3": {
-    "name": "「風波を越えて」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "メイン任務：第二章-プロセスⅥ「終わり、始まる」を完了する",
-        "completeDesc": "あなたが戻ってくるこの日を、ゾアン・ファンイはずっと待っていました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e11m1": {
-    "name": "「開封」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "メイン任務：第二章-プロセスⅦ「荒波を越えて」を完了する",
-        "completeDesc": "あなたは、破滅に立ち向かう覚悟を決めました。長らく封じられてなお、それは絶望の具現そのものです。"
       }
     },
     "plating": null
@@ -1743,14 +2061,26 @@
     },
     "plating": null
   },
-  "achv_quest_e11m4": {
-    "name": "「過去へ繋ぐ」",
+  "achv_quest_e1m8": {
+    "name": "「拳、落つ」",
     "category": "物語褒章",
     "group": "メイン任務褒章",
     "levels": {
       "3": {
-        "desc": "息壌橋で天険を越える",
-        "completeDesc": "息壌が橋となり、過去と現在を結び合わせました。道はあなたのために開いています。"
+        "desc": "メイン任務：第一章-プロセスⅠ「要塞決戦」を完了する",
+        "completeDesc": "「ボーンクラッシャーの拳」を倒しました。\n超域の受け入れ？新たなる誕生？ネファリスの宣言について、どう思いますか？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "「氷山の一角」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：間章「四方会議」を完了する",
+        "completeDesc": "不吉な兆しがタロⅡ各地に現れました。旅はまだ終わっていません。"
       }
     },
     "plating": null
@@ -1767,6 +2097,18 @@
     },
     "plating": null
   },
+  "achv_social_spaceship_help": {
+    "name": "支援勲章",
+    "category": "絆の褒章",
+    "group": "絆の褒章",
+    "levels": {
+      "1": {
+        "desc": "フレンドに生産サポートを計50回行う",
+        "completeDesc": "フレンドに生産サポートを行いました。\nその助け合いの心が、タロⅡの発展を後押ししています。"
+      }
+    },
+    "plating": null
+  },
   "achv_quest_e11m7": {
     "name": "「裂け目の終焉」",
     "category": "物語褒章",
@@ -1779,6 +2121,30 @@
     },
     "plating": null
   },
+  "achv_quest_e12m5": {
+    "name": "「新たなる墨」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：第二章-プロセスⅧ「結び」を完了する",
+        "completeDesc": "丹青の妙を胸に、山へ向かう。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "「裂け目、封ず」",
+    "category": "物語褒章",
+    "group": "メイン任務褒章",
+    "levels": {
+      "3": {
+        "desc": "メイン任務：第一章-プロセスⅣ「消えぬ火種」を完了する",
+        "completeDesc": "四号谷地を飲み込もうとした裂け目は、仲間との努力で閉じました。"
+      }
+    },
+    "plating": null
+  },
   "achv_quest_e1m2": {
     "name": "「核心設置」",
     "category": "物語褒章",
@@ -1787,18 +2153,6 @@
       "3": {
         "desc": "技術の結晶を設置する",
         "completeDesc": "開拓の未来が四号谷地に降り立ちました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e1m8": {
-    "name": "「拳、落つ」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "メイン任務：第一章-プロセスⅠ「要塞決戦」を完了する",
-        "completeDesc": "「ボーンクラッシャーの拳」を倒しました。\n超域の受け入れ？新たなる誕生？ネファリスの宣言について、どう思いますか？"
       }
     },
     "plating": null
@@ -1827,38 +2181,14 @@
     },
     "plating": null
   },
-  "achv_quest_e3m5": {
-    "name": "「裂け目、封ず」",
+  "achv_quest_gm02m27": {
+    "name": "「遂げし願い、心明ける」",
     "category": "物語褒章",
-    "group": "メイン任務褒章",
+    "group": "探索任務褒章",
     "levels": {
-      "3": {
-        "desc": "メイン任務：第一章-プロセスⅣ「消えぬ火種」を完了する",
-        "completeDesc": "四号谷地を飲み込もうとした裂け目は、仲間との努力で閉じました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e4m1": {
-    "name": "「氷山の一角」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "メイン任務：間章「四方会議」を完了する",
-        "completeDesc": "不吉な兆しがタロⅡ各地に現れました。旅はまだ終わっていません。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e6m1": {
-    "name": "「初めての武陵城」",
-    "category": "物語褒章",
-    "group": "メイン任務褒章",
-    "levels": {
-      "3": {
-        "desc": "新たな街へ到達する",
-        "completeDesc": "武陵城に到着しました。"
+      "2": {
+        "desc": "サブ任務「鐘鳴りて人帰る」を完了する",
+        "completeDesc": "鐘鳴りて、心遂に明ける。"
       }
     },
     "plating": null
@@ -1911,42 +2241,6 @@
     },
     "plating": null
   },
-  "achv_quest_gm02m27": {
-    "name": "「遂げし願い、心明ける」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「鐘鳴りて人帰る」を完了する",
-        "completeDesc": "鐘鳴りて、心遂に明ける。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_laevat": {
-    "name": "「灰となれ、記憶の残骸よ」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「灰となれ、記憶の残骸よ」を完了する",
-        "completeDesc": "炎の中で変わる記憶の痕跡。\n過去の断片に阻まれながらも、レーヴァテインと共に「無限回廊」を抜けました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_liino": {
-    "name": "「Like a Shooting Star」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「Like a Shooting Star」を完了する",
-        "completeDesc": "エンドフィールド工業は「アイドル」を抱えることに……リハーサルに公演、まあ……これから忙しくなりそうです。"
-      }
-    },
-    "plating": null
-  },
   "achv_quest_mifu": {
     "name": "「心映す一拳」",
     "category": "物語褒章",
@@ -1959,18 +2253,6 @@
     },
     "plating": null
   },
-  "achv_quest_typhoea": {
-    "name": "「冬の夢は霧の中に」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「冬の夢は霧の中に」を完了する",
-        "completeDesc": "探し求める眼差しとともに矢の導きに従い、冷たい風が霧と夢をかすめていく……かの声は、雪の森にこだまする。"
-      }
-    },
-    "plating": null
-  },
   "achv_quest_wolfgd": {
     "name": "「離群の狼」",
     "category": "物語褒章",
@@ -1979,50 +2261,6 @@
       "2": {
         "desc": "サブ任務「離群の狼」を完了する",
         "completeDesc": "真実を突き止めたウルフガードは、裏切り者を処刑しました。\n短剣を墓前に突き立て……変わりゆく狼群の中、彼は自らの使命を悟りました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_wulfa": {
-    "name": "「赤騎士」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「赤騎士」を完了する",
-        "completeDesc": "人々は子どもたちの王国を越え、荷を下ろし、歩みを止めました。\n膝に残った擦り傷や、置き去りにされた子どもの日々を、誰が思い出したでしょうか。"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_yvonne": {
-    "name": "「ラブ、スクリーム&試作モデル」",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "2": {
-        "desc": "サブ任務「ラブ、スクリーム&試作モデル」を完了する",
-        "completeDesc": "遅れて届いた「塗料」。\nタタの痕跡を辿って描いた落書きの数々に、イヴォンヌは再会を見出しました。"
-      }
-    },
-    "plating": null
-  },
-  "achv_side_mission_count": {
-    "name": "人助け勲章",
-    "category": "物語褒章",
-    "group": "探索任務褒章",
-    "levels": {
-      "1": {
-        "desc": "探索任務を30件完了する",
-        "completeDesc": "多くの人々の問題を解決しました。"
-      },
-      "2": {
-        "desc": "探索任務を40件完了する",
-        "completeDesc": "多くの人々の問題を解決しました。\n作戦任務ではなく、見返りも求めない助け合いでした。"
-      },
-      "3": {
-        "desc": "探索任務を50件完了する",
-        "completeDesc": "多くの人々の問題を解決しました。\n助けられた人々も、今後は他の誰かを助けることでしょう。タロⅡでは、お互いに支え合って生きていかねばなりません。"
       }
     },
     "plating": null
@@ -2055,18 +2293,6 @@
       "2": {
         "desc": "フレンドからの生産サポートを計100回受ける",
         "completeDesc": "帝江号に建造された船室は高効率で稼働中です。これはフレンドたちの厚意のおかげです。"
-      }
-    },
-    "plating": null
-  },
-  "achv_social_spaceship_help": {
-    "name": "支援勲章",
-    "category": "絆の褒章",
-    "group": "絆の褒章",
-    "levels": {
-      "1": {
-        "desc": "フレンドに生産サポートを計50回行う",
-        "completeDesc": "フレンドに生産サポートを行いました。\nその助け合いの心が、タロⅡの発展を後押ししています。"
       }
     },
     "plating": null

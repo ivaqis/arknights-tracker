@@ -13,7 +13,7 @@
     "blocTag": "Talos-II Allgemeine Handelskammer (TAHK)",
     "expertTags": [
       "Straßenwissen",
-      "Beweglich-keit"
+      "Beweglichkeit"
     ],
     "giftPreferTags": [
       "Von der Tal-Industrie empfohlen"
@@ -112,7 +112,7 @@
         "description": "Straßenwissen: Unterhändlerin\nSie hat alles in dieser Welt mit einem Preisschild versehen – bis hin zu jedem Wort, jedem Blick und jedem Gedanken."
       },
       "expert2": {
-        "name": "Beweglich-keit",
+        "name": "Beweglichkeit",
         "description": "Beweglichkeit: Energievolle Kämpferin\nUnterschätze sie lieber nicht. Sie ist stets bereit zu einem blitzschnellen Angriff, während sie dem Gegner ausweicht und entkommt."
       },
       "hobby1": {

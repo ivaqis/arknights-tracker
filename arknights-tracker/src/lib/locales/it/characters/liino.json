@@ -39,10 +39,10 @@
     "battleSkill": {
       "name": "Concentrazione abbagliante",
       "description": "Liino infligge <@ba.pulse>danni da elettricità</> ai nemici e poi assume la sua <@ba.key>Posa da cantante</>. Mentre questa posa è attiva, se ci sono nemici vicini, Liino esegue regolarmente un ATT aggiuntivo (che infligge <@ba.pulse>danni da elettricità</> ai nemici).\n<@ba.key>Posa da cantante</>: mentre questa posa è attiva, Liino conferisce a tutta la squadra un potenziamento dell'ATT. Dopo essere entrata in battaglia, Liino fornisce inoltre <@ba.heal>Cura PS</> continua agli operatori nel raggio d'azione.\n<@ba.info>Durante la Posa da cantante, la sua abilità di combattimento è sostituita con la Posa di termine. Usarla fa terminare anticipatamente la Posa da cantante senza consumare PA, dopodiché l'abilità di combattimento entrerà in un breve tempo di recupero.</>",
-      "1stAtkMultiplier": "Moltiplicatore primo ATT",
+      "firstAtkMultiplier": "Moltiplicatore ATT iniziale",
       "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
       "additionalAtkIntervalS": "Intervallo ATT aggiuntivo (s)",
-      "beatIntervalS": "Intervallo battiti (s)",
+      "beatIntervalS": "Intervallo battito (s)",
       "vocalistStanceDurationS": "Durata Posa da cantante (s)",
       "atkBoost": "Potenziamento ATT",
       "baseTreatment": "Cura base",

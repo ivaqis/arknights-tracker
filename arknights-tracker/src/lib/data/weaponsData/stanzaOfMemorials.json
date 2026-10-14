@@ -503,9 +503,9 @@
         "skill": [],
         "attr": [
             "perlica",
+            "arcane",
             "antal",
-            "ardelia",
-            "arcane"
+            "ardelia"
         ]
     }
 }

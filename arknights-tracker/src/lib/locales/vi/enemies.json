@@ -7,6 +7,22 @@
       "Tránh khỏi phun chất độc. Dẫm phải sẽ gây ST Tự Nhiên liên tục lên cán viên."
     ]
   },
+  "eny_0059_erhound": {
+    "name": "Thú Ngà Hỏa Sương",
+    "nickname": "Thú Ngà Hỏa Sương",
+    "description": "Một con thú ngà bị trúng hỏa sương. Đám sinh vật nhỏ bé bị trúng hỏa sương này thường di chuyển theo bầy đàn, gây ra mối đe dọa nghiêm trọng ngay cả với các đội chiến đấu được trang bị đầy đủ vũ khí.",
+    "abilities": [
+      "Ít thông minh nhưng hung dữ hơn các Thú Ngà thường. Né đòn nhảy để khiến kẻ địch ngã xuống đất."
+    ]
+  },
+  "eny_0085_hsrogue": {
+    "name": "Đao Phủ Nimbus",
+    "nickname": "Đao Phủ Nimbus",
+    "description": "Một tên tội phạm sử dụng một món vũ khí kỳ lạ. Khi Thợ Săn Mây đã phát chán với chiếc đèn lồng kỳ lạ, hắn sẽ rút thanh đoản đao và lao vào cận chiến.",
+    "abilities": [
+      "Sử dụng móc xích để tấn công cán viên đồng minh. Cán Viên bị xích sẽ chịu trạng thái Choáng nếu không được thả."
+    ]
+  },
   "eny_0018_lbtough": {
     "name": "Đao Phủ Bonekrusher",
     "nickname": "Đao Phủ Bonekrusher",
@@ -14,6 +30,24 @@
     "abilities": [
       "Đòn Tóm của kẻ địch gây sát thương rất lớn. Nếu một cán viên bị Tóm, hãy dùng kỹ năng của cán viên khác để gián đoạn kẻ địch và giải phóng cán viên bị tóm.",
       "Né được đòn tấn công bằng rìu hai lưỡi không hề dễ dàng. Thay vào đó hãy thử gián đoạn."
+    ]
+  },
+  "eny_0046_lbshamman": {
+    "name": "Hỏa Thuật Sư Bonekrusher",
+    "nickname": "Hỏa Thuật Sư Bonekrusher",
+    "description": "Quái Landbreaker có thể sử dụng Thuật Pháp Originium Triệu Hồi. Hỏa Thuật Sư cực kỳ nguy hiểm vì chúng có thể dễ dàng đốt cháy chiến địa bằng thuật lửa.",
+    "abilities": [
+      "Kẻ địch này có đòn tấn công tầm xa uy lực, gây ST Nhiệt nhưng bị hạn chế di chuyển.",
+      "Kẻ địch này khiến hỏa sương bùng lên từ mặt đất gây ST Nhiệt. Hãy cố gắng né đòn tấn công.",
+      "Ngay lập tức dịch chuyển đến vị trí xa khi đối thủ tiếp cận quá gần."
+    ]
+  },
+  "eny_0063_agmelee2": {
+    "name": "Ram α",
+    "nickname": "Ram α",
+    "description": "The \"Kriosson Anavon\" (ID lưu trữ: ACL071α) là biến thể cường hóa năng lượng của ACL071. Hàm lượng năng lượng quá mức khiến thực thể này có ngoại hình đỏ rực đặc trưng, đồng thời mạnh mẽ và nhanh nhẹn hơn nhiều so với biến thể tiêu chuẩn.",
+    "abilities": [
+      "Kẻ địch này không có năng lực đặc biệt."
     ]
   },
   "eny_0021_agmelee": {
@@ -40,6 +74,25 @@
       "Kẻ địch này không có năng lực đặc biệt."
     ]
   },
+  "eny_0061_palecore": {
+    "name": "Aggelomoirai Cẩm Thạch",
+    "nickname": "Aggelomoirai Cẩm Thạch",
+    "description": "KHÔNG CÓ GHI CHÉP TRƯỚC ĐÓ. Loại quái này đã được phân loại là Aggeloi do cấu tạo tự nhiên của nó. Ngay cả sau khi các mảnh hình thái của nó được ghép lại với nhau, thực thể này vẫn trông giống Nefarith. Hiện tại không có lời giải thích thỏa đáng nào cho hiện tượng này.",
+    "abilities": [
+      "Tiêu diệt tất cả Appendage Cẩm Thạch để buộc Aggelomoirai Cẩm Thạch đang ngủ lộ tạm thời điểm yếu để tấn công."
+    ]
+  },
+  "eny_0090_wgabyss": {
+    "name": "Tidalklast",
+    "nickname": "Tidalklast",
+    "description": "\"Anavatklydan\" (ID lưu trữ: AGM32L) là một biến thể phi chuẩn của AGM321. Những thực thể này có nhiều kích cỡ khác nhau. Cảnh tượng những cá thể khổng lồ trồi lên khỏi mặt nước đã trở thành cơn ác mộng cho những ai chứng kiến.",
+    "abilities": [
+      "Kẻ địch có hai trạng thái: Tầm xa và Cận chiến.",
+      "Trạng thái Cận chiến: Ở trạng thái này, kẻ địch sẽ tiến gần mục tiêu để tung các đòn cận chiến.",
+      "Trạng thái Tầm xa: Ở trạng thái này, kẻ địch sẽ giữ khoảng cách và tấn công bằng các kỹ năng mạnh hơn.",
+      "Trạng thái Tầm xa chịu nhiều sát thương Nhiệt hơn, nhưng Giảm ST đáng kể từ các nguyên tố khác."
+    ]
+  },
   "eny_0027_agscorp": {
     "name": "Sting Hạng Nặng",
     "nickname": "Sting Hạng Nặng",
@@ -47,6 +100,24 @@
     "abilities": [
       "Cách thức tấn công của kẻ địch này là khiến các Cột Originium phun trào dưới chân cán viên.",
       "Khi tiến đến gần, kẻ địch này sẽ triệu hồi những cột đá xung quanh để làm vật bảo vệ."
+    ]
+  },
+  "eny_0109_hshog2": {
+    "name": "Quái Lông Nhọn Bị Lây Nhiễm",
+    "nickname": "Quái Lông Nhọn Bị Lây Nhiễm",
+    "description": "Một Quái Lông Nhọn bị lây nhiễm bụi Originium hoạt tính. Những chiếc gai của sinh vật này chứa mức năng lượng cực cao, khiến sức mạnh hủy diệt của chúng rất đáng sợ.",
+    "abilities": [
+      "Kẻ địch này sẽ tích năng lượng và phồng bụng để phun dung nham siêu nóng. Ngắt nó trong khi tích năng lượng để gây lượng lớn Suy Sụp.",
+      "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
+    ]
+  },
+  "eny_0134_jsspsi": {
+    "name": "Si",
+    "nickname": "Si",
+    "description": "Suối xuân tan băng, dốc thu đỏ lá, mộng cũ dần trôi khi sự sống mới tung cánh.",
+    "abilities": [
+      "Khi Si mở cuộn tranh, hãy cố ghi nhớ vị trí các vùng tấn công, rồi né tránh chúng theo đúng thứ tự.",
+      "Si có thể tạo ra những Vũng Mực vô cùng nguy hiểm. Đừng bước vào các khu vực nhuốm mực này."
     ]
   },
   "eny_0029_lbmob": {
@@ -57,6 +128,17 @@
       "Kẻ địch này không có năng lực đặc biệt."
     ]
   },
+  "eny_0081_ruanyi": {
+    "name": "Ruan Yi",
+    "nickname": "Ruan Yi",
+    "description": "Ruan Yi đã kìm nén cơn giận của mình suốt nhiều năm. Khi một \"cơ hội\" thoáng qua xuất hiện, hắn quyết định đã đến lúc giải phóng toàn bộ cơn phẫn nộ bị dồn nén bấy lâu.",
+    "abilities": [
+      "Ruan Yi có thể đỡ được mọi đòn tấn công. Sử dụng Xiranite để phá hủy lớp bảo vệ và gây ST hiệu quả lên hắn.",
+      "Ở mức HP thấp, kẻ địch này sẽ vào trạng thái Tức Giận. Sử dụng Xiranite để phá hủy trạng thái này và gây Suy Yếu lên kẻ địch trong thời gian dài hơn.",
+      "Trong Trạng Thái Tức Giận, Ruan Yi có thể triệu hồi Căn Nguyên Cuồng Hỏa phát nổ nếu cán viên đang điều khiển đến quá gần.",
+      "Năng Lượng Xiranite sẽ kết tụ lại và xuất hiện trên chiến trường để hỗ trợ. Chạm vào Năng Lượng Xiranite đúng thời điểm để kích hoạt và khống chế Ruan Yi."
+    ]
+  },
   "eny_0033_lbhunt": {
     "name": "Quái Phục Kích Bonekrusher",
     "nickname": "Quái Phục Kích Bonekrusher",
@@ -65,12 +147,55 @@
       "Kẻ địch này không có năng lực đặc biệt."
     ]
   },
+  "eny_0055_hscrane": {
+    "name": "Thợ Săn Mây",
+    "nickname": "Thợ Săn Mây",
+    "description": "Một tên tội phạm sử dụng một loại vũ khí kỳ quái, trông chẳng khác gì một chiếc đèn lồng vô hại. Đừng để vẻ ngoài của nó đánh lừa. \"Đèn lồng\" của Thợ Săn Mây thực chất là một lưỡi chém bay có tầm với kinh hoàng.",
+    "abilities": [
+      "Phun khói gây nhiễu loạn. Cán Viên bị kẹt trong khói sẽ bị hạn chế tầm nhìn, làm chậm tốc chạy và không né được đòn.",
+      "Kẻ địch có năng lực chiến đấu tương đối yếu. Cố gắng hạ gục hắn trước.",
+      "Phun ra khói xanh để hồi máu cho kẻ địch khác."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Quái Lông Nhọn",
+    "nickname": "Quái Lông Nhọn",
+    "description": "Một con Quái Lông Nhọn hoang dã bản địa của Talos-II. Khi dựng gai và lăn tròn, nó nguy hiểm chẳng khác nào một chiếc cưa máy quay cuồng.",
+    "abilities": [
+      "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
+    ]
+  },
   "eny_0039_agcanno": {
     "name": "Lính Canh",
     "nickname": "Lính Canh",
     "description": "\"Phrourossaron\" (ARS316) được cho là một dạng Aggeloid cố gắng mô phỏng hình dạng và kiểu tấn công của súng canh con người chế tạo. Mặc dù sở hữu tầm bắn rất xa nhưng Lính Canh là một sinh vật cố định, không thể di chuyển.",
     "abilities": [
       "Kẻ địch này có đòn tấn công uy lực với tầm tấn công cực xa. Né đòn ném bom của nó để tiến lên."
+    ]
+  },
+  "eny_0053_hsmob": {
+    "name": "Thổ Phỉ",
+    "nickname": "Thổ Phỉ",
+    "description": "Một tên tội phạm có vũ trang hoạt động ở địa hạt của Thành Phố Võ Lăng. Thổ Phỉ thường dựng rào chắn đường trái phép hoặc buôn lậu hàng hóa bất hợp pháp. Tiêu diệt những tên cướp này là ưu tiên hàng đầu của lực lượng thực thi pháp luật Hongshan.",
+    "abilities": [
+      "Kẻ địch này không có năng lực đặc biệt."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Tinh Anh. Một Đặc Nhiệm làm chủ cả Thuật Pháp Originium lẫn kiếm pháp sẽ được xem là tinh anh.",
+    "abilities": [
+      "Phóng ra kiếm khí có thể kích hoạt bất kỳ Năng Lượng Bóng Nhiễm Khuẩn nào bị đánh trúng."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Thiên Phu Trưởng",
+    "nickname": "Alleikhreos",
+    "description": "Một Tạo Vật của Nền Tảng, cũng là lão tướng từng kinh qua vô số trận chiến. Vị Thiên Phu Trưởng này đã lang bạt nơi Ætherside, cho đến khi tìm lại thanh kiếm thất lạc và xé mở khoảnh khắc để trở về.",
+    "abilities": [
+      "Khi thanh Suy Sụp của Alleikhreos, Thiên Phu Trưởng chạm đến Điểm Suy Sụp, hắn sẽ rơi ra một Vũ Khí Tạo Tác. Hãy điều khiển cán viên đang điều khiển đến gần để nhặt và dùng vũ khí đó tấn công hắn.",
+      "Khi tình thế trở nên bất lợi với Alleikhreos, Thiên Phu Trưởng, hắn sẽ triệu hồi các phân thân từ khe nứt để tấn công đối thủ."
     ]
   },
   "eny_0045_agtrinit": {
@@ -82,16 +207,6 @@
       "DẠNG ĐỘT KÍCH: Liên tục tung ra các đòn cận chiến. Gián đoạn quá trình tích kỹ năng để gây lượng lớn Suy Sụp lên chúng.",
       "DẠNG TRUY LÙNG: Triệu hồi nhiều Aggeloi vào trận chiến và phóng sóng xung kích Ankhor.",
       "DẠNG XẢO QUYỆT: Vào trạng thái ẩn thân để oanh kích liên tục từ xa hoặc phục kích cán viên. Phá vỡ trạng thái ẩn thân để gây lượng lớn Suy Sụp lên chúng."
-    ]
-  },
-  "eny_0046_lbshamman": {
-    "name": "Hỏa Thuật Sư Bonekrusher",
-    "nickname": "Hỏa Thuật Sư Bonekrusher",
-    "description": "Quái Landbreaker có thể sử dụng Thuật Pháp Originium Triệu Hồi. Hỏa Thuật Sư cực kỳ nguy hiểm vì chúng có thể dễ dàng đốt cháy chiến địa bằng thuật lửa.",
-    "abilities": [
-      "Kẻ địch này có đòn tấn công tầm xa uy lực, gây ST Nhiệt nhưng bị hạn chế di chuyển.",
-      "Kẻ địch này khiến hỏa sương bùng lên từ mặt đất gây ST Nhiệt. Hãy cố gắng né đòn tấn công.",
-      "Ngay lập tức dịch chuyển đến vị trí xa khi đối thủ tiếp cận quá gần."
     ]
   },
   "eny_0047_firebat": {
@@ -111,6 +226,22 @@
       "Dù được trang bị cỗ máy bắn đá khổng lồ nhưng kẻ địch này cũng là một chiến binh cận chiến lão luyện."
     ]
   },
+  "eny_0052_palesent": {
+    "name": "Aggelomoirai Cẩm Thạch",
+    "nickname": "Aggelomoirai Cẩm Thạch",
+    "description": "KHÔNG CÓ GHI CHÉP TRƯỚC ĐÓ. Loại quái này đã được phân loại là Aggeloi do cấu tạo tự nhiên của nó. Ngoại hình bắt chước Nefarith nhưng thực thể này khá bất ổn dù có chỉ số năng lượng lõi cao.",
+    "abilities": [
+      "Aggelomoirai Cẩm Thạch đã thức tỉnh có thể triệu hồi vô số Ankhor từ vũ trụ để bắn phá mặt đất. Né những đòn tấn công này để tìm cách trả đũa."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Vuốt Hỏa Sương",
+    "nickname": "Vuốt Hỏa Sương",
+    "description": "Một chiến binh Landbreaker đã bị trúng hỏa sương. Hấp thụ hỏa sương tuyệt đối không thể coi là một ân huệ may mắn. Những kẻ cướp này đã trở thành những phiên bản tha hóa của chính bản thân họ trước kia.",
+    "abilities": [
+      "Né đòn tấn công dữ dội của nó để làm nó ngã xuống đất."
+    ]
+  },
   "eny_0049_rogue": {
     "name": "Quái Đột Nhập Bonekrusher",
     "nickname": "Quái Đột Nhập Bonekrusher",
@@ -120,12 +251,29 @@
       "Ném phi tiêu và thi triển đòn tấn công bổ sung lên cán viên trúng phi tiêu. Né phi tiêu sẽ có cơ hội phản đòn."
     ]
   },
+  "eny_0098_sandb2": {
+    "name": "Quái Giáp Rìu Hỏa Sương",
+    "nickname": "Quái Giáp Rìu Hỏa Sương",
+    "description": "Một con quái giáp rìu bị hỏa sương làm hư. Sinh vật này đã trở nên cực kỳ hung hãn, bị đẩy vào trạng thái điên loạn dại dột. Hãy tiếp cận cẩn thận nếu bạn không muốn bị cái \"rìu lớn\" chém đôi.",
+    "abilities": [
+      "Một Quái Giáp Rìu nổi giận sẽ dùng sừng khổng lồ để đuổi kẻ xâm nhập lãnh thổ. Cẩn thận với cú húc đầu của nó.",
+      "Kẻ địch sẽ thực hiện nhiều đòn tấn công diện rộng. Làm gián đoạn khi chúng tiến vào trạng thái Điên Cuồng."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Ripptusk Bonekrusher",
     "nickname": "Ripptusk Bonekrusher",
     "description": "Loài chiến thú nhỏ do Landbreaker khống chế. Ripptusks khát máu và hung tợn hơn nhiều so với họ hàng hoang dã chưa thuần hóa. Chúng tuyệt đối trung thành với những người đã thuần hóa chúng.",
     "abilities": [
       "Kẻ địch này nhanh nhẹn nhưng có thể bị áp đảo khi trúng nhiều đòn."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Dòng Chảy Bùn",
+    "nickname": "Dòng Chảy Bùn",
+    "description": "\"Tholeroygran\" (ID lưu trữ: ACM311) là dạng sinh vật chất lỏng đầu tiên được phát hiện. Hình thái của vầng sáng lỏng này không ổn định và nhiệt độ bên trong thường thấp hơn các vật chất cấu thành.",
+    "abilities": [
+      "Kẻ địch này có thể nhanh chóng tiếp cận từ xa. Đòn tấn công của nó có thể gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
     ]
   },
   "eny_0051_rodin": {
@@ -137,20 +285,20 @@
       "Tự tăng cường sức mạnh bằng năng lượng của lò đốt. Hãy quan sát và tránh tia lửa của kẻ này."
     ]
   },
-  "eny_0052_palesent": {
-    "name": "Aggelomoirai Cẩm Thạch",
-    "nickname": "Aggelomoirai Cẩm Thạch",
-    "description": "KHÔNG CÓ GHI CHÉP TRƯỚC ĐÓ. Loại quái này đã được phân loại là Aggeloi do cấu tạo tự nhiên của nó. Ngoại hình bắt chước Nefarith nhưng thực thể này khá bất ổn dù có chỉ số năng lượng lõi cao.",
+  "eny_0118_klhog": {
+    "name": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
+    "nickname": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Quái Lông Nhọn. Bóng Nhiễm Khuẩn này có vẻ thể hiện những đòn tấn công lăn và bật nhảy hung hãn hơn nhiều so với bản thể còn sống, dù đó có lẽ cũng chỉ là ảo giác.",
     "abilities": [
-      "Aggelomoirai Cẩm Thạch đã thức tỉnh có thể triệu hồi vô số Ankhor từ vũ trụ để bắn phá mặt đất. Né những đòn tấn công này để tìm cách trả đũa."
+      "Sau một khoảng thời gian tụ lực ngắn, Bóng Nhiễm Khuẩn Quái Lông có thể triệu hồi nhiều tia sét và kích hoạt Năng Lượng Bóng Nhiễm Khuẩn trong phạm vi lớn. Hãy nhanh chóng làm gián đoạn con thú khi nó bắt đầu tụ lực."
     ]
   },
-  "eny_0053_hsmob": {
-    "name": "Thổ Phỉ",
-    "nickname": "Thổ Phỉ",
-    "description": "Một tên tội phạm có vũ trang hoạt động ở địa hạt của Thành Phố Võ Lăng. Thổ Phỉ thường dựng rào chắn đường trái phép hoặc buôn lậu hàng hóa bất hợp pháp. Tiêu diệt những tên cướp này là ưu tiên hàng đầu của lực lượng thực thi pháp luật Hongshan.",
+  "eny_0130_inkbiter": {
+    "name": "Kho Tài Lộc",
+    "nickname": "Kho Tài Lộc",
+    "description": "Linh thể được Si điểm hóa. Tài lộc tích trữ, lòng hào phóng càng bền. Của cải trong tay, ánh sáng càng vững.",
     "abilities": [
-      "Kẻ địch này không có năng lực đặc biệt."
+      "Một số đòn tấn công có thể áp dụng một Dấu Mực lên cán viên khi đánh trúng. Hãy cố gắng né chúng."
     ]
   },
   "eny_0054_hsmino": {
@@ -162,15 +310,11 @@
       "Đừng cố đánh lén sau lưng. Cú đá hậu của kẻ này rất mạnh!"
     ]
   },
-  "eny_0055_hscrane": {
-    "name": "Thợ Săn Mây",
-    "nickname": "Thợ Săn Mây",
-    "description": "Một tên tội phạm sử dụng một loại vũ khí kỳ quái, trông chẳng khác gì một chiếc đèn lồng vô hại. Đừng để vẻ ngoài của nó đánh lừa. \"Đèn lồng\" của Thợ Săn Mây thực chất là một lưỡi chém bay có tầm với kinh hoàng.",
-    "abilities": [
-      "Phun khói gây nhiễu loạn. Cán Viên bị kẹt trong khói sẽ bị hạn chế tầm nhìn, làm chậm tốc chạy và không né được đòn.",
-      "Kẻ địch có năng lực chiến đấu tương đối yếu. Cố gắng hạ gục hắn trước.",
-      "Phun ra khói xanh để hồi máu cho kẻ địch khác."
-    ]
+  "eny_0080_reaper": {
+    "name": "Ereignis",
+    "nickname": "Ereignis",
+    "description": "Ý nghĩa của tiến trình là gì? Điều gì cấu thành nên ý nghĩa? Bản chất của sự sống là gì?",
+    "abilities": []
   },
   "eny_0057_dog": {
     "name": "Quái Thú Ngà Hoang Dã",
@@ -190,28 +334,12 @@
       "Kẻ địch sẽ cố gắng bẫy các cán viên! Gián đoạn nhanh sẽ giúp phản công."
     ]
   },
-  "eny_0059_erhound": {
-    "name": "Thú Ngà Hỏa Sương",
-    "nickname": "Thú Ngà Hỏa Sương",
-    "description": "Một con thú ngà bị trúng hỏa sương. Đám sinh vật nhỏ bé bị trúng hỏa sương này thường di chuyển theo bầy đàn, gây ra mối đe dọa nghiêm trọng ngay cả với các đội chiến đấu được trang bị đầy đủ vũ khí.",
+  "eny_0112_jzmonk": {
+    "name": "Rockhowler",
+    "nickname": "Rockhowler",
+    "description": "Rockhowler có thể sinh sống trong môi trường hoang dã tự nhiên. Sinh vật thông minh nhưng tinh nghịch này thường chuẩn bị sẵn các \"cạm bẫy\" và \"điểm phục kích\" cho những lữ khách xui xẻo. Chúng dường như rất thích nhìn con người bối rối trước những trò nghịch ngợm của mình. Hãy kiên nhẫn xử lý chúng.",
     "abilities": [
-      "Ít thông minh nhưng hung dữ hơn các Thú Ngà thường. Né đòn nhảy để khiến kẻ địch ngã xuống đất."
-    ]
-  },
-  "eny_0060_lbmad": {
-    "name": "Vuốt Hỏa Sương",
-    "nickname": "Vuốt Hỏa Sương",
-    "description": "Một chiến binh Landbreaker đã bị trúng hỏa sương. Hấp thụ hỏa sương tuyệt đối không thể coi là một ân huệ may mắn. Những kẻ cướp này đã trở thành những phiên bản tha hóa của chính bản thân họ trước kia.",
-    "abilities": [
-      "Né đòn tấn công dữ dội của nó để làm nó ngã xuống đất."
-    ]
-  },
-  "eny_0061_palecore": {
-    "name": "Aggelomoirai Cẩm Thạch",
-    "nickname": "Aggelomoirai Cẩm Thạch",
-    "description": "KHÔNG CÓ GHI CHÉP TRƯỚC ĐÓ. Loại quái này đã được phân loại là Aggeloi do cấu tạo tự nhiên của nó. Ngay cả sau khi các mảnh hình thái của nó được ghép lại với nhau, thực thể này vẫn trông giống Nefarith. Hiện tại không có lời giải thích thỏa đáng nào cho hiện tượng này.",
-    "abilities": [
-      "Tiêu diệt tất cả Appendage Cẩm Thạch để buộc Aggelomoirai Cẩm Thạch đang ngủ lộ tạm thời điểm yếu để tấn công."
+      "Loài địch này thường đi thành bầy. Bất kỳ cán viên hoặc Rockhowler nào giẫm phải vỏ chuối chúng bỏ lại đều sẽ trượt ngã."
     ]
   },
   "eny_0062_paletent": {
@@ -223,12 +351,12 @@
       "Một số Appendage Cẩm Thạch có khả năng tấn công đối thủ ở tầm xa bằng cách chuyển đổi đầu của chúng thành vật liệu Nhiễm Khuẩn có thể ném được."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Ram α",
-    "nickname": "Ram α",
-    "description": "The \"Kriosson Anavon\" (ID lưu trữ: ACL071α) là biến thể cường hóa năng lượng của ACL071. Hàm lượng năng lượng quá mức khiến thực thể này có ngoại hình đỏ rực đặc trưng, đồng thời mạnh mẽ và nhanh nhẹn hơn nhiều so với biến thể tiêu chuẩn.",
+  "eny_0073_slimerg": {
+    "name": "Sên Originium Axit",
+    "nickname": "Sên Originium Axit",
+    "description": "Một sinh vật hoang dã bị nhiễm Originium, có thể tiết ra axit mạnh. Khi bị đe dọa, nó sẽ cố gắng uy hiếp kẻ địch bằng cách rung lắc dữ dội và bắn các mảnh vỡ cụm Originium trên lưng.",
     "abilities": [
-      "Kẻ địch này không có năng lực đặc biệt."
+      "Một kẻ địch nhút nhát, rút vào mai để tự bảo vệ. Nó cũng bắn các tinh thể Originium từ cơ thể một cách vô thức để hù dọa đối thủ."
     ]
   },
   "eny_0064_agrange2": {
@@ -237,6 +365,14 @@
     "description": "Kentron Anavon (ID lưu trữ: ARL121α) là biến thể cường hóa năng lượng của ARL121. Hàm lượng năng lượng cao hơn mang lại cho thực thể này hỏa lực mạnh mẽ hơn. Tuy nhiên, hiệu suất năng lượng của cơ chế bắn vẫn ở mức thấp.",
     "abilities": [
       "Kẻ địch này không có năng lực đặc biệt."
+    ]
+  },
+  "eny_0067_hound2": {
+    "name": "Ripptusk Tinh Anh",
+    "nickname": "Ripptusk Tinh Anh",
+    "description": "Chiến thú tinh nhuệ tộc Landbreaker được tăng cường sức mạnh nhờ loại khói gọi là hỏa sương. Loài ripptusk này hung tợn và xảo quyệt hơn, tấn công bằng những ngón đòn khó đoán hơn.",
+    "abilities": [
+      "Nhanh nhẹn và linh hoạt. Sẽ không ngừng ra sức tiếp cận và tấn công mục tiêu."
     ]
   },
   "eny_0065_lbmob2": {
@@ -255,12 +391,13 @@
       "Kẻ địch này không có năng lực đặc biệt."
     ]
   },
-  "eny_0067_hound2": {
-    "name": "Ripptusk Tinh Anh",
-    "nickname": "Ripptusk Tinh Anh",
-    "description": "Chiến thú tinh nhuệ tộc Landbreaker được tăng cường sức mạnh nhờ loại khói gọi là hỏa sương. Loài ripptusk này hung tợn và xảo quyệt hơn, tấn công bằng những ngón đòn khó đoán hơn.",
+  "eny_0123_klcap": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Đao Thủ. Những Đặc Nhiệm như họ cực kỳ tinh thông trong việc dẫn đầu xung kích và đánh chiếm các vị trí phòng thủ. Những thanh đao cán dài họ sử dụng được thiết kế để chém xuyên Aggeloi một cách dễ dàng.",
     "abilities": [
-      "Nhanh nhẹn và linh hoạt. Sẽ không ngừng ra sức tiếp cận và tấn công mục tiêu."
+      "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ có thể giả vờ bị đánh bại trước khi tung ra một đòn tập kích bất ngờ. Hãy cảnh giác.",
+      "Sau khi tan biến, kẻ địch này có thể dịch chuyển tức thời đến cạnh một cán viên và tấn công. Hãy cố gắng né tránh."
     ]
   },
   "eny_0068_lbtough2": {
@@ -306,12 +443,20 @@
       "Một kẻ địch xuất hiện theo nhóm. Cẩn thận những chi trước sắc nhọn của chúng."
     ]
   },
-  "eny_0073_slimerg": {
-    "name": "Sên Originium Axit",
-    "nickname": "Sên Originium Axit",
-    "description": "Một sinh vật hoang dã bị nhiễm Originium, có thể tiết ra axit mạnh. Khi bị đe dọa, nó sẽ cố gắng uy hiếp kẻ địch bằng cách rung lắc dữ dội và bắn các mảnh vỡ cụm Originium trên lưng.",
+  "eny_0106_wgthorns2": {
+    "name": "Khối Đa Diện δ",
+    "nickname": "Khối Đa Diện δ",
+    "description": "\"Diaphaistagran Dinedon\" (ID lưu trữ: ARM315δ) là biến thể có năng lượng của ARM315. Khi chiếu sáng trực tiếp bởi ánh sáng mặt trời, nó phát ra ánh sáng tím lấp lánh. Tuy nhiên, nó sẽ chuyển sang hình dạng khác khi được chiếu sáng bởi ánh sáng phản xạ từ Talos.",
     "abilities": [
-      "Một kẻ địch nhút nhát, rút vào mai để tự bảo vệ. Nó cũng bắn các tinh thể Originium từ cơ thể một cách vô thức để hù dọa đối thủ."
+      "Các viên đạn kẻ địch phóng ra sẽ gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Bia Hạng Nặng",
+    "nickname": "Bia Hạng Nặng",
+    "description": "Một bia mục tiêu đặc biệt làm từ hợp kim cường độ cao. Bia rất cứng cáp và được các cung thủ sở hữu sức mạnh vượt trội ưa chuộng.",
+    "abilities": [
+      "Mục tiêu bọc giáp. HP: 4."
     ]
   },
   "eny_0074_lbshield": {
@@ -322,6 +467,22 @@
       "Kẻ địch này sẽ chặn tất cả các đòn tấn công trừ khi hắn đang tấn công. Suy Sụp hắn để phá vỡ khiên."
     ]
   },
+  "eny_0099_slimeml2": {
+    "name": "Thú Kẹp Tàn Bạo",
+    "nickname": "Thú Kẹp Tàn Bạo",
+    "description": "Một sinh vật hoang dã bị nhiễm Originium. Con thú khổng lồ này có nhiều cụm Originium trên lưng với mức hoạt tính cao hơn. Lớp vỏ của nó cũng dày hơn so với đồng loại.",
+    "abilities": [
+      "Một kẻ địch xuất hiện theo nhóm. Cẩn thận những chi trước sắc nhọn của chúng."
+    ]
+  },
+  "eny_0131_inkscroll": {
+    "name": "Cuộn Chiến Thuật",
+    "nickname": "Cuộn Chiến Thuật",
+    "description": "Linh thể được Si điểm hóa. Kẻ gọi mây, người báo mưa. Bậc thầy chiến trận, chẳng lạ gì mưu kế. Mang binh khí trong tay, gìn giữ thái bình.",
+    "abilities": [
+      "Các cây kích được ném ra sẽ tạo thành Vũng Mực khi tiếp đất. Những vũng này có thể áp dụng một Dấu Mực lên cán viên bước vào. Hãy cố gắng tránh chúng."
+    ]
+  },
   "eny_0075_lbroshan": {
     "name": "Người Công Thành Bonekrusher",
     "nickname": "Người Công Thành Bonekrusher",
@@ -330,6 +491,39 @@
       "Một kẻ địch không ngừng nghỉ. Ngay cả khi bị gián đoạn, hắn vẫn có khả năng tấn công lại.",
       "Kẻ địch này dùng tay áo giáp để vung vẩy các vảy giáp phản ứng. Giữ khoảng cách an toàn, đặc biệt khi vô tình giẫm phải chúng.",
       "Kẻ địch này sẽ cố gắng thu hồi vảy giáp trên mặt đất để phục hồi hình dạng, và sẽ tung đòn tấn công mạnh khi thu hồi thành công."
+    ]
+  },
+  "eny_0103_hshunt2": {
+    "name": "Gió Quét",
+    "nickname": "Gió Quét",
+    "description": "Một nhóm tội phạm sử dụng vũ khí tầm xa cơ bản. Thị lực sắc bén và đôi tay khéo léo cho phép chúng tung ra những cú bắn chí mạng. Cơn gió này sẽ thổi qua các tòa nhà, cuốn phăng mọi thứ quý giá.",
+    "abilities": [
+      "Bắn đủ loại mũi tên và ném bom để quấy rối đối thủ từ xa."
+    ]
+  },
+  "eny_0104_hsrogue2": {
+    "name": "Cuồng Phong Xé Toạc",
+    "nickname": "Cuồng Phong Xé Toạc",
+    "description": "Một tên tội phạm sử dụng một món vũ khí dị thường. Kiểu Thợ Săn Mây như vậy tinh thông lưỡi móc đến mức người ta đồn rằng chúng có thể chém gọt mây thành những khối lập phương hoàn hảo.",
+    "abilities": [
+      "Sử dụng móc xích để tấn công cán viên đồng minh. Cán Viên bị xích sẽ chịu trạng thái Choáng nếu không được thả."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Mộc Ngẫu Lãng Du",
+    "nickname": "Mộc Ngẫu Lãng Du",
+    "description": "Một con rối chiến đấu nhỏ do Nữ Tư Tế Tuyết tạo nên, đảm nhiệm việc bảo vệ an nguy cho Rừng Tuyết. Chớ xem thường đôi nắm đấm bằng gỗ của nó, bởi chúng có thể dễ dàng đập vỡ cả đá tảng.",
+    "abilities": [
+      "Mộc Ngẫu Lãng Du không có tầng khiên sẽ trói cán viên để hấp thụ năng lượng và phục hồi tầng lá chắn.",
+      "Các Mộc Ngẫu Lãng Du sẽ phối hợp với nhau khi tấn công."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Bia Tiêu Chuẩn",
+    "nickname": "Bia Tiêu Chuẩn",
+    "description": "Một bia mục tiêu tiêu chuẩn, thiết yếu cho việc nâng cao kỹ năng bắn cung.",
+    "abilities": [
+      "Mục tiêu bền bỉ. HP: 2."
     ]
   },
   "eny_0076_agfly": {
@@ -359,6 +553,14 @@
       "Nhảy vọt lên cao để tụ lực cho đòn tấn công. Để gián đoạn chiêu này của kẻ địch, hãy dùng Xiranite bật lên không trung, sau đó thực hiện đòn bổ nhào để triệu hồi đòn sét đánh."
     ]
   },
+  "tatget_005_shield": {
+    "name": "Khiên Năng Lượng",
+    "nickname": "Khiên Năng Lượng",
+    "description": "Khiên năng lượng được thiết kế cho bia mục tiêu. Các cung thủ thông thạo thích tạo khiên cho bia mục tiêu của mình để giúp chúng tồn tại thêm vài giây.",
+    "abilities": [
+      "Một lớp khiên có thể gắn lên bất kỳ bia mục tiêu nào. HP: 2. Bia mục tiêu có khiên không thể bị đóng băng, không thể bị chủ động gắn Nhựa, và tầng Nhựa trên bia mục tiêu có khiên sẽ không kích nổ khi nhận ST."
+    ]
+  },
   "eny_0079_nefarp2": {
     "name": "Nefarith, \"Kẻ Chinh Phục\"",
     "nickname": "Nefarith, \"Kẻ Chinh Phục\"",
@@ -369,29 +571,20 @@
       "Triệu hồi Ankhor để giữ chân cán viên của bạn. Tấn công Ankhor để giải thoát cho họ."
     ]
   },
-  "eny_0080_reaper": {
-    "name": "Ereignis",
-    "nickname": "Ereignis",
-    "description": "Ý nghĩa của tiến trình là gì? Điều gì cấu thành nên ý nghĩa? Bản chất của sự sống là gì?",
-    "abilities": []
-  },
-  "eny_0081_ruanyi": {
-    "name": "Ruan Yi",
-    "nickname": "Ruan Yi",
-    "description": "Ruan Yi đã kìm nén cơn giận của mình suốt nhiều năm. Khi một \"cơ hội\" thoáng qua xuất hiện, hắn quyết định đã đến lúc giải phóng toàn bộ cơn phẫn nộ bị dồn nén bấy lâu.",
-    "abilities": [
-      "Ruan Yi có thể đỡ được mọi đòn tấn công. Sử dụng Xiranite để phá hủy lớp bảo vệ và gây ST hiệu quả lên hắn.",
-      "Ở mức HP thấp, kẻ địch này sẽ vào trạng thái Tức Giận. Sử dụng Xiranite để phá hủy trạng thái này và gây Suy Yếu lên kẻ địch trong thời gian dài hơn.",
-      "Trong Trạng Thái Tức Giận, Ruan Yi có thể triệu hồi Căn Nguyên Cuồng Hỏa phát nổ nếu cán viên đang điều khiển đến quá gần.",
-      "Năng Lượng Xiranite sẽ kết tụ lại và xuất hiện trên chiến trường để hỗ trợ. Chạm vào Năng Lượng Xiranite đúng thời điểm để kích hoạt và khống chế Ruan Yi."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Thiên Cổ Yêu Thú",
     "nickname": "Thiên Cổ Yêu Thú",
     "description": "Một con quái gầm rú sinh trưởng nơi miền hoang dã. Con quái này có nguồn gốc từ Talos-II. Nó sử dụng lớp màng cứng trên đầu và cổ để phát ra tiếng gào rú đủ mạnh để làm rung chuyển cả núi rừng.",
     "abilities": [
       "Kẻ địch có HP thấp sẽ bước vào trạng thái Điên Cuồng. Trong trạng thái này, kẻ địch thực hiện đòn tấn công tụ kích thường xuyên hơn, gây ST cao hơn và được Giảm ST. Gián đoạn kẻ địch đúng lúc để chấm dứt trạng thái Điên Cuồng."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Bia Chắn",
+    "nickname": "Bia Chắn",
+    "description": "Một bia mục tiêu đặc biệt có thể thay đổi kích thước và che chắn các bia mục tiêu phía sau. Hãy thử phá vỡ nó trước.",
+    "abilities": [
+      "Mục tiêu nhiễu loạn có thể thay đổi kích thước. HP: 3."
     ]
   },
   "eny_0083_hstiger": {
@@ -403,28 +596,22 @@
       "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
     ]
   },
+  "eny_0114_jzmking": {
+    "name": "Craghowler",
+    "nickname": "Craghowler",
+    "description": "Craghowler là những cá thể giữ vị thế thống lĩnh trong cộng đồng Rockhowler. Chúng phải trải qua vô số trận giao tranh với đồng loại, cho đến khi kẻ mạnh nhất vươn lên trở thành Craghowler dẫn đầu. Không còn nghi ngờ gì nữa, những cá thể này đã thành thạo chiến đấu ở mức mà đồng loại của chúng khó lòng sánh kịp.",
+    "abilities": [
+      "Khi điên cuồng, Craghowler sẽ bắt đầu phá hủy các tàn tích. Những tảng đá bong rơi sẽ lao xuống chiến trường, gây ST lên các cán viên trúng phải.",
+      "Craghowler có thể sử dụng các cột trụ trong tàn tích để cường hóa hiệu ứng và cho bản thân thêm tầm đánh.",
+      "Craghowler sẽ giả vờ rút lui, sau đó bất ngờ ném đá tảng để tấn công những kẻ địch không phòng bị."
+    ]
+  },
   "eny_0084_hshunt": {
     "name": "Cung Thủ Lùm Cây",
     "nickname": "Cung Thủ Lùm Cây",
     "description": "Một kẻ ngoài vòng pháp luật được trang bị vũ khí tầm xa cơ bản. Được rèn luyện trong rừng tre, kẻ này có thể bắn mũi tên xuyên rừng mà không chạm phải một chiếc lá nào.",
     "abilities": [
       "Bắn đủ loại mũi tên và ném bom để quấy rối đối thủ từ xa."
-    ]
-  },
-  "eny_0085_hsrogue": {
-    "name": "Đao Phủ Nimbus",
-    "nickname": "Đao Phủ Nimbus",
-    "description": "Một tên tội phạm sử dụng một món vũ khí kỳ lạ. Khi Thợ Săn Mây đã phát chán với chiếc đèn lồng kỳ lạ, hắn sẽ rút thanh đoản đao và lao vào cận chiến.",
-    "abilities": [
-      "Sử dụng móc xích để tấn công cán viên đồng minh. Cán Viên bị xích sẽ chịu trạng thái Choáng nếu không được thả."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Dòng Chảy Bùn",
-    "nickname": "Dòng Chảy Bùn",
-    "description": "\"Tholeroygran\" (ID lưu trữ: ACM311) là dạng sinh vật chất lỏng đầu tiên được phát hiện. Hình thái của vầng sáng lỏng này không ổn định và nhiệt độ bên trong thường thấp hơn các vật chất cấu thành.",
-    "abilities": [
-      "Kẻ địch này có thể nhanh chóng tiếp cận từ xa. Đòn tấn công của nó có thể gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
     ]
   },
   "eny_0088_wgthorns": {
@@ -443,15 +630,13 @@
       "Kẻ địch này có thể tăng sức mạnh đáng kể cho đồng minh xung quanh để cải thiện khả năng của chúng."
     ]
   },
-  "eny_0090_wgabyss": {
-    "name": "Tidalklast",
-    "nickname": "Tidalklast",
-    "description": "\"Anavatklydan\" (ID lưu trữ: AGM32L) là một biến thể phi chuẩn của AGM321. Những thực thể này có nhiều kích cỡ khác nhau. Cảnh tượng những cá thể khổng lồ trồi lên khỏi mặt nước đã trở thành cơn ác mộng cho những ai chứng kiến.",
+  "eny_0132_inkkirin": {
+    "name": "Thanh Tẩy Cơn Khát",
+    "nickname": "Thanh Tẩy Cơn Khát",
+    "description": "Linh thể được Si điểm hóa. Người tạo mây để mưa tuôn đổ. Kẻ giải trừ phiền não, xua tan cơn khát.",
     "abilities": [
-      "Kẻ địch có hai trạng thái: Tầm xa và Cận chiến.",
-      "Trạng thái Cận chiến: Ở trạng thái này, kẻ địch sẽ tiến gần mục tiêu để tung các đòn cận chiến.",
-      "Trạng thái Tầm xa: Ở trạng thái này, kẻ địch sẽ giữ khoảng cách và tấn công bằng các kỹ năng mạnh hơn.",
-      "Trạng thái Tầm xa chịu nhiều sát thương Nhiệt hơn, nhưng Giảm ST đáng kể từ các nguyên tố khác."
+      "Một số đòn tấn công có thể áp dụng một Dấu Mực lên cán viên khi đánh trúng. Hãy cố gắng né chúng.",
+      "Mây Sấm có thể giáng Lôi Kích, gây Choáng tạm thời lên cán viên bị đánh trúng."
     ]
   },
   "eny_0091_wgshoal": {
@@ -468,14 +653,6 @@
     "description": "Một sinh vật hoang dã bị Originium nhiễm bệnh với nhiệt độ cơ thể cực kỳ cao. Con sên này sẽ phát nổ khi sắp chết, phủ mọi thứ xung quanh bằng dịch thể axit ở nhiệt độ sôi cùng bụi Originium hoạt tính.",
     "abilities": [
       "Kẻ địch này sẽ tự nổ khi HP thấp. Vụ nổ bắn ra vật chất không ổn định trên cán viên trúng đòn. Nếu cán viên chịu sát thương, vật chất sẽ phát nổ."
-    ]
-  },
-  "eny_0093_hshog": {
-    "name": "Quái Lông Nhọn",
-    "nickname": "Quái Lông Nhọn",
-    "description": "Một con Quái Lông Nhọn hoang dã bản địa của Talos-II. Khi dựng gai và lăn tròn, nó nguy hiểm chẳng khác nào một chiếc cưa máy quay cuồng.",
-    "abilities": [
-      "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
     ]
   },
   "eny_0094_hsfly": {
@@ -511,23 +688,6 @@
       "Đừng cố đánh lén sau lưng. Cú đá hậu của kẻ này rất mạnh!"
     ]
   },
-  "eny_0098_sandb2": {
-    "name": "Quái Giáp Rìu Hỏa Sương",
-    "nickname": "Quái Giáp Rìu Hỏa Sương",
-    "description": "Một con quái giáp rìu bị hỏa sương làm hư. Sinh vật này đã trở nên cực kỳ hung hãn, bị đẩy vào trạng thái điên loạn dại dột. Hãy tiếp cận cẩn thận nếu bạn không muốn bị cái \"rìu lớn\" chém đôi.",
-    "abilities": [
-      "Một Quái Giáp Rìu nổi giận sẽ dùng sừng khổng lồ để đuổi kẻ xâm nhập lãnh thổ. Cẩn thận với cú húc đầu của nó.",
-      "Kẻ địch sẽ thực hiện nhiều đòn tấn công diện rộng. Làm gián đoạn khi chúng tiến vào trạng thái Điên Cuồng."
-    ]
-  },
-  "eny_0099_slimeml2": {
-    "name": "Thú Kẹp Tàn Bạo",
-    "nickname": "Thú Kẹp Tàn Bạo",
-    "description": "Một sinh vật hoang dã bị nhiễm Originium. Con thú khổng lồ này có nhiều cụm Originium trên lưng với mức hoạt tính cao hơn. Lớp vỏ của nó cũng dày hơn so với đồng loại.",
-    "abilities": [
-      "Một kẻ địch xuất hiện theo nhóm. Cẩn thận những chi trước sắc nhọn của chúng."
-    ]
-  },
   "eny_0100_slimerg2": {
     "name": "Sên Originium Axit α",
     "nickname": "Sên Originium Axit α",
@@ -553,20 +713,12 @@
       "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
     ]
   },
-  "eny_0103_hshunt2": {
-    "name": "Gió Quét",
-    "nickname": "Gió Quét",
-    "description": "Một nhóm tội phạm sử dụng vũ khí tầm xa cơ bản. Thị lực sắc bén và đôi tay khéo léo cho phép chúng tung ra những cú bắn chí mạng. Cơn gió này sẽ thổi qua các tòa nhà, cuốn phăng mọi thứ quý giá.",
+  "eny_0117_klhound": {
+    "name": "Bóng Nhiễm Khuẩn Thú Ngà",
+    "nickname": "Bóng Nhiễm Khuẩn Thú Ngà",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Thú Ngà. Dù chỉ là một \"bóng hình vương lại\", cặp nanh sắc bén của nó vẫn đủ sức xé toạc giáp trụ và trang bị bảo hộ.",
     "abilities": [
-      "Bắn đủ loại mũi tên và ném bom để quấy rối đối thủ từ xa."
-    ]
-  },
-  "eny_0104_hsrogue2": {
-    "name": "Cuồng Phong Xé Toạc",
-    "nickname": "Cuồng Phong Xé Toạc",
-    "description": "Một tên tội phạm sử dụng một món vũ khí dị thường. Kiểu Thợ Săn Mây như vậy tinh thông lưỡi móc đến mức người ta đồn rằng chúng có thể chém gọt mây thành những khối lập phương hoàn hảo.",
-    "abilities": [
-      "Sử dụng móc xích để tấn công cán viên đồng minh. Cán Viên bị xích sẽ chịu trạng thái Choáng nếu không được thả."
+      "Một số đòn tấn công có thể kích hoạt Năng Lượng Bóng Nhiễm Khuẩn mà chúng đánh trúng."
     ]
   },
   "eny_0105_wgslime2": {
@@ -575,14 +727,6 @@
     "description": "\"Tholeroygran Dinedon\" (ID lưu trữ: ACM311δ) là một biến thể được nạp năng lượng của ACM311. Nó sử dụng các đường dẫn năng lượng độc đáo và do đó duy trì nhiệt độ cân bằng nội môi thấp hơn đáng kể so với điểm đóng băng của các thành phần cấu tạo.",
     "abilities": [
       "Kẻ địch này có thể nhanh chóng tiếp cận từ xa. Đòn tấn công của nó có thể gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
-    ]
-  },
-  "eny_0106_wgthorns2": {
-    "name": "Khối Đa Diện δ",
-    "nickname": "Khối Đa Diện δ",
-    "description": "\"Diaphaistagran Dinedon\" (ID lưu trữ: ARM315δ) là biến thể có năng lượng của ARM315. Khi chiếu sáng trực tiếp bởi ánh sáng mặt trời, nó phát ra ánh sáng tím lấp lánh. Tuy nhiên, nó sẽ chuyển sang hình dạng khác khi được chiếu sáng bởi ánh sáng phản xạ từ Talos.",
-    "abilities": [
-      "Các viên đạn kẻ địch phóng ra sẽ gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
     ]
   },
   "eny_0107_wgshoal2": {
@@ -601,23 +745,6 @@
       "Kẻ địch này sẽ tự nổ khi HP thấp. Vụ nổ bắn ra vật chất không ổn định trên cán viên trúng đòn. Nếu cán viên chịu sát thương, vật chất sẽ phát nổ."
     ]
   },
-  "eny_0109_hshog2": {
-    "name": "Quái Lông Nhọn Bị Lây Nhiễm",
-    "nickname": "Quái Lông Nhọn Bị Lây Nhiễm",
-    "description": "Một Quái Lông Nhọn bị lây nhiễm bụi Originium hoạt tính. Những chiếc gai của sinh vật này chứa mức năng lượng cực cao, khiến sức mạnh hủy diệt của chúng rất đáng sợ.",
-    "abilities": [
-      "Kẻ địch này sẽ tích năng lượng và phồng bụng để phun dung nham siêu nóng. Ngắt nó trong khi tích năng lượng để gây lượng lớn Suy Sụp.",
-      "Trạng Thái Điên Cuồng: Trong Trạng Thái Điên Cuồng, quái thú được tăng Tấn Công và sẽ sử dụng kỹ năng tụ lực thường xuyên hơn. Gây Suy Sụp để kết thúc Trạng Thái Điên Cuồng."
-    ]
-  },
-  "eny_0112_jzmonk": {
-    "name": "Rockhowler",
-    "nickname": "Rockhowler",
-    "description": "Rockhowler có thể sinh sống trong môi trường hoang dã tự nhiên. Sinh vật thông minh nhưng tinh nghịch này thường chuẩn bị sẵn các \"cạm bẫy\" và \"điểm phục kích\" cho những lữ khách xui xẻo. Chúng dường như rất thích nhìn con người bối rối trước những trò nghịch ngợm của mình. Hãy kiên nhẫn xử lý chúng.",
-    "abilities": [
-      "Loài địch này thường đi thành bầy. Bất kỳ cán viên hoặc Rockhowler nào giẫm phải vỏ chuối chúng bỏ lại đều sẽ trượt ngã."
-    ]
-  },
   "eny_0113_jzogre": {
     "name": "Gấu Nanh Dài Thiết Giáp",
     "nickname": "Gấu Nanh Dài Thiết Giáp",
@@ -626,32 +753,6 @@
       "Rockhowler cưỡi trên lưng Gấu Nanh Dài Thiết Giáp có thể vứt vỏ chuối. Nếu Gấu Nanh Dài Thiết Giáp giẫm phải vỏ chuối khi đang thực hiện tụ lực thì nó sẽ bị trượt ngã.",
       "Khi cuộn mình vào tư thế phòng thủ, chỉ hai bàn tay của nó còn lộ ra làm điểm yếu. Phá hủy hai tay để phá bỏ tư thế phòng thủ và khiến con quái thú bị quật ngã.",
       "Rơi ra Rockhowler khi gục ngã. Tấn công Rockhowler để gây thêm ST."
-    ]
-  },
-  "eny_0114_jzmking": {
-    "name": "Craghowler",
-    "nickname": "Craghowler",
-    "description": "Craghowler là những cá thể giữ vị thế thống lĩnh trong cộng đồng Rockhowler. Chúng phải trải qua vô số trận giao tranh với đồng loại, cho đến khi kẻ mạnh nhất vươn lên trở thành Craghowler dẫn đầu. Không còn nghi ngờ gì nữa, những cá thể này đã thành thạo chiến đấu ở mức mà đồng loại của chúng khó lòng sánh kịp.",
-    "abilities": [
-      "Khi điên cuồng, Craghowler sẽ bắt đầu phá hủy các tàn tích. Những tảng đá bong rơi sẽ lao xuống chiến trường, gây ST lên các cán viên trúng phải.",
-      "Craghowler có thể sử dụng các cột trụ trong tàn tích để cường hóa hiệu ứng và cho bản thân thêm tầm đánh.",
-      "Craghowler sẽ giả vờ rút lui, sau đó bất ngờ ném đá tảng để tấn công những kẻ địch không phòng bị."
-    ]
-  },
-  "eny_0117_klhound": {
-    "name": "Bóng Nhiễm Khuẩn Thú Ngà",
-    "nickname": "Bóng Nhiễm Khuẩn Thú Ngà",
-    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Thú Ngà. Dù chỉ là một \"bóng hình vương lại\", cặp nanh sắc bén của nó vẫn đủ sức xé toạc giáp trụ và trang bị bảo hộ.",
-    "abilities": [
-      "Một số đòn tấn công có thể kích hoạt Năng Lượng Bóng Nhiễm Khuẩn mà chúng đánh trúng."
-    ]
-  },
-  "eny_0118_klhog": {
-    "name": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
-    "nickname": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
-    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Quái Lông Nhọn. Bóng Nhiễm Khuẩn này có vẻ thể hiện những đòn tấn công lăn và bật nhảy hung hãn hơn nhiều so với bản thể còn sống, dù đó có lẽ cũng chỉ là ảo giác.",
-    "abilities": [
-      "Sau một khoảng thời gian tụ lực ngắn, Bóng Nhiễm Khuẩn Quái Lông có thể triệu hồi nhiều tia sét và kích hoạt Năng Lượng Bóng Nhiễm Khuẩn trong phạm vi lớn. Hãy nhanh chóng làm gián đoạn con thú khi nó bắt đầu tụ lực."
     ]
   },
   "eny_0119_kltiger": {
@@ -672,29 +773,21 @@
       "Kẻ địch này triệu hồi Bóng Nhiễm Khuẩn Thú Ngà. Sau đó, nó gọi xuống nhiều tia sét đánh vào những con thú này, biến chúng thành Năng Lượng Bóng Nhiễm Khuẩn và kích hoạt chúng. Hãy cố gắng né các đòn tấn công này."
     ]
   },
+  "eny_0127_bigents": {
+    "name": "Cơn Thịnh Nộ Của Gloomwald",
+    "nickname": "Cơn Thịnh Nộ Của Gloomwald",
+    "description": "Một con rối chiến đấu khổng lồ do Nữ Tư Tế Tuyết tạo nên. Nó từng phụng mệnh chủ nhân, rong ruổi lùng sục khắp miền sương mù vô tận, cho đến khoảnh khắc nhận ra mình đã bị ruồng bỏ. Kể từ đó, nó trở thành vật chứa hội tụ toàn bộ cơn thịnh nộ của khu rừng tuyết thâm u.",
+    "abilities": [
+      "Cơn Thịnh Nộ Của Gloomwald sẽ để lại dây leo trên mặt đất. Cán viên giẫm phải dây leo sẽ liên tục nhận ST và bị Làm Chậm.",
+      "Cơn Thịnh Nộ Của Gloomwald sẽ triệu hồi Mộc Ngẫu Lãng Du hỗ trợ trong giao tranh."
+    ]
+  },
   "eny_0121_klbud": {
     "name": "Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong",
     "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong",
     "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Tiên Phong. Với các Đặc Nhiệm, làm chủ kỹ thuật chiến đấu cận chiến mới chỉ là yêu cầu cơ bản nhất.",
     "abilities": [
       "Phóng ra kiếm khí có thể kích hoạt bất kỳ Năng Lượng Bóng Nhiễm Khuẩn nào bị đánh trúng."
-    ]
-  },
-  "eny_0122_kltdbud": {
-    "name": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
-    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
-    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Tinh Anh. Một Đặc Nhiệm làm chủ cả Thuật Pháp Originium lẫn kiếm pháp sẽ được xem là tinh anh.",
-    "abilities": [
-      "Phóng ra kiếm khí có thể kích hoạt bất kỳ Năng Lượng Bóng Nhiễm Khuẩn nào bị đánh trúng."
-    ]
-  },
-  "eny_0123_klcap": {
-    "name": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
-    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
-    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Đao Thủ. Những Đặc Nhiệm như họ cực kỳ tinh thông trong việc dẫn đầu xung kích và đánh chiếm các vị trí phòng thủ. Những thanh đao cán dài họ sử dụng được thiết kế để chém xuyên Aggeloi một cách dễ dàng.",
-    "abilities": [
-      "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ có thể giả vờ bị đánh bại trước khi tung ra một đòn tập kích bất ngờ. Hãy cảnh giác.",
-      "Sau khi tan biến, kẻ địch này có thể dịch chuyển tức thời đến cạnh một cán viên và tấn công. Hãy cố gắng né tránh."
     ]
   },
   "eny_0124_kltdcap": {
@@ -706,33 +799,6 @@
       "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm có thể dùng vũ khí để gọi sét đánh xuống. Thực thể Năng Lượng Bóng Nhiễm Khuẩn sẽ được kích hoạt khi bị sét đánh trúng."
     ]
   },
-  "eny_0125_fdcentur": {
-    "name": "Alleikhreos, Thiên Phu Trưởng",
-    "nickname": "Alleikhreos",
-    "description": "Một Tạo Vật của Nền Tảng, cũng là lão tướng từng kinh qua vô số trận chiến. Vị Thiên Phu Trưởng này đã lang bạt nơi Ætherside, cho đến khi tìm lại thanh kiếm thất lạc và xé mở khoảnh khắc để trở về.",
-    "abilities": [
-      "Khi thanh Suy Sụp của Alleikhreos, Thiên Phu Trưởng chạm đến Điểm Suy Sụp, hắn sẽ rơi ra một Vũ Khí Tạo Tác. Hãy điều khiển cán viên đang điều khiển đến gần để nhặt và dùng vũ khí đó tấn công hắn.",
-      "Khi tình thế trở nên bất lợi với Alleikhreos, Thiên Phu Trưởng, hắn sẽ triệu hồi các phân thân từ khe nứt để tấn công đối thủ."
-    ]
-  },
-  "eny_0127_bigents": {
-    "name": "Cơn Thịnh Nộ Của Gloomwald",
-    "nickname": "Cơn Thịnh Nộ Của Gloomwald",
-    "description": "Một con rối chiến đấu khổng lồ do Nữ Tư Tế Tuyết tạo nên. Nó từng phụng mệnh chủ nhân, rong ruổi lùng sục khắp miền sương mù vô tận, cho đến khoảnh khắc nhận ra mình đã bị ruồng bỏ. Kể từ đó, nó trở thành vật chứa hội tụ toàn bộ cơn thịnh nộ của khu rừng tuyết thâm u.",
-    "abilities": [
-      "Cơn Thịnh Nộ Của Gloomwald sẽ để lại dây leo trên mặt đất. Cán viên giẫm phải dây leo sẽ liên tục nhận ST và bị Làm Chậm.",
-      "Cơn Thịnh Nộ Của Gloomwald sẽ triệu hồi Mộc Ngẫu Lãng Du hỗ trợ trong giao tranh."
-    ]
-  },
-  "eny_0128_babyents": {
-    "name": "Mộc Ngẫu Lãng Du",
-    "nickname": "Mộc Ngẫu Lãng Du",
-    "description": "Một con rối chiến đấu nhỏ do Nữ Tư Tế Tuyết tạo nên, đảm nhiệm việc bảo vệ an nguy cho Rừng Tuyết. Chớ xem thường đôi nắm đấm bằng gỗ của nó, bởi chúng có thể dễ dàng đập vỡ cả đá tảng.",
-    "abilities": [
-      "Mộc Ngẫu Lãng Du không có tầng khiên sẽ trói cán viên để hấp thụ năng lượng và phục hồi tầng lá chắn.",
-      "Các Mộc Ngẫu Lãng Du sẽ phối hợp với nhau khi tấn công."
-    ]
-  },
   "eny_0129_slwood": {
     "name": "Mộc Ngẫu Dạng Sên",
     "nickname": "Mộc Ngẫu Dạng Sên",
@@ -741,44 +807,20 @@
       "Mộc Ngẫu Dạng Sên có thể đào xuống lòng đất để lén tiếp cận đối thủ."
     ]
   },
+  "eny_0133_inklion": {
+    "name": "Bờm Sư Khuôn Thước",
+    "nickname": "Bờm Sư Khuôn Thước",
+    "description": "Linh thể được Si điểm hóa. Com-pa vạch tròn, thước vuông kẻ góc. Đường đi nước bước, nhờ đó tỏ tường.",
+    "abilities": [
+      "Bờm Sư Khuôn Thước có các bán cầu ngọc ở hai bên thân, có thể giảm mạnh ST từ những đòn đánh trúng chúng. Hãy cố gắng tấn công vào đầu và đuôi của vong linh mực này."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Bia Cơ Bản",
     "nickname": "Bia Cơ Bản",
     "description": "Bia mục tiêu cơ bản dành cho cung thủ mới tập.",
     "abilities": [
       "Mục tiêu cơ bản. HP: 1."
-    ]
-  },
-  "tatget_002_endurance": {
-    "name": "Bia Tiêu Chuẩn",
-    "nickname": "Bia Tiêu Chuẩn",
-    "description": "Một bia mục tiêu tiêu chuẩn, thiết yếu cho việc nâng cao kỹ năng bắn cung.",
-    "abilities": [
-      "Mục tiêu bền bỉ. HP: 2."
-    ]
-  },
-  "tatget_003_expand": {
-    "name": "Bia Chắn",
-    "nickname": "Bia Chắn",
-    "description": "Một bia mục tiêu đặc biệt có thể thay đổi kích thước và che chắn các bia mục tiêu phía sau. Hãy thử phá vỡ nó trước.",
-    "abilities": [
-      "Mục tiêu nhiễu loạn có thể thay đổi kích thước. HP: 3."
-    ]
-  },
-  "tatget_004_armor": {
-    "name": "Bia Hạng Nặng",
-    "nickname": "Bia Hạng Nặng",
-    "description": "Một bia mục tiêu đặc biệt làm từ hợp kim cường độ cao. Bia rất cứng cáp và được các cung thủ sở hữu sức mạnh vượt trội ưa chuộng.",
-    "abilities": [
-      "Mục tiêu bọc giáp. HP: 4."
-    ]
-  },
-  "tatget_005_shield": {
-    "name": "Khiên Năng Lượng",
-    "nickname": "Khiên Năng Lượng",
-    "description": "Khiên năng lượng được thiết kế cho bia mục tiêu. Các cung thủ thông thạo thích tạo khiên cho bia mục tiêu của mình để giúp chúng tồn tại thêm vài giây.",
-    "abilities": [
-      "Một lớp khiên có thể áp dụng lên bất kỳ mục tiêu nào. HP: 2. Mục tiêu có Khiên không thể bị đóng băng, không thể bị chủ động áp dụng Nhựa, và tầng Nhựa trên mục tiêu có Khiên sẽ không kích nổ khi nhận ST."
     ]
   }
 }

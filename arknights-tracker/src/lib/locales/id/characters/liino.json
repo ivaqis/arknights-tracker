@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Dazzling Focus",
       "description": "Liino akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh, lalu masuk ke kondisi <@ba.key>Vocalist Stance</>. Selagi kondisi ini aktif, jika ada musuh di sekitarnya, Liino akan melancarkan ATK Tambahan (yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh) secara berkala.\n<@ba.key>Vocalist Stance</>: Selagi kondisi ini aktif, Liino akan memberikan ATK Boost kepada seluruh tim. Setelah masuk ke pertarungan, Liino juga akan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator dalam jangkauan.\n<@ba.info>Selama Vocalist Stance, skill tarungnya akan digantikan dengan End Stance. Jika digunakan, Vocalist Stance akan berakhir lebih awal tanpa memakai SP, kemudian skill tarung akan masuk ke cooldown singkat.</>",
-      "1stAtkMultiplier": "Pengganda ATK ke-1",
+      "firstAtkMultiplier": "Pengganda ATK Pertama",
       "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
       "additionalAtkIntervalS": "Interval ATK Tambahan (dtk)",
       "beatIntervalS": "Interval Irama (dtk)",

@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Amp",
+      "Damage Dealer",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Team Management",
+      "Tool Assembly"
+    ],
+    "giftPreferTags": [
+      "Wuling Crafter's Choice"
+    ],
+    "hobbyTags": [
+      "Technology",
+      "Fashion"
+    ],
+    "raceTag": "Undisclosed"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Artistic Urge",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier"
+    },
+    "battleSkill": {
+      "name": "Brushwork Realm",
+      "description": "Si deals <@ba.cryst>Cryo DMG</> and applies <@ba.key>Artful Intent</>, <#ba.static>Immobilization</>, and <#ba.crystinflict>Cryo Infliction</> (or <#ba.fireinflict>Heat Infliction</> if a <@ba.fire>Heat</> element operator is in <@ba.key>Team Position 01</>) on the target. After a target with <@ba.key>Artful Intent</> takes DMG, part of the DMG taken is recorded. When the duration of <@ba.key>Artful Intent</> ends, it bursts and deals <#ba.fixeddamage>Fixed DMG</> equal to the DMG recorded. After casting the skill, Si's battle skill is temporarily changed to <@ba.key>Initial Stroke</>.\n<@ba.key>Initial Stroke</>: Costs <@ba.vup>15</> SP. Si pulls an <@ba.key>Inksoul</> from a target with <@ba.key>Artful Intent</>. All DMG dealt and effects applied to the <@ba.key>Inksoul</> will also be dealt to its host (the said target). The <@ba.key>Inksoul</> lasts as long as the remaining duration of <@ba.key>Artful Intent</>. After casting the skill, Si's battle skill is temporarily changed to <@ba.key>Final Stroke</>.\n<@ba.key>Final Stroke</>: Costs no SP. Makes the <@ba.key>Inksoul</> disappear early. When disappearing, the <@ba.key>Inksoul</> will move to its host and trigger a burst like the ending burst of <@ba.key>Artful Intent</>.\n<@ba.info>When dealing DMG or applying effects to both the Inksoul and the host, only 1 instance of the DMG or effect is dealt/applied. If the host is defeated during the Inksoul's duration, it will link to another enemy in combat and apply Artful Intent to it. This does not reset the duration of Artful Intent. If a target with Artful Intent is defeated without having its Inksoul drawn out of it, the defeated target will drop an Inksoul at its location.</>",
+      "dmgMultiplier": "DMG Multiplier",
+      "immobilizationDurationS": "Immobilization Duration (s)",
+      "artfulIntentDurationS": "Artful Intent Duration (s)",
+      "dmgRecordRatio": "DMG Record Ratio",
+      "stagger": "Stagger",
+      "artfulIntentBurstStagger": "Artful Intent Burst Stagger"
+    },
+    "comboSkill": {
+      "name": "Fully Envisioned",
+      "description": "COMBO TRIGGER: When an enemy's <#ba.crystinflict>Cryo Infliction</> or <#ba.fireinflict>Heat Infliction</> is <#ba.consume>consumed</> or <#ba.absorb>absorbed</>.\nSi summons an <@ba.key>Ink Lung</> that deals <@ba.cryst>Cryo DMG</>. This DMG is based on the highest stacks of Arts Infliction <#ba.consume>consumed</> or <#ba.absorb>absorbed</> from a single target.",
+      "dmgMultiplier": "DMG Multiplier",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Multiplier Increase per Stack Consumed or Absorbed",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
+    },
+    "ultimate": {
+      "name": "No One Spoils the Fun",
+      "description": "Si summons a <@ba.key>Giant Ink Lung</> from her painting that deals <@ba.cryst>Cryo DMG</> and grants temporary <#ba.crystenhance>Cryo Amp</> and <#ba.fireenhance>Heat Amp</> to the entire team.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "amp": "Amp",
+      "ampDurationS": "Amp Duration (s)"
+    },
+    "indicator": {
+      "levels": [
+        "Operator Intellect +10.",
+        "Operator Intellect +15.",
+        "Operator Intellect +15.",
+        "Operator Intellect +20."
+      ],
+      "name": "Keen Mind"
+    },
+    "talent1": {
+      "levels": [
+        "Ultimate skill <@ba.key>No One Spoils the Fun</> improved: After casting, <@ba.key>Team Position 01</> operator's combo skill cooldown length <@ba.vup>{coolDown:0}</>s.",
+        "Ultimate skill <@ba.key>No One Spoils the Fun</> improved: After casting, <@ba.key>Team Position 01</> operator's combo skill cooldown length <@ba.vup>{coolDown:0}</>s."
+      ],
+      "name": "Proxy's Patronage"
+    },
+    "talent2": {
+      "levels": [
+        "When the <@ba.key>Inksoul</> disappears, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> for {duration_speedup:0}s.",
+        "When the <@ba.key>Inksoul</> disappears, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> for {duration_speedup:0}s."
+      ],
+      "name": "Unsoiled Brush"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Reception Room to grant operator clue collecting efficiency +20%",
+        "Assign to Reception Room to grant operator clue collecting efficiency +30%"
+      ],
+      "name": "Ware is the Geist"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Reception Room to slow Mood Drop of all operators in it by 14%",
+        "Assign to Reception Room to slow Mood Drop of all operators in it by 18%"
+      ],
+      "name": "Ink Spirit Aide"
+    },
+    "files": {
+      "main": "CODENAME: Si \nGENDER: Female \nAUTHENTICATION: Hongshan Academy of Sciences \nDOB: September 15 \nRACE: Undisclosed \n[ORIPATHY INFECTION STATUS] \nOripathy negative, based on medical examination reports. \n\n[INTEGRATED PHYSICAL EXAMINATION] \nPHYSIOLOGICAL STRENGTH: ■■ \nCOMBAT SKILL: Excellent \nTACTICAL ACUMEN: Standard \nORIGINIUM ARTS ASSIMILATION: Flawed",
+      "humanResources": "Si, a Feranmut Proxy with no formal employer, has long-standing ties to the Hongshan Academy of Sciences. At the Endministrator's personal recommendation, she joined Endfield Industries, where she currently provides expertise in the theoretical research and practical application of Feranmuts. \n\nSi rarely participates in Endfield's personnel procedures. The only exception is recorded in my self-diagnostic log. As agreed, Si arrived aboard Dijiang and spoke with me. She answered every question, signed the paperwork, and disappeared the moment the process was complete. My processing module immediately classified the event as an unforeseen incident and issued an alert. A short while later, Si walked back into the office, wiped a drop of ink from the center of my display, and mumbled, \"Interesting ... but not interesting enough.\" She later explained that \"Si\" sitting across from me had merely been a painting of herself. She wanted to see how I would react. Judging from her remark, my response wasn't quite what she had hoped for. \nIt was a harmless prank. The incident offered a glimpse into Si's unique quality. While she possesses powers beyond the scope of scientific explanation, she occasionally exhibits a temperament that seems atypical of a Feranmut Proxy. Opportunities to meet a Feranmut Proxy on Talos-II are few and far between. I therefore recommend that my colleagues in the HR Division take every chance to interact with her. We may eventually discover a pattern to her shifting moods. \n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "After joining Endfield, almost no operators ever met Si. Her profile remained largely blank, and \"mysterious\" was the only impression most of us had of the Feranmut Proxy. The HR Division even asked her recommender to help convince her to cooperate with a few onboarding procedures, but apparently, not even the Endministrator could get through to her... That changed when one of our logistics operators happened to spot her at a hotpot restaurant in Wuling City. \nThe two met by pure chance, neither knowing who the other was. They happened to attend the same promotional event for a new menu and ended up sharing a table, sampling hotpot broths like Lime and Bitter Gourd Stock, Fish Maw and Slug Pepper Stock, and Boiled Grovenymph Clear Stock — names bizarre enough on their own. After learning that Si was there to pick up a few tricks for the chef at her inn, the logistics operator praised her keen business instincts and remarkably refined taste for someone so young. Si was delighted and quietly picked up the operator's bill as well. Only later, after spotting Si's photo in the HR Division, did the operator realize who her dining companion had actually been... After that, more and more operators began running into Si in the most unexpected places, including Wuling City's Chubby Lung launch event, La Fantoma's robotics experience center ... the list goes on. Two operators even got into a heated argument over one particular sighting. Both insisted they had seen Si at the exact same time, yet one claimed she was the mischievous bidder who scooped the final item at Seš'qa's witchcraft staff auction, while the other swore she was the mysterious guest who got drunk among Sami's Snowpriests. The two locations are thousands of miles apart, one above ground, the other below. Stories like that belong only in old Yanese legends. In short, if the operators are to be believed, Si is less like a secluded Feranmut Proxy and more like an energetic child who simply can't stay home. \nSince then, whenever Dijiang hosted events like the Vanguard Movie Night, a few operators would work up the courage to ask the Endministrator to invite Si... This time, she actually came. Gradually, we came to realize that this was simply who she was. Playful and unpredictable, she has little patience for people who are rigid or unwilling to adapt. She's always drawn to anything new and views the world with a child's curiosity. Perhaps ... by Feranmut standards, she really is still very young. \n\nAdvice from Operator Argent Flow: Avoid words like \"child\" and \"young.\" Lady Si is rather sensitive about her age. She insists, \"I'm nearly as old as civilization itself on Talos-II. You're all just kids to me.\" \n\nAdvice from Operator Arcane: When it comes to critical matters, please trust the Proxy, just as we do. Whatever her usual demeanor may be, her abilities more than justify that trust. She also doesn't appreciate having her abilities questioned. \n\nMysterious advice from an unknown guest: If she starts throwing a fit, just go get the Endministrator.",
+      "file2": "Yinglung Special Task Force Training Log III \nLocation: Unnamed Wilderness, HAS Jurisdiction \nObjective: Scheduled meeting between the Proxy and the latest batch of recruits \nNotes: The Proxy was absent without prior notice, and the meeting was replaced with routine training. The senior operator leading the session reassured the new recruits that although the Proxy helped establish and plan the YSTF, she held no official position within HAS. The two parties maintain a cooperative relationship, and many YSTF members may never meet her during their service. \n\nYinglung Special Task Force Training Log VIII \nLocation: Tanjian Hall, HAS \nObjective: Proxy's lecture on the application of Feranmut Power \nNotes: The Proxy was absent without prior notice. On short notice, she arranged for Ye Minghe, Captain of Pacified Skies of the Imperial Guards, and the Endministrator of Endfield Industries to attend in her place. The session was converted into a technical exchange on spear techniques and Originium applications. \n\nYinglung Special Task Force Training Log XXI \nLocation: A scroll painted by the Proxy on the spot \nObjective: Proxy's lecture on the application of Feranmut Power \nNotes: The Proxy was in unusually high spirits, and the training session ran more than three hours over schedule. She took it upon herself to demonstrate more than a dozen different powers, each one more astonishing than the last. Her so-called \"little tricks\" included, but were by no means limited to: moving stone and timber at will to create a garden no one could escape; forging shields and greatswords out of thin air, as though drawing divine weapons from the void; planting a seed that sprouted, withered, and sprouted again within moments, confounding one's sense of time and causality; bringing ink paintings to life, erasing the boundary between illusion and reality; and turning squares into circles as though reality itself obeyed her every word... Naturally, we can only harness a fraction of these powers with the aid of specialized equipment and nowhere near as freely as the Proxy herself. Even so, their value on the battlefield is beyond question. Properly applied, they would enable the YSTF to carry out countless complex missions. \nThat said, the powers aren't always reliable. On rare occasions, a giant shield would inexplicably contain a large hole, or the painted sun would become nothing more than an ink blot suspended in the sky, steadily dripping ink. Such incidents were infrequent, but they were observed. The Proxy was invariably quick to conceal these mishaps. Common methods included covering them with an exaggerated cough, abruptly painting a river and declaring an impromptu exercise in river-crossing combat, or simply ending the session then and there... \n\nNone of this should come as a surprise. Possessing a skill is not the same as mastering it. Whether in combat or craftsmanship, true mastery takes years. The Proxy's circumstances are different, of course. She inherited the Powers of the Feranmut \"Sui\" and all twelve of its proxies only recently. Even so, her contributions speak for themselves. It is because of her that the YSTF exists today and our homeland remains protected. \n— Arcane, YSTF Task Leader",
+      "file3": "The Sui Regulator was founded relatively late among HAS's specialized organizations. Though it shares its name with its Terran counterpart, the two serve fundamentally different purposes. The original was established in Yan after the \"Great Hunt\" to oversee the dormant Feranmut \"Sui\". Its subordinate force, the \"Candleholders\", was responsible for monitoring the activities of \"Sui's\" twelve proxies and responding to any secondary disasters associated with them. For nearly a thousand years, relations between the Sui Regulator and the proxies remained tense. \nAt HAS, however, the Sui Regulator serves as an intelligence and technical support organization focused on developing technologies based on Feranmut powers and supporting the Academy across both military and civilian fields. The Feranmut Proxy Si was directly involved in establishing both the Sui Regulator and, later, the YSTF under its supervision. She herself seems to enjoy the work. To the Sui Regulator, Si is more like a quirky advisor. \n\nSpecial Record \n\"I fear even the breadth of Talos-II may one day prove too confining for my younger sister. Yet she is still young and has far to go. Thus have I sent her to Hongshan to broaden her horizons, trusting that Tianshi Tan will look after her. Should there be anything I may do in return, I shall come at once in person.\" \n\"That's all my brother wrote?\" \n\"Is that not enough? You're the newest Proxy. No one can say what you'll become once your powers fully awaken. If you turn out to be as impossible as Sui once was, there may not be anyone on Talos-II who could keep you in check. Better that you spend time with us now. It'll do both you and HAS good. Besides ... your brother warned me that if anyone here so much as upset you, he'd come knocking on my door. At this point, I'm just glad he didn't send a knife along with the letter!\" \n\"H-He didn't mean it like that... You're the most experienced Tianshi at HAS... And I-I've always respected you!\" \n\"Haha, that's more like it. You're certainly more likeable than your siblings. So, have you made up your mind about the special task force? You've been in Hongshan long enough.\" \n\"You even sent the Endmin to convince me. I'm here. Does that not answer your question?\" \n\"Excellent. Then let this be the Si Regulator's first official order of business on Talos-II.\" \n\"The Si Regulator?!\" \n\"Hmm... Sui's story belongs to Terra now, and your brothers and sisters are free to live as they please. The name \"Sui Regulator\" no longer feels entirely appropriate...\" \n\"Let's stick with the Sui Regulator! The Si Regulator sounds terrible. Like the whole place exists just to keep an eye on me.\" \n\"Fair point. Then we can keep the old name.\" \n\"What about the special task force?\" \n\"Those kids are still arguing over names. If you ask me, this unit only exists because of you, so why not call it ... 'the Yinglung Special Task Force'?\" \n\"Cool! I love it!\"",
+      "file4": "When the dust finally settled, Feranmut Sui never awoke again. \nHis body was gone. His will sank into silence amid the chaos. The pride, wrath, hatred, and defiance that had once defined Him all faded with the loss of His vessel. Bereft of His body, He became a child forced to confront a single question. \n\"Who am I?\" \nThe void offered no answer. He realized that perhaps He no longer had the right to answer that question Himself. \nSo He let go. After ages of warring with the world and Himself, He finally grew too weary to think. In that silence, He found a release He had never known. \n...... \nYet Sui had endured for far too long and grown far too mighty to vanish so easily. Too many fragments of Himself had been scattered across the ages. Even after His consciousness chose exile, something would still rise naturally, like morning dew gathering upon fresh leaves before falling away... \nSomething fell. \nThe sound caught the attention of a proxy who had yet to depart. \nWhether out of pity ... or caution ... he immediately gathered that flawless fragment of consciousness into his hands. It could neither speak nor wield any power. It was difficult to say whether it still bore any real connection to Sui Himself. Frail and unsteady, it flickered like a candle flame, bright and perfectly pure. \nFor the first time, the proxies found themselves uncertain. \nThey all knew it as the last remnant of Feranmut Sui. Had they wished to erase every lingering trace of Him, they could have done so with a single thought. \nYet it lay quietly in the palm. \nCould this truly be the Sui they had always known? The proud Feranmut would never have laid Himself bare before His own proxies, not even to preserve His own existence. But if this was a life only just beginning... The proxies found themselves dimly recalling what it had felt like before they first came into being. \nIt searched. It struggled to answer a single question: What makes me who I am? When the last remnant of His former self could no longer provide that answer, the tiny consciousness instinctively sought out its own kin. \nThe children He had once created to walk among mortals had now become the ones to guide Him. To the twelve proxies, the irony was impossible to ignore. Their deliberations led nowhere, until one day, a voice broke through the silence of their minds. \nIt was faint. Weak. But startlingly innocent. \n\"Who am I?\" \n\"Where am I?\" \n\"Who are you?\" \n...... \nIn the end, the proxies chose to send that tiny consciousness through the Cosmic Gate into an unknown world. They understood that even the smallest remnant of the Feranmut resting within the Tomb of Sui carried countless threads of fate. Yet if it ... if she knew nothing of any of it, then she was no longer Him. \nPerhaps the answer she sought was never meant to be found on the land where Sui Himself had once failed. In a new world, a new soul might yet discover what it truly meant to exist and find an answer of her own. \nAnd so, that tiny spark of consciousness arrived on Talos-II, carrying all sorts of ... well... odds and ends. Honestly, they packed far too much. They kept stuffing things into my ... no, into its hands. \nAfter that ... well, that's another story."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Team Management",
+        "description": "Team Management: Innkeeper's Wisdom\n\"Yuanyuan Manor is a century-old brand, and I totally came up with a methodology of proper service. People from HAS visit every now and then to learn my lessons.\""
+      },
+      "expert2": {
+        "name": "Tool Assembly",
+        "description": "Tool Assembly: Whatever Si Desires\nThe fire smelts for divine craft, the brush strokes to create entire worlds. She takes inspirations from things around her, or even her dreams. If she can think of it, she will have it. The process is not fool-proof, but don't expose it in front of her."
+      },
+      "hobby1": {
+        "name": "Technology",
+        "description": "Technology: Early Prototype QA\n\"Smart furniture has nothing on my crew of very, very obedient waregeists.\""
+      },
+      "hobby2": {
+        "name": "Fashion",
+        "description": "Fashion: Experimental Cosmetician\nA self-proclaimed title. In truth, no one dared to employ Si in such work. The crew of Yuanyuan Manor has revealed that Si uses Ink Spirit face-painting to practice her skills of applying cosmetics."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Operation Prep 1",
+        "text": "Hmph. Only think of me when trouble shows up?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Operation Prep 2",
+        "text": "I'll help you out again. Remember to pay up once we get back to the inn."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Adding to Team 1",
+        "text": "And don't talk to me from now on. I need to focus."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Adding to Team 2",
+        "text": "Come on, say something. I get distracted when it's too quiet."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Switching Weapon",
+        "text": "You chose this? Hmm... How about two strokes of ink? Mine now, you're not taking it back."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Switching Gear",
+        "text": "It even takes my wings into account… Ahem. N... Not bad, but I won't be nice just because of this."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Ability Matrix Activation",
+        "text": "Ah! Inspiration strikes! Quick, don't just stand there! Give me some paper!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Watching Combat Records",
+        "text": "Watch it a few more times to remember... Why are you smiling? I was talking to you!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Operator Promotion 1",
+        "text": "Just so we're clear, I'm just an honorary Endfielder, so don't expect me to do everything. Also, Endfield better be as interesting as you claim."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Operator Promotion 2",
+        "text": "Give me your hand and let me stamp it with my tail. There... That will do. And you better not rub it off until I decide to stamp you a new one."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Operator Promotion 3",
+        "text": "Ink Spirit, write down what the Endmin said. Every, single, word. HAS wants me to give a speech to the young Yinglungs. This'll come in handy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Operator Promotion 4",
+        "text": "You keep promoting me, but if you ever fail to do what you promised, I'm heading back to the inn. Keep your matters separate from Endfield. What happens between us is between us."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Operator Reporting for Duty",
+        "text": "Hold it, keep it still! The ink isn't even dry yet... This painting's for you. What I drew isn't important. It's my seal that matters! And don't you ever forget my name again!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "Standing by 1",
+        "text": "This, then that... Alright, roll it up. Ahem. Your draft is done. Gotta be patient!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "Standing by 2",
+        "text": "You've been hanging around me for years, why can't you learn anything from me? Such as faking my signature."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Assigning to Facility",
+        "text": "You lured me to this place just so you could sit back and relax? Not happening. You're staying here with me."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Greeting 1",
+        "text": "Trying to walk past me? Are you pretending I'm invisible?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Greeting 2",
+        "text": "So, that promise ten years ago. You gonna make up for it?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Me? Idling around? See that porthole window? I drew an entire painting titled \"Travelers Across Talos-II\" on it... But someone took their time coming over, so I erased everything."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Why do you keep showing up whenever I visit Dijiang? What, you saw Ink Spirits at the corner...? Ah, well... Seems like you showed up on my path on purpose!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I'll paint your portrait and hang it at my place. That'll keep the waregeists away if you visit my scroll on your own... Hmm? I do have one from ten years ago. But you weren't wearing anything on your face back then."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Maps, pillows, munchies, stove, stimulating tisane... Oh. Just making a list of stuff to bring to Sami. Traveling gives me my inspirations. See if you got any more ideas... Of course you're coming along, or I wouldn't be telling you all this! No, I got Ink Spirits to carry my bags around, not you, Dolt!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Dijiang Idle Chatter 5",
+        "text": "I ran into Perlica. Miss little supervisor is just like you... Poor girl's trying to stay awake, even though she could literally fall asleep on her feet... You're exactly the same! Stop pulling all-nighters and go to sleep. Working yourself into the ground and then sleeping for ten years. Seriously?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Whoa...You can see almost half of Talos-II from here... I wonder where those two have wandered off to... Wha?! Who said I miss my siblings? Don't look at me like that...! *Sigh* Fine. Maybe I miss them a little bit. Just a bit..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Offering Gifts",
+        "text": "Here. A little gift for you, just something I doodled. Don't get too exci — Ah, wrong one! That self-portrait is just practice. GIVE IT BACK!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Accepting Gifts",
+        "text": "Er... W-When did you start getting all formal and official — HEY! Don't you dare take it back!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Trust Dialog 1",
+        "text": "If you've got time, swing by the inn for the welcome feast you missed. The kitchen dug up every rare ingredient we could get our hands on. Wait... Who did you say you were thanking?! Well then, it seems all the credit goes to the staff. Then I guess their heartless boss has no choice but to stop them from wasting all those precious ingredients! HMPH!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Trust Dialog 2",
+        "text": "Take a whiff. See that cliff over there? That's where the tea bushes grow. As good as the tea is, I do have to send my best Ink Spirits to pick the leaves. A decade of work, all packed into this little jar. So you're really lucky today... Hey. Why are your teeth covered in ink? Wait... Mine too...? J-Just finish the tea. Every last drop. And stop looking at me!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Trust Dialog 3",
+        "text": "Stop! That'll be all for today! Well, you've gotten pretty good at Weiqi. But my brother's still the best player on Talos-II. You're nowhere near his leag... What? This is the third time I've brought up my siblings this month? I-I'm not saying I wish they were still around! Just look at the mountain, the inn, and the fact that I at least got... AHEM! This place is lively enough as it is."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Trust Dialog 4",
+        "text": "Already making a distant trip before full recovery? What are you made of, Xiranite? Really think you can't fall apart? Hmph. I was hoping that stupid habit of self-abuse disappear with your memories, Dork-Min! Gimme the mission details and I'll go in your place! Remember, you owe me one. AGAIN!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Trust Dialog 5",
+        "text": "Sit. Miss the sunrise? Just paint it with the brush. Back then, you made uninvited visits when I was alone. You had a way of turning ridiculous ideas into comforting words... Fine. I know my words won't bring back any of your lost memories right now. But if you dare to forget anything ever again, I won't talk to you for the next ten... no, one hundred and fifty years!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Chat 1",
+        "text": "I've been getting more and more people wanting to visit the scroll, but the inn wasn't built to handle so many visitors. The staff suggested putting up a bulletin board in the main hall... It sounds like a great idea, but that means I'll be getting a lot of random suggestions. I-I just don't have time to go through everything. So, could you sort through them first... then I can just focus on the useful ones?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Chat 2",
+        "text": "The pinnacle of forging is to compress every manufacturing step within a single breath and turn every idea into reality. Just like this shield I'm holding... What? A defective pore...? AHEM. Oh yes, this is just a sample piece. Tiny flaws are expected, and definitely unrelated to the mastery of my powers."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Chat 3",
+        "text": "Heard about chubby skydrummer plushies? I love chubbies and got a load of them in my inn. But chubby skydrummer plushies are exclusive prizes for the Wuling \"Sketch and Guess\" game, and it can't be played alone... Listen up, the next season is coming. I'm gonna teach you the tricks and you better learn... Of course you're drawing and I'm guessing! Do I look like the sort who cheats in games?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Chat 4",
+        "text": "Job Rusher is always slacking off, Speed Dasher is so big he could hardly move, and Loud Speaker greets guests so softly you'd miss it if you blink. It's been decades, and I gave up trying to fix up their habits. Oh? Well, they had nowhere else to go so I added them to the scroll. I can send them away... but I prefer my inn messy than quiet."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Chat 5",
+        "text": "I used to hang around my siblings and play Weiqi, listen to their discussions, and then practice reading, calligraphy, and painting at night. During our free time, the three of us traveled around Talos-II ... but soon they sent me off to Hongshan. They probably saw Talos-II as a breath of fresh air and thought I'd never truly like it if they were always around. I get where they were coming from. But you can't just leave your little sister somewhere and barely visit her..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Topic: Yinglung Special Task Force",
+        "text": "Yeah, I was there when HAS formed the Yinglung Special Task Force. But all I did was teach them a few tricks. Why wouldn't I spend more time with them? 'Cuz the Yinglungs are full of stubborn types like Li Zhiyan. Hang around them long enough and they'd freeze the air itself solid. But she seems to have figured things out a bit more after spending time with you. Hmm... Eh, Endmin, why not take my place and go teach them for me?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Topic: Feranmut Power",
+        "text": "The Endfield HR database has issues. For the \"Skills\" section, I listed twelve items, including martial arts, literature, painting, metallurgy, law, gardening... and then it just threw an error. What, too many skills? Occasionally failing at something doesn't take those skills away. You'd better give me an explanation of what's going on."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Topic: Wings",
+        "text": "My wings are pretty, right? When I was young, I dreamed of them sprouting and spreading, so I drew them on my back after I woke up. My sister wouldn't stop nagging about it... It's just decor. But she said I use them in fights to look intimidating. Hmph. That's a baseless accusation. I mean, who even does that? So childish!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Topic: Ye Minghe",
+        "text": "That kid with bright hair? We've known each other for quite a while, and he's always so annoying. Sometimes he only cares about that jet-black gallopbeast of his, and he never stops going, \"The Imperial Guards must uphold their duty...\" And that's why he's so difficult, because he means every word he says. Kind of like you, to be honest. Wait, you are the one who influenced him! Anyway, if he barges into my scroll again, you're gonna pay."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Topic: Family",
+        "text": "I don't know where my siblings have gone. After everything they've been through, they finally have time on their hands. Maybe they're wandering all across Talos-II. Maybe they'd... HEY! Job Rusher! Didn't I tell you to clean properly? Especially the paintings, calligraphy, and the Weiqi boards. What if they come home and see this mess? You're gonna get me in trouble!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Topic: Sui",
+        "text": "Sui is the worst Feranmut. Ever. Even in sleep, He won't stay still, always scheming to make things hard for Yan with his twelve proxies. And in the end? Every proxy got their own ideas and made things difficult for Him. As for my relations with Him ... I wouldn't be around if they didn't bring the last bits of his soul to Talos-II. But we're different. There is nothing between us, one way or the other. The debt's settled and it's as clear as day."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Resource/Collectible Detected 1",
+        "text": "Don't miss this spot."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Resource/Collectible Detected 2",
+        "text": "Look, hidden spoils."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Unexplored Area Detected",
+        "text": "Interesting place. You'd miss it if you weren't paying attention."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Powerful Enemy Discovered",
+        "text": "Careful. That one will take a few extra strokes."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Mining 1",
+        "text": "Forge of the Sky, Metals of the Earth. Talos-II does have plenty of rare stuff."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Mining 2",
+        "text": "Leave it to me. It'll be done in an instant."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Opening a Crate",
+        "text": "Don't wait for an inspiration. Look for it."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Acquiring Aurylene",
+        "text": "Hmm. If I mix Aurylene with ink, what could I paint with it?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Eliminating the Blight",
+        "text": "Come to think of it, maybe my Ink Spirits could also take care of this."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Rest",
+        "text": "Always rest when you can, because nobody can paint Talos-II in a single stroke."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Tactical Use 1",
+        "text": "I know a bit of herbs and mending too."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Tactical Use 2",
+        "text": "That made things feel a lot better!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Danger Warning",
+        "text": "Watch over there!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Injured",
+        "text": "Did they soil my wings?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "0 HP",
+        "text": "No longer ... interested..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Team Encouragement 1",
+        "text": "Ah. A promising generation."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Team Encouragement 2",
+        "text": "Our younglings seem quite eager."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Encouragement Response 1",
+        "text": "You're not being \"polite\", right?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Encouragement Response 2",
+        "text": "Alright, alright, don't get distracted."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Combat Begins 1",
+        "text": "End this before the day grows dark."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Combat Begins 2",
+        "text": "Show me what you can do, younglings."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Combat Victory 1",
+        "text": "This is way more fun than staying in the scroll."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Combat Victory 2",
+        "text": "I'm so inspired. This field trip is worth its while."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Combat Victory 3",
+        "text": "Over already? I assume you still got the strength to grind ink for me."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Combat Victory 4",
+        "text": "It was hard, but we won. Don't go slumping around like that."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Combat Defeat",
+        "text": "Winning is great, but it's okay to lose. I'm around, so there's nothing to fear."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Get down!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Back off!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "Battle Skill 1",
+        "text": "Patchy colors!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "Battle Skill 2",
+        "text": "Messy strokes!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "Battle Skill 3",
+        "text": "Soulless copies!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Combo Skill Ready 1",
+        "text": "Give me some room."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Combo Skill Ready 2",
+        "text": "My hands are free."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Combo Casting 1",
+        "text": "Still wasting my time?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Combo Casting 2",
+        "text": "Still wasting my ink?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Finisher 1",
+        "text": "The finishing touch!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Finisher 2",
+        "text": "Perfect depiction!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "A rising wave! A seething quake!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "A razor stroke! Wield the cosmos!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Let this power shape the lands!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Battle skill <@ba.key>Brushwork Realm</> improved: Duration of <#ba.static>Immobilization</> applied <@ba.vup>+{static_duration:0%}</>; <@ba.key>Artful Intent</> DMG Record Ratio <@ba.vup>+{ink_damage_rate:0%}</> and burst radius <@ba.vup>+{ink_boom_range:0%}</>.",
+      "name": "Spring and Autumn as Ink"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Three Marks Deep in Wood"
+    },
+    "potential3": {
+      "description": "Ultimate <@ba.key>No One Spoils the Fun</> improved: DMG Dealt is increased to <@ba.vup>{atk_scale:0.0}</> times the original; <#ba.enhance>Amp</> effect is increased to <@ba.vup>{enhance_final:0.0}</> times the original.",
+      "name": "Study of Muscles and Bones"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>No One Spoils the Fun</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Perfectly Composed in Spirit"
+    },
+    "potential5": {
+      "description": "Combo skill <@ba.key>Fully Envisioned</> improved: Length of combo skill cooldown <@ba.vup>{coolDown:0}</>s and DMG Dealt is increased to <@ba.vup>{atk_scale:0.0}</> times the original. When triggered, treat the combo skill as having <#ba.consume>consumed</> or <#ba.absorb>absorbed</> 1 additional stack of infliction.",
+      "name": "Brush Dab in Eye's White"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Carefree",
+      "author": "狂zip",
+      "description": "Follow one's heart, one's feeling, and one's joy when free and without a care."
+    },
+    "potential3": {
+      "name": "In the Realm of Ink",
+      "author": "Maeka",
+      "description": "In the painted realm, all things are illustrated with pigments. The two of you spent quite a while together in the sanctuary of ink."
+    },
+    "potential5": {
+      "name": "Untainted",
+      "author": "수줍(Sjoop)",
+      "description": "Through the mortal realm she roamed, yet the mortal dust tainted her not."
+    }
+  }
+}

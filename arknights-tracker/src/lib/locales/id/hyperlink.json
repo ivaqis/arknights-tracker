@@ -3,29 +3,69 @@
     "name": "Pagar Tegangan Tinggi",
     "desc": "Pagar tegangan tinggi yang aktif tidak akan bisa dilewati. Telusuri kabelnya, cari sakelarnya, lalu nonaktifkan pagar agar bisa dilewati dengan aman."
   },
+  "ba.crystonchar": {
+    "name": "Debuff Operator: Cryo Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.crystinflict>Cryo Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.frozen>Solidified</>: Tidak bisa bergerak selama durasi tertentu."
+  },
+  "ba.fracture": {
+    "name": "Status Fisik: Breach",
+    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, semua tumpukan <#ba.noguard>Vulnerability</> akan <#ba.consume>dipakai</> sehingga akan menimbulkan <@ba.phy>Physical DMG</> dan untuk sementara meningkatkan <@ba.pd>Physical DMG</> yang diterima musuh."
+  },
   "adv.eswitch": {
     "name": "Perangkat Reaktif",
     "desc": "Mode operasi perangkat reaktif akan berubah saat diserang atau terkena ledakan. Perangkat ini sering dipakai untuk menonaktifkan <#adv.electricFence>Pagar Tegangan Tinggi</> atau mengaktifkan <#adv.jumpMachine>Perangkat Pantul</>."
+  },
+  "item.glassBottle": {
+    "name": "Botol Ametis",
+    "desc": "Botol ini diproduksi dengan mencetak <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "adv.jumpMachine": {
     "name": "Perangkat Pantul",
     "desc": "Operator terkontrol bisa menggunakan Perangkat Pantul untuk melompat dalam jarak yang lebih jauh atau menjangkau tempat tinggi yang tak bisa dijangkau dengan lompatan normal.\nBerdiri saja di atas Perangkat Pantul yang aktif, lalu melompatlah dari situ."
   },
+  "ba.fireenhance": {
+    "name": "Heat Amp",
+    "desc": "Target yang punya Heat Amped akan menimbulkan <@ba.fire>Heat DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
   "adv.powerTerminal": {
     "name": "Nexus Listrik",
     "desc": "Nexus listrik biasanya ditempatkan di ujung jalur transmisi daya. Hubungkan ke jaringan listrik untuk mengalirkan listrik ke fasilitas di sekitarnya. Nexus listrik banyak digunakan untuk mengalirkan listrik ke gerbang dan sakelar. Alirkan listrik ke Nexus listrik menggunakan Menara Relai. Setelah itu, akses kontrol ke gerbang atau sakelar yang terhubung akan terbuka."
+  },
+  "item.plantMossSeed1": {
+    "name": "Benih Buckflower",
+    "desc": "Benih ini dipetik dari <#item.plantMoss1>Buckflower</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Buckflower bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Buckflower. Benih Buckflower dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss1>Petak Buckflower</>."
   },
   "ba.absorb": {
     "name": "Serap",
     "desc": "Cara untuk mengakhiri debuff Physical atau Arts lebih awal. <@ba.key>Serap</> tidak sama dengan <#ba.consume>memakai</>."
   },
+  "ba.crystvul": {
+    "name": "Cryo Susceptibility",
+    "desc": "Target yang terkena Cryo Susceptible akan terkena <@ba.cryst>Cryo DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
   "ba.airborne": {
     "name": "Status Fisik: Lift",
     "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, <#ba.noguard>Vulnerability</> akan bertambah sebanyak 1 tumpuk lagi dan menimbulkan <@ba.phy>Physical DMG</> dan <@ba.poise>Stagger</>."
   },
+  "fac.hub": {
+    "name": "Protokol Automasi Canggih",
+    "desc": "Protokol Automasi Canggih (PAC) adalah fasilitas pusat Pabrik Area Industri Cerdas (AIC). Pengelolaan penyimpanan akan tersedia jika kamu berdiri di Area AIC Inti di PAC."
+  },
+  "item.originium": {
+    "name": "Bijih Originium",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Originium di alam liar. Bisa digunakan untuk pembangkitan daya listrik di Pabrik AIC.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.crystalShell>Origocrust</>."
+  },
+  "item.portSoilSp1": {
+    "name": "Petak Reed Rye",
+    "desc": "Petak Reed Rye bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantSp1>Reed Rye</>.\nPetak ini bisa dibuat menggunakan <#item.plantSpSeed1>Benih Reed Rye</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Reed Rye."
+  },
   "ba.arrowenergy": {
     "name": "Tanda",
     "desc": "Typhoeus akan mendapatkan Tanda saat dia memakai tumpukan <@ba.naturalinflict>Nature Infliction</> kepada musuh atau saat mengakibatkan <#ba.naturalburst>Nature Burst</> kepada musuh. Lalu, skill kombonya bisa mengubah Tanda menjadi <#ba.arrownum>Panah Berburu</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Bubuk Originium Padat",
+    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.originiumPowder>Bubuk Originium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "ba.arrownum": {
     "name": "Panah Berburu",
@@ -42,6 +82,10 @@
   "ba.combo": {
     "name": "Link",
     "desc": "Skill tarung atau ultimate berikutnya yang digunakan oleh tim akan memakai buff Link dan menimbulkan DMG lebih besar, dan skill tarung akan mendapatkan peningkatan lebih besar. Efek yang tipenya sama bisa ditumpuk, tapi hasilnya akan menurun."
+  },
+  "ba.static": {
+    "name": "Immobilization",
+    "desc": "Target yang terkena Immobilization tidak bisa melakukan tindakan apa pun selama durasi efek ini."
   },
   "ba.conduct": {
     "name": "Arts Reaction: Electrification",
@@ -63,9 +107,21 @@
     "name": "Debuff Operator: Corrosion",
     "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.naturalinflict>Nature Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.corrupt>Corroded</>: Tidak bisa melejit dan akan mengalami pengurangan kecepatan gerak selama durasi tertentu."
   },
+  "item.plantSpSeed1": {
+    "name": "Benih Reed Rye",
+    "desc": "Benih ini diproduksi dengan memetik benih tanaman <#item.plantSp1>Reed Rye</> menggunakan fasilitas Pabrik AIC.\nAmbil Benih Reed Rye dan <#item.carbonMtl>Karbon</>, lalu buka layar <#sys.manualCraftField>Penanaman</> untuk membudidayakannya di <#item.portSoilSp1>Petak Reed Rye</>."
+  },
   "ba.crush": {
     "name": "Status Fisik: Crush",
     "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, semua tumpukan <#ba.noguard>Vulnerability</> akan <#ba.consume>dipakai</> dan menimbulkan <@ba.phy>Physical DMG</> dalam jumlah besar."
+  },
+  "ba.guard": {
+    "name": "Protect",
+    "desc": "Target yang punya Protected akan terkena DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
+  },
+  "ba.spellvul": {
+    "name": "Arts Suscept",
+    "desc": "Target yang terkena Arts Susceptible akan terkena <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.crystbreak": {
     "name": "Shatter",
@@ -75,6 +131,14 @@
     "name": "Arts Burst: Cryo",
     "desc": "<#ba.crystinflict>Cryo Infliction</> + <#ba.crystinflict>Cryo Infliction</> akan mengaktifkan <@ba.cryst>Cryo Burst</> yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh."
   },
+  "item.glassCmpt": {
+    "name": "Bagian Ametis",
+    "desc": "Bagian ini diproduksi dengan mengepaskan <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "Batangan logam ini diproduksi dengan merafinasi <#item.ironOre>Bijih Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
+  },
   "ba.crystenhance": {
     "name": "Cryo Amp",
     "desc": "Target yang punya Cryo Amped akan menimbulkan <@ba.cryst>Cryo DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
@@ -83,17 +147,13 @@
     "name": "Arts Infliction: Cryo",
     "desc": "<@ba.crystinflict>Cryo Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.crystinflict>Cryo Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.crystburst>Cryo Burst</>. \n<#ba.spellinflict>Infliction selain Cryo</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</> = <#ba.frozen>Solidification</>"
   },
-  "ba.crystonchar": {
-    "name": "Debuff Operator: Cryo Infliction",
-    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.crystinflict>Cryo Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.frozen>Solidified</>: Tidak bisa bergerak selama durasi tertentu."
-  },
-  "ba.crystvul": {
-    "name": "Cryo Susceptibility",
-    "desc": "Target yang terkena Cryo Susceptible akan terkena <@ba.cryst>Cryo DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
-  },
   "ba.dispel": {
     "name": "Dispel",
     "desc": "Ini akan menghilangkan debuff dari operator."
+  },
+  "item.bbflowerPowder": {
+    "name": "Bubuk Aketin",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.bbflower>Aketin</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "ba.dot": {
     "name": "DMG Over Time",
@@ -103,29 +163,57 @@
     "name": "Amp",
     "desc": "Target yang punya Amped akan menimbulkan DMG yang lebih besar berdasarkan elemen Amped-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
+  "item.plantMossSeed3": {
+    "name": "Benih Sandleaf",
+    "desc": "Benih ini dipetik dari <#item.plantMoss3>Sandleaf</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Sandleaf bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Sandleaf.\nBenih Sandleaf dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss3>Petak Sandleaf</>."
+  },
   "ba.fireburst": {
     "name": "Arts Burst: Heat",
     "desc": "<#ba.fireinflict>Heat Infliction</> + <#ba.fireinflict>Heat Infliction</> akan mengaktifkan <@ba.fire>Heat Burst</> yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh."
-  },
-  "ba.fireenhance": {
-    "name": "Heat Amp",
-    "desc": "Target yang punya Heat Amped akan menimbulkan <@ba.fire>Heat DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.fireinflict": {
     "name": "Arts Infliction: Heat",
     "desc": "<@ba.fireinflict>Heat Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.fireinflict>Heat Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.fireburst>Heat Burst</>. \n<#ba.spellinflict>Infliction selain Heat</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</> = <#ba.burning>Combustion</>"
   },
+  "item.quartzPowder": {
+    "name": "Bubuk Ametis",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
+  },
   "ba.fireonchar": {
     "name": "Debuff Operator: Heat Infliction",
     "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.fireinflict>Heat Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.burning>Combusted</>: Terkena <@ba.fire>Heat DMG</> terus-menerus untuk sementara dan DEF-nya akan diabaikan."
+  },
+  "sys.tacticalItem": {
+    "name": "Item Taktis",
+    "desc": "Item taktis adalah item yang bisa digunakan saat pertarungan untuk memberikan berbagai manfaat dan buff. Setiap item taktis punya kriteria aktivasi dan batas penggunaan yang berbeda-beda.\nSetiap operator bisa dipasangi 1 item taktis. Saat bertarung, jika kriteria aktivasi item taktis sudah terpenuhi, operator akan secara otomatis menggunakan item taktis yang terpasang.\nSetelah semua upaya pemakaian item taktis terpakai dalam satu kali pertarungan, penggunaannya akan dipulihkan satu kali lagi setelah beberapa saat."
   },
   "ba.firevul": {
     "name": "Heat Susceptibility",
     "desc": "Target yang terkena Heat Susceptible akan terkena <@ba.fire>Heat DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
-  "ba.fracture": {
-    "name": "Status Fisik: Breach",
-    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, semua tumpukan <#ba.noguard>Vulnerability</> akan <#ba.consume>dipakai</> sehingga akan menimbulkan <@ba.phy>Physical DMG</> dan untuk sementara meningkatkan <@ba.pd>Physical DMG</> yang diterima musuh."
+  "ba.pulseonchar": {
+    "name": "Debuff Operator: Electric Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.pulseinflict>Electric Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.conduct>Electrified</>: Terkena Stun untuk sementara dan terkena <#ba.spelldmg>Arts DMG</> selama durasi tertentu."
+  },
+  "ba.slow": {
+    "name": "Slow",
+    "desc": "Target yang terkena Slowed akan mengalami penurunan kecepatan gerak untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
+  },
+  "ba.fixeddamage": {
+    "name": "Fixed DMG",
+    "desc": "Fixed DMG mengabaikan DEF dan resistansi target. Besaran Fixed DMG tidak terpengaruh oleh efek peningkatan atau pengurangan apa pun."
+  },
+  "ba.physicalenhance": {
+    "name": "Physical Amp",
+    "desc": "Target yang punya Physical Amped akan menimbulkan <@ba.pd>Physical DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
+  "ba.pulseenhance": {
+    "name": "Electric Amp",
+    "desc": "Target yang punya Electric Amped akan menimbulkan <@ba.pulse>Electric DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
+  "ba.spellenhance": {
+    "name": "Arts Amp",
+    "desc": "Target yang punya Arts Amped akan menimbulkan <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.frozen": {
     "name": "Arts Reaction: Solidification",
@@ -135,25 +223,57 @@
     "name": "Debuff Operator: Solidification",
     "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.crystinflict>Cryo Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.frozen>Solidified</>: Tidak bisa bergerak selama durasi tertentu."
   },
-  "ba.guard": {
-    "name": "Protect",
-    "desc": "Target yang punya Protected akan terkena DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
+  "ba.naturalvul": {
+    "name": "Nature Susceptibility",
+    "desc": "Target yang terkena Nature Susceptible akan terkena <@ba.natur>Nature DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.knockdown": {
     "name": "Status Fisik: Knock Down",
     "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, <#ba.noguard>Vulnerability</> akan bertambah sebanyak 1 tumpuk lagi dan menimbulkan <@ba.phy>Physical DMG</> dan <@ba.poise>Stagger</>."
   },
+  "item.ironEnrPowder": {
+    "name": "Bubuk Ferrium Padat",
+    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.ironPowder>Bubuk Ferrium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
+  },
+  "item.portSoilMoss1": {
+    "name": "Petak Buckflower",
+    "desc": "Petak Buckflower bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss1>Buckflower</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed1>Benih Buckflower</> dan <#item.carbonMtl>Karbon</> di layar <#sys.manualCraftField>Penanaman</>.\nDengan memanen petak yang sudah dewasa, ada peluang lebih besar untuk mendapatkan bonus <#item.plantMossSpc1>Firebuckle</>."
+  },
+  "item.quartzSand": {
+    "name": "Bijih Ametis",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Ametis di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.quartzGlass>Serat Ametis</>."
+  },
+  "sys.manualCraft": {
+    "name": "Crafting",
+    "desc": "Buka panel Ransel untuk mengakses layar Crafting. Berbagai bahan baku bisa diolah menjadi item yang berguna.\nMisalnya, <#item.plantMoss1>Buckflower</> bisa diolah menjadi <#item.plantMossSeed1>Bubuk Buckflower</> untuk memulihkan HP."
+  },
   "ba.lastcombo": {
     "name": "Final Strike",
     "desc": "Final Strike adalah tahap terakhir dari serangan dasar. Saat Final Strike dari operator terkontrol menghantam musuh, Final Strike itu juga akan menimbulkan <@ba.poise>Stagger</> dan memulihkan sebagian Poin Skill (SP)."
+  },
+  "ba.vulnerable": {
+    "name": "Susceptible",
+    "desc": "Target yang terkena Susceptible akan terkena DMG yang lebih besar untuk sementara berdasarkan elemen Susceptible-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.naturalburst": {
     "name": "Arts Burst: Nature",
     "desc": "<#ba.naturalinflict>Nature Infliction</> + <#ba.naturalinflict>Nature Infliction</> akan mengaktifkan <@ba.natur>Nature Burst</> yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh."
   },
+  "ba.noguard": {
+    "name": "Vulnerable",
+    "desc": "Jika skill yang punya <#ba.physicalstatus>Status Fisik</> berhasil menghantam musuh untuk pertama kali, kamu akan mengakibatkan <@ba.noguard>Vulnerability</> alih-alih Status Fisik yang sesungguhnya.\nMusuh yang sedang terkena <@ba.phy>Vulnerable</> bisa terkena <#ba.airborne>Lifted</> dan <#ba.knockdown>Knocked Down</> untuk menambahkan lebih banyak tumpukan Vulnerability (maks 4). Jika <#ba.crush>Crush</> atau <#ba.fracture>Breach</> berhasil menghantam musuh yang sedang terkena Vulnerable, tumpukan Vulnerability akan <#ba.consume>terpakai</>."
+  },
+  "item.ironOre": {
+    "name": "Bijih Ferrium",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Ferrium di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.ironNugget>Ferrium</>."
+  },
   "ba.naturalenhance": {
     "name": "Nature Amp",
     "desc": "Target yang punya Nature Amped akan menimbulkan <@ba.natur>Nature DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
+  "item.originiumPowder": {
+    "name": "Bubuk Originium",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.originium>Bijih Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "ba.naturalinflict": {
     "name": "Arts Infliction: Nature",
@@ -163,21 +283,9 @@
     "name": "Debuff Operator: Nature Infliction",
     "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.naturalinflict>Nature Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.corrupt>Corroded</>: Tidak bisa melejit dan akan mengalami pengurangan kecepatan gerak selama durasi tertentu."
   },
-  "ba.naturalvul": {
-    "name": "Nature Susceptibility",
-    "desc": "Target yang terkena Nature Susceptible akan terkena <@ba.natur>Nature DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
-  },
-  "ba.noguard": {
-    "name": "Vulnerable",
-    "desc": "Jika skill yang punya <#ba.physicalstatus>Status Fisik</> berhasil menghantam musuh untuk pertama kali, kamu akan mengakibatkan <@ba.noguard>Vulnerability</> alih-alih Status Fisik yang sesungguhnya.\nMusuh yang sedang terkena <@ba.phy>Vulnerable</> bisa terkena <#ba.airborne>Lifted</> dan <#ba.knockdown>Knocked Down</> untuk menambahkan lebih banyak tumpukan Vulnerability (maks 4). Jika <#ba.crush>Crush</> atau <#ba.fracture>Breach</> berhasil menghantam musuh yang sedang terkena Vulnerable, tumpukan Vulnerability akan <#ba.consume>terpakai</>."
-  },
   "ba.originium": {
     "name": "Kristal Originium",
     "desc": "Skill kombo Endministrator akan memasangkan Kristal Originium pada musuh dan melumpuhkannya."
-  },
-  "ba.physicalenhance": {
-    "name": "Physical Amp",
-    "desc": "Target yang punya Physical Amped akan menimbulkan <@ba.pd>Physical DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.physicalstatus": {
     "name": "Status Fisik",
@@ -191,41 +299,53 @@
     "name": "Nodus Stagger",
     "desc": "Beberapa musuh kuat punya <@ba.poise>Nodus Stagger</>. Timbulkan cukup banyak <@ba.poise>Stagger</> agar bisa mencapai <@ba.poise>Nodus Stagger</> untuk menyela musuh tersebut dan membuat mereka goyah."
   },
+  "sys.manualCraftDish": {
+    "name": "Makanan & Obat-obatan Berkualitas",
+    "desc": "Makanan & Obat-obatan Berkualitas (M&O Berkualitas) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>. \nTidak seperti <#sys.manualCraftTonic>Makanan & Obat-obatan Darurat</>, item ini hanya bisa dibuat melalui <#sys.manualCraft>Crafting</>."
+  },
   "ba.pulseburst": {
     "name": "Arts Burst: Electric",
     "desc": "<#ba.pulseinflict>Electric Infliction</> + <#ba.pulseinflict>Electric Infliction</> akan mengaktifkan <@ba.pulse>Electric Burst</> yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh."
   },
-  "ba.pulseenhance": {
-    "name": "Electric Amp",
-    "desc": "Target yang punya Electric Amped akan menimbulkan <@ba.pulse>Electric DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  "item.portSoilMoss3": {
+    "name": "Petak Sandleaf",
+    "desc": "Petak Sandleaf bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss3>Sandleaf</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed3>Benih Sandleaf</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Sandleaf."
   },
   "ba.pulseinflict": {
     "name": "Arts Infliction: Electric",
     "desc": "<@ba.pulseinflict>Electric Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.pulseinflict>Electric Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.pulseburst>Electric Burst</>. \n<#ba.spellinflict>Infliction selain Electric</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</> = <#ba.conduct>Electrification</>"
   },
-  "ba.pulseonchar": {
-    "name": "Debuff Operator: Electric Infliction",
-    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.pulseinflict>Electric Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.conduct>Electrified</>: Terkena Stun untuk sementara dan terkena <#ba.spelldmg>Arts DMG</> selama durasi tertentu."
-  },
   "ba.pulsevul": {
     "name": "Electric Susceptibility",
     "desc": "Target yang terkena Electric Susceptible akan terkena <@ba.pulse>Electric DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
+  },
+  "ba.spelldmg": {
+    "name": "Tipe DMG",
+    "desc": "Damage bisa dibagi menjadi <@ba.pd>Physical DMG</>, <@ba.key>Arts DMG</>, dan <@ba.ether>Æther DMG</>.\n<@ba.key>Arts DMG</> bisa dibagi lagi menjadi <@ba.fire>Heat DMG</>, <@ba.pulse>Electric DMG</>, <@ba.cryst>Cryo DMG</>, dan <@ba.natur>Nature DMG</>."
   },
   "ba.return": {
     "name": "Pengembalian SP",
     "desc": "Sebagian SP yang dipakai akan dikembalikan setelah memakai SP dan memenuhi kriteria tertentu. \nPengembalian SP bukanlah “Pemulihan SP” dan tidak akan mengaktifkan efek yang diaktifkan oleh Pemulihan SP. Pemakaian SP yang dikembalikan juga tidak akan memberikan Energi Ultimate."
   },
+  "sys.manualCraftTonic": {
+    "name": "Makanan & Obat-obatan Darurat",
+    "desc": "Makanan & Obat-obatan Darurat (M&O Darurat) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>.\nItem ini bisa didapatkan dengan <#sys.manualCraft>Crafting</> atau dengan menggunakan fasilitas Pabrik AIC."
+  },
   "ba.rossi": {
     "name": "Razor Clawmark",
     "desc": "Skill tarung Rossi akan mengakibatkan status khusus kepada musuh. Target yang terdampak akan terkena <@ba.pd>Physical DMG</> over time, dan terkena Physical DMG Taken serta Heat DMG Taken yang lebih besar."
+  },
+  "item.ironPowder": {
+    "name": "Bubuk Ferrium",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.ironNugget>Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
   },
   "ba.shield": {
     "name": "Perisai",
     "desc": "Perisai bisa menyerap damage selagi masih aktif. Beberapa perisai hanya bisa menyerap tipe DMG tertentu."
   },
-  "ba.slow": {
-    "name": "Slow",
-    "desc": "Target yang terkena Slowed akan mengalami penurunan kecepatan gerak untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
+  "sys.manualCraftField": {
+    "name": "Penanaman",
+    "desc": "Dengan <#sys.manualCraft>Crafting</>, kamu bisa membuat petak tanam dengan benih tanaman dan <#item.carbonMtl>Karbon</>. Petak tanam bisa ditempatkan dan dibudidayakan di Ladang Ramah Lingkungan."
   },
   "ba.speedup": {
     "name": "Haste",
@@ -235,17 +355,13 @@
     "name": "Arts Burst",
     "desc": "<@ba.key>Arts Burst</> bisa diaktifkan dengan menumpuk <#ba.spellinflict>Arts Infliction</> yang elemennya sama. Arts Burst mencakup <#ba.fireburst>Heat Burst</>, <#ba.pulseburst>Electric Burst</>, <#ba.crystburst>Cryo Burst</>, dan <#ba.naturalburst>Nature Burst</>."
   },
-  "ba.spelldmg": {
-    "name": "Tipe DMG",
-    "desc": "Damage bisa dibagi menjadi <@ba.pd>Physical DMG</>, <@ba.key>Arts DMG</>, dan <@ba.ether>Æther DMG</>.\n<@ba.key>Arts DMG</> bisa dibagi lagi menjadi <@ba.fire>Heat DMG</>, <@ba.pulse>Electric DMG</>, <@ba.cryst>Cryo DMG</>, dan <@ba.natur>Nature DMG</>."
-  },
-  "ba.spellenhance": {
-    "name": "Arts Amp",
-    "desc": "Target yang punya Arts Amped akan menimbulkan <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
-  },
   "ba.spellinflict": {
     "name": "Arts Infliction",
     "desc": "<@ba.key>Arts Inflictions</> adalah debuff Arts spesial yang diakibatkan kepada musuh. Ada 4 elemen Arts Infliction: <#ba.fireinflict>Heat Infliction</>, <#ba.pulseinflict>Electric Infliction</>, <#ba.crystinflict>Cryo Infliction</>, dan <#ba.naturalinflict>Nature Infliction</>. \n<@ba.key>Arts Infliction</> yang elemennya sama bisa diakibatkan sebanyak maks 4 tumpuk."
+  },
+  "item.procBattery1": {
+    "name": "Baterai KR Lembah",
+    "desc": "Baterai ini diproduksi dengan mengemas <#item.glassCmpt>Bagian Ametis</> dan <#item.originiumPowder>Bubuk Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk mengalirkan listrik, mengisi daya fasilitas, atau diperdagangkan di pos depan."
   },
   "ba.spellinflictonchar": {
     "name": "Arts Infliction/Arts Reaction pada Operator",
@@ -255,37 +371,25 @@
     "name": "Arts Reaction",
     "desc": "<@ba.key>Arts Reaction</> adalah debuff Arts yang bisa diakibatkan kepada musuh. Arts Reaction mencakup: <#ba.burning>Combustion</>, <#ba.conduct>Electrification</>, <#ba.frozen>Solidification</>, dan <#ba.corrupt>Corrosion</>."
   },
-  "ba.spellvul": {
-    "name": "Arts Suscept",
-    "desc": "Target yang terkena Arts Susceptible akan terkena <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
-  },
   "ba.statuslevel": {
     "name": "Level Status",
     "desc": "Level Status adalah jumlah tumpukan <#ba.noguard>Vulnerability</> atau <#ba.spellinflict>Arts Infliction</> (maks 4) yang <#ba.consume>terpakai</> saat mengaktifkan <#ba.physicalstatus>Status Fisik</> atau <#ba.spellstatus>Arts Reaction</>. Makin tinggi <#ba.statuslevel>Level Status</>, makin kuat <#ba.physicalstatus>Status Fisik</> atau <#ba.spellstatus>Arts Reaction</> yang dihasilkan."
-  },
-  "ba.vulnerable": {
-    "name": "Susceptible",
-    "desc": "Target yang terkena Susceptible akan terkena DMG yang lebih besar untuk sementara berdasarkan elemen Susceptible-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.weak": {
     "name": "Weakness",
     "desc": "Target yang terkena Weakness akan menimbulkan DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Efek yang tipenya sama bisa ditumpuk secara nonlinier."
   },
-  "fac.hub": {
-    "name": "Protokol Automasi Canggih",
-    "desc": "Protokol Automasi Canggih (PAC) adalah fasilitas pusat Pabrik Area Industri Cerdas (AIC). Pengelolaan penyimpanan akan tersedia jika kamu berdiri di Area AIC Inti di PAC."
-  },
   "item.bbflower": {
     "name": "Aketin",
     "desc": "Tanaman ini mengandung zat mudah terbakar dan mudah meledak. Bisa dikumpulkan dari alam liar.\nTanaman ini bisa ditumbuhkan menggunakan fasilitas Pabrik AIC atau dibudidayakan di <#item.portSoilBbflower>Petak Aketin</>.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, tanaman ini bisa dicacah untuk memproduksi <#item.bbflowerPowder>Bubuk Aketin</>."
   },
-  "item.bbflowerPowder": {
-    "name": "Bubuk Aketin",
-    "desc": "Bubuk ini diproduksi dengan mencacah <#item.bbflower>Aketin</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
   "item.bbflowerSeed": {
     "name": "Benih Aketin",
     "desc": "Benih ini dipetik dari <#item.bbflower>Aketin</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Aketin bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Aketin.\nBenih Aketin dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilBbflower>Petak Aketin</>."
+  },
+  "item.plantMoss3": {
+    "name": "Sandleaf",
+    "desc": "Tanaman ini punya daun kasar dan bergerigi. Bisa dikumpulkan dari alam liar.\nTanaman ini bisa ditumbuhkan menggunakan fasilitas Pabrik AIC atau dibudidayakan di <#item.portSoilMoss3>Petak Sandleaf</>.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, tanaman ini bisa dicacah untuk memproduksi <#item.plantMossPowder3>Bubuk Sandleaf</>."
   },
   "item.bottledRecHp1": {
     "name": "Kapsul Buck [C]",
@@ -299,49 +403,9 @@
     "name": "Origocrust",
     "desc": "Kepingan kristal ini diproduksi dengan merafinasi <#item.originium>Bijih Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
-  "item.glassBottle": {
-    "name": "Botol Ametis",
-    "desc": "Botol ini diproduksi dengan mencetak <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.glassCmpt": {
-    "name": "Bagian Ametis",
-    "desc": "Bagian ini diproduksi dengan mengepaskan <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.ironEnrPowder": {
-    "name": "Bubuk Ferrium Padat",
-    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.ironPowder>Bubuk Ferrium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.ironNugget": {
-    "name": "Ferrium",
-    "desc": "Batangan logam ini diproduksi dengan merafinasi <#item.ironOre>Bijih Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
-  },
-  "item.ironOre": {
-    "name": "Bijih Ferrium",
-    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Ferrium di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.ironNugget>Ferrium</>."
-  },
-  "item.ironPowder": {
-    "name": "Bubuk Ferrium",
-    "desc": "Bubuk ini diproduksi dengan mencacah <#item.ironNugget>Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
-  },
-  "item.originium": {
-    "name": "Bijih Originium",
-    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Originium di alam liar. Bisa digunakan untuk pembangkitan daya listrik di Pabrik AIC.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.crystalShell>Origocrust</>."
-  },
-  "item.originiumEnrPowder": {
-    "name": "Bubuk Originium Padat",
-    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.originiumPowder>Bubuk Originium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.originiumPowder": {
-    "name": "Bubuk Originium",
-    "desc": "Bubuk ini diproduksi dengan mencacah <#item.originium>Bijih Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
   "item.plantMoss1": {
     "name": "Buckflower",
     "desc": "Buckflower adalah tanaman yang tumbuh di alam liar dan dikenal karena bunganya yang berwarna cerah.\nTanaman ini juga bisa ditumbuhkan di fasilitas Pabrik AIC atau <#item.portSoilMoss1>Petak Buckflower</>.\nTanaman ini bisa digunakan untuk membuat berbagai <#sys.tacticalItem>item taktis</> atau material lainnya."
-  },
-  "item.plantMoss3": {
-    "name": "Sandleaf",
-    "desc": "Tanaman ini punya daun kasar dan bergerigi. Bisa dikumpulkan dari alam liar.\nTanaman ini bisa ditumbuhkan menggunakan fasilitas Pabrik AIC atau dibudidayakan di <#item.portSoilMoss3>Petak Sandleaf</>.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, tanaman ini bisa dicacah untuk memproduksi <#item.plantMossPowder3>Bubuk Sandleaf</>."
   },
   "item.plantMossPowder1": {
     "name": "Bubuk Buckflower",
@@ -351,14 +415,6 @@
     "name": "Bubuk Sandleaf",
     "desc": "Bubuk ini diproduksi dengan mencacah <#item.plantMoss3>Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain, biasanya melalui penggilingan."
   },
-  "item.plantMossSeed1": {
-    "name": "Benih Buckflower",
-    "desc": "Benih ini dipetik dari <#item.plantMoss1>Buckflower</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Buckflower bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Buckflower. Benih Buckflower dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss1>Petak Buckflower</>."
-  },
-  "item.plantMossSeed3": {
-    "name": "Benih Sandleaf",
-    "desc": "Benih ini dipetik dari <#item.plantMoss3>Sandleaf</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Sandleaf bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Sandleaf.\nBenih Sandleaf dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss3>Petak Sandleaf</>."
-  },
   "item.plantMossSpc1": {
     "name": "Firebuckle",
     "desc": "Firebuckle adalah tanaman yang tumbuh di alam liar dan dikenal karena bunganya yang mencolok.\nAda peluang untuk mendapatkan Firebuckle saat memanen <#item.plantMoss1>Buckflower</> di alam liar.\nTanaman ini bisa digunakan untuk membuat berbagai <#sys.tacticalItem>item taktis</>."
@@ -367,29 +423,9 @@
     "name": "Reed Rye",
     "desc": "Reed Rye adalah tumbuhan panen yang bisa dikumpulkan dari alam liar. Tanaman ini juga bisa didapatkan dengan membudidayakan <#item.portSoilSp1>Petak Reed Rye</>.\nBisa langsung digunakan untuk membuat <#sys.manualCraftDish>Makanan & Obat-obatan Berkualitas</> (M&O Berkualitas)."
   },
-  "item.plantSpSeed1": {
-    "name": "Benih Reed Rye",
-    "desc": "Benih ini diproduksi dengan memetik benih tanaman <#item.plantSp1>Reed Rye</> menggunakan fasilitas Pabrik AIC.\nAmbil Benih Reed Rye dan <#item.carbonMtl>Karbon</>, lalu buka layar <#sys.manualCraftField>Penanaman</> untuk membudidayakannya di <#item.portSoilSp1>Petak Reed Rye</>."
-  },
   "item.portSoilBbflower": {
     "name": "Petak Aketin",
     "desc": "Petak Aketin bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.bbflower>Aketin</>.\nPetak ini bisa dibuat menggunakan <#item.bbflowerSeed>Benih Aketin</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Aketin."
-  },
-  "item.portSoilMoss1": {
-    "name": "Petak Buckflower",
-    "desc": "Petak Buckflower bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss1>Buckflower</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed1>Benih Buckflower</> dan <#item.carbonMtl>Karbon</> di layar <#sys.manualCraftField>Penanaman</>.\nDengan memanen petak yang sudah dewasa, ada peluang lebih besar untuk mendapatkan bonus <#item.plantMossSpc1>Firebuckle</>."
-  },
-  "item.portSoilMoss3": {
-    "name": "Petak Sandleaf",
-    "desc": "Petak Sandleaf bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss3>Sandleaf</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed3>Benih Sandleaf</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Sandleaf."
-  },
-  "item.portSoilSp1": {
-    "name": "Petak Reed Rye",
-    "desc": "Petak Reed Rye bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantSp1>Reed Rye</>.\nPetak ini bisa dibuat menggunakan <#item.plantSpSeed1>Benih Reed Rye</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Reed Rye."
-  },
-  "item.procBattery1": {
-    "name": "Baterai KR Lembah",
-    "desc": "Baterai ini diproduksi dengan mengemas <#item.glassCmpt>Bagian Ametis</> dan <#item.originiumPowder>Bubuk Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk mengalirkan listrik, mengisi daya fasilitas, atau diperdagangkan di pos depan."
   },
   "item.procBomb": {
     "name": "Bahan Peledak Kelas Industri",
@@ -398,33 +434,5 @@
   "item.quartzGlass": {
     "name": "Serat Ametis",
     "desc": "Serat ini diproduksi dengan merafinasi <#item.quartzSand>Bijih Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.quartzPowder": {
-    "name": "Bubuk Ametis",
-    "desc": "Bubuk ini diproduksi dengan mencacah <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
-  },
-  "item.quartzSand": {
-    "name": "Bijih Ametis",
-    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Ametis di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.quartzGlass>Serat Ametis</>."
-  },
-  "sys.manualCraft": {
-    "name": "Crafting",
-    "desc": "Buka panel Ransel untuk mengakses layar Crafting. Berbagai bahan baku bisa diolah menjadi item yang berguna.\nMisalnya, <#item.plantMoss1>Buckflower</> bisa diolah menjadi <#item.plantMossSeed1>Bubuk Buckflower</> untuk memulihkan HP."
-  },
-  "sys.manualCraftDish": {
-    "name": "Makanan & Obat-obatan Berkualitas",
-    "desc": "Makanan & Obat-obatan Berkualitas (M&O Berkualitas) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>. \nTidak seperti <#sys.manualCraftTonic>Makanan & Obat-obatan Darurat</>, item ini hanya bisa dibuat melalui <#sys.manualCraft>Crafting</>."
-  },
-  "sys.manualCraftField": {
-    "name": "Penanaman",
-    "desc": "Dengan <#sys.manualCraft>Crafting</>, kamu bisa membuat petak tanam dengan benih tanaman dan <#item.carbonMtl>Karbon</>. Petak tanam bisa ditempatkan dan dibudidayakan di Ladang Ramah Lingkungan."
-  },
-  "sys.manualCraftTonic": {
-    "name": "Makanan & Obat-obatan Darurat",
-    "desc": "Makanan & Obat-obatan Darurat (M&O Darurat) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>.\nItem ini bisa didapatkan dengan <#sys.manualCraft>Crafting</> atau dengan menggunakan fasilitas Pabrik AIC."
-  },
-  "sys.tacticalItem": {
-    "name": "Item Taktis",
-    "desc": "Item taktis adalah item yang bisa digunakan saat pertarungan untuk memberikan berbagai manfaat dan buff. Setiap item taktis punya kriteria aktivasi dan batas penggunaan yang berbeda-beda.\nSetiap operator bisa dipasangi 1 item taktis. Saat bertarung, jika kriteria aktivasi item taktis sudah terpenuhi, operator akan secara otomatis menggunakan item taktis yang terpasang.\nSetelah semua upaya pemakaian item taktis terpakai dalam satu kali pertarungan, penggunaannya akan dipulihkan satu kali lagi setelah beberapa saat."
   }
 }

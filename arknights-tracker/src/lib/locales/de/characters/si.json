@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Verstärken",
+      "Schadensverurs.",
+      "Kryo"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
+    "expertTags": [
+      "Team-Verwaltung",
+      "Werkzeugmontage"
+    ],
+    "giftPreferTags": [
+      "Wahl des Wuling-Handwerkers"
+    ],
+    "hobbyTags": [
+      "Technologie",
+      "Mode"
+    ],
+    "raceTag": "Unter Verschluss"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Schaffensdrang",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator"
+    },
+    "battleSkill": {
+      "name": "Dimension der Pinselkunst",
+      "description": "Si verursacht <@ba.cryst>Kryo-SDN</> und bewirkt <@ba.key>Künstlerische Absicht</>, <#ba.static>Bewegungsunfähigkeit</> und <#ba.crystinflict>Kryo</> (oder <#ba.fireinflict>Hitze</>, falls sich ein Operator mit dem Element <@ba.fire>Hitze</> in <@ba.key>Team-Position 01</> befindet). Wenn ein Ziel mit <@ba.key>Künstlerische Absicht</> SDN erleidet, wird ein Teil des erlittenen SDN gespeichert. Wenn die Dauer von <@ba.key>Künstlerische Absicht</> abläuft, explodiert der Effekt und verursacht <#ba.fixeddamage>Fix-SDN</> in Höhe des gespeicherten SDN. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Erster Pinselstrich</> geändert.\n<@ba.key>Erster Pinselstrich</>: Kostet <@ba.vup>15</> FP. Si zieht eine <@ba.key>Tintenseele</> aus einem mit <@ba.key>Künstlerische Absicht</> belegten Ziel. Alle Arten von SDN und alle Effekte, die der <@ba.key>Tintenseele</> zugefügt werden bzw. mit der sie belegt wird, werden auch dem ursprünglichen Ziel zugefügt. Die <@ba.key>Tintenseele</> bleibt so lange bestehen, bis die verbleibende Dauer von <@ba.key>Künstlerische Absicht</> abgelaufen ist. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Letzter Pinselstrich</> geändert.\n<@ba.key>Letzter Pinselstrich</>: Kostet keine FP. Lässt die <@ba.key>Tintenseele</> frühzeitig verschwinden. Wenn die <@ba.key>Tintenseele</> verschwindet, kehrt sie zum ursprünglichen Ziel zurück und löst eine Explosion aus, die jener am Ende von <@ba.key>Künstlerische Absicht</> ähnelt.\n<@ba.info>Beim Verursachen von Schaden oder beim Anwenden von Effekten auf sowohl die Tintenseele als auch das ursprüngliche Ziel wird jeweils nur eine Instanz des Schadens oder Effekts verursacht/angewendet. Wenn das ursprüngliche Ziel während der Dauer der Tintenseele besiegt wird, verbindet sie sich mit einem anderen Gegner im Kampf und belegt diesen mit Künstlerische Absicht. Dadurch wird die Dauer von Künstlerische Absicht nicht zurückgesetzt. Wenn ein Ziel mit Künstlerische Absicht besiegt wird, ohne dass ihm seine Tintenseele entzogen wurde, hinterlässt das besiegte Ziel an seiner Position eine Tintenseele.</>",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "immobilizationDurationS": "Dauer: Bewegungsunfähigkeit (Sek.)",
+      "artfulIntentDurationS": "Dauer: Künstlerische Absicht (Sek.)",
+      "dmgRecordRatio": "SDN-Aufzeichnungs-Verhältnis",
+      "stagger": "Taumeln",
+      "artfulIntentBurstStagger": "„Künstlerische Absicht“-Explosions-Taumeln"
+    },
+    "comboSkill": {
+      "name": "Vision vor Auge",
+      "description": "KOMBOAUSLÖSER: Wenn die <#ba.crystinflict>Kryo-</> oder <#ba.fireinflict>Hitzekumulierung</> eines Gegners <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wird.\nSi beschwört einen <@ba.key>Tinten-Lung</>, der <@ba.cryst>Kryo-SDN</> verursacht. Je mehr Technikkumulierungen von nur einem Ziel <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wurden, desto höher der SDN.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Multiplikator-Steigerung pro verbrauchter oder absorbierter Kumulierung",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+    },
+    "ultimate": {
+      "name": "Spielverderber verboten",
+      "description": "Si beschwört einen <@ba.key>Riesigen Tinten-Lung</> aus ihrem Gemälde. Dieser verursacht <@ba.cryst>Kryo-SDN</> und verleiht dem gesamten Team vorübergehend <#ba.crystenhance>Kryo-Verstärkung</> und <#ba.fireenhance>Hitze-Verstärkung</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "amp": "Verstärkung",
+      "ampDurationS": "Dauer: Verstärkung (Sek.)"
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Intellekt +10.",
+        "Operator-Intellekt +15.",
+        "Operator-Intellekt +15.",
+        "Operator-Intellekt +20."
+      ],
+      "name": "Scharfer Verstand"
+    },
+    "talent1": {
+      "levels": [
+        "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Nach dem Wirken beträgt die Kombofertigkeit-Abklingzeit des Operators auf <@ba.key>Teamposition 1</> <@ba.vup>{coolDown:0}</> Sek.",
+        "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Nach dem Wirken beträgt die Kombofertigkeit-Abklingzeit des Operators auf <@ba.key>Teamposition 1</> <@ba.vup>{coolDown:0}</> Sek."
+      ],
+      "name": "Gönnerschaft der Proxy"
+    },
+    "talent2": {
+      "levels": [
+        "Wenn die <@ba.key>Tintenseele</> verschwindet, erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</> für {duration_speedup:0} Sek.",
+        "Wenn die <@ba.key>Tintenseele</> verschwindet, erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</> für {duration_speedup:0} Sek."
+      ],
+      "name": "Blütenreiner Pinsel"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 20 % zu steigern.",
+        "Dem Empfang zuweisen, um die Operator-Hinweissammeleffizienz um 30 % zu steigern."
+      ],
+      "name": "Ob’s wohl die Geister waren"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+        "Dem Empfang zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
+      ],
+      "name": "Tintengeist-Gehilfe"
+    },
+    "files": {
+      "main": "DECKNAME: Si \nGESCHLECHT: Weiblich \nAUTHENTIFIZIERUNG: Hongshan-Akademie der Wissenschaften \nGEB.: 15. September \nSPEZIES: Unter Verschluss \n[ORIPATHIE-INFEKTIONSSTATUS] \nOripathie-negativ, basierend auf ärztlichen Befunden. \n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG] \nPHYSIOLOGISCHE STÄRKE: ■■ \nKAMPFFERTIGKEIT: Ausgezeichnet \nTAKTISCHER SCHARFSINN: Standard \nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Mangelhaft",
+      "humanResources": "Si, eine Feranmut-Proxy ohne offiziellen Arbeitgeber, pflegt schon lange Verbindungen zur Hongshan-Akademie der Wissenschaften. Auf persönliche Empfehlung des Endministrators wurde sie Teil von Endfield Industries und stellt aktuell ihr Wissen auf dem Gebiet der theoretischen Forschung und der praktischen Anwendung neuer Erkenntnisse über Feranmuts zur Verfügung. \n \n Si unterwirft sich selten den regulären Personalabläufen bei Endfield. Die einzige Ausnahme findet sich in meinem Selbstdiagnose-Logbuch. Wie besprochen kam Si für ein Gespräch mit mir an Bord der Dijiang. Sie beantwortete alle Fragen, unterschrieb alle Formulare und verschwand sofort nach Abschluss der Formalitäten. Mein Verarbeitungsmodul wertete dieses Ereignis als unvorhergesehen und gab einen Alarm aus. Kurze Zeit später kam Si erneut in mein Büro, wischte einen Tropfen Tinte von meinem Display und murmelte: „Interessant … aber nicht interessant genug.“ Später erklärte sie, dass es sich bei der „Si“, die mir gegenüber gesessen hatte, um ein Selbstporträt gehandelt hatte. Anscheinend wollte sie wissen, wie ich reagieren würde. Ihrer Bemerkung nach zu urteilen, entsprach meine Reaktion nicht ihren Erwartungen. \n Es war nur ein harmloser Scherz. Dieser Vorfall bietet interessante Einblicke in Sis einzigartige Eigenschaften. Zwar verfügt sie über Kräfte, die über die Grenzen jeder wissenschaftlichen Erklärung hinausgehen, aber manchmal zeigt sie ein Verhalten, wie es untypisch für Feranmut-Proxys ist. Auf Talos-II hat man nur sehr selten die Gelegenheit, einer Feranmut-Proxy zu begegnen. Ich empfehle meinen Kollegen aus der Personalabteilung daher dringend, jede Chance für eine Interaktion mit ihr zu nutzen. Vielleicht finden wir irgendwann die Regeln heraus, nach denen ihre Stimmung umschwingt. \n – Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries\n ",
+      "file1": "Nach ihrem Beitritt zu Endfield hat kaum ein Operator mit Si zu tun gehabt. Ihr Profil war weitgehend leer, und die meisten von uns hätten die Feranmut-Proxy kaum mit einem anderen Wort als „rätselhaft“ beschreiben können. Die Personalabteilung hat sogar die Person, die sie an uns empfohlen hat, gebeten, sie zur Kooperation anzuregen, aber allem Anschein nach konnte nicht einmal der Endministrator zu ihr durchdringen … Erst nachdem eine unserer Logistik-Operatorinnen sie in einem auf Feuertopf spezialisierten Restaurant in Wuling City antraf, änderte sich dieser Umstand. \nDie beiden begegneten einander rein zufällig und wussten nicht, wer die jeweils andere war. Zufällig waren sie für das gleiche Event zur Verkostung neuer Gerichte dort, saßen am gleichen Tisch und probierten Feuertopf-Brühen mit seltsamen Namen wie „Limetten-Bitterkürbis-Brühe“, „Fischkopf-Schneckenpfeffer-Sud“ und „Klare Baumnymphen-Brühe“. Im Laufe des Gesprächs erfuhr die Logistik-Operatorin, dass Si das Restaurant besucht hatte, um neue Ideen für den Koch ihres Gasthauses zu sammeln. Daraufhin lobte sie ihren guten Geschäftssinn und ihren für eine so junge Person bemerkenswert guten Geschmack. Si war überaus erfreut und lud die Operatorin kurzerhand zum Essen ein. Die Operatorin erkannte ihre neue Bekanntschaft erst wieder, als sie in der Personalabteilung über ein Foto von Si stolperte … Nach diesem Vorfall begegneten immer mehr Operatoren Si an den seltsamsten Orten, etwa bei einem Event zur Veröffentlichung neuer Chubby Lungs, im Robotik-Erlebniscenter in La Fantoma … die Liste ließe sich fortführen. Zwei Operatoren gerieten über die Einzelheiten einer Sichtung sogar in einen hitzigen Streit. Beide pochten darauf, Si zur exakt gleichen Zeit gesehen zu haben, allerdings behauptete einer, sie sei eine vorlaute Mitbieterin gewesen, die sich das letzte Objekt bei einer Auktion mit Hexenstäben aus Seš’qa gesichert hatte, während sie dem anderen Bericht zufolge mit den Schneepriestern von Sami trinken gewesen sein soll. Die Orte der beiden angeblichen Sichtungen liegen mehrere tausend Kilometer voneinander entfernt, zudem befindet sich einer über und der andere unter der Erde. Solche Geschichten hört man sonst nur in alten Legenden aus Yan. Will man den Operatoren also Glauben schenken, wirkt Si weniger wie eine zurückgezogene Feranmut-Proxy und mehr wie ein quirliges Kind, das nicht zu Hause stillsitzen kann. \nSeit diesen Sichtungen bringen einige Operatoren den Mut auf, den Endministrator zu bitten, Si zu Veranstaltungen wie dem Vorhut-Filmabend einzuladen … Diese Einladungen hat sie tatsächlich angenommen. Nach und nach begriffen wir, dass dies eben ihr Wesen ist. Sie ist verspielt und unvorhersehbar und bringt nur wenig Geduld für Personen auf, die sie als sturköpfig oder wenig anpassungsbereit wahrnimmt. Neue Dinge hingegen scheinen eine nahezu unwiderstehliche Anziehungskraft auf sie auszuüben und sie genießt sie mit einer kindlichen Neugier. Vielleicht … ist sie in Feranmut-Jahren gemessen wirklich noch sehr jung. \n\nEin Ratschlag von Operator Silberfluss: Worte wie „Kind“ oder „jung“ sollten im Gespräch mit ihr vermieden werden. Ihr Alter ist ein empfindliches Thema für Lady Si. Sie besteht darauf, „beinahe so alt zu sein wie die Zivilisation auf Talos-II.“ Außerdem sind wir alle in ihren Augen „kleine Kinder“. \n\nEin Ratschlag von Operatorin Arkan: In kritischen Angelegenheiten solltet ihr alle der Proxy vertrauen, genau wie wir es tun. Ganz egal, wie sie sich sonst verhalten mag, ihre Fähigkeiten rechtfertigen dieses Vertrauen allemal. Sie mag es außerdem nicht, wenn man ihr Können in Frage stellt. \n\nRätselhafter Ratschlag eines anonymen Besuchers: Wenn sie einen Wutanfall hat, sollte der Endministrator hinzugeholt werden.",
+      "file2": "Trainingslogbuch der Yinglung-Sondereinheit III \nOrt: Unbekannte Wildnis, Zuständigkeitsbereich der HAW \nZiel: Geplantes Treffen der Proxy mit den neuesten Rekruten \nNotizen: Die Proxy ist ohne vorherige Ankündigung nicht erschienen, daher wurde anstelle des Treffens ein normaler Trainingsdrill veranstaltet. Der Operator, der die Trainingsmission anführte, versicherte den neuen Rekruten, dass die Proxy zwar bei der Planung und Gründung der YSE geholfen hatte, jedoch keine offizielle Position innerhalb der HAW bekleidete. Beide Seiten pflegen partnerschaftliche Beziehungen, und viele Mitglieder der YSE begegnen ihr während ihrer Dienstzeit kein einziges Mal. \n\nTrainingslogbuch der Yinglung-Sondereinheit VIII \nOrt: Tanjian-Halle, HAW \nZiel: Vortrag der Proxy über die Anwendung von Feranmut-Energie \nNotizen: Die Proxy ist ohne vorherige Ankündigung nicht erschienen. Kurzfristig organisierte sie Ye Minghe, den Kapitän der befriedeten Lüfte der Kaiserlichen Wächter, und den Endministrator von Endfield Industries an ihrer Stelle als Dozenten. Der Unterrichtsinhalt wurde angepasst, und der Vortrag drehte sich um den Austausch von Speerkampf-Techniken und die Anwendungen von Originium. \n\nTrainingslogbuch der Yinglung-Sondereinheit XXI \nOrt: Eine spontan von der Proxy gemalte Rolle \nZiel: Vortrag der Proxy über die Anwendung von Feranmut-Energie \nNotizen: Die Proxy war ungewöhnlich gut gelaunt und überzog den Vortrag um mehr als drei Stunden. Sie nahm sich sogar die Zeit, mehr als ein Dutzend verschiedene Kräfte zu demonstrieren, von denen eine erstaunlicher war als die andere. Zu ihren „kleinen Tricks“ gehörte unter anderem das Bewegen von Stein und Holz Kraft ihrer Gedanken, um einen Irrgarten zu erschaffen, aus dem niemand entkommen konnte, das Schmieden von Schilden und Schwertern aus dem Nichts, als würde sie Himmelswaffen aus der Leere heraufbeschwören, das Pflanzen eines Samenkorns, das innerhalb weniger Augenblicke gedieh, verwelkte und direkt wieder aufkeimte, das Durcheinanderbringen des Zeit- und Raumgefühls aller Anwesenden, das zum Leben Erwecken von Tintenzeichnungen, die Auflösung der Grenze zwischen Illusion und Realität und das Verwandeln von Quadraten in Kreise als wäre die Realität ihrem Wort untertan … Wir selbst können natürlich nur auf einen Bruchteil dieser Kräfte zugreifen und benötigen dafür spezielle Ausrüstung. So mühelos wie die Proxy werden wir dazu nie in der Lage sein. Dennoch steht ihre Macht auf dem Schlachtfeld außer Frage. Würde sie ihre Kräfte in vollem Umfang zur Verfügung stellen, könnte die YSE unzählige komplizierte Missionen ausführen. \nDennoch muss erwähnt werden, dass man sich nicht immer auf diese Kräfte verlassen kann. Manchmal kommt es vor, dass ein riesiger Schild unerklärlicherweise ein großes Loch aufweist oder dass die gemalte Sonne sich plötzlich in einen Tintenklecks verwandelt, der am Himmel hängt und Tinte auf den Boden tropfen lässt. Solche Vorfälle ereignen sich nicht oft, konnten aber dokumentiert werden. Die Proxy ist stets darum bemüht, solche Missgeschicke schnell zu verbergen. Ihre typischen Strategien sind etwa, einen Vorfall durch einen Hustenanfall zu kaschieren, plötzlich einen Fluss zu malen und zu bestimmen, dass das Training sich nun um Kämpfe entlang eines Ufers dreht oder das Training einfach auf der Stelle zu beenden … \n\nNichts davon sollte eine Überraschung darstellen. Eine Fertigkeit zu haben, ist nicht das Gleiche, wie eine Fertigkeit zu meistern. Sowohl im Kampf als auch im Bereich der Handwerkskünste muss man viele Jahre lang trainieren, um wahre Meisterschaft zu erlangen. Die Umstände der Proxy sind natürlich andere. Sie hat erst vor Kurzem die Macht des Feranmut-Sui und seiner zwölf Proxys erlangt. Ihre Beiträge sind dennoch nicht von der Hand zu weisen. Ihr ist es zu verdanken, dass die YSE existiert und unsere Heimat bis heute beschützt. \n– Arkan, YSE-Einheitsleiterin",
+      "file3": "Der Sui-Regler gehört zu den neueren Spezialorganisationen der HAW. Zwar trägt die Organisation den gleichen Namen wie ihre Entsprechung auf Terra, ihre Ziele sind jedoch grundsätzlich verschieden. Die ursprüngliche Organisation wurde nach der „Großen Jagd“ in Yan gegründet, um über den schlafenden Feranmut-Sui zu wachen. Ihre untergeordneten Truppen, die „Kerzenhalter“ waren dafür verantwortlich, die Aktivitäten von „Suis“ zwölf Proxys zu überwachen und auf sämtliche Krisen zu reagieren, die diese auslösten. Beinahe eintausend Jahre lang blieben die Beziehungen zwischen dem Sui-Regler und den Proxys angespannt. \nAn der HAW hingegen stellt der Sui-Regler eine Organisation zur Aufklärung und zur technischen Unterstützung dar. Der Schwerpunkt liegt auf der Entwicklung von Technologien auf der Grundlage von Feranmut-Energie und auf der Unterstützung der Akademie bei militärischen und zivilen Einsätzen. Die Feranmut-Proxy Si war direkt in die Gründung des Sui-Reglers und später auch der YSE als ihm untergeordnete Organisation involviert. Sie selbst scheint diese Arbeit zu genießen. Für den Sui-Regler fungiert Si als eine Art schrullige Aufseherin. \n\nSonderbericht \n„Ich fürchte, dass selbst die Weiten von Talos-II eines Tages zu eng für meine kleine Schwester werden könnten. Noch ist sie allerdings jung und hat einen weiten Weg vor sich. Ich habe sie daher nach Hongshan geschickt, um ihren Horizont zu erweitern. Ich vertraue darauf, dass Tianshi Tan sich um sie kümmern wird. Sollte es jemals etwas geben, das ich tun kann, um diesen Gefallen zu erwidern, werde ich sofort persönlich zur Stelle sein.“ \n„Mehr hat mein Bruder nicht geschrieben?“ \n„Reicht das nicht? Du bist die jüngste Proxy. Niemand kann sagen, was aus dir werden wird, wenn deine Kräfte vollständig erwachen. Solltest du so unberechenbar werden, wie Sui es einst war, gäbe es vermutlich niemanden auf Talos-II, der dich in Schach halten könnte. Also solltest du lieber jetzt Zeit mit uns verbringen. Das wird sowohl dir als auch der HAW gut tun. Außerdem … hat dein Bruder angedroht, sofort vor meiner Tür zu stehen, sollte jemand hier dir auch nur ein bisschen Kummer bereiten. Ich bin eigentlich nur froh, dass er mit dem Brief kein Messer mitgeschickt hat!“ \n„S-so hat er das nicht gemeint … Du bist die erfahrenste Tianshi an der HAW … Und i-ich habe dich immer respektiert!“ \n„Haha, das klingt doch schon besser. Du bist wirklich viel umgänglicher als deine Geschwister. Also, hast du eine Entscheidung wegen dieser Sondereinheit getroffen? Du bist jetzt schon lange genug in Hongshan.“ \n„Du hast sogar den Endmin geschickt, um mir gut zuzureden. Ich bin hier. Beantwortet das deine Frage nicht?“ \n„Ausgezeichnet. Dann soll dies die erste Amtshandlung des Si-Reglers auf Talos-II sein.“ \n„Des Si-Reglers?!“ \n„Hmm … Suis Geschichte ist jetzt Teil der Geschichte von Terra. Deine Brüder und Schwestern können nun ebenfalls so leben, wie sie es wollen. Da erscheint der Name ‚Sui-Regler‘ doch irgendwie unpassend …“ \n„Wir sollten lieber bei Sui-Regler bleiben! Si-Regler klingt grauenhaft. Als ob der ganze Aufwand nur dazu dienen würde, mich im Auge zu behalten.“ \n„Guter Einwand. Dann behalten wir also den alten Namen.“ \n„Was ist mit der Sondereinheit?“ \n„Diese Jungspunde streiten noch immer über Namensvorschläge. Ich würde sagen, dass es diese Einheit nur euretwegen gibt, also könnte sie doch … die ‚Yinglung-Sondereinheit‘ heißen!“ \n„Cool! Der Name gefällt mir!“",
+      "file4": "Als der Staub sich endlich legte, sollte Feranmut-Sui nie mehr erwachen. \n Sein Körper war verschwunden. Sein Wille verstummte inmitten des Chaos. Sein Stolz, sein Zorn, sein Hass und sein Trotz – alles, was ihn einst ausgemacht hatte, verblasste nach dem Verlust seines Gefäßes. Ohne seinen Körper blieb von ihm nichts als ein Kind, das sich einer einzigen Frage stellen musste: \n „Wer bin ich?“ \n Die Leere gab ihm keine Antwort. Da wurde ihm klar, dass er vielleicht nicht länger das Recht besaß, diese Frage zu beantworten. \n Also ließ er los. Er hatte ganze Zeitalter im Krieg mit der Welt und sich selbst verbracht. Nun endlich war er selbst zum Denken zu müde. In der Stille fand er eine Erlösung, die er nie zuvor gekannt hatte. \n …\n Sui hatte jedoch viel zu lange existiert und war viel zu mächtig geworden, um einfach so zu verschwinden. Zu viele Fragmente seiner Selbst waren über die Zeitalter verstreut. Auch, nachdem sein Bewusstsein ins Exil geschickt worden war, erhob sich manchmal etwas auf ganz natürliche Weise. Wie Morgentau, der sich auf Blättern sammelt, ehe er hinabfällt … \n Plötzlich fiel etwas. \n Das Geräusch erregte die Aufmerksamkeit eines Proxy, der noch nicht aufgebrochen war. \n Niemand kann sagen, ob aus Mitgefühl oder Misstrauen heraus, aber er nahm den makellosen Funken eines Bewusstseins in beide Hände. Es konnte nicht sprechen und verfügte über keinerlei Kräfte. Man konnte kaum erkennen, ob es überhaupt noch über eine echte Verbindung zu Sui verfügte. Zerbrechlich und flüchtig flatterte es wie eine Kerzenflamme, hell und makellos rein. \n Zum ersten Mal in ihrer Existenz waren die Proxys sich unsicher. \n Sie alle wussten, dass es sich um die letzten Reste des Feranmut-Sui handelte. Hätten sie jede Spur von ihm auslöschen wollen, so hätten sie dies mit nur einem Gedanken tun können. \n Doch das Bewusstsein lag ruhig in ihren Händen. \n War es wirklich derselbe Sui, den sie gekannt hatten? Der stolze Feranmut hätte sich vor seinen Proxys niemals so verletzlich gezeigt, nicht einmal, um sich selbst zu retten. Sollte es sich bei diesem Bewusstsein um ein neues Leben handeln … Dunkel erinnerten die Proxys sich daran, wie es gewesen war, ehe sie erstmals Bewusstsein erlangt hatten. \n Jetzt gerade war das Bewusstsein auf der Suche. Es kämpfte darum, eine Frage zu beantworten: Was macht mich zu dem, der ich bin? Als die letzten Reste seines einstigen Selbst auf diese Frage keine Antwort mehr geben konnten, wandte das kleine Bewusstsein sich instinktiv an die anderen seiner Art. \n Die Kinder, die er einst erschaffen hatte, um an der Seite der Sterblichen zu leben, wurden nun zu seinen Wegweisern. Die zwölf Proxys konnten diese Ironie nicht ignorieren. All ihre Beratschlagungen blieben ergebnislos. Dann drang eines Tages eine Stimme in die Stille ihres Bewusstseins. \n Sie war leise. Schwach. Und dabei auf überraschende Weise unschuldig. \n „Wer bin ich?“ \n „Wo bin ich?“ \n „Wer seid ihr?“ \n …\n Letztendlich beschlossen die Proxys, das kleine Bewusstsein durch das Kosmische Tor zu einer unbekannten Welt zu schicken. Ihnen war bewusst, dass selbst ein winziges Fragment des Feranmut, der im Grab des Sui ruhte, unzählige Schicksalsfäden in den Händen halten musste. Aber wenn es … wenn sie nichts von alldem wusste, dann war sie nicht länger er. \n Vielleicht würde sie die Antwort, nach der sie suchte, nie in jenem Land finden, in dem Sui selbst einst gescheitert war. In einer neuen Welt könnte diese neue Seele vielleicht herausfinden, was es wirklich bedeutete, zu sein. Vielleicht würde sie ihre ganz eigene Antwort auf diese Frage geben können. \n So kam es, dass ein kleiner Funke eines Bewusstseins auf Talos-II ankam. Bei sich trug sie … nun ja … dieses und jenes und von allem etwas. Ernsthaft, sie hatten ihr viel zu viel eingepackt. Sie legten mir … nein, ihr, immer mehr Zeug in die Hände. \n Was danach geschah … nun, das ist eine andere Geschichte."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Team-Verwaltung",
+        "description": "Team-Verwaltung: Weisheit des Gastwirts\n„Gut Yuanyuan ist eine Traditionsmarke, und ich bin auch voll durchgestiegen, wie guter Service auszusehen hat. Ab und zu besuchen mich Leute von der HAW, um von mir zu lernen.“"
+      },
+      "expert2": {
+        "name": "Werkzeugmontage",
+        "description": "Werkzeugmontage: Was auch immer Si verlangt\nDas Feuer schmilzt für göttliche Handwerkskunst, die Pinselstriche erschaffen ganze Welten. Sie lässt sich von Dingen in ihrer Umgebung oder sogar von ihren Träumen inspirieren. Wenn sie es sich vorstellen kann, wird sie es erschaffen. Das Verfahren ist nicht narrensicher, aber lass es dir vor ihr nicht anmerken."
+      },
+      "hobby1": {
+        "name": "Technologie",
+        "description": "Technologie: Frühe Prototyp-QS\n„Intelligente Möbel können meiner Truppe aus überaus gehorsamen Warengeistern nicht das Wasser reichen.“"
+      },
+      "hobby2": {
+        "name": "Mode",
+        "description": "Mode: Experimentelle Kosmetikerin\nEin selbst verliehener Titel. In Wahrheit wagte es niemand, Si für eine solche Arbeit einzusetzen. Das Team von Gut Yuanyuan hat enthüllt, dass Si die Tintengeist-Gesichtsbemalung nutzt, um ihre Fertigkeiten im Auftragen von Kosmetika zu üben."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Einsatzvorbereitung 1",
+        "text": "Hmpf. Denkst du nur an mich, wenn es Probleme gibt?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Einsatzvorbereitung 2",
+        "text": "Ich werde dir wieder helfen. Aber denk daran, zu bezahlen, sobald wir wieder im Gasthaus sind."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Sprich mich jetzt nicht mehr an. Ich muss mich konzentrieren."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Komm schon, sag etwas. Ich kann mich nicht konzentrieren, wenn es so still ist."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Waffe wird gewechselt",
+        "text": "Du hast die ausgewählt? Hm … Wie wäre es mit zwei Pinselstrichen? Die gehört jetzt mir, du kriegst sie nicht zurück."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Sogar meine Flügel wurden beim Entwurf berücksichtigt … Ähem. S… Nicht schlecht, aber ich werde deshalb nicht netter sein."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Fähigkeitsmatrix-Aktivierung",
+        "text": "Ah! Die Muse küsst mich! Steh da nicht so rum, los jetzt! Gib mir einen Bogen Papier!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Sieh sie dir mehrfach an und präge dir alles gut ein … Warum lächelst du? Ich habe mit dir geredet!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Operator-Beförderung 1",
+        "text": "Nur, damit eins klar ist: Ich bin nur Endfielder ehrenhalber, also erwarte nicht, dass ich alles für dich erledige. Außerdem ist Endfield hoffentlich so spannend, wie du behauptet hast."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Operator-Beförderung 2",
+        "text": "Gib mir mal deine Hand, ich gebe dir einen meiner Stempel. So … Das wäre erledigt. Wage es nicht, den abzuwischen, bis ich entscheide, dass es Zeit für einen neuen wird."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Operator-Beförderung 3",
+        "text": "Schreib die Worte des Endmins auf, Tintengeist. Jedes. Einzelne. Wort. Die HAW möchte, dass ich eine Rede für die neuen Yinglungs halte. Das wird noch nützlich sein."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Operator-Beförderung 4",
+        "text": "Du beförderst mich immer wieder, aber solltest du je eines deiner Versprechen nicht halten, gehe ich zurück ins Gasthaus. Du musst deine persönlichen Angelegenheiten von Endfield trennen. Was zwischen uns geschieht, bleibt unter uns."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Warte, halt still! Die Tinte ist doch noch gar nicht trocken … Dieses Bild ist für dich. Was ich gemalt habe, ist nicht wichtig. Wichtig ist, dass mein Stempel sich darauf befindet! Wage es ja nicht, meinen Namen noch einmal zu vergessen!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "Warten 1",
+        "text": "Erst das, dann dies … Alles klar, und einrollen. Ähem. Dein Entwurf ist fertig. Manchmal muss man Geduld haben!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "Warten 2",
+        "text": "Du bist seit Jahren an meiner Seite, warum hast du immer noch nichts von mir gelernt? Zum Beispiel, meine Unterschrift zu fälschen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Zuweisung zur Anlage",
+        "text": "Du hast mich hierhergelockt, damit du dich jetzt entspannen kannst? Vergiss es. Du bleibst schön hier bei mir."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Gruß 1",
+        "text": "Wolltest du gerade einfach an mir vorbeilaufen? Ignorierst du mich etwa?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Gruß 2",
+        "text": "Also, dein Versprechen von vor zehn Jahren. Wirst du es noch einlösen?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Dijiang-Geplauder 1",
+        "text": "Ich? Ist dir langweilig? Siehst du das Bullauge da drüben? Ich habe ein Gemälde mit dem Titel „Reisende von Talos-II“ darauf gemalt … Aber jemand hat sich wirklich Zeit gelassen, um herzukommen, darum habe ich alles entfernt."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Dijiang-Geplauder 2",
+        "text": "Warum tauchst du immer hier auf, wenn ich auf der Dijiang vorbeischaue? Was, du hast da vorne an der Ecke einen Tintengeist gesehen …? Ah, hm … Du scheinst dir ja Mühe zu geben, mir über den Weg zu laufen!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich werde ein Porträt von dir malen und es bei mir aufhängen. Das sollte dir die Warengeister vom Hals halten, wenn du meine Rolle allein besuchst … Hmm? Natürlich habe ich noch eins von vor zehn Jahren. Aber damals hast du nie irgendetwas im Gesicht gehabt."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Dijiang-Geplauder 4",
+        "text": "Karten, Kissen, Knabberkram, Heizofen, Muntermacher-Kräutertee … Oh. Ich erstelle nur eine Liste der Dinge, die ich mit nach Sami nehmen will. Reisen sind immer eine gute Inspirationsquelle. Überleg mal, ob dir auch noch etwas einfällt … Natürlich kommst du mit. Warum sollte ich dir sonst von dieser Reise erzählen?! Nein, du Dummerchen, ich habe genug Tintengeister, die meine Taschen tragen. Dafür brauche ich dich nicht."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Dijiang-Geplauder 5",
+        "text": "Ich bin Perlica über den Weg gelaufen. Das kleine Fräulein Aufseherin ist genau wie du … Die Arme gibt sich alle Mühe, wach zu bleiben, obwohl sie buchstäblich im Stehen einschlafen könnte … Und du bist genauso! Hör auf, die Nächte durchzuarbeiten und leg dich schlafen. Wie kann man sich nur so überarbeiten, dass man danach zehn Jahre schlafen muss? Ernsthaft."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Dijiang-Geplauder 6",
+        "text": "Wow …Von hier aus kann man fast die Hälfte von Talos-II sehen … Ich frage mich, wohin die beiden gegangen sind … Waaas?! Wer hat behauptet, dass ich meine Geschwister vermisse? Guck mich nicht so an …! *seufz* Na gut. Vielleicht vermisse ich sie ein bisschen. Aber nur ein bisschen …"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Geschenke anbieten",
+        "text": "Hier. Ein kleines Geschenk für dich, das habe ich vorhin skizziert. Also reagier nicht ü… Ah! Das war das falsche Blatt! Dieses Selbstporträt war nur eine Übung. GIB DAS WIEDER HER!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Geschenke annehmen",
+        "text": "Äh … S-seit wann bist du so förmlich und … HEY! Wage es nicht, das wiederhaben zu wollen!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Vertrauensgespräch 1",
+        "text": "Schau mal im Gasthaus vorbei, wenn du Zeit hast. Wir holen das Willkommens-Essen nach, das du verpasst hast. Die Küche hat alle seltenen Zutaten zusammen getragen, die wir auftreiben konnten. Moment … Wem soll ich deinen Dank ausrichten?! Aha, der gesamte Dank gebührt also den Angestellten. Tja, dann hat ihre herzlose Chefin wohl keine Wahl, als sie daran zu hindern, so viele wertvolle Zutaten zu verplempern! HMPF!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Vertrauensgespräch 2",
+        "text": "Riech mal. Siehst du die Klippe da drüben? Dort wachsen die Teepflanzen. Der Tee ist wirklich gut, aber ich muss meine besten Tintengeister schicken, um ihn zu ernten. Zehn Jahre Arbeit sind in dieses kleine Glas geflossen. Du hast heute also wirklich Glück … Hey. Warum hast du Tinte an den Zähnen? Moment … An meinen ist auch welche …? T-trink einfach deinen Tee. Jeden Tropfen davon. Und guck mich nicht so an!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Vertrauensgespräch 3",
+        "text": "Halt! Das wäre alles für heute. Hm. Du spielst Weiqi inzwischen recht gut. Aber mein Bruder ist immer noch der beste Spieler auf Talos-II. Mit ihm kannst du nicht annähernd mithal… Was? Das war das dritte Mal diesen Monat, dass ich meine Geschwister erwähnt habe? I-ich habe nie gesagt, dass ich mir wünsche, dass sie hier wären! Sieh dir nur den Berg an und das Gasthaus und bedenke, dass ich immerhin … ÄHM! Dieser Ort ist wirklich schon lebhaft genug."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Vertrauensgespräch 4",
+        "text": "Du brichst schon wieder zu einer Fernreise auf, obwohl du noch nicht vollständig genesen bist? Bist du aus Xiranit, oder was? Hältst du dich wirklich für unzerstörbar? Hmpf. Ich hatte gehofft, dass du mit deinen Erinnerungen auch diese Angewohnheit, dir selbst zu viel abzuverlangen, verloren hättest, Dumpf-Min! Also los. Erzähl mir die Einzelheiten zu dieser Mission, dann gehe ich für dich. Aber denk dran, dafür schuldest du mir was. MAL WIEDER!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Vertrauensgespräch 5",
+        "text": "Setz dich. Hat der Sonnenaufgang dir gefehlt? Male einfach mit dem Pinsel. Damals hast du mich immer besucht, wenn ich allein war. Irgendwie konntest du zu jeder noch so albernen Idee aufmunternde Worte finden … Gut. Ich weiß, dass meine Worte deine Erinnerungen jetzt nicht zurückbringen können. Aber wenn du es wagst, je wieder etwas zu vergessen, werde ich zehn … nein, einhundertfünfzig Jahre lang nicht mit dir reden!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Geplauder 1",
+        "text": "In letzter Zeit wollen immer mehr Leute die Rolle besuchen, aber das Gasthaus ist nicht auf so viele Besucher ausgelegt. Die Angestellten haben vorgeschlagen, in der Haupthalle eine Anschlagtafel aufzustellen … Das hört sich nach einer tollen Idee an, aber es würde auch bedeuten, alle möglichen Vorschläge zu erhalten. I-ich habe einfach nicht die Zeit, alles einzeln durchzugehen. Könntest du sie daher schon mal vorsortieren …, damit ich mich auf die sinnvollen Vorschläge konzentrieren kann?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Geplauder 2",
+        "text": "Die höchste Kunst des Schmiedens besteht darin, alle Fertigungsschritte in einem Atemzug zu bündeln und seine Idee Realität werden zu lassen. Genau wie bei diesem Schild hier … Was? Diese Pore ist fehlerhaft … ÄHEM. Ganz genau, das hier war nur eine Übung. Kleinere Fehler sind da zu erwarten und lassen überhaupt keine Rückschlüsse auf meine Kräfte zu."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Geplauder 3",
+        "text": "Hast du schon von den neuen Plüschtieren gehört? Moppel-Himmelstrommler? Ich liebe moppelige Plüschtiere und habe im Gasthaus jede Menge davon. Aber die Moppel-Himmelstrommler sind nur als Preis im Spiel „Zeichnen und Raten“ in Wuling verfügbar, und das kann man nicht allein spielen … Hör zu, die nächste Saison steht vor der Tür. Ich werde dir alle Tricks beibringen und du lernst besser schnell … Natürlich wirst du zeichnen, und ich werde raten! Sehe ich aus wie jemand, der beim Spielen betrügt?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Geplauder 4",
+        "text": "Fleißbiene trödelt bei der Arbeit immer herum. Blitz ist so riesig, dass er sich kaum bewegen kann, und Grämmie begrüßt die Gäste so zaghaft, dass man ihn überhört, wenn man zu laut atmet. Das geht schon seit Jahrzehnten so, und ich habe es aufgegeben, ihre Eigenheiten ändern zu wollen. Was? Na ja, sie konnten nirgendwo anders hin, also habe ich sie in die Rolle gemalt. Ich kann sie nicht einfach wegschicken … ein chaotisches Gasthaus ist mir lieber als ein ruhiges."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Geplauder 5",
+        "text": "Ich war früher immer bei meinen Geschwistern und habe Weiqi gespielt und mir ihre Diskussionen angehört. Nachts habe ich dann lesen, Kalligrafie und das Malen geübt. Wenn wir Freizeit hatten, haben wir alle drei gemeinsam Talos-II bereist … aber dann haben sie mich nach Hongshan geschickt. Wahrscheinlich war Talos-II für sie einfach eine Abwechslung, und sie dachten, es würde mich stören, wenn sie immer da wären. Ich verstehe diesen Gedankengang durchaus. Aber man kann seine kleine Schwester doch nicht einfach irgendwo zurücklassen und sie dann fast nie besuchen …"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Thema: Yinglung-Sondereinheit",
+        "text": "Ja, ich war dabei, als die HAW die Yinglung-Sondereinheit ins Leben gerufen hat. Ich habe aber nicht mehr gemacht, als ihnen ein paar Tricks beizubringen. Warum ich nicht mehr Zeit mit ihnen verbracht habe? Weil es unter den Yinglungs lauter Sturköpfe wie Li Zhiyan gibt. Wenn man zu viel Zeit mit ihnen verbringt, lassen sie selbst noch die Luft gefrieren. Allerdings scheint sie sich etwas gefangen zu haben, nachdem sie etwas Zeit mit dir verbracht hat. Hmm … He, Endmin, warum nimmst du nicht meinen Platz ein und bringst ihnen etwas bei?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Thema: Feranmut-Energie",
+        "text": "Mit dieser Endfield-Personal-Datenbank stimmt etwas nicht. Ich habe unter „Fertigkeiten“ zwölf Punkte angegeben, darunter Kampfkunst, Literatur, Malen, Metallurgie, Rechtswissenschaften, Gartenbau … und dann kam eine Fehlermeldung. Wie, das waren zu viele Fertigkeiten? Nur weil nicht immer alles perfekt läuft, nimmt mir diese Fertigkeiten niemand weg. Erklär mir lieber mal, was da los ist."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Thema: Flügel",
+        "text": "Meine Flügel sind hübsch, nicht wahr? Als ich noch klein war, habe ich mal davon geträumt, wie sie sich auf meinem Rücken entfaltet haben. Direkt nach dem Aufwachen habe ich sie mir gemalt. Meine Schwester hat mich ständig deswegen aufgezogen … Sie sind nur Schmuck. Aber sie meinte, ich würde sie nutzen, um im Kampf einschüchternd zu wirken. Hmpf. Dabei gibt es für solche Unterstellungen gar keine Grundlage. Mal ehrlich, wer macht so etwas? Wie kindisch!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Thema: Ye Minghe",
+        "text": "Dieser Jungspund mit den hellen Haaren? Wir kennen uns jetzt schon seit einer Weile. Er ist immer so nervig. Manchmal wirkt es, als wäre er von dieser tintenschwarzen Galoppbestie besessen, und er redet immer davon, dass „die Kaiserlichen Wächter ihre Pflichten erfüllen müssen …“ Und genau das macht ihn so anstrengend. Er meint nämlich jedes Wort davon ernst. Ehrlich gesagt ähnelt er dir in dieser Hinsicht. Warte mal, du hattest diesen Einfluss auf ihn! Wie auch immer. Wenn er noch mal in meine Rolle platzt, wirst du dafür geradestehen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Thema: Familie",
+        "text": "Ich weiß nicht, wohin meine Geschwister gegangen sind. Nach allem, was sie durchmachen mussten, haben sie jetzt endlich etwas Zeit für sich. Vielleicht streifen sie einfach durch Talos-II. Vielleicht … HEY! Fleißbiene! Hatte ich dir nicht aufgetragen, gründlich sauber zu machen? Insbesondere bei den Gemälden, den Kalligrafien und den Weiqi-Brettern. Was, wenn sie heimkommen und dieses Chaos vorfinden? Wegen dir gerate ich noch in Schwierigkeiten!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Thema: Sui",
+        "text": "Sui ist mit Abstand der schlimmste Feranmut. Aller Zeiten. Selbst im Schlaf gibt er keine Ruhe und heckt immer neue Pläne aus, um mit seinen zwölf Proxys allen in Yan das Leben schwer zu machen. Und wozu? Letztendlich hat jeder Proxy seine eigenen Ideen dazu, wie man IHM das Leben schwer machen kann. Mein Bezug zu ihm ist … Na ja, es gäbe mich nicht, wenn die letzten Teile seiner Seele nicht nach Talos-II gebracht worden wären. Aber ich bin anders als er. Zwischen uns gibt es keine Beziehung, weder eine gute noch eine schlechte. Alle Schulden sind beglichen, das ist ja wohl offensichtlich."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Vergiss die Stelle hier nicht."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Sieh mal, versteckte Beute."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Interessanter Ort. Wärst du nicht so aufmerksam, hättest du ihn vielleicht übersehen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Starker Gegner entdeckt",
+        "text": "Vorsicht. Für den Brocken werden wir ein paar Schläge mehr brauchen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Abbau 1",
+        "text": "Schmiede des Himmels, Erze der Erde. Auf Talos-II gibt es ziemlich viel seltenes Zeug."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Abbau 2",
+        "text": "Überlass das mir. Ich erledige das im Handumdrehen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Kiste öffnen",
+        "text": "Warte nicht, bis die Inspiration dich findet. Suche sie."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Aurylen erhalten",
+        "text": "Hmm. Wenn ich Aurylen in Tinte auflöse, könnte ich dann damit malen?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Eliminierung der Verderbnis",
+        "text": "Wenn ich so darüber nachdenke, könnten die Tintengeister sich doch auch darum kümmern."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Ausruhen",
+        "text": "Du solltest jede Gelegenheit nutzen, um dich auszuruhen. Niemand kann Talos-II mit einem Pinselschwung malen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Taktische Nutzung 1",
+        "text": "Ich kenne mich auch ein bisschen mit Kräutern und Medizin aus."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Taktische Nutzung 2",
+        "text": "Da geht es mir gleich besser!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Gefahrenwarnung",
+        "text": "Schau dort drüben!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Verletzt",
+        "text": "Hast du gerade meine Flügel schmutzig gemacht?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "0 LP",
+        "text": "Ist doch … alles langweilig …"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Teammotivation 1",
+        "text": "Ah. Diese Generation ist vielversprechend."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Teammotivation 2",
+        "text": "Unsere Jungspunde wirken ziemlich motiviert."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Motivationsreaktion 1",
+        "text": "Du bist nicht gerade „höflich“, oder?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Motivationsreaktion 2",
+        "text": "Also gut, also gut, lass dich nicht ablenken."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Kampf beginnt 1",
+        "text": "Beenden wir das, ehe es dunkel wird."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Kampf beginnt 2",
+        "text": "Zeigt mir, was ihr könnt, ihr Jungspunde."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Kampfsieg 1",
+        "text": "Das ist viel spaßiger, als in der Rolle zu sein."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Kampfsieg 2",
+        "text": "Ich bin so inspiriert. Dieser Ausflug hat sich wirklich gelohnt."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Kampfsieg 3",
+        "text": "Das war’s schon? Du bist bestimmt noch nicht zu müde, um für mich Tinte zu mahlen, oder?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Kampfsieg 4",
+        "text": "Das war hart, aber wir haben gewonnen. Ihr solltet euch nicht so hängen lassen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Niederlage im Kampf",
+        "text": "Gewinnen fühlt sich super an, aber verlieren ist auch in Ordnung. Ich bin ja hier, also gibt es nichts zu befürchten."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Abschlussangriff 1",
+        "text": "Runter!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Abschlussangriff 2",
+        "text": "Zurück!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "Kampffertigkeit 1",
+        "text": "Fleckige Farben!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "Kampffertigkeit 2",
+        "text": "Zittrige Striche!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "Kampffertigkeit 3",
+        "text": "Seelenlose Kopien!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Macht mal Platz für mich."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Ich habe die Hände frei."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Kombo wirken 1",
+        "text": "Verschwendest du immer noch meine Zeit?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Kombo wirken 2",
+        "text": "Verschwendest du immer noch meine Tinte?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Wuchtschlag 1",
+        "text": "Der letzte Schliff!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Wuchtschlag 2",
+        "text": "Eine perfekte Abbildung!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Eine aufsteigende Welle! Ein wallendes Beben!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Ein präziser Schlag! Ich führe den Kosmos!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Möge diese Macht das Land prägen!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kampffertigkeit <@ba.key>Dimension der Pinselkunst</> verbessert: Dauer der bewirkten <#ba.static>Bewegungsunfähigkeit</> <@ba.vup>+{static_duration:0%}</>; SDN-Aufzeichnungs-Verhältnis <@ba.key>Künstlerische Absicht</> <@ba.vup>+{ink_damage_rate:0%}</> und Explosionsradius <@ba.vup>+{ink_boom_range:0%}</>.",
+      "name": "Frühling und Herbst in Tinte"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Drei tiefe Zeichen im Holz"
+    },
+    "potential3": {
+      "description": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Der verursachte SDN wird auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts erhöht, der <#ba.enhance>Verstärkungs</>-Effekt wird auf das <@ba.vup>{enhance_final:0.0}</>-Fache des ursprünglichen Werts erhöht.",
+      "name": "Über Muskeln und Knochen"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Perfekte geistige Ruhe"
+    },
+    "potential5": {
+      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Länge der Kombofertigkeit-Abklingzeit <@ba.vup>{coolDown:0}</> Sek. und der verursachte SDN steigt auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts. Wenn ausgelöst, wird die Kombofertigkeit so behandelt, als wäre 1 zusätzliche Kumulierung <#ba.consume>verbraucht</>/<#ba.absorb>absorbiert</> worden.",
+      "name": "Pinseltupfer in der Pupille"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Unbekümmert",
+      "author": "狂zip",
+      "description": "Folge deinem Herzen und deinem Bauch, dann bist du frei und unbekümmert."
+    },
+    "potential3": {
+      "name": "Im Reich der Tusche",
+      "author": "Maeka",
+      "description": "Im gezeichneten Reich sind alle Dinge mit Pigmenten dargestellt. Ihr zwei habt ganz schön viel Zeit zusammen im Heiligtum aus Tusche verbracht."
+    },
+    "potential5": {
+      "name": "Unbefleckt",
+      "author": "수줍(Sjoop)",
+      "description": "Sie streifte durch die Welt der Sterblichen, und doch blieb der Staub der Sterblichen nicht an ihr haften."
+    }
+  }
+}

@@ -13,6 +13,42 @@ export const weapons = {
       "tactic"
     ]
   },
+  "chimericJustice": {
+    "id": "chimericJustice",
+    "gameId": "wpn_lance_0004",
+    "name": "Chimeric Justice",
+    "rarity": 5,
+    "weapon": "polearm",
+    "skills": [
+      "attr_str",
+      "attr_usp",
+      "break"
+    ]
+  },
+  "aggeloslayer": {
+    "id": "aggeloslayer",
+    "gameId": "wpn_lance_0008",
+    "name": "Aggeloslayer",
+    "rarity": 4,
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_magicdam",
+      "tactic"
+    ]
+  },
+  "grandVision": {
+    "id": "grandVision",
+    "gameId": "wpn_sword_0021",
+    "name": "Grand Vision",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "magabn"
+    ]
+  },
   "exemplar": {
     "id": "exemplar",
     "gameId": "wpn_claym_0004",
@@ -37,6 +73,30 @@ export const weapons = {
       "keyword"
     ]
   },
+  "umbraOfFrigidEventide": {
+    "id": "umbraOfFrigidEventide",
+    "gameId": "wpn_funnel_0019",
+    "name": "Umbra of Frigid Eventide",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "burst"
+    ]
+  },
+  "beaconOfDuty": {
+    "id": "beaconOfDuty",
+    "gameId": "wpn_lance_0007",
+    "name": "Beacon of Duty",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_usp",
+      "keyword"
+    ]
+  },
   "thunderberge": {
     "id": "thunderberge",
     "gameId": "wpn_claym_0007",
@@ -47,6 +107,18 @@ export const weapons = {
       "attr_str",
       "attr_hp",
       "heal"
+    ]
+  },
+  "objArtsIdentifier": {
+    "id": "objArtsIdentifier",
+    "gameId": "wpn_funnel_0014",
+    "name": "OBJ Arts Identifier",
+    "rarity": 5,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_physpell",
+      "combo"
     ]
   },
   "sunderedPrince": {
@@ -71,6 +143,18 @@ export const weapons = {
       "attr_will",
       "attr_hp",
       "smash"
+    ]
+  },
+  "brigandsCalling": {
+    "id": "brigandsCalling",
+    "gameId": "wpn_pistol_0011",
+    "name": "Brigand's Calling",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "burst"
     ]
   },
   "darhoff7": {
@@ -120,6 +204,17 @@ export const weapons = {
       "burst"
     ]
   },
+  "peco5": {
+    "id": "peco5",
+    "gameId": "wpn_pistol_0001",
+    "name": "Peco 5",
+    "rarity": 3,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
+  },
   "ancientCanal": {
     "id": "ancientCanal",
     "gameId": "wpn_claym_0014",
@@ -156,6 +251,18 @@ export const weapons = {
       "tactic"
     ]
   },
+  "type42SolemnPhalanx": {
+    "id": "type42SolemnPhalanx",
+    "gameId": "wpn_funnel_0016",
+    "name": "Type 42: Solemn Phalanx",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_usp",
+      "burst"
+    ]
+  },
   "amaranthineTassel": {
     "id": "amaranthineTassel",
     "gameId": "wpn_claym_0017",
@@ -168,6 +275,54 @@ export const weapons = {
       "phyabn"
     ]
   },
+  "flickersInTheMist": {
+    "id": "flickersInTheMist",
+    "gameId": "wpn_funnel_0017",
+    "name": "Flickers in the Mist",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_pulsedam",
+      "keyword"
+    ]
+  },
+  "jadeVessel": {
+    "id": "jadeVessel",
+    "gameId": "wpn_claym_0018",
+    "name": "Jade Vessel",
+    "rarity": 6,
+    "weapon": "greatSword",
+    "skills": [
+      "attr_wisd",
+      "attr_icedam",
+      "keyword"
+    ]
+  },
+  "longHeritage": {
+    "id": "longHeritage",
+    "gameId": "wpn_claym_0019",
+    "name": "Long Heritage",
+    "rarity": 6,
+    "weapon": "greatSword",
+    "skills": [
+      "attr_wisd",
+      "attr_icedam",
+      "keyword"
+    ]
+  },
+  "objVelocitous": {
+    "id": "objVelocitous",
+    "gameId": "wpn_pistol_0012",
+    "name": "OBJ Velocitous",
+    "rarity": 5,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_usp",
+      "burst"
+    ]
+  },
   "hypernovaAuto": {
     "id": "hypernovaAuto",
     "gameId": "wpn_funnel_0001",
@@ -178,6 +333,18 @@ export const weapons = {
       "attr_wisd",
       "attr_magicdam",
       "spirit"
+    ]
+  },
+  "jet": {
+    "id": "jet",
+    "gameId": "wpn_lance_0011",
+    "name": "JET",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_main",
+      "attr_atk",
+      "tactic"
     ]
   },
   "jiminy12": {
@@ -201,6 +368,18 @@ export const weapons = {
       "attr_will",
       "attr_atk",
       "tactic"
+    ]
+  },
+  "complexedIndustry": {
+    "id": "complexedIndustry",
+    "gameId": "wpn_sword_0024",
+    "name": "Complexed Industry",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_pulsedam",
+      "burst"
     ]
   },
   "wildWanderer": {
@@ -287,6 +466,18 @@ export const weapons = {
       "heal"
     ]
   },
+  "aspirant": {
+    "id": "aspirant",
+    "gameId": "wpn_sword_0015",
+    "name": "Aspirant",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "ult"
+    ]
+  },
   "deliveryGuaranteed": {
     "id": "deliveryGuaranteed",
     "gameId": "wpn_funnel_0011",
@@ -297,6 +488,30 @@ export const weapons = {
       "attr_will",
       "attr_usp",
       "combo"
+    ]
+  },
+  "mountainBearer": {
+    "id": "mountainBearer",
+    "gameId": "wpn_lance_0012",
+    "name": "Mountain Bearer",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "keyword"
+    ]
+  },
+  "sunderingSteel": {
+    "id": "sunderingSteel",
+    "gameId": "wpn_sword_0005",
+    "name": "Sundering Steel",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "phyabn"
     ]
   },
   "freedomToProselytize": {
@@ -323,18 +538,6 @@ export const weapons = {
       "magabn"
     ]
   },
-  "objArtsIdentifier": {
-    "id": "objArtsIdentifier",
-    "gameId": "wpn_funnel_0014",
-    "name": "OBJ Arts Identifier",
-    "rarity": 5,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_wisd",
-      "attr_physpell",
-      "combo"
-    ]
-  },
   "loneBarge": {
     "id": "loneBarge",
     "gameId": "wpn_funnel_0015",
@@ -345,30 +548,6 @@ export const weapons = {
       "attr_will",
       "attr_atk",
       "tactic"
-    ]
-  },
-  "type42SolemnPhalanx": {
-    "id": "type42SolemnPhalanx",
-    "gameId": "wpn_funnel_0016",
-    "name": "Type 42: Solemn Phalanx",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_wisd",
-      "attr_usp",
-      "burst"
-    ]
-  },
-  "flickersInTheMist": {
-    "id": "flickersInTheMist",
-    "gameId": "wpn_funnel_0017",
-    "name": "Flickers in the Mist",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_will",
-      "attr_pulsedam",
-      "keyword"
     ]
   },
   "junctionPoint": {
@@ -383,18 +562,6 @@ export const weapons = {
       "keyword"
     ]
   },
-  "umbraOfFrigidEventide": {
-    "id": "umbraOfFrigidEventide",
-    "gameId": "wpn_funnel_0019",
-    "name": "Umbra of Frigid Eventide",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_agi",
-      "attr_atk",
-      "burst"
-    ]
-  },
   "sufferingsEnd": {
     "id": "sufferingsEnd",
     "gameId": "wpn_funnel_0020",
@@ -405,6 +572,30 @@ export const weapons = {
       "attr_agi",
       "attr_naturaldam",
       "burst"
+    ]
+  },
+  "homeLonging": {
+    "id": "homeLonging",
+    "gameId": "wpn_pistol_0007",
+    "name": "Home Longing",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_icedam",
+      "tactic"
+    ]
+  },
+  "thermiteCutter": {
+    "id": "thermiteCutter",
+    "gameId": "wpn_sword_0012",
+    "name": "Thermite Cutter",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tacafter"
     ]
   },
   "pathfindersBeacon": {
@@ -419,16 +610,15 @@ export const weapons = {
       "spirit"
     ]
   },
-  "chimericJustice": {
-    "id": "chimericJustice",
-    "gameId": "wpn_lance_0004",
-    "name": "Chimeric Justice",
-    "rarity": 5,
+  "opero77": {
+    "id": "opero77",
+    "gameId": "wpn_lance_0009",
+    "name": "Opero 77",
+    "rarity": 3,
     "weapon": "polearm",
     "skills": [
-      "attr_str",
-      "attr_usp",
-      "break"
+      "attr_main",
+      "force"
     ]
   },
   "cohesiveTraction": {
@@ -443,41 +633,6 @@ export const weapons = {
       "tactic"
     ]
   },
-  "beaconOfDuty": {
-    "id": "beaconOfDuty",
-    "gameId": "wpn_lance_0007",
-    "name": "Beacon of Duty",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_agi",
-      "attr_usp",
-      "keyword"
-    ]
-  },
-  "aggeloslayer": {
-    "id": "aggeloslayer",
-    "gameId": "wpn_lance_0008",
-    "name": "Aggeloslayer",
-    "rarity": 4,
-    "weapon": "polearm",
-    "skills": [
-      "attr_will",
-      "attr_magicdam",
-      "tactic"
-    ]
-  },
-  "opero77": {
-    "id": "opero77",
-    "gameId": "wpn_lance_0009",
-    "name": "Opero 77",
-    "rarity": 3,
-    "weapon": "polearm",
-    "skills": [
-      "attr_main",
-      "force"
-    ]
-  },
   "valiant": {
     "id": "valiant",
     "gameId": "wpn_lance_0010",
@@ -490,28 +645,15 @@ export const weapons = {
       "phyabn"
     ]
   },
-  "jet": {
-    "id": "jet",
-    "gameId": "wpn_lance_0011",
-    "name": "JET",
-    "rarity": 6,
-    "weapon": "polearm",
+  "tarr11": {
+    "id": "tarr11",
+    "gameId": "wpn_sword_0003",
+    "name": "Tarr 11",
+    "rarity": 3,
+    "weapon": "sword",
     "skills": [
       "attr_main",
-      "attr_atk",
-      "tactic"
-    ]
-  },
-  "mountainBearer": {
-    "id": "mountainBearer",
-    "gameId": "wpn_lance_0012",
-    "name": "Mountain Bearer",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "keyword"
+      "force"
     ]
   },
   "objRazorhorn": {
@@ -526,6 +668,18 @@ export const weapons = {
       "magabn"
     ]
   },
+  "forgebornScathe": {
+    "id": "forgebornScathe",
+    "gameId": "wpn_sword_0006",
+    "name": "Forgeborn Scathe",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_atk",
+      "ult"
+    ]
+  },
   "bedazzlingNightDebut": {
     "id": "bedazzlingNightDebut",
     "gameId": "wpn_lance_0014",
@@ -536,6 +690,18 @@ export const weapons = {
       "attr_will",
       "attr_heal",
       "heal"
+    ]
+  },
+  "fortmaker": {
+    "id": "fortmaker",
+    "gameId": "wpn_sword_0007",
+    "name": "Fortmaker",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_usp",
+      "spirit"
     ]
   },
   "blessingOfLustrousCarmine": {
@@ -550,6 +716,18 @@ export const weapons = {
       "tacafter"
     ]
   },
+  "prominentEdge": {
+    "id": "prominentEdge",
+    "gameId": "wpn_sword_0008",
+    "name": "Prominent Edge",
+    "rarity": 4,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "tactic"
+    ]
+  },
   "goldenAge": {
     "id": "goldenAge",
     "gameId": "wpn_lance_0016",
@@ -562,15 +740,16 @@ export const weapons = {
       "combo"
     ]
   },
-  "peco5": {
-    "id": "peco5",
-    "gameId": "wpn_pistol_0001",
-    "name": "Peco 5",
-    "rarity": 3,
-    "weapon": "handcannon",
+  "waveTide": {
+    "id": "waveTide",
+    "gameId": "wpn_sword_0009",
+    "name": "Wave Tide",
+    "rarity": 4,
+    "weapon": "sword",
     "skills": [
-      "attr_main",
-      "force"
+      "attr_wisd",
+      "attr_atk",
+      "combo"
     ]
   },
   "howlingGuard": {
@@ -633,16 +812,16 @@ export const weapons = {
       "magabn"
     ]
   },
-  "homeLonging": {
-    "id": "homeLonging",
-    "gameId": "wpn_pistol_0007",
-    "name": "Home Longing",
+  "lupineScarlet": {
+    "id": "lupineScarlet",
+    "gameId": "wpn_sword_0022",
+    "name": "Lupine Scarlet",
     "rarity": 6,
-    "weapon": "handcannon",
+    "weapon": "sword",
     "skills": [
       "attr_agi",
-      "attr_icedam",
-      "tactic"
+      "attr_crirate",
+      "crit"
     ]
   },
   "wedge": {
@@ -681,101 +860,6 @@ export const weapons = {
       "crit"
     ]
   },
-  "brigandsCalling": {
-    "id": "brigandsCalling",
-    "gameId": "wpn_pistol_0011",
-    "name": "Brigand's Calling",
-    "rarity": 6,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_agi",
-      "attr_atk",
-      "burst"
-    ]
-  },
-  "objVelocitous": {
-    "id": "objVelocitous",
-    "gameId": "wpn_pistol_0012",
-    "name": "OBJ Velocitous",
-    "rarity": 5,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_agi",
-      "attr_usp",
-      "burst"
-    ]
-  },
-  "tarr11": {
-    "id": "tarr11",
-    "gameId": "wpn_sword_0003",
-    "name": "Tarr 11",
-    "rarity": 3,
-    "weapon": "sword",
-    "skills": [
-      "attr_main",
-      "force"
-    ]
-  },
-  "sunderingSteel": {
-    "id": "sunderingSteel",
-    "gameId": "wpn_sword_0005",
-    "name": "Sundering Steel",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "phyabn"
-    ]
-  },
-  "forgebornScathe": {
-    "id": "forgebornScathe",
-    "gameId": "wpn_sword_0006",
-    "name": "Forgeborn Scathe",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_wisd",
-      "attr_atk",
-      "ult"
-    ]
-  },
-  "fortmaker": {
-    "id": "fortmaker",
-    "gameId": "wpn_sword_0007",
-    "name": "Fortmaker",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_wisd",
-      "attr_usp",
-      "spirit"
-    ]
-  },
-  "prominentEdge": {
-    "id": "prominentEdge",
-    "gameId": "wpn_sword_0008",
-    "name": "Prominent Edge",
-    "rarity": 4,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "tactic"
-    ]
-  },
-  "waveTide": {
-    "id": "waveTide",
-    "gameId": "wpn_sword_0009",
-    "name": "Wave Tide",
-    "rarity": 4,
-    "weapon": "sword",
-    "skills": [
-      "attr_wisd",
-      "attr_atk",
-      "combo"
-    ]
-  },
   "umbralTorch": {
     "id": "umbralTorch",
     "gameId": "wpn_sword_0010",
@@ -800,18 +884,6 @@ export const weapons = {
       "ult"
     ]
   },
-  "thermiteCutter": {
-    "id": "thermiteCutter",
-    "gameId": "wpn_sword_0012",
-    "name": "Thermite Cutter",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_will",
-      "attr_atk",
-      "tacafter"
-    ]
-  },
   "eminentRepute": {
     "id": "eminentRepute",
     "gameId": "wpn_sword_0013",
@@ -834,18 +906,6 @@ export const weapons = {
       "attr_main",
       "attr_physpell",
       "magabn"
-    ]
-  },
-  "aspirant": {
-    "id": "aspirant",
-    "gameId": "wpn_sword_0015",
-    "name": "Aspirant",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "ult"
     ]
   },
   "neverRest": {
@@ -906,30 +966,6 @@ export const weapons = {
       "attr_str",
       "attr_icedam",
       "tactic"
-    ]
-  },
-  "grandVision": {
-    "id": "grandVision",
-    "gameId": "wpn_sword_0021",
-    "name": "Grand Vision",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_atk",
-      "magabn"
-    ]
-  },
-  "lupineScarlet": {
-    "id": "lupineScarlet",
-    "gameId": "wpn_sword_0022",
-    "name": "Lupine Scarlet",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_crirate",
-      "crit"
     ]
   },
   "dessertMoment": {

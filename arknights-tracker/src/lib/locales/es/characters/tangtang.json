@@ -58,7 +58,7 @@
     },
     "ultimate": {
       "name": "¡LA JEFA TE TIENE EN LA MIRA!",
-      "description": "Tangtang abre su parche y desata una <@ba.key>MIRADA ANCESTRAL</> desde su ojo que bloquea temporalmente, inmoviliza e inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos dentro de su área de efecto.\nCuando <@ba.key>MIRADA ANCESTRAL</> deja de evolucionar, una ola traicionera se desploma para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en su área de efecto.\nSi el operador controlado realiza un ataque de inmersión en el patrón de <@ba.key>MIRADA ANCESTRAL</>, su evolución termina y la ola traicionera se invoca de inmediato para infligir todavía más <@ba.cryst>DAÑ criogénico</>.",
+      "description": "Tangtang abre su parche y desata una <@ba.key>MIRADA ANCESTRAL</> desde su ojo que aplica <#ba.static>Inmovilización</> temporal e inflige <@ba.cryst>DAÑ criogénico</> continuo a los enemigos dentro de su área de efecto (ADE).\nCuando la <@ba.key>MIRADA ANCESTRAL</> deja de evolucionar, una ola traicionera se abate para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en su ADE.\nSi el operador controlado realiza un ataque de inmersión en el patrón de <@ba.key>MIRADA ANCESTRAL</>, su evolución termina y la ola traicionera se invoca de inmediato para infligir todavía más <@ba.cryst>DAÑ criogénico</>.",
       "dmgOverTimeTotalMultiplier": "Multiplicador total de tiempo de DAÑ continuo",
       "oldenStareDurationS": "Duración de MIRADA ANCESTRAL (s)",
       "rogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera",

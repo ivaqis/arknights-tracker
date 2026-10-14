@@ -36,7 +36,7 @@
     },
     "battleSkill": {
       "name": "Flechas perforantes del bosque",
-      "description": "Typhoeus salta por los aires y entra brevemente en estado <@ba.key>Flotante</>, durante el cual puede ejecutar 5 Ataques básicos aéreos (ATQBA). Cada ATQBA puede disparar flechas contra un máximo de 2 objetivos e infligir <@ba.natur>DAÑ por naturaleza</>. \nCuando un ATQBA alcanza a un enemigo con <#ba.naturalinflict>Imposición de Naturaleza</>, consume 1 acumulación de <#ba.naturalinflict>Imposición de Naturaleza</>, otorga a Typhoeus 1 <#ba.arrowenergy>Signo</> y concede Energía máxima adicional. \nSi Typhoeus tiene <#ba.arrownum>Flecha(s) de caza</>, consume 1 <#ba.arrownum>Flecha de caza</> y convierte el ATQBA en un <@ba.key>Disparo potente</>. \n<@ba.key>Disparo potente</>: Tras alcanzar a un enemigo, aplica a la fuerza 1 <#ba.naturalburst>Ráfaga de naturaleza</>; si se consume la <#ba.naturalinflict>Imposición de Naturaleza</> del objetivo, el DAÑ de esta <#ba.naturalburst>Ráfaga de naturaleza</> aumenta. \n<@ba.info>Si Typhoeus es la operadora controlada, su 5.º ATQBA se considera un Golpe final y un Disparo potente, y no consume Flechas de caza.</>",
+      "description": "Typhoeus salta por los aires y entra brevemente en estado <@ba.key>Flotante</>, durante el cual puede ejecutar 5 Ataques básicos aéreos (ATQBA). Cada ATQBA puede disparar flechas contra un máximo de 2 objetivos e infligir <@ba.natur>DAÑ por naturaleza</>.\nCuando un ATQBA alcanza a un enemigo con <#ba.naturalinflict>Imposición de Naturaleza</>, consume 1 acumulación de <#ba.naturalinflict>Imposición de Naturaleza</>, otorga a Typhoeus 1 <#ba.arrowenergy>Signo</> y concede Energía máxima adicional.\nSi Typhoeus tiene <#ba.arrownum>Flecha(s) de caza</>, consume 1 <#ba.arrownum>Flecha de caza</> y convierte el ATQBA en un <@ba.key>Disparo potente</>.\n<@ba.key>Disparo potente</>: Después de golpear a un enemigo, Disparo potente aplica forzosamente 1 instancia de <#ba.naturalburst>Ráfaga de naturaleza</>; si Disparo potente consume la <#ba.naturalinflict>Imposición de naturaleza</> del objetivo, aumenta el DAÑ infligido por esta <#ba.naturalburst>Ráfaga de naturaleza</>.\n<@ba.info>Si Typhoeus es la operadora controlada, su 5.º ATQBA se considera un Golpe final y un Disparo potente, y no consume Flechas de caza.</>",
       "initialAerialShotDmgMultiplier": "Multiplicador de DAÑ de disparo aéreo inicial",
       "abatkDmg": "DAÑ de ATQBA",
       "aerialFinalStrikeDmg": "DAÑ de Golpe final aéreo",
@@ -111,7 +111,7 @@
     "tags": {
       "expert1": {
         "name": "Conocimiento natural",
-        "description": "Conocimiento de la naturaleza: Guía de la vida salvaje\nTodo tiene un significado en lo profundo del áera silvestre, ya sea un copo de nieve sobre el hombro o una ráfaga de viento que levanta el cabello."
+        "description": "Conocimiento de la naturaleza: Guía de la vida salvaje\nTodo tiene un significado en lo profundo del área silvestre, ya sea un copo de nieve sobre el hombro o una ráfaga de viento que levanta el cabello."
       },
       "expert2": {
         "name": "Supervivencia al aire libre",
@@ -536,7 +536,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Al usar <@ba.key>Flotante</>, el ATQ <@ba.vup>+{atk_up:0%}</> y el DAÑ de ATQBA infligido aumenta a <@ba.vup>{atk_scale_base:0.0}</> veces el original. \nTalento <@ba.key>Enfoque de cazadora</> mejorado: tiempo de reactivación de <@ba.key>Barrera protectora</> <@ba.vup>{decrease_cd:0}</>s.",
+      "description": "Al usar <@ba.key>Flotante</>, el ATQ <@ba.vup>+{atk_up:0%}</> y el DAÑ de ATQBA infligido aumenta a <@ba.vup>{atk_scale_base:0.0}</> veces el original. \nTalento <@ba.key>Enfoque de cazadora</> mejorado: tiempo de reactivación de <@ba.key>Barrera protectora</> <@ba.vup>{decrease_cd:0}</> s.",
       "name": "Emplumado de Samifjod"
     },
     "potential2": {

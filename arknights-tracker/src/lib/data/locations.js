@@ -276,5 +276,22 @@ export const locations = {
       60,
       60
     ]
+  },
+  "world_energy_point13_7": {
+    "id": "world_energy_point13_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0130_inkbiter",
+      "eny_0131_inkscroll",
+      "eny_0132_inkkirin",
+      "eny_0133_inklion"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60
+    ]
   }
 };

@@ -39,14 +39,14 @@
     "battleSkill": {
       "name": "Foco Deslumbrante",
       "description": "Liino causa <@ba.pulse>DNO Elétrico</> aos inimigos e, em seguida, entra em sua <@ba.key>Postura da Vocalista</>. Enquanto essa postura estiver ativa, se houver inimigos por perto, Liino realizará regularmente um ATQ Adicional (que causa <@ba.pulse>DNO Elétrico</> aos inimigos).\n<@ba.key>Postura da Vocalista</>: enquanto essa postura está ativa, Liino concede Potencialização ATQ à equipe inteira. Após entrar em batalha, Liino também concede continuamente <@ba.heal>Tratamento de PV</> aos operadores dentro do alcance.\n<@ba.info>Durante a Postura da Vocalista, sua habilidade de batalha é substituída por Encerrar Postura. Conjurá-la encerrará a Postura da Vocalista mais cedo sem consumir PH algum, e sua habilidade de batalha entrará em um rápido tempo de recarga.</>",
-      "1stAtkMultiplier": "Multiplicador 1º ATQ",
+      "firstAtkMultiplier": "Multiplicador Primeiro ATQ",
       "additionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional",
       "additionalAtkIntervalS": "Intervalo de ATQ adicional (s)",
-      "beatIntervalS": "Intervalo da Batida (s)",
+      "beatIntervalS": "Intervalo de Batida (s)",
       "vocalistStanceDurationS": "Duração da Postura da Vocalista (s)",
       "atkBoost": "Potencialização ATQ",
       "baseTreatment": "Tratamento Base",
-      "treatmentIncreasePerAgility": "Aumento de Tratamento por Agilidade",
+      "treatmentIncreasePerAgility": "Aumento do Tratamento por Agilidade",
       "stagger": "Desorientação"
     },
     "comboSkill": {

@@ -7,6 +7,22 @@
       "Evite o cuspe venenoso. Pisar nele causará DNO Natureza ao operador ao longo do tempo."
     ]
   },
+  "eny_0059_erhound": {
+    "name": "Besta Carnívora da Névoa Ardente",
+    "nickname": "Besta Carnívora da Névoa Ardente",
+    "description": "Uma besta carnívora contaminada pela névoa ardente. Essas pequenas aberrações geralmente se movem em bandos e podem representar uma séria ameaça, até mesmo para equipes de campo totalmente armadas.",
+    "abilities": [
+      "Menos inteligente, porém mais feroz que as bestas carnívoras comuns. Desvie de seu ataque de salto para fazê-la cair no chão."
+    ]
+  },
+  "eny_0085_hsrogue": {
+    "name": "Navalha de Nimbus",
+    "nickname": "Navalha de Nimbus",
+    "description": "Um criminoso armado com uma arma estranha. Quando o Perseguidor de Nuvens se cansa de usar a estranha lanterna, ele saca sua espada curta e parte para o combate corpo a corpo.",
+    "abilities": [
+      "Usa ganchos acorrentados para atacar operadores aliados. Operadores acorrentados ficarão atordoados, a menos que sejam libertados."
+    ]
+  },
   "eny_0018_lbtough": {
     "name": "Carrasco Quebra-Ossos",
     "nickname": "Carrasco Quebra-Ossos",
@@ -14,6 +30,24 @@
     "abilities": [
       "Seu ataque de agarrar causa DNO significativo. Se um operador for agarrado, use a habilidade de outro operador para interrompê-lo e libertar o operador agarrado.",
       "Desviar dos poderosos golpes de machado duplo não será fácil. Em vez disso, tente interrompê-lo."
+    ]
+  },
+  "eny_0046_lbshamman": {
+    "name": "Piromante Quebra-Ossos",
+    "nickname": "Piromante Quebra-Ossos",
+    "description": "Um Invasor de Terras que pode usar as Artes de Originium da Evocação. Piromantes são extremamente perigosos, pois podem facilmente incendiar o campo de batalha com suas artes de fogo.",
+    "abilities": [
+      "Este inimigo tem ataques à distância poderosos que causam DNO Térmico, mas tem pouca mobilidade.",
+      "Este inimigo faz com que uma névoa ardente irrompa do chão, causando DNO Térmico. Tente desviar do ataque.",
+      "Teletransporta-se instantaneamente para um local distante quando os oponentes se aproximam demais."
+    ]
+  },
+  "eny_0063_agmelee2": {
+    "name": "Ram α",
+    "nickname": "Ram α",
+    "description": "O \"Kriosson Anavon\" (ID do arquivo: ACL071α) é uma variante energizada do ACL071. O conteúdo excessivo de energia da entidade dá a ele uma aparência vermelha brilhante característica e o torna mais forte e rápido do que a variante padrão.",
+    "abilities": [
+      "Este inimigo não tem habilidades especiais."
     ]
   },
   "eny_0021_agmelee": {
@@ -40,6 +74,25 @@
       "Este inimigo não tem habilidades especiais."
     ]
   },
+  "eny_0061_palecore": {
+    "name": "Aggelomoirai de Mármore",
+    "nickname": "Aggelomoirai de Mármore",
+    "description": "SEM REGISTROS ANTERIORES. Classificado como um Aggelos devido à natureza de sua formação. Embora seus módulos mórficos tenham sido remontados, a entidade continua a imitar a aparência de Nefarith. Nenhuma explicação satisfatória foi proposta para esse fenômeno.",
+    "abilities": [
+      "Derrote todos os Apêndices de Mármore para forçar o Aggelomoirai de Mármore adormecido a expor temporariamente seu núcleo vulnerável a ataques."
+    ]
+  },
+  "eny_0090_wgabyss": {
+    "name": "Tidalklast",
+    "nickname": "Tidalklast",
+    "description": "O \"Anavatklydan\" (ID do arquivo: AGM32L) é uma variante não modelo do AGM321. Tais entidades existem em uma ampla gama de tamanhos. A visão de indivíduos particularmente grandes emergindo da água tornou-se um pesadelo para quem a presenciou.",
+    "abilities": [
+      "O inimigo tem dois estados: Longa Distância e Corpo a Corpo.",
+      "Estado de Corpo a Corpo: nesse estado, o inimigo tentará se aproximar do alvo para desferir ataques corpo a corpo.",
+      "Estado de Longa Distância: nesse estado, o inimigo manterá distância e atacará com habilidades mais poderosas.",
+      "O estado de longa distância sofre mais DNO Térmica, mas apresenta uma Redução DNO significativa contra outros elementos."
+    ]
+  },
   "eny_0027_agscorp": {
     "name": "Ferrão Pesado",
     "nickname": "Ferrão Pesado",
@@ -47,6 +100,24 @@
     "abilities": [
       "Este inimigo ataca fazendo com que pilares de Originium entrem em erupção sob os operadores.",
       "Ao ser abordado, esse inimigo irá conjurar pilares de pedra ao seu redor para proteção."
+    ]
+  },
+  "eny_0109_hshog2": {
+    "name": "Penoso Imbuído",
+    "nickname": "Penoso Imbuído",
+    "description": "Um penoso infectado por poeira de Originium ativo. Os espinhos da criatura são imbuídos de altos níveis de energia, o que os torna extremamente destrutivos.",
+    "abilities": [
+      "Este inimigo irá carregar energia e inflar o abdômen para cuspir lava superaquecida. Interrompa-o durante a carga para causar Desorientação significativa.",
+      "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
+    ]
+  },
+  "eny_0134_jsspsi": {
+    "name": "Si",
+    "nickname": "Si",
+    "description": "Riacho do degelo da primavera, encostas de outono avermelhadas, velhos sonhos se dissipam enquanto uma nova vida floresce.",
+    "abilities": [
+      "Quando Si desenrolar sua pintura, tente se lembrar de onde as zonas de ataque estão e, em seguida, evite-as na sequência correta.",
+      "Si pode criar Poças de Tinta muito perigosas. Não pise nessas zonas manchadas de tinta."
     ]
   },
   "eny_0029_lbmob": {
@@ -57,6 +128,17 @@
       "Este inimigo não tem habilidades especiais."
     ]
   },
+  "eny_0081_ruanyi": {
+    "name": "Ruan Yi",
+    "nickname": "Ruan Yi",
+    "description": "Ruan Yi havia mantido sua raiva sob controle por anos. Quando uma \"oportunidade\" fugaz se apresentou, ele decidiu que era hora de finalmente liberar sua fúria reprimida.",
+    "abilities": [
+      "Ruan Yi pode desviar todos os ataques. Use Xiranita para quebrar sua proteção e causar DNO efetivo a ele.",
+      "Quando com PV baixo, este inimigo entra em um estado Irado. Use Xiranita para quebrar este estado e aplicar Enfraquecido ao inimigo por um período prolongado.",
+      "Quando Irado, Ruan Yi pode invocar Raízes da Ruína Irada que explodem quando o operador controlado se aproxima demais.",
+      "A Energia Xiranita se unirá e aparecerá no campo de batalha para oferecer apoio. Toque na Energia Xiranita quando no tempo certo para ativá-la e suprimir Ruan Yi."
+    ]
+  },
   "eny_0033_lbhunt": {
     "name": "Emboscador Quebra-Ossos",
     "nickname": "Emboscador Quebra-Ossos",
@@ -65,12 +147,55 @@
       "Este inimigo não tem habilidades especiais."
     ]
   },
+  "eny_0055_hscrane": {
+    "name": "Perseguidor de Nuvens",
+    "nickname": "Perseguidor de Nuvens",
+    "description": "Um criminoso armado com uma estranha arma que se assemelha a uma lanterna inofensiva. Não se engane. A \"lanterna\" do Perseguidor de Nuvens é, na verdade, uma decapitadora voadora com um alcance aterrador.",
+    "abilities": [
+      "Cospe fumaça que interrompe o movimento. Operadores presos na fumaça têm menor linha de visão, menor velocidade de movimento e não conseguem desviar.",
+      "O inimigo é um combatente relativamente fraco. Tente eliminá-lo primeiro.",
+      "Solta fumaça verde que cura outros inimigos."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Penoso",
+    "nickname": "Penoso",
+    "description": "Um penoso nativo de Talos-II. Quando levanta seus espinhos e começa a rolar, torna-se tão destrutivo quanto uma motosserra giratória.",
+    "abilities": [
+      "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
+    ]
+  },
   "eny_0039_agcanno": {
     "name": "Sentinela",
     "nickname": "Sentinela",
     "description": "O \"Phrourossaron\" (ARS316) é uma suposta tentativa Aggeloide de imitar o formato e os padrões de ataque das armas de sentinelas da humanidade. Apesar de seu enorme alcance, o Sentinela é um organismo séssil.",
     "abilities": [
       "Este inimigo tem um ataque poderoso com alcance extremamente longo. Desvie do bombardeio para progredir."
+    ]
+  },
+  "eny_0053_hsmob": {
+    "name": "Saqueador das Estradas",
+    "nickname": "Saqueador das Estradas",
+    "description": "Um criminoso armado ativo nos territórios da Cidade de Wuling. Saqueadores das Estradas geralmente montam barricadas ilegais ou se envolvem no contrabando de mercadorias ilegais. Eliminar esses bandidos é uma das principais prioridades das forças policiais de Hongshan.",
+    "abilities": [
+      "Este inimigo não tem habilidades especiais."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Sombra da Praga de Elite da FTEY",
+    "nickname": "Sombra da Praga de Elite da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Elite da FTEY. Um Yinglung que dominou tanto as Artes de Originium quanto a espadomancia será considerado um Elite.",
+    "abilities": [
+      "Libera uma energia qi de lâmina que pode ativar qualquer Energia de Sombra da Praga que atingir."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Quiliarca",
+    "nickname": "Alleikhreos",
+    "description": "Uma criação da Fundação e um veterano de inúmeras batalhas. Este Quiliarca vagou pelo Ætherside até recuperar sua espada perdida e abrir uma brecha para poder retornar.",
+    "abilities": [
+      "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo.",
+      "Quando as coisas se complicarem para Alleikhreos, Quiliarca, ele invocará dublês da fenda para atacar seus oponentes."
     ]
   },
   "eny_0045_agtrinit": {
@@ -82,16 +207,6 @@
       "FORMA DE ASSALTO: desfere ataques corpo a corpo continuamente. Interrompa o carregamento de sua habilidade para aplicar um grande efeito de Desorientação.",
       "FORMA DE BUSCA: convoca muitos Aggeloi para a luta e libera ondas de choque do Ankhor.",
       "FORMA TRAIÇOEIRA: entra em modo furtivo para disparar uma chuva de projéteis de longe ou emboscar seus operadores. Interrompa seu modo furtivo para aplicar um grande efeito de Desorientação."
-    ]
-  },
-  "eny_0046_lbshamman": {
-    "name": "Piromante Quebra-Ossos",
-    "nickname": "Piromante Quebra-Ossos",
-    "description": "Um Invasor de Terras que pode usar as Artes de Originium da Evocação. Piromantes são extremamente perigosos, pois podem facilmente incendiar o campo de batalha com suas artes de fogo.",
-    "abilities": [
-      "Este inimigo tem ataques à distância poderosos que causam DNO Térmico, mas tem pouca mobilidade.",
-      "Este inimigo faz com que uma névoa ardente irrompa do chão, causando DNO Térmico. Tente desviar do ataque.",
-      "Teletransporta-se instantaneamente para um local distante quando os oponentes se aproximam demais."
     ]
   },
   "eny_0047_firebat": {
@@ -111,6 +226,22 @@
       "Apesar de estar armado com uma balista gigante, esse inimigo também é um combatente corpo a corpo habilidoso."
     ]
   },
+  "eny_0052_palesent": {
+    "name": "Aggelomoirai de Mármore",
+    "nickname": "Aggelomoirai de Mármore",
+    "description": "SEM REGISTROS ANTERIORES. Categorizado como um Aggelos devido à natureza de sua formação, sua aparência externa imita a de Nefarith. Apesar de seus altos níveis de energia central, a entidade parece ser bastante instável.",
+    "abilities": [
+      "O Aggelomoirai de Mármore desperto pode conjurar inúmeros Ankhors do universo para bombardear a terra. Desvie desses ataques para encontrar uma maneira de retaliar."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Garra da Névoa Ardente",
+    "nickname": "Garra da Névoa Ardente",
+    "description": "Um combatente Invasor de Terras corrompido pela névoa ardente. Absorver névoa não deve ser considerado uma bênção. Esses invasores se tornaram versões horrivelmente distorcidas de si mesmos.",
+    "abilities": [
+      "Desvie do ataque violento para fazê-lo cair no chão."
+    ]
+  },
   "eny_0049_rogue": {
     "name": "Infiltradora Quebra-Ossos",
     "nickname": "Infiltradora Quebra-Ossos",
@@ -120,12 +251,29 @@
       "Pode arremessar dardos e realizar ataques adicionais em operadores atingidos pelos dardos. Desviar dos dardos pode oferecer uma boa chance de contra-ataque."
     ]
   },
+  "eny_0098_sandb2": {
+    "name": "Besta-Couraça Chifre de Machado da Névoa Ardente",
+    "nickname": "Besta-Couraça Chifre de Machado da Névoa Ardente",
+    "description": "Uma besta-couraça chifre de machado corrompida por névoa ardente. A criatura tornou-se extremamente agressiva, tendo sido levada a um estado de insanidade raivosa. Aproxime-se com cautela se não quiser ser dividido ao meio por seu \"grande machado\".",
+    "abilities": [
+      "Uma Besta-Couraça Chifre de Machado furiosa usará seus enormes chifres para expulsar os inimigos que invadirem seu território. Cuidado com suas investidas.",
+      "O inimigo realizará diversos ataques em área. Interrompa-o quando ele ficar Enfurecido."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Rasga-Presa Quebra-Ossos",
     "nickname": "Rasga-Presa Quebra-Ossos",
     "description": "Uma pequena fera de guerra controlada pelos Invasores de Terras. Rasga-Presas são muito mais sanguinários e ferozes do que seus parentes selvagens e indomáveis. Eles são totalmente fiéis aos Invasores de Terras que os domaram.",
     "abilities": [
       "Este inimigo é ágil, mas pode ficar sobrecarregado ao receber vários golpes."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Lamacento",
+    "nickname": "Lamacento",
+    "description": "O \"Tholeroygran\" (ID do arquivo: ACM311) é o primeiro padrão fluido a ser descoberto. A morfologia da auréola é instável e a temperatura interna é tipicamente mais baixa do que a dos seus materiais constituintes.",
+    "abilities": [
+      "Este inimigo pode encurtar a distância rapidamente. Seus ataques podem aplicar Inflição Crio aos operadores atingidos."
     ]
   },
   "eny_0051_rodin": {
@@ -137,20 +285,20 @@
       "Fortalece-se com o poder das fornalhas. Observe e desvie dos seus jatos de fogo."
     ]
   },
-  "eny_0052_palesent": {
-    "name": "Aggelomoirai de Mármore",
-    "nickname": "Aggelomoirai de Mármore",
-    "description": "SEM REGISTROS ANTERIORES. Categorizado como um Aggelos devido à natureza de sua formação, sua aparência externa imita a de Nefarith. Apesar de seus altos níveis de energia central, a entidade parece ser bastante instável.",
+  "eny_0118_klhog": {
+    "name": "Sombra da Praga de Penoso",
+    "nickname": "Sombra da Praga de Penoso",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um penoso. Esse sombra da praga parece desferir ataques rolantes e saltitantes muito mais agressivos do que sua contraparte viva, embora isso possa ser apenas uma questão de imaginação.",
     "abilities": [
-      "O Aggelomoirai de Mármore desperto pode conjurar inúmeros Ankhors do universo para bombardear a terra. Desvie desses ataques para encontrar uma maneira de retaliar."
+      "Após um breve período de carregamento, o Sombra da Praga de Penoso pode invocar múltiplos raios e ativar a Energia de Sombra da Praga em uma grande área. Interrompa a besta rapidamente quando ela começar a carregar energia."
     ]
   },
-  "eny_0053_hsmob": {
-    "name": "Saqueador das Estradas",
-    "nickname": "Saqueador das Estradas",
-    "description": "Um criminoso armado ativo nos territórios da Cidade de Wuling. Saqueadores das Estradas geralmente montam barricadas ilegais ou se envolvem no contrabando de mercadorias ilegais. Eliminar esses bandidos é uma das principais prioridades das forças policiais de Hongshan.",
+  "eny_0130_inkbiter": {
+    "name": "Reserva da Fortuna",
+    "nickname": "Reserva da Fortuna",
+    "description": "Uma aparição iluminada por Si. Uma fortuna poupada é generosidade garantida. Com riqueza em mãos, a luz está garantida.",
     "abilities": [
-      "Este inimigo não tem habilidades especiais."
+      "Alguns ataques podem deixar uma Marca de Tinta nos operadores ao atingi-los. Tente desviar deles."
     ]
   },
   "eny_0054_hsmino": {
@@ -162,15 +310,11 @@
       "Não tente apunhalá-lo pelas costas. Ele tem um coice poderoso!"
     ]
   },
-  "eny_0055_hscrane": {
-    "name": "Perseguidor de Nuvens",
-    "nickname": "Perseguidor de Nuvens",
-    "description": "Um criminoso armado com uma estranha arma que se assemelha a uma lanterna inofensiva. Não se engane. A \"lanterna\" do Perseguidor de Nuvens é, na verdade, uma decapitadora voadora com um alcance aterrador.",
-    "abilities": [
-      "Cospe fumaça que interrompe o movimento. Operadores presos na fumaça têm menor linha de visão, menor velocidade de movimento e não conseguem desviar.",
-      "O inimigo é um combatente relativamente fraco. Tente eliminá-lo primeiro.",
-      "Solta fumaça verde que cura outros inimigos."
-    ]
+  "eny_0080_reaper": {
+    "name": "Ereignis",
+    "nickname": "Ereignis",
+    "description": "Qual é o significado do progresso? O que constitui o significado? Qual é a natureza da vida?",
+    "abilities": []
   },
   "eny_0057_dog": {
     "name": "Besta Carnívora Selvagem",
@@ -190,28 +334,12 @@
       "O inimigo tentará encurralar os operadores! Uma interrupção rápida o neutralizará."
     ]
   },
-  "eny_0059_erhound": {
-    "name": "Besta Carnívora da Névoa Ardente",
-    "nickname": "Besta Carnívora da Névoa Ardente",
-    "description": "Uma besta carnívora contaminada pela névoa ardente. Essas pequenas aberrações geralmente se movem em bandos e podem representar uma séria ameaça, até mesmo para equipes de campo totalmente armadas.",
+  "eny_0112_jzmonk": {
+    "name": "Uivante Montanhês",
+    "nickname": "Uivante Montanhês",
+    "description": "Os Uivantes Montanheses podem viver nas áreas selvagens. Essas criaturas inteligentes, porém travessas, frequentemente preparam \"armadilhas\" e \"perigos\" para viajantes sem sorte. Eles parecem gostar de ver os humanos frustrados com suas travessuras. Tenha paciência ao lidar com eles.",
     "abilities": [
-      "Menos inteligente, porém mais feroz que as bestas carnívoras comuns. Desvie de seu ataque de salto para fazê-la cair no chão."
-    ]
-  },
-  "eny_0060_lbmad": {
-    "name": "Garra da Névoa Ardente",
-    "nickname": "Garra da Névoa Ardente",
-    "description": "Um combatente Invasor de Terras corrompido pela névoa ardente. Absorver névoa não deve ser considerado uma bênção. Esses invasores se tornaram versões horrivelmente distorcidas de si mesmos.",
-    "abilities": [
-      "Desvie do ataque violento para fazê-lo cair no chão."
-    ]
-  },
-  "eny_0061_palecore": {
-    "name": "Aggelomoirai de Mármore",
-    "nickname": "Aggelomoirai de Mármore",
-    "description": "SEM REGISTROS ANTERIORES. Classificado como um Aggelos devido à natureza de sua formação. Embora seus módulos mórficos tenham sido remontados, a entidade continua a imitar a aparência de Nefarith. Nenhuma explicação satisfatória foi proposta para esse fenômeno.",
-    "abilities": [
-      "Derrote todos os Apêndices de Mármore para forçar o Aggelomoirai de Mármore adormecido a expor temporariamente seu núcleo vulnerável a ataques."
+      "Esses inimigos costumam vagar em matilhas. Qualquer operador ou uivante montanhês que pisar em cascas de banana jogadas fora irá escorregar e cair."
     ]
   },
   "eny_0062_paletent": {
@@ -223,12 +351,12 @@
       "Alguns Apêndices de Mármore são habilidosos em atacar adversários à distância, convertendo suas pontas em material de Praga que pode ser lançado."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Ram α",
-    "nickname": "Ram α",
-    "description": "O \"Kriosson Anavon\" (ID do arquivo: ACL071α) é uma variante energizada do ACL071. O conteúdo excessivo de energia da entidade dá a ele uma aparência vermelha brilhante característica e o torna mais forte e rápido do que a variante padrão.",
+  "eny_0073_slimerg": {
+    "name": "Lesma do Originium Ácida",
+    "nickname": "Lesma do Originium Ácida",
+    "description": "Uma criatura selvagem infectada por Originium. Esta lesma secreta uma substância ácida e, quando ameaçada, tenta intimidar o inimigo sacudindo-se violentamente e lançando fragmentos do aglomerado de Originium que carrega nas costas.",
     "abilities": [
-      "Este inimigo não tem habilidades especiais."
+      "Um inimigo tímido que se recolhe em sua carapaça para se proteger. Ele também dispara cristais de Originium de seu corpo a esmo para intimidar seus oponentes."
     ]
   },
   "eny_0064_agrange2": {
@@ -237,6 +365,14 @@
     "description": "O \"Kentron Anavon\" (ID do arquivo: ARL121α) é uma variante energizada do ARL121. A maior densidade energética da entidade dá a ele maior poder de fogo. A eficiência energética do seu mecanismo de disparo continua baixa.",
     "abilities": [
       "Este inimigo não tem habilidades especiais."
+    ]
+  },
+  "eny_0067_hound2": {
+    "name": "Rasga-Presas de Elite",
+    "nickname": "Rasga-Presas de Elite",
+    "description": "Um Invasor de Terras de elite aprimorado com vapores conhecidos como névoa ardente. Esse Rasga-Presas específico é mais feroz e astuto, e ataca com movimentos menos previsíveis.",
+    "abilities": [
+      "Ágil e flexível. Continuará tentando se aproximar e atacar seu alvo."
     ]
   },
   "eny_0065_lbmob2": {
@@ -255,12 +391,13 @@
       "Este inimigo não tem habilidades especiais."
     ]
   },
-  "eny_0067_hound2": {
-    "name": "Rasga-Presas de Elite",
-    "nickname": "Rasga-Presas de Elite",
-    "description": "Um Invasor de Terras de elite aprimorado com vapores conhecidos como névoa ardente. Esse Rasga-Presas específico é mais feroz e astuto, e ataca com movimentos menos previsíveis.",
+  "eny_0123_klcap": {
+    "name": "Sombra da Praga de Guja da FTEY",
+    "nickname": "Sombra da Praga de Guja da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Guja da FTEY. Esses Yinglungs são extremamente habilidosos em liderar assaltos e capturar posições defendidas. Os gládios que empunham são projetados para cortar Aggeloi com facilidade.",
     "abilities": [
-      "Ágil e flexível. Continuará tentando se aproximar e atacar seu alvo."
+      "O Sombra da Praga de Guja da FTEY pode fingir a derrota imediatamente antes de desferir um ataque inesperado. Tenha cuidado!",
+      "Após se dissipar, esse inimigo pode se teletransportar para perto de um operador e atacá-lo. Tente desviar."
     ]
   },
   "eny_0068_lbtough2": {
@@ -306,12 +443,20 @@
       "Um inimigo que aparece em grupos. Cuidado com seus apêndices frontais afiados como navalhas."
     ]
   },
-  "eny_0073_slimerg": {
-    "name": "Lesma do Originium Ácida",
-    "nickname": "Lesma do Originium Ácida",
-    "description": "Uma criatura selvagem infectada por Originium. Esta lesma secreta uma substância ácida e, quando ameaçada, tenta intimidar o inimigo sacudindo-se violentamente e lançando fragmentos do aglomerado de Originium que carrega nas costas.",
+  "eny_0106_wgthorns2": {
+    "name": "Hedron δ",
+    "nickname": "Hedron δ",
+    "description": "O \"Diaphaistagran Dinedon\" (ID de arquivo: ARM315δ) é uma variante energizada do ARM315. Quando irradiado pela luz solar, emite uma luz púrpura cintilante. No entanto, assume uma forma diferente quando irradiado pela luz refletida por Talos.",
     "abilities": [
-      "Um inimigo tímido que se recolhe em sua carapaça para se proteger. Ele também dispara cristais de Originium de seu corpo a esmo para intimidar seus oponentes."
+      "Os projéteis que ele lança aplicam Inflição Crio aos operadores ao atingi-los."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Alvo Pesado",
+    "nickname": "Alvo Pesado",
+    "description": "Um alvo especial feito de liga de alta resistência, bastante apreciado por arqueiros de grande força.",
+    "abilities": [
+      "Um alvo blindado. PV: 4."
     ]
   },
   "eny_0074_lbshield": {
@@ -322,6 +467,22 @@
       "Este inimigo bloqueará todos os ataques recebidos, a menos que ele esteja atacando. Desoriente-o para quebrar seu escudo."
     ]
   },
+  "eny_0099_slimeml2": {
+    "name": "Besta Garras de Foice Brutal",
+    "nickname": "Besta Garras de Foice Brutal",
+    "description": "Uma criatura selvagem infectada por Originium. A fera gigante carrega numerosos aglomerados de Originium que exibem níveis mais altos de atividade. Ela também possui uma carapaça mais espessa do que suas semelhantes comuns.",
+    "abilities": [
+      "Um inimigo que aparece em grupos. Cuidado com seus apêndices frontais afiados como navalhas."
+    ]
+  },
+  "eny_0131_inkscroll": {
+    "name": "Pergaminho de Táticas",
+    "nickname": "Pergaminho de Táticas",
+    "description": "Uma aparição iluminada por Si. Invocador de nuvens e arauto da chuva. Mestre da batalha, sabe o que é um engano. Portador de armas e defensor da paz.",
+    "abilities": [
+      "As alabardas arremessadas criam Poças de Tinta ao atingirem o solo. Essas poças poderão deixar uma Marca de Tinta nos operadores que pisarem nelas. Tente evitá-las."
+    ]
+  },
   "eny_0075_lbroshan": {
     "name": "Socador Quebra-Ossos",
     "nickname": "Socador Quebra-Ossos",
@@ -330,6 +491,39 @@
       "Um inimigo implacável. Mesmo após ser interrompido, é provável que tente atacar novamente.",
       "Este inimigo usa sua manga blindada para espalhar escamas de armadura reativas. Mantenha uma distância segura, especialmente se pisar nelas sem querer.",
       "Esse inimigo tentará recuperar escamas de armadura do chão para voltar à sua forma original e lançará um ataque poderoso assim que conseguir recuperá-las."
+    ]
+  },
+  "eny_0103_hshunt2": {
+    "name": "Vento Forte",
+    "nickname": "Vento Forte",
+    "description": "Um criminoso armado com armamento básico de longo alcance. Sua visão aguçada e mãos hábeis permitem que ele faça disparos mortais. Este Vento sopraria através dos prédios, levando todos os itens de valor.",
+    "abilities": [
+      "Dispara todos os tipos de flechas e arremessa bombas para ameaçar seus oponentes à distância."
+    ]
+  },
+  "eny_0104_hsrogue2": {
+    "name": "Rajada Intensa",
+    "nickname": "Rajada Intensa",
+    "description": "Um criminoso armado com uma arma exótica. Esses Perseguidores de Nuvens são tão habilidosos com lâminas em forma de gancho que dizem que poderiam fatiar as próprias nuvens em cubos perfeitos.",
+    "abilities": [
+      "Usa ganchos acorrentados para atacar operadores aliados. Operadores acorrentados ficarão atordoados, a menos que sejam libertados."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Andarilho da Mata",
+    "nickname": "Andarilho da Mata",
+    "description": "Uma pequena marionete de batalha criada por uma Sacerdotisa da Neve. Ela é responsável por manter a Floresta Nevada em segurança. Não subestime seus punhos de madeira, pois eles podem esmagar pedra com quase nenhum esforço.",
+    "abilities": [
+      "Um Andarilho da Mata com zero acúmulos de escudo irá capturar operadores para absorver sua energia e restaurar seus acúmulos de escudo.",
+      "Os Andarilhos da Mata trabalharão uns com os outros ao atacarem."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Alvo Padrão",
+    "nickname": "Alvo Padrão",
+    "description": "Um alvo padrão, essencial para aprimorar a habilidade com arco e flecha.",
+    "abilities": [
+      "Um alvo durável. PV: 2."
     ]
   },
   "eny_0076_agfly": {
@@ -359,6 +553,14 @@
       "Salta a grandes alturas para se preparar para um ataque. Para interromper o movimento do inimigo, use Xiranita para pular no ar e, em seguida, execute um ataque de mergulho para invocar um raio."
     ]
   },
+  "tatget_005_shield": {
+    "name": "Escudo de Energia",
+    "nickname": "Escudo de Energia",
+    "description": "Um escudo de energia desenvolvido para alvos. Os mestres arqueiros gostam de colocar escudos em seus alvos para fazer com que eles durem mais alguns segundos.",
+    "abilities": [
+      "Um escudo que pode ser aplicado a qualquer alvo. PV: 2. Alvos protegidos por escudos não podem ser congelados, Resina não pode ser aplicada ativamente neles e acúmulos de Resina em alvos protegidos não detonam ao sofrerem DNO."
+    ]
+  },
   "eny_0079_nefarp2": {
     "name": "Nefarith, \"Conquistadora\"",
     "nickname": "Nefarith, \"Conquistadora\"",
@@ -369,29 +571,20 @@
       "Prende seus operadores com um Ankhor. Ataque o Ankhor para libertá-los."
     ]
   },
-  "eny_0080_reaper": {
-    "name": "Ereignis",
-    "nickname": "Ereignis",
-    "description": "Qual é o significado do progresso? O que constitui o significado? Qual é a natureza da vida?",
-    "abilities": []
-  },
-  "eny_0081_ruanyi": {
-    "name": "Ruan Yi",
-    "nickname": "Ruan Yi",
-    "description": "Ruan Yi havia mantido sua raiva sob controle por anos. Quando uma \"oportunidade\" fugaz se apresentou, ele decidiu que era hora de finalmente liberar sua fúria reprimida.",
-    "abilities": [
-      "Ruan Yi pode desviar todos os ataques. Use Xiranita para quebrar sua proteção e causar DNO efetivo a ele.",
-      "Quando com PV baixo, este inimigo entra em um estado Irado. Use Xiranita para quebrar este estado e aplicar Enfraquecido ao inimigo por um período prolongado.",
-      "Quando Irado, Ruan Yi pode invocar Raízes da Ruína Irada que explodem quando o operador controlado se aproxima demais.",
-      "A Energia Xiranita se unirá e aparecerá no campo de batalha para oferecer apoio. Toque na Energia Xiranita quando no tempo certo para ativá-la e suprimir Ruan Yi."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Retumbador Celeste",
     "nickname": "Retumbador Celeste",
     "description": "Um bugio que cresceu nas áreas selvagens. Essa criatura é nativa de Talos-II. As membranas resistentes em sua cabeça e no pescoço permitem que ela emita uivos poderosos, altos o suficiente para fazer as colinas e florestas tremerem.",
     "abilities": [
       "O PV baixo aciona o estado de Enfurecido do inimigo. Durante esse estado, o inimigo realiza seus ataques de carga com mais frequência, causa mais DNO e recebe Redução de DNO. Interrompa o inimigo a tempo de encerrar o estado de Enfurecido."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Alvo de Barreira",
+    "nickname": "Alvo de Barreira",
+    "description": "Um alvo especial que pode mudar de tamanho e bloquear outros alvos atrás dele. Tente fragmentá-lo primeiro.",
+    "abilities": [
+      "Um alvo disruptivo de tamanho variável. PV: 3."
     ]
   },
   "eny_0083_hstiger": {
@@ -403,28 +596,22 @@
       "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
     ]
   },
+  "eny_0114_jzmking": {
+    "name": "Uivante dos Penhascos",
+    "nickname": "Uivante dos Penhascos",
+    "description": "Os Uivantes dos Penhascos são os membros dominantes das comunidades de uivantes montanheses. Essas feras costumam lutar entre si inúmeras vezes até que o campeão mais forte assuma o seu lugar como novo líder do bando. Não há dúvida de que esses indivíduos dominaram o combate e estão muito a frente de seus semelhantes.",
+    "abilities": [
+      "Quando enfurecido, o Uivante dos Penhascos começará a destruir as ruínas. Rochas soltas cairão no campo de batalha e causarão DNO aos operadores atingidos por elas.",
+      "O Uivante dos Penhascos pode usar os pilares dentro das ruínas com grande eficácia, o que confere a ele um enorme alcance de ataque.",
+      "O Uivante dos Penhascos fingirá que está fugindo e, de repente, lançará pedras enormes para atacar inimigos desavisados."
+    ]
+  },
   "eny_0084_hshunt": {
     "name": "Arqueiro do Bosque",
     "nickname": "Arqueiro do Bosque",
     "description": "Um fora-da-lei armado e equipado com armamento básico de longo alcance. Treinado nos bambuzais, o fora-da-lei pode disparar uma flecha pela floresta sem atingir uma única folha.",
     "abilities": [
       "Dispara todos os tipos de flechas e arremessa bombas para ameaçar seus oponentes à distância."
-    ]
-  },
-  "eny_0085_hsrogue": {
-    "name": "Navalha de Nimbus",
-    "nickname": "Navalha de Nimbus",
-    "description": "Um criminoso armado com uma arma estranha. Quando o Perseguidor de Nuvens se cansa de usar a estranha lanterna, ele saca sua espada curta e parte para o combate corpo a corpo.",
-    "abilities": [
-      "Usa ganchos acorrentados para atacar operadores aliados. Operadores acorrentados ficarão atordoados, a menos que sejam libertados."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Lamacento",
-    "nickname": "Lamacento",
-    "description": "O \"Tholeroygran\" (ID do arquivo: ACM311) é o primeiro padrão fluido a ser descoberto. A morfologia da auréola é instável e a temperatura interna é tipicamente mais baixa do que a dos seus materiais constituintes.",
-    "abilities": [
-      "Este inimigo pode encurtar a distância rapidamente. Seus ataques podem aplicar Inflição Crio aos operadores atingidos."
     ]
   },
   "eny_0088_wgthorns": {
@@ -443,15 +630,13 @@
       "Esse inimigo pode fortalecer consideravelmente os aliados próximos, melhorando suas capacidades."
     ]
   },
-  "eny_0090_wgabyss": {
-    "name": "Tidalklast",
-    "nickname": "Tidalklast",
-    "description": "O \"Anavatklydan\" (ID do arquivo: AGM32L) é uma variante não modelo do AGM321. Tais entidades existem em uma ampla gama de tamanhos. A visão de indivíduos particularmente grandes emergindo da água tornou-se um pesadelo para quem a presenciou.",
+  "eny_0132_inkkirin": {
+    "name": "Expurgo de Simmer",
+    "nickname": "Expurgo de Simmer",
+    "description": "Uma aparição iluminada por Si. Criador de nuvens de onde irrompem as chuvas. Aquele que resolve problemas e sacia a sede.",
     "abilities": [
-      "O inimigo tem dois estados: Longa Distância e Corpo a Corpo.",
-      "Estado de Corpo a Corpo: nesse estado, o inimigo tentará se aproximar do alvo para desferir ataques corpo a corpo.",
-      "Estado de Longa Distância: nesse estado, o inimigo manterá distância e atacará com habilidades mais poderosas.",
-      "O estado de longa distância sofre mais DNO Térmica, mas apresenta uma Redução DNO significativa contra outros elementos."
+      "Alguns ataques podem deixar uma Marca de Tinta nos operadores ao atingi-los. Tente desviar deles.",
+      "A Nuvem Trovejante pode liberar Raios que aplicam um Atordoamento temporário aos operadores atingidos."
     ]
   },
   "eny_0091_wgshoal": {
@@ -468,14 +653,6 @@
     "description": "Uma criatura selvagem infectada por Originium com temperaturas corporais extremamente altas. Essa lesma explode quando está próxima da morte, cobrindo tudo ao redor com fluidos corporais ácidos em temperaturas de ebulição, além de poeira de Originium ativo.",
     "abilities": [
       "Este inimigo detona automaticamente quando está com pouco PV. A detonação aplica um material instável no operador atingido. Se o operador sofrer DNO, o material explodirá."
-    ]
-  },
-  "eny_0093_hshog": {
-    "name": "Penoso",
-    "nickname": "Penoso",
-    "description": "Um penoso nativo de Talos-II. Quando levanta seus espinhos e começa a rolar, torna-se tão destrutivo quanto uma motosserra giratória.",
-    "abilities": [
-      "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
     ]
   },
   "eny_0094_hsfly": {
@@ -511,23 +688,6 @@
       "Não tente apunhalá-lo pelas costas. Ele tem um coice poderoso!"
     ]
   },
-  "eny_0098_sandb2": {
-    "name": "Besta-Couraça Chifre de Machado da Névoa Ardente",
-    "nickname": "Besta-Couraça Chifre de Machado da Névoa Ardente",
-    "description": "Uma besta-couraça chifre de machado corrompida por névoa ardente. A criatura tornou-se extremamente agressiva, tendo sido levada a um estado de insanidade raivosa. Aproxime-se com cautela se não quiser ser dividido ao meio por seu \"grande machado\".",
-    "abilities": [
-      "Uma Besta-Couraça Chifre de Machado furiosa usará seus enormes chifres para expulsar os inimigos que invadirem seu território. Cuidado com suas investidas.",
-      "O inimigo realizará diversos ataques em área. Interrompa-o quando ele ficar Enfurecido."
-    ]
-  },
-  "eny_0099_slimeml2": {
-    "name": "Besta Garras de Foice Brutal",
-    "nickname": "Besta Garras de Foice Brutal",
-    "description": "Uma criatura selvagem infectada por Originium. A fera gigante carrega numerosos aglomerados de Originium que exibem níveis mais altos de atividade. Ela também possui uma carapaça mais espessa do que suas semelhantes comuns.",
-    "abilities": [
-      "Um inimigo que aparece em grupos. Cuidado com seus apêndices frontais afiados como navalhas."
-    ]
-  },
   "eny_0100_slimerg2": {
     "name": "Lesma do Originium Ácida α",
     "nickname": "Lesma do Originium Ácida α",
@@ -553,20 +713,12 @@
       "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
     ]
   },
-  "eny_0103_hshunt2": {
-    "name": "Vento Forte",
-    "nickname": "Vento Forte",
-    "description": "Um criminoso armado com armamento básico de longo alcance. Sua visão aguçada e mãos hábeis permitem que ele faça disparos mortais. Este Vento sopraria através dos prédios, levando todos os itens de valor.",
+  "eny_0117_klhound": {
+    "name": "Sombra da Praga de Besta Carnívora",
+    "nickname": "Sombra da Praga de Besta Carnívora",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de uma besta carnívora. Embora seja apenas uma \"sombra persistente\", suas presas afiadas ainda são capazes de rasgar armaduras e equipamentos de proteção.",
     "abilities": [
-      "Dispara todos os tipos de flechas e arremessa bombas para ameaçar seus oponentes à distância."
-    ]
-  },
-  "eny_0104_hsrogue2": {
-    "name": "Rajada Intensa",
-    "nickname": "Rajada Intensa",
-    "description": "Um criminoso armado com uma arma exótica. Esses Perseguidores de Nuvens são tão habilidosos com lâminas em forma de gancho que dizem que poderiam fatiar as próprias nuvens em cubos perfeitos.",
-    "abilities": [
-      "Usa ganchos acorrentados para atacar operadores aliados. Operadores acorrentados ficarão atordoados, a menos que sejam libertados."
+      "Alguns ataques podem ativar a Energia do Sombra da Praga que atingem."
     ]
   },
   "eny_0105_wgslime2": {
@@ -575,14 +727,6 @@
     "description": "O \"Tholeroygran Dinedon\" (ID do arquivo: ACM311δ) é uma variante energizada do ACM311. Ele utiliza vias energéticas únicas e, portanto, mantém uma temperatura homeostática significativamente abaixo dos pontos de congelamento de sua matéria constituinte.",
     "abilities": [
       "Este inimigo pode encurtar a distância rapidamente. Seus ataques podem aplicar Inflição Crio aos operadores atingidos."
-    ]
-  },
-  "eny_0106_wgthorns2": {
-    "name": "Hedron δ",
-    "nickname": "Hedron δ",
-    "description": "O \"Diaphaistagran Dinedon\" (ID de arquivo: ARM315δ) é uma variante energizada do ARM315. Quando irradiado pela luz solar, emite uma luz púrpura cintilante. No entanto, assume uma forma diferente quando irradiado pela luz refletida por Talos.",
-    "abilities": [
-      "Os projéteis que ele lança aplicam Inflição Crio aos operadores ao atingi-los."
     ]
   },
   "eny_0107_wgshoal2": {
@@ -601,23 +745,6 @@
       "Este inimigo detona automaticamente quando está com pouco PV. A detonação aplica um material instável no operador atingido. Se o operador sofrer DNO, o material explodirá."
     ]
   },
-  "eny_0109_hshog2": {
-    "name": "Penoso Imbuído",
-    "nickname": "Penoso Imbuído",
-    "description": "Um penoso infectado por poeira de Originium ativo. Os espinhos da criatura são imbuídos de altos níveis de energia, o que os torna extremamente destrutivos.",
-    "abilities": [
-      "Este inimigo irá carregar energia e inflar o abdômen para cuspir lava superaquecida. Interrompa-o durante a carga para causar Desorientação significativa.",
-      "Estado Enfurecido: quando enfurecido, o ATQ da fera aumenta e ela usa suas habilidades de carga com mais frequência. Aplicar Desorientado a ela encerra o estado Enfurecido."
-    ]
-  },
-  "eny_0112_jzmonk": {
-    "name": "Uivante Montanhês",
-    "nickname": "Uivante Montanhês",
-    "description": "Os Uivantes Montanheses podem viver nas áreas selvagens. Essas criaturas inteligentes, porém travessas, frequentemente preparam \"armadilhas\" e \"perigos\" para viajantes sem sorte. Eles parecem gostar de ver os humanos frustrados com suas travessuras. Tenha paciência ao lidar com eles.",
-    "abilities": [
-      "Esses inimigos costumam vagar em matilhas. Qualquer operador ou uivante montanhês que pisar em cascas de banana jogadas fora irá escorregar e cair."
-    ]
-  },
   "eny_0113_jzogre": {
     "name": "Besta Mutiladora Encouraçada",
     "nickname": "Besta Mutiladora Encouraçada",
@@ -626,32 +753,6 @@
       "O uivante montanhês montado nas costas da besta mutiladora encouraçada pode jogar cascas de banana. Se a Besta Mutiladora Encouraçada pisar nas cascas de banana durante um ataque de investida, ela escorregará e cairá.",
       "Quando encolhida em posição defensiva, somente as mãos permanecem expostas como pontos fracos. Afaste as mãos para encerrar a postura defensiva e derrube a fera.",
       "Ao ser derrubada, os uivantes montanheses caem de seu dorso. Ataque-os para causar ainda mais DNO."
-    ]
-  },
-  "eny_0114_jzmking": {
-    "name": "Uivante dos Penhascos",
-    "nickname": "Uivante dos Penhascos",
-    "description": "Os Uivantes dos Penhascos são os membros dominantes das comunidades de uivantes montanheses. Essas feras costumam lutar entre si inúmeras vezes até que o campeão mais forte assuma o seu lugar como novo líder do bando. Não há dúvida de que esses indivíduos dominaram o combate e estão muito a frente de seus semelhantes.",
-    "abilities": [
-      "Quando enfurecido, o Uivante dos Penhascos começará a destruir as ruínas. Rochas soltas cairão no campo de batalha e causarão DNO aos operadores atingidos por elas.",
-      "O Uivante dos Penhascos pode usar os pilares dentro das ruínas com grande eficácia, o que confere a ele um enorme alcance de ataque.",
-      "O Uivante dos Penhascos fingirá que está fugindo e, de repente, lançará pedras enormes para atacar inimigos desavisados."
-    ]
-  },
-  "eny_0117_klhound": {
-    "name": "Sombra da Praga de Besta Carnívora",
-    "nickname": "Sombra da Praga de Besta Carnívora",
-    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de uma besta carnívora. Embora seja apenas uma \"sombra persistente\", suas presas afiadas ainda são capazes de rasgar armaduras e equipamentos de proteção.",
-    "abilities": [
-      "Alguns ataques podem ativar a Energia do Sombra da Praga que atingem."
-    ]
-  },
-  "eny_0118_klhog": {
-    "name": "Sombra da Praga de Penoso",
-    "nickname": "Sombra da Praga de Penoso",
-    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um penoso. Esse sombra da praga parece desferir ataques rolantes e saltitantes muito mais agressivos do que sua contraparte viva, embora isso possa ser apenas uma questão de imaginação.",
-    "abilities": [
-      "Após um breve período de carregamento, o Sombra da Praga de Penoso pode invocar múltiplos raios e ativar a Energia de Sombra da Praga em uma grande área. Interrompa a besta rapidamente quando ela começar a carregar energia."
     ]
   },
   "eny_0119_kltiger": {
@@ -672,29 +773,21 @@
       "Este inimigo invoca Sombras da Praga de Besta Carnívora. Em seguida, invoca múltiplos raios para atacar as bestas, transformando-as em Energia de Sombra da Praga e ativando-as. Tente desviar desses ataques."
     ]
   },
+  "eny_0127_bigents": {
+    "name": "Fúria de Gloomwald",
+    "nickname": "Fúria de Gloomwald",
+    "description": "Uma marionete de batalha gigante criada por uma Sacerdotisa da Neve. Ela obedecera às ordens de seu mestre para vagar e vasculhar o reino de névoa sem limites, até o momento em que percebeu que fora abandonada, até se tornar o receptáculo de toda a fúria de uma floresta profundamente nevada.",
+    "abilities": [
+      "Fúria de Gloomwald deixará videiras no chão. Um operador que pisar nelas receberá DNO contínuo e ficará mais Lento.",
+      "Fúria de Gloomwald invocará Andarilhos da Mata para auxiliar na batalha."
+    ]
+  },
   "eny_0121_klbud": {
     "name": "Sombra da Praga de Vanguarda da FTEY",
     "nickname": "Sombra da Praga de Vanguarda da FTEY",
     "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Vanguarda da FTEY. Dominar as técnicas de combate corpo a corpo é apenas o requisito mais básico para os Yinglungs.",
     "abilities": [
       "Libera uma energia qi de lâmina que pode ativar qualquer Energia de Sombra da Praga que atingir."
-    ]
-  },
-  "eny_0122_kltdbud": {
-    "name": "Sombra da Praga de Elite da FTEY",
-    "nickname": "Sombra da Praga de Elite da FTEY",
-    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Elite da FTEY. Um Yinglung que dominou tanto as Artes de Originium quanto a espadomancia será considerado um Elite.",
-    "abilities": [
-      "Libera uma energia qi de lâmina que pode ativar qualquer Energia de Sombra da Praga que atingir."
-    ]
-  },
-  "eny_0123_klcap": {
-    "name": "Sombra da Praga de Guja da FTEY",
-    "nickname": "Sombra da Praga de Guja da FTEY",
-    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Guja da FTEY. Esses Yinglungs são extremamente habilidosos em liderar assaltos e capturar posições defendidas. Os gládios que empunham são projetados para cortar Aggeloi com facilidade.",
-    "abilities": [
-      "O Sombra da Praga de Guja da FTEY pode fingir a derrota imediatamente antes de desferir um ataque inesperado. Tenha cuidado!",
-      "Após se dissipar, esse inimigo pode se teletransportar para perto de um operador e atacá-lo. Tente desviar."
     ]
   },
   "eny_0124_kltdcap": {
@@ -706,33 +799,6 @@
       "O Sombra da Praga de Capitão da FTEY pode usar sua arma para invocar raios. Uma entidade de Energia de Sombra da Praga é ativada ao ser atingida por um raio."
     ]
   },
-  "eny_0125_fdcentur": {
-    "name": "Alleikhreos, Quiliarca",
-    "nickname": "Alleikhreos",
-    "description": "Uma criação da Fundação e um veterano de inúmeras batalhas. Este Quiliarca vagou pelo Ætherside até recuperar sua espada perdida e abrir uma brecha para poder retornar.",
-    "abilities": [
-      "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo.",
-      "Quando as coisas se complicarem para Alleikhreos, Quiliarca, ele invocará dublês da fenda para atacar seus oponentes."
-    ]
-  },
-  "eny_0127_bigents": {
-    "name": "Fúria de Gloomwald",
-    "nickname": "Fúria de Gloomwald",
-    "description": "Uma marionete de batalha gigante criada por uma Sacerdotisa da Neve. Ela obedecera às ordens de seu mestre para vagar e vasculhar o reino de névoa sem limites, até o momento em que percebeu que fora abandonada, até se tornar o receptáculo de toda a fúria de uma floresta profundamente nevada.",
-    "abilities": [
-      "Fúria de Gloomwald deixará videiras no chão. Um operador que pisar nelas receberá DNO contínuo e ficará mais Lento.",
-      "Fúria de Gloomwald invocará Andarilhos da Mata para auxiliar na batalha."
-    ]
-  },
-  "eny_0128_babyents": {
-    "name": "Andarilho da Mata",
-    "nickname": "Andarilho da Mata",
-    "description": "Uma pequena marionete de batalha criada por uma Sacerdotisa da Neve. Ela é responsável por manter a Floresta Nevada em segurança. Não subestime seus punhos de madeira, pois eles podem esmagar pedra com quase nenhum esforço.",
-    "abilities": [
-      "Um Andarilho da Mata com zero acúmulos de escudo irá capturar operadores para absorver sua energia e restaurar seus acúmulos de escudo.",
-      "Os Andarilhos da Mata trabalharão uns com os outros ao atacarem."
-    ]
-  },
   "eny_0129_slwood": {
     "name": "Lesma da Madeira",
     "nickname": "Lesma da Madeira",
@@ -741,44 +807,20 @@
       "As Lesmas da Madeira podem cavar túneis subterrâneos para surpreender seus oponentes."
     ]
   },
+  "eny_0133_inklion": {
+    "name": "Medida com Juba",
+    "nickname": "Medida com Juba",
+    "description": "Uma aparição iluminada por Si. Curvas e linhas, medidas e precisas. Uma busca iluminada, conforme decretado pelos céus.",
+    "abilities": [
+      "Uma Medida com Juba possui hemisférios de jade em seus lados que podem reduzir significativamente o DNO causado pelos golpes que as atingem. Em vez disso, tente atacar a cabeça e a cauda do espírito de tinta."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Alvo Básico",
     "nickname": "Alvo Básico",
     "description": "Um alvo básico para arqueiros iniciantes.",
     "abilities": [
       "Um alvo básico. PV: 1."
-    ]
-  },
-  "tatget_002_endurance": {
-    "name": "Alvo Padrão",
-    "nickname": "Alvo Padrão",
-    "description": "Um alvo padrão, essencial para aprimorar a habilidade com arco e flecha.",
-    "abilities": [
-      "Um alvo durável. PV: 2."
-    ]
-  },
-  "tatget_003_expand": {
-    "name": "Alvo de Barreira",
-    "nickname": "Alvo de Barreira",
-    "description": "Um alvo especial que pode mudar de tamanho e bloquear outros alvos atrás dele. Tente fragmentá-lo primeiro.",
-    "abilities": [
-      "Um alvo disruptivo de tamanho variável. PV: 3."
-    ]
-  },
-  "tatget_004_armor": {
-    "name": "Alvo Pesado",
-    "nickname": "Alvo Pesado",
-    "description": "Um alvo especial feito de liga de alta resistência. Ele é resistente e bem recebido por arqueiros de imensa força.",
-    "abilities": [
-      "Um alvo blindado. PV: 4."
-    ]
-  },
-  "tatget_005_shield": {
-    "name": "Escudo de Energia",
-    "nickname": "Escudo de Energia",
-    "description": "Um escudo de energia desenvolvido para alvos. Os mestres arqueiros gostam de colocar escudos em seus alvos para fazer com que eles durem mais alguns segundos.",
-    "abilities": [
-      "Um escudo que pode ser aplicado a qualquer alvo. PV: 2. Alvos protegidos por escudos não podem ser congelados, Resina não pode ser aplicada ativamente neles e acúmulos de Resina em alvos protegidos não detonam ao sofrerem DNO."
     ]
   }
 }

@@ -13,7 +13,7 @@
     "blocTag": "Endfield Industries",
     "expertTags": [
       "Kampftechnik",
-      "Beweglich-keit"
+      "Beweglichkeit"
     ],
     "giftPreferTags": [
       "Von Händlern aus Wuling empfohlen"
@@ -58,7 +58,7 @@
     },
     "ultimate": {
       "name": "DER HÄUPTLING SIEHT DICH!",
-      "description": "Tangtang hebt ihre Augenklappe und verschießt aus ihrem Auge ein <@ba.key>ALTES STARREN</>, das Gegner im Wirkungsbereich bewegungsunfähig macht und ihnen kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt.\nEndet die Entwicklung des <@ba.key>ALTEN STARRENS</>, bricht ein Kaventsmann über den Wirkungsbereich herein und fügt allen Gegnern innerhalb des Bereichs massiven <@ba.cryst>Kryo-SDN</> zu.\nWenn der gesteuerte Operator innerhalb des <@ba.key>ALTES STARREN</>-Musters einen Sturzangriff ausführt, endet die Entwicklung vorzeitig und der Kaventsmann wird sofort heraufbeschworen, damit sie noch mehr <@ba.cryst>Kryo-SDN</> verursacht.",
+      "description": "Tangtang hebt ihre Augenklappe und verschießt aus ihrem Auge ein <@ba.key>ALTES STARREN</>, das Gegner im Wirkungsbereich vorübergehend mit <#ba.static>Bewegungsunfähigkeit</> belegt und ihnen kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt.\nEndet die Entwicklung des <@ba.key>ALTEN STARRENS</>, bricht ein Kaventsmann herein und fügt allen Gegnern innerhalb des Wirkungsbereichs massiven <@ba.cryst>Kryo-SDN</> zu.\nWenn der gesteuerte Operator innerhalb des <@ba.key>ALTES STARREN</>-Musters einen Sturzangriff ausführt, endet die Entwicklung vorzeitig und der Kaventsmann wird sofort heraufbeschworen, damit sie noch mehr <@ba.cryst>Kryo-SDN</> verursacht.",
       "dmgOverTimeTotalMultiplier": "Gesamtmultiplikator für Kontinuierlichen SDN",
       "oldenStareDurationS": "Dauer: ALTES STARREN (Sek.)",
       "rogueWaveDmgMultiplier": "Kaventsmann-SDN-Multiplikator",
@@ -117,7 +117,7 @@
         "description": "Kampftechnik: Schnelles Nachladen\nEin Paar Hände für ein Paar Kugeln: Die Projektile des Oberhäuptlings verfehlen niemals ihr Ziel."
       },
       "expert2": {
-        "name": "Beweglich-keit",
+        "name": "Beweglichkeit",
         "description": "Beweglichkeit: Flinke Entfesselungskünstlerin\nSie hat ein Talent dafür, sich aus Ärger herauszuwinden. Du willst wissen, wie sie sich überhaupt erst Ärger einbrockt? Das musst du sie selbst fragen."
       },
       "hobby1": {

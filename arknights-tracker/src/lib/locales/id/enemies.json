@@ -7,6 +7,22 @@
       "Hindari ludah beracunnya. Jika sampai menginjaknya, operator akan terkena Nature DMG terus-menerus."
     ]
   },
+  "eny_0059_erhound": {
+    "name": "Hazefyre Tuskbeast",
+    "nickname": "Hazefyre Tuskbeast",
+    "description": "Tuskbeast yang tercemar oleh hazefyre. Binatang abnormal ini biasanya bergerak berkelompok dan bisa menimbulkan ancaman besar, bahkan bagi tim lapangan yang bersenjata lengkap sekalipun.",
+    "abilities": [
+      "Kurang cerdas, tapi lebih beringas daripada tuskbeast biasa. Untuk menumbangkannya, hindari serangan terkamnya."
+    ]
+  },
+  "eny_0085_hsrogue": {
+    "name": "Nimbus Razor",
+    "nickname": "Nimbus Razor",
+    "description": "Penjahat yang menggunakan senjata aneh. Saat bosan menggunakan lentera anehnya, Cloud Stalker akan menghunus belati pendek dan melakukan pertarungan jarak dekat.",
+    "abilities": [
+      "Menggunakan kait rantai untuk menyerang operator rekan. Operator yang terbelit rantai ini akan terkena Stun hingga dibebaskan dari belitan rantai."
+    ]
+  },
   "eny_0018_lbtough": {
     "name": "Bonekrusher Executioner",
     "nickname": "Bonekrusher Executioner",
@@ -14,6 +30,24 @@
     "abilities": [
       "Serangan cengkeramannya akan menimbulkan DMG sangat besar. Jika ada satu operator yang tertangkap, gunakan skill operator lain untuk menyela musuh ini dan membebaskan operator yang tertangkap.",
       "Ayunan kapak ganda yang diperkuat pasti sulit dihindari. Coba sela serangannya saja."
+    ]
+  },
+  "eny_0046_lbshamman": {
+    "name": "Bonekrusher Pyromancer",
+    "nickname": "Bonekrusher Pyromancer",
+    "description": "Landbreaker yang bisa menggunakan Originium Arts berupa Evocation. Pyromancer sangat berbahaya karena mereka bisa dengan mudah membakar medan pertarungan dengan serangan api.",
+    "abilities": [
+      "Musuh ini punya serangan jarak jauh kuat yang akan menimbulkan Heat DMG, tapi mobilitasnya rendah.",
+      "Musuh ini menyebabkan hazefyre muncul dari tanah sehingga akan menimbulkan Heat DMG. Berusahalah menghindari serangannya.",
+      "Langsung berteleportasi ke tempat yang jauh saat lawan terlalu dekat."
+    ]
+  },
+  "eny_0063_agmelee2": {
+    "name": "Ram α",
+    "nickname": "Ram α",
+    "description": "“Kriosson Anavon” (ID arsip: ACL071α) adalah varian ACL071 yang berisi energi. Energi berlebih dari entitas ini menghasilkan tampilan merah terang yang khas dan membuatnya lebih kuat dan lebih cepat daripada varian standar.",
+    "abilities": [
+      "Musuh ini tidak punya kemampuan spesial."
     ]
   },
   "eny_0021_agmelee": {
@@ -40,6 +74,25 @@
       "Musuh ini tidak punya kemampuan spesial."
     ]
   },
+  "eny_0061_palecore": {
+    "name": "Marble Aggelomoirai",
+    "nickname": "Marble Aggelomoirai",
+    "description": "TIDAK ADA CATATAN SEBELUMNYA. Entitas ini dikategorikan sebagai Aggelos karena sifat pembentukannya. Walau modul-modul morfiknya sudah dirakit kembali, entitas ini selalu saja meniru penampilan Nefarith. Tidak ada penjelasan yang memuaskan atas fenomena ini.",
+    "abilities": [
+      "Kalahkan semua Marble Appendage agar Marble Aggelomoirai yang dorman terpaksa untuk sementara memperlihatkan intinya yang rentan terhadap serangan."
+    ]
+  },
+  "eny_0090_wgabyss": {
+    "name": "Tidalklast",
+    "nickname": "Tidalklast",
+    "description": "“Anavatklydan” (ID arsip: AGM32L) adalah varian nonmodel dari AGM321. Entitas ini punya ukuran berbeda-beda. Penampakan sosok raksasa yang muncul dari air ini bagaikan mimpi buruk bagi siapa saja yang pernah melihatnya.",
+    "abilities": [
+      "Musuh ini punya dua kondisi: Jarak Jauh dan Jarak Dekat.",
+      "Kondisi Jarak Dekat: Dalam kondisi ini, musuh akan berusaha mendekati target untuk melancarkan serangan jarak dekat.",
+      "Kondisi Jarak Jauh: Dalam kondisi ini, musuh akan menjaga jarak dan menyerang dengan kemampuan yang lebih kuat.",
+      "Kondisi jarak jauh akan terkena Heat DMG lebih besar, tapi punya Pengurangan DMG tinggi terhadap elemen lain."
+    ]
+  },
   "eny_0027_agscorp": {
     "name": "Heavy Sting",
     "nickname": "Heavy Sting",
@@ -47,6 +100,24 @@
     "abilities": [
       "Musuh ini menyerang dengan memunculkan pilar-pilar Originium di bawah operator.",
       "Saat didekati, musuh ini akan mengeluarkan pilar-pilar batu di sekelilingnya untuk melindungi diri."
+    ]
+  },
+  "eny_0109_hshog2": {
+    "name": "Quillbeast Duri Energi",
+    "nickname": "Quillbeast Duri Energi",
+    "description": "Quillbeast yang terinfeksi debu Originium aktif. Duri-duri makhluk ini dipenuhi energi tingkat tinggi sehingga sangat berbahaya.",
+    "abilities": [
+      "Musuh ini akan mengisi kekuatan dan menggembungkan perutnya untuk menyemburkan lava superpanas dari tubuhnya. Sela pengisian kekuatannya untuk mengakibatkan Stagger sangat besar kepadanya.",
+      "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
+    ]
+  },
+  "eny_0134_jsspsi": {
+    "name": "Si",
+    "nickname": "Si",
+    "description": "Anak sungai kala salju mencair di musim semi, lereng musim gugur yang memerah, mimpi lama surut saat kehidupan baru membubung tinggi.",
+    "abilities": [
+      "Saat Si membentangkan lukisannya, berusahalah mengingat letak zona serangannya, lalu hindari zona tersebut dalam urutan yang benar.",
+      "Si bisa menciptakan Kolam Tinta yang sangat berbahaya. Jangan melangkah ke dalam zona yang tergenang tinta ini."
     ]
   },
   "eny_0029_lbmob": {
@@ -57,6 +128,17 @@
       "Musuh ini tidak punya kemampuan spesial."
     ]
   },
+  "eny_0081_ruanyi": {
+    "name": "Ruan Yi",
+    "nickname": "Ruan Yi",
+    "description": "Ruan Yi menahan amarahnya hingga bertahun-tahun. Begitu ada sekilas “kesempatan”, akhirnya dia memutuskan untuk meluapkan amarahnya yang terpendam.",
+    "abilities": [
+      "Ruan Yi bisa menangkal semua serangan. Gunakan Xiranite untuk menghancurkan perlindungannya agar bisa menimbulkan DMG yang efektif kepadanya.",
+      "Saat HP rendah, musuh ini akan masuk ke kondisi Murka. Gunakan Xiranite untuk mengakhiri kondisi ini dan mengakibatkan Weakened kepada musuh dengan durasi yang lebih lama.",
+      "Saat dalam kondisi Murka, Ruan Yi bisa memanggil Akar Tanaman Beracun yang akan meledak saat operator terkontrol terlalu dekat dengannya.",
+      "Energi Xiranite akan terkumpul dan muncul di medan pertarungan untuk membantu. Sentuh Energi Xiranite pada saat yang tepat untuk mengaktifkannya dan menundukkan Ruan Yi."
+    ]
+  },
   "eny_0033_lbhunt": {
     "name": "Bonekrusher Ambusher",
     "nickname": "Bonekrusher Ambusher",
@@ -65,12 +147,55 @@
       "Musuh ini tidak punya kemampuan spesial."
     ]
   },
+  "eny_0055_hscrane": {
+    "name": "Cloud Stalker",
+    "nickname": "Cloud Stalker",
+    "description": "Penjahat yang menggunakan senjata aneh yang tampak seperti lentera tak berbahaya. Jangan terkecoh. “Lentera” Cloud Stalker sebenarnya adalah senjata tebas yang bisa terbang dengan jangkauan mengerikan.",
+    "abilities": [
+      "Menyemburkan asap yang mengganggu. Jarak pandang operator yang terjebak dalam asap ini akan terhalang dan kecepatan geraknya akan melambat serta tidak bisa menghindar.",
+      "Musuh ini petarung yang agak lemah. Singkirkan dia lebih dulu.",
+      "Menyemburkan asap hijau yang akan menyembuhkan musuh yang lain."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Quillbeast",
+    "nickname": "Quillbeast",
+    "description": "Quillbeast liar asli Talos-II. Saat durinya terangkat dan makhluk ini mulai berguling, dia menjadi sekuat gergaji mesin yang berputar.",
+    "abilities": [
+      "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
+    ]
+  },
   "eny_0039_agcanno": {
     "name": "Sentinel",
     "nickname": "Sentinel",
     "description": "Menurut dugaan, “Phrourossaron” (ARS316) adalah upaya Aggelos untuk meniru wujud dan pola serangan senapan prajurit manusia. Terlepas dari jangkauannya yang sangat besar, Sentinel adalah organisme sesil.",
     "abilities": [
       "Musuh ini punya serangan kuat dengan jangkauan yang sangat jauh. Hindari bombardirnya agar progresmu bisa meningkat."
+    ]
+  },
+  "eny_0053_hsmob": {
+    "name": "Road Plunderer",
+    "nickname": "Road Plunderer",
+    "description": "Penjahat bersenjata yang aktif di yurisdiksi Kota Wuling. Road Plunderer biasanya mendirikan barikade jalan ilegal atau menyelundupkan barang ilegal. Membasmi kawanan perampok ini adalah prioritas utama pasukan penegak hukum Hongshan.",
+    "abilities": [
+      "Musuh ini tidak punya kemampuan spesial."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Bayang-bayang Hawar Elite Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Elite Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Elite Satgassus Yinglung. Yinglung yang telah menguasai Originium Arts dan ilmu pedang akan dianggap seorang elite.",
+    "abilities": [
+      "Mengeluarkan qi pedang yang bisa mengaktifkan Energi Bayang-bayang Hawar apa pun yang dikenainya."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarch",
+    "nickname": "Alleikhreos",
+    "description": "Ciptaan Fondasi dan veteran pertarungan yang tak terhitung banyaknya. Chiliarch ini berkelana di Ætherside hingga ia menemukan kembali pedangnya yang hilang dan menemukan waktu kembalinya.",
+    "abilities": [
+      "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya.",
+      "Saat Alleikhreos, Chiliarch, mulai terdesak, dia akan memanggil duplikat-duplikatnya dari celah untuk menyerang lawannya."
     ]
   },
   "eny_0045_agtrinit": {
@@ -82,16 +207,6 @@
       "WUJUD SERANGAN: Melancarkan serangan jarak dekat secara terus-menerus. Saat dia mengisi kekuatan kemampuannya, sela dia untuk mengakibatkan Stagger besar kepadanya.",
       "WUJUD PENCARIAN: Memanggil banyak Aggelos ke dalam pertarungan dan melepaskan gelombang kejut Ankhor.",
       "WUJUD TIPUAN: Menggunakan kondisi siluman untuk melepaskan rentetan proyektil dari kejauhan atau menyergap operatormu. Hentikan kondisi silumannya untuk mengakibatkan Stagger besar kepadanya."
-    ]
-  },
-  "eny_0046_lbshamman": {
-    "name": "Bonekrusher Pyromancer",
-    "nickname": "Bonekrusher Pyromancer",
-    "description": "Landbreaker yang bisa menggunakan Originium Arts berupa Evocation. Pyromancer sangat berbahaya karena mereka bisa dengan mudah membakar medan pertarungan dengan serangan api.",
-    "abilities": [
-      "Musuh ini punya serangan jarak jauh kuat yang akan menimbulkan Heat DMG, tapi mobilitasnya rendah.",
-      "Musuh ini menyebabkan hazefyre muncul dari tanah sehingga akan menimbulkan Heat DMG. Berusahalah menghindari serangannya.",
-      "Langsung berteleportasi ke tempat yang jauh saat lawan terlalu dekat."
     ]
   },
   "eny_0047_firebat": {
@@ -111,6 +226,22 @@
       "Walau dipersenjatai ballista raksasa, musuh ini juga mahir dalam pertarungan jarak dekat."
     ]
   },
+  "eny_0052_palesent": {
+    "name": "Marble Aggelomoirai",
+    "nickname": "Marble Aggelomoirai",
+    "description": "TIDAK ADA CATATAN SEBELUMNYA. Entitas ini dikategorikan sebagai Aggelos karena sifat pembentukannya. Penampilan luarnya meniru penampilan Nefarith. Walaupun pembacaan energi intinya tinggi, entitas ini tampaknya agak tidak stabil.",
+    "abilities": [
+      "Marble Aggelomoirai yang sudah bangkit bisa memanggil Ankhor yang tak terhitung jumlahnya dari alam semesta untuk membombardir daratan. Hindari serangan ini dan cari cara untuk membalasnya."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Hazefyre Claw",
+    "nickname": "Hazefyre Claw",
+    "description": "Landbreaker petarung yang tercemar oleh hazefyre. Menyerap hazefyre bukanlah suatu hal yang menguntungkan. Kawanan penjarah ini berubah menjadi sosok menakutkan yang sangat berbeda dari wujud asli mereka.",
+    "abilities": [
+      "Untuk menumbangkannya, hindari serangan kertakan giginya."
+    ]
+  },
   "eny_0049_rogue": {
     "name": "Bonekrusher Infiltrator",
     "nickname": "Bonekrusher Infiltrator",
@@ -120,12 +251,29 @@
       "Bisa melemparkan panah mini dan melancarkan serangan tambahan terhadap operator yang terkena anak panah. Hindari panah mini itu agar kamu punya peluang untuk melancarkan serangan balik."
     ]
   },
+  "eny_0098_sandb2": {
+    "name": "Armorbeast Kapak Hazefyre",
+    "nickname": "Armorbeast Kapak Hazefyre",
+    "description": "Armorbeast kapak yang tercemar hazefyre. Makhluk ini menjadi sangat agresif, ganas, dan liar. Kalau mendekatinya dengan gegabah, tubuhmu akan terbelah oleh kapak raksasanya.",
+    "abilities": [
+      "Armorbeast Kapak yang mengamuk akan menggunakan tanduk besarnya untuk mengejar musuh yang memasuki wilayahnya. Waspadai serangan serudukannya.",
+      "Musuh ini akan melancarkan berbagai serangan area besar. Hentikan serangannya saat dia dalam kondisi Mengamuk."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Bonekrusher Ripptusk",
     "nickname": "Bonekrusher Ripptusk",
     "description": "Hewan perang kecil yang dikendalikan oleh Landbreaker. Ripptusk jauh lebih haus darah dan ganas daripada saudara mereka di alam liar. Hewan perang ini sangat setia kepada kawanan Landbreaker yang berhasil menjinakkan mereka.",
     "abilities": [
       "Walau lincah, musuh ini mungkin saja akan kewalahan saat terkena beberapa serangan sekaligus."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Mudflow",
+    "nickname": "Mudflow",
+    "description": "“Tholeroygran” (ID arsip: ACM311) adalah pola berbasis cairan yang pertama kali ditemukan. Bentuk halonya tidak stabil dan suhu internalnya biasanya lebih rendah daripada material penyusunnya.",
+    "abilities": [
+      "Musuh ini bisa mendekat dengan cepat dari kejauhan. Serangannya bisa mengakibatkan Cryo Infliction kepada operator yang terhantam."
     ]
   },
   "eny_0051_rodin": {
@@ -137,20 +285,20 @@
       "Memperkuat dirinya dengan kekuatan denstack. Waspadai dan hindari semburan apinya."
     ]
   },
-  "eny_0052_palesent": {
-    "name": "Marble Aggelomoirai",
-    "nickname": "Marble Aggelomoirai",
-    "description": "TIDAK ADA CATATAN SEBELUMNYA. Entitas ini dikategorikan sebagai Aggelos karena sifat pembentukannya. Penampilan luarnya meniru penampilan Nefarith. Walaupun pembacaan energi intinya tinggi, entitas ini tampaknya agak tidak stabil.",
+  "eny_0118_klhog": {
+    "name": "Bayang-bayang Hawar Quillbeast",
+    "nickname": "Bayang-bayang Hawar Quillbeast",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud seekor quillbeast. Bayang-bayang hawar ini tampaknya melakukan serangan berguling dan melompat yang jauh lebih agresif daripada versi hidupnya, meskipun hal itu mungkin hanya sekadar khayalan belaka.",
     "abilities": [
-      "Marble Aggelomoirai yang sudah bangkit bisa memanggil Ankhor yang tak terhitung jumlahnya dari alam semesta untuk membombardir daratan. Hindari serangan ini dan cari cara untuk membalasnya."
+      "Setelah pengisian kekuatan singkat, Bayang-bayang Hawar Quillbeast bisa memanggil beberapa kilat petir dan mengaktifkan Energi Bayang-bayang Hawar dalam area luas. Segera hentikan hewan itu saat mulai mengisi kekuatan."
     ]
   },
-  "eny_0053_hsmob": {
-    "name": "Road Plunderer",
-    "nickname": "Road Plunderer",
-    "description": "Penjahat bersenjata yang aktif di yurisdiksi Kota Wuling. Road Plunderer biasanya mendirikan barikade jalan ilegal atau menyelundupkan barang ilegal. Membasmi kawanan perampok ini adalah prioritas utama pasukan penegak hukum Hongshan.",
+  "eny_0130_inkbiter": {
+    "name": "Fortune’s Stash",
+    "nickname": "Fortune’s Stash",
+    "description": "Penampakan yang tercerahkan oleh Si. Kekayaan yang tersimpan menjamin kemurahan hati. Dengan harta di tangan, cahaya pun aman.",
     "abilities": [
-      "Musuh ini tidak punya kemampuan spesial."
+      "Beberapa serangan bisa mengakibatkan Ink Mark pada operator saat mengenainya. Berusahalah menghindarinya."
     ]
   },
   "eny_0054_hsmino": {
@@ -162,15 +310,11 @@
       "Jangan coba menyerang dari belakang. Tendangan belakangnya sangat kuat!"
     ]
   },
-  "eny_0055_hscrane": {
-    "name": "Cloud Stalker",
-    "nickname": "Cloud Stalker",
-    "description": "Penjahat yang menggunakan senjata aneh yang tampak seperti lentera tak berbahaya. Jangan terkecoh. “Lentera” Cloud Stalker sebenarnya adalah senjata tebas yang bisa terbang dengan jangkauan mengerikan.",
-    "abilities": [
-      "Menyemburkan asap yang mengganggu. Jarak pandang operator yang terjebak dalam asap ini akan terhalang dan kecepatan geraknya akan melambat serta tidak bisa menghindar.",
-      "Musuh ini petarung yang agak lemah. Singkirkan dia lebih dulu.",
-      "Menyemburkan asap hijau yang akan menyembuhkan musuh yang lain."
-    ]
+  "eny_0080_reaper": {
+    "name": "Ereignis",
+    "nickname": "Ereignis",
+    "description": "Apa makna kemajuan? Apa yang sebenarnya memberikan makna? Apa hakikat kehidupan?",
+    "abilities": []
   },
   "eny_0057_dog": {
     "name": "Tuskbeast Liar",
@@ -190,28 +334,12 @@
       "Musuh ini akan mencoba menjebak operator! Cegah dengan penyelaan cepat."
     ]
   },
-  "eny_0059_erhound": {
-    "name": "Hazefyre Tuskbeast",
-    "nickname": "Hazefyre Tuskbeast",
-    "description": "Tuskbeast yang tercemar oleh hazefyre. Binatang abnormal ini biasanya bergerak berkelompok dan bisa menimbulkan ancaman besar, bahkan bagi tim lapangan yang bersenjata lengkap sekalipun.",
+  "eny_0112_jzmonk": {
+    "name": "Rockhowler",
+    "nickname": "Rockhowler",
+    "description": "Rockhowler bisa hidup di alam liar. Makhluk cerdas yang jahil ini sering menyiapkan “perangkap” dan “bahaya” bagi para pelancong yang malang. Mereka tampaknya senang melihat manusia yang frustrasi akibat ulah mereka. Hadapi mereka dengan sabar.",
     "abilities": [
-      "Kurang cerdas, tapi lebih beringas daripada tuskbeast biasa. Untuk menumbangkannya, hindari serangan terkamnya."
-    ]
-  },
-  "eny_0060_lbmad": {
-    "name": "Hazefyre Claw",
-    "nickname": "Hazefyre Claw",
-    "description": "Landbreaker petarung yang tercemar oleh hazefyre. Menyerap hazefyre bukanlah suatu hal yang menguntungkan. Kawanan penjarah ini berubah menjadi sosok menakutkan yang sangat berbeda dari wujud asli mereka.",
-    "abilities": [
-      "Untuk menumbangkannya, hindari serangan kertakan giginya."
-    ]
-  },
-  "eny_0061_palecore": {
-    "name": "Marble Aggelomoirai",
-    "nickname": "Marble Aggelomoirai",
-    "description": "TIDAK ADA CATATAN SEBELUMNYA. Entitas ini dikategorikan sebagai Aggelos karena sifat pembentukannya. Walau modul-modul morfiknya sudah dirakit kembali, entitas ini selalu saja meniru penampilan Nefarith. Tidak ada penjelasan yang memuaskan atas fenomena ini.",
-    "abilities": [
-      "Kalahkan semua Marble Appendage agar Marble Aggelomoirai yang dorman terpaksa untuk sementara memperlihatkan intinya yang rentan terhadap serangan."
+      "Musuh ini biasanya berkeliaran dalam kawanan. Setiap operator atau Rockhowler yang menginjak kulit pisang yang dibuang akan terpeleset dan jatuh."
     ]
   },
   "eny_0062_paletent": {
@@ -223,12 +351,12 @@
       "Sebagian Marble Appendage mahir menyerang lawan jarak jauh dengan mengubah ujungnya menjadi material Hawar yang bisa dilemparkan."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Ram α",
-    "nickname": "Ram α",
-    "description": "“Kriosson Anavon” (ID arsip: ACL071α) adalah varian ACL071 yang berisi energi. Energi berlebih dari entitas ini menghasilkan tampilan merah terang yang khas dan membuatnya lebih kuat dan lebih cepat daripada varian standar.",
+  "eny_0073_slimerg": {
+    "name": "Siput Originium Asam",
+    "nickname": "Siput Originium Asam",
+    "description": "Makhluk liar yang terinfeksi Originium. Siput ini mengeluarkan cairan asam. Saat terancam, makhluk ini akan mencoba mengusir musuhnya dengan mengguncang-guncangkan tubuhnya sekeras mungkin dan melontarkan pecahan gugus Originium yang ada di punggungnya.",
     "abilities": [
-      "Musuh ini tidak punya kemampuan spesial."
+      "Musuh pemalu yang akan masuk ke cangkangnya untuk melindungi diri. Dia juga akan menembakkan kristal Originium secara acak untuk menakuti lawannya."
     ]
   },
   "eny_0064_agrange2": {
@@ -237,6 +365,14 @@
     "description": "“Kentron Anavon” (ID arsip: ARL121α) adalah varian ARL121 yang berisi energi. Entitas ini punya kepadatan energi yang lebih tinggi sehingga menghasilkan daya tembak yang lebih besar. Efisiensi energi pada mekanisme tembaknya tetap rendah.",
     "abilities": [
       "Musuh ini tidak punya kemampuan spesial."
+    ]
+  },
+  "eny_0067_hound2": {
+    "name": "Elite Ripptusk",
+    "nickname": "Elite Ripptusk",
+    "description": "Hewan perang Landbreaker elite yang diperkuat dengan asap yang disebut hazefyre. Ripptusk ini lebih ganas dan cerdas, serta menyerang dengan gerakan yang tak mudah ditebak.",
+    "abilities": [
+      "Gesit dan lincah. Akan terus mencoba mendekati dan menyerang targetnya."
     ]
   },
   "eny_0065_lbmob2": {
@@ -255,12 +391,13 @@
       "Musuh ini tidak punya kemampuan spesial."
     ]
   },
-  "eny_0067_hound2": {
-    "name": "Elite Ripptusk",
-    "nickname": "Elite Ripptusk",
-    "description": "Hewan perang Landbreaker elite yang diperkuat dengan asap yang disebut hazefyre. Ripptusk ini lebih ganas dan cerdas, serta menyerang dengan gerakan yang tak mudah ditebak.",
+  "eny_0123_klcap": {
+    "name": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Glaiver Satgassus Yinglung. Yinglung semacam itu sangat ahli memimpin penyerbuan dan merebut posisi yang dijaga. Glaive yang mereka pegang dirancang untuk menebas Aggelos dengan mudah.",
     "abilities": [
-      "Gesit dan lincah. Akan terus mencoba mendekati dan menyerang targetnya."
+      "Bayang-bayang Hawar Glaiver Satgassus Yinglung bisa berpura-pura kalah sebelum melancarkan serangan tak terduga. Hati-hati!",
+      "Setelah menghilang, musuh ini bisa langsung berpindah ke sebelah operator dan menyerang. Berusahalah menghindarinya."
     ]
   },
   "eny_0068_lbtough2": {
@@ -306,12 +443,20 @@
       "Musuh yang muncul berkelompok. Waspadai organ julur tajam di bagian depannya."
     ]
   },
-  "eny_0073_slimerg": {
-    "name": "Siput Originium Asam",
-    "nickname": "Siput Originium Asam",
-    "description": "Makhluk liar yang terinfeksi Originium. Siput ini mengeluarkan cairan asam. Saat terancam, makhluk ini akan mencoba mengusir musuhnya dengan mengguncang-guncangkan tubuhnya sekeras mungkin dan melontarkan pecahan gugus Originium yang ada di punggungnya.",
+  "eny_0106_wgthorns2": {
+    "name": "Hedron δ",
+    "nickname": "Hedron δ",
+    "description": "“Diaphaistagran Dinedon” (ID arsip: ARM315δ) adalah varian ARM315 yang berisi energi. Saat terkena cahaya matahari, cahaya ungu akan terpancar darinya. Tapi, wujudnya akan berubah jika terkena cahaya yang terpantul dari Talos.",
     "abilities": [
-      "Musuh pemalu yang akan masuk ke cangkangnya untuk melindungi diri. Dia juga akan menembakkan kristal Originium secara acak untuk menakuti lawannya."
+      "Proyektil yang diluncurkannya akan mengakibatkan Cryo Infliction kepada operator yang terhantam."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Target Berat",
+    "nickname": "Target Berat",
+    "description": "Target spesial yang terbuat dari campuran berkekuatan tinggi. Target ini kokoh dan disukai oleh para pemanah yang kekuatannya luar biasa.",
+    "abilities": [
+      "Target berarmor. HP: 4."
     ]
   },
   "eny_0074_lbshield": {
@@ -322,6 +467,22 @@
       "Musuh ini akan memblokir semua serangan kecuali saat dia sedang menyerang. Akibatkan Stagger kepadanya agar perisainya hancur."
     ]
   },
+  "eny_0099_slimeml2": {
+    "name": "Brutal Pincerbeast",
+    "nickname": "Brutal Pincerbeast",
+    "description": "Makhluk liar yang terinfeksi Originium. Gugusan Originium yang ada pada hewan ini punya tingkat aktivitas yang tinggi, dan karapasnya jauh lebih tebal daripada spesies lainnya yang sejenis.",
+    "abilities": [
+      "Musuh yang muncul berkelompok. Waspadai organ julur tajam di bagian depannya."
+    ]
+  },
+  "eny_0131_inkscroll": {
+    "name": "Scroll of Tactics",
+    "nickname": "Scroll of Tactics",
+    "description": "Penampakan yang tercerahkan oleh Si. Pemanggil awan dan pembawa hujan. Guru pertarungan, tak asing dengan tipu daya. Pengemban senjata, dan pembela perdamaian.",
+    "abilities": [
+      "Tombak kapak yang dilemparkan akan menciptakan Kolam Tinta saat mendarat. Kolam ini bisa mengakibatkan Ink Mark pada operator yang menginjaknya. Berusahalah menghindarinya."
+    ]
+  },
   "eny_0075_lbroshan": {
     "name": "Bonekrusher Siegeknuckle",
     "nickname": "Bonekrusher Siegeknuckle",
@@ -330,6 +491,39 @@
       "Musuh yang tak kenal ampun. Setelah disela, kemungkinan besar dia akan berusaha menyerang lagi.",
       "Musuh ini menggunakan lengan berarmornya untuk menyebarkan sisik armor reaktif. Jaga jarak aman, terutama jika tanpa sengaja menginjaknya.",
       "Musuh ini akan berusaha mengambil kembali sisik armornya dari tanah untuk kembali ke bentuk semula, dan akan melancarkan serangan kuat setelah berhasil mengambilnya."
+    ]
+  },
+  "eny_0103_hshunt2": {
+    "name": "Sweeping Wind",
+    "nickname": "Sweeping Wind",
+    "description": "Penjahat yang menggunakan senjata jarak jauh sederhana. Mata yang tajam dan tangan gesit membuat setiap tembakannya mematikan. Angin ini akan menerobos bangunan demi menyapu semua barang berharga.",
+    "abilities": [
+      "Menembakkan berbagai jenis anak panah dan melemparkan bom untuk menghajar lawan dari jarak jauh."
+    ]
+  },
+  "eny_0104_hsrogue2": {
+    "name": "Breaking Gust",
+    "nickname": "Breaking Gust",
+    "description": "Penjahat yang menggunakan senjata eksotis. Cloud Stalker seperti ini sangat mahir menggunakan bilah berkait. Dengar-dengar, mereka bahkan bisa membelah dan memotong awan menjadi bentuk dadu yang sempurna.",
+    "abilities": [
+      "Menggunakan kait rantai untuk menyerang operator rekan. Operator yang terbelit rantai ini akan terkena Stun hingga dibebaskan dari belitan rantai."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Pengembara Kayu",
+    "nickname": "Pengembara Kayu",
+    "description": "Boneka tempur kecil yang dibuat oleh seorang Snowpriest. Boneka ini bertugas menjaga keamanan Hutan Salju. Jangan remehkan tinju kayunya, karena tinjunya bisa menghancurkan batu dengan mudah.",
+    "abilities": [
+      "Pengembara Kayu yang tidak punya tumpukan perisai akan menjebak operator untuk menyerap energi mereka dan memulihkan tumpukan perisainya.",
+      "Pengembara Kayu akan saling bekerja sama saat menyerang."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Target Standar",
+    "nickname": "Target Standar",
+    "description": "Target standar, sangat penting untuk mengasah kemampuan memanah.",
+    "abilities": [
+      "Target yang tahan lama. HP: 2."
     ]
   },
   "eny_0076_agfly": {
@@ -359,6 +553,14 @@
       "Melompat sangat tinggi untuk mengisi kekuatan untuk menyerang. Untuk menyela aksi musuh ini, gunakan Xiranite untuk melompat ke udara, lalu lancarkan serangan menukik untuk memanggil sambaran petir."
     ]
   },
+  "tatget_005_shield": {
+    "name": "Perisai Energi",
+    "nickname": "Perisai Energi",
+    "description": "Perisai energi yang dirancang untuk target. Para ahli panahan suka memasangkan perisai pada targetnya agar bisa bertahan beberapa detik lebih lama.",
+    "abilities": [
+      "Perisai yang bisa dipasang pada target mana saja. HP: 2. Target berperisai tidak bisa dibekukan, Resin tidak bisa diakibatkan secara aktif pada mereka, dan tumpukan Resin pada target berperisai tidak akan meledak saat terkena DMG."
+    ]
+  },
   "eny_0079_nefarp2": {
     "name": "Nefarith, “sang Penakluk”",
     "nickname": "Nefarith, “sang Penakluk”",
@@ -369,29 +571,20 @@
       "Mengurung operatormu dengan Ankhor. Serang Ankhor-nya untuk membebaskan mereka."
     ]
   },
-  "eny_0080_reaper": {
-    "name": "Ereignis",
-    "nickname": "Ereignis",
-    "description": "Apa makna kemajuan? Apa yang sebenarnya memberikan makna? Apa hakikat kehidupan?",
-    "abilities": []
-  },
-  "eny_0081_ruanyi": {
-    "name": "Ruan Yi",
-    "nickname": "Ruan Yi",
-    "description": "Ruan Yi menahan amarahnya hingga bertahun-tahun. Begitu ada sekilas “kesempatan”, akhirnya dia memutuskan untuk meluapkan amarahnya yang terpendam.",
-    "abilities": [
-      "Ruan Yi bisa menangkal semua serangan. Gunakan Xiranite untuk menghancurkan perlindungannya agar bisa menimbulkan DMG yang efektif kepadanya.",
-      "Saat HP rendah, musuh ini akan masuk ke kondisi Murka. Gunakan Xiranite untuk mengakhiri kondisi ini dan mengakibatkan Weakened kepada musuh dengan durasi yang lebih lama.",
-      "Saat dalam kondisi Murka, Ruan Yi bisa memanggil Akar Tanaman Beracun yang akan meledak saat operator terkontrol terlalu dekat dengannya.",
-      "Energi Xiranite akan terkumpul dan muncul di medan pertarungan untuk membantu. Sentuh Energi Xiranite pada saat yang tepat untuk mengaktifkannya dan menundukkan Ruan Yi."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Skydrummer",
     "nickname": "Skydrummer",
     "description": "Howlerbeast yang tumbuh besar di alam liar. Binatang ini merupakan spesies asli Talos-II. Membran kuat di kepala dan lehernya membuatnya bisa mengeluarkan lolongan dahsyat yang cukup keras hingga mengguncang perbukitan dan hutan-hutan.",
     "abilities": [
       "Saat HP rendah, musuh akan masuk ke kondisi Mengamuk. Dalam kondisi ini, musuh akan lebih sering melancarkan serangan terjangan, menimbulkan DMG lebih besar, dan mendapatkan Pengurangan DMG. Sela musuh tepat waktu untuk mengakhiri kondisi Mengamuk ini."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Target Penghalang",
+    "nickname": "Target Penghalang",
+    "description": "Target spesial yang ukurannya bisa berubah dan bisa menghalangi target di belakangnya. Coba hancurkan dulu target yang ini.",
+    "abilities": [
+      "Target pengganggu yang ukurannya bisa berubah. HP: 3."
     ]
   },
   "eny_0083_hstiger": {
@@ -403,28 +596,22 @@
       "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
     ]
   },
+  "eny_0114_jzmking": {
+    "name": "Craghowler",
+    "nickname": "Craghowler",
+    "description": "Craghowler adalah anggota yang dominan di komunitas rockhowler. Binatang ini akan saling bertarung berulang kali sampai ada pemenang terkuat yang menjadi pemimpin craghowler. Craghowler itu sudah pasti telah menjadi ahli tempur yang jauh lebih berpengalaman dibandingkan sesamanya.",
+    "abilities": [
+      "Saat mengamuk, Craghowler akan mulai menghancurkan reruntuhan. Batu yang longgar akan jatuh ke medan pertarungan dan menimbulkan DMG kepada operator yang terhantam.",
+      "Craghowler bisa menggunakan pilar di dalam reruntuhan untuk menciptakan efek luar biasa dan memberi dirinya jangkauan serang yang sangat luas.",
+      "Craghowler akan berpura-pura mundur dan tiba-tiba melempar batu besar untuk menyerang musuh yang lengah."
+    ]
+  },
   "eny_0084_hshunt": {
     "name": "Grove Archer",
     "nickname": "Grove Archer",
     "description": "Penjahat yang dilengkapi dengan persenjataan jarak jauh sederhana. Terlatih di belukar bambu, panahnya mampu melesat menembus hutan tanpa mengenai sehelai daun pun.",
     "abilities": [
       "Menembakkan berbagai jenis anak panah dan melemparkan bom untuk menghajar lawan dari jarak jauh."
-    ]
-  },
-  "eny_0085_hsrogue": {
-    "name": "Nimbus Razor",
-    "nickname": "Nimbus Razor",
-    "description": "Penjahat yang menggunakan senjata aneh. Saat bosan menggunakan lentera anehnya, Cloud Stalker akan menghunus belati pendek dan melakukan pertarungan jarak dekat.",
-    "abilities": [
-      "Menggunakan kait rantai untuk menyerang operator rekan. Operator yang terbelit rantai ini akan terkena Stun hingga dibebaskan dari belitan rantai."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Mudflow",
-    "nickname": "Mudflow",
-    "description": "“Tholeroygran” (ID arsip: ACM311) adalah pola berbasis cairan yang pertama kali ditemukan. Bentuk halonya tidak stabil dan suhu internalnya biasanya lebih rendah daripada material penyusunnya.",
-    "abilities": [
-      "Musuh ini bisa mendekat dengan cepat dari kejauhan. Serangannya bisa mengakibatkan Cryo Infliction kepada operator yang terhantam."
     ]
   },
   "eny_0088_wgthorns": {
@@ -443,15 +630,13 @@
       "Musuh ini bisa memperkuat rekan di sekitar secara signifikan untuk meningkatkan kemampuan mereka."
     ]
   },
-  "eny_0090_wgabyss": {
-    "name": "Tidalklast",
-    "nickname": "Tidalklast",
-    "description": "“Anavatklydan” (ID arsip: AGM32L) adalah varian nonmodel dari AGM321. Entitas ini punya ukuran berbeda-beda. Penampakan sosok raksasa yang muncul dari air ini bagaikan mimpi buruk bagi siapa saja yang pernah melihatnya.",
+  "eny_0132_inkkirin": {
+    "name": "Simmer’s Purge",
+    "nickname": "Simmer’s Purge",
+    "description": "Penampakan yang tercerahkan oleh Si. Kreator awan dari mana hujan tercurah. Pemecah masalah, dan penawar dahaga.",
     "abilities": [
-      "Musuh ini punya dua kondisi: Jarak Jauh dan Jarak Dekat.",
-      "Kondisi Jarak Dekat: Dalam kondisi ini, musuh akan berusaha mendekati target untuk melancarkan serangan jarak dekat.",
-      "Kondisi Jarak Jauh: Dalam kondisi ini, musuh akan menjaga jarak dan menyerang dengan kemampuan yang lebih kuat.",
-      "Kondisi jarak jauh akan terkena Heat DMG lebih besar, tapi punya Pengurangan DMG tinggi terhadap elemen lain."
+      "Beberapa serangan bisa mengakibatkan Ink Mark pada operator saat mengenainya. Berusahalah menghindarinya.",
+      "Awan Petir bisa melepaskan Petir yang akan mengakibatkan Stun untuk sementara pada operator yang dikenainya."
     ]
   },
   "eny_0091_wgshoal": {
@@ -468,14 +653,6 @@
     "description": "Makhluk liar yang terinfeksi Originium dan suhu tubuhnya sangat tinggi. Siput ini akan meledak saat sekarat sehingga akan menyemburkan cairan asam mendidih dan debu Originium aktif ke sekitarnya.",
     "abilities": [
       "Musuh ini akan meledakkan diri saat HP-nya rendah. Ledakannya akan mengakibatkan material tidak stabil kepada operator yang terhantam. Jika operator terkena DMG, material itu akan meledak."
-    ]
-  },
-  "eny_0093_hshog": {
-    "name": "Quillbeast",
-    "nickname": "Quillbeast",
-    "description": "Quillbeast liar asli Talos-II. Saat durinya terangkat dan makhluk ini mulai berguling, dia menjadi sekuat gergaji mesin yang berputar.",
-    "abilities": [
-      "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
     ]
   },
   "eny_0094_hsfly": {
@@ -511,23 +688,6 @@
       "Jangan coba menyerang dari belakang. Tendangan belakangnya sangat kuat!"
     ]
   },
-  "eny_0098_sandb2": {
-    "name": "Armorbeast Kapak Hazefyre",
-    "nickname": "Armorbeast Kapak Hazefyre",
-    "description": "Armorbeast kapak yang tercemar hazefyre. Makhluk ini menjadi sangat agresif, ganas, dan liar. Kalau mendekatinya dengan gegabah, tubuhmu akan terbelah oleh kapak raksasanya.",
-    "abilities": [
-      "Armorbeast Kapak yang mengamuk akan menggunakan tanduk besarnya untuk mengejar musuh yang memasuki wilayahnya. Waspadai serangan serudukannya.",
-      "Musuh ini akan melancarkan berbagai serangan area besar. Hentikan serangannya saat dia dalam kondisi Mengamuk."
-    ]
-  },
-  "eny_0099_slimeml2": {
-    "name": "Brutal Pincerbeast",
-    "nickname": "Brutal Pincerbeast",
-    "description": "Makhluk liar yang terinfeksi Originium. Gugusan Originium yang ada pada hewan ini punya tingkat aktivitas yang tinggi, dan karapasnya jauh lebih tebal daripada spesies lainnya yang sejenis.",
-    "abilities": [
-      "Musuh yang muncul berkelompok. Waspadai organ julur tajam di bagian depannya."
-    ]
-  },
   "eny_0100_slimerg2": {
     "name": "Siput Originium Asam α",
     "nickname": "Siput Originium Asam α",
@@ -553,20 +713,12 @@
       "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
     ]
   },
-  "eny_0103_hshunt2": {
-    "name": "Sweeping Wind",
-    "nickname": "Sweeping Wind",
-    "description": "Penjahat yang menggunakan senjata jarak jauh sederhana. Mata yang tajam dan tangan gesit membuat setiap tembakannya mematikan. Angin ini akan menerobos bangunan demi menyapu semua barang berharga.",
+  "eny_0117_klhound": {
+    "name": "Bayang-bayang Hawar Tuskbeast",
+    "nickname": "Bayang-bayang Hawar Tuskbeast",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud tuskbeast. Meskipun ini hanyalah “bayangan yang tersisa”, taring tajamnya tetap mampu menembus zirah dan gear pelindung.",
     "abilities": [
-      "Menembakkan berbagai jenis anak panah dan melemparkan bom untuk menghajar lawan dari jarak jauh."
-    ]
-  },
-  "eny_0104_hsrogue2": {
-    "name": "Breaking Gust",
-    "nickname": "Breaking Gust",
-    "description": "Penjahat yang menggunakan senjata eksotis. Cloud Stalker seperti ini sangat mahir menggunakan bilah berkait. Dengar-dengar, mereka bahkan bisa membelah dan memotong awan menjadi bentuk dadu yang sempurna.",
-    "abilities": [
-      "Menggunakan kait rantai untuk menyerang operator rekan. Operator yang terbelit rantai ini akan terkena Stun hingga dibebaskan dari belitan rantai."
+      "Beberapa serangan bisa mengaktifkan Energi Bayang-bayang Hawar yang dikenainya."
     ]
   },
   "eny_0105_wgslime2": {
@@ -575,14 +727,6 @@
     "description": "“Tholeroygran Dinedon” (ID arsip: ACM311δ) adalah varian ACM311 yang berisi energi. Karena memanfaatkan jalur energi yang unik, suhu homeostatiknya bisa terus jauh di bawah titik beku materi penyusunnya.",
     "abilities": [
       "Musuh ini bisa mendekat dengan cepat dari kejauhan. Serangannya bisa mengakibatkan Cryo Infliction kepada operator yang terhantam."
-    ]
-  },
-  "eny_0106_wgthorns2": {
-    "name": "Hedron δ",
-    "nickname": "Hedron δ",
-    "description": "“Diaphaistagran Dinedon” (ID arsip: ARM315δ) adalah varian ARM315 yang berisi energi. Saat terkena cahaya matahari, cahaya ungu akan terpancar darinya. Tapi, wujudnya akan berubah jika terkena cahaya yang terpantul dari Talos.",
-    "abilities": [
-      "Proyektil yang diluncurkannya akan mengakibatkan Cryo Infliction kepada operator yang terhantam."
     ]
   },
   "eny_0107_wgshoal2": {
@@ -601,23 +745,6 @@
       "Musuh ini akan meledakkan diri saat HP-nya rendah. Ledakannya akan mengakibatkan material tidak stabil kepada operator yang terhantam. Jika operator terkena DMG, material itu akan meledak."
     ]
   },
-  "eny_0109_hshog2": {
-    "name": "Quillbeast Duri Energi",
-    "nickname": "Quillbeast Duri Energi",
-    "description": "Quillbeast yang terinfeksi debu Originium aktif. Duri-duri makhluk ini dipenuhi energi tingkat tinggi sehingga sangat berbahaya.",
-    "abilities": [
-      "Musuh ini akan mengisi kekuatan dan menggembungkan perutnya untuk menyemburkan lava superpanas dari tubuhnya. Sela pengisian kekuatannya untuk mengakibatkan Stagger sangat besar kepadanya.",
-      "Kondisi Mengamuk: Saat dalam kondisi Mengamuk, ATK-nya akan meningkat dan dia akan lebih sering mengisi kekuatan skill-nya. Akibatkan Staggered kepadanya untuk mengakhiri kondisi Mengamuk ini."
-    ]
-  },
-  "eny_0112_jzmonk": {
-    "name": "Rockhowler",
-    "nickname": "Rockhowler",
-    "description": "Rockhowler bisa hidup di alam liar. Makhluk cerdas yang jahil ini sering menyiapkan “perangkap” dan “bahaya” bagi para pelancong yang malang. Mereka tampaknya senang melihat manusia yang frustrasi akibat ulah mereka. Hadapi mereka dengan sabar.",
-    "abilities": [
-      "Musuh ini biasanya berkeliaran dalam kawanan. Setiap operator atau Rockhowler yang menginjak kulit pisang yang dibuang akan terpeleset dan jatuh."
-    ]
-  },
   "eny_0113_jzogre": {
     "name": "Manglerbeast Berarmor",
     "nickname": "Manglerbeast Berarmor",
@@ -626,32 +753,6 @@
       "Rockhowler yang menunggang di punggung Manglerbeast Berarmor bisa melemparkan kulit pisang. Jika Manglerbeast Berarmor menginjak kulit pisang ini saat menerjang untuk menyerang, dia akan terpeleset dan jatuh.",
       "Saat meringkuk dalam pose bertahan, hanya tangannya yang menjadi titik lemahnya. Serang tangannya untuk mengakhiri pose bertahan dan mengakibatkan knocked down kepada binatang tersebut.",
       "Menjatuhkan Rockhowler saat terkena knocked down. Serang Rockhowler untuk menimbulkan lebih banyak DMG."
-    ]
-  },
-  "eny_0114_jzmking": {
-    "name": "Craghowler",
-    "nickname": "Craghowler",
-    "description": "Craghowler adalah anggota yang dominan di komunitas rockhowler. Binatang ini akan saling bertarung berulang kali sampai ada pemenang terkuat yang menjadi pemimpin craghowler. Craghowler itu sudah pasti telah menjadi ahli tempur yang jauh lebih berpengalaman dibandingkan sesamanya.",
-    "abilities": [
-      "Saat mengamuk, Craghowler akan mulai menghancurkan reruntuhan. Batu yang longgar akan jatuh ke medan pertarungan dan menimbulkan DMG kepada operator yang terhantam.",
-      "Craghowler bisa menggunakan pilar di dalam reruntuhan untuk menciptakan efek luar biasa dan memberi dirinya jangkauan serang yang sangat luas.",
-      "Craghowler akan berpura-pura mundur dan tiba-tiba melempar batu besar untuk menyerang musuh yang lengah."
-    ]
-  },
-  "eny_0117_klhound": {
-    "name": "Bayang-bayang Hawar Tuskbeast",
-    "nickname": "Bayang-bayang Hawar Tuskbeast",
-    "description": "Manifestasi sisa energi Æther yang memancarkan wujud tuskbeast. Meskipun ini hanyalah “bayangan yang tersisa”, taring tajamnya tetap mampu menembus zirah dan gear pelindung.",
-    "abilities": [
-      "Beberapa serangan bisa mengaktifkan Energi Bayang-bayang Hawar yang dikenainya."
-    ]
-  },
-  "eny_0118_klhog": {
-    "name": "Bayang-bayang Hawar Quillbeast",
-    "nickname": "Bayang-bayang Hawar Quillbeast",
-    "description": "Manifestasi sisa energi Æther yang memancarkan wujud seekor quillbeast. Bayang-bayang hawar ini tampaknya melakukan serangan berguling dan melompat yang jauh lebih agresif daripada versi hidupnya, meskipun hal itu mungkin hanya sekadar khayalan belaka.",
-    "abilities": [
-      "Setelah pengisian kekuatan singkat, Bayang-bayang Hawar Quillbeast bisa memanggil beberapa kilat petir dan mengaktifkan Energi Bayang-bayang Hawar dalam area luas. Segera hentikan hewan itu saat mulai mengisi kekuatan."
     ]
   },
   "eny_0119_kltiger": {
@@ -672,29 +773,21 @@
       "Musuh ini akan memanggil Bayang-bayang Hawar Tuskbeast. Ia lalu memanggil sejumlah petir untuk menyambar mereka, mengubah mereka menjadi Energi Bayang-bayang Hawar, dan mengaktifkannya. Berusahalah menghindari serangan ini."
     ]
   },
+  "eny_0127_bigents": {
+    "name": "Amarah Gloomwald",
+    "nickname": "Amarah Gloomwald",
+    "description": "Boneka tempur raksasa yang dibuat oleh seorang Snowpriest. Boneka ini mematuhi perintah tuannya untuk berkelana dan menjelajahi alam kabut yang tak terbatas, tapi akhirnya dia sadar bahwa dia telah ditinggalkan. Boneka ini pun menjadi wadah yang menampung seluruh amarah hutan salju yang lebat.",
+    "abilities": [
+      "Amarah Gloomwald akan meninggalkan sulur di tanah. Operator yang menginjaknya akan terkena DMG dan efek Slow terus-menerus.",
+      "Amarah Gloomwald akan memanggil Pengembara Kayu untuk membantunya dalam pertarungan."
+    ]
+  },
   "eny_0121_klbud": {
     "name": "Bayang-bayang Hawar Garda Depan Satgassus Yinglung",
     "nickname": "Bayang-bayang Hawar Garda Depan Satgassus Yinglung",
     "description": "Manifestasi sisa energi Æther yang memancarkan wujud Garda Depan Satgassus Yinglung. Menguasai teknik tempur jarak dekat hanyalah persyaratan paling dasar bagi para Yinglung.",
     "abilities": [
       "Mengeluarkan qi pedang yang bisa mengaktifkan Energi Bayang-bayang Hawar apa pun yang dikenainya."
-    ]
-  },
-  "eny_0122_kltdbud": {
-    "name": "Bayang-bayang Hawar Elite Satgassus Yinglung",
-    "nickname": "Bayang-bayang Hawar Elite Satgassus Yinglung",
-    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Elite Satgassus Yinglung. Yinglung yang telah menguasai Originium Arts dan ilmu pedang akan dianggap seorang elite.",
-    "abilities": [
-      "Mengeluarkan qi pedang yang bisa mengaktifkan Energi Bayang-bayang Hawar apa pun yang dikenainya."
-    ]
-  },
-  "eny_0123_klcap": {
-    "name": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
-    "nickname": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
-    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Glaiver Satgassus Yinglung. Yinglung semacam itu sangat ahli memimpin penyerbuan dan merebut posisi yang dijaga. Glaive yang mereka pegang dirancang untuk menebas Aggelos dengan mudah.",
-    "abilities": [
-      "Bayang-bayang Hawar Glaiver Satgassus Yinglung bisa berpura-pura kalah sebelum melancarkan serangan tak terduga. Hati-hati!",
-      "Setelah menghilang, musuh ini bisa langsung berpindah ke sebelah operator dan menyerang. Berusahalah menghindarinya."
     ]
   },
   "eny_0124_kltdcap": {
@@ -706,33 +799,6 @@
       "Bayang-bayang Hawar Kapten Satgassus Yinglung bisa menggunakan senjatanya untuk memanggil petir. Entitas Energi Bayang-bayang Hawar akan aktif saat terkena sambaran petir."
     ]
   },
-  "eny_0125_fdcentur": {
-    "name": "Alleikhreos, Chiliarch",
-    "nickname": "Alleikhreos",
-    "description": "Ciptaan Fondasi dan veteran pertarungan yang tak terhitung banyaknya. Chiliarch ini berkelana di Ætherside hingga ia menemukan kembali pedangnya yang hilang dan menemukan waktu kembalinya.",
-    "abilities": [
-      "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya.",
-      "Saat Alleikhreos, Chiliarch, mulai terdesak, dia akan memanggil duplikat-duplikatnya dari celah untuk menyerang lawannya."
-    ]
-  },
-  "eny_0127_bigents": {
-    "name": "Amarah Gloomwald",
-    "nickname": "Amarah Gloomwald",
-    "description": "Boneka tempur raksasa yang dibuat oleh seorang Snowpriest. Boneka ini mematuhi perintah tuannya untuk berkelana dan menjelajahi alam kabut yang tak terbatas, tapi akhirnya dia sadar bahwa dia telah ditinggalkan. Boneka ini pun menjadi wadah yang menampung seluruh amarah hutan salju yang lebat.",
-    "abilities": [
-      "Amarah Gloomwald akan meninggalkan sulur di tanah. Operator yang menginjaknya akan terkena DMG dan efek Slow terus-menerus.",
-      "Amarah Gloomwald akan memanggil Pengembara Kayu untuk membantunya dalam pertarungan."
-    ]
-  },
-  "eny_0128_babyents": {
-    "name": "Pengembara Kayu",
-    "nickname": "Pengembara Kayu",
-    "description": "Boneka tempur kecil yang dibuat oleh seorang Snowpriest. Boneka ini bertugas menjaga keamanan Hutan Salju. Jangan remehkan tinju kayunya, karena tinjunya bisa menghancurkan batu dengan mudah.",
-    "abilities": [
-      "Pengembara Kayu yang tidak punya tumpukan perisai akan menjebak operator untuk menyerap energi mereka dan memulihkan tumpukan perisainya.",
-      "Pengembara Kayu akan saling bekerja sama saat menyerang."
-    ]
-  },
   "eny_0129_slwood": {
     "name": "Siput Kayu",
     "nickname": "Siput Kayu",
@@ -741,44 +807,20 @@
       "Siput Kayu bisa menggali di bawah tanah untuk mendekati lawan mereka."
     ]
   },
+  "eny_0133_inklion": {
+    "name": "Maned Measure",
+    "nickname": "Maned Measure",
+    "description": "Penampakan yang tercerahkan oleh Si. Lekuk dan garis, terukur dan halus. Sebuah tekad tercerahkan, sebagaimana dititahkan dari atas.",
+    "abilities": [
+      "Maned Measure memiliki belahan bola giok di kedua sisinya yang dapat mengurangi DMG serangan yang mengenainya secara signifikan. Berusahalah menyerang kepala dan ekor roh tinta sebagai gantinya."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Target Biasa",
     "nickname": "Target Biasa",
     "description": "Target biasa untuk pemanah pemula.",
     "abilities": [
       "Target biasa. HP: 1."
-    ]
-  },
-  "tatget_002_endurance": {
-    "name": "Target Standar",
-    "nickname": "Target Standar",
-    "description": "Target standar, sangat penting untuk mengasah kemampuan memanah.",
-    "abilities": [
-      "Target yang tahan lama. HP: 2."
-    ]
-  },
-  "tatget_003_expand": {
-    "name": "Target Penghalang",
-    "nickname": "Target Penghalang",
-    "description": "Target spesial yang ukurannya bisa berubah dan bisa menghalangi target di belakangnya. Coba hancurkan dulu target yang ini.",
-    "abilities": [
-      "Target pengganggu yang ukurannya bisa berubah. HP: 3."
-    ]
-  },
-  "tatget_004_armor": {
-    "name": "Target Berat",
-    "nickname": "Target Berat",
-    "description": "Target spesial yang terbuat dari campuran berkekuatan tinggi. Target ini kokoh dan disukai oleh para pemanah yang kekuatannya luar biasa.",
-    "abilities": [
-      "Target berarmor. HP: 4."
-    ]
-  },
-  "tatget_005_shield": {
-    "name": "Perisai Energi",
-    "nickname": "Perisai Energi",
-    "description": "Perisai energi yang dirancang untuk target. Para ahli panahan suka memasangkan perisai pada targetnya agar bisa bertahan beberapa detik lebih lama.",
-    "abilities": [
-      "Perisai yang bisa dipasang pada target mana saja. HP: 2. Target berperisai tidak bisa dibekukan, Resin tidak bisa diakibatkan secara aktif pada mereka, dan tumpukan Resin pada target berperisai tidak akan meledak saat terkena DMG."
     ]
   }
 }

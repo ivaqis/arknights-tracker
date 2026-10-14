@@ -1212,7 +1212,8 @@
     "liino": "리노",
     "typhoeus": "티프로스",
     "endministrator": "관리자",
-    "purrchena": "푸치나"
+    "purrchena": "푸치나",
+    "si": "사"
   },
   "weaponsList": {
     "custom_weapon": "커스텀 무기",
@@ -1295,7 +1296,10 @@
     "bedazzlingNightDebut": "찬란한 밤의 데뷔",
     "umbraOfFrigidEventide": "추운 밤의 그림자",
     "sufferingsEnd": "고난의 끝",
-    "dessertMoment": "간식 시간"
+    "dessertMoment": "간식 시간",
+    "jadeVessel": "옥에 깃든 형체",
+    "longHeritage": "유구한 전승",
+    "complexedIndustry": "응집 공업"
   },
   "cookies": {
     "title": "쿠키 사용 안내",
@@ -1420,7 +1424,14 @@
     "world_energy_point12_4": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
     "world_energy_point12_5": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
     "world_energy_point12_6": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
-    "world_energy_point12_7": "고위 에너지 응집점 · 눈 덮인 소나무 숲"
+    "world_energy_point12_7": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point13_4": "고위 에너지 응집점 · 사의 그림",
+    "world_energy_point13_7": "고위 에너지 응집점 · 사의 그림",
+    "world_energy_point13_1": "에너지 응집점 · 사의 그림",
+    "world_energy_point13_2": "에너지 응집점 · 사의 그림",
+    "world_energy_point13_3": "에너지 응집점 · 사의 그림",
+    "world_energy_point13_5": "고위 에너지 응집점 · 사의 그림",
+    "world_energy_point13_6": "고위 에너지 응집점 · 사의 그림"
   },
   "enemies": {
     "eny_0007_mimicw": "터널링 니드웜",
@@ -1514,7 +1525,12 @@
     "tatget_002_endurance": "표준 표적",
     "tatget_003_expand": "보호벽 표적",
     "tatget_004_armor": "중장형 표적",
-    "tatget_005_shield": "에너지 보호"
+    "tatget_005_shield": "에너지 보호",
+    "eny_0134_jsspsi": "사",
+    "eny_0130_inkbiter": "존록",
+    "eny_0131_inkscroll": "용기",
+    "eny_0132_inkkirin": "해조",
+    "eny_0133_inklion": "행도"
   },
   "essencesPage": {
     "optimizer": "파밍 최적화",
@@ -1810,7 +1826,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "관문 통신기",
     "item_equip_t4_suit_spellburst_hand_01": "관문 금속 장갑",
     "item_equip_t4_suit_usp02_edc_05": "식양의 숨결 강화판 · I",
-    "item_equip_t4_suit_usp02_edc_06": "식양의 숨결 중보호판"
+    "item_equip_t4_suit_usp02_edc_06": "식양의 숨결 중보호판",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "펄스식 방탄 방어구",
+    "item_equip_t4_suit_usp02_body_06": "식양의 숨결 개조 방어구",
+    "item_equip_t4_suit_usp02_hand_05": "식양의 숨결 전도 보호 장갑",
+    "item_equip_t4_suit_atk02_body_05": "응룡 50식 연갑",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "펄스식 경갑",
+    "item_equip_t4_parts_wuling00_body_06": "통합 실전 훈련 도검형 방어구",
+    "item_equip_t4_parts_wuling00_hand_06": "통합 실전 훈련 도검형 보호 장갑",
+    "item_equip_t4_parts_wuling00_edc_06": "통합 실전 훈련 도검형 톱",
+    "item_equip_t4_parts_wuling02_body_03": "절망 강철 방어구",
+    "item_equip_t4_parts_wuling02_body_04": "절망 방호복",
+    "item_equip_t4_parts_wuling02_edc_02": "절망 검날",
+    "item_equip_t4_suit_usp02_edc_07": "식양의 숨결 거리 측정기",
+    "item_equip_t4_parts_wuling02_hand_03": "절망 보호대",
+    "item_equip_t4_parts_wuling02_hand_04": "절망 금속 장갑",
+    "item_equip_t4_suit_atk02_edc_06": "응룡 50식 신호기",
+    "item_equip_t4_suit_atk02_hand_03": "응룡 50식 장갑",
+    "item_equip_t4_suit_usp02_body_05": "식양의 숨결 방호복",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "펄스식 경량 보호 장갑"
   },
   "packs": {
     "none": "세트 없음",
@@ -1922,7 +1956,13 @@
     "ElectricResistance": "전기 저항",
     "HeatResistance": "열기 저항",
     "TherResistance": "초자연 저항",
-    "NoAttr": "속성 없음"
+    "NoAttr": "속성 없음",
+    "NatureDmgReduction": "자연 피해 감소",
+    "HeatDmgReduction": "열기 피해 감소",
+    "TherDmgReduction": "초자연 피해 감소",
+    "PhysicalDmgReduction": "물리 피해 감소",
+    "CryoDmgReduction": "냉기 피해 감소",
+    "ElectricDmgReduction": "전기 피해 감소"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "아겔로스",
@@ -1931,7 +1971,9 @@
     "wiki_group_monster_animal": "야외 생물",
     "wiki_group_monster_kl": "침식의 그림자",
     "wiki_group_monster_js": "파운다이트",
-    "wiki_group_monster_witchcraft": "주술 피조물"
+    "wiki_group_monster_witchcraft": "주술 피조물",
+    "wiki_group_monster_else": "기타",
+    "wiki_group_monster_ml": "요괴"
   },
   "resitances": {
     "heatRez": "열기 저항",
@@ -2726,7 +2768,8 @@
     "indie_group_h04": "탁류 구현",
     "indie_group_h05": "대지에게 버림받은 존재",
     "indie_group_h06": "산을 울리는 외침",
-    "indie_group_h07": "그림자 형상 각인"
+    "indie_group_h07": "그림자 형상 각인",
+    "indie_group_h08": "깊은 숲의 잠꼬대"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "식양 기술",
@@ -2769,13 +2812,19 @@
     "indie_hard026": "학살자 비스트",
     "indie_hard027": "어두운 광휘, 밝은 벼락",
     "indie_hard028": "천지의 포효",
-    "indie_hard029": "조준, 트리아겔로스"
+    "indie_hard029": "조준, 트리아겔로스",
+    "indie_hard032": "퍼져나가는 증오",
+    "indie_hard030": "속박하는 그림자",
+    "indie_hard031": "서로 끌어들이는 잔해",
+    "indie_hard033": "서로 호응하는 벌레"
   },
   "warEchoesSeasons": {
     "1": "추억의 회상",
     "2": "섬망의 회상",
     "3": "허상의 회상",
-    "4": "착시의 회상"
+    "4": "착시의 회상",
+    "5": "이색의 회상",
+    "6": "열광의 회상"
   },
   "warEchoesCycles": {
     "1_1": "추억의 순환 I",
@@ -2789,7 +2838,13 @@
     "3_3": "허상의 순환 III",
     "4_1": "착시의 순환 I",
     "4_2": "착시의 순환 II",
-    "4_3": "착시의 순환 III"
+    "4_3": "착시의 순환 III",
+    "5_1": "이색의 순환 I",
+    "5_2": "이색의 순환 II",
+    "5_3": "이색의 순환 III",
+    "6_1": "열광의 순환 I",
+    "6_2": "열광의 순환 II",
+    "6_3": "열광의 순환 III"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "물결을 가르는 검날 · 잔혹",
@@ -2833,7 +2888,25 @@
     "indie_battletower013": "참수 준비 · 일반",
     "indie_battletower014_ex": "야수의 계략 · 잔혹",
     "indie_battletower014_s": "야수의 계략 · 고난",
-    "indie_battletower014": "야수의 계략 · 일반"
+    "indie_battletower014": "야수의 계략 · 일반",
+    "indie_battletower019_ex": "피조물 기록: 골렘 · 잔혹",
+    "indie_battletower016_s": "장검 기록: 응룡 · 고난",
+    "indie_battletower015_s": "침식의 그림자 기록: 천둥의 울림 · 고난",
+    "indie_battletower015_ex": "침식의 그림자 기록: 천둥의 울림 · 잔혹",
+    "indie_battletower015": "침식의 그림자 기록: 천둥의 울림 · 일반",
+    "indie_battletower016_ex": "장검 기록: 응룡 · 잔혹",
+    "indie_battletower016": "장검 기록: 응룡 · 일반",
+    "indie_battletower017_ex": "복수 기록: 본 크러셔 · 잔혹",
+    "indie_battletower017_s": "복수 기록: 본 크러셔 · 고난",
+    "indie_battletower017": "복수 기록: 본 크러셔 · 일반",
+    "indie_battletower018_ex": "비스트 무리 기록: 청파채 · 잔혹",
+    "indie_battletower018_s": "비스트 무리 기록: 청파채 · 고난",
+    "indie_battletower018": "비스트 무리 기록: 청파채 · 일반",
+    "indie_battletower019_s": "피조물 기록: 골렘 · 고난",
+    "indie_battletower019": "피조물 기록: 골렘 · 일반",
+    "indie_battletower020_ex": "방어 기록: 방패 조각 · 잔혹",
+    "indie_battletower020_s": "방어 기록: 방패 조각 · 고난",
+    "indie_battletower020": "방어 기록: 방패 조각 · 일반"
   },
   "warEchoesDiff": {
     "normal": "일반",

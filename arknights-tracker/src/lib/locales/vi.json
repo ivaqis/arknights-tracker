@@ -1251,7 +1251,8 @@
     "liino": "Liino",
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
-    "purrchena": "Purrchena"
+    "purrchena": "Purrchena",
+    "si": "Si"
   },
   "weaponsList": {
     "custom_weapon": "Vũ Khí Tùy Chỉnh",
@@ -1334,7 +1335,10 @@
     "bedazzlingNightDebut": "Màn Ra Mắt Đêm Chói Rạng",
     "umbraOfFrigidEventide": "Hàn Ảnh Mộ Dạ",
     "sufferingsEnd": "Hồi Kết Khổ Đau",
-    "dessertMoment": "Giờ Tráng Miệng"
+    "dessertMoment": "Giờ Tráng Miệng",
+    "jadeVessel": "Ngọc Khí",
+    "longHeritage": "Di Sản Lâu Đời",
+    "complexedIndustry": "Tổ Hợp Công Nghiệp"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",
@@ -1459,7 +1463,14 @@
     "world_energy_point12_4": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
     "world_energy_point12_5": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
     "world_energy_point12_6": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
-    "world_energy_point12_7": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết"
+    "world_energy_point12_7": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
+    "world_energy_point13_4": "Năng Lượng Bồi Tích Dữ Dội: Bức Tranh Của Si",
+    "world_energy_point13_7": "Năng Lượng Bồi Tích Dữ Dội: Bức Tranh Của Si",
+    "world_energy_point13_1": "Năng Lượng Bồi Tích: Bức Tranh Của Si",
+    "world_energy_point13_2": "Năng Lượng Bồi Tích: Bức Tranh Của Si",
+    "world_energy_point13_3": "Năng Lượng Bồi Tích: Bức Tranh Của Si",
+    "world_energy_point13_5": "Năng Lượng Bồi Tích Dữ Dội: Bức Tranh Của Si",
+    "world_energy_point13_6": "Năng Lượng Bồi Tích Dữ Dội: Bức Tranh Của Si"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Đào Hầm",
@@ -1553,7 +1564,12 @@
     "tatget_002_endurance": "Bia Tiêu Chuẩn",
     "tatget_003_expand": "Bia Chắn",
     "tatget_004_armor": "Bia Hạng Nặng",
-    "tatget_005_shield": "Khiên Năng Lượng"
+    "tatget_005_shield": "Khiên Năng Lượng",
+    "eny_0134_jsspsi": "Si",
+    "eny_0130_inkbiter": "Kho Tài Lộc",
+    "eny_0131_inkscroll": "Cuộn Chiến Thuật",
+    "eny_0132_inkkirin": "Thanh Tẩy Cơn Khát",
+    "eny_0133_inklion": "Bờm Sư Khuôn Thước"
   },
   "essencesPage": {
     "optimizer": "Tối ưu hóa Cày cuốc",
@@ -1849,7 +1865,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "Bộ Đàm Thành Lũy Thâm Sâu",
     "item_equip_t4_suit_spellburst_hand_01": "Găng Tay Thành Lũy Thâm Sâu",
     "item_equip_t4_suit_usp02_edc_05": "Phiến Gia Cố Xiranite Vĩnh Cửu T1",
-    "item_equip_t4_suit_usp02_edc_06": "Phiến Nặng Xiranite Vĩnh Cửu"
+    "item_equip_t4_suit_usp02_edc_06": "Phiến Nặng Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "Giáp Phiến Sóng Xung",
+    "item_equip_t4_suit_usp02_body_06": "Giáp MOD Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_usp02_hand_05": "Găng Tay Tụ Lực Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_atk02_body_05": "Giáp Hạng Mềm Yinglung Loại 50",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "Giáp Hạng Nhẹ Sóng Xung",
+    "item_equip_t4_parts_wuling00_body_06": "Giáp Cận Chiến Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_06": "Găng Tay Cận Chiến Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_06": "Cưa Sắt Cận Chiến Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling02_body_03": "Giáp Thép Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_body_04": "Đồ Bảo Hộ Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_edc_02": "Lưỡi Kiếm Bạc Lữ Hành Khe Nứt",
+    "item_equip_t4_suit_usp02_edc_07": "Thiết Bị Đo Xa Xiranite Vĩnh Cửu",
+    "item_equip_t4_parts_wuling02_hand_03": "Băng Quấn Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_hand_04": "Giáp Tay Lữ Hành Khe Nứt",
+    "item_equip_t4_suit_atk02_edc_06": "Đèn Tín Hiệu Yinglung Loại 50",
+    "item_equip_t4_suit_atk02_hand_03": "Găng Tay Yinglung Loại 50",
+    "item_equip_t4_suit_usp02_body_05": "Băng Quấn Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "Găng Tay Nhẹ Sóng Xung"
   },
   "packs": {
     "none": "Không Theo Bộ",
@@ -1961,7 +1995,13 @@
     "ElectricResistance": "Kháng Điện",
     "HeatResistance": "Kháng Nhiệt",
     "TherResistance": "Kháng Æther",
-    "NoAttr": "Không có thuộc tính"
+    "NoAttr": "Không có thuộc tính",
+    "NatureDmgReduction": "Giảm ST Tự Nhiên",
+    "HeatDmgReduction": "Giảm ST Nhiệt",
+    "TherDmgReduction": "Giảm ST Æther",
+    "PhysicalDmgReduction": "Giảm ST Vật Lý",
+    "CryoDmgReduction": "Giảm ST Băng",
+    "ElectricDmgReduction": "Giảm ST Điện"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
@@ -1970,7 +2010,9 @@
     "wiki_group_monster_animal": "Động Vật Hoang Dã",
     "wiki_group_monster_kl": "Bóng Nhiễm Khuẩn",
     "wiki_group_monster_js": "Foundite",
-    "wiki_group_monster_witchcraft": "Tạo Vật Phù Thuật"
+    "wiki_group_monster_witchcraft": "Tạo Vật Phù Thuật",
+    "wiki_group_monster_else": "Khác",
+    "wiki_group_monster_ml": "Linh Thể"
   },
   "resitances": {
     "heatRez": "Kháng Nhiệt",
@@ -2765,7 +2807,8 @@
     "indie_group_h04": "Sương Đục Hiện Thể",
     "indie_group_h05": "Kẻ Bị Vùng Đất Ruồng Bỏ",
     "indie_group_h06": "Thú Gầm Vách Đá",
-    "indie_group_h07": "Hằn Dấu Bóng Tối"
+    "indie_group_h07": "Hằn Dấu Bóng Tối",
+    "indie_group_h08": "Tiếng Thì Thầm Từ Rừng Sâu"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Kỹ Thuật Xiranite",
@@ -2808,13 +2851,19 @@
     "indie_hard026": "Cuồng Sát Trong Bóng Tối",
     "indie_hard027": "Cung Lửa Bóng Tối",
     "indie_hard028": "Tiếng Gầm Diệt Vong",
-    "indie_hard029": "Khóa Mục Tiêu Triaggelos"
+    "indie_hard029": "Khóa Mục Tiêu Triaggelos",
+    "indie_hard032": "Hận Thù Lan Tràn",
+    "indie_hard030": "Bóng Tối Trói Buộc",
+    "indie_hard031": "Mộc Ngẫu Kết Nối",
+    "indie_hard033": "Sinh Vật Đào Hang"
   },
   "warEchoesSeasons": {
     "1": "Mùa Gợi Nhớ",
     "2": "Mùa Mê Loạn",
     "3": "Mùa Hư Ảo",
-    "4": "Mùa Ảo Mộng"
+    "4": "Mùa Ảo Mộng",
+    "5": "Mùa Kỳ Tưởng",
+    "6": "Mùa Cuồng Nhiệt"
   },
   "warEchoesCycles": {
     "1_1": "Vòng Hồi Tưởng I",
@@ -2828,7 +2877,13 @@
     "3_3": "Vòng Hư Ảo Ⅲ",
     "4_1": "Vòng Ảo Mộng Ⅰ",
     "4_2": "Vòng Ảo Mộng Ⅱ",
-    "4_3": "Vòng Ảo Mộng Ⅲ"
+    "4_3": "Vòng Ảo Mộng Ⅲ",
+    "5_1": "Vòng Kỳ Tưởng I",
+    "5_2": "Vòng Kỳ Tưởng II",
+    "5_3": "Vòng Kỳ Tưởng III",
+    "6_1": "Vòng Cuồng Nhiệt I",
+    "6_2": "Vòng Cuồng Nhiệt II",
+    "6_3": "Vòng Cuồng Nhiệt III"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "Dao Cắt Nước Bạc: Tàn Bạo",
@@ -2872,7 +2927,25 @@
     "indie_battletower013": "Trảm Thủ Uy Lực: Thường",
     "indie_battletower014_ex": "Âm Mưu Hoang Dã: Tàn Bạo",
     "indie_battletower014_s": "Âm Mưu Hoang Dã: Khó",
-    "indie_battletower014": "Âm Mưu Hoang Dã: Thường"
+    "indie_battletower014": "Âm Mưu Hoang Dã: Thường",
+    "indie_battletower019_ex": "Hồ Sơ Tạo Vật: Linh Thể - Tàn Bạo",
+    "indie_battletower016_s": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Khó",
+    "indie_battletower015_s": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Khó",
+    "indie_battletower015_ex": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Tàn Bạo",
+    "indie_battletower015": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Thường",
+    "indie_battletower016_ex": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Tàn Bạo",
+    "indie_battletower016": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Thường",
+    "indie_battletower017_ex": "Hồ Sơ Báo Thù: Bonekrusher - Tàn Bạo",
+    "indie_battletower017_s": "Hồ Sơ Báo Thù: Bonekrusher - Khó",
+    "indie_battletower017": "Hồ Sơ Báo Thù: Bonekrusher - Thường",
+    "indie_battletower018_ex": "Hồ Sơ Quái Thú: Trại Thanh Ba - Tàn Bạo",
+    "indie_battletower018_s": "Hồ Sơ Quái Thú: Trại Thanh Ba - Khó",
+    "indie_battletower018": "Hồ Sơ Quái Thú: Trại Thanh Ba - Thường",
+    "indie_battletower019_s": "Hồ Sơ Tạo Vật: Linh Thể - Khó",
+    "indie_battletower019": "Hồ Sơ Tạo Vật: Linh Thể - Thường",
+    "indie_battletower020_ex": "Hồ Sơ Phòng Thủ: Khiên - Tàn Bạo",
+    "indie_battletower020_s": "Hồ Sơ Phòng Thủ: Khiên - Khó",
+    "indie_battletower020": "Hồ Sơ Phòng Thủ: Khiên - Thường"
   },
   "warEchoesDiff": {
     "normal": "Thường",

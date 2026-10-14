@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Amplification",
+      "Source de dégâts",
+      "Alt. cryogénique"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Académie des sciences de Hongshan (ASH)",
+    "expertTags": [
+      "Gestion d'équipe",
+      "Assemblage d'outils"
+    ],
+    "giftPreferTags": [
+      "Sélection des artisans de Wuling"
+    ],
+    "hobbyTags": [
+      "Technologie",
+      "Mode"
+    ],
+    "raceTag": "Inconnue"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Impulsion artistique",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal"
+    },
+    "battleSkill": {
+      "name": "Royaume du pinceau",
+      "description": "Si inflige des <@ba.cryst>DÉG cryogéniques</> et applique <@ba.key>Intention artistique</>, une <#ba.static>Immobilisation</> et une <#ba.crystinflict>altération cryogénique</> (ou une <#ba.fireinflict>altération thermique</> si un opérateur de l'élément <@ba.fire>thermique</> est en <@ba.key>1re position dans l'équipe</>) à la cible. Après qu'une cible victime de l'<@ba.key>Intention artistique</> subit des DÉG, une partie de ces DÉG est enregistrée. Au terme de la durée de l'<@ba.key>Intention artistique</>, elle explose et inflige des <#ba.fixeddamage>DÉG fixes</> correspondant aux DÉG enregistrés. Une fois la compétence lancée, la compétence de combat de Si est temporairement remplacée par <@ba.key>Premier coup de pinceau</>.\n<@ba.key>Premier coup de pinceau</> : coûte <@ba.vup>15</> PC. Si tire une <@ba.key>âme d'encre</> d'une cible victime de l'<@ba.key>Intention artistique</>. Les DÉG globaux infligés et les effets appliqués à l'<@ba.key>âme d'encre</> seront aussi subis par sa source (la cible). L'<@ba.key>âme d'encre</> subsiste aussi longtemps que l'<@ba.key>Intention artistique</>. Après avoir lancé cette compétence, la compétence de combat de Si est temporairement remplacée par <@ba.key>Dernier coup de pinceau</>.\n<@ba.key>Dernier coup de pinceau</> : ne coûte aucun PC et fait disparaître l'<@ba.key>âme d'encre</> prématurément. Lorsqu'elle disparaît, l'<@ba.key>âme d'encre</> se déplace jusqu'à sa source et provoque une explosion semblable à celle qui conclut l'<@ba.key>Intention artistique</>.\n<@ba.info>Les DÉG infligés ou les effets appliqués à l'âme d'encre et à la source ne sont infligés/appliqués qu'une seule fois. Si la source est vaincue pendant la durée de l'âme d'encre, celle-ci se liera à un autre ennemi en train de combattre et lui appliquera Intention artistique, sans pour autant en réinitialiser la durée. Si une cible victime d'Intention artistique est vaincue sans s'être vue retirer son âme d'encre, celle-ci apparaîtra à l'endroit de son trépas.</>",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "immobilizationDurationS": "Durée d'Immobilisation (s)",
+      "artfulIntentDurationS": "Durée d'Intention artistique (s)",
+      "dmgRecordRatio": "Taux d'enregistrement des dégâts",
+      "stagger": "Déséquilibre",
+      "artfulIntentBurstStagger": "Déséquilibre par explosion d'Intention artistique"
+    },
+    "comboSkill": {
+      "name": "Vision parachevée",
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'<#ba.crystinflict>altération cryogénique</> ou l'<#ba.fireinflict>altération thermique</> d'un ennemi est <#ba.consume>consommée</> ou <#ba.absorb>absorbée</>.\nSi invoque un <@ba.key>Lung d'encre</> qui inflige des <@ba.cryst>DÉG cryogéniques</>. Ces DÉG dépendent du nombre maximal de cumuls d'altération des Arts <#ba.consume>consommés</> ou <#ba.absorb>absorbés</> sur une seule cible.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Augmentation du multiplicateur par cumul consommé ou absorbé",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
+    },
+    "ultimate": {
+      "name": "Personne ne gâche la fête",
+      "description": "Si invoque un <@ba.key>Lung d'encre géant</> depuis sa peinture, qui inflige des <@ba.cryst>DÉG cryogéniques</> et confère temporairement une <#ba.crystenhance>amplification cryogénique</> et une <#ba.fireenhance>amplification thermique</> à toute l'équipe.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "amp": "Amplification",
+      "ampDurationS": "Durée d'amplification (s)"
+    },
+    "indicator": {
+      "levels": [
+        "Intelligence de l'opérateur +10.",
+        "Intelligence de l'opérateur +15.",
+        "Intelligence de l'opérateur +15.",
+        "Intelligence de l'opérateur +20."
+      ],
+      "name": "Esprit vif"
+    },
+    "talent1": {
+      "levels": [
+        "Renforce la compétence ultime <@ba.key>Personne ne gâche la fête</> : le temps de recharge de la compétence de combo de l'opérateur en <@ba.key>1re position dans l'équipe</> est de <@ba.vup>{coolDown:0}</> s après avoir lancé l'ultime.",
+        "Renforce la compétence ultime <@ba.key>Personne ne gâche la fête</> : le temps de recharge de la compétence de combo de l'opérateur en <@ba.key>1re position dans l'équipe</> est de <@ba.vup>{coolDown:0}</> s après avoir lancé l'ultime."
+      ],
+      "name": "Appui de la mandataire"
+    },
+    "talent2": {
+      "levels": [
+        "Lorsque l'<@ba.key>âme d'encre</> disparaît, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> pendant {duration_speedup:0} s.",
+        "Lorsque l'<@ba.key>âme d'encre</> disparaît, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> pendant {duration_speedup:0} s."
+      ],
+      "name": "Pinceau immaculé"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 20 %.",
+        "En l'affectant à la salle de réception, augmente l'efficacité des opérateurs en matière de collecte d'indices de 30 %."
+      ],
+      "name": "Chasse aux indices"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+        "En l'affectant à la salle de réception, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %."
+      ],
+      "name": "Esprit d'encre adjoint"
+    },
+    "files": {
+      "main": "NOM DE CODE : Si \nSEXE : Féminin \nAUTHENTIFICATION : Académie des sciences de Hongshan \nDATE DE NAISSANCE : 15 septembre \nRACE : Inconnue \n[STATUT D'INFECTION À L'ORIPATHIE] \nNégatif, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : ■■ \nCAPACITÉS AU COMBAT : Excellentes \nSENS TACTIQUE : Standard \nASSIMILATION DES ARTS DE L'ORIGINIUM : Imparfaite",
+      "humanResources": "Si, une mandataire de feranmouth sans employeur officiel, entretient des liens de longue date avec l'Académie des sciences de Hongshan. Sur recommandation personnelle de l'Endministrator, elle a rejoint les Industries Endfield, où elle apporte son expertise en recherche théorique et applications pratiques des feranmouths. \n\nSi participe rarement aux procédures internes d'Endfield. La seule exception figure dans mon journal d'autodiagnostic. Comme convenu, Si est arrivée à bord du Dijiang et s'est entretenue avec moi. Elle a répondu à toutes les questions, signé les documents, puis a disparu aussitôt le processus terminé. Mon module de traitement a immédiatement classé l'événement comme incident imprévu et lancé une alerte. Peu après, Si est revenue au bureau, a essuyé une goutte d'encre au centre de mon écran et a murmuré : « Intéressant... mais pas assez intéressant. » Elle a ensuite expliqué que la « Si » assise en face de moi n'avait été qu'une peinture d'elle-même. Elle voulait voir comment je réagirais. À en juger par sa remarque, ma réponse n'était pas celle qu'elle espérait. \nC'était une plaisanterie sans gravité. L'incident a permis d'entrevoir la singularité de Si. Bien qu'elle possède des pouvoirs dépassant le champ de la science, elle affiche parfois un tempérament inhabituel pour une mandataire de feranmouth. Les occasions de rencontrer une mandataire sur Talos-II sont rares. Je recommande donc à mes collègues de la division des RH de saisir toute opportunité d'interagir avec elle. Nous découvrirons peut-être un schéma dans ses humeurs changeantes. \n— Martin Marvin Malen, assistant, division des RH, Industries Endfield",
+      "file1": "Après son arrivée à Endfield, presque aucun opérateur n'a rencontré Si. Son profil restait vide, et « mystérieuse » était la seule impression que nous avions de la mandataire de feranmouth. La division des RH a même demandé à son référent de l'aider à coopérer aux procédures d'intégration, mais apparemment, même l'Endministrator n'a pas réussi à la convaincre... Cela a changé quand un opérateur logistique l'a aperçue par hasard dans un restaurant de fondue de la ville de Wuling. \nLes deux se sont rencontrés par pure coïncidence, sans savoir qui était l'autre. Ils ont participé au même événement promotionnel pour un nouveau menu et ont fini par partager une table, goûtant des bouillons tels que citron vert et courge amère, vessie de poisson et piment limace, ou nymphe sylvestre bouillie (des noms déjà étranges en soi). Après avoir appris que Si était là pour glaner quelques astuces pour le chef de son auberge, l'opérateur logistique a salué son sens des affaires et son goût raffiné, surprenant pour quelqu'un d'aussi jeune. Si fut ravie et a discrètement réglé l'addition de l'opérateur. Ce n'est qu'en voyant la photo de Si dans la division des RH que l'opérateur a compris qui était sa compagne de table... Par la suite, de plus en plus d'opérateurs ont croisé Si dans les endroits les plus inattendus, comme à un événement de lancement de Choupi Lung dans la ville de Wuling, au centre d'expériences robotiques de La Fantoma... la liste est longue. Deux opérateurs se sont même disputés concernant un fait particulier. Chacun jurait avoir vu Si au même moment, l'un affirmant qu'elle était l'enchérisseuse espiègle qui a remporté le dernier lot à la vente de bâtons de sorcellerie de Seš'qa, l'autre qu'elle était l'invitée mystérieuse qui s'est enivrée avec les prêtres des neiges de Sami. Des milliers de kilomètres séparent ces deux lieux, l'un en surface, l'autre sous terre. Ce genre d'histoire est digne des légendes yanaises. Bref, à en croire les opérateurs, Si ressemble moins à une mandataire de feranmouth recluse qu'à une enfant énergique incapable de rester chez elle. \nDès lors, à chaque événement organisé sur le Dijiang, comme la soirée cinéma de l'avant-garde, certains opérateurs osaient demander à l'Endministrator d'inviter Si... Cette fois-ci, elle est venue. Peu à peu, on a compris que c'était simplement sa nature. Joueuse et imprévisible, elle supporte mal les gens rigides ou qui refusent de s'adapter. Elle est constamment attirée par la nouveauté et observe le monde avec la curiosité d'une enfant. Peut-être que... selon les standards feranmouths, elle est encore très jeune. \n\nConseil de l'opérateur Flux d'argent : évitez les mots comme « enfant » ou « jeune ». L'âge est un sujet assez sensible chez Dame Si. Cette dernière insiste d'ailleurs en disant : « Je suis presque aussi vieille que la civilisation de Talos-II elle-même. Vous n'êtes que des gamins pour moi. » \n\nConseil de l'opératrice Arcane : pour les sujets sérieux, faites confiance à la mandataire, comme nous le faisons. Peu importe son attitude habituelle, ses capacités justifient pleinement cette confiance. Elle n'apprécie pas non plus qu'on doute de ses capacités. \n\nConseil mystérieux d'un invité inconnu : si elle pique une crise, allez simplement chercher l'Endministrator.",
+      "file2": "Forces spéciales de Yinglung - Journal d'entraînement III \nEmplacement : Terres sauvages sans nom, juridiction de l'ASH \nObjectif : rencontre programmée entre la mandataire et la nouvelle promotion de recrues \nRemarques : la mandataire était absente sans prévenir, la réunion a été remplacée par une séance d'entraînement classique. L'opératrice expérimentée en charge de la séance a rassuré les nouveaux : bien que la mandataire ait contribué à la création et à l'organisation des FSY, elle n'occupe aucun poste officiel à l'ASH. Les deux parties entretiennent une relation de coopération et nombre de membres des FSY ne la rencontreront jamais pendant leur service. \n\nForces spéciales de Yinglung - Journal d'entraînement VIII \nEmplacement : salle de Tanjian, ASH \nObjectif : conférence de la mandataire sur les applications des pouvoirs du feranmouth \nRemarques : la mandataire était absente sans prévenir. Elle a organisé en urgence la venue de Ye Minghe, capitaine des cieux pacifiés de la garde impériale, et de l'Endministrator des Industries Endfield pour la remplacer. La séance est devenue un échange technique sur les techniques de maniement de la lance et les applications de l'originium. \n\nForces spéciales de Yinglung - Journal d'entraînement XXI \nEmplacement : un parchemin peint par la mandataire sur place \nObjectif : conférence de la mandataire sur les applications des pouvoirs du feranmouth \nRemarques : la mandataire était d'humeur exceptionnellement joyeuse et la séance a duré trois heures de plus que prévu. Elle a présenté plus d'une dizaine de pouvoirs différents, chacun plus impressionnant que le précédent. Ses « petits trucs » incluaient, entre autres : déplacer des pierres et du bois à volonté pour créer un jardin dont nul ne pouvait sortir ; forger des boucliers et espadons à partir de rien, comme si elle tirait des armes divines du néant ; planter une graine qui germait, se fanait et germait à nouveau en quelques instants, défaisant la perception du temps et de la causalité ; donner vie à des peintures à l'encre, abolissant la frontière entre illusion et réalité ; transformer des carrés en cercles comme si la réalité obéissait à ses paroles... Évidemment, nous ne pouvons utiliser qu'une fraction de ces pouvoirs grâce à des équipements spéciaux, et jamais aussi librement qu'elle. Leur utilité sur le terrain est indiscutable. Bien appliqués, ils permettraient aux FSY de mener d'innombrables missions complexes. \nCela dit, ces pouvoirs ne sont pas toujours fiables. En de rares occasions, un bouclier géant présentait inexplicablement un énorme trou, ou le soleil peint n'était qu'une tache d'encre suspendue dans le ciel, qui gouttait lentement. Ces incidents étaient rares, mais ils ont bien eu lieu. La mandataire masquait toujours rapidement ces ratés, grâce à diverses techniques (toux exagérée, peinture soudaine d'une rivière suivie de l'annonce d'un exercice de franchissement, arrêt brutal de la séance, etc.) \n\nRien de tout cela ne devrait nous surprendre. Posséder une compétence, ce n'est pas la maîtriser. En combat comme en artisanat, la vraie maîtrise demande des années. La situation de la mandataire est différente, évidemment. Elle a hérité récemment des pouvoirs du feranmouth « Sui » et de ses douze mandataires. Pourtant, ses contributions parlent d'elles-mêmes. C'est grâce à elle que les FSY existent aujourd'hui et que notre patrie demeure protégée. \n— Arcane, capitaine d'opération des FSY",
+      "file3": "Les Régulateurs de Sui ont été fondés relativement tard parmi les organisations spécialisées de l'ASH. Bien qu'ils partagent leur nom avec leurs homologues terrans, leur but est fondamentalement différent. L'organisation originale fut établie à Yan après la « Grande chasse » pour surveiller le feranmouth « Sui » en sommeil. Sa force subordonnée, les « porte-flambeaux », était chargée de surveiller les activités des douze mandataires de Sui et de répondre à toute catastrophe secondaire subséquente. Pendant près de mille ans, les relations entre les Régulateurs de Sui et les mandataires sont restées tendues. \nÀ l'ASH, cependant, les Régulateurs de Sui servent d'organisation de renseignement et de soutien technique, axée sur le développement de technologies fondées sur les pouvoirs du feranmouth et sur le soutien à l'Académie, dans les domaines militaires comme civils. La mandataire de feranmouth Si a directement participé à la création des Régulateurs de Sui et, plus tard, à celle des FSY sous sa supervision. Elle semble elle-même apprécier ce travail. Pour les Régulateurs de Sui, Si est davantage une conseillère excentrique. \n\nEnregistrement spécial \n« Je crains que même l'immensité de Talos-II ne finisse par devenir trop étroite pour ma petite sœur. Mais elle est encore jeune et a tant à découvrir. Je l'ai donc envoyée à Hongshan pour élargir ses horizons, comptant sur la Tianshi Tan pour veiller sur elle. Si je peux rendre un service en retour, je viendrai en personne sans tarder. » \n« C'est tout ce que mon frère a écrit ? » \n« Ce n'est pas suffisant ? Vous êtes la plus récente des mandataires. Personne ne peut prédire ce que vous deviendrez une fois vos pouvoirs pleinement éveillés. Si vous vous révélez aussi incontrôlable que Sui autrefois, il n'y aura peut-être personne sur Talos-II capable de vous contenir. Il vaut mieux que vous passiez du temps avec nous maintenant. Ce sera bénéfique à la fois pour vous et pour l'ASH. Et puis... votre frère m'a prévenu que si quelqu'un ici osait simplement vous contrarier, il viendrait frapper à ma porte. À ce stade, le simple fait qu'il n'ait pas joint un couteau à la lettre me soulage ! » \n« C-Ce n'est pas ce qu'il a voulu dire ... Vous êtes la Tianshi la plus expérimentée de l'ASH... Et j-j'ai toujours eu beaucoup de respect pour vous ! » \n« Ha ha, voilà qui est mieux. Vous êtes assurément bien plus sympathique que vos frères et sœurs. Alors, avez-vous pris une décision concernant les forces spéciales ? Vous avez passé suffisamment de temps à Hongshan. » \n« Vous avez même envoyé l'Endmin pour me convaincre. Je suis là. Ça ne répond pas à votre question ? » \n« Excellent. Que ceci soit donc le premier ordre officiel des Régulateurs de Si sur Talos-II. » \n« Les Régulateurs de Si ?! » \n« Hmm... L'histoire de Sui appartient désormais à Terra, et vos frères et sœurs sont libres de vivre comme ils l'entendent. Le nom \"Régulateurs de Sui\" ne semble plus vraiment approprié... » \n« Gardons plutôt \"Régulateurs de Sui\" ! Les Régulateurs de Si, ça sonne affreusement mal. Comme si tout cet endroit existait simplement pour me surveiller. » \n« C'est juste. Alors nous garderons l'ancien nom. » \n« Et les forces spéciales ? » \n« Ces jeunes débattent encore du nom. À mon avis, cette unité existe uniquement grâce à vous, alors pourquoi ne pas l'appeler... \"Forces spéciales de Yinglung\" ? » \n« Génial ! J'adore ! »",
+      "file4": "Lorsque la poussière retomba enfin, le feranmouth Sui ne se réveilla jamais. \nSon corps avait disparu. Sa volonté s'enfonça dans le silence, au milieu du chaos. La fierté, la colère, la haine et la défiance qui l'avaient autrefois défini disparurent avec la perte de Son enveloppe. Privé de Son corps, Il devint un enfant confronté à une seule question. \n« Qui suis-Je ? » \nLe vide n'offrit aucune réponse. Il comprit qu'Il n'avait peut-être plus le droit d'y répondre Lui-même. \nAlors Il lâcha prise. Après une éternité de lutte contre le monde et contre Lui-même, Il se lassa finalement de penser. Dans ce silence, Il trouva une délivrance qu'Il n'avait jamais connue. \n... \nMais Sui avait enduré trop longtemps et était devenu bien trop puissant pour disparaître si facilement. Trop de fragments de Lui-même avaient été dispersés au fil des âges. Même après que Sa conscience eut choisi l'exil, quelque chose finirait par émerger naturellement, telle la rosée du matin qui se forme sur les feuilles avant de disparaître... \nQuelque chose tomba. \nLe bruit attira l'attention d'un mandataire qui n'était pas encore parti. \nPar compassion... ou par prudence... il recueillit aussitôt ce fragment parfait de conscience dans ses mains. Il ne pouvait ni parler ni exercer le moindre pouvoir. Impossible de dire s'il avait encore un véritable lien avec Sui Lui-même. Fragile et instable, il vacillait comme une flamme de bougie, éclatant et d'une pureté absolue. \nPour la première fois, les mandataires furent pris d'incertitude. \nIls savaient tous qu'il s'agissait du dernier vestige du feranmouth Sui. S'ils avaient voulu effacer toute trace persistante de Lui, ils auraient pu le faire d'un simple geste. \nMais il demeurait, silencieux, au creux de la paume. \nÉtait-ce vraiment le Sui qu'ils avaient toujours connu ? Le fier feranmouth ne se serait jamais mis à nu ainsi devant Ses propres mandataires, pas même pour préserver Son existence, mais s'il s'agissait d'une vie qui ne faisait que commencer... Les mandataires se surprirent à se remémorer ce qu'ils avaient ressenti avant même de voir le jour. \nIl cherchait. Il s'efforçait de répondre à une seule question : Qu'est-ce qui fait ce que Je suis ? Quand le dernier vestige de Son ancien moi ne pouvait plus lui fournir cette réponse, la minuscule conscience se tourna instinctivement vers ses semblables. \nLes enfants qu'Il avait autrefois créés pour marcher parmi les mortels étaient désormais ceux qui allaient Le guider. Pour les douze mandataires, l'ironie était impossible à ignorer. Leurs délibérations n'aboutirent à rien, jusqu'au jour où une voix brisa le silence de leurs esprits. \nElle était faible. Fragile. Mais d'une innocence bouleversante. \n« Qui suis-Je ? » \n« Où suis-Je ? » \n« Qui êtes-vous ? » \n... \nFinalement, les mandataires décidèrent d'envoyer cette minuscule conscience à travers le Portail cosmique, vers un monde inconnu. Ils comprenaient que même le plus petit vestige du feranmouth reposant dans le Tombeau de Sui portait d'innombrables fils du destin. Pourtant, si cette chose... si elle n'en savait rien, alors elle n'était plus Lui. \nPeut-être que la réponse qu'elle cherchait n'était jamais destinée à être trouvée sur la terre où Sui Lui-même avait échoué. Dans un nouveau monde, une nouvelle âme pourrait encore découvrir ce que cela signifie vraiment d'exister et de trouver sa propre réponse. \nEt ainsi, cette minuscule étincelle de conscience arriva sur Talos-II, portant toutes sortes de... eh bien... de bric-à-brac. Franchement, ils en ont mis beaucoup trop. Ils n'ont pas arrêté pas de fourrer des trucs dans mes... non, dans Ses mains. \nAprès cela... eh bien, c'est une autre histoire."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Gestion d'équipe",
+        "description": "Gestion d'équipe : Sagesse de l'aubergiste\n« Le manoir Yuanyuan est une marque centenaire, et la méthode que j'applique pour garantir un service de qualité est entièrement de mon invention. Des gens de l'ASH viennent de temps en temps apprendre mes préceptes. »"
+      },
+      "expert2": {
+        "name": "Assemblage d'outils",
+        "description": "Assemblage d'outils : Tout ce que Si désire\nLe feu forge pour l'art divin, le pinceau crée des mondes entiers. Elle puise son inspiration dans ce qui l'entoure, ou même dans ses rêves. Si elle peut l'imaginer, elle l'obtiendra. Le procédé n'est pas infaillible, mais mieux vaut ne pas le lui rappeler."
+      },
+      "hobby1": {
+        "name": "Technologie",
+        "description": "Technologie : AQ du premier prototype\n« Les meubles intelligents ne font pas le poids face à ma troupe de fantobjets très, très obéissants. »"
+      },
+      "hobby2": {
+        "name": "Mode",
+        "description": "Mode : Esthéticienne expérimentale\nUn titre autoproclamé. En réalité, personne n'a osé embaucher Si pour ce genre de travail. L'équipe du manoir Yuanyuan a révélé que Si utilise les esprits d'encre pour s'entraîner à l'art du maquillage."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Préparation de l'opération 1",
+        "text": "Hmpf. On ne pense à moi que quand ça tourne mal, c'est ça ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Préparation de l'opération 2",
+        "text": "Je vais vous aider encore une fois. N'oubliez pas de régler la note une fois qu'on sera de retour à l'auberge."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Intégration à l'équipe 1",
+        "text": "Et ne m'adressez plus la parole, à partir de maintenant. J'ai besoin de me concentrer."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Intégration à l'équipe 2",
+        "text": "Allez, dites quelque chose. Je perds ma concentration quand c'est trop silencieux."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Changement d'arme",
+        "text": "C'est ça que vous avez choisi ? Hmm... Et si on ajoutait deux traits d'encre ? Maintenant c'est à moi, vous ne le récupérerez pas."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Changement d'équipement",
+        "text": "C'est même adapté à mes ailes... Hum. C'est... pas mal, mais ce n'est pas pour autant que je serai sympa."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Activation de la matrice de capacités",
+        "text": "Ah ! Je sens venir l'inspiration ! Vite, ne restez pas là à me regarder ! Trouvez-moi du papier !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Visionnage d'archives de combat",
+        "text": "Regardez-les encore quelques fois pour vous en souvenir... Pourquoi vous souriez ? C'est à vous que je parle, là !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Promotion d'opérateur 1",
+        "text": "Soyons clairs, je ne suis qu'une Endfielder honoraire, donc ne vous attendez pas à ce que je fasse tout. Et Endfield a intérêt à être aussi passionnant que vous le dites."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Promotion d'opérateur 2",
+        "text": "Donnez-moi votre main et laissez-moi la tamponner avec ma queue. Voilà... Ça fera l'affaire. Et vous avez intérêt à ne pas l'effacer avant que je décide de vous le refaire."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Promotion d'opérateur 3",
+        "text": "Esprit d'encre, note bien ce qu'a dit l'Endmin. Mot pour mot. L'ASH veut que je fasse un discours aux jeunes Yinglungs. Ça va me servir."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Promotion d'opérateur 4",
+        "text": "Vous n'arrêtez pas de me promouvoir, mais si jamais vous ne tenez pas votre promesse, je retourne à l'auberge. Vos affaires, ce ne sont pas celles d'Endfield. Ce qui se passe entre nous reste entre nous."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Opératrice au rapport",
+        "text": "Tiens-toi tranquille, ne bouge pas ! L'encre n'est même pas encore sèche... Ce tableau est pour vous. Ce que j'ai dessiné n'a pas d'importance. Ce qui compte, c'est mon sceau ! Et ne vous avisez plus jamais d'oublier mon nom !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "En attente 1",
+        "text": "Un peu de ceci, puis cela... C'est bon, enroulez-le. Hum. Votre brouillon est prêt. Il faut être patient !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "En attente 2",
+        "text": "Vous me fréquentez depuis des années, alors pourquoi vous n'avez toujours rien appris ? Comme imiter ma signature, par exemple."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Affectation à une installation",
+        "text": "Vous m'avez attirée ici juste pour pouvoir vous prélasser ? Hors de question. Vous restez ici avec moi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Salutation 1",
+        "text": "Vous essayez de passer devant moi sans rien dire ? Vous faites comme si j'étais invisible ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Salutation 2",
+        "text": "Bon, cette promesse d'il y a dix ans... Vous comptez la tenir ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Je me tourne les pouces ? Moi ? Regardez ce hublot. J'y avais peint toute une œuvre intitulée « Voyageurs sur Talos-II »... Mais quelqu'un a traîné en chemin et a débarqué après que j'ai tout effacé."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Pourquoi vous vous montrez chaque fois que je rends visite au Dijiang ? Quoi, vous avez vu des esprits d'encre dans le coin ? Ah, bon... On dirait que vous avez fait exprès de croiser ma route !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Je vais peindre votre portrait et l'accrocher chez moi. Ça repoussera les fantobjets si vous venez visiter mon parchemin en personne... Hmm ? J'en ai déjà un, qui date d'il y a dix ans. Mais à l'époque, vous ne portiez rien sur le visage."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Cartes, oreillers, en-cas, réchaud, tisane stimulante... Oh. Je fais juste la liste des affaires à emmener à Sami. Les voyages m'inspirent toujours. Vous n'auriez pas d'autres idées ? Évidemment que vous venez, sinon je ne vous raconterais pas tout ça ! Non, mes esprits d'encre porteront mes sacs, pas vous, imbécile !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Je suis tombée sur Perlica. Cette petite superviseuse vous ressemble tellement... Pauvre fille, elle essaie de rester éveillée alors qu'elle pourrait littéralement s'endormir debout... Exactement comme vous ! Arrêtez de veiller toute la nuit et allez dormir. Vous vous tuez à la tâche et ensuite vous dormez pendant dix ans. Sérieusement ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Oooh... D'ici, on voit presque la moitié de Talos-II... Je me demande où ces deux-là sont partis... Hein ?! Qui a dit que mes frères et sœurs me manquaient ? Ne me regardez pas comme ça... ! Pff. Bon. Peut-être qu'ils me manquent un peu. Juste un peu..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Cadeaux offerts",
+        "text": "Tenez. Un petit cadeau, juste un gribouillage que j'ai fait. Ne vous emballez pas tr... AH, ce n'était pas le bon ! Cet autoportrait, c'est juste pour m'entraîner. RENDEZ-LE-MOI !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Cadeaux acceptés",
+        "text": "Euh... D-Depuis quand est-ce que vous faites tout ce cérémonial... HÉ ! Je vous interdis de me le reprendre !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Si vous avez du temps, passez à l'auberge pour le banquet de bienvenue que vous avez raté. Les cuisiniers ont déniché tous les ingrédients rares qu'ils ont pu trouver. Attendez... Vous avez remercié qui, là ?! Eh bien, il faut croire que tout le mérite revient au personnel. Alors j'imagine que leur impitoyable patronne n'a plus qu'à les empêcher de gaspiller tous ces précieux ingrédients ! HMPF !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Sentez un peu ça. Vous voyez cette falaise là-bas ? C'est là que poussent les théiers. Il est excellent, mais je dois envoyer mes meilleurs esprits d'encre pour en cueillir les feuilles. Dix ans de travail, tout ça dans ce petit pot. Alors, vous avez vraiment de la chance aujourd'hui... Hé. Pourquoi vous avez les dents couvertes d'encre ? Attendez... Moi aussi... ? C-Contentez-vous de boire votre thé. Jusqu'à la dernière goutte. Et arrêtez de me regarder comme ça !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Stop ! Ça suffira pour aujourd'hui ! Eh bien, vous commencez à avoir un bon niveau au Weiqi. Mais mon frère reste le meilleur joueur de tout Talos-II. Vous êtes loin d'atteindre son niv... Quoi ? C'est la troisième fois ce mois-ci que je parle de mes frères et sœurs ? J-Je ne dis pas que j'aimerais qu'ils soient encore là ! Il suffit de regarder la montagne, l'auberge et le fait que moi, au moins, j'ai... HUM ! Cet endroit est déjà bien assez animé comme ça."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Vous vous lancez déjà dans une expédition avant d'avoir totalement récupéré ? Votre corps est fait en xiranite ou quoi ? Vous croyez vraiment que vous ne pouvez pas vous écrouler ? Hmpf. J'espérais que cette stupide tendance à l'autodestruction ait disparu avec vos souvenirs, bougre d'imbécile ! Donnez-moi les détails de la mission, j'irai à votre place ! N'oubliez pas, vous me serez redevable. ENCORE une fois !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Asseyez-vous. Le lever du soleil vous manque ? Peignez-le à l'aide de votre pinceau, tout simplement. À l'époque, vous veniez me voir sans prévenir quand j'étais seule. Vous aviez ce don de transformer des idées absurdes en mots réconfortants… Bon. Je sais que mes paroles ne feront pas revenir vos souvenirs perdus pour l'instant. Mais si jamais vous osez encore oublier quelque chose, je ne vous parlerai plus pendant les dix… non, les cent cinquante prochaines années !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Discussion 1",
+        "text": "De plus en plus de gens veulent visiter le parchemin, mais l'auberge n'a pas été conçue pour accueillir autant de visiteurs. Le personnel a proposé d'installer un panneau d'affichage dans la Grande salle... C'est une excellente idée, mais ça veut dire que je vais recevoir des suggestions dans tous les sens. J-Je n'ai vraiment pas le temps de tout trier. Alors, vous pourriez faire un premier tri...? Comme ça, je pourrais me concentrer sur celles qui sont vraiment utiles."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Discussion 2",
+        "text": "L'apogée de la forge, c'est de condenser chaque étape de fabrication en un seul souffle et de transformer chaque idée en réalité. Comme le bouclier que je tiens… Quoi ? Une alvéole défectueuse… ? HUM. Oui, c'est juste un prototype. C'est normal d'avoir de petits défauts, et ça n'a clairement rien à voir avec la maîtrise de mes pouvoirs."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Discussion 3",
+        "text": "Vous avez entendu parler des peluches de frappeciel potelées ? J'adore tout ce qui est potelé et j'en ai plein à l'auberge. Mais les peluches de frappeciel potelées sont des récompenses exclusives du jeu « Esquisse mystère » de Wuling, et on ne peut pas y jouer tout seul… Écoutez bien, la prochaine saison va commencer. Je vais vous apprendre des astuces et vous feriez mieux de les retenir… Évidemment que c'est vous qui dessinez et moi qui devine ! Vous croyez vraiment que je suis du genre à tricher aux jeux ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Discussion 4",
+        "text": "Flèche n'en fiche pas une, Éclair est tellement grand qu'il arrive à peine à bouger, et Décibel accueille les clients si discrètement qu'on peut la rater en clignant des yeux. Ça fait des décennies que ça dure, et j'ai arrêté d'essayer de corriger leurs défauts. Oh ? Ils n'avaient nulle part où aller, alors je les ai ajoutés au parchemin. Je pourrais les renvoyer… mais je préfère avoir une auberge désordonnée plutôt que silencieuse."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Discussion 5",
+        "text": "J'avais pour habitude de traîner avec mes frères et sœurs et de jouer au Weiqi, d'écouter leurs discussions, puis de m'entraîner à la lecture, à la calligraphie et à la peinture la nuit. Pendant notre temps libre, on voyageait tous les trois à travers Talos-II… mais ils m'ont vite envoyée à Hongshan. Ils voyaient sûrement Talos-II comme une bouffée d'air frais et pensaient que je n'y trouverais jamais vraiment mon bonheur s'ils restaient dans les parages. Je comprends leur raisonnement. Mais on ne peut pas abandonner sa petite sœur quelque part et à peine venir la voir…"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Thème : les Forces spéciales de Yinglung",
+        "text": "Oui, j'étais là quand l'ASH a créé les Forces spéciales de Yinglung. Mais tout ce que j'ai fait, c'est leur enseigner quelques astuces. Pourquoi je n'ai pas passé plus de temps avec eux ? Parce que les Yinglungs sont majoritairement des têtes de mule, comme Li Zhiyan. Il ne faut pas passer trop de temps avec eux, ils seraient capables de faire geler l'air lui-même. Mais il semble qu'elle ait compris deux ou trois trucs après avoir passé du temps avec vous. Hmm... Dites, Endmin, pourquoi ne pas prendre ma place et en profiter pour leur apprendre quelques petites choses ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Thème : le pouvoir du feranmouth",
+        "text": "La base de données des RH d'Endfield a des soucis. Dans la section « Compétences », j'ai indiqué douze domaines, dont arts martiaux, littérature, peinture, métallurgie, droit, jardinage… et là, ça a planté. Quoi, trop de compétences ? Un échec de temps en temps n'invalide pas ces talents. Vous feriez mieux de m'expliquer ce qui se passe."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Thème : ses ailes",
+        "text": "Elles sont jolies, mes ailes, hein ? Petite, je rêvais de les voir pousser et se déployer, alors je les dessinais dans mon dos en me réveillant. Ma sœur n'arrêtait pas de râler à ce sujet… C'est juste pour la déco. Mais elle disait que je les utilisais au combat pour me donner un air intimidant. Hmpf. C'est une accusation infondée. Sérieusement, qui ferait ça ? C'est tellement puéril !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Thème : Ye Minghe",
+        "text": "Ce gamin aux cheveux éclatants ? On se connaît depuis un bon moment, et il est toujours aussi pénible. Par moments, il ne se préoccupe que de sa galopeuse d'un noir d'ébène, et il ne cesse de répéter : « Les gardes impériaux doivent accomplir leur devoir... » C'est pour ça qu'il est aussi difficile à gérer, parce qu'il croit vraiment ce qu'il dit. Un peu comme vous, d'ailleurs. Attendez, c'est vous qui l'avez influencé ! Bref, s'il débarque encore à l'improviste dans mon parchemin, c'est vous qui en paierez les conséquences."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Thème : la famille",
+        "text": "Je n'ai aucune idée d'où sont passés mes frères et sœurs. Après tout ce qu'ils ont vécu, ils ont enfin du temps libre. Peut-être qu'ils parcourent tout Talos-II. Peut-être qu'ils... HÉ ! Flèche ! Je t'ai dit de bien nettoyer, non ? Surtout les tableaux, la calligraphie et les plateaux de Weiqi. Imagine qu'ils rentrent à la maison et qu'ils voient ce bazar ! Je vais me retrouver dans un sacré pétrin !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Thème : Sui",
+        "text": "Sui est le pire des feranmouths. De tous les temps. Même en dormant, Il ne tient pas en place, il complote toujours pour compliquer la vie des yanais avec ses douze mandataires. Et au final ? Chaque mandataire a eu ses propres idées et Lui a compliqué la tâche. Quant à mes liens avec Lui... Je ne serais pas là si on n'avait pas apporté les derniers fragments de son âme sur Talos-II. Mais nous sommes différents. Il n'y a rien entre nous, ni dans un sens ni dans l'autre. Cette dette est réglée, et c'est clair comme de l'eau de roche."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Ne ratez pas cet endroit."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Regardez, du butin caché."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Zone inexplorée détectée",
+        "text": "Quel endroit intéressant. On pourrait le manquer si on n'y prêtait pas attention."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Prudence. Celui-ci va demander quelques coups de pinceau supplémentaires."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Extraction 1",
+        "text": "Forge des cieux, métaux de la terre. Talos-II regorge vraiment de ressources rares."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Extraction 2",
+        "text": "Laissez-moi faire. Ce sera réglé en un instant."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Ouverture de caisse",
+        "text": "N'attendez pas l'inspiration. Allez la chercher."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Obtention d'aurylène",
+        "text": "Hmm. Si je mélange de l'aurylène à de l'encre, qu'est-ce que je pourrais peindre avec ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Élimination de la Gangrène",
+        "text": "Maintenant que j'y pense, peut-être que mes esprits d'encre pourraient aussi s'en charger."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Repos",
+        "text": "Reposez-vous dès que possible. Personne ne saurait peindre Talos-II d'un seul coup de pinceau."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Utilisation d'objet tactique 1",
+        "text": "Je m'y connais un peu en plantes et en soins, aussi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Utilisation d'objet tactique 2",
+        "text": "Ça va nettement mieux !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Avertissement de danger",
+        "text": "Regardez par là !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Blessure",
+        "text": "Est-ce qu'ils viennent de salir mes ailes ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "0 PV",
+        "text": "Ça ne... m'intéresse plus..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Encouragement de l'équipe 1",
+        "text": "Ah. Une génération prometteuse."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Encouragement de l'équipe 2",
+        "text": "Nos jeunes semblent particulièrement enthousiastes."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Réaction face aux encouragements 1",
+        "text": "Rassurez-moi, ce n'est pas simplement par « politesse » ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Réaction face aux encouragements 2",
+        "text": "D'accord, d'accord, ne vous laissez pas distraire."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Début du combat 1",
+        "text": "Finissons-en avant que la nuit ne tombe."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Début du combat 2",
+        "text": "Montrez-moi de quoi vous êtes capables, les jeunes."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Victoire au combat 1",
+        "text": "C'est bien plus amusant que de rester dans le parchemin."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Victoire au combat 2",
+        "text": "Je suis vraiment inspirée. Cette excursion valait le coup."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Victoire au combat 3",
+        "text": "Déjà fini ? J'imagine que vous avez encore assez d'énergie pour me fabriquer un peu d'encre."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Victoire au combat 4",
+        "text": "C'était difficile, mais on a gagné. Ne traînez pas comme ça."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Défaite au combat",
+        "text": "Gagner, c'est super, mais ce n'est pas grave de perdre. Je suis là, alors vous n'avez rien à craindre."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Coup final 1",
+        "text": "À terre !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Coup final 2",
+        "text": "En arrière !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "Compétence de combat 1",
+        "text": "Des couleurs inégales !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "Compétence de combat 2",
+        "text": "Des traits brouillons !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "Compétence de combat 3",
+        "text": "Des copies sans âme !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Compétence de combo prête 1",
+        "text": "Faites-moi un peu de place."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Compétence de combo prête 2",
+        "text": "J'ai les mains libres."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Utilisation de combo 1",
+        "text": "Vous me faites encore perdre mon temps ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Utilisation de combo 2",
+        "text": "Vous me faites encore gaspiller de l'encre ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Coup fatal 1",
+        "text": "La touche finale !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Coup fatal 2",
+        "text": "Un rendu parfait !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Ultime 1",
+        "text": "Une vague qui grandit ! Un séisme en furie !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Ultime 2",
+        "text": "Un coup de pinceau acéré ! Manipule le cosmos !"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Ultime 3",
+        "text": "Que cette puissance façonne ces terres !"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce la compétence de combat <@ba.key>Royaume du pinceau</> : <@ba.vup>+{static_duration:0%}</> à la durée de l'<#ba.static>Immobilisation</> appliquée ; <@ba.vup>+{ink_damage_rate:0%}</> au taux d'enregistrement des DÉG de l'<@ba.key>Intention artistique</> et <@ba.vup>+{ink_boom_range:0%}</> au rayon d'explosion.",
+      "name": "Le printemps et l'automne tels de l'encre"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Trois marques gravées dans le bois"
+    },
+    "potential3": {
+      "description": "Renforce l'ultime <@ba.key>Personne ne gâche la fête</> : les DÉG infligés sont multipliés par <@ba.vup>{atk_scale:0.0}</>. L'effet d'<#ba.enhance>amplification</> est multiplié par <@ba.vup>{enhance_final:0.0}</>.",
+      "name": "Étude de muscles et d'os"
+    },
+    "potential4": {
+      "description": "Renforce l'ultime <@ba.key>Personne ne gâche la fête</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Composition parfaite dans l'esprit"
+    },
+    "potential5": {
+      "description": "Renforce la compétence de combo <@ba.key>Vision parachevée</> : la durée du temps de recharge de la compétence de combo est de <@ba.vup>{coolDown:0}</> s et les DÉG infligés sont multipliés par <@ba.vup>{atk_scale:0.0}</>. Lors de l'activation, la compétence de combo est considérée comme ayant <#ba.consume>consommé</> ou <#ba.absorb>absorbé</> 1 cumul supplémentaire d'altération.",
+      "name": "Une touche de pinceau dans le blanc de l'œil"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Insouciante",
+      "author": "狂zip",
+      "description": "Quand on est libre et insouciant, il faut écouter son cœur, ses sentiments et sa joie."
+    },
+    "potential3": {
+      "name": "Dans le royaume de l'encre",
+      "author": "Maeka",
+      "description": "Dans ce royaume peint, tout est illustré par des pigments. Vous avez passé un long moment ensemble dans le Sanctuaire d'encre."
+    },
+    "potential5": {
+      "name": "Immaculée",
+      "author": "수줍(Sjoop)",
+      "description": "Elle erra dans le monde des mortels, mais la poussière de ces derniers ne la souilla jamais."
+    }
+  }
+}

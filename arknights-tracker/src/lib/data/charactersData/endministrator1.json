@@ -2108,7 +2108,9 @@
             "usp": 15
         },
         "potential4": {
-            "MaxHp": 0.1
+            "OriginiumArts": 16,
+            "atk_scale": 1.2,
+            "originum_ult_break_scale": 1.2
         },
         "potential5": {
             "cd_minus": 2

@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Amplificazione",
+      "Abilità offensiva",
+      "Afflizione da ghiaccio"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Accademia scientifica di Hongshan (ASH)",
+    "expertTags": [
+      "Gestione della squadra",
+      "Assemblaggio strumenti"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'artigiano di Wuling"
+    ],
+    "hobbyTags": [
+      "Tecnologia",
+      "Moda"
+    ],
+    "raceTag": "Ignoto"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Impulso artistico",
+      "description": "ATTACCO BASE:\nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento.\n\nATTACCO DALL'ALTO:\ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze.\n\nMOSSA LETALE:\ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale"
+    },
+    "battleSkill": {
+      "name": "Regno del pennello",
+      "description": "Si infligge <@ba.cryst>danni da ghiaccio</> al bersaglio e applica <@ba.key>Intento pittorico</>, <#ba.static>Immobilizzazione</> e <#ba.crystinflict>Afflizione da ghiaccio</> (oppure <#ba.fireinflict>Afflizione da fuoco</> se nella <@ba.key>posizione 1 della squadra</> è presente un operatore di elemento <@ba.fire>fuoco</>). Quando un bersaglio con <@ba.key>Intento pittorico</> subisce danni, una parte dei danni subiti viene registrata. Alla scadenza di <@ba.key>Intento pittorico</>, si verifica un'esplosione che infligge <#ba.fixeddamage>danni fissi</> pari ai danni registrati. Dopo l'uso, l'abilità di combattimento di Si viene temporaneamente sostituita da <@ba.key>Pennellata iniziale</>.\n<@ba.key>Pennellata iniziale</>: costa <@ba.vup>15</> PA. Si estrae un'<@ba.key>Anima d'inchiostro</> da un bersaglio con <@ba.key>Intento pittorico</>. Tutti i danni inflitti e gli effetti applicati all'<@ba.key>Anima d'inchiostro</> vengono inflitti anche al suo ospite (il bersaglio). L'<@ba.key>Anima d'inchiostro</> dura quanto il tempo rimanente di <@ba.key>Intento pittorico</>. Dopo l'uso, l'abilità di combattimento di Si viene temporaneamente sostituita da <@ba.key>Pennellata finale</>.\n<@ba.key>Pennellata finale</>: non consuma PA. Fa scomparire anticipatamente l'<@ba.key>Anima d'inchiostro</>. Quando scompare, l'<@ba.key>Anima d'inchiostro</> si sposta verso l'ospite e innesca un'esplosione analoga a quella che si verifica alla scadenza di <@ba.key>Intento pittorico</>.\n<@ba.info>Quando si infliggono danni o si applicano effetti sia all'Anima d'inchiostro che all'ospite, solo 1 unità di danni o dell'effetto viene inflitta/applicata. Se l'ospite viene sconfitto durante la durata dell'Anima d'inchiostro, quest'ultima si legherà a un altro nemico in combattimento e gli applicherà Intento pittorico, senza azzerarne la durata. Se un bersaglio con Intento pittorico è sconfitto senza che l'Anima d'inchiostro gli venga estratta, il bersaglio sconfitto lascerà cadere un'Anima d'inchiostro nel punto in cui si trova.</>",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "immobilizationDurationS": "Durata Immobilizzazione (s)",
+      "artfulIntentDurationS": "Durata (s) Intento pittorico",
+      "dmgRecordRatio": "Rapporto di danni registrati",
+      "stagger": "Vacillamento",
+      "artfulIntentBurstStagger": "Vacillamento da esplosione di Intento pittorico"
+    },
+    "comboSkill": {
+      "name": "Tutto in mente",
+      "description": "ATTIVAZIONE COMBO: quando l'<#ba.crystinflict>Afflizione da ghiaccio</> o l'<#ba.fireinflict>Afflizione da fuoco</> di un nemico viene <#ba.consume>consumata</> o <#ba.absorb>assorbita</>.\nSi evoca un <@ba.key>Lung d'inchiostro</> che infligge <@ba.cryst>danni da ghiaccio</>. Questi danni sono basati sul maggior numero di accumuli di Afflizione da Arti <#ba.consume>consumati</> o <#ba.absorb>assorbiti</> da un singolo bersaglio.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Aumento moltiplicatore per ogni accumulo consumato o assorbito",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema"
+    },
+    "ultimate": {
+      "name": "No ai guastafeste",
+      "description": "Si evoca dal suo dipinto un <@ba.key>Lung d'inchiostro gigante</> che infligge <@ba.cryst>danni da ghiaccio</> e conferisce temporaneamente a tutta la squadra <#ba.crystenhance>Amplificazione di ghiaccio</> e <#ba.fireenhance>Amplificazione di fuoco</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "amp": "Amplificazione",
+      "ampDurationS": "Durata amplificazione (s)"
+    },
+    "indicator": {
+      "levels": [
+        "Intelletto operatore +10.",
+        "Intelletto operatore +15.",
+        "Intelletto operatore +15.",
+        "Intelletto operatore +20."
+      ],
+      "name": "Acume"
+    },
+    "talent1": {
+      "levels": [
+        "Abilità suprema <@ba.key>No ai guastafeste</> migliorata: il tempo di recupero dell'abilità combo dell'operatore in <@ba.key>posizione 1 della squadra</> è di <@ba.vup>{coolDown:0}</> s.",
+        "Abilità suprema <@ba.key>No ai guastafeste</> migliorata: il tempo di recupero dell'abilità combo dell'operatore in <@ba.key>posizione 1 della squadra</> è di <@ba.vup>{coolDown:0}</> s."
+      ],
+      "name": "Favore della rappresentante"
+    },
+    "talent2": {
+      "levels": [
+        "Quando <@ba.key>Anima d'inchiostro</> scompare, gli operatori alleati ottengono <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</> per {duration_speedup:0} s.",
+        "Quando <@ba.key>Anima d'inchiostro</> scompare, gli operatori alleati ottengono <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</> per {duration_speedup:0} s."
+      ],
+      "name": "Pennello immacolato"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assegna alla sala di ricevimento per conferire +20% di efficienza di raccolta indizi degli operatori.",
+        "Assegna alla sala di ricevimento per conferire +30% di efficienza di raccolta indizi degli operatori."
+      ],
+      "name": "Spettro, dove sei"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assegna alla sala di ricevimento per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+        "Assegna alla sala di ricevimento per rallentare del 18% il calo dell'umore di tutti gli operatori al suo interno."
+      ],
+      "name": "Ausilio dello Spirito d'inchiostro"
+    },
+    "files": {
+      "main": "NOME IN CODICE: Si \nGENERE: F \nAUTENTICAZIONE: Accademia scientifica di Hongshan \nDATA DI NASCITA: 15 settembre \nRAZZA: non divulgata \n[STATO INFEZIONE ORIPATIA] \nI referti medici confermano la negatività all'Oripatia. \n\n[ESAME FISICO COMPLETO] \nFORZA FISIOLOGICA: ■■ \nABILITÀ DI COMBATTIMENTO: eccellente \nACUME TATTICO: standard \nASSIMILAZIONE ARTI DI ORIGINIUM: difettosa",
+      "humanResources": "Si, una rappresentante dei Feranmut senza datore di lavoro formale, ha un legame di lunga data con l'Accademia scientifica di Hongshan. Su raccomandazione personale dell'Endministrator, si è unita alla Endfield Industries, dove attualmente mette a disposizione la propria esperienza nella ricerca teorica e nell'applicazione pratica dei Feranmut. \n\nSi partecipa raramente alle procedure del personale della Endfield. L'unica eccezione è registrata nel mio registro di autodiagnosi. Come concordato, Si è arrivata a bordo del Dijiang e ha parlato con me. Ha risposto a tutte le domande, firmato i documenti e si è dileguata appena concluso il processo. Il mio modulo di elaborazione ha immediatamente classificato l'evento come incidente imprevisto e ha emesso un allarme. Poco dopo, Si è tornata in ufficio, ha asciugato una goccia d'inchiostro al centro del mio display e ha sussurrato: \"Interessante... ma non abbastanza\". In seguito ha spiegato che la \"Si\" seduta di fronte a me era solo un dipinto di se stessa. Voleva vedere come avrei reagito. A giudicare dal suo commento, la mia risposta non era proprio quella che si aspettava. \nÈ stato uno scherzo innocuo. L'episodio ha mostrato un lato della personalità di Si. Pur possedendo poteri che vanno oltre qualsiasi spiegazione scientifica, a volte mostra un temperamento insolito per una rappresentante dei Feranmut. Le occasioni per incontrare una rappresentante dei Feranmut su Talos-II sono rare. Raccomando quindi ai colleghi del reparto risorse umane di cogliere ogni occasione per interagire con lei. Potremmo riuscire a cogliere una logica dietro i suoi sbalzi d'umore. \n- Martin Marvin Malen, Assistente, reparto risorse umane, Endfield Industries",
+      "file1": "Dopo il suo ingresso alla Endfield, quasi nessun operatore ha mai incontrato Si. Il suo profilo è rimasto quasi vuoto e \"misteriosa\" era l'unica impressione che la maggior parte di noi aveva della rappresentante dei Feranmut. Il reparto risorse umane ha persino chiesto a chi l'aveva raccomandata di aiutarci a convincerla a collaborare con alcune procedure di onboarding, ma a quanto pare nemmeno l'Endministrator ha potuto far presa su di lei... La situazione è cambiata quando un operatore della logistica l'ha vista per caso in un ristorante di hot pot di Wuling.\nI due si sono incontrati per puro caso, senza sapere chi fosse l'altro. Hanno partecipato allo stesso evento promozionale di un nuovo menù e hanno finito per condividere il tavolo, assaggiando brodi di hot pot come lime e melone amaro, brodo di vescica di pesce e peperoncino di lumaca e brodo chiaro di ninfa boschiva bollita, nomi già di per sé bizzarri. Dopo aver scoperto che Si era lì per imparare qualche trucco per il cuoco della sua locanda, l'operatore della Logistica ha lodato il suo fiuto per gli affari e il gusto raffinato per una persona così giovane. Si ne è stata felice e ha pagato silenziosamente anche il conto dell'operatore. Solo dopo, vedendo la foto di Si nel reparto risorse umane, l'operatore ha capito chi fosse realmente la sua compagna di cena... Da quel momento, sempre più operatori hanno iniziato a incontrare Si nei luoghi più inaspettati, tra cui l'evento di lancio del cicciodrago di Wuling, il centro esperienze robotiche di La Fantoma... La lista continua. Due operatori si sono addirittura accapigliati su una particolare apparizione. Entrambi sostenevano di aver visto Si nello stesso momento, uno affermando che era l'offerente dispettosa che si è aggiudicata l'ultimo articolo all'asta di Seš'qa, mentre l'altro giurava che era l'ospite misteriosa che si è ubriacata tra i sacerdoti delle nevi di Sami. I due luoghi sono a migliaia di chilometri di distanza, uno in superficie, l'altro sottoterra. Storie così si trovano solo nelle antiche leggende yanesi. In breve, se dobbiamo credere agli operatori, Si è meno una rappresentante dei Feranmut isolata e più una bambina energica che non riesce proprio a stare ferma.\nDa allora, ogni volta che la Dijiang organizzava eventi come la Serata del Cinema d'Avanguardia, alcuni operatori si facevano coraggio e chiedevano all'Endministrator di invitare Si... Stavolta è venuta davvero. Gradualmente, abbiamo capito che era semplicemente così. Gioiosa e imprevedibile, ha poca pazienza per chi è rigido o poco flessibile. È sempre attratta da tutto ciò che è nuovo e guarda il mondo con la curiosità di un bambino. Forse... per gli standard dei Feranmut, è davvero molto giovane.\n\nConsiglio dell'operatore Flusso argentato: evitate parole come \"bambina\" e \"giovane\". Lady Si è piuttosto sensibile riguardo alla sua età. Insiste: \"Sono quasi vecchia quanto la civiltà stessa su Talos-II. Siete tutti solo dei ragazzini ai miei occhi\".\n\nConsiglio dell'operatrice Arcana: per le questioni critiche, fidatevi della rappresentante, come facciamo noi. Qualunque sia il suo comportamento abituale, le sue capacità giustificano pienamente la fiducia. Non gradisce nemmeno che si dubiti delle sue abilità.\n\nConsiglio misterioso da un ospite sconosciuto: se si arrabbia, fate chiamare l'Endministrator.",
+      "file2": "Registro di addestramento squadra tattica d'élite di Yinglung III\nLocalità: terre selvagge senza nome, giurisdizione dell'ASH\nObiettivo: incontro programmato tra la rappresentante e l'ultimo gruppo di reclute\nNote: la rappresentante era assente senza preavviso; l'incontro è stato sostituito da addestramento ordinario. L'operatore senior a capo della sessione ha rassicurato le nuove reclute che, sebbene la rappresentante abbia contribuito alla fondazione e alla pianificazione della squadra tattica d'élite di Yinglung, non ricopre alcun ruolo ufficiale nell'ASH. Le parti mantengono un rapporto di collaborazione e molti membri della squadra potrebbero non incontrarla mai durante il servizio.\n\nRegistro di addestramento squadra tattica d'élite di Yinglung VIII\nLocalità: Accademia Tanjian, ASH\nObiettivo: lezione della rappresentante sull'applicazione del potere dei Feranmut\nNote: la rappresentante era assente senza preavviso. All'ultimo momento, ha organizzato la partecipazione di Ye Minghe, Capitano dei cieli pacificati delle guardie imperiali, e dell'Endministrator della Endfield Industries in sua vece. La sessione si è trasformata in uno scambio tecnico sulle tecniche di lancia e sull'applicazione delle Arti di Originium.\n\nRegistro di addestramento squadra tattica d'élite di Yinglung XXI\nLocalità: una pergamena dipinta dalla rappresentante sul momento\nObiettivo: lezione della rappresentante sull'applicazione del potere dei Feranmut\nNote: la rappresentante era insolitamente di buon umore e la sessione di addestramento è durata oltre tre ore in più rispetto al previsto. Ha deciso di mostrare più di una dozzina di poteri diversi, ciascuno più sorprendente del precedente. I suoi cosiddetti \"trucchi\" includevano, tra le altre cose: muovere pietre e legname a piacimento per creare un giardino dal quale nessuno poteva scappare, forgiare scudi e spadoni dal nulla, come se evocasse armi divine dal vuoto, piantare un seme che germogliava, appassiva e germogliava di nuovo in pochi istanti, confondendo la percezione del tempo e della causalità, animare dipinti a inchiostro, cancellando il confine tra illusione e realtà, trasformare quadrati in cerchi come se la realtà obbedisse a ogni sua parola... Ovviamente, noi possiamo sfruttare solo una minima parte di questi poteri grazie a equipaggiamento specializzato, e mai con la stessa libertà della rappresentante. Eppure, il loro valore sul campo è indiscutibile. Se applicati correttamente, permetterebbero alla squadra di portare a termine innumerevoli missioni complesse.\nDetto ciò, i poteri non sono sempre affidabili. In rare occasioni, uno scudo gigante conteneva inspiegabilmente un grande buco oppure il sole dipinto si trasformava in una macchia di inchiostro sospesa nel cielo, che gocciolava lentamente. Questi eventi erano rari, ma sono stati osservati. La rappresentante era sempre rapida a nascondere questi incidenti. I metodi comuni includevano un colpo di tosse esagerato, dipingere improvvisamente un fiume e dichiarare un esercizio improvvisato di combattimento in attraversamento, o semplicemente interrompere la sessione all'istante...\n\nNiente di tutto questo dovrebbe stupire. Possedere un'abilità non equivale a padroneggiarla. Che si tratti di combattimento o artigianato, la vera padronanza richiede anni. Le circostanze della rappresentante sono diverse, ovviamente. Ha ereditato i poteri del Feranmut \"Sui\" e di tutti e dodici i suoi rappresentanti solo di recente. Tuttavia, i suoi contributi parlano da soli. È grazie a lei se la squadra tattica d'élite di Yinglung esiste oggi e la nostra patria è protetta.\n— Arcana, caposquadra della squadra tattica d'élite di Yinglung",
+      "file3": "L'Agenzia del Sui è stata fondata relativamente tardi rispetto alle altre organizzazioni specializzate dell'ASH. Pur condividendo il nome con la sua controparte su Terra, le due hanno finalità profondamente diverse. L'originale fu istituita a Yan dopo la \"Grande caccia\" per sorvegliare il Feranmut \"Sui\" dormiente. La sua forza subordinata, i \"Portaluce\", aveva il compito di monitorare le attività dei dodici rappresentanti di \"Sui\" e di intervenire in caso di disastri secondari legati a loro. Per quasi mille anni, i rapporti tra l'Agenzia del Sui e i rappresentanti sono rimasti tesi.\nPresso l'ASH, invece, l'Agenzia del Sui opera come organizzazione di intelligence e supporto tecnico, dedita allo sviluppo di tecnologie basate sui poteri dei Feranmut e sul sostegno all'Accademia sia in ambito militare che civile. La rappresentante dei Feranmut Si ha partecipato direttamente alla fondazione sia dell'Agenzia del Sui che, successivamente, della STEY sotto la sua supervisione. Sembra che le piaccia questo lavoro. Per l'Agenzia del Sui, Si è più una consulente eccentrica.\n\nRegistro speciale\n\"Temo che persino l'immensità di Talos-II possa un giorno rivelarsi troppo stretta per mia sorella minore. Ma è ancora giovane e ha molta strada da fare. Per questo l'ho mandata a Hongshan, affinché possa ampliare i suoi orizzonti, confidando che Tianshi Tan si prenda cura di lei. Se mai potrò fare qualcosa in cambio, verrò personalmente\".\n\"È tutto quello che ha scritto mio fratello?\"\n\"Non è abbastanza? Sei la nuova rappresentante. Nessuno può dire cosa diventerai una volta che i tuoi poteri si saranno risvegliati del tutto. Se dovessi essere impossibile come lo era Sui, forse nessuno su Talos-II riuscirebbe a tenerti a bada. Meglio che tu passi del tempo con noi, ti farà bene e sarà utile anche all'ASH. Inoltre... tuo fratello mi ha avvertito che se qualcuno qui ti facesse arrabbiare, verrebbe lui stesso a bussare alla mia porta. Alla fine, sono solo felice che non abbia spedito un coltello insieme alla lettera!\"\n\"N-non intendeva dire questo... Sei la Tianshi più esperta dell'ASH... e io ti ho sempre rispettata!\"\n\"Ahah, così va meglio. Sei decisamente più simpatica dei tuoi fratelli. Allora, hai deciso riguardo alla squadra tattica d'élite? Sei stata a Hongshan abbastanza a lungo\".\n\"Hai persino mandato l'Endmin a convincermi. Sono qui. Non è già una risposta?\"\n\"Eccellente. Allora lasciamo che questo sia il primo incarico ufficiale dell'Agenzia di Si su Talos-II\".\n\"L'Agenzia di Si?!\"\n\"Hmm... La storia di Sui ormai appartiene a Terra, e i tuoi fratelli e sorelle sono liberi di vivere come preferiscono. Il nome 'Agenzia del Sui' ormai non sembra più del tutto appropriato...\"\n\"Teniamo l'Agenzia del Sui! L'Agenzia di Si suona malissimo. Sembra che l'intera organizzazione esista solo per tenermi d'occhio\".\n\"Giusto. Allora possiamo mantenere il vecchio nome\".\n\"E la squadra tattica d'élite?\" \n\"Quei ragazzi stanno ancora discutendo sul nome. Se vuoi sapere la mia, questa unità esiste solo grazie a te, quindi perché non chiamarla... 'squadra tattica d'élite di Yinglung'?\"\n\"Fantastico! Mi piace un sacco!\"",
+      "file4": "Quando la polvere si posò, il Feranmut Sui non si risvegliò mai più. \nIl suo corpo era scomparso. La sua volontà sprofondò nel silenzio in mezzo al caos. L'orgoglio, l'ira, l'odio e la ribellione che lo avevano definito svanirono con la perdita del suo involucro. Privato del corpo, divenne un bambino costretto ad affrontare una sola domanda. \n\"Chi sono?\" \nIl vuoto non offrì risposta. Capì che forse non aveva più il diritto di rispondere lui stesso a quella domanda. \nCosì lasciò andare. Dopo secoli di lotta contro il mondo e se stesso, si stancò troppo persino per pensare. In quel silenzio, trovò un sollievo che non aveva mai conosciuto. \n... \nEppure, Sui era sopravvissuto troppo a lungo ed era diventato troppo potente per svanire così facilmente. Troppi frammenti di sé erano stati sparsi nel corso delle ere. Anche dopo che la sua coscienza scelse l'esilio, qualcosa sarebbe comunque sorto spontaneamente, come la rugiada del mattino che si raccoglie sulle foglie fresche prima di cadere... \nQualcosa cadde. \nIl suono attirò l'attenzione di un rappresentante che non era ancora partito. \nForse per pietà... o per prudenza... raccolse subito quel frammento perfetto di coscienza tra le mani. Non poteva né parlare né esercitare alcun potere. Era difficile dire se avesse ancora un vero legame con Sui stesso. Fragile e instabile, vacillava come una fiamma di candela, luminosa e perfettamente pura. \nPer la prima volta, i rappresentanti si trovarono incerti. \nTutti lo riconobbero come l'ultimo residuo del Feranmut Sui. Se avessero voluto cancellare ogni traccia di lui, avrebbero potuto farlo con un solo pensiero. \nEppure giaceva quieto nel palmo della mano. \nEra davvero il Sui che avevano sempre conosciuto? Il fiero Feranmut non si sarebbe mai mostrato così indifeso davanti ai suoi rappresentanti, nemmeno per salvare la propria esistenza. Ma se questa era una vita appena nata... I rappresentanti si ritrovarono a ricordare vagamente cosa avevano provato prima ancora di esistere. \nCercava. Lottava per rispondere a una sola domanda: Cosa mi rende ciò che sono? Quando l'ultimo residuo del suo vecchio sé non riusciva più a dare risposta, quella piccola coscienza ha istintivamente cercato la propria stirpe. \nI figli che aveva creato per camminare tra i mortali erano ora coloro che avrebbero guidato lui. Per i dodici rappresentanti, l'ironia era impossibile da ignorare. Le loro consultazioni non portarono a nulla, finché un giorno, una voce ruppe il silenzio delle loro menti. \nEra flebile. Debole. Ma sorprendentemente innocente. \n\"Chi sono?\" \n\"Dove sono?\" \n\"Chi siete?\" \n... ... ... \nAlla fine, i rappresentanti decisero di mandare quella piccola coscienza attraverso il Portale cosmico verso un mondo sconosciuto. Sapevano che anche il più piccolo residuo del Feranmut che riposava nella Tomba di Sui portava con sé innumerevoli fili del destino. Ma se quello... se lei non ne sapeva nulla, allora non era più lui. \nForse la risposta che cercava non era destinata a essere trovata sulla Terra dove Sui stesso aveva fallito. In un nuovo mondo, una nuova anima avrebbe potuto scoprire cosa significa davvero esistere e trovare la sua risposta. \nE così, quella minuscola scintilla di coscienza arrivò su Talos-II, portando con sé ogni sorta di... ehm... cose. Ne avevano preparate davvero troppe. Continuavano a infilare cose nelle mie... no, nelle sue mani. \nDopo di che... beh, questa è un'altra storia."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Gestione della squadra",
+        "description": "Gestione della squadra: Saggezza da locandiera\n\"La Tenuta di Yuanyuan è un'attività con oltre cent'anni di storia, quindi ovviamente ho sviluppato un mio metodo per accogliere e servire gli ospiti. Ogni tanto persino quelli dell'ASH vengono da me a imparare.\""
+      },
+      "expert2": {
+        "name": "Assemblaggio strumenti",
+        "description": "Assemblaggio strumenti: Tutto ciò che Si desidera\nIl fuoco forgia manufatti divini, il pennello dà vita a interi mondi. Si trae ispirazione da ciò che la circonda, o persino dai propri sogni. Se riesce a immaginarlo, può ottenerlo... E quando qualcosa non funziona, meglio non parlarne davanti a lei."
+      },
+      "hobby1": {
+        "name": "Tecnologia",
+        "description": "Tecnologia: QA dei primi prototipi\n\"I mobili intelligenti non reggono il confronto con la mia squadra di obbedientissimi spettri.\""
+      },
+      "hobby2": {
+        "name": "Moda",
+        "description": "Moda: Cosmetista sperimentale\nUn titolo autoproclamato. In realtà, nessuno osa assumere Si per un lavoro del genere. Il personale della Tenuta di Yuanyuan ha rivelato che Si si esercita nell'applicazione dei cosmetici truccando il volto degli spiriti d'inchiostro."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Preparazione all'operazione 1",
+        "text": "Umpf. Ti ricordi di me solo quando c'è un problema?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Preparazione all'operazione 2",
+        "text": "Ti aiuterò di nuovo. Ricordati di saldare il conto quando torniamo alla locanda."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Aggiunta alla squadra 1",
+        "text": "E non parlarmi più. Devo concentrarmi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Aggiunta alla squadra 2",
+        "text": "Dai, dì qualcosa. Il silenzio assoluto mi distrae."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Cambio arma",
+        "text": "Hai scelto questa? Mmh... Che ne dici di due pennellate d'inchiostro? Ora è mia, non te la riprenderai."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Cambio equipaggiamento",
+        "text": "Tiene conto persino delle mie ali… Ehm. Non... Non male, ma non sarò gentile solo per questo."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Attivazione matrice delle abilità",
+        "text": "Ah! Un'ispirazione improvvisa! Veloce, non startene lì così! Mi serve della carta!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Guardalo ancora qualche volta per ricordartelo... Perché sorridi? Sto parlando con te!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Promozione operatore 1",
+        "text": "Mettiamo subito le cose in chiaro: sono solo un'Endfielder onoraria, quindi non aspettarti che faccia tutto io. E la Endfield farà meglio a essere interessante come dici."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Promozione operatore 2",
+        "text": "Dammi la mano e lascia che te la timbri con la mia coda. Ecco... Così va bene. E faresti meglio a non cancellarlo finché non deciderò di timbrartela di nuovo."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Promozione operatore 3",
+        "text": "Spirito d'inchiostro, scrivi quello che ha detto l'Endmin. Ogni singola parola. L'ASH vuole che tenga un discorso ai giovani Yinglung. Mi tornerà utile."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Promozione operatore 4",
+        "text": "Continui a promuovermi, ma se mai dovessi venire meno a ciò che hai promesso, tornerò alla locanda. Tieni le tue faccende separate da quelle della Endfield. Quello che succede tra noi resta tra noi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Operatore a rapporto",
+        "text": "Non ti muovere! L'inchiostro non si è ancora asciugato... Questo dipinto è per te. Quello che ho disegnato non è importante, è il mio sigillo che fa la differenza! E non ti azzardare mai più a dimenticare il mio nome!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "Attesa 1",
+        "text": "Prima questo, poi quello... Va bene, arrotolala. Ehm. La tua bozza è pronta. Bisogna avere pazienza!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "Attesa 2",
+        "text": "Sei con me da anni, perché non riesci a imparare niente? Tipo a falsificare la mia firma."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Assegnazione a una struttura",
+        "text": "Mi hai attirato qui solo per poterti rilassare? Non se ne parla. Rimarrai qui con me."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Saluto 1",
+        "text": "Mi stai passando accanto facendo finta che io sia invisibile?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Saluto 2",
+        "text": "Allora, quella promessa di dieci anni fa. Hai intenzione di mantenerla?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Io? A bighellonare? Vedi quell'oblò? Ci avevo disegnato sopra un intero dipinto intitolato \"Viaggiatori di Talos-II\"... ma qualcuno se l'è presa comoda ad arrivare, così ho cancellato tutto."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Perché continui a saltare fuori ogni volta che vado sulla Dijiang? Hai visto degli spiriti d'inchiostro all'angolo...? Ah, beh... Sembra proprio che tu abbia incrociato la mia strada di proposito!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Dipingerò il tuo ritratto e lo appenderò a casa mia. Così, se dovessi visitare la mia pergamena, terrà lontani gli spettri... Eh? Ne ho già uno di dieci anni fa. Ma allora non avevi niente sul viso."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Mappe, cuscini, spuntini, fornello, tisana energizzante... Oh. Sto solo facendo una lista delle cose da portare a Sami. Viaggiare mi dà ispirazione. Dimmi se ti viene in mente altro... Ovviamente vieni anche tu, altrimenti non ti starei dicendo tutto questo! No, ci pensano gli spiriti d'inchiostro a portarmi le borse, non tu, testa vuota!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Ho incontrato Perlica. La piccola supervisora è proprio come te... Poverina, cerca di restare sveglia, anche se potrebbe addormentarsi in piedi... Siete uguali! Smettila di fare nottate e vai a dormire. Ti sfinisci e poi dormi per dieci anni. Ma dai!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Caspita... Da qui si vede quasi metà di Talos-II... Chissà dove saranno finiti quei due... Ma che...?! Chi ha detto che mi mancano i miei fratelli? Non guardarmi così! *Sospira* Va bene. Forse mi mancano un pochino. Solo un pochino..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Offerta regali",
+        "text": "Ecco. Un piccolo regalo per te, solo uno dei miei scarabocchi. Non ti emozionare trop... Oh, è quello sbagliato! Quello è solo un autoritratto fatto per esercitarmi. RIDAMMELO!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Accettazione regali",
+        "text": "Ehm... D-Da quando hai iniziato a fare tutto in modo così formale e ufficiale... EHI! Non ti azzardare a riprendertelo!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Dialogo fiducia 1",
+        "text": "Se hai tempo, passa alla locanda per il banchetto di benvenuto a cui non hai partecipato. La cucina ha scovato ogni ingrediente raro su cui siamo riusciti a mettere le mani. Aspetta... Chi hai detto che stavi ringraziando?! Beh, allora sembra che tutto il merito vada al personale. Quindi immagino che il loro capo senza cuore non abbia altra scelta che impedire loro di sprecare tutti quegli ingredienti preziosi! UMPF!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Dialogo fiducia 2",
+        "text": "Annusa un po'. Vedi quella scogliera laggiù? È lì che crescono i cespugli di tè. Il tè è davvero buono, ma devo mandare i miei migliori spiriti d'inchiostro a raccogliere le foglie. Un decennio di lavoro, tutto racchiuso in questo piccolo barattolo. Quindi oggi la fortuna è proprio dalla tua parte... Ehi. Perché hai i denti ricoperti d'inchiostro? Aspetta... Anche i miei...? F-Finisci il tè. Fino all'ultima goccia. E smettila di fissarmi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Dialogo fiducia 3",
+        "text": "Basta! Per oggi è tutto! Beh, hai fatto grandi progressi con il Weiqi. Ma mio fratello resta il miglior giocatore di Talos-II. Non sei ancora al suo livello... Cosa? È la terza volta questo mese che parlo dei miei fratelli e sorelle? N-Non sto dicendo che vorrei fossero ancora qui! Basta guardare la montagna, la locanda e il fatto che almeno ho... EHM! Questo posto è già abbastanza vivace così."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Dialogo fiducia 4",
+        "text": "Già in partenza per un luogo lontano prima di aver recuperato completamente le forze? Sei di xiranite? Davvero pensi di non poter crollare? Umpf. Speravo che quella stupida abitudine autolesionista fosse sparita insieme ai tuoi ricordi, testa dura! Dammi i dettagli della missione e andrò io al posto tuo! Ricordati, mi devi un favore. DI NUOVO!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Dialogo fiducia 5",
+        "text": "Siediti. Ti manca l'alba? Prendi il pennello e dipingila, allora. Un tempo, venivi a trovarmi senza avvisare quando ero sola. Avevi un modo tutto tuo di trasformare idee assurde in parole che sapevano confortare... Va bene. So che le mie parole non faranno tornare i ricordi che hai perduto, almeno per ora. Ma se osi dimenticare ancora qualcosa, non ti rivolgerò più la parola per i prossimi dieci... anzi, centocinquanta anni!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Chiacchierata 1",
+        "text": "Sempre più persone vogliono visitare la pergamena, ma la locanda non è stata costruita per gestire così tanti ospiti. Il personale ha suggerito di mettere una bacheca nella sala principale... Sembra un'ottima idea, ma così mi arriveranno un sacco di suggerimenti a caso. I-io non ho proprio tempo per leggerli tutti. Facciamo così: prima li passi in rassegna tu... e poi io mi concentro solo su quelli utili."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Chiacchierata 2",
+        "text": "Il culmine della forgiatura è racchiudere ogni fase della produzione in un solo respiro e trasformare ogni idea in realtà. Proprio come questo scudo che sto tenendo in mano... Cosa? Un poro difettoso...? EHM. Oh sì, questo è solo un prototipo. Piccole imperfezioni sono normali, e di certo non hanno nulla a che vedere con la mia maestria."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Chiacchierata 3",
+        "text": "Hai mai sentito parlare dei peluche batticielo paffuti? Adoro le cose cicciotte e ne ho un'infinità nella mia locanda. Ma i peluche batticielo paffuti sono premi esclusivi del gioco \"Disegna e indovina\" di Wuling, e non si può giocare da soli... Ascolta, la prossima stagione sta per iniziare. Ti insegnerò tutti i trucchi e tu farai bene a impararli... Ovviamente tu disegni e io indovino! Ti sembro forse una persona che bara ai giochi?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Chiacchierata 4",
+        "text": "Instancabile se la prende sempre comoda, Scattista è così grosso che a malapena si muove e Voce tonante saluta gli ospiti con un tono così sommesso che se sbatti le palpebre rischi di non sentirla. Sono passati decenni, e ormai ho rinunciato a cambiare le loro abitudini. Ah? Beh, non avevano un altro posto dove andare, così li ho aggiunti alla pergamena. Potrei anche mandarli via... ma preferisco che la mia locanda sia disordinata piuttosto che silenziosa."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Chiacchierata 5",
+        "text": "Ero solita passare il tempo con i miei fratelli e sorelle a giocare a Weiqi e ad ascoltare le loro discussioni, e poi la sera mi esercitavo nella lettura, nella calligrafia e nella pittura. Nel tempo libero, noi tre andavamo in giro per Talos-II... ma poi mi hanno spedita a Hongshan. Probabilmente vedevano Talos-II come una ventata d'aria fresca e pensavano che non mi sarebbe mai piaciuta davvero se fossero rimasti sempre con me. Capisco le loro ragioni, ma non puoi semplicemente lasciare la tua sorellina da qualche parte e andare a malapena a trovarla..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Argomento: squadra tattica d'élite di Yinglung",
+        "text": "Sì, ero presente quando l'ASH ha fondato la squadra tattica d'élite di Yinglung. Ma mi sono limitata a insegnare loro qualche trucchetto. Perché non ho passato più tempo con loro? Perché gli Yinglung sono pieni di tipi testardi come Li Zhiyan. Se stai troppo con loro, riescono a congelare persino l'aria. Ma sembra che, dopo il tempo passato con te, lei abbia capito qualcosa in più. Mmh... Ehi, Endmin, che ne dici di prendere il mio posto e insegnar loro qualcosa?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Argomento: potere dei Feranmut",
+        "text": "Il database delle risorse umane della Endfield presenta dei problemi. Nella sezione \"Abilità\" ho elencato dodici voci, tra cui arti marziali, letteratura, pittura, metallurgia, legge, giardinaggio... e poi ha segnalato un errore. Che c'è? Troppe cose? Fallire ogni tanto di certo non cancella queste abilità. Faresti meglio a darmi una spiegazione su cosa sta succedendo."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Argomento: ali",
+        "text": "Belle le mie ali, vero? Da piccola sognavo che mi spuntassero e si aprissero, così me le disegnavo sulla schiena appena sveglia. Mia sorella non la smetteva più di rimproverarmi... Sono solo decorazioni, ma diceva che le usavo negli scontri per sembrare più minacciosa. È un'accusa infondata. Dai, chi mai farebbe una cosa simile? È così infantile!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Argomento: Ye Minghe",
+        "text": "Quel ragazzo dai capelli chiari? Ci conosciamo da un bel po', e mi ha sempre dato del filo da torcere. A volte sembra non importargli di altro che di quel suo cavalcone nero come la notte, e non smette mai di ripetere: \"Le guardie imperiali devono adempiere al loro dovere.\" È difficile proprio per questo, perché crede davvero in ogni parola che dice. In fondo, un po' come te. Aspetta, sei tu che l'hai influenzato! Comunque, se invade di nuovo la mia pergamena, te la farò pagare."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Argomento: famiglia",
+        "text": "Non so dove siano finiti i miei fratelli e sorelle. Dopo tutto quello che hanno passato, finalmente hanno un po' di tempo libero. Forse stanno girando per tutta Talos-II. Magari... EHI! Instancabile! Non ti avevo detto di pulire per bene? Soprattutto i dipinti, la calligrafia e le tavole da Weiqi. Se tornano a casa e trovano questo caos, mi metterai nei guai!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Argomento: Sui",
+        "text": "Sui è il peggiore dei Feranmut. Di sempre. Nemmeno quando dorme riesce a stare fermo, sempre intento a complicare la vita a Yan con i suoi dodici rappresentanti. E alla fine? Ogni rappresentante ha seguito le proprie idee e gli ha reso tutto ancora più difficile. Quanto ai miei rapporti con lui... Non sarei qui se non avessero portato gli ultimi frammenti della sua anima su Talos-II. Ma noi siamo diversi. Tra noi non c'è nulla, né in un senso né nell'altro. Il debito è saldato, è tutto chiaro come il sole."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Individuazione risorsa/elemento collezionabile 1",
+        "text": "Da non perdere."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Individuazione risorsa/elemento collezionabile 2",
+        "text": "Ci sono dei tesori nascosti."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Individuazione zona non esplorata",
+        "text": "Posto interessante. È facile non notarlo se non si presta attenzione."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Individuazione nemico potente",
+        "text": "Attenzione. Per quello servirà qualche pennellata in più."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Estrazione 1",
+        "text": "Forgia celeste, metalli della terra. Talos-II è davvero ricca di materiali rari."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Estrazione 2",
+        "text": "Lasciate fare a me. Ci vorrà un attimo."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Apertura di una cassa",
+        "text": "Non aspettare l'ispirazione. Cercala."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Acquisizione di Aurylene",
+        "text": "Mmh. Se mescolassi l'Aurylene con l'inchiostro, cosa potrei dipingere?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Eliminazione Contaminazione",
+        "text": "Ora che ci penso, forse anche i miei spiriti d'inchiostro potrebbero occuparsi di queste faccende."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Riposo",
+        "text": "Riposa ogni volta che puoi, nessuno può dipingere Talos-II con una sola pennellata."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Utilizzo di gadget 1",
+        "text": "Mi intendo un po' anche di erbe e medicamenti."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Utilizzo di gadget 2",
+        "text": "Ora va decisamente meglio!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Avviso di pericolo",
+        "text": "Occhio laggiù!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Ferite",
+        "text": "Mi hanno sporcato le ali?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "Esaurimento PS",
+        "text": "Non... mi interessa più..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Ah. Una generazione promettente."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "I nostri giovani sembrano davvero audaci."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Non stai cercando di essere \"gentile\", vero?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Va bene, va bene, non distraetevi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Inizio combattimento 1",
+        "text": "Metti fine a questa cosa prima che cali la notte."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Inizio combattimento 2",
+        "text": "Fatemi vedere di cosa siete capaci, giovani."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Vittoria in combattimento 1",
+        "text": "Questo è molto più divertente che restare chiusa nella pergamena."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Vittoria in combattimento 2",
+        "text": "Sono davvero ispirata. Questa spedizione ne è valsa la pena."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Vittoria in combattimento 3",
+        "text": "Già finito? Immagino che tu abbia ancora la forza di macinare inchiostro per me."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Vittoria in combattimento 4",
+        "text": "È stato difficile, ma abbiamo vinto. Non andare in giro con quell'aria abbattuta."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Sconfitta in combattimento",
+        "text": "Vincere è fantastico, ma va bene anche perdere. Sono qui, quindi non c'è niente da temere."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Colpo finale 1",
+        "text": "A terra!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Colpo finale 2",
+        "text": "Indietro!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "Abilità di combattimento 1",
+        "text": "Colori a chiazze!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "Abilità di combattimento 2",
+        "text": "Pennellate disordinate!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "Abilità di combattimento 3",
+        "text": "Copie senz'anima!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Abilità combo pronta 1",
+        "text": "Fammi spazio."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Abilità combo pronta 2",
+        "text": "Le mie mani sono libere."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Esecuzione combo 1",
+        "text": "Stai ancora sprecando il mio tempo?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Esecuzione combo 2",
+        "text": "Stai ancora sprecando il mio inchiostro?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Mossa letale 1",
+        "text": "Il tocco finale!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Mossa letale 2",
+        "text": "Rappresentazione perfetta!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Abilità suprema 1",
+        "text": "Un'onda che si alza! Un terremoto che ribolle!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Abilità suprema 2",
+        "text": "Una pennellata netta! Il cosmo è nelle tue mani!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Abilità suprema 3",
+        "text": "Che questo potere plasmi le terre!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Abilità di combattimento <@ba.key>Regno del pennello</> migliorata: durata di <#ba.static>Immobilizzazione</> applicata <@ba.vup>+{static_duration:0%}</>; rapporto di danni registrati di <@ba.key>Intento pittorico</> <@ba.vup>+{ink_damage_rate:0%}</> e raggio dell'esplosione <@ba.vup>+{ink_boom_range:0%}</>.",
+      "name": "Primavera e autunno come inchiostro"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Tre segni incisi nel legno"
+    },
+    "potential3": {
+      "description": "Abilità suprema <@ba.key>No ai guastafeste</> migliorata: i danni inflitti vengono aumentati a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale. L'effetto di <#ba.enhance>Amplificazione</> viene aumentato a <@ba.vup>{enhance_final:0.0}</> volte rispetto all'originale.",
+      "name": "Studio di muscoli e ossa"
+    },
+    "potential4": {
+      "description": "Abilità suprema <@ba.key>No ai guastafeste</> migliorata: costo energia suprema <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Spirito perfettamente composto"
+    },
+    "potential5": {
+      "description": "Abilità combo <@ba.key>Tutto in mente</> migliorata: tempo di recupero dell'abilità combo <@ba.vup>{coolDown:0}</> s e danni inflitti aumentati a <@ba.vup>{atk_scale:0.0}</> volte il valore originale. All'attivazione, considera come <#ba.consume>consumato</> o <#ba.absorb>assorbito</> 1 accumulo di Afflizione aggiuntivo.",
+      "name": "Il tocco finale"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Senza pensieri",
+      "author": "狂zip",
+      "description": "Segui il cuore, segui ciò che senti e ciò che ti dà gioia, in libertà e senza pensieri."
+    },
+    "potential3": {
+      "name": "Nel regno dell'inchiostro",
+      "author": "Maeka",
+      "description": "Nel regno dipinto, ogni cosa prende forma attraverso pigmenti e pennellate. Voi due avete trascorso molto tempo insieme nel santuario dell'inchiostro."
+    },
+    "potential5": {
+      "name": "Senza macchia",
+      "author": "수줍(Sjoop)",
+      "description": "Ha attraversato il mondo mortale senza lasciarsi contaminare dalla sua polvere."
+    }
+  }
+}

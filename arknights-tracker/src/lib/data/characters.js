@@ -363,5 +363,16 @@ export const characters = {
     birthDate: "26-11",
     apiId: "",
     gameId: "chr_0038_purrche"
+  },
+  si: {
+    id: "si",
+    name: "Si",
+    rarity: 6,
+    element: "cryo",
+    class: "supporter",
+    weapon: "greatSword",
+    birthDate: "10-09",
+    apiId: "",
+    gameId: "chr_0036_jsspsi"
   }
 };

@@ -1414,7 +1414,8 @@
     "liino": "Liino",
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
-    "purrchena": "Purrchena"
+    "purrchena": "Purrchena",
+    "si": "Si"
   },
   "weaponsList": {
     "custom_weapon": "Custom Weapon",
@@ -1497,7 +1498,10 @@
     "bedazzlingNightDebut": "Bedazzling Night Debut",
     "umbraOfFrigidEventide": "Umbra of Frigid Eventide",
     "sufferingsEnd": "Suffering's End",
-    "dessertMoment": "Dessert Moment"
+    "dessertMoment": "Dessert Moment",
+    "jadeVessel": "Jade Vessel",
+    "longHeritage": "Long Heritage",
+    "complexedIndustry": "Complexed Industry"
   },
   "cookies": {
     "title": "We use cookies",
@@ -1622,7 +1626,14 @@
     "world_energy_point12_4": "Severe Energy Alluvium: Snowy Forest",
     "world_energy_point12_5": "Severe Energy Alluvium: Snowy Forest",
     "world_energy_point12_6": "Severe Energy Alluvium: Snowy Forest",
-    "world_energy_point12_7": "Severe Energy Alluvium: Snowy Forest"
+    "world_energy_point12_7": "Severe Energy Alluvium: Snowy Forest",
+    "world_energy_point13_4": "Severe Energy Alluvium: Si's Painting",
+    "world_energy_point13_7": "Severe Energy Alluvium: Si's Painting",
+    "world_energy_point13_1": "Energy Alluvium: Si's Painting",
+    "world_energy_point13_2": "Energy Alluvium: Si's Painting",
+    "world_energy_point13_3": "Energy Alluvium: Si's Painting",
+    "world_energy_point13_5": "Severe Energy Alluvium: Si's Painting",
+    "world_energy_point13_6": "Severe Energy Alluvium: Si's Painting"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunneling Nidwyrm",
@@ -1716,7 +1727,12 @@
     "tatget_002_endurance": "Standard Target",
     "tatget_003_expand": "Barrier Target",
     "tatget_004_armor": "Heavy Target",
-    "tatget_005_shield": "Energy Shield"
+    "tatget_005_shield": "Energy Shield",
+    "eny_0134_jsspsi": "Si",
+    "eny_0130_inkbiter": "Fortune's Stash",
+    "eny_0131_inkscroll": "Scroll of Tactics",
+    "eny_0132_inkkirin": "Simmer's Purge",
+    "eny_0133_inklion": "Maned Measure"
   },
   "essencesPage": {
     "optimizer": "Farming Optimizer",
@@ -2012,7 +2028,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "Deep Rampart Comms",
     "item_equip_t4_suit_spellburst_hand_01": "Deep Rampart Gauntlets",
     "item_equip_t4_suit_usp02_edc_05": "Eternal Xiranite Bracing Slab T1",
-    "item_equip_t4_suit_usp02_edc_06": "Eternal Xiranite Heavy Slab"
+    "item_equip_t4_suit_usp02_edc_06": "Eternal Xiranite Heavy Slab",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "Pulser Labs Armor Slab",
+    "item_equip_t4_suit_usp02_body_06": "Eternal Xiranite MOD Armor",
+    "item_equip_t4_suit_usp02_hand_05": "Eternal Xiranite Channeling Gloves",
+    "item_equip_t4_suit_atk02_body_05": "Type 50 Yinglung Soft Armor",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "Pulser Labs Light Armor",
+    "item_equip_t4_parts_wuling00_body_06": "AIC Fieldwork CQB Armor",
+    "item_equip_t4_parts_wuling00_hand_06": "AIC Fieldwork CQB Gloves",
+    "item_equip_t4_parts_wuling00_edc_06": "AIC Fieldwork CQB Hacksaw",
+    "item_equip_t4_parts_wuling02_body_03": "Rift Trekker Steel Armor",
+    "item_equip_t4_parts_wuling02_body_04": "Rift Trekker Overalls",
+    "item_equip_t4_parts_wuling02_edc_02": "Rift Trekker Silver Blade",
+    "item_equip_t4_suit_usp02_edc_07": "Eternal Xiranite Rangefinder",
+    "item_equip_t4_parts_wuling02_hand_03": "Rift Trekker Wraps",
+    "item_equip_t4_parts_wuling02_hand_04": "Rift Trekker Gauntlets",
+    "item_equip_t4_suit_atk02_edc_06": "Type 50 Yinglung Beacon",
+    "item_equip_t4_suit_atk02_hand_03": "Type 50 Yinglung Gloves",
+    "item_equip_t4_suit_usp02_body_05": "Eternal Xiranite Overalls",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "Pulser Labs Light Gauntlets"
   },
   "packs": {
     "none": "Non-Set",
@@ -2124,7 +2158,13 @@
     "CryoResistance": "Cryo Resistance",
     "ElectricResistance": "Electric Resistance",
     "HeatResistance": "Heat Resistance",
-    "TherResistance": "Æther Resistance"
+    "TherResistance": "Æther Resistance",
+    "NatureDmgReduction": "Nature DMG Reduction",
+    "HeatDmgReduction": "Heat DMG Reduction",
+    "TherDmgReduction": "Æther DMG Reduction",
+    "PhysicalDmgReduction": "Physical DMG Reduction",
+    "CryoDmgReduction": "Cryo DMG Reduction",
+    "ElectricDmgReduction": "Electric DMG Reduction"
   },
   "enemiesGroups": {
     "none": "No Data",
@@ -2134,7 +2174,9 @@
     "wiki_group_monster_animal": "Wildlife",
     "wiki_group_monster_kl": "Blightshades",
     "wiki_group_monster_js": "Foundite",
-    "wiki_group_monster_witchcraft": "Witchcraft Creation"
+    "wiki_group_monster_witchcraft": "Witchcraft Creation",
+    "wiki_group_monster_else": "Others",
+    "wiki_group_monster_ml": "Apparition"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -2930,7 +2972,8 @@
     "indie_group_h04": "Turbidity Manifest",
     "indie_group_h05": "Those Forsaken by the Land",
     "indie_group_h06": "Howlers of the Crag",
-    "indie_group_h07": "Marked by Dark Shadows"
+    "indie_group_h07": "Marked by Dark Shadows",
+    "indie_group_h08": "Murmurs of the Deep Forest"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Xiranite Technique",
@@ -2973,13 +3016,19 @@
     "indie_hard026": "Feral Carnage of Shadow",
     "indie_hard027": "Arc of Shadow Flare",
     "indie_hard028": "Sudden Roar of Oblivion",
-    "indie_hard029": "Tri-Aggelated Targeting"
+    "indie_hard029": "Tri-Aggelated Targeting",
+    "indie_hard032": "Hatred That Sprawls",
+    "indie_hard030": "Shadows That Bind",
+    "indie_hard031": "Woodcrafts That Link",
+    "indie_hard033": "Critters That Dig"
   },
   "warEchoesSeasons": {
     "1": "Season of Recalling",
     "2": "Season of Delirating",
     "3": "Season of Virtuality",
-    "4": "Season of Illusion"
+    "4": "Season of Illusion",
+    "5": "Season of Phantasia",
+    "6": "Season of Fervor"
   },
   "warEchoesCycles": {
     "1_1": "Cycle of Recalling I",
@@ -2993,7 +3042,13 @@
     "3_3": "Cycle of Virtuality Ⅲ",
     "4_1": "Cycle of Illusion Ⅰ",
     "4_2": "Cycle of Illusion Ⅱ",
-    "4_3": "Cycle of Illusion Ⅲ"
+    "4_3": "Cycle of Illusion Ⅲ",
+    "5_1": "Cycle of Phantasia Ⅰ",
+    "5_2": "Cycle of Phantasia Ⅱ",
+    "5_3": "Cycle of Phantasia Ⅲ",
+    "6_1": "Cycle of Fervor Ⅰ",
+    "6_2": "Cycle of Fervor Ⅱ",
+    "6_3": "Cycle of Fervor Ⅲ"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "Silver Watercutter: Brutal",
@@ -3037,7 +3092,25 @@
     "indie_battletower013": "Powerful Decapitation: Normal",
     "indie_battletower014_ex": "Beastly Schemes: Brutal",
     "indie_battletower014_s": "Beastly Schemes: Hard",
-    "indie_battletower014": "Beastly Schemes: Normal"
+    "indie_battletower014": "Beastly Schemes: Normal",
+    "indie_battletower019_ex": "Construct File: Geist - Brutal",
+    "indie_battletower016_s": "Glaiver File: Yinglung - Hard",
+    "indie_battletower015_s": "Blightshade File: Thunderclap - Hard",
+    "indie_battletower015_ex": "Blightshade File: Thunderclap - Brutal",
+    "indie_battletower015": "Blightshade File: Thunderclap - Normal",
+    "indie_battletower016_ex": "Glaiver File: Yinglung - Brutal",
+    "indie_battletower016": "Glaiver File: Yinglung - Normal",
+    "indie_battletower017_ex": "Avenger File: Bonekrusher - Brutal",
+    "indie_battletower017_s": "Avenger File: Bonekrusher - Hard",
+    "indie_battletower017": "Avenger File: Bonekrusher - Normal",
+    "indie_battletower018_ex": "Beast File: Qingbo Stockade - Brutal",
+    "indie_battletower018_s": "Beast File: Qingbo Stockade - Hard",
+    "indie_battletower018": "Beast File: Qingbo Stockade - Normal",
+    "indie_battletower019_s": "Construct File: Geist - Hard",
+    "indie_battletower019": "Construct File: Geist - Normal",
+    "indie_battletower020_ex": "Defense File: Shield - Brutal",
+    "indie_battletower020_s": "Defense File: Shield - Hard",
+    "indie_battletower020": "Defense File: Shield - Normal"
   },
   "warEchoesDiff": {
     "normal": "Normal",

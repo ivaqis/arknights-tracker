@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Amp",
+      "Damage Dealer",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Pengelolaan Tim",
+      "Perakitan Alat"
+    ],
+    "giftPreferTags": [
+      "Pilihan Perajin Wuling"
+    ],
+    "hobbyTags": [
+      "Teknologi",
+      "Fesyen"
+    ],
+    "raceTag": "Tidak Disebutkan"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Artistic Urge",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "diveAtkMultiplier": "Pengganda ATK Menukik",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas"
+    },
+    "battleSkill": {
+      "name": "Brushwork Realm",
+      "description": "Si akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <@ba.key>Artful Intent</>, <#ba.static>Immobilization</>, serta <#ba.crystinflict>Cryo Infliction</> (atau <#ba.fireinflict>Heat Infliction</> jika operator berelemen <@ba.fire>Heat</> ada di <@ba.key>Posisi Tim 01</>) kepada target. Setelah target yang terkena <@ba.key>Artful Intent</> menerima DMG, sebagian DMG yang diterima akan dicatat. Saat durasi <@ba.key>Artful Intent</> berakhir, akan muncul ledakan yang menimbulkan <#ba.fixeddamage>Fixed DMG</> yang setara dengan DMG yang sudah tercatat. Setelah skill ini digunakan, skill tarung Si akan berubah menjadi <@ba.key>Initial Stroke</> untuk sementara.\n<@ba.key>Initial Stroke</>: Biaya <@ba.vup>15</> SP. Si akan menarik <@ba.key>Inksoul</> dari target dengan <@ba.key>Artful Intent</>. Semua DMG yang ditimbulkan dan efek yang diakibatkan kepada <@ba.key>Inksoul</> juga akan ditimbulkan kepada si pembawa (target tersebut). <@ba.key>Inksoul</> akan bertahan selama sisa durasi <@ba.key>Artful Intent</>. Setelah skill ini digunakan, skill tarung Si akan berubah menjadi <@ba.key>Final Stroke</> untuk sementara.\n<@ba.key>Final Stroke</>: Tidak butuh SP. Akan membuat <@ba.key>Inksoul</> hilang lebih awal. Saat hilang, <@ba.key>Inksoul</> akan pindah ke arah si pembawa dan mengaktifkan ledakan yang serupa dengan ledakan akhir <@ba.key>Artful Intent</>.\n<@ba.info>Saat menimbulkan DMG atau mengakibatkan efek pada Inksoul dan si pembawa, hanya 1 kali DMG atau efek yang akan ditimbulkan/diakibatkan. Jika si pembawa kalah selama durasi Inksoul, Inksoul akan terhubung ke musuh lain di pertarungan dan mengakibatkan Artful Intent padanya. Durasi Artful Intent tidak akan direset. Jika target dengan Artful Intent kalah sebelum Inksoul-nya ditarik keluar, target tersebut akan menjatuhkan Inksoul di lokasinya.</>",
+      "dmgMultiplier": "Pengganda DMG",
+      "immobilizationDurationS": "Durasi Immobilization (dtk)",
+      "artfulIntentDurationS": "Durasi Artful Intent (dtk)",
+      "dmgRecordRatio": "Rasio Rekor DMG",
+      "stagger": "Stagger",
+      "artfulIntentBurstStagger": "Stagger Ledakan Artful Intent"
+    },
+    "comboSkill": {
+      "name": "Fully Envisioned",
+      "description": "PEMICU KOMBO: Saat <#ba.crystinflict>Cryo Infliction</> atau <#ba.fireinflict>Heat Infliction</> musuh <#ba.consume>dipakai</> atau <#ba.absorb>diserap</>.\nSi akan memanggil <@ba.key>Lung Tinta</> yang akan menimbulkan <@ba.cryst>Cryo DMG</>. DMG ini didasarkan pada jumlah tumpukan Arts Infliction tertinggi yang <#ba.consume>dipakai</> atau <#ba.absorb>diserap</> dari satu target.",
+      "dmgMultiplier": "Pengganda DMG",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Peningkatan Pengganda per Tumpukan yang Dipakai atau Diserap",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
+    },
+    "ultimate": {
+      "name": "No One Spoils the Fun",
+      "description": "Si akan memanggil <@ba.key>Lung Tinta Raksasa</> dari lukisannya yang akan menimbulkan <@ba.cryst>Cryo DMG</> dan memberikan <#ba.crystenhance>Cryo Amp</> serta <#ba.fireenhance>Heat Amp</> untuk sementara kepada seluruh tim.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "amp": "Amp",
+      "ampDurationS": "Durasi Amp (dtk)"
+    },
+    "indicator": {
+      "levels": [
+        "Intellect Operator +10.",
+        "Intellect Operator +15.",
+        "Intellect Operator +15.",
+        "Intellect Operator +20."
+      ],
+      "name": "Keen Mind"
+    },
+    "talent1": {
+      "levels": [
+        "Ultimate skill <@ba.key>No One Spoils the Fun</> meningkat: Setelah digunakan, durasi cooldown skill kombo operator <@ba.key>Posisi Tim 01</> <@ba.vup>{coolDown:0}</> dtk.",
+        "Ultimate skill <@ba.key>No One Spoils the Fun</> meningkat: Setelah digunakan, durasi cooldown skill kombo operator <@ba.key>Posisi Tim 01</> <@ba.vup>{coolDown:0}</> dtk."
+      ],
+      "name": "Proxy’s Patronage"
+    },
+    "talent2": {
+      "levels": [
+        "Saat <@ba.key>Inksoul</> menghilang, operator rekan mendapatkan <#ba.speedup>Haste</> <@ba.vup>{ratio_speed:0%}</> selama {duration_speedup:0} dtk.",
+        "Saat <@ba.key>Inksoul</> menghilang, operator rekan mendapatkan <#ba.speedup>Haste</> <@ba.vup>{ratio_speed:0%}</> selama {duration_speedup:0} dtk."
+      ],
+      "name": "Unsoiled Brush"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Resepsionis, efisiensi pengumpulan petunjuk operator akan meningkat sebesar +30%"
+      ],
+      "name": "Ware is the Geist"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
+      ],
+      "name": "Ink Spirit Aide"
+    },
+    "files": {
+      "main": "NAMA SANDI: Si \nGENDER: Perempuan \nAUTENTIKASI: Hongshan Academy of Sciences \nTANGGAL LAHIR: 15 September \nRAS: Tak Disebutkan \n[STATUS INFEKSI ORIPATI] \nNegatif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: ■■ \nKEMAMPUAN TEMPUR: Sangat Baik \nKECERDASAN TAKTIS: Standar \nASIMILASI ORIGINIUM ARTS: Kurang",
+      "humanResources": "Si, seorang Proksi Feranmut yang tidak bernaung di bawah organisasi mana pun, punya hubungan yang panjang dengan Hongshan Academy of Sciences. Atas rekomendasi pribadi Endministrator, dia bergabung dengan Endfield Industries, tempat dia sekarang memberikan keahliannya dalam penelitian teoretis dan penerapan praktis Feranmut. \n\nSi jarang terlibat dalam prosedur personel Endfield. Satu-satunya pengecualian tercatat dalam log diagnosis mandiriku. Sesuai kesepakatan, Si tiba di atas pesawat Dijiang dan berbicara denganku. Dia menjawab setiap pertanyaan, menandatangani dokumen, dan menghilang begitu prosesnya selesai. Modul pemrosesanku langsung mengklasifikasikan peristiwa itu sebagai insiden tak terduga dan mengeluarkan peringatan. Tak lama kemudian, Si kembali masuk ke kantor, menyeka setetes tinta di tengah layarku, dan bergumam, “Menarik … tapi belum cukup menarik.” Dia kemudian menjelaskan bahwa “Si” yang duduk di hadapanku tadi hanyalah lukisan dirinya. Dia ingin melihat reaksiku. Berdasarkan komentarnya, responsku tampaknya tak sesuai harapan. \nItu cuma lelucon yang tak berbahaya. Kejadian itu memberikan gambaran sekilas tentang sifat unik Si. Meskipun dia punya kekuatan yang melampaui batas penjelasan ilmiah, sesekali dia menunjukkan temperamen yang tampaknya tak lazim untuk seorang Proksi Feranmut. Bisa bertemu dengan seorang Proksi Feranmut di Talos-II adalah kesempatan yang sangat langka. Karena itu, aku menyarankan rekan-rekanku di Divisi SDM untuk memanfaatkan setiap momen agar bisa berinteraksi dengannya. Mungkin dengan begitu, kita bisa menemukan pola di balik suasana hatinya yang gampang berubah. \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Setelah bergabung dengan Endfield, hampir tak ada operator yang pernah bertemu Si. Profilnya nyaris kosong, dan “misterius” adalah satu-satunya kesan yang dimiliki sebagian besar dari kami tentang sang Proksi Feranmut. Divisi SDM bahkan meminta pemberi rekomendasinya untuk membantu meyakinkan dia agar mau mengikuti beberapa prosedur orientasi. Tapi, rupanya Endministrator sekalipun tak mampu membujuknya .... Semua itu berubah ketika salah satu operator logistik kami kebetulan melihatnya di sebuah restoran hot pot di Kota Wuling. \nKeduanya kebetulan saja bertemu, tanpa saling kenal. Mereka ternyata sama-sama menghadiri acara promosi menu baru dan akhirnya duduk satu meja, mencicipi kuah hot pot seperti Kaldu Jeruk Nipis dan Pare, Kaldu Gelembung Ikan dan Lada Siput, juga Kaldu Bening Grovenymph Rebus—nama-nama yang tanpa digabung pun sudah aneh. Setelah mengetahui bahwa Si ke sana demi mempelajari trik untuk koki di losmennya, operator logistik itu memuji naluri bisnisnya yang tajam dan seleranya yang sangat bagus untuk orang semuda dia. Si merasa senang dan diam-diam mentraktir si operator. Setelah melihat foto Si di Divisi SDM, barulah si operator menyadari siapa sebenarnya teman makannya itu .... Sejak saat itu, makin banyak operator yang mulai menjumpai Si di tempat-tempat paling tak terduga, seperti acara peluncuran Lung Gembul di Kota Wuling, pusat pengalaman robotik La Fantoma ... dan masih banyak lagi. Bahkan ada dua operator yang berdebat sengit tentang suatu momen. Keduanya bersikeras bahwa mereka melihat Si pada waktu yang sama persis, tapi yang satu mengaku melihat Si sebagai penawar usil yang berhasil mendapatkan barang terakhir di lelang tongkat sihir Seš’qa, sementara yang lain bersumpah melihat Si sebagai tamu misterius yang mabuk di tengah para Snowpriest Sami. Dua lokasi itu berjarak ribuan mil, satu di atas tanah, yang lain di bawah tanah. Cerita seperti itu seharusnya hanya ada dalam legenda-legenda Yan kuno. Singkatnya, kalau memang para operator itu bisa dipercaya, Si lebih mirip bocah energik yang tak bisa diam di rumah daripada seorang Proksi Feranmut yang tertutup. \nSejak saat itu, setiap kali Dijiang menyelenggarakan acara seperti Malam Nobar Garda Depan, beberapa operator akan mengumpulkan keberanian untuk meminta Endministrator mengundang Si .... Kali ini, dia benar-benar datang. Perlahan-lahan, kami sadar bahwa memang begitulah dirinya. Dia ceria dan tak terduga, tapi kurang sabar menghadapi orang-orang yang kaku atau enggan beradaptasi. Dia selalu tertarik pada hal-hal baru dan memandang dunia dengan rasa ingin tahu layaknya seorang anak kecil. Mungkin ... menurut standar Feranmut, dia memang masih sangat muda. \n\nSaran dari Operator Minghe: Hindari kata-kata seperti “anak-anak” dan “muda.” Nona Si agak sensitif soal usianya. Dia bersikeras, “Usiaku hampir sama tuanya dengan peradaban di Talos-II itu sendiri. Kalian semua cuma bocah di mataku.” \n\nSaran dari Operator Arcane: Untuk perkara-perkara penting, percayalah pada sang Proksi, sama seperti yang kami lakukan. Terlepas dari sikapnya sehari-hari, kemampuannya lebih dari cukup untuk membuktikan kepercayaan itu. Dia juga tidak suka kemampuannya dipertanyakan. \n\nSaran misterius dari seorang tamu tak dikenal: Kalau dia mulai merajuk, panggil saja Endministrator.",
+      "file2": "Log Latihan Satuan Tugas Khusus Yinglung III \nLokasi: Alam Liar Tanpa Nama, Wilayah Kewenangan HAS \nTujuan: Jadwal pertemuan antara Proksi dan kloter rekrutan terbaru \nCatatan: Proksi tidak hadir tanpa pemberitahuan sebelumnya, dan pertemuan tersebut diganti dengan latihan rutin. Operator senior yang memimpin sesi tersebut meyakinkan para rekrutan baru bahwa meskipun Proksi telah membantu mendirikan dan menyusun rencana untuk Satgassus Yinglung, dia tidak memegang jabatan resmi di HAS. Kedua pihak menjalin hubungan kerja sama, dan mungkin ada banyak anggota Satgassus Yinglung yang tidak akan pernah bertemu dengannya selama masa tugas mereka. \n\nLog Latihan Satuan Tugas Khusus Yinglung VIII \nLokasi: Balai Tanjian, HAS \nTujuan: Ceramah dari Proksi tentang penerapan Kekuatan Feranmut \nCatatan: Proksi tidak hadir tanpa pemberitahuan sebelumnya. Dia mendadak mengatur agar Ye Minghe, Kapten Langit Damai Pengawal Kekaisaran, dan Endministrator dari Endfield Industries hadir menggantikannya. Sesi tersebut diubah menjadi pertukaran pengetahuan teknis terkait teknik tombak dan penerapan Originium. \n\nLog Latihan Satuan Tugas Khusus Yinglung XXI \nLokasi: Sebuah gulungan yang dilukis langsung oleh Proksi di tempat \nTujuan: Ceramah dari Proksi tentang penerapan kekuatan Feranmut \nCatatan: Proksi tampak luar biasa bersemangat sehingga sesi latihan berlangsung tiga jam melebihi jadwal. Atas inisiatifnya sendiri, dia mendemonstrasikan lebih dari selusin kekuatan yang berbeda, masing-masing lebih mencengangkan daripada sebelumnya. Kekuatan yang dia sebut “trik-trik kecil” itu meliputi, tapi tidak terbatas pada: menggerakkan batu dan kayu sesuka hati untuk membuat taman yang mustahil dilewati; menempa perisai dan pedang besar dari udara kosong, seolah-olah menarik senjata ilahi dari ruang hampa; menanam benih yang dalam sekejap bertunas, layu, lalu bertunas lagi sehingga mengacaukan persepsi terhadap waktu dan kausalitas; menghidupkan lukisan tinta hingga batas antara ilusi dan kenyataan lenyap; serta mengubah persegi menjadi lingkaran seolah-olah realitas tunduk pada setiap ucapannya .... Tentu saja, kita hanya bisa memanfaatkan sebagian kecil dari kekuatan-kekuatan ini dengan bantuan peralatan khusus, dan tidak akan sefleksibel sang Proksi. Meski begitu, nilainya di medan perang tak perlu diragukan lagi. Kalau diterapkan dengan tepat, kemampuan-kemampuan itu akan memungkinkan Satgassus Yinglung menjalankan berbagai misi yang sangat kompleks. \nKendati demikian, kekuatan itu tidak selalu bisa diandalkan. Dalam beberapa momen yang jarang terjadi, sebuah perisai raksasa entah bagaimana tiba-tiba berlubang besar, atau matahari yang dilukis tiba-tiba menjadi noda tinta yang melayang di langit dan terus meneteskan tinta. Insiden semacam itu jarang terjadi, tapi sempat teramati. Proksi selalu menyembunyikan insiden-insiden ini dengan cepat. Cara yang paling sering dia gunakan adalah menutupinya dengan batuk berlebihan, tiba-tiba melukis sungai dan mendadak mengumumkan latihan tempur menyeberangi sungai, atau langsung mengakhiri sesi saat itu juga .... \n\nSemua ini seharusnya tidak mengejutkan. Memiliki kemampuan tidak sama dengan menguasainya. Baik dalam pertarungan maupun kerajinan, penguasaan sejati membutuhkan waktu bertahun-tahun. Tentu saja, keadaan sang Proksi berbeda. Dia belum lama mewarisi Kekuatan Feranmut “Sui” dan kedua belas proksinya. Meski begitu, kontribusinya tak perlu diragukan lagi. Berkat dialah Satgassus Yinglung bisa berdiri hari ini dan tanah air kita tetap terlindungi. \n— Arcane, Ketua Satgas Satgassus Yinglung",
+      "file3": "Regulator Sui didirikan relatif lebih terlambat dibandingkan organisasi khusus HAS lainnya. Meskipun namanya sama dengan organisasi serupa di Terra, keduanya punya tujuan yang pada dasarnya berbeda. Organisasi yang asli didirikan di Yan setelah “Perburuan Akbar” untuk mengawasi Feranmut “Sui” yang tertidur. Pasukan di bawah naungannya, ‘Pembawa Lilin’, bertugas memantau aktivitas dua belas proksi “Sui” dan merespons bencana sekunder apa pun yang terkait dengan mereka. Selama hampir seribu tahun, hubungan antara Regulator Sui dan para proksi itu selalu tegang. \nTapi, di HAS, Regulator Sui berfungsi sebagai organisasi intelijen dan dukungan teknis yang berfokus pada pengembangan teknologi berbasis kekuatan Feranmut, serta dukungan Akademi di bidang militer maupun sipil. Proksi Feranmut Si terlibat langsung dalam mendirikan Regulator Sui dan, menyusul kemudian, Satgassus Yinglung yang berada di bawah pengawasannya. Dia sendiri tampaknya menikmati pekerjaannya. Bagi Regulator Sui, Si lebih mirip seorang penasihat yang unik. \n\nCatatan Khusus \n“Aku khawatir suatu hari nanti Talos-II yang begitu luas pun akan terlalu sempit untuk adikku. Tapi, dia masih muda dan jalannya masih panjang. Itu sebabnya aku mengirim dia ke Hongshan untuk memperluas wawasannya, dengan keyakinan bahwa Tianshi Tan akan menjaganya. Kalau ada yang bisa kulakukan untuk membalasnya, aku akan langsung datang.” \n“Cuma itu yang ditulis kakakku?” \n“Apa itu tidak cukup? Kau Proksi terbaru. Tidak ada yang tahu kau akan jadi apa setelah kekuatanmu bangkit sepenuhnya. Kalau kau ternyata jadi mustahil ditangani seperti Sui dulu, mungkin tak akan ada seorang pun di Talos-II yang bisa mengendalikanmu. Lebih baik kau menghabiskan waktu bersama kami sekarang. Dampaknya akan baik untukmu dan HAS. Selain itu ... kakakmu memberiku peringatan. Kalau ada orang sini yang membuatmu kesal, dia akan langsung mendatangiku. Aku bersyukur dia tidak menyelipkan pisau di dalam surat itu!” \n“D-dia tidak bermaksud begitu, kok .... Kau Tianshi paling berpengalaman di HAS .... Dan a-aku selalu menghormatimu!” \n“Haha, begitu, dong. Kau jelas lebih menyenangkan daripada saudara-saudaramu. Jadi, apa kau sudah mengambil keputusan tentang satuan tugas khusus itu? Kau sudah cukup lama di Hongshan.” \n“Kau sampai mengirim Endmin untuk meyakinkanku. Aku tetap di sini. Apa itu belum menjawab pertanyaanmu?” \n“Bagus sekali. Kalau begitu, anggap saja ini tugas resmi pertama Regulator Si di Talos-II.” \n“Regulator Si?!” \n“Hmm .... Kisah Sui sudah jadi milik Terra sekarang, dan saudara-saudaramu bebas hidup sesuka mereka. Nama ‘Regulator Sui’ rasanya kurang tepat ....” \n“Pakai nama Regulator Sui saja! Regulator Si kedengarannya jelek banget. Seolah-olah seluruh tempat ini ada hanya untuk mengawasiku.” \n“Masuk akal. Kalau begitu, kita tetap pakai nama lama.” \n“Kalau satuan tugas khususnya?” \n“Anak-anak itu masih berdebat soal namanya. Menurutku, satuan ini ada berkat dirimu, jadi bagaimana kalau kita beri nama .... ‘Satuan Tugas Khusus Yinglung’?” \n“Keren! Aku suka!”",
+      "file4": "Ketika semuanya akhirnya usai, Feranmut Sui tak pernah terbangun lagi. \nTubuhnya lenyap. Tekadnya tenggelam dalam keheningan di tengah kekacauan. Kebanggaan, amarah, kebencian, dan pembangkangan yang pernah mendefinisikan-Nya memudar bersama wadah fisiknya yang sirna. Tubuhnya menghilang, Dia menjadi seorang anak yang dipaksa untuk menjawab satu pertanyaan. \n“Siapakah aku?” \nKehampaan tak memberi jawaban. Dia sadar bahwa mungkin Dia tak lagi berhak menjawab pertanyaan itu. \nMaka, Dia melepaskannya. Setelah berabad-abad berperang dengan dunia dan dirinya sendiri, Dia menjadi terlalu lelah untuk berpikir. Dalam keheningan itu, Dia menemukan kelegaan yang tak pernah Dia rasakan sebelumnya. \n...... \nTapi, Sui telah bertahan terlalu lama dan tumbuh terlalu kuat untuk lenyap begitu saja. Terlalu banyak pecahan dirinya tersebar sepanjang zaman. Bahkan, setelah kesadarannya memilih mengasingkan diri, sesuatu tetap akan muncul secara alami, seperti embun pagi yang berkumpul di atas dedaunan segar sebelum terjatuh .... \nSesuatu telah jatuh. \nSuara itu menarik perhatian seorang proksi yang belum pergi. \nEntah karena belas kasihan ... atau kehati-hatian ... dia segera mengumpulkan pecahan kesadaran yang utuh itu ke tangannya. Pecahan itu tak bisa bicara maupun menggunakan kekuatan. Sulit dipastikan apakah pecahan masih memiliki kaitan dengan Sui. Rapuh dan tak stabil, ia berkedip seperti nyala lilin, terang dan benar-benar murni. \nUntuk pertama kalinya, para proksi merasa tak yakin. \nMereka semua tahu itulah sisa terakhir Feranmut Sui. Seandainya mereka ingin menghapus seluruh jejak-Nya yang masih tersisa, mereka bisa saja melakukan itu hanya dengan satu kehendak. \nTapi, pecahan itu tergeletak tenang di telapak tangan. \nBenarkah itu Sui yang selama ini mereka kenal? Feranmut yang penuh kebanggaan itu takkan pernah memperlihatkan diri-Nya yang sesungguhnya di hadapan para proksi-Nya sendiri, sekalipun demi mempertahankan eksistensi-Nya sendiri. Tapi, kalau pecahan ini adalah kehidupan yang baru saja dimulai .... Para proksi mendapati diri mereka samar-samar mengingat kembali seperti apa rasanya sebelum mereka pertama kali diciptakan. \nPecahan itu mencari. Ia berjuang untuk menjawab satu pertanyaan: Apa yang menjadikanku diriku yang sekarang? Ketika sisa terakhir diri-Nya yang dulu tak lagi mampu memberi jawaban, kesadaran kecil itu secara naluriah mencari kerabatnya sendiri. \nAnak-anak yang dulu Dia ciptakan untuk hidup di tengah manusia kini menjadi sosok-sosok yang menuntun-Nya. Bagi kedua belas proksi itu, ironi tersebut tak bisa diabaikan. Perdebatan mereka tak membuahkan hasil, hingga suatu hari, sebuah suara memecah keheningan pikiran mereka. \nSuara itu lirih. Lemah. Tapi begitu polos. \n“Siapa aku?” \n“Di mana aku?” \n“Siapa kalian?” \n...... \nPada akhirnya, para proksi memilih untuk mengirim kesadaran kecil itu melalui Gerbang Kosmis ke dunia yang tak diketahui. Mereka mengerti bahwa sisa terkecil dari Feranmut yang beristirahat di dalam Makam Sui tetap membawa untaian takdir yang tak terhitung jumlahnya. Tapi, jika dia ... jika dia tak tahu apa-apa tentang semua itu, dia bukan lagi Dia. \nMungkin jawaban yang dia cari tak pernah ditakdirkan untuk ditemukan di negeri tempat Sui pernah gagal. Di dunia yang baru, jiwa baru mungkin masih bisa menemukan arti keberadaannya dan menemukan jawabannya sendiri. \nBegitulah awal percikan kecil kesadaran itu tiba di Talos-II, membawa segala macam ... emm ... hal remeh-temeh. Terus terang saja, terlalu banyak yang mereka bawakan padanya. Mereka terus menjejalkan apa pun ke tanganku ... maksudku, ke tangannya. \nSetelah itu ... yah, itu cerita lain lagi."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Pengelolaan Tim",
+        "description": "Pengelolaan Tim: Kearifan sang Pengurus Losmen\n“Lahan Yuanyuan sudah ada selama seabad, dan akulah yang mencetuskan sebuah metode pelayanan yang baik. Orang-orang dari HAS sesekali datang untuk mempelajari ajaranku.”"
+      },
+      "expert2": {
+        "name": "Perakitan Alat",
+        "description": "Perakitan Alat: Sesuka Si Saja\nApi meleburkan logam untuk karya ilahi, kuas menorehkan dunia-dunia seutuhnya. Dia mengambil inspirasi dari segala sesuatu di sekelilingnya, bahkan dari mimpinya. Selama bisa dibayangkannya, maka akan diwujudkannya. Prosesnya memang tak selalu sempurna, tapi jangan pernah mengungkapkan itu di hadapannya."
+      },
+      "hobby1": {
+        "name": "Teknologi",
+        "description": "Teknologi: QA Prototipe Awal\n“Perabot pintar tak ada apa-apanya dibanding para waregeist-ku yang sangat, sangat patuh.”"
+      },
+      "hobby2": {
+        "name": "Fesyen",
+        "description": "Fesyen: Pakar Kosmetika Eksperimental\nGelar yang diklaim sendiri. Nyatanya, tak seorang pun berani mempekerjakan Si untuk pekerjaan semacam itu. Kru Lahan Yuanyuan mengungkapkan bahwa Si menggunakan lukis wajah Roh Tinta untuk melatih keterampilannya merias wajah."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Persiapan Operasi 1",
+        "text": "Hmph. Hanya ingat aku saat kena masalah?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Persiapan Operasi 2",
+        "text": "Aku akan membantumu lagi. Jangan lupa bayar setelah kita kembali ke losmen."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Menambahkan ke Tim 1",
+        "text": "Dan mulai sekarang, jangan ajak aku bicara. Aku harus fokus."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Menambahkan ke Tim 2",
+        "text": "Ayo, katakan sesuatu. Perhatianku jadi teralihkan kalau terlalu sepi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Berganti Senjata",
+        "text": "Ini yang kaupilih? Hmm .... Bagaimana kalau dua sapuan tinta? Sekarang ini milikku, kau tak boleh memintanya lagi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Berganti Gear",
+        "text": "Bahkan sayapku juga dipertimbangkan .... Ehem. L ... lumayan, tapi aku tak akan bersikap baik hanya karena ini."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Ah! Aku dapat inspirasi! Cepat, jangan cuma berdiri di sana! Carikan aku kertas!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Tonton ini beberapa kali lagi untuk mengingat .... Kenapa tersenyum? Aku sedang bicara denganmu!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Promosi Operator 1",
+        "text": "Agar semua jelas, aku cuma anggota kehormatan Endfielder, jadi jangan harap aku akan melakukan segalanya. Selain itu, semoga saja Endfield memang menarik seperti yang kauceritakan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Promosi Operator 2",
+        "text": "Ulurkan tanganmu, biar kuberi cap dengan ekorku. Nah .... Selesai. Kau tak boleh menghapusnya sampai aku memutuskan untuk memberimu cap baru."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Promosi Operator 3",
+        "text": "Roh Tinta, catat apa kata Endmin. Setiap kata-katanya. HAS ingin aku berpidato untuk para anggota Yinglung muda. Ini pasti akan sangat berguna."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Promosi Operator 4",
+        "text": "Kau terus mempromosikanku, tapi kalau kau gagal menepati janji, aku akan kembali ke losmen. Pisahkan urusanmu dari Endfield. Apa yang terjadi di antara kita adalah urusan kita berdua."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Operator Siap Bertugas",
+        "text": "Tunggu, jangan bergerak! Tintanya belum kering .... Lukisan ini untukmu. Yang kugambar itu tidak penting. Yang terpenting adalah capku! Jangan pernah lupakan namaku lagi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "Siaga 1",
+        "text": "Ini, lalu itu .... Baiklah, gulunglah. Ehem. Drafmu sudah selesai. Sabar, ya!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "Siaga 2",
+        "text": "Kau sudah bertahun-tahun bersamaku, kenapa tak ada yang kaupelajari dariku? Misalnya cara memalsukan tanda tanganku."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Kau memancingku ke tempat ini hanya agar kau bisa duduk santai? Tidak bisa begitu. Kau harus tetap di sini bersamaku."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Menyapa 1",
+        "text": "Mau lewat begitu saja? Kau pura-pura aku tak terlihat?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Menyapa 2",
+        "text": "Jadi, janji sepuluh tahun yang lalu. Kau mau menepatinya?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Aku? Diam saja? Lihat jendela bundar itu, tidak? Aku menggambar lukisan besar berjudul “Pengelana di Seluruh Talos-II” di atasnya .... Tapi, ada pengelana yang tak datang-datang sampai lama sekali, jadi kuhapus saja semuanya."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Kenapa kau selalu muncul setiap kali aku mengunjungi Dijiang? Apa, kau melihat Roh Tinta di pojok ...? Ah, yah .... Sepertinya kau memang sengaja muncul di depanku!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Akan kulukis wajahmu dan kugantung di ruanganku. Agar waregeist tak mengganggu saat kau mengunjungi gulunganku sendirian .... Hmm? Aku memang pernah melukismu sepuluh tahun yang lalu. Tapi, kau belum mengenakan apa pun di wajahmu saat itu."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Peta, bantal, camilan, kompor, tisane penstimulasi .... Oh. Aku cuma membuat daftar barang untuk dibawa ke Sami. Bepergian membuatku terinspirasi. Coba lihat apa kau punya ide lain .... Tentu saja kau ikut, kalau tidak, aku tak akan memberitahumu semua ini! Tidak, aku punya Roh Tinta untuk membawakan tasku, bukan kau, Dungu!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Aku berpapasan dengan Perlica. Nona pengawas kecil itu sama sepertimu .... Gadis malang itu berusaha tetap terjaga, padahal dia sudah hampir tertidur sambil berdiri .... Kau juga sama saja! Jangan bergadang terus, tidurlah. Bekerja keras sampai kelelahan lalu tidur selama sepuluh tahun. Yang benar saja?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Wah .... Kau bisa lihat hampir separuh Talos-II dari sini .... Aku ingin tahu ke mana mereka berdua pergi .... Hah?! Siapa bilang aku kangen saudaraku? Jangan menatapku seperti itu ...! *Hhh* Oke. Mungkin aku agak kangen mereka. Sedikit kangen ...."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Menawarkan Hadiah",
+        "text": "Ini. Hadiah kecil untukmu, hasil coretan isengku. Jangan terlalu semang—Ah, salah ambil! Potret diri itu cuma latihan. KEMBALIKAN!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Menerima Hadiah",
+        "text": "Er .... S-Sejak kapan kau bersikap formal dan kaku—HEI! Awas ya, jangan diambil lagi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Dialog Kepercayaan 1",
+        "text": "Kalau kau senggang, mampirlah ke losmen untuk pesta penyambutan yang kaulewatkan. Dapur sudah mengumpulkan semua bahan langka yang bisa kami dapatkan. Sebentar .... Kau berterima kasih kepada siapa?! Kalau begitu, semua pujian pantas ditujukan kepada para staf. Lalu, sepertinya bos mereka yang tak berperasaan pun terpaksa menghentikan mereka membuang-buang semua bahan berharga itu! HUH!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Dialog Kepercayaan 2",
+        "text": "Coba hirup aromanya. Lihat tebing di sana itu? Semak tehnya tumbuh di sana. Sebaik apa pun tehnya, aku harus mengirim Roh Tinta terbaikku untuk memetik daunnya. Proses satu dekade, semuanya dikemas dalam stoples kecil ini. Jadi kau benar-benar beruntung hari ini .... Eh. Kenapa gigimu berlumuran tinta? Tunggu .... Gigiku juga ...? H-Habiskan saja tehnya. Sampai tetes terakhir. Oh ya, jangan terus-terusan menatapku!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Dialog Kepercayaan 3",
+        "text": "Berhenti! Sudah cukup untuk hari ini! Yah, kau sudah lumayan mahir bermain Weiqi. Tapi kakakku masih tetap pemain terbaik di Talos-II. Kau masih jauh di bawah levelnya .... Apa? Ini ketiga kalinya aku menyebut-nyebut saudaraku bulan ini? A-Aku tidak bilang aku berharap mereka masih ada! Lihat saja gunungnya, losmennya, dan kenyataan bahwa setidaknya aku punya ... EHEM! Tempat ini sudah cukup ramai."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Dialog Kepercayaan 4",
+        "text": "Sudah melakukan perjalanan jauh sebelum pulih sepenuhnya? Kau ini terbuat dari apa, Xiranite? Benar-benar merasa kau tak bisa hancur? Huh. Aku tadinya berharap kebiasaan bodoh menyiksa diri itu ikut hilang bersama memorimu, Min Culun! Berikan detail misinya dan aku akan pergi menggantikanmu! Ingat, kau berutang budi kepadaku. LAGI!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Dialog Kepercayaan 5",
+        "text": "Duduklah. Rindu matahari terbit? Lukis saja pakai kuas itu. Dulu, kau datang tanpa diundang saat aku sendirian. Kau punya cara untuk mengubah ide-ide konyol menjadi kata-kata yang menghibur .... Oke. Aku tahu kata-kataku tak akan mengembalikan memorimu yang hilang sekarang. Tapi, kalau kau berani melupakan apa pun lagi, aku tak akan bicara denganmu sampai sepuluh ... tidak, seratus lima puluh tahun ke depan!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Obrolan 1",
+        "text": "Makin banyak orang ingin mengunjungi gulungan ini, tapi losmen ini tidak dirancang untuk menampung begitu banyak pengunjung. Staf menyarankan untuk memasang papan pengumuman di aula utama .... Idenya kedengaran bagus, tapi itu berarti aku akan dapat banyak saran entah dari siapa. A-Aku tak punya waktu untuk baca semuanya. Jadi, bisa tolong kausortir dulu ... agar aku bisa fokus pada saran yang berguna saja?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Obrolan 2",
+        "text": "Puncak dari proses penempaan adalah memadatkan setiap langkah manufaktur dalam satu tarikan napas dan mengubah semua ide menjadi kenyataan. Sama seperti perisai yang kupegang ini .... Apa? Ada lubang cacat ...? EHEM. Oh ya, ini cuma sampel. Cacat kecil sih wajar, dan pastinya tak ada hubungannya dengan penguasaan kekuatanku."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Obrolan 3",
+        "text": "Pernah dengar soal boneka skydrummer gembul? Aku suka yang gembul-gembul dan punya banyak di losmenku. Tapi, boneka skydrummer gembul adalah hadiah eksklusif untuk game “Sketsa dan Tebak-tebakan” Wuling, yang tidak bisa dimainkan sendirian .... Dengar, musim berikutnya akan datang. Aku akan mengajarimu triknya dan kau sebaiknya menyimak .... Tentu saja kau yang menggambar dan aku yang menebak! Apa aku terlihat seperti orang yang curang dalam game?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Obrolan 4",
+        "text": "Job Rusher selalu bermalas-malasan, Speed Dasher sangat besar sampai sulit bergerak, dan Loud Speaker menyapa tamu dengan sangat pelan sampai bisa terlewatkan kalau berkedip. Sudah puluhan tahun, dan aku sudah menyerah untuk berusaha memperbaiki kebiasaan mereka. Oh? Yah, mereka tak punya tujuan lain, jadi mereka kutambahkan ke gulungan. Aku bisa saja mengusir mereka ... tapi aku lebih suka losmenku berantakan daripada sepi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Obrolan 5",
+        "text": "Dulu, aku sering berkumpul dengan saudara-saudaraku dan bermain Weiqi, mendengarkan diskusi mereka, lalu berlatih membaca, kaligrafi, dan melukis di malam hari. Saat senggang, kami bertiga berkeliling Talos-II ... tapi tak lama kemudian mereka mengirimku ke Hongshan. Mereka mungkin menganggap Talos-II sebagai angin segar dan berpikir aku tak akan bisa menikmatinya selama ada mereka. Aku paham maksud mereka. Tapi, mereka kan tak boleh begitu saja meninggalkan adik mereka di suatu tempat tanpa pernah mengunjunginya ...."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Topik: Satuan Tugas Khusus Yinglung",
+        "text": "Benar, aku ada di sana saat HAS membentuk Satuan Tugas Khusus Yinglung. Tapi, yang kulakukan hanyalah mengajari mereka beberapa trik. Kenapa aku tak menghabiskan lebih banyak waktu dengan mereka? Karena anggota Yinglung itu penuh orang keras kepala seperti Li Zhiyan. Kalau terlalu lama bergaul dengan mereka, bahkan udara saja bisa beku. Tapi, dia sepertinya sudah lebih paham setelah menghabiskan waktu bersamamu. Hmm .... Eh, Endmin, bagaimana kalau kau menggantikanku mengajari mereka saja?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Topik: Kekuatan Feranmut",
+        "text": "Basis data SDM Endfield bermasalah. Untuk bagian “Keahlian”, aku mencantumkan dua belas item, termasuk seni bela diri, sastra, melukis, metalurgi, hukum, berkebun ... dan kemudian muncul kesalahan. Apa keahlianku terlalu banyak? Keahlianku tak akan hilang hanya karena beberapa kegagalan. Sebaiknya kau punya penjelasan tentang apa yang terjadi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Topik: Sayap",
+        "text": "Sayapku cantik, ‘kan? Saat masih kecil, aku bermimpi sayap itu tumbuh dan membentang, jadi aku menggambarnya di punggungku setelah bangun. Kakakku selalu mengomel tentang itu .... Ini cuma hiasan. Tapi, dia bilang aku menggunakannya saat bertarung agar terlihat menakutkan. Hmph. Itu tuduhan tak berdasar. Mana ada orang yang berbuat begitu? Kayak anak kecil saja!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Topik: Ye Minghe",
+        "text": "Anak berambut terang itu? Kami sudah lama saling kenal, dan dia selalu menyebalkan. Kadang-kadang dia cuma peduli pada gallopbeast hitam pekatnya itu dan selalu berkata, “Pengawal Kekaisaran harus menjunjung tinggi tugas mereka ....” Karena itulah dia sangat sulit dihadapi, karena dia serius dengan setiap kata yang diucapkannya. Sejujurnya, agak mirip denganmu. Sebentar, kaulah yang memengaruhinya! Pokoknya, kalau dia masuk ke gulunganku lagi, kau harus tanggung jawab."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Topik: Keluarga",
+        "text": "Aku tak tahu saudara-saudaraku ke mana. Setelah melalui semua itu, mereka akhirnya punya waktu luang. Mungkin mereka mengembara ke seluruh penjuru Talos-II. Mungkin mereka akan ... HEI! Job Rusher! Kan sudah kubilang kau harus bersih-bersih dengan benar? Terutama lukisan, kaligrafi, dan papan Weiqi. Bagaimana kalau mereka pulang dan melihat kekacauan ini? Nanti aku jadi diomeli gara-gara kau!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Topik: Sui",
+        "text": "Sui adalah Feranmut paling menyebalkan yang pernah ada. Bahkan saat tidur pun dia tak mau diam, selalu menyusun rencana untuk mempersulit Yan dengan kedua belas proksinya. Dan pada akhirnya? Setiap proksi punya niat sendiri-sendiri dan malah jadi merepotkan dia. Soal hubunganku dengan dia ... aku tak akan ada di sini kalau mereka tak membawa sisa-sisa terakhir jiwanya ke Talos-II. Tapi kami berbeda. Tak ada apa-apa di antara kami, apa pun itu. Utangnya sudah lunas dan itu sudah sangat jelas."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Jangan lewatkan titik ini."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Lihat, harta tersembunyi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Tempat ini menarik. Kalau tak cermat, pasti sudah terlewat."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Hati-hati. Yang itu bakalan butuh beberapa sapuan kuas."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Penambangan 1",
+        "text": "Tempaan Langit, Logam Bumi. Talos-II punya banyak barang langka."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Penambangan 2",
+        "text": "Biar aku saja. Pasti bisa langsung selesai."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Membuka Kerat",
+        "text": "Jangan menunggu inspirasi saja. Carilah."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Mendapatkan Aurylene",
+        "text": "Hmm. Kalau Aurylene dicampur dengan tinta, bisa digunakan untuk melukis apa, ya?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Menyingkirkan Hawar",
+        "text": "Kalau dipikir-pikir lagi, mungkin Roh Tintaku juga bisa membereskan ini."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Istirahat",
+        "text": "Istirahatlah setiap kali sempat karena tak ada yang bisa melukis Talos-II dengan satu sapuan kuas saja."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Penggunaan Taktis 1",
+        "text": "Aku juga tahu sedikit tentang herba dan penyembuhan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Penggunaan Taktis 2",
+        "text": "Rasanya jadi lebih mendingan!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Peringatan Bahaya",
+        "text": "Awasi sebelah sana!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Cedera",
+        "text": "Apa sayapku jadi kotor?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "0 HP",
+        "text": "Sudah tidak ... tertarik lagi ...."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Penyemangat Tim 1",
+        "text": "Ah. Generasi ini menjanjikan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Penyemangat Tim 2",
+        "text": "Anak-anak muda kita tampak antusias."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Respons Penyemangat 1",
+        "text": "Kau tidak sedang bersikap “sopan”, ‘kan?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Respons Penyemangat 2",
+        "text": "Oke, oke, jangan terdistraksi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Mulai Pertarungan 1",
+        "text": "Akhiri ini sebelum malam tiba."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Mulai Pertarungan 2",
+        "text": "Tunjukkan kemampuan kalian kepadaku, anak-anak muda."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Menang Pertarungan 1",
+        "text": "Ini jauh lebih menyenangkan daripada di dalam gulungan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Menang Pertarungan 2",
+        "text": "Aku dapat banyak inspirasi. Karyawisata ini benar-benar sepadan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Menang Pertarungan 3",
+        "text": "Sudah selesai? Kurasa kau masih punya tenaga untuk menumbuk tinta untukku."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Menang Pertarungan 4",
+        "text": "Memang sulit, tapi kita menang. Jangan lemas begitu."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Kalah Bertarung",
+        "text": "Menang itu bagus, tapi kalah pun tak apa-apa. Ada aku di sini, tak ada yang perlu ditakutkan."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Merunduk!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Mundur!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "Skill Tarung 1",
+        "text": "Warnanya belang!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "Skill Tarung 2",
+        "text": "Sapuannya berantakan!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "Skill Tarung 3",
+        "text": "Salinannya tak berjiwa!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Skill Kombo Siap 1",
+        "text": "Beri aku sedikit ruang."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Skill Kombo Siap 2",
+        "text": "Tanganku sudah bebas."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Penggunaan Kombo 1",
+        "text": "Masih membuang-buang waktuku?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Penggunaan Kombo 2",
+        "text": "Masih membuang-buang tintaku?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Penuntas 1",
+        "text": "Sentuhan akhir!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Penuntas 2",
+        "text": "Penggambaran sempurna!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Gelombang pasang! Gempa dahsyat!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Sapuan tajam! Kendalikan semesta!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Biarkan kekuatan ini membentuk negeri!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Skill tarung <@ba.key>Brushwork Realm</> meningkat: Durasi <#ba.static>Immobilization</> yang diakibatkan <@ba.vup>+{static_duration:0%}</>; Rasio Rekor DMG <@ba.key>Artful Intent</> <@ba.vup>+{ink_damage_rate:0%}</>, dan radius ledakan <@ba.vup>+{ink_boom_range:0%}</>.",
+      "name": "Spring and Autumn as Ink"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Three Marks Deep in Wood"
+    },
+    "potential3": {
+      "description": "Ultimate <@ba.key>No One Spoils the Fun</> meningkat: DMG Dealt meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya. Efek <#ba.enhance>Amp</> meningkat menjadi <@ba.vup>{enhance_final:0.0}</> kali nilai aslinya.",
+      "name": "Study of Muscles and Bones"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>No One Spoils the Fun</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Perfectly Composed in Spirit"
+    },
+    "potential5": {
+      "description": "Skill kombo <@ba.key>Fully Envisioned</> meningkat: Durasi cooldown skill kombo <@ba.vup>{coolDown:0}</> dtk dan DMG Dealt meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya. Saat diaktifkan, skill kombo akan dianggap sudah <#ba.consume>memakai</> atau <#ba.absorb>menyerap</> 1 tumpukan infliction tambahan.",
+      "name": "Brush Dab in Eye’s White"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Bebas Lepas",
+      "author": "狂zip",
+      "description": "Ikuti kata hati, perasaan, dan kebahagiaan saat merasa bebas dan tanpa beban."
+    },
+    "potential3": {
+      "name": "Di Alam Tinta",
+      "author": "Maeka",
+      "description": "Di alam lukisan, segala sesuatu digambar dengan pigmen. Kalian berdua menghabiskan cukup banyak waktu bersama di suaka tinta."
+    },
+    "potential5": {
+      "name": "Tak Bernoda",
+      "author": "수줍(Sjoop)",
+      "description": "Melintasi alam yang fana dia mengembara, tapi debu yang fana tak menodainya."
+    }
+  }
+}

@@ -386,8 +386,8 @@
       "name": "Guida"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "Intensità delle Arti <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>. I danni inflitti dall'abilità suprema <@ba.key>Sequenza di bombardamento</> aumentano fino a <@ba.vup>{atk_scale}</> volte rispetto all'originale.",
+      "name": "Comandante di Originium"
     },
     "potential5": {
       "description": "???",

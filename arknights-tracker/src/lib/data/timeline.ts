@@ -1428,7 +1428,7 @@ export const rawEvents: GenericEventData[] = [
         endTime: "2026-11-25 17:00:00",
         endTimeAsia: "2026-11-26 04:00:00",
         icon: "ev1-v1.6.webp",
-        url: "",
+        url: "https://x.com/AKEndfield/status/2109131884378890697?s=20",
         color: "#D33F3B",
         layer: 9,
         type: "inGame",
@@ -1530,7 +1530,7 @@ export const rawEvents: GenericEventData[] = [
         startTimeAsia: "2026-10-15 11:00:00",
         endTime: "2026-11-05 11:59:59",
         icon: "ev4-v1.4.webp",
-        url: "",
+        url: "https://x.com/AKEndfield/status/2109871758140711172?s=20",
         color: "#FB2525",
         layer: 2,
         type: "inGame",
@@ -1538,7 +1538,7 @@ export const rawEvents: GenericEventData[] = [
         version: "1.6"
     },
     {
-        id: "ev8-v1.6",
+        id: "ev8.1-v1.6",
         title: "events.echoesOfWarSeasonOfFervor",
         name: "Echoes of War: Season of Fervor",
         startTime: "2026-11-05 12:00:00",

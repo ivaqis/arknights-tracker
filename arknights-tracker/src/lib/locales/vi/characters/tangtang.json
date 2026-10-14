@@ -58,7 +58,7 @@
     },
     "ultimate": {
       "name": "THỦ LĨNH TRỪNG MẮT",
-      "description": "Tangtang mở miếng che mắt và phóng <@ba.key>CỔ VĂN CHI NHÃN</> từ mắt mình để tạm thời khóa, làm bất động và gây <@ba.cryst>ST Băng</> theo thời gian cho kẻ địch trong khu vực ảnh hưởng.\nKhi <@ba.key>CỔ VĂN CHI NHÃN</> ngừng biến hóa, sóng dữ sập xuống và gây một lượng lớn <@ba.cryst>ST Băng</> cho kẻ địch trong khu vực ảnh hưởng.\nNếu cán viên đang điều khiển thực hiện đòn bổ nhào theo hoa văn <@ba.key>CỔ VĂN CHI NHÃN</> thì kỹ năng sẽ ngừng biến hóa và lập tức tung sóng dữ để gây thêm nhiều <@ba.cryst>ST Băng</> hơn nữa.",
+      "description": "Tangtang mở miếng che mắt và phóng <@ba.key>CỔ VĂN CHI NHÃN</> từ mắt mình để tạm thời gây <#ba.static>Bất Động</> và gây <@ba.cryst>ST Băng</> theo thời gian cho kẻ địch trong khu vực ảnh hưởng.\nKhi <@ba.key>CỔ VĂN CHI NHÃN</> ngừng biến hóa, sóng dữ sập xuống và gây một lượng lớn <@ba.cryst>ST Băng</> cho kẻ địch trong khu vực ảnh hưởng.\nNếu cán viên đang điều khiển thực hiện đòn bổ nhào theo hoa văn <@ba.key>CỔ VĂN CHI NHÃN</> thì kỹ năng sẽ ngừng biến hóa và lập tức tung sóng dữ để gây thêm nhiều <@ba.cryst>ST Băng</> hơn nữa.",
       "dmgOverTimeTotalMultiplier": "Tổng Hệ Số ST Theo Thời Gian",
       "oldenStareDurationS": "Hiệu Lực CỔ VĂN CHI NHÃN (giây)",
       "rogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ",

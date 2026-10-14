@@ -1,28 +1,328 @@
 {
+  "indie_hard011_s": {
+    "name": "Cryostatic Connection: Agony",
+    "description": "Extreme frigidity connects them. The surging waves and turbid undercurrents offer them a common name and meaning behind their creation.",
+    "featureDesc": " - Enemies are stronger.\n - When enhanced, all DMG dealt by the enemy will instantly apply <@ba.cryst>Solidification</> to operators.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower010": {
+    "name": "Wall of Shields: Normal",
+    "description": "I observed a relief effort, where a mass of \"shields\" covered the front of a battle line.",
+    "featureDesc": " - When a Prism is defeated, another Prism will spawn in the battlefield after a while.\n - Prisms are now much harder to interrupt.\n - Defeat the Quillbeast Blightshade to beat the stage. Defeating the Prisms does not affect stage completion.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard009": {
+    "name": "Melting Point of Flesh",
+    "description": "BURN! Let it all burn! Topple the tower and melt the ship! Pour our blood into the boiling molten iron and use it to cleanse Talos-II!",
+    "featureDesc": " - Enemies are stronger.\n - Exploding Firemist Originium Slugs spawn periodically.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Eyes of Solvent-Kind: Agony",
+    "description": "The rivers merge into a cold stream of blood. From within the gash-like depths and under the Stygian currents, the solvent-kind continues to peer.",
+    "featureDesc": " - Enemies have better stats.\n - Enemy forces include Tidewalker δ.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Melting Point of Flesh: Agony",
+    "description": "BURN! Let it all burn! Topple the tower and melt the ship! Pour our blood into the boiling molten iron and use it to cleanse Talos-II!",
+    "featureDesc": " - Enemies are stronger and <@ba.key>additional enemies will appear</>.\n - Exploding Firemist Originium Slugs spawn periodically.\n - <@ba.key>Operators cannot perform Perfect Dodge</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Age of Axes: Brutal",
+    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard029": {
+    "name": "Tri-Aggelated Targeting",
+    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
+    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard021": {
+    "name": "Wading in Raker Turf",
+    "description": "Raking claws have been hidden from sight, as the stampede marches and rivers break. The defeated migrate and take to flight, but the young forget to return the hate.",
+    "featureDesc": " - Enemies have better stats.\n - The Glaring Rakerbeast is permanently <@ba.key>Enraged</> and its ATK increases as its HP falls.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Tri-Aggelated Targeting: Agony",
+    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
+    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n - When an enemy is defeated for the first time, the other enemies gain an ATK boost and faster ATK speeds.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower015_ex": {
+    "name": "Blightshade File: Thunderclap - Brutal",
+    "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
+    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard011": {
+    "name": "Cryostatic Connection",
+    "description": "Extreme frigidity connects them. The surging waves and turbid undercurrents offer them a common name and meaning behind their creation.",
+    "featureDesc": " - Enemies are stronger.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard032_s": {
+    "name": "Hatred That Sprawls: Agony",
+    "description": "Let the roots reach for the heavens, let hatred sprawl across the land ... and let the wrath from years of abandonment echo in every legend.",
+    "featureDesc": " - After the battle begins, the operators' Max SP is increased to 400. \n - Gloomwald's Rage will enter its charging state on a regular basis and gain a large number of <@ba.key>shield stacks</>. When its charging up is complete, it will cast its ultimate that deals massive DMG to all operators. Break all <@ba.key>shield stacks</> to interrupt the charging state. \n - When Gloomwald's Rage enters its charging state, it also summons 4 Woodcraft Wanderers. After a Woodcraft Wanderer's <@ba.key>shield stacks</> are shattered, it will immediately disappear and restore 200 SP for the operators. \n - While Gloomwald's Rage is protected by <@ba.key>shield stack(s)</>, <@ba.key>operators no longer have SP regeneration and their Final Strikes and Finishers no longer recover SP.</>. Gloomwald's Rage also gradually acquires more and more <@ba.key>shield stacks</>. \n\n<@ba.info> - Tacticals and consumables cannot be used.</>\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Old Tales of the Wild: Brutal",
+    "description": "Here I commit to words of beasts roaming the ruins of war, clawing and tearing at the names of nations as their rabid froth reduces staves, shields, and cannon shells into molten ferrium.",
+    "featureDesc": " - Defeating enemies recovers 15 SP.\n - Battle Skill DMG Dealt <@ba.vup>+60%</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard001": {
+    "name": "Rampaging Shields",
+    "description": "The snowy fog never seems to dissipate from these wildlands. Crisp sounds of shattering could be heard hidden within the low rumblings. \nListen close. Did you hear ... stone grinding against metal?",
+    "featureDesc": " - Enemies are stronger."
+  },
+  "indie_hard010_s": {
+    "name": "Tidal Grief: Agony",
+    "description": "Agony has precipitated and accumulated at this place for years. Look how the light diffracts within the furious tidewaters. The murderous intent emitted is devoid of all emotions.",
+    "featureDesc": " - Enemies do not actively attack; instead, they move towards the center of the battlefield where they <@ba.key>explode</> and deal massive DMG to all operators.\n - Some enemies are much harder to interrupt.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower008": {
+    "name": "Brief History of War: Normal",
+    "description": "I found a few lines of truth. It began with beasts of fury and ended with people killing each other. The bloody conflicts never ended.",
+    "featureDesc": " - Defeating the Tunneling Nidwyrm grants SP Regen Rate <@ba.vup>+30%</>.\n - Defeating the Heavy Sting grants Combo Skill Cooldown Reduction <@ba.vup>+50%</>.\n - Defeating the Bonekrusher Ballista grants Ultimate Gain Efficiency <@ba.vup>+60%</>.\n \n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard018": {
+    "name": "Raging Drummer",
+    "description": "The thundering entity is lured to these lands, trampling the dead and their grievous torment. The war between life and death will never end.",
+    "featureDesc": " - When enraged, the Skydrummer will create protective shields. Each <@ba.key>Arts Reaction</> or <@ba.phy>Physical Status</> dealt by operators removes 1 shield stack.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower015": {
+    "name": "Blightshade File: Thunderclap - Normal",
+    "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
+    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard008": {
+    "name": "Sea of Loathing",
+    "description": "Theirs is a long, seething hatred. The abandoned ones roamed endlessly across the desolate land... The cause of their fury was forgotten with time, but every vessel of hate is capable of drawing power from the endless sea of haze.",
+    "featureDesc": " - Enemies are stronger.\n - The elite enemies will fight as a team.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard020": {
+    "name": "Eyes of Solvent-Kind",
+    "description": "The rivers merge into a cold stream of blood. From within the gash-like depths and under the Stygian currents, the solvent-kind continues to peer.",
+    "featureDesc": " - Enemies have better stats.\n - Enemy forces include Tidewalker δ.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard010": {
+    "name": "Tidal Grief",
+    "description": "Agony has precipitated and accumulated at this place for years. Look how the light diffracts within the furious tidewaters. The murderous intent emitted is devoid of all emotions.",
+    "featureDesc": " - Enemies do not actively attack; instead, they move towards the center of the battlefield where they <@ba.key>explode</> and deal massive DMG to all operators.\n - Some enemies are much harder to interrupt.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Phalanx of Thorns: Agony",
+    "description": "Hone your spears. Strengthen your shields. Witness your hatred and listen to your weakness. Then march forth and sink your weapons into the flesh of death.",
+    "featureDesc": " - Enemies have better stats.\n - Prisms will increase the ATK of the Hedrons.\n - Prisms are now much harder to interrupt.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard017": {
+    "name": "Harrowing Æthillu",
+    "description": "The dust of oblivion blinds every view, while the dirge rises with every note. The flesh of harrowing Æthillu has been spilled, so that death smothers the entire world.",
+    "featureDesc": " - At regular intervals, the controlled operator will be <@ba.key>sealed</>.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
   "indie_battletower001": {
     "name": "Silver Watercutter: Normal",
     "description": "I saw a sliver of light and the flashing blade streaking through the flowing currents, yet it failed to sever its cold, heartless malice. Its grip left its taint upon your sword, and the lingering echo shrouded your form.",
     "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower016_s": {
+    "name": "Glaiver File: Yinglung - Hard",
+    "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
+    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Pulverizing Ammunition: Brutal",
+    "description": "I picked up bits of ferrium, fragments of thoughts and ideas once covered in etchings. The most steadfast commitment was the bullet, smashed to pieces against flesh and bone.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Inorganic Fervor: Brutal",
+    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Earthshaking Hazefyre: Agony",
+    "description": "\"I wield the STAFF! The hazefyre is my HAMMAH! These mountains are DA DRUMS and I! AM! THE! DRUMMAHHH!\"",
+    "featureDesc": " - The Bonekrusher Pyromancer constantly casts hazefyre and deals DMG to all operators. When his HP is low, his hazefyre also applies <@ba.fire>Heat Infliction</>. He is also harder to interrupt and immune to Stagger DMG.\n - When the Bonekrusher Pyromancer takes <@ba.key>Arts Burst</> DMG, he takes additional DMG equal to a percentage of his Max HP and becomes temporarily <@ba.key>sealed</>.\n - The Bonekrusher Pyromancer will keep summoning Elite Raiders and Elite Ambushers.\n - Defeating an enemy with an <@ba.key>Arts Infliction</> also applies 1 stack of the same <@ba.key>Arts Infliction</> to all other enemies.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower016_ex": {
+    "name": "Glaiver File: Yinglung - Brutal",
+    "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
+    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Grievously Besieged: Brutal",
+    "description": "I planned an ambush, one of mud and blood, of wounds torn open, of pain feeding great anguish.",
+    "featureDesc": " - The battlefield has a <@ba.key>Pain Zone</>. An enemy suffers DMG Taken <@ba.vup>+10%</> for every second within the Zone, up to a max of <@ba.vup>+150%</>. The debuff gradually wears off once the enemy leaves the <@ba.key>Pain Zone</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Underflow Chasm: Agony",
+    "description": "Beneath the voiceless waters where icy, dark currents flow in silence, there exists chasms where inorganic constructs lurk.",
+    "featureDesc": " - Enemies are stronger.\n - The Effigy will summon more Aggeloi.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard030_s": {
+    "name": "Shadows That Bind: Agony",
+    "description": "Once the dust of war settled, the silent woods swallowed them all. Only upon this day were they set loose.",
+    "featureDesc": " - After the battle begins, the enemy applies <@ba.key>Imprisonment</> on all operators except for the controlled operator.\n - Operators under <@ba.key>Imprisonment</> will constantly lose HP while giving Blitzcrash Blightshade HP Treatment, ATK boosts, and <@ba.key>resistance to the operator's element</>.\n - Defeating a YSTF Elite Blightshade frees 1 operator from <@ba.key>Imprisonment</>.\n - Blitzcrash Blightshade awakens after all YSTF Elite Blightshades are defeated, or after the battle has progressed for a while.\n\n<@ba.info> - Tacticals and consumables cannot be used.</>\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard007": {
+    "name": "Howling Flame",
+    "description": "Blight the skies! Blight the lightning bolts that no one saw coming! And BLIGHT the fires that rain without warning!",
+    "featureDesc": " - Enemies regularly enter an <@ba.key>Enraged</> state that constantly applies <@ba.fire>Heat Infliction</> on themselves, granting ATK Bonus and DMG Reduction buffs based on the number of Heat Infliction stacks.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard027": {
+    "name": "Arc of Shadow Flare",
+    "description": "The broad blade calls down the sundering element to imbue itself. Thus the ghostly images of war and carnage shall continue to shine bright upon this land.",
+    "featureDesc": " - The cooldown of all operator battle skills has been extended by 60s.\n - At the start of battle, all operators will enter a <@ba.key>Conductant</> state, and continuously take <@ba.pulse>Electric DMG</> based on the number of <@ba.pulse>Electric Infliction</> stacks they have.\n - After an operator in the <@ba.key>Conductant</> state casts a battle skill, the YSTF Captain Blightshade applies 1 stack of <@ba.pulse>Electric Infliction</> on all operators. After the YSTF Captain Blightshade applies <@ba.pulse>Electric Infliction</> on operators for the <@ba.key>4th</> time, reset operator battle skill cooldowns, <@ba.key>dispel</> all stacks of <@ba.pulse>Electric Infliction</> from the operators, and apply a <@ba.pulse>Level 4 Electrification</> on the YSTF Captain Blightshade.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_battletower001_ex": {
     "name": "Silver Watercutter: Brutal",
     "description": "I saw a sliver of light and the flashing blade streaking through the flowing currents, yet it failed to sever its cold, heartless malice. Its grip left its taint upon your sword, and the lingering echo shrouded your form.",
     "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower001_s": {
-    "name": "Silver Watercutter: Hard",
-    "description": "I saw a sliver of light and the flashing blade streaking through the flowing currents, yet it failed to sever its cold, heartless malice. Its grip left its taint upon your sword, and the lingering echo shrouded your form.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  "indie_battletower012_s": {
+    "name": "Inorganic Fervor: Hard",
+    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower002": {
     "name": "Old Tales of the Wild: Normal",
     "description": "Here I commit to words of beasts roaming the ruins of war, clawing and tearing at the names of nations as their rabid froth reduces staves, shields, and cannon shells into molten ferrium.",
     "featureDesc": " - Defeating enemies recovers 15 SP.\n - Battle Skill DMG Dealt <@ba.vup>+60%</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower002_ex": {
-    "name": "Old Tales of the Wild: Brutal",
-    "description": "Here I commit to words of beasts roaming the ruins of war, clawing and tearing at the names of nations as their rabid froth reduces staves, shields, and cannon shells into molten ferrium.",
-    "featureDesc": " - Defeating enemies recovers 15 SP.\n - Battle Skill DMG Dealt <@ba.vup>+60%</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  "indie_battletower012": {
+    "name": "Inorganic Fervor: Normal",
+    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower018_ex": {
+    "name": "Beast File: Qingbo Stockade - Brutal",
+    "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
+    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Wall of Shields: Hard",
+    "description": "I observed a relief effort, where a mass of \"shields\" covered the front of a battle line.",
+    "featureDesc": " - When a Prism is defeated, another Prism will spawn in the battlefield after a while.\n - Prisms are now much harder to interrupt.\n - Defeat the Quillbeast Blightshade to beat the stage. Defeating the Prisms does not affect stage completion.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower017_s": {
+    "name": "Avenger File: Bonekrusher - Hard",
+    "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
+    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Wading in Raker Turf: Agony",
+    "description": "Raking claws have been hidden from sight, as the stampede marches and rivers break. The defeated migrate and take to flight, but the young forget to return the hate.",
+    "featureDesc": " - Enemies have better stats.\n - The Glaring Rakerbeast is permanently <@ba.key>Enraged</> and its ATK increases as its HP falls.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard005": {
+    "name": "Unorthodox Tactics",
+    "description": "The comm devices gave piercing screeches as drones crashed into the ground. The Landbreakers turned to look as they mumbled desires for \"blessings\" and \"vengeance\". \nBehind them stood tall shadowy figures amongst the forest of denstacks.",
+    "featureDesc": " - Enemies cannot move, but they are harder to interrupt and continuously gain ATK."
+  },
+  "indie_battletower001_s": {
+    "name": "Silver Watercutter: Hard",
+    "description": "I saw a sliver of light and the flashing blade streaking through the flowing currents, yet it failed to sever its cold, heartless malice. Its grip left its taint upon your sword, and the lingering echo shrouded your form.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower020": {
+    "name": "Defense File: Shield - Normal",
+    "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
+    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Skirmishers' Æthillu: Hard",
+    "description": "I see a crossbow bolt screech across the heavens. The skirmishers trod along the very brink of reality, their features blending into the cold forms of the Æthillu.",
+    "featureDesc": " - Enemies cannot move but are harder to interrupt.\n - Æthillu that can only be damaged by finishers will appear in the battlefield.\n - Defeating an Æthillu will pull in all enemies, recover 50 SP, and give the controlled operator DMG Dealt <@ba.vup>+100%</> for 10s.\n - Defeat all Bonekrusher Ambushers to clear the stage; defeating the Æthillu is not required.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower015_s": {
+    "name": "Blightshade File: Thunderclap - Hard",
+    "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
+    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower016": {
+    "name": "Glaiver File: Yinglung - Normal",
+    "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
+    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower017": {
+    "name": "Avenger File: Bonekrusher - Normal",
+    "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
+    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Age of Axes: Hard",
+    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard019": {
+    "name": "Phalanx of Thorns",
+    "description": "Hone your spears. Strengthen your shields. Witness your hatred and listen to your weakness. Then march forth and sink your weapons into the flesh of death.",
+    "featureDesc": " - Enemies have better stats.\n - Prisms will increase the ATK of the Hedrons.\n - Prisms are now much harder to interrupt.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower020_ex": {
+    "name": "Defense File: Shield - Brutal",
+    "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
+    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower007": {
+    "name": "Howling of Undying Beasts: Normal",
+    "description": "I heard the sound of your blade scraping the bleached bones of beasts, the hissing song of honing was almost like a thunderous peal.",
+    "featureDesc": " - The Skydrummer will not enter its Enraged state.\n - After entering battle, the Skydrummer gains 50 Resistance against all elements.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower018_s": {
+    "name": "Beast File: Qingbo Stockade - Hard",
+    "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
+    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Withered Sea: Agony",
+    "description": "The turbid currents would eventually subside. The beasts shall wait till the lumbering greataxe smashes through the broken ruins of old and cleaves a way towards new possibilities.",
+    "featureDesc": " - Enemies have better stats.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard004": {
+    "name": "Ballista and Axe",
+    "description": "The Bonekrusher warriors eviscerated the weak and stood atop the platform with their axe and ballista raised. Defeat them and lay both ancient suffering and newfound ambition in the dust. \n\"Hero? How did you earn this title?\"",
+    "featureDesc": " - The 2 elite enemies will fight as a team."
+  },
+  "indie_hard026": {
+    "name": "Feral Carnage of Shadow",
+    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>5</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard004_s": {
+    "name": "Ballista and Axe: Agony",
+    "description": "The Bonekrusher warriors eviscerated the weak and stood atop the platform with their axe and ballista raised. Defeat them and lay both ancient suffering and newfound ambition in the dust. \n\"Hero? How did you earn this title?\"",
+    "featureDesc": " - The 2 elite enemies will fight as a team.\n - When both elite enemies are on the field, they will share the DMG they take.\n \n  <@ba.info>- Tacticals and consumables cannot be used.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Pulverizing Ammunition: Hard",
+    "description": "I picked up bits of ferrium, fragments of thoughts and ideas once covered in etchings. The most steadfast commitment was the bullet, smashed to pieces against flesh and bone.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower020_s": {
+    "name": "Defense File: Shield - Hard",
+    "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
+    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower011": {
+    "name": "Grievously Besieged: Normal",
+    "description": "I planned an ambush, one of mud and blood, of wounds torn open, of pain feeding great anguish.",
+    "featureDesc": " - The battlefield has a <@ba.key>Pain Zone</>. An enemy suffers DMG Taken <@ba.vup>+10%</> for every second within the Zone, up to a max of <@ba.vup>+150%</>. The debuff gradually wears off once the enemy leaves the <@ba.key>Pain Zone</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower004": {
+    "name": "Age of Axes: Normal",
+    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower017_ex": {
+    "name": "Avenger File: Bonekrusher - Brutal",
+    "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
+    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard006_s": {
+    "name": "Survive the Gas: Agony",
+    "description": "The massive factory belched thick, noxious exhaust from its pipes. Who is trying to hide their secrets here? \n\"Draw your steel and raise those shields! Let howl the tuskbeasts of war! And heat up that haze!\"",
+    "featureDesc": " - Careful. The Mist continuously deals DMG to all operators.\n - The Mist deals more DMG and new enemies will appear.\n - When the controlled operator receives HP treatment, other operators in the team also gain 50% of that HP treatment.\n\n  <@ba.info>- Tacticals and consumables cannot be used.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Skirmishers' Æthillu: Brutal",
+    "description": "I see a crossbow bolt screech across the heavens. The skirmishers trod along the very brink of reality, their features blending into the cold forms of the Æthillu.",
+    "featureDesc": " - Enemies cannot move but are harder to interrupt.\n - Æthillu that can only be damaged by finishers will appear in the battlefield.\n - Defeating an Æthillu will pull in all enemies, recover 50 SP, and give the controlled operator DMG Dealt <@ba.vup>+100%</> for 10s.\n - Defeat all Bonekrusher Ambushers to clear the stage; defeating the Æthillu is not required.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower002_s": {
     "name": "Old Tales of the Wild: Hard",
@@ -34,45 +334,15 @@
     "description": "I see a crossbow bolt screech across the heavens. The skirmishers trod along the very brink of reality, their features blending into the cold forms of the Æthillu.",
     "featureDesc": " - Enemies cannot move but are harder to interrupt.\n - Æthillu that can only be damaged by finishers will appear in the battlefield.\n - Defeating an Æthillu will pull in all enemies, recover 50 SP, and give the controlled operator DMG Dealt <@ba.vup>+100%</> for 10s.\n - Defeat all Bonekrusher Ambushers to clear the stage; defeating the Æthillu is not required.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower003_ex": {
-    "name": "Skirmishers' Æthillu: Brutal",
-    "description": "I see a crossbow bolt screech across the heavens. The skirmishers trod along the very brink of reality, their features blending into the cold forms of the Æthillu.",
-    "featureDesc": " - Enemies cannot move but are harder to interrupt.\n - Æthillu that can only be damaged by finishers will appear in the battlefield.\n - Defeating an Æthillu will pull in all enemies, recover 50 SP, and give the controlled operator DMG Dealt <@ba.vup>+100%</> for 10s.\n - Defeat all Bonekrusher Ambushers to clear the stage; defeating the Æthillu is not required.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower003_s": {
-    "name": "Skirmishers' Æthillu: Hard",
-    "description": "I see a crossbow bolt screech across the heavens. The skirmishers trod along the very brink of reality, their features blending into the cold forms of the Æthillu.",
-    "featureDesc": " - Enemies cannot move but are harder to interrupt.\n - Æthillu that can only be damaged by finishers will appear in the battlefield.\n - Defeating an Æthillu will pull in all enemies, recover 50 SP, and give the controlled operator DMG Dealt <@ba.vup>+100%</> for 10s.\n - Defeat all Bonekrusher Ambushers to clear the stage; defeating the Æthillu is not required.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower004": {
-    "name": "Age of Axes: Normal",
-    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower004_ex": {
-    "name": "Age of Axes: Brutal",
-    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower004_s": {
-    "name": "Age of Axes: Hard",
-    "description": "As I ran my fingers halfway across the carvings, the scorching rust sent jolts of pain that shot through the executioner's skin. The weapons were stained by their flesh and blood. The cycle was endless and restless, and came every year.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
   "indie_battletower005": {
     "name": "Pulverizing Ammunition: Normal",
     "description": "I picked up bits of ferrium, fragments of thoughts and ideas once covered in etchings. The most steadfast commitment was the bullet, smashed to pieces against flesh and bone.",
     "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower005_ex": {
-    "name": "Pulverizing Ammunition: Brutal",
-    "description": "I picked up bits of ferrium, fragments of thoughts and ideas once covered in etchings. The most steadfast commitment was the bullet, smashed to pieces against flesh and bone.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower005_s": {
-    "name": "Pulverizing Ammunition: Hard",
-    "description": "I picked up bits of ferrium, fragments of thoughts and ideas once covered in etchings. The most steadfast commitment was the bullet, smashed to pieces against flesh and bone.",
-    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  "indie_hard016_s": {
+    "name": "Ritual Vortex: Agony",
+    "description": "A light flooded the people's vision as they set their gazes upon the maelstrom of despair and rage. Their cries mixed with the deafening thunder as the holder of the beacon waited upon the broken lands.",
+    "featureDesc": " - At regular intervals, the Bonekrusher Pyromancer summons his <@ba.key>doubles</> and channels his ultimate skill for a certain duration. The ultimate deals massive DMG to all operators once channeling is complete. Defeat all the <@ba.key>doubles</> to interrupt the Pyromancer's ultimate.\n - Enemies take additional DMG from <@ba.key>Finishers</>; enemy Staggered duration is also greatly shortened.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_battletower006": {
     "name": "Scars of Landbreaking: Normal",
@@ -89,11 +359,6 @@
     "description": "I learned of a story that started with a warlord's wild ambitions. It led to packs of wolves devouring each other and churned the great sea of sand, till the sound of blood gushing from the broken gashes echoed in our ears.",
     "featureDesc": " - Defeating the Bonekrusher Vanguard grants Stagger Efficiency Bonus <@ba.vup>+50%</>.\n - Defeating the Bonekrusher Arsonist grants Arts Intensity <@ba.vup>+100</>.\n - Defeating the Bonekrusher Executioner grants Skill DMG Dealt <@ba.vup>+100%</>.\n - Defeating the Heavy Ram grants Basic Attack DMG Dealt <@ba.vup>+100%</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower007": {
-    "name": "Howling of Undying Beasts: Normal",
-    "description": "I heard the sound of your blade scraping the bleached bones of beasts, the hissing song of honing was almost like a thunderous peal.",
-    "featureDesc": " - The Skydrummer will not enter its Enraged state.\n - After entering battle, the Skydrummer gains 50 Resistance against all elements.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
   "indie_battletower007_ex": {
     "name": "Howling of Undying Beasts: Brutal",
     "description": "I heard the sound of your blade scraping the bleached bones of beasts, the hissing song of honing was almost like a thunderous peal.",
@@ -103,11 +368,6 @@
     "name": "Howling of Undying Beasts: Hard",
     "description": "I heard the sound of your blade scraping the bleached bones of beasts, the hissing song of honing was almost like a thunderous peal.",
     "featureDesc": " - The Skydrummer will not enter its Enraged state.\n - After entering battle, the Skydrummer gains 50 Resistance against all elements.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower008": {
-    "name": "Brief History of War: Normal",
-    "description": "I found a few lines of truth. It began with beasts of fury and ended with people killing each other. The bloody conflicts never ended.",
-    "featureDesc": " - Defeating the Tunneling Nidwyrm grants SP Regen Rate <@ba.vup>+30%</>.\n - Defeating the Heavy Sting grants Combo Skill Cooldown Reduction <@ba.vup>+50%</>.\n - Defeating the Bonekrusher Ballista grants Ultimate Gain Efficiency <@ba.vup>+60%</>.\n \n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower008_ex": {
     "name": "Brief History of War: Brutal",
@@ -134,50 +394,15 @@
     "description": "I witnessed a funeral, fallen into dark and seething soil, where beasts are driven by lingering shadows.",
     "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower010": {
-    "name": "Wall of Shields: Normal",
-    "description": "I observed a relief effort, where a mass of \"shields\" covered the front of a battle line.",
-    "featureDesc": " - When a Prism is defeated, another Prism will spawn in the battlefield after a while.\n - Prisms are now much harder to interrupt.\n - Defeat the Quillbeast Blightshade to beat the stage. Defeating the Prisms does not affect stage completion.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
   "indie_battletower010_ex": {
     "name": "Wall of Shields: Brutal",
     "description": "I observed a relief effort, where a mass of \"shields\" covered the front of a battle line.",
     "featureDesc": " - When a Prism is defeated, another Prism will spawn in the battlefield after a while.\n - Prisms are now much harder to interrupt.\n - Defeat the Quillbeast Blightshade to beat the stage. Defeating the Prisms does not affect stage completion.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_battletower010_s": {
-    "name": "Wall of Shields: Hard",
-    "description": "I observed a relief effort, where a mass of \"shields\" covered the front of a battle line.",
-    "featureDesc": " - When a Prism is defeated, another Prism will spawn in the battlefield after a while.\n - Prisms are now much harder to interrupt.\n - Defeat the Quillbeast Blightshade to beat the stage. Defeating the Prisms does not affect stage completion.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower011": {
-    "name": "Grievously Besieged: Normal",
-    "description": "I planned an ambush, one of mud and blood, of wounds torn open, of pain feeding great anguish.",
-    "featureDesc": " - The battlefield has a <@ba.key>Pain Zone</>. An enemy suffers DMG Taken <@ba.vup>+10%</> for every second within the Zone, up to a max of <@ba.vup>+150%</>. The debuff gradually wears off once the enemy leaves the <@ba.key>Pain Zone</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower011_ex": {
-    "name": "Grievously Besieged: Brutal",
-    "description": "I planned an ambush, one of mud and blood, of wounds torn open, of pain feeding great anguish.",
-    "featureDesc": " - The battlefield has a <@ba.key>Pain Zone</>. An enemy suffers DMG Taken <@ba.vup>+10%</> for every second within the Zone, up to a max of <@ba.vup>+150%</>. The debuff gradually wears off once the enemy leaves the <@ba.key>Pain Zone</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
   "indie_battletower011_s": {
     "name": "Grievously Besieged: Hard",
     "description": "I planned an ambush, one of mud and blood, of wounds torn open, of pain feeding great anguish.",
     "featureDesc": " - The battlefield has a <@ba.key>Pain Zone</>. An enemy suffers DMG Taken <@ba.vup>+10%</> for every second within the Zone, up to a max of <@ba.vup>+150%</>. The debuff gradually wears off once the enemy leaves the <@ba.key>Pain Zone</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower012": {
-    "name": "Inorganic Fervor: Normal",
-    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
-    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower012_ex": {
-    "name": "Inorganic Fervor: Brutal",
-    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
-    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
-  },
-  "indie_battletower012_s": {
-    "name": "Inorganic Fervor: Hard",
-    "description": "I simulated an assault. Though the Aggeloi do not feel, our vanguards do not know exhaustion.",
-    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower013": {
     "name": "Powerful Decapitation: Normal",
@@ -204,15 +429,40 @@
     "description": "I organized a banquet. The beasts are cunning, but thwarting their plots will reap certain rewards.",
     "featureDesc": " - Defeating a Rockhowler recovers <@ba.vup>10</> SP and grants all operators Arts Intensity <@ba.vup>+15</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
+  "indie_hard026_s": {
+    "name": "Feral Carnage of Shadow: Agony",
+    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>7</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
   "indie_battletower014_s": {
     "name": "Beastly Schemes: Hard",
     "description": "I organized a banquet. The beasts are cunning, but thwarting their plots will reap certain rewards.",
     "featureDesc": " - Defeating a Rockhowler recovers <@ba.vup>10</> SP and grants all operators Arts Intensity <@ba.vup>+15</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
-  "indie_hard001": {
-    "name": "Rampaging Shields",
-    "description": "The snowy fog never seems to dissipate from these wildlands. Crisp sounds of shattering could be heard hidden within the low rumblings. \nListen close. Did you hear ... stone grinding against metal?",
-    "featureDesc": " - Enemies are stronger."
+  "indie_battletower018": {
+    "name": "Beast File: Qingbo Stockade - Normal",
+    "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
+    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Sea of Loathing: Agony",
+    "description": "Theirs is a long, seething hatred. The abandoned ones roamed endlessly across the desolate land... The cause of their fury was forgotten with time, but every vessel of hate is capable of drawing power from the endless sea of haze.",
+    "featureDesc": " - Enemies are stronger and <@ba.key>harder to interrupt</>.\n - The elite enemies will fight as a team, and additional enemies will appear.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_battletower019": {
+    "name": "Construct File: Geist - Normal",
+    "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower019_ex": {
+    "name": "Construct File: Geist - Brutal",
+    "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower019_s": {
+    "name": "Construct File: Geist - Hard",
+    "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_hard001_s": {
     "name": "Rampaging Shields: Agony",
@@ -239,21 +489,6 @@
     "description": "The giant machine wreckage in the distance heralded the great events of the past. Nearby, disassembled entities began to coalesce, creating newborn entities that belched with earth-rending howls. \nThe land began to tremble as the Aggeloi slammed into the ground and waded their ponderous steps.",
     "featureDesc": " - Operator Stamina regeneration rate is greatly reduced.\n - Enemies are stronger and immune to Stagger.\n - The Walking Chrysopolis recovers from weakpoint exposures more quickly. Failing to destroy a weakpoint before weakpoint exposure ends gives the Walking Chrysopolis a massive ATK buff. Successfully destroying the weakpoint applies Staggered to the Walking Chrysopolis.\n\n  <@ba.info>- Tacticals and consumables cannot be used.</>"
   },
-  "indie_hard004": {
-    "name": "Ballista and Axe",
-    "description": "The Bonekrusher warriors eviscerated the weak and stood atop the platform with their axe and ballista raised. Defeat them and lay both ancient suffering and newfound ambition in the dust. \n\"Hero? How did you earn this title?\"",
-    "featureDesc": " - The 2 elite enemies will fight as a team."
-  },
-  "indie_hard004_s": {
-    "name": "Ballista and Axe: Agony",
-    "description": "The Bonekrusher warriors eviscerated the weak and stood atop the platform with their axe and ballista raised. Defeat them and lay both ancient suffering and newfound ambition in the dust. \n\"Hero? How did you earn this title?\"",
-    "featureDesc": " - The 2 elite enemies will fight as a team.\n - When both elite enemies are on the field, they will share the DMG they take.\n \n  <@ba.info>- Tacticals and consumables cannot be used.</>"
-  },
-  "indie_hard005": {
-    "name": "Unorthodox Tactics",
-    "description": "The comm devices gave piercing screeches as drones crashed into the ground. The Landbreakers turned to look as they mumbled desires for \"blessings\" and \"vengeance\". \nBehind them stood tall shadowy figures amongst the forest of denstacks.",
-    "featureDesc": " - Enemies cannot move, but they are harder to interrupt and continuously gain ATK."
-  },
   "indie_hard005_s": {
     "name": "Unorthodox Tactics: Agony",
     "description": "The comm devices gave piercing screeches as drones crashed into the ground. The Landbreakers turned to look as they mumbled desires for \"blessings\" and \"vengeance\". \nBehind them stood tall shadowy figures amongst the forest of denstacks.",
@@ -264,60 +499,10 @@
     "description": "The massive factory belched thick, noxious exhaust from its pipes. Who is trying to hide their secrets here? \n\"Draw your steel and raise those shields! Let howl the tuskbeasts of war! And heat up that haze!\"",
     "featureDesc": " - Careful. The Mist continuously deals DMG to all operators.\n - When the controlled operator receives HP treatment, other operators in the team also gain 70% of that HP treatment."
   },
-  "indie_hard006_s": {
-    "name": "Survive the Gas: Agony",
-    "description": "The massive factory belched thick, noxious exhaust from its pipes. Who is trying to hide their secrets here? \n\"Draw your steel and raise those shields! Let howl the tuskbeasts of war! And heat up that haze!\"",
-    "featureDesc": " - Careful. The Mist continuously deals DMG to all operators.\n - The Mist deals more DMG and new enemies will appear.\n - When the controlled operator receives HP treatment, other operators in the team also gain 50% of that HP treatment.\n\n  <@ba.info>- Tacticals and consumables cannot be used.</>"
-  },
-  "indie_hard007": {
-    "name": "Howling Flame",
-    "description": "Blight the skies! Blight the lightning bolts that no one saw coming! And BLIGHT the fires that rain without warning!",
-    "featureDesc": " - Enemies regularly enter an <@ba.key>Enraged</> state that constantly applies <@ba.fire>Heat Infliction</> on themselves, granting ATK Bonus and DMG Reduction buffs based on the number of Heat Infliction stacks.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
   "indie_hard007_s": {
     "name": "Howling Flame: Agony",
     "description": "Blight the skies! Blight the lightning bolts that no one saw coming! And BLIGHT the fires that rain without warning!",
     "featureDesc": " - Enemies regularly enter an <@ba.key>Enraged</> state that constantly applies <@ba.fire>Heat Infliction</> on themselves, granting ATK Bonus and DMG Reduction buffs based on the number of Heat Infliction stacks.\n - During <@ba.key>Enraged</>, <@ba.key>operators no longer have SP regeneration</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard008": {
-    "name": "Sea of Loathing",
-    "description": "Theirs is a long, seething hatred. The abandoned ones roamed endlessly across the desolate land... The cause of their fury was forgotten with time, but every vessel of hate is capable of drawing power from the endless sea of haze.",
-    "featureDesc": " - Enemies are stronger.\n - The elite enemies will fight as a team.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard008_s": {
-    "name": "Sea of Loathing: Agony",
-    "description": "Theirs is a long, seething hatred. The abandoned ones roamed endlessly across the desolate land... The cause of their fury was forgotten with time, but every vessel of hate is capable of drawing power from the endless sea of haze.",
-    "featureDesc": " - Enemies are stronger and <@ba.key>harder to interrupt</>.\n - The elite enemies will fight as a team, and additional enemies will appear.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard009": {
-    "name": "Melting Point of Flesh",
-    "description": "BURN! Let it all burn! Topple the tower and melt the ship! Pour our blood into the boiling molten iron and use it to cleanse Talos-II!",
-    "featureDesc": " - Enemies are stronger.\n - Exploding Firemist Originium Slugs spawn periodically.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard009_s": {
-    "name": "Melting Point of Flesh: Agony",
-    "description": "BURN! Let it all burn! Topple the tower and melt the ship! Pour our blood into the boiling molten iron and use it to cleanse Talos-II!",
-    "featureDesc": " - Enemies are stronger and <@ba.key>additional enemies will appear</>.\n - Exploding Firemist Originium Slugs spawn periodically.\n - <@ba.key>Operators cannot perform Perfect Dodge</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard010": {
-    "name": "Tidal Grief",
-    "description": "Agony has precipitated and accumulated at this place for years. Look how the light diffracts within the furious tidewaters. The murderous intent emitted is devoid of all emotions.",
-    "featureDesc": " - Enemies do not actively attack; instead, they move towards the center of the battlefield where they <@ba.key>explode</> and deal massive DMG to all operators.\n - Some enemies are much harder to interrupt.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard010_s": {
-    "name": "Tidal Grief: Agony",
-    "description": "Agony has precipitated and accumulated at this place for years. Look how the light diffracts within the furious tidewaters. The murderous intent emitted is devoid of all emotions.",
-    "featureDesc": " - Enemies do not actively attack; instead, they move towards the center of the battlefield where they <@ba.key>explode</> and deal massive DMG to all operators.\n - Some enemies are much harder to interrupt.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard011": {
-    "name": "Cryostatic Connection",
-    "description": "Extreme frigidity connects them. The surging waves and turbid undercurrents offer them a common name and meaning behind their creation.",
-    "featureDesc": " - Enemies are stronger.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard011_s": {
-    "name": "Cryostatic Connection: Agony",
-    "description": "Extreme frigidity connects them. The surging waves and turbid undercurrents offer them a common name and meaning behind their creation.",
-    "featureDesc": " - Enemies are stronger.\n - When enhanced, all DMG dealt by the enemy will instantly apply <@ba.cryst>Solidification</> to operators.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard012": {
     "name": "Blood Debased",
@@ -344,90 +529,35 @@
     "description": "The turbid currents would eventually subside. The beasts shall wait till the lumbering greataxe smashes through the broken ruins of old and cleaves a way towards new possibilities.",
     "featureDesc": " - Enemies have better stats.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
-  "indie_hard014_s": {
-    "name": "Withered Sea: Agony",
-    "description": "The turbid currents would eventually subside. The beasts shall wait till the lumbering greataxe smashes through the broken ruins of old and cleaves a way towards new possibilities.",
-    "featureDesc": " - Enemies have better stats.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
   "indie_hard015": {
     "name": "Underflow Chasm",
     "description": "Beneath the voiceless waters where icy, dark currents flow in silence, there exists chasms where inorganic constructs lurk.",
     "featureDesc": " - Enemies are stronger.\n - The Effigy will summon more Aggeloi.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard015_s": {
-    "name": "Underflow Chasm: Agony",
-    "description": "Beneath the voiceless waters where icy, dark currents flow in silence, there exists chasms where inorganic constructs lurk.",
-    "featureDesc": " - Enemies are stronger.\n - The Effigy will summon more Aggeloi.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard016": {
     "name": "Ritual Vortex",
     "description": "A light flooded the people's vision as they set their gazes upon the maelstrom of despair and rage. Their cries mixed with the deafening thunder as the holder of the beacon waited upon the broken lands.",
     "featureDesc": " - At regular intervals, the Bonekrusher Pyromancer summons his <@ba.key>doubles</> and channels his ultimate skill for a certain duration. The ultimate deals massive DMG to all operators once channeling is complete. Defeat all the <@ba.key>doubles</> to interrupt the Pyromancer's ultimate.\n - Enemies take additional DMG from <@ba.key>Finishers</>; enemy Staggered duration is also greatly shortened.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
-  "indie_hard016_s": {
-    "name": "Ritual Vortex: Agony",
-    "description": "A light flooded the people's vision as they set their gazes upon the maelstrom of despair and rage. Their cries mixed with the deafening thunder as the holder of the beacon waited upon the broken lands.",
-    "featureDesc": " - At regular intervals, the Bonekrusher Pyromancer summons his <@ba.key>doubles</> and channels his ultimate skill for a certain duration. The ultimate deals massive DMG to all operators once channeling is complete. Defeat all the <@ba.key>doubles</> to interrupt the Pyromancer's ultimate.\n - Enemies take additional DMG from <@ba.key>Finishers</>; enemy Staggered duration is also greatly shortened.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard017": {
-    "name": "Harrowing Æthillu",
-    "description": "The dust of oblivion blinds every view, while the dirge rises with every note. The flesh of harrowing Æthillu has been spilled, so that death smothers the entire world.",
-    "featureDesc": " - At regular intervals, the controlled operator will be <@ba.key>sealed</>.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
   "indie_hard017_s": {
     "name": "Harrowing Æthillu: Agony",
     "description": "The dust of oblivion blinds every view, while the dirge rises with every note. The flesh of harrowing Æthillu has been spilled, so that death smothers the entire world.",
     "featureDesc": " - At regular intervals, the controlled operator will be <@ba.key>sealed</>; this <@ba.key>seal</> also lasts much longer.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard018": {
-    "name": "Raging Drummer",
-    "description": "The thundering entity is lured to these lands, trampling the dead and their grievous torment. The war between life and death will never end.",
-    "featureDesc": " - When enraged, the Skydrummer will create protective shields. Each <@ba.key>Arts Reaction</> or <@ba.phy>Physical Status</> dealt by operators removes 1 shield stack.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard018_s": {
     "name": "Raging Drummer: Agony",
     "description": "The thundering entity is lured to these lands, trampling the dead and their grievous torment. The war between life and death will never end.",
     "featureDesc": " - When calm, the Skydrummer will create a <@ba.key>Vortex</> every time it deals DMG to the controlled operator.\n - When enraged, the Skydrummer absorbs all <@ba.key>Vortices</> on the battlefield to create protective shields Each <@ba.key>Vortex</> absorbed increases the number of shield stacks. Each <@ba.key>Arts Reaction</> or <@ba.phy>Physical Status</> dealt by operators removes 1 shield stack.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
-  "indie_hard019": {
-    "name": "Phalanx of Thorns",
-    "description": "Hone your spears. Strengthen your shields. Witness your hatred and listen to your weakness. Then march forth and sink your weapons into the flesh of death.",
-    "featureDesc": " - Enemies have better stats.\n - Prisms will increase the ATK of the Hedrons.\n - Prisms are now much harder to interrupt.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard019_s": {
-    "name": "Phalanx of Thorns: Agony",
-    "description": "Hone your spears. Strengthen your shields. Witness your hatred and listen to your weakness. Then march forth and sink your weapons into the flesh of death.",
-    "featureDesc": " - Enemies have better stats.\n - Prisms will increase the ATK of the Hedrons.\n - Prisms are now much harder to interrupt.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard020": {
-    "name": "Eyes of Solvent-Kind",
-    "description": "The rivers merge into a cold stream of blood. From within the gash-like depths and under the Stygian currents, the solvent-kind continues to peer.",
-    "featureDesc": " - Enemies have better stats.\n - Enemy forces include Tidewalker δ.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard020_s": {
-    "name": "Eyes of Solvent-Kind: Agony",
-    "description": "The rivers merge into a cold stream of blood. From within the gash-like depths and under the Stygian currents, the solvent-kind continues to peer.",
-    "featureDesc": " - Enemies have better stats.\n - Enemy forces include Tidewalker δ.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard021": {
-    "name": "Wading in Raker Turf",
-    "description": "Raking claws have been hidden from sight, as the stampede marches and rivers break. The defeated migrate and take to flight, but the young forget to return the hate.",
-    "featureDesc": " - Enemies have better stats.\n - The Glaring Rakerbeast is permanently <@ba.key>Enraged</> and its ATK increases as its HP falls.\n \n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard021_s": {
-    "name": "Wading in Raker Turf: Agony",
-    "description": "Raking claws have been hidden from sight, as the stampede marches and rivers break. The defeated migrate and take to flight, but the young forget to return the hate.",
-    "featureDesc": " - Enemies have better stats.\n - The Glaring Rakerbeast is permanently <@ba.key>Enraged</> and its ATK increases as its HP falls.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  "indie_hard024": {
+    "name": "King of the Crag",
+    "description": "It's a rare sight to see howlers fighting for supremacy. The winner takes the throne, while losers end up as bones... So ready your guns and blades, the new King of the Crag has just been made.",
+    "featureDesc": " - Duration of <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</>, and <@ba.phy>Breach</> applied to the Craghowler becomes permanent. Effects of <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Shatter</>, and <@ba.phy>Breach</> applied to the Craghowler also becomes stronger. The aforementioned Arts Reactions and Physical Status also persist after <@ba.key>consumption</>.\n - The Craghowler will unleash a furious roar on a regular basis. The furious roar applies <@ba.key>Stun</> on all operators.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard022": {
     "name": "Earthshaking Hazefyre",
     "description": "\"I wield the STAFF! The hazefyre is my HAMMAH! These mountains are DA DRUMS and I! AM! THE! DRUMMAHHH!\"",
     "featureDesc": " - The Bonekrusher Pyromancer constantly casts hazefyre and deals DMG to all operators. He is also harder to interrupt and immune to Stagger DMG.\n - When the Bonekrusher Pyromancer takes <@ba.key>Arts Burst</> DMG, he takes additional DMG equal to a percentage of his Max HP and becomes temporarily <@ba.key>sealed</>.\n - The Bonekrusher Pyromancer will keep summoning Elite Raiders and Elite Ambushers.\n - Defeating an enemy with an <@ba.key>Arts Infliction</> also applies 1 stack of the same <@ba.key>Arts Infliction</> to all other enemies.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard022_s": {
-    "name": "Earthshaking Hazefyre: Agony",
-    "description": "\"I wield the STAFF! The hazefyre is my HAMMAH! These mountains are DA DRUMS and I! AM! THE! DRUMMAHHH!\"",
-    "featureDesc": " - The Bonekrusher Pyromancer constantly casts hazefyre and deals DMG to all operators. When his HP is low, his hazefyre also applies <@ba.fire>Heat Infliction</>. He is also harder to interrupt and immune to Stagger DMG.\n - When the Bonekrusher Pyromancer takes <@ba.key>Arts Burst</> DMG, he takes additional DMG equal to a percentage of his Max HP and becomes temporarily <@ba.key>sealed</>.\n - The Bonekrusher Pyromancer will keep summoning Elite Raiders and Elite Ambushers.\n - Defeating an enemy with an <@ba.key>Arts Infliction</> also applies 1 stack of the same <@ba.key>Arts Infliction</> to all other enemies.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard023": {
     "name": "Mangler and Friends",
@@ -439,11 +569,6 @@
     "description": "People have all sorts of skills, but beasts have all sorts of tricks. If you're interested to see who's best, the stage is yours for the taking.",
     "featureDesc": " - <@ba.key>Operators no longer have SP regeneration</>.\n - The controlled operator will recover some SP by stepping on banana peels thrown by the rockhowlers.\n - The Armored Manglerbeast will cast its ultimate on a regular basis. The ultimate removes all banana peels from the battlefield, and continuously deals DMG to all operators. While casting its ultimate, the Armored Manglerbeast gains high DMG Reduction. <@ba.key>Multiple interruptions</> can stop the casting of this ultimate.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
-  "indie_hard024": {
-    "name": "King of the Crag",
-    "description": "It's a rare sight to see howlers fighting for supremacy. The winner takes the throne, while losers end up as bones... So ready your guns and blades, the new King of the Crag has just been made.",
-    "featureDesc": " - Duration of <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</>, and <@ba.phy>Breach</> applied to the Craghowler becomes permanent. Effects of <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Shatter</>, and <@ba.phy>Breach</> applied to the Craghowler also becomes stronger. The aforementioned Arts Reactions and Physical Status also persist after <@ba.key>consumption</>.\n - The Craghowler will unleash a furious roar on a regular basis. The furious roar applies <@ba.key>Stun</> on all operators.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
   "indie_hard024_s": {
     "name": "King of the Crag: Agony",
     "description": "It's a rare sight to see howlers fighting for supremacy. The winner takes the throne, while losers end up as bones... So ready your guns and blades, the new King of the Crag has just been made.",
@@ -454,25 +579,15 @@
     "description": "The band of Qingbo Stockaders sing the chorus of blades. No longer yearning for a home unmade, heroic spirit and wild ambitions drove them on to ascend the peak.",
     "featureDesc": " - Defeating the enemy restores some HP to all other enemies and permanently raises their ATK and Max HP.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
+  "indie_hard033_s": {
+    "name": "Critters That Dig: Agony",
+    "description": "The frigid and dark season has ended. The hibernating critters stir and call to each other... They are legion, and they are waking.",
+    "featureDesc": " - Careful. The Mist continuously deals <@ba.key>gradually increasing DMG</> to all operators. <@ba.key>Mist DMG is also greatly increased</>.\n - The Woodcraft Slug will burrow underground and restore all its <@ba.key>shield stacks</> on a regular basis. Defeating a Woodcraft Slug will temporarily reduce Mist DMG.\n - After the battle begins, 1 random Woodcraft Slug will lose all its <@ba.key>shield stacks</> and no longer restore them. Defeating it will cause 1 random Woodcraft Slug to lose all its <@ba.key>shield stacks</> and no longer restore them.\n\n<@ba.info> - Tacticals and consumables cannot be used.</>\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
   "indie_hard025_s": {
     "name": "Visitors of Qingbo: Agony",
     "description": "The band of Qingbo Stockaders sing the chorus of blades. No longer yearning for a home unmade, heroic spirit and wild ambitions drove them on to ascend the peak.",
     "featureDesc": " - Defeating the enemy restores some HP to all other enemies and permanently raises their ATK and Max HP.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard026": {
-    "name": "Feral Carnage of Shadow",
-    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
-    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>5</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard026_s": {
-    "name": "Feral Carnage of Shadow: Agony",
-    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
-    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>7</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
-  },
-  "indie_hard027": {
-    "name": "Arc of Shadow Flare",
-    "description": "The broad blade calls down the sundering element to imbue itself. Thus the ghostly images of war and carnage shall continue to shine bright upon this land.",
-    "featureDesc": " - The cooldown of all operator battle skills has been extended by 60s.\n - At the start of battle, all operators will enter a <@ba.key>Conductant</> state, and continuously take <@ba.pulse>Electric DMG</> based on the number of <@ba.pulse>Electric Infliction</> stacks they have.\n - After an operator in the <@ba.key>Conductant</> state casts a battle skill, the YSTF Captain Blightshade applies 1 stack of <@ba.pulse>Electric Infliction</> on all operators. After the YSTF Captain Blightshade applies <@ba.pulse>Electric Infliction</> on operators for the <@ba.key>4th</> time, reset operator battle skill cooldowns, <@ba.key>dispel</> all stacks of <@ba.pulse>Electric Infliction</> from the operators, and apply a <@ba.pulse>Level 4 Electrification</> on the YSTF Captain Blightshade.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard027_s": {
     "name": "Arc of Shadow Flare: Agony",
@@ -482,21 +597,36 @@
   "indie_hard028": {
     "name": "Sudden Roar of Oblivion",
     "description": "\"The time is up. Let the endless cycles of oblivion begin.\"",
-    "featureDesc": "- <@ba.key>Operators no longer have SP regeneration</>. \n- After the battle begins, operators' starting SP and Max SP are increased to 1000. \n- Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators. \n- The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged. \n- When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator. \n- When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses. \n\n<@ba.info>- Enemies have the same resistance against every element.</>"
+    "featureDesc": " - <@ba.key>Operators no longer have SP regeneration</>.\n - After the battle begins, operators' starting SP and Max SP are increased to 1000.\n - Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators.\n - The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged.\n - When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator.\n - When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard028_s": {
     "name": "Sudden Roar of Oblivion: Agony",
     "description": "\"The time is up. Let the endless cycles of oblivion begin.\"",
-    "featureDesc": "- <@ba.key>Operators no longer have SP regeneration. Final Strikes and Finisher attacks no longer recover SP</>. \n- After the battle begins, operators' starting SP and Max SP are increased to 1000. \n- Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators. \n- The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged. \n- When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator. \n- When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses. \n\n<@ba.info>- Tacticals and consumables cannot be used.</> \n<@ba.info>- Enemies have the same resistance against every element.</>"
+    "featureDesc": " - <@ba.key>Operators no longer have SP regeneration. Final Strikes and Finisher attacks no longer recover SP</>.\n - After the battle begins, operators' starting SP and Max SP are increased to 1000.\n - Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators.\n - The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged.\n - When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator.\n - When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
-  "indie_hard029": {
-    "name": "Tri-Aggelated Targeting",
-    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
-    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  "indie_hard030": {
+    "name": "Shadows That Bind",
+    "description": "Once the dust of war settled, the silent woods swallowed them all. Only upon this day were they set loose.",
+    "featureDesc": " - After the battle begins, the enemy applies <@ba.key>Imprisonment</> on all operators except for the controlled operator.\n - Operators under <@ba.key>Imprisonment</> will constantly lose HP while giving Blitzcrash Blightshade HP Treatment and ATK boosts.\n - Defeating a YSTF Elite Blightshade frees 1 operator from <@ba.key>Imprisonment</>.\n - Blitzcrash Blightshade awakens after all YSTF Elite Blightshades are defeated, or after the battle has progressed for a while.\n\n<@ba.info> - Enemies have the same resistance against every element.</>"
   },
-  "indie_hard029_s": {
-    "name": "Tri-Aggelated Targeting: Agony",
-    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
-    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n - When an enemy is defeated for the first time, the other enemies gain an ATK boost and faster ATK speeds.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  "indie_hard031": {
+    "name": "Woodcrafts That Link",
+    "description": "From the same root they were born, in the same grave they shall sleep.",
+    "featureDesc": " - After the battle begins, the Woodcraft Wanderer will continuously move towards the other Woodcraft Wanderer, creating an energy link that deals DMG over time. While the energy link exists, defeating one Woodcraft Wanderer will also defeat the other. \n - When the Woodcraft Wanderers reach the same position, they will trigger an <@ba.key>explosion</> that deals DMG (based on Max HP) to all operators. \n\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard031_s": {
+    "name": "Woodcrafts That Link: Agony",
+    "description": "From the same root they were born, in the same grave they shall sleep.",
+    "featureDesc": " - After the battle begins, the Woodcraft Wanderer will continuously move towards the other Woodcraft Wanderer, creating an energy link that deals DMG over time. While the energy link exists, defeating one Woodcraft Wanderer will also defeat the other.\n - When the Woodcraft Wanderers reach the same position, they will trigger an <@ba.key>explosion</> that deals DMG (based on Max HP) to all operators.\n - Woodcraft Wanderers move faster. Every subsequent <@ba.key>explosion</> deals higher DMG.\n\n<@ba.info> - Tacticals and consumables cannot be used.</>\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard032": {
+    "name": "Hatred That Sprawls",
+    "description": "Let the roots reach for the heavens, let hatred sprawl across the land ... and let the wrath from years of abandonment echo in every legend.",
+    "featureDesc": " - After the battle begins, the operators' Max SP is increased to 400.\n - Gloomwald's Rage will enter its charging state on a regular basis and gain a large number of <@ba.key>shield stacks</>. When its charging up is complete, it will cast its ultimate that deals massive DMG to all operators. Break all <@ba.key>shield stacks</> to interrupt the charging state.\n - When Gloomwald's Rage enters its charging state, it also summons 4 Woodcraft Wanderers. After a Woodcraft Wanderer's <@ba.key>shield stacks</> are shattered, it will immediately disappear and restore 200 SP for the operators.\n - While Gloomwald's Rage is protected by <@ba.key>shield stack(s)</>, <@ba.key>operators no longer have SP regeneration and their Final Strikes and Finishers no longer recover SP.</>.\n\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard033": {
+    "name": "Critters That Dig",
+    "description": "The frigid and dark season has ended. The hibernating critters stir and call to each other... They are legion, and they are waking.",
+    "featureDesc": " - Careful. The Mist continuously deals <@ba.key>gradually increasing DMG</> to all operators.\n - The Woodcraft Slug will burrow underground and restore all its <@ba.key>shield stacks</> on a regular basis. Defeating a Woodcraft Slug will temporarily reduce Mist DMG.\n - After the battle begins, 1 random Woodcraft Slug will lose all its <@ba.key>shield stacks</> and no longer restore them. Defeating it will cause 1 random Woodcraft Slug to lose all its <@ba.key>shield stacks</> and no longer restore them.\n\n<@ba.info> - Enemies have the same resistance against every element.</>"
   }
 }

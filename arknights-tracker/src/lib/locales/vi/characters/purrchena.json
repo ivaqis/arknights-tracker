@@ -47,12 +47,12 @@
     "comboSkill": {
       "name": "BÁNH HAY \"QUÀ\"",
       "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển bị tấn công.\nNém một <@ba.key>Hộp Quà</> về phía cán viên đang điều khiển. <@ba.key>Hộp Quà</> sẽ mở sau một khoảng thời gian ngắn, giúp <@ba.heal>Hồi Phục HP</> cho các cán viên gần đó, đồng thời mở ngẫu nhiên 1 trong các vật phẩm sau và kích hoạt hiệu ứng của vật phẩm được hé lộ:\n<@ba.key>Bom</>: Gây <@ba.pd>ST Vật Lý</> và thêm Suy Sụp cho kẻ địch trong phạm vi hiệu ứng.\n<@ba.key>Đồ Thủ Công</>: Liên tục kéo các kẻ địch gần lại và gây <@ba.pd>ST Vật Lý</>.\n<@ba.key>Tráng Miệng Ngon Lành</>: Giúp <@ba.heal>Hồi Phục HP</> cho cán viên đang điều khiển.\nThuộc tính Ý Chí sẽ tăng lượng Hồi Phục HP.",
-      "baseTreatment": "Hồi Phục Căn Cứ",
+      "baseTreatment": "Hồi Phục Cơ Bản",
       "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
       "bombDmgMultiplier": "Bom: Hệ Số ST",
       "bombStagger": "Bom: Suy Sụp",
       "handicraftDmgMultiplier": "Đồ Thủ Công: Hệ Số ST",
-      "yummyDessertBaseTreatment": "Tráng Miệng Ngon Lành: Hồi Phục Căn Cứ",
+      "yummyDessertBaseTreatment": "Tráng Miệng Ngon Lành: Hồi Phục Cơ Bản",
       "yummyDessertTreatmentIncreasePerWill": "Tráng Miệng Ngon Lành: Tăng Hồi Phục Theo Ý Chí",
       "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
@@ -82,7 +82,7 @@
         "KN chiến đấu <@ba.key>KHÔNG NGỦ ĐÂU MÀ!</> được cường hóa: Sau khi chặn thành công đòn tấn công của kẻ địch lần đầu tiên, nhận thêm <@ba.vup>{talent_1_usp:0}</> Năng Lượng Tuyệt Kỹ. Tỷ lệ xuất hiện <@ba.key>Đặc Sản Đại Sứ</> trong lần thi triển Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> tiếp theo tăng thêm <@ba.vup>{talent1_prob_up:0%}</>. Hiệu ứng này có thể cộng dồn tối đa <@ba.vup>{talent_1_stack:0}</> tầng.",
         "KN chiến đấu <@ba.key>KHÔNG NGỦ ĐÂU MÀ!</> được cường hóa: Sau khi chặn thành công đòn tấn công của kẻ địch lần đầu tiên, nhận thêm <@ba.vup>{talent_1_usp:0}</> Năng Lượng Tuyệt Kỹ. Tỷ lệ xuất hiện <@ba.key>Đặc Sản Đại Sứ</> trong lần thi triển Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> tiếp theo tăng thêm <@ba.vup>{talent1_prob_up:0%}</>. Hiệu ứng này có thể cộng dồn tối đa <@ba.vup>{talent_1_stack:0}</> tầng."
       ],
-      "name": "Giờ mới xin lỗi thì đã MUỘN rồi!"
+      "name": "Giờ mới xin lỗi thì đã MUỘN rồi"
     },
     "talent2": {
       "levels": [
@@ -557,7 +557,7 @@
       "name": "Sau Bữa Đại Tiệc"
     },
     "potential5": {
-      "description": "Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> được cường hóa:\nHệ Số ST <@ba.key>Đặc Sản Đại Sứ</> tăng lên bằng <@ba.vup>{atk_scale_ult:0.0}</> lần ban đầu.\n<@ba.key>Đặc Sản Đại Sứ</>: <#ba.spellvul>Yếu Hóa Thuật Pháp</> tăng lên bằng <@ba.vup>{rate_vul:0.0}</> lần so với ban đầu.",
+      "description": "Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> được cường hóa:\n<@ba.key>Đặc Sản Đại Sứ</>: Hệ Số ST tăng lên bằng <@ba.vup>{atk_scale_ult:0.0}</> lần so với ban đầu.\n<@ba.key>Đặc Sản Đại Sứ</>: <#ba.spellvul>Yếu Hóa Thuật Pháp</> tăng lên bằng <@ba.vup>{rate_vul:0.0}</> lần so với ban đầu.",
       "name": "Nóng Rực Tựa Lửa Nướng"
     }
   },

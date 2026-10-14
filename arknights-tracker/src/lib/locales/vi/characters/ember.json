@@ -46,7 +46,7 @@
       "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển bị tấn công. \nNhảy tới kẻ địch mục tiêu và tung một cú chém mạnh, gây <@ba.pd>ST Vật Lý</> và <#ba.knockdown>Quật Ngã</> đồng thời hồi HP cho cán viên đang điều khiển. Thuộc tính của Ý Chí tăng lượng HP hồi phục.",
       "dmgMultiplier": "Hệ Số ST",
       "stagger": "Suy Sụp",
-      "baseTreatment": "Hồi Phục Căn Cứ",
+      "baseTreatment": "Hồi Phục Cơ Bản",
       "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
       "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },

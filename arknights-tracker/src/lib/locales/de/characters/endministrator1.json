@@ -386,8 +386,8 @@
       "name": "Der Leitstern"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "Technik-Intensität <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>. Der von der Ultimativen Fertigkeit <@ba.key>Bombardement-Sequenz</> verursachte SDN wird auf das <@ba.vup>{atk_scale}</>-fache des Ursprungswertes erhöht.",
+      "name": "Originium-Kommandant"
     },
     "potential5": {
       "description": "???",

@@ -7,6 +7,22 @@
       "Evita el escupitajo venenoso. Pisar encima infligirá DAÑ por naturaleza continuo al operador."
     ]
   },
+  "eny_0059_erhound": {
+    "name": "Bestia colmilluda de bruma ardiente",
+    "nickname": "Bestia colmilluda de bruma ardiente",
+    "description": "Una bestia colmilluda corrompida por la bruma ardiente. Estas pequeñas aberraciones suelen moverse en manadas y pueden representar una grave amenaza, incluso para equipos de campo completamente armados.",
+    "abilities": [
+      "Menos inteligente pero más feroz que las bestias colmilludas comunes. Esquiva su ataque de zarpazo para hacerlo caer al suelo."
+    ]
+  },
+  "eny_0085_hsrogue": {
+    "name": "Navaja de Nimbus",
+    "nickname": "Navaja de Nimbus",
+    "description": "Un criminal armado con un arma extraña. Cuando el Acechador de nubes se cansa de usar la linterna extraña, saca una espada corta y se lanza al combate cuerpo a cuerpo.",
+    "abilities": [
+      "Usa ganchos de cadena para atacar a los operadores aliados. Los operadores encadenados quedarán Aturdidos a menos que sean liberados."
+    ]
+  },
   "eny_0018_lbtough": {
     "name": "Verdugo Rompehuesos",
     "nickname": "Verdugo Rompehuesos",
@@ -14,6 +30,24 @@
     "abilities": [
       "Su ataque de agarre inflige DAÑ masivo. Si un operador es agarrado, usa la habilidad de otro operador para interrumpirlo y liberar al operador atrapado.",
       "Esquivar los hachazos dobles cargados no será fácil. Intenta interrumpirlo en su lugar."
+    ]
+  },
+  "eny_0046_lbshamman": {
+    "name": "Piromante Rompehuesos",
+    "nickname": "Piromante Rompehuesos",
+    "description": "Un Rompesuelos capaz de dominar las Artes de originio de evocación. Los piromantes son muy peligrosos debido a que pueden prender fuego el campo de batalla con sus artes ígneas.",
+    "abilities": [
+      "Este enemigo tiene poderosos ataques a distancia que infligen DAÑ por calor, pero tiene poca movilidad.",
+      "Este enemigo hace que la bruma ardiente brote del suelo para infligir DAÑ por calor. Intenta esquivar el ataque.",
+      "Se teletransporta instantáneamente a un lugar lejano cuando los oponentes se acercan demasiado."
+    ]
+  },
+  "eny_0063_agmelee2": {
+    "name": "Carnero α",
+    "nickname": "Carnero α",
+    "description": "El “Kriosson Anavon” (ID de archivo: ACL071α) es una variante energizada de ACL071. El exceso de energía en esta entidad le da un característico tono rojo brillante, lo que también la hace más rápida y poderosa que la versión estándar.",
+    "abilities": [
+      "Este enemigo no tiene habilidades especiales."
     ]
   },
   "eny_0021_agmelee": {
@@ -40,6 +74,25 @@
       "Este enemigo no tiene habilidades especiales."
     ]
   },
+  "eny_0061_palecore": {
+    "name": "Aggelomoirai de mármol",
+    "nickname": "Aggelomoirai de mármol",
+    "description": "SIN REGISTROS PREVIOS. La naturaleza de su formación llevó a clasificarlo como un Aggelos. Aunque se reensamblaron sus módulos mórficos, la entidad sigue imitando la apariencia de Nefarith. Aún no existen explicaciones satisfactorias para este fenómeno.",
+    "abilities": [
+      "Derrota todos los Apéndices de mármol para obligar al Aggelomoirai de mármol inactivo a exponer temporalmente su núcleo vulnerable al ataque."
+    ]
+  },
+  "eny_0090_wgabyss": {
+    "name": "Tidalklast",
+    "nickname": "Tidalklast",
+    "description": "El “Anavatklydan” (ID de archivo: AGM32L) es una variante no modelo del AGM321. Estas entidades presentan una amplia gama de tamaños. Ver individuos particularmente grandes emergiendo del agua se ha convertido en una pesadilla para quienes lo presenciaron.",
+    "abilities": [
+      "El enemigo tiene dos estados: A distancia y cuerpo a cuerpo.",
+      "Estado cuerpo a cuerpo: En este estado, el enemigo intentará acercarse al objetivo para desatar ataques cuerpo a cuerpo.",
+      "Estado a distancia: En este estado, el enemigo mantendrá la distancia y atacará con habilidades más poderosas.",
+      "El estado a distancia sufre más DAÑ por calor, pero tiene una considerable Reducción de DAÑ contra otros elementos."
+    ]
+  },
   "eny_0027_agscorp": {
     "name": "Aguijón fuerte",
     "nickname": "Aguijón fuerte",
@@ -47,6 +100,24 @@
     "abilities": [
       "Este enemigo ataca provocando que estallen pilares de Originio bajo los operadores.",
       "Cuando te acercas a él, este enemigo invoca pilares de piedra a su alrededor para protección."
+    ]
+  },
+  "eny_0109_hshog2": {
+    "name": "Bestia pluma imbuida",
+    "nickname": "Bestia pluma imbuida",
+    "description": "Una bestia pluma infectada por polvo de Originio activo. Las púas de la criatura están imbuidas de altos niveles de energía, lo que las hace extremadamente destructivas.",
+    "abilities": [
+      "Este enemigo cargará e inflará su abdomen para expulsar lava supercaliente desde su cuerpo. Interrúmpelo durante la carga para infligirle Tambaleo masivo.",
+      "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
+    ]
+  },
+  "eny_0134_jsspsi": {
+    "name": "Si",
+    "nickname": "Si",
+    "description": "Arroyo del deshielo primaveral, laderas del otoño rojizo; los viejos sueños menguan mientras una nueva vida se eleva.",
+    "abilities": [
+      "Cuando Si despliegue su pintura, intenta recordar dónde están las zonas de ataque y luego evadelas en la secuencia correcta.",
+      "Si puede crear Charcos de tinta muy peligrosos. No pises estas zonas manchadas de tinta."
     ]
   },
   "eny_0029_lbmob": {
@@ -57,6 +128,17 @@
       "Este enemigo no tiene habilidades especiales."
     ]
   },
+  "eny_0081_ruanyi": {
+    "name": "Ruan Yi",
+    "nickname": "Ruan Yi",
+    "description": "Ruan Yi contuvo su ira bajo control durante años. Cuando surgió una “oportunidad” repentina, decidió que era hora de por fin desatar su furia acumulada.",
+    "abilities": [
+      "Ruan Yi puede desviar todos los ataques. Usa Xiranita para romper su protección e infligirle DAÑ efectivo.",
+      "Cuando los PV bajan mucho, este enemigo entra en estado Furioso. Usa Xiranita para romper este estado y aplicar Debilitado al enemigo por un periodo prolongado.",
+      "Cuando está Furioso, Ruan Yi puede invocar Raíces iracundas de la calamidad que explotan cuando el operador controlado se acerca demasiado.",
+      "La Energía de Xiranita se unirá y aparecerá en el campo de batalla para brindar apoyo. Toca la Energía de Xiranita en el momento oportuno para activarla y suprimir a Ruan Yi."
+    ]
+  },
   "eny_0033_lbhunt": {
     "name": "Emboscador Rompehuesos",
     "nickname": "Emboscador Rompehuesos",
@@ -65,12 +147,55 @@
       "Este enemigo no tiene habilidades especiales."
     ]
   },
+  "eny_0055_hscrane": {
+    "name": "Acechador de nubes",
+    "nickname": "Acechador de nubes",
+    "description": "Un criminal armado con un arma extraña que parece una linterna inofensiva. No te dejes engañar. La “linterna” del Acechador de nubes en realidad es un decapitador volador con un alcance aterrador.",
+    "abilities": [
+      "Escupe un humo alterador. Los operadores atrapados en el humo sufren una reducción de su visibilidad, tienen menor velocidad de movimiento y no pueden esquivar.",
+      "Este enemigo es un combatiente relativamente débil. Trata de deshacerte de él primero.",
+      "Escupe un humo verde que cura a los demás enemigos."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Bestia pluma",
+    "nickname": "Bestia pluma",
+    "description": "Una bestia pluma autóctona de Talos-II. Cuando levanta sus púas y empieza a rodar, se vuelve tan destructiva como una motosierra giratoria.",
+    "abilities": [
+      "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
+    ]
+  },
   "eny_0039_agcanno": {
     "name": "Centinela",
     "nickname": "Centinela",
     "description": "El “Phrourossaron” (ARS316) es un supuesto intento Aggeloide de imitar la forma y los patrones de ataque de las armas centinela humanas. A pesar de su enorme alcance, el Centinela es un organismo sésil.",
     "abilities": [
       "Este enemigo tiene un poderoso ataque a distancia con un alcance extremadamente largo. Esquiva su bombardeo para progresar."
+    ]
+  },
+  "eny_0053_hsmob": {
+    "name": "Saqueador de caminos",
+    "nickname": "Saqueador de caminos",
+    "description": "Delincuente armado que está activo en la jurisdicción de la Ciudad de Wuling. Los Saqueadores de caminos suelen levantar barricadas ilegales o dedicarse al contrabando de mercancías. Eliminar a estos forajidos es una prioridad para las fuerzas policiales de Hongshan.",
+    "abilities": [
+      "Este enemigo no tiene habilidades especiales."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Sombra contaminada de élite del EFEY",
+    "nickname": "Sombra contaminada de élite del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY de élite. Un Yinglung que haya dominado tanto las Artes de Originio como el arte de la espada será considerado de élite.",
+    "abilities": [
+      "Desata chi de espada que puede activar cualquier energía de Sombra contaminada que golpee."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Quiliarca",
+    "nickname": "Alleikhreos",
+    "description": "Una creación de la Fundación y veterano de incontables batallas. Este quiliarca vagó por el Plano del éter hasta que recuperó su espada perdida y abrió por la fuerza un instante para su regreso.",
+    "abilities": [
+      "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo.",
+      "Cuando las cosas se vuelvan en contra de Alleikhreos, Quiliarca, invocará dobles desde la grieta para atacar a sus oponentes."
     ]
   },
   "eny_0045_agtrinit": {
@@ -82,16 +207,6 @@
       "TIPO DE ASALTO: Lanza ataques cuerpo a cuerpo de forma continua. Interrumpe la carga de su habilidad para causarle un fuerte tambaleo.",
       "FORMA DE BÚSQUEDA: Invoca a muchos Aggeloi para la pelea y desata ondas de choque de Ankhor.",
       "TIPO DE ENGAÑO: Entra en sigilo para lanzar descargas de proyectiles desde lejos o emboscar a tus operadores. Rompe su modo sigiloso para causarle un fuerte tambaleo."
-    ]
-  },
-  "eny_0046_lbshamman": {
-    "name": "Piromante Rompehuesos",
-    "nickname": "Piromante Rompehuesos",
-    "description": "Un Rompesuelos capaz de dominar las Artes de originio de evocación. Los piromantes son muy peligrosos debido a que pueden prender fuego el campo de batalla con sus artes ígneas.",
-    "abilities": [
-      "Este enemigo tiene poderosos ataques a distancia que infligen DAÑ por calor, pero tiene poca movilidad.",
-      "Este enemigo hace que la bruma ardiente brote del suelo para infligir DAÑ por calor. Intenta esquivar el ataque.",
-      "Se teletransporta instantáneamente a un lugar lejano cuando los oponentes se acercan demasiado."
     ]
   },
   "eny_0047_firebat": {
@@ -111,6 +226,22 @@
       "A pesar de estar armado con una ballesta gigante, este enemigo también es hábil en el combate cuerpo a cuerpo."
     ]
   },
+  "eny_0052_palesent": {
+    "name": "Aggelomoirai de mármol",
+    "nickname": "Aggelomoirai de mármol",
+    "description": "SIN REGISTROS PREVIOS. La naturaleza de su formación llevó a categorizarlo como un Aggelos. Su apariencia se parece mucho a la de Nefarith. A pesar de tener niveles altos de energía en su núcleo, la entidad no parece ser estable.",
+    "abilities": [
+      "Las Aggelomoirai de mármol despiertas pueden invocar innumerables Ankhors del universo para bombardear la Tierra. Esquiva estos ataques para hallar una manera de contraatacar."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Garra de bruma ardiente",
+    "nickname": "Garra de bruma ardiente",
+    "description": "Un combatiente Rompesuelos corrompido por la bruma ardiente. Absorber la bruma ardiente no debería considerarse una bendición. Estos asaltantes se han convertido en versiones terriblemente retorcidas de sí mismos.",
+    "abilities": [
+      "Esquiva su ataque de mordida feroz para hacerlo caer al suelo."
+    ]
+  },
   "eny_0049_rogue": {
     "name": "Rompehuesos Infiltrado",
     "nickname": "Rompehuesos Infiltrado",
@@ -120,12 +251,29 @@
       "Puede lanzar dardos y realizar ataques adicionales contra los operadores alcanzados por los dardos. Esquivar los dardos podría darte una buena oportunidad de contraatacar."
     ]
   },
+  "eny_0098_sandb2": {
+    "name": "Bestia armadura con hacha de bruma ardiente",
+    "nickname": "Bestia armadura con hacha de bruma ardiente",
+    "description": "Una bestia armadura con hacha y corrompida por la bruma ardiente. La criatura se ha vuelto extremadamente agresiva, tras haber sido llevada a un estado de locura rabiosa. Acércate con precaución si no quieres que te parta en dos con su “gran hacha”.",
+    "abilities": [
+      "Una Bestia armadura con hacha furiosa usará sus enormes cuernos para ahuyentar a los enemigos que invadan su territorio. Cuidado con su embestida.",
+      "El enemigo realizará varios ataques de área amplia. Interrúmpelo cuando se ponga iracundo."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Colmillo desgarrador Rompehuesos",
     "nickname": "Colmillo desgarrador Rompehuesos",
     "description": "Una pequeña bestia de guerra controlada por los Rompesuelos. Los colmillos desgarradores son mucho más feroces y sedientos de sangre que sus parientes salvajes. Son absolutamente leales a los Rompesuelos que los domaron.",
     "abilities": [
       "Este enemigo es ágil, pero puede ser abrumado cuando recibe múltiples golpes."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Flujo de lodo",
+    "nickname": "Flujo de lodo",
+    "description": "El “Tholeroygran” (ID de archivo: ACM311) es el primer patrón fluido descubierto. La morfología de la aureola es inestable y la temperatura interna suele ser inferior a la de sus materiales constituyentes.",
+    "abilities": [
+      "Este enemigo puede cerrar la distancia rápidamente desde lejos. Sus ataques pueden aplicar Imp. crio. a los operadores al impactar."
     ]
   },
   "eny_0051_rodin": {
@@ -137,20 +285,20 @@
       "Se potencia a sí mismo con el poder de denstacks. Observa y esquiva sus chorros de fuego."
     ]
   },
-  "eny_0052_palesent": {
-    "name": "Aggelomoirai de mármol",
-    "nickname": "Aggelomoirai de mármol",
-    "description": "SIN REGISTROS PREVIOS. La naturaleza de su formación llevó a categorizarlo como un Aggelos. Su apariencia se parece mucho a la de Nefarith. A pesar de tener niveles altos de energía en su núcleo, la entidad no parece ser estable.",
+  "eny_0118_klhog": {
+    "name": "Sombra contaminada de Bestia pluma",
+    "nickname": "Sombra contaminada de Bestia pluma",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia pluma. Esta sombra contaminada parece exhibir ataques giratorios y de rebote mucho más agresivos que su contraparte viva, aunque quizá solo sea cosa de la imaginación.",
     "abilities": [
-      "Las Aggelomoirai de mármol despiertas pueden invocar innumerables Ankhors del universo para bombardear la Tierra. Esquiva estos ataques para hallar una manera de contraatacar."
+      "Tras una breve carga, la Sombra contaminada de Bestia pluma puede invocar múltiples rayos y activar Energía de Sombra contaminada en una zona amplia. Interrumpe a la bestia rápidamente cuando empiece a cargar."
     ]
   },
-  "eny_0053_hsmob": {
-    "name": "Saqueador de caminos",
-    "nickname": "Saqueador de caminos",
-    "description": "Delincuente armado que está activo en la jurisdicción de la Ciudad de Wuling. Los Saqueadores de caminos suelen levantar barricadas ilegales o dedicarse al contrabando de mercancías. Eliminar a estos forajidos es una prioridad para las fuerzas policiales de Hongshan.",
+  "eny_0130_inkbiter": {
+    "name": "Reserva de la fortuna",
+    "nickname": "Reserva de la fortuna",
+    "description": "Una aparición iluminada por Si. Una fortuna ahorrada garantiza la generosidad. Con riquezas en mano, la luz está asegurada.",
     "abilities": [
-      "Este enemigo no tiene habilidades especiales."
+      "Algunos ataques pueden aplicar una Marca de tinta a los operadores cuando impactan. Intenta esquivarlos."
     ]
   },
   "eny_0054_hsmino": {
@@ -162,15 +310,11 @@
       "No trates de atacarlo por la espalda. ¡Tiene una patada trasera poderosa!"
     ]
   },
-  "eny_0055_hscrane": {
-    "name": "Acechador de nubes",
-    "nickname": "Acechador de nubes",
-    "description": "Un criminal armado con un arma extraña que parece una linterna inofensiva. No te dejes engañar. La “linterna” del Acechador de nubes en realidad es un decapitador volador con un alcance aterrador.",
-    "abilities": [
-      "Escupe un humo alterador. Los operadores atrapados en el humo sufren una reducción de su visibilidad, tienen menor velocidad de movimiento y no pueden esquivar.",
-      "Este enemigo es un combatiente relativamente débil. Trata de deshacerte de él primero.",
-      "Escupe un humo verde que cura a los demás enemigos."
-    ]
+  "eny_0080_reaper": {
+    "name": "Ereignis",
+    "nickname": "Ereignis",
+    "description": "¿Qué significa el progreso? ¿Qué constituye el significado? ¿Cuál es la naturaleza de la vida?",
+    "abilities": []
   },
   "eny_0057_dog": {
     "name": "Bestia colmilluda salvaje",
@@ -190,28 +334,12 @@
       "¡El enemigo intentará atrapar a los operadores! Una interrupción rápida lo contrarrestará."
     ]
   },
-  "eny_0059_erhound": {
-    "name": "Bestia colmilluda de bruma ardiente",
-    "nickname": "Bestia colmilluda de bruma ardiente",
-    "description": "Una bestia colmilluda corrompida por la bruma ardiente. Estas pequeñas aberraciones suelen moverse en manadas y pueden representar una grave amenaza, incluso para equipos de campo completamente armados.",
+  "eny_0112_jzmonk": {
+    "name": "Aullador de roca",
+    "nickname": "Aullador de roca",
+    "description": "Los Aulladores de roca pueden vivir en el Área silvestre natural. Estas criaturas inteligentes pero traviesas suelen preparar “trampas” y “peligros” para los viajeros desprevenidos. Parece que disfrutan ver a los humanos frustrados por sus travesuras. Por favor, trátalos con paciencia.",
     "abilities": [
-      "Menos inteligente pero más feroz que las bestias colmilludas comunes. Esquiva su ataque de zarpazo para hacerlo caer al suelo."
-    ]
-  },
-  "eny_0060_lbmad": {
-    "name": "Garra de bruma ardiente",
-    "nickname": "Garra de bruma ardiente",
-    "description": "Un combatiente Rompesuelos corrompido por la bruma ardiente. Absorber la bruma ardiente no debería considerarse una bendición. Estos asaltantes se han convertido en versiones terriblemente retorcidas de sí mismos.",
-    "abilities": [
-      "Esquiva su ataque de mordida feroz para hacerlo caer al suelo."
-    ]
-  },
-  "eny_0061_palecore": {
-    "name": "Aggelomoirai de mármol",
-    "nickname": "Aggelomoirai de mármol",
-    "description": "SIN REGISTROS PREVIOS. La naturaleza de su formación llevó a clasificarlo como un Aggelos. Aunque se reensamblaron sus módulos mórficos, la entidad sigue imitando la apariencia de Nefarith. Aún no existen explicaciones satisfactorias para este fenómeno.",
-    "abilities": [
-      "Derrota todos los Apéndices de mármol para obligar al Aggelomoirai de mármol inactivo a exponer temporalmente su núcleo vulnerable al ataque."
+      "Este enemigo suele moverse en grupos. Cualquier operador o aullador de roca que pise cáscaras de plátano tiradas resbalará y caerá."
     ]
   },
   "eny_0062_paletent": {
@@ -223,12 +351,12 @@
       "Algunos Apéndices de mármol son hábiles para atacar a sus oponentes a distancia convirtiendo sus puntas en material de plaga que puede ser lanzado."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Carnero α",
-    "nickname": "Carnero α",
-    "description": "El “Kriosson Anavon” (ID de archivo: ACL071α) es una variante energizada de ACL071. El exceso de energía en esta entidad le da un característico tono rojo brillante, lo que también la hace más rápida y poderosa que la versión estándar.",
+  "eny_0073_slimerg": {
+    "name": "Babosa de Originio ácida",
+    "nickname": "Babosa de Originio ácida",
+    "description": "Una criatura salvaje infectada por Originio. Esta babosa segrega una sustancia ácida. Al sentirse amenazada, intentará intimidar a su enemigo sacudiéndose violentamente y proyectando fragmentos del cúmulo de Originio que lleva en su lomo.",
     "abilities": [
-      "Este enemigo no tiene habilidades especiales."
+      "Un enemigo tímido que se retrae en su caparazón para protegerse. También disparará sin pensar cristales de Originio desde su cuerpo para intimidar a sus oponentes."
     ]
   },
   "eny_0064_agrange2": {
@@ -237,6 +365,14 @@
     "description": "El “Kentron Anavon” (ID de archivo: ARL121α) es una variante energizada de ARL121. La mayor densidad energética de la entidad le otorga mayor potencia de fuego. La eficiencia energética de su mecanismo de disparo sigue siendo baja.",
     "abilities": [
       "Este enemigo no tiene habilidades especiales."
+    ]
+  },
+  "eny_0067_hound2": {
+    "name": "Colmillo desgarrador de élite",
+    "nickname": "Colmillo desgarrador de élite",
+    "description": "Una bestia de guerra de élite de los Rompesuelos, potenciada por vapores conocidos como bruma ardiente. Este colmillo desgarrador es más feroz y astuto, y sus ataques son más impredecibles.",
+    "abilities": [
+      "Ágil y veloz. Seguirá intentando acercarse y atacar a su objetivo."
     ]
   },
   "eny_0065_lbmob2": {
@@ -255,12 +391,13 @@
       "Este enemigo no tiene habilidades especiales."
     ]
   },
-  "eny_0067_hound2": {
-    "name": "Colmillo desgarrador de élite",
-    "nickname": "Colmillo desgarrador de élite",
-    "description": "Una bestia de guerra de élite de los Rompesuelos, potenciada por vapores conocidos como bruma ardiente. Este colmillo desgarrador es más feroz y astuto, y sus ataques son más impredecibles.",
+  "eny_0123_klcap": {
+    "name": "Sombra contaminada con guja del EFEY",
+    "nickname": "Sombra contaminada con guja del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY con guja. Estos Yinglungs son sumamente hábiles para dirigir asaltos y tomar posiciones defendidas. Las gujas que empuñan están diseñadas para partir Aggeloi con facilidad.",
     "abilities": [
-      "Ágil y veloz. Seguirá intentando acercarse y atacar a su objetivo."
+      "La Sombra contaminada con guja del EFEY puede fingir su derrota antes de lanzar un ataque inesperado. ¡Ten cuidado!",
+      "Tras disiparse, este enemigo puede trasladarse instantáneamente junto a un operador y atacar. Intenta esquivar."
     ]
   },
   "eny_0068_lbtough2": {
@@ -306,12 +443,20 @@
       "Un enemigo que aparece en grupos. Cuidado con sus apéndices frontales afiladísimos."
     ]
   },
-  "eny_0073_slimerg": {
-    "name": "Babosa de Originio ácida",
-    "nickname": "Babosa de Originio ácida",
-    "description": "Una criatura salvaje infectada por Originio. Esta babosa segrega una sustancia ácida. Al sentirse amenazada, intentará intimidar a su enemigo sacudiéndose violentamente y proyectando fragmentos del cúmulo de Originio que lleva en su lomo.",
+  "eny_0106_wgthorns2": {
+    "name": "Hedron δ",
+    "nickname": "Hedron δ",
+    "description": "El “Diaphaistagran Dinedon” (ID de archivo: ARM315δ) es una variante energizada de ARM315. Al irradiarse con la luz del sol, emite un brillo púrpura centelleante. Sin embargo, adopta una forma distinta cuando se irradia con la luz reflejada de Talos.",
     "abilities": [
-      "Un enemigo tímido que se retrae en su caparazón para protegerse. También disparará sin pensar cristales de Originio desde su cuerpo para intimidar a sus oponentes."
+      "Los proyectiles que lanza aplican Imp. crio. a los operadores al impactar."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Objetivo pesado",
+    "nickname": "Objetivo pesado",
+    "description": "Un objetivo especial hecho de una aleación de alta resistencia. Es resistente y muy apreciado por los arqueros de fuerza extraordinaria.",
+    "abilities": [
+      "Un objetivo acorazado. PV: 4."
     ]
   },
   "eny_0074_lbshield": {
@@ -322,6 +467,22 @@
       "Este enemigo bloqueará todos los ataques entrantes a menos que esté atacando. Provoca tambaleo para quebrar su escudo."
     ]
   },
+  "eny_0099_slimeml2": {
+    "name": "Bestia pinza brutal",
+    "nickname": "Bestia pinza brutal",
+    "description": "La bestia gigante porta numerosos cúmulos de Originio que exhiben niveles más altos de actividad. También posee un caparazón más grueso que el de sus versiones comunes.",
+    "abilities": [
+      "Un enemigo que aparece en grupos. Cuidado con sus apéndices frontales afiladísimos."
+    ]
+  },
+  "eny_0131_inkscroll": {
+    "name": "Pergamino de tácticas",
+    "nickname": "Pergamino de tácticas",
+    "description": "Una aparición iluminada por Si. Invocador de nubes y heraldo de la lluvia. Maestro del combate y conocedor del engaño. Portador de armas y defensor de la paz.",
+    "abilities": [
+      "Las alabardas lanzadas crean Charcos de tinta cuando aterrizan. Estos charcos pueden aplicar una Marca de tinta a los operadores que los pisen. Intenta evitarlos."
+    ]
+  },
   "eny_0075_lbroshan": {
     "name": "Nudillos de asedio de Rompehuesos",
     "nickname": "Nudillos de asedio de Rompehuesos",
@@ -330,6 +491,39 @@
       "Un enemigo implacable. Incluso después de ser interrumpido, es probable que intente atacar de nuevo.",
       "Este enemigo usa su manga blindada para esparcir escamas de armadura reactiva. Mantén una distancia segura, especialmente si llegas a pisarlas por accidente.",
       "Este enemigo intentará recuperar escamas de armadura del suelo para recomponerse, y lanzará un ataque poderoso al lograr recuperarlas."
+    ]
+  },
+  "eny_0103_hshunt2": {
+    "name": "Viento arrasador",
+    "nickname": "Viento arrasador",
+    "description": "Un criminal armado con armamento básico a distancia. Gracias a su puntería y destreza sus disparos son mortales. Como un viento que atraviesa edificios, este criminal arrasa con todo lo valioso que está a su paso.",
+    "abilities": [
+      "Dispara todo tipo de flechas y lanza bombas para hostigar a sus oponentes a distancia."
+    ]
+  },
+  "eny_0104_hsrogue2": {
+    "name": "Ráfaga devastadora",
+    "nickname": "Ráfaga devastadora",
+    "description": "Un criminal armado con un arma fuera de lo común. Estos Acechadores de nubes son tan hábiles con cuchillas con gancho que se dice que podrían rebanar las nubes y convertirlas en cubos perfectos.",
+    "abilities": [
+      "Usa ganchos de cadena para atacar a los operadores aliados. Los operadores encadenados quedarán Aturdidos a menos que sean liberados."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Errante de madera",
+    "nickname": "Errante de madera",
+    "description": "Una pequeña marioneta de batalla creada por una Sacerdotisa de la nieve. Se encarga de mantener a salvo el Bosque nevado. No subestimes sus puños de madera, pues pueden destrozar piedra casi sin esfuerzo.",
+    "abilities": [
+      "Un Errante de madera con cero acumulaciones de escudo atrapará a los operadores para absorber su energía y restaurar sus acumulaciones de escudo.",
+      "Los Errantes de madera colaborarán entre sí al atacar."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Objetivo estándar",
+    "nickname": "Objetivo estándar",
+    "description": "Un objetivo estándar, indispensable para mejorar las habilidades de arquería.",
+    "abilities": [
+      "Un objetivo duradero. PV: 2."
     ]
   },
   "eny_0076_agfly": {
@@ -359,6 +553,14 @@
       "Salta a grandes alturas para cargar un ataque. Para interrumpir este movimiento enemigo, usa Xiranita para elevarte en el aire y luego realiza un ataque de inmersión para invocar un rayo."
     ]
   },
+  "tatget_005_shield": {
+    "name": "Escudo de Energía",
+    "nickname": "Escudo de Energía",
+    "description": "Un escudo de Energía diseñado para los objetivos. A los Maestros arqueros les gusta proteger sus objetivos para que duren unos segundos más.",
+    "abilities": [
+      "Un escudo que puede aplicarse a cualquier objetivo. PV: 2. Los objetivos protegidos no pueden congelarse, no se les puede aplicar Resina activamente y las acumulaciones de Resina en los objetivos protegidos no detonan al recibir daño."
+    ]
+  },
   "eny_0079_nefarp2": {
     "name": "Nefarith, “Conquistadora”",
     "nickname": "Nefarith, “Conquistadora”",
@@ -369,29 +571,20 @@
       "Atrapa a tus operadores con un Ankhor. Ataca al Ankhor para liberarlos."
     ]
   },
-  "eny_0080_reaper": {
-    "name": "Ereignis",
-    "nickname": "Ereignis",
-    "description": "¿Qué significa el progreso? ¿Qué constituye el significado? ¿Cuál es la naturaleza de la vida?",
-    "abilities": []
-  },
-  "eny_0081_ruanyi": {
-    "name": "Ruan Yi",
-    "nickname": "Ruan Yi",
-    "description": "Ruan Yi contuvo su ira bajo control durante años. Cuando surgió una “oportunidad” repentina, decidió que era hora de por fin desatar su furia acumulada.",
-    "abilities": [
-      "Ruan Yi puede desviar todos los ataques. Usa Xiranita para romper su protección e infligirle DAÑ efectivo.",
-      "Cuando los PV bajan mucho, este enemigo entra en estado Furioso. Usa Xiranita para romper este estado y aplicar Debilitado al enemigo por un periodo prolongado.",
-      "Cuando está Furioso, Ruan Yi puede invocar Raíces iracundas de la calamidad que explotan cuando el operador controlado se acerca demasiado.",
-      "La Energía de Xiranita se unirá y aparecerá en el campo de batalla para brindar apoyo. Toca la Energía de Xiranita en el momento oportuno para activarla y suprimir a Ruan Yi."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Tamborilero celestial",
     "nickname": "Tamborilero celestial",
     "description": "Una bestia aulladora que creció en el Área silvestre. Esta bestia es originaria de Talos-II. Las fuertes membranas en su cabeza y cuello le permiten desatar aullidos poderosos lo suficientemente fuertes como para sacudir colinas y bosques.",
     "abilities": [
       "Un nivel bajo de PV activa el estado Iracundo del enemigo. Durante este estado, el enemigo realiza con mayor frecuencia sus ataques de carga, inflige más DAÑ y obtiene Reducción de DAÑ. Interrúmpelo a tiempo para terminar el estado Iracundo."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Objetivo con Barrera",
+    "nickname": "Objetivo con Barrera",
+    "description": "Un objetivo especial que puede cambiar de tamaño y bloquear otros objetivos situados detrás. Intenta quebrarlo primero.",
+    "abilities": [
+      "Un objetivo disruptivo que cambia de tamaño. PV: 3."
     ]
   },
   "eny_0083_hstiger": {
@@ -403,28 +596,22 @@
       "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
     ]
   },
+  "eny_0114_jzmking": {
+    "name": "Aullador del peñasco",
+    "nickname": "Aullador del peñasco",
+    "description": "Los aulladores del peñasco son los miembros dominantes de las comunidades de aulladores de roca. Estas bestias lucharán entre sí incontables veces antes de que el campeón más fuerte surja como el aullador del peñasco líder. No cabe duda de que esos individuos han dominado el combate de maneras con las que sus semejantes solo podrían soñar.",
+    "abilities": [
+      "Cuando esté iracundo, el aullador del peñasco comenzará a destruir las ruinas. Las rocas aflojadas caerán al campo de batalla e infligirán DAÑ a los operadores que sean golpeados por ellas.",
+      "El aullador del peñasco puede aprovechar muy bien los pilares dentro de las ruinas y obtener un enorme alcance de ataque.",
+      "El aullador del peñasco fingirá retirarse y, de pronto, lanzará enormes rocas para atacar a enemigos desprevenidos."
+    ]
+  },
   "eny_0084_hshunt": {
     "name": "Arquero de arboleda",
     "nickname": "Arquero de arboleda",
     "description": "Un forajido armado con armamento básico a distancia. Entrenado en los bosques de bambú, puede disparar una flecha a través del bosque sin alcanzar ni una sola hoja.",
     "abilities": [
       "Dispara todo tipo de flechas y lanza bombas para hostigar a sus oponentes a distancia."
-    ]
-  },
-  "eny_0085_hsrogue": {
-    "name": "Navaja de Nimbus",
-    "nickname": "Navaja de Nimbus",
-    "description": "Un criminal armado con un arma extraña. Cuando el Acechador de nubes se cansa de usar la linterna extraña, saca una espada corta y se lanza al combate cuerpo a cuerpo.",
-    "abilities": [
-      "Usa ganchos de cadena para atacar a los operadores aliados. Los operadores encadenados quedarán Aturdidos a menos que sean liberados."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Flujo de lodo",
-    "nickname": "Flujo de lodo",
-    "description": "El “Tholeroygran” (ID de archivo: ACM311) es el primer patrón fluido descubierto. La morfología de la aureola es inestable y la temperatura interna suele ser inferior a la de sus materiales constituyentes.",
-    "abilities": [
-      "Este enemigo puede cerrar la distancia rápidamente desde lejos. Sus ataques pueden aplicar Imp. crio. a los operadores al impactar."
     ]
   },
   "eny_0088_wgthorns": {
@@ -443,15 +630,13 @@
       "Este enemigo puede fortalecer en gran medida a los aliados cercanos para mejorar sus capacidades."
     ]
   },
-  "eny_0090_wgabyss": {
-    "name": "Tidalklast",
-    "nickname": "Tidalklast",
-    "description": "El “Anavatklydan” (ID de archivo: AGM32L) es una variante no modelo del AGM321. Estas entidades presentan una amplia gama de tamaños. Ver individuos particularmente grandes emergiendo del agua se ha convertido en una pesadilla para quienes lo presenciaron.",
+  "eny_0132_inkkirin": {
+    "name": "Purga a fuego lento",
+    "nickname": "Purga a fuego lento",
+    "description": "Una aparición iluminada por Si. Creador de nubes de las que brota la lluvia. Solucionador de problemas y aplacador de la sed.",
     "abilities": [
-      "El enemigo tiene dos estados: A distancia y cuerpo a cuerpo.",
-      "Estado cuerpo a cuerpo: En este estado, el enemigo intentará acercarse al objetivo para desatar ataques cuerpo a cuerpo.",
-      "Estado a distancia: En este estado, el enemigo mantendrá la distancia y atacará con habilidades más poderosas.",
-      "El estado a distancia sufre más DAÑ por calor, pero tiene una considerable Reducción de DAÑ contra otros elementos."
+      "Algunos ataques pueden aplicar una Marca de tinta a los operadores cuando impactan. Intenta esquivarlos.",
+      "La Nube de trueno puede lanzar Rayos que Aturden temporalmente a los operadores que alcanzan."
     ]
   },
   "eny_0091_wgshoal": {
@@ -468,14 +653,6 @@
     "description": "Una criatura salvaje infectada por Originio con temperaturas corporales extremadamente altas. Esta babosa explota al estar cerca de la muerte, cubriendo todo lo que se encuentra cerca con fluidos corporales ácidos a temperaturas de ebullición, además de polvo de Originio activo.",
     "abilities": [
       "Este enemigo se autodestruye cuando tiene pocos PV. La detonación aplica un material inestable al operador al que golpea. Si el operador recibe DAÑ, el material explota."
-    ]
-  },
-  "eny_0093_hshog": {
-    "name": "Bestia pluma",
-    "nickname": "Bestia pluma",
-    "description": "Una bestia pluma autóctona de Talos-II. Cuando levanta sus púas y empieza a rodar, se vuelve tan destructiva como una motosierra giratoria.",
-    "abilities": [
-      "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
     ]
   },
   "eny_0094_hsfly": {
@@ -511,23 +688,6 @@
       "No trates de atacarlo por la espalda. ¡Tiene una patada trasera poderosa!"
     ]
   },
-  "eny_0098_sandb2": {
-    "name": "Bestia armadura con hacha de bruma ardiente",
-    "nickname": "Bestia armadura con hacha de bruma ardiente",
-    "description": "Una bestia armadura con hacha y corrompida por la bruma ardiente. La criatura se ha vuelto extremadamente agresiva, tras haber sido llevada a un estado de locura rabiosa. Acércate con precaución si no quieres que te parta en dos con su “gran hacha”.",
-    "abilities": [
-      "Una Bestia armadura con hacha furiosa usará sus enormes cuernos para ahuyentar a los enemigos que invadan su territorio. Cuidado con su embestida.",
-      "El enemigo realizará varios ataques de área amplia. Interrúmpelo cuando se ponga iracundo."
-    ]
-  },
-  "eny_0099_slimeml2": {
-    "name": "Bestia pinza brutal",
-    "nickname": "Bestia pinza brutal",
-    "description": "La bestia gigante porta numerosos cúmulos de Originio que exhiben niveles más altos de actividad. También posee un caparazón más grueso que el de sus versiones comunes.",
-    "abilities": [
-      "Un enemigo que aparece en grupos. Cuidado con sus apéndices frontales afiladísimos."
-    ]
-  },
   "eny_0100_slimerg2": {
     "name": "Babosa de Originio ácida α",
     "nickname": "Babosa de Originio ácida α",
@@ -553,20 +713,12 @@
       "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
     ]
   },
-  "eny_0103_hshunt2": {
-    "name": "Viento arrasador",
-    "nickname": "Viento arrasador",
-    "description": "Un criminal armado con armamento básico a distancia. Gracias a su puntería y destreza sus disparos son mortales. Como un viento que atraviesa edificios, este criminal arrasa con todo lo valioso que está a su paso.",
+  "eny_0117_klhound": {
+    "name": "Sombra contaminada de Bestia colmilluda",
+    "nickname": "Sombra contaminada de Bestia colmilluda",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia colmilluda. Aunque no es más que una “sombra persistente”, sus afilados colmillos aún son capaces de atravesar armaduras y equipamiento de protección.",
     "abilities": [
-      "Dispara todo tipo de flechas y lanza bombas para hostigar a sus oponentes a distancia."
-    ]
-  },
-  "eny_0104_hsrogue2": {
-    "name": "Ráfaga devastadora",
-    "nickname": "Ráfaga devastadora",
-    "description": "Un criminal armado con un arma fuera de lo común. Estos Acechadores de nubes son tan hábiles con cuchillas con gancho que se dice que podrían rebanar las nubes y convertirlas en cubos perfectos.",
-    "abilities": [
-      "Usa ganchos de cadena para atacar a los operadores aliados. Los operadores encadenados quedarán Aturdidos a menos que sean liberados."
+      "Algunos ataques pueden activar la energía de Sombra contaminada que golpeen."
     ]
   },
   "eny_0105_wgslime2": {
@@ -575,14 +727,6 @@
     "description": "El “Tholeroygran Dinedon” (ID de archivo: ACM311δ) es una variante energizada de ACM311. Utiliza vías de energía únicas y, por lo tanto, mantiene una temperatura homeostática muy por debajo de los puntos de congelación de las sustancias que lo componen.",
     "abilities": [
       "Este enemigo puede cerrar la distancia rápidamente desde lejos. Sus ataques pueden aplicar Imp. crio. a los operadores al impactar."
-    ]
-  },
-  "eny_0106_wgthorns2": {
-    "name": "Hedron δ",
-    "nickname": "Hedron δ",
-    "description": "El “Diaphaistagran Dinedon” (ID de archivo: ARM315δ) es una variante energizada de ARM315. Al irradiarse con la luz del sol, emite un brillo púrpura centelleante. Sin embargo, adopta una forma distinta cuando se irradia con la luz reflejada de Talos.",
-    "abilities": [
-      "Los proyectiles que lanza aplican Imp. crio. a los operadores al impactar."
     ]
   },
   "eny_0107_wgshoal2": {
@@ -601,23 +745,6 @@
       "Este enemigo se autodestruye cuando tiene pocos PV. La detonación aplica un material inestable al operador al que golpea. Si el operador recibe DAÑ, el material explota."
     ]
   },
-  "eny_0109_hshog2": {
-    "name": "Bestia pluma imbuida",
-    "nickname": "Bestia pluma imbuida",
-    "description": "Una bestia pluma infectada por polvo de Originio activo. Las púas de la criatura están imbuidas de altos niveles de energía, lo que las hace extremadamente destructivas.",
-    "abilities": [
-      "Este enemigo cargará e inflará su abdomen para expulsar lava supercaliente desde su cuerpo. Interrúmpelo durante la carga para infligirle Tambaleo masivo.",
-      "Estado Iracundo: Cuando está Iracunda, la bestia aumenta su ATQ y usa sus habilidades de carga con más frecuencia. Aplicar Tambaleado pone fin al estado Iracundo."
-    ]
-  },
-  "eny_0112_jzmonk": {
-    "name": "Aullador de roca",
-    "nickname": "Aullador de roca",
-    "description": "Los Aulladores de roca pueden vivir en el Área silvestre natural. Estas criaturas inteligentes pero traviesas suelen preparar “trampas” y “peligros” para los viajeros desprevenidos. Parece que disfrutan ver a los humanos frustrados por sus travesuras. Por favor, trátalos con paciencia.",
-    "abilities": [
-      "Este enemigo suele moverse en grupos. Cualquier operador o aullador de roca que pise cáscaras de plátano tiradas resbalará y caerá."
-    ]
-  },
   "eny_0113_jzogre": {
     "name": "Bestia mutiladora acorazada",
     "nickname": "Bestia mutiladora acorazada",
@@ -626,32 +753,6 @@
       "El Aullador de roca montado en el lomo de la Bestia mutiladora acorazada puede lanzar cáscaras de plátano. Si la bestia mutiladora acorazada pisa cáscaras de plátano mientras realiza un ataque de carga, se resbalará y caerá.",
       "Cuando se encoge en su postura defensiva, solo las manos permanecen expuestas como puntos débiles. Destruye sus manos para acabar con la postura defensiva y aplicar Derribar a la bestia.",
       "Suelta Aulladores de roca cuando es derribada. Ataca a los Aulladores de roca para infligir aún más DAÑ."
-    ]
-  },
-  "eny_0114_jzmking": {
-    "name": "Aullador del peñasco",
-    "nickname": "Aullador del peñasco",
-    "description": "Los aulladores del peñasco son los miembros dominantes de las comunidades de aulladores de roca. Estas bestias lucharán entre sí incontables veces antes de que el campeón más fuerte surja como el aullador del peñasco líder. No cabe duda de que esos individuos han dominado el combate de maneras con las que sus semejantes solo podrían soñar.",
-    "abilities": [
-      "Cuando esté iracundo, el aullador del peñasco comenzará a destruir las ruinas. Las rocas aflojadas caerán al campo de batalla e infligirán DAÑ a los operadores que sean golpeados por ellas.",
-      "El aullador del peñasco puede aprovechar muy bien los pilares dentro de las ruinas y obtener un enorme alcance de ataque.",
-      "El aullador del peñasco fingirá retirarse y, de pronto, lanzará enormes rocas para atacar a enemigos desprevenidos."
-    ]
-  },
-  "eny_0117_klhound": {
-    "name": "Sombra contaminada de Bestia colmilluda",
-    "nickname": "Sombra contaminada de Bestia colmilluda",
-    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia colmilluda. Aunque no es más que una “sombra persistente”, sus afilados colmillos aún son capaces de atravesar armaduras y equipamiento de protección.",
-    "abilities": [
-      "Algunos ataques pueden activar la energía de Sombra contaminada que golpeen."
-    ]
-  },
-  "eny_0118_klhog": {
-    "name": "Sombra contaminada de Bestia pluma",
-    "nickname": "Sombra contaminada de Bestia pluma",
-    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia pluma. Esta sombra contaminada parece exhibir ataques giratorios y de rebote mucho más agresivos que su contraparte viva, aunque quizá solo sea cosa de la imaginación.",
-    "abilities": [
-      "Tras una breve carga, la Sombra contaminada de Bestia pluma puede invocar múltiples rayos y activar Energía de Sombra contaminada en una zona amplia. Interrumpe a la bestia rápidamente cuando empiece a cargar."
     ]
   },
   "eny_0119_kltiger": {
@@ -672,29 +773,21 @@
       "Este enemigo invoca Sombras contaminadas de Bestias colmilludas. Luego hace caer múltiples rayos para golpear a las bestias, convertirlas en energía de Sombra contaminada y activarlas. Intenta esquivar estos ataques."
     ]
   },
+  "eny_0127_bigents": {
+    "name": "Furia de Gloomwald",
+    "nickname": "Furia de Gloomwald",
+    "description": "Una marioneta de batalla gigantesca creada por una Sacerdotisa de la nieve. Había obedecido la orden de su maestro de vagar y recorrer el ilimitado reino de niebla hasta el momento en que comprendió que había sido abandonado, hasta convertirse en el recipiente que contenía toda la furia de un profundo bosque nevado.",
+    "abilities": [
+      "La Furia de Gloomwald dejará enredaderas en el suelo. El operador que las pise recibirá DAÑ de forma continua y quedará Ralentizado.",
+      "Furia de Gloomwald invocará Errantes de madera para que le ayuden en la batalla."
+    ]
+  },
   "eny_0121_klbud": {
     "name": "Sombra contaminada de vanguardia del EFEY",
     "nickname": "Sombra contaminada de vanguardia del EFEY",
     "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro de vanguardia del EFEY. Dominar las técnicas de combate cuerpo a cuerpo no es más que el requisito más básico para los Yinglungs.",
     "abilities": [
       "Desata chi de espada que puede activar cualquier energía de Sombra contaminada que golpee."
-    ]
-  },
-  "eny_0122_kltdbud": {
-    "name": "Sombra contaminada de élite del EFEY",
-    "nickname": "Sombra contaminada de élite del EFEY",
-    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY de élite. Un Yinglung que haya dominado tanto las Artes de Originio como el arte de la espada será considerado de élite.",
-    "abilities": [
-      "Desata chi de espada que puede activar cualquier energía de Sombra contaminada que golpee."
-    ]
-  },
-  "eny_0123_klcap": {
-    "name": "Sombra contaminada con guja del EFEY",
-    "nickname": "Sombra contaminada con guja del EFEY",
-    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY con guja. Estos Yinglungs son sumamente hábiles para dirigir asaltos y tomar posiciones defendidas. Las gujas que empuñan están diseñadas para partir Aggeloi con facilidad.",
-    "abilities": [
-      "La Sombra contaminada con guja del EFEY puede fingir su derrota antes de lanzar un ataque inesperado. ¡Ten cuidado!",
-      "Tras disiparse, este enemigo puede trasladarse instantáneamente junto a un operador y atacar. Intenta esquivar."
     ]
   },
   "eny_0124_kltdcap": {
@@ -706,33 +799,6 @@
       "La Sombra contaminada de capitán del EFEY puede usar su arma para hacer caer rayos. Una entidad de energía de Sombra contaminada se activa al recibir el impacto de un rayo."
     ]
   },
-  "eny_0125_fdcentur": {
-    "name": "Alleikhreos, Quiliarca",
-    "nickname": "Alleikhreos",
-    "description": "Una creación de la Fundación y veterano de incontables batallas. Este quiliarca vagó por el Plano del éter hasta que recuperó su espada perdida y abrió por la fuerza un instante para su regreso.",
-    "abilities": [
-      "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo.",
-      "Cuando las cosas se vuelvan en contra de Alleikhreos, Quiliarca, invocará dobles desde la grieta para atacar a sus oponentes."
-    ]
-  },
-  "eny_0127_bigents": {
-    "name": "Furia de Gloomwald",
-    "nickname": "Furia de Gloomwald",
-    "description": "Una marioneta de batalla gigantesca creada por una Sacerdotisa de la nieve. Había obedecido la orden de su maestro de vagar y recorrer el ilimitado reino de niebla hasta el momento en que comprendió que había sido abandonado, hasta convertirse en el recipiente que contenía toda la furia de un profundo bosque nevado.",
-    "abilities": [
-      "La Furia de Gloomwald dejará enredaderas en el suelo. El operador que las pise recibirá DAÑ de forma continua y quedará Ralentizado.",
-      "Furia de Gloomwald invocará Errantes de madera para que le ayuden en la batalla."
-    ]
-  },
-  "eny_0128_babyents": {
-    "name": "Errante de madera",
-    "nickname": "Errante de madera",
-    "description": "Una pequeña marioneta de batalla creada por una Sacerdotisa de la nieve. Se encarga de mantener a salvo el Bosque nevado. No subestimes sus puños de madera, pues pueden destrozar piedra casi sin esfuerzo.",
-    "abilities": [
-      "Un Errante de madera con cero acumulaciones de escudo atrapará a los operadores para absorber su energía y recuperar acumulaciones de escudo.",
-      "Los Errantes de madera colaborarán entre sí al atacar."
-    ]
-  },
   "eny_0129_slwood": {
     "name": "Babosa de madera",
     "nickname": "Babosa de madera",
@@ -741,44 +807,20 @@
       "Las Babosas de madera pueden excavar bajo tierra para acercarse sigilosamente a sus oponentes."
     ]
   },
+  "eny_0133_inklion": {
+    "name": "Medida de la crin",
+    "nickname": "Medida de la crin",
+    "description": "Una aparición iluminada por Si. Curvas y líneas, medidas y precisas. Una búsqueda iluminada, tal como se decretó en las alturas.",
+    "abilities": [
+      "Una Medida de la crin tiene semiesferas de orbes de jade a los costados que pueden reducir considerablemente el DAÑ de los golpes que las alcanzan. En su lugar, intenta atacar la cabeza y la cola del Espíritu de tinta."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Objetivo Básico",
     "nickname": "Objetivo Básico",
     "description": "Un objetivo Básico para arqueros principiantes.",
     "abilities": [
       "Un objetivo básico. PV: 1."
-    ]
-  },
-  "tatget_002_endurance": {
-    "name": "Objetivo estándar",
-    "nickname": "Objetivo estándar",
-    "description": "Un objetivo estándar, indispensable para mejorar las habilidades de arquería.",
-    "abilities": [
-      "Un objetivo duradero. PV: 2."
-    ]
-  },
-  "tatget_003_expand": {
-    "name": "Objetivo con Barrera",
-    "nickname": "Objetivo con Barrera",
-    "description": "Un objetivo especial que puede cambiar de tamaño y bloquear otros objetivos situados detrás. Intenta quebrarlo primero.",
-    "abilities": [
-      "Un objetivo disruptivo que cambia de tamaño. PV: 3."
-    ]
-  },
-  "tatget_004_armor": {
-    "name": "Objetivo pesado",
-    "nickname": "Objetivo pesado",
-    "description": "Un objetivo especial hecho de una aleación de alta resistencia. Es resistente y muy apreciado por los arqueros de fuerza extraordinaria.",
-    "abilities": [
-      "Un objetivo acorazado. PV: 4."
-    ]
-  },
-  "tatget_005_shield": {
-    "name": "Escudo de Energía",
-    "nickname": "Escudo de Energía",
-    "description": "Un escudo de Energía diseñado para los objetivos. A los Maestros arqueros les gusta proteger sus objetivos para que duren unos segundos más.",
-    "abilities": [
-      "Un escudo que puede aplicarse a cualquier objetivo. PV: 2. Los objetivos protegidos no pueden congelarse, no se les puede aplicar Resina activamente y las acumulaciones de Resina en los objetivos protegidos no detonan al recibir daño."
     ]
   }
 }

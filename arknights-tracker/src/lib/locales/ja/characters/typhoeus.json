@@ -536,7 +536,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "<@ba.key>浮遊</>状態のとき、攻撃力<@ba.vup>+{atk_up:0%}</>、空中通常攻撃ダメージが<@ba.vup>{atk_scale_base:0.0}</>倍までアップする\n素質<@ba.key>「狩人の集中力」</>強化：<@ba.key>防御シールド</>の再発動時間が<@ba.vup>{decrease_cd:0}</>秒になる。",
+      "description": "<@ba.key>浮遊</>状態のとき、攻撃力<@ba.vup>+{atk_up:0%}</>、空中通常攻撃ダメージが<@ba.vup>{atk_scale_base:0.0}</>倍までアップする\n素質<@ba.key>「狩人の集中力」</>強化：<@ba.key>防御シールド</>の再発動時間<@ba.vup>{decrease_cd:0}</>秒",
       "name": "サーミの矢作り"
     },
     "potential2": {

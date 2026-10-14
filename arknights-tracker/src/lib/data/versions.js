@@ -228,5 +228,17 @@ export const changelogData = [
         startTimeAsia: "2026-09-02 11:00:00",
         endTime: "2026-10-14 17:00:00",
         endTimeAsia: "2026-10-15 04:00:00"
+    },
+    {
+        version: "1.6",
+        characters: ["si"],
+        weapons: ["jadeVessel", "longHeritage", "complexedIndustry"],
+        equipment: ["item_equip_t4_parts_wuling00_body_06", "item_equip_t4_parts_wuling00_hand_06", "item_equip_t4_parts_wuling00_edc_06", "item_equip_t4_suit_atk02_body_05", "item_equip_t4_suit_atk02_hand_03", "item_equip_t4_suit_atk02_edc_06", "item_equip_t4_suit_pulse_cryst01_body_02", "item_equip_t4_suit_pulse_cryst01_hand_02", "item_equip_t4_suit_pulse_cryst01_edc_04", "item_equip_t4_suit_usp02_body_05", "item_equip_t4_suit_usp02_body_06", "item_equip_t4_suit_usp02_hand_05", "item_equip_t4_suit_usp02_edc_07", "item_equip_t4_parts_wuling02_body_04", "item_equip_t4_parts_wuling02_body_03", "item_equip_t4_parts_wuling02_hand_03", "item_equip_t4_parts_wuling02_hand_04", "item_equip_t4_parts_wuling02_edc_02"],
+        enemies: ["eny_0134_jsspsi", "eny_0133_inklion", "eny_0132_inkkirin", "eny_0130_inkbiter", "eny_0131_inkscroll"],
+        achievements: ["achv_quest_sm2l10m3", "achv_bat_jsspsi_reverse_color", "achv_bat_defeat_jsspsi", "achv_bat_hard_8", "achv_adv_wuling_campfire_4", "achv_adv_wuling_ether_4", "achv_adv_wuling_box_4", "achv_adv_wuling_password", "achv_adv_wuling_paint", "achv_event_gambling_dungeon_1", "achv_event_wuling_challenge_dung_03", "achv_hide_spaceship_v1d6", "achv_hide_accidental_injury", "achv_hide_three_dragon"],
+        startTime: "2026-10-14 22:00:00",
+        startTimeAsia: "2026-10-15 11:00:00",
+        endTime: "2026-11-25 17:00:00",
+        endTimeAsia: "2026-11-26 04:00:00"
     }
 ];

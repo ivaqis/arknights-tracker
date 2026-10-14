@@ -386,8 +386,8 @@
       "name": "Проводник"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "<@ba.vup>+{PhysicalAndSpellInflictionEnhance:0} к силе искусств</>. Наносимый супернавыком <@ba.key>Бомбардирующий такт</> УРН увеличивается до <@ba.vup>{atk_scale}</> р. от первоначального.",
+      "name": "Командир ориджиния"
     },
     "potential5": {
       "description": "???",

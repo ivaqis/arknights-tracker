@@ -1,0 +1,577 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Tăng ST",
+      "Chủ Công",
+      "Nhiễm Băng"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Quản Lý Đội",
+      "Lắp Ráp Dụng Cụ"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Thợ Chế Tác Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Công Nghệ",
+      "Thời Trang"
+    ],
+    "raceTag": "Không Tiết Lộ"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Hứng Họa",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu"
+    },
+    "battleSkill": {
+      "name": "Cõi Giới Họa Phần",
+      "description": "Si gây <@ba.cryst>ST Băng</> và áp dụng <@ba.key>Họa Ý</>, <#ba.static>Bất Động</> và <#ba.crystinflict>Nhiễm Băng</> lên mục tiêu, hoặc <#ba.fireinflict>Nhiễm Nhiệt</> nếu cán viên hệ <@ba.fire>Nhiệt</> ở <@ba.key>Vị Trí Đội 01</>. Sau khi mục tiêu có <@ba.key>Họa Ý</> chịu ST, một phần ST gánh chịu sẽ được ghi nhận. Khi <@ba.key>Họa Ý</> hết hạn, nó sẽ phát nổ và gây <#ba.fixeddamage>ST Cố Định</> bằng với lượng ST đã ghi nhận. Sau khi thi triển kỹ năng, KN chiến đấu của Si tạm thời đổi thành <@ba.key>Nét Khởi Đầu</>.\n<@ba.key>Đòn Khởi Đầu</>: Tiêu hao <@ba.vup>15</> Điểm Kỹ Năng. Si kéo một <@ba.key>Hồn Mực</> ra từ mục tiêu có <@ba.key>Họa Ý</>. Tất cả ST gây lên và hiệu ứng áp dụng lên <@ba.key>Hồn Mực</> cũng sẽ được gây/áp dụng lên chủ thể của nó (tức mục tiêu đó). <@ba.key>Hồn Mực</> tồn tại trong thời gian còn lại của <@ba.key>Họa Ý</>. Sau khi thi triển kỹ năng, KN chiến đấu của Si tạm thời đổi thành <@ba.key>Nét Kết Thúc</>.\n<@ba.key>Nét Kết Thúc</>: Không tiêu hao Điểm Kỹ Năng. Khiến <@ba.key>Hồn Mực</> biến mất sớm. Khi biến mất, <@ba.key>Hồn Mực</> sẽ di chuyển đến chủ thể của nó và kích hoạt một vụ nổ tương tự vụ nổ khi <@ba.key>Họa Ý</> kết thúc.\n<@ba.info>Khi gây ST hoặc áp dụng hiệu ứng lên cả Hồn Mực và chủ thể, chỉ 1 lần ST hoặc hiệu ứng được gây/áp dụng. Nếu chủ thể bị đánh bại trong thời gian tồn tại của Hồn Mực, Hồn Mực sẽ liên kết với một kẻ địch khác trong giao tranh và áp dụng Họa Ý lên kẻ đó. Thao tác này không đặt lại thời gian duy trì của Họa Ý. Nếu mục tiêu có Họa Ý bị đánh bại khi Hồn Mực chưa được kéo ra, mục tiêu bị đánh bại sẽ để lại một Hồn Mực tại vị trí của nó.</>",
+      "dmgMultiplier": "Hệ Số ST",
+      "immobilizationDurationS": "Hiệu Lực Bất Động (giây)",
+      "artfulIntentDurationS": "Hiệu Lực Họa Ý (giây)",
+      "dmgRecordRatio": "Tỷ Lệ Ghi Nhận ST",
+      "stagger": "Suy Sụp",
+      "artfulIntentBurstStagger": "Suy Sụp Do Bùng Nổ Họa Ý"
+    },
+    "comboSkill": {
+      "name": "Họa Ý Viên Mãn",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.fireinflict>Nhiễm Nhiệt</> của kẻ địch được <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</>.\nSi triệu hồi một <@ba.key>Mặc Long</> gây <@ba.cryst>ST Băng</>. ST này được tính dựa trên số tầng Nhiễm Thuật Pháp cao nhất được <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> từ một mục tiêu.",
+      "dmgMultiplier": "Hệ Số ST",
+      "multiplierIncreasePerStackConsumedOrAbsorbed": "Tăng Hệ Số Theo Mỗi Tầng Được Tiêu Hao hoặc Hấp Thụ",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+    },
+    "ultimate": {
+      "name": "Không Ai Được Phá Cuộc Vui",
+      "description": "Si triệu hồi một <@ba.key>Mặc Long Khổng Lồ</> từ cuộn tranh của cô, gây <@ba.cryst>ST Băng</> và ban <#ba.crystenhance>Tăng ST Băng</> cùng <#ba.fireenhance>Tăng ST Nhiệt</> tạm thời cho toàn đội.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "amp": "Tăng",
+      "ampDurationS": "Hiệu Lực Tăng (giây)"
+    },
+    "indicator": {
+      "levels": [
+        "Trí Tuệ Cán Viên +10.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +20."
+      ],
+      "name": "Nhạy Bén"
+    },
+    "talent1": {
+      "levels": [
+        "Tuyệt Kỹ <@ba.key>Không Ai Được Phá Cuộc Vui</> được cường hóa: Sau khi thi triển, thời gian hồi KN liên hoàn của cán viên ở <@ba.key>Vị Trí Đội 01</> <@ba.vup>{coolDown:0}</> giây.",
+        "Tuyệt Kỹ <@ba.key>Không Ai Được Phá Cuộc Vui</> được cường hóa: Sau khi thi triển, thời gian hồi KN liên hoàn của cán viên ở <@ba.key>Vị Trí Đội 01</> <@ba.vup>{coolDown:0}</> giây."
+      ],
+      "name": "Ân Trạch Toái Thể"
+    },
+    "talent2": {
+      "levels": [
+        "Khi <@ba.key>Hồn Mực</> biến mất, cán viên đồng minh sẽ được cộng <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Tăng Tốc</> trong {duration_speedup:0} giây.",
+        "Khi <@ba.key>Hồn Mực</> biến mất, cán viên đồng minh sẽ được cộng <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Tăng Tốc</> trong {duration_speedup:0} giây."
+      ],
+      "name": "Cây Bút Vô Trần"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +20%",
+        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +30%"
+      ],
+      "name": "Mặc Linh Đâu Rồi"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 14%",
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 18%"
+      ],
+      "name": "Trợ Thủ Vong Linh Mực"
+    },
+    "files": {
+      "main": "MẬT DANH: Si \nGIỚI TÍNH: Nữ \nNHẬN DẠNG: Học Viện Khoa Học Hongshan \nNGÀY SINH: 15 Tháng 9 \nCHỦNG TỘC: Không Tiết Lộ \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: ■■ \nKN CHIẾN ĐẤU: Xuất Sắc \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Khiếm Khuyết",
+      "humanResources": "Si, một Toái Thể Cự Thú không có đơn vị chủ quản chính thức, từ lâu đã có mối liên hệ với Học Viện Khoa Học Hongshan. Theo lời tiến cử của chính Endministrator, cô gia nhập Tập Đoàn Endfield và hiện phụ trách nghiên cứu lý thuyết cũng như ứng dụng thực tiễn liên quan đến Cự Thú. \n\nSi hiếm khi tham gia các thủ tục nhân sự của Endfield. Ngoại lệ duy nhất được ghi lại trong nhật ký tự chẩn đoán của tôi. Theo thỏa thuận, Si đến Dijiang và trò chuyện với tôi. Cô trả lời mọi câu hỏi, ký giấy tờ, rồi biến mất ngay khi quy trình hoàn tất. Mô-đun xử lý của tôi lập tức phân loại sự việc này là một tình huống bất ngờ và phát cảnh báo. Một lát sau, Si quay lại văn phòng, lau giọt mực ở chính giữa màn hình của tôi rồi lẩm bẩm: \"Thú vị đấy... nhưng vẫn chưa đủ thú vị.\" Sau đó, cô giải thích rằng \"Si\" ngồi đối diện tôi khi ấy chỉ là một bức tranh của chính cô. Cô muốn xem tôi sẽ phản ứng thế nào. Xét theo nhận xét kia, phản ứng của tôi dường như không được như cô mong đợi. \nĐó chỉ là một trò đùa vô hại, nhưng sự việc đã phần nào cho thấy cá tính đặc biệt của Si. Dù sở hữu những năng lực nằm ngoài phạm vi giải thích của khoa học, đôi khi cô lại bộc lộ khí chất dường như không giống một Toái Thể Cự Thú thông thường. Cơ hội gặp gỡ một Toái Thể Cự Thú trên Talos-II vốn rất hiếm hoi. Vì vậy, tôi kiến nghị các đồng nghiệp tại Bộ Phận HR hãy tận dụng mọi cơ hội để tiếp xúc với cô. Biết đâu một ngày nào đó, chúng ta có thể tìm ra quy luật đằng sau những tâm trạng thay đổi thất thường ấy. \n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Sau khi gia nhập Endfield, hầu như không có cán viên nào từng gặp Si. Hồ sơ của cô gần như để trống, còn \"bí ẩn\" là ấn tượng duy nhất mà phần lớn chúng tôi có về vị Toái thể Cự Thú này. Bộ Phận HR thậm chí từng nhờ người tiến cử cô thuyết phục cô hợp tác thực hiện một vài thủ tục tiếp nhận, nhưng có vẻ ngay cả Endministrator cũng không thể lay chuyển cô... Mọi chuyện thay đổi khi một cán viên hậu cần tình cờ bắt gặp cô tại một nhà hàng lẩu ở thành phố Võ Lăng. \nHai người gặp nhau hoàn toàn tình cờ, không ai biết thân phận của đối phương. Họ cùng tham dự một sự kiện quảng bá thực đơn mới, rồi ngồi chung bàn để nếm thử các món nước lẩu như Nước Dùng Chanh Mướp Đắng, Nước Dùng Bóng Cá Ớt Sên và Nước Dùng Trong Nấu Grovenymph - chỉ riêng tên gọi cũng đã đủ kỳ lạ. Khi biết Si đến đây để học hỏi vài bí quyết cho đầu bếp ở quán trọ của mình, cán viên hậu cần đã khen cô có đầu óc kinh doanh nhạy bén và gu thưởng thức tinh tế đến đáng kinh ngạc so với vẻ ngoài trẻ tuổi. Si vô cùng vui vẻ, lặng lẽ thanh toán luôn hóa đơn của người kia. Mãi đến sau này, khi nhìn thấy ảnh của Si tại Bộ Phận HR, cán viên ấy mới nhận ra người bạn đồng bàn của mình thực sự là ai... Sau đó, ngày càng có nhiều cán viên vô tình chạm mặt Si ở những nơi không ai ngờ tới, từ sự kiện ra mắt Chubby Lung ở thành phố Võ Lăng cho đến trung tâm trải nghiệm robot của La Fantoma... danh sách còn dài. Thậm chí, hai cán viên từng cãi nhau kịch liệt vì một lần trông thấy cô. Cả hai đều khẳng định đã gặp Si vào đúng cùng một thời điểm, nhưng một người nói cô là vị khách đấu giá tinh nghịch đã giành món vật phẩm cuối cùng tại buổi đấu giá quyền trượng phù thủy của Seš'qa, người kia lại quả quyết cô là vị khách bí ẩn đã say rượu giữa các Nữ Tư Tế Tuyết của Sami. Hai nơi ấy cách nhau hàng nghìn dặm, một trên mặt đất, một dưới lòng đất. Những câu chuyện như vậy chỉ có thể xuất hiện trong truyền thuyết cổ xưa của Đại Viêm. Tóm lại, nếu lời các cán viên là thật, Si chẳng giống một Toái Thể Cự Thú sống ẩn dật chút nào, mà giống một đứa trẻ hiếu động không thể ngồi yên ở nhà hơn. \nKể từ đó, mỗi khi Dijiang tổ chức những sự kiện như Đêm Điện Ảnh Tiên Phong, sẽ có vài cán viên lấy hết can đảm để nhờ Endministrator mời Si... Lần này, cô thật sự đến. Dần dần, chúng tôi nhận ra đó đơn giản là con người vốn có của cô. Tinh nghịch, khó đoán, cô không mấy kiên nhẫn với những ai cứng nhắc hoặc không chịu thay đổi. Cô luôn bị thu hút bởi những điều mới mẻ và nhìn thế giới bằng sự tò mò của một đứa trẻ. Có lẽ... xét theo tiêu chuẩn của Cự Thú, cô thực sự vẫn còn rất trẻ. \n\nLời khuyên từ Cán viên Argent Flow: Tránh dùng những từ như \"trẻ con\" và \"còn trẻ\". Quý cô Si khá nhạy cảm về tuổi tác. Cô luôn khẳng định: \"Tôi gần bằng tuổi nền văn minh trên Talos-II rồi. Mấy người mới là trẻ con ấy.\" \n\nLời khuyên từ Cán viên Arcane: Khi gặp chuyện quan trọng, xin hãy tin tưởng Toái Thể như chúng tôi vẫn luôn làm. Dù ngày thường cô có thế nào, năng lực của cô hoàn toàn xứng đáng với sự tin tưởng ấy. Cô cũng không thích người khác nghi ngờ năng lực của mình. \n\nLời khuyên bí ẩn từ một vị khách không rõ danh tính: Nếu cô ấy bắt đầu nổi nóng, cứ đi tìm Endministrator là được.",
+      "file2": "Nhật Ký Huấn Luyện Đội Đặc Nhiệm Yinglung III \nĐịa điểm: Hoang Địa Vô Danh, khu vực quản hạt của Học Viện \nMục tiêu: Buổi gặp mặt đã lên lịch giữa Toái Thể và nhóm tân binh mới nhất \nGhi chép: Toái Thể vắng mặt mà không báo trước, buổi gặp được thay bằng huấn luyện thường lệ. Cán viên kỳ cựu phụ trách buổi huấn luyện đã trấn an các tân binh rằng tuy Toái Thể từng tham gia sáng lập và hoạch định ĐĐNY, cô không giữ bất kỳ chức vụ chính thức nào tại Học Viện. Hai bên duy trì quan hệ hợp tác, và nhiều thành viên ĐĐNY có thể sẽ không bao giờ gặp cô trong suốt thời gian phục vụ. \n\nNhật Ký Huấn Luyện Đội Đặc Nhiệm Yinglung VIII \nĐịa điểm: Đàm Kiếm Đường, Học Viện \nMục tiêu: Bài giảng của Toái Thể về ứng dụng Sức Mạnh Cự Thú \nGhi chép: Toái Thể vắng mặt mà không báo trước. Trong thời gian ngắn, cô đã sắp xếp để Ye Minghe, Đội Trưởng Bầu Trời Yên Bình thuộc Vệ Binh Hoàng Gia, cùng Endministrator của Tập Đoàn Endfield đến thay mình. Buổi học được chuyển thành buổi trao đổi kỹ thuật về thương thuật và ứng dụng Originium. \n\nNhật Ký Huấn Luyện Đội Đặc Nhiệm Yinglung XXI \nĐịa điểm: Một cuộn tranh do Toái Thể vẽ ngay tại chỗ \nMục tiêu: Bài giảng của Toái Thể về ứng dụng Sức Mạnh Cự Thú \nGhi chép: Toái Thể có tâm trạng đặc biệt tốt, buổi huấn luyện kéo dài quá giờ hơn ba tiếng. Cô chủ động thị phạm hơn mười loại năng lực khác nhau, mỗi loại lại khiến người xem kinh ngạc hơn loại trước. Những \"mánh khóe nhỏ\" mà cô gọi bao gồm, nhưng không chỉ giới hạn ở: tùy ý dịch chuyển đá gỗ để tạo nên một khu vườn không ai có thể thoát ra; tạo ra khiên lớn và đại kiếm từ hư không, như thể rút thần binh khỏi khoảng không vô tận; gieo một hạt mầm rồi khiến nó nảy mầm, héo úa và đâm chồi lần nữa chỉ trong chớp mắt, làm đảo lộn cảm nhận về thời gian lẫn nhân quả; khiến tranh mực sống dậy, xóa nhòa ranh giới giữa ảo ảnh và hiện thực; biến hình vuông thành hình tròn, như thể thực tại cũng phải tuân theo từng lời cô nói... Dĩ nhiên, với sự hỗ trợ của thiết bị chuyên dụng, chúng ta chỉ có thể vận dụng một phần nhỏ những năng lực ấy, càng không thể tự do sử dụng như Toái Thể. Dù vậy, giá trị của chúng trên chiến trường là không thể nghi ngờ. Nếu được ứng dụng đúng cách, chúng sẽ cho phép ĐĐNY thực hiện vô số nhiệm vụ phức tạp. \nTuy nhiên, những năng lực đó không phải lúc nào cũng ổn định. Trong vài trường hợp hiếm hoi, một chiếc khiên khổng lồ bỗng xuất hiện lỗ hổng lớn không rõ nguyên do, hoặc mặt trời trong tranh chỉ còn là vệt mực lơ lửng trên bầu trời, nhỏ mực xuống không ngừng. Những sự việc này không thường xuyên, nhưng đã được ghi nhận. Toái Thể luôn nhanh chóng che giấu các sự cố ấy. Những cách làm thường thấy gồm ho thật lớn một cách khoa trương, đột ngột vẽ ra một dòng sông rồi tuyên bố bắt đầu bài tập tác chiến vượt sông ngẫu hứng, hoặc đơn giản là kết thúc buổi học ngay tại chỗ... \n\nĐiều này cũng không có gì đáng ngạc nhiên. Sở hữu một kỹ năng không đồng nghĩa với việc đã làm chủ nó. Dù là chiến đấu hay chế tác, để đạt đến mức thuần thục thực sự đều cần nhiều năm. Dĩ nhiên, hoàn cảnh của Toái Thể có phần khác biệt. Cô chỉ mới kế thừa Sức Mạnh của Cự Thú \"Sui\" cùng toàn bộ mười hai Toái Thể của nó không lâu. Dù vậy, những đóng góp của cô đã tự nói lên tất cả. Nhờ có cô mà ngày nay ĐĐNY mới tồn tại, quê hương chúng ta cũng tiếp tục được bảo vệ. \n— Arcane, Trưởng nhóm ĐĐNY",
+      "file3": "Cục Quản Chế Sui được thành lập khá muộn trong số các tổ chức chuyên biệt của Học Viện. Tuy có cùng tên với tổ chức tương ứng trên Terra, mục đích tồn tại của hai bên lại hoàn toàn khác nhau. Tổ chức nguyên bản được thành lập tại Đại Viêm sau \"Cuộc Săn Lớn\" để giám sát Cự Thú đang ngủ yên mang tên Cự Thú \"Sui\". Lực lượng trực thuộc của nó, \"Người Gác Nến\", có trách nhiệm theo dõi hoạt động của mười hai Toái Thể của \"Sui\" và ứng phó với các tai họa thứ cấp có liên quan. Trong gần một nghìn năm, quan hệ giữa Cục Quản Chế Sui và các Toái Thể vẫn luôn căng thẳng. \nTuy nhiên, tại Học Viện, Cục Quản Chế Sui là tổ chức tình báo và hỗ trợ kỹ thuật, tập trung phát triển công nghệ dựa trên Sức Mạnh Cự Thú, đồng thời hỗ trợ Học Viện trong cả lĩnh vực quân sự lẫn dân sự. Toái Thể Cự Thú Si trực tiếp tham gia thành lập Cục Quản Chế Sui và sau đó là ĐĐNY trực thuộc tổ chức này. Có vẻ chính cô cũng rất thích công việc ấy. Với Cục Quản Chế Sui, Si giống một cố vấn lập dị hơn. \n\nHồ Sơ Đặc Biệt \n\"Tôi e rằng ngay cả Talos-II rộng lớn rồi cũng sẽ có ngày trở nên quá chật chội với cô em gái của tôi. Nhưng con bé vẫn còn trẻ, phía trước còn một chặng đường dài. Vì thế, tôi đã đưa nó đến Hongshan để mở mang tầm mắt, mong Thiên Sư Tan sẽ chăm sóc nó. Nếu có điều gì tôi có thể làm để đáp lại, tôi sẽ đích thân đến ngay.\" \n\"Anh trai tôi chỉ viết có vậy thôi sao?\" \n\"Thế vẫn chưa đủ à? Cô là Toái Thể mới nhất. Không ai biết khi sức mạnh thức tỉnh hoàn toàn, cô sẽ trở thành thế nào. Nếu cô trở nên khó đối phó như Sui năm xưa, có lẽ Talos-II sẽ chẳng còn ai kiềm chế nổi cô. Tốt hơn hết là cô nên ở cùng chúng tôi một thời gian. Như thế vừa tốt cho cô, vừa tốt cho Học Viện. Hơn nữa... anh trai cô đã cảnh cáo tôi rằng chỉ cần bất kỳ ai ở đây khiến cô không vui, anh ấy sẽ tìm đến tận cửa. Đến nước này, tôi chỉ mừng vì anh ấy không gửi kèm một con dao theo lá thư thôi!\" \n\"A-Anh ấy không có ý đó đâu... Cô là Thiên Sư giàu kinh nghiệm nhất ở Học Viện... Và tôi... tôi vẫn luôn kính trọng cô!\" \n\"Ha ha, phải thế chứ. Cô đáng mến hơn các anh chị em của mình nhiều. Vậy sao rồi, cô đã quyết định về đội đặc nhiệm chưa? Cô ở Hongshan cũng lâu rồi.\" \n\"Cô còn phái cả Endmin đến thuyết phục tôi. Tôi đã có mặt ở đây rồi, chẳng phải đó chính là câu trả lời sao?\" \n\"Tuyệt vời. Vậy hãy để đây trở thành công việc chính thức đầu tiên của Cục Quản Chế Si trên Talos-II.\" \n\"Cục Quản Chế Si ư?!\" \n\"Hừm... Câu chuyện của Sui đã thuộc về Terra, còn các anh chị em của cô cũng tự do sống theo ý mình. Cái tên \"Cục Quản Chế Sui\" dường như không còn hoàn toàn phù hợp nữa...\" \n\"Cứ giữ Cục Quản Chế Sui đi! Cục Quản Chế Si nghe dở tệ. Như thể cả nơi này chỉ tồn tại để theo dõi tôi vậy.\" \n\"Cũng có lý. Vậy thì giữ lại tên cũ.\" \n\"Thế còn đội đặc nhiệm?\" \n\"Bọn trẻ vẫn đang tranh cãi về tên gọi. Theo tôi, đơn vị này tồn tại là nhờ cô, vậy sao không gọi là... \"Đội Đặc Nhiệm Yinglung\"?\" \n\"Ngầu đấy! Tôi thích!\"",
+      "file4": "Khi bụi lắng xuống, Cự Thú Sui không bao giờ tỉnh lại nữa. \nCơ thể của hắn đã biến mất. Ý chí của hắn chìm vào im lặng giữa hỗn loạn. Niềm kiêu hãnh, cơn thịnh nộ, lòng căm hận và ý chí phản kháng từng định hình nên hắn đều phai nhạt cùng sự mất đi của vật chứa. Mất đi thân xác, hắn trở thành một đứa trẻ bị buộc phải đối diện với một câu hỏi duy nhất. \n\"Ta là ai?\" \nHư không không đưa ra lời đáp. Hắn nhận ra có lẽ bản thân đã không còn quyền trả lời câu hỏi ấy nữa. \nVì vậy, hắn buông tay. Sau bao thời đại chiến đấu với thế giới và chính mình, cuối cùng hắn đã quá mệt mỏi để suy nghĩ tiếp. Trong sự tĩnh lặng ấy, hắn tìm được một sự giải thoát mà mình chưa từng biết đến. \n...... \nThế nhưng Sui đã tồn tại quá lâu, lại trở nên quá hùng mạnh, nên không thể dễ dàng tan biến như vậy. Quá nhiều mảnh vỡ của hắn đã thất lạc qua năm tháng. Ngay cả khi ý thức của hắn chọn cách lưu đày, vẫn sẽ có thứ tự nhiên trỗi dậy, như sương sớm đọng trên lá non rồi rơi xuống... \nCó thứ gì đó rơi xuống. \nÂm thanh ấy thu hút sự chú ý của một toái thể vẫn chưa rời đi. \nXuất phát từ thương hại... hay cảnh giác... người đó lập tức gom mảnh ý thức hoàn hảo ấy vào lòng bàn tay. Nó không thể nói, cũng không thể sử dụng bất cứ sức mạnh nào. Khó có thể nói nó còn thật sự liên hệ với Sui hay không. Yếu ớt, chập chờn, nó như ngọn nến nhỏ, sáng trong và thuần khiết tuyệt đối. \nLần đầu tiên, các toái thể cảm thấy do dự. \nTất cả đều biết đây là tàn dư cuối cùng của Cự Thú Sui. Nếu muốn xóa sạch mọi dấu vết còn sót lại của hắn, họ chỉ cần một ý niệm. \nThế nhưng nó lại nằm lặng lẽ trong lòng bàn tay. \nĐây thực sự có thể là Sui mà họ vẫn luôn biết sao? Cự Thú kiêu ngạo ấy sẽ không bao giờ phơi bày bản thân trước chính các toái thể của mình, kể cả để bảo toàn sự tồn tại của hắn. Nhưng nếu đây là một sinh mệnh chỉ vừa mới bắt đầu... Các toái thể chợt mơ hồ nhớ lại cảm giác trước khi chính họ được sinh ra. \nNó tìm kiếm. Nó chật vật tìm lời giải cho một câu hỏi duy nhất: Điều gì tạo nên bản thân ta? Khi tàn dư cuối cùng của quá khứ không thể cho nó câu trả lời, ý thức bé nhỏ ấy theo bản năng tìm đến những người thân của mình. \nNhững đứa trẻ từng được hắn tạo ra để bước đi giữa nhân thế, giờ đây lại trở thành người dẫn đường cho hắn. Với mười hai toái thể, sự trớ trêu ấy không thể nào không nhận ra. Họ bàn bạc mãi mà không đi đến đâu, cho đến một ngày, một giọng nói xuyên qua sự im lặng trong tâm trí họ. \nRất khẽ. Rất yếu ớt. Nhưng trong trẻo đến kinh ngạc. \n\"Ta là ai?\" \n\"Đây là đâu?\" \n\"Ngươi là ai?\" \n...... \nCuối cùng, các toái thể quyết định đưa ý thức bé nhỏ ấy vượt qua Cổng Không Gian, đến một thế giới xa lạ. Họ hiểu rằng ngay cả tàn dư nhỏ bé nhất của Cự Thú đang yên nghỉ trong Mộ Sui cũng mang theo vô số sợi chỉ định mệnh. Nhưng nếu nó... nếu cô ấy chẳng biết gì về tất cả những điều đó, thì cô ấy đã không còn là hắn nữa. \nCó lẽ câu trả lời mà cô ấy tìm kiếm vốn không thể được tìm thấy trên mảnh đất nơi chính Sui từng thất bại. Ở một thế giới mới, một linh hồn mới có lẽ sẽ tìm ra ý nghĩa thực sự của sự tồn tại, cùng lời giải đáp của riêng mình. \nVà thế là tia sáng ý thức bé nhỏ ấy đến Talos-II, mang theo đủ thứ... ừm... vật dụng lặt vặt. Thật lòng mà nói, họ nhét quá nhiều đồ. Cứ liên tục nhét đồ vào tay tôi... không, vào tay nó. \nSau đó thì... đó là một câu chuyện khác."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Quản Lý Đội",
+        "description": "Quản Lý Đội Ngũ: Triết Lý Chủ Quán\n\"Trang Viên Yuanyuan là thương hiệu trăm năm tuổi, và tôi hoàn toàn đã tự nghĩ ra một phương pháp phục vụ đúng chuẩn. Người của Học Viện thỉnh thoảng còn đến học hỏi tôi đấy.\""
+      },
+      "expert2": {
+        "name": "Lắp Ráp Dụng Cụ",
+        "description": "Lắp Ráp Dụng Cụ: Si Muốn Là Được\nLửa tôi luyện nên thần khí, nét bút vẽ thành muôn cõi. Cô ấy lấy cảm hứng từ mọi thứ quanh mình, thậm chí cả những giấc mơ. Chỉ cần nghĩ ra, cô ấy sẽ có được. Quá trình này không phải lúc nào cũng hoàn hảo, nhưng đừng vạch trần trước mặt cô ấy."
+      },
+      "hobby1": {
+        "name": "Công Nghệ",
+        "description": "Công Nghệ: Hỏi Đáp Nguyên Mẫu Sơ Kỳ\n\"Nhà thông minh sao sánh được với nhóm waregeist cực kỳ, cực kỳ biết nghe lời của tôi chứ.\""
+      },
+      "hobby2": {
+        "name": "Thời Trang",
+        "description": "Thời Trang: Chuyên Viên Trang Điểm Thử Nghiệm\nMột danh xưng tự phong. Thật ra, chẳng ai dám thuê Si làm công việc này. Nhân viên Trang Viên Yuanyuan tiết lộ rằng Si luyện kỹ năng trang điểm bằng cách vẽ mặt cho các Vong Linh Mực."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_01",
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Hừm. Chỉ khi gặp rắc rối mới nhớ đến tôi thôi sao?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_squad_02",
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Tôi sẽ giúp ngài thêm lần nữa. Về đến nhà trọ nhớ trả công cho tôi đấy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_01",
+        "title": "Đang thêm vào Đội 1",
+        "text": "Từ giờ đừng nói chuyện với tôi. Tôi cần tập trung."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_join_02",
+        "title": "Đang thêm vào Đội 2",
+        "text": "Nào, nói gì đi chứ. Yên tĩnh quá lại khiến tôi mất tập trung."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_weap_01",
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Ngài chọn thứ này sao? Hmm... Hay để tôi điểm thêm vài nét mực nhỉ? Giờ nó là của tôi rồi, ngài đừng hòng đòi lại."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrbark_gear_01",
+        "title": "Đang Đổi Trang Bị",
+        "text": "Còn tính đến cả đôi cánh của tôi nữa sao... Khụ. K... Không tồi, nhưng đừng tưởng làm vậy là tôi sẽ đối xử tốt với ngài."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_skill_01",
+        "title": "Kích Hoạt Ma Trận Năng Lực",
+        "text": "A! Cảm hứng đến rồi. Nhanh lên, đừng đứng ngây ra đó! Mau lấy giấy cho tôi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_level_01",
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Xem thêm vài lần cho nhớ kỹ... Ngài cười gì chứ? Tôi đang nói ngài đấy!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt01_01",
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Nói trước nhé, tôi chỉ là nhân viên Endfield danh dự thôi, đừng mong chuyện gì tôi cũng làm. Với lại, Endfield tốt nhất phải thú vị như lời ngài nói đấy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt02_01",
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Đưa tay đây, để tôi đóng dấu bằng đuôi cho. Đấy... Thế là được rồi. Không được lau đi cho đến khi tôi quyết định đóng cho ngài một dấu mới."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt03_01",
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Vong Linh Mực, hãy ghi lại lời Endmin vừa nói. Không. Được. Sót. Một. Chữ. Học Viện muốn tôi diễn thuyết trước đám Đặc Nhiệm trẻ. Những lời này sẽ hữu ích lắm đây."
+      },
+      {
+        "voId": "chr_0036_jsspsi_chrup_promt04_01",
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Ngài cứ thăng cấp cho tôi mãi, nhưng nếu một ngày ngài không giữ lời, tôi sẽ trở về nhà trọ ngay. Chuyện của Endfield thì cứ để Endfield lo. Còn chuyện giữa ngài và tôi... chỉ là chuyện giữa hai chúng ta thôi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_introduce_01",
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Đứng yên, không được nhúc nhích! Mực còn chưa khô đâu... Bức họa này tặng ngài đấy. Tôi vẽ gì không quan trọng, quan trọng là con dấu của tôi! Lần này tuyệt đối không được quên tên tôi nữa!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_01",
+        "title": "Chờ Lệnh 1",
+        "text": "Chỗ này, rồi đến chỗ kia... Được rồi, cuộn lại đi. Khụ. Bản phác của ngài xong rồi đấy. Phải biết kiên nhẫn chứ!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_switch_02",
+        "title": "Chờ Lệnh 2",
+        "text": "Theo tôi bao nhiêu năm rồi mà sao chẳng học được gì hết vậy? Chẳng hạn như giả chữ ký của tôi ấy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_assign_work_01",
+        "title": "Phân Công Vào Công Trình",
+        "text": "Ngài dụ tôi đến đây chỉ để mình được ngồi không hưởng thụ sao? Đừng hòng. Ngài phải ở lại đây với tôi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_lower_01",
+        "title": "Lời Chào 1",
+        "text": "Định cứ thế đi ngang qua tôi sao? Ngài giả vờ không nhìn thấy tôi đấy à?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_hello_max_01",
+        "title": "Lời Chào 2",
+        "text": "Còn lời hứa mười năm trước ấy... Ngài định bù đắp thế nào đây?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Tôi mà ngồi không sao? Ngài thấy ô cửa sổ tròn kia không? Tôi đã vẽ hẳn một bức \"Lữ Khách Khắp Talos-II\" phía trên đó... Nhưng có người mãi chẳng chịu tới, nên tôi xóa sạch luôn rồi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Sao lần nào tôi đến Dijiang ngài cũng xuất hiện vậy? Gì cơ, ngài thấy Vong Linh Mực nấp ở góc kia...? À, ừm... Xem ra ngài cố tình xuất hiện trên đường tôi đi rồi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_lv02_02",
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Tôi sẽ vẽ chân dung ngài rồi treo ở chỗ tôi. Sau này ngài tự mình vào cuộn tranh của tôi, đám waregeist sẽ không dám đến gần nữa... Hmm? Đúng là tôi đã có một bức từ mười năm trước. Nhưng khi ấy ngài đâu có đeo thứ gì trên mặt."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_01",
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Bản đồ, gối, đồ ăn vặt, bếp, trà thảo mộc giúp tỉnh táo... À, tôi chỉ đang liệt kê những thứ cần mang đến Sami thôi. Đi đây đi đó mới khơi nguồn cảm hứng cho tôi. Ngài xem còn cần thêm gì nữa không... Tất nhiên ngài phải đi cùng rồi, nếu không tôi kể với ngài làm gì chứ! Không, tôi đã có Vong Linh Mực xách hành lý, đâu cần ngài, đồ ngốc!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_02",
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Tôi vừa gặp Perlica. Cô giám sát viên nhỏ ấy giống hệt ngài... Rõ ràng buồn ngủ đến mức có thể đứng mà ngủ, vậy mà vẫn cố gắng tỉnh táo... Ngài cũng y như thế! Đừng thức trắng đêm nữa, mau đi ngủ đi. Cứ làm việc đến kiệt sức rồi lại ngủ liền mười năm... Ngài thật tình đấy!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_talk_max_03",
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Chu choa... Từ đây có thể nhìn thấy gần nửa Talos-II đấy... Không biết hai người kia đã lang thang đến tận đâu rồi... Ai nói tôi nhớ các anh chị của mình chứ? Đừng nhìn tôi như thế...! *Thở dài* Được rồi. Có lẽ tôi cũng hơi nhớ họ một chút. Chỉ một chút thôi..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_give_01",
+        "title": "Tặng Quà",
+        "text": "Đây. Một món quà nhỏ cho ngài, chỉ là thứ tôi tiện tay vẽ thôi. Đừng có mừng vộ - Á, nhầm bức rồi! Bức tự họa ấy chỉ là tranh luyện tập thôi. TRẢ LẠI ĐÂY!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_sim_gift_recv_01",
+        "title": "Nhận Quà",
+        "text": "Ơ... T-Từ bao giờ ngài lại khách sáo, nghiêm túc như thế - NÀY! Không được phép lấy lại đâu đấy!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line01",
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Nếu có thời gian thì ghé nhà trọ dự bữa tiệc chào mừng mà ngài đã bỏ lỡ đi. Nhà bếp đã lùng sục khắp nơi để tìm đủ mọi nguyên liệu quý hiếm đấy. Khoan... Ngài vừa nói muốn cảm ơn ai cơ?! Chà, xem ra mọi công lao đều thuộc về nhân viên cả rồi. Vậy thì bà chủ vô tình như tôi đành phải ngăn họ phung phí số nguyên liệu quý giá ấy thôi! HỨ!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line02",
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Ngài ngửi thử đi. Thấy vách núi đằng kia không? Những bụi trà mọc ở đó đấy. Trà ngon thì ngon thật, nhưng tôi phải phái những Vong Linh Mực giỏi nhất đi hái lá về. Công sức mười năm đều gói gọn trong chiếc hũ nhỏ này. Hôm nay ngài may mắn lắm đấy... Này. Sao răng ngài dính đầy mực vậy? Khoan... Răng tôi cũng thế sao...? C-Cứ uống hết trà đi. Không được chừa một giọt. Với lại đừng nhìn tôi nữa!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line03",
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Dừng! Hôm nay đến đây thôi! Ừm, trình độ Weiqi của ngài cũng khá hơn nhiều rồi đấy. Nhưng anh tôi vẫn là kỳ thủ giỏi nhất Talos-II. Ngài còn lâu mới đạt đến trình độ của anh ấy... Gì cơ? Đây đã là lần thứ ba trong tháng tôi nhắc đến các anh chị rồi sao? T-Tôi đâu có nói mình ước gì họ vẫn còn ở đây! Cứ nhìn ngọn núi này, nhà trọ này, với lại ít nhất tôi còn có... KHỤ! Nơi này vốn đã đủ náo nhiệt rồi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line04",
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Chưa bình phục hẳn mà đã định đi xa rồi sao? Ngài được làm bằng Xiranite à? Thật sự nghĩ mình không thể gục ngã chắc? Hừm. Tôi cứ tưởng sau khi mất trí nhớ, cái thói quen tự hành xác ngu ngốc ấy của ngài cũng biến mất rồi chứ, Endmin Ngốc! Đưa thông tin nhiệm vụ đây, tôi sẽ đi thay ngài! Nhớ đấy, ngài lại nợ tôi thêm một lần!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_self_line05",
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Ngồi xuống đi. Bỏ lỡ bình minh rồi sao? Vậy thì cầm cọ vẽ lại là được. Năm xưa, ngài cũng thường chẳng mời mà đến mỗi khi tôi ở một mình. Ngài luôn có cách biến những ý tưởng ngớ ngẩn thành lời an ủi... Thôi được. Tôi biết những lời mình nói lúc này chẳng thể giúp ngài tìm lại ký ức đã mất. Nhưng nếu ngài còn dám quên thêm bất cứ điều gì, tôi sẽ không nói chuyện với ngài suốt mười... không, một trăm năm mươi năm!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line01",
+        "title": "Trò Chuyện 1",
+        "text": "Ngày càng có nhiều người muốn đến thăm cuộn tranh, nhưng nhà trọ vốn không được xây để đón nhiều khách đến vậy. Nhân viên đề nghị đặt một bảng góp ý ở đại sảnh... Nghe thì hay đấy, nhưng như vậy tôi sẽ nhận được đủ loại ý kiến linh tinh. T-Tôi chỉ là không có thời gian đọc hết thôi. Vậy nên, ngài có thể lọc qua trước... để sau đó tôi chỉ cần xem những ý kiến hữu ích được không?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line02",
+        "title": "Trò Chuyện 2",
+        "text": "Cảnh giới tối cao của thuật rèn là thu gọn mọi công đoạn chế tạo trong một hơi thở, biến mọi ý tưởng thành hiện thực. Giống như chiếc khiên tôi đang cầm đây... Gì cơ? Một lỗ rỗng do lỗi chế tác...? KHỤ. À phải, đây chỉ là hàng mẫu thôi. Có vài khuyết điểm nhỏ cũng là chuyện bình thường, chắc chắn không liên quan gì đến trình độ vận dụng sức mạnh của tôi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line03",
+        "title": "Trò Chuyện 3",
+        "text": "Ngài đã nghe nói đến thú bông thiên cổ yêu thú chưa? Tôi thích mấy thứ tròn trịa lắm, trong nhà trọ cũng có cả đống. Nhưng thú bông thiên cổ yêu thú là phần thưởng độc quyền của trò \"Vẽ Hình Đoán Ý\" ở Võ Lăng, mà trò ấy lại không thể chơi một mình... Nghe cho kỹ đây, mùa giải tiếp theo sắp bắt đầu rồi. Tôi sẽ dạy ngài vài bí quyết, ngài phải học cho đàng hoàng đấy... Tất nhiên là ngài vẽ, còn tôi đoán rồi! Trông tôi giống loại người gian lận khi chơi lắm sao?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line04",
+        "title": "Trò Chuyện 4",
+        "text": "Nghiện Việc lúc nào cũng lười biếng, Thần Tốc thì to đến mức chẳng nhúc nhích nổi, còn Loa Phường lại chào khách nhỏ nhẹ đến mức chớp mắt một cái là bỏ lỡ. Mấy chục năm rồi, tôi cũng chẳng buồn sửa những thói quen ấy nữa. Sao? Vì họ không còn nơi nào để đi nên tôi mới đưa họ vào cuộn tranh. Tôi có thể đuổi họ đi... nhưng tôi thà để nhà trọ lộn xộn còn hơn phải chịu cảnh vắng lặng."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_chat_line05",
+        "title": "Trò Chuyện 5",
+        "text": "Trước đây, tôi thường ở bên các anh chị, cùng họ chơi Weiqi, nghe họ bàn luận, rồi tối đến lại luyện đọc sách, thư pháp và hội họa. Những lúc rảnh rỗi, ba chúng tôi còn chu du khắp Talos-II... nhưng chẳng bao lâu sau, họ lại đưa tôi đến Hongshan. Có lẽ họ thấy Talos-II là một thế giới mới mẻ, nên cho rằng nếu họ cứ luôn ở bên, tôi sẽ chẳng bao giờ thật sự yêu thích nơi này. Tôi hiểu dụng ý của họ, nhưng đâu thể cứ bỏ em gái mình lại một nơi rồi hiếm khi ghé thăm chứ..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line01",
+        "title": "Chủ Đề: Đội Đặc Nhiệm Yinglung",
+        "text": "Phải, tôi đã có mặt khi Học Viện thành lập Đội Đặc Nhiệm Yinglung. Nhưng tôi chỉ dạy họ vài chiêu thôi. Tại sao tôi không ở lại lâu hơn ư? Vì trong đội toàn những kẻ cứng đầu như Li Zhiyan. Ở cạnh họ lâu một chút thôi là bầu không khí xung quanh cũng đông cứng mất. Nhưng có vẻ sau khi ở bên ngài một thời gian, cô ấy cũng đã thông suốt hơn đôi chút. Hmm... Hừm... Này Endmin, hay ngài thay tôi đi chỉ bảo họ luôn đi?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line02",
+        "title": "Chủ Đề: Sức Mạnh Cự Thú",
+        "text": "Cơ sở dữ liệu HR của Endfield có vấn đề rồi. Trong mục \"Kỹ Năng\", tôi đã liệt kê mười hai sở trường, gồm võ thuật, văn chương, hội họa, luyện kim, luật pháp, làm vườn... thế mà hệ thống lại báo lỗi. Sao, quá nhiều kỹ năng à? Thỉnh thoảng thất bại một lần cũng đâu có nghĩa là tôi không còn sở trường ấy. Tốt nhất ngài nên giải thích rõ xem chuyện này là thế nào."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line03",
+        "title": "Chủ Đề: Đôi Cánh",
+        "text": "Đôi cánh của tôi đẹp lắm, đúng không? Hồi còn nhỏ, tôi từng mơ thấy chúng mọc ra rồi dang rộng, nên sau khi tỉnh dậy liền vẽ chúng lên lưng. Chị tôi cứ cằn nhằn mãi về chuyện đó... Chúng chỉ là đồ trang trí thôi mà. Thế mà chị ấy lại bảo tôi dùng chúng khi chiến đấu để dọa người khác. Đúng là lời buộc tội vô căn cứ. Ý tôi là, ai lại làm thế chứ? Trẻ con quá đi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line04",
+        "title": "Chủ Đề: Ye Minghe",
+        "text": "Cậu nhóc tóc sáng màu ấy sao? Chúng tôi quen nhau lâu lắm rồi, mà cậu ấy lúc nào cũng phiền phức như vậy. Đôi khi cậu ấy chỉ quan tâm đến con bôn thú đen tuyền của mình, miệng thì cứ lặp đi lặp lại: \"Vệ Binh Hoàng Gia phải làm tròn bổn phận...\" Chính vì cậu ấy thật lòng tin từng lời mình nói nên mới khó đối phó như vậy. Thành thật mà nói, cũng khá giống ngài đấy. Khoan, chính ngài đã ảnh hưởng đến cậu ấy mà! Tóm lại, nếu cậu ấy còn xông vào cuộn tranh của tôi lần nữa, ngài sẽ phải trả giá!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line05",
+        "title": "Chủ Đề: Gia Đình",
+        "text": "Tôi không biết các anh chị đã đi đâu. Sau tất cả những chuyện họ từng trải qua, cuối cùng họ cũng có thời gian rảnh rỗi. Có lẽ giờ họ đang chu du khắp Talos-II. Biết đâu họ sẽ... NÀY! Nghiện Việc! Tôi đã bảo phải dọn dẹp cho tử tế rồi mà? Nhất là tranh vẽ, thư pháp và những bàn Weiqi ấy. Nhỡ họ trở về, nhìn thấy nơi này bừa bộn thế thì sao? Ngươi định để ta bị mắng à!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_about_line06",
+        "title": "Chủ Đề: Sui",
+        "text": "Sui là Cự Thú tệ hại nhất. Không ai tệ hơn. Ngay cả trong giấc ngủ, hắn cũng chẳng chịu yên, cứ âm mưu gây khó dễ cho Viêm Quốc thông qua mười hai phân thân của mình. Nhưng cuối cùng thì sao? Phân thân nào cũng nảy sinh suy nghĩ riêng, quay sang khiến chính hắn phải đau đầu. Còn quan hệ giữa tôi và hắn... Tôi sẽ không tồn tại nếu những người ấy không mang những mảnh linh hồn cuối cùng của hắn đến Talos-II. Nhưng tôi và hắn hoàn toàn khác nhau. Giữa chúng tôi chẳng có quan hệ gì, dù tốt hay xấu. Nợ nần đã thanh toán xong, rõ ràng như ban ngày."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_common_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Đừng bỏ sót chỗ này."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_point_valub_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Nhìn này, chiến lợi phẩm được giấu kỹ thật đấy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_locked_01",
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Chỗ này thú vị đấy. Không để ý kỹ là bỏ lỡ ngay."
+      },
+      {
+        "voId": "chr_0036_jsspsi_explore_find_danger_01",
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Cẩn thận. Chỗ đó phải thêm vài nét nữa mới được."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_01",
+        "title": "Khai thác 1",
+        "text": "Lò Rèn Bầu Trời, Kim Loại Đất Mẹ. Talos-II quả thật có vô vàn vật liệu quý hiếm."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_mine_valub_echo2_01",
+        "title": "Khai thác 2",
+        "text": "Cứ để tôi. Chớp mắt là xong ngay."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_treasure_valub_01",
+        "title": "Mở Thùng",
+        "text": "Đừng ngồi chờ cảm hứng đến. Hãy tự mình đi tìm nó."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_etherium_01",
+        "title": "Nhận Aurylene",
+        "text": "Hmm... Nếu pha Aurylene vào mực, không biết sẽ vẽ ra được thứ gì nhỉ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_blight_break_01",
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Nghĩ lại thì, việc cỏn con này đến Vong Linh Mực của tôi cũng xử lý được."
+      },
+      {
+        "voId": "chr_0036_jsspsi_interact_rest_01",
+        "title": "Nghỉ ngơi",
+        "text": "Tranh thủ nghỉ ngơi khi có thể. Đâu thể chỉ bằng một nét bút mà họa nên cả Talos-II."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_using_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Ta cũng biết đôi chút về thảo dược và trị thương."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_suppuse_getheal_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Thế này dễ chịu hơn nhiều rồi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_danger_01",
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Nhìn bên kia kìa!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_hurt_lowhp_01",
+        "title": "Bị thương",
+        "text": "Chúng làm bẩn cánh ta rồi sao?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_dead_01",
+        "title": "0 HP",
+        "text": "Hết hứng rồi..."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_01",
+        "title": "Cổ Vũ Đội 1",
+        "text": "Ồ, hậu sinh khả úy."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_02",
+        "title": "Cổ Vũ Đội 2",
+        "text": "Xem ra đám trẻ rất hào hứng nhỉ."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Không phải đang nhường ta đấy chứ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Được rồi, được rồi, đừng để phân tâm."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_01",
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Giải quyết cho xong trước khi trời tối."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_intobattle_echo2_01",
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Cho ta xem bản lĩnh của các cô cậu nào."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_01",
+        "title": "Thắng Trận 1",
+        "text": "Thế này vui hơn ở mãi trong cuộn tranh nhiều."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_02",
+        "title": "Thắng Trận 2",
+        "text": "Cảm hứng dâng trào rồi đây. Chuyến đi thực tế này quả không uổng công."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_nor_echo2_01",
+        "title": "Thắng Trận 3",
+        "text": "Xong rồi sao? Chắc các cô cậu vẫn còn đủ sức mài mực cho ta chứ?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_outbattle_hard_01",
+        "title": "Thắng Trận 4",
+        "text": "Khó khăn thật, nhưng cuối cùng vẫn thắng. Đừng có ủ rũ như thế."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_battle_defeat_01",
+        "title": "Bại Trận",
+        "text": "Thắng thì vui, nhưng thua cũng chẳng sao. Có ta ở đây rồi, không việc gì phải sợ."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_01",
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Cúi xuống!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_last_02",
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Lùi lại!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_01",
+        "title": "KN Chiến Đấu 1",
+        "text": "Màu sắc loang lổ!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_02",
+        "title": "KN Chiến Đấu 2",
+        "text": "Nét bút rối tung!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_nor_03",
+        "title": "KN Chiến Đấu 3",
+        "text": "Bản sao vô hồn!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_01",
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Tránh ra một chút."
+      },
+      {
+        "voId": "chr_0036_jsspsi_combat_skill_comb_ready_02",
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Ta rảnh tay rồi."
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_01",
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Còn định phí thời gian của ta sao?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_comb_release_02",
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Còn định phí mực của ta sao?"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_01",
+        "title": "Kết Liễu 1",
+        "text": "Nét bút hoàn thiện!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_attack_extra_02",
+        "title": "Kết Liễu 2",
+        "text": "Tái hiện hoàn mỹ!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_01",
+        "title": "Tuyệt Kỹ 1",
+        "text": "Sóng trào cuồn cuộn! Đất chuyển sục sôi!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_02",
+        "title": "Tuyệt Kỹ 2",
+        "text": "Nét mực sắc bén! Vung bút càn khôn!"
+      },
+      {
+        "voId": "chr_0036_jsspsi_mono_skill_ultimate_03",
+        "title": "Tuyệt Kỹ 3",
+        "text": "Hãy để sức mạnh này tái tạo đất trời!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN chiến đấu <@ba.key>Cõi Giới Họa Phần</> được cường hóa: Thời gian duy trì <#ba.static>Bất Động</> được áp dụng <@ba.vup>+{static_duration:0%}</>; Tỷ Lệ Ghi Nhận ST của <@ba.key>Họa Ý</> <@ba.vup>+{ink_damage_rate:0%}</> và bán kính bùng nổ <@ba.vup>+{ink_boom_range:0%}</>.",
+      "name": "Xuân Thu Vi Mặc"
+    },
+    "potential2": {
+      "description": "",
+      "name": "Nhập Mộc Tam Phân"
+    },
+    "potential3": {
+      "description": "Tuyệt Kỹ <@ba.key>Không Ai Được Phá Cuộc Vui</> được cường hóa: ST Gây Ra tăng lên bằng <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu; hiệu ứng <#ba.enhance>Tăng</> tăng lên bằng <@ba.vup>{enhance_final:0.0}</> lần so với ban đầu.",
+      "name": "Khảo Cứu Gân Cốt"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>Không Ai Được Phá Cuộc Vui</> được cường hóa: Năng Lượng Tuyệt Kỹ tiêu hao <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Thần Ý Viên Mãn"
+    },
+    "potential5": {
+      "description": "KN liên hoàn <@ba.key>Họa Ý Viên Mãn</> được cường hóa: Thời gian hồi KN liên hoàn <@ba.vup>{coolDown:0}</> giây và ST Gây Ra tăng lên bằng <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu. Khi kích hoạt, xem như KN liên hoàn đã <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> thêm 1 tầng Nhiễm.",
+      "name": "Điểm Bút Khai Nhãn"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Tiêu Dao Tự Tại",
+      "author": "狂zip",
+      "description": "Tự do vô ưu, tùy tâm, tùy cảm, tùy niềm vui của chính mình."
+    },
+    "potential3": {
+      "name": "Trong Cõi Mực Họa",
+      "author": "Maeka",
+      "description": "Trong họa cảnh, vạn vật đều được điểm tô bằng sắc màu. Hai người đã cùng nhau trải qua một khoảng thời gian dài trong Thánh Cảnh Mặc Họa."
+    },
+    "potential5": {
+      "name": "Không Nhuốm Bụi Trần",
+      "author": "수줍(Sjoop)",
+      "description": "Cô từng ngao du cõi nhân gian, nhưng chẳng hề vướng bụi trần."
+    }
+  }
+}

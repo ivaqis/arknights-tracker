@@ -502,8 +502,8 @@
     "rOps": {
         "skill": [
             "perlica",
-            "antal",
-            "arcane"
+            "arcane",
+            "antal"
         ],
         "attr": []
     }

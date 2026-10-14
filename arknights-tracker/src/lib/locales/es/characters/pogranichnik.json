@@ -58,7 +58,7 @@
       "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
       "seq3Stagger": "Tambaleo de SEC 3",
       "seq3SpRecovery": "Recuperación de PH de SEC 3",
-      "enhancedSeq3DmgMultiplier": "Multiplicador de DAÑ de SEC 3 mejorado",
+      "enhancedSeq3DmgMultiplier": "Multiplicador de DAÑ SEC 3 mejorado",
       "enhancedSeq3Stagger": "Tambaleo de SEC 3 mejorado",
       "enhancedSeq3SpRecovery": "Recuperación de PH de SEC 3 mejorada",
       "ultimateEnergyGain": "Ganancia de Energía máxima"
@@ -70,10 +70,10 @@
       "advanceDmgMultiplier": "Multiplicador de DAÑ por Avanzar",
       "advanceStagger": "Tambaleo por Avanzar",
       "harassDmgMultiplier": "Multiplicador de DAÑ por Hostigar",
-      "harassSpRecovery": "Rec. de PH de Hostigar",
+      "harassSpRecovery": "Recuperación de PH de Hostigar",
       "decisiveAssaultDmgMultiplier": "Multiplicador de DAÑ de Asalto decisivo",
       "decisiveAssaultStagger": "Tambaleo por Asalto decisivo",
-      "decisiveAssaultSpRecovery": "Rec. de PH de Asalto decisivo"
+      "decisiveAssaultSpRecovery": "Recuperación de PH de Asalto decisivo"
     },
     "indicator": {
       "levels": [

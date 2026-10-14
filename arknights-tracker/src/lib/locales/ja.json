@@ -1212,7 +1212,8 @@
     "liino": "リーノ",
     "typhoeus": "ティフォロス",
     "endministrator": "管理人",
-    "purrchena": "プチエナ"
+    "purrchena": "プチエナ",
+    "si": "スー"
   },
   "weaponsList": {
     "custom_weapon": "カスタム武器",
@@ -1295,7 +1296,10 @@
     "bedazzlingNightDebut": "プリズムナイトデビュー",
     "umbraOfFrigidEventide": "寒夜の影",
     "sufferingsEnd": "苦難の果",
-    "dessertMoment": "スイーツタイム"
+    "dessertMoment": "スイーツタイム",
+    "jadeVessel": "玉中身",
+    "longHeritage": "悠久の継承",
+    "complexedIndustry": "複合工業"
   },
   "cookies": {
     "title": "クッキーを使用しています",
@@ -1420,7 +1424,14 @@
     "world_energy_point12_4": "重度超域活性点・雪松林",
     "world_energy_point12_5": "重度超域活性点・雪松林",
     "world_energy_point12_6": "重度超域活性点・雪松林",
-    "world_energy_point12_7": "重度超域活性点・雪松林"
+    "world_energy_point12_7": "重度超域活性点・雪松林",
+    "world_energy_point13_4": "重度超域活性点・スーの絵",
+    "world_energy_point13_7": "重度超域活性点・スーの絵",
+    "world_energy_point13_1": "超域活性点・スーの絵",
+    "world_energy_point13_2": "超域活性点・スーの絵",
+    "world_energy_point13_3": "超域活性点・スーの絵",
+    "world_energy_point13_5": "重度超域活性点・スーの絵",
+    "world_energy_point13_6": "重度超域活性点・スーの絵"
   },
   "enemies": {
     "eny_0007_mimicw": "潜地蛟獣",
@@ -1514,7 +1525,12 @@
     "tatget_002_endurance": "的・標準",
     "tatget_003_expand": "的・妨害",
     "tatget_004_armor": "的・重量型",
-    "tatget_005_shield": "エネルギーシールド"
+    "tatget_005_shield": "エネルギーシールド",
+    "eny_0134_jsspsi": "スー",
+    "eny_0130_inkbiter": "存財",
+    "eny_0131_inkscroll": "奇用",
+    "eny_0132_inkkirin": "解燥",
+    "eny_0133_inklion": "行度"
   },
   "essencesPage": {
     "optimizer": "育成オプティマイザー",
@@ -1810,7 +1826,25 @@
     "item_equip_t4_suit_spellburst_edc_01": "天険通信機",
     "item_equip_t4_suit_spellburst_hand_01": "天険ガントレット",
     "item_equip_t4_suit_usp02_edc_05": "流転補強板Ⅰ",
-    "item_equip_t4_suit_usp02_edc_06": "流転重量プレート"
+    "item_equip_t4_suit_usp02_edc_06": "流転重量プレート",
+    "item_equip_t4_suit_pulse_cryst01_edc_04": "パルス式装甲板",
+    "item_equip_t4_suit_usp02_body_06": "流転改造防具",
+    "item_equip_t4_suit_usp02_hand_05": "流転伝導プロテクター",
+    "item_equip_t4_suit_atk02_body_05": "50式応龍ソフトアーマー",
+    "item_equip_t4_suit_pulse_cryst01_body_02": "パルス式軽防具",
+    "item_equip_t4_parts_wuling00_body_06": "集成訓練剣術防具",
+    "item_equip_t4_parts_wuling00_hand_06": "集成訓練剣術プロテクター",
+    "item_equip_t4_parts_wuling00_edc_06": "集成訓練剣術チェーンソー",
+    "item_equip_t4_parts_wuling02_body_03": "渡淵鋼製防具",
+    "item_equip_t4_parts_wuling02_body_04": "渡淵防護服",
+    "item_equip_t4_parts_wuling02_edc_02": "渡淵白刃",
+    "item_equip_t4_suit_usp02_edc_07": "流転レンジファインダー",
+    "item_equip_t4_parts_wuling02_hand_03": "渡淵ハンドガード",
+    "item_equip_t4_parts_wuling02_hand_04": "渡淵ガントレット",
+    "item_equip_t4_suit_atk02_edc_06": "50式応龍ビーコン",
+    "item_equip_t4_suit_atk02_hand_03": "50式応龍グローブ",
+    "item_equip_t4_suit_usp02_body_05": "流転防護服",
+    "item_equip_t4_suit_pulse_cryst01_hand_02": "パルス式プロテクター"
   },
   "packs": {
     "none": "セットなし",
@@ -1922,7 +1956,13 @@
     "ElectricResistance": "電磁耐性",
     "HeatResistance": "灼熱耐性",
     "TherResistance": "超域耐性",
-    "NoAttr": "属性なし"
+    "NoAttr": "属性なし",
+    "NatureDmgReduction": "自然ダメージ軽減",
+    "HeatDmgReduction": "灼熱ダメージ軽減",
+    "TherDmgReduction": "超域ダメージ軽減",
+    "PhysicalDmgReduction": "物理ダメージ軽減",
+    "CryoDmgReduction": "寒冷ダメージ軽減",
+    "ElectricDmgReduction": "電磁ダメージ軽減"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "アンゲロス",
@@ -1931,7 +1971,9 @@
     "wiki_group_monster_animal": "野生の生物",
     "wiki_group_monster_kl": "蝕影",
     "wiki_group_monster_js": "造裔",
-    "wiki_group_monster_witchcraft": "巫術の造物"
+    "wiki_group_monster_witchcraft": "巫術の造物",
+    "wiki_group_monster_else": "その他",
+    "wiki_group_monster_ml": "化物"
   },
   "resitances": {
     "heatRez": "灼熱耐性",
@@ -2726,7 +2768,8 @@
     "indie_group_h04": "濁流具現",
     "indie_group_h05": "大地に見捨てられし者",
     "indie_group_h06": "山の獣吼",
-    "indie_group_h07": "刻まれた影"
+    "indie_group_h07": "刻まれた影",
+    "indie_group_h08": "深き森の囁き"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壌工程",
@@ -2769,13 +2812,19 @@
     "indie_hard026": "絡まる獣影",
     "indie_hard027": "闇を裂く白雷",
     "indie_hard028": "響く断末魔",
-    "indie_hard029": "三角測量"
+    "indie_hard029": "三角測量",
+    "indie_hard032": "蔓延する怒り",
+    "indie_hard030": "束縛された影",
+    "indie_hard031": "ゴーレムを結ぶ",
+    "indie_hard033": "ムシ型連携"
   },
   "warEchoesSeasons": {
     "1": "追憶シーズン",
     "2": "幻惑シーズン",
     "3": "虚像シーズン",
-    "4": "錯覚シーズン"
+    "4": "錯覚シーズン",
+    "5": "奇想シーズン",
+    "6": "狂熱シーズン"
   },
   "warEchoesCycles": {
     "1_1": "追憶周期Ⅰ",
@@ -2789,7 +2838,13 @@
     "3_3": "虚像周期Ⅲ",
     "4_1": "錯覚周期Ⅰ",
     "4_2": "錯覚周期Ⅱ",
-    "4_3": "錯覚周期Ⅲ"
+    "4_3": "錯覚周期Ⅲ",
+    "5_1": "奇想周期Ⅰ",
+    "5_2": "奇想周期Ⅱ",
+    "5_3": "奇想周期Ⅲ",
+    "6_1": "狂熱周期Ⅰ",
+    "6_2": "狂熱周期Ⅱ",
+    "6_3": "狂熱周期Ⅲ"
   },
   "warEchoesStages": {
     "indie_battletower001_ex": "水断つ白刃・苛烈",
@@ -2833,7 +2888,25 @@
     "indie_battletower013": "チャージ解放・通常",
     "indie_battletower014_ex": "獣のトリック・苛烈",
     "indie_battletower014_s": "獣のトリック・苦難",
-    "indie_battletower014": "獣のトリック・通常"
+    "indie_battletower014": "獣のトリック・通常",
+    "indie_battletower019_ex": "造物の記録：ゴーレム・苛烈",
+    "indie_battletower016_s": "長刃の記録：応龍・苦難",
+    "indie_battletower015_s": "蝕影の記録：雷鳴・苦難",
+    "indie_battletower015_ex": "蝕影の記録：雷鳴・苛烈",
+    "indie_battletower015": "蝕影の記録：雷鳴・通常",
+    "indie_battletower016_ex": "長刃の記録：応龍・苛烈",
+    "indie_battletower016": "長刃の記録：応龍・通常",
+    "indie_battletower017_ex": "復讐の記録：骨砕・苛烈",
+    "indie_battletower017_s": "復讐の記録：骨砕・苦難",
+    "indie_battletower017": "復讐の記録：骨砕・通常",
+    "indie_battletower018_ex": "獣群の記録：清波砦・苛烈",
+    "indie_battletower018_s": "獣群の記録：清波砦・苦難",
+    "indie_battletower018": "獣群の記録：清波砦・通常",
+    "indie_battletower019_s": "造物の記録：ゴーレム・苦難",
+    "indie_battletower019": "造物の記録：ゴーレム・通常",
+    "indie_battletower020_ex": "防衛の記録：盾の破片・苛烈",
+    "indie_battletower020_s": "防衛の記録：盾の破片・苦難",
+    "indie_battletower020": "防衛の記録：盾の破片・通常"
   },
   "warEchoesDiff": {
     "normal": "通常",

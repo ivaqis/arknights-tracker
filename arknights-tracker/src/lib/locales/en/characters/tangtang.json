@@ -58,7 +58,7 @@
     },
     "ultimate": {
       "name": "DA CHIEF SEES YOU!",
-      "description": "Tangtang opens her eyepatch and unleashes an <@ba.key>OLDEN STARE</> from her eye that temporarily locks down, immobilizes, and deals <@ba.cryst>Cryo DMG</> over time to enemies within its area of effect.\nWhen the <@ba.key>OLDEN STARE</> stops evolving, a rogue wave comes crashing down to deal massive <@ba.cryst>Cryo DMG</> to enemies in its area of effect.\nIf the controlled operator performs a dive attack in the <@ba.key>OLDEN STARE</> pattern, its evolution ends and the rogue wave is summoned immediately to deal even more <@ba.cryst>Cryo DMG</>.",
+      "description": "Tangtang opens her eyepatch and unleashes an <@ba.key>OLDEN STARE</> from her eye that applies temporary <#ba.static>Immobilization</> and deals <@ba.cryst>Cryo DMG</> over time to enemies within its area of effect (AOE).\nWhen the <@ba.key>OLDEN STARE</> stops evolving, a rogue wave comes crashing down to deal massive <@ba.cryst>Cryo DMG</> to enemies in its AOE.\nIf the controlled operator performs a dive attack in the <@ba.key>OLDEN STARE</> pattern, its evolution ends and the rogue wave is summoned immediately to deal even more <@ba.cryst>Cryo DMG</>.",
       "dmgOverTimeTotalMultiplier": "DMG Over Time Total Multiplier",
       "oldenStareDurationS": "OLDEN STARE Duration (s)",
       "rogueWaveDmgMultiplier": "Rogue Wave DMG Multiplier",

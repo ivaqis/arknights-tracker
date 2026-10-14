@@ -386,8 +386,8 @@
       "name": "길잡이"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "오리지늄 아츠 강도 <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>, 궁극기 <@ba.key>폭격 시퀀스</>의 피해량이 기존의 <@ba.vup>{atk_scale}</>배로 증가합니다.",
+      "name": "오리지늄의 지배자"
     },
     "potential5": {
       "description": "???",

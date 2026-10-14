@@ -386,8 +386,8 @@
       "name": "Guide"
     },
     "potential4": {
-      "description": "???",
-      "name": "???"
+      "description": "Intensité des Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>. Les dégâts infligés par l'ultime <@ba.key>Séquence de bombardement</> sont multipliés par <@ba.vup>{atk_scale}</>.",
+      "name": "Commandant d'originium"
     },
     "potential5": {
       "description": "???",

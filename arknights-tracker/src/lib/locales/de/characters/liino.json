@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Extremer Fokus",
       "description": "Liino fügt Gegnern <@ba.pulse>Elektrischen SDN</> zu und nimmt dann ihre <@ba.key>Vokalist-Haltung</> ein. Wenn Gegner in der Nähe sind, solange diese Haltung aktiv ist, führt Liino regelmäßig einen zusätzlichen ANG (der Gegnern <@ba.pulse>Elektrischen SDN</> zufügt) aus.\n<@ba.key>Vokalist-Haltung</>: Liino gewährt dem gesamten Team während dieser Haltung einen ANG-Boost. Nachdem Liino den Kampf betritt, gewährt sie Operatoren in Reichweite auch kontinuierlich <@ba.heal>LP-Behandlung</>.\n<@ba.info>In der Vokalist-Haltung wird ihre Kampffertigkeit durch die Ende-Haltung ersetzt. Das Wirken beendet die Vokalist-Haltung vorzeitig, ohne FP zu verbrauchen. Die Kampffertigkeit bekommt dann eine kurze Abklingzeit.</>",
-      "1stAtkMultiplier": "1.-ANG-Multiplikator",
+      "firstAtkMultiplier": "Erster-ANG-Multiplikator",
       "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
       "additionalAtkIntervalS": "Zeitintervall für zusätzlichen ANG (Sek.)",
       "beatIntervalS": "Beat-Intervall (Sek.)",

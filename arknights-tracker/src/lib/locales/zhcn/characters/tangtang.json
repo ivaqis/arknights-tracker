@@ -58,7 +58,7 @@
     },
     "ultimate": {
       "name": "大当家盯着呢！",
-      "description": "汤汤揭开眼罩，释放眼中的<@ba.key>古老图形</>封锁范围内的敌人，使其暂停行动一段时间，并造成持续的<@ba.cryst>寒冷伤害</>。\n<@ba.key>古老图形</>演化结束时降下巨浪，对范围内敌人造成大量<@ba.cryst>寒冷伤害</>。\n若主控干员在<@ba.key>古老图形</>中下落攻击，会提前结束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷伤害</>提升。",
+      "description": "汤汤揭开眼罩，释放眼中的<@ba.key>古老图形</>，对范围内的敌人施加一段时间的<#ba.static>定身</>，并造成持续的<@ba.cryst>寒冷伤害</>。\n<@ba.key>古老图形</>演化结束时降下巨浪，对范围内敌人造成大量<@ba.cryst>寒冷伤害</>。\n若主控干员在<@ba.key>古老图形</>中下落攻击，会提前结束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷伤害</>提升。\n",
       "dmgOverTimeTotalMultiplier": "持续伤害总倍率",
       "oldenStareDurationS": "古老图形持续时间（秒）",
       "rogueWaveDmgMultiplier": "巨浪伤害倍率",

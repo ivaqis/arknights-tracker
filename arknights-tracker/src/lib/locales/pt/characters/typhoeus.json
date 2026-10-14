@@ -36,7 +36,7 @@
     },
     "battleSkill": {
       "name": "Flechas Perfurantes da Floresta",
-      "description": "Typhoeus salta no ar e entra em um breve estado <@ba.key>Pairando</> durante o qual ela pode desferir 5 Ataques Básicos Aéreos (ATQBA). Cada ATQBA pode disparar flechas em até 2 alvos e causar <@ba.natur>DNO Natureza</>. \nSempre que um ATQBA atinge um inimigo com <#ba.naturalinflict>Inflição da Natureza</>, consome 1 acúmulo de <#ba.naturalinflict>Inflição da Natureza</>, concede a Typhoeus 1 <#ba.arrowenergy>Sinal</> e fornece Energia Suprema adicional. \nSe Typhoeus tiver <#ba.arrownum>Flechas de Caça</>, ela consumirá 1 <#ba.arrownum>Flecha de Caça</> e converterá o ATQBA em um <@ba.key>Disparo Poderoso</>. \n<@ba.key>Disparo Poderoso</>: ao atingir um inimigo, Disparo Poderoso aplica à força 1 instância de <#ba.naturalburst>Explosão da Natureza</>; se a <#ba.naturalinflict>Inflição da Natureza</> do alvo tiver sido consumida, então aumenta o DNO causado por essa <#ba.naturalburst>Explosão da Natureza</>. \n<@ba.info>Se Typhoeus for a operadora controlada, seu 5º ATQBA será um Golpe Final e um Disparo Poderoso que não consomem Flechas de Caça.</>",
+      "description": "Typhoeus salta no ar e entra em um breve estado <@ba.key>Pairando</> durante o qual ela pode desferir 5 Ataques Básicos Aéreos (ATQBA). Cada ATQBA pode disparar flechas em até 2 alvos e causar <@ba.natur>DNO Natureza</>.\nSempre que um ATQBA atinge um inimigo com <#ba.naturalinflict>Inflição da Natureza</>, consome 1 acúmulo de <#ba.naturalinflict>Inflição da Natureza</>, concede a Typhoeus 1 <#ba.arrowenergy>Sinal</> e fornece Energia Suprema adicional.\nSe Typhoeus tiver <#ba.arrownum>Flechas de Caça</>, ela consumirá 1 <#ba.arrownum>Flecha de Caça</> e converterá o ATQBA em um <@ba.key>Disparo Poderoso</>.\n<@ba.key>Disparo Poderoso</>: ao atingir um inimigo, Disparo Poderoso aplica à força 1 instância de <#ba.naturalburst>Explosão da Natureza</>; se o Disparo Poderoso consumir a <#ba.naturalinflict>Inflição da Natureza</> do alvo, então aumentará o DNO causado por essa <#ba.naturalburst>Explosão da Natureza</>.\n<@ba.info>Se Typhoeus for a operadora controlada, seu 5º ATQBA será um Golpe Final e um Disparo Poderoso que não consomem Flechas de Caça.</>",
       "initialAerialShotDmgMultiplier": "Multiplicador DNO Disparo Aéreo Inicial",
       "abatkDmg": "DNO ATQBA",
       "aerialFinalStrikeDmg": "DNO Golpe Final Aéreo",
@@ -536,7 +536,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Durante está <@ba.key>Pairando</>, o DNO Causado por ATQ <@ba.vup>+ {atk_up:0%}</> e ATQBA é aumentado para <@ba.vup>{atk_scale_base:0.0}</> vezes o original. \nTalento <@ba.key>Foco da Caçadora</> melhorado: o tempo de reativação da <@ba.key>Barreira Protetora</> é <@ba.vup>{decrease_cd:0}</> s.",
+      "description": "Durante <@ba.key>Pairando</>, o DNO Causado por ATQ aumenta em <@ba.vup>+ {atk_up:0%}</>, e o ATQBA é aumentado para <@ba.vup>{atk_scale_base:0.0}</> vezes o original. \nTalento <@ba.key>Foco da Caçadora</> melhorado: o tempo de reativação da <@ba.key>Barreira Protetora</> é <@ba.vup>{decrease_cd:0}</> s.",
       "name": "Emplumagem de Samifjod"
     },
     "potential2": {
