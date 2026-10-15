@@ -3296,5 +3296,445 @@ export const items: Readonly<Record<string, ItemData>> = {
         "groupId": "usable",
         "type": "other",
         "material": null
+    },
+    "item_port_soil_corp_bean_1": {
+        "id": "item_port_soil_corp_bean_1",
+        "iconId": "item_port_soil_corp_bean_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_cabbage_1": {
+        "id": "item_port_soil_corp_cabbage_1",
+        "iconId": "item_port_soil_corp_cabbage_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_canolaflower_1": {
+        "id": "item_port_soil_corp_canolaflower_1",
+        "iconId": "item_port_soil_corp_canolaflower_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_mushroom_1": {
+        "id": "item_port_soil_corp_mushroom_1",
+        "iconId": "item_port_soil_corp_mushroom_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_potato_1": {
+        "id": "item_port_soil_corp_potato_1",
+        "iconId": "item_port_soil_corp_potato_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_strawberry_1": {
+        "id": "item_port_soil_corp_strawberry_1",
+        "iconId": "item_port_soil_corp_strawberry_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_sugarcane_1": {
+        "id": "item_port_soil_corp_sugarcane_1",
+        "iconId": "item_port_soil_corp_sugarcane_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_tomato_1": {
+        "id": "item_port_soil_corp_tomato_1",
+        "iconId": "item_port_soil_corp_tomato_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_port_soil_corp_whitegourd_1": {
+        "id": "item_port_soil_corp_whitegourd_1",
+        "iconId": "item_port_soil_corp_whitegourd_1",
+        "rarity": 3,
+        "groupId": "facility",
+        "type": "soil",
+        "material": null
+    },
+    "item_drop_inkbiter_1": {
+        "id": "item_drop_inkbiter_1",
+        "iconId": "item_drop_inkbiter_1",
+        "rarity": 1,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_drop_inkkirin_1": {
+        "id": "item_drop_inkkirin_1",
+        "iconId": "item_drop_inkkirin_1",
+        "rarity": 2,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_drop_inklion_1": {
+        "id": "item_drop_inklion_1",
+        "iconId": "item_drop_inklion_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_byproduct_bean_1": {
+        "id": "item_byproduct_bean_1",
+        "iconId": "item_byproduct_bean_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "byproduct",
+        "material": "bean_1"
+    },
+    "item_byproduct_potato_1": {
+        "id": "item_byproduct_potato_1",
+        "iconId": "item_byproduct_potato_1",
+        "rarity": 1,
+        "groupId": "nature",
+        "type": "byproduct",
+        "material": "potato_1"
+    },
+    "item_corp_bean_1": {
+        "id": "item_corp_bean_1",
+        "iconId": "item_corp_bean_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "bean_1"
+    },
+    "item_corp_bean_seed_1": {
+        "id": "item_corp_bean_seed_1",
+        "iconId": "item_corp_bean_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "bean_1"
+    },
+    "item_corp_cabbage_1": {
+        "id": "item_corp_cabbage_1",
+        "iconId": "item_corp_cabbage_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "cabbage_1"
+    },
+    "item_corp_cabbage_seed_1": {
+        "id": "item_corp_cabbage_seed_1",
+        "iconId": "item_corp_cabbage_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "cabbage_1"
+    },
+    "item_corp_canolaflower_1": {
+        "id": "item_corp_canolaflower_1",
+        "iconId": "item_corp_canolaflower_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "canolaflower_1"
+    },
+    "item_corp_canolaflower_seed_1": {
+        "id": "item_corp_canolaflower_seed_1",
+        "iconId": "item_corp_canolaflower_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "canolaflower_1"
+    },
+    "item_corp_mushroom_1": {
+        "id": "item_corp_mushroom_1",
+        "iconId": "item_corp_mushroom_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "mushroom_1"
+    },
+    "item_corp_mushroom_seed_1": {
+        "id": "item_corp_mushroom_seed_1",
+        "iconId": "item_corp_mushroom_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "mushroom_1"
+    },
+    "item_corp_potato_1": {
+        "id": "item_corp_potato_1",
+        "iconId": "item_corp_potato_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "potato_1"
+    },
+    "item_corp_potato_seed_1": {
+        "id": "item_corp_potato_seed_1",
+        "iconId": "item_corp_potato_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "potato_1"
+    },
+    "item_corp_strawberry_1": {
+        "id": "item_corp_strawberry_1",
+        "iconId": "item_corp_strawberry_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "strawberry_1"
+    },
+    "item_corp_strawberry_seed_1": {
+        "id": "item_corp_strawberry_seed_1",
+        "iconId": "item_corp_strawberry_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "strawberry_1"
+    },
+    "item_corp_sugarcane_1": {
+        "id": "item_corp_sugarcane_1",
+        "iconId": "item_corp_sugarcane_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "sugarcane_1"
+    },
+    "item_corp_sugarcane_seed_1": {
+        "id": "item_corp_sugarcane_seed_1",
+        "iconId": "item_corp_sugarcane_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "sugarcane_1"
+    },
+    "item_corp_tomato_1": {
+        "id": "item_corp_tomato_1",
+        "iconId": "item_corp_tomato_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "tomato_1"
+    },
+    "item_corp_tomato_seed_1": {
+        "id": "item_corp_tomato_seed_1",
+        "iconId": "item_corp_tomato_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "tomato_1"
+    },
+    "item_corp_whitegourd_1": {
+        "id": "item_corp_whitegourd_1",
+        "iconId": "item_corp_whitegourd_1",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "plant",
+        "material": "whitegourd_1"
+    },
+    "item_corp_whitegourd_seed_1": {
+        "id": "item_corp_whitegourd_seed_1",
+        "iconId": "item_corp_whitegourd_seed_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "plant_seed",
+        "material": "whitegourd_1"
+    },
+    "item_ranch_milk_1": {
+        "id": "item_ranch_milk_1",
+        "iconId": "item_ranch_milk_1",
+        "rarity": 2,
+        "groupId": "nature",
+        "type": "milk",
+        "material": null
+    },
+    "item_ranch_milk_2": {
+        "id": "item_ranch_milk_2",
+        "iconId": "item_ranch_milk_2",
+        "rarity": 4,
+        "groupId": "nature",
+        "type": "milk",
+        "material": null
+    },
+    "item_Ingredient_flour_1": {
+        "id": "item_Ingredient_flour_1",
+        "iconId": "item_Ingredient_flour_1",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "ingredient",
+        "material": "plant_sp_1"
+    },
+    "item_Ingredient_oil_1": {
+        "id": "item_Ingredient_oil_1",
+        "iconId": "item_Ingredient_oil_1",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "ingredient",
+        "material": "canolaflower_1"
+    },
+    "item_Ingredient_paprika_1": {
+        "id": "item_Ingredient_paprika_1",
+        "iconId": "item_Ingredient_paprika_1",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "ingredient",
+        "material": "plant_sp_2"
+    },
+    "item_Ingredient_starch_1": {
+        "id": "item_Ingredient_starch_1",
+        "iconId": "item_Ingredient_starch_1",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "ingredient",
+        "material": "potato_1"
+    },
+    "item_Ingredient_sugar_1": {
+        "id": "item_Ingredient_sugar_1",
+        "iconId": "item_Ingredient_sugar_1",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "ingredient",
+        "material": "sugarcane_1"
+    },
+    "item_byproduct_bean_moss_1": {
+        "id": "item_byproduct_bean_moss_1",
+        "iconId": "item_byproduct_bean_moss_1",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "byproduct",
+        "material": "bean_1"
+    },
+    "item_byproduct_potato_moss_1": {
+        "id": "item_byproduct_potato_moss_1",
+        "iconId": "item_byproduct_potato_moss_1",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "byproduct",
+        "material": "potato_1"
+    },
+    "item_ranch_fodder_1": {
+        "id": "item_ranch_fodder_1",
+        "iconId": "item_ranch_fodder_1",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "fodder",
+        "material": null
+    },
+    "item_ranch_fodder_2": {
+        "id": "item_ranch_fodder_2",
+        "iconId": "item_ranch_fodder_2",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "fodder",
+        "material": null
+    },
+    "item_inkbiter_1_wgshoal_1_1": {
+        "id": "item_inkbiter_1_wgshoal_1_1",
+        "iconId": "item_inkbiter_1_wgshoal_1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "other",
+        "material": null
+    },
+    "item_inkkirin_1_hscrane_1_1": {
+        "id": "item_inkkirin_1_hscrane_1_1",
+        "iconId": "item_inkkirin_1_hscrane_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "other",
+        "material": null
+    },
+    "item_inn_drink_1": {
+        "id": "item_inn_drink_1",
+        "iconId": "item_inn_drink_1",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_10": {
+        "id": "item_inn_drink_10",
+        "iconId": "item_inn_drink_10",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": "drink",
+        "material": "strawberry_1"
+    },
+    "item_inn_drink_2": {
+        "id": "item_inn_drink_2",
+        "iconId": "item_inn_drink_2",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_3": {
+        "id": "item_inn_drink_3",
+        "iconId": "item_inn_drink_3",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_4": {
+        "id": "item_inn_drink_4",
+        "iconId": "item_inn_drink_4",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": "drink",
+        "material": "sugarcane_1"
+    },
+    "item_inn_drink_5": {
+        "id": "item_inn_drink_5",
+        "iconId": "item_inn_drink_5",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_6": {
+        "id": "item_inn_drink_6",
+        "iconId": "item_inn_drink_6",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_7": {
+        "id": "item_inn_drink_7",
+        "iconId": "item_inn_drink_7",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_8": {
+        "id": "item_inn_drink_8",
+        "iconId": "item_inn_drink_8",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
+    },
+    "item_inn_drink_9": {
+        "id": "item_inn_drink_9",
+        "iconId": "item_inn_drink_9",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": "drink",
+        "material": null
     }
-}
+};

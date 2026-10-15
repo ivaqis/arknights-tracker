@@ -8,11 +8,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -24,11 +24,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -40,11 +40,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -56,11 +56,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -72,11 +72,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -88,11 +88,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -104,11 +104,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -120,11 +120,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -136,11 +136,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -152,11 +152,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -168,11 +168,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -184,11 +184,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -200,11 +200,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -216,11 +216,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -232,11 +232,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -248,11 +248,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -264,11 +264,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -277,11 +277,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "id": "item_bottled_insec1_1",
         "condType": "char_down",
         "condParams": [],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 0,
         "levelUpCastCount": 2,
         "levelUpRecoverUpperCount": 0
@@ -290,11 +290,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "id": "item_bottled_insec1_2",
         "condType": "char_down",
         "condParams": [],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 0,
         "levelUpCastCount": 2,
         "levelUpRecoverUpperCount": 0
@@ -306,11 +306,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.35",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -322,11 +322,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -338,11 +338,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -354,11 +354,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -370,11 +370,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -386,11 +386,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -402,11 +402,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.4",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -418,8 +418,8 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "castTime": 0.5,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
@@ -431,11 +431,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.4",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -447,11 +447,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
@@ -463,11 +463,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -479,11 +479,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -495,11 +495,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.4",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -511,11 +511,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -527,11 +527,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "any",
             "0.25"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -543,8 +543,8 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "castTime": 0.5,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
@@ -556,11 +556,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "any",
             "0.25"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -572,11 +572,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -588,11 +588,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -604,11 +604,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -620,11 +620,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -636,11 +636,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -652,11 +652,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -668,11 +668,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -684,11 +684,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -700,11 +700,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.5",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -716,8 +716,8 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "castTime": 0.5,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
@@ -729,8 +729,8 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
         "castTime": 0.5,
         "castCount": 2,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
@@ -742,11 +742,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -758,11 +758,11 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.6",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 0,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
         "levelUpRecoverUpperCount": 1
@@ -774,13 +774,29 @@ export const equipableItems: Readonly<Record<string, EquipableItemData>> = {
             "0.35",
             "lt"
         ],
-        "castTime": 2.0,
+        "castTime": 2,
         "castCount": 3,
         "castToMainCount": 1,
-        "cooldown": 3.0,
-        "recoverTime": 60.0,
+        "cooldown": 3,
+        "recoverTime": 60,
         "recoverUpperCount": 1,
         "levelUpCastCount": 4,
+        "levelUpRecoverUpperCount": 1
+    },
+    "item_inkbiter_1_wgshoal_1_1": {
+        "id": "item_inkbiter_1_wgshoal_1_1",
+        "condType": "ult_energy",
+        "condParams": [
+            "0.5",
+            "lt"
+        ],
+        "castTime": 2,
+        "castCount": 3,
+        "castToMainCount": 0,
+        "cooldown": 3,
+        "recoverTime": 60,
+        "recoverUpperCount": 1,
+        "levelUpCastCount": 3,
         "levelUpRecoverUpperCount": 1
     }
 };
