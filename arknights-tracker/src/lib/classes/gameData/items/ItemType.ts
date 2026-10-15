@@ -44,4 +44,9 @@ export enum ItemType {
     ARROW_CHIP = "arrow_chip",
     LUNG_BOX = "lung_box",
     LUNG = "lung",
+    BYPRODUCT = "byproduct",
+    MILK = "milk",
+    INGREDIENT = "ingredient",
+    FODDER = "fodder",
+    DRINK = "drink",
 }

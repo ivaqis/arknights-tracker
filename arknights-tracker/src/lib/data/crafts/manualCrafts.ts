@@ -1974,5 +1974,214 @@ export const manualCrafts: Readonly<Record<string, ManualCraftData>> = {
                 "itemId": "item_arrow_chip_shield_breaker"
             }
         ]
+    },
+    "hdwk_inkbiter_1_wgshoal_1_1": {
+        "id": "hdwk_inkbiter_1_wgshoal_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_inkbiter_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_wgshoal_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inkbiter_1_wgshoal_1_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_cabbage_1": {
+        "id": "handwork_port_soil_corp_cabbage_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_cabbage_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_cabbage_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_potato_1": {
+        "id": "handwork_port_soil_corp_potato_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_potato_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_potato_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_tomato_1": {
+        "id": "handwork_port_soil_corp_tomato_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_tomato_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_tomato_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_bean_1": {
+        "id": "handwork_port_soil_corp_bean_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_bean_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_bean_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_canolaflower_1": {
+        "id": "handwork_port_soil_corp_canolaflower_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_canolaflower_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_canolaflower_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_mushroom_1": {
+        "id": "handwork_port_soil_corp_mushroom_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_mushroom_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_mushroom_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_strawberry_1": {
+        "id": "handwork_port_soil_corp_strawberry_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_strawberry_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_strawberry_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_sugarcane_1": {
+        "id": "handwork_port_soil_corp_sugarcane_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_sugarcane_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_sugarcane_1"
+            }
+        ]
+    },
+    "handwork_port_soil_corp_whitegourd_1": {
+        "id": "handwork_port_soil_corp_whitegourd_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_whitegourd_seed_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_soil_corp_whitegourd_1"
+            }
+        ]
+    },
+    "hdwk_inkkirin_1_hscrane_1_1": {
+        "id": "hdwk_inkkirin_1_hscrane_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_inkkirin_1"
+            },
+            {
+                "count": 2,
+                "itemId": "item_drop_hscrane_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inkkirin_1_hscrane_1_1"
+            }
+        ]
     }
 };

@@ -6935,5 +6935,520 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
         ],
         "craftTimeMs": 10000,
         "gasEnv": null
+    },
+    "filling_bottled_drink_10_1": {
+        "id": "filling_bottled_drink_10_1",
+        "formulaGroupId": "group_filling_normal",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_iron_bottle"
+            },
+            {
+                "count": 1,
+                "itemId": "item_corp_strawberry_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inn_drink_10"
+            }
+        ],
+        "craftTimeMs": 10000,
+        "gasEnv": null
+    },
+    "grinder_byproduct_potato_moss_1": {
+        "id": "grinder_byproduct_potato_moss_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_potato_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_byproduct_potato_moss_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_strawberry_1": {
+        "id": "seedcollector_plant_strawberry_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_strawberry_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_strawberry_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "filling_bottled_drink_4_1": {
+        "id": "filling_bottled_drink_4_1",
+        "formulaGroupId": "group_filling_normal",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_iron_bottle"
+            },
+            {
+                "count": 1,
+                "itemId": "item_corp_sugarcane_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inn_drink_4"
+            }
+        ],
+        "craftTimeMs": 10000,
+        "gasEnv": null
+    },
+    "pool_ranch_fodder_1_2": {
+        "id": "pool_ranch_fodder_1_2",
+        "formulaGroupId": "group_mix_pool_2_liquid",
+        "buildingId": "mix_pool_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_potato_moss_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_ranch_fodder_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "pool_ranch_fodder_1": {
+        "id": "pool_ranch_fodder_1",
+        "formulaGroupId": "group_mix_pool_1_liquid",
+        "buildingId": "mix_pool_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_potato_moss_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_ranch_fodder_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "filling_bottled_drink_2_1": {
+        "id": "filling_bottled_drink_2_1",
+        "formulaGroupId": "group_filling_normal",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_iron_bottle"
+            },
+            {
+                "count": 1,
+                "itemId": "item_ranch_milk_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inn_drink_2"
+            }
+        ],
+        "craftTimeMs": 10000,
+        "gasEnv": null
+    },
+    "filling_bottled_drink_7_1": {
+        "id": "filling_bottled_drink_7_1",
+        "formulaGroupId": "group_filling_normal",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_iron_bottle"
+            },
+            {
+                "count": 1,
+                "itemId": "item_ranch_milk_2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_inn_drink_7"
+            }
+        ],
+        "craftTimeMs": 10000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_bean_1": {
+        "id": "seedcollector_plant_bean_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_bean_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_bean_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_mushroom_1": {
+        "id": "seedcollector_plant_mushroom_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_mushroom_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_mushroom_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "grinder_Ingredient_starch_1": {
+        "id": "grinder_Ingredient_starch_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_potato_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_Ingredient_starch_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_canolaflower_1": {
+        "id": "seedcollector_plant_canolaflower_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_canolaflower_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_canolaflower_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "pool_Ingredient_oil_1": {
+        "id": "pool_Ingredient_oil_1",
+        "formulaGroupId": "group_mix_pool_1_liquid",
+        "buildingId": "mix_pool_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_canolaflower_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_Ingredient_oil_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "grinder_Ingredient_flour_1": {
+        "id": "grinder_Ingredient_flour_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_sp_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_Ingredient_flour_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "grinder_Ingredient_paprika_1": {
+        "id": "grinder_Ingredient_paprika_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_sp_2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_Ingredient_paprika_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "grinder_Ingredient_sugar_1": {
+        "id": "grinder_Ingredient_sugar_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_sugarcane_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_Ingredient_sugar_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "grinder_byproduct_bean_moss_1": {
+        "id": "grinder_byproduct_bean_moss_1",
+        "formulaGroupId": "group_grinder_normal",
+        "buildingId": "grinder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_bean_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_byproduct_bean_moss_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "pool_Ingredient_oil_1_2": {
+        "id": "pool_Ingredient_oil_1_2",
+        "formulaGroupId": "group_mix_pool_2_liquid",
+        "buildingId": "mix_pool_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_canolaflower_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_Ingredient_oil_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "pool_ranch_fodder_2": {
+        "id": "pool_ranch_fodder_2",
+        "formulaGroupId": "group_mix_pool_1_liquid",
+        "buildingId": "mix_pool_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_bean_moss_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_ranch_fodder_2"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "pool_ranch_fodder_2_2": {
+        "id": "pool_ranch_fodder_2_2",
+        "formulaGroupId": "group_mix_pool_2_liquid",
+        "buildingId": "mix_pool_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_byproduct_bean_moss_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_ranch_fodder_2"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_cabbage_1": {
+        "id": "seedcollector_plant_cabbage_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_cabbage_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_cabbage_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_potato_1": {
+        "id": "seedcollector_plant_potato_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_potato_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_potato_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_sugarcane_1": {
+        "id": "seedcollector_plant_sugarcane_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_sugarcane_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_sugarcane_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_tomato_1": {
+        "id": "seedcollector_plant_tomato_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_tomato_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_tomato_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
+    },
+    "seedcollector_plant_whitegourd_1": {
+        "id": "seedcollector_plant_whitegourd_1",
+        "formulaGroupId": "group_seedcollector_normal",
+        "buildingId": "seedcollector_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_corp_whitegourd_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_corp_whitegourd_seed_1"
+            }
+        ],
+        "craftTimeMs": 2000,
+        "gasEnv": null
     }
 };

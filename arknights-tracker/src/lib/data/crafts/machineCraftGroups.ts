@@ -163,6 +163,9 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
     "group_mix_pool_1_liquid": {
         "id": "group_mix_pool_1_liquid",
         "craftList": [
+            "pool_Ingredient_oil_1",
+            "pool_ranch_fodder_1",
+            "pool_ranch_fodder_2",
             "pool_liquid_plant_grass_1_1",
             "pool_liquid_plant_grass_2_1",
             "pool_liquid_liquid_xiranite_1",
@@ -181,7 +184,11 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "filling_bottled_food_3_1",
             "filling_bottled_rec_hp_1_1",
             "filling_bottled_rec_hp_2_1",
-            "filling_bottled_rec_hp_3_1"
+            "filling_bottled_rec_hp_3_1",
+            "filling_bottled_drink_2_1",
+            "filling_bottled_drink_4_1",
+            "filling_bottled_drink_7_1",
+            "filling_bottled_drink_10_1"
         ]
     },
     "group_furnance_liquid": {
@@ -236,7 +243,13 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "grinder_plant_moss_powder_3_1",
             "grinder_plant_bbflower_powder_1_1",
             "grinder_plant_grass_powder_1_1",
-            "grinder_plant_grass_powder_2_1"
+            "grinder_plant_grass_powder_2_1",
+            "grinder_Ingredient_flour_1",
+            "grinder_Ingredient_paprika_1",
+            "grinder_Ingredient_starch_1",
+            "grinder_Ingredient_sugar_1",
+            "grinder_byproduct_potato_moss_1",
+            "grinder_byproduct_bean_moss_1"
         ]
     },
     "group_planter_liquid": {
@@ -288,12 +301,23 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "seedcollector_plant_sp_1",
             "seedcollector_plant_sp_2",
             "seedcollector_plant_sp_3",
-            "seedcollector_plant_sp_4"
+            "seedcollector_plant_sp_4",
+            "seedcollector_plant_potato_1",
+            "seedcollector_plant_tomato_1",
+            "seedcollector_plant_cabbage_1",
+            "seedcollector_plant_sugarcane_1",
+            "seedcollector_plant_bean_1",
+            "seedcollector_plant_mushroom_1",
+            "seedcollector_plant_strawberry_1",
+            "seedcollector_plant_whitegourd_1",
+            "seedcollector_plant_canolaflower_1"
         ]
     },
     "group_mix_pool_2_liquid": {
         "id": "group_mix_pool_2_liquid",
         "craftList": [
+            "pool_ranch_fodder_1_2",
+            "pool_ranch_fodder_2_2",
             "pool_liquid_plant_grass_1_2",
             "pool_liquid_plant_grass_2_2",
             "pool_liquid_liquid_xiranite_2",

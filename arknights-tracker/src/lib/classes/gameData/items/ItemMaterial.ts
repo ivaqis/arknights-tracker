@@ -1,6 +1,4 @@
 export enum ItemMaterial {
-    OTHER = "other",
-
     ORIGINIUM = "originium",
     ORIGINIUM_ENR = "originium_enr",
     AMETHYST = "amethyst",
@@ -34,4 +32,14 @@ export enum ItemMaterial {
     PLANT_FLOWER_SPC_1 = "plant_flower_spc_1",
     PLANT_FLOWER_SPC_2 = "plant_flower_spc_2",
     PLANT_BBFLOWER_1 = "plant_bbflower_1",
+
+    BEAN_1 = "bean_1",
+    POTATO_1 = "potato_1",
+    CABBAGE_1 = "cabbage_1",
+    CANOLAFLOWER_1 = "canolaflower_1",
+    MUSHROOM_1 = "mushroom_1",
+    STRAWBERRY_1 = "strawberry_1",
+    SUGARCANE_1 = "sugarcane_1",
+    TOMATO_1 = "tomato_1",
+    WHITEGOURD_1 = "whitegourd_1",
 }
