@@ -1,328 +1,28 @@
 {
-  "indie_hard011_s": {
-    "name": "Conexión criostática: Agonía",
-    "description": "El frío mas gélido los conecta. Las olas embravecidas y las corrientes turbias les dan un nombre común y el significado detrás de su creación.",
-    "featureDesc": " - Los enemigos son más fuertes.\n - Cuando están potenciados, el DAÑ total infligido por el enemigo aplicará instantáneamente <@ba.cryst>Solidificación</> a los operadores.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower010": {
-    "name": "Muro de escudos: Normal",
-    "description": "Observé una operación de relevo, en la que una multitud de “escudos” cubría el frente de una línea de batalla.",
-    "featureDesc": " - Cuando se derrota a un Prisma, aparecerá otro Prisma en el campo de batalla después de un tiempo.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n - Derrota a la Sombra contaminada de Bestia pluma para superar la fase. Derrotar a los Prismas no afecta el progreso para completar la fase.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard009": {
-    "name": "Punto de fusión de la carne",
-    "description": "¡ARDAN! ¡Que todo arda! ¡Derriben la torre y derritan el barco! ¡Lancen nuestra sangre en el hierro fundido y úsenla para purificar Talos-II!",
-    "featureDesc": " - Los enemigos son más fuertes.\n - Aparecen periódicamente Babosas de Originio de brumafuego que explotan.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard020_s": {
-    "name": "Ojos de la estirpe disolvente: Agonía",
-    "description": "Los ríos se funden en una fría corriente de sangre. Desde las profundidades semejantes a una herida y bajo las corrientes estigias, la estirpe disolvente sigue acechando.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Las fuerzas enemigas incluyen al Caminante de mareas δ.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard009_s": {
-    "name": "Punto de fusión de la carne: Agonía",
-    "description": "¡ARDAN! ¡Que todo arda! ¡Derriben la torre y derritan el barco! ¡Lancen nuestra sangre en el hierro fundido y úsela para purificar Talos-II!",
-    "featureDesc": " - Los enemigos son más fuertes y <@ba.key>aparecerán enemigos adicionales</>.\n - Aparecen periódicamente Babosas de Originio de brumafuego que explotan.\n- <@ba.key>Los operadores no pueden realizar Esquiva perfecta</>.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower004_ex": {
-    "name": "Era de hachas: Brutal",
-    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard029": {
-    "name": "Fijación Triaggelada",
-    "description": "Los testigos permanecen en silencio y sumidos en el dolor. Cuando todos los recuerdos se convierten en meras ilusiones, el olvido se vuelve nuestra única opción.",
-    "featureDesc": " - Los enemigos no pueden moverse, pero tienen rangos de ataque mucho mayores.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard021": {
-    "name": "Vadeando el territorio del Rastrero",
-    "description": "Las garras afiladas han quedado ocultas a la vista, mientras la estampida avanza y los ríos se desbordan. Los derrotados migran y emprenden el vuelo, pero los jóvenes olvidan corresponder a ese odio.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - La Bestia rastrera deslumbrante está <@ba.key>Iracunda</> permanentemente y su ATQ aumenta a medida que sus PV disminuyen.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard029_s": {
-    "name": "Fijación Triaggelada: Agonía",
-    "description": "Los testigos permanecen en silencio y sumidos en el dolor. Cuando todos los recuerdos se convierten en meras ilusiones, el olvido se vuelve nuestra única opción.",
-    "featureDesc": " - Los enemigos no pueden moverse, pero tienen rangos de ataque mucho mayores.\n - Cuando un enemigo sea derrotado por primera vez, los demás enemigos obtendrán refuerzo de ATQ y mayor velocidad de ATQ.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower015_ex": {
-    "name": "Archivo de Sombra contaminada: Estruendo - Brutal",
-    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
-    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard011": {
-    "name": "Conexión criostática",
-    "description": "El frío mas gélido los conecta. Las olas embravecidas y las corrientes turbias les dan un nombre común y el significado detrás de su creación.",
-    "featureDesc": " - Los enemigos son más fuertes.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard032_s": {
-    "name": "Odio que se extiende: Agonía",
-    "description": "Que las raíces alcancen los cielos, que el odio se extienda por la tierra... y que la ira de años de abandono resuene en cada leyenda.",
-    "featureDesc": " - Cuando comienza el combate, los PH Máx. de los operadores aumentan a 400. \n - Furia de Gloomwald entrará periódicamente en su estado de carga y obtendrá una gran cantidad de <@ba.key>acumulaciones de escudo</>. Cuando complete la carga, lanzará su máxima, que inflige DAÑ masivo a todos los operadores. Destruye todas las <@ba.key>acumulaciones de escudo</> para interrumpir el estado de carga. \n - Cuando Furia de Gloomwald entra en estado de carga, también invoca a 4 Errantes de madera. Después de quebrar las <@ba.key>acumulaciones de escudo</> de un Errante de madera, este desaparecerá inmediatamente y restaurará 200 PH a los operadores. \n - Mientras Furia de Gloomwald esté protegida por <@ba.key>acumulación(es) de escudo</>, los <@ba.key>operadores dejan de tener regeneración de PH y sus Golpes finales y Remates dejan de recuperar PH.</>. Furia de Gloomwald también obtiene gradualmente cada vez más <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower002_ex": {
-    "name": "Viejas historias de lo salvaje: Brutal",
-    "description": "Aquí dejo constancia de bestias que vagan por las ruinas de la guerra, arañando y desgarrando los nombres de las naciones mientras su espuma rabiosa reduce lanzas, escudos y proyectiles de cañón a Ferrio fundido.",
-    "featureDesc": " - Al derrotar enemigos se recuperan 15 PH.\n - DAÑ de habilidad de batalla infligido <@ba.vup>+60%</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard001": {
-    "name": "Escudos desenfrenados",
-    "description": "La bruma nevada no parece disiparse nunca de estas tierras salvajes. Se puede escuchar el sonido nítido de quiebres ocultos en el grave retumbar. \nEscucha con atención. ¿Escuchas... el roce de piedra contra el metal?",
-    "featureDesc": " - Los enemigos son más fuertes."
-  },
-  "indie_hard010_s": {
-    "name": "Duelo de las mareas: Agonía",
-    "description": "La Agonía se ha precipitado y acumulado en este lugar durante años. Mira cómo la luz se difracta dentro de las furiosas aguas de marea. La intención asesina que emana carece de toda emoción.",
-    "featureDesc": " - Los enemigos no atacarán directamente; en su lugar, se mueven hacia el centro del campo de batalla, donde <@ba.key>explotan</> y causan DAÑ masivo a todos los operadores.\n - Algunos enemigos son más difíciles de interrumpir.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower008": {
-    "name": "Breve historia de la guerra: Normal",
-    "description": "Encontré algunas líneas de verdad. Comenzó con bestias de furia y terminó con personas matándose entre sí. Los conflictos sangrientos nunca terminaron.",
-    "featureDesc": " - Derrotar al Nidwyrm Subterráneo otorga Índice de regeneración de PH <@ba.vup>+30%</>.\n - Derrotar al Aguijón fuerte otorga Reducción de tiempo de reutilización de habilidad de combo <@ba.vup>+50%</>.\n - Derrotar al Balista Rompehuesos otorga Eficiencia de ganancia máxima <@ba.vup>+60%</>.\n \n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard018": {
-    "name": "Tamborilero enfurecido",
-    "description": "La entidad estruendosa es atraída a estas tierras, pisoteando a los muertos y su terrible tormento. La guerra entre la vida y la muerte nunca terminará.",
-    "featureDesc": " - Cuando esté iracundo, el Tamborilero celestial creará escudos protectores. Cada <@ba.key>Reacción a Artes</> o <@ba.phy>Estado físico</> infligido por los operadores elimina 1 acumulación de escudo.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower015": {
-    "name": "Archivo de Sombra contaminada: Estruendo - Normal",
-    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
-    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard008": {
-    "name": "Mar del aborrecimiento",
-    "description": "El suyo es un odio profundo y latente. Los olvidados vagaron sin fin por la tierra desolada... La causa de su furia se olvidó con el tiempo, pero cualquier recipiente de odio es capaz de extraer poder del interminable mar de la penumbra.",
-    "featureDesc": " - Los enemigos son más fuertes.\n - Los enemigos de élite pelearán en equipo.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard020": {
-    "name": "Ojos de la estirpe disolvente",
-    "description": "Los ríos se funden en una fría corriente de sangre. Desde las profundidades semejantes a una herida y bajo las corrientes estigias, la estirpe disolvente sigue acechando.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Las fuerzas enemigas incluyen al Caminante de mareas δ.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard010": {
-    "name": "Duelo de las mareas",
-    "description": "La Agonía se ha precipitado y acumulado en este lugar durante años. Mira cómo la luz se difracta dentro de las furiosas aguas de marea. La intención asesina que emana carece de toda emoción.",
-    "featureDesc": " - Los enemigos no atacarán directamente; en su lugar, se mueven hacia el centro del campo de batalla, donde <@ba.key>explotan</> y causan DAÑ masivo a todos los operadores.\n - Algunos enemigos son más difíciles de interrumpir.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard019_s": {
-    "name": "Falange de espinas: Agonía",
-    "description": "Afila tus lanzas. Refuerza tus escudos. Sé testigo de tu propio odio y escucha tu debilidad. Luego marcha hacia delante y hunde tus armas en la carne de la muerte.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Los Prismas aumentarán el ATQ de los Hedrones.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard017": {
-    "name": "Éthillu desgarrador",
-    "description": "El polvo del olvido ciega toda visión, mientras el réquiem se eleva con cada nota. La carne del Éthillu desgarrador ha sido derramada, de modo que la muerte sofoca al mundo entero.",
-    "featureDesc": " - A intervalos regulares, el operador controlado quedará <@ba.key>sellado</>.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
   "indie_battletower001": {
     "name": "Cortador de agua plateado: Normal",
     "description": "Vi un destello de luz y a la espada centelleante atravesar las corrientes, pero no logró cercenar su fría e implacable malicia. Su contacto dejó una impureza sobre tu espada, y el eco persistente envolvió tu figura.",
     "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower016_s": {
-    "name": "Archivo de lancero con guja: Yinglung - Difícil",
-    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
-    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower005_ex": {
-    "name": "Munición pulverizadora: Brutal",
-    "description": "Recogí trozos de Ferrio, fragmentos de pensamientos e ideas que alguna vez estuvieron cubiertos de grabados. El compromiso más inquebrantable fue la bala, hecha añicos al chocar contra la carne y los huesos.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower012_ex": {
-    "name": "Fervor inorgánico: Brutal",
-    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
-    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard022_s": {
-    "name": "Bruma ardiente sacudetierras: Agonía",
-    "description": "“¡Soy el portador del BÁCULO! ¡La bruma ardiente es mi MARTILLOOO! ¡Estas montañas son LOS TAMBORES y yo! ¡SOY! ¡EL! ¡PERCUSIONISTAAA!”.",
-    "featureDesc": " - El Piromante Rompehuesos lanza bruma ardiente constantemente e inflige DAÑ a todos los operadores. Cuando sus PV estén bajos, su bruma ardiente también aplica <@ba.fire>Imposición de calor</>. También es más difícil de interrumpir y es inmune al DAÑ de Tambaleo.\n - Cuando el Piromante Rompehuesos recibe DAÑ por <@ba.key>Ráfaga de artes</>, recibe DAÑ adicional equivalente a un porcentaje de sus PV Máx. y queda <@ba.key>sellado</> temporalmente.\n - El Piromante Rompehuesos seguirá invocando Asaltantes de élite y Emboscadores de élite.\n - Derrotar a un enemigo con una <@ba.key>Imposición de Artes</> también aplica 1 acumulación de la misma <@ba.key>Imposición de Artes</> a todos los demás enemigos.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower016_ex": {
-    "name": "Archivo de lancero con guja: Yinglung - Brutal",
-    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
-    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower011_ex": {
-    "name": "Asedio atroz: Brutal",
-    "description": "Planeé una emboscada de lodo y sangre, de heridas desgarradas y de dolor que alimenta una gran angustia.",
-    "featureDesc": " - El campo de batalla contiene una <@ba.key>Zona de dolor</>. El DAÑ recibido por un enemigo aumenta en <@ba.vup>+10%</> por cada segundo que permanezca en la Zona, hasta un Máx. de <@ba.vup>+150%</>. El efecto negativo desaparece gradualmente cuando el enemigo sale de la <@ba.key>Zona de dolor</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard015_s": {
-    "name": "Sima subacuática: Agonía",
-    "description": "Bajo las aguas silenciosas, donde corrientes heladas y oscuras fluyen en silencio, existen abismos donde acechan constructos inorgánicos.",
-    "featureDesc": " - Los enemigos son más fuertes.\n - La Efigie invocará más Aggeloi.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard030_s": {
-    "name": "Sombras que atan: Agonía",
-    "description": "Cuando el polvo de la guerra se asentó, el bosque silencioso se los tragó a todos. Hasta este día fueron liberados.",
-    "featureDesc": " - Tras comenzar la batalla, el enemigo aplica <@ba.key>Aprisionamiento</> a todos los operadores excepto al operador controlado.\n - Los operadores bajo <@ba.key>Aprisionamiento</> perderán PV constantemente mientras otorgan Tratamiento de PV, refuerzos de ATQ y <@ba.key>resistencia al elemento del operador</> a la Sombra contaminada de Blitzcrash.\n - Derrotar a una Sombra contaminada de élite del EFEY libera a 1 operador del <@ba.key>Aprisionamiento</>.\n - La Sombra contaminada de Blitzcrash despierta después de derrotar a todas las Sombras contaminadas de élite del EFEY, o después de que el combate haya avanzado durante un tiempo.\n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard007": {
-    "name": "Llama aullante",
-    "description": "¡Que la Plaga cubra los cielos! ¡Plaga para los rayos que nadie vio venir! ¡Y PLAGA para el fuego que llueve sin aviso!",
-    "featureDesc": " - Los enemigos entran regularmente en un estado <@ba.key>Iracundo</> que les aplica constantemente <@ba.fire>Imposición de calor</> a sí mismos, otorgando incrementos de Bonificación de ATQ y Reducción de DAÑ según la cantidad de acumulaciones de Imposición de calor.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard027": {
-    "name": "Arco del destello sombrío",
-    "description": "La ancha hoja invoca el elemento desgarrador para imbuirse con él. Así, las imágenes espectrales de guerra y carnicería seguirán brillando sobre esta tierra.",
-    "featureDesc": " - El tiempo de reutilización de todas las habilidades de batalla de los operadores aumenta 60 s.\n - Al comenzar la batalla, todos los operadores entrarán en estado <@ba.key>Conductor</> y recibirán <@ba.pulse>DAÑ eléctrico</> continuamente según la cantidad de acumulaciones de <@ba.pulse>Imposición eléctrica</> que tengan.\n - Cuando un operador en estado <@ba.key>Conductor</> lance una habilidad de batalla, la Sombra contaminada de capitán del EFEY aplicará 1 acumulación de <@ba.pulse>Imposición eléctrica</> a todos los operadores. Cuando la Sombra contaminada de capitán del EFEY aplique <@ba.pulse>Imposición eléctrica</> a los operadores por <@ba.key>4.ª</> vez, se reiniciarán los tiempos de reutilización de sus habilidades de batalla, se <@ba.key>disiparán</> todas sus acumulaciones de <@ba.pulse>Imposición eléctrica</> y se aplicará <@ba.pulse>Electrificación de nivel 4</> a la Sombra contaminada de capitán del EFEY.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_battletower001_ex": {
     "name": "Cortador de agua plateado: Brutal",
     "description": "Vi un destello de luz y a la espada centelleante atravesar las corrientes, pero no logró cercenar su fría e implacable malicia. Su contacto dejó una impureza sobre tu espada, y el eco persistente envolvió tu figura.",
     "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
-  "indie_battletower012_s": {
-    "name": "Fervor inorgánico: Difícil",
-    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
-    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  "indie_battletower001_s": {
+    "name": "Cortador de agua plateado: Difícil",
+    "description": "Vi un destello de luz y a la espada centelleante atravesar las corrientes, pero no logró cercenar su fría e implacable malicia. Su contacto dejó una impureza sobre tu espada, y el eco persistente envolvió tu figura.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower002": {
     "name": "Viejas historias de lo salvaje: Normal",
     "description": "Aquí dejo constancia de bestias que vagan por las ruinas de la guerra, arañando y desgarrando los nombres de las naciones mientras su espuma rabiosa reduce lanzas, escudos y proyectiles de cañón a Ferrio fundido.",
     "featureDesc": " - Al derrotar enemigos se recuperan 15 PH.\n - DAÑ de habilidad de batalla infligido <@ba.vup>+60%</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
-  "indie_battletower012": {
-    "name": "Fervor inorgánico: Normal",
-    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
-    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower018_ex": {
-    "name": "Archivo de bestia: Empalizada de Qingbo - Brutal",
-    "description": "ARCHIVO 19: Tomado de una jaula para bestias de la Empalizada de Qingbo. El recinto se forjó con armas rotas. Antes de que los constructores de la Empalizada de Qingbo pudieran domesticar a las bestias, primero debían derrotar a la fauna salvaje.",
-    "featureDesc": "- Luego de derrotar a Acechador de nubes, se aplica <@ba.vup>+1</> para las acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Luego de derrotar a Bestia pluma, se aplica <@ba.vup>+1</> al Nivel de estado de <@ba.key>Reacción a artes</> / <@ba.key>Triturar</> / <@ba.key>Brecha</>. \n- Luego de derrotar a Aguijón fuerte α, recupera inmediatamente <@ba.vup>+25</> de PH cuando se consumen acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Derrotar cualquier conjunto de enemigos otorga +50% de PV a los enemigos restantes. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower010_s": {
-    "name": "Muro de escudos: Difícil",
-    "description": "Observé una operación de relevo, en la que una multitud de “escudos” cubría el frente de una línea de batalla.",
-    "featureDesc": " - Cuando se derrota a un Prisma, aparecerá otro Prisma en el campo de batalla después de un tiempo.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n - Derrota a la Sombra contaminada de Bestia pluma para superar la fase. Derrotar a los Prismas no afecta el progreso para completar la fase.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower017_s": {
-    "name": "Archivo de vengador: Rompehuesos - Difícil",
-    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
-    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard021_s": {
-    "name": "Vadeando el territorio del Rastrero: Agonía",
-    "description": "Las garras afiladas han quedado ocultas a la vista, mientras la estampida avanza y los ríos se desbordan. Los derrotados migran y emprenden el vuelo, pero los jóvenes olvidan corresponder a ese odio.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - La Bestia rastrera deslumbrante está <@ba.key>Iracunda</> permanentemente y su ATQ aumenta a medida que sus PV disminuyen.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard005": {
-    "name": "Tácticas no convencionales",
-    "description": "Los dispositivos de comunicación emitieron sonidos ensordecedores cuando los drones se estrellaron contra el suelo. Los Rompesuelos voltearon para mirar mientras murmuraban deseos de “bendiciones” y “venganza”. \nDetrás de ellos se alzaban altas figuras sombrías entre el bosque de denstacks.",
-    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir y obtienen ATQ continuamente."
-  },
-  "indie_battletower001_s": {
-    "name": "Cortador de agua plateado: Difícil",
-    "description": "Vi un destello de luz y a la espada centelleante atravesar las corrientes, pero no logró cercenar su fría e implacable malicia. Su contacto dejó una impureza sobre tu espada, y el eco persistente envolvió tu figura.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower020": {
-    "name": "Archivo de defensa: Escudo - Normal",
-    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower003_s": {
-    "name": "Éthillu de los guerrilleros: Difícil",
-    "description": "Veo una flecha de ballesta surcar los cielos a toda velocidad. Los guerrilleros avanzaron por el mismísimo borde de la realidad, sus rasgos fundiéndose con las formas frías de los Éthillu.",
-    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir.\n - En el campo de batalla aparecerá un Éthillu que solo puede recibir daño de remates.\n - Al derrotar a un Éthillu, atraerás a todos los enemigos, recuperarás 50 PH y el operador controlado obtendrá DAÑ infligido <@ba.vup>+100%</> durante 10 s.\n - Derrota a todos los Emboscadores Rompehuesos para completar la fase; no es necesario derrotar a los Éthillu.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
-  },
-  "indie_battletower015_s": {
-    "name": "Archivo de Sombra contaminada: Estruendo - Difícil",
-    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
-    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower016": {
-    "name": "Archivo de lancero con guja: Yinglung - Normal",
-    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
-    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower017": {
-    "name": "Archivo de vengador: Rompehuesos - Normal",
-    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
-    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower004_s": {
-    "name": "Era de hachas: Difícil",
-    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard019": {
-    "name": "Falange de espinas",
-    "description": "Afila tus lanzas. Refuerza tus escudos. Sé testigo de tu propio odio y escucha tu debilidad. Luego marcha hacia delante y hunde tus armas en la carne de la muerte.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Los Prismas aumentarán el ATQ de los Hedrones.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_battletower020_ex": {
-    "name": "Archivo de defensa: Escudo - Brutal",
-    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower007": {
-    "name": "Aullido de bestias inmortales: Normal",
-    "description": "Escuché el sonido de tu espada rozando los huesos blanqueados de las bestias; el siseante canto del afilado era casi como un Estruendo estrepitoso.",
-    "featureDesc": " - El tamborilero celestial no entrará en su estado Iracundo.\n - Al entrar en combate, el tamborilero celestial obtiene 50 de resistencia contra todos los elementos.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
-  },
-  "indie_battletower018_s": {
-    "name": "Archivo de bestia: Empalizada de Qingbo - Difícil",
-    "description": "ARCHIVO 19: Tomado de una jaula para bestias de la Empalizada de Qingbo. El recinto se forjó con armas rotas. Antes de que los constructores de la Empalizada de Qingbo pudieran domesticar a las bestias, primero debían derrotar a la fauna salvaje.",
-    "featureDesc": "- Luego de derrotar a Acechador de nubes, se aplica <@ba.vup>+1</> para las acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Luego de derrotar a Bestia pluma, se aplica <@ba.vup>+1</> al Nivel de estado de <@ba.key>Reacción a artes</> / <@ba.key>Triturar</> / <@ba.key>Brecha</>. \n- Luego de derrotar a Aguijón fuerte α, recupera inmediatamente <@ba.vup>+25</> de PH cuando se consumen acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Derrotar cualquier conjunto de enemigos otorga +50% de PV a los enemigos restantes. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard014_s": {
-    "name": "Mar marchito: Agonía",
-    "description": "Las corrientes turbias eventualmente se apaciguarán. Las bestias esperarán hasta que la pesada gran hacha destroce las ruinas del pasado y abra un camino hacia nuevas posibilidades.",
-    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard004": {
-    "name": "Balista y hacha",
-    "description": "Los guerreros Rompehuesos masacraron a los débiles y se pararon sobre la plataforma con sus hachas y balistas en alto. Derrótalos y pon viejos sufrimientos y nuevas ambiciones bajo tierra. \n“¿Héroe? ¿Cómo te ganaste este título?”",
-    "featureDesc": " - Los 2 enemigos de élite lucharán como equipo."
-  },
-  "indie_hard026": {
-    "name": "Carnicería feroz de las sombras",
-    "description": "Las retorcidas garras de bestias salvajes fueron las primeras en surgir de las sombras. Más tarde supimos que la luz despiadada dejó su marca en su naturaleza feroz.",
-    "featureDesc": " - Un enemigo en estado <@ba.key>Etéreo</> es inmune al DAÑ y no se puede seleccionar como objetivo.\n - Cuando comience la batalla, la Sombra contaminada de Bestia pluma entrará en estado <@ba.key>Etéreo</> y realizará embestidas constantemente. Mientras tanto, la Sombra contaminada de Bestia rastrera se aplicará <@ba.key>Escudo</> periódicamente. Las embestidas de la Sombra contaminada de Bestia pluma pueden Quebrar este <@ba.key>Escudo</>.\n - Cuando los PV de la Sombra contaminada de Bestia rastrera disminuyan hasta cierto punto, entrará en su estado <@ba.key>Etéreo</>, mientras que el estado <@ba.key>Etéreo</> de la Sombra contaminada de Bestia pluma terminará. Después, la Sombra contaminada de Bestia rastrera lanzará Golpe de trueno periódicamente sobre el operador controlado (hasta <@ba.key>5</> golpes en total). El DAÑ del Golpe de trueno no se puede esquivar. Aplicar <@ba.key>Ráfaga de artes</>, <@ba.phy>Brecha</> o <@ba.phy>Triturar</> a la Sombra contaminada de Bestia pluma creará <@ba.key>Orbes de rayo</>. El operador controlado puede recoger un <@ba.key>Orbe de rayo</> para obtener un escudo que bloquea el DAÑ de <@ba.key>1</> Golpe de trueno.\n - Cuando los PV de la Sombra contaminada de Bestia pluma sean bajos, su estado <@ba.key>Etéreo</> terminará. Después, los enemigos atacarán juntos.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
-  "indie_hard004_s": {
-    "name": "Balista y hacha: Agonía",
-    "description": "Los guerreros Rompehuesos masacraron a los débiles y se pararon sobre la plataforma con sus hachas y balistas en alto. Derrótalos y pon viejos sufrimientos y nuevas ambiciones bajo tierra. \n“¿Héroe? ¿Cómo te ganaste este título?”",
-    "featureDesc": " - Los 2 enemigos de élite lucharán como equipo.\n - Cuando ambos enemigos de élite estén en el campo, compartirán el DAÑ que reciban.\n \n  <@ba.info>- No se pueden usar items tácticos ni consumibles.</>"
-  },
-  "indie_battletower005_s": {
-    "name": "Munición pulverizadora: Difícil",
-    "description": "Recogí trozos de Ferrio, fragmentos de pensamientos e ideas que alguna vez estuvieron cubiertos de grabados. El compromiso más inquebrantable fue la bala, hecha añicos al chocar contra la carne y los huesos.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower020_s": {
-    "name": "Archivo de defensa: Escudo - Difícil",
-    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower011": {
-    "name": "Asedio atroz: Normal",
-    "description": "Planeé una emboscada de lodo y sangre, de heridas desgarradas y de dolor que alimenta una gran angustia.",
-    "featureDesc": " - El campo de batalla contiene una <@ba.key>Zona de dolor</>. El DAÑ recibido por un enemigo aumenta en <@ba.vup>+10%</> por cada segundo que permanezca en la Zona, hasta un Máx. de <@ba.vup>+150%</>. El efecto negativo desaparece gradualmente cuando el enemigo sale de la <@ba.key>Zona de dolor</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower004": {
-    "name": "Era de hachas: Normal",
-    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
-    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_battletower017_ex": {
-    "name": "Archivo de vengador: Rompehuesos - Brutal",
-    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
-    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
-  },
-  "indie_hard006_s": {
-    "name": "Sobrevive al gas: Agonía",
-    "description": "La enorme fábrica emanaba gases densos y tóxicos de sus chimeneas. ¿Quién trata de ocultar sus secretos aquí? \n“¡Desenvainen sus hojas y alcen los escudos! ¡Que aúllen las bestias colmilludas! ¡Y calienten la neblina!”",
-    "featureDesc": " - Cuidado. La Niebla inflige DAÑ continuamente a todos los operadores.\n - La Niebla inflige más DAÑ y aparecerán nuevos enemigos.\n - Cuando el operador controlado recibe tratamiento de PV, los demás operadores del equipo también obtienen el 50% de ese tratamiento de PV.\n\n  <@ba.info>- No se pueden usar items tácticos ni consumibles.</>"
-  },
-  "indie_battletower003_ex": {
-    "name": "Éthillu de los guerrilleros: Brutal",
-    "description": "Veo una flecha de ballesta surcar los cielos a toda velocidad. Los guerrilleros avanzaron por el mismísimo borde de la realidad, sus rasgos fundiéndose con las formas frías de los Éthillu.",
-    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir.\n - En el campo de batalla aparecerá un Éthillu que solo puede recibir daño de remates.\n - Al derrotar a un Éthillu, atraerás a todos los enemigos, recuperarás 50 PH y el operador controlado obtendrá DAÑ infligido <@ba.vup>+100%</> durante 10 s.\n - Derrota a todos los Emboscadores Rompehuesos para completar la fase; no es necesario derrotar a los Éthillu.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
+  "indie_battletower002_ex": {
+    "name": "Viejas historias de lo salvaje: Brutal",
+    "description": "Aquí dejo constancia de bestias que vagan por las ruinas de la guerra, arañando y desgarrando los nombres de las naciones mientras su espuma rabiosa reduce lanzas, escudos y proyectiles de cañón a Ferrio fundido.",
+    "featureDesc": " - Al derrotar enemigos se recuperan 15 PH.\n - DAÑ de habilidad de batalla infligido <@ba.vup>+60%</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower002_s": {
     "name": "Viejas historias de lo salvaje: Difícil",
@@ -334,15 +34,45 @@
     "description": "Veo una flecha de ballesta surcar los cielos a toda velocidad. Los guerrilleros avanzaron por el mismísimo borde de la realidad, sus rasgos fundiéndose con las formas frías de los Éthillu.",
     "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir.\n - En el campo de batalla aparecerá un Éthillu que solo puede recibir daño de remates.\n - Al derrotar a un Éthillu, atraerás a todos los enemigos, recuperarás 50 PH y el operador controlado obtendrá DAÑ infligido <@ba.vup>+100%</> durante 10 s.\n - Derrota a todos los Emboscadores Rompehuesos para completar la fase; no es necesario derrotar a los Éthillu.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
   },
+  "indie_battletower003_ex": {
+    "name": "Éthillu de los guerrilleros: Brutal",
+    "description": "Veo una flecha de ballesta surcar los cielos a toda velocidad. Los guerrilleros avanzaron por el mismísimo borde de la realidad, sus rasgos fundiéndose con las formas frías de los Éthillu.",
+    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir.\n - En el campo de batalla aparecerá un Éthillu que solo puede recibir daño de remates.\n - Al derrotar a un Éthillu, atraerás a todos los enemigos, recuperarás 50 PH y el operador controlado obtendrá DAÑ infligido <@ba.vup>+100%</> durante 10 s.\n - Derrota a todos los Emboscadores Rompehuesos para completar la fase; no es necesario derrotar a los Éthillu.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Éthillu de los guerrilleros: Difícil",
+    "description": "Veo una flecha de ballesta surcar los cielos a toda velocidad. Los guerrilleros avanzaron por el mismísimo borde de la realidad, sus rasgos fundiéndose con las formas frías de los Éthillu.",
+    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir.\n - En el campo de batalla aparecerá un Éthillu que solo puede recibir daño de remates.\n - Al derrotar a un Éthillu, atraerás a todos los enemigos, recuperarás 50 PH y el operador controlado obtendrá DAÑ infligido <@ba.vup>+100%</> durante 10 s.\n - Derrota a todos los Emboscadores Rompehuesos para completar la fase; no es necesario derrotar a los Éthillu.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
+  },
+  "indie_battletower004": {
+    "name": "Era de hachas: Normal",
+    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Era de hachas: Brutal",
+    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Era de hachas: Difícil",
+    "description": "Al pasar mis dedos por la mitad de los grabados, el óxido abrasador provocó espasmos de dolor que atravesaron la piel del verdugo. Las armas estaban manchadas con su carne y sangre. El ciclo era interminable e inquieto, y se repetía cada año.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
   "indie_battletower005": {
     "name": "Munición pulverizadora: Normal",
     "description": "Recogí trozos de Ferrio, fragmentos de pensamientos e ideas que alguna vez estuvieron cubiertos de grabados. El compromiso más inquebrantable fue la bala, hecha añicos al chocar contra la carne y los huesos.",
     "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
-  "indie_hard016_s": {
-    "name": "Vórtice ritual: Agonía",
-    "description": "Una luz inundó la visión de la gente cuando fijaron su mirada en el torbellino de desesperación y furia. Sus gritos se mezclaron con el trueno ensordecedor mientras el portador de la baliza aguardaba sobre las tierras quebradas.",
-    "featureDesc": " - A intervalos regulares, el Piromante Rompehuesos invoca a sus <@ba.key>dobles</> y canaliza su habilidad máxima durante cierto tiempo. La máxima inflige DAÑ masivo a todos los operadores cuando se completa la canalización. Derrota a todos los <@ba.key>dobles</> para interrumpir la máxima del Piromante.\n - Los enemigos reciben DAÑ adicional de <@ba.key>Remates</>; la duración de Tambaleado de los enemigos también se reduce considerablemente.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  "indie_battletower005_ex": {
+    "name": "Munición pulverizadora: Brutal",
+    "description": "Recogí trozos de Ferrio, fragmentos de pensamientos e ideas que alguna vez estuvieron cubiertos de grabados. El compromiso más inquebrantable fue la bala, hecha añicos al chocar contra la carne y los huesos.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Munición pulverizadora: Difícil",
+    "description": "Recogí trozos de Ferrio, fragmentos de pensamientos e ideas que alguna vez estuvieron cubiertos de grabados. El compromiso más inquebrantable fue la bala, hecha añicos al chocar contra la carne y los huesos.",
+    "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower006": {
     "name": "Cicatrices rompesuelos: Normal",
@@ -359,6 +89,11 @@
     "description": "Supe de una historia que comenzó con las ambiciones salvajes de un señor de la guerra. Llevó a clanes de lobos a devorarse entre sí y agitó el gran mar de arena, hasta que el sonido de la sangre brotando de las heridas abiertas resonó en nuestros oídos.",
     "featureDesc": "- Derrotar a la Vanguardia Rompehuesos otorga una Bonificación de eficiencia de tambaleo <@ba.vup>+50%</>\n - Derrotar al Rompehuesos Pirómano otorga Intensidad de artes <@ba.vup>+100</>.\n - Derrotar al Verdugo Rompehuesos otorga bonificación de daño de habilidad infligido <@ba.vup>+100%</>.\n - Derrotar al Carnero grande otorga daño infligido de ataques básicos <@ba.vup>+100%</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de los PV.</>"
   },
+  "indie_battletower007": {
+    "name": "Aullido de bestias inmortales: Normal",
+    "description": "Escuché el sonido de tu espada rozando los huesos blanqueados de las bestias; el siseante canto del afilado era casi como un Estruendo estrepitoso.",
+    "featureDesc": " - El tamborilero celestial no entrará en su estado Iracundo.\n - Al entrar en combate, el tamborilero celestial obtiene 50 de resistencia contra todos los elementos.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
+  },
   "indie_battletower007_ex": {
     "name": "Aullido de bestias inmortales: Brutal",
     "description": "Escuché el sonido de tu espada rozando los huesos blanqueados de las bestias; el siseante canto del afilado era casi como un Estruendo estrepitoso.",
@@ -368,6 +103,11 @@
     "name": "Aullido de bestias inmortales: Difícil",
     "description": "Escuché el sonido de tu espada rozando los huesos blanqueados de las bestias; el siseante canto del afilado era casi como un Estruendo estrepitoso.",
     "featureDesc": " - El tamborilero celestial no entrará en su estado Iracundo.\n - Al entrar en combate, el tamborilero celestial obtiene 50 de resistencia contra todos los elementos.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de los PV.</>"
+  },
+  "indie_battletower008": {
+    "name": "Breve historia de la guerra: Normal",
+    "description": "Encontré algunas líneas de verdad. Comenzó con bestias de furia y terminó con personas matándose entre sí. Los conflictos sangrientos nunca terminaron.",
+    "featureDesc": " - Derrotar al Nidwyrm Subterráneo otorga Índice de regeneración de PH <@ba.vup>+30%</>.\n - Derrotar al Aguijón fuerte otorga Reducción de tiempo de reutilización de habilidad de combo <@ba.vup>+50%</>.\n - Derrotar al Balista Rompehuesos otorga Eficiencia de ganancia máxima <@ba.vup>+60%</>.\n \n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower008_ex": {
     "name": "Breve historia de la guerra: Brutal",
@@ -394,15 +134,50 @@
     "description": "Presencié un funeral, sumido en un suelo oscuro y agitado, donde las bestias son impulsadas por las sombras persistentes.",
     "featureDesc": " <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
+  "indie_battletower010": {
+    "name": "Muro de escudos: Normal",
+    "description": "Observé una operación de relevo, en la que una multitud de “escudos” cubría el frente de una línea de batalla.",
+    "featureDesc": " - Cuando se derrota a un Prisma, aparecerá otro Prisma en el campo de batalla después de un tiempo.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n - Derrota a la Sombra contaminada de Bestia pluma para superar la fase. Derrotar a los Prismas no afecta el progreso para completar la fase.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
   "indie_battletower010_ex": {
     "name": "Muro de escudos: Brutal",
     "description": "Observé una operación de relevo, en la que una multitud de “escudos” cubría el frente de una línea de batalla.",
     "featureDesc": " - Cuando se derrota a un Prisma, aparecerá otro Prisma en el campo de batalla después de un tiempo.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n - Derrota a la Sombra contaminada de Bestia pluma para superar la fase. Derrotar a los Prismas no afecta el progreso para completar la fase.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
+  "indie_battletower010_s": {
+    "name": "Muro de escudos: Difícil",
+    "description": "Observé una operación de relevo, en la que una multitud de “escudos” cubría el frente de una línea de batalla.",
+    "featureDesc": " - Cuando se derrota a un Prisma, aparecerá otro Prisma en el campo de batalla después de un tiempo.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n - Derrota a la Sombra contaminada de Bestia pluma para superar la fase. Derrotar a los Prismas no afecta el progreso para completar la fase.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower011": {
+    "name": "Asedio atroz: Normal",
+    "description": "Planeé una emboscada de lodo y sangre, de heridas desgarradas y de dolor que alimenta una gran angustia.",
+    "featureDesc": " - El campo de batalla contiene una <@ba.key>Zona de dolor</>. El DAÑ recibido por un enemigo aumenta en <@ba.vup>+10%</> por cada segundo que permanezca en la Zona, hasta un Máx. de <@ba.vup>+150%</>. El efecto negativo desaparece gradualmente cuando el enemigo sale de la <@ba.key>Zona de dolor</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Asedio atroz: Brutal",
+    "description": "Planeé una emboscada de lodo y sangre, de heridas desgarradas y de dolor que alimenta una gran angustia.",
+    "featureDesc": " - El campo de batalla contiene una <@ba.key>Zona de dolor</>. El DAÑ recibido por un enemigo aumenta en <@ba.vup>+10%</> por cada segundo que permanezca en la Zona, hasta un Máx. de <@ba.vup>+150%</>. El efecto negativo desaparece gradualmente cuando el enemigo sale de la <@ba.key>Zona de dolor</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
   "indie_battletower011_s": {
     "name": "Asedio atroz: Difícil",
     "description": "Planeé una emboscada de lodo y sangre, de heridas desgarradas y de dolor que alimenta una gran angustia.",
     "featureDesc": " - El campo de batalla contiene una <@ba.key>Zona de dolor</>. El DAÑ recibido por un enemigo aumenta en <@ba.vup>+10%</> por cada segundo que permanezca en la Zona, hasta un Máx. de <@ba.vup>+150%</>. El efecto negativo desaparece gradualmente cuando el enemigo sale de la <@ba.key>Zona de dolor</>.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower012": {
+    "name": "Fervor inorgánico: Normal",
+    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
+    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Fervor inorgánico: Brutal",
+    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
+    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Fervor inorgánico: Difícil",
+    "description": "Simulé una ofensiva. Aunque los Aggeloi no sienten, nuestras Vanguardias no conocen el agotamiento.",
+    "featureDesc": " - Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower013": {
     "name": "Decapitación poderosa: Normal",
@@ -429,25 +204,70 @@
     "description": "Organicé un banquete. Las bestias son astutas, pero frustrar sus planes dará ciertas recompensas.",
     "featureDesc": " - Derrotar a un Aullador de roca recupera <@ba.vup>10</> PH y otorga Intensidad de artes <@ba.vup>+15</> a todos los operadores.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
   },
-  "indie_hard026_s": {
-    "name": "Carnicería feroz de las sombras: Agonía",
-    "description": "Las retorcidas garras de bestias salvajes fueron las primeras en surgir de las sombras. Más tarde supimos que la luz despiadada dejó su marca en su naturaleza feroz.",
-    "featureDesc": " - Un enemigo en estado <@ba.key>Etéreo</> es inmune al DAÑ y no se puede seleccionar como objetivo.\n - Cuando comience la batalla, la Sombra contaminada de Bestia pluma entrará en estado <@ba.key>Etéreo</> y realizará embestidas constantemente. Mientras tanto, la Sombra contaminada de Bestia rastrera se aplicará <@ba.key>Escudo</> periódicamente. Las embestidas de la Sombra contaminada de Bestia pluma pueden Quebrar este <@ba.key>Escudo</>.\n - Cuando los PV de la Sombra contaminada de Bestia rastrera disminuyan hasta cierto punto, entrará en su estado <@ba.key>Etéreo</>, mientras que el estado <@ba.key>Etéreo</> de la Sombra contaminada de Bestia pluma terminará. Después, la Sombra contaminada de Bestia rastrera lanzará Golpe de trueno periódicamente sobre el operador controlado (hasta <@ba.key>7</> golpes en total). El DAÑ del Golpe de trueno no se puede esquivar. Aplicar <@ba.key>Ráfaga de artes</>, <@ba.phy>Brecha</> o <@ba.phy>Triturar</> a la Sombra contaminada de Bestia pluma creará <@ba.key>Orbes de rayo</>. El operador controlado puede recoger un <@ba.key>Orbe de rayo</> para obtener un escudo que bloquea el DAÑ de <@ba.key>1</> Golpe de trueno.\n - Cuando los PV de la Sombra contaminada de Bestia pluma sean bajos, su estado <@ba.key>Etéreo</> terminará. Después, los enemigos atacarán juntos.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
   "indie_battletower014_s": {
     "name": "Maquinaciones bestiales: Difícil",
     "description": "Organicé un banquete. Las bestias son astutas, pero frustrar sus planes dará ciertas recompensas.",
     "featureDesc": " - Derrotar a un Aullador de roca recupera <@ba.vup>10</> PH y otorga Intensidad de artes <@ba.vup>+15</> a todos los operadores.\n\n <@ba.info>- Los enemigos tienen mejores estadísticas.</>\n <@ba.info>- Solo se pueden usar items tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower015": {
+    "name": "Archivo de Sombra contaminada: Estruendo - Normal",
+    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
+    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower015_ex": {
+    "name": "Archivo de Sombra contaminada: Estruendo - Brutal",
+    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
+    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower015_s": {
+    "name": "Archivo de Sombra contaminada: Estruendo - Difícil",
+    "description": "ARCHIVO 01: Tomado de un fragmento de garra de bestia adquirido en las ruinas. Hemos atribuido provisionalmente la agresividad de la bestia al Plano del Éter o a sus propios instintos depredadores.",
+    "featureDesc": "- La Sombra contaminada de Blitzcrash no entrará en su estado Iracundo. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower016": {
+    "name": "Archivo de lancero con guja: Yinglung - Normal",
+    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
+    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower016_ex": {
+    "name": "Archivo de lancero con guja: Yinglung - Brutal",
+    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
+    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower016_s": {
+    "name": "Archivo de lancero con guja: Yinglung - Difícil",
+    "description": "ARCHIVO 22: Tomado del armamento personal de un miembro del EFEY. La hoja tiene más de 20 muescas, la mayoría de las cuales resonaron con operaciones defensivas y misiones de asalto.",
+    "featureDesc": "- Cuando comienza la batalla, los PH iniciales y los PH Máx. de los operadores aumentan a <@ba.vup>700</>. \n- Toda la Recuperación de PH y la regeneración -50%. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower017": {
+    "name": "Archivo de vengador: Rompehuesos - Normal",
+    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
+    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower017_ex": {
+    "name": "Archivo de vengador: Rompehuesos - Brutal",
+    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
+    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower017_s": {
+    "name": "Archivo de vengador: Rompehuesos - Difícil",
+    "description": "ARCHIVO 07: Tomado de un arma Rompehuesos de fabricación rudimentaria recuperada de un lugar donde se libró una batalla encarnizada entre miembros de clanes rivales. Constituye una prueba sólida de conflictos internos y enemistades sangrientas.",
+    "featureDesc": "- La Intensidad de artes de todo el equipo <@ba.vup>+100%</>. \n- Los operadores entran en combate con la <@ba.key>Energía máxima</> al Máx. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower018": {
     "name": "Archivo de bestia: Empalizada de Qingbo - Normal",
     "description": "ARCHIVO 19: Tomado de una jaula para bestias de la Empalizada de Qingbo. El recinto se forjó con armas rotas. Antes de que los constructores de la Empalizada de Qingbo pudieran domesticar a las bestias, primero debían derrotar a la fauna salvaje.",
     "featureDesc": "- Luego de derrotar a Acechador de nubes, se aplica <@ba.vup>+1</> para las acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Luego de derrotar a Bestia pluma, se aplica <@ba.vup>+1</> al Nivel de estado de <@ba.key>Reacción a artes</> / <@ba.key>Triturar</> / <@ba.key>Brecha</>. \n- Luego de derrotar a Aguijón fuerte α, recupera inmediatamente <@ba.vup>+25</> de PH cuando se consumen acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Derrotar cualquier conjunto de enemigos otorga +50% de PV a los enemigos restantes. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
-  "indie_hard008_s": {
-    "name": "Mar del aborrecimiento: Agonía",
-    "description": "El suyo es un odio profundo y latente. Los olvidados vagaron sin fin por la tierra desolada... La causa de su furia se olvidó con el tiempo, pero cualquier recipiente de odio es capaz de extraer poder del interminable mar de la penumbra.",
-    "featureDesc": " - Los enemigos son más fuertes y <@ba.key>más difíciles de interrumpir</>.\n - Los enemigos de élite pelearán en equipo y aparecerán enemigos adicionales.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  "indie_battletower018_ex": {
+    "name": "Archivo de bestia: Empalizada de Qingbo - Brutal",
+    "description": "ARCHIVO 19: Tomado de una jaula para bestias de la Empalizada de Qingbo. El recinto se forjó con armas rotas. Antes de que los constructores de la Empalizada de Qingbo pudieran domesticar a las bestias, primero debían derrotar a la fauna salvaje.",
+    "featureDesc": "- Luego de derrotar a Acechador de nubes, se aplica <@ba.vup>+1</> para las acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Luego de derrotar a Bestia pluma, se aplica <@ba.vup>+1</> al Nivel de estado de <@ba.key>Reacción a artes</> / <@ba.key>Triturar</> / <@ba.key>Brecha</>. \n- Luego de derrotar a Aguijón fuerte α, recupera inmediatamente <@ba.vup>+25</> de PH cuando se consumen acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Derrotar cualquier conjunto de enemigos otorga +50% de PV a los enemigos restantes. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower018_s": {
+    "name": "Archivo de bestia: Empalizada de Qingbo - Difícil",
+    "description": "ARCHIVO 19: Tomado de una jaula para bestias de la Empalizada de Qingbo. El recinto se forjó con armas rotas. Antes de que los constructores de la Empalizada de Qingbo pudieran domesticar a las bestias, primero debían derrotar a la fauna salvaje.",
+    "featureDesc": "- Luego de derrotar a Acechador de nubes, se aplica <@ba.vup>+1</> para las acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Luego de derrotar a Bestia pluma, se aplica <@ba.vup>+1</> al Nivel de estado de <@ba.key>Reacción a artes</> / <@ba.key>Triturar</> / <@ba.key>Brecha</>. \n- Luego de derrotar a Aguijón fuerte α, recupera inmediatamente <@ba.vup>+25</> de PH cuando se consumen acumulaciones de <@ba.key>Imposición de artes</> / <@ba.key>Vulnerabilidad</>. \n- Derrotar cualquier conjunto de enemigos otorga +50% de PV a los enemigos restantes. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower019": {
     "name": "Archivo de constructo: Espectro - Normal",
@@ -463,6 +283,26 @@
     "name": "Archivo de constructo: Espectro - Difícil",
     "description": "ARCHIVO 50: Tomado de un pequeño cuchillo para tallar. El creador de las figuras de madera esculpió con delicadeza el corazón del bosque, otorgándoles la capacidad de protegerlo incluso hasta nuestros días.",
     "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 5 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower020": {
+    "name": "Archivo de defensa: Escudo - Normal",
+    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
+    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower020_ex": {
+    "name": "Archivo de defensa: Escudo - Brutal",
+    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
+    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_battletower020_s": {
+    "name": "Archivo de defensa: Escudo - Difícil",
+    "description": "ARCHIVO 99: Tomado de un escudo destrozado cuya simplicidad estructural es comparable a la del caparazón de un insecto. El espécimen ha recibido numerosas soldaduras, creando un estruendoso eco de guerra.",
+    "featureDesc": "<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+  },
+  "indie_hard001": {
+    "name": "Escudos desenfrenados",
+    "description": "La bruma nevada no parece disiparse nunca de estas tierras salvajes. Se puede escuchar el sonido nítido de quiebres ocultos en el grave retumbar. \nEscucha con atención. ¿Escuchas... el roce de piedra contra el metal?",
+    "featureDesc": " - Los enemigos son más fuertes."
   },
   "indie_hard001_s": {
     "name": "Escudos desenfrenados: Agonía",
@@ -489,6 +329,21 @@
     "description": "Las ruinas de la enorme máquina a la distancia anuncian los grandes sucesos del pasado. Cerca, entidades desarmadas comenzaron a unirse y a crear nuevas entidades que soltaron aullidos que rasgaron la tierra. \nEl suelo comenzó a temblar con los azotes de los Aggeloi y sus pesados pasos.",
     "featureDesc": " - La tasa de regeneración de Energía del operador se reduce enormemente.\n - Los enemigos son más fuertes e inmunes al Tambaleo.\n - La Crisópolis andante se recupera de las exposiciones de punto débil más rápido. No destruir un punto débil antes de que termine la exposición de punto débil le da a la Crisópolis andante un incremento masivo de ATQ. Si destruyes el punto débil con éxito, aplicas Tambaleado a la Crisópolis andante.\n\n  <@ba.info>- No se pueden usar items tácticos ni consumibles.</>"
   },
+  "indie_hard004": {
+    "name": "Balista y hacha",
+    "description": "Los guerreros Rompehuesos masacraron a los débiles y se pararon sobre la plataforma con sus hachas y balistas en alto. Derrótalos y pon viejos sufrimientos y nuevas ambiciones bajo tierra. \n“¿Héroe? ¿Cómo te ganaste este título?”",
+    "featureDesc": " - Los 2 enemigos de élite lucharán como equipo."
+  },
+  "indie_hard004_s": {
+    "name": "Balista y hacha: Agonía",
+    "description": "Los guerreros Rompehuesos masacraron a los débiles y se pararon sobre la plataforma con sus hachas y balistas en alto. Derrótalos y pon viejos sufrimientos y nuevas ambiciones bajo tierra. \n“¿Héroe? ¿Cómo te ganaste este título?”",
+    "featureDesc": " - Los 2 enemigos de élite lucharán como equipo.\n - Cuando ambos enemigos de élite estén en el campo, compartirán el DAÑ que reciban.\n \n  <@ba.info>- No se pueden usar items tácticos ni consumibles.</>"
+  },
+  "indie_hard005": {
+    "name": "Tácticas no convencionales",
+    "description": "Los dispositivos de comunicación emitieron sonidos ensordecedores cuando los drones se estrellaron contra el suelo. Los Rompesuelos voltearon para mirar mientras murmuraban deseos de “bendiciones” y “venganza”. \nDetrás de ellos se alzaban altas figuras sombrías entre el bosque de denstacks.",
+    "featureDesc": " - Los enemigos no pueden moverse, pero son más difíciles de interrumpir y obtienen ATQ continuamente."
+  },
   "indie_hard005_s": {
     "name": "Tácticas no convencionales: Agonía",
     "description": "Los dispositivos de comunicación emitieron sonidos ensordecedores cuando los drones se estrellaron contra el suelo. Los Rompesuelos voltearon para mirar mientras murmuraban deseos de “bendiciones” y “venganza”. \nDetrás de ellos se alzaban altas figuras sombrías entre el bosque de denstacks.",
@@ -499,10 +354,60 @@
     "description": "La enorme fábrica emanaba gases densos y tóxicos de sus chimeneas. ¿Quién trata de ocultar sus secretos aquí? \n“¡Desenvainen sus hojas y alcen los escudos! ¡Que aúllen las bestias colmilludas! ¡Y calienten la neblina!”",
     "featureDesc": " - Cuidado. La Niebla inflige DAÑ continuamente a todos los operadores.\n - Cuando el operador controlado recibe tratamiento de PV, los demás operadores del equipo también obtienen el 70% de ese tratamiento de PV."
   },
+  "indie_hard006_s": {
+    "name": "Sobrevive al gas: Agonía",
+    "description": "La enorme fábrica emanaba gases densos y tóxicos de sus chimeneas. ¿Quién trata de ocultar sus secretos aquí? \n“¡Desenvainen sus hojas y alcen los escudos! ¡Que aúllen las bestias colmilludas! ¡Y calienten la neblina!”",
+    "featureDesc": " - Cuidado. La Niebla inflige DAÑ continuamente a todos los operadores.\n - La Niebla inflige más DAÑ y aparecerán nuevos enemigos.\n - Cuando el operador controlado recibe tratamiento de PV, los demás operadores del equipo también obtienen el 50% de ese tratamiento de PV.\n\n  <@ba.info>- No se pueden usar items tácticos ni consumibles.</>"
+  },
+  "indie_hard007": {
+    "name": "Llama aullante",
+    "description": "¡Que la Plaga cubra los cielos! ¡Plaga para los rayos que nadie vio venir! ¡Y PLAGA para el fuego que llueve sin aviso!",
+    "featureDesc": " - Los enemigos entran regularmente en un estado <@ba.key>Iracundo</> que les aplica constantemente <@ba.fire>Imposición de calor</> a sí mismos, otorgando incrementos de Bonificación de ATQ y Reducción de DAÑ según la cantidad de acumulaciones de Imposición de calor.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard007_s": {
     "name": "Llama aullante: Agonía",
     "description": "¡Que la Plaga cubra los cielos! ¡Plaga para los rayos que nadie vio venir! ¡Y PLAGA para el fuego que llueve sin aviso!",
     "featureDesc": " - Los enemigos entran regularmente en un estado <@ba.key>Iracundo</> que les aplica constantemente <@ba.fire>Imposición de calor</> a ellos mismos, otorgando incrementos de Bonificación de ATQ y Reducción de DAÑ según la cantidad de acumulaciones de Imposición de calor.\n- Durante <@ba.key>Iracundo</>, <@ba.key>los operadores ya no tienen Regeneración de PH</>.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard008": {
+    "name": "Mar del aborrecimiento",
+    "description": "El suyo es un odio profundo y latente. Los olvidados vagaron sin fin por la tierra desolada... La causa de su furia se olvidó con el tiempo, pero cualquier recipiente de odio es capaz de extraer poder del interminable mar de la penumbra.",
+    "featureDesc": " - Los enemigos son más fuertes.\n - Los enemigos de élite pelearán en equipo.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Mar del aborrecimiento: Agonía",
+    "description": "El suyo es un odio profundo y latente. Los olvidados vagaron sin fin por la tierra desolada... La causa de su furia se olvidó con el tiempo, pero cualquier recipiente de odio es capaz de extraer poder del interminable mar de la penumbra.",
+    "featureDesc": " - Los enemigos son más fuertes y <@ba.key>más difíciles de interrumpir</>.\n - Los enemigos de élite pelearán en equipo y aparecerán enemigos adicionales.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard009": {
+    "name": "Punto de fusión de la carne",
+    "description": "¡ARDAN! ¡Que todo arda! ¡Derriben la torre y derritan el barco! ¡Lancen nuestra sangre en el hierro fundido y úsenla para purificar Talos-II!",
+    "featureDesc": " - Los enemigos son más fuertes.\n - Aparecen periódicamente Babosas de Originio de brumafuego que explotan.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Punto de fusión de la carne: Agonía",
+    "description": "¡ARDAN! ¡Que todo arda! ¡Derriben la torre y derritan el barco! ¡Lancen nuestra sangre en el hierro fundido y úsela para purificar Talos-II!",
+    "featureDesc": " - Los enemigos son más fuertes y <@ba.key>aparecerán enemigos adicionales</>.\n - Aparecen periódicamente Babosas de Originio de brumafuego que explotan.\n- <@ba.key>Los operadores no pueden realizar Esquiva perfecta</>.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard010": {
+    "name": "Duelo de las mareas",
+    "description": "La Agonía se ha precipitado y acumulado en este lugar durante años. Mira cómo la luz se difracta dentro de las furiosas aguas de marea. La intención asesina que emana carece de toda emoción.",
+    "featureDesc": " - Los enemigos no atacarán directamente; en su lugar, se mueven hacia el centro del campo de batalla, donde <@ba.key>explotan</> y causan DAÑ masivo a todos los operadores.\n - Algunos enemigos son más difíciles de interrumpir.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Duelo de las mareas: Agonía",
+    "description": "La Agonía se ha precipitado y acumulado en este lugar durante años. Mira cómo la luz se difracta dentro de las furiosas aguas de marea. La intención asesina que emana carece de toda emoción.",
+    "featureDesc": " - Los enemigos no atacarán directamente; en su lugar, se mueven hacia el centro del campo de batalla, donde <@ba.key>explotan</> y causan DAÑ masivo a todos los operadores.\n - Algunos enemigos son más difíciles de interrumpir.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard011": {
+    "name": "Conexión criostática",
+    "description": "El frío mas gélido los conecta. Las olas embravecidas y las corrientes turbias les dan un nombre común y el significado detrás de su creación.",
+    "featureDesc": " - Los enemigos son más fuertes.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Conexión criostática: Agonía",
+    "description": "El frío mas gélido los conecta. Las olas embravecidas y las corrientes turbias les dan un nombre común y el significado detrás de su creación.",
+    "featureDesc": " - Los enemigos son más fuertes.\n - Cuando están potenciados, el DAÑ total infligido por el enemigo aplicará instantáneamente <@ba.cryst>Solidificación</> a los operadores.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard012": {
     "name": "Sangre corrompida",
@@ -529,35 +434,90 @@
     "description": "Las corrientes turbias eventualmente se apaciguarán. Las bestias esperarán hasta que la pesada gran hacha destroce las ruinas del pasado y abra un camino hacia nuevas posibilidades.",
     "featureDesc": " - Los enemigos tienen mejores estadísticas.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
+  "indie_hard014_s": {
+    "name": "Mar marchito: Agonía",
+    "description": "Las corrientes turbias eventualmente se apaciguarán. Las bestias esperarán hasta que la pesada gran hacha destroce las ruinas del pasado y abra un camino hacia nuevas posibilidades.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard015": {
     "name": "Sima subacuática",
     "description": "Bajo las aguas silenciosas, donde corrientes heladas y oscuras fluyen en silencio, existen abismos donde acechan constructos inorgánicos.",
     "featureDesc": " - Los enemigos son más fuertes.\n - La Efigie invocará más Aggeloi.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Sima subacuática: Agonía",
+    "description": "Bajo las aguas silenciosas, donde corrientes heladas y oscuras fluyen en silencio, existen abismos donde acechan constructos inorgánicos.",
+    "featureDesc": " - Los enemigos son más fuertes.\n - La Efigie invocará más Aggeloi.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard016": {
     "name": "Vórtice ritual",
     "description": "Una luz inundó la visión de la gente cuando fijaron su mirada en el torbellino de desesperación y furia. Sus gritos se mezclaron con el trueno ensordecedor mientras el portador de la baliza aguardaba sobre las tierras quebradas.",
     "featureDesc": " - A intervalos regulares, el Piromante Rompehuesos invoca a sus <@ba.key>dobles</> y canaliza su habilidad máxima durante cierto tiempo. La máxima inflige DAÑ masivo a todos los operadores cuando se completa la canalización. Derrota a todos los <@ba.key>dobles</> para interrumpir la máxima del Piromante.\n - Los enemigos reciben DAÑ adicional de <@ba.key>Remates</>; la duración de Tambaleado de los enemigos también se reduce considerablemente.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
+  "indie_hard016_s": {
+    "name": "Vórtice ritual: Agonía",
+    "description": "Una luz inundó la visión de la gente cuando fijaron su mirada en el torbellino de desesperación y furia. Sus gritos se mezclaron con el trueno ensordecedor mientras el portador de la baliza aguardaba sobre las tierras quebradas.",
+    "featureDesc": " - A intervalos regulares, el Piromante Rompehuesos invoca a sus <@ba.key>dobles</> y canaliza su habilidad máxima durante cierto tiempo. La máxima inflige DAÑ masivo a todos los operadores cuando se completa la canalización. Derrota a todos los <@ba.key>dobles</> para interrumpir la máxima del Piromante.\n - Los enemigos reciben DAÑ adicional de <@ba.key>Remates</>; la duración de Tambaleado de los enemigos también se reduce considerablemente.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard017": {
+    "name": "Éthillu desgarrador",
+    "description": "El polvo del olvido ciega toda visión, mientras el réquiem se eleva con cada nota. La carne del Éthillu desgarrador ha sido derramada, de modo que la muerte sofoca al mundo entero.",
+    "featureDesc": " - A intervalos regulares, el operador controlado quedará <@ba.key>sellado</>.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard017_s": {
     "name": "Éthillu desgarrador: Agonía",
     "description": "El polvo del olvido ciega toda visión, mientras el réquiem se eleva con cada nota. La carne del Éthillu desgarrador ha sido derramada, de modo que la muerte sofoca al mundo entero.",
     "featureDesc": " - A intervalos regulares, el operador controlado será <@ba.key>sellado</>; este <@ba.key>sello</> también tendrá una duración mucho mayor.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard018": {
+    "name": "Tamborilero enfurecido",
+    "description": "La entidad estruendosa es atraída a estas tierras, pisoteando a los muertos y su terrible tormento. La guerra entre la vida y la muerte nunca terminará.",
+    "featureDesc": " - Cuando esté iracundo, el Tamborilero celestial creará escudos protectores. Cada <@ba.key>Reacción a Artes</> o <@ba.phy>Estado físico</> infligido por los operadores elimina 1 acumulación de escudo.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard018_s": {
     "name": "Tamborilero enfurecido: Agonía",
     "description": "La entidad estruendosa es atraída a estas tierras, pisoteando a los muertos y su terrible tormento. La guerra entre la vida y la muerte nunca terminará.",
     "featureDesc": " - Cuando esté calmado, el Tamborilero celestial creará un <@ba.key>Vórtice</> cada vez que inflija DAÑ al operador controlado.\n - Cuando esté iracundo, el Tamborilero celestial absorbe todos los <@ba.key>Vórtices</> del campo de batalla para crear escudos protectores. Cada <@ba.key>Vórtice</> absorbido aumenta la cantidad de acumulaciones de escudo. Cada <@ba.key>Reacción a Artes</> o <@ba.phy>Estado físico</> infligido por los operadores elimina 1 acumulación de escudo.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
-  "indie_hard024": {
-    "name": "Rey del peñasco",
-    "description": "Es raro ver a los aulladores luchar por la supremacía. El ganador se queda con el trono, mientras los perdedores terminan hechos huesos... Así que prepara tus armas y espadas, pues acaba de surgir el nuevo Rey del peñasco.",
-    "featureDesc": " - La duración de <@ba.fire>Combustión</>, <@ba.pulse>Electrificación</>, <@ba.natur>Corrosión</>, <@ba.cryst>Solidificación</> y <@ba.phy>Brecha</> aplicadas al aullador del peñasco se vuelve permanente. Los efectos de <@ba.fire>Combustión</>, <@ba.pulse>Electrificación</>, <@ba.natur>Corrosión</>, <@ba.cryst>Quebrar</> y <@ba.phy>Brecha</> aplicados al aullador del peñasco también se intensifican. Las Reacciones a artes y los Estados físicos mencionados también persisten después del <@ba.key>consumo</>.\n- El aullador del peñasco soltará un rugido furioso de forma periódica. El rugido furioso aplica <@ba.key>Aturdir</> a todos los operadores.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  "indie_hard019": {
+    "name": "Falange de espinas",
+    "description": "Afila tus lanzas. Refuerza tus escudos. Sé testigo de tu propio odio y escucha tu debilidad. Luego marcha hacia delante y hunde tus armas en la carne de la muerte.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Los Prismas aumentarán el ATQ de los Hedrones.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Falange de espinas: Agonía",
+    "description": "Afila tus lanzas. Refuerza tus escudos. Sé testigo de tu propio odio y escucha tu debilidad. Luego marcha hacia delante y hunde tus armas en la carne de la muerte.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Los Prismas aumentarán el ATQ de los Hedrones.\n - Ahora es mucho más difícil interrumpir a los Prismas.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard020": {
+    "name": "Ojos de la estirpe disolvente",
+    "description": "Los ríos se funden en una fría corriente de sangre. Desde las profundidades semejantes a una herida y bajo las corrientes estigias, la estirpe disolvente sigue acechando.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Las fuerzas enemigas incluyen al Caminante de mareas δ.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Ojos de la estirpe disolvente: Agonía",
+    "description": "Los ríos se funden en una fría corriente de sangre. Desde las profundidades semejantes a una herida y bajo las corrientes estigias, la estirpe disolvente sigue acechando.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - Las fuerzas enemigas incluyen al Caminante de mareas δ.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard021": {
+    "name": "Vadeando el territorio del Rastrero",
+    "description": "Las garras afiladas han quedado ocultas a la vista, mientras la estampida avanza y los ríos se desbordan. Los derrotados migran y emprenden el vuelo, pero los jóvenes olvidan corresponder a ese odio.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - La Bestia rastrera deslumbrante está <@ba.key>Iracunda</> permanentemente y su ATQ aumenta a medida que sus PV disminuyen.\n \n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Vadeando el territorio del Rastrero: Agonía",
+    "description": "Las garras afiladas han quedado ocultas a la vista, mientras la estampida avanza y los ríos se desbordan. Los derrotados migran y emprenden el vuelo, pero los jóvenes olvidan corresponder a ese odio.",
+    "featureDesc": " - Los enemigos tienen mejores estadísticas.\n - La Bestia rastrera deslumbrante está <@ba.key>Iracunda</> permanentemente y su ATQ aumenta a medida que sus PV disminuyen.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard022": {
     "name": "Bruma ardiente sacudetierras",
     "description": "“¡Soy el portador del BÁCULO! ¡La bruma ardiente es mi MARTILLOOO! ¡Estas montañas son LOS TAMBORES y yo! ¡SOY! ¡EL! ¡PERCUSIONISTAAA!”.",
     "featureDesc": " - El Piromante Rompehuesos lanza bruma ardiente constantemente e inflige DAÑ a todos los operadores. También es más difícil de interrumpir y es inmune al DAÑ de Tambaleo.\n - Cuando el Piromante Rompehuesos recibe DAÑ por <@ba.key>Ráfaga de artes</>, recibe DAÑ adicional equivalente a un porcentaje de sus PV Máx. y queda <@ba.key>sellado</> temporalmente.\n - El Piromante Rompehuesos seguirá invocando Asaltantes de élite y Emboscadores de élite.\n - Derrotar a un enemigo con una <@ba.key>Imposición de Artes</> también aplica 1 acumulación de la misma <@ba.key>Imposición de Artes</> a todos los demás enemigos.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Bruma ardiente sacudetierras: Agonía",
+    "description": "“¡Soy el portador del BÁCULO! ¡La bruma ardiente es mi MARTILLOOO! ¡Estas montañas son LOS TAMBORES y yo! ¡SOY! ¡EL! ¡PERCUSIONISTAAA!”.",
+    "featureDesc": " - El Piromante Rompehuesos lanza bruma ardiente constantemente e inflige DAÑ a todos los operadores. Cuando sus PV estén bajos, su bruma ardiente también aplica <@ba.fire>Imposición de calor</>. También es más difícil de interrumpir y es inmune al DAÑ de Tambaleo.\n - Cuando el Piromante Rompehuesos recibe DAÑ por <@ba.key>Ráfaga de artes</>, recibe DAÑ adicional equivalente a un porcentaje de sus PV Máx. y queda <@ba.key>sellado</> temporalmente.\n - El Piromante Rompehuesos seguirá invocando Asaltantes de élite y Emboscadores de élite.\n - Derrotar a un enemigo con una <@ba.key>Imposición de Artes</> también aplica 1 acumulación de la misma <@ba.key>Imposición de Artes</> a todos los demás enemigos.\n\n <@ba.info>- No se pueden usar ítems tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard023": {
     "name": "La mutiladora y sus amigos",
@@ -569,6 +529,11 @@
     "description": "Las personas tienen toda clase de habilidades, pero las bestias tienen toda clase de trucos. Si te interesa ver quién es el mejor, el escenario está a tu disposición.",
     "featureDesc": " - <@ba.key>Los operadores ya no tienen Regeneración de PH</>.\n - El operador controlado recuperará PH al pisar las cáscaras de plátano que arrojan los aulladores de roca.\n - La bestia mutiladora acorazada lanzará su máxima de forma periódica. La máxima elimina todas las cáscaras de plátano del campo de batalla e inflige DAÑ continuo a todos los operadores. Mientras lanza su máxima, la bestia mutiladora acorazada obtiene una gran reducción de DAÑ. <@ba.key>Múltiples interrupciones</> pueden detener el lanzamiento de esta máxima.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
+  "indie_hard024": {
+    "name": "Rey del peñasco",
+    "description": "Es raro ver a los aulladores luchar por la supremacía. El ganador se queda con el trono, mientras los perdedores terminan hechos huesos... Así que prepara tus armas y espadas, pues acaba de surgir el nuevo Rey del peñasco.",
+    "featureDesc": " - La duración de <@ba.fire>Combustión</>, <@ba.pulse>Electrificación</>, <@ba.natur>Corrosión</>, <@ba.cryst>Solidificación</> y <@ba.phy>Brecha</> aplicadas al aullador del peñasco se vuelve permanente. Los efectos de <@ba.fire>Combustión</>, <@ba.pulse>Electrificación</>, <@ba.natur>Corrosión</>, <@ba.cryst>Quebrar</> y <@ba.phy>Brecha</> aplicados al aullador del peñasco también se intensifican. Las Reacciones a artes y los Estados físicos mencionados también persisten después del <@ba.key>consumo</>.\n- El aullador del peñasco soltará un rugido furioso de forma periódica. El rugido furioso aplica <@ba.key>Aturdir</> a todos los operadores.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard024_s": {
     "name": "Rey del peñasco: Agonía",
     "description": "Es raro ver a los aulladores luchar por la supremacía. El ganador se queda con el trono, mientras los perdedores terminan hechos huesos... Así que prepara tus armas y espadas, pues acaba de surgir el nuevo Rey del peñasco.",
@@ -579,15 +544,25 @@
     "description": "El grupo de Empalizadores de Qingbo canta el coro de las espadas. Ya sin añorar un hogar deshecho, su espíritu heroico y sus ambiciones salvajes los impulsaron a ascender hasta la cima.",
     "featureDesc": " - Derrotar al enemigo restaura algunos PV a todos los demás enemigos y aumenta permanentemente su ATQ y PV Máx.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
-  "indie_hard033_s": {
-    "name": "Criaturas que excavan: Agonía",
-    "description": "La estación gélida y oscura ha terminado. Las criaturas que hibernaban se agitan y se llaman unas a otras... Son legión y están despertando.",
-    "featureDesc": " - Cuidado. La Niebla inflige continuamente <@ba.key>DAÑ que incrementa gradualmente</> a todos los operadores. <@ba.key>El DAÑ de la Niebla también aumenta considerablemente</>.\n - La Babosa de madera se enterrará bajo tierra y restaurará todas sus <@ba.key>acumulaciones de escudo</> periódicamente. Derrotar a una Babosa de madera reducirá temporalmente el DAÑ de la Niebla.\n - Después de que comience el combate, 1 Babosa de madera al azar perderá todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaurará. Derrotarla hará que 1 Babosa de madera al azar pierda todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaure.\n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
-  },
   "indie_hard025_s": {
     "name": "Visitantes de Qingbo: Agonía",
     "description": "El grupo de Empalizadores de Qingbo canta el coro de las espadas. Ya sin añorar un hogar deshecho, su espíritu heroico y sus ambiciones salvajes los impulsaron a ascender hasta la cima.",
     "featureDesc": " - Derrotar al enemigo restaura algunos PV a todos los demás enemigos y aumenta permanentemente su ATQ y PV Máx.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard026": {
+    "name": "Carnicería feroz de las sombras",
+    "description": "Las retorcidas garras de bestias salvajes fueron las primeras en surgir de las sombras. Más tarde supimos que la luz despiadada dejó su marca en su naturaleza feroz.",
+    "featureDesc": " - Un enemigo en estado <@ba.key>Etéreo</> es inmune al DAÑ y no se puede seleccionar como objetivo.\n - Cuando comience la batalla, la Sombra contaminada de Bestia pluma entrará en estado <@ba.key>Etéreo</> y realizará embestidas constantemente. Mientras tanto, la Sombra contaminada de Bestia rastrera se aplicará <@ba.key>Escudo</> periódicamente. Las embestidas de la Sombra contaminada de Bestia pluma pueden Quebrar este <@ba.key>Escudo</>.\n - Cuando los PV de la Sombra contaminada de Bestia rastrera disminuyan hasta cierto punto, entrará en su estado <@ba.key>Etéreo</>, mientras que el estado <@ba.key>Etéreo</> de la Sombra contaminada de Bestia pluma terminará. Después, la Sombra contaminada de Bestia rastrera lanzará Golpe de trueno periódicamente sobre el operador controlado (hasta <@ba.key>5</> golpes en total). El DAÑ del Golpe de trueno no se puede esquivar. Aplicar <@ba.key>Ráfaga de artes</>, <@ba.phy>Brecha</> o <@ba.phy>Triturar</> a la Sombra contaminada de Bestia pluma creará <@ba.key>Orbes de rayo</>. El operador controlado puede recoger un <@ba.key>Orbe de rayo</> para obtener un escudo que bloquea el DAÑ de <@ba.key>1</> Golpe de trueno.\n - Cuando los PV de la Sombra contaminada de Bestia pluma sean bajos, su estado <@ba.key>Etéreo</> terminará. Después, los enemigos atacarán juntos.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Carnicería feroz de las sombras: Agonía",
+    "description": "Las retorcidas garras de bestias salvajes fueron las primeras en surgir de las sombras. Más tarde supimos que la luz despiadada dejó su marca en su naturaleza feroz.",
+    "featureDesc": " - Un enemigo en estado <@ba.key>Etéreo</> es inmune al DAÑ y no se puede seleccionar como objetivo.\n - Cuando comience la batalla, la Sombra contaminada de Bestia pluma entrará en estado <@ba.key>Etéreo</> y realizará embestidas constantemente. Mientras tanto, la Sombra contaminada de Bestia rastrera se aplicará <@ba.key>Escudo</> periódicamente. Las embestidas de la Sombra contaminada de Bestia pluma pueden Quebrar este <@ba.key>Escudo</>.\n - Cuando los PV de la Sombra contaminada de Bestia rastrera disminuyan hasta cierto punto, entrará en su estado <@ba.key>Etéreo</>, mientras que el estado <@ba.key>Etéreo</> de la Sombra contaminada de Bestia pluma terminará. Después, la Sombra contaminada de Bestia rastrera lanzará Golpe de trueno periódicamente sobre el operador controlado (hasta <@ba.key>7</> golpes en total). El DAÑ del Golpe de trueno no se puede esquivar. Aplicar <@ba.key>Ráfaga de artes</>, <@ba.phy>Brecha</> o <@ba.phy>Triturar</> a la Sombra contaminada de Bestia pluma creará <@ba.key>Orbes de rayo</>. El operador controlado puede recoger un <@ba.key>Orbe de rayo</> para obtener un escudo que bloquea el DAÑ de <@ba.key>1</> Golpe de trueno.\n - Cuando los PV de la Sombra contaminada de Bestia pluma sean bajos, su estado <@ba.key>Etéreo</> terminará. Después, los enemigos atacarán juntos.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard027": {
+    "name": "Arco del destello sombrío",
+    "description": "La ancha hoja invoca el elemento desgarrador para imbuirse con él. Así, las imágenes espectrales de guerra y carnicería seguirán brillando sobre esta tierra.",
+    "featureDesc": " - El tiempo de reutilización de todas las habilidades de batalla de los operadores aumenta 60 s.\n - Al comenzar la batalla, todos los operadores entrarán en estado <@ba.key>Conductor</> y recibirán <@ba.pulse>DAÑ eléctrico</> continuamente según la cantidad de acumulaciones de <@ba.pulse>Imposición eléctrica</> que tengan.\n - Cuando un operador en estado <@ba.key>Conductor</> lance una habilidad de batalla, la Sombra contaminada de capitán del EFEY aplicará 1 acumulación de <@ba.pulse>Imposición eléctrica</> a todos los operadores. Cuando la Sombra contaminada de capitán del EFEY aplique <@ba.pulse>Imposición eléctrica</> a los operadores por <@ba.key>4.ª</> vez, se reiniciarán los tiempos de reutilización de sus habilidades de batalla, se <@ba.key>disiparán</> todas sus acumulaciones de <@ba.pulse>Imposición eléctrica</> y se aplicará <@ba.pulse>Electrificación de nivel 4</> a la Sombra contaminada de capitán del EFEY.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard027_s": {
     "name": "Arco del destello sombrío: Agonía",
@@ -604,10 +579,25 @@
     "description": "“Se acabó el tiempo. Que comiencen los ciclos interminables del olvido.\"",
     "featureDesc": " - <@ba.key>Los operadores ya no tienen Regeneración de PH. Los Golpes finales y los ataques de Remate ya no recuperarán PH</>.\n - Tras comenzar la batalla, los PH iniciales y PH Máx. de los operadores aumentan a 1000.\n - Las Sombras contaminadas de Bestias colmilludas y las Sombras contaminadas de vanguardia del EFEY se <@ba.key>autodestruirán</> después de un tiempo e infligirán DAÑ a todos los operadores según sus PV Máx.\n - Es necesario <@ba.key>interrumpir varias veces</> a la Sombra contaminada con guja del EFEY para impedir que ejecute su habilidad máxima. El DAÑ de esta habilidad máxima no se puede esquivar.\n - Si la batalla se prolonga demasiado, la Sombra contaminada con guja del EFEY se <@ba.key>autodestruirá</> y derrotará a todos los operadores.\n - Cuando los enemigos quedan Tambaleados, se pausa el temporizador de <@ba.key>autodestrucción</>.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
+  "indie_hard029": {
+    "name": "Fijación Triaggelada",
+    "description": "Los testigos permanecen en silencio y sumidos en el dolor. Cuando todos los recuerdos se convierten en meras ilusiones, el olvido se vuelve nuestra única opción.",
+    "featureDesc": " - Los enemigos no pueden moverse, pero tienen rangos de ataque mucho mayores.\n\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Fijación Triaggelada: Agonía",
+    "description": "Los testigos permanecen en silencio y sumidos en el dolor. Cuando todos los recuerdos se convierten en meras ilusiones, el olvido se vuelve nuestra única opción.",
+    "featureDesc": " - Los enemigos no pueden moverse, pero tienen rangos de ataque mucho mayores.\n - Cuando un enemigo sea derrotado por primera vez, los demás enemigos obtendrán refuerzo de ATQ y mayor velocidad de ATQ.\n\n <@ba.info>- No se pueden usar items tácticos ni consumibles.</>\n <@ba.info>- Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard030": {
     "name": "Sombras que atan",
     "description": "Cuando el polvo de la guerra se asentó, el bosque silencioso se los tragó a todos. Hasta este día fueron liberados.",
     "featureDesc": " - Tras comenzar la batalla, el enemigo aplica <@ba.key>Aprisionamiento</> a todos los operadores excepto al operador controlado.\n - Los operadores bajo <@ba.key>Aprisionamiento</> perderán PV constantemente mientras otorgan Tratamiento de PV y refuerzos de ATQ a la Sombra contaminada de Blitzcrash.\n - Derrotar a una Sombra contaminada de élite del EFEY libera a 1 operador del <@ba.key>Aprisionamiento</>.\n - La Sombra contaminada de Blitzcrash despierta después de derrotar a todas las Sombras contaminadas de élite del EFEY, o después de que el combate haya avanzado durante un tiempo.\n\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard030_s": {
+    "name": "Sombras que atan: Agonía",
+    "description": "Cuando el polvo de la guerra se asentó, el bosque silencioso se los tragó a todos. Hasta este día fueron liberados.",
+    "featureDesc": " - Tras comenzar la batalla, el enemigo aplica <@ba.key>Aprisionamiento</> a todos los operadores excepto al operador controlado.\n - Los operadores bajo <@ba.key>Aprisionamiento</> perderán PV constantemente mientras otorgan Tratamiento de PV, refuerzos de ATQ y <@ba.key>resistencia al elemento del operador</> a la Sombra contaminada de Blitzcrash.\n - Derrotar a una Sombra contaminada de élite del EFEY libera a 1 operador del <@ba.key>Aprisionamiento</>.\n - La Sombra contaminada de Blitzcrash despierta después de derrotar a todas las Sombras contaminadas de élite del EFEY, o después de que el combate haya avanzado durante un tiempo.\n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
   "indie_hard031": {
     "name": "Artesanías de madera que enlazan",
@@ -624,9 +614,19 @@
     "description": "Que las raíces alcancen los cielos, que el odio se extienda por la tierra... y que la ira de años de abandono resuene en cada leyenda.",
     "featureDesc": " - Cuando comienza el combate, los PH Máx. de los operadores aumentan a 400.\n - Furia de Gloomwald entrará periódicamente en su estado de carga y obtendrá una gran cantidad de <@ba.key>acumulaciones de escudo</>. Cuando complete la carga, lanzará su máxima, que inflige DAÑ masivo a todos los operadores. Destruye todas las <@ba.key>acumulaciones de escudo</> para interrumpir el estado de carga.\n - Cuando Furia de Gloomwald entra en estado de carga, también invoca a 4 Errantes de madera. Después de quebrar las <@ba.key>acumulaciones de escudo</> de un Errante de madera, este desaparecerá inmediatamente y restaurará 200 PH a los operadores.\n - Mientras Furia de Gloomwald esté protegida por <@ba.key>acumulación(es) de escudo</>, los <@ba.key>operadores dejan de tener regeneración de PH y sus Golpes finales y Remates dejan de recuperar PH</>.\n\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   },
+  "indie_hard032_s": {
+    "name": "Odio que se extiende: Agonía",
+    "description": "Que las raíces alcancen los cielos, que el odio se extienda por la tierra... y que la ira de años de abandono resuene en cada leyenda.",
+    "featureDesc": " - Cuando comienza el combate, los PH Máx. de los operadores aumentan a 400. \n - Furia de Gloomwald entrará periódicamente en su estado de carga y obtendrá una gran cantidad de <@ba.key>acumulaciones de escudo</>. Cuando complete la carga, lanzará su máxima, que inflige DAÑ masivo a todos los operadores. Destruye todas las <@ba.key>acumulaciones de escudo</> para interrumpir el estado de carga. \n - Cuando Furia de Gloomwald entra en estado de carga, también invoca a 4 Errantes de madera. Después de quebrar las <@ba.key>acumulaciones de escudo</> de un Errante de madera, este desaparecerá inmediatamente y restaurará 200 PH a los operadores. \n - Mientras Furia de Gloomwald esté protegida por <@ba.key>acumulación(es) de escudo</>, los <@ba.key>operadores dejan de tener regeneración de PH y sus Golpes finales y Remates dejan de recuperar PH.</>. Furia de Gloomwald también obtiene gradualmente cada vez más <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
   "indie_hard033": {
     "name": "Criaturas que excavan",
     "description": "La estación gélida y oscura ha terminado. Las criaturas que hibernaban se agitan y se llaman unas a otras... Son legión y están despertando.",
     "featureDesc": " - Cuidado. La Niebla inflige continuamente <@ba.key>DAÑ que incrementa gradualmente</> a todos los operadores.\n - La Babosa de madera se enterrará bajo tierra y restaurará todas sus <@ba.key>acumulaciones de escudo</> periódicamente. Derrotar a una Babosa de madera reducirá temporalmente el DAÑ de la Niebla.\n - Después de que comience el combate, 1 Babosa de madera al azar perderá todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaurará. Derrotarla hará que 1 Babosa de madera al azar pierda todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaure.\n\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
+  },
+  "indie_hard033_s": {
+    "name": "Criaturas que excavan: Agonía",
+    "description": "La estación gélida y oscura ha terminado. Las criaturas que hibernaban se agitan y se llaman unas a otras... Son legión y están despertando.",
+    "featureDesc": " - Cuidado. La Niebla inflige continuamente <@ba.key>DAÑ que incrementa gradualmente</> a todos los operadores. <@ba.key>El DAÑ de la Niebla también aumenta considerablemente</>.\n - La Babosa de madera se enterrará bajo tierra y restaurará todas sus <@ba.key>acumulaciones de escudo</> periódicamente. Derrotar a una Babosa de madera reducirá temporalmente el DAÑ de la Niebla.\n - Después de que comience el combate, 1 Babosa de madera al azar perderá todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaurará. Derrotarla hará que 1 Babosa de madera al azar pierda todas sus <@ba.key>acumulaciones de escudo</> y ya no las restaure.\n\n<@ba.info> - No se pueden usar items tácticos ni consumibles.</>\n<@ba.info> - Los enemigos tienen la misma resistencia contra todos los elementos.</>"
   }
 }

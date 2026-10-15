@@ -2109,6 +2109,7 @@ export const equipment = {
     "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_pulse_cryst01_edc_04": {
+    "url": "https://oem.re/0CWQXMV",
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
@@ -3645,6 +3646,7 @@ export const equipment = {
     "url": "https://oem.re/0skdX7F"
   },
   "item_equip_t4_suit_usp02_body_06": {
+    "url": "https://oem.re/0CWQXMV",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -3853,6 +3855,7 @@ export const equipment = {
     "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_usp02_hand_05": {
+    "url": "https://oem.re/0CWQXMV",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -5850,6 +5853,7 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_atk02_body_05": {
+    "url": "https://oem.re/17LK3My",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -6117,6 +6121,7 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_body_02": {
+    "url": "https://oem.re/17LK3My",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -11562,6 +11567,7 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_usp02_edc_07": {
+    "url": "https://oem.re/0CWQXMV",
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
@@ -13279,6 +13285,7 @@ export const equipment = {
     "url": "https://oem.re/0TQF7uk"
   },
   "item_equip_t4_suit_atk02_edc_06": {
+    "url": "https://oem.re/17LK3My",
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
@@ -13775,6 +13782,7 @@ export const equipment = {
     "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_atk02_hand_03": {
+    "url": "https://oem.re/17LK3My",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -14915,6 +14923,7 @@ export const equipment = {
     "url": "https://oem.re/1b0BkJu"
   },
   "item_equip_t4_suit_usp02_body_05": {
+    "url": "https://oem.re/0CWQXMV",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -15203,6 +15212,7 @@ export const equipment = {
     "url": "https://oem.re/0AvUSn4"
   },
   "item_equip_t4_suit_pulse_cryst01_hand_02": {
+    "url": "https://oem.re/17LK3My",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,

@@ -35,18 +35,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_bigtree": {
-    "name": "'깊은 숲, 이곳에 잠들다'",
-    "category": "아츠 훈장",
-    "group": "전투 기술 훈장",
-    "levels": {
-      "2": {
-        "desc": "깊은 숲의 분노를 처치하기",
-        "completeDesc": "깊은 숲의 분노를 잠재웠습니다. 충직한 피조물들은 더 이상 원망과 분노에 사로잡히지 않았고, 이 땅에는 다시 고요한 평화가 찾아왔습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_documents": {
     "name": "협곡 조사원 훈장",
     "category": "지역 훈장",
@@ -83,18 +71,6 @@
     },
     "plating": null
   },
-  "achv_hide_accidental_injury": {
-    "name": "'얼떨결에 겪은 시련'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "1": {
-        "desc": "해조와 전투 중 동료의 뇌운에 맞기",
-        "completeDesc": "어쩌면 그저 더위를 식혀 주려던 배려였을까요?"
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_fixablerobot": {
     "name": "'델타의 구세주'",
     "category": "지역 훈장",
@@ -111,18 +87,6 @@
       "3": {
         "desc": "4번 협곡의 델타 로봇 43대 수리",
         "completeDesc": "대량의 2진법 데이터를 받았습니다. 해석한 결과, 발신자가 간절히 당신을 '델타의 구세주, 모든 로봇의 구원자, 4번 협곡의 기계의 왕'으로 모시고 싶어 하는 듯합니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_laevat": {
-    "name": "'기억을 태운 재'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "2": {
-        "desc": "서브 임무 [기억을 태운 재] 완료",
-        "completeDesc": "불길 속에서 형태를 바꾸는 기억들.\n끝없는 산맥처럼 길을 가로막는 과거의 파편 속에서 레바테인은 관리자와 함께 헤어날 수 없을 것 같던 회랑을 넘어섰습니다."
       }
     },
     "plating": null
@@ -151,42 +115,6 @@
     },
     "plating": null
   },
-  "achv_adv_wuling_campfire_3": {
-    "name": "무릉 정착자 훈장 III",
-    "category": "지역 훈장",
-    "group": "무릉 지역 훈장",
-    "levels": {
-      "1": {
-        "desc": "장검 골짜기와 응룡 관문 및 북쪽 금지 구역에서 프로토콜 전송 지점 누적 22개 잠금 해제",
-        "completeDesc": "무릉의 프로토콜 네트워크를 조금 더 완벽하게 활성화하였습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_jinlong_2": {
-    "name": "무릉 공업 선구자 훈장 II",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "1": {
-        "desc": "무릉 공업 계획의 25가지 기술 연구 완료",
-        "completeDesc": "무릉 공업 계획의 더 많은 내용을 모두 완료했습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_aether_lock_clean": {
-    "name": "'단두대의 칼날'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "2": {
-        "desc": "북쪽 금지 구역의 응집된 에너지체 5개 제거",
-        "completeDesc": "위험한 곳에서는 신중해야 하는 법입니다. 단두대의 칼날처럼 묶여 있던 자물쇠를 풀어냈습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_balloon": {
     "name": "부유 회수 훈장",
     "category": "지역 훈장",
@@ -198,20 +126,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_domain_shop": {
-    "name": "안정적인 판매 훈장",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "2": {
-        "desc": "물자 관리에서 물자 15회 누적 판매",
-        "completeDesc": "여러 차례의 자원 판매를 성공적으로 완료했습니다.\n관리자의 빠른 판단과 예리한 관찰력 덕분에 각 지역에서 물자 부족 사태가 일어나지 않았습니다."
-      }
-    },
-    "plating": {
-      "desc": "물자를 1회 판매할 때, 해당 화물의 판매 수익률이 500% 혹은 그 이상 달성"
-    }
   },
   "achv_adv_wuling_blackhole_clean": {
     "name": "균열 봉합 훈장",
@@ -247,38 +161,6 @@
       "2": {
         "desc": "청파채, 수돈, 수돈 내부와 실험 구역에서 보물 상자 121개 개방",
         "completeDesc": "무릉 대부분의 보물 상자를 열었습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_world_level": {
-    "name": "심도 탐색 훈장",
-    "category": "단련 훈장",
-    "group": "단련 훈장",
-    "levels": {
-      "1": {
-        "desc": "탐색 레벨 2 도달",
-        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다."
-      },
-      "2": {
-        "desc": "탐색 레벨 4 도달",
-        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다.\n험난한 환경일수록, 더 많은 기회가 펼쳐집니다."
-      },
-      "3": {
-        "desc": "탐색 레벨 7 도달",
-        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다.\n마침내 최정상에 올랐습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_jump_hit": {
-    "name": "'프로토콜ε · 20.00m'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "2": {
-        "desc": "20미터 이상에서 낙하 공격을 사용하여 적을 명중",
-        "completeDesc": "궤도 부유물이 떨어진 줄 알았더니, 당신과 당신의 오퍼레이터였군요."
       }
     },
     "plating": null
@@ -331,32 +213,6 @@
     },
     "plating": null
   },
-  "achv_bat_hard_8": {
-    "name": "'깊은 숲의 잠꼬대'",
-    "category": "아츠 훈장",
-    "group": "프로토콜 공간 훈장",
-    "levels": {
-      "2": {
-        "desc": "[그림자 이정표]에서 '깊은 숲의 잠꼬대'의 모든 스테이지를 일반 모드로 완료",
-        "completeDesc": "깊은 숲의 분노 어린 속삭임에 귀를 기울였고, 또 한 번 기념비에 이름을 새겼습니다."
-      }
-    },
-    "plating": {
-      "desc": "[그림자 이정표]에서 '깊은 숲의 잠꼬대'의 모든 스테이지를 고난 모드로 완료"
-    }
-  },
-  "achv_fac_blackbox_2": {
-    "name": "시뮬레이션 공간 훈장 II",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "3": {
-        "desc": "수동으로 시뮬레이션 공간 30개 누적 완료",
-        "completeDesc": "수많은 시뮬레이션 공간을 완료하고, 무릉의 공업 지식을 폭넓게 장악했습니다. 이제는 열정으로 이길 사람이 없습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_campfire_2": {
     "name": "무릉 정착자 훈장 II",
     "category": "지역 훈장",
@@ -369,14 +225,14 @@
     },
     "plating": null
   },
-  "achv_growth_equip_enhance": {
-    "name": "완벽한 장비 훈장",
-    "category": "단련 훈장",
-    "group": "단련 훈장",
+  "achv_adv_wuling_campfire_3": {
+    "name": "무릉 정착자 훈장 III",
+    "category": "지역 훈장",
+    "group": "무릉 지역 훈장",
     "levels": {
-      "3": {
-        "desc": "장비 1개의 모든 속성을 정밀 단조 최대치까지 업그레이드",
-        "completeDesc": "이 장비는 상처를 기억하고, 영광을 증명하며, 생명을 함께 이어온 존재이자... 시작도, 끝도 함께하는 동반자가 되었습니다."
+      "1": {
+        "desc": "장검 골짜기와 응룡 관문 및 북쪽 금지 구역에서 프로토콜 전송 지점 누적 22개 잠금 해제",
+        "completeDesc": "무릉의 프로토콜 네트워크를 조금 더 완벽하게 활성화하였습니다."
       }
     },
     "plating": null
@@ -389,38 +245,6 @@
       "1": {
         "desc": "눈 덮인 소나무 숲과 사의 그림에서 프로토콜 전송 지점 18개를 잠금 해제",
         "completeDesc": "무릉의 프로토콜 네트워크를 조금 더 완벽하게 활성화하였습니다. 비록 이계에 존재하고 있지만 말입니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_spaceship_fever_point": {
-    "name": "굳건한 유대 훈장",
-    "category": "건설 훈장",
-    "group": "제강호 훈장",
-    "levels": {
-      "1": {
-        "desc": "오퍼레이터 5명의 신뢰도를 100%까지 올리기",
-        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다."
-      },
-      "2": {
-        "desc": "오퍼레이터 10명의 신뢰도를 100%까지 올리기",
-        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다.\n관리자에게는 사람들을 끌어당기는 힘이 있습니다."
-      },
-      "3": {
-        "desc": "오퍼레이터 20명의 신뢰도를 100%까지 올리기",
-        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다.\n언젠가는 이 행성의 모든 사람이 관리자를 신뢰하게 될지도 모릅니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_paralyze": {
-    "name": "'숨겨진 힘의 발현'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "2": {
-        "desc": "['정복자' 네파리스]가 주변의 시간을 정지시켰을 때, 메인 컨트롤 오퍼레이터가 공중에 갇히기",
-        "completeDesc": "그녀의 야심과 오만은 사람들에게 두려움을 가져다줍니다. 하지만 관리자님께서는 절망 속에서도 주저하지 않고 자신의 용기를 드러냈습니다."
       }
     },
     "plating": null
@@ -463,18 +287,6 @@
       "desc": "경옥 골짜기와 무릉성에서 오리렌 81개 수집"
     }
   },
-  "achv_hide_waterwheel_top": {
-    "name": "'물은 하늘로부터 스스로 흘러내린다'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "2": {
-        "desc": "청파채 대형 물레방아 꼭대기에 도달",
-        "completeDesc": "청파채 물레방아의 꼭대기에 올라, '하늘에서 물이 흘러내리는' 기이한 풍경을 직접 목격했습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_ether_2": {
     "name": "'조각의 재집결' II",
     "category": "지역 훈장",
@@ -483,26 +295,6 @@
       "2": {
         "desc": "청파채, 수돈, 수돈 내부와 실험 구역에서 오리렌 59개 수집",
         "completeDesc": "최초의 물건의 유실된 조각들이 다시 모였습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_eny_building_kill": {
-    "name": "전략적 섬멸 훈장",
-    "category": "아츠 훈장",
-    "group": "전투 기술 훈장",
-    "levels": {
-      "1": {
-        "desc": "작전 설비로 적 누적 10명 처치",
-        "completeDesc": "작전 설비가 이제 그 위력을 드러내기 시작했습니다."
-      },
-      "2": {
-        "desc": "작전 설비로 적 누적 100명 처치",
-        "completeDesc": "작전 설비가 침착하게 적을 상대하고 있습니다."
-      },
-      "3": {
-        "desc": "작전 설비로 적 누적 500명 처치",
-        "completeDesc": "이토록 효율적인 살상 기계를 갖춘 이상, 이제 위험하게 직접 위험에 뛰어들 필요는 없을 것 같습니다."
       }
     },
     "plating": null
@@ -555,18 +347,6 @@
     },
     "plating": null
   },
-  "achv_bat_dung_char": {
-    "name": "오퍼레이터 가이드 훈장",
-    "category": "아츠 훈장",
-    "group": "프로토콜 공간 훈장",
-    "levels": {
-      "1": {
-        "desc": "임의의 오퍼레이터 가이드 5개 완료",
-        "completeDesc": "오퍼레이터의 전투 방식에 대해 완벽하게 숙지했습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_floor_2": {
     "name": "'재빠르게 세 번 뛰어넘는 파울비스트(2)'",
     "category": "지역 훈장",
@@ -575,30 +355,6 @@
       "1": {
         "desc": "청파채, 수돈, 수돈 내부와 실험 구역의 압력판 6세트 활성화",
         "completeDesc": "다시 한번 절묘한 몸놀림으로 압력판 사이를 뛰어넘으며 그것들을 완벽한 균형 상태로 되돌렸습니다.\n\"재빠르게 세 번 뛰어넘는 파울비스트 같은 몸놀림이군요!\""
-      }
-    },
-    "plating": null
-  },
-  "achv_adv_wuling_password": {
-    "name": "'붓끝에서 피어나리라'",
-    "category": "지역 훈장",
-    "group": "무릉 지역 훈장",
-    "levels": {
-      "2": {
-        "desc": "사의 그림에서 등불 기둥 장치를 11개 해제",
-        "completeDesc": "사가 남긴 작은 수수께끼를 여럿 풀어냈습니다. 그림 속을 오래 거닐다 보면, 묵량에게도 동심이 있다는 것을 알게 되는 법입니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_defeat_jzmking": {
-    "name": "'비스트의 왕 제압'",
-    "category": "아츠 훈장",
-    "group": "전투 기술 훈장",
-    "levels": {
-      "2": {
-        "desc": "거대한 록하울러를 처치하기",
-        "completeDesc": "비스트 무리의 우두머리를 굴복시켰습니다. 어쩌면 이렇게 새로운 왕이 될지도 모릅니다."
       }
     },
     "plating": null
@@ -623,18 +379,6 @@
       "1": {
         "desc": "청파채, 수돈, 수돈 내부와 실험 구역의 반딧불 전달 3번 완료",
         "completeDesc": "또 한 번 랭키비스트와 즐겁게 지냈네요. 분석 결과, 이건 랭키비스트들이 당신에게 감사를 전하고 다시 만나길 바라는 인사로 보입니다.\n\"꽉꽉꽉, 꽉꽉꽉꽉꽉\""
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_yvonne": {
-    "name": "'러브, 스크림 & 프로토타입'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "2": {
-        "desc": "서브 임무 [러브, 스크림 & 프로토타입] 완료",
-        "completeDesc": "뒤늦게 도착한 물감 한 상자...\n타타의 흔적을 따라 번져 가는 그라피티의 색채 속에서 이본은 다시 만날 그날을 떠올리곤 합니다."
       }
     },
     "plating": null
@@ -675,14 +419,14 @@
     },
     "plating": null
   },
-  "achv_bat_jsspsi_reverse_color": {
-    "name": "'여백'",
-    "category": "아츠 훈장",
-    "group": "전투 기술 훈장",
+  "achv_adv_wuling_password": {
+    "name": "'붓끝에서 피어나리라'",
+    "category": "지역 훈장",
+    "group": "무릉 지역 훈장",
     "levels": {
       "2": {
-        "desc": "사가 천지를 물들인 먹빛의 흑백 상태에서 그림 공격을 사용하는 동안 메인 컨트롤 오퍼레이터가 피해를 받지 않았습니다.",
-        "completeDesc": "밝음을 알되 어둠을 지키며, 물러섬으로써 나아갔습니다."
+        "desc": "사의 그림에서 등불 기둥 장치를 11개 해제",
+        "completeDesc": "사가 남긴 작은 수수께끼를 여럿 풀어냈습니다. 그림 속을 오래 거닐다 보면, 묵량에게도 동심이 있다는 것을 알게 되는 법입니다."
       }
     },
     "plating": null
@@ -698,20 +442,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_settlement_wuling_2": {
-    "name": "무릉 거점 개척자 훈장 II",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "2": {
-        "desc": "무릉의 모든 거점을 지원 계획에 포함",
-        "completeDesc": "무릉의 모든 거점이 당신의 지원 계획에 포함되었습니다.\n산과 물 그리고 사람의 관계를 더없이 완벽하게 조율해 냈습니다."
-      }
-    },
-    "plating": {
-      "desc": "무릉의 모든 거점 레벨을 최대치까지 업그레이드"
-    }
   },
   "achv_bat_charged": {
     "name": "숙련된 요격 훈장",
@@ -733,34 +463,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_palesent": {
-    "name": "'창백한 궤멸'",
-    "category": "아츠 훈장",
-    "group": "전투 기술 훈장",
-    "levels": {
-      "3": {
-        "desc": "'위험한 재앙 · 마블 아겔로미레' 완료",
-        "completeDesc": "프로토콜 공간의 환영 속에서 창백한 거인을 다시 쓰러뜨렸습니다."
-      }
-    },
-    "plating": {
-      "desc": "240초 내에 '위험한 재앙 · 마블 아겔로미레' 완료"
-    }
-  },
-  "achv_event_wuling_challenge_dung_03": {
-    "name": "'그림 너머에 남은 빛'",
-    "category": "이벤트 훈장",
-    "group": "이벤트 훈장",
-    "levels": {
-      "2": {
-        "desc": "[숨겨진 구역의 여행자]에서 모든 '그림 너머에 남은 빛' 프로토콜 공간을 완료",
-        "completeDesc": "흩어진 프로토콜 공간을 하나씩 밝혀내어, 그림 너머와 수묵 사이에 감춰진 수많은 옛이야기까지 이제 모두 손에 넣었습니다."
-      }
-    },
-    "plating": {
-      "desc": "[숨겨진 구역의 여행자]에서 모든 '그림 너머에 남은 빛' 프로토콜 공간을 완벽하게 완료"
-    }
-  },
   "achv_bat_charged_hsbear": {
     "name": "'뇌격 차단'",
     "category": "아츠 훈장",
@@ -769,18 +471,6 @@
       "2": {
         "desc": "전투에서 천고의 포효 음파를 끊기",
         "completeDesc": "포효의 시작을 억누르는 데에 성공했습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_fly": {
-    "name": "'위상 일탈'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "3": {
-        "desc": "집라인 후크, 점프 패드 및 로프로 누적 10,000미터 이동",
-        "completeDesc": "제강호가 당신을 위해 지상 비행 설비를 연구하고 있습니다."
       }
     },
     "plating": null
@@ -819,6 +509,18 @@
       "desc": "240초 내에 '위험한 재앙 · 트리아겔로스' 완료"
     }
   },
+  "achv_bat_defeat_bigtree": {
+    "name": "'깊은 숲, 이곳에 잠들다'",
+    "category": "아츠 훈장",
+    "group": "전투 기술 훈장",
+    "levels": {
+      "2": {
+        "desc": "깊은 숲의 분노를 처치하기",
+        "completeDesc": "깊은 숲의 분노를 잠재웠습니다. 충직한 피조물들은 더 이상 원망과 분노에 사로잡히지 않았고, 이 땅에는 다시 고요한 평화가 찾아왔습니다."
+      }
+    },
+    "plating": null
+  },
   "achv_bat_defeat_dodge_jzogre": {
     "name": "'바람을 가르며'",
     "category": "아츠 훈장",
@@ -839,44 +541,6 @@
       "2": {
         "desc": "전투 중 '잔영'이 부활한 뒤 2초 내에 처치",
         "completeDesc": "잔영을 꿰뚫어 불안정한 것들을 제거했습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_hard_5": {
-    "name": "'적막 속의 외침'",
-    "category": "아츠 훈장",
-    "group": "프로토콜 공간 훈장",
-    "levels": {
-      "2": {
-        "desc": "[그림자 이정표]에서 '적막 속의 외침'의 모든 스테이지를 일반 모드로 완료",
-        "completeDesc": "천둥의 포효와 적막한 죽음 사이에서 분쟁의 현장을 목격하고, 또 한 번 잿빛 세계의 이정표에 자신의 이름을 깊이 새겼습니다."
-      }
-    },
-    "plating": {
-      "desc": "[그림자 이정표]에서 '적막 속의 외침'의 모든 스테이지를 고난 모드로 완료"
-    }
-  },
-  "achv_hide_spaceship_v1d6": {
-    "name": "'남산을 마주하다'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "1": {
-        "desc": "관경부유도에 도착",
-        "completeDesc": "우여곡절 끝에 마침내 인류 기술이 빚어낸 최고봉을 마주했습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_typhoea": {
-    "name": "'안개에 잠긴 겨울꿈의 숲'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "2": {
-        "desc": "서브 임무 [안개에 잠긴 겨울꿈의 숲] 완료",
-        "completeDesc": "무언가를 찾아 헤매는 시선을 좇고, 화살이 가리키는 길을 따라갑니다. 찬바람이 안개와 꿈을 스치고... 그분의 목소리가 눈 덮인 숲에 메아리칩니다."
       }
     },
     "plating": null
@@ -921,19 +585,17 @@
       "desc": "200초 내에 '위험한 재앙 · 사' 완료"
     }
   },
-  "achv_event_clean": {
-    "name": "'티끌 하나 없이'",
-    "category": "이벤트 훈장",
-    "group": "이벤트 훈장",
+  "achv_bat_defeat_jzmking": {
+    "name": "'비스트의 왕 제압'",
+    "category": "아츠 훈장",
+    "group": "전투 기술 훈장",
     "levels": {
       "2": {
-        "desc": "모든 청소 대작전 임무 완료",
-        "completeDesc": "덕분에 환경미화원들은 이제 더 이상 얼룩 때문에 골머리를 썩이지 않아도 됩니다."
+        "desc": "거대한 록하울러를 처치하기",
+        "completeDesc": "비스트 무리의 우두머리를 굴복시켰습니다. 어쩌면 이렇게 새로운 왕이 될지도 모릅니다."
       }
     },
-    "plating": {
-      "desc": "120초 내에 '오염 정화 작전' 완료"
-    }
+    "plating": null
   },
   "achv_bat_defeat_klbear": {
     "name": "'진뢰가 잦아든 자리'",
@@ -961,6 +623,20 @@
       "desc": "200초 내에 '위험한 재앙 · 네파리스' 완료"
     }
   },
+  "achv_bat_defeat_palesent": {
+    "name": "'창백한 궤멸'",
+    "category": "아츠 훈장",
+    "group": "전투 기술 훈장",
+    "levels": {
+      "3": {
+        "desc": "'위험한 재앙 · 마블 아겔로미레' 완료",
+        "completeDesc": "프로토콜 공간의 환영 속에서 창백한 거인을 다시 쓰러뜨렸습니다."
+      }
+    },
+    "plating": {
+      "desc": "240초 내에 '위험한 재앙 · 마블 아겔로미레' 완료"
+    }
+  },
   "achv_bat_defeat_rodin": {
     "name": "'뼈 분쇄 주먹'",
     "category": "아츠 훈장",
@@ -974,30 +650,6 @@
     "plating": {
       "desc": "120초 내에 '위험한 그림자 · 로댄' 완료"
     }
-  },
-  "achv_fac_coupon_wuling_3": {
-    "name": "무릉 관리 전문가 훈장 III",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "3": {
-        "desc": "무릉 관리권 25,000,000장 누적 획득",
-        "completeDesc": "대량의 무릉 관리권을 획득했습니다.\n획득한 관리권이 많아질수록, 그만큼 더 많은 사람이 꼭 필요한 물자를 받았다는 뜻입니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e12m4": {
-    "name": "'집착의 본질을 깨달으리라'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "메인 임무 [2장 - 프로세스 VIII - 시련 3 · 길이 아닌 길] 완료",
-        "completeDesc": "마음속 집착을 꿰뚫어 보고, 해묵은 병을 치유합니다."
-      }
-    },
-    "plating": null
   },
   "achv_bat_defeat_ruanyi": {
     "name": "'끝내 저물어 버린 마른 가지의 분노'",
@@ -1013,14 +665,14 @@
       "desc": "200초 내에 '위험한 재앙 · 원일' 완료"
     }
   },
-  "achv_quest_camille": {
-    "name": "'망자의 춤'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
+  "achv_bat_dung_char": {
+    "name": "오퍼레이터 가이드 훈장",
+    "category": "아츠 훈장",
+    "group": "프로토콜 공간 훈장",
     "levels": {
-      "2": {
-        "desc": "서브 임무 [망자의 춤] 완료",
-        "completeDesc": "쫓고 쫓기는 추격과 붉은 피, 그리고 여전히 고통 서린 옛 상처들... 카뮤는 자신의 피를 바쳐 관리자의 곁을 지킬 것이라고 맹세했습니다."
+      "1": {
+        "desc": "임의의 오퍼레이터 가이드 5개 완료",
+        "completeDesc": "오퍼레이터의 전투 방식에 대해 완벽하게 숙지했습니다."
       }
     },
     "plating": null
@@ -1049,18 +701,6 @@
     },
     "plating": null
   },
-  "achv_fac_techtree_jinlong_3": {
-    "name": "무릉 공업 선구자 훈장 III",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "1": {
-        "desc": "무릉 공업 계획의 34가지 기술 연구 완료",
-        "completeDesc": "무릉 공업 계획의 더 많은 내용을 모두 완료했습니다.\n당신은 탈로스 II 최첨단 기술의 맨 앞줄에 서 있다."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_enemyspawner": {
     "name": "응집점 청소 훈장",
     "category": "아츠 훈장",
@@ -1069,38 +709,6 @@
       "2": {
         "desc": "탐색 레벨 7에 도달한 후, 서로 다른 고위 에너지 응집점 5개 완료",
         "completeDesc": "대지에 고여 있던 초자연 에너지가 사라졌습니다. 하지만, 언젠가 다시 모일 지도 모릅니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_coupon_tundra": {
-    "name": "협곡 관리 전문가 훈장",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "1": {
-        "desc": "협곡 관리권 20,000,000장 누적 획득",
-        "completeDesc": "소량의 협곡 관리권을 획득했습니다."
-      },
-      "2": {
-        "desc": "협곡 관리권 40,000,000장 누적 획득",
-        "completeDesc": "많은 협곡 관리권을 획득했습니다."
-      },
-      "3": {
-        "desc": "협곡 관리권 80,000,000장 누적 획득",
-        "completeDesc": "대량의 협곡 관리권을 획득했습니다.\n획득한 관리권이 많아질수록, 그만큼 더 많은 사람이 꼭 필요한 물자를 받았다는 뜻입니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_sm2l10m3": {
-    "name": "'기념일'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "2": {
-        "desc": "서브 임무 [기념일] 완료",
-        "completeDesc": "참으로 멋진 일입니다. 파울비스트에게는 시상이 떠오르고, 사람들의 마음에는 삶의 온기가 깃듭니다."
       }
     },
     "plating": null
@@ -1117,14 +725,22 @@
     },
     "plating": null
   },
-  "achv_quest_e6m1": {
-    "name": "'무릉성을 향한 첫 번째 발걸음'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
+  "achv_bat_eny_building_kill": {
+    "name": "전략적 섬멸 훈장",
+    "category": "아츠 훈장",
+    "group": "전투 기술 훈장",
     "levels": {
+      "1": {
+        "desc": "작전 설비로 적 누적 10명 처치",
+        "completeDesc": "작전 설비가 이제 그 위력을 드러내기 시작했습니다."
+      },
+      "2": {
+        "desc": "작전 설비로 적 누적 100명 처치",
+        "completeDesc": "작전 설비가 침착하게 적을 상대하고 있습니다."
+      },
       "3": {
-        "desc": "새로운 도시를 향한 발걸음",
-        "completeDesc": "무릉성에 도착했습니다."
+        "desc": "작전 설비로 적 누적 500명 처치",
+        "completeDesc": "이토록 효율적인 살상 기계를 갖춘 이상, 이제 위험하게 직접 위험에 뛰어들 필요는 없을 것 같습니다."
       }
     },
     "plating": null
@@ -1195,18 +811,6 @@
       "desc": "[그림자 이정표]에서 '작열의 흉터'의 모든 스테이지를 고난 모드로 완료"
     }
   },
-  "achv_hide_open_treasure": {
-    "name": "'작은 야수의 선물'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "2": {
-        "desc": "똘똘이의 '선물'을 찾기",
-        "completeDesc": "우정? 혹은 믿음? 그건 중요하지 않습니다. 이 귀여운 동물의 눈에 당신은 이미 소중한 친구니까요."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_hard_4": {
     "name": "'탁류 구현'",
     "category": "아츠 훈장",
@@ -1219,6 +823,20 @@
     },
     "plating": {
       "desc": "[그림자 이정표]에서 '탁류 구현'의 모든 스테이지를 고난 모드로 완료"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "'적막 속의 외침'",
+    "category": "아츠 훈장",
+    "group": "프로토콜 공간 훈장",
+    "levels": {
+      "2": {
+        "desc": "[그림자 이정표]에서 '적막 속의 외침'의 모든 스테이지를 일반 모드로 완료",
+        "completeDesc": "천둥의 포효와 적막한 죽음 사이에서 분쟁의 현장을 목격하고, 또 한 번 잿빛 세계의 이정표에 자신의 이름을 깊이 새겼습니다."
+      }
+    },
+    "plating": {
+      "desc": "[그림자 이정표]에서 '적막 속의 외침'의 모든 스테이지를 고난 모드로 완료"
     }
   },
   "achv_bat_hard_6": {
@@ -1249,14 +867,28 @@
       "desc": "[그림자 이정표]에서 '그림자 형상 각인'의 모든 스테이지를 고난 모드로 완료"
     }
   },
-  "achv_hide_slime": {
-    "name": "'사황 결전'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
+  "achv_bat_hard_8": {
+    "name": "'깊은 숲의 잠꼬대'",
+    "category": "아츠 훈장",
+    "group": "프로토콜 공간 훈장",
     "levels": {
       "2": {
-        "desc": "원석충 4마리를 걷어차기",
-        "completeDesc": "원석충 4마리의 이사 작업을 도왔습니다."
+        "desc": "[그림자 이정표]에서 '깊은 숲의 잠꼬대'의 모든 스테이지를 일반 모드로 완료",
+        "completeDesc": "깊은 숲의 분노 어린 속삭임에 귀를 기울였고, 또 한 번 기념비에 이름을 새겼습니다."
+      }
+    },
+    "plating": {
+      "desc": "[그림자 이정표]에서 '깊은 숲의 잠꼬대'의 모든 스테이지를 고난 모드로 완료"
+    }
+  },
+  "achv_bat_jsspsi_reverse_color": {
+    "name": "'여백'",
+    "category": "아츠 훈장",
+    "group": "전투 기술 훈장",
+    "levels": {
+      "2": {
+        "desc": "사가 천지를 물들인 먹빛의 흑백 상태에서 그림 공격을 사용하는 동안 메인 컨트롤 오퍼레이터가 피해를 받지 않았습니다.",
+        "completeDesc": "밝음을 알되 어둠을 지키며, 물러섬으로써 나아갔습니다."
       }
     },
     "plating": null
@@ -1325,29 +957,19 @@
     },
     "plating": null
   },
-  "achv_quest_e0m2": {
-    "name": "'각성'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
+  "achv_event_clean": {
+    "name": "'티끌 하나 없이'",
+    "category": "이벤트 훈장",
+    "group": "이벤트 훈장",
     "levels": {
-      "3": {
-        "desc": "메인 임무 [프롤로그 - 프로세스 · 복구] 완료",
-        "completeDesc": "탈로스 II로 돌아오신 것을 환영합니다."
+      "2": {
+        "desc": "모든 청소 대작전 임무 완료",
+        "completeDesc": "덕분에 환경미화원들은 이제 더 이상 얼룩 때문에 골머리를 썩이지 않아도 됩니다."
       }
     },
-    "plating": null
-  },
-  "achv_quest_e10m3": {
-    "name": "'고생 끝에 얻은 평온'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "메인 임무 [2장 - 프로세스 VI - 끝과 시작이 만나는 곳] 완료",
-        "completeDesc": "당신이 돌아올 이 날을... 장방이는 먼 이별의 끝에서 하염없이 기다려왔습니다."
-      }
-    },
-    "plating": null
+    "plating": {
+      "desc": "120초 내에 '오염 정화 작전' 완료"
+    }
   },
   "achv_event_contingency_contract_0": {
     "name": "'재연소'",
@@ -1357,18 +979,6 @@
       "3": {
         "desc": "위기 협약 재점화 실험 작전에서 지표 총합 20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> 또는 그 이상으로 도전 완료",
         "completeDesc": "과거의 협력이 되살아나고 있습니다. 오래된 협약의 불꽃이 다시 피어오릅니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_banana": {
-    "name": "'아이템전?'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
-    "levels": {
-      "1": {
-        "desc": "메인 컨트롤 오퍼레이터가 바나나 껍질에 1회 미끄러지기",
-        "completeDesc": "아무래도 바나나 껍질을 버린 야생 동물에게 '아이템 사용 금지'라는 규칙을 이해시키기엔 무리인 것 같습니다."
       }
     },
     "plating": null
@@ -1387,26 +997,6 @@
       "desc": "120초 내에 '최종 심사' 완료"
     }
   },
-  "achv_growth_char_potential_1": {
-    "name": "잠재 능력 해방 훈장",
-    "category": "단련 훈장",
-    "group": "단련 훈장",
-    "levels": {
-      "1": {
-        "desc": "오퍼레이터 1명의 모든 잠재 능력을 잠금 해제",
-        "completeDesc": "한 오퍼레이터가 자신의 잠재 능력을 깨달았습니다."
-      },
-      "2": {
-        "desc": "오퍼레이터 10명의 모든 잠재 능력을 잠금 해제",
-        "completeDesc": "일부 오퍼레이터가 자신의 잠재 능력을 깨달았습니다.\n자기 자신을 아는 것이 바로 강함을 향한 첫걸음입니다."
-      },
-      "3": {
-        "desc": "오퍼레이터 15명의 모든 잠재 능력을 잠금 해제",
-        "completeDesc": "일부 오퍼레이터가 자신의 잠재 능력을 깨달았습니다.\n스스로의 한계를 돌파한 순간, 그들은 이게 끝이 아니라 출발이라는 걸 깨달았습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_event_formula": {
     "name": "'내 손안의 구세주'",
     "category": "이벤트 훈장",
@@ -1420,18 +1010,6 @@
     "plating": {
       "desc": "[통합 지원 · 내 손안의 구세주] 기간 동안 지원 성과권 누적 800,000장 획득, 식양 옥 호리병 누적 20,000개 제출"
     }
-  },
-  "achv_quest_e11m4": {
-    "name": "'과거와 이어지다'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "식양 다리를 통해 경계를 넘어가기",
-        "completeDesc": "식양이 다리가 되어 지금 이 순간과 지난 날들을 엮어냅니다. 마침내 당신을 위한 길이 펼쳐지는군요."
-      }
-    },
-    "plating": null
   },
   "achv_event_formula2": {
     "name": "'드래곤 버블 대폭발'",
@@ -1460,18 +1038,6 @@
     "plating": {
       "desc": "[다채로운 연무]에서 연무 기록 15개 완료"
     }
-  },
-  "achv_fac_coupon_wuling_4": {
-    "name": "무릉 관리 전문가 훈장 IV",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "3": {
-        "desc": "무릉 관리권 80,000,000장 누적 획득",
-        "completeDesc": "이미 많은 무릉 관리권을 획득했습니다.\n더 많은 관리권, 더 선명한 이해. 무릉의 산과 물을 오가는 물자의 흐름은 매서운 눈을 피할 수 없습니다."
-      }
-    },
-    "plating": null
   },
   "achv_event_racingdungeon_1": {
     "name": "'미지의 구역 탐험가'",
@@ -1543,6 +1109,20 @@
       "desc": "[숨겨진 구역의 여행자]에서 모든 '여섯 방향의 기묘한 구역' 프로토콜 공간을 완벽하게 완료"
     }
   },
+  "achv_event_wuling_challenge_dung_03": {
+    "name": "'그림 너머에 남은 빛'",
+    "category": "이벤트 훈장",
+    "group": "이벤트 훈장",
+    "levels": {
+      "2": {
+        "desc": "[숨겨진 구역의 여행자]에서 모든 '그림 너머에 남은 빛' 프로토콜 공간을 완료",
+        "completeDesc": "흩어진 프로토콜 공간을 하나씩 밝혀내어, 그림 너머와 수묵 사이에 감춰진 수많은 옛이야기까지 이제 모두 손에 넣었습니다."
+      }
+    },
+    "plating": {
+      "desc": "[숨겨진 구역의 여행자]에서 모든 '그림 너머에 남은 빛' 프로토콜 공간을 완벽하게 완료"
+    }
+  },
   "achv_event_wuling_racing_1": {
     "name": "'최고의 러너'",
     "category": "이벤트 훈장",
@@ -1577,6 +1157,38 @@
     },
     "plating": null
   },
+  "achv_fac_blackbox_2": {
+    "name": "시뮬레이션 공간 훈장 II",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "3": {
+        "desc": "수동으로 시뮬레이션 공간 30개 누적 완료",
+        "completeDesc": "수많은 시뮬레이션 공간을 완료하고, 무릉의 공업 지식을 폭넓게 장악했습니다. 이제는 열정으로 이길 사람이 없습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "협곡 관리 전문가 훈장",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "1": {
+        "desc": "협곡 관리권 20,000,000장 누적 획득",
+        "completeDesc": "소량의 협곡 관리권을 획득했습니다."
+      },
+      "2": {
+        "desc": "협곡 관리권 40,000,000장 누적 획득",
+        "completeDesc": "많은 협곡 관리권을 획득했습니다."
+      },
+      "3": {
+        "desc": "협곡 관리권 80,000,000장 누적 획득",
+        "completeDesc": "대량의 협곡 관리권을 획득했습니다.\n획득한 관리권이 많아질수록, 그만큼 더 많은 사람이 꼭 필요한 물자를 받았다는 뜻입니다."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_1": {
     "name": "무릉 관리 전문가 훈장",
     "category": "건설 훈장",
@@ -1601,6 +1213,30 @@
     },
     "plating": null
   },
+  "achv_fac_coupon_wuling_3": {
+    "name": "무릉 관리 전문가 훈장 III",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "3": {
+        "desc": "무릉 관리권 25,000,000장 누적 획득",
+        "completeDesc": "대량의 무릉 관리권을 획득했습니다.\n획득한 관리권이 많아질수록, 그만큼 더 많은 사람이 꼭 필요한 물자를 받았다는 뜻입니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "무릉 관리 전문가 훈장 IV",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "3": {
+        "desc": "무릉 관리권 80,000,000장 누적 획득",
+        "completeDesc": "이미 많은 무릉 관리권을 획득했습니다.\n더 많은 관리권, 더 선명한 이해. 무릉의 산과 물을 오가는 물자의 흐름은 매서운 눈을 피할 수 없습니다."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_5": {
     "name": "무릉 관리 전문가 훈장 · V",
     "category": "건설 훈장",
@@ -1609,18 +1245,6 @@
       "3": {
         "desc": "무릉 관리권 100,000,000장 누적 획득",
         "completeDesc": "더 많은 무릉 관리권을 획득했습니다.\n모두의 수요를 충족시키고, 고난 앞에서도 무릉의 경제 질서를 지켜냈습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_tundra": {
-    "name": "협곡 공업 선구자 훈장",
-    "category": "건설 훈장",
-    "group": "통합 공업 훈장",
-    "levels": {
-      "3": {
-        "desc": "기초 공업 계획의 모든 기술 연구를 완료",
-        "completeDesc": "기초 공업 계획의 모든 연구를 완료했습니다.\n관리자의 노력 덕분에 통합 공업 시스템이 4번 협곡에 완벽히 최적화되었습니다."
       }
     },
     "plating": null
@@ -1639,17 +1263,19 @@
       "desc": "화물 완전성를 손실하지 않은 상태로, 정밀 제품 화물 상자(매우 파손되기 쉬움) 운송을 누적 20회 완료"
     }
   },
-  "achv_quest_liino": {
-    "name": "'경계를 넘어가는 유성'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
+  "achv_fac_domain_shop": {
+    "name": "안정적인 판매 훈장",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
     "levels": {
       "2": {
-        "desc": "서브 임무 [경계를 넘어가는 유성] 완료",
-        "completeDesc": "엔드필드 공업 소속 '아이돌 레이블'이 생겼습니다... 연습부터 공연까지, 흐음... 저런, 아직 할 일이 많군요."
+        "desc": "물자 관리에서 물자 15회 누적 판매",
+        "completeDesc": "여러 차례의 자원 판매를 성공적으로 완료했습니다.\n관리자의 빠른 판단과 예리한 관찰력 덕분에 각 지역에서 물자 부족 사태가 일어나지 않았습니다."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "물자를 1회 판매할 때, 해당 화물의 판매 수익률이 500% 혹은 그 이상 달성"
+    }
   },
   "achv_fac_inn_management": {
     "name": "미식가의 인정 훈장",
@@ -1664,26 +1290,6 @@
     "plating": {
       "desc": "요리법 누적 40개 획득"
     }
-  },
-  "achv_growth_char_count_1": {
-    "name": "오퍼레이터 호출 훈장",
-    "category": "단련 훈장",
-    "group": "단련 훈장",
-    "levels": {
-      "1": {
-        "desc": "오퍼레이터 누적 5명 획득",
-        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다."
-      },
-      "2": {
-        "desc": "오퍼레이터 누적 10명 획득",
-        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다. 작전 팀이 구색을 갖추기 시작했습니다."
-      },
-      "3": {
-        "desc": "오퍼레이터 누적 20명 획득",
-        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다. 복잡한 전술 계획을 펼칠 수 있을 정도로 작전 팀의 전력이 증가했습니다."
-      }
-    },
-    "plating": null
   },
   "achv_fac_kite_station": {
     "name": "환경 관측 훈장",
@@ -1739,17 +1345,19 @@
       "desc": "천왕 평지 건설 지원소와 심장 수복실의 레벨을 최고 레벨로 업그레이드"
     }
   },
-  "achv_hide_cave_v1d5": {
-    "name": "'초대형 얼음 망치'",
-    "category": "스페셜 훈장",
-    "group": "스페셜 훈장",
+  "achv_fac_settlement_wuling_2": {
+    "name": "무릉 거점 개척자 훈장 II",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
     "levels": {
-      "1": {
-        "desc": "눈 덮인 소나무 숲의 작은 암석 동굴의 지하 동굴에 도착",
-        "completeDesc": "자연 환경 속 얼음 망치의 존재를 눈치챘습니다."
+      "2": {
+        "desc": "무릉의 모든 거점을 지원 계획에 포함",
+        "completeDesc": "무릉의 모든 거점이 당신의 지원 계획에 포함되었습니다.\n산과 물 그리고 사람의 관계를 더없이 완벽하게 조율해 냈습니다."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "무릉의 모든 거점 레벨을 최대치까지 업그레이드"
+    }
   },
   "achv_fac_simulation_training": {
     "name": "'연무의 정점'",
@@ -1764,6 +1372,26 @@
     "plating": {
       "desc": "데이터 오버플로가 1회 발생할 때 전력 포인트 합계 10의 시뮬레이션 완료"
     }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "굳건한 유대 훈장",
+    "category": "건설 훈장",
+    "group": "제강호 훈장",
+    "levels": {
+      "1": {
+        "desc": "오퍼레이터 5명의 신뢰도를 100%까지 올리기",
+        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다."
+      },
+      "2": {
+        "desc": "오퍼레이터 10명의 신뢰도를 100%까지 올리기",
+        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다.\n관리자에게는 사람들을 끌어당기는 힘이 있습니다."
+      },
+      "3": {
+        "desc": "오퍼레이터 20명의 신뢰도를 100%까지 올리기",
+        "completeDesc": "서로의 목숨을 맡길 수 있는 동료들을 만났습니다.\n언젠가는 이 행성의 모든 사람이 관리자를 신뢰하게 될지도 모릅니다."
+      }
+    },
+    "plating": null
   },
   "achv_fac_spaceship_gift": {
     "name": "진심을 담은 선물 훈장",
@@ -1797,26 +1425,6 @@
     },
     "plating": null
   },
-  "achv_side_mission_count": {
-    "name": "남을 돕는 즐거움 훈장",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "1": {
-        "desc": "탐색 임무 30개 완료",
-        "completeDesc": "많은 사람의 문제를 해결했습니다."
-      },
-      "2": {
-        "desc": "탐색 임무 40개 완료",
-        "completeDesc": "많은 사람의 문제를 해결했습니다.\n작전 임무도 아니었고, 보상받기 위한 행동도 아니었습니다."
-      },
-      "3": {
-        "desc": "탐색 임무 50개 완료",
-        "completeDesc": "많은 사람의 문제를 해결했습니다.\n당신의 도움을 받은 사람은 앞으로 또 다른 사람들을 도우며 살아갈 겁니다. 탈로스 II의 모든 인류를 서로 도우며 살아가야 하니까요."
-      }
-    },
-    "plating": null
-  },
   "achv_fac_techtree_jinlong_1": {
     "name": "무릉 공업 선구자 훈장 I",
     "category": "건설 훈장",
@@ -1829,6 +1437,30 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "무릉 공업 선구자 훈장 II",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "1": {
+        "desc": "무릉 공업 계획의 25가지 기술 연구 완료",
+        "completeDesc": "무릉 공업 계획의 더 많은 내용을 모두 완료했습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "무릉 공업 선구자 훈장 III",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "1": {
+        "desc": "무릉 공업 계획의 34가지 기술 연구 완료",
+        "completeDesc": "무릉 공업 계획의 더 많은 내용을 모두 완료했습니다.\n당신은 탈로스 II 최첨단 기술의 맨 앞줄에 서 있다."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_jinlong_4": {
     "name": "무릉 공업 선구자 훈장 IV",
     "category": "건설 훈장",
@@ -1837,6 +1469,18 @@
       "1": {
         "desc": "무릉 공업 계획의 47가지 기술 연구 완료",
         "completeDesc": "무릉 공업 계획의 더 많은 내용을 모두 완료했습니다.\n매 순간의 생각과 선택이 대지에 새로운 활력을 만들어 내고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "협곡 공업 선구자 훈장",
+    "category": "건설 훈장",
+    "group": "통합 공업 훈장",
+    "levels": {
+      "3": {
+        "desc": "기초 공업 계획의 모든 기술 연구를 완료",
+        "completeDesc": "기초 공업 계획의 모든 연구를 완료했습니다.\n관리자의 노력 덕분에 통합 공업 시스템이 4번 협곡에 완벽히 최적화되었습니다."
       }
     },
     "plating": null
@@ -1854,30 +1498,6 @@
     "plating": {
       "desc": "[티프로스의 활터]에서 모든 고급 훈련을 완료하고, 일상 훈련 04를 3성으로 완료"
     }
-  },
-  "achv_quest_e11m1": {
-    "name": "'봉인 해제'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "메인 임무 [2장 - 프로세스 VII - 파도를 가르는 거센 바람] 완료",
-        "completeDesc": "오랜 세월 봉인되어 있었음에도 여전히 절망 그 자체인 파멸을 향해, 마침내 발걸음을 내디딜 준비를 끝마쳤습니다."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_wulfa": {
-    "name": "'적기사'",
-    "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
-    "levels": {
-      "2": {
-        "desc": "서브 임무 [적기사] 완료",
-        "completeDesc": "어른들의 발걸음을 멈추게 만드는 아이들의 왕국.\n누군가는 그 속에서 어릴 적 놀다가 다친 무릎의 쓰라림과 세월의 바람에 흩어져버린 어린 시절을 떠올렸을지도 모르죠."
-      }
-    },
-    "plating": null
   },
   "achv_growth_adventure_level": {
     "name": "무수한 단련 훈장",
@@ -1899,14 +1519,42 @@
     },
     "plating": null
   },
-  "achv_quest_e12m1": {
-    "name": "'단청 속으로 스며들리라'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
+  "achv_growth_char_count_1": {
+    "name": "오퍼레이터 호출 훈장",
+    "category": "단련 훈장",
+    "group": "단련 훈장",
     "levels": {
+      "1": {
+        "desc": "오퍼레이터 누적 5명 획득",
+        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다."
+      },
+      "2": {
+        "desc": "오퍼레이터 누적 10명 획득",
+        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다. 작전 팀이 구색을 갖추기 시작했습니다."
+      },
       "3": {
-        "desc": "메인 임무 [2장 - 프로세스 VIII - 그림 속의 객잔] 완료",
-        "completeDesc": "그림 속 풍경이 이리도 아름다우니, 절로 산속으로 발길이 향합니다."
+        "desc": "오퍼레이터 누적 20명 획득",
+        "completeDesc": "새로운 오퍼레이터들과 인연을 맺었습니다. 복잡한 전술 계획을 펼칠 수 있을 정도로 작전 팀의 전력이 증가했습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "잠재 능력 해방 훈장",
+    "category": "단련 훈장",
+    "group": "단련 훈장",
+    "levels": {
+      "1": {
+        "desc": "오퍼레이터 1명의 모든 잠재 능력을 잠금 해제",
+        "completeDesc": "한 오퍼레이터가 자신의 잠재 능력을 깨달았습니다."
+      },
+      "2": {
+        "desc": "오퍼레이터 10명의 모든 잠재 능력을 잠금 해제",
+        "completeDesc": "일부 오퍼레이터가 자신의 잠재 능력을 깨달았습니다.\n자기 자신을 아는 것이 바로 강함을 향한 첫걸음입니다."
+      },
+      "3": {
+        "desc": "오퍼레이터 15명의 모든 잠재 능력을 잠금 해제",
+        "completeDesc": "일부 오퍼레이터가 자신의 잠재 능력을 깨달았습니다.\n스스로의 한계를 돌파한 순간, 그들은 이게 끝이 아니라 출발이라는 걸 깨달았습니다."
       }
     },
     "plating": null
@@ -1927,6 +1575,38 @@
       "3": {
         "desc": "오퍼레이터 스킬 20개를 마스터리 3레벨까지 업그레이드",
         "completeDesc": "일부 오퍼레이터의 작전 능력이 최고 경지에 도달했습니다. 각자가 걷는 길은 다르지만, 관리자의 인도가 이들을 하나의 미래로 모으고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "완벽한 장비 훈장",
+    "category": "단련 훈장",
+    "group": "단련 훈장",
+    "levels": {
+      "3": {
+        "desc": "장비 1개의 모든 속성을 정밀 단조 최대치까지 업그레이드",
+        "completeDesc": "이 장비는 상처를 기억하고, 영광을 증명하며, 생명을 함께 이어온 존재이자... 시작도, 끝도 함께하는 동반자가 되었습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "심도 탐색 훈장",
+    "category": "단련 훈장",
+    "group": "단련 훈장",
+    "levels": {
+      "1": {
+        "desc": "탐색 레벨 2 도달",
+        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다."
+      },
+      "2": {
+        "desc": "탐색 레벨 4 도달",
+        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다.\n험난한 환경일수록, 더 많은 기회가 펼쳐집니다."
+      },
+      "3": {
+        "desc": "탐색 레벨 7 도달",
+        "completeDesc": "더 높은 탐색 레벨에 도달했음을 증명하는 훈장입니다.\n마침내 최정상에 올랐습니다."
       }
     },
     "plating": null
@@ -1965,6 +1645,42 @@
       "desc": "무기 1개의 모든 스킬 RANK의 총합이 25에 도달"
     }
   },
+  "achv_hide_accidental_injury": {
+    "name": "'얼떨결에 겪은 시련'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "해조와의 전투에서 천둥비구름의 번개에 맞고 기절하기",
+        "completeDesc": "어쩌면 그저 더위를 식혀 주려던 배려였을까요?"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "'단두대의 칼날'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "2": {
+        "desc": "북쪽 금지 구역의 응집된 에너지체 5개 제거",
+        "completeDesc": "위험한 곳에서는 신중해야 하는 법입니다. 단두대의 칼날처럼 묶여 있던 자물쇠를 풀어냈습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "'아이템전?'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "메인 컨트롤 오퍼레이터가 바나나 껍질에 1회 미끄러지기",
+        "completeDesc": "아무래도 바나나 껍질을 버린 야생 동물에게 '아이템 사용 금지'라는 규칙을 이해시키기엔 무리인 것 같습니다."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_cave": {
     "name": "'누가 이거 검수했니?'",
     "category": "스페셜 훈장",
@@ -1973,6 +1689,42 @@
       "2": {
         "desc": "광맥 구역의 모든 취약한 지면을 밟기",
         "completeDesc": "이건 고의로 만든 함정이 아닙니다. 현재 연맹 공단이 책임자를 찾고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "'초대형 얼음 망치'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "눈 덮인 소나무 숲의 작은 암석 동굴의 지하 동굴에 도착",
+        "completeDesc": "자연 환경 속 얼음 망치의 존재를 눈치챘습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "'위상 일탈'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "3": {
+        "desc": "집라인 후크, 점프 패드 및 로프로 누적 10,000미터 이동",
+        "completeDesc": "제강호가 당신을 위해 지상 비행 설비를 연구하고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "'프로토콜ε · 20.00m'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "2": {
+        "desc": "20미터 이상에서 낙하 공격을 사용하여 적을 명중",
+        "completeDesc": "궤도 부유물이 떨어진 줄 알았더니, 당신과 당신의 오퍼레이터였군요."
       }
     },
     "plating": null
@@ -1989,14 +1741,26 @@
     },
     "plating": null
   },
-  "achv_hide_three_dragon": {
-    "name": "'가장 멋진 용'",
+  "achv_hide_open_treasure": {
+    "name": "'작은 야수의 선물'",
     "category": "스페셜 훈장",
     "group": "스페셜 훈장",
     "levels": {
-      "1": {
-        "desc": "단순한 선으로 그려진 용 모양 묵량을 모두 찾기",
-        "completeDesc": "뭐, 녀석들은 아직도 누가 더 멋진지를 두고 티격태격하고 있습니다."
+      "2": {
+        "desc": "똘똘이의 '선물'을 찾기",
+        "completeDesc": "우정? 혹은 믿음? 그건 중요하지 않습니다. 이 귀여운 동물의 눈에 당신은 이미 소중한 친구니까요."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "'숨겨진 힘의 발현'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "2": {
+        "desc": "['정복자' 네파리스]가 주변의 시간을 정지시켰을 때, 메인 컨트롤 오퍼레이터가 공중에 갇히기",
+        "completeDesc": "그녀의 야심과 오만은 사람들에게 두려움을 가져다줍니다. 하지만 관리자님께서는 절망 속에서도 주저하지 않고 자신의 용기를 드러냈습니다."
       }
     },
     "plating": null
@@ -2037,6 +1801,54 @@
     },
     "plating": null
   },
+  "achv_hide_slime": {
+    "name": "'사황 결전'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "2": {
+        "desc": "원석충 4마리를 걷어차기",
+        "completeDesc": "원석충 4마리의 이사 작업을 도왔습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_spaceship_v1d6": {
+    "name": "'남산을 마주하다'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "관경부유도에 도착",
+        "completeDesc": "우여곡절 끝에 마침내 인류 기술이 빚어낸 최고봉을 마주했습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_three_dragon": {
+    "name": "'가장 멋진 용'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "단순한 선으로 그려진 용 모양 묵량을 모두 찾기",
+        "completeDesc": "뭐, 녀석들은 아직도 누가 더 멋진지를 두고 티격태격하고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "'물은 하늘로부터 스스로 흘러내린다'",
+    "category": "스페셜 훈장",
+    "group": "스페셜 훈장",
+    "levels": {
+      "2": {
+        "desc": "청파채 대형 물레방아 꼭대기에 도달",
+        "completeDesc": "청파채 물레방아의 꼭대기에 올라, '하늘에서 물이 흘러내리는' 기이한 풍경을 직접 목격했습니다."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_aglina": {
     "name": "'전달자의 편지'",
     "category": "이야기 훈장",
@@ -2045,6 +1857,54 @@
       "2": {
         "desc": "서브 임무 [전달자의 편지] 완료",
         "completeDesc": "몇 가지 사소한 일, 그리고 몇 개의 소포...\n황혼빛 하늘 아래서 그녀와 다시 마주했습니다. 머지않아 빈 편지지가 아름다운 추억으로 가득 채워지겠죠."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "'망자의 춤'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [망자의 춤] 완료",
+        "completeDesc": "쫓고 쫓기는 추격과 붉은 피, 그리고 여전히 고통 서린 옛 상처들... 카뮤는 자신의 피를 바쳐 관리자의 곁을 지킬 것이라고 맹세했습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "'각성'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [프롤로그 - 프로세스 · 복구] 완료",
+        "completeDesc": "탈로스 II로 돌아오신 것을 환영합니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "'고생 끝에 얻은 평온'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [2장 - 프로세스 VI - 끝과 시작이 만나는 곳] 완료",
+        "completeDesc": "당신이 돌아올 이 날을... 장방이는 먼 이별의 끝에서 하염없이 기다려왔습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "'봉인 해제'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [2장 - 프로세스 VII - 파도를 가르는 거센 바람] 완료",
+        "completeDesc": "오랜 세월 봉인되어 있었음에도 여전히 절망 그 자체인 파멸을 향해, 마침내 발걸음을 내디딜 준비를 끝마쳤습니다."
       }
     },
     "plating": null
@@ -2061,26 +1921,14 @@
     },
     "plating": null
   },
-  "achv_quest_e1m8": {
-    "name": "'빗나간 주먹'",
+  "achv_quest_e11m4": {
+    "name": "'과거와 이어지다'",
     "category": "이야기 훈장",
     "group": "메인 임무 훈장",
     "levels": {
       "3": {
-        "desc": "메인 임무 [1장 - 프로세스 I - 요새 결전] 완료",
-        "completeDesc": "'본 크러셔의 주먹'을 처치했습니다.\n초자연을 품어라? 새로운 삶? 네파리스의 선언을 어떻게 생각하시나요?"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e4m1": {
-    "name": "'돌아온 재앙'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "메인 임무 [중간장 - 사방 회의] 완료",
-        "completeDesc": "탈로스 II 곳곳에서 불길한 징조가 나타나고 있습니다. 여정은 아직 끝나지 않았습니다."
+        "desc": "식양 다리를 통해 경계를 넘어가기",
+        "completeDesc": "식양이 다리가 되어 지금 이 순간과 지난 날들을 엮어냅니다. 마침내 당신을 위한 길이 펼쳐지는군요."
       }
     },
     "plating": null
@@ -2097,18 +1945,6 @@
     },
     "plating": null
   },
-  "achv_social_spaceship_help": {
-    "name": "아낌없는 지원 훈장",
-    "category": "소셜 훈장",
-    "group": "소셜 훈장",
-    "levels": {
-      "1": {
-        "desc": "친구에게 생산 지원 누적 50회 주기",
-        "completeDesc": "친구들에게 아낌없는 지원을 제공했습니다.\n탈로스 II의 가장 큰 자산은 이런 식으로 남을 돕는 정신입니다."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e11m7": {
     "name": "'상처의 끝'",
     "category": "이야기 훈장",
@@ -2117,6 +1953,30 @@
       "3": {
         "desc": "메인 임무 [2장 - 프로세스 VII - '귀로'] 완료",
         "completeDesc": "이렇게... 그 오랜 상처가 더는 아려오지 않습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m1": {
+    "name": "'단청 속으로 스며들리라'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [2장 - 프로세스 VIII - 그림 속의 객잔] 완료",
+        "completeDesc": "그림 속 풍경이 이리도 아름다우니, 절로 산속으로 발길이 향합니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m4": {
+    "name": "'집착의 본질을 깨달으리라'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [2장 - 프로세스 VIII - 시련 3 · 길이 아닌 길] 완료",
+        "completeDesc": "마음속 집착을 꿰뚫어 보고, 해묵은 병을 치유합니다."
       }
     },
     "plating": null
@@ -2133,18 +1993,6 @@
     },
     "plating": null
   },
-  "achv_quest_e3m5": {
-    "name": "'균열 봉쇄'",
-    "category": "이야기 훈장",
-    "group": "메인 임무 훈장",
-    "levels": {
-      "3": {
-        "desc": "메인 임무 [1장 - 프로세스 IV - 꺼지지 않는 불씨] 완료",
-        "completeDesc": "모두의 노력으로 4번 협곡을 집어삼킬 것 같던 균열이 닫혔습니다."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e1m2": {
     "name": "'코어 낙하'",
     "category": "이야기 훈장",
@@ -2153,6 +2001,18 @@
       "3": {
         "desc": "과학기술의 정수",
         "completeDesc": "개척의 미래가 4번 협곡에 배치되었습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "'빗나간 주먹'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [1장 - 프로세스 I - 요새 결전] 완료",
+        "completeDesc": "'본 크러셔의 주먹'을 처치했습니다.\n초자연을 품어라? 새로운 삶? 네파리스의 선언을 어떻게 생각하시나요?"
       }
     },
     "plating": null
@@ -2181,14 +2041,38 @@
     },
     "plating": null
   },
-  "achv_quest_gm02m27": {
-    "name": "'마음이 바라는 대로'",
+  "achv_quest_e3m5": {
+    "name": "'균열 봉쇄'",
     "category": "이야기 훈장",
-    "group": "탐색 임무 훈장",
+    "group": "메인 임무 훈장",
     "levels": {
-      "2": {
-        "desc": "서브 임무 [귀환의 종소리] 완료",
-        "completeDesc": "종소리가 다시 울리고, 마음도 밝아졌느니라."
+      "3": {
+        "desc": "메인 임무 [1장 - 프로세스 IV - 꺼지지 않는 불씨] 완료",
+        "completeDesc": "모두의 노력으로 4번 협곡을 집어삼킬 것 같던 균열이 닫혔습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "'돌아온 재앙'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "메인 임무 [중간장 - 사방 회의] 완료",
+        "completeDesc": "탈로스 II 곳곳에서 불길한 징조가 나타나고 있습니다. 여정은 아직 끝나지 않았습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "'무릉성을 향한 첫 번째 발걸음'",
+    "category": "이야기 훈장",
+    "group": "메인 임무 훈장",
+    "levels": {
+      "3": {
+        "desc": "새로운 도시를 향한 발걸음",
+        "completeDesc": "무릉성에 도착했습니다."
       }
     },
     "plating": null
@@ -2241,6 +2125,42 @@
     },
     "plating": null
   },
+  "achv_quest_gm02m27": {
+    "name": "'마음이 바라는 대로'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [귀환의 종소리] 완료",
+        "completeDesc": "종소리가 다시 울리고, 마음도 밝아졌느니라."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "'기억을 태운 재'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [기억을 태운 재] 완료",
+        "completeDesc": "불길 속에서 형태를 바꾸는 기억들.\n끝없는 산맥처럼 길을 가로막는 과거의 파편 속에서 레바테인은 관리자와 함께 헤어날 수 없을 것 같던 회랑을 넘어섰습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "'경계를 넘어가는 유성'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [경계를 넘어가는 유성] 완료",
+        "completeDesc": "엔드필드 공업 소속 '아이돌 레이블'이 생겼습니다... 연습부터 공연까지, 흐음... 저런, 아직 할 일이 많군요."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_mifu": {
     "name": "'주먹, 부딪히는 마음'",
     "category": "이야기 훈장",
@@ -2253,6 +2173,30 @@
     },
     "plating": null
   },
+  "achv_quest_sm2l10m3": {
+    "name": "'기념일'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [기념일] 완료",
+        "completeDesc": "참으로 멋진 일입니다. 파울비스트에게는 시상이 떠오르고, 사람들의 마음에는 삶의 온기가 깃듭니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "'안개에 잠긴 겨울꿈의 숲'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [안개에 잠긴 겨울꿈의 숲] 완료",
+        "completeDesc": "무언가를 찾아 헤매는 시선을 좇고, 화살이 가리키는 길을 따라갑니다. 찬바람이 안개와 꿈을 스치고... 그분의 목소리가 눈 덮인 숲에 메아리칩니다."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_wolfgd": {
     "name": "'무리를 떠난 늑대'",
     "category": "이야기 훈장",
@@ -2261,6 +2205,50 @@
       "2": {
         "desc": "서브 임무 [무리를 떠난 늑대] 완료",
         "completeDesc": "울프가드가 진실을 밝혀내고 배신자를 처단했습니다.\n그 작은 단검이 무덤 앞에 꽂혀 있습니다... 과거와 달라진 울프팀을 바라보는 그는 지금 자신이 뭘 해야 할지 분명히 알고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "'적기사'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [적기사] 완료",
+        "completeDesc": "어른들의 발걸음을 멈추게 만드는 아이들의 왕국.\n누군가는 그 속에서 어릴 적 놀다가 다친 무릎의 쓰라림과 세월의 바람에 흩어져버린 어린 시절을 떠올렸을지도 모르죠."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "'러브, 스크림 & 프로토타입'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [러브, 스크림 & 프로토타입] 완료",
+        "completeDesc": "뒤늦게 도착한 물감 한 상자...\n타타의 흔적을 따라 번져 가는 그라피티의 색채 속에서 이본은 다시 만날 그날을 떠올리곤 합니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "남을 돕는 즐거움 훈장",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "1": {
+        "desc": "탐색 임무 30개 완료",
+        "completeDesc": "많은 사람의 문제를 해결했습니다."
+      },
+      "2": {
+        "desc": "탐색 임무 40개 완료",
+        "completeDesc": "많은 사람의 문제를 해결했습니다.\n작전 임무도 아니었고, 보상받기 위한 행동도 아니었습니다."
+      },
+      "3": {
+        "desc": "탐색 임무 50개 완료",
+        "completeDesc": "많은 사람의 문제를 해결했습니다.\n당신의 도움을 받은 사람은 앞으로 또 다른 사람들을 도우며 살아갈 겁니다. 탈로스 II의 모든 인류를 서로 도우며 살아가야 하니까요."
       }
     },
     "plating": null
@@ -2293,6 +2281,18 @@
       "2": {
         "desc": "친구에게 생산 지원 누적 100회 받기",
         "completeDesc": "친구들의 아낌없는 지원 덕분에 제강호의 생산 시설이 효율적으로 작동하고 있습니다."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "아낌없는 지원 훈장",
+    "category": "소셜 훈장",
+    "group": "소셜 훈장",
+    "levels": {
+      "1": {
+        "desc": "친구에게 생산 지원 누적 50회 주기",
+        "completeDesc": "친구들에게 아낌없는 지원을 제공했습니다.\n탈로스 II의 가장 큰 자산은 이런 식으로 남을 돕는 정신입니다."
       }
     },
     "plating": null

@@ -279,7 +279,8 @@ export const locations = {
   },
   "world_energy_point13_7": {
     "id": "world_energy_point13_7",
-    "region": "theBase",
+    "url": "https://oem.re/0mpNfFm",
+    "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
       "eny_0130_inkbiter",

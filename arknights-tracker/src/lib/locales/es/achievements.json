@@ -35,18 +35,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_bigtree": {
-    "name": "“El silencio de Gloomwald”",
-    "category": "Técnico",
-    "group": "Técnica de combate",
-    "levels": {
-      "2": {
-        "desc": "Derrota a la Furia de Gloomwald",
-        "completeDesc": "Extinguiste la furia de Gloomwald. Las creaciones leales ya no odian ni hierven de rabia, lo que permite que la paz regrese a esta tierra."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_documents": {
     "name": "Investigación del Valle",
     "category": "Regional",
@@ -83,18 +71,6 @@
     },
     "plating": null
   },
-  "achv_hide_accidental_injury": {
-    "name": "“Receptor involuntario de karma”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "1": {
-        "desc": "Mientras luchas contra Purga a fuego lento, recibe accidentalmente el impacto de la Nube de trueno de un compañero de equipo",
-        "completeDesc": "Quizás la Purga a fuego lento solo quería ayudarte a bajar el hervor y enfriar las cosas."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_fixablerobot": {
     "name": "“Salvador DELTA”",
     "category": "Regional",
@@ -111,18 +87,6 @@
       "3": {
         "desc": "En el Valle IV, repara 43 robots Delta",
         "completeDesc": "Hemos recolectado y traducido grandes cantidades de datos binarios. Los emisores parecen desesperados por honrarte con este título: “Salvador DELTA, Campeón de la Robótica y Dios Máquina del Valle IV.”"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_laevat": {
-    "name": "“Que el fuego consuma las cenizas del pasado”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Que el fuego consuma las cenizas del pasado]",
-        "completeDesc": "Las cicatrices de los recuerdos pueden cambiar en el fuego. \nAunque los fragmentos del pasado se han acumulado como montañas imponentes, tomaste la mano de Laevatain y saliste del pasillo interminable."
       }
     },
     "plating": null
@@ -151,42 +115,6 @@
     },
     "plating": null
   },
-  "achv_adv_wuling_campfire_3": {
-    "name": "Wuling interminable III",
-    "category": "Regional",
-    "group": "Wuling",
-    "levels": {
-      "1": {
-        "desc": "En el Valle Ocultaespadas, el Paso de Yinglung y la Zona de exclusión norte de Wuling, desbloquea 22 Puntos de TP",
-        "completeDesc": "Extendiste la Red de protocolo hasta las zonas más profundas de Wuling."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_jinlong_2": {
-    "name": "Especialista de fábrica de Wuling Ⅱ",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "1": {
-        "desc": "Investiga 25 tecnologías en el Plan del CAI de Wuling",
-        "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_aether_lock_clean": {
-    "name": "“Espada pendiendo de un hilo”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "2": {
-        "desc": "En la Zona de exclusión norte de Wuling, elimina 5 acumulaciones de aluvión energético",
-        "completeDesc": "Hay que tener extremo cuidado al pisar terrenos peligrosos. Sin embargo, lograste neutralizar la espada pendiendo de un hilo que te acechaba."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_balloon": {
     "name": "Aerorrecuperador",
     "category": "Regional",
@@ -198,20 +126,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_domain_shop": {
-    "name": "Ventas constantes",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "2": {
-        "desc": "Vende suministros en Redistribución de existencias 15 veces",
-        "completeDesc": "Has vendido con éxito una gran cantidad de suministros. \nGracias a tu intuición, agudas observaciones y asignaciones oportunas, mantuviste cada región libre de escasez prolongada de suministros."
-      }
-    },
-    "plating": {
-      "desc": "En 1 acción de venta de Mercancía elástica, alcanza un precio de venta que sea al menos 500 % superior al precio promedio de adquisición."
-    }
   },
   "achv_adv_wuling_blackhole_clean": {
     "name": "Neutralización de grietas",
@@ -247,38 +161,6 @@
       "2": {
         "desc": "En la Empalizada de Qingbo, la Piedra Marcadora, Piedra Marcadora: interior y el Área de pruebas, abre 121 cajas de almacenamiento",
         "completeDesc": "Has abierto la mayoría de las cajas de almacenamiento en Wuling."
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_world_level": {
-    "name": "Exploración de lo profundo",
-    "category": "Progresión",
-    "group": "Progresión",
-    "levels": {
-      "1": {
-        "desc": "Alcanza el Nivel de exploración 2",
-        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior."
-      },
-      "2": {
-        "desc": "Alcanza el Nivel de exploración 4",
-        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior. \nLos entornos más duros ofrecen mayores oportunidades."
-      },
-      "3": {
-        "desc": "Alcanza el Nivel de exploración 7",
-        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior. \nHas alcanzado el punto más alto."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_jump_hit": {
-    "name": "“Protocolo ε 20.00 m”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "2": {
-        "desc": "Cae desde una altura de al menos 20 metros y golpea a un enemigo",
-        "completeDesc": "¿Son fragmentos de desechos orbitales? ¡No! Son tú y tus operadores."
       }
     },
     "plating": null
@@ -331,32 +213,6 @@
     },
     "plating": null
   },
-  "achv_bat_hard_8": {
-    "name": "“Murmullos del bosque profundo”",
-    "category": "Técnico",
-    "group": "Espacio de protocolo",
-    "levels": {
-      "2": {
-        "desc": "En [Monumento del Umbral], completa todas las fases de “Murmullos del bosque profundo” en el modo Normal",
-        "completeDesc": "Tras la victoria, escuchaste los iracundos murmullos del bosque profundo, y una vez más grabaste tu nombre en el gran monumento."
-      }
-    },
-    "plating": {
-      "desc": "En [Monumento del Umbral], completa todas las fases de “Murmullos del bosque profundo” en el modo Agonía"
-    }
-  },
-  "achv_fac_blackbox_2": {
-    "name": "Simulación de fábrica II",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "3": {
-        "desc": "Inicia y completa manualmente 30 simulaciones",
-        "completeDesc": "Completaste numerosas simulaciones. Una vez más, apreciamos mucho tu entusiasmo por dominar los secretos de la fábrica específicos de la región de Wuling."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_campfire_2": {
     "name": "Wuling interminable II",
     "category": "Regional",
@@ -369,14 +225,14 @@
     },
     "plating": null
   },
-  "achv_growth_equip_enhance": {
-    "name": "Equipamiento perfecto",
-    "category": "Progresión",
-    "group": "Progresión",
+  "achv_adv_wuling_campfire_3": {
+    "name": "Wuling interminable III",
+    "category": "Regional",
+    "group": "Wuling",
     "levels": {
-      "3": {
-        "desc": "Mejora todas las estadísticas de 1 pieza de equipamiento hasta estar completamente fabricada",
-        "completeDesc": "Cargó con tus cicatrices, tus glorias y tu vida desde el principio, y lo seguirá haciendo hasta el final."
+      "1": {
+        "desc": "En el Valle Ocultaespadas, el Paso de Yinglung y la Zona de exclusión norte de Wuling, desbloquea 22 Puntos de TP",
+        "completeDesc": "Extendiste la Red de protocolo hasta las zonas más profundas de Wuling."
       }
     },
     "plating": null
@@ -389,38 +245,6 @@
       "1": {
         "desc": "En el Bosque Nevado y la Pintura de Si, desbloquea 18 Puntos de TP",
         "completeDesc": "Extendiste la Red de protocolo hasta las zonas más profundas de Wuling, incluso si dichas zonas existen en reinos de otro mundo."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_spaceship_fever_point": {
-    "name": "Confianza inmensa",
-    "category": "Construcción",
-    "group": "Dijiang",
-    "levels": {
-      "1": {
-        "desc": "Eleva la confianza de 5 operadores al 100 %",
-        "completeDesc": "Has conocido compañeros que te defenderán con sus vidas."
-      },
-      "2": {
-        "desc": "Eleva la confianza de 10 operadores al 100 %",
-        "completeDesc": "Has conocido a varios compañeros que te defenderán con su vida. \nParece que tienes la capacidad de atraer a quienes comparten tu visión."
-      },
-      "3": {
-        "desc": "Eleva la confianza de 20 operadores al 100 %",
-        "completeDesc": "Has conocido a muchos compañeros que te defenderán con su vida. \nLlegará un día en que el mundo tendrá plena fe en ti."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_paralyze": {
-    "name": "“Completamente revelado”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "2": {
-        "desc": "Deja que [Nefarith, “Conquistadora”] mantenga el lugar en estasis y deje suspendido en el aire al operador controlado",
-        "completeDesc": "Sus ambiciones desenfrenadas son aterradoras, pero sin miedo demostraste tu valentía en su confinamiento de desesperación."
       }
     },
     "plating": null
@@ -463,18 +287,6 @@
       "desc": "Reúne 81 Aurilenos en el Valle de Jingyu y en la Ciudad de Wuling"
     }
   },
-  "achv_hide_waterwheel_top": {
-    "name": "“El agua fluye desde los cielos”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "2": {
-        "desc": "Llega a la cima de la rueda hidráulica de la Empalizada de Qingbo",
-        "completeDesc": "Llegaste a la cima de la rueda hidráulica de la Empalizada de Qingbo y contemplaste la maravilla del “agua que cae en cascada desde los cielos”."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_ether_2": {
     "name": "“Fragmentos reagrupados” II",
     "category": "Regional",
@@ -483,26 +295,6 @@
       "2": {
         "desc": "En la Empalizada de Qingbo, la Piedra Marcadora, Piedra Marcadora: interior y el Área de pruebas, reúne 59 Aurilenos",
         "completeDesc": "Más fragmentos del artefacto fundamental se han reunido de nuevo en tus manos."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_eny_building_kill": {
-    "name": "Aniquilación inteligente",
-    "category": "Técnico",
-    "group": "Técnica de combate",
-    "levels": {
-      "1": {
-        "desc": "Derrota a 10 enemigos con instalaciones de combate",
-        "completeDesc": "Tus instalaciones de combate han demostrado sus capacidades."
-      },
-      "2": {
-        "desc": "Derrota a 100 enemigos con instalaciones de combate",
-        "completeDesc": "Tus instalaciones de combate están rechazando al enemigo de forma constante."
-      },
-      "3": {
-        "desc": "Derrota a 500 enemigos con instalaciones de combate",
-        "completeDesc": "Con máquinas de guerra tan eficientes, casi no necesitas exponerte al peligro."
       }
     },
     "plating": null
@@ -555,18 +347,6 @@
     },
     "plating": null
   },
-  "achv_bat_dung_char": {
-    "name": "Guía del operador",
-    "category": "Técnico",
-    "group": "Espacio de protocolo",
-    "levels": {
-      "1": {
-        "desc": "Completa 5 etapas de la Guía del operador",
-        "completeDesc": "Ahora estás familiarizado con la forma de luchar de tus operadores."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_floor_2": {
     "name": "“Saltos acuáticos con bestias voladoras II”",
     "category": "Regional",
@@ -575,30 +355,6 @@
       "1": {
         "desc": "En la Empalizada de Qingbo, la Piedra Marcadora, Piedra Marcadora: interior y el Área de pruebas, activa 6 conjuntos de placas de presión",
         "completeDesc": "Una vez más saltaste con elegancia de una placa a otra y restauraste el equilibrio perfecto.\n“¡Una muestra maravillosa de la postura del Triple Asentimiento de la Bestia voladora!”"
-      }
-    },
-    "plating": null
-  },
-  "achv_adv_wuling_password": {
-    "name": "“Toques y pinceladas brillantes”",
-    "category": "Regional",
-    "group": "Wuling",
-    "levels": {
-      "2": {
-        "desc": "En la Pintura de Si, resuelve 11 acertijos de Faroles de piedra",
-        "completeDesc": "Resolviste los numerosos acertijos que Si dejó atrás. Incluso los Espíritus de tinta que pasan suficiente tiempo en la pintura adoptan una naturaleza juguetona."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_defeat_jzmking": {
-    "name": "“Megabestia sometida”",
-    "category": "Técnico",
-    "group": "Técnica de combate",
-    "levels": {
-      "2": {
-        "desc": "Derrota al aullador del peñasco",
-        "completeDesc": "Sometiste al señor de las bestias. ¿Quizá puedas ser su nuevo señor?"
       }
     },
     "plating": null
@@ -623,18 +379,6 @@
       "1": {
         "desc": "En la Empalizada de Qingbo, la Piedra Marcadora, Piedra Marcadora: interior y el Área de pruebas, completa 3 rompecabezas de pasar la luciérnaga",
         "completeDesc": "Una vez más, te divertiste con las bestias larguiruchas. Analizamos los croares de las bestias larguiruchas y parecen interesadas en volver a verte. \n“Croac, croac. Crrrrroac-croac-croac”."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_yvonne": {
-    "name": "“Amor, grito y el prototipo”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Amor, grito y el prototipo]",
-        "completeDesc": "Una caja de pigmentos llegó tarde. \nSeguiste el rastro de Tate y creaste varios grafitis. En estos colores, Yvonne vio el potencial de un reencuentro."
       }
     },
     "plating": null
@@ -675,14 +419,14 @@
     },
     "plating": null
   },
-  "achv_bat_jsspsi_reverse_color": {
-    "name": "“Arte del espacio en blanco”",
-    "category": "Técnico",
-    "group": "Técnica de combate",
+  "achv_adv_wuling_password": {
+    "name": "“Toques y pinceladas brillantes”",
+    "category": "Regional",
+    "group": "Wuling",
     "levels": {
       "2": {
-        "desc": "Deja que Si desate su ATQ de pintura durante el estado en blanco y negro de Reino bañado en tinta, y no permitas que el operador controlado reciba DAÑ del ATQ de pintura.",
-        "completeDesc": "Saber dónde dejar espacios en blanco, dónde conservar los trazos de tinta, y cuándo ceder para preparar un avance."
+        "desc": "En la Pintura de Si, resuelve 11 acertijos de Faroles de piedra",
+        "completeDesc": "Resolviste los numerosos acertijos que Si dejó atrás. Incluso los Espíritus de tinta que pasan suficiente tiempo en la pintura adoptan una naturaleza juguetona."
       }
     },
     "plating": null
@@ -698,20 +442,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_settlement_wuling_2": {
-    "name": "Construcción de puestos de avanzada de Wuling II",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "2": {
-        "desc": "Agrega todos los puestos de avanzada de Wuling al programa de soporte",
-        "completeDesc": "Todos los puestos de avanzada de Wuling ahora forman parte de tu programa de soporte. \nLograste mediar a la perfección la relación entre las personas y su pintoresco entorno de cumbres imponentes y ríos caudalosos."
-      }
-    },
-    "plating": {
-      "desc": "Eleva todos los Puestos de avanzada de Wuling al nivel más alto"
-    }
   },
   "achv_bat_charged": {
     "name": "Profesional de la interrupción",
@@ -733,34 +463,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_palesent": {
-    "name": "“Colapso de Su Pálida Imagen”",
-    "category": "Técnico",
-    "group": "Técnica de combate",
-    "levels": {
-      "3": {
-        "desc": "Completa “Calamidad de crisis: Aggelomoirai de mármol”",
-        "completeDesc": "En las ilusiones del Espacio de protocolo, una vez más derrotaste a la gran efigie de mármol pálido."
-      }
-    },
-    "plating": {
-      "desc": "Completa “Calamidad de crisis: Aggelomoirai de mármol” en 240 s"
-    }
-  },
-  "achv_event_wuling_challenge_dung_03": {
-    "name": "“Desvanecerse más allá de la pintura”",
-    "category": "Evento",
-    "group": "Evento",
-    "levels": {
-      "2": {
-        "desc": "En [Explorador de lo críptico], completa todos los Espacios de protocolo de “Desvanecerse más allá de la pintura”",
-        "completeDesc": "Uno por uno iluminaste los fragmentos del Espacio de protocolo, y comprendiste por completo los relatos del pasado que perduran en las pinceladas e incluso aquellos más allá de la pintura."
-      }
-    },
-    "plating": {
-      "desc": "En [Explorador de lo críptico], completa a la perfección todos los Espacios de protocolo de “Desvanecerse más allá de la pintura”"
-    }
-  },
   "achv_bat_charged_hsbear": {
     "name": "“Interrupción del trueno”",
     "category": "Técnico",
@@ -769,18 +471,6 @@
       "2": {
         "desc": "Interrumpe la onda de choque rugiente del Tamborilero celestial durante el combate",
         "completeDesc": "Lograste sujetar por el cuello el estruendo estrepitoso."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_fly": {
-    "name": "“Movimiento poco convencional”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "3": {
-        "desc": "Recorre 10.000 metros usando tirolesas, plataformas de impulso y cuerdas",
-        "completeDesc": "La Dijiang ha hecho planes para investigar y desarrollar para ti un dispositivo capaz de volar a baja altitud."
       }
     },
     "plating": null
@@ -819,6 +509,18 @@
       "desc": "Completa “Calamidad de crisis: Triaggelos” en 240 s"
     }
   },
+  "achv_bat_defeat_bigtree": {
+    "name": "“El silencio de Gloomwald”",
+    "category": "Técnico",
+    "group": "Técnica de combate",
+    "levels": {
+      "2": {
+        "desc": "Derrota a la Furia de Gloomwald",
+        "completeDesc": "Extinguiste la furia de Gloomwald. Las creaciones leales ya no odian ni hierven de rabia, lo que permite que la paz regrese a esta tierra."
+      }
+    },
+    "plating": null
+  },
   "achv_bat_defeat_dodge_jzogre": {
     "name": "“Tejedor de vendavales”",
     "category": "Técnico",
@@ -839,44 +541,6 @@
       "2": {
         "desc": "Durante la batalla, derrota a un “Éthillu” 2 s después de su reanimación",
         "completeDesc": "Viste a través del Éthillu y disipaste el material inestable."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_hard_5": {
-    "name": "“Contienda de silencios mortales”",
-    "category": "Técnico",
-    "group": "Espacio de protocolo",
-    "levels": {
-      "2": {
-        "desc": "En [Monumento del Umbral], completa todas las fases de “Contienda de silencios mortales” en modo Normal",
-        "completeDesc": "Presenciaste la contienda entre el Estruendo estrepitoso y las manifestaciones del silencio mortal, y una vez más grabaste tu nombre en el gran monumento."
-      }
-    },
-    "plating": {
-      "desc": "En [Monumento del Umbral], completa todas las fases de “Contienda de silencios mortales” en modo Agonía"
-    }
-  },
-  "achv_hide_spaceship_v1d6": {
-    "name": "“Vista del Pico del Sur”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "1": {
-        "desc": "Llega a la Isleta Panorámica",
-        "completeDesc": "Tras unos cuantos giros y vueltas, el aventurero finalmente alcanza el pico más alto, moldeado por la cúspide de la tecnología humana."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_typhoea": {
-    "name": "“Un sueño invernal cubierto de niebla en lo profundo del bosque”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Un sueño invernal cubierto de niebla en lo profundo del bosque]",
-        "completeDesc": "Seguiste a la mirada inquisitiva, rastreaste la flecha guía, soportaste los vientos gélidos entre niebla y sueños... y escuchaste Sus ecos en el Bosque Nevado."
       }
     },
     "plating": null
@@ -921,19 +585,17 @@
       "desc": "Completa “Calamidad de crisis: Si” en 200 s"
     }
   },
-  "achv_event_clean": {
-    "name": "“Limpieza total y reluciente”",
-    "category": "Evento",
-    "group": "Evento",
+  "achv_bat_defeat_jzmking": {
+    "name": "“Megabestia sometida”",
+    "category": "Técnico",
+    "group": "Técnica de combate",
     "levels": {
       "2": {
-        "desc": "Completa todas las misiones de Lavar y enjuagar",
-        "completeDesc": "Has eliminado las manchas que inquietaban a los trabajadores de saneamiento."
+        "desc": "Derrota al aullador del peñasco",
+        "completeDesc": "Sometiste al señor de las bestias. ¿Quizá puedas ser su nuevo señor?"
       }
     },
-    "plating": {
-      "desc": "Completa “Simulacro de limpieza con rebote” en 120s"
-    }
+    "plating": null
   },
   "achv_bat_defeat_klbear": {
     "name": "“El paso silencioso de Blitzcrash”",
@@ -961,6 +623,20 @@
       "desc": "Completa “Calamidad de crisis: Nefarith” en 200 s"
     }
   },
+  "achv_bat_defeat_palesent": {
+    "name": "“Colapso de Su Pálida Imagen”",
+    "category": "Técnico",
+    "group": "Técnica de combate",
+    "levels": {
+      "3": {
+        "desc": "Completa “Calamidad de crisis: Aggelomoirai de mármol”",
+        "completeDesc": "En las ilusiones del Espacio de protocolo, una vez más derrotaste a la gran efigie de mármol pálido."
+      }
+    },
+    "plating": {
+      "desc": "Completa “Calamidad de crisis: Aggelomoirai de mármol” en 240 s"
+    }
+  },
   "achv_bat_defeat_rodin": {
     "name": "“Puño esquelético eliminado”",
     "category": "Técnico",
@@ -974,30 +650,6 @@
     "plating": {
       "desc": "Completa “Pandemonio de crisis: Rhodagn” en 120 s"
     }
-  },
-  "achv_fac_coupon_wuling_3": {
-    "name": "Redistribuidor de existencias de Wuling III",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "3": {
-        "desc": "Obtén un total de 25 000 000 de Vales de crédito de Wuling",
-        "completeDesc": "Has adquirido una gran cantidad de Vales de crédito de Wuling. \nObtener más vales de crédito significa que has entregado suministros urgentes a más personas. Has hecho un trabajo monumental."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e12m4": {
-    "name": "“Contempla más allá del Ser”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Prueba III - Un camino donde no lo hay]",
-        "completeDesc": "Para esclarecer mi obsesión, y sanar mis malestares más profundos."
-      }
-    },
-    "plating": null
   },
   "achv_bat_defeat_ruanyi": {
     "name": "“Así se marchita la rama de la furia”",
@@ -1013,14 +665,14 @@
       "desc": "Completa “Calamidad de crisis: Ruan Yi” en 200 s"
     }
   },
-  "achv_quest_camille": {
-    "name": "“Danza macabra”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
+  "achv_bat_dung_char": {
+    "name": "Guía del operador",
+    "category": "Técnico",
+    "group": "Espacio de protocolo",
     "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Danza macabra]",
-        "completeDesc": "La persecución, el fresco olor de la sangre y una vieja herida que aún palpita de dolor... Camille ha jurado que su sangre estará por siempre con Endministrator."
+      "1": {
+        "desc": "Completa 5 etapas de la Guía del operador",
+        "completeDesc": "Ahora estás familiarizado con la forma de luchar de tus operadores."
       }
     },
     "plating": null
@@ -1049,18 +701,6 @@
     },
     "plating": null
   },
-  "achv_fac_techtree_jinlong_3": {
-    "name": "Especialista de fábrica de Wuling III",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "1": {
-        "desc": "Investiga 34 tecnologías en el Plan del CAI de Wuling",
-        "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling.\nAhora estás a la vanguardia de la tecnología en Talos-II."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_enemyspawner": {
     "name": "Draga de aluvión",
     "category": "Técnico",
@@ -1069,38 +709,6 @@
       "2": {
         "desc": "Alcanza el Nivel de exploración 7, luego completa 5 sitios distintos de Aluvión energético severo",
         "completeDesc": "Las acumulaciones de Energía de éter en esta tierra se están disipando, pero eventualmente volverán."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_coupon_tundra": {
-    "name": "Redistribuidor de existencias del Valle",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "1": {
-        "desc": "Obtén 20,000,000 de Vales de crédito del Valle",
-        "completeDesc": "Has adquirido algunos Vales de crédito del Valle."
-      },
-      "2": {
-        "desc": "Obtén 40,000,000 de Vales de crédito del Valle",
-        "completeDesc": "Has adquirido bastantes Vales de crédito del Valle."
-      },
-      "3": {
-        "desc": "Obtén 80,000,000 de Vales de crédito del Valle",
-        "completeDesc": "Has adquirido demasiados Vales de crédito del Valle. \nObtener más vales de crédito significa que has entregado suministros extremadamente necesarios a más personas. Hiciste un trabajo gigantesco."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_sm2l10m3": {
-    "name": "“Un día para recordar”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Un día para recordar]",
-        "completeDesc": "Verdaderamente maravilloso. Una bestia voladora que compone poesía, y un fogón humeante que nos conmueve."
       }
     },
     "plating": null
@@ -1117,14 +725,22 @@
     },
     "plating": null
   },
-  "achv_quest_e6m1": {
-    "name": "“Primera visita a Wuling”",
-    "category": "Capítulo",
-    "group": "Misión principal",
+  "achv_bat_eny_building_kill": {
+    "name": "Aniquilación inteligente",
+    "category": "Técnico",
+    "group": "Técnica de combate",
     "levels": {
+      "1": {
+        "desc": "Derrota a 10 enemigos con instalaciones de combate",
+        "completeDesc": "Tus instalaciones de combate han demostrado sus capacidades."
+      },
+      "2": {
+        "desc": "Derrota a 100 enemigos con instalaciones de combate",
+        "completeDesc": "Tus instalaciones de combate están rechazando al enemigo de forma constante."
+      },
       "3": {
-        "desc": "Llega a una ciudad completamente nueva",
-        "completeDesc": "Has llegado a la Ciudad de Wuling."
+        "desc": "Derrota a 500 enemigos con instalaciones de combate",
+        "completeDesc": "Con máquinas de guerra tan eficientes, casi no necesitas exponerte al peligro."
       }
     },
     "plating": null
@@ -1195,18 +811,6 @@
       "desc": "En [Monumento del Umbral], completa todas las fases de “Marcas de calcinación” en modo Agonía"
     }
   },
-  "achv_hide_open_treasure": {
-    "name": "“Tributo de la pequeña bestia”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "2": {
-        "desc": "Encuentra el “tributo” de Smartie",
-        "completeDesc": "¿Compañerismo? ¿Confianza? Esta cosita tierna te está tratando como a un amigo."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_hard_4": {
     "name": "“Manifestación de turbiedad”",
     "category": "Técnico",
@@ -1219,6 +823,20 @@
     },
     "plating": {
       "desc": "En [Monumento del Umbral], completa todas las fases de “Manifestación de turbiedad” en modo Agonía"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "“Contienda de silencios mortales”",
+    "category": "Técnico",
+    "group": "Espacio de protocolo",
+    "levels": {
+      "2": {
+        "desc": "En [Monumento del Umbral], completa todas las fases de “Contienda de silencios mortales” en modo Normal",
+        "completeDesc": "Presenciaste la contienda entre el Estruendo estrepitoso y las manifestaciones del silencio mortal, y una vez más grabaste tu nombre en el gran monumento."
+      }
+    },
+    "plating": {
+      "desc": "En [Monumento del Umbral], completa todas las fases de “Contienda de silencios mortales” en modo Agonía"
     }
   },
   "achv_bat_hard_6": {
@@ -1249,14 +867,28 @@
       "desc": "En [Monumento del Umbral], completa todas las fases de “Marcado por sombras oscuras” en el modo Agonía"
     }
   },
-  "achv_hide_slime": {
-    "name": "“Batalla de los Cuatro Emperadores”",
-    "category": "Asombroso",
-    "group": "Asombroso",
+  "achv_bat_hard_8": {
+    "name": "“Murmullos del bosque profundo”",
+    "category": "Técnico",
+    "group": "Espacio de protocolo",
     "levels": {
       "2": {
-        "desc": "Patea 4 babosas de originio hasta que caigan",
-        "completeDesc": "Ayudaste a cuatro babosas de originio a mudarse de casa."
+        "desc": "En [Monumento del Umbral], completa todas las fases de “Murmullos del bosque profundo” en el modo Normal",
+        "completeDesc": "Tras la victoria, escuchaste los iracundos murmullos del bosque profundo, y una vez más grabaste tu nombre en el gran monumento."
+      }
+    },
+    "plating": {
+      "desc": "En [Monumento del Umbral], completa todas las fases de “Murmullos del bosque profundo” en el modo Agonía"
+    }
+  },
+  "achv_bat_jsspsi_reverse_color": {
+    "name": "“Arte del espacio en blanco”",
+    "category": "Técnico",
+    "group": "Técnica de combate",
+    "levels": {
+      "2": {
+        "desc": "Deja que Si desate su ATQ de pintura durante el estado en blanco y negro de Reino bañado en tinta, y no permitas que el operador controlado reciba DAÑ del ATQ de pintura.",
+        "completeDesc": "Saber dónde dejar espacios en blanco, dónde conservar los trazos de tinta, y cuándo ceder para preparar un avance."
       }
     },
     "plating": null
@@ -1325,29 +957,19 @@
     },
     "plating": null
   },
-  "achv_quest_e0m2": {
-    "name": "“Despertar”",
-    "category": "Capítulo",
-    "group": "Misión principal",
+  "achv_event_clean": {
+    "name": "“Limpieza total y reluciente”",
+    "category": "Evento",
+    "group": "Evento",
     "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Prólogo - Proceso: Despertar]",
-        "completeDesc": "Has regresado a Talos-II."
+      "2": {
+        "desc": "Completa todas las misiones de Lavar y enjuagar",
+        "completeDesc": "Has eliminado las manchas que inquietaban a los trabajadores de saneamiento."
       }
     },
-    "plating": null
-  },
-  "achv_quest_e10m3": {
-    "name": "“Suavemente corriente abajo”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VI: Forjada desde el comienzo]",
-        "completeDesc": "Zhuang Fangyi esperó, y por fin llegaste."
-      }
-    },
-    "plating": null
+    "plating": {
+      "desc": "Completa “Simulacro de limpieza con rebote” en 120s"
+    }
   },
   "achv_event_contingency_contract_0": {
     "name": "“Reignición”",
@@ -1357,18 +979,6 @@
       "3": {
         "desc": "En [Contrato de contingencia: Operación experimental de reignición], completa con éxito un desafío con al menos 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criterios de prueba",
         "completeDesc": "Se está restaurando un pacto del pasado. Reencendiste un Contrato antiguo."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_banana": {
-    "name": "“¿Carrera armamentística?”",
-    "category": "Asombroso",
-    "group": "Asombroso",
-    "levels": {
-      "1": {
-        "desc": "Haz que el operador controlado se resbale con cáscaras de plátano 1 vez",
-        "completeDesc": "La regla dice: “No se pueden usar items tácticos ni objetos”. Pero la fauna lo ignoró y de todos modos arrojó cáscaras de plátano."
       }
     },
     "plating": null
@@ -1387,26 +997,6 @@
       "desc": "Completa “Evaluación final” en 120s"
     }
   },
-  "achv_growth_char_potential_1": {
-    "name": "Potencial liberado",
-    "category": "Progresión",
-    "group": "Progresión",
-    "levels": {
-      "1": {
-        "desc": "Eleva a 1 operador a su potencial máximo",
-        "completeDesc": "Se ha desbloqueado el potencial máximo de uno de tus operadores."
-      },
-      "2": {
-        "desc": "Eleva a 10 operadores a su potencial máximo",
-        "completeDesc": "Se ha desbloqueado el potencial máximo de algunos de tus operadores. \nUna autoevaluación adecuada es el primer paso hacia el crecimiento."
-      },
-      "3": {
-        "desc": "Eleva a 15 operadores a su potencial máximo",
-        "completeDesc": "Se ha desbloqueado el potencial máximo de algunos de tus operadores. \nA pesar de que superaron sus limitaciones, estos operadores creen que esto es solo el comienzo."
-      }
-    },
-    "plating": null
-  },
   "achv_event_formula": {
     "name": "“Minialma guardiana”",
     "category": "Evento",
@@ -1420,18 +1010,6 @@
     "plating": {
       "desc": "Durante [Soporte del CAI: Salvavidas de bolsillo], gana 800 000 Certificados de Frutos del Altruismo y envía 20 000 Calabazas de jade de Xiranita"
     }
-  },
-  "achv_quest_e11m4": {
-    "name": "“Conexión con el pasado”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Cruza el abismo con un Puente de Xiranita",
-        "completeDesc": "Un Puente de Xiranita ahora conecta el presente con el pasado. El camino ya está abierto para ti."
-      }
-    },
-    "plating": null
   },
   "achv_event_formula2": {
     "name": "“Explosión del Lung regordete”",
@@ -1460,18 +1038,6 @@
     "plating": {
       "desc": "En [Arena de juegos], completa 15 Tareas de la arena"
     }
-  },
-  "achv_fac_coupon_wuling_4": {
-    "name": "Redistribuidor de existencias de Wuling IV",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "3": {
-        "desc": "Obtén 80 000 000 de Vales de crédito de Wuling",
-        "completeDesc": "Has obtenido muchos Vales de crédito de Wuling. \nMás vales de crédito significan un mayor conocimiento. El flujo de mercancías en Wuling no escapa a tu mirada."
-      }
-    },
-    "plating": null
   },
   "achv_event_racingdungeon_1": {
     "name": "“Explorador del Reino”",
@@ -1543,6 +1109,20 @@
       "desc": "En [Explorador de lo críptico] completa a la perfección todos los Espacios de protocolo de “El ingenioso reino de los seis cardenales”"
     }
   },
+  "achv_event_wuling_challenge_dung_03": {
+    "name": "“Desvanecerse más allá de la pintura”",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "En [Explorador de lo críptico], completa todos los Espacios de protocolo de “Desvanecerse más allá de la pintura”",
+        "completeDesc": "Uno por uno iluminaste los fragmentos del Espacio de protocolo, y comprendiste por completo los relatos del pasado que perduran en las pinceladas e incluso aquellos más allá de la pintura."
+      }
+    },
+    "plating": {
+      "desc": "En [Explorador de lo críptico], completa a la perfección todos los Espacios de protocolo de “Desvanecerse más allá de la pintura”"
+    }
+  },
   "achv_event_wuling_racing_1": {
     "name": "“Corredor supremo”",
     "category": "Evento",
@@ -1577,6 +1157,38 @@
     },
     "plating": null
   },
+  "achv_fac_blackbox_2": {
+    "name": "Simulación de fábrica II",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "3": {
+        "desc": "Inicia y completa manualmente 30 simulaciones",
+        "completeDesc": "Completaste numerosas simulaciones. Una vez más, apreciamos mucho tu entusiasmo por dominar los secretos de la fábrica específicos de la región de Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "Redistribuidor de existencias del Valle",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "1": {
+        "desc": "Obtén 20,000,000 de Vales de crédito del Valle",
+        "completeDesc": "Has adquirido algunos Vales de crédito del Valle."
+      },
+      "2": {
+        "desc": "Obtén 40,000,000 de Vales de crédito del Valle",
+        "completeDesc": "Has adquirido bastantes Vales de crédito del Valle."
+      },
+      "3": {
+        "desc": "Obtén 80,000,000 de Vales de crédito del Valle",
+        "completeDesc": "Has adquirido demasiados Vales de crédito del Valle. \nObtener más vales de crédito significa que has entregado suministros extremadamente necesarios a más personas. Hiciste un trabajo gigantesco."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_1": {
     "name": "Redistribuidor de existencias de Wuling",
     "category": "Construcción",
@@ -1601,6 +1213,30 @@
     },
     "plating": null
   },
+  "achv_fac_coupon_wuling_3": {
+    "name": "Redistribuidor de existencias de Wuling III",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "3": {
+        "desc": "Obtén un total de 25 000 000 de Vales de crédito de Wuling",
+        "completeDesc": "Has adquirido una gran cantidad de Vales de crédito de Wuling. \nObtener más vales de crédito significa que has entregado suministros urgentes a más personas. Has hecho un trabajo monumental."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "Redistribuidor de existencias de Wuling IV",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "3": {
+        "desc": "Obtén 80 000 000 de Vales de crédito de Wuling",
+        "completeDesc": "Has obtenido muchos Vales de crédito de Wuling. \nMás vales de crédito significan un mayor conocimiento. El flujo de mercancías en Wuling no escapa a tu mirada."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_5": {
     "name": "Redistribuidor de existencias de Wuling V",
     "category": "Construcción",
@@ -1609,18 +1245,6 @@
       "3": {
         "desc": "Obtén 100 000 000 de Vales de crédito de Wuling",
         "completeDesc": "Obtuviste más Vales de crédito de Wuling.\nSe han cubierto las necesidades de todos. Te enfrentaste a una crisis y mantuviste la economía de Wuling a flote y en buen estado."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_tundra": {
-    "name": "Especialista de fábrica del Valle",
-    "category": "Construcción",
-    "group": "Fábrica del CAI",
-    "levels": {
-      "3": {
-        "desc": "Investiga todas las tecnologías del Plan del CAI básico",
-        "completeDesc": "Has investigado todas las tecnologías del Plan del CAI básico. \nTu arduo trabajo ha adaptado por completo la Fábrica del CAI a las exigencias de Valle IV."
       }
     },
     "plating": null
@@ -1639,17 +1263,19 @@
       "desc": "Empaca y entrega 20 paquetes de Mercancías de la fábrica (Súperfrágiles) sin reducir la Integridad de las mercancías."
     }
   },
-  "achv_quest_liino": {
-    "name": "“Como una estrella que atraviesa las fronteras”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
+  "achv_fac_domain_shop": {
+    "name": "Ventas constantes",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
     "levels": {
       "2": {
-        "desc": "Completa la misión secundaria [Como una estrella que atraviesa las fronteras]",
-        "completeDesc": "Endfield Industries finalmente tendrá a su propia idol de la marca... Tenemos que empezar con los ensayos, las presentaciones y... Ay, cielos. Hay tantas cosas por hacer."
+        "desc": "Vende suministros en Redistribución de existencias 15 veces",
+        "completeDesc": "Has vendido con éxito una gran cantidad de suministros. \nGracias a tu intuición, agudas observaciones y asignaciones oportunas, mantuviste cada región libre de escasez prolongada de suministros."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "En 1 acción de venta de Mercancía elástica, alcanza un precio de venta que sea al menos 500 % superior al precio promedio de adquisición."
+    }
   },
   "achv_fac_inn_management": {
     "name": "Gourmand feliz",
@@ -1664,26 +1290,6 @@
     "plating": {
       "desc": "Adquiere 40 recetas"
     }
-  },
-  "achv_growth_char_count_1": {
-    "name": "Contacto con operador",
-    "category": "Progresión",
-    "group": "Progresión",
-    "levels": {
-      "1": {
-        "desc": "Adquiere 5 operadores",
-        "completeDesc": "Has conocido a varios operadores por primera vez."
-      },
-      "2": {
-        "desc": "Adquiere 10 operadores",
-        "completeDesc": "Has conocido a varios operadores por primera vez. Tu equipo de operaciones de combate está tomando forma."
-      },
-      "3": {
-        "desc": "Adquiere 20 operadores",
-        "completeDesc": "Has conocido a varios operadores por primera vez. Ahora tienes suficientes operadores para respaldar planes tácticos más complejos."
-      }
-    },
-    "plating": null
   },
   "achv_fac_kite_station": {
     "name": "Monitor ambiental",
@@ -1739,17 +1345,19 @@
       "desc": "Eleva la Zona de construcción de las Llanuras del Rey Celestial y la Estación de rehabilitación cardíaca al máximo nivel"
     }
   },
-  "achv_hide_cave_v1d5": {
-    "name": "“Martillo de hielo gigante”",
-    "category": "Asombroso",
-    "group": "Asombroso",
+  "achv_fac_settlement_wuling_2": {
+    "name": "Construcción de puestos de avanzada de Wuling II",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
     "levels": {
-      "1": {
-        "desc": "Llega a la cueva subterránea de la Gruta pequeña, en el Bosque Nevado",
-        "completeDesc": "Tus sentidos agudos han detectado una herramienta para romper el hielo en el entorno natural."
+      "2": {
+        "desc": "Agrega todos los puestos de avanzada de Wuling al programa de soporte",
+        "completeDesc": "Todos los puestos de avanzada de Wuling ahora forman parte de tu programa de soporte. \nLograste mediar a la perfección la relación entre las personas y su pintoresco entorno de cumbres imponentes y ríos caudalosos."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "Eleva todos los Puestos de avanzada de Wuling al nivel más alto"
+    }
   },
   "achv_fac_simulation_training": {
     "name": "“Cenit de las pruebas”",
@@ -1764,6 +1372,26 @@
     "plating": {
       "desc": "Completa 1 prueba con 1 instancia de Desbordamiento de datos y 10 Puntos de batalla"
     }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "Confianza inmensa",
+    "category": "Construcción",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Eleva la confianza de 5 operadores al 100 %",
+        "completeDesc": "Has conocido compañeros que te defenderán con sus vidas."
+      },
+      "2": {
+        "desc": "Eleva la confianza de 10 operadores al 100 %",
+        "completeDesc": "Has conocido a varios compañeros que te defenderán con su vida. \nParece que tienes la capacidad de atraer a quienes comparten tu visión."
+      },
+      "3": {
+        "desc": "Eleva la confianza de 20 operadores al 100 %",
+        "completeDesc": "Has conocido a muchos compañeros que te defenderán con su vida. \nLlegará un día en que el mundo tendrá plena fe en ti."
+      }
+    },
+    "plating": null
   },
   "achv_fac_spaceship_gift": {
     "name": "Regalo amistoso",
@@ -1797,26 +1425,6 @@
     },
     "plating": null
   },
-  "achv_side_mission_count": {
-    "name": "Verdadero altruismo",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "1": {
-        "desc": "Completa 30 misiones de exploración",
-        "completeDesc": "Has ayudado a mucha gente con sus problemas."
-      },
-      "2": {
-        "desc": "Completa 40 misiones de exploración",
-        "completeDesc": "Has ayudado a mucha gente con sus problemas. \nNo todas implicaron combate, y tu objetivo trasciende el pago monetario."
-      },
-      "3": {
-        "desc": "Completa 50 misiones de exploración",
-        "completeDesc": "Has ayudado a mucha gente con sus problemas. \nQuienes se beneficiaron de tu ayuda ayudarán a otros a su vez. La gente de Talos-II debe aprender a apoyarse mutuamente."
-      }
-    },
-    "plating": null
-  },
   "achv_fac_techtree_jinlong_1": {
     "name": "Especialista de fábrica de Wuling Ⅰ",
     "category": "Construcción",
@@ -1829,6 +1437,30 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "Especialista de fábrica de Wuling Ⅱ",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "1": {
+        "desc": "Investiga 25 tecnologías en el Plan del CAI de Wuling",
+        "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "Especialista de fábrica de Wuling III",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "1": {
+        "desc": "Investiga 34 tecnologías en el Plan del CAI de Wuling",
+        "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling.\nAhora estás a la vanguardia de la tecnología en Talos-II."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_jinlong_4": {
     "name": "Especialista de fábrica de Wuling IV",
     "category": "Construcción",
@@ -1837,6 +1469,18 @@
       "1": {
         "desc": "Investiga 47 tecnologías en el Plan del CAI de Wuling",
         "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling.\nEn todo momento, la tierra bajo tus pies responde a cada una de tus ideas."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "Especialista de fábrica del Valle",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "3": {
+        "desc": "Investiga todas las tecnologías del Plan del CAI básico",
+        "completeDesc": "Has investigado todas las tecnologías del Plan del CAI básico. \nTu arduo trabajo ha adaptado por completo la Fábrica del CAI a las exigencias de Valle IV."
       }
     },
     "plating": null
@@ -1854,30 +1498,6 @@
     "plating": {
       "desc": "En [Campo de tiro con arco de Typhoeus], completa todos los “Entrenamientos avanzados” y completa “Ejercicio diario 04” con 3★"
     }
-  },
-  "achv_quest_e11m1": {
-    "name": "“Un sello liberado”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VII: Enfrenta con valentía los vientos hostiles]",
-        "completeDesc": "Estás listo para mirar al olvido de frente. Aunque estuvo sellado durante muchos años, sigue siendo la mismísima manifestación de la desesperación."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_wulfa": {
-    "name": "“La caballera roja”",
-    "category": "Capítulo",
-    "group": "Misión de exploración",
-    "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [La caballera roja]",
-        "completeDesc": "Cuando llegaron al reino de los niños, los viajeros se detuvieron a descansar los pies.\n¿Quién olvidaría las rodillas raspadas de las temporadas olvidadas de la infancia?"
-      }
-    },
-    "plating": null
   },
   "achv_growth_adventure_level": {
     "name": "Inquebrantable",
@@ -1899,14 +1519,42 @@
     },
     "plating": null
   },
-  "achv_quest_e12m1": {
-    "name": "“Adéntrate en el mundo pintado”",
-    "category": "Capítulo",
-    "group": "Misión principal",
+  "achv_growth_char_count_1": {
+    "name": "Contacto con operador",
+    "category": "Progresión",
+    "group": "Progresión",
     "levels": {
+      "1": {
+        "desc": "Adquiere 5 operadores",
+        "completeDesc": "Has conocido a varios operadores por primera vez."
+      },
+      "2": {
+        "desc": "Adquiere 10 operadores",
+        "completeDesc": "Has conocido a varios operadores por primera vez. Tu equipo de operaciones de combate está tomando forma."
+      },
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Posada en la pintura]",
-        "completeDesc": "Contemplaron la hermosa pintura, y se adentraron en la montaña."
+        "desc": "Adquiere 20 operadores",
+        "completeDesc": "Has conocido a varios operadores por primera vez. Ahora tienes suficientes operadores para respaldar planes tácticos más complejos."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "Potencial liberado",
+    "category": "Progresión",
+    "group": "Progresión",
+    "levels": {
+      "1": {
+        "desc": "Eleva a 1 operador a su potencial máximo",
+        "completeDesc": "Se ha desbloqueado el potencial máximo de uno de tus operadores."
+      },
+      "2": {
+        "desc": "Eleva a 10 operadores a su potencial máximo",
+        "completeDesc": "Se ha desbloqueado el potencial máximo de algunos de tus operadores. \nUna autoevaluación adecuada es el primer paso hacia el crecimiento."
+      },
+      "3": {
+        "desc": "Eleva a 15 operadores a su potencial máximo",
+        "completeDesc": "Se ha desbloqueado el potencial máximo de algunos de tus operadores. \nA pesar de que superaron sus limitaciones, estos operadores creen que esto es solo el comienzo."
       }
     },
     "plating": null
@@ -1927,6 +1575,38 @@
       "3": {
         "desc": "Mejora 20 habilidades de operador a Maestría 3",
         "completeDesc": "Algunos de tus operadores han perfeccionado sus habilidades de batalla a niveles increíbles. A pesar de la gran diversidad en sus áreas de especialidad y conjuntos de habilidades, distintos operadores trabajan juntos mientras los guías hacia una visión compartida del futuro."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "Equipamiento perfecto",
+    "category": "Progresión",
+    "group": "Progresión",
+    "levels": {
+      "3": {
+        "desc": "Mejora todas las estadísticas de 1 pieza de equipamiento hasta estar completamente fabricada",
+        "completeDesc": "Cargó con tus cicatrices, tus glorias y tu vida desde el principio, y lo seguirá haciendo hasta el final."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "Exploración de lo profundo",
+    "category": "Progresión",
+    "group": "Progresión",
+    "levels": {
+      "1": {
+        "desc": "Alcanza el Nivel de exploración 2",
+        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior."
+      },
+      "2": {
+        "desc": "Alcanza el Nivel de exploración 4",
+        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior. \nLos entornos más duros ofrecen mayores oportunidades."
+      },
+      "3": {
+        "desc": "Alcanza el Nivel de exploración 7",
+        "completeDesc": "Una medalla que prueba que has alcanzado un Nivel de exploración superior. \nHas alcanzado el punto más alto."
       }
     },
     "plating": null
@@ -1965,6 +1645,42 @@
       "desc": "Mejora 1 arma hasta alcanzar el rango de habilidad de 25"
     }
   },
+  "achv_hide_accidental_injury": {
+    "name": "“Receptor involuntario de karma”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "Cuando peleas contra Purga a fuego lento, Nube de trueno puede liberar Rayos que infligen Aturdir.",
+        "completeDesc": "Quizás la Purga a fuego lento solo quería ayudarte a bajar el hervor y enfriar las cosas."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "“Espada pendiendo de un hilo”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "En la Zona de exclusión norte de Wuling, elimina 5 acumulaciones de aluvión energético",
+        "completeDesc": "Hay que tener extremo cuidado al pisar terrenos peligrosos. Sin embargo, lograste neutralizar la espada pendiendo de un hilo que te acechaba."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "“¿Carrera armamentística?”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "Haz que el operador controlado se resbale con cáscaras de plátano 1 vez",
+        "completeDesc": "La regla dice: “No se pueden usar items tácticos ni objetos”. Pero la fauna lo ignoró y de todos modos arrojó cáscaras de plátano."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_cave": {
     "name": "“Auditores atrapados”",
     "category": "Asombroso",
@@ -1973,6 +1689,42 @@
       "2": {
         "desc": "Rompe todas las superficies débiles de la Veta de Origen",
         "completeDesc": "Puedes estar tranquilo. Estos hoyos no son trampas deliberadas. Los S.T.U.T. también están llevando a cabo una investigación con el objetivo de detener a los responsables."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "“Martillo de hielo gigante”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "Llega a la cueva subterránea de la Gruta pequeña, en el Bosque Nevado",
+        "completeDesc": "Tus sentidos agudos han detectado una herramienta para romper el hielo en el entorno natural."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "“Movimiento poco convencional”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "3": {
+        "desc": "Recorre 10.000 metros usando tirolesas, plataformas de impulso y cuerdas",
+        "completeDesc": "La Dijiang ha hecho planes para investigar y desarrollar para ti un dispositivo capaz de volar a baja altitud."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "“Protocolo ε 20.00 m”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "Cae desde una altura de al menos 20 metros y golpea a un enemigo",
+        "completeDesc": "¿Son fragmentos de desechos orbitales? ¡No! Son tú y tus operadores."
       }
     },
     "plating": null
@@ -1989,14 +1741,26 @@
     },
     "plating": null
   },
-  "achv_hide_three_dragon": {
-    "name": "“El Lung más gallardo”",
+  "achv_hide_open_treasure": {
+    "name": "“Tributo de la pequeña bestia”",
     "category": "Asombroso",
     "group": "Asombroso",
     "levels": {
-      "1": {
-        "desc": "Encuentra todos los Espíritus de tinta minimalistas con forma de Lung",
-        "completeDesc": "Genial. Todavía están discutiendo sobre quién se ve mejor."
+      "2": {
+        "desc": "Encuentra el “tributo” de Smartie",
+        "completeDesc": "¿Compañerismo? ¿Confianza? Esta cosita tierna te está tratando como a un amigo."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "“Completamente revelado”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "Deja que [Nefarith, “Conquistadora”] mantenga el lugar en estasis y deje suspendido en el aire al operador controlado",
+        "completeDesc": "Sus ambiciones desenfrenadas son aterradoras, pero sin miedo demostraste tu valentía en su confinamiento de desesperación."
       }
     },
     "plating": null
@@ -2037,6 +1801,54 @@
     },
     "plating": null
   },
+  "achv_hide_slime": {
+    "name": "“Batalla de los Cuatro Emperadores”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "Patea 4 babosas de originio hasta que caigan",
+        "completeDesc": "Ayudaste a cuatro babosas de originio a mudarse de casa."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_spaceship_v1d6": {
+    "name": "“Vista del Pico del Sur”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "Llega a la Isleta Panorámica",
+        "completeDesc": "Tras unos cuantos giros y vueltas, el aventurero finalmente alcanza el pico más alto, moldeado por la cúspide de la tecnología humana."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_three_dragon": {
+    "name": "“El Lung más gallardo”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "Encuentra todos los Espíritus de tinta minimalistas con forma de Lung",
+        "completeDesc": "Genial. Todavía están discutiendo sobre quién se ve mejor."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "“El agua fluye desde los cielos”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "Llega a la cima de la rueda hidráulica de la Empalizada de Qingbo",
+        "completeDesc": "Llegaste a la cima de la rueda hidráulica de la Empalizada de Qingbo y contemplaste la maravilla del “agua que cae en cascada desde los cielos”."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_aglina": {
     "name": "“Carta de la mensajera”",
     "category": "Capítulo",
@@ -2045,6 +1857,54 @@
       "2": {
         "desc": "Completa la misión secundaria [Carta de la mensajera]",
         "completeDesc": "Unos encargos pequeños, unos paquetes por entregar. \nLa encontraste bajo los cielos del atardecer. Los hermosos recuerdos y momentos serán los regalos que llenarán su carta vacía."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "“Danza macabra”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Danza macabra]",
+        "completeDesc": "La persecución, el fresco olor de la sangre y una vieja herida que aún palpita de dolor... Camille ha jurado que su sangre estará por siempre con Endministrator."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "“Despertar”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Prólogo - Proceso: Despertar]",
+        "completeDesc": "Has regresado a Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "“Suavemente corriente abajo”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Capítulo II Proceso VI: Forjada desde el comienzo]",
+        "completeDesc": "Zhuang Fangyi esperó, y por fin llegaste."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "“Un sello liberado”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Capítulo II Proceso VII: Enfrenta con valentía los vientos hostiles]",
+        "completeDesc": "Estás listo para mirar al olvido de frente. Aunque estuvo sellado durante muchos años, sigue siendo la mismísima manifestación de la desesperación."
       }
     },
     "plating": null
@@ -2061,26 +1921,14 @@
     },
     "plating": null
   },
-  "achv_quest_e1m8": {
-    "name": "“El puño falla”",
+  "achv_quest_e11m4": {
+    "name": "“Conexión con el pasado”",
     "category": "Capítulo",
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo I Proceso I: Enfrentamiento en el fuerte]",
-        "completeDesc": "Has derrotado al “Puño Rompehuesos”. \n¿Abrazarás el Éter y darás inicio a un nuevo futuro? ¿Qué opinas sobre el discurso de Nefarith?"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e4m1": {
-    "name": "“Señales recurrentes de mala suerte”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Interludio: Conferencia de los Cuatro]",
-        "completeDesc": "Han aparecido señales ominosas por todo Talos-II. Tu travesía aún no termina."
+        "desc": "Cruza el abismo con un Puente de Xiranita",
+        "completeDesc": "Un Puente de Xiranita ahora conecta el presente con el pasado. El camino ya está abierto para ti."
       }
     },
     "plating": null
@@ -2097,18 +1945,6 @@
     },
     "plating": null
   },
-  "achv_social_spaceship_help": {
-    "name": "Ayuda generosa",
-    "category": "Social",
-    "group": "Social",
-    "levels": {
-      "1": {
-        "desc": "Ofrece 50 asistencias de producción a tus amigos",
-        "completeDesc": "Ofreciste generosamente asistencia de producción a tus amigos. \nTu altruismo es lo que hace que Talos-II prospere."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e11m7": {
     "name": "“Así termina la herida sangrante”",
     "category": "Capítulo",
@@ -2117,6 +1953,30 @@
       "3": {
         "desc": "Completa la misión principal [Capítulo II Proceso VII: Regreso a casa]",
         "completeDesc": "La herida sangrante ya no traerá dolor."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m1": {
+    "name": "“Adéntrate en el mundo pintado”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Posada en la pintura]",
+        "completeDesc": "Contemplaron la hermosa pintura, y se adentraron en la montaña."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m4": {
+    "name": "“Contempla más allá del Ser”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Prueba III - Un camino donde no lo hay]",
+        "completeDesc": "Para esclarecer mi obsesión, y sanar mis malestares más profundos."
       }
     },
     "plating": null
@@ -2133,18 +1993,6 @@
     },
     "plating": null
   },
-  "achv_quest_e3m5": {
-    "name": "“Sellado de grietas”",
-    "category": "Capítulo",
-    "group": "Misión principal",
-    "levels": {
-      "3": {
-        "desc": "Completa la misión principal [Capítulo I Proceso IV: Brasas inmortales]",
-        "completeDesc": "Tú y tu equipo lucharon con firmeza y sellaron la grieta que estaba por devorar al Valle IV en su totalidad."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e1m2": {
     "name": "“Núcleo ex Machina”",
     "category": "Capítulo",
@@ -2153,6 +2001,18 @@
       "3": {
         "desc": "Invoca el fruto de una gran proeza tecnológica",
         "completeDesc": "El futuro del desarrollo en la frontera ha descendido sobre el Valle IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "“El puño falla”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Capítulo I Proceso I: Enfrentamiento en el fuerte]",
+        "completeDesc": "Has derrotado al “Puño Rompehuesos”. \n¿Abrazarás el Éter y darás inicio a un nuevo futuro? ¿Qué opinas sobre el discurso de Nefarith?"
       }
     },
     "plating": null
@@ -2181,14 +2041,38 @@
     },
     "plating": null
   },
-  "achv_quest_gm02m27": {
-    "name": "“Que Suiming ilumine el camino”",
+  "achv_quest_e3m5": {
+    "name": "“Sellado de grietas”",
     "category": "Capítulo",
-    "group": "Misión de exploración",
+    "group": "Misión principal",
     "levels": {
-      "2": {
-        "desc": "Completa la misión secundaria [Campana de los recuerdos]",
-        "completeDesc": "La campana vuelve a sonar y mi corazón busca una vez más la iluminación."
+      "3": {
+        "desc": "Completa la misión principal [Capítulo I Proceso IV: Brasas inmortales]",
+        "completeDesc": "Tú y tu equipo lucharon con firmeza y sellaron la grieta que estaba por devorar al Valle IV en su totalidad."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "“Señales recurrentes de mala suerte”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Completa la misión principal [Interludio: Conferencia de los Cuatro]",
+        "completeDesc": "Han aparecido señales ominosas por todo Talos-II. Tu travesía aún no termina."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "“Primera visita a Wuling”",
+    "category": "Capítulo",
+    "group": "Misión principal",
+    "levels": {
+      "3": {
+        "desc": "Llega a una ciudad completamente nueva",
+        "completeDesc": "Has llegado a la Ciudad de Wuling."
       }
     },
     "plating": null
@@ -2241,6 +2125,42 @@
     },
     "plating": null
   },
+  "achv_quest_gm02m27": {
+    "name": "“Que Suiming ilumine el camino”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Campana de los recuerdos]",
+        "completeDesc": "La campana vuelve a sonar y mi corazón busca una vez más la iluminación."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "“Que el fuego consuma las cenizas del pasado”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Que el fuego consuma las cenizas del pasado]",
+        "completeDesc": "Las cicatrices de los recuerdos pueden cambiar en el fuego. \nAunque los fragmentos del pasado se han acumulado como montañas imponentes, tomaste la mano de Laevatain y saliste del pasillo interminable."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "“Como una estrella que atraviesa las fronteras”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Como una estrella que atraviesa las fronteras]",
+        "completeDesc": "Endfield Industries finalmente tendrá a su propia idol de la marca... Tenemos que empezar con los ensayos, las presentaciones y... Ay, cielos. Hay tantas cosas por hacer."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_mifu": {
     "name": "“Un puñado de reflexiones”",
     "category": "Capítulo",
@@ -2253,6 +2173,30 @@
     },
     "plating": null
   },
+  "achv_quest_sm2l10m3": {
+    "name": "“Un día para recordar”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Un día para recordar]",
+        "completeDesc": "Verdaderamente maravilloso. Una bestia voladora que compone poesía, y un fogón humeante que nos conmueve."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "“Un sueño invernal cubierto de niebla en lo profundo del bosque”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Un sueño invernal cubierto de niebla en lo profundo del bosque]",
+        "completeDesc": "Seguiste a la mirada inquisitiva, rastreaste la flecha guía, soportaste los vientos gélidos entre niebla y sueños... y escuchaste Sus ecos en el Bosque Nevado."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_wolfgd": {
     "name": "“Lobo solitario”",
     "category": "Capítulo",
@@ -2261,6 +2205,50 @@
       "2": {
         "desc": "Completa la misión secundaria [Lobo solitario]",
         "completeDesc": "Wulfgard descubrió la verdad y ejecutó al traidor. \nClavó esa daga en la tierra, frente a la tumba... La Manada había cambiado. Sabía lo que tenía que hacer."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "“La caballera roja”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [La caballera roja]",
+        "completeDesc": "Cuando llegaron al reino de los niños, los viajeros se detuvieron a descansar los pies.\n¿Quién olvidaría las rodillas raspadas de las temporadas olvidadas de la infancia?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "“Amor, grito y el prototipo”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Amor, grito y el prototipo]",
+        "completeDesc": "Una caja de pigmentos llegó tarde. \nSeguiste el rastro de Tate y creaste varios grafitis. En estos colores, Yvonne vio el potencial de un reencuentro."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "Verdadero altruismo",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "1": {
+        "desc": "Completa 30 misiones de exploración",
+        "completeDesc": "Has ayudado a mucha gente con sus problemas."
+      },
+      "2": {
+        "desc": "Completa 40 misiones de exploración",
+        "completeDesc": "Has ayudado a mucha gente con sus problemas. \nNo todas implicaron combate, y tu objetivo trasciende el pago monetario."
+      },
+      "3": {
+        "desc": "Completa 50 misiones de exploración",
+        "completeDesc": "Has ayudado a mucha gente con sus problemas. \nQuienes se beneficiaron de tu ayuda ayudarán a otros a su vez. La gente de Talos-II debe aprender a apoyarse mutuamente."
       }
     },
     "plating": null
@@ -2293,6 +2281,18 @@
       "2": {
         "desc": "Recibe un total de 100 asistencias de producción de tus amigos",
         "completeDesc": "Las instalaciones de producción que equipaste a bordo de la Dijiang están funcionando eficientemente, gracias a la generosa ayuda de tus amigos."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "Ayuda generosa",
+    "category": "Social",
+    "group": "Social",
+    "levels": {
+      "1": {
+        "desc": "Ofrece 50 asistencias de producción a tus amigos",
+        "completeDesc": "Ofreciste generosamente asistencia de producción a tus amigos. \nTu altruismo es lo que hace que Talos-II prospere."
       }
     },
     "plating": null

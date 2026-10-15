@@ -5,5 +5,6 @@ export interface WeaponEntity {
     level: number;
     refineLevel: number;
     breakthroughLevel?: number;
+    weaponTerms?: number[];
     gem: GemEntity | null;
 }

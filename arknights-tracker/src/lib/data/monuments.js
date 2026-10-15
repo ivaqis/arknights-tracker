@@ -1,5 +1,64 @@
 export const monumentGroups = [
     {
+        "id": "indie_group_h08",
+        "startTime": "2026-10-22 12:00:00",
+        "startTimeAsia": "2026-10-22 12:00:00",
+        "endTime": "2026-11-05 04:00:00",
+        "endTimeAsia": "2026-11-05 04:00:00",
+        "stages": [
+            {
+                "id": "indie_hard033",
+                "hardId": "indie_hard033_s",
+                "name": "Critters That Dig",
+                "picPath": "dung_gold",
+                "enemyIds": [
+                    "eny_0129_slwood"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard030",
+                "hardId": "indie_hard030_s",
+                "name": "Shadows That Bind",
+                "picPath": "dung_high_difficulty_s8_01",
+                "enemyIds": [
+                    "eny_0120_klbear",
+                    "eny_0122_kltdbud"
+                ],
+                "enemyLevels": [
+                    60,
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard031",
+                "hardId": "indie_hard031_s",
+                "name": "Woodcrafts That Link",
+                "picPath": "dung_high_difficulty_s8_03",
+                "enemyIds": [
+                    "eny_0128_babyents"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard032",
+                "hardId": "indie_hard032_s",
+                "name": "Hatred That Sprawls",
+                "picPath": "dung_high_difficulty_s8_02",
+                "enemyIds": [
+                    "eny_0127_bigents"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            }
+        ]
+    },
+    {
         "id": "indie_group_h07",
         "startTime": "2026-10-05 12:00:00",
         "startTimeAsia": "2026-10-05 12:00:00",
@@ -459,65 +518,6 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60,
-                    60
-                ]
-            }
-        ]
-    },
-    {
-        "id": "indie_group_h08",
-        "startTime": "2026-10-22 12:00:00",
-        "startTimeAsia": "2026-10-22 12:00:00",
-        "endTime": "2026-11-05 04:00:00",
-        "endTimeAsia": "2026-11-05 04:00:00",
-        "stages": [
-            {
-                "id": "indie_hard033",
-                "hardId": "indie_hard033_s",
-                "name": "Critters That Dig",
-                "picPath": "dung_gold",
-                "enemyIds": [
-                    "eny_0129_slwood"
-                ],
-                "enemyLevels": [
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard030",
-                "hardId": "indie_hard030_s",
-                "name": "Shadows That Bind",
-                "picPath": "dung_high_difficulty_s8_01",
-                "enemyIds": [
-                    "eny_0120_klbear",
-                    "eny_0122_kltdbud"
-                ],
-                "enemyLevels": [
-                    60,
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard031",
-                "hardId": "indie_hard031_s",
-                "name": "Woodcrafts That Link",
-                "picPath": "dung_high_difficulty_s8_03",
-                "enemyIds": [
-                    "eny_0128_babyents"
-                ],
-                "enemyLevels": [
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard032",
-                "hardId": "indie_hard032_s",
-                "name": "Hatred That Sprawls",
-                "picPath": "dung_high_difficulty_s8_02",
-                "enemyIds": [
-                    "eny_0127_bigents"
-                ],
-                "enemyLevels": [
                     60
                 ]
             }

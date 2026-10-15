@@ -207,6 +207,7 @@ export class PostImport extends StreamController<
                 lastPullTsWithOffset = 0;
             }
 
+            fetcher = new BannerDataFetcher(this._token, serverId, callback);
             pulls = await fetcher.getAllBannersData(lastPullTsWithOffset) as BannersPulls;
 
             pullIds = PostImport.getPullIds(pulls, lastPullTsWithOffset);

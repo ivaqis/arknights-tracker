@@ -82,16 +82,12 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
     }
 
     public async fetch(lastPullTimeMs: number = 0): Promise<void> {
-        if (PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
-            return;
-        }
-
         for await (const page of this.getPageStream()) {
             this._pullsList.push(...page);
 
             this._callbackFn?.(this._pullsList.length);
 
-            if (PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
+            if (this._lastProcessedPullTs > 0 && PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
                 return;
             }
 

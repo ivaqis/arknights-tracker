@@ -32,7 +32,6 @@
     import { equipment } from "$lib/data/items/equipment.js";
     import { t } from "$lib/i18n";
     import {
-        equipmentFilters,
         equipmentGroupMode, equipmentGroupOption, equipmentGroupSort,
         equipmentSearch, equipmentSortParams, getAllEquipmentStatsGrouped, getDefaultEquipmentSortParams,
     } from "$lib/stores/filterStore";
@@ -40,7 +39,6 @@
     import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
     import { onDestroy, onMount } from "svelte";
 
-    $: selectedFilters = $equipmentFilters;
     $: searchQuery = $equipmentSearch;
     $: isGrouped = $equipmentGroupMode;
 
@@ -295,7 +293,13 @@
     }
 
     let isFilterActive = false;
-    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0);
+    $: isFilterActive = !$rarityFilter.isEmpty
+        || !$partTypeFilter.isEmpty
+        || !$packFilter.isEmpty
+        || !$statsAnyFilter.isEmpty
+        || !$stats1Filter.isEmpty
+        || !$stats2Filter.isEmpty
+        || !$stats3Filter.isEmpty;
 
     function resetSort() {
         $equipmentSortParams = getDefaultEquipmentSortParams();
@@ -435,7 +439,7 @@
     $: {
         void [
             searchQuery,
-            selectedFilters,
+            isFilterActive,
             sortField,
             sortDirection,
             showOwnedOnly,

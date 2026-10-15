@@ -35,18 +35,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_bigtree": {
-    "name": "\"Sự Im Lặng Của Gloomwald\"",
-    "category": "Kỹ Thuật",
-    "group": "Kỹ Thuật Chiến Đấu",
-    "levels": {
-      "2": {
-        "desc": "Đánh bại Cơn Thịnh Nộ Của Gloomwald",
-        "completeDesc": "Bạn đã dập tắt cơn thịnh nộ của Gloomwald. Những tạo vật trung thành không còn ôm hận hay sục sôi giận dữ, để bình yên một lần nữa trở lại với vùng đất này."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_documents": {
     "name": "Thám Tử Thung Lũng",
     "category": "Khu Vực",
@@ -83,18 +71,6 @@
     },
     "plating": null
   },
-  "achv_hide_accidental_injury": {
-    "name": "\"Kẻ Gánh Nghiệp Bất Đắc Dĩ\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "1": {
-        "desc": "Khi chiến đấu với Thanh Tẩy Cơn Khát, vô tình bị Mây Sấm của đồng đội đánh trúng",
-        "completeDesc": "Có lẽ Thanh Tẩy Cơn Khát chỉ muốn giúp bạn hạ hỏa thôi."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_tundra_fixablerobot": {
     "name": "\"Người Cứu DELTA\"",
     "category": "Khu Vực",
@@ -111,18 +87,6 @@
       "3": {
         "desc": "Tại Thung Lũng IV, sửa 43 robot Delta",
         "completeDesc": "Chúng tôi đã thu thập và giải mã một lượng lớn dữ liệu nhị phân. Có vẻ như những người gửi đang tha thiết muốn tôn vinh bạn bằng danh hiệu này: \"Người Cứu DELTA, Nhà Vô Địch của Giới Máy và Thần Cơ Giới của Thung Lũng IV.\""
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_laevat": {
-    "name": "\"Để Lửa Thiêu Rụi Quá Khứ Tro Tàn\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Để Lửa Thiêu Rụi Quá Khứ Tro Tàn]",
-        "completeDesc": "Những vết sẹo của ký ức có thể đổi khác trong ngọn lửa. \nDù những mảnh vụn quá khứ đã chất chồng thành những ngọn núi sừng sững, bạn vẫn nắm tay Laevatain và bước ra khỏi hành lang bất tận ấy."
       }
     },
     "plating": null
@@ -151,42 +115,6 @@
     },
     "plating": null
   },
-  "achv_adv_wuling_campfire_3": {
-    "name": "Neo Vào Võ Lăng III",
-    "category": "Khu Vực",
-    "group": "Võ Lăng",
-    "levels": {
-      "1": {
-        "desc": "Mở khóa 22 Điểm Dịch Chuyển tại Cốc Tàng Kiếm, Đèo Yinglung và Khu Cấm Bắc Võ Lăng",
-        "completeDesc": "Bạn đã mở rộng Mạng Lưới Giao Thức đến những khu vực sâu hơn của Võ Lăng."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_jinlong_2": {
-    "name": "Nhà Máy Tiên Phong Võ Lăng II",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "1": {
-        "desc": "Nghiên cứu 25 công nghệ trong Sơ Đồ KPH Võ Lăng",
-        "completeDesc": "Bạn đã nghiên cứu thành công thêm nhiều công nghệ trong Sơ Đồ KPH Võ Lăng"
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_aether_lock_clean": {
-    "name": "\"Kiếm Treo Chỉ Mành\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "2": {
-        "desc": "Vượt qua 5 điểm năng lượng bồi tích tại Khu Cấm Bắc Võ Lăng",
-        "completeDesc": "Kẻ đặt chân lên vùng đất hiểm nguy phải đặc biệt cẩn trọng. Dẫu vậy, bạn đã hạ gục lưỡi kiếm chực rơi nơi chỉ mành treo giữ."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_balloon": {
     "name": "Thiết Bị Thu Hồi Trên Không",
     "category": "Khu Vực",
@@ -198,20 +126,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_domain_shop": {
-    "name": "Bán Hàng Bền Vững",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "2": {
-        "desc": "Bán vật tư tại Điều Phối Vật Tư 15 lần",
-        "completeDesc": "Bạn đã bán thành công rất nhiều vật tư. \nNhờ trực giác, khả năng quan sát nhạy bén và sự phân bổ kịp thời, bạn đã giúp mọi khu vực không bị thiếu hụt vật tư kéo dài."
-      }
-    },
-    "plating": {
-      "desc": "Trong 1 lần bán Vật Tư Biến Động, đạt giá bán cao hơn ít nhất 500% so với giá mua trung bình."
-    }
   },
   "achv_adv_wuling_blackhole_clean": {
     "name": "Máy Trung Hòa Khe Nứt",
@@ -247,38 +161,6 @@
       "2": {
         "desc": "Tại Trại Thanh Ba, Đá Ranh Giới, Nội Khu Đá Ranh Giới và Khu Thử Nghiệm, mở 121 thùng lưu trữ",
         "completeDesc": "Bạn đã mở hầu hết thùng lưu trữ ở Võ Lăng."
-      }
-    },
-    "plating": null
-  },
-  "achv_growth_world_level": {
-    "name": "Khám Phá Sâu",
-    "category": "Cấp Tiến",
-    "group": "Cấp Tiến",
-    "levels": {
-      "1": {
-        "desc": "Đạt Cấp Khám Phá 2",
-        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn."
-      },
-      "2": {
-        "desc": "Đạt Cấp Khám Phá 4",
-        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn. \nMôi trường khắc nghiệt hơn mang lại nhiều cơ hội hơn."
-      },
-      "3": {
-        "desc": "Đạt Cấp Khám Phá 7",
-        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn. \nBạn đã đạt đến đỉnh cao."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_jump_hit": {
-    "name": "\"Giao Thức ε 20.00m\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "2": {
-        "desc": "Rơi từ độ cao ít nhất 20 mét và trúng một kẻ địch",
-        "completeDesc": "Đó là mảnh vụn quỹ đạo à? Không! Đó chính là bạn và các cán viên."
       }
     },
     "plating": null
@@ -331,32 +213,6 @@
     },
     "plating": null
   },
-  "achv_bat_hard_8": {
-    "name": "\"Tiếng Thì Thầm Từ Rừng Sâu\"",
-    "category": "Kỹ Thuật",
-    "group": "Không Gian Giao Thức",
-    "levels": {
-      "2": {
-        "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Tiếng Thì Thầm Từ Rừng Sâu\" trong chế độ Thường",
-        "completeDesc": "Sau chiến thắng, bạn đã lắng nghe những lời rì rầm phẫn nộ của rừng sâu, và một lần nữa, bạn đã khắc tên mình lên tấm bia vĩ đại ấy."
-      }
-    },
-    "plating": {
-      "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Tiếng Thì Thầm Từ Rừng Sâu\" trong chế độ Đoạn Nộ"
-    }
-  },
-  "achv_fac_blackbox_2": {
-    "name": "Mô Phỏng Nhà Máy II",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "3": {
-        "desc": "Khởi động thủ công và hoàn thành 30 mô phỏng",
-        "completeDesc": "Bạn đã hoàn thành rất nhiều mô phỏng. Một lần nữa, chúng tôi đánh giá cao sự nhiệt huyết của bạn trong việc nắm vững chuyên môn nhà máy riêng biệt của khu vực Võ Lăng."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_campfire_2": {
     "name": "Neo Vào Võ Lăng II",
     "category": "Khu Vực",
@@ -369,14 +225,14 @@
     },
     "plating": null
   },
-  "achv_growth_equip_enhance": {
-    "name": "Trang Bị Hoàn Hảo",
-    "category": "Cấp Tiến",
-    "group": "Cấp Tiến",
+  "achv_adv_wuling_campfire_3": {
+    "name": "Neo Vào Võ Lăng III",
+    "category": "Khu Vực",
+    "group": "Võ Lăng",
     "levels": {
-      "3": {
-        "desc": "Nâng cấp tất cả chỉ số của 1 trang bị lên Chế Tác Hoàn Thiện",
-        "completeDesc": "Nó mang theo những vết sẹo, vinh quang và cuộc sống của bạn ngay từ đầu, và sẽ tiếp tục làm như vậy cho đến tận cùng."
+      "1": {
+        "desc": "Mở khóa 22 Điểm Dịch Chuyển tại Cốc Tàng Kiếm, Đèo Yinglung và Khu Cấm Bắc Võ Lăng",
+        "completeDesc": "Bạn đã mở rộng Mạng Lưới Giao Thức đến những khu vực sâu hơn của Võ Lăng."
       }
     },
     "plating": null
@@ -389,38 +245,6 @@
       "1": {
         "desc": "Mở khóa 18 Điểm Dịch Chuyển trong Rừng Tuyết và Bức Tranh Của Si",
         "completeDesc": "Bạn đã mở rộng Mạng Lưới Giao Thức đến những khu vực sâu hơn của Võ Lăng, dẫu cho các vùng ấy nằm trong cõi dị giới."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_spaceship_fever_point": {
-    "name": "Niềm Tin Vĩ Đại",
-    "category": "Xây Dựng",
-    "group": "Dijiang",
-    "levels": {
-      "1": {
-        "desc": "Tăng tín nhiệm của 5 cán viên lên 100%",
-        "completeDesc": "Bạn đã gặp những người bạn đồng hành sẽ bảo vệ bạn bằng cả mạng sống của họ."
-      },
-      "2": {
-        "desc": "Tăng tín nhiệm của 10 cán viên lên 100%",
-        "completeDesc": "Bạn đã gặp được nhiều người bạn đồng hành sẵn sàng bảo vệ bạn bằng cả mạng sống. \nCó vẻ như bạn có khả năng thu hút những người cùng chung tầm nhìn với mình."
-      },
-      "3": {
-        "desc": "Tăng tín nhiệm của 20 cán viên lên 100%",
-        "completeDesc": "Bạn đã gặp được nhiều người bạn đồng hành sẵn sàng bảo vệ bạn bằng cả mạng sống. \nSẽ có một ngày thế giới sẽ hoàn toàn tin tưởng vào bạn."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_paralyze": {
-    "name": "\"Toàn Diện Hiển Lộ\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "2": {
-        "desc": "Khi [Nefarith, \"Kẻ Chinh Phục\"] làm ngưng đọng mọi thứ xung quanh, cán viên đang điều khiển bị khóa giữa không trung",
-        "completeDesc": "Tham vọng cuồng dại của ả thật đáng sợ, nhưng bạn không chút e dè mà thể hiện dũng khí trong cơn tuyệt vọng của ả."
       }
     },
     "plating": null
@@ -463,18 +287,6 @@
       "desc": "Thu thập 81 Aurylene tại Cảnh Ngọc Cốc và Thành Phố Võ Lăng"
     }
   },
-  "achv_hide_waterwheel_top": {
-    "name": "\"Nước Trên Trời\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "2": {
-        "desc": "Lên đỉnh bánh xe nước của Trại Thanh Ba",
-        "completeDesc": "Bạn đã trèo lên đỉnh cao nhất của bánh xe nước Trại Thanh Ba và chứng kiến kỳ quan \"nước đổ từ thiên giới\"."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_ether_2": {
     "name": "\"Mảnh Tái Hợp\" II",
     "category": "Khu Vực",
@@ -483,26 +295,6 @@
       "2": {
         "desc": "Tại Trại Thanh Ba, Đá Ranh Giới, Nội Khu Đá Ranh Giới và Khu Thử Nghiệm, thu thập 59 Aurylene",
         "completeDesc": "Thêm nhiều mảnh vỡ thất lạc của cổ vật nguyên thủy đã tụ hội lại trong tay bạn một lần nữa."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_eny_building_kill": {
-    "name": "Hủy Diệt Thông Minh",
-    "category": "Kỹ Thuật",
-    "group": "Kỹ Thuật Chiến Đấu",
-    "levels": {
-      "1": {
-        "desc": "Tiêu diệt 10 kẻ địch bằng các công trình chiến đấu",
-        "completeDesc": "Các công trình chiến đấu của bạn đã chứng minh được năng lực của chúng."
-      },
-      "2": {
-        "desc": "Tiêu diệt 100 kẻ địch bằng các công trình chiến đấu",
-        "completeDesc": "Các công trình chiến đấu của bạn đang dần đẩy lùi kẻ địch."
-      },
-      "3": {
-        "desc": "Tiêu diệt 500 kẻ địch bằng các công trình chiến đấu",
-        "completeDesc": "Với những cỗ máy chiến tranh hiệu quả như vậy, bạn hầu như không cần phải tự đặt mình vào nguy hiểm nữa."
       }
     },
     "plating": null
@@ -555,18 +347,6 @@
     },
     "plating": null
   },
-  "achv_bat_dung_char": {
-    "name": "Hướng Dẫn Cán Viên",
-    "category": "Kỹ Thuật",
-    "group": "Không Gian Giao Thức",
-    "levels": {
-      "1": {
-        "desc": "Hoàn thành bất kỳ 5 màn Hướng Dẫn Cán Viên",
-        "completeDesc": "Bạn quen với cách cán viên của bạn chiến đấu."
-      }
-    },
-    "plating": null
-  },
   "achv_adv_wuling_floor_2": {
     "name": "\"Thú Lông Vũ Nhảy Nước II\"",
     "category": "Khu Vực",
@@ -575,30 +355,6 @@
       "1": {
         "desc": "Tại Trại Thanh Ba, Đá Ranh Giới, Nội Khu Đá Ranh Giới và Khu Thử Nghiệm, kích hoạt 6 bộ bàn đạp áp suất",
         "completeDesc": "Một lần nữa, bạn uyển chuyển nhảy từ bàn đạp áp suất này sang bàn đạp áp suất khác, khôi phục lại thế cân bằng hoàn hảo.\n\"Một màn biểu diễn tuyệt diệu của thế võ Thú Lông Vũ Ba Đầu!\""
-      }
-    },
-    "plating": null
-  },
-  "achv_adv_wuling_password": {
-    "name": "\"Nét Điểm Rực Rỡ\"",
-    "category": "Khu Vực",
-    "group": "Võ Lăng",
-    "levels": {
-      "2": {
-        "desc": "Giải 11 câu đố Đèn Đá trong Bức Tranh Của Si",
-        "completeDesc": "Bạn đã giải rất nhiều câu đố mà Si để lại. Ngay cả những Vong Linh Mực ở đủ lâu trong cuộn tranh cũng sẽ dần trở nên tinh nghịch."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_defeat_jzmking": {
-    "name": "\"Khuất Phục Cự Thú\"",
-    "category": "Kỹ Thuật",
-    "group": "Kỹ Thuật Chiến Đấu",
-    "levels": {
-      "2": {
-        "desc": "Đánh bại Craghowler",
-        "completeDesc": "Bạn đã khuất phục chúa tể của đám quái. Biết đâu bạn sẽ trở thành chúa tể mới của chúng?"
       }
     },
     "plating": null
@@ -623,18 +379,6 @@
       "1": {
         "desc": "Tại Trại Thanh Ba, Đá Ranh Giới, Nội Khu Đá Ranh Giới và Khu Thử Nghiệm, hoàn thành 3 câu đố truyền đom đóm",
         "completeDesc": "Một lần nữa bạn lại có những giây phút vui vẻ với ếch đuôi dài. Chúng tôi đã phân tích tiếng kêu biết ơn của chúng và có vẻ chúng rất háo hức được gặp lại bạn. \n\"Ộp ộp… ộp ộp ộp.\""
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_yvonne": {
-    "name": "Tình Yêu, Tiếng Thét Và Nguyên Mẫu",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Tình Yêu, Tiếng Thét Và Nguyên Mẫu]",
-        "completeDesc": "Một thùng sơn đã đến trễ. \nBạn theo dấu Tata và tạo ra nhiều bức graffiti khác nhau. Trong những màu sắc này, Yvonne đã nhìn thấy tiềm năng của sự đoàn tụ."
       }
     },
     "plating": null
@@ -675,14 +419,14 @@
     },
     "plating": null
   },
-  "achv_bat_jsspsi_reverse_color": {
-    "name": "\"Nghệ Thuật Lưu Bạch\"",
-    "category": "Kỹ Thuật",
-    "group": "Kỹ Thuật Chiến Đấu",
+  "achv_adv_wuling_password": {
+    "name": "\"Nét Điểm Rực Rỡ\"",
+    "category": "Khu Vực",
+    "group": "Võ Lăng",
     "levels": {
       "2": {
-        "desc": "Hãy để Si tung đòn Tấn Công Mặc Họa trong trạng thái đen trắng của Cõi Thủy Mặc, đồng thời không để cán viên đang điều khiển chịu bất kỳ ST nào từ đòn Tấn Công Mặc Họa.",
-        "completeDesc": "Biết nơi nào nên chừa trắng, nơi nào nên giữ lại nét mực, và khi nào nên nhường bước để chuẩn bị tiến lên."
+        "desc": "Giải 11 câu đố Đèn Đá trong Bức Tranh Của Si",
+        "completeDesc": "Bạn đã giải rất nhiều câu đố mà Si để lại. Ngay cả những Vong Linh Mực ở đủ lâu trong cuộn tranh cũng sẽ dần trở nên tinh nghịch."
       }
     },
     "plating": null
@@ -698,20 +442,6 @@
       }
     },
     "plating": null
-  },
-  "achv_fac_settlement_wuling_2": {
-    "name": "Kỹ Sư Xây Tiền Đồn Võ Lăng II",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "2": {
-        "desc": "Thêm tất cả tiền đồn Võ Lăng vào chương trình hỗ trợ",
-        "completeDesc": "Tất cả tiền đồn Võ Lăng nay đều nằm trong mạng lưới hỗ trợ của bạn. \nBạn đã khéo léo nối kết con người với vùng sơn thủy hữu tình quanh họ, nơi những đỉnh núi uy nghi vươn cao và những dòng sông lặng lẽ chảy dài."
-      }
-    },
-    "plating": {
-      "desc": "Nâng cấp tất cả tiền đồn ở Võ Lăng lên cấp tối đa"
-    }
   },
   "achv_bat_charged": {
     "name": "Cao Thủ Chặn Đòn",
@@ -733,34 +463,6 @@
     },
     "plating": null
   },
-  "achv_bat_defeat_palesent": {
-    "name": "\"Tan Vỡ Bóng Hình Phai Tàn\"",
-    "category": "Kỹ Thuật",
-    "group": "Kỹ Thuật Chiến Đấu",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành \"Nguy Cảnh Giáng Họa: Aggelomoirai Cẩm Thạch\"",
-        "completeDesc": "Trong ảo cảnh của Không Gian Giao Thức, một lần nữa, bạn đã đánh bại quái tượng vĩ đại bằng cẩm thạch nhạt."
-      }
-    },
-    "plating": {
-      "desc": "Hoàn Thành \"Nguy Cảnh Giáng Họa: Aggelomoirai Cẩm Thạch\" trong 240 giây"
-    }
-  },
-  "achv_event_wuling_challenge_dung_03": {
-    "name": "\"Phai Mờ Ngoài Cuộn Tranh\"",
-    "category": "Sự Kiện",
-    "group": "Sự Kiện",
-    "levels": {
-      "2": {
-        "desc": "Trong [Hành Giả Bí Ẩn], hoàn thành tất cả Không Gian Giao Thức \"Phai Mờ Ngoài Cuộn Tranh\"",
-        "completeDesc": "Bạn lần lượt thắp sáng từng mảnh vỡ của Không Gian Giao Thức, và thấu hiểu trọn vẹn những câu chuyện xưa còn vương trong từng nét bút, cũng như cả những câu chuyện nằm ngoài cuộn tranh."
-      }
-    },
-    "plating": {
-      "desc": "Trong [Hành Giả Bí Ẩn], hoàn thành hoàn hảo tất cả Không Gian Giao Thức \"Phai Mờ Ngoài Cuộn Tranh\""
-    }
-  },
   "achv_bat_charged_hsbear": {
     "name": "\"Chiến Thần Cản Sấm\"",
     "category": "Kỹ Thuật",
@@ -769,18 +471,6 @@
       "2": {
         "desc": "Gián đoạn sóng xung kích gầm thét của Thiên Cổ Yêu Thú trong lúc giao chiến",
         "completeDesc": "Bạn đã thành công bóp nghẹt tiếng sấm rền ngay từ cổ họng."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_fly": {
-    "name": "\"Chuyển Động Bất Thường\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "3": {
-        "desc": "Di chuyển 10000 mét bằng zipline, đệm bật nhảy và dây thừng",
-        "completeDesc": "Dijiang đã lập kế hoạch nghiên cứu và phát triển một thiết bị có khả năng bay ở độ cao thấp cho bạn."
       }
     },
     "plating": null
@@ -819,6 +509,18 @@
       "desc": "Hoàn Thành \"Nguy Cảnh Giáng Họa: Triaggelos\" trong 240 giây"
     }
   },
+  "achv_bat_defeat_bigtree": {
+    "name": "\"Sự Im Lặng Của Gloomwald\"",
+    "category": "Kỹ Thuật",
+    "group": "Kỹ Thuật Chiến Đấu",
+    "levels": {
+      "2": {
+        "desc": "Đánh bại Cơn Thịnh Nộ Của Gloomwald",
+        "completeDesc": "Bạn đã dập tắt cơn thịnh nộ của Gloomwald. Những tạo vật trung thành không còn ôm hận hay sục sôi giận dữ, để bình yên một lần nữa trở lại với vùng đất này."
+      }
+    },
+    "plating": null
+  },
   "achv_bat_defeat_dodge_jzogre": {
     "name": "\"Chúa Tể Cuồng Phong\"",
     "category": "Kỹ Thuật",
@@ -839,44 +541,6 @@
       "2": {
         "desc": "Trong trận chiến, đánh bại \"Æthillu\" trong vòng 2 giây kể từ lúc nó hồi sinh",
         "completeDesc": "Bạn nhìn thấu Æthillu và xua tan thứ vật chất lơ lửng."
-      }
-    },
-    "plating": null
-  },
-  "achv_bat_hard_5": {
-    "name": "\"Sóng Ngầm Nơi Biển Lặng Tăm Tối\"",
-    "category": "Kỹ Thuật",
-    "group": "Không Gian Giao Thức",
-    "levels": {
-      "2": {
-        "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sóng Ngầm Nơi Biển Lặng Tăm Tối\" ở chế độ Thường",
-        "completeDesc": "Bạn đã chứng kiến cuộc phân tranh giữa sấm rền và những dị thể từ sự im lặng chết chóc, rồi một lần nữa lưu danh trên tấm bia vĩ đại."
-      }
-    },
-    "plating": {
-      "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sóng Ngầm Nơi Biển Lặng Tăm Tối\" trong chế độ Đoạn Nộ"
-    }
-  },
-  "achv_hide_spaceship_v1d6": {
-    "name": "\"Vọng Nam Phong\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "1": {
-        "desc": "Đến Đảo Quan Sát",
-        "completeDesc": "Sau bao khúc quanh, nhà thám hiểm cuối cùng cũng lên đến đỉnh cao nhất, được tạo nên bởi tinh hoa công nghệ của nhân loại."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_typhoea": {
-    "name": "\"Mộng Đông Trong Sương Rừng\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Mộng Đông Trong Sương Rừng]",
-        "completeDesc": "Bạn lần theo ánh mắt kiếm tìm, đuổi theo mũi tên dẫn lối, vượt qua gió buốt giữa màn sương và cõi mộng... để rồi nghe thấy dư âm của Người vọng về từ Rừng Tuyết."
       }
     },
     "plating": null
@@ -921,19 +585,17 @@
       "desc": "Hoàn thành \"Nguy Cảnh Giáng Họa: Si\" trong 200 giây"
     }
   },
-  "achv_event_clean": {
-    "name": "\"Thanh Tẩy Hoàn Toàn\"",
-    "category": "Sự Kiện",
-    "group": "Sự Kiện",
+  "achv_bat_defeat_jzmking": {
+    "name": "\"Khuất Phục Cự Thú\"",
+    "category": "Kỹ Thuật",
+    "group": "Kỹ Thuật Chiến Đấu",
     "levels": {
       "2": {
-        "desc": "Hoàn thành tất cả nhiệm vụ Tẩy Rửa và Tráng Sạch",
-        "completeDesc": "Bạn đã loại bỏ được vết bẩn gây khó khăn cho các công nhân vệ sinh."
+        "desc": "Đánh bại Craghowler",
+        "completeDesc": "Bạn đã khuất phục chúa tể của đám quái. Biết đâu bạn sẽ trở thành chúa tể mới của chúng?"
       }
     },
-    "plating": {
-      "desc": "Hoàn thành \"Diễn Tập Làm Sạch Đàn Hồi\" trong 120 giây"
-    }
+    "plating": null
   },
   "achv_bat_defeat_klbear": {
     "name": "\"Bước Qua Trong Lặng Im Của Blitzcrash\"",
@@ -961,6 +623,20 @@
       "desc": "Hoàn thành \"Nguy Cảnh Giáng Họa: Nefarith\" trong 200 giây"
     }
   },
+  "achv_bat_defeat_palesent": {
+    "name": "\"Tan Vỡ Bóng Hình Phai Tàn\"",
+    "category": "Kỹ Thuật",
+    "group": "Kỹ Thuật Chiến Đấu",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành \"Nguy Cảnh Giáng Họa: Aggelomoirai Cẩm Thạch\"",
+        "completeDesc": "Trong ảo cảnh của Không Gian Giao Thức, một lần nữa, bạn đã đánh bại quái tượng vĩ đại bằng cẩm thạch nhạt."
+      }
+    },
+    "plating": {
+      "desc": "Hoàn Thành \"Nguy Cảnh Giáng Họa: Aggelomoirai Cẩm Thạch\" trong 240 giây"
+    }
+  },
   "achv_bat_defeat_rodin": {
     "name": "\"Nghiền Nắm Đấm Xương\"",
     "category": "Kỹ Thuật",
@@ -974,30 +650,6 @@
     "plating": {
       "desc": "Hoàn thành \"Nguy Cảnh Hỗn Loạn: Rhodagn\" trong 120 giây"
     }
-  },
-  "achv_fac_coupon_wuling_3": {
-    "name": "Chuyên Gia Điều Phối Võ Lăng III",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "3": {
-        "desc": "Nhận 25.000.000 Phiếu Hàng Võ Lăng",
-        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Võ Lăng. \nNhận được nhiều Phiếu Hàng hơn đồng nghĩa với việc bạn đã mang những nhu yếu phẩm cực kỳ cần thiết đến cho nhiều người hơn. Công việc bạn làm thật sự mang tầm vóc lớn lao."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e12m4": {
-    "name": "\"Thấu Hiểu Chính Mình\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅱ – Tiến Trình Ⅷ: Khảo Nghiệm III - Lối Mở Nơi Không Lối]",
-        "completeDesc": "Để tỏ tường nỗi chấp niệm của ta, và chữa lành những vết thương sâu thẳm nhất."
-      }
-    },
-    "plating": null
   },
   "achv_bat_defeat_ruanyi": {
     "name": "\"Và nhành Cuồng Nộ đã khô héo\"",
@@ -1013,14 +665,14 @@
       "desc": "Hoàn Thành \"Nguy Cảnh Giáng Họa: Ruan Yi\" trong 200 giây"
     }
   },
-  "achv_quest_camille": {
-    "name": "\"Vũ Điệu Tử Thần\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
+  "achv_bat_dung_char": {
+    "name": "Hướng Dẫn Cán Viên",
+    "category": "Kỹ Thuật",
+    "group": "Không Gian Giao Thức",
     "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Vũ Điệu Tử Thần]",
-        "completeDesc": "Cuộc truy đuổi, mùi máu tanh nồng, vết thương cũ vẫn nhói đau... Camille đã thề rằng xương máu của mình sẽ mãi đồng hành cùng Endministrator."
+      "1": {
+        "desc": "Hoàn thành bất kỳ 5 màn Hướng Dẫn Cán Viên",
+        "completeDesc": "Bạn quen với cách cán viên của bạn chiến đấu."
       }
     },
     "plating": null
@@ -1049,18 +701,6 @@
     },
     "plating": null
   },
-  "achv_fac_techtree_jinlong_3": {
-    "name": "Nhà Máy Tiên Phong Võ Lăng III",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "1": {
-        "desc": "Nghiên cứu 34 công nghệ trong Sơ Đồ KPH Võ Lăng",
-        "completeDesc": "Bạn đã nghiên cứu thành công thêm nhiều công nghệ trong Sơ Đồ KPH Võ Lăng.\nGiờ đây, bạn đang tiên phong trên mặt trận công nghệ ở Talos-II."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_enemyspawner": {
     "name": "Đào Bới Phù Sa",
     "category": "Kỹ Thuật",
@@ -1069,38 +709,6 @@
       "2": {
         "desc": "Đạt Cấp Khám Phá 7 rồi hoàn thành 5 khu vực Năng Lượng Bồi Tích Dữ Dội khác nhau",
         "completeDesc": "Năng lượng Æther trên vùng đất này đang dần tan biến, nhưng chúng cuối cùng sẽ quay trở lại."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_coupon_tundra": {
-    "name": "Chuyên Gia Điều Phối Thung Lũng",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "1": {
-        "desc": "Nhận 20.000.000 Phiếu Hàng Thung Lũng",
-        "completeDesc": "Bạn đã nhận được một vài Phiếu Hàng Thung Lũng."
-      },
-      "2": {
-        "desc": "Nhận 40.000.000 Phiếu Hàng Thung Lũng",
-        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Thung Lũng."
-      },
-      "3": {
-        "desc": "Nhận 80.000.000 Phiếu Hàng Thung Lũng",
-        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Thung Lũng. \nNhận được nhiều Phiếu Hàng hơn đồng nghĩa với việc bạn đã mang những nhu yếu phẩm cực kỳ cần thiết đến cho nhiều người hơn. Công việc bạn làm thật sự mang tầm vóc lớn lao."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_sm2l10m3": {
-    "name": "\"Một Ngày Đáng Nhớ\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Một Ngày Đáng Nhớ]",
-        "completeDesc": "Thật tuyệt diệu. Một con thú lông vũ biết làm thơ, và một bếp lửa khói vương khiến lòng người rung động."
       }
     },
     "plating": null
@@ -1117,14 +725,22 @@
     },
     "plating": null
   },
-  "achv_quest_e6m1": {
-    "name": "\"Đến Võ Lăng Lần Đầu\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
+  "achv_bat_eny_building_kill": {
+    "name": "Hủy Diệt Thông Minh",
+    "category": "Kỹ Thuật",
+    "group": "Kỹ Thuật Chiến Đấu",
     "levels": {
+      "1": {
+        "desc": "Tiêu diệt 10 kẻ địch bằng các công trình chiến đấu",
+        "completeDesc": "Các công trình chiến đấu của bạn đã chứng minh được năng lực của chúng."
+      },
+      "2": {
+        "desc": "Tiêu diệt 100 kẻ địch bằng các công trình chiến đấu",
+        "completeDesc": "Các công trình chiến đấu của bạn đang dần đẩy lùi kẻ địch."
+      },
       "3": {
-        "desc": "Tiếp cận một thành phố hoàn toàn mới",
-        "completeDesc": "Bạn đã đến Thành Phố Võ Lăng."
+        "desc": "Tiêu diệt 500 kẻ địch bằng các công trình chiến đấu",
+        "completeDesc": "Với những cỗ máy chiến tranh hiệu quả như vậy, bạn hầu như không cần phải tự đặt mình vào nguy hiểm nữa."
       }
     },
     "plating": null
@@ -1195,18 +811,6 @@
       "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sẹo Bỏng Rát\" trong chế độ Đoạn Nộ"
     }
   },
-  "achv_hide_open_treasure": {
-    "name": "\"Cống Phẩm Từ Thú Cưng\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "2": {
-        "desc": "Tìm \"quà tặng\" của Smartie",
-        "completeDesc": "Bằng hữu? Tin tưởng? Có vẻ sinh vật nhỏ bé đáng yêu này đã xem bạn là bạn rồi."
-      }
-    },
-    "plating": null
-  },
   "achv_bat_hard_4": {
     "name": "\"Sương Đục Hiện Thể\"",
     "category": "Kỹ Thuật",
@@ -1219,6 +823,20 @@
     },
     "plating": {
       "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sương Đục Hiện Thể\" trong chế độ Đoạn Nộ"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "\"Sóng Ngầm Nơi Biển Lặng Tăm Tối\"",
+    "category": "Kỹ Thuật",
+    "group": "Không Gian Giao Thức",
+    "levels": {
+      "2": {
+        "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sóng Ngầm Nơi Biển Lặng Tăm Tối\" ở chế độ Thường",
+        "completeDesc": "Bạn đã chứng kiến cuộc phân tranh giữa sấm rền và những dị thể từ sự im lặng chết chóc, rồi một lần nữa lưu danh trên tấm bia vĩ đại."
+      }
+    },
+    "plating": {
+      "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Sóng Ngầm Nơi Biển Lặng Tăm Tối\" trong chế độ Đoạn Nộ"
     }
   },
   "achv_bat_hard_6": {
@@ -1249,14 +867,28 @@
       "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Hằn Dấu Bóng Tối\" trong chế độ Đoạn Nộ"
     }
   },
-  "achv_hide_slime": {
-    "name": "\"Đại Chiến Tứ Hoàng\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
+  "achv_bat_hard_8": {
+    "name": "\"Tiếng Thì Thầm Từ Rừng Sâu\"",
+    "category": "Kỹ Thuật",
+    "group": "Không Gian Giao Thức",
     "levels": {
       "2": {
-        "desc": "Đá 4 Sên Originium cho đến khi chúng ngã xuống",
-        "completeDesc": "Bạn đã giúp bốn Sên Originium chuyển nhà."
+        "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Tiếng Thì Thầm Từ Rừng Sâu\" trong chế độ Thường",
+        "completeDesc": "Sau chiến thắng, bạn đã lắng nghe những lời rì rầm phẫn nộ của rừng sâu, và một lần nữa, bạn đã khắc tên mình lên tấm bia vĩ đại ấy."
+      }
+    },
+    "plating": {
+      "desc": "Trong [Đài Bóng Tối], hoàn thành tất cả các màn \"Tiếng Thì Thầm Từ Rừng Sâu\" trong chế độ Đoạn Nộ"
+    }
+  },
+  "achv_bat_jsspsi_reverse_color": {
+    "name": "\"Nghệ Thuật Lưu Bạch\"",
+    "category": "Kỹ Thuật",
+    "group": "Kỹ Thuật Chiến Đấu",
+    "levels": {
+      "2": {
+        "desc": "Hãy để Si tung đòn Tấn Công Mặc Họa trong trạng thái đen trắng của Cõi Thủy Mặc, đồng thời không để cán viên đang điều khiển chịu bất kỳ ST nào từ đòn Tấn Công Mặc Họa.",
+        "completeDesc": "Biết nơi nào nên chừa trắng, nơi nào nên giữ lại nét mực, và khi nào nên nhường bước để chuẩn bị tiến lên."
       }
     },
     "plating": null
@@ -1325,29 +957,19 @@
     },
     "plating": null
   },
-  "achv_quest_e0m2": {
-    "name": "\"Thức Tỉnh\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
+  "achv_event_clean": {
+    "name": "\"Thanh Tẩy Hoàn Toàn\"",
+    "category": "Sự Kiện",
+    "group": "Sự Kiện",
     "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Phần Mở Đầu – Quy Trình: Thức Tỉnh]",
-        "completeDesc": "Bạn đã trở lại Talos-II."
+      "2": {
+        "desc": "Hoàn thành tất cả nhiệm vụ Tẩy Rửa và Tráng Sạch",
+        "completeDesc": "Bạn đã loại bỏ được vết bẩn gây khó khăn cho các công nhân vệ sinh."
       }
     },
-    "plating": null
-  },
-  "achv_quest_e10m3": {
-    "name": "\"Thuyền Nhẹ Xuôi Dòng\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương II – Tiến Trình VI: Khởi Tạo Từ Thuở Ban Sơ]",
-        "completeDesc": "Zhuang Fangyi chờ sẵn và bạn cuối cùng cũng đến."
-      }
-    },
-    "plating": null
+    "plating": {
+      "desc": "Hoàn thành \"Diễn Tập Làm Sạch Đàn Hồi\" trong 120 giây"
+    }
   },
   "achv_event_contingency_contract_0": {
     "name": "\"Tái Kích Hoạt\"",
@@ -1357,18 +979,6 @@
       "3": {
         "desc": "Hoàn thành một thử thách với ít nhất 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Tiêu Chí Thử Nghiệm trong [Hợp Đồng Điều Kiện: Chiến Dịch Thử Nghiệm Tái Kích Hoạt]",
         "completeDesc": "Một giao ước xa xưa đang được khôi phục. Bạn đã một lần nữa khơi dậy khế ước cổ xưa."
-      }
-    },
-    "plating": null
-  },
-  "achv_hide_banana": {
-    "name": "\"Cuộc Chạy Đua Vũ Trang?\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
-    "levels": {
-      "1": {
-        "desc": "Khiến cán viên đang điều khiển trượt vỏ chuối 1 lần",
-        "completeDesc": "Quy tắc ghi rõ: \"Không thể sử dụng vật phẩm và vật phẩm chiến thuật\". Nhưng đám sinh vật hoang dã chẳng buồn để tâm, vẫn cứ thản nhiên ném vỏ chuối ra."
       }
     },
     "plating": null
@@ -1387,26 +997,6 @@
       "desc": "Hoàn thành \"Thẩm Định Chốt Hạ\" trong 120 giây"
     }
   },
-  "achv_growth_char_potential_1": {
-    "name": "Bùng Nổ Tiềm Năng",
-    "category": "Cấp Tiến",
-    "group": "Cấp Tiến",
-    "levels": {
-      "1": {
-        "desc": "Tăng tối đa tiềm năng của 1 cán viên",
-        "completeDesc": "Một trong những cán viên của bạn đã được tăng tiềm năng tối đa."
-      },
-      "2": {
-        "desc": "Tăng tối đa tiềm năng của 10 cán viên",
-        "completeDesc": "Một số cán viên của bạn đã được tăng tiềm năng tối đa. \nTự phản ánh đúng đắn là bước đầu tiên hướng tới sự phát triển."
-      },
-      "3": {
-        "desc": "Tăng tối đa tiềm năng của 15 cán viên",
-        "completeDesc": "Một số cán viên của bạn đã được tăng tiềm năng tối đa. \nMặc dù đã khắc phục được những hạn chế, các cán viên này vẫn tin rằng đây chỉ là sự khởi đầu."
-      }
-    },
-    "plating": null
-  },
   "achv_event_formula": {
     "name": "\"Cứu Tinh Trong Lòng Tay\"",
     "category": "Sự Kiện",
@@ -1420,18 +1010,6 @@
     "plating": {
       "desc": "Trong [Hỗ Trợ KPH: Cứu Tinh Lòng Bàn Tay], nhận 800.000 Chứng Nhận Viện Trợ và gửi 20.000 Quả Bầu Ngọc Xiranite"
     }
-  },
-  "achv_quest_e11m4": {
-    "name": "\"Sợi Dây Nối Về Quá Khứ\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Bắc một cây cầu Xiranite băng qua vực sâu",
-        "completeDesc": "Một cây cầu Xiranite nay đã nối liền hiện tại với quá khứ. Con đường phía trước đã rộng mở trước bạn."
-      }
-    },
-    "plating": null
   },
   "achv_event_formula2": {
     "name": "\"Chubby Lung Bùng Nổ\"",
@@ -1460,18 +1038,6 @@
     "plating": {
       "desc": "Hoàn thành 15 Nhiệm Vụ Đấu Trường trong [Đấu Trường Du Hí]"
     }
-  },
-  "achv_fac_coupon_wuling_4": {
-    "name": "Chuyên Gia Điều Phối Võ Lăng Ⅳ",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "3": {
-        "desc": "Nhận 80.000.000 Phiếu Hàng Võ Lăng",
-        "completeDesc": "Bạn đã thu thập được rất nhiều Phiếu Hàng Võ Lăng. \nCàng có nhiều phiếu, bạn càng hiểu rõ cách vận hành. Mọi dòng luân chuyển hàng hóa ở Võ Lăng đều nằm trong tầm mắt bạn."
-      }
-    },
-    "plating": null
   },
   "achv_event_racingdungeon_1": {
     "name": "\"Nhà Thám Hiểm Kỳ Giới\"",
@@ -1543,6 +1109,20 @@
       "desc": "Trong [Hành Giả Bí Ẩn], hoàn thành hoàn hảo tất cả Không Gian Giao Thức \"Cõi Tinh Diệu Lục Phương\""
     }
   },
+  "achv_event_wuling_challenge_dung_03": {
+    "name": "\"Phai Mờ Ngoài Cuộn Tranh\"",
+    "category": "Sự Kiện",
+    "group": "Sự Kiện",
+    "levels": {
+      "2": {
+        "desc": "Trong [Hành Giả Bí Ẩn], hoàn thành tất cả Không Gian Giao Thức \"Phai Mờ Ngoài Cuộn Tranh\"",
+        "completeDesc": "Bạn lần lượt thắp sáng từng mảnh vỡ của Không Gian Giao Thức, và thấu hiểu trọn vẹn những câu chuyện xưa còn vương trong từng nét bút, cũng như cả những câu chuyện nằm ngoài cuộn tranh."
+      }
+    },
+    "plating": {
+      "desc": "Trong [Hành Giả Bí Ẩn], hoàn thành hoàn hảo tất cả Không Gian Giao Thức \"Phai Mờ Ngoài Cuộn Tranh\""
+    }
+  },
   "achv_event_wuling_racing_1": {
     "name": "\"Tay Đua Tối Thượng\"",
     "category": "Sự Kiện",
@@ -1577,6 +1157,38 @@
     },
     "plating": null
   },
+  "achv_fac_blackbox_2": {
+    "name": "Mô Phỏng Nhà Máy II",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "3": {
+        "desc": "Khởi động thủ công và hoàn thành 30 mô phỏng",
+        "completeDesc": "Bạn đã hoàn thành rất nhiều mô phỏng. Một lần nữa, chúng tôi đánh giá cao sự nhiệt huyết của bạn trong việc nắm vững chuyên môn nhà máy riêng biệt của khu vực Võ Lăng."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "Chuyên Gia Điều Phối Thung Lũng",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "1": {
+        "desc": "Nhận 20.000.000 Phiếu Hàng Thung Lũng",
+        "completeDesc": "Bạn đã nhận được một vài Phiếu Hàng Thung Lũng."
+      },
+      "2": {
+        "desc": "Nhận 40.000.000 Phiếu Hàng Thung Lũng",
+        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Thung Lũng."
+      },
+      "3": {
+        "desc": "Nhận 80.000.000 Phiếu Hàng Thung Lũng",
+        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Thung Lũng. \nNhận được nhiều Phiếu Hàng hơn đồng nghĩa với việc bạn đã mang những nhu yếu phẩm cực kỳ cần thiết đến cho nhiều người hơn. Công việc bạn làm thật sự mang tầm vóc lớn lao."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_1": {
     "name": "Chuyên Gia Điều Phối Võ Lăng",
     "category": "Xây Dựng",
@@ -1601,6 +1213,30 @@
     },
     "plating": null
   },
+  "achv_fac_coupon_wuling_3": {
+    "name": "Chuyên Gia Điều Phối Võ Lăng III",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "3": {
+        "desc": "Nhận 25.000.000 Phiếu Hàng Võ Lăng",
+        "completeDesc": "Bạn đã nhận được khá nhiều Phiếu Hàng Võ Lăng. \nNhận được nhiều Phiếu Hàng hơn đồng nghĩa với việc bạn đã mang những nhu yếu phẩm cực kỳ cần thiết đến cho nhiều người hơn. Công việc bạn làm thật sự mang tầm vóc lớn lao."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "Chuyên Gia Điều Phối Võ Lăng Ⅳ",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "3": {
+        "desc": "Nhận 80.000.000 Phiếu Hàng Võ Lăng",
+        "completeDesc": "Bạn đã thu thập được rất nhiều Phiếu Hàng Võ Lăng. \nCàng có nhiều phiếu, bạn càng hiểu rõ cách vận hành. Mọi dòng luân chuyển hàng hóa ở Võ Lăng đều nằm trong tầm mắt bạn."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_coupon_wuling_5": {
     "name": "Chuyên Gia Điều Phối Võ Lăng V",
     "category": "Xây Dựng",
@@ -1609,18 +1245,6 @@
       "3": {
         "desc": "Nhận 100.000.000 Phiếu Hàng Võ Lăng",
         "completeDesc": "Bạn đã nhận được thêm nhiều Phiếu Hàng Võ Lăng.\nMọi nhu cầu của người dân đều đã được đáp ứng. Bạn đã hiên ngang đối mặt với thảm họa, đồng thời giữ cho nền kinh tế Võ Lăng vững mạnh và thịnh vượng."
-      }
-    },
-    "plating": null
-  },
-  "achv_fac_techtree_tundra": {
-    "name": "Nhà Máy Tiên Phong Thung Lũng",
-    "category": "Xây Dựng",
-    "group": "Nhà Máy Khu Phức Hợp",
-    "levels": {
-      "3": {
-        "desc": "Nghiên cứu từng công nghệ của Sơ Đồ Khu Phức Hợp Cơ Bản",
-        "completeDesc": "Bạn đã nghiên cứu mọi công nghệ trong Sơ Đồ Khu Phức Hợp Cơ Bản. \nCông sức của bạn đã giúp Nhà Máy Khu Phức Hợp hoàn toàn thích nghi với điều kiện khắc nghiệt của Thung Lũng IV."
       }
     },
     "plating": null
@@ -1639,17 +1263,19 @@
       "desc": "Đóng gói và giao 20 gói Hàng Nhà Máy (Siêu Dễ Vỡ) mà không làm giảm Độ Nguyên Vẹn Hàng."
     }
   },
-  "achv_quest_liino": {
-    "name": "\"Như Ánh Sao Băng Qua Ranh Giới\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
+  "achv_fac_domain_shop": {
+    "name": "Bán Hàng Bền Vững",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
     "levels": {
       "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Như Ánh Sao Băng Qua Ranh Giới]",
-        "completeDesc": "Tập Đoàn Endfield cuối cùng cũng có thần tượng đại diện thương hiệu của riêng mình rồi... Chúng ta phải bắt tay vào tập duyệt, lên sân khấu, rồi còn... Ôi trời. Sao mà nhiều việc phải làm thế này."
+        "desc": "Bán vật tư tại Điều Phối Vật Tư 15 lần",
+        "completeDesc": "Bạn đã bán thành công rất nhiều vật tư. \nNhờ trực giác, khả năng quan sát nhạy bén và sự phân bổ kịp thời, bạn đã giúp mọi khu vực không bị thiếu hụt vật tư kéo dài."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "Trong 1 lần bán Vật Tư Biến Động, đạt giá bán cao hơn ít nhất 500% so với giá mua trung bình."
+    }
   },
   "achv_fac_inn_management": {
     "name": "Thực Khách Sành Ăn Hài Lòng",
@@ -1664,26 +1290,6 @@
     "plating": {
       "desc": "Nhận 40 công thức"
     }
-  },
-  "achv_growth_char_count_1": {
-    "name": "Liên Lạc Cán Viên",
-    "category": "Cấp Tiến",
-    "group": "Cấp Tiến",
-    "levels": {
-      "1": {
-        "desc": "Nhận 5 cán viên",
-        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên."
-      },
-      "2": {
-        "desc": "Nhận 10 cán viên",
-        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên. Đội tác chiến của bạn đang dần hình thành."
-      },
-      "3": {
-        "desc": "Nhận 20 cán viên",
-        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên. Giờ đây, bạn đã có đủ cán viên để hỗ trợ các kế hoạch chiến thuật phức tạp hơn."
-      }
-    },
-    "plating": null
   },
   "achv_fac_kite_station": {
     "name": "Quan Trắc Môi Trường",
@@ -1739,17 +1345,19 @@
       "desc": "Nâng Công Trường Xây Dựng Bình Nguyên Thiên Vương và Trạm Điều Trị Tim Mạch lên tầng cao nhất"
     }
   },
-  "achv_hide_cave_v1d5": {
-    "name": "\"Búa Băng Khổng Lồ\"",
-    "category": "Phi Thường",
-    "group": "Phi Thường",
+  "achv_fac_settlement_wuling_2": {
+    "name": "Kỹ Sư Xây Tiền Đồn Võ Lăng II",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
     "levels": {
-      "1": {
-        "desc": "Đến hang động ngầm tại Động Nhỏ, Rừng Tuyết",
-        "completeDesc": "Giác quan nhạy bén đã giúp bạn phát hiện một công cụ phá băng ẩn mình giữa cảnh vật tự nhiên."
+      "2": {
+        "desc": "Thêm tất cả tiền đồn Võ Lăng vào chương trình hỗ trợ",
+        "completeDesc": "Tất cả tiền đồn Võ Lăng nay đều nằm trong mạng lưới hỗ trợ của bạn. \nBạn đã khéo léo nối kết con người với vùng sơn thủy hữu tình quanh họ, nơi những đỉnh núi uy nghi vươn cao và những dòng sông lặng lẽ chảy dài."
       }
     },
-    "plating": null
+    "plating": {
+      "desc": "Nâng cấp tất cả tiền đồn ở Võ Lăng lên cấp tối đa"
+    }
   },
   "achv_fac_simulation_training": {
     "name": "\"Đỉnh Cao Khảo Nghiệm\"",
@@ -1764,6 +1372,26 @@
     "plating": {
       "desc": "Hoàn thành 1 Khảo Nghiệm với 1 lần Tràn Dữ Liệu và 10 Điểm Chiến Đấu"
     }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "Niềm Tin Vĩ Đại",
+    "category": "Xây Dựng",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Tăng tín nhiệm của 5 cán viên lên 100%",
+        "completeDesc": "Bạn đã gặp những người bạn đồng hành sẽ bảo vệ bạn bằng cả mạng sống của họ."
+      },
+      "2": {
+        "desc": "Tăng tín nhiệm của 10 cán viên lên 100%",
+        "completeDesc": "Bạn đã gặp được nhiều người bạn đồng hành sẵn sàng bảo vệ bạn bằng cả mạng sống. \nCó vẻ như bạn có khả năng thu hút những người cùng chung tầm nhìn với mình."
+      },
+      "3": {
+        "desc": "Tăng tín nhiệm của 20 cán viên lên 100%",
+        "completeDesc": "Bạn đã gặp được nhiều người bạn đồng hành sẵn sàng bảo vệ bạn bằng cả mạng sống. \nSẽ có một ngày thế giới sẽ hoàn toàn tin tưởng vào bạn."
+      }
+    },
+    "plating": null
   },
   "achv_fac_spaceship_gift": {
     "name": "Món Quà Kết Thân",
@@ -1797,26 +1425,6 @@
     },
     "plating": null
   },
-  "achv_side_mission_count": {
-    "name": "Tấm Lòng Vị Tha",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "1": {
-        "desc": "Hoàn thành 30 Nhiệm Vụ Khám Phá",
-        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ."
-      },
-      "2": {
-        "desc": "Hoàn thành 40 Nhiệm Vụ Khám Phá",
-        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ. \nKhông phải tất cả đều liên quan đến chiến đấu, và mục tiêu của bạn vượt lên trên cả phần thưởng tiền bạc."
-      },
-      "3": {
-        "desc": "Hoàn thành 50 Nhiệm Vụ Khám Phá",
-        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ. \nNhững người từng nhận được sự giúp đỡ từ bạn sẽ giúp lại người khác. Người dân Talos-II phải học cách hỗ trợ lẫn nhau."
-      }
-    },
-    "plating": null
-  },
   "achv_fac_techtree_jinlong_1": {
     "name": "Nhà Máy Tiên Phong Võ Lăng I",
     "category": "Xây Dựng",
@@ -1829,6 +1437,30 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "Nhà Máy Tiên Phong Võ Lăng II",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "1": {
+        "desc": "Nghiên cứu 25 công nghệ trong Sơ Đồ KPH Võ Lăng",
+        "completeDesc": "Bạn đã nghiên cứu thành công thêm nhiều công nghệ trong Sơ Đồ KPH Võ Lăng"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "Nhà Máy Tiên Phong Võ Lăng III",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "1": {
+        "desc": "Nghiên cứu 34 công nghệ trong Sơ Đồ KPH Võ Lăng",
+        "completeDesc": "Bạn đã nghiên cứu thành công thêm nhiều công nghệ trong Sơ Đồ KPH Võ Lăng.\nGiờ đây, bạn đang tiên phong trên mặt trận công nghệ ở Talos-II."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_jinlong_4": {
     "name": "Nhà Máy Tiên Phong Võ Lăng IV",
     "category": "Xây Dựng",
@@ -1837,6 +1469,18 @@
       "1": {
         "desc": "Nghiên cứu 47 công nghệ trong Sơ Đồ KPH Võ Lăng",
         "completeDesc": "Bạn đã nghiên cứu thành công thêm nhiều công nghệ trong Sơ Đồ KPH Võ Lăng.\nTừng khoảnh khắc, mặt đất dưới chân đều hưởng ứng mọi ý niệm của bạn."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "Nhà Máy Tiên Phong Thung Lũng",
+    "category": "Xây Dựng",
+    "group": "Nhà Máy Khu Phức Hợp",
+    "levels": {
+      "3": {
+        "desc": "Nghiên cứu từng công nghệ của Sơ Đồ Khu Phức Hợp Cơ Bản",
+        "completeDesc": "Bạn đã nghiên cứu mọi công nghệ trong Sơ Đồ Khu Phức Hợp Cơ Bản. \nCông sức của bạn đã giúp Nhà Máy Khu Phức Hợp hoàn toàn thích nghi với điều kiện khắc nghiệt của Thung Lũng IV."
       }
     },
     "plating": null
@@ -1854,30 +1498,6 @@
     "plating": {
       "desc": "Hoàn thành toàn bộ \"Huấn Luyện Nâng Cao\" tại [Trường Bắn Cung Của Typhoeus] và hoàn thành \"Luyện Tập Hằng Ngày 04\" với 3★"
     }
-  },
-  "achv_quest_e11m1": {
-    "name": "\"Khi Phong Ấn Được Khai Mở\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅱ - Tiến Trình Ⅶ: Can Trường Xé Nghịch Phong]",
-        "completeDesc": "Bạn đã sẵn sàng đối mặt với Lãng Quên. Dù đã bị phong ấn suốt nhiều năm, nó vẫn là hiện thân của tuyệt vọng."
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_wulfa": {
-    "name": "\"Kỵ Sĩ Đỏ\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
-    "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Kỵ Sĩ Đỏ]",
-        "completeDesc": "Khi đến vương quốc của trẻ con, những lữ khách dừng chân để nghỉ ngơi.\nAi còn nhớ cảm giác bị trầy đầu gối của những mùa tuổi thơ đã bị lãng quên?"
-      }
-    },
-    "plating": null
   },
   "achv_growth_adventure_level": {
     "name": "Chiến Binh Lão Luyện",
@@ -1899,14 +1519,42 @@
     },
     "plating": null
   },
-  "achv_quest_e12m1": {
-    "name": "\"Tiến Vào Thế Giới Trong Tranh\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
+  "achv_growth_char_count_1": {
+    "name": "Liên Lạc Cán Viên",
+    "category": "Cấp Tiến",
+    "group": "Cấp Tiến",
     "levels": {
+      "1": {
+        "desc": "Nhận 5 cán viên",
+        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên."
+      },
+      "2": {
+        "desc": "Nhận 10 cán viên",
+        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên. Đội tác chiến của bạn đang dần hình thành."
+      },
       "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương II – Tiến Trình VIII: Quán Trọ Trong Tranh]",
-        "completeDesc": "Họ đã nhìn thấy cuộn tranh tuyệt đẹp ấy, rồi tiến sâu hơn vào trong núi."
+        "desc": "Nhận 20 cán viên",
+        "completeDesc": "Bạn đã gặp một số cán viên lần đầu tiên. Giờ đây, bạn đã có đủ cán viên để hỗ trợ các kế hoạch chiến thuật phức tạp hơn."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "Bùng Nổ Tiềm Năng",
+    "category": "Cấp Tiến",
+    "group": "Cấp Tiến",
+    "levels": {
+      "1": {
+        "desc": "Tăng tối đa tiềm năng của 1 cán viên",
+        "completeDesc": "Một trong những cán viên của bạn đã được tăng tiềm năng tối đa."
+      },
+      "2": {
+        "desc": "Tăng tối đa tiềm năng của 10 cán viên",
+        "completeDesc": "Một số cán viên của bạn đã được tăng tiềm năng tối đa. \nTự phản ánh đúng đắn là bước đầu tiên hướng tới sự phát triển."
+      },
+      "3": {
+        "desc": "Tăng tối đa tiềm năng của 15 cán viên",
+        "completeDesc": "Một số cán viên của bạn đã được tăng tiềm năng tối đa. \nMặc dù đã khắc phục được những hạn chế, các cán viên này vẫn tin rằng đây chỉ là sự khởi đầu."
       }
     },
     "plating": null
@@ -1927,6 +1575,38 @@
       "3": {
         "desc": "Nâng cấp tổng cộng 20 kỹ năng của cán viên lên Thông Thạo 3",
         "completeDesc": "Một số cán viên của bạn đã mài giũa KN chiến đấu của mình đến mức đáng kinh ngạc. Mặc dù có sự đa dạng lớn về chuyên môn và kỹ năng, các cán viên khác nhau vẫn hợp tác với nhau khi bạn dẫn dắt họ hướng tới một tầm nhìn chung về tương lai."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "Trang Bị Hoàn Hảo",
+    "category": "Cấp Tiến",
+    "group": "Cấp Tiến",
+    "levels": {
+      "3": {
+        "desc": "Nâng cấp tất cả chỉ số của 1 trang bị lên Chế Tác Hoàn Thiện",
+        "completeDesc": "Nó mang theo những vết sẹo, vinh quang và cuộc sống của bạn ngay từ đầu, và sẽ tiếp tục làm như vậy cho đến tận cùng."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "Khám Phá Sâu",
+    "category": "Cấp Tiến",
+    "group": "Cấp Tiến",
+    "levels": {
+      "1": {
+        "desc": "Đạt Cấp Khám Phá 2",
+        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn."
+      },
+      "2": {
+        "desc": "Đạt Cấp Khám Phá 4",
+        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn. \nMôi trường khắc nghiệt hơn mang lại nhiều cơ hội hơn."
+      },
+      "3": {
+        "desc": "Đạt Cấp Khám Phá 7",
+        "completeDesc": "Huy hiệu chứng minh bạn đã đạt được Cấp Khám Phá cao hơn. \nBạn đã đạt đến đỉnh cao."
       }
     },
     "plating": null
@@ -1965,6 +1645,42 @@
       "desc": "Nâng cấp kỹ năng của 1 vũ khí lên tổng hạng 25"
     }
   },
+  "achv_hide_accidental_injury": {
+    "name": "\"Kẻ Gánh Nghiệp Bất Đắc Dĩ\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "1": {
+        "desc": "Khi chiến đấu với Thanh Tẩy Cơn Khát, Mây Sấm có thể giáng Lôi Kích gây Choáng.",
+        "completeDesc": "Có lẽ Thanh Tẩy Cơn Khát chỉ muốn giúp bạn hạ hỏa thôi."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "\"Kiếm Treo Chỉ Mành\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "2": {
+        "desc": "Vượt qua 5 điểm năng lượng bồi tích tại Khu Cấm Bắc Võ Lăng",
+        "completeDesc": "Kẻ đặt chân lên vùng đất hiểm nguy phải đặc biệt cẩn trọng. Dẫu vậy, bạn đã hạ gục lưỡi kiếm chực rơi nơi chỉ mành treo giữ."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "\"Cuộc Chạy Đua Vũ Trang?\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "1": {
+        "desc": "Khiến cán viên đang điều khiển trượt vỏ chuối 1 lần",
+        "completeDesc": "Quy tắc ghi rõ: \"Không thể sử dụng vật phẩm và vật phẩm chiến thuật\". Nhưng đám sinh vật hoang dã chẳng buồn để tâm, vẫn cứ thản nhiên ném vỏ chuối ra."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_cave": {
     "name": "\"Kiểm Soát Bị Sa Lưới\"",
     "category": "Phi Thường",
@@ -1973,6 +1689,42 @@
       "2": {
         "desc": "Phá tất cả các bề mặt yếu của Khởi Nguồn Lodespring",
         "completeDesc": "Xin yên tâm. Những cạm bẫy này không phải là cố ý. Công Đoàn cũng đang tiến hành điều tra nhằm bắt giữ những người chịu trách nhiệm."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "\"Búa Băng Khổng Lồ\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "1": {
+        "desc": "Đến hang động ngầm tại Động Nhỏ, Rừng Tuyết",
+        "completeDesc": "Giác quan nhạy bén đã giúp bạn phát hiện một công cụ phá băng ẩn mình giữa cảnh vật tự nhiên."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "\"Chuyển Động Bất Thường\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "3": {
+        "desc": "Di chuyển 10000 mét bằng zipline, đệm bật nhảy và dây thừng",
+        "completeDesc": "Dijiang đã lập kế hoạch nghiên cứu và phát triển một thiết bị có khả năng bay ở độ cao thấp cho bạn."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "\"Giao Thức ε 20.00m\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "2": {
+        "desc": "Rơi từ độ cao ít nhất 20 mét và trúng một kẻ địch",
+        "completeDesc": "Đó là mảnh vụn quỹ đạo à? Không! Đó chính là bạn và các cán viên."
       }
     },
     "plating": null
@@ -1989,14 +1741,26 @@
     },
     "plating": null
   },
-  "achv_hide_three_dragon": {
-    "name": "\"Long Phong Độ Nhất\"",
+  "achv_hide_open_treasure": {
+    "name": "\"Cống Phẩm Từ Thú Cưng\"",
     "category": "Phi Thường",
     "group": "Phi Thường",
     "levels": {
-      "1": {
-        "desc": "Tìm toàn bộ Vong Linh Mực hình Long tối giản.",
-        "completeDesc": "Tuyệt. Chúng vẫn đang cãi nhau xem ai đẹp trai nhất."
+      "2": {
+        "desc": "Tìm \"quà tặng\" của Smartie",
+        "completeDesc": "Bằng hữu? Tin tưởng? Có vẻ sinh vật nhỏ bé đáng yêu này đã xem bạn là bạn rồi."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "\"Toàn Diện Hiển Lộ\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "2": {
+        "desc": "Khi [Nefarith, \"Kẻ Chinh Phục\"] làm ngưng đọng mọi thứ xung quanh, cán viên đang điều khiển bị khóa giữa không trung",
+        "completeDesc": "Tham vọng cuồng dại của ả thật đáng sợ, nhưng bạn không chút e dè mà thể hiện dũng khí trong cơn tuyệt vọng của ả."
       }
     },
     "plating": null
@@ -2037,6 +1801,54 @@
     },
     "plating": null
   },
+  "achv_hide_slime": {
+    "name": "\"Đại Chiến Tứ Hoàng\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "2": {
+        "desc": "Đá 4 Sên Originium cho đến khi chúng ngã xuống",
+        "completeDesc": "Bạn đã giúp bốn Sên Originium chuyển nhà."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_spaceship_v1d6": {
+    "name": "\"Vọng Nam Phong\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "1": {
+        "desc": "Đến Đảo Quan Sát",
+        "completeDesc": "Sau bao khúc quanh, nhà thám hiểm cuối cùng cũng lên đến đỉnh cao nhất, được tạo nên bởi tinh hoa công nghệ của nhân loại."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_three_dragon": {
+    "name": "\"Long Phong Độ Nhất\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "1": {
+        "desc": "Tìm toàn bộ Vong Linh Mực hình Long tối giản.",
+        "completeDesc": "Tuyệt. Chúng vẫn đang cãi nhau xem ai đẹp trai nhất."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "\"Nước Trên Trời\"",
+    "category": "Phi Thường",
+    "group": "Phi Thường",
+    "levels": {
+      "2": {
+        "desc": "Lên đỉnh bánh xe nước của Trại Thanh Ba",
+        "completeDesc": "Bạn đã trèo lên đỉnh cao nhất của bánh xe nước Trại Thanh Ba và chứng kiến kỳ quan \"nước đổ từ thiên giới\"."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_aglina": {
     "name": "Thư Từ Một Liên Lạc Viên",
     "category": "Chương",
@@ -2045,6 +1857,54 @@
       "2": {
         "desc": "Hoàn thành nhiệm vụ phụ [Thư Từ Một Liên Lạc Viên]",
         "completeDesc": "Một vài việc vặt nhỏ, vài gói hàng để giao. \nBạn đã gặp cô ấy dưới bầu trời hoàng hôn. Những kỷ niệm và khoảnh khắc đẹp sẽ là món quà lấp đầy bức thư trống của cô ấy."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "\"Vũ Điệu Tử Thần\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Vũ Điệu Tử Thần]",
+        "completeDesc": "Cuộc truy đuổi, mùi máu tanh nồng, vết thương cũ vẫn nhói đau... Camille đã thề rằng xương máu của mình sẽ mãi đồng hành cùng Endministrator."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "\"Thức Tỉnh\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Phần Mở Đầu – Quy Trình: Thức Tỉnh]",
+        "completeDesc": "Bạn đã trở lại Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "\"Thuyền Nhẹ Xuôi Dòng\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương II – Tiến Trình VI: Khởi Tạo Từ Thuở Ban Sơ]",
+        "completeDesc": "Zhuang Fangyi chờ sẵn và bạn cuối cùng cũng đến."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "\"Khi Phong Ấn Được Khai Mở\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅱ - Tiến Trình Ⅶ: Can Trường Xé Nghịch Phong]",
+        "completeDesc": "Bạn đã sẵn sàng đối mặt với Lãng Quên. Dù đã bị phong ấn suốt nhiều năm, nó vẫn là hiện thân của tuyệt vọng."
       }
     },
     "plating": null
@@ -2061,26 +1921,14 @@
     },
     "plating": null
   },
-  "achv_quest_e1m8": {
-    "name": "\"Nắm Đấm Hụt\"",
+  "achv_quest_e11m4": {
+    "name": "\"Sợi Dây Nối Về Quá Khứ\"",
     "category": "Chương",
     "group": "Nhiệm Vụ Chính",
     "levels": {
       "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅰ – Tiến Trình I: Quyết Chiến Pháo Đài]",
-        "completeDesc": "Bạn đã đánh bại \"Nắm Đấm Mục Xương\". \nHãy đón nhận Æther và mở ra một tương lai mới? Bạn nghĩ gì về bài diễn thuyết của Nefarith?"
-      }
-    },
-    "plating": null
-  },
-  "achv_quest_e4m1": {
-    "name": "\"Điềm Xấu Tái Hiện\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chuyển Đoạn: Hội Nghị Bốn Bên]",
-        "completeDesc": "Những điềm báo đáng ngại đã xuất hiện khắp Talos-II. Hành trình của bạn vẫn chưa kết thúc."
+        "desc": "Bắc một cây cầu Xiranite băng qua vực sâu",
+        "completeDesc": "Một cây cầu Xiranite nay đã nối liền hiện tại với quá khứ. Con đường phía trước đã rộng mở trước bạn."
       }
     },
     "plating": null
@@ -2097,18 +1945,6 @@
     },
     "plating": null
   },
-  "achv_social_spaceship_help": {
-    "name": "Trợ Thủ Hào Phóng",
-    "category": "Xã Hội",
-    "group": "Xã Hội",
-    "levels": {
-      "1": {
-        "desc": "Hỗ trợ sản xuất tổng cộng 50 lần cho bạn bè",
-        "completeDesc": "Bạn đã hào phóng hỗ trợ sản xuất cho bạn bè. \nLòng vị tha của bạn chính là lý do khiến Talos-II phát triển thịnh vượng."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e11m7": {
     "name": "\"Vết Thương Than Khóc Đến Đây Khép Lại\"",
     "category": "Chương",
@@ -2117,6 +1953,30 @@
       "3": {
         "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅱ – Tiến Trình Ⅶ: Về Nhà]",
         "completeDesc": "Vết thương than khóc sẽ không còn mang đến đau đớn nữa."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m1": {
+    "name": "\"Tiến Vào Thế Giới Trong Tranh\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương II – Tiến Trình VIII: Quán Trọ Trong Tranh]",
+        "completeDesc": "Họ đã nhìn thấy cuộn tranh tuyệt đẹp ấy, rồi tiến sâu hơn vào trong núi."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e12m4": {
+    "name": "\"Thấu Hiểu Chính Mình\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅱ – Tiến Trình Ⅷ: Khảo Nghiệm III - Lối Mở Nơi Không Lối]",
+        "completeDesc": "Để tỏ tường nỗi chấp niệm của ta, và chữa lành những vết thương sâu thẳm nhất."
       }
     },
     "plating": null
@@ -2133,18 +1993,6 @@
     },
     "plating": null
   },
-  "achv_quest_e3m5": {
-    "name": "\"Phong Ấn Khe Nứt\"",
-    "category": "Chương",
-    "group": "Nhiệm Vụ Chính",
-    "levels": {
-      "3": {
-        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅰ – Tiến trình Ⅳ: Tro Tàn Bất Diệt]",
-        "completeDesc": "Bạn và đội của mình đã chiến đấu hết sức và phong ấn khe nứt sắp nuốt chửng toàn bộ Thung Lũng IV."
-      }
-    },
-    "plating": null
-  },
   "achv_quest_e1m2": {
     "name": "\"Lõi Cơ Giới\"",
     "category": "Chương",
@@ -2153,6 +2001,18 @@
       "3": {
         "desc": "Triệu hồi thành quả của một nỗ lực công nghệ vĩ đại",
         "completeDesc": "Tương lai của sự phát triển tiền tuyến đã giáng xuống Thung Lũng IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "\"Nắm Đấm Hụt\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅰ – Tiến Trình I: Quyết Chiến Pháo Đài]",
+        "completeDesc": "Bạn đã đánh bại \"Nắm Đấm Mục Xương\". \nHãy đón nhận Æther và mở ra một tương lai mới? Bạn nghĩ gì về bài diễn thuyết của Nefarith?"
       }
     },
     "plating": null
@@ -2181,14 +2041,38 @@
     },
     "plating": null
   },
-  "achv_quest_gm02m27": {
-    "name": "\"Nguyện Toại Minh Soi Lối\"",
+  "achv_quest_e3m5": {
+    "name": "\"Phong Ấn Khe Nứt\"",
     "category": "Chương",
-    "group": "Nhiệm Vụ Khám Phá",
+    "group": "Nhiệm Vụ Chính",
     "levels": {
-      "2": {
-        "desc": "Hoàn thành nhiệm vụ phụ [Chuông Hồi Tưởng]",
-        "completeDesc": "Tiếng chuông lại ngân vang, lòng ta một lần nữa hướng về ánh sáng."
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chương Ⅰ – Tiến trình Ⅳ: Tro Tàn Bất Diệt]",
+        "completeDesc": "Bạn và đội của mình đã chiến đấu hết sức và phong ấn khe nứt sắp nuốt chửng toàn bộ Thung Lũng IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "\"Điềm Xấu Tái Hiện\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành nhiệm vụ chính [Chuyển Đoạn: Hội Nghị Bốn Bên]",
+        "completeDesc": "Những điềm báo đáng ngại đã xuất hiện khắp Talos-II. Hành trình của bạn vẫn chưa kết thúc."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "\"Đến Võ Lăng Lần Đầu\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Chính",
+    "levels": {
+      "3": {
+        "desc": "Tiếp cận một thành phố hoàn toàn mới",
+        "completeDesc": "Bạn đã đến Thành Phố Võ Lăng."
       }
     },
     "plating": null
@@ -2241,6 +2125,42 @@
     },
     "plating": null
   },
+  "achv_quest_gm02m27": {
+    "name": "\"Nguyện Toại Minh Soi Lối\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Chuông Hồi Tưởng]",
+        "completeDesc": "Tiếng chuông lại ngân vang, lòng ta một lần nữa hướng về ánh sáng."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "\"Để Lửa Thiêu Rụi Quá Khứ Tro Tàn\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Để Lửa Thiêu Rụi Quá Khứ Tro Tàn]",
+        "completeDesc": "Những vết sẹo của ký ức có thể đổi khác trong ngọn lửa. \nDù những mảnh vụn quá khứ đã chất chồng thành những ngọn núi sừng sững, bạn vẫn nắm tay Laevatain và bước ra khỏi hành lang bất tận ấy."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "\"Như Ánh Sao Băng Qua Ranh Giới\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Như Ánh Sao Băng Qua Ranh Giới]",
+        "completeDesc": "Tập Đoàn Endfield cuối cùng cũng có thần tượng đại diện thương hiệu của riêng mình rồi... Chúng ta phải bắt tay vào tập duyệt, lên sân khấu, rồi còn... Ôi trời. Sao mà nhiều việc phải làm thế này."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_mifu": {
     "name": "\"Một Thoáng Suy Ngẫm\"",
     "category": "Chương",
@@ -2253,6 +2173,30 @@
     },
     "plating": null
   },
+  "achv_quest_sm2l10m3": {
+    "name": "\"Một Ngày Đáng Nhớ\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Một Ngày Đáng Nhớ]",
+        "completeDesc": "Thật tuyệt diệu. Một con thú lông vũ biết làm thơ, và một bếp lửa khói vương khiến lòng người rung động."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "\"Mộng Đông Trong Sương Rừng\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Mộng Đông Trong Sương Rừng]",
+        "completeDesc": "Bạn lần theo ánh mắt kiếm tìm, đuổi theo mũi tên dẫn lối, vượt qua gió buốt giữa màn sương và cõi mộng... để rồi nghe thấy dư âm của Người vọng về từ Rừng Tuyết."
+      }
+    },
+    "plating": null
+  },
   "achv_quest_wolfgd": {
     "name": "\"Sói Cô Độc\"",
     "category": "Chương",
@@ -2261,6 +2205,50 @@
       "2": {
         "desc": "Hoàn thành nhiệm vụ phụ [Sói Cô Độc]",
         "completeDesc": "Wulfgard đã biết được sự thật và xử tử kẻ phản bội. \nCậu cắm con dao ấy xuống đất trước ngôi mộ… Tộc Sói đã thay đổi. Trong lòng đã biết được việc cần làm."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "\"Kỵ Sĩ Đỏ\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Kỵ Sĩ Đỏ]",
+        "completeDesc": "Khi đến vương quốc của trẻ con, những lữ khách dừng chân để nghỉ ngơi.\nAi còn nhớ cảm giác bị trầy đầu gối của những mùa tuổi thơ đã bị lãng quên?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "Tình Yêu, Tiếng Thét Và Nguyên Mẫu",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Tình Yêu, Tiếng Thét Và Nguyên Mẫu]",
+        "completeDesc": "Một thùng sơn đã đến trễ. \nBạn theo dấu Tata và tạo ra nhiều bức graffiti khác nhau. Trong những màu sắc này, Yvonne đã nhìn thấy tiềm năng của sự đoàn tụ."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "Tấm Lòng Vị Tha",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "1": {
+        "desc": "Hoàn thành 30 Nhiệm Vụ Khám Phá",
+        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ."
+      },
+      "2": {
+        "desc": "Hoàn thành 40 Nhiệm Vụ Khám Phá",
+        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ. \nKhông phải tất cả đều liên quan đến chiến đấu, và mục tiêu của bạn vượt lên trên cả phần thưởng tiền bạc."
+      },
+      "3": {
+        "desc": "Hoàn thành 50 Nhiệm Vụ Khám Phá",
+        "completeDesc": "Bạn đã giúp đỡ rất nhiều người giải quyết vấn đề của họ. \nNhững người từng nhận được sự giúp đỡ từ bạn sẽ giúp lại người khác. Người dân Talos-II phải học cách hỗ trợ lẫn nhau."
       }
     },
     "plating": null
@@ -2293,6 +2281,18 @@
       "2": {
         "desc": "Nhận tổng cộng 100 lần hỗ trợ sản xuất từ bạn bè",
         "completeDesc": "Các công trình mà bạn trang bị trên Dijiang đang hoạt động hiệu quả, nhờ vào sự giúp đỡ hào phóng từ bạn bè của bạn."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "Trợ Thủ Hào Phóng",
+    "category": "Xã Hội",
+    "group": "Xã Hội",
+    "levels": {
+      "1": {
+        "desc": "Hỗ trợ sản xuất tổng cộng 50 lần cho bạn bè",
+        "completeDesc": "Bạn đã hào phóng hỗ trợ sản xuất cho bạn bè. \nLòng vị tha của bạn chính là lý do khiến Talos-II phát triển thịnh vượng."
       }
     },
     "plating": null

@@ -8,5 +8,9 @@ export interface WeaponData {
     level: number;
     refineLevel: number;
     breakthroughLevel: number;
-    gem?: GemData
+    gem?: GemData;
+    skills?: Array<{
+        level: number;
+        [key: string]: any;
+    }>;
 }

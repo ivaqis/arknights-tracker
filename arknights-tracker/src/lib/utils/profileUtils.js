@@ -69,6 +69,64 @@ export function getWeaponIcon(weapon) {
     return weapon.icon || "";
 }
 
+const SKILL_ALIASES = {
+    attr_str: ["strength", "сила", "str"],
+    attr_atk: ["attack", "atk", "атака"],
+    attr_will: ["will", "воля"],
+    attr_wisd: ["intellect", "wisd", "интеллект"],
+    attr_agi: ["agility", "agi", "ловкость"],
+    attr_hp: ["hp", "оз", "хп"],
+    attr_magicdam: ["arts dmg", "magicdam", "маг. урон", "magic dmg", "arts damage", "урон от искусств"],
+    attr_naturaldam: ["nature dmg", "naturaldam", "урон природы", "nature damage"],
+    attr_pulsedam: ["electric dmg", "pulsedam", "pulse dmg", "элек. урон", "электрический урон"],
+    attr_physpell: ["arts intensity", "physpell", "интенсивность искусств", "физ. заклинания"],
+    attr_phydam: ["physical dmg", "phydam", "физ. урон", "physical damage"],
+    attr_firedam: ["heat dmg", "firedam", "урон теплом", "огненный урон"],
+    attr_icedam: ["cryo dmg", "icedam", "урон холодом", "ледяной урон"],
+    attr_usp: ["ult efficiency", "usp", "эффективность ульты"],
+    attr_heal: ["treatment efficiency", "эффективность лечения"],
+    attr_main: ["main attribute", "основной атрибут"],
+    attr_crirate: ["critical rate", "crirate", "шанс крит. удара", "крит. шанс"],
+    break: ["brutality", "break", "сокрушение", "брейк"],
+    burst: ["detonate", "burst", "детонация", "взрыв", "берст"],
+    combo: ["pursuit", "combo", "преследование", "комбо"],
+    crit: ["fracture", "crit", "разлом", "крит"],
+    force: ["assault", "force", "натиск"],
+    heal: ["medicant", "heal", "лекарь", "лечение", "исцеление"],
+    keyword: ["efficacy", "keyword", "действенность", "эффективность"],
+    magabn: ["infliction", "magabn", "наложение", "аномалия"],
+    phyabn: ["combative", "phyabn", "боевой"],
+    smash: ["crusher", "smash", "сокрушитель"],
+    spirit: ["inspiring", "spirit", "воодушевление", "дух"],
+    tacafter: ["flow", "tacafter", "течение", "поток"],
+    tactic: ["suppression", "tactic", "tactics", "подавление", "тактика"],
+    ult: ["twilight", "ult", "ultimate", "сумерки", "ульта", "абсолютный навык"]
+};
+
+function termMatchesSkill(t, skillId) {
+    if (!t || !skillId) return false;
+    const tid = String(t.id || "").toLowerCase().trim();
+    const tname = String(t.name || "").toLowerCase().trim();
+    const sid = String(skillId).toLowerCase().trim();
+
+    const cleanTid = tid.replace(/^(gat_passive_|gst_passive_|term_|attr_)/, "");
+    const cleanSid = sid.replace(/^(gat_passive_|gst_passive_|term_|attr_)/, "");
+    if (cleanTid && cleanSid && cleanTid === cleanSid) {
+        return true;
+    }
+
+    const aliases = SKILL_ALIASES[sid] || [cleanSid];
+    for (const a of aliases) {
+        if (tname === a || (a.length >= 4 && tname.includes(a))) {
+            return true;
+        }
+        if (tid === a || (a.length >= 4 && tid.includes(a))) {
+            return true;
+        }
+    }
+    return false;
+}
+
 export function getWeaponTerms(wpn) {
     if (!wpn) return [];
     if (Array.isArray(wpn.weaponTerms) && wpn.weaponTerms.length > 0) {
@@ -118,20 +176,13 @@ export function getWeaponTerms(wpn) {
         const gemTerms = gem.terms || gem.skills || gem.gemData?.terms || wpn.terms;
         if (Array.isArray(gemTerms) && gemTerms.length > 0) {
             return baseTerms.map((baseVal, idx) => {
-                const isPassive = rarity === 3 ? idx === 1 : idx === 2;
-                if (isPassive) {
-                    const upper = upperBounds[idx] || 9;
-                    return Math.min(upper, Math.max(1, baseVal));
-                }
                 const skillId = skillKeys[idx];
                 let bonus = 0;
                 const found = skillId
-                    ? gemTerms.find(t => t && (t.id === skillId || (t.id && (skillId.includes(t.id) || t.id.includes(skillId) || t.id.replace(/^term_|^attr_/, '') === skillId.replace(/^term_|^attr_/, '')))))
+                    ? gemTerms.find(t => termMatchesSkill(t, skillId))
                     : null;
                 if (found) {
                     bonus = Number(found.cost ?? found.level ?? found.value ?? 0) || 0;
-                } else if (gemTerms[idx]) {
-                    bonus = Number(gemTerms[idx].cost ?? gemTerms[idx].level ?? gemTerms[idx].value ?? 0) || 0;
                 }
                 const upper = upperBounds[idx] || 9;
                 return Math.min(upper, Math.max(1, baseVal + bonus));

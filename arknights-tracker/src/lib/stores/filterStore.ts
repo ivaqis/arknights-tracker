@@ -62,7 +62,8 @@ export function getOperatorFilters(): OperatorFilterOptions {
             "metadiastimaPhotoemissionTube",
             "tachyonScreeningLattice",
             "quadrantFittingFluid",
-            "triphasicNanoflake"
+            "triphasicNanoflake",
+            "warpPlasmaCoatedSlide"
         ],
         baseSkill: [
             "weaponMaterialEfficiency",

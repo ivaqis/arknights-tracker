@@ -10,13 +10,15 @@ export class Weapon implements IEntityClass<WeaponEntity> {
     private readonly _level: number;
     private readonly _refineLevel: number;
     private readonly _breakthroughLevel: number;
+    private readonly _weaponTerms?: number[];
     private readonly _gem: Gem | null;
 
-    private constructor(entity: { id: string, level: number, refineLevel: number, breakthroughLevel?: number }, gem: Gem | null) {
+    private constructor(entity: { id: string, level: number, refineLevel: number, breakthroughLevel?: number, weaponTerms?: number[] }, gem: Gem | null) {
         this._id = entity.id;
         this._level = entity.level;
         this._refineLevel = entity.refineLevel;
         this._breakthroughLevel = entity.breakthroughLevel ?? 0;
+        this._weaponTerms = entity.weaponTerms;
         this._gem = gem;
     }
 
@@ -38,7 +40,8 @@ export class Weapon implements IEntityClass<WeaponEntity> {
                 id: id,
                 level: data.level,
                 refineLevel: data.refineLevel,
-                breakthroughLevel: data.breakthroughLevel ?? 0
+                breakthroughLevel: data.breakthroughLevel ?? 0,
+                weaponTerms: data.skills?.map(s => s.level)
             },
             Gem.getFromData(data.gem)
         );
@@ -68,6 +71,10 @@ export class Weapon implements IEntityClass<WeaponEntity> {
         return this._breakthroughLevel;
     }
 
+    public get weaponTerms(): number[] | undefined {
+        return this._weaponTerms;
+    }
+
     public get gem(): Gem | null {
         return this._gem;
     }
@@ -79,6 +86,7 @@ export class Weapon implements IEntityClass<WeaponEntity> {
             refineLevel: this._refineLevel,
             breakthroughLevel: this._breakthroughLevel,
             gem: this._gem?.getEntity() ?? null,
+            weaponTerms: this._weaponTerms,
         };
     }
 }

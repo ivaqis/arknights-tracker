@@ -241,15 +241,15 @@ export const warEchoesSeasons = [
     {
         "id": "5",
         "name": "Season of Phantasia",
-        "startTime": "2026-10-14 22:00:00",
+        "startTime": "2026-10-15 06:00:00",
         "startTimeAsia": "2026-10-15 11:00:00",
         "endTime": "2026-11-05 12:00:00",
         "weeks": [
             {
                 "id": "1",
                 "name": "Cycle of Phantasia Ⅰ",
-                "startTime": "2026-10-14 22:00:00",
-                "startTimeAsia": "2026-10-15 11:00:00",
+                "startTime": "2026-10-15 06:00:00",
+                "startTimeAsia": "2026-10-14 17:00:00",
                 "endTime": "2026-10-22 04:00:00",
                 "stages": [
                     {
@@ -758,12 +758,14 @@ export const warEchoesSeasons = [
         "id": "3",
         "name": "Season of Virtuality",
         "startTime": "2026-09-02 06:00:00",
+        "startTimeAsia": "2026-09-01 17:00:00",
         "endTime": "2026-09-24 12:00:00",
         "weeks": [
             {
                 "id": "1",
                 "name": "Cycle of Virtuality Ⅰ",
                 "startTime": "2026-09-02 06:00:00",
+                "startTimeAsia": "2026-09-01 17:00:00",
                 "endTime": "2026-09-09 04:00:00",
                 "stages": [
                     {
@@ -1272,12 +1274,14 @@ export const warEchoesSeasons = [
         "id": "1",
         "name": "Season of Recalling",
         "startTime": "2026-07-16 07:00:00",
+        "startTimeAsia": "2026-07-15 18:00:00",
         "endTime": "2026-08-09 12:00:00",
         "weeks": [
             {
                 "id": "1",
                 "name": "Cycle of Recalling I",
                 "startTime": "2026-07-16 07:00:00",
+                "startTimeAsia": "2026-07-15 18:00:00",
                 "endTime": "2026-07-23 04:00:00",
                 "stages": [
                     {
