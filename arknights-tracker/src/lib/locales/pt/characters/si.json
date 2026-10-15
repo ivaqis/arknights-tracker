@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Ativação da Matriz de Capacidade",
+        "title": "Ativação do Nó de Talentos",
         "text": "Ah! Eis que surge a inspiração! Rápido, não fique aí sem fazer nada! Me dê um pouco de papel!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Tópico: Poder dos Feranmut",
-        "text": "O banco de dados de RH da Endfield tem problemas. Na seção \"Habilidades\", listei doze itens, incluindo artes marciais, literatura, pintura, metalurgia, direito, jardinagem... e então simplesmente apresentou um erro. Como assim, habilidades demais? Falhar ocasionalmente em algo não tira essas habilidades de mim. É melhor você me explicar o que está acontecendo."
+        "text": "O banco de dados de RH da Endfield tem problemas. Na seção \"Habilidades\", listei doze itens, incluindo artes marciais, literatura, pintura, metalurgia, direito, jardinagem... e então simplesmente apresentou um erro. O que você quer dizer com eu tenho habilidades demais? Veja, falhar ocasionalmente em algo não as tira de mim. É melhor você se explicar melhor, ou eu não vou deixar isso ficar assim."
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Primavera e Outono como Tinta"
     },
     "potential2": {
-      "description": "",
+      "description": "Combo de habilidades <@ba.key>Totalmente Idealizado</> melhorado: durante a conjuração, Si ganha ATQ <@ba.vup>+ [{potential2_base:0%} + {potential2_enhance:0%} × (maiores acúmulos de Inflição de Artes <#ba.consume>consumidos</> ou <#ba.absorb>absorvidos</> de um único alvo)]</> por <@ba.vup>{potential2_duration:0}</> s. Esse efeito não pode se acumular.",
       "name": "Três Marcas Profundas na Madeira"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Perfeitamente Composto em Espírito"
     },
     "potential5": {
-      "description": "Combo de habilidades <@ba.key>Totalmente Idealizado</> melhorado: duração do tempo de recarga do combo de habilidades é <@ba.vup>{coolDown:0}</> s e o DNO Causado é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original. Quando acionado, trate o combo de habilidades como tendo <#ba.consume>consumido</> ou <#ba.absorb>absorvido</> 1 acúmulo adicional de inflição.",
+      "description": "Combo de habilidades <@ba.key>Totalmente Idealizado</> melhorado: duração do tempo de recarga do combo de habilidades é <@ba.vup>{coolDown:0}</> s e o DNO Causado é aumentado para <@ba.vup>{atk_scale:0.00}</> vezes o original. Quando acionado, trate o combo de habilidades como tendo <#ba.consume>consumido</> ou <#ba.absorb>absorvido</> 1 acúmulo adicional de inflição.",
       "name": "Leve Toque de Pincel no Branco dos Olhos"
     }
   },

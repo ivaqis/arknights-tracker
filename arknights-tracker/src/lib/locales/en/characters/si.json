@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Ability Matrix Activation",
+        "title": "Talent Node Activation",
         "text": "Ah! Inspiration strikes! Quick, don't just stand there! Give me some paper!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Topic: Feranmut Power",
-        "text": "The Endfield HR database has issues. For the \"Skills\" section, I listed twelve items, including martial arts, literature, painting, metallurgy, law, gardening... and then it just threw an error. What, too many skills? Occasionally failing at something doesn't take those skills away. You'd better give me an explanation of what's going on."
+        "text": "The Endfield HR database has issues. For the \"Skills\" section, I listed twelve items, including martial arts, literature, painting, metallurgy, law, gardening... and then it just threw an error. What do you mean I have too many skills? Look, occasionally failing at something doesn't take them away. You'd better make yourself clear, or I'm not letting this go!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Spring and Autumn as Ink"
     },
     "potential2": {
-      "description": "",
+      "description": "Combo skill <@ba.key>Fully Envisioned</> improved: When casting, Si gains ATK <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%}×(Highest stacks of Arts Infliction <#ba.consume>consumed</> or <#ba.absorb>absorbed</> from a single target)]</> for <@ba.vup>{potential2_duration:0}</>s. This effect cannot stack.",
       "name": "Three Marks Deep in Wood"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Perfectly Composed in Spirit"
     },
     "potential5": {
-      "description": "Combo skill <@ba.key>Fully Envisioned</> improved: Length of combo skill cooldown <@ba.vup>{coolDown:0}</>s and DMG Dealt is increased to <@ba.vup>{atk_scale:0.0}</> times the original. When triggered, treat the combo skill as having <#ba.consume>consumed</> or <#ba.absorb>absorbed</> 1 additional stack of infliction.",
+      "description": "Combo skill <@ba.key>Fully Envisioned</> improved: Length of combo skill cooldown <@ba.vup>{coolDown:0}</>s and DMG Dealt is increased to <@ba.vup>{atk_scale:0.00}</> times the original. When triggered, treat the combo skill as having <#ba.consume>consumed</> or <#ba.absorb>absorbed</> 1 additional stack of infliction.",
       "name": "Brush Dab in Eye's White"
     }
   },

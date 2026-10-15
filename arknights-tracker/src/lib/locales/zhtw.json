@@ -397,7 +397,11 @@
     "weponbox_1_5_2": "點繪申領",
     "special_1_5_2": "絢麗異彩",
     "rerun_chr_yvonne": "絢麗異彩",
-    "rerun_wpn_yvonne": "點繪申領"
+    "rerun_wpn_yvonne": "點繪申領",
+    "special_1_6_1": "萬物更新",
+    "weponbox_1_6_1": "篆玉申領",
+    "rerun_chr_tangtang": "祖泉的新流",
+    "rerun_wpn_tangtang": "細枝申領"
   },
   "pages": {
     "home": "首頁",
@@ -509,7 +513,19 @@
     "orbiPomMerge": "融合！山團團！",
     "purryBigFelineRawr": "我們的大菲林！來襲！",
     "echoingBellOfAndOldCity": "於鐘鳴的舊城",
-    "inkwashedWorldSignIn": "天地墨顯簽到"
+    "inkwashedWorldSignIn": "天地墨顯簽到",
+    "yuanyuansBlazingStoves": "煙火生緣",
+    "allTheInkyHues": "墨分諸彩",
+    "carlysVerdantAntology": "卡莉的芳菲童話",
+    "arenaOfGames": "百趣演武",
+    "indigoExperimentalOperation": "活動-危機合約 浸藍測試作戰",
+    "newEraForTheMyriadSouls": "予眾魂的新光影",
+    "echoesOfWarSeasonOfPhantasia": "異想賽季",
+    "echoesOfWarSeasonOfFervor": "狂熱賽季",
+    "monumentalEtchingForestOfMaras": "豐碑留名·魘林",
+    "protocolPassInkScroll": "協議通行證·墨卷",
+    "spiritsRestorationSignIn": "萬物有靈簽到",
+    "theStarsAreWithMeSignIn": "星河共我簽到"
   },
   "mouths": {
     "january": "一月",
@@ -986,7 +1002,8 @@
     "protoXiranite": "實驗息壤塊",
     "tenderMoss": "柔嫩苔蘚",
     "slugSprig": "蟲角嫩枝",
-    "specialCommemorativePortraitFrame": "齒輪熱力"
+    "specialCommemorativePortraitFrame": "齒輪熱力",
+    "warpPlasmaCoatedSlide": "躍遷漿體塗片"
   },
   "common": {
     "copy": "複製",

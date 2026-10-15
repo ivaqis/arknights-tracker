@@ -177,6 +177,7 @@
   $: updateStatus = (() => {
     const isAsia = currentServerId === "2";
     let target = null;
+    let targetIndex = -1;
 
     for (let i = 0; i < changelogData.length; i++) {
       const v = changelogData[i];
@@ -192,6 +193,7 @@
           endStr,
           endDate: end
         };
+        targetIndex = i;
         break;
       }
     }
@@ -208,6 +210,7 @@
             endStr,
             endDate: parseWithServerOffset(endStr)
           };
+          targetIndex = i;
           break;
         }
       }
@@ -219,11 +222,15 @@
     const maintenanceEndMs = target.endDate.getTime() + 6 * 60 * 60 * 1000;
 
     if (diff <= 0 && now.getTime() < maintenanceEndMs) {
+      const nextV = targetIndex >= 0 && targetIndex + 1 < changelogData.length ? changelogData[targetIndex + 1] : null;
+      const nextStartStr = nextV ? (isAsia && nextV.startTimeAsia ? nextV.startTimeAsia : nextV.startTime) : null;
+      const nextEndStr = nextV ? (isAsia && nextV.endTimeAsia ? nextV.endTimeAsia : nextV.endTime) : null;
+
       return {
         state: "maintenance",
-        version: target.version,
-        formattedStartDate: formatUpdateDate(target.startStr),
-        formattedEndDate: formatUpdateDate(target.endStr),
+        version: nextV?.version ?? "—",
+        formattedStartDate: nextStartStr ? formatUpdateDate(nextStartStr) : formatUpdateDate(target.startStr),
+        formattedEndDate: nextEndStr ? formatUpdateDate(nextEndStr) : formatUpdateDate(target.endStr),
         timeLeft: null,
         urgency: "warning"
       };

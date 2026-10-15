@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Aktivasi Matriks Kemampuan",
+        "title": "Aktivasi Nodus Talent",
         "text": "Ah! Aku dapat inspirasi! Cepat, jangan cuma berdiri di sana! Carikan aku kertas!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Topik: Kekuatan Feranmut",
-        "text": "Basis data SDM Endfield bermasalah. Untuk bagian “Keahlian”, aku mencantumkan dua belas item, termasuk seni bela diri, sastra, melukis, metalurgi, hukum, berkebun ... dan kemudian muncul kesalahan. Apa keahlianku terlalu banyak? Keahlianku tak akan hilang hanya karena beberapa kegagalan. Sebaiknya kau punya penjelasan tentang apa yang terjadi."
+        "text": "Basis data SDM Endfield bermasalah. Untuk bagian “Keahlian”, aku mencantumkan dua belas item, termasuk seni bela diri, sastra, melukis, metalurgi, hukum, berkebun ... dan kemudian muncul kesalahan. Apa maksudmu keahlianku terlalu banyak? Dengar, sesekali gagal di satu bidang bukan berarti keahlian itu sudah hilang. Jelaskan yang sebenarnya, atau aku tak akan tinggal diam!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Spring and Autumn as Ink"
     },
     "potential2": {
-      "description": "",
+      "description": "Skill kombo <@ba.key>Fully Envisioned</> meningkat: Saat digunakan, Si akan mendapatkan ATK <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%} × (Tumpukan Arts Infliction tertinggi yang <#ba.consume>dipakai</> atau <#ba.absorb>diserap</> dari satu target)]</> selama <@ba.vup>{potential2_duration:0}</> dtk. Efek ini tidak bisa ditumpuk.",
       "name": "Three Marks Deep in Wood"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Perfectly Composed in Spirit"
     },
     "potential5": {
-      "description": "Skill kombo <@ba.key>Fully Envisioned</> meningkat: Durasi cooldown skill kombo <@ba.vup>{coolDown:0}</> dtk dan DMG Dealt meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya. Saat diaktifkan, skill kombo akan dianggap sudah <#ba.consume>memakai</> atau <#ba.absorb>menyerap</> 1 tumpukan infliction tambahan.",
+      "description": "Skill kombo <@ba.key>Fully Envisioned</> meningkat: Durasi cooldown skill kombo <@ba.vup>{coolDown:0}</> dtk dan DMG Dealt meningkat menjadi <@ba.vup>{atk_scale:0.00}</> kali nilai aslinya. Saat diaktifkan, skill kombo akan dianggap sudah <#ba.consume>memakai</> atau <#ba.absorb>menyerap</> 1 tumpukan infliction tambahan.",
       "name": "Brush Dab in Eye’s White"
     }
   },

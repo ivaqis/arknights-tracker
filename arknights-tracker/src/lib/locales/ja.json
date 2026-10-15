@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "点描・申請",
     "special_1_5_2": "超爆盛れカラフル",
     "rerun_chr_yvonne": "超爆盛れカラフル",
-    "rerun_wpn_yvonne": "点描・申請"
+    "rerun_wpn_yvonne": "点描・申請",
+    "special_1_6_1": "万象一新",
+    "weponbox_1_6_1": "玉書・申請",
+    "rerun_chr_tangtang": "祖泉の新流",
+    "rerun_wpn_tangtang": "小枝・申請"
   },
   "pages": {
     "home": "ホーム",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "バブル、合体！",
     "purryBigFelineRawr": "でっかいフェリーン！襲来！",
     "echoingBellOfAndOldCity": "鐘の鳴る旧い城で",
-    "inkwashedWorldSignIn": "天地の墨跡スタンプ"
+    "inkwashedWorldSignIn": "天地の墨跡スタンプ",
+    "yuanyuansBlazingStoves": "俗世の縁",
+    "allTheInkyHues": "墨に彩あり",
+    "carlysVerdantAntology": "カーリーの花いろ絵本",
+    "arenaOfGames": "百趣演武",
+    "indigoExperimentalOperation": "イベント - 危機契約 青藍試験作戦",
+    "newEraForTheMyriadSouls": "魂に捧ぐ新たな一幕",
+    "echoesOfWarSeasonOfPhantasia": "奇想シーズン",
+    "echoesOfWarSeasonOfFervor": "狂熱シーズン",
+    "monumentalEtchingForestOfMaras": "記憶の痕・呪林",
+    "protocolPassInkScroll": "協約通行証・墨画",
+    "spiritsRestorationSignIn": "万物宿魂スタンプ",
+    "theStarsAreWithMeSignIn": "天河と共にスタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -947,7 +963,8 @@
     "protoXiranite": "実験用息壌ブロック",
     "tenderMoss": "柔らかな苔",
     "slugSprig": "触角の若枝",
-    "specialCommemorativePortraitFrame": "エネルギーの歯車"
+    "specialCommemorativePortraitFrame": "エネルギーの歯車",
+    "warpPlasmaCoatedSlide": "遷移スラリー塗抹標本"
   },
   "common": {
     "copy": "コピー",

@@ -443,7 +443,11 @@
     "weponbox_1_5_2": "Tag Artist Issue",
     "special_1_5_2": "Resplendent Spectrum",
     "rerun_chr_yvonne": "Resplendent Spectrum",
-    "rerun_wpn_yvonne": "Tag Artist Issue"
+    "rerun_wpn_yvonne": "Tag Artist Issue",
+    "special_1_6_1": "Rejuvenation",
+    "weponbox_1_6_1": "Seal of Jade Issue",
+    "rerun_chr_tangtang": "Ancestral Spring Flows Anew",
+    "rerun_wpn_tangtang": "Tender Sprig Issue"
   },
   "pages": {
     "home": "Home",
@@ -573,7 +577,19 @@
     "orbiPomMerge": "OrbiPom! MERGE!",
     "purryBigFelineRawr": "Purry Big Feline! RAWR!",
     "echoingBellOfAndOldCity": "Echoing Bell of an Old City",
-    "inkwashedWorldSignIn": "Inkwashed World Sign-In"
+    "inkwashedWorldSignIn": "Inkwashed World Sign-In",
+    "yuanyuansBlazingStoves": "Yuanyuan's Blazing Stoves",
+    "allTheInkyHues": "All the Inky Hues",
+    "carlysVerdantAntology": "Carly's Verdant Anthology",
+    "arenaOfGames": "Arena of Games",
+    "indigoExperimentalOperation": "Contingency Contract: Indigo Experimental Operation",
+    "newEraForTheMyriadSouls": "New Era for the Myriad Souls",
+    "echoesOfWarSeasonOfPhantasia": "Season of Phantasia",
+    "echoesOfWarSeasonOfFervor": "Season of Fervor",
+    "monumentalEtchingForestOfMaras": "Monumental Etching: Forest of Maras",
+    "protocolPassInkScroll": "Protocol Pass: Ink Scroll",
+    "spiritsRestorationSignIn": "Spirit's Restoration Sign-In",
+    "theStarsAreWithMeSignIn": "The Stars Are With Me Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -1163,7 +1179,8 @@
     "protoXiranite": "Proto Xiranite",
     "tenderMoss": "Tender Moss",
     "slugSprig": "Slug Sprig",
-    "specialCommemorativePortraitFrame": "Heat-Driven Cog"
+    "specialCommemorativePortraitFrame": "Heat-Driven Cog",
+    "warpPlasmaCoatedSlide": "Warp Plasma-Coated Slide"
   },
   "common": {
     "copy": "Copy",

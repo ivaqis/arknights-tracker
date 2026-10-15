@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "Ah ! Je sens venir l'inspiration ! Vite, ne restez pas là à me regarder ! Trouvez-moi du papier !"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Thème : le pouvoir du feranmouth",
-        "text": "La base de données des RH d'Endfield a des soucis. Dans la section « Compétences », j'ai indiqué douze domaines, dont arts martiaux, littérature, peinture, métallurgie, droit, jardinage… et là, ça a planté. Quoi, trop de compétences ? Un échec de temps en temps n'invalide pas ces talents. Vous feriez mieux de m'expliquer ce qui se passe."
+        "text": "La base de données des RH d'Endfield a des soucis. Dans la section « Compétences », j'ai indiqué douze domaines, dont arts martiaux, littérature, peinture, métallurgie, droit, jardinage... et là, ça a planté. Quoi, vous voulez dire que j'ai trop de compétences ? Écoutez, un échec de temps en temps n'invalide pas ces talents. Vous feriez mieux de m'expliquer ça clairement, parce que je ne compte pas en rester là !"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Le printemps et l'automne tels de l'encre"
     },
     "potential2": {
-      "description": "",
+      "description": "Renforce la compétence de combo <@ba.key>Vision parachevée</> : lors de son utilisation, Si gagne <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%}×(nombre le plus élevé de cumuls d'altération des Arts <#ba.consume>consommés</> ou <#ba.absorb>absorbés</> sur une seule cible)]</> d'ATQ pendant <@ba.vup>{potential2_duration:0}</> s. L'effet ne peut pas être cumulé.",
       "name": "Trois marques gravées dans le bois"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Composition parfaite dans l'esprit"
     },
     "potential5": {
-      "description": "Renforce la compétence de combo <@ba.key>Vision parachevée</> : la durée du temps de recharge de la compétence de combo est de <@ba.vup>{coolDown:0}</> s et les DÉG infligés sont multipliés par <@ba.vup>{atk_scale:0.0}</>. Lors de l'activation, la compétence de combo est considérée comme ayant <#ba.consume>consommé</> ou <#ba.absorb>absorbé</> 1 cumul supplémentaire d'altération.",
+      "description": "Renforce la compétence de combo <@ba.key>Vision parachevée</> : la durée du temps de recharge de la compétence de combo est de <@ba.vup>{coolDown:0}</> s et les DÉG infligés sont multipliés par <@ba.vup>{atk_scale:0.00}</>. Lors de l'activation, la compétence de combo est considérée comme ayant <#ba.consume>consommé</> ou <#ba.absorb>absorbé</> 1 cumul supplémentaire d'altération.",
       "name": "Une touche de pinceau dans le blanc de l'œil"
     }
   },

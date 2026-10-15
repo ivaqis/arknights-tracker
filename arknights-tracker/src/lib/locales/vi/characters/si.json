@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Kích Hoạt Ma Trận Năng Lực",
+        "title": "Kích hoạt Mốc Thiên Phú",
         "text": "A! Cảm hứng đến rồi. Nhanh lên, đừng đứng ngây ra đó! Mau lấy giấy cho tôi!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Chủ Đề: Sức Mạnh Cự Thú",
-        "text": "Cơ sở dữ liệu HR của Endfield có vấn đề rồi. Trong mục \"Kỹ Năng\", tôi đã liệt kê mười hai sở trường, gồm võ thuật, văn chương, hội họa, luyện kim, luật pháp, làm vườn... thế mà hệ thống lại báo lỗi. Sao, quá nhiều kỹ năng à? Thỉnh thoảng thất bại một lần cũng đâu có nghĩa là tôi không còn sở trường ấy. Tốt nhất ngài nên giải thích rõ xem chuyện này là thế nào."
+        "text": "Cơ sở dữ liệu HR của Endfield có vấn đề rồi. Trong mục \"Kỹ Năng\", tôi đã liệt kê mười hai sở trường, gồm võ thuật, văn chương, hội họa, luyện kim, luật pháp, làm vườn... thế mà hệ thống lại báo lỗi. Sao, quá nhiều kỹ năng à? Thỉnh thoảng thất bại một lần cũng đâu có nghĩa là tôi không còn sở trường ấy. Tốt nhất ngài nên giải thích rõ xem chuyện này là thế nào, nếu không tôi sẽ không bỏ qua đâu!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Xuân Thu Vi Mặc"
     },
     "potential2": {
-      "description": "",
+      "description": "KN liên hoàn <@ba.key>Họa Ý Viên Mãn</> được cường hóa: Khi thi triển, Si nhận Tấn Công <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%}×(Số tầng Nhiễm Thuật Pháp cao nhất được <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> từ một mục tiêu)]</> trong <@ba.vup>{potential2_duration:0}</> giây. Hiệu ứng này không thể cộng dồn.",
       "name": "Nhập Mộc Tam Phân"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Thần Ý Viên Mãn"
     },
     "potential5": {
-      "description": "KN liên hoàn <@ba.key>Họa Ý Viên Mãn</> được cường hóa: Thời gian hồi KN liên hoàn <@ba.vup>{coolDown:0}</> giây và ST Gây Ra tăng lên bằng <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu. Khi kích hoạt, xem như KN liên hoàn đã <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> thêm 1 tầng Nhiễm.",
+      "description": "KN liên hoàn <@ba.key>Họa Ý Viên Mãn</> được cường hóa: Thời gian hồi KN liên hoàn <@ba.vup>{coolDown:0}</> giây và ST Gây Ra tăng lên bằng <@ba.vup>{atk_scale:0.00}</> lần so với ban đầu. Khi kích hoạt, xem như KN liên hoàn đã <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> thêm 1 tầng Nhiễm.",
       "name": "Điểm Bút Khai Nhãn"
     }
   },

@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "ตั๋ว​ศิลปิน​แท็ก",
     "special_1_5_2": "สเปกตรัม​เจิด​จรัส",
     "rerun_chr_yvonne": "สเปกตรัม​เจิด​จรัส",
-    "rerun_wpn_yvonne": "ตั๋ว​ศิลปิน​แท็ก"
+    "rerun_wpn_yvonne": "ตั๋ว​ศิลปิน​แท็ก",
+    "special_1_6_1": "การฟื้น​คืน​ใหม่",
+    "weponbox_1_6_1": "ตั๋ว​ตรา​หยก",
+    "rerun_chr_tangtang": "น้ำพุ​แห่ง​บรรพบุรุษ​หลั่งไหล​ใน​ครา​ใหม่",
+    "rerun_wpn_tangtang": "ตั๋ว​หน่อ​อ่อนนุ่ม"
   },
   "pages": {
     "home": "หน้าแรก",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom! รวม​!",
     "purryBigFelineRawr": "ฟี​ไลน์​ตัว​โต​แสน​นุ่ม​ฟู​! โฮก​!",
     "echoingBellOfAndOldCity": "เสียง​ระฆัง​ก้องกังวาน​แห่ง​เมือง​เก่า",
-    "inkwashedWorldSignIn": "ลงชื่อ​เข้าสู่ระบบ​โลก​ภาพ​พู่กัน​หมึก"
+    "inkwashedWorldSignIn": "ลงชื่อ​เข้าสู่ระบบ​โลก​ภาพ​พู่กัน​หมึก",
+    "yuanyuansBlazingStoves": "ครัว​หยวน​หยวน​กระทะ​ไฟแรง",
+    "allTheInkyHues": "พรรณ​สี​แห่ง​น้ำหมึก",
+    "carlysVerdantAntology": "บันทึก​พฤกษา​ของ​คาร์​ลี",
+    "arenaOfGames": "ศึก​ประชัน​ลาน​ประลอง",
+    "indigoExperimentalOperation": "สัญญา​ฉุกเฉิน​: ปฏิบัติการ​ทดลอง​สีคราม",
+    "newEraForTheMyriadSouls": "ยุคสมัย​ใหม่​แห่ง​มวล​วิญญาณ",
+    "echoesOfWarSeasonOfPhantasia": "ฤดูกาล​แห่ง​แฟน​ตา​เซีย",
+    "echoesOfWarSeasonOfFervor": "ฤดูกาล​แห่ง​เพลิง​คลั่ง",
+    "monumentalEtchingForestOfMaras": "การแกะสลัก​อนุสรณ์​: ป่า​มา​ราส",
+    "protocolPassInkScroll": "บัตร​ผ่าน​โปร​โต​คอล​: ม้วน​ภาพ​หมึก",
+    "spiritsRestorationSignIn": "ลงชื่อ​เข้าสู่​ระ​บ​การฟื้นฟู​จิตวิญญาณ",
+    "theStarsAreWithMeSignIn": "ลงชื่อ​เข้าสู่ระบบ​แล้ว​รับ​ดวงดาว​เคียงข้าง​ฉัน"
   },
   "mouths": {
     "january": "มกราคม",
@@ -947,7 +963,8 @@
     "protoXiranite": "โปร​โต​ซี​เรน​ไนต์",
     "tenderMoss": "มอส​นุ่มนวล",
     "slugSprig": "หน่อ​อ่อน​ทาก",
-    "specialCommemorativePortraitFrame": "เฟือง​ขับเคลื่อนด้วย​ความร้อน"
+    "specialCommemorativePortraitFrame": "เฟือง​ขับเคลื่อนด้วย​ความร้อน",
+    "warpPlasmaCoatedSlide": "แผ่น​สไลด์​เคลือบ​พลาสมา​วาร์​ป"
   },
   "common": {
     "copy": "คัดลอก",

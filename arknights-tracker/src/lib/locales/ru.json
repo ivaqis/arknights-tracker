@@ -443,7 +443,11 @@
     "weponbox_1_5_2": "Поставка «Теггер»",
     "special_1_5_2": "Красочный блеск",
     "rerun_chr_yvonne": "Красочный блеск",
-    "rerun_wpn_yvonne": "Поставка «Теггер»"
+    "rerun_wpn_yvonne": "Поставка «Теггер»",
+    "special_1_6_1": "Преображение",
+    "weponbox_1_6_1": "Поставка «Нефритовая печать»",
+    "rerun_chr_tangtang": "Новый поток родника предков",
+    "rerun_wpn_tangtang": "Поставка «Нежный побег»"
   },
   "pages": {
     "home": "Главная",
@@ -573,7 +577,19 @@
     "orbiPomMerge": "OrbiPom! СЛИЯНИЕ!",
     "purryBigFelineRawr": "Большая мурчащая фелин! Р-Р-Р!",
     "echoingBellOfAndOldCity": "Эхо колокола старого города",
-    "inkwashedWorldSignIn": "Вход «Чернильный мир»"
+    "inkwashedWorldSignIn": "Вход «Чернильный мир»",
+    "yuanyuansBlazingStoves": "Пылающие плиты Юаньюань",
+    "allTheInkyHues": "Все оттенки чернил",
+    "carlysVerdantAntology": "Зеленая антология Карли",
+    "arenaOfGames": "Игровая арена",
+    "indigoExperimentalOperation": "Чрезвычайный контракт: экспериментальная операция «Индиго»",
+    "newEraForTheMyriadSouls": "Новая эра для сонма душ",
+    "echoesOfWarSeasonOfPhantasia": "Сезон фантазий",
+    "echoesOfWarSeasonOfFervor": "Сезон рвения",
+    "monumentalEtchingForestOfMaras": "Памятные знаки: Лес Марас",
+    "protocolPassInkScroll": "Протопропуск «Чернильный свиток»",
+    "spiritsRestorationSignIn": "Вход «Возрождение духа»",
+    "theStarsAreWithMeSignIn": "Вход «Звезды со мной»"
   },
   "mouths": {
     "january": "Январь",
@@ -1164,7 +1180,8 @@
     "protoXiranite": "Протоксиранит",
     "tenderMoss": "Мягкий мох",
     "slugSprig": "Росток слизня",
-    "specialCommemorativePortraitFrame": "Тепловая шестерня"
+    "specialCommemorativePortraitFrame": "Тепловая шестерня",
+    "warpPlasmaCoatedSlide": "Стекло с варп-плазменным покрытием"
   },
   "common": {
     "copy": "Копировать",

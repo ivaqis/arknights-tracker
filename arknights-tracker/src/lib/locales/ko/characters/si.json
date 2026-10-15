@@ -541,7 +541,7 @@
       "name": "세월을 먹 삼아"
     },
     "potential2": {
-      "description": "",
+      "description": "연계 스킬 <@ba.key>먹빛은 이미 정해졌으니</>를 사용할 때, 공격력 <@ba.vup>+[{potential2_base:0%}+{potential2_enhance:0%}×<#ba.consume>소모</> 또는 <#ba.absorb>흡수</>한 부착의 최대 스택 수치]</>, <@ba.vup>{potential2_duration:0}</>초 동안 지속되며, 중첩되지 않습니다.",
       "name": "나무에 석 자를 새기고"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "정신을 가다듬으며"
     },
     "potential5": {
-      "description": "연계 스킬 <@ba.key>먹빛은 이미 정해졌으니</>의 쿨타임 <@ba.vup>{coolDown:0}</>초, 피해가 기존의 <@ba.vup>{atk_scale:0.0}</>배로 증가합니다. 발동 시, 부착 1스택이 추가로 <#ba.consume>소모</>되거나 <#ba.absorb>흡수</>된 것으로 간주합니다.",
+      "description": "연계 스킬 <@ba.key>먹빛은 이미 정해졌으니</>의 쿨타임 <@ba.vup>{coolDown:0}</>초, 피해가 기존의 <@ba.vup>{atk_scale:0.00}</>배로 증가합니다. 발동 시, 부착 1스택이 추가로 <#ba.consume>소모</>되거나 <#ba.absorb>흡수</>된 것으로 간주합니다.",
       "name": "마침내 눈동자를 찍으리라"
     }
   },

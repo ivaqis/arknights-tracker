@@ -553,7 +553,7 @@
       "name": "完善精神"
     },
     "potential5": {
-      "description": "连携技<@ba.key>成竹在胸</>冷却时间<@ba.vup>{coolDown:0}</>秒，伤害提升至原本的<@ba.vup>{atk_scale:0.0}</>倍，触发时视为额外1层附着被<#ba.consume>消耗</>或<#ba.absorb>吸收</>。",
+      "description": "连携技<@ba.key>成竹在胸</>冷却时间<@ba.vup>{coolDown:0}</>秒，伤害提升至原本的<@ba.vup>{atk_scale:0.00}</>倍，触发时视为额外1层附着被<#ba.consume>消耗</>或<#ba.absorb>吸收</>。",
       "name": "点睛之笔"
     }
   },

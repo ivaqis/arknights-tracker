@@ -1509,8 +1509,8 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev7-v1.6",
-        title: "events.newEraForTheMyraidSouls",
-        name: "New Era for the Myraid Souls",
+        title: "events.newEraForTheMyriadSouls",
+        name: "New Era for the Myriad Souls",
         startTime: "2026-10-31 12:00:00",
         endTime: "2026-11-25 17:00:00",
         endTimeAsia: "2026-11-14 04:00:00",
@@ -1570,7 +1570,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev10-v1.6",
-        title: "events.",
+        title: "events.monumentalEtchingForestOfMaras",
         name: "Monumental Etching: Forest of Maras",
         startTime: "2026-10-22 12:00:00",
         endTime: "2026-11-05 04:00:00",
@@ -1599,7 +1599,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev10-v1.6",
-        title: "events.",
+        title: "events.protocolPassInkScroll",
         name: "Protocol Pass: Ink Scroll",
         startTime: "2026-10-14 22:00:00",
         startTimeAsia: "2026-10-15 11:00:00",
@@ -1612,7 +1612,7 @@ export const rawEvents: GenericEventData[] = [
         type: "protoPass",
         iconPosition: 40,
         version: "1.6",
-        passWeapons: ["sufferingsEnd"]
+        passWeapons: ["longHeritage", "complexedIndustry"]
     },
     {
         id: "ev11-v1.6",
@@ -1631,7 +1631,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev12-v1.6",
-        title: "events.",
+        title: "events.spiritsRestorationSignIn",
         name: "Spirit's Restoration",
         startTime: "2026-10-14 22:00:00",
         startTimeAsia: "2026-10-15 11:00:00",
@@ -1646,7 +1646,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev13-v1.6",
-        title: "events.",
+        title: "events.theStarsAreWithMeSignIn",
         name: "The Stars Are With Me",
         startTime: "2026-11-05 12:00:00",
         endTime: "2026-11-25 17:00:00",

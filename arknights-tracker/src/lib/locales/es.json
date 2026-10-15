@@ -395,7 +395,11 @@
     "weponbox_1_5_2": "Solicitud de Artista del grafiti",
     "special_1_5_2": "Espectro resplandeciente",
     "rerun_chr_yvonne": "Espectro resplandeciente",
-    "rerun_wpn_yvonne": "Solicitud de Artista del grafiti"
+    "rerun_wpn_yvonne": "Solicitud de Artista del grafiti",
+    "special_1_6_1": "Rejuvenecimiento",
+    "weponbox_1_6_1": "Solicitud de Sello de jade",
+    "rerun_chr_tangtang": "El Manantial Ancestral Fluye Renovado",
+    "rerun_wpn_tangtang": "Solicitud del Brote tierno"
   },
   "pages": {
     "home": "Inicio",
@@ -507,7 +511,19 @@
     "orbiPomMerge": "¡OrbiPom! ¡FUSIÓN!",
     "purryBigFelineRawr": "¡Gran felino ronroneante! ¡GRRR!",
     "echoingBellOfAndOldCity": "El eco de la campana de una ciudad antigua",
-    "inkwashedWorldSignIn": "Inicio de sesión de Mundo bañado en tinta"
+    "inkwashedWorldSignIn": "Inicio de sesión de Mundo bañado en tinta",
+    "yuanyuansBlazingStoves": "Fogones ardientes de Yuanyuan",
+    "allTheInkyHues": "Todos los matices de tinta",
+    "carlysVerdantAntology": "La Antología floreciente de Carly",
+    "arenaOfGames": "Arena de juegos",
+    "indigoExperimentalOperation": "Contrato de Contingencia: Operación experimental índigo",
+    "newEraForTheMyriadSouls": "Nueva era para las Incontables almas",
+    "echoesOfWarSeasonOfPhantasia": "Temporada de fantasía",
+    "echoesOfWarSeasonOfFervor": "Temporada de fervor",
+    "monumentalEtchingForestOfMaras": "Grabado monumental: Bosque de Maras",
+    "protocolPassInkScroll": "Pase de protocolo: Pergamino de tinta",
+    "spiritsRestorationSignIn": "Inicio de sesión de Restauración del espíritu",
+    "theStarsAreWithMeSignIn": "Inicio de sesión de Las estrellas están conmigo"
   },
   "mouths": {
     "january": "Enero",
@@ -948,7 +964,8 @@
     "protoXiranite": "Prototipo de Xiranita",
     "tenderMoss": "Musgo tierno",
     "slugSprig": "Brote de babosa",
-    "specialCommemorativePortraitFrame": "Termodinámica de engranajes"
+    "specialCommemorativePortraitFrame": "Termodinámica de engranajes",
+    "warpPlasmaCoatedSlide": "Lámina recubierta con plasma Warp"
   },
   "common": {
     "copy": "Copiar",

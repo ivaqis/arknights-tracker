@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Attivazione matrice delle abilità",
+        "title": "Attivazione nodo talento",
         "text": "Ah! Un'ispirazione improvvisa! Veloce, non startene lì così! Mi serve della carta!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Argomento: potere dei Feranmut",
-        "text": "Il database delle risorse umane della Endfield presenta dei problemi. Nella sezione \"Abilità\" ho elencato dodici voci, tra cui arti marziali, letteratura, pittura, metallurgia, legge, giardinaggio... e poi ha segnalato un errore. Che c'è? Troppe cose? Fallire ogni tanto di certo non cancella queste abilità. Faresti meglio a darmi una spiegazione su cosa sta succedendo."
+        "text": "Il database delle risorse umane della Endfield presenta dei problemi. Nella sezione \"Abilità\" ho elencato dodici voci, tra cui arti marziali, letteratura, pittura, metallurgia, legge, giardinaggio... e poi ha segnalato un errore. In che senso avrei troppe abilità? Guarda, fallire ogni tanto non le cancella di certo. Faresti meglio a spiegarti. Non intendo lasciar perdere la questione!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Primavera e autunno come inchiostro"
     },
     "potential2": {
-      "description": "",
+      "description": "Abilità combo <@ba.key>Tutto in mente</> migliorata: quando la usa, Si ottiene ATT <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%} × (maggior numero di accumuli di Afflizione da Arti <#ba.consume>consumati</> o <#ba.absorb>assorbiti</> da un singolo bersaglio)]</> per <@ba.vup>{potential2_duration:0}</> s. Questo effetto non si accumula.",
       "name": "Tre segni incisi nel legno"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Spirito perfettamente composto"
     },
     "potential5": {
-      "description": "Abilità combo <@ba.key>Tutto in mente</> migliorata: tempo di recupero dell'abilità combo <@ba.vup>{coolDown:0}</> s e danni inflitti aumentati a <@ba.vup>{atk_scale:0.0}</> volte il valore originale. All'attivazione, considera come <#ba.consume>consumato</> o <#ba.absorb>assorbito</> 1 accumulo di Afflizione aggiuntivo.",
+      "description": "Abilità combo <@ba.key>Tutto in mente</> migliorata: tempo di recupero dell'abilità combo <@ba.vup>{coolDown:0}</> s e danni inflitti aumentati a <@ba.vup>{atk_scale:0.00}</> volte il valore originale. All'attivazione, considera come <#ba.consume>consumato</> o <#ba.absorb>assorbito</> 1 accumulo di Afflizione aggiuntivo.",
       "name": "Il tocco finale"
     }
   },

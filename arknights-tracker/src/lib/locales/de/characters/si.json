@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Fähigkeitsmatrix-Aktivierung",
+        "title": "Talentknoten-Aktivierung",
         "text": "Ah! Die Muse küsst mich! Steh da nicht so rum, los jetzt! Gib mir einen Bogen Papier!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Thema: Feranmut-Energie",
-        "text": "Mit dieser Endfield-Personal-Datenbank stimmt etwas nicht. Ich habe unter „Fertigkeiten“ zwölf Punkte angegeben, darunter Kampfkunst, Literatur, Malen, Metallurgie, Rechtswissenschaften, Gartenbau … und dann kam eine Fehlermeldung. Wie, das waren zu viele Fertigkeiten? Nur weil nicht immer alles perfekt läuft, nimmt mir diese Fertigkeiten niemand weg. Erklär mir lieber mal, was da los ist."
+        "text": "Mit dieser Endfield-Personal-Datenbank stimmt etwas nicht. Ich habe unter „Fertigkeiten“ zwölf Punkte angegeben, darunter Kampfkunst, Literatur, Malen, Metallurgie, Rechtswissenschaften, Gartenbau … und dann kam eine Fehlermeldung. Was soll das heißen, ich hätte zu viele Fähigkeiten? Sieh mal, nur weil nicht immer alles perfekt läuft, nimmt mir die niemand weg. Du solltest dich lieber klar ausdrücken, sonst lass ich das nicht auf sich beruhen!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Frühling und Herbst in Tinte"
     },
     "potential2": {
-      "description": "",
+      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Beim Wirken erhält Si für <@ba.vup>{potential2_duration:0}</> Sek. ANG <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%} × (höchste Anzahl <#ba.consume>verbrauchter</> oder <#ba.absorb>absorbierter</> Kumulierungen von Technikkumulierung eines einzelnen Ziels)]</>. Dieser Effekt kann nicht kumuliert werden.",
       "name": "Drei tiefe Zeichen im Holz"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Perfekte geistige Ruhe"
     },
     "potential5": {
-      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Länge der Kombofertigkeit-Abklingzeit <@ba.vup>{coolDown:0}</> Sek. und der verursachte SDN steigt auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts. Wenn ausgelöst, wird die Kombofertigkeit so behandelt, als wäre 1 zusätzliche Kumulierung <#ba.consume>verbraucht</>/<#ba.absorb>absorbiert</> worden.",
+      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Länge der Kombofertigkeit-Abklingzeit <@ba.vup>{coolDown:0}</> Sek. und der verursachte SDN steigt auf das <@ba.vup>{atk_scale:0.00}</>-Fache des ursprünglichen Werts. Wenn ausgelöst, wird die Kombofertigkeit so behandelt, als wäre 1 zusätzliche Kumulierung <#ba.consume>verbraucht</>/<#ba.absorb>absorbiert</> worden.",
       "name": "Pinseltupfer in der Pupille"
     }
   },

@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "점묘 신청",
     "special_1_5_2": "찬란한 색채",
     "rerun_chr_yvonne": "찬란한 색채",
-    "rerun_wpn_yvonne": "점묘 신청"
+    "rerun_wpn_yvonne": "점묘 신청",
+    "special_1_6_1": "만물의 재구성",
+    "weponbox_1_6_1": "전옥 신청",
+    "rerun_chr_tangtang": "선조의 샘의 새로운 물결",
+    "rerun_wpn_tangtang": "가지 신청"
   },
   "pages": {
     "home": "홈",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "융합! 버블!",
     "purryBigFelineRawr": "우리의 거대한 필라인이 왔다!",
     "echoingBellOfAndOldCity": "옛 도시의 종소리",
-    "inkwashedWorldSignIn": "천지에 번지는 먹빛 출석 체크"
+    "inkwashedWorldSignIn": "천지에 번지는 먹빛 출석 체크",
+    "yuanyuansBlazingStoves": "불꽃으로 맺은 인연",
+    "allTheInkyHues": "먹에서 피어난 색채",
+    "carlysVerdantAntology": "칼리의 꽃과 풀 동화",
+    "arenaOfGames": "다채로운 연무",
+    "indigoExperimentalOperation": "이벤트 - 위기 협약 · 잿빛 실험 작전",
+    "newEraForTheMyriadSouls": "모든 영혼에 바치는 새로운 빛과 그림자",
+    "echoesOfWarSeasonOfPhantasia": "이색의 회상",
+    "echoesOfWarSeasonOfFervor": "열광의 회상",
+    "monumentalEtchingForestOfMaras": "기억의 흔적 · 악몽의 숲",
+    "protocolPassInkScroll": "프로토콜 통행증 · 묵권",
+    "spiritsRestorationSignIn": "만물의 영혼 출석 체크",
+    "theStarsAreWithMeSignIn": "은하수와 함께 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -947,7 +963,8 @@
     "protoXiranite": "실험용 식양 덩어리",
     "tenderMoss": "부드러운 이끼",
     "slugSprig": "벌레 나뭇가지",
-    "specialCommemorativePortraitFrame": "열동력 톱니바퀴"
+    "specialCommemorativePortraitFrame": "열동력 톱니바퀴",
+    "warpPlasmaCoatedSlide": "도약 교질 도말 표본"
   },
   "common": {
     "copy": "복사",

@@ -155,7 +155,7 @@
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
-        "title": "Activación de la Matriz de habilidades",
+        "title": "Activación de Nodo de talento",
         "text": "¡Ah! ¡Me llega la inspiración! ¡Rápido, no te quedes ahí! ¡Dame un papel!"
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Tema: Poder de Feranmut",
-        "text": "La Base de datos de RR. HH. de Endfield tiene problemas. Para la sección de “Habilidades”, hice una lista de doce objetos, incluidas las artes marciales, la literatura, la pintura, la metalúrgica, el derecho, la jardinería... y luego arrojó un error. ¿Qué, demasiadas habilidades? Fracasar ocasionalmente en algo no te quita esas habilidades. Será mejor que me des una explicación de lo que está pasando."
+        "text": "La Base de datos de RR. HH. de Endfield tiene problemas. Para la sección de “Habilidades”, hice una lista de doce objetos, incluidas las artes marciales, la literatura, la pintura, la metalúrgica, el derecho, la jardinería... y luego arrojó un error. ¿Qué quieres decir con que tengo demasiadas habilidades? Mira, fracasar ocasionalmente en algo no te las quita. Será mejor que te expliques, ¡o no dejaré esto a un lado!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Primavera y otoño como tinta"
     },
     "potential2": {
-      "description": "",
+      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Cuando se lanza, Si gana <@ba.vup> de ATQ + [{potential2_base:0%} + {potential2_enhance:0%} × (las acumulaciones más altas de Imposición de artes <#ba.consume>consumidas</> o <#ba.absorb>absorbidas</> de un solo objetivo)]</> durante <@ba.vup>{potential2_duration:0}</> s. Este efecto no se puede acumular.",
       "name": "Tres marcas profundas en la madera"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "Perfectamente compuesto en espíritu"
     },
     "potential5": {
-      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Duración del tiempo de reutilización de la habilidad de combo <@ba.vup>{coolDown:0}</> s y el DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.0}</> veces el original. Al activarse, considera que la habilidad de combo <#ba.consume>consumió</> o <#ba.absorb>absorbió</> 1 acumulación adicional de Imposición.",
+      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Duración del tiempo de reutilización de la habilidad de combo <@ba.vup>{coolDown:0}</> s y el DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.00}</> veces el original. Al activarse, considera que la habilidad de combo <#ba.consume>consumió</> o <#ba.absorb>absorbió</> 1 acumulación adicional de Imposición.",
       "name": "Pincelada en el blanco del ojo"
     }
   },

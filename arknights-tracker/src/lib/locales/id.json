@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "Edisi Gaya Seniman",
     "special_1_5_2": "Spektrum Cerah",
     "rerun_chr_yvonne": "Spektrum Cerah",
-    "rerun_wpn_yvonne": "Edisi Gaya Seniman"
+    "rerun_wpn_yvonne": "Edisi Gaya Seniman",
+    "special_1_6_1": "Rejuvenasi",
+    "weponbox_1_6_1": "Edisi Stempel Giok",
+    "rerun_chr_tangtang": "Mata Air Leluhur Kembali Mengalir",
+    "rerun_wpn_tangtang": "Edisi Tunas Muda"
   },
   "pages": {
     "home": "Beranda",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom! MERGE!",
     "purryBigFelineRawr": "Feline Besar Gemas! RAWR!",
     "echoingBellOfAndOldCity": "Gema Lonceng Kota Tua",
-    "inkwashedWorldSignIn": "Sign In Dunia Berlumur Tinta"
+    "inkwashedWorldSignIn": "Sign In Dunia Berlumur Tinta",
+    "yuanyuansBlazingStoves": "Dapur Membara Yuanyuan",
+    "allTheInkyHues": "Semua Rona Tinta",
+    "carlysVerdantAntology": "Antologi Hijau Carly",
+    "arenaOfGames": "Arena of Games",
+    "indigoExperimentalOperation": "Kontrak Kontingensi: Operasi Eksperimen Indigo",
+    "newEraForTheMyriadSouls": "Era Baru bagi Jiwa Tak Terhitung",
+    "echoesOfWarSeasonOfPhantasia": "Musim Fantasia",
+    "echoesOfWarSeasonOfFervor": "Musim Gelora",
+    "monumentalEtchingForestOfMaras": "Pengukiran Monumental: Hutan Maras",
+    "protocolPassInkScroll": "Tiket Akses Protokol: Gulungan Tinta",
+    "spiritsRestorationSignIn": "Sign-In Pemulihan Roh",
+    "theStarsAreWithMeSignIn": "Sign-In Bintang-Bintang Menyertaiku"
   },
   "mouths": {
     "january": "Januari",
@@ -947,7 +963,8 @@
     "protoXiranite": "Proto Xiranite",
     "tenderMoss": "Lumut Muda",
     "slugSprig": "Tunas Siput",
-    "specialCommemorativePortraitFrame": "Roda Gigi Tenaga Panas"
+    "specialCommemorativePortraitFrame": "Roda Gigi Tenaga Panas",
+    "warpPlasmaCoatedSlide": "Sisipan Lapis Plasma Terdistorsi"
   },
   "common": {
     "copy": "Salin",

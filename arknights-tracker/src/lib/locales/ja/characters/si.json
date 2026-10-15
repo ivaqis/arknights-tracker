@@ -541,7 +541,7 @@
       "name": "春秋、墨と為す"
     },
     "potential2": {
-      "description": "",
+      "description": "連携技<@ba.key>「胸中に成竹在り」</>発動時、<@ba.vup>{potential2_duration:0}</>秒間攻撃力<@ba.vup>+[{potential2_base:0%}+{potential2_enhance:0%}×<#ba.consume>消費</>または<#ba.absorb>吸収</>した最大付着段階数]</>（重ね掛け不可）",
       "name": "一筆入魂"
     },
     "potential3": {
@@ -553,7 +553,7 @@
       "name": "精神を全きものとす"
     },
     "potential5": {
-      "description": "連携技<@ba.key>「胸中に成竹在り」</>のCD時間<@ba.vup>{coolDown:0}</>秒、ダメージが<@ba.vup>{atk_scale:0.0}</>倍までアップする\n発動可能になるとき、付着が1段階多く<#ba.consume>消費</>または<#ba.absorb>吸収</>したものと見なされる",
+      "description": "連携技<@ba.key>「胸中に成竹在り」</>のCD時間<@ba.vup>{coolDown:0}</>秒、ダメージが<@ba.vup>{atk_scale:0.00}</>倍までアップする\n発動可能になるとき、付着が1段階多く<#ba.consume>消費</>または<#ba.absorb>吸収</>したものと見なされる",
       "name": "点睛の一筆"
     }
   },

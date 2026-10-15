@@ -190,5 +190,10 @@ export const progression = [
         id: "crimsonSpearleaf",
         name: "Crimson Spearleaf",
         rarity: 5
+    },
+    {
+        id: "warpPlasmaCoatedSlide",
+        name: "Warp Plasma-Coated Slide",
+        rarity: 5
     }
 ]

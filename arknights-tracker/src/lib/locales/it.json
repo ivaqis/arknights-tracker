@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "Distribuzione Artista dei graffiti",
     "special_1_5_2": "Spettro radioso",
     "rerun_chr_yvonne": "Spettro radioso",
-    "rerun_wpn_yvonne": "Distribuzione Artista dei graffiti"
+    "rerun_wpn_yvonne": "Distribuzione Artista dei graffiti",
+    "special_1_6_1": "Rinnovamento",
+    "weponbox_1_6_1": "Distribuzione Sigillo di giada",
+    "rerun_chr_tangtang": "La fonte ancestrale scorre rinnovata",
+    "rerun_wpn_tangtang": "Distribuzione Rametto tenero"
   },
   "pages": {
     "home": "Home",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom! FUSIONE!",
     "purryBigFelineRawr": "Felinar che fa le fusa! GRRR!",
     "echoingBellOfAndOldCity": "Campana che riecheggia di una città antica",
-    "inkwashedWorldSignIn": "Accesso Mondo d'inchiostro"
+    "inkwashedWorldSignIn": "Accesso Mondo d'inchiostro",
+    "yuanyuansBlazingStoves": "Fornelli roventi di Yuanyuan",
+    "allTheInkyHues": "Tutte le sfumature d'inchiostro",
+    "carlysVerdantAntology": "Antologia verdeggiante di Carly",
+    "arenaOfGames": "Arena dei giochi",
+    "indigoExperimentalOperation": "Contratto di emergenza: Operazione sperimentale indaco",
+    "newEraForTheMyriadSouls": "Una nuova era per la miriade di anime",
+    "echoesOfWarSeasonOfPhantasia": "Stagione della fantasia",
+    "echoesOfWarSeasonOfFervor": "Stagione del fervore",
+    "monumentalEtchingForestOfMaras": "Incisione monumentale: Foresta degli incubi",
+    "protocolPassInkScroll": "Pass protocollare: pergamena d'inchiostro",
+    "spiritsRestorationSignIn": "Accesso a Rinascita dello spirito",
+    "theStarsAreWithMeSignIn": "Accesso a Le stelle sono con me"
   },
   "mouths": {
     "january": "Gennaio",
@@ -947,7 +963,8 @@
     "protoXiranite": "Xiranite prototipo",
     "tenderMoss": "Muschio tenero",
     "slugSprig": "Ramoscello di lumaca",
-    "specialCommemorativePortraitFrame": "Ingranaggio azionato dal calore"
+    "specialCommemorativePortraitFrame": "Ingranaggio azionato dal calore",
+    "warpPlasmaCoatedSlide": "Vetrino ricoperto di plasma distorto"
   },
   "common": {
     "copy": "Copia",

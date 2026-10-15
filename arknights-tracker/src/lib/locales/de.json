@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "Künstler-Schriftzug-Ausgabe",
     "special_1_5_2": "Strahlendes Spektrum",
     "rerun_chr_yvonne": "Strahlendes Spektrum",
-    "rerun_wpn_yvonne": "Künstler-Schriftzug-Ausgabe"
+    "rerun_wpn_yvonne": "Künstler-Schriftzug-Ausgabe",
+    "special_1_6_1": "Erneuerung",
+    "weponbox_1_6_1": "Jadesiegel-Ausgabe",
+    "rerun_chr_tangtang": "Die Ahnenquelle sprudelt erneut",
+    "rerun_wpn_tangtang": "Zarter-Zweig-Ausgabe"
   },
   "pages": {
     "home": "Home",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom! VERSCHMELZEN!",
     "purryBigFelineRawr": "Schnurrende Große Felin! GRRR!",
     "echoingBellOfAndOldCity": "Die nachhallende Glocke einer alten Stadt",
-    "inkwashedWorldSignIn": "„Tuschegezeichnete Welt“-Anmeldung"
+    "inkwashedWorldSignIn": "„Tuschegezeichnete Welt“-Anmeldung",
+    "yuanyuansBlazingStoves": "Yuanyuans brennende Herde",
+    "allTheInkyHues": "Tuschenuancen",
+    "carlysVerdantAntology": "Carlys Grüne Anthologie",
+    "arenaOfGames": "Arena der Spiele",
+    "indigoExperimentalOperation": "Krisenschutzvertrag: Versuchseinsatz Indigo",
+    "newEraForTheMyriadSouls": "Neues Zeitalter für die unzähligen Seelen",
+    "echoesOfWarSeasonOfPhantasia": "Saison der Phantasie",
+    "echoesOfWarSeasonOfFervor": "Saison des Eifers",
+    "monumentalEtchingForestOfMaras": "Monumentales Ätzen: Maras-Wald",
+    "protocolPassInkScroll": "Protokollpass: Tintenschriftrolle",
+    "spiritsRestorationSignIn": "Wiederherstellung des Geistes – Anmeldung",
+    "theStarsAreWithMeSignIn": "Die Sterne sind mit mir – Anmeldung"
   },
   "mouths": {
     "january": "Januar",
@@ -947,7 +963,8 @@
     "protoXiranite": "Proto-Xiranit",
     "tenderMoss": "Zartmoos",
     "slugSprig": "Schneckenspross",
-    "specialCommemorativePortraitFrame": "Hitzebetriebenes Zahnrad"
+    "specialCommemorativePortraitFrame": "Hitzebetriebenes Zahnrad",
+    "warpPlasmaCoatedSlide": "Dia mit Zeitschleifen-Plasmabeschichtung"
   },
   "common": {
     "copy": "Kopieren",

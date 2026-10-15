@@ -241,13 +241,15 @@ export const warEchoesSeasons = [
     {
         "id": "5",
         "name": "Season of Phantasia",
-        "startTime": "2026-10-15 06:00:00",
+        "startTime": "2026-10-14 22:00:00",
+        "startTimeAsia": "2026-10-15 11:00:00",
         "endTime": "2026-11-05 12:00:00",
         "weeks": [
             {
                 "id": "1",
                 "name": "Cycle of Phantasia Ⅰ",
-                "startTime": "2026-10-15 06:00:00",
+                "startTime": "2026-10-14 22:00:00",
+                "startTimeAsia": "2026-10-15 11:00:00",
                 "endTime": "2026-10-22 04:00:00",
                 "stages": [
                     {

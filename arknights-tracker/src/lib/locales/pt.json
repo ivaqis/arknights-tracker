@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "Distribuição Grafiteiro",
     "special_1_5_2": "Espectro Resplandecente",
     "rerun_chr_yvonne": "Espectro Resplandecente",
-    "rerun_wpn_yvonne": "Distribuição Grafiteiro"
+    "rerun_wpn_yvonne": "Distribuição Grafiteiro",
+    "special_1_6_1": "Rejuvenescimento",
+    "weponbox_1_6_1": "Distribuição Selo de Jade",
+    "rerun_chr_tangtang": "O Novo Fluxo da Fonte Ancestral",
+    "rerun_wpn_tangtang": "Distribuição Broto Tenro"
   },
   "pages": {
     "home": "Início",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom! COMBINAR!",
     "purryBigFelineRawr": "Grande Felina Ronronante! RAWR!",
     "echoingBellOfAndOldCity": "Sino Ecoante de uma Antiga Cidade",
-    "inkwashedWorldSignIn": "Login em Mundo à Aguada"
+    "inkwashedWorldSignIn": "Login em Mundo à Aguada",
+    "yuanyuansBlazingStoves": "Fogões em Chamas de Yuanyuan",
+    "allTheInkyHues": "Todos os Tons de Tinta",
+    "carlysVerdantAntology": "Antologia Verdejante de Carly",
+    "arenaOfGames": "Arena de Jogos",
+    "indigoExperimentalOperation": "Contrato de Contingência: Operação Experimental Índigo",
+    "newEraForTheMyriadSouls": "Uma Nova Era Para as Inúmeras Almas",
+    "echoesOfWarSeasonOfPhantasia": "Temporada da Fantasia",
+    "echoesOfWarSeasonOfFervor": "Temporada do Fervor",
+    "monumentalEtchingForestOfMaras": "Entalhe Monumental: Floresta de Maras",
+    "protocolPassInkScroll": "Passe do Protocolo: Pergaminho de Tinta",
+    "spiritsRestorationSignIn": "Login em Restauração do Espírito",
+    "theStarsAreWithMeSignIn": "Login em As Estrelas Estão Comigo"
   },
   "mouths": {
     "january": "Janeiro",
@@ -947,7 +963,8 @@
     "protoXiranite": "Xiranita Proto",
     "tenderMoss": "Musgo Tenro",
     "slugSprig": "Broto de Lesma",
-    "specialCommemorativePortraitFrame": "Engrenagem com Acionamento Térmico"
+    "specialCommemorativePortraitFrame": "Engrenagem com Acionamento Térmico",
+    "warpPlasmaCoatedSlide": "Lâmina Coberta com Plasma de Deformação"
   },
   "common": {
     "copy": "Copiar",

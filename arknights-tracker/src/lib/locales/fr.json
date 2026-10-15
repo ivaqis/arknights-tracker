@@ -394,7 +394,11 @@
     "weponbox_1_5_2": "Tirage de graffeuse",
     "special_1_5_2": "Spectre resplendissant",
     "rerun_chr_yvonne": "Spectre resplendissant",
-    "rerun_wpn_yvonne": "Tirage de graffeuse"
+    "rerun_wpn_yvonne": "Tirage de graffeuse",
+    "special_1_6_1": "Renouvellement",
+    "weponbox_1_6_1": "Tirage de sceau de jade",
+    "rerun_chr_tangtang": "La source ancestrale jaillit à nouveau",
+    "rerun_wpn_tangtang": "Tirage de tendre brindille"
   },
   "pages": {
     "home": "Accueil",
@@ -506,7 +510,19 @@
     "orbiPomMerge": "OrbiPom ! FUSION !",
     "purryBigFelineRawr": "Grande Feli ronronneuse ! GROAR !",
     "echoingBellOfAndOldCity": "L'écho de la cloche d'une vieille ville",
-    "inkwashedWorldSignIn": "Connexion - Le monde du lavis d'encre"
+    "inkwashedWorldSignIn": "Connexion - Le monde du lavis d'encre",
+    "yuanyuansBlazingStoves": "Fourneaux brûlants de Yuanyuan",
+    "allTheInkyHues": "Toutes les teintes d'encre",
+    "carlysVerdantAntology": "Anthologie verdoyante de Carly",
+    "arenaOfGames": "Arène des jeux",
+    "indigoExperimentalOperation": "Contrat de crise : Opération expérimentale indigo",
+    "newEraForTheMyriadSouls": "Nouvelle ère pour la myriade d'âmes",
+    "echoesOfWarSeasonOfPhantasia": "Saison du fantastique",
+    "echoesOfWarSeasonOfFervor": "Saison de la ferveur",
+    "monumentalEtchingForestOfMaras": "Gravure monumentale : forêt de Maras",
+    "protocolPassInkScroll": "Pass de Protocole : Parchemin d'encre",
+    "spiritsRestorationSignIn": "Connexion - Restauration de l'esprit",
+    "theStarsAreWithMeSignIn": "Connexion - Les étoiles sont avec moi"
   },
   "mouths": {
     "january": "Janvier",
@@ -947,7 +963,8 @@
     "protoXiranite": "Proto-xiranite",
     "tenderMoss": "Mousse tendre",
     "slugSprig": "Pousse de limace",
-    "specialCommemorativePortraitFrame": "Engrenage thermique"
+    "specialCommemorativePortraitFrame": "Engrenage thermique",
+    "warpPlasmaCoatedSlide": "Lame de distorsion enduite de plasma"
   },
   "common": {
     "copy": "Copier",

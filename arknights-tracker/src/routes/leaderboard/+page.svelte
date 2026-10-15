@@ -58,13 +58,30 @@
         return new Date(iso);
     }
 
-    $: visibleMonumentGroups = monumentGroups.filter(g => {
-        const isAsia = serverFilter === '2';
-        const startStr = isAsia && g.startTimeAsia ? g.startTimeAsia : g.startTime;
-        if (!startStr) return true;
-        const startDate = parseWithServerOffset(startStr, isAsia ? '2' : '3');
-        return now >= startDate;
-    });
+    function isEventStarted(item) {
+        if (!item) return true;
+        if (serverFilter === '2') {
+            const str = item.startTimeAsia || item.startTime;
+            if (!str) return true;
+            return now >= parseWithServerOffset(str, '2');
+        }
+        if (serverFilter === '3') {
+            const str = item.startTime;
+            if (!str) return true;
+            return now >= parseWithServerOffset(str, '3');
+        }
+        const westStr = item.startTime;
+        const asiaStr = item.startTimeAsia || item.startTime;
+        const westDate = westStr ? parseWithServerOffset(westStr, '3') : null;
+        const asiaDate = asiaStr ? parseWithServerOffset(asiaStr, '2') : null;
+        if (!westDate && !asiaDate) return true;
+        if (westDate && asiaDate) {
+            return now >= westDate || now >= asiaDate;
+        }
+        return now >= (westDate || asiaDate);
+    }
+
+    $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g));
 
     $: monumentGroupOptions = visibleMonumentGroups.map(g => ({
         value: g.id,
@@ -85,7 +102,9 @@
         }
     }
 
-    $: warEchoesSeasonOptions = warEchoesSeasons.map(s => ({
+    $: visibleWarEchoesSeasons = warEchoesSeasons.filter(s => isEventStarted(s));
+
+    $: warEchoesSeasonOptions = visibleWarEchoesSeasons.map(s => ({
         value: s.id,
         label: $t(`warEchoesSeasons.${s.id}`),
         subLabel: formatDateRange(s.startTime, s.endTime, $currentLocale)
@@ -172,13 +191,19 @@
 
     $: currentStage = currentGroup?.stages?.find(s => s.id === selectedStageId) || currentGroup?.stages?.[0];
 
-    $: currentSeason = warEchoesSeasons.find(s => s.id === selectedWarEchoesSeason) || warEchoesSeasons[0];
-
-    $: if (currentSeason && !currentSeason.weeks.some(w => w.id === selectedWarEchoesCycle)) {
-        selectedWarEchoesCycle = currentSeason.weeks[0]?.id || "1";
+    $: if (visibleWarEchoesSeasons.length > 0 && !visibleWarEchoesSeasons.some(s => s.id === selectedWarEchoesSeason)) {
+        selectedWarEchoesSeason = visibleWarEchoesSeasons[0].id;
     }
 
-    $: currentCycle = currentSeason?.weeks?.find(w => w.id === selectedWarEchoesCycle) || currentSeason?.weeks?.[0];
+    $: currentSeason = visibleWarEchoesSeasons.find(s => s.id === selectedWarEchoesSeason) || visibleWarEchoesSeasons[0] || warEchoesSeasons[0];
+
+    $: visibleWeeks = (currentSeason?.weeks || []).filter(w => isEventStarted(w));
+
+    $: if (visibleWeeks.length > 0 && !visibleWeeks.some(w => w.id === selectedWarEchoesCycle)) {
+        selectedWarEchoesCycle = visibleWeeks[0]?.id || "1";
+    }
+
+    $: currentCycle = visibleWeeks.find(w => w.id === selectedWarEchoesCycle) || visibleWeeks[0] || currentSeason?.weeks?.[0];
 
     $: if (currentCycle && !currentCycle.stages.some(s => s.id === selectedWarEchoesStageId)) {
         selectedWarEchoesStageId = currentCycle.stages[0]?.id || "indie_battletower001";
@@ -663,7 +688,7 @@
                         {$t(`warEchoesSeasons.${selectedWarEchoesSeason}`)}
                     </span>
                     <div class="flex flex-wrap gap-2">
-                        {#each currentSeason.weeks as week}
+                        {#each (visibleWeeks.length ? visibleWeeks : currentSeason.weeks) as week}
                             <button
                                 type="button"
                                 on:click={() => selectedWarEchoesCycle = week.id}

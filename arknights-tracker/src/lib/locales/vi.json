@@ -397,7 +397,11 @@
     "weponbox_1_5_2": "Gói Rút Thẻ Họa Sĩ",
     "special_1_5_2": "Sắc Màu Rực Rỡ",
     "rerun_chr_yvonne": "Sắc Màu Rực Rỡ",
-    "rerun_wpn_yvonne": "Gói Rút Thẻ Họa Sĩ"
+    "rerun_wpn_yvonne": "Gói Rút Thẻ Họa Sĩ",
+    "special_1_6_1": "Tân Sinh",
+    "weponbox_1_6_1": "Gói Rút Ấn Ngọc Bích",
+    "rerun_chr_tangtang": "Tân Dòng Suối Tiền Nhân",
+    "rerun_wpn_tangtang": "Gói Rút Nhánh Non"
   },
   "pages": {
     "home": "Trang chủ",
@@ -509,7 +513,19 @@
     "orbiPomMerge": "OrbiPom! HỢP NHẤT!",
     "purryBigFelineRawr": "Feline Rù Rì! RAWR!",
     "echoingBellOfAndOldCity": "Chuông Ngân Cựu Thành",
-    "inkwashedWorldSignIn": "Điểm Danh Cõi Mặc Họa"
+    "inkwashedWorldSignIn": "Điểm Danh Cõi Mặc Họa",
+    "yuanyuansBlazingStoves": "Bếp Lò Rực Lửa của Yuanyuan",
+    "allTheInkyHues": "Muôn Sắc Mực",
+    "carlysVerdantAntology": "Tuyển Tập Sắc Biếc Của Carly",
+    "arenaOfGames": "Đấu Trường Du Hí",
+    "indigoExperimentalOperation": "Hợp Đồng Điều Kiện: Chiến Dịch Thử Nghiệm Lam Chàm",
+    "newEraForTheMyriadSouls": "Ánh Hình Mới Cho Vô Số Linh Hồn",
+    "echoesOfWarSeasonOfPhantasia": "Mùa Kỳ Tưởng",
+    "echoesOfWarSeasonOfFervor": "Mùa Cuồng Nhiệt",
+    "monumentalEtchingForestOfMaras": "Văn Khắc Kỷ Niệm: Rừng Maras",
+    "protocolPassInkScroll": "Thẻ Giao Thức: Cuộn Tranh Thủy Mặc",
+    "spiritsRestorationSignIn": "Điểm Danh Linh Hồn Tái Sinh",
+    "theStarsAreWithMeSignIn": "Điểm Danh Có Sao Trời Bên Tôi"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -986,7 +1002,8 @@
     "protoXiranite": "Xiranite Nguyên Mẫu",
     "tenderMoss": "Rêu Non",
     "slugSprig": "Mầm Sên",
-    "specialCommemorativePortraitFrame": "Bánh Răng Nhiệt Động"
+    "specialCommemorativePortraitFrame": "Bánh Răng Nhiệt Động",
+    "warpPlasmaCoatedSlide": "Lam Kính Phủ Plasma Biến Dạng Không-Thời"
   },
   "common": {
     "copy": "Sao chép",
