@@ -15,7 +15,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower017",
                         "hardId": "indie_battletower017_s",
                         "brutalId": "indie_battletower017_ex",
-                        "name": "Avenger File: Bonekrusher - Normal",
+                        "name": "Avenger File: Bonekrusher",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0066_lbhunt2",
@@ -38,7 +38,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower019",
                         "hardId": "indie_battletower019_s",
                         "brutalId": "indie_battletower019_ex",
-                        "name": "Construct File: Geist - Normal",
+                        "name": "Construct File: Geist",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0127_bigents"
@@ -88,7 +88,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower020",
                         "hardId": "indie_battletower020_s",
                         "brutalId": "indie_battletower020_ex",
-                        "name": "Defense File: Shield - Normal",
+                        "name": "Defense File: Shield",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0074_lbshield"
@@ -200,7 +200,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower016",
                         "hardId": "indie_battletower016_s",
                         "brutalId": "indie_battletower016_ex",
-                        "name": "Glaiver File: Yinglung - Normal",
+                        "name": "Glaiver File: Yinglung",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0124_kltdcap"
@@ -256,7 +256,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower015",
                         "hardId": "indie_battletower015_s",
                         "brutalId": "indie_battletower015_ex",
-                        "name": "Blightshade File: Thunderclap - Normal",
+                        "name": "Blightshade File: Thunderclap",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0120_klbear"
@@ -275,7 +275,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower018",
                         "hardId": "indie_battletower018_s",
                         "brutalId": "indie_battletower018_ex",
-                        "name": "Beast File: Qingbo Stockade - Normal",
+                        "name": "Beast File: Qingbo Stockade",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0055_hscrane",
@@ -337,7 +337,7 @@ export const warEchoesSeasons = [
                         "id": "indie_battletower016",
                         "hardId": "indie_battletower016_s",
                         "brutalId": "indie_battletower016_ex",
-                        "name": "Glaiver File: Yinglung - Normal",
+                        "name": "Glaiver File: Yinglung",
                         "picPath": "",
                         "enemyIds": [
                             "eny_0124_kltdcap"

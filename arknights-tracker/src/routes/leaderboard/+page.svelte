@@ -716,7 +716,7 @@
                                         ? 'bg-[#FFE145] border-[#FFE145] text-gray-900 shadow-sm'
                                         : 'bg-white dark:bg-[#383838] border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300 hover:border-gray-300 dark:hover:border-white/20'}"
                                 >
-                                    {dungeonLocales[stage.id]?.name ? dungeonLocales[stage.id].name.replace(/:\s*(Normal|Hard|Brutal|обычная|сложная|жестокая).*$/i, '').trim() : stage.name}
+                                    {dungeonLocales[stage.id]?.name ? dungeonLocales[stage.id].name.replace(/[:—\-\u00a0]+\s*(Normal|Hard|Brutal|обычная|сложная|жестокая|обычный|сложный|жестокий).*$/i, '').trim() : stage.name}
                                 </button>
                             {/each}
                         </div>

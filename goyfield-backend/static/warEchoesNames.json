@@ -166,5 +166,173 @@
   {
     "id": "indie_battletower004_ex",
     "name": "Age of Axes: Brutal"
+  },
+  {
+    "id": "indie_battletower015",
+    "name": "Blightshade File: Thunderclap"
+  },
+  {
+    "id": "indie_battletower015",
+    "name": "Blightshade File: Thunderclap - Normal"
+  },
+  {
+    "id": "indie_battletower015",
+    "name": "Blightshade File: Thunderclap: Normal"
+  },
+  {
+    "id": "indie_battletower015_s",
+    "name": "Blightshade File: Thunderclap: Hard"
+  },
+  {
+    "id": "indie_battletower015_s",
+    "name": "Blightshade File: Thunderclap - Hard"
+  },
+  {
+    "id": "indie_battletower015_ex",
+    "name": "Blightshade File: Thunderclap: Brutal"
+  },
+  {
+    "id": "indie_battletower015_ex",
+    "name": "Blightshade File: Thunderclap - Brutal"
+  },
+  {
+    "id": "indie_battletower016",
+    "name": "Glaiver File: Yinglung"
+  },
+  {
+    "id": "indie_battletower016",
+    "name": "Glaiver File: Yinglung - Normal"
+  },
+  {
+    "id": "indie_battletower016",
+    "name": "Glaiver File: Yinglung: Normal"
+  },
+  {
+    "id": "indie_battletower016_s",
+    "name": "Glaiver File: Yinglung: Hard"
+  },
+  {
+    "id": "indie_battletower016_s",
+    "name": "Glaiver File: Yinglung - Hard"
+  },
+  {
+    "id": "indie_battletower016_ex",
+    "name": "Glaiver File: Yinglung: Brutal"
+  },
+  {
+    "id": "indie_battletower016_ex",
+    "name": "Glaiver File: Yinglung - Brutal"
+  },
+  {
+    "id": "indie_battletower017",
+    "name": "Avenger File: Bonekrusher"
+  },
+  {
+    "id": "indie_battletower017",
+    "name": "Avenger File: Bonekrusher - Normal"
+  },
+  {
+    "id": "indie_battletower017",
+    "name": "Avenger File: Bonekrusher: Normal"
+  },
+  {
+    "id": "indie_battletower017_s",
+    "name": "Avenger File: Bonekrusher: Hard"
+  },
+  {
+    "id": "indie_battletower017_s",
+    "name": "Avenger File: Bonekrusher - Hard"
+  },
+  {
+    "id": "indie_battletower017_ex",
+    "name": "Avenger File: Bonekrusher: Brutal"
+  },
+  {
+    "id": "indie_battletower017_ex",
+    "name": "Avenger File: Bonekrusher - Brutal"
+  },
+  {
+    "id": "indie_battletower018",
+    "name": "Beast File: Qingbo Stockade"
+  },
+  {
+    "id": "indie_battletower018",
+    "name": "Beast File: Qingbo Stockade - Normal"
+  },
+  {
+    "id": "indie_battletower018",
+    "name": "Beast File: Qingbo Stockade: Normal"
+  },
+  {
+    "id": "indie_battletower018_s",
+    "name": "Beast File: Qingbo Stockade: Hard"
+  },
+  {
+    "id": "indie_battletower018_s",
+    "name": "Beast File: Qingbo Stockade - Hard"
+  },
+  {
+    "id": "indie_battletower018_ex",
+    "name": "Beast File: Qingbo Stockade: Brutal"
+  },
+  {
+    "id": "indie_battletower018_ex",
+    "name": "Beast File: Qingbo Stockade - Brutal"
+  },
+  {
+    "id": "indie_battletower019",
+    "name": "Construct File: Geist"
+  },
+  {
+    "id": "indie_battletower019",
+    "name": "Construct File: Geist - Normal"
+  },
+  {
+    "id": "indie_battletower019",
+    "name": "Construct File: Geist: Normal"
+  },
+  {
+    "id": "indie_battletower019_s",
+    "name": "Construct File: Geist: Hard"
+  },
+  {
+    "id": "indie_battletower019_s",
+    "name": "Construct File: Geist - Hard"
+  },
+  {
+    "id": "indie_battletower019_ex",
+    "name": "Construct File: Geist: Brutal"
+  },
+  {
+    "id": "indie_battletower019_ex",
+    "name": "Construct File: Geist - Brutal"
+  },
+  {
+    "id": "indie_battletower020",
+    "name": "Defense File: Shield"
+  },
+  {
+    "id": "indie_battletower020",
+    "name": "Defense File: Shield - Normal"
+  },
+  {
+    "id": "indie_battletower020",
+    "name": "Defense File: Shield: Normal"
+  },
+  {
+    "id": "indie_battletower020_s",
+    "name": "Defense File: Shield: Hard"
+  },
+  {
+    "id": "indie_battletower020_s",
+    "name": "Defense File: Shield - Hard"
+  },
+  {
+    "id": "indie_battletower020_ex",
+    "name": "Defense File: Shield: Brutal"
+  },
+  {
+    "id": "indie_battletower020_ex",
+    "name": "Defense File: Shield - Brutal"
   }
 ]
