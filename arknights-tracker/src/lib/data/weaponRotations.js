@@ -404,6 +404,54 @@ export const weaponRotations = {
       "weekly6": "chivalricVirtues",
       "weekly5": "objVelocitous",
       "dailyTemplate": "B"
+    },
+    {
+      "week": 39,
+      "startDate": "2026/10/15",
+      "endDate": "2026/10/22",
+      "weekly6": "eminentRepute",
+      "weekly5": "freedomToProselytize",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 40,
+      "startDate": "2026/10/22",
+      "endDate": "2026/10/29",
+      "weekly6": "formerFinery",
+      "weekly5": "objVelocitous",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 41,
+      "startDate": "2026/10/29",
+      "endDate": "2026/11/05",
+      "weekly6": "valiant",
+      "weekly5": "sunderingSteel",
+      "dailyTemplate": "B"
+    },
+    {
+      "week": 42,
+      "startDate": "2026/11/05",
+      "endDate": "2026/11/12",
+      "weekly6": "detonationUnit",
+      "weekly5": "finishingCall",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 43,
+      "startDate": "2026/11/12",
+      "endDate": "2026/11/19",
+      "weekly6": "clannibal",
+      "weekly5": "objRazorhorn",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 44,
+      "startDate": "2026/11/19",
+      "endDate": "2026/11/25",
+      "weekly6": "sunderedPrince",
+      "weekly5": "sunderingSteel",
+      "dailyTemplate": "B"
     }
   ]
 };
