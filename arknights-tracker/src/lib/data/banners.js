@@ -785,7 +785,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "weponbox_1_6_1",
+    id: "weaponbox_1_6_1",
     name: "Seal of Jade Issue",
     type: "weapon",
     startTime: "2026-10-14 22:00:00",
@@ -796,8 +796,8 @@ export const banners = [
     featured5: [],
     isServerTime: true,
     timezone: "UTC+8",
-    icon: "weponbox_1_6_1.webp",
-    miniIcon: "weponbox_1_6_1.webp",
+    icon: "weaponbox_1_6_1.webp",
+    miniIcon: "weaponbox_1_6_1.webp",
     url: "https://x.com/AKEndfield/status/2110317190012662177?s=20",
     officialUrl: "https://endfield.gryphline.com/en-us/news/2652",
     layer: 12,

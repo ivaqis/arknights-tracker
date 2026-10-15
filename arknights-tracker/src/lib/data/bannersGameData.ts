@@ -5307,5 +5307,175 @@ export const bannersGameData: readonly BannerGameData[] = [
                 "rarity": 4
             }
         ]
+    },
+    {
+        "id": "weaponbox_1_6_1",
+        "name": "Seal of Jade Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-10-15 07:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-10-14 18:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_claym_0018"
+        ],
+        "hardGuaranteed": [
+            "wpn_claym_0018"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_claym_0018",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
     }
 ];

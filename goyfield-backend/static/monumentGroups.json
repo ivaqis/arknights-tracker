@@ -94,16 +94,31 @@
   {
     "id": "indie_group_h07",
     "hardDungeons": [
-      "indie_hard029_s",
       "indie_hard026_s",
+      "indie_hard027_s",
       "indie_hard028_s",
-      "indie_hard027_s"
+      "indie_hard029_s"
     ],
     "normalDungeons": [
-      "indie_hard029",
       "indie_hard026",
+      "indie_hard027",
       "indie_hard028",
-      "indie_hard027"
+      "indie_hard029"
+    ]
+  },
+  {
+    "id": "indie_group_h08",
+    "hardDungeons": [
+      "indie_hard030_s",
+      "indie_hard031_s",
+      "indie_hard032_s",
+      "indie_hard033_s"
+    ],
+    "normalDungeons": [
+      "indie_hard030",
+      "indie_hard031",
+      "indie_hard032",
+      "indie_hard033"
     ]
   }
 ]

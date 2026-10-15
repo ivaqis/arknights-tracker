@@ -384,6 +384,10 @@
     "name": "AIC Fieldwork Medic Armor"
   },
   {
+    "id": "item_equip_t4_parts_wuling00_body_06",
+    "name": "AIC Fieldwork CQB Armor"
+  },
+  {
     "id": "item_equip_t4_parts_wuling00_edc_01",
     "name": "AIC Fieldwork Machete"
   },
@@ -404,6 +408,10 @@
     "name": "AIC Fieldwork Power Bank"
   },
   {
+    "id": "item_equip_t4_parts_wuling00_edc_06",
+    "name": "AIC Fieldwork CQB Hacksaw"
+  },
+  {
     "id": "item_equip_t4_parts_wuling00_hand_01",
     "name": "AIC Fieldwork Gloves"
   },
@@ -422,6 +430,10 @@
   {
     "id": "item_equip_t4_parts_wuling00_hand_05",
     "name": "AIC Fieldwork Medic Gloves"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_06",
+    "name": "AIC Fieldwork CQB Gloves"
   },
   {
     "id": "item_equip_t4_parts_wuling01_body_01",
@@ -464,8 +476,20 @@
     "name": "Rift Trekker Light Armor"
   },
   {
+    "id": "item_equip_t4_parts_wuling02_body_03",
+    "name": "Rift Trekker Steel Armor"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_body_04",
+    "name": "Rift Trekker Overalls"
+  },
+  {
     "id": "item_equip_t4_parts_wuling02_edc_01",
     "name": "Rift Trekker Armor Slab"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_edc_02",
+    "name": "Rift Trekker Silver Blade"
   },
   {
     "id": "item_equip_t4_parts_wuling02_hand_01",
@@ -474,6 +498,14 @@
   {
     "id": "item_equip_t4_parts_wuling02_hand_02",
     "name": "Rift Trekker Hands"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_03",
+    "name": "Rift Trekker Wraps"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_04",
+    "name": "Rift Trekker Gauntlets"
   },
   {
     "id": "item_equip_t4_suit_atb01_body_01",
@@ -548,6 +580,10 @@
     "name": "Type 50 Yinglung Light Armor"
   },
   {
+    "id": "item_equip_t4_suit_atk02_body_05",
+    "name": "Type 50 Yinglung Soft Armor"
+  },
+  {
     "id": "item_equip_t4_suit_atk02_edc_01",
     "name": "Type 50 Yinglung Radar"
   },
@@ -568,12 +604,20 @@
     "name": "Type 50 Yinglung Knife T1"
   },
   {
+    "id": "item_equip_t4_suit_atk02_edc_06",
+    "name": "Type 50 Yinglung Beacon"
+  },
+  {
     "id": "item_equip_t4_suit_atk02_hand_01",
     "name": "Type 50 Yinglung Gloves"
   },
   {
     "id": "item_equip_t4_suit_atk02_hand_02",
     "name": "Type 50 Yinglung Gloves T1"
+  },
+  {
+    "id": "item_equip_t4_suit_atk02_hand_03",
+    "name": "Type 50 Yinglung Gloves"
   },
   {
     "id": "item_equip_t4_suit_attri01_body_01",
@@ -952,6 +996,10 @@
     "name": "Pulser Labs Disruptor Suit"
   },
   {
+    "id": "item_equip_t4_suit_pulse_cryst01_body_02",
+    "name": "Pulser Labs Light Armor"
+  },
+  {
     "id": "item_equip_t4_suit_pulse_cryst01_edc_01",
     "name": "Pulser Labs Probe"
   },
@@ -964,8 +1012,16 @@
     "name": "Pulser Labs Invasion Core"
   },
   {
+    "id": "item_equip_t4_suit_pulse_cryst01_edc_04",
+    "name": "Pulser Labs Armor Slab"
+  },
+  {
     "id": "item_equip_t4_suit_pulse_cryst01_hand_01",
     "name": "Pulser Labs Gloves"
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_hand_02",
+    "name": "Pulser Labs Light Gauntlets"
   },
   {
     "id": "item_equip_t4_suit_spellburst_body_01",
@@ -992,6 +1048,14 @@
     "name": "Eternal Xiranite Light Armor T1"
   },
   {
+    "id": "item_equip_t4_suit_usp02_body_05",
+    "name": "Eternal Xiranite Overalls"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_body_06",
+    "name": "Eternal Xiranite MOD Armor"
+  },
+  {
     "id": "item_equip_t4_suit_usp02_edc_01",
     "name": "Eternal Xiranite Power Core"
   },
@@ -1016,6 +1080,10 @@
     "name": "Eternal Xiranite Heavy Slab"
   },
   {
+    "id": "item_equip_t4_suit_usp02_edc_07",
+    "name": "Eternal Xiranite Rangefinder"
+  },
+  {
     "id": "item_equip_t4_suit_usp02_hand_01",
     "name": "Eternal Xiranite Gloves"
   },
@@ -1030,5 +1098,9 @@
   {
     "id": "item_equip_t4_suit_usp02_hand_04",
     "name": "Eternal Xiranite Hands"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_05",
+    "name": "Eternal Xiranite Channeling Gloves"
   }
 ]
