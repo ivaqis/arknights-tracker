@@ -128,11 +128,15 @@
     "name": "Liino"
   },
   {
-    "id": "chr_9000_endmin",
-    "name": "Endministrator"
+    "id": "chr_0036_jsspsi",
+    "name": "Si"
   },
   {
     "id": "chr_0038_purrche",
     "name": "Purrchena"
+  },
+  {
+    "id": "chr_9000_endmin",
+    "name": "Endministrator"
   }
 ]

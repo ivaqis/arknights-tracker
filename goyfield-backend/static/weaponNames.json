@@ -56,6 +56,14 @@
     "name": "Amaranthine Tassel"
   },
   {
+    "id": "wpn_claym_0018",
+    "name": "Jade Vessel"
+  },
+  {
+    "id": "wpn_claym_0019",
+    "name": "Long Heritage"
+  },
+  {
     "id": "wpn_funnel_0001",
     "name": "Hypernova Auto"
   },
@@ -308,15 +316,23 @@
     "name": "Grand Vision"
   },
   {
+    "id": "wpn_sword_0021_ink",
+    "name": "Grand Vision"
+  },
+  {
     "id": "wpn_sword_0022",
     "name": "Lupine Scarlet"
   },
   {
-    "id": "wpn_sword_0026",
-    "name": "Farsight"
-  },
-  {
     "id": "wpn_sword_0023",
     "name": "Dessert Moment"
+  },
+  {
+    "id": "wpn_sword_0024",
+    "name": "Complexed Industry"
+  },
+  {
+    "id": "wpn_sword_0026",
+    "name": "Farsight"
   }
 ]
