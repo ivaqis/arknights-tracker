@@ -1,8 +1,7 @@
-// src/lib/utils/imageUtils.js
-
 import { currencies } from '$lib/data/items/currencies';
 import { progression } from '$lib/data/items/progression';
 import { characters } from '$lib/data/characters';
+import { weapons } from '$lib/data/weapons';
 
 const extractIds = (list) => {
     if (!list) return [];
@@ -15,6 +14,13 @@ const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
     }
     if (char?.gameId) {
         acc[char.gameId] = char.id;
+    }
+    return acc;
+}, {});
+
+const weaponIdToGameId = Object.values(weapons || {}).reduce((acc, w) => {
+    if (w?.id && w?.gameId) {
+        acc[w.id] = w.gameId;
     }
     return acc;
 }, {});
@@ -66,6 +72,94 @@ export function resolveArtName(idOrName) {
     if (char?.gameId) {
         return `pic_${potNum}_${char.gameId}`;
     }
+    return clean;
+}
+
+export function resolveWeaponName(idOrName) {
+    if (!idOrName) return "";
+    let clean = idOrName.toString().trim();
+    if (clean.startsWith("http")) return clean;
+    if (clean.includes(".")) clean = clean.split(".")[0];
+    if (clean.startsWith("wpn_")) return clean;
+    const w = weapons[clean] || Object.values(weapons || {}).find(item => item.id === clean || item.gameId === clean);
+    return w?.gameId || weaponIdToGameId[clean] || clean;
+}
+
+export function resolvePreviewName(idOrName) {
+    if (!idOrName) return "";
+    let clean = idOrName.toString().trim();
+    if (clean.startsWith("http")) return clean;
+    if (clean.includes(".")) clean = clean.split(".")[0];
+    if (clean.startsWith("icon_") || clean.startsWith("common_")) return clean;
+    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
+    if (gameId) {
+        return `icon_${gameId}`;
+    }
+    return clean;
+}
+
+const WEAPON_ATTACK_ICON_MAP = {
+    sword: 'icon_attack_sword',
+    greatSword: 'icon_attack_claym',
+    claymore: 'icon_attack_claym',
+    claym: 'icon_attack_claym',
+    polearm: 'icon_attack_lance',
+    lance: 'icon_attack_lance',
+    artsUnit: 'icon_attack_funnel',
+    funnel: 'icon_attack_funnel',
+    pistol: 'icon_attack_pistol'
+};
+
+export function resolveSkillIconName(idOrName) {
+    if (!idOrName) return "";
+    let clean = idOrName.toString().trim();
+    if (clean.startsWith("http")) return clean;
+    if (clean.includes(".")) clean = clean.split(".")[0];
+    if (clean.startsWith("icon_") || clean.startsWith("btn_") || clean.startsWith("decal_")) {
+        return clean;
+    }
+
+    if (WEAPON_ATTACK_ICON_MAP[clean]) {
+        return WEAPON_ATTACK_ICON_MAP[clean];
+    }
+
+    const match = clean.match(/^([a-zA-Z0-9]+)_(battleSkill|comboSkill|ultimate|talent[12]|skill[12]|normalAttack|basicAttack)$/i);
+    if (match) {
+        const charKey = match[1];
+        const skillType = match[2].toLowerCase();
+
+        const char = characters[charKey] || Object.values(characters || {}).find(c => c.id === charKey || c.gameId === charKey || c.apiId === charKey);
+        if (char?.gameId) {
+            const shortName = char.gameId.replace(/^chr_\d+_/, '');
+            const skillShortName = (shortName === 'endminm' || shortName === 'endminf') ? 'endmin' : shortName;
+
+            if (skillType === 'battleskill' || skillType === 'skill1') {
+                return `icon_skill_${skillShortName}_01`;
+            }
+            if (skillType === 'comboskill') {
+                return `icon_combo_skill_${skillShortName}_01`;
+            }
+            if (skillType === 'ultimate') {
+                return `icon_ultimate_skill_${skillShortName}_01`;
+            }
+            if (skillType === 'talent1') {
+                const tName = (shortName === 'endminf') ? 'endminm' : shortName;
+                return `icon_talent_${tName}_01`;
+            }
+            if (skillType === 'talent2') {
+                const tName = (shortName === 'endminf') ? 'endminm' : shortName;
+                return `icon_talent_${tName}_02`;
+            }
+            if (skillType === 'basicattack' || skillType === 'normalattack') {
+                const weapon = char.weapon;
+                if (weapon && WEAPON_ATTACK_ICON_MAP[weapon]) {
+                    return WEAPON_ATTACK_ICON_MAP[weapon];
+                }
+            }
+        }
+    }
+
     return clean;
 }
 
@@ -125,16 +219,16 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/umbralMonument/cover/${withExt(name, 'webp')}`;
 
         case 'skill-icon':
-            return `/images/operators/skills/${withExt(name)}`;
+            return `/images/operators/skills/${withExt(resolveSkillIconName(name))}`;
 
         case 'operator-preview':
-            return `/images/operators/preview/${withExt(name)}`;
+            return `/images/operators/preview/${withExt(resolvePreviewName(name))}`;
 
         case 'weapon-icon':
-            return `/images/weapons/${withExt(name)}`;
+            return `/images/weapons/${withExt(resolveWeaponName(name))}`;
 
         case 'weapons-big':
-            return `/images/weaponsBig/${withExt(name)}`;
+            return `/images/weaponsBig/${withExt(resolveWeaponName(name))}`;
 
         case 'enemy-icon':
             return `/images/enemies/${withExt(name)}`;

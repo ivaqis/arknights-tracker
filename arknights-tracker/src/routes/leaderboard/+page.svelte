@@ -11,6 +11,7 @@
     import { weapons } from "$lib/data/weapons.js";
     import { enemies } from "$lib/data/enemies.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getImagePath } from "$lib/utils/imageUtils.js";
     import { parseRichText } from "$lib/utils/richText.js";
     import { monumentGroups } from "$lib/data/monuments.js";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
@@ -1009,7 +1010,7 @@
                                                             {#if char.weapon}
                                                                 <div class="absolute -bottom-1 -right-1 z-10">
                                                                     <img
-                                                                        src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
+                                                                        src={getImagePath(wpnData?.id || char.weapon.id, 'weapon-icon')}
                                                                         alt={wpnData?.name || ''}
                                                                         class="w-4 h-4 rounded-full border bg-black object-contain pointer-events-none"
                                                                         style="border-color: {getRarityColor(wpnRarity)}80;"
@@ -1114,7 +1115,7 @@
                                                 {#if char.weapon}
                                                     <div class="absolute -bottom-1 -right-1 z-10">
                                                         <img
-                                                            src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
+                                                            src={getImagePath(wpnData?.id || char.weapon.id, 'weapon-icon')}
                                                             alt={wpnData?.name || ''}
                                                             class="w-3.5 h-3.5 rounded-full border bg-black object-contain pointer-events-none shadow-sm"
                                                             style="border-color: {getRarityColor(wpnRarity)}80;"

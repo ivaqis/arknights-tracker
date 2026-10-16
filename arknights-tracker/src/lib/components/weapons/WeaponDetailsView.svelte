@@ -16,6 +16,7 @@
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getImagePath } from "$lib/utils/imageUtils.js";
     import { essences } from "$lib/data/items/essences.js";
     import { locations } from "$lib/data/locations.js";
     import { enemies } from "$lib/data/enemies.js";
@@ -1572,7 +1573,7 @@
                                 title="Copy image"
                                 on:click|stopPropagation={async () => {
                                     try {
-                                        const imageUrl = `/images/weapons/${id}.png`;
+                                        const imageUrl = getImagePath(id, 'weapon-icon');
                                         const response = await fetch(imageUrl);
                                         const blob = await response.blob();
                                         await navigator.clipboard.write([
@@ -1609,7 +1610,7 @@
                                 title="Download Art"
                                 on:click|stopPropagation={() => {
                                     const link = document.createElement("a");
-                                    link.href = `/images/weapons/${id}.png`;
+                                    link.href = getImagePath(id, 'weapon-icon');
                                     link.download = `${id}_icon.png`;
                                     document.body.appendChild(link);
                                     link.click();
@@ -1663,7 +1664,7 @@
                                 title="Copy image"
                                 on:click|stopPropagation={async () => {
                                     try {
-                                        const imageUrl = `/images/weaponsBig/${id}.png`;
+                                        const imageUrl = getImagePath(id, 'weapons-big');
                                         const response = await fetch(imageUrl);
                                         const blob = await response.blob();
                                         await navigator.clipboard.write([
@@ -1700,7 +1701,7 @@
                                 title="Download Art"
                                 on:click|stopPropagation={() => {
                                     const link = document.createElement("a");
-                                    link.href = `/images/weaponsBig/${id}.png`;
+                                    link.href = getImagePath(id, 'weapons-big');
                                     link.download = `${id}_big.png`;
                                     document.body.appendChild(link);
                                     link.click();

@@ -93,6 +93,8 @@
     let filters = getEnemyFilters();
 
     $: queryId = $page.url.searchParams.get("id");
+    $: queryLevelParam = $page.url.searchParams.get("level") || $page.url.searchParams.get("lvl");
+    $: queryLevel = queryLevelParam ? parseInt(queryLevelParam, 10) : undefined;
     let selectedEnemyId = "";
     let isBottomSheetOpen = false;
 
@@ -112,7 +114,8 @@
     onMount(() => {
         if (queryId && allEnemies.some(e => e.id === queryId)) {
             if (!$splitEquipmentView) {
-                goto(`/enemies/${queryId}`, { replaceState: true });
+                const lvlQuery = queryLevelParam ? `?level=${queryLevelParam}` : "";
+                goto(`/enemies/${queryId}${lvlQuery}`, { replaceState: true });
             } else {
                 localStorage.setItem("last_selected_enemy_id", queryId);
             }
@@ -552,6 +555,7 @@
                 {#if selectedEnemyId}
                     <EnemyDetailsView
                         id={selectedEnemyId}
+                        initialLevel={queryLevel}
                         showBackButton={false}
                     />
                 {:else}

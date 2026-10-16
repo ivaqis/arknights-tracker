@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
+    import { enemyVariants } from "$lib/data/enemyVariants.js";
     import { changelogData } from "$lib/data/versions.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
@@ -14,7 +15,31 @@
     import TableModal from "$lib/components/modals/TableModal.svelte";
 
     export let id = "";
+    export let initialLevel = undefined;
     export let showBackButton = true;
+
+    let selectedImageId = id;
+    let previousPropId = "";
+
+    $: if (id !== previousPropId) {
+        previousPropId = id;
+        selectedImageId = id;
+    }
+
+    $: variantsList = enemyVariants[id] || [];
+    $: currentVariantIndex = variantsList.findIndex(v => v.id === selectedImageId);
+
+    function prevVariant() {
+        if (currentVariantIndex > 0) {
+            selectedImageId = variantsList[currentVariantIndex - 1].id;
+        }
+    }
+
+    function nextVariant() {
+        if (currentVariantIndex < variantsList.length - 1) {
+            selectedImageId = variantsList[currentVariantIndex + 1].id;
+        }
+    }
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -58,8 +83,24 @@
     ].filter(r => r.val !== undefined);
 
     $: maxLevel = enemyData.hp ? enemyData.hp.length : 1;
-    let level = 90;
+    let level = initialLevel || 90;
+    let prevInitialLevel = initialLevel;
+    let prevEnemyId = "";
+
+    $: if (initialLevel !== prevInitialLevel) {
+        prevInitialLevel = initialLevel;
+        if (initialLevel) level = initialLevel;
+    }
+
+    $: if (id !== prevEnemyId) {
+        prevEnemyId = id;
+        if (initialLevel) {
+            level = initialLevel;
+        }
+    }
+
     $: if (level > maxLevel) level = maxLevel;
+    $: if (level < 1) level = 1;
     $: currentHp = enemyData.hp ? enemyData.hp[level - 1] : 0;
     $: currentAtk = enemyData.atk ? enemyData.atk[level - 1] : 0;
     $: currentDef = enemyData.def ? enemyData.def[level - 1] : 0;
@@ -204,7 +245,7 @@
                     <div class="pointer-events-none absolute inset-0 z-0 pointer-events-none card-gradient" style="--rarity-color: {rarityColor};"></div>
 
                     <div class="absolute right-[-30px] md:right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
-                        <Image {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
+                        <Image id={selectedImageId} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
                     </div>
 
                     <div class="absolute top-4 right-4 z-20 flex flex-col gap-2">
@@ -213,7 +254,7 @@
                             title="Copy image"
                             on:click|stopPropagation={async () => {
                                 try {
-                                    const imageUrl = `/images/enemies/${id}.png`;
+                                    const imageUrl = `/images/enemies/${selectedImageId}.png`;
                                     const response = await fetch(imageUrl);
                                     const blob = await response.blob();
                                     await navigator.clipboard.write([
@@ -244,8 +285,8 @@
                             title="Download Art"
                             on:click|stopPropagation={() => {
                                 const link = document.createElement("a");
-                                link.href = `/images/enemies/${id}.png`;
-                                link.download = `${id}_enemy.png`;
+                                link.href = `/images/enemies/${selectedImageId}.png`;
+                                link.download = `${selectedImageId}_enemy.png`;
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);
@@ -254,6 +295,34 @@
                             <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                         </button>
                     </div>
+
+                    {#if variantsList.length > 1}
+                        <div class="absolute bottom-4 right-4 z-20 flex items-center bg-black/60 backdrop-blur-md rounded-full px-1.5 py-1 text-white shadow-md border border-white/10 select-none">
+                            <button
+                                type="button"
+                                disabled={currentVariantIndex <= 0}
+                                class="flex items-center justify-center w-6 h-6 rounded-full hover:bg-white/20 active:scale-90 transition-all text-white/80 hover:text-white cursor-pointer disabled:opacity-25 disabled:cursor-not-allowed disabled:pointer-events-none"
+                                on:click|stopPropagation={prevVariant}
+                                title="Previous variant"
+                            >
+                                <Icon name="chevronLeft" class="w-3.5 h-3.5" />
+                            </button>
+
+                            <span class="px-2 text-xs font-bold font-nums leading-none">
+                                {currentVariantIndex + 1}
+                            </span>
+
+                            <button
+                                type="button"
+                                disabled={currentVariantIndex >= variantsList.length - 1}
+                                class="flex items-center justify-center w-6 h-6 rounded-full hover:bg-white/20 active:scale-90 transition-all text-white/80 hover:text-white cursor-pointer disabled:opacity-25 disabled:cursor-not-allowed disabled:pointer-events-none"
+                                on:click|stopPropagation={nextVariant}
+                                title="Next variant"
+                            >
+                                <Icon name="chevronRight" class="w-3.5 h-3.5" />
+                            </button>
+                        </div>
+                    {/if}
 
                     <div class="relative z-20 flex flex-col gap-4 h-full w-[65%]">
                         <h1 class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm">

@@ -9,10 +9,13 @@
     import EnemyDetailsView from "$lib/components/enemies/EnemyDetailsView.svelte";
 
     $: id = $page.params.id;
+    $: levelParam = $page.url.searchParams.get("level") || $page.url.searchParams.get("lvl");
+    $: initialLevel = levelParam ? parseInt(levelParam, 10) : undefined;
 
     onMount(() => {
         if ($splitEquipmentView) {
-            goto(`/enemies?id=${id}`, { replaceState: true });
+            const levelQuery = levelParam ? `&level=${levelParam}` : "";
+            goto(`/enemies?id=${id}${levelQuery}`, { replaceState: true });
         }
     });
 
@@ -34,4 +37,4 @@
     <meta name="twitter:image" content={imageUrl} />
 </svelte:head>
 
-<EnemyDetailsView {id} showBackButton={true} />
+<EnemyDetailsView {id} {initialLevel} showBackButton={true} />

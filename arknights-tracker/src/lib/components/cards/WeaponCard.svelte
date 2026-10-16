@@ -53,7 +53,7 @@
           ? "equipment"
           : "weaponsList";
     $: itemUrl = isEnemy
-        ? `/enemies/${weapon.id}`
+        ? (weapon.level ? `/enemies/${weapon.id}?level=${weapon.level}` : `/enemies/${weapon.id}`)
         : isEquipment
           ? `/equipment/${weapon.id}`
           : `/weapons/${weapon.id}`;
