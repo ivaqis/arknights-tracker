@@ -7,7 +7,7 @@ export const load: PageLoad = ({ url }) => {
     const bannerId = url.searchParams.get("id");
     const banner = bannerId === null ? null : Banner.getByGameId(bannerId);
 
-    if (!banner) {
+    if (!banner || banner.startTime.getTime() > Date.now()) {
         const defaultBanner = getDefaultBanner();
 
         redirect(307, `/records/global?id=${defaultBanner.gameId}`);
@@ -19,7 +19,8 @@ export const load: PageLoad = ({ url }) => {
 };
 
 function getDefaultBanner(): Banner {
-    const banners = Banner.getListByGameType(GameBannerType.CHAR_SPECIAL);
+    const banners = Banner.getListByGameType(GameBannerType.CHAR_SPECIAL)
+        .filter(b => b.startTime.getTime() <= Date.now());
 
     return banners.at(-1) ?? Banner.STANDARD;
 }

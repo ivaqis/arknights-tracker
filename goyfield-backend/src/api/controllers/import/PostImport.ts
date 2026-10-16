@@ -97,15 +97,15 @@ export class PostImport extends StreamController<
     }
 
     protected async execute(): Promise<void> {
+        let privateId = this._privateId;
         let requestedProfile: UserBannerProfileRecord | null = null;
 
-        if (this._privateId) {
-            requestedProfile = await this._database.userBannerProfiles.findUserBannerProfileByPrivateId(this._privateId);
+        if (privateId) {
+            requestedProfile = await this._database.userBannerProfiles.findUserBannerProfileByPrivateId(privateId);
 
             if (!requestedProfile) {
-                this.sendError("Profile not found");
-
-                return;
+                logger.warn(`PrivateId ${privateId} not found in database, treating as new profile`);
+                privateId = null;
             }
         }
 
@@ -177,10 +177,10 @@ export class PostImport extends StreamController<
             requestedProfileVersion
         );
 
-        logger.debug(`${isLimitReached} ${this._privateId} ${writeOn}`);
+        logger.debug(`${isLimitReached} ${privateId} ${writeOn}`);
 
-        if (!isLimitReached && this._privateId !== null && writeOn !== this._privateId) {
-            logger.debug(`Wrong profileId provided: ${this._privateId}\nSearching for: ${writeOn}`);
+        if (!isLimitReached && privateId !== null && writeOn !== privateId) {
+            logger.debug(`Wrong profileId provided: ${privateId}\nSearching for: ${writeOn}`);
 
             let lastPullTsWithOffset;
 

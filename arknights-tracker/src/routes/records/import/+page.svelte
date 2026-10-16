@@ -336,45 +336,67 @@
         const currentProfile = get(accountStore.currentAccount);
 
         try {
-            let stream;
+            let targetServerUid = currentProfile.serverUid;
+            let retryWithoutProfile = false;
 
-            if (isGlobalStatsEnabled) {
-                stream = await fetchPostImport(token, serverCandidates, currentProfile.serverUid, isRecoveryEnabled);
-            }
-            else {
-                stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs());
-            }
+            do {
+                retryWithoutProfile = false;
+                let stream;
 
-            for await (const msg of stream) {
-                if (msg.type === "progress") {
-                    const progressData = msg.data || {};
-                    const bannerType = PullParser.normalizeBannerKey(progressData.type || "standard");
-                    const count = Number(progressData.count || 0);
-                    const newAddedCount = { ...previewReport.addedCount };
+                if (isGlobalStatsEnabled) {
+                    stream = await fetchPostImport(token, serverCandidates, targetServerUid, isRecoveryEnabled);
+                }
+                else {
+                    stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs());
+                }
 
-                    if (count > 0) {
-                        newAddedCount[bannerType] = count;
+                for await (const msg of stream) {
+                    if (msg.type === "progress") {
+                        const progressData = msg.data || {};
+                        const bannerType = PullParser.normalizeBannerKey(progressData.type || "standard");
+                        const count = Number(progressData.count || 0);
+                        const newAddedCount = { ...(previewReport?.addedCount || {}) };
+
+                        if (count > 0) {
+                            newAddedCount[bannerType] = count;
+                        }
+
+                        const totalAdded = Object.values(newAddedCount).reduce((sum, c) => sum + c, 0);
+
+                        previewReport = {
+                            status: "loading",
+                            ...(previewReport || {}),
+                            addedCount: newAddedCount,
+                            totalAdded
+                        };
                     }
+                    else if (msg.type === "complete") {
+                        await handleImportComplete(msg.data, urlToSend, await currentProfile.getPublicServerUid());
+                    }
+                    else if (msg.type === "error") {
+                        if (msg.message && msg.message.includes("Profile not found") && targetServerUid) {
+                            currentProfile.update({ uid: null });
+                            if (typeof window !== "undefined" && selectedAccId) {
+                                localStorage.removeItem(`ark_banner_private_id_${selectedAccId}`);
+                            }
+                            targetServerUid = null;
+                            previewReport = {
+                                status: "loading",
+                                totalAdded: 0,
+                                addedCount: {}
+                            };
+                            retryWithoutProfile = true;
+                            break;
+                        }
 
-                    const totalAdded = Object.values(newAddedCount).reduce((sum, c) => sum + c, 0);
+                        errorMsg = mapBackendError(msg.message);
+                        previewReport = null;
+                        isLoading = false;
 
-                    previewReport = {
-                        ...previewReport,
-                        addedCount: newAddedCount,
-                        totalAdded
-                    };
+                        return;
+                    }
                 }
-                else if (msg.type === "complete") {
-                    await handleImportComplete(msg.data, urlToSend, await currentProfile.getPublicServerUid());
-                }
-                else if (msg.type === "error") {
-                    errorMsg = mapBackendError(msg.message);
-                    previewReport = null;
-                    isLoading = false;
-
-                    return;
-                }
-            }
+            } while (retryWithoutProfile);
         } catch (err) {
             console.error("Import Error:", err);
             errorMsg = mapStreamCatchError(err);
@@ -462,17 +484,9 @@
                     if (currentAcc.serverUid !== profileData.privateId) {
                         let existingProfile = accountStore.findAccountByServerUid(profileData.privateId);
 
-                        if (!existingProfile && currentAcc.serverUid === null) {
+                        if (!existingProfile) {
                             existingProfile = currentAcc;
                             currentAcc.update({
-                                uid: profileData.privateId,
-                                publicServerUid: profileData.publicId
-                            });
-                        }
-
-                        if (!existingProfile) {
-                            existingProfile = accountStore.createAccount({
-                                serverId: serverId,
                                 uid: profileData.privateId,
                                 publicServerUid: profileData.publicId
                             });
@@ -486,8 +500,8 @@
                     if (profileData?.privateId && typeof window !== "undefined" && selectedId) {
                         localStorage.setItem(`ark_banner_private_id_${selectedId}`, profileData.privateId);
 
-                        if (profile.publicId) {
-                            localStorage.setItem(`ark_banner_public_id_${selectedId}`, profile.publicId);
+                        if (profileData?.publicId) {
+                            localStorage.setItem(`ark_banner_public_id_${selectedId}`, profileData.publicId);
                         }
                     }
 

@@ -48,7 +48,7 @@
     }
     $: if (currentBannerType !== currentBanner.apiType) {
         currentBannerType = currentBanner.apiType;
-        selectableBanners = Banner.getListByApiType(currentBanner.apiType);
+        selectableBanners = Banner.getListByApiType(currentBanner.apiType).filter(b => b.startTime.getTime() <= Date.now());
         bannerOptions = getBannerOptions(selectableBanners);
     }
 
@@ -112,8 +112,8 @@
         selectBannerId(selectedBannerId);
     }
     $: if (selectedBannerType !== currentBannerType) {
-        const banners = Banner.getListByApiType(selectedBannerType);
-        const banner = banners.at(-1)!;
+        const banners = Banner.getListByApiType(selectedBannerType).filter(b => b.startTime.getTime() <= Date.now());
+        const banner = banners.at(-1) ?? Banner.STANDARD;
 
         selectBannerId(banner.gameId);
     }
