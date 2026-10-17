@@ -7,6 +7,7 @@
     import { disableDarkening } from "$lib/stores/settings.js";
     import { changelogData } from "$lib/data/versions.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
 
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -41,11 +42,15 @@
                       return latest?.equipment?.includes(weapon.id) || false;
                   }
                   if (isEnemy) {
-                      return latest?.enemies?.includes(weapon.id) || false;
+                      return latest?.enemies?.includes(resolvedEnemyId) || false;
                   } else {
                       return latest?.weapons?.includes(weapon.id) || false;
                   }
               })();
+
+    $: enemyMapping = isEnemy && weapon ? (enemyVariantMap[weapon.id] || null) : null;
+    $: resolvedEnemyId = isEnemy && weapon ? (enemyMapping?.baseId || weapon.baseId || weapon.id) : (weapon?.id || "");
+    $: resolvedEnemyVariant = isEnemy && weapon ? (weapon.variant || enemyMapping?.postfix || null) : null;
 
     $: localeCategory = isEnemy
         ? "enemies"
@@ -53,7 +58,13 @@
           ? "equipment"
           : "weaponsList";
     $: itemUrl = isEnemy
-        ? (weapon.level ? `/enemies/${weapon.id}?level=${weapon.level}` : `/enemies/${weapon.id}`)
+        ? (() => {
+            const query = [];
+            if (resolvedEnemyVariant) query.push(`variant=${resolvedEnemyVariant}`);
+            if (weapon.level) query.push(`level=${weapon.level}`);
+            const qStr = query.length ? `?${query.join("&")}` : "";
+            return `/enemies/${resolvedEnemyId}${qStr}`;
+        })()
         : isEquipment
           ? `/equipment/${weapon.id}`
           : `/weapons/${weapon.id}`;
@@ -88,9 +99,9 @@
     let isHovered = false;
 
 
-    $: safeRarity = weapon?.rarity || 1;
+    $: safeRarity = isEnemy ? ((enemies[resolvedEnemyId]?.rarity || weapon?.rarity) || 1) : (weapon?.rarity || 1);
     $: rarityColor = getRarityColor(safeRarity);
-    $: nameKey = weapon.id || weapon.name?.toLowerCase().replace(/\s+/g, "");
+    $: nameKey = isEnemy ? resolvedEnemyId : (weapon.id || weapon.name?.toLowerCase().replace(/\s+/g, ""));
 
     $: rootClass =
         variant === "small"
@@ -219,7 +230,7 @@
                     : 'bottom-[6px]'}"
             >
                 <Image
-                    id={weapon.id}
+                    id={isEnemy ? resolvedEnemyId : weapon.id}
                     interactive={true}
                     variant={imageVariant}
                     className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300 {shouldDarken

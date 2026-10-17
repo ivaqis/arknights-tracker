@@ -2,6 +2,7 @@ import { currencies } from '$lib/data/items/currencies';
 import { progression } from '$lib/data/items/progression';
 import { characters } from '$lib/data/characters';
 import { weapons } from '$lib/data/weapons';
+import { enemyVariantMap } from '$lib/data/enemies';
 
 const extractIds = (list) => {
     if (!list) return [];
@@ -230,11 +231,19 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
         case 'weapons-big':
             return `/images/weaponsBig/${withExt(resolveWeaponName(name))}`;
 
-        case 'enemy-icon':
-            return `/images/enemies/${withExt(name)}`;
+        case 'enemy-icon': {
+            const mappedName = enemyVariantMap[name]?.baseId || name;
+            return `/images/enemies/${withExt(mappedName)}`;
+        }
 
         case 'equipment':
             return `/images/equipment/${withExt(name)}`;
+
+        case 'suit-logo-w':
+            return `/images/suitLogoW/${withExt(name, 'webp')}`;
+
+        case 'suit-logo-d':
+            return `/images/suitLogoD/${withExt(name, 'webp')}`;
 
         case 'attribute-icon':
             return `/images/operators/attributes/${withExt(name)}`;

@@ -1,7 +1,7 @@
 <script>
     import { t } from "$lib/i18n";
     import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-    import { enemies } from "$lib/data/enemies.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { enemyVariants } from "$lib/data/enemyVariants.js";
     import { changelogData } from "$lib/data/versions.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
@@ -16,17 +16,42 @@
 
     export let id = "";
     export let initialLevel = undefined;
+    export let initialVariant = undefined;
     export let showBackButton = true;
 
-    let selectedImageId = id;
+    $: mapping = enemyVariantMap[id];
+    $: baseId = mapping ? mapping.baseId : id;
+
+    let selectedStatVariant = initialVariant || mapping?.postfix || null;
+    let prevInitialVariant = initialVariant;
+    let selectedImageId = baseId;
     let previousPropId = "";
+
+    $: if (initialVariant !== prevInitialVariant) {
+        prevInitialVariant = initialVariant;
+        selectedStatVariant = initialVariant || null;
+    }
 
     $: if (id !== previousPropId) {
         previousPropId = id;
-        selectedImageId = id;
+        selectedImageId = baseId;
+        selectedStatVariant = initialVariant || mapping?.postfix || null;
     }
 
-    $: variantsList = enemyVariants[id] || [];
+    function selectStatVariant(postfix) {
+        selectedStatVariant = postfix;
+        if (typeof window !== "undefined") {
+            const url = new URL(window.location.href);
+            if (postfix) {
+                url.searchParams.set("variant", postfix);
+            } else {
+                url.searchParams.delete("variant");
+            }
+            window.history.replaceState({}, "", url.toString());
+        }
+    }
+
+    $: variantsList = enemyVariants[baseId] || [];
     $: currentVariantIndex = variantsList.findIndex(v => v.id === selectedImageId);
 
     function prevVariant() {
@@ -73,16 +98,20 @@
     let showStatsTable = false;
     let isTableCopied = false;
 
-    $: enemyData = enemies[id] || {};
+    $: enemyData = enemies[baseId] || {};
+    $: statVariantsList = enemyData.variants || [];
+    $: activeVariantObj = statVariantsList.find(v => v.postfix === selectedStatVariant || v.id === selectedStatVariant);
+    $: activeStatData = activeVariantObj || enemyData;
+
     $: resistances = [
-        { key: "Physical", val: enemyData.PhysicalDamageTakenScalar, locKey: "physRez" },
-        { key: "Fire", val: enemyData.FireDamageTakenScalar, locKey: "heatRez" },
-        { key: "Pulse", val: enemyData.PulseDamageTakenScalar, locKey: "elecrtoRez" },
-        { key: "Crystal", val: enemyData.CrystDamageTakenScalar, locKey: "cryoRez" },
-        { key: "Natural", val: enemyData.NaturalDamageTakenScalar, locKey: "narureRez" }
+        { key: "Physical", val: activeStatData.PhysicalDamageTakenScalar ?? enemyData.PhysicalDamageTakenScalar, locKey: "physRez" },
+        { key: "Fire", val: activeStatData.FireDamageTakenScalar ?? enemyData.FireDamageTakenScalar, locKey: "heatRez" },
+        { key: "Pulse", val: activeStatData.PulseDamageTakenScalar ?? enemyData.PulseDamageTakenScalar, locKey: "elecrtoRez" },
+        { key: "Crystal", val: activeStatData.CrystDamageTakenScalar ?? enemyData.CrystDamageTakenScalar, locKey: "cryoRez" },
+        { key: "Natural", val: activeStatData.NaturalDamageTakenScalar ?? enemyData.NaturalDamageTakenScalar, locKey: "narureRez" }
     ].filter(r => r.val !== undefined);
 
-    $: maxLevel = enemyData.hp ? enemyData.hp.length : 1;
+    $: maxLevel = (activeStatData.hp || enemyData.hp) ? (activeStatData.hp || enemyData.hp).length : 1;
     let level = initialLevel || 90;
     let prevInitialLevel = initialLevel;
     let prevEnemyId = "";
@@ -92,8 +121,8 @@
         if (initialLevel) level = initialLevel;
     }
 
-    $: if (id !== prevEnemyId) {
-        prevEnemyId = id;
+    $: if (baseId !== prevEnemyId) {
+        prevEnemyId = baseId;
         if (initialLevel) {
             level = initialLevel;
         }
@@ -101,11 +130,11 @@
 
     $: if (level > maxLevel) level = maxLevel;
     $: if (level < 1) level = 1;
-    $: currentHp = enemyData.hp ? enemyData.hp[level - 1] : 0;
-    $: currentAtk = enemyData.atk ? enemyData.atk[level - 1] : 0;
-    $: currentDef = enemyData.def ? enemyData.def[level - 1] : 0;
+    $: currentHp = (activeStatData.hp || enemyData.hp) ? (activeStatData.hp || enemyData.hp)[level - 1] : 0;
+    $: currentAtk = (activeStatData.atk || enemyData.atk) ? (activeStatData.atk || enemyData.atk)[level - 1] : 0;
+    $: currentDef = (activeStatData.def || enemyData.def) ? (activeStatData.def || enemyData.def)[level - 1] : 0;
     let enemyLocale = {};
-    $: loadEnemyData(id, $currentLocale);
+    $: loadEnemyData(baseId, $currentLocale);
 
     async function loadEnemyData(targetId, lang) {
         if (!targetId) return;
@@ -126,11 +155,11 @@
         }
     }
 
-    $: enemyName = enemyLocale.name || id;
+    $: enemyName = enemyLocale.name || baseId;
     $: enemyAbilities = enemyLocale.abilities || [];
     $: enemyDescription = enemyLocale.description || "";
     $: rarityColor = getRarityColor(enemyData.rarity || 4);
-    $: addedVersion = changelogData.find((v) => v.enemies?.includes(id))?.version || (enemies[id] ? "1.0" : null);
+    $: addedVersion = changelogData.find((v) => v.enemies?.includes(baseId))?.version || (enemies[baseId] ? "1.0" : null);
 
     function getResColorClass(val) {
         const percent = Math.round(val * 100);
@@ -141,18 +170,18 @@
         return "text-amber-500 dark:text-amber-300";
     }
     $: advancedStats = [
-        { key: "Stagger HP", val: enemyData.staggerHP },
-        { key: "Stagger Rec.", val: enemyData.staggerRecovery },
-        { key: "Finisher ATK Mult.", val: enemyData.finisherATKMultiplier },
-        { key: "Attack Range", val: enemyData.AttackRange },
-        { key: "Weight", val: enemyData.weight },
-        { key: "Crit DMG Inc.", val: enemyData.CriticalDamageIncrease },
-        { key: "Base Energy", val: enemyData.BaseEnergy },
-        { key: "Init. Super Armor", val: enemyData.initialSuperArmor },
-        { key: "Max Resilience", val: enemyData.maxResilience },
-        { key: "Zero Poise Armor", val: enemyData.zeroPoiseSuperArmor },
-        { key: "ATK vs Tower", val: enemyData.attackValueAgainstTower },
-        { key: "Pushback Coeff.", val: enemyData.pushedBackCoefficient }
+        { key: "Stagger HP", val: activeStatData.staggerHP ?? enemyData.staggerHP },
+        { key: "Stagger Rec.", val: activeStatData.staggerRecovery ?? enemyData.staggerRecovery },
+        { key: "Finisher ATK Mult.", val: activeStatData.finisherATKMultiplier ?? enemyData.finisherATKMultiplier },
+        { key: "Attack Range", val: activeStatData.AttackRange ?? enemyData.AttackRange },
+        { key: "Weight", val: activeStatData.weight ?? enemyData.weight },
+        { key: "Crit DMG Inc.", val: activeStatData.CriticalDamageIncrease ?? enemyData.CriticalDamageIncrease },
+        { key: "Base Energy", val: activeStatData.BaseEnergy ?? enemyData.BaseEnergy },
+        { key: "Init. Super Armor", val: activeStatData.initialSuperArmor ?? enemyData.initialSuperArmor },
+        { key: "Max Resilience", val: activeStatData.maxResilience ?? enemyData.maxResilience },
+        { key: "Zero Poise Armor", val: activeStatData.zeroPoiseSuperArmor ?? enemyData.zeroPoiseSuperArmor },
+        { key: "ATK vs Tower", val: activeStatData.attackValueAgainstTower ?? enemyData.attackValueAgainstTower },
+        { key: "Pushback Coeff.", val: activeStatData.pushedBackCoefficient ?? enemyData.pushedBackCoefficient }
     ].filter(s => s.val !== undefined);
     
     let shiftPressed = false;
@@ -198,10 +227,13 @@
     async function copyStatsTable() {
         let textData = `${tOrFallback("stats.level", "Level")}\tHP\tATK\tDEF\n`;
         const count = maxLevel;
+        const hpArr = activeStatData.hp || enemyData.hp || [];
+        const atkArr = activeStatData.atk || enemyData.atk || [];
+        const defArr = activeStatData.def || enemyData.def || [];
         for (let i = 0; i < count; i++) {
-            const h = enemyData.hp ? enemyData.hp[i] : 0;
-            const a = enemyData.atk ? enemyData.atk[i] : 0;
-            const d = enemyData.def ? enemyData.def[i] : 0;
+            const h = hpArr[i] ?? 0;
+            const a = atkArr[i] ?? 0;
+            const d = defArr[i] ?? 0;
             textData += `${i + 1}\t${h}\t${a}\t${d}\n`;
         }
         try {
@@ -224,7 +256,7 @@
     on:keyup={handleKeyup} 
 />
 
-{#if !enemies[id]}
+{#if !enemies[baseId]}
     <NotFound />
 {:else}
 <div class="{showBackButton ? 'min-h-screen md:px-8 md:py-3' : 'md:px-1 md:py-1 pb-10'} font-sans transition-colors">
@@ -324,10 +356,35 @@
                         </div>
                     {/if}
 
-                    <div class="relative z-20 flex flex-col gap-4 h-full w-[65%]">
+                    <div class="relative z-20 flex flex-col gap-3 h-full w-[65%]">
                         <h1 class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm">
                             {enemyName}
                         </h1>
+
+                        {#if statVariantsList.length > 0}
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <button
+                                    type="button"
+                                    on:click={() => selectStatVariant(null)}
+                                    class="px-2.5 py-0.5 text-xs font-bold rounded-lg transition-all duration-200 cursor-pointer {selectedStatVariant === null
+                                        ? 'bg-[#FACC15] text-black shadow-sm font-black'
+                                        : 'bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-gray-700 dark:text-gray-300'}"
+                                >
+                                    {$t("stats.default")}
+                                </button>
+                                {#each statVariantsList as v}
+                                    <button
+                                        type="button"
+                                        on:click={() => selectStatVariant(v.postfix)}
+                                        class="px-2.5 py-0.5 text-xs font-bold rounded-lg transition-all duration-200 cursor-pointer {selectedStatVariant === v.postfix
+                                            ? 'bg-[#FACC15] text-black shadow-sm font-black'
+                                            : 'bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-gray-700 dark:text-gray-300'}"
+                                    >
+                                        {v.postfix}
+                                    </button>
+                                {/each}
+                            </div>
+                        {/if}
 
                         <div class="flex items-center gap-3">
                             {#if enemyData.groupId}
@@ -592,17 +649,17 @@
                     <td
                         class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        {@html formatNumberForSelection(enemyData.hp ? enemyData.hp[i] : 0)}
+                        {@html formatNumberForSelection((activeStatData.hp || enemyData.hp) ? (activeStatData.hp || enemyData.hp)[i] : 0)}
                     </td>
                     <td
                         class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        {@html formatNumberForSelection(enemyData.atk ? enemyData.atk[i] : 0)}
+                        {@html formatNumberForSelection((activeStatData.atk || enemyData.atk) ? (activeStatData.atk || enemyData.atk)[i] : 0)}
                     </td>
                     <td
                         class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        {@html formatNumberForSelection(enemyData.def ? enemyData.def[i] : 0)}
+                        {@html formatNumberForSelection((activeStatData.def || enemyData.def) ? (activeStatData.def || enemyData.def)[i] : 0)}
                     </td>
                 </tr>
             {/each}

@@ -464,6 +464,7 @@
   },
   "stats": {
     "attributes": "Attribuutit",
+    "default": "Oletus",
     "ascension": "Ylennys",
     "cumulative": "Kumulatiivinen",
     "goodMatch": "Hyvä sopivuus",

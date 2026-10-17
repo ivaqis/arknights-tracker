@@ -903,6 +903,7 @@
     "level": "Уровень",
     "attributesTable": "Таблица атрибутов",
     "selector": "Селектор",
+    "default": "Стандартный",
     "bonus_copy": "Жетон-подношение",
     "guaranteed": "Гарантированно",
     "arms_offering": "Пополнение арсенала",

@@ -685,6 +685,7 @@
     "level": "Level",
     "attributesTable": "Tabel atribut",
     "selector": "Pemilih",
+    "default": "Standar",
     "bonus_copy": "Persembahan Token",
     "guaranteed": "Jaminan",
     "arms_offering": "Penawaran Senjata",

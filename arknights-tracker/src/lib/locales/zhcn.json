@@ -724,6 +724,7 @@
     "level": "等级",
     "attributesTable": "属性表",
     "selector": "选择器",
+    "default": "默认",
     "bonus_copy": "信物赠礼",
     "guaranteed": "必出",
     "arms_offering": "武库赠礼",

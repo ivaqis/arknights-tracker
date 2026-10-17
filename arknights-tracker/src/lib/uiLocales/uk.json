@@ -464,6 +464,7 @@
   },
   "stats": {
     "attributes": "Атрибути",
+    "default": "Стандартний",
     "ascension": "Піднесення",
     "cumulative": "Накопичувально",
     "goodMatch": "Хороша сумісність",

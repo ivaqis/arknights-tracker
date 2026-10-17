@@ -464,6 +464,7 @@
   },
   "stats": {
     "attributes": "Atrybuty",
+    "default": "Domyślny",
     "ascension": "Awans",
     "cumulative": "Kumulacja",
     "goodMatch": "Dobre dopasowanie",

@@ -685,6 +685,7 @@
     "level": "Livello",
     "attributesTable": "Tabella attributi",
     "selector": "Selettore",
+    "default": "Predefinito",
     "bonus_copy": "Tributo gettone",
     "guaranteed": "Garantito",
     "arms_offering": "Offerta armi",

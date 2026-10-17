@@ -3,6 +3,7 @@
     import { currentLocale } from "$lib/stores/locale";
     import { equipment } from "$lib/data/items/equipment.js";
     import { changelogData } from "$lib/data/versions.js";
+    import { isDarkMode } from "$lib/stores/theme";
     import { browser } from "$app/environment";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
@@ -541,7 +542,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-auto flex items-center gap-3">
+                        <div class="mt-auto flex items-center gap-1.5">
                             <div
                                 class="bg-gray-200 dark:bg-[#4A4A4A] w-fit rounded-md px-3 py-1 flex items-baseline gap-1.5 shadow-sm shrink-0"
                             >
@@ -562,8 +563,19 @@
                                     <span
                                         class="text-[11px] font-bold text-[#21272C] dark:text-white/90 uppercase tracking-widest leading-none"
                                     >
-                                        {$t("packs.none" || "Non-Set")}
+                                        {$t("packs.none")}
                                     </span>
+                                </div>
+                            {:else if equipData.packIcon}
+                                <div class="relative h-9 shrink-0 flex items-center justify-center overflow-visible">
+                                    <Image
+                                        id={equipData.packIcon}
+                                        variant={$isDarkMode ? "suit-logo-w" : "suit-logo-d"}
+                                        height={60}
+                                        width="auto"
+                                        className="object-contain max-w-none"
+                                        alt=""
+                                    />
                                 </div>
                             {/if}
                         </div>
@@ -729,7 +741,7 @@
                                 <h3
                                     class="text-sm font-bold text-gray-500 dark:text-[#888]"
                                 >
-                                    {$t(`packs.${pack}` || pack)}
+                                    {$t(`packs.${pack}`)}
                                 </h3>
                             {/if}
                         </div>
@@ -743,7 +755,7 @@
                             {:else}
                                 <Icon name="copy" class="w-4 h-4" />
                             {/if}
-                            <span>{$t("common.copy" || "Copy")}</span>
+                            <span>{$t("common.copy")}</span>
                         </button>
                     </div>
 
@@ -1033,10 +1045,24 @@
                 <div
                     class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors shadow-sm"
                 >
-                    <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3">
-                        <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
-                            {$t(`packs.${pack}`)}
-                        </h2>
+                    <div class="flex items-center border-b border-gray-100 dark:border-[#444] pb-3">
+                        <div class="flex items-center gap-2.5 justify-between w-full">
+                            <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                                {$t(`packs.${pack}`)}
+                            </h2>
+                            {#if equipData.packIcon}
+                                <div class="relative h-8 shrink-0 flex items-center justify-center overflow-visible">
+                                    <Image
+                                        id={equipData.packIcon}
+                                        variant={$isDarkMode ? "suit-logo-w" : "suit-logo-d"}
+                                        height={60}
+                                        width="auto"
+                                        className="object-contain max-w-none"
+                                        alt=""
+                                    />
+                                </div>
+                            {/if}
+                        </div>
                     </div>
                     <div class="flex flex-wrap justify-center gap-3">
                         {#each setEquipment as eq (eq.id)}

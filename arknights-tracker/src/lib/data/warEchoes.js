@@ -18,7 +18,7 @@ export const warEchoesSeasons = [
                         "name": "Avenger File: Bonekrusher",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0066_lbhunt2",
+                            "eny_0066_lbhunt2_hdg005",
                             "eny_0075_lbroshan_settlement"
                         ],
                         "enemyLevels": [
@@ -41,7 +41,7 @@ export const warEchoesSeasons = [
                         "name": "Construct File: Geist",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0127_bigents"
+                            "eny_0127_bigents_tower019"
                         ],
                         "enemyLevels": [
                             60
@@ -60,8 +60,8 @@ export const warEchoesSeasons = [
                         "name": "Pulverizing Ammunition",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0093_hshog",
-                            "eny_0055_hscrane"
+                            "eny_0093_hshog_race005",
+                            "eny_0055_hscrane_race005"
                         ],
                         "enemyLevels": [
                             60,
@@ -110,10 +110,10 @@ export const warEchoesSeasons = [
                         "name": "Scars of Landbreaking",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0074_lbshield",
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0018_lbtough"
+                            "eny_0074_lbshield_race006",
+                            "eny_0023_aghornb_race006",
+                            "eny_0047_firebat_race006",
+                            "eny_0018_lbtough_race006"
                         ],
                         "enemyLevels": [
                             60,
@@ -141,8 +141,8 @@ export const warEchoesSeasons = [
                         "name": "Beastly Schemes",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0112_jzmonk",
-                            "eny_0113_jzogre"
+                            "eny_0112_jzmonk_tower014",
+                            "eny_0113_jzogre_tower014"
                         ],
                         "enemyLevels": [
                             60,
@@ -203,7 +203,7 @@ export const warEchoesSeasons = [
                         "name": "Glaiver File: Yinglung",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0124_kltdcap"
+                            "eny_0124_kltdcap_tower016"
                         ],
                         "enemyLevels": [
                             60
@@ -222,7 +222,7 @@ export const warEchoesSeasons = [
                         "name": "Howling of Undying Beasts",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0082_hsbear"
+                            "eny_0082_hsbear_race007"
                         ],
                         "enemyLevels": [
                             60
@@ -259,7 +259,7 @@ export const warEchoesSeasons = [
                         "name": "Blightshade File: Thunderclap",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0120_klbear"
+                            "eny_0120_klbear_tower015"
                         ],
                         "enemyLevels": [
                             60
@@ -305,9 +305,9 @@ export const warEchoesSeasons = [
                         "name": "Grievously Besieged",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0093_hshog"
+                            "eny_0023_aghornb_tower011",
+                            "eny_0047_firebat_tower011",
+                            "eny_0093_hshog_tower011"
                         ],
                         "enemyLevels": [
                             60,
@@ -340,7 +340,7 @@ export const warEchoesSeasons = [
                         "name": "Glaiver File: Yinglung",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0124_kltdcap"
+                            "eny_0124_kltdcap_tower016"
                         ],
                         "enemyLevels": [
                             60
@@ -359,9 +359,9 @@ export const warEchoesSeasons = [
                         "name": "Silver Watercutter",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0106_wgthorns2",
-                            "eny_0105_wgslime2",
-                            "eny_0091_wgshoal"
+                            "eny_0106_wgthorns2_race001",
+                            "eny_0105_wgslime2_race001",
+                            "eny_0091_wgshoal_nearspecial"
                         ],
                         "enemyLevels": [
                             60,
@@ -386,8 +386,8 @@ export const warEchoesSeasons = [
                         "name": "Wall of Shields",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0118_klhog",
-                            "eny_0089_wgreflec"
+                            "eny_0118_klhog_tower010",
+                            "eny_0089_wgreflec_tower010"
                         ],
                         "enemyLevels": [
                             60,
@@ -436,8 +436,8 @@ export const warEchoesSeasons = [
                         "name": "Skirmishers' Æthillu",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0033_lbhunt",
-                            "eny_0095_ethillu"
+                            "eny_0033_lbhunt_hdg005",
+                            "eny_0095_ethillu_race003"
                         ],
                         "enemyLevels": [
                             60,
@@ -537,8 +537,8 @@ export const warEchoesSeasons = [
                         "name": "Powerful Decapitation",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0018_lbtough",
-                            "eny_0054_hsmino"
+                            "eny_0018_lbtough_tower013",
+                            "eny_0054_hsmino_tower013"
                         ],
                         "enemyLevels": [
                             60,
@@ -560,9 +560,9 @@ export const warEchoesSeasons = [
                         "name": "Silver Watercutter",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0106_wgthorns2",
-                            "eny_0105_wgslime2",
-                            "eny_0091_wgshoal"
+                            "eny_0106_wgthorns2_race001",
+                            "eny_0105_wgslime2_race001",
+                            "eny_0091_wgshoal_nearspecial"
                         ],
                         "enemyLevels": [
                             60,
@@ -595,9 +595,9 @@ export const warEchoesSeasons = [
                         "name": "Grievously Besieged",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0093_hshog"
+                            "eny_0023_aghornb_tower011",
+                            "eny_0047_firebat_tower011",
+                            "eny_0093_hshog_tower011"
                         ],
                         "enemyLevels": [
                             60,
@@ -653,10 +653,10 @@ export const warEchoesSeasons = [
                         "name": "Old Tales of the Wild",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0092_slbomb",
-                            "eny_0073_slimerg",
-                            "eny_0050_hound",
-                            "eny_0096_hsmob2"
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
                         ],
                         "enemyLevels": [
                             60,
@@ -692,7 +692,7 @@ export const warEchoesSeasons = [
                         "name": "Howling of Undying Beasts",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0082_hsbear"
+                            "eny_0082_hsbear_race007"
                         ],
                         "enemyLevels": [
                             60
@@ -711,8 +711,8 @@ export const warEchoesSeasons = [
                         "name": "Wall of Shields",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0118_klhog",
-                            "eny_0089_wgreflec"
+                            "eny_0118_klhog_tower010",
+                            "eny_0089_wgreflec_tower010"
                         ],
                         "enemyLevels": [
                             60,
@@ -735,7 +735,7 @@ export const warEchoesSeasons = [
                         "picPath": "",
                         "enemyIds": [
                             "eny_0007_mimicw",
-                            "eny_0122_kltdbud"
+                            "eny_0122_kltdbud_tower009"
                         ],
                         "enemyLevels": [
                             60,
@@ -776,7 +776,7 @@ export const warEchoesSeasons = [
                         "picPath": "",
                         "enemyIds": [
                             "eny_0007_mimicw",
-                            "eny_0122_kltdbud"
+                            "eny_0122_kltdbud_tower009"
                         ],
                         "enemyLevels": [
                             60,
@@ -798,8 +798,8 @@ export const warEchoesSeasons = [
                         "name": "Beastly Schemes",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0112_jzmonk",
-                            "eny_0113_jzogre"
+                            "eny_0112_jzmonk_tower014",
+                            "eny_0113_jzogre_tower014"
                         ],
                         "enemyLevels": [
                             60,
@@ -821,10 +821,10 @@ export const warEchoesSeasons = [
                         "name": "Scars of Landbreaking",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0074_lbshield",
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0018_lbtough"
+                            "eny_0074_lbshield_race006",
+                            "eny_0023_aghornb_race006",
+                            "eny_0047_firebat_race006",
+                            "eny_0018_lbtough_race006"
                         ],
                         "enemyLevels": [
                             60,
@@ -860,8 +860,8 @@ export const warEchoesSeasons = [
                         "name": "Wall of Shields",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0118_klhog",
-                            "eny_0089_wgreflec"
+                            "eny_0118_klhog_tower010",
+                            "eny_0089_wgreflec_tower010"
                         ],
                         "enemyLevels": [
                             60,
@@ -883,10 +883,10 @@ export const warEchoesSeasons = [
                         "name": "Old Tales of the Wild",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0092_slbomb",
-                            "eny_0073_slimerg",
-                            "eny_0050_hound",
-                            "eny_0096_hsmob2"
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
                         ],
                         "enemyLevels": [
                             60,
@@ -914,7 +914,7 @@ export const warEchoesSeasons = [
                         "name": "Howling of Undying Beasts",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0082_hsbear"
+                            "eny_0082_hsbear_race007"
                         ],
                         "enemyLevels": [
                             60
@@ -941,8 +941,8 @@ export const warEchoesSeasons = [
                         "name": "Pulverizing Ammunition",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0093_hshog",
-                            "eny_0055_hscrane"
+                            "eny_0093_hshog_race005",
+                            "eny_0055_hscrane_race005"
                         ],
                         "enemyLevels": [
                             60,
@@ -964,8 +964,8 @@ export const warEchoesSeasons = [
                         "name": "Skirmishers' Æthillu",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0033_lbhunt",
-                            "eny_0095_ethillu"
+                            "eny_0033_lbhunt_hdg005",
+                            "eny_0095_ethillu_race003"
                         ],
                         "enemyLevels": [
                             60,
@@ -1022,10 +1022,10 @@ export const warEchoesSeasons = [
                         "name": "Old Tales of the Wild",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0092_slbomb",
-                            "eny_0073_slimerg",
-                            "eny_0050_hound",
-                            "eny_0096_hsmob2"
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
                         ],
                         "enemyLevels": [
                             60,
@@ -1084,7 +1084,7 @@ export const warEchoesSeasons = [
                         "name": "Howling of Undying Beasts",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0082_hsbear"
+                            "eny_0082_hsbear_race007"
                         ],
                         "enemyLevels": [
                             60
@@ -1111,8 +1111,8 @@ export const warEchoesSeasons = [
                         "name": "Skirmishers' Æthillu",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0033_lbhunt",
-                            "eny_0095_ethillu"
+                            "eny_0033_lbhunt_hdg005",
+                            "eny_0095_ethillu_race003"
                         ],
                         "enemyLevels": [
                             60,
@@ -1134,10 +1134,10 @@ export const warEchoesSeasons = [
                         "name": "Old Tales of the Wild",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0092_slbomb",
-                            "eny_0073_slimerg",
-                            "eny_0050_hound",
-                            "eny_0096_hsmob2"
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
                         ],
                         "enemyLevels": [
                             60,
@@ -1192,9 +1192,9 @@ export const warEchoesSeasons = [
                         "name": "Silver Watercutter",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0106_wgthorns2",
-                            "eny_0105_wgslime2",
-                            "eny_0091_wgshoal"
+                            "eny_0106_wgthorns2_race001",
+                            "eny_0105_wgslime2_race001",
+                            "eny_0091_wgshoal_nearspecial"
                         ],
                         "enemyLevels": [
                             60,
@@ -1250,8 +1250,8 @@ export const warEchoesSeasons = [
                         "name": "Pulverizing Ammunition",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0093_hshog",
-                            "eny_0055_hscrane"
+                            "eny_0093_hshog_race005",
+                            "eny_0055_hscrane_race005"
                         ],
                         "enemyLevels": [
                             60,
@@ -1291,10 +1291,10 @@ export const warEchoesSeasons = [
                         "name": "Scars of Landbreaking",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0074_lbshield",
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0018_lbtough"
+                            "eny_0074_lbshield_race006",
+                            "eny_0023_aghornb_race006",
+                            "eny_0047_firebat_race006",
+                            "eny_0018_lbtough_race006"
                         ],
                         "enemyLevels": [
                             60,
@@ -1322,9 +1322,9 @@ export const warEchoesSeasons = [
                         "name": "Silver Watercutter",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0106_wgthorns2",
-                            "eny_0105_wgslime2",
-                            "eny_0091_wgshoal"
+                            "eny_0106_wgthorns2_race001",
+                            "eny_0105_wgslime2_race001",
+                            "eny_0091_wgshoal_nearspecial"
                         ],
                         "enemyLevels": [
                             60,
@@ -1349,7 +1349,7 @@ export const warEchoesSeasons = [
                         "name": "Howling of Undying Beasts",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0082_hsbear"
+                            "eny_0082_hsbear_race007"
                         ],
                         "enemyLevels": [
                             60
@@ -1376,8 +1376,8 @@ export const warEchoesSeasons = [
                         "name": "Skirmishers' Æthillu",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0033_lbhunt",
-                            "eny_0095_ethillu"
+                            "eny_0033_lbhunt_hdg005",
+                            "eny_0095_ethillu_race003"
                         ],
                         "enemyLevels": [
                             60,
@@ -1399,9 +1399,9 @@ export const warEchoesSeasons = [
                         "name": "Silver Watercutter",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0106_wgthorns2",
-                            "eny_0105_wgslime2",
-                            "eny_0091_wgshoal"
+                            "eny_0106_wgthorns2_race001",
+                            "eny_0105_wgslime2_race001",
+                            "eny_0091_wgshoal_nearspecial"
                         ],
                         "enemyLevels": [
                             60,
@@ -1453,8 +1453,8 @@ export const warEchoesSeasons = [
                         "name": "Pulverizing Ammunition",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0093_hshog",
-                            "eny_0055_hscrane"
+                            "eny_0093_hshog_race005",
+                            "eny_0055_hscrane_race005"
                         ],
                         "enemyLevels": [
                             60,
@@ -1476,10 +1476,10 @@ export const warEchoesSeasons = [
                         "name": "Scars of Landbreaking",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0074_lbshield",
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0018_lbtough"
+                            "eny_0074_lbshield_race006",
+                            "eny_0023_aghornb_race006",
+                            "eny_0047_firebat_race006",
+                            "eny_0018_lbtough_race006"
                         ],
                         "enemyLevels": [
                             60,

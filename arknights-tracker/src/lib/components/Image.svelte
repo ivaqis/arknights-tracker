@@ -13,6 +13,8 @@
     export let variant: string = "";
     export let alt: string = "";
     export let size: `${number}%` | number = "100%";
+    export let width: string | number | undefined = undefined;
+    export let height: string | number | undefined = undefined;
     export let className: string = "";
     export let style: string = "";
     export let interactive: boolean = false;
@@ -98,7 +100,14 @@
         };
     }
 
-    $: sizeStyle = typeof size === 'number' ? `width: ${size}px; height: ${size}px;` : `width: ${size}; height: ${size};`;
+    $: sizeStyle = (() => {
+        if (width !== undefined || height !== undefined) {
+            const w = width !== undefined ? (typeof width === 'number' ? `${width}px` : width) : 'auto';
+            const h = height !== undefined ? (typeof height === 'number' ? `${height}px` : height) : 'auto';
+            return `width: ${w}; height: ${h};`;
+        }
+        return typeof size === 'number' ? `width: ${size}px; height: ${size}px;` : `width: ${size}; height: ${size};`;
+    })();
     $: isSmallIcon = variant.includes('icon') && !variant.includes('banner');
     $: smoothImageStyles = isSmallIcon 
         ? "image-rendering: auto;" 

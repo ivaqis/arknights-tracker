@@ -7,6 +7,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 1,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -54,6 +55,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 1,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -101,6 +103,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 1,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -138,176 +141,6 @@ export const equipment = {
         {
           "name": "wood",
           "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_combo_cd01_hand_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0PPNGEr"
-  },
-  "item_equip_t4_suit_fire_natr01_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_fire_natr01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "fire_dmg_up": 0.5,
-      "duration": 10,
-      "nature_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
         }
       ]
     ]
@@ -318,6 +151,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 1,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -359,204 +193,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_poise01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_poise01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0kSjuAp"
-  },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.27107143,
-          0.2957143,
-          0.32035714
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0WoEsSM"
-  },
   "item_equip_t1_parts_tundra01_body_01": {
     "level": 20,
     "tier": "T1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -598,86 +241,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0PPNGEr"
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "level": 20,
     "tier": "T1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -715,51 +285,6 @@ export const equipment = {
         {
           "name": "amethystComponent",
           "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t2_suit_wisd01_edc_03": {
-    "level": 36,
-    "tier": "T2",
-    "partType": 2,
-    "rarity": 3,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.0525
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 1200
-        },
-        {
-          "name": "ferriumComponent",
-          "amount": 50
         }
       ]
     ]
@@ -770,6 +295,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -811,106 +337,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ubaIIO"
-  },
   "item_equip_t1_parts_tundra01_body_04": {
     "level": 28,
     "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -952,57 +385,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "level": 36,
-    "tier": "T2",
-    "partType": 2,
-    "rarity": 3,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.105
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 1200
-        },
-        {
-          "name": "ferriumComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t1_parts_tundra01_body_05": {
     "level": 28,
     "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1050,6 +439,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1091,170 +481,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0hN2HgW"
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/047kLHQ"
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "level": 20,
     "tier": "T1",
     "partType": 2,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1290,6 +523,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1325,6 +559,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1372,6 +607,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1413,87 +649,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_crush_fracture_hand_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/05bID7X"
-  },
   "item_equip_t1_parts_tundra01_hand_03": {
     "level": 20,
     "tier": "T1",
     "partType": 1,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1541,6 +703,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 2,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1582,107 +745,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1b0BkJu"
-  },
   "item_equip_t1_suit_stragi01_body_01": {
     "level": 28,
     "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "suit_stragi01",
+    "packIcon": "icon_pack_tundra_suit_stragi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1734,6 +803,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 2,
     "pack": "suit_stragi01",
+    "packIcon": "icon_pack_tundra_suit_stragi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1773,63 +843,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t2_suit_wisd01_body_01": {
-    "level": 36,
-    "tier": "T2",
-    "partType": 0,
-    "rarity": 3,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          28.8
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          44
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          29
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          16.187704477740866
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 1200
-        },
-        {
-          "name": "ferriumComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t1_suit_stragi01_edc_02": {
     "level": 28,
     "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_stragi01",
+    "packIcon": "icon_pack_tundra_suit_stragi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -1869,105 +889,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_edc_05": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.177,
-          0.1947,
-          0.2124,
-          0.2301
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
   "item_equip_t1_suit_stragi01_hand_01": {
     "level": 28,
     "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "suit_stragi01",
+    "packIcon": "icon_pack_tundra_suit_stragi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2013,173 +941,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_heal01_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          0.2070178350109774,
-          0.22771962,
-          0.2484214,
-          0.2691232
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/02EJym9"
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_04": {
-    "url": "https://oem.re/0CWQXMV",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.27107143,
-          0.2957143,
-          0.32035714
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "level": 28,
     "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "suit_wisdwill01",
+    "packIcon": "icon_pack_tundra_suit_wisdwill01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2231,6 +999,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 2,
     "pack": "suit_wisdwill01",
+    "packIcon": "icon_pack_tundra_suit_wisdwill01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2270,108 +1039,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.13799999999999998,
-          0.1518,
-          0.1656,
-          0.1794
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0O8Wj6w"
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "level": 28,
     "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_wisdwill01",
+    "packIcon": "icon_pack_tundra_suit_wisdwill01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2411,87 +1085,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_crush_fracture_hand_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0AvUSn4"
-  },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "level": 28,
     "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "suit_wisdwill01",
+    "packIcon": "icon_pack_tundra_suit_wisdwill01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2543,6 +1143,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2578,106 +1179,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_attri01_body_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0mCv8JR"
-  },
   "item_equip_t2_parts_tundra01_edc_02": {
     "level": 36,
     "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2700,57 +1208,6 @@ export const equipment = {
       }
     ],
     "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 1200
-        },
-        {
-          "name": "ferriumComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t2_suit_str01_hand_01": {
-    "level": 36,
-    "tier": "T2",
-    "partType": 1,
-    "rarity": 3,
-    "pack": "suit_str01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21.599999999999998
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          33
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          22
-        ]
-      },
-      {
-        "attrType": "AllDamageTakenScalar",
-        "values": [
-          0.9195402298850576
-        ]
-      }
-    ],
-    "blackboard": {
-      "str_up": 50,
-      "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
-    },
     "materials": [
       [
         {
@@ -2770,6 +1227,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2805,144 +1263,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t3_parts_tundra01_body_02": {
-    "level": 50,
-    "tier": "T3",
-    "partType": 0,
-    "rarity": 4,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          40
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.078
-        ]
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 9600
-        },
-        {
-          "name": "crystonComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_heal01_edc_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0kSjuAp"
-  },
   "item_equip_t2_parts_tundra01_edc_04": {
     "level": 36,
     "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -2984,6 +1311,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3025,86 +1353,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.2070178350109774,
-          0.22771962,
-          0.2484214,
-          0.2691232
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0PPNGEr"
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "level": 36,
     "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3152,6 +1407,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 3,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3181,8 +1437,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -3203,6 +1459,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3226,8 +1483,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -3242,258 +1499,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_body_05": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1aPV20g"
-  },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_poise01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0kSjuAp"
-  },
-  "item_equip_t4_suit_usp02_hand_04": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0nzgEg7"
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "level": 36,
     "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3517,8 +1529,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -3533,188 +1545,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t3_parts_tundra01_hand_02": {
-    "level": 50,
-    "tier": "T3",
-    "partType": 1,
-    "rarity": 4,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          30
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          49
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.15476190476190477
-        ]
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 9600
-        },
-        {
-          "name": "crystonComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_burst01_hand_02": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0skdX7F"
-  },
-  "item_equip_t4_suit_usp02_body_06": {
-    "url": "https://oem.re/0CWQXMV",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t2_suit_agi01_hand_01": {
     "level": 36,
     "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3744,8 +1581,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -3760,170 +1597,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_body_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.1035089175054887,
-          0.11385981,
-          0.1242107,
-          0.1345616
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0adp8l6"
-  },
-  "item_equip_t4_suit_usp02_hand_05": {
-    "url": "https://oem.re/0CWQXMV",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t2_suit_str01_body_01": {
     "level": 36,
     "tier": "T2",
     "partType": 0,
     "rarity": 3,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3954,7 +1634,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -3975,6 +1655,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -3999,7 +1680,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -4020,6 +1701,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4044,7 +1726,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -4059,95 +1741,54 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_hand_02": {
-    "level": 60,
-    "tier": "T3.5",
+  "item_equip_t2_suit_str01_hand_01": {
+    "level": 36,
+    "tier": "T2",
     "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
+    "rarity": 3,
+    "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          36
+          21.599999999999998
         ]
       },
       {
-        "attrType": "Main",
+        "attrType": "Str",
         "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          33
+        ]
       },
       {
-        "attrType": "Sub",
+        "attrType": "Will",
         "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          22
+        ]
       },
       {
-        "attrType": "UltimateSpGainScalar",
+        "attrType": "AllDamageTakenScalar",
         "values": [
-          0.17559523809523808,
-          0.19315477,
-          0.21071428,
-          0.22827381
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.9195402298850576
+        ]
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "str_up": 50,
+      "hp_ratio": 0.5,
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 3000
+          "name": "valleyStockBill",
+          "amount": 1200
         },
         {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
+          "name": "ferriumComponent",
+          "amount": 50
         }
       ]
     ]
@@ -4158,6 +1799,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 3,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4188,7 +1830,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -4209,6 +1851,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4233,7 +1876,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -4243,57 +1886,6 @@ export const equipment = {
         },
         {
           "name": "ferriumComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t3_suit_will01_edc_02": {
-    "level": 50,
-    "tier": "T3",
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_will01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "will_up": 50,
-      "hp_ratio": 0.5,
-      "heal_up": 0.3
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 9600
-        },
-        {
-          "name": "crystonComponent",
           "amount": 50
         }
       ]
@@ -4305,6 +1897,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4329,7 +1922,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -4344,63 +1937,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t3_suit_will01_edc_01": {
-    "level": 50,
-    "tier": "T3",
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_will01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "will_up": 50,
-      "hp_ratio": 0.5,
-      "heal_up": 0.3
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 9600
-        },
-        {
-          "name": "crystonComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t2_suit_will01_hand_01": {
     "level": 36,
     "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4431,7 +1974,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -4446,139 +1989,103 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t3_suit_usp01_body_01": {
-    "level": 50,
-    "tier": "T3",
+  "item_equip_t2_suit_wisd01_body_01": {
+    "level": 36,
+    "tier": "T2",
     "partType": 0,
-    "rarity": 4,
-    "pack": "suit_usp01",
+    "rarity": 3,
+    "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          40
+          28.8
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          44
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          61
+          29
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Atk",
         "values": [
-          41
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.18375
+          16.187704477740866
         ]
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
-      "atb_recover": 50
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
         {
           "name": "valleyStockBill",
-          "amount": 9600
+          "amount": 1200
         },
         {
-          "name": "crystonComponent",
+          "name": "ferriumComponent",
           "amount": 50
         }
       ]
     ]
   },
-  "item_equip_t4_suit_atk02_body_03": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "level": 36,
+    "tier": "T2",
+    "partType": 2,
+    "rarity": 3,
+    "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          56
+          10.799999999999999
         ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Wisd",
         "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          21
+        ]
       },
       {
-        "attrType": "ComboSkillEfficiency",
+        "attrType": "Atk",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.105
+        ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 16000
+          "name": "valleyStockBill",
+          "amount": 1200
         },
         {
-          "name": "cupriumComponent",
+          "name": "ferriumComponent",
           "amount": 50
         }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
       ]
-    ],
-    "url": "https://oem.re/0hN2HgW"
+    ]
   },
   "item_equip_t2_suit_wisd01_edc_02": {
     "level": 36,
@@ -4586,6 +2093,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 3,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4609,8 +2117,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -4625,101 +2133,51 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_criti01_edc_04": {
-    "level": 70,
-    "tier": "T4",
+  "item_equip_t2_suit_wisd01_edc_03": {
+    "level": 36,
+    "tier": "T2",
     "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
+    "rarity": 3,
+    "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          10.799999999999999
         ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Wisd",
         "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          21
+        ]
       },
       {
-        "attrType": "FireAndNaturalDamageIncrease",
+        "attrType": "CriticalRate",
         "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.0525
+        ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 8000
+          "name": "valleyStockBill",
+          "amount": 1200
         },
         {
-          "name": "xiraniteComponent",
+          "name": "ferriumComponent",
           "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
         }
       ]
-    ],
-    "url": "https://oem.re/0adp8l6"
+    ]
   },
   "item_equip_t2_suit_wisd01_hand_01": {
     "level": 36,
@@ -4727,6 +2185,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 3,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4756,8 +2215,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -4778,6 +2237,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4819,44 +2279,41 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t3_suit_atk01_edc_04": {
+  "item_equip_t3_parts_tundra01_body_02": {
     "level": 50,
     "tier": "T3",
-    "partType": 2,
+    "partType": 0,
     "rarity": 4,
-    "pack": "suit_atk01",
+    "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          15
+          40
         ]
       },
       {
         "attrType": "Wisd",
         "values": [
-          23
+          65
         ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Agi",
         "values": [
-          15
+          43
         ]
       },
       {
-        "attrType": "UltimateSpGainScalar",
+        "attrType": "Atk",
         "values": [
-          0.175
+          0.078
         ]
       }
     ],
-    "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
-      "duration": 15
-    },
+    "blackboard": {},
     "materials": [
       [
         {
@@ -4870,96 +2327,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_phy01_edc_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -4995,98 +2369,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0mCv8JR"
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5122,87 +2411,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.621,
-          0.67275
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
   "item_equip_t3_parts_tundra01_edc_03": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5238,91 +2453,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling01_edc_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.10799999999999998,
-          0.1188,
-          0.1296,
-          0.1404
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
   "item_equip_t3_parts_tundra01_edc_04": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5364,6 +2501,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 4,
     "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5405,154 +2543,53 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_criti01_edc_05": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
+  "item_equip_t3_parts_tundra01_hand_02": {
+    "level": 50,
+    "tier": "T3",
+    "partType": 1,
+    "rarity": 4,
+    "pack": "",
+    "packIcon": "",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          30
         ]
       },
       {
         "attrType": "Will",
         "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_usp02_body_03": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
+          49
         ]
       },
       {
-        "attrType": "Will",
+        "attrType": "Wisd",
         "values": [
-          110,
-          121,
-          132,
-          143
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
+          32
+        ]
       },
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.15476190476190477
+        ]
       }
     ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
+    "blackboard": {},
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 360
+          "name": "valleyStockBill",
+          "amount": 9600
         },
         {
-          "name": "pyrroliteComponent",
+          "name": "crystonComponent",
           "amount": 50
         }
       ]
-    ],
-    "url": "https://oem.re/0nzgEg7"
+    ]
   },
   "item_equip_t3_suit_agi01_body_01": {
     "level": 50,
@@ -5560,6 +2597,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5589,8 +2627,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -5604,151 +2642,6 @@ export const equipment = {
         }
       ]
     ]
-  },
-  "item_equip_t3_suit_atk01_edc_02": {
-    "level": 50,
-    "tier": "T3",
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_atk01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "AttrDamageToBrokenUnitIncrease",
-        "values": [
-          0.294
-        ]
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "valleyStockBill",
-          "amount": 9600
-        },
-        {
-          "name": "crystonComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atb01_body_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "level": 50,
@@ -5756,6 +2649,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5785,8 +2679,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -5807,6 +2701,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5836,8 +2731,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -5852,76 +2747,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atk02_body_05": {
-    "url": "https://oem.re/17LK3My",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t3_suit_agi01_edc_03": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -5951,8 +2783,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -5973,6 +2805,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 4,
     "pack": "suit_agi01",
+    "packIcon": "icon_pack_tundra_suit_agi01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6002,8 +2835,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -6024,6 +2857,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6052,8 +2886,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6075,6 +2909,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6103,8 +2938,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6120,78 +2955,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_pulse_cryst01_body_02": {
-    "url": "https://oem.re/17LK3My",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
   "item_equip_t3_suit_atk01_body_03": {
     "level": 50,
     "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6220,8 +2990,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6243,6 +3013,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6271,8 +3042,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6294,6 +3065,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6322,8 +3094,60 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t3_suit_atk01_edc_02": {
+    "level": 50,
+    "tier": "T3",
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "AttrDamageToBrokenUnitIncrease",
+        "values": [
+          0.294
+        ]
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6345,6 +3169,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6373,8 +3198,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6390,100 +3215,57 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "level": 70,
-    "tier": "T4",
+  "item_equip_t3_suit_atk01_edc_04": {
+    "level": 50,
+    "tier": "T3",
     "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
+    "rarity": 4,
+    "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          15
         ]
       },
       {
-        "attrType": "Agi",
+        "attrType": "Wisd",
         "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          23
+        ]
       },
       {
         "attrType": "Str",
         "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          15
+        ]
       },
       {
-        "attrType": "PhysicalDamageIncrease",
+        "attrType": "UltimateSpGainScalar",
         "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.175
+        ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 8000
+          "name": "valleyStockBill",
+          "amount": 9600
         },
         {
-          "name": "xiraniteComponent",
+          "name": "crystonComponent",
           "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
         }
       ]
-    ],
-    "url": "https://oem.re/0aUrI8p"
+    ]
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "level": 50,
@@ -6491,6 +3273,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6519,8 +3302,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6536,179 +3319,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_body_06": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          48
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          74,
-          81,
-          88,
-          96
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          49,
-          53,
-          58,
-          63
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.09833333333333333,
-          0.108166665,
-          0.118,
-          0.12783334
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6737,8 +3354,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6754,105 +3371,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_hand_06": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          36
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.1638888888888889,
-          0.18027778,
-          0.19666667,
-          0.21305555
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "level": 50,
     "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_atk01",
+    "packIcon": "icon_pack_tundra_suit_atk01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6881,8 +3406,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6904,6 +3429,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6934,7 +3460,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -6955,6 +3481,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -6985,7 +3512,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -7006,6 +3533,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7036,7 +3564,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -7057,6 +3585,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 4,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7087,7 +3616,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       [
@@ -7108,6 +3637,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 4,
     "pack": "suit_str01",
+    "packIcon": "icon_pack_tundra_suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7138,7 +3668,58 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "level": 50,
+    "tier": "T3",
+    "partType": 0,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.18375
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
     },
     "materials": [
       [
@@ -7159,6 +3740,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7187,7 +3769,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -7203,96 +3785,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0hN2HgW"
-  },
   "item_equip_t3_suit_usp01_edc_01": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7321,7 +3820,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -7337,81 +3836,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling01_hand_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.24,
-          0.264,
-          0.288,
-          0.312
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
   "item_equip_t3_suit_usp01_edc_02": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7440,7 +3871,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -7462,6 +3893,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7490,7 +3922,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -7506,106 +3938,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0WoEsSM"
-  },
   "item_equip_t3_suit_usp01_hand_01": {
     "level": 50,
     "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_usp01",
+    "packIcon": "icon_pack_tundra_suit_usp01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7634,7 +3973,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -7650,199 +3989,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_body_03": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          48
-        ]
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          74,
-          81,
-          88,
-          96
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          49,
-          53,
-          58,
-          63
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.08850762511338889,
-          0.09735839,
-          0.10620915,
-          0.11505991
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0adp8l6"
-  },
   "item_equip_t3_suit_will01_body_01": {
     "level": 50,
     "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -7873,7 +4026,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -7888,95 +4041,106 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling00_hand_01": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
+  "item_equip_t3_suit_will01_edc_01": {
+    "level": 50,
+    "tier": "T3",
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          36
+          15
         ]
       },
       {
-        "attrType": "Main",
+        "attrType": "Will",
         "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          23
+        ]
       },
       {
-        "attrType": "Sub",
+        "attrType": "Agi",
         "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          15
+        ]
       },
       {
-        "attrType": "SpellDamageIncrease",
+        "attrType": "HealOutputIncrease",
         "values": [
-          0.15526315789473685,
-          0.17078948,
-          0.18631579,
-          0.2018421
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.147
+        ]
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "will_up": 50,
+      "hp_ratio": 0.5,
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 3000
+          "name": "valleyStockBill",
+          "amount": 9600
         },
         {
-          "name": "xiraniteComponent",
-          "amount": 20
+          "name": "crystonComponent",
+          "amount": 50
         }
-      ],
+      ]
+    ]
+  },
+  "item_equip_t3_suit_will01_edc_02": {
+    "level": 50,
+    "tier": "T3",
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.147
+        ]
+      }
+    ],
+    "blackboard": {
+      "will_up": 50,
+      "hp_ratio": 0.5,
+      "heal_up": 0.30000001192092896
+    },
+    "materials": [
       [
         {
-          "name": "wulingStockBill",
-          "amount": 3000
+          "name": "valleyStockBill",
+          "amount": 9600
         },
         {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
+          "name": "crystonComponent",
+          "amount": 50
         }
       ]
     ]
@@ -7987,6 +4151,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 4,
     "pack": "suit_will01",
+    "packIcon": "icon_pack_tundra_suit_will01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8017,7 +4182,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       [
@@ -8038,6 +4203,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 4,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8067,8 +4233,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -8083,107 +4249,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_burst01_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1b0BkJu"
-  },
   "item_equip_t3_suit_wisd01_body_02": {
     "level": 50,
     "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8213,8 +4285,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -8235,6 +4307,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 4,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8264,8 +4337,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -8280,185 +4353,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_parts_wuling01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.43199999999999994,
-          0.4752,
-          0.5184,
-          0.5616
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_attri01_body_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0KEz0NC"
-  },
   "item_equip_t3_suit_wisd01_edc_02": {
     "level": 50,
     "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8482,8 +4383,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -8498,106 +4399,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_atb01_body_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ubaIIO"
-  },
   "item_equip_t3_suit_wisd01_hand_01": {
     "level": 50,
     "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_wisd01",
+    "packIcon": "icon_pack_tundra_suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8627,8 +4435,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       [
@@ -8649,6 +4457,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8681,17 +4490,17 @@ export const equipment = {
         "attrType": "SpellDamageIncrease",
         "values": [
           0.0931578947368421,
-          0.10247368,
-          0.11178947,
-          0.12110526
+          0.102473683655262,
+          0.11178947240114212,
+          0.12110526114702225
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
     },
     "materials": [
       [
@@ -8736,106 +4545,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0KEz0NC"
-  },
   "item_equip_t4_parts_wuling00_body_02": {
     "level": 60,
     "tier": "T3.5",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -8868,17 +4584,17 @@ export const equipment = {
         "attrType": "UltimateSpGainScalar",
         "values": [
           0.10535714285714286,
-          0.11589286,
-          0.12642857,
-          0.13696429
+          0.11589285731315613,
+          0.12642857432365417,
+          0.13696429133415222
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
     },
     "materials": [
       [
@@ -8923,87 +4639,96 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_fire_natr01_body_02": {
-    "level": 70,
-    "tier": "T4.1",
+  "item_equip_t4_parts_wuling00_body_03": {
+    "level": 60,
+    "tier": "T3.5",
     "partType": 0,
     "rarity": 5,
-    "pack": "suit_fire_natr01",
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          56
+          48
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Sub",
         "values": [
-          87,
-          95,
-          104,
-          113
+          74,
+          81,
+          88,
+          96
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Will",
+        "attrType": "Main",
         "values": [
+          49,
+          53,
           58,
-          63,
-          69,
-          75
+          63
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "FireAndNaturalDamageIncrease",
+        "attrType": "Sub",
         "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
+          0.08850762511338889,
+          0.09735839068889618,
+          0.1062091514468193,
+          0.11505991220474243
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "phy_spell_up": 30,
-      "fire_dmg_up": 0.5,
-      "duration": 10,
-      "nature_dmg_up": 0.5,
-      "duration2": 10
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
     },
     "materials": [
       [
         {
           "name": "wulingStockBill",
-          "amount": 16000
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
         },
         {
           "name": "cupriumComponent",
-          "amount": 50
+          "amount": 20
         }
       ],
       [
         {
           "name": "wulingStockBill",
-          "amount": 16000
+          "amount": 3000
         },
         {
           "name": "hetoniteComponent",
-          "amount": 10
+          "amount": 4
         }
       ],
       [
         {
           "name": "wulingStockBill",
-          "amount": 160
+          "amount": 30
         },
         {
           "name": "pyrroliteComponent",
-          "amount": 5
+          "amount": 2
         }
       ]
     ]
@@ -9014,6 +4739,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -9046,17 +4772,17 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           17.7,
-          19.47,
-          21.24,
-          23.01
+          19.469999313354492,
+          21.239999771118164,
+          23.010000228881836
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
     },
     "materials": [
       [
@@ -9107,6 +4833,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -9139,17 +4866,17 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.0885,
-          0.09735,
-          0.1062,
-          0.11505
+          0.09735000133514404,
+          0.10620000213384628,
+          0.11505000293254852
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
     },
     "materials": [
       [
@@ -9194,12 +4921,9372 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling00_body_06": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.09833333333333333,
+          0.1081666648387909,
+          0.11800000071525574,
+          0.12783333659172058
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.1863157894736842,
+          0.204947367310524,
+          0.22357894480228424,
+          0.2422105222940445
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.21071428571428572,
+          0.23178571462631226,
+          0.25285714864730835,
+          0.27392858266830444
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.17701525022677778,
+          0.19471678137779236,
+          0.2124183028936386,
+          0.23011982440948486
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          35.4,
+          38.939998626708984,
+          42.47999954223633,
+          46.02000045776367
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.177,
+          0.19470000267028809,
+          0.21240000426769257,
+          0.23010000586509705
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_06": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.19666666666666666,
+          0.2163333296775818,
+          0.23600000143051147,
+          0.25566667318344116
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.15526315789473685,
+          0.17078948020935059,
+          0.18631578981876373,
+          0.20184209942817688
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.17559523809523808,
+          0.19315476715564728,
+          0.21071428060531616,
+          0.22827380895614624
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.14751270852231482,
+          0.16226397454738617,
+          0.1770152449607849,
+          0.19176651537418365
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          29.5,
+          32.45000076293945,
+          35.400001525878906,
+          38.349998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1475,
+          0.16224999725818634,
+          0.1770000010728836,
+          0.19175000488758087
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_06": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.1638888888888889,
+          0.1802777796983719,
+          0.1966666728258133,
+          0.2130555510520935
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_body_01": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "NormalAttackDamageIncrease",
+        "values": [
+          0.144,
+          0.15839999914169312,
+          0.1728000044822693,
+          0.18719999492168427
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_body_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.12857142857142856,
+          0.14142857491970062,
+          0.1542857140302658,
+          0.167142853140831
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "AllDamageTakenScalar",
+        "values": [
+          0.8223684210526316,
+          0.8080155253410339,
+          0.7941550016403198,
+          0.7807620167732239
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.43199999999999994,
+          0.47519999742507935,
+          0.5184000134468079,
+          0.5616000294685364
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2571428571428571,
+          0.28285714983940125,
+          0.3085714280605316,
+          0.334285706281662
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.10799999999999998,
+          0.11879999935626984,
+          0.12960000336170197,
+          0.1404000073671341
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_hand_01": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.45,
+          0.4950000047683716,
+          0.5400000214576721,
+          0.5849999785423279
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling01_hand_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.24,
+          0.2639999985694885,
+          0.2879999876022339,
+          0.31200000643730164
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          21.599999999999998,
+          23.760000228881836,
+          25.920000076293945,
+          28.079999923706055
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.10799999999999998,
+          0.11879999935626984,
+          0.12960000336170197,
+          0.1404000073671341
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_03": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.21599999999999997,
+          0.23759999871253967,
+          0.25920000672340393,
+          0.2808000147342682
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_04": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.11999999999999998,
+          0.13199999928474426,
+          0.14399999380111694,
+          0.15600000321865082
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.21601861044623727,
+          0.23762047290802002,
+          0.2592223286628723,
+          0.2808241844177246
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_edc_02": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2571428571428571,
+          0.28285714983940125,
+          0.3085714280605316,
+          0.334285706281662
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.21428571428571427,
+          0.23571428656578064,
+          0.2571428716182709,
+          0.2785714268684387
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.36,
+          0.3959999978542328,
+          0.4320000112056732,
+          0.46799999475479126
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_03": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.2,
+          0.2199999988079071,
+          0.23999999463558197,
+          0.25999999046325684
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_04": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "NormalAttackDamageIncrease",
+        "values": [
+          0.24,
+          0.2639999985694885,
+          0.2879999876022339,
+          0.31200000643730164
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atb01_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.25875,
+          0.28462499380111694,
+          0.31049999594688416,
+          0.33637499809265137
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
+  },
+  "item_equip_t4_suit_atb01_body_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
+  },
+  "item_equip_t4_suit_atb01_body_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.1035089175054887,
+          0.11385980993509293,
+          0.12421070039272308,
+          0.13456159830093384
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0adp8l6"
+  },
+  "item_equip_t4_suit_atb01_body_05": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_atb01_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
+  },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0adp8l6"
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
+  },
+  "item_equip_t4_suit_atb01_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0adp8l6"
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
+  },
+  "item_equip_t4_suit_atb01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
+  },
+  "item_equip_t4_suit_atb01_hand_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
+  },
+  "item_equip_t4_suit_atk02_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JuaamP"
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
+  },
+  "item_equip_t4_suit_atk02_body_03": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
+  },
+  "item_equip_t4_suit_atk02_body_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.13799999999999998,
+          0.1518000066280365,
+          0.1656000018119812,
+          0.1793999969959259
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JuaamP"
+  },
+  "item_equip_t4_suit_atk02_body_05": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/17LK3My"
+  },
+  "item_equip_t4_suit_atk02_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JuaamP"
+  },
+  "item_equip_t4_suit_atk02_edc_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
+  },
+  "item_equip_t4_suit_atk02_edc_03": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
+  },
+  "item_equip_t4_suit_atk02_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atk02_edc_05": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.27599999999999997,
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atk02_edc_06": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/17LK3My"
+  },
+  "item_equip_t4_suit_atk02_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JuaamP"
+  },
+  "item_equip_t4_suit_atk02_hand_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JuaamP"
+  },
+  "item_equip_t4_suit_atk02_hand_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "packIcon": "icon_pack_wuling_suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/17LK3My"
+  },
+  "item_equip_t4_suit_attri01_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
+  },
+  "item_equip_t4_suit_attri01_body_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
+  },
+  "item_equip_t4_suit_attri01_body_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
+  },
+  "item_equip_t4_suit_attri01_body_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
+  },
+  "item_equip_t4_suit_attri01_body_05": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_attri01_edc_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/047kLHQ"
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AttrDamageToBrokenUnitIncrease",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
+  },
+  "item_equip_t4_suit_attri01_edc_05": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
+  },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_attri01_hand_01": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_attri01_hand_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/047kLHQ"
+  },
+  "item_equip_t4_suit_burst01_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_body_02": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0skdX7F"
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0skdX7F"
+  },
+  "item_equip_t4_suit_burst01_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalAttackDamageIncrease",
+        "values": [
+          0.27599999999999997,
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0skdX7F"
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "packIcon": "icon_pack_wuling_suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0skdX7F"
+  },
+  "item_equip_t4_suit_combo_cd01_body_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/04lAVU4"
+  },
+  "item_equip_t4_suit_combo_cd01_body_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
+  },
+  "item_equip_t4_suit_combo_cd01_edc_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/04lAVU4"
+  },
+  "item_equip_t4_suit_combo_cd01_edc_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/04lAVU4"
+  },
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
+  },
+  "item_equip_t4_suit_combo_cd01_hand_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/04lAVU4"
+  },
+  "item_equip_t4_suit_combo_cd01_hand_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "packIcon": "icon_pack_wuling_suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
+  },
+  "item_equip_t4_suit_criti01_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
+  },
+  "item_equip_t4_suit_criti01_body_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalAttackDamageIncrease",
+        "values": [
+          0.13799999999999998,
+          0.1518000066280365,
+          0.1656000018119812,
+          0.1793999969959259
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.05175,
+          0.05692499876022339,
+          0.06210000067949295,
+          0.06727500259876251
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
+  },
+  "item_equip_t4_suit_criti01_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_criti01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_criti01_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0adp8l6"
+  },
+  "item_equip_t4_suit_criti01_edc_05": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_criti01_edc_06": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
+  },
+  "item_equip_t4_suit_criti01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
+  },
+  "item_equip_t4_suit_criti01_hand_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalAttackDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0adp8l6"
+  },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.08625,
+          0.09487500041723251,
+          0.10350000113248825,
+          0.11212500184774399
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "packIcon": "icon_pack_wuling_suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.43125,
+          0.47437500953674316,
+          0.5174999833106995,
+          0.5606250166893005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/05bID7X"
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/05bID7X"
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/05bID7X"
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
+  },
+  "item_equip_t4_suit_expend_spell01_body_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_expend_spell01",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.10000000149011612,
+      "spell_dmg_up": 0.15000000596046448,
+      "duration": 25,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_expend_spell01",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.10000000149011612,
+      "spell_dmg_up": 0.15000000596046448,
+      "duration": 25,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_expend_spell01",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.10000000149011612,
+      "spell_dmg_up": 0.15000000596046448,
+      "duration": 25,
+      "max_stack": 3
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
+  },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "level": 70,
     "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -9232,9 +14319,9 @@ export const equipment = {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
           0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9290,756 +14377,13 @@ export const equipment = {
     ],
     "url": "https://oem.re/0VHBT5t"
   },
-  "item_equip_t4_parts_wuling00_edc_01": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "SpellDamageIncrease",
-        "values": [
-          0.1863157894736842,
-          0.20494737,
-          0.22357894,
-          0.24221052
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_edc_02": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.21071428571428572,
-          0.23178571,
-          0.25285715,
-          0.27392858
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_edc_03": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.17701525022677778,
-          0.19471678,
-          0.2124183,
-          0.23011982
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_edc_04": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          35.4,
-          38.94,
-          42.48,
-          46.02
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_edc_06": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          18
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          27,
-          29,
-          32,
-          35
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          18,
-          19,
-          21,
-          23
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.19666666666666666,
-          0.21633333,
-          0.236,
-          0.25566667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_hand_03": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          36
-        ]
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.14751270852231482,
-          0.16226397,
-          0.17701524,
-          0.19176652
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_hand_04": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          36
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          29.5,
-          32.45,
-          35.4,
-          38.35
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling00_hand_05": {
-    "level": 60,
-    "tier": "T3.5",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_generaltype",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          36
-        ]
-      },
-      {
-        "attrType": "Main",
-        "values": [
-          55,
-          60,
-          66,
-          71
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          37,
-          40,
-          44,
-          48
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1475,
-          0.16225,
-          0.177,
-          0.19175
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.2,
-      "dmg_taken_down": 0.9,
-      "ultimate_gain_up": 0.1
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 20
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 3000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 30
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 2
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling01_body_01": {
+  "item_equip_t4_suit_fire_natr01_body_02": {
     "level": 70,
     "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
-    "pack": "",
+    "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -10049,475 +14393,41 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Agi",
+        "attrType": "Wisd",
         "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.144,
-          0.1584,
-          0.1728,
-          0.1872
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_attri01_hand_01": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
+          87,
+          95,
+          104,
+          113
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Agi",
+        "attrType": "Will",
         "values": [
-          43,
-          47,
-          51,
-          55
+          58,
+          63,
+          69,
+          75
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1aPV20g"
-  },
-  "item_equip_t4_parts_wuling01_body_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.12857142857142856,
-          0.14142857,
-          0.15428571,
-          0.16714285
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_attri01_hand_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1aPV20g"
-  },
-  "item_equip_t4_parts_wuling01_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "AllDamageTakenScalar",
-        "values": [
-          0.8223684210526316,
-          0.8080155,
-          0.794155,
-          0.780762
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_hand_01": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.21428571428571427,
-          0.23571429,
-          0.25714287,
-          0.27857143
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_01": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
       "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
+      "fire_dmg_up": 0.5,
       "duration": 10,
-      "cryst_dmg_up": 0.5,
+      "nature_dmg_up": 0.5,
       "duration2": 10
     },
     "materials": [
@@ -10552,6882 +14462,6 @@ export const equipment = {
         }
       ]
     ]
-  },
-  "item_equip_t4_parts_wuling01_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2571428571428571,
-          0.28285715,
-          0.30857143,
-          0.3342857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling01_hand_01": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.45,
-          0.495,
-          0.54,
-          0.585
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_body_01": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          21.599999999999998,
-          23.76,
-          25.92,
-          28.08
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_body_02": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.10799999999999998,
-          0.1188,
-          0.1296,
-          0.1404
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AttrDamageToBrokenUnitIncrease",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0KEz0NC"
-  },
-  "item_equip_t4_suit_combo_cd01_edc_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "FireAndNaturalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/04lAVU4"
-  },
-  "item_equip_t4_parts_wuling02_body_03": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.21599999999999997,
-          0.2376,
-          0.2592,
-          0.2808
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_combo_cd01_edc_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/04lAVU4"
-  },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0mCv8JR"
-  },
-  "item_equip_t4_parts_wuling02_body_04": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          115,
-          126,
-          138,
-          149
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "FireAndNaturalDamageIncrease",
-        "values": [
-          0.11999999999999998,
-          0.132,
-          0.144,
-          0.156
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_edc_01": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.21601861044623727,
-          0.23762047,
-          0.25922233,
-          0.28082418
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atk02_edc_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.621,
-          0.67275
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0hN2HgW"
-  },
-  "item_equip_t4_suit_usp02_edc_04": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.2070178350109774,
-          0.22771962,
-          0.2484214,
-          0.2691232
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0nzgEg7"
-  },
-  "item_equip_t4_parts_wuling02_edc_02": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2571428571428571,
-          0.28285715,
-          0.30857143,
-          0.3342857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atk02_edc_05": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.27599999999999997,
-          0.3036,
-          0.3312,
-          0.3588
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_usp02_edc_07": {
-    "url": "https://oem.re/0CWQXMV",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_hand_02": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.36,
-          0.396,
-          0.432,
-          0.468
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_parts_wuling02_hand_03": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.2,
-          0.22,
-          0.24,
-          0.26
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_burst01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.27599999999999997,
-          0.3036,
-          0.3312,
-          0.3588
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1b0BkJu"
-  },
-  "item_equip_t4_parts_wuling02_hand_04": {
-    "level": 70,
-    "tier": "T4.3_star",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          86,
-          94,
-          103,
-          111
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.24,
-          0.264,
-          0.288,
-          0.312
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atb01_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.25875,
-          0.284625,
-          0.3105,
-          0.336375
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ubaIIO"
-  },
-  "item_equip_t4_suit_atb01_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ubaIIO"
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.621,
-          0.67275
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JjtRDB"
-  },
-  "item_equip_t4_suit_atb01_edc_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.2070178350109774,
-          0.22771962,
-          0.2484214,
-          0.2691232
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0adp8l6"
-  },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JjtRDB"
-  },
-  "item_equip_t4_suit_atk02_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JuaamP"
-  },
-  "item_equip_t4_suit_spellburst_edc_01": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_spellburst",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 16,
-      "spell_dmg_up": 0.16,
-      "max_stack": 3,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0TQF7uk"
-  },
-  "item_equip_t4_suit_atk02_body_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.13799999999999998,
-          0.1518,
-          0.1656,
-          0.1794
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JuaamP"
-  },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.621,
-          0.67275
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/047kLHQ"
-  },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JuaamP"
-  },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_poise01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_usp02_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.27107143,
-          0.2957143,
-          0.32035714
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1b0BkJu"
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0hN2HgW"
-  },
-  "item_equip_t4_suit_usp02_edc_05": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.27107143,
-          0.2957143,
-          0.32035714
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0TQF7uk"
-  },
-  "item_equip_t4_suit_atk02_edc_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_usp02_edc_06": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.27107143,
-          0.2957143,
-          0.32035714
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0TQF7uk"
-  },
-  "item_equip_t4_suit_atk02_edc_06": {
-    "url": "https://oem.re/17LK3My",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_atk02_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JuaamP"
-  },
-  "item_equip_t4_suit_criti01_body_04": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_phy01_body_04": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/05bID7X"
-  },
-  "item_equip_t4_suit_atk02_hand_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JuaamP"
-  },
-  "item_equip_t4_suit_phy01_body_03": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/047kLHQ"
-  },
-  "item_equip_t4_suit_atk02_hand_03": {
-    "url": "https://oem.re/17LK3My",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_phy01_body_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.2,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0aUrI8p"
-  },
-  "item_equip_t4_suit_attri01_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0KEz0NC"
-  },
-  "item_equip_t4_suit_attri01_body_05": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1aPV20g"
-  },
-  "item_equip_t4_suit_attri01_body_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0KEz0NC"
-  },
-  "item_equip_t4_suit_attri01_edc_05": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.1035,
-          0.11385,
-          0.1242,
-          0.13455
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0mCv8JR"
-  },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1aPV20g"
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/047kLHQ"
-  },
-  "item_equip_t4_suit_burst01_body_02": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0skdX7F"
-  },
-  "item_equip_t4_suit_combo_cd01_body_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0PPNGEr"
-  },
-  "item_equip_t4_suit_burst01_body_03": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0skdX7F"
-  },
-  "item_equip_t4_suit_burst01_edc_03": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "FireAndNaturalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0skdX7F"
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.2,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.35,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/1b0BkJu"
-  },
-  "item_equip_t4_suit_usp02_body_05": {
-    "url": "https://oem.re/0CWQXMV",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_combo_cd01_body_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/04lAVU4"
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ojmwhM"
-  },
-  "item_equip_t4_suit_combo_cd01_edc_04": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0AvUSn4"
-  },
-  "item_equip_t4_suit_pulse_cryst01_hand_02": {
-    "url": "https://oem.re/17LK3My",
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_combo_cd01_hand_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "spell_up": 0.2,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/04lAVU4"
-  },
-  "item_equip_t4_suit_criti01_body_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0O8Wj6w"
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.05175,
-          0.056925,
-          0.0621,
-          0.067275
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0O8Wj6w"
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JjtRDB"
-  },
-  "item_equip_t4_suit_criti01_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_criti01_edc_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.1035,
-          0.11385,
-          0.1242,
-          0.13455
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_criti01_edc_06": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.1035,
-          0.11385,
-          0.1242,
-          0.13455
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JjtRDB"
-  },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_poise01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
-      "duration2": 10
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_usp02_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0WoEsSM"
-  },
-  "item_equip_t4_suit_criti01_hand_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.345,
-          0.3795,
-          0.414,
-          0.4485
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0O8Wj6w"
-  },
-  "item_equip_t4_suit_criti01_hand_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0adp8l6"
-  },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.08625,
-          0.094875,
-          0.1035,
-          0.112125
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0O8Wj6w"
-  },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "level": 70,
-    "tier": "T4.1",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.43125,
-          0.474375,
-          0.5175,
-          0.560625
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05,
-      "duration": 5,
-      "atk_up": 0.05,
-      "max_stack": 5,
-      "crit_up2": 0.05
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 16000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 160
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0JjtRDB"
-  },
-  "item_equip_t4_suit_crush_fracture_body_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/05bID7X"
-  },
-  "item_equip_t4_suit_crush_fracture_body_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0AvUSn4"
-  },
-  "item_equip_t4_suit_crush_fracture_edc_01": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/05bID7X"
-  },
-  "item_equip_t4_suit_crush_fracture_edc_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_crush_fracture",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up_perstack": 0.06,
-      "special_multi": 1.5,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0AvUSn4"
-  },
-  "item_equip_t4_suit_usp02_hand_03": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0nzgEg7"
-  },
-  "item_equip_t4_suit_expend_spell01_body_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_expend_spell01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.138,
-          0.1495
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.1,
-      "spell_dmg_up": 0.15,
-      "duration": 25,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ojmwhM"
-  },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_expend_spell01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.1,
-      "spell_dmg_up": 0.15,
-      "duration": 25,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ojmwhM"
-  },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.81453127,
-          0.80102533,
-          0.78796
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/02EJym9"
-  },
-  "item_equip_t4_suit_heal01_edc_05": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.414,
-          0.4554,
-          0.4968,
-          0.5382
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ]
-  },
-  "item_equip_t4_suit_heal01_hand_02": {
-    "level": 70,
-    "tier": "T4",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1725,
-          0.18975,
-          0.207,
-          0.22425
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.2,
-      "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "xiraniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "cupriumComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 8000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 10
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 80
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 5
-        }
-      ]
-    ],
-    "url": "https://oem.re/0aUrI8p"
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "level": 70,
-    "tier": "T4.2",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_expend_spell01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.1,
-      "spell_dmg_up": 0.15,
-      "duration": 25,
-      "max_stack": 3
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 25000
-        },
-        {
-          "name": "hetoniteComponent",
-          "amount": 50
-        }
-      ],
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 250
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 25
-        }
-      ]
-    ],
-    "url": "https://oem.re/0ojmwhM"
   },
   "item_equip_t4_suit_fire_natr01_edc_01": {
     "level": 70,
@@ -17435,6 +14469,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17467,9 +14502,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17531,6 +14566,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17553,9 +14589,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17611,12 +14647,109 @@ export const equipment = {
     ],
     "url": "https://oem.re/0VHBT5t"
   },
+  "item_equip_t4_suit_fire_natr01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "fire_dmg_up": 0.5,
+      "duration": 10,
+      "nature_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
   "item_equip_t4_suit_fire_natr01_edc_04": {
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17649,9 +14782,9 @@ export const equipment = {
         "attrType": "AllSkillDamageIncrease",
         "values": [
           0.27599999999999997,
-          0.3036,
-          0.3312,
-          0.3588
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17683,6 +14816,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17715,9 +14849,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           34.5,
-          37.95,
-          41.4,
-          44.85
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17768,6 +14902,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17800,9 +14935,9 @@ export const equipment = {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
           0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17864,6 +14999,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17896,9 +15032,9 @@ export const equipment = {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
           0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17960,6 +15096,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17992,9 +15129,9 @@ export const equipment = {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
           0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -18026,6 +15163,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18058,18 +15196,18 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.11385,
-          0.1242,
-          0.13455
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       [
@@ -18121,6 +15259,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18153,18 +15292,18 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.11385,
-          0.1242,
-          0.13455
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       [
@@ -18216,6 +15355,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18248,18 +15388,18 @@ export const equipment = {
         "attrType": "UltimateSpGainScalar",
         "values": [
           0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       [
@@ -18275,121 +15415,57 @@ export const equipment = {
     ],
     "url": "https://oem.re/0P5HOCM"
   },
-  "item_equip_t4_suit_spellburst_hand_01": {
-    "level": 70,
-    "tier": "T4.3",
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_spellburst",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 16,
-      "spell_dmg_up": 0.16,
-      "max_stack": 3,
-      "duration": 20
-    },
-    "materials": [
-      [
-        {
-          "name": "wulingStockBill",
-          "amount": 360
-        },
-        {
-          "name": "pyrroliteComponent",
-          "amount": 50
-        }
-      ]
-    ],
-    "url": "https://oem.re/0TQF7uk"
-  },
-  "item_equip_t4_suit_heal01_hand_01": {
+  "item_equip_t4_suit_heal01_edc_01": {
     "level": 70,
     "tier": "T4",
-    "partType": 1,
+    "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          21
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          65,
-          71,
-          78,
-          84
+          32,
+          35,
+          38,
+          41
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Will",
         "values": [
-          43,
-          47,
-          51,
-          55
+          21,
+          23,
+          25,
+          27
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSpGainScalar",
+        "attrType": "AllDamageTakenScalar",
         "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
+          0.828500414250207,
+          0.8145312666893005,
+          0.8010253310203552,
+          0.7879599928855896
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       [
@@ -18435,12 +15511,557 @@ export const equipment = {
     ],
     "url": "https://oem.re/02EJym9"
   },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_heal01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/02EJym9"
+  },
+  "item_equip_t4_suit_heal01_edc_04": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
+  },
+  "item_equip_t4_suit_heal01_edc_05": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/02EJym9"
+  },
+  "item_equip_t4_suit_heal01_hand_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1725,
+          0.18975000083446503,
+          0.2070000022649765,
+          0.22425000369548798
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
+  },
   "item_equip_t4_suit_heal01_hand_03": {
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_heal01",
+    "packIcon": "icon_pack_wuling_suit_heal01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18473,18 +16094,18 @@ export const equipment = {
         "attrType": "UltimateSpGainScalar",
         "values": [
           0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       [
@@ -18500,53 +16121,139 @@ export const equipment = {
     ],
     "url": "https://oem.re/0P5HOCM"
   },
-  "item_equip_t4_suit_phy01_hand_02": {
+  "item_equip_t4_suit_phy01_body_01": {
     "level": 70,
-    "tier": "T4",
-    "partType": 1,
+    "tier": "T4.1",
+    "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_phy01_body_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
         ]
       },
       {
         "attrType": "Agi",
         "values": [
-          65,
-          71,
-          78,
-          84
+          87,
+          95,
+          104,
+          113
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Str",
         "values": [
-          43,
-          47,
-          51,
-          55
+          58,
+          63,
+          69,
+          75
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSkillEfficiency",
+        "attrType": "OriginiumArts",
         "values": [
-          0.43125,
-          0.474375,
-          0.5175,
-          0.560625
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -18595,12 +16302,89 @@ export const equipment = {
     ],
     "url": "https://oem.re/0aUrI8p"
   },
-  "item_equip_t4_suit_phy01_body_01": {
+  "item_equip_t4_suit_phy01_body_03": {
     "level": 70,
-    "tier": "T4.1",
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/047kLHQ"
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18630,18 +16414,84 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSpGainScalar",
+        "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.1232142857142857,
-          0.13553572,
-          0.14785714,
-          0.16017857
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/05bID7X"
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -18679,12 +16529,270 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_suit_phy01_edc_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "level": 70,
+    "tier": "T4.2",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
+    ],
+    "url": "https://oem.re/047kLHQ"
+  },
   "item_equip_t4_suit_phy01_hand_01": {
     "level": 70,
     "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18717,15 +16825,111 @@ export const equipment = {
         "attrType": "PhysicalDamageIncrease",
         "values": [
           0.19166666666666668,
-          0.21083333,
-          0.23,
-          0.24916667
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
+  },
+  "item_equip_t4_suit_phy01_hand_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.43125,
+          0.47437500953674316,
+          0.5174999833106995,
+          0.5606250166893005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -18780,6 +16984,7 @@ export const equipment = {
     "partType": 1,
     "rarity": 5,
     "pack": "suit_phy01",
+    "packIcon": "icon_pack_wuling_suit_phy01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18812,15 +17017,15 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           34.5,
-          37.95,
-          41.4,
-          44.85
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -18855,6 +17060,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18887,20 +17093,20 @@ export const equipment = {
         "attrType": "AttrDamageToBrokenUnitIncrease",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -18953,6 +17159,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -18985,20 +17192,119 @@ export const equipment = {
         "attrType": "PhysicalDamageIncrease",
         "values": [
           0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
+  },
+  "item_equip_t4_suit_poise01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -19051,6 +17357,7 @@ export const equipment = {
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -19083,20 +17390,20 @@ export const equipment = {
         "attrType": "PhysicalDamageIncrease",
         "values": [
           0.22999999999999998,
-          0.253,
-          0.276,
-          0.299
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -19132,12 +17439,13 @@ export const equipment = {
       ]
     ]
   },
-  "item_equip_t4_suit_usp02_edc_02": {
+  "item_equip_t4_suit_poise01_edc_04": {
     "level": 70,
-    "tier": "T4",
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
-    "pack": "suit_usp02",
+    "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -19147,7 +17455,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Str",
         "values": [
           32,
           35,
@@ -19157,7 +17465,7 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Will",
+        "attrType": "Agi",
         "values": [
           21,
           23,
@@ -19167,20 +17475,112 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "HealOutputIncrease",
+        "attrType": "NormalSkillEfficiency",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
     },
     "materials": [
       [
@@ -19224,7 +17624,95 @@ export const equipment = {
         }
       ]
     ],
-    "url": "https://oem.re/0WoEsSM"
+    "url": "https://oem.re/0kSjuAp"
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "packIcon": "icon_pack_wuling_suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "level": 70,
@@ -19232,6 +17720,7 @@ export const equipment = {
     "partType": 0,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -19264,9 +17753,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -19322,12 +17811,560 @@ export const equipment = {
     ],
     "url": "https://oem.re/0mCv8JR"
   },
+  "item_equip_t4_suit_pulse_cryst01_body_02": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/17LK3My"
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_01": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "level": 70,
+    "tier": "T4.1",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0CWQXMV"
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_02": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "packIcon": "icon_pack_wuling_suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/17LK3My"
+  },
   "item_equip_t4_suit_spellburst_body_01": {
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_spellburst",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -19360,16 +18397,16 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
       "phy_spell_up": 16,
-      "spell_dmg_up": 0.16,
+      "spell_dmg_up": 0.1599999964237213,
       "max_stack": 3,
       "duration": 20
     },
@@ -19387,55 +18424,57 @@ export const equipment = {
     ],
     "url": "https://oem.re/0TQF7uk"
   },
-  "item_equip_t4_suit_usp02_body_04": {
+  "item_equip_t4_suit_spellburst_edc_01": {
     "level": 70,
     "tier": "T4.3",
-    "partType": 0,
+    "partType": 2,
     "rarity": 5,
-    "pack": "suit_usp02",
+    "pack": "suit_spellburst",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          56
+          21
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Agi",
         "values": [
-          87,
-          95,
-          104,
-          113
+          32,
+          35,
+          38,
+          41
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Will",
         "values": [
-          58,
-          63,
-          69,
-          75
+          21,
+          23,
+          25,
+          27
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Sub",
+        "attrType": "OriginiumArts",
         "values": [
-          0.1035089175054887,
-          0.11385981,
-          0.1242107,
-          0.1345616
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.16,
-      "duration": 15
+      "phy_spell_up": 16,
+      "spell_dmg_up": 0.1599999964237213,
+      "max_stack": 3,
+      "duration": 20
     },
     "materials": [
       [
@@ -19449,14 +18488,15 @@ export const equipment = {
         }
       ]
     ],
-    "url": "https://oem.re/0nzgEg7"
+    "url": "https://oem.re/0TQF7uk"
   },
-  "item_equip_t4_suit_usp02_hand_02": {
+  "item_equip_t4_suit_spellburst_hand_01": {
     "level": 70,
-    "tier": "T4",
+    "tier": "T4.3",
     "partType": 1,
     "rarity": 5,
-    "pack": "suit_usp02",
+    "pack": "suit_spellburst",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -19466,7 +18506,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Agi",
         "values": [
           65,
           71,
@@ -19486,19 +18526,85 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSpGainScalar",
+        "attrType": "OriginiumArts",
         "values": [
-          0.20535714285714285,
-          0.22589286,
-          0.24642856,
-          0.2669643
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 16,
+      "spell_dmg_up": 0.1599999964237213,
+      "max_stack": 3,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0TQF7uk"
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -19544,5 +18650,1175 @@ export const equipment = {
       ]
     ],
     "url": "https://oem.re/0WoEsSM"
+  },
+  "item_equip_t4_suit_usp02_body_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          110,
+          121,
+          132,
+          143
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.1035089175054887,
+          0.11385980993509293,
+          0.12421070039272308,
+          0.13456159830093384
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
+  },
+  "item_equip_t4_suit_usp02_body_05": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0CWQXMV"
+  },
+  "item_equip_t4_suit_usp02_body_06": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0CWQXMV"
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
+  },
+  "item_equip_t4_suit_usp02_edc_03": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0TQF7uk"
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0TQF7uk"
+  },
+  "item_equip_t4_suit_usp02_edc_07": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0CWQXMV"
+  },
+  "item_equip_t4_suit_usp02_hand_01": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "level": 70,
+    "tier": "T4",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
+  },
+  "item_equip_t4_suit_usp02_hand_05": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.345,
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ],
+    "url": "https://oem.re/0CWQXMV"
   }
 };

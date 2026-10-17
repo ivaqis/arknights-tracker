@@ -685,6 +685,7 @@
     "level": "Level",
     "attributesTable": "Attributstabelle",
     "selector": "Auswahl",
+    "default": "Standard",
     "bonus_copy": "Token-Tribut",
     "guaranteed": "Garantiert",
     "arms_offering": "Waffenangebot",

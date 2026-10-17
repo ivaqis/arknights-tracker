@@ -685,6 +685,7 @@
     "level": "레벨",
     "attributesTable": "속성 표",
     "selector": "선택기",
+    "default": "기본",
     "bonus_copy": "증표의 선물",
     "guaranteed": "확정",
     "arms_offering": "무기고의 선물",

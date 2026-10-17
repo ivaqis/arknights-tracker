@@ -19,7 +19,7 @@
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { essences } from "$lib/data/items/essences.js";
     import { locations } from "$lib/data/locations.js";
-    import { enemies } from "$lib/data/enemies.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     import Icon from "$lib/components/Icon.svelte";
@@ -581,16 +581,15 @@
         .map(getOperatorObj)
         .filter(Boolean);
 
-    function getCleanEnemyId(enemyId) {
-        if (!enemyId) return "";
-        return enemyId.replace(/_(sluggish|yujidian|notele)$/, "");
-    }
-
     function getEnemyObj(rawEnemyId) {
-        const cleanId = getCleanEnemyId(rawEnemyId);
-        const found = enemies[cleanId] || enemies[rawEnemyId];
+        const mapping = enemyVariantMap[rawEnemyId];
+        const baseId = mapping ? mapping.baseId : rawEnemyId;
+        const variant = mapping ? mapping.postfix : undefined;
+        const found = enemies[baseId] || enemies[rawEnemyId];
         return {
-            id: cleanId,
+            id: rawEnemyId,
+            baseId,
+            variant,
             rarity: found?.rarity || 4,
         };
     }

@@ -464,6 +464,7 @@
   },
   "stats": {
     "attributes": "Атрибуттар",
+    "default": "Әдепкі",
     "ascension": "Жоғарылату",
     "cumulative": "Жинақталған",
     "goodMatch": "Жақсы үйлесімділік",

@@ -9,7 +9,7 @@
     import { fade, fly } from "svelte/transition";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
-    import { enemies } from "$lib/data/enemies.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { parseRichText } from "$lib/utils/richText.js";
@@ -226,20 +226,25 @@
 
     $: currentEnemies = (selectedEvent === 'monument'
         ? (currentStage?.enemyIds || []).map((rawId, idx) => {
-            const cleanId = rawId.replace(/_hdg\d+$/, "").replace(/_(sluggish|yujidian|notele)$/, "");
-            const baseEnemy = enemies[cleanId] || enemies[rawId] || {};
+            const mapping = enemyVariantMap[rawId];
+            const baseId = mapping ? mapping.baseId : rawId;
+            const variant = mapping ? mapping.postfix : undefined;
+            const baseEnemy = enemies[baseId] || enemies[rawId] || {};
             const level = isAgony ? 90 : (currentStage?.enemyLevels?.[idx] || 60);
             return {
-                id: cleanId,
-                rawId,
+                id: rawId,
+                baseId,
+                variant,
                 rarity: baseEnemy.rarity || 4,
                 level,
-                name: cleanId
+                name: baseId
             };
         })
         : (currentWarEchoesStage?.enemyIds || []).map((rawId, idx) => {
-            const cleanId = rawId.replace(/(_tower\d*|_race\d*|_hdg\d*|_hard\d*|_nearspecial\d*).*$/, "");
-            const baseEnemy = enemies[cleanId] || enemies[rawId] || {};
+            const mapping = enemyVariantMap[rawId];
+            const baseId = mapping ? mapping.baseId : rawId;
+            const variant = mapping ? mapping.postfix : undefined;
+            const baseEnemy = enemies[baseId] || enemies[rawId] || {};
             let level = 60;
             if (selectedWarEchoesDifficulty === 'normal') {
                 level = currentWarEchoesStage?.enemyLevels?.[idx] || 60;
@@ -249,11 +254,12 @@
                 level = currentWarEchoesStage?.brutalEnemyLevels?.[idx] || 90;
             }
             return {
-                id: cleanId,
-                rawId,
+                id: rawId,
+                baseId,
+                variant,
                 rarity: baseEnemy.rarity || 4,
                 level,
-                name: cleanId
+                name: baseId
             };
         }));
 

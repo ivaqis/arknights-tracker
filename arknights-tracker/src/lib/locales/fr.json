@@ -685,6 +685,7 @@
     "level": "Niveau",
     "attributesTable": "Tableau des attributs",
     "selector": "Sélecteur",
+    "default": "Par défaut",
     "bonus_copy": "Jeton symbolique",
     "guaranteed": "Garanti",
     "arms_offering": "Offrande d'armes",

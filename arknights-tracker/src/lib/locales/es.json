@@ -686,6 +686,7 @@
     "level": "Nivel",
     "attributesTable": "Tabla de atributos",
     "selector": "Selector",
+    "default": "Predeterminado",
     "bonus_copy": "Tributo de fichas",
     "guaranteed": "Garantizado",
     "arms_offering": "Ofrenda de armas",

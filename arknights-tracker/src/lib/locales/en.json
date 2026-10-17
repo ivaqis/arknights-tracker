@@ -900,6 +900,7 @@
     "level": "Level",
     "attributesTable": "Attributes table",
     "selector": "Selector",
+    "default": "Default",
     "bonus_copy": "Token Tribute",
     "guaranteed": "Guaranteed",
     "arms_offering": "Arms Offering",

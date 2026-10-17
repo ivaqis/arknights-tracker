@@ -464,6 +464,7 @@
   },
   "stats": {
     "attributes": "Atribut",
+    "default": "မူလ",
     "ascension": "Kenaikan",
     "cumulative": "Terkumpul",
     "goodMatch": "Padanan Baik",

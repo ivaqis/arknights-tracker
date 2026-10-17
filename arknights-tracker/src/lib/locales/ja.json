@@ -685,6 +685,7 @@
     "level": "レベル",
     "attributesTable": "ステータス一覧",
     "selector": "選択",
+    "default": "デフォルト",
     "bonus_copy": "印報酬",
     "guaranteed": "確定",
     "arms_offering": "武庫・特典",

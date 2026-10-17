@@ -685,6 +685,7 @@
     "level": "เลเวล",
     "attributesTable": "ตารางค่าสถานะ",
     "selector": "ตัวเลือก",
+    "default": "เริ่มต้น",
     "bonus_copy": "บรรณาการ​โท​เคน",
     "guaranteed": "การันตี",
     "arms_offering": "ข้อเสนอ​อาวุธ",

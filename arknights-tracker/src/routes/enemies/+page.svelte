@@ -29,7 +29,7 @@
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EnemyFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EnemyFilterDropdown.svelte";
     import { t } from "$lib/i18n";
-    import { enemies } from "$lib/data/enemies.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import {
         enemySearch,
         enemyGroupMode,
@@ -92,7 +92,10 @@
     let sortDirection = savedSortDirection;
     let filters = getEnemyFilters();
 
-    $: queryId = $page.url.searchParams.get("id");
+    $: rawQueryId = $page.url.searchParams.get("id");
+    $: mapping = enemyVariantMap[rawQueryId];
+    $: queryId = mapping ? mapping.baseId : rawQueryId;
+    $: queryVariant = $page.url.searchParams.get("variant") || mapping?.postfix;
     $: queryLevelParam = $page.url.searchParams.get("level") || $page.url.searchParams.get("lvl");
     $: queryLevel = queryLevelParam ? parseInt(queryLevelParam, 10) : undefined;
     let selectedEnemyId = "";
@@ -114,8 +117,10 @@
     onMount(() => {
         if (queryId && allEnemies.some(e => e.id === queryId)) {
             if (!$splitEquipmentView) {
-                const lvlQuery = queryLevelParam ? `?level=${queryLevelParam}` : "";
-                goto(`/enemies/${queryId}${lvlQuery}`, { replaceState: true });
+                const lvlQuery = queryLevelParam ? `&level=${queryLevelParam}` : "";
+                const varQuery = queryVariant ? `&variant=${queryVariant}` : "";
+                const queryStr = (varQuery || lvlQuery) ? `?${(varQuery + lvlQuery).replace(/^&/, "")}` : "";
+                goto(`/enemies/${queryId}${queryStr}`, { replaceState: true });
             } else {
                 localStorage.setItem("last_selected_enemy_id", queryId);
             }
@@ -556,6 +561,7 @@
                     <EnemyDetailsView
                         id={selectedEnemyId}
                         initialLevel={queryLevel}
+                        initialVariant={queryVariant}
                         showBackButton={false}
                     />
                 {:else}

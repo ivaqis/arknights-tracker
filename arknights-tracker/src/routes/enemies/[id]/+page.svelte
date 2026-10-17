@@ -4,18 +4,22 @@
     import { onMount } from "svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import { t } from "$lib/i18n";
-    import { enemies } from "$lib/data/enemies.js";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import EnemyDetailsView from "$lib/components/enemies/EnemyDetailsView.svelte";
 
-    $: id = $page.params.id;
+    $: rawId = $page.params.id;
+    $: mapping = enemyVariantMap[rawId];
+    $: id = mapping ? mapping.baseId : rawId;
+    $: initialVariant = $page.url.searchParams.get("variant") || mapping?.postfix;
     $: levelParam = $page.url.searchParams.get("level") || $page.url.searchParams.get("lvl");
     $: initialLevel = levelParam ? parseInt(levelParam, 10) : undefined;
 
     onMount(() => {
         if ($splitEquipmentView) {
             const levelQuery = levelParam ? `&level=${levelParam}` : "";
-            goto(`/enemies?id=${id}${levelQuery}`, { replaceState: true });
+            const variantQuery = initialVariant ? `&variant=${initialVariant}` : "";
+            goto(`/enemies?id=${id}${variantQuery}${levelQuery}`, { replaceState: true });
         }
     });
 
@@ -37,4 +41,4 @@
     <meta name="twitter:image" content={imageUrl} />
 </svelte:head>
 
-<EnemyDetailsView {id} {initialLevel} showBackButton={true} />
+<EnemyDetailsView {id} {initialLevel} {initialVariant} showBackButton={true} />

@@ -83,8 +83,8 @@ export const monumentGroups = [
                 "name": "Feral Carnage of Shadow",
                 "picPath": "dung_high_difficulty_s5_03",
                 "enemyIds": [
-                    "eny_0118_klhog",
-                    "eny_0119_kltiger"
+                    "eny_0118_klhog_hdg026",
+                    "eny_0119_kltiger_hdg026"
                 ],
                 "enemyLevels": [
                     60,
@@ -100,7 +100,7 @@ export const monumentGroups = [
                     "eny_0117_klhound",
                     "eny_0121_klbud",
                     "eny_0122_kltdbud",
-                    "eny_0123_klcap"
+                    "eny_0123_klcap_hdg028"
                 ],
                 "enemyLevels": [
                     60,
@@ -115,7 +115,7 @@ export const monumentGroups = [
                 "name": "Arc of Shadow Flare",
                 "picPath": "dung_high_difficulty_s7_01",
                 "enemyIds": [
-                    "eny_0124_kltdcap"
+                    "eny_0124_kltdcap_hdg027"
                 ],
                 "enemyLevels": [
                     60
@@ -156,7 +156,7 @@ export const monumentGroups = [
                 "name": "Earthshaking Hazefyre",
                 "picPath": "dung_high_difficulty_s6_01",
                 "enemyIds": [
-                    "eny_0046_lbshamman",
+                    "eny_0046_lbshamman_hdg022",
                     "eny_0065_lbmob2",
                     "eny_0066_lbhunt2"
                 ],
@@ -172,7 +172,7 @@ export const monumentGroups = [
                 "name": "Mangler and Friends",
                 "picPath": "dung_high_difficulty_s6_02",
                 "enemyIds": [
-                    "eny_0113_jzogre",
+                    "eny_0113_jzogre_hdg023",
                     "eny_0112_jzmonk"
                 ],
                 "enemyLevels": [
@@ -186,7 +186,7 @@ export const monumentGroups = [
                 "name": "King of the Crag",
                 "picPath": "dung_high_difficulty_s6_03",
                 "enemyIds": [
-                    "eny_0114_jzmking"
+                    "eny_0114_jzmking_hdg024"
                 ],
                 "enemyLevels": [
                     60
@@ -233,7 +233,7 @@ export const monumentGroups = [
                 "name": "Ritual Vortex",
                 "picPath": "dung_high_difficulty_s5_01",
                 "enemyIds": [
-                    "eny_0046_lbshamman"
+                    "eny_0046_lbshamman_hdg016"
                 ],
                 "enemyLevels": [
                     60
@@ -245,7 +245,7 @@ export const monumentGroups = [
                 "name": "Wading in Raker Turf",
                 "picPath": "dung_high_difficulty_s3_03",
                 "enemyIds": [
-                    "eny_0102_hstiger2"
+                    "eny_0102_hstiger2_hdg021"
                 ],
                 "enemyLevels": [
                     60
@@ -269,7 +269,7 @@ export const monumentGroups = [
                 "name": "Raging Drummer",
                 "picPath": "dung_high_difficulty_s5_02",
                 "enemyIds": [
-                    "eny_0082_hsbear"
+                    "eny_0082_hsbear_hdg018"
                 ],
                 "enemyLevels": [
                     60
@@ -306,7 +306,7 @@ export const monumentGroups = [
                 "enemyIds": [
                     "eny_0099_slimeml2",
                     "eny_0100_slimerg2",
-                    "eny_0108_slbomb2",
+                    "eny_0108_slbomb2_hdg014",
                     "eny_0098_sandb2"
                 ],
                 "enemyLevels": [
@@ -322,8 +322,8 @@ export const monumentGroups = [
                 "name": "Tidal Grief",
                 "picPath": "dung_high_difficulty_s4_01",
                 "enemyIds": [
-                    "eny_0087_wgslime",
-                    "eny_0105_wgslime2"
+                    "eny_0087_wgslime_hdg010",
+                    "eny_0105_wgslime2_hdg010"
                 ],
                 "enemyLevels": [
                     60,
@@ -348,8 +348,8 @@ export const monumentGroups = [
                 "name": "Blood Debased",
                 "picPath": "dung_high_difficulty_s4_03",
                 "enemyIds": [
-                    "eny_0093_hshog",
-                    "eny_0109_hshog2"
+                    "eny_0093_hshog_hdg",
+                    "eny_0109_hshog2_hdg"
                 ],
                 "enemyLevels": [
                     60,
@@ -362,7 +362,7 @@ export const monumentGroups = [
                 "name": "Cryostatic Connection",
                 "picPath": "dung_high_difficulty_s4_02",
                 "enemyIds": [
-                    "eny_0090_wgabyss"
+                    "eny_0090_wgabyss_hdg011"
                 ],
                 "enemyLevels": [
                     60
@@ -383,8 +383,8 @@ export const monumentGroups = [
                 "name": "Sea of Loathing",
                 "picPath": "dung_high_difficulty_s3_02",
                 "enemyIds": [
-                    "eny_0085_hsrogue",
-                    "eny_0055_hscrane"
+                    "eny_0085_hsrogue_hard",
+                    "eny_0055_hscrane_hard"
                 ],
                 "enemyLevels": [
                     60,
@@ -397,7 +397,7 @@ export const monumentGroups = [
                 "name": "Melting Point of Flesh",
                 "picPath": "dung_high_difficulty_s3_03",
                 "enemyIds": [
-                    "eny_0047_firebat"
+                    "eny_0047_firebat_hdg009"
                 ],
                 "enemyLevels": [
                     60
@@ -409,7 +409,7 @@ export const monumentGroups = [
                 "name": "Howling Flame",
                 "picPath": "dung_high_difficulty_s3_01",
                 "enemyIds": [
-                    "eny_0054_hsmino"
+                    "eny_0054_hsmino_hdg007"
                 ],
                 "enemyLevels": [
                     60
@@ -431,7 +431,7 @@ export const monumentGroups = [
                 "picPath": "dung_high_difficulty_s1_02",
                 "enemyIds": [
                     "eny_0021_agmelee",
-                    "eny_0027_agscorp"
+                    "eny_0027_agscorp_hdg002"
                 ],
                 "enemyLevels": [
                     60,
@@ -444,7 +444,7 @@ export const monumentGroups = [
                 "name": "Rampaging Shields",
                 "picPath": "dung_high_difficulty_s1_01",
                 "enemyIds": [
-                    "eny_0023_aghornb"
+                    "eny_0023_aghornb_hdg001"
                 ],
                 "enemyLevels": [
                     60
@@ -456,7 +456,7 @@ export const monumentGroups = [
                 "name": "Rock Solid",
                 "picPath": "dung_high_difficulty_s1_03",
                 "enemyIds": [
-                    "eny_0077_agshield"
+                    "eny_0077_agshield_hdg003"
                 ],
                 "enemyLevels": [
                     60
@@ -497,9 +497,9 @@ export const monumentGroups = [
                 "name": "Unorthodox Tactics",
                 "picPath": "dung_high_difficulty_s2_02",
                 "enemyIds": [
-                    "eny_0033_lbhunt",
-                    "eny_0066_lbhunt2",
-                    "eny_0007_mimicw"
+                    "eny_0033_lbhunt_hdg005",
+                    "eny_0066_lbhunt2_hdg005",
+                    "eny_0007_mimicw_hdg005"
                 ],
                 "enemyLevels": [
                     60,
@@ -513,8 +513,8 @@ export const monumentGroups = [
                 "name": "Ballista and Axe",
                 "picPath": "dung_high_difficulty_s2_01",
                 "enemyIds": [
-                    "eny_0018_lbtough",
-                    "eny_0048_hvybow"
+                    "eny_0018_lbtough_hdg004",
+                    "eny_0048_hvybow_hdg004"
                 ],
                 "enemyLevels": [
                     60,
