@@ -1,31 +1,20 @@
 <script>
     import { t } from "$lib/i18n";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList";
-    import { goto } from "$app/navigation";
+    import { items } from "$lib/data/items/items";
+    import { openItemModal } from "$lib/stores/itemModal";
 
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
     import Image from "$lib/components/Image.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import Icon from "$lib/components/Icon.svelte";
 
     export let item = {};
     export let amount = 0;
-    export let customPath;
+    export let customPath = undefined;
     export let hideAmount = false;
     export let linkToRecipe = false;
-    
-    function getRarityColor(rarity) {
-        if (rarity === 5) return "#FFC107";
-        if (rarity === 4) return "#A857FA";
-        if (rarity === 3) return "#25B9F9";
-        if (rarity === 2) return "#8F8F8F";
-        return "#8F8F8F";
-    }
 
-    $: color = getRarityColor(item.rarity || 3);
-    $: itemIdKey = item.id ? item.id.replace(/\s+/g, '') : "unknown";
-    $: imageVariant = customPath?.toLowerCase().includes("itemname") ? "item-icon" : "item";
-    $: translationPrefix = customPath?.toLowerCase().includes("itemname") ? "itemNames" : "items";
+    $: void customPath;
+    $: void linkToRecipe;
 
     const equipmentMatToItemMap = {
         'origocrust': 'item_crystal_shell',
@@ -40,11 +29,16 @@
     };
 
     $: resolvedItemId = item.id ? (equipmentMatToItemMap[item.id] || item.id) : null;
-    $: hasRecipe = resolvedItemId && craftableItemsList.includes(resolvedItemId);
+    $: itemRarity = item.rarity || (resolvedItemId ? items[resolvedItemId]?.rarity : 3) || 3;
+    $: color = getRarityColor(itemRarity);
+    $: itemIdKey = resolvedItemId ? resolvedItemId.replace(/\s+/g, '') : (item.id ? item.id.replace(/\s+/g, '') : "unknown");
+    $: imageVariant = "item";
 
     function handleClick() {
-        if (hasRecipe && linkToRecipe) {
-            goto(`/recipes/tree?itemId=${resolvedItemId}`);
+        if (resolvedItemId) {
+            openItemModal(resolvedItemId);
+        } else if (item.id) {
+            openItemModal(item.id);
         }
     }
 </script>
@@ -52,28 +46,18 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div 
-    class="w-[80px] flex flex-col group select-none shadow-sm hover:shadow-md transition-shadow relative {hasRecipe && linkToRecipe ? 'cursor-pointer' : ''}"
+    class="w-[80px] flex flex-col group select-none shadow-sm hover:shadow-md transition-shadow relative cursor-pointer"
     on:click={handleClick}
 >
     
     <div class="relative w-full bg-[#E5E5E5] flex items-center justify-center overflow-visible">
         
         <Image
-            id={item.id} 
+            id={resolvedItemId || item.id} 
             variant={imageVariant}
             interactive={true}
             className="w-full h-full object-contain p-1" 
         />
-
-        {#if hasRecipe && linkToRecipe}
-            <div class="absolute top-1 right-1 z-30">
-                <Tooltip class="cursor-pointer" textKey="pages.openRecipe">
-                    <div class="p-0.5 rounded bg-black/60 text-white group-hover:bg-black/80 group-hover:text-[#FFE145] transition-colors flex items-center justify-center">
-                        <Icon name="sendToLink" class="w-3.5 h-3.5" />
-                    </div>
-                </Tooltip>
-            </div>
-        {/if}
 
         <div 
             class="absolute bottom-[-6px] right-[-2px] z-20 text-sm font-bold font-sdk leading-none text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)] stroke-black paint-order-stroke"
@@ -99,7 +83,7 @@
 
     <div class="bg-[#333] w-full min-h-[24px] flex items-center justify-center py-1 px-1 mt-[2px]">
         <span class="text-white text-[10px] font-bold text-center leading-tight break-words select-text">
-            {$t(`${translationPrefix}.${itemIdKey}`) || item.name}
+            {$t(`itemNames.${itemIdKey}`)}
         </span>
     </div>
 </div>

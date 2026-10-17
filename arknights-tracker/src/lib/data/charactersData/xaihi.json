@@ -636,102 +636,123 @@
     "materials": {
         "ascention1": [
             {
-                "name": "protodisk",
+                "id": "item_char_break_stage_1_2",
+                "name": "item_char_break_stage_1_2",
                 "amount": 8
             },
             {
-                "name": "pinkBolete",
+                "id": "item_plant_mushroom_1_1",
+                "name": "item_plant_mushroom_1_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 1600
             }
         ],
         "ascention2": [
             {
-                "name": "protodisk",
+                "id": "item_char_break_stage_1_2",
+                "name": "item_char_break_stage_1_2",
                 "amount": 25
             },
             {
-                "name": "redBolete",
+                "id": "item_plant_mushroom_1_2",
+                "name": "item_plant_mushroom_1_2",
                 "amount": 5
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 6500
             }
         ],
         "ascention3": [
             {
-                "name": "protoset",
+                "id": "item_char_break_stage_3_4",
+                "name": "item_char_break_stage_3_4",
                 "amount": 24
             },
             {
-                "name": "rubyBolete",
+                "id": "item_plant_mushroom_1_3",
+                "name": "item_plant_mushroom_1_3",
                 "amount": 5
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 18000
             }
         ],
         "ascention4": [
             {
-                "name": "protoset",
+                "id": "item_char_break_stage_3_4",
+                "name": "item_char_break_stage_3_4",
                 "amount": 36
             },
             {
-                "name": "d96SteelSample4",
+                "id": "item_char_skill_specialize_2",
+                "name": "item_char_skill_specialize_2",
                 "amount": 20
             },
             {
-                "name": "bloodcap",
+                "id": "item_plant_mushroom_2_1",
+                "name": "item_plant_mushroom_2_1",
                 "amount": 8
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 100000
             }
         ],
         "indicator": [
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 5
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 1000
                 }
             ],
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 10
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 1800
                 }
             ],
             [
                 {
-                    "name": "protohedron",
+                    "id": "item_char_skill_level_7_12",
+                    "name": "item_char_skill_level_7_12",
                     "amount": 10
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 6000
                 }
             ],
             [
                 {
-                    "name": "protohedron",
+                    "id": "item_char_skill_level_7_12",
+                    "name": "item_char_skill_level_7_12",
                     "amount": 20
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 12000
                 }
             ]
@@ -739,21 +760,25 @@
         "talent1": [
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 12
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 2400
                 }
             ],
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 48
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 10800
                 }
             ]
@@ -761,11 +786,13 @@
         "talent2": [
             [
                 {
-                    "name": "protohedron",
+                    "id": "item_char_skill_level_7_12",
+                    "name": "item_char_skill_level_7_12",
                     "amount": 36
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 32000
                 }
             ]
@@ -773,21 +800,25 @@
         "baseSkill1": [
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 6
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 1600
                 }
             ],
             [
                 {
-                    "name": "protohedron",
+                    "id": "item_char_skill_level_7_12",
+                    "name": "item_char_skill_level_7_12",
                     "amount": 12
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 8000
                 }
             ]
@@ -795,734 +826,894 @@
         "baseSkill2": [
             [
                 {
-                    "name": "protoprism",
+                    "id": "item_char_skill_level_1_6",
+                    "name": "item_char_skill_level_1_6",
                     "amount": 12
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 3000
                 }
             ],
             [
                 {
-                    "name": "protohedron",
+                    "id": "item_char_skill_level_7_12",
+                    "name": "item_char_skill_level_7_12",
                     "amount": 20
                 },
                 {
-                    "name": "tCreds",
+                    "id": "item_gold",
+                    "name": "item_gold",
                     "amount": 20000
                 }
             ]
         ],
         "battleSkillRank2": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 6
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 1000
             }
         ],
         "battleSkillRank3": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 12
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 2700
             }
         ],
         "battleSkillRank4": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 16
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 3200
             }
         ],
         "battleSkillRank5": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 21
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 4200
             }
         ],
         "battleSkillRank6": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 27
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 5400
             }
         ],
         "battleSkillRank7": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 6
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 8200
             }
         ],
         "battleSkillRank8": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 8
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 10500
             }
         ],
         "battleSkillRank9": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 18000
             }
         ],
         "battleSkillRank10": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 1
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 6
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 24000
             }
         ],
         "battleSkillRank11": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 2
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 24
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 16
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 6
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 30000
             }
         ],
         "battleSkillRank12": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 3
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 50
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 36
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 12
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 65000
             }
         ],
         "ultimateRank2": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 6
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 1000
             }
         ],
         "ultimateRank3": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 12
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 2700
             }
         ],
         "ultimateRank4": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 16
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 3200
             }
         ],
         "ultimateRank5": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 21
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 4200
             }
         ],
         "ultimateRank6": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 27
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 5400
             }
         ],
         "ultimateRank7": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 6
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 8200
             }
         ],
         "ultimateRank8": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 8
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 10500
             }
         ],
         "ultimateRank9": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 18000
             }
         ],
         "ultimateRank10": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 1
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 6
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 24000
             }
         ],
         "ultimateRank11": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 2
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 24
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 16
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 6
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 30000
             }
         ],
         "ultimateRank12": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 3
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 50
             },
             {
-                "name": "quadrantFittingFluid",
+                "id": "item_char_skill_specialize_4",
+                "name": "item_char_skill_specialize_4",
                 "amount": 36
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 12
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 65000
             }
         ],
         "comboSkillRank2": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 6
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 1000
             }
         ],
         "comboSkillRank3": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 12
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 2700
             }
         ],
         "comboSkillRank4": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 16
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 3200
             }
         ],
         "comboSkillRank5": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 21
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 4200
             }
         ],
         "comboSkillRank6": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 27
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 5400
             }
         ],
         "comboSkillRank7": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 6
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 8200
             }
         ],
         "comboSkillRank8": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 8
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 10500
             }
         ],
         "comboSkillRank9": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 18000
             }
         ],
         "comboSkillRank10": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 1
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 6
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 24000
             }
         ],
         "comboSkillRank11": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 2
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 24
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 16
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 6
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 30000
             }
         ],
         "comboSkillRank12": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 3
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 50
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 36
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 12
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 65000
             }
         ],
         "basicAttackRank2": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 6
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 1000
             }
         ],
         "basicAttackRank3": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 12
             },
             {
-                "name": "kalkodendra",
+                "id": "item_plant_crylplant_1_1",
+                "name": "item_plant_crylplant_1_1",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 2700
             }
         ],
         "basicAttackRank4": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 16
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 3200
             }
         ],
         "basicAttackRank5": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 21
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 4200
             }
         ],
         "basicAttackRank6": [
             {
-                "name": "protoprism",
+                "id": "item_char_skill_level_1_6",
+                "name": "item_char_skill_level_1_6",
                 "amount": 27
             },
             {
-                "name": "chrysodendra",
+                "id": "item_plant_crylplant_1_2",
+                "name": "item_plant_crylplant_1_2",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 5400
             }
         ],
         "basicAttackRank7": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 6
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 8200
             }
         ],
         "basicAttackRank8": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 8
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 1
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 10500
             }
         ],
         "basicAttackRank9": [
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "vitrodendra",
+                "id": "item_plant_crylplant_1_3",
+                "name": "item_plant_crylplant_1_3",
                 "amount": 2
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 18000
             }
         ],
         "basicAttackRank10": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 1
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 15
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 6
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 24000
             }
         ],
         "basicAttackRank11": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 2
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 24
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 16
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 6
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 30000
             }
         ],
         "basicAttackRank12": [
             {
-                "name": "markOfPerseverance",
+                "id": "item_char_skill_crown",
+                "name": "item_char_skill_crown",
                 "amount": 3
             },
             {
-                "name": "protohedron",
+                "id": "item_char_skill_level_7_12",
+                "name": "item_char_skill_level_7_12",
                 "amount": 50
             },
             {
-                "name": "tachyonScreeningLattice",
+                "id": "item_char_skill_specialize_3",
+                "name": "item_char_skill_specialize_3",
                 "amount": 36
             },
             {
-                "name": "blightedJadeleaf",
+                "id": "item_plant_crylplant_2_1",
+                "name": "item_plant_crylplant_2_1",
                 "amount": 12
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 65000
             }
         ]
@@ -2173,7 +2364,7 @@
             ],
             "wisd_up": [
                 0.0001,
-                0.0001,
+                0.0002,
                 0.0002,
                 0.0002,
                 0.0002,

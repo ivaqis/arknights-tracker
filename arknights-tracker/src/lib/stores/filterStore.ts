@@ -58,12 +58,12 @@ export function getOperatorFilters(): OperatorFilterOptions {
         weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
         skillMaterialType: ["any", "basic_combo", "battle_ultimate", "ascension"],
         skillMaterial: [
-            "d96SteelSample4",
-            "metadiastimaPhotoemissionTube",
-            "tachyonScreeningLattice",
-            "quadrantFittingFluid",
-            "triphasicNanoflake",
-            "warpPlasmaCoatedSlide"
+            "item_char_skill_specialize_1",
+            "item_char_skill_specialize_2",
+            "item_char_skill_specialize_3",
+            "item_char_skill_specialize_4",
+            "item_char_skill_specialize_5",
+            "item_char_skill_specialize_6"
         ],
         baseSkill: [
             "weaponMaterialEfficiency",

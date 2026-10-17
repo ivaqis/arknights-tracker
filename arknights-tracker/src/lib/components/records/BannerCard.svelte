@@ -3,7 +3,6 @@
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners";
   import { characters } from "$lib/data/characters";
-  import { currencies } from "$lib/data/items/currencies";
   import { weapons } from "$lib/data/weapons";
   import { t } from "$lib/i18n";
   import { recordsExcludedBanners } from "$lib/stores/filterStore";
@@ -19,8 +18,6 @@
 
   export let bannerId;
   export let titleKey;
-
-  const oroberyl = currencies.find((c) => c.id === "oroberyl");
 
   let selectedSubBannerId = "";
 
@@ -552,7 +549,7 @@
         <span
           class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-1 font-nums text-xl"
         >
-          <Image id="oroberyl" variant="currency" size={25} />
+          <Image id="item_diamond" variant="item-game" size={25} />
           {spent}
         </span>
       </div>

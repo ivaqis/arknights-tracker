@@ -366,61 +366,74 @@
         "breakthrough1": [],
         "breakthrough2": [
             {
-                "name": "castDie",
+                "id": "item_weapon_break_low",
+                "name": "item_weapon_break_low",
                 "amount": 5
             },
             {
-                "name": "kalkonyx",
+                "id": "item_plant_spcstone_1_1",
+                "name": "item_plant_spcstone_1_1",
                 "amount": 3
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 2200
             }
         ],
         "breakthrough3": [
             {
-                "name": "castDie",
+                "id": "item_weapon_break_low",
+                "name": "item_weapon_break_low",
                 "amount": 18
             },
             {
-                "name": "auronyx",
+                "id": "item_plant_spcstone_1_2",
+                "name": "item_plant_spcstone_1_2",
                 "amount": 5
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 8500
             }
         ],
         "breakthrough4": [
             {
-                "name": "heavyCastDie",
+                "id": "item_weapon_break_high",
+                "name": "item_weapon_break_high",
                 "amount": 20
             },
             {
-                "name": "umbronyx",
+                "id": "item_plant_spcstone_1_3",
+                "name": "item_plant_spcstone_1_3",
                 "amount": 5
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 25000
             }
         ],
         "breakthrough5": [
             {
-                "name": "heavyCastDie",
+                "id": "item_weapon_break_high",
+                "name": "item_weapon_break_high",
                 "amount": 30
             },
             {
-                "name": "warpPlasmaCoatedSlide",
+                "id": "item_char_skill_specialize_6",
+                "name": "item_char_skill_specialize_6",
                 "amount": 16
             },
             {
-                "name": "wulingstone",
+                "id": "item_plant_spcstone_2_2",
+                "name": "item_plant_spcstone_2_2",
                 "amount": 8
             },
             {
-                "name": "tCreds",
+                "id": "item_gold",
+                "name": "item_gold",
                 "amount": 90000
             }
         ]

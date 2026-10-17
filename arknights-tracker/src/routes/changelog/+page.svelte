@@ -23,6 +23,9 @@
     import Image from "$lib/components/Image.svelte";
     import { page } from "$app/stores";
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import { itemStorage } from "$lib/dataStorages/items/itemStorage";
+    import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
+    import { openItemModal } from "$lib/stores/itemModal";
 
     $: versionOptions = changelogData
         .map((v) => ({
@@ -82,6 +85,7 @@
         equipment: [],
         enemies: [],
         achievements: [],
+        items: [],
     };
 
     $: displayCharacters = (currentVersionData.characters || []).map((id) => ({
@@ -107,6 +111,11 @@
     $: displayAchievements = (currentVersionData.achievements || [])
         .map((id) => achievements[id])
         .filter(Boolean);
+
+    $: displayItems = (currentVersionData.items || [])
+        .map((id) => itemStorage.byId.get(id))
+        .filter((it) => it !== null && it !== undefined)
+        .sort((a, b) => (b.rarity || 1) - (a.rarity || 1));
 
     $: displayBanners = banners
         .filter(
@@ -425,6 +434,34 @@
             </div>
         {/if}
 
+        {#if displayItems.length > 0}
+            <div class="flex flex-col gap-4 animate-fadeIn">
+                <h3
+                    class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2 mt-4"
+                >
+                    {$t("pages.items")}
+                </h3>
+
+                <div
+                    class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-4 justify-start"
+                >
+                    {#each displayItems as item (item.id)}
+                        <button
+                            type="button"
+                            class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 focus:outline-none"
+                            on:click|preventDefault|stopPropagation={() => openItemModal(item.id)}
+                        >
+                            <ItemStackCard
+                                {item}
+                                showHoverEffect={true}
+                                showTooltip={true}
+                            />
+                        </button>
+                    {/each}
+                </div>
+            </div>
+        {/if}
+
         {#if displayEvents.length > 0}
             <div class="flex flex-col gap-6 animate-fadeIn mt-4">
                 <h3
@@ -534,7 +571,7 @@
             </div>
         {/if}
 
-        {#if displayBanners.length === 0 && displayCharacters.length === 0 && displayWeapons.length === 0 && displayEquipment.length === 0 && displayEnemies.length === 0 && displayEvents.length === 0 && displayAchievements.length === 0}
+        {#if displayBanners.length === 0 && displayCharacters.length === 0 && displayWeapons.length === 0 && displayEquipment.length === 0 && displayEnemies.length === 0 && displayItems.length === 0 && displayEvents.length === 0 && displayAchievements.length === 0}
             <div
                 class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444] animate-fadeIn"
             >

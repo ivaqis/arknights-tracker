@@ -249,7 +249,7 @@
                 {#if currentMaterials.length > 0}
                     {#each currentMaterials as mat}
                         <div class="transform scale-90 origin-top-left">
-                            <ItemCard item={{ id: mat.name }} amount={mat.amount} />
+                            <ItemCard item={{ id: mat.id || mat.name }} amount={mat.amount} />
                         </div>
                     {/each}
                 {:else}

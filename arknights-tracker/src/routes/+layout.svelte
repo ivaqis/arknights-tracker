@@ -10,6 +10,7 @@
     import ThemeSwitch from "$lib/components/layout/ThemeSwitch.svelte";
     import SupportModal from "$lib/components/modals/SupportModal.svelte";
     import SyncModal from "$lib/components/modals/SyncModal.svelte";
+    import ItemModal from "$lib/components/modals/ItemModal.svelte";
     import { isI18nReady, t } from "$lib/i18n";
     import { addNotification, hasProfileBackground, isPageLoading } from "$lib/stores";
     import { initAuth, justSynced, user } from "$lib/stores/cloudStore";
@@ -581,6 +582,7 @@
                 isOpen={isDonateModalOpen}
                 on:close={() => (isDonateModalOpen = false)}
             />
+            <ItemModal />
         </main>
     </div>
 {:else}

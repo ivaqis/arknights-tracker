@@ -1,8 +1,7 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currencies } from "$lib/data/items/currencies.js";
-    import { progression } from "$lib/data/items/progression.js";
     import { items } from "$lib/data/items/items";
+    import { openItemModal } from "$lib/stores/itemModal";
 
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Image from "$lib/components/Image.svelte";
@@ -13,11 +12,7 @@
 
     $: isLarge = size === "md";
 
-    const allItemsList = [...currencies, ...progression];
-
     function getItemRarity(id) {
-        const fromList = allItemsList.find((i) => i.id === id);
-        if (fromList?.rarity) return fromList.rarity;
         if (items && items[id]?.rarity) return items[id].rarity;
         return 3;
     }
@@ -25,8 +20,9 @@
     function getRarityStyle(id) {
         const rarity = getItemRarity(id);
         switch (rarity) {
-            case 5:
             case 6:
+                return "bg-orange-50 border-orange-300 text-orange-800 hover:border-orange-500 dark:bg-orange-950/40 dark:border-orange-700 dark:text-orange-200 dark:hover:border-orange-400";
+            case 5:
                 return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
             case 4:
                 return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
@@ -50,11 +46,14 @@
 {#if sortedRewards.length > 0}
     <div class="flex flex-wrap gap-1.5 items-center {className}">
         {#each sortedRewards as reward}
-            <Tooltip text={$t(`items.${reward.id}`)}>
+            <Tooltip text={$t(`itemNames.${reward.id}`)}>
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
                 <div
-                    class="flex items-center rounded-full border transition-colors {isLarge ? 'px-[9px] py-[2px] text-[12px]' : 'px-2 py-0.5 text-[11px]'} {getRarityStyle(
+                    class="flex items-center rounded-full border transition-colors cursor-pointer select-none {isLarge ? 'px-[9px] py-[2px] text-[12px]' : 'px-2 py-0.5 text-[11px]'} {getRarityStyle(
                         reward.id,
                     )}"
+                    on:click={() => openItemModal(reward.id)}
                 >
                     {#if reward.count && Number(reward.count) > 0}
                         <span class="font-bold {isLarge ? 'mr-1.5' : 'mr-1'}">{reward.count}</span>

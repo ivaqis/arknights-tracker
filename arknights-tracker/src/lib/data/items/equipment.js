@@ -1,5 +1,3 @@
-// src/lib/data/items/equipment.js
-
 export const equipment = {
   "item_equip_t0_parts_tundra01_body_01": {
     "level": 10,
@@ -39,11 +37,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "origocrust",
+          "id": "item_crystal_shell",
+          "name": "item_crystal_shell",
           "amount": 10
         },
         {
-          "name": "wood",
+          "id": "item_plant_tundra_wood",
+          "name": "item_plant_tundra_wood",
           "amount": 2
         }
       ]
@@ -87,11 +87,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "origocrust",
+          "id": "item_crystal_shell",
+          "name": "item_crystal_shell",
           "amount": 10
         },
         {
-          "name": "wood",
+          "id": "item_plant_tundra_wood",
+          "name": "item_plant_tundra_wood",
           "amount": 2
         }
       ]
@@ -135,11 +137,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "origocrust",
+          "id": "item_crystal_shell",
+          "name": "item_crystal_shell",
           "amount": 10
         },
         {
-          "name": "wood",
+          "id": "item_plant_tundra_wood",
+          "name": "item_plant_tundra_wood",
           "amount": 2
         }
       ]
@@ -183,11 +187,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "origocrust",
+          "id": "item_crystal_shell",
+          "name": "item_crystal_shell",
           "amount": 10
         },
         {
-          "name": "wood",
+          "id": "item_plant_tundra_wood",
+          "name": "item_plant_tundra_wood",
           "amount": 2
         }
       ]
@@ -231,11 +237,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -279,11 +287,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -327,11 +337,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -375,11 +387,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -423,11 +437,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -471,11 +487,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -507,11 +525,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -543,11 +563,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -591,11 +613,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -639,11 +663,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -687,11 +713,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 20
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 5
         }
       ]
@@ -735,11 +763,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -787,11 +817,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -833,11 +865,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -879,11 +913,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -931,11 +967,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -983,11 +1021,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -1029,11 +1069,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -1075,11 +1117,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -1127,11 +1171,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 160
         },
         {
-          "name": "amethystComponent",
+          "id": "item_equip_script_1",
+          "name": "item_equip_script_1",
           "amount": 20
         }
       ]
@@ -1169,11 +1215,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1211,11 +1259,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1253,11 +1303,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1295,11 +1347,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1343,11 +1397,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1391,11 +1447,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1443,11 +1501,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1489,11 +1549,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1535,11 +1597,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1587,11 +1651,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1639,11 +1705,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1685,11 +1753,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1731,11 +1801,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1783,11 +1855,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1835,11 +1909,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1881,11 +1957,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1927,11 +2005,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -1979,11 +2059,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2031,11 +2113,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2077,11 +2161,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2123,11 +2209,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2169,11 +2257,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2221,11 +2311,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 1200
         },
         {
-          "name": "ferriumComponent",
+          "id": "item_equip_script_2",
+          "name": "item_equip_script_2",
           "amount": 50
         }
       ]
@@ -2269,11 +2361,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2317,11 +2411,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2359,11 +2455,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2401,11 +2499,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2443,11 +2543,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2485,11 +2587,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2533,11 +2637,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2581,11 +2687,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2633,11 +2741,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2685,11 +2795,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2737,11 +2849,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2789,11 +2903,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2841,11 +2957,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2893,11 +3011,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2945,11 +3065,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -2997,11 +3119,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3049,11 +3173,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3101,11 +3227,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3153,11 +3281,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3205,11 +3335,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3257,11 +3389,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3309,11 +3443,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3361,11 +3497,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3413,11 +3551,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3465,11 +3605,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3517,11 +3659,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3569,11 +3713,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3621,11 +3767,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3673,11 +3821,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3724,11 +3874,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3775,11 +3927,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3826,11 +3980,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3877,11 +4033,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3928,11 +4086,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -3979,11 +4139,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4031,11 +4193,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4083,11 +4247,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4135,11 +4301,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4187,11 +4355,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4239,11 +4409,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4291,11 +4463,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4343,11 +4517,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4389,11 +4565,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4441,11 +4619,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "valleyStockBill",
+          "id": "item_domain_tundra_coupon",
+          "name": "item_domain_tundra_coupon",
           "amount": 9600
         },
         {
-          "name": "crystonComponent",
+          "id": "item_equip_script_3",
+          "name": "item_equip_script_3",
           "amount": 50
         }
       ]
@@ -4505,41 +4685,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -4599,41 +4787,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -4693,41 +4889,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -4787,41 +4991,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -4881,41 +5093,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -4975,41 +5195,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5069,41 +5297,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5163,41 +5399,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5257,41 +5501,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5351,41 +5603,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5445,41 +5705,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5539,41 +5807,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5633,41 +5909,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5727,41 +6011,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5821,41 +6113,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -5915,41 +6215,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -6009,41 +6317,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -6103,41 +6419,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 20
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 3000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 4
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 30
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 2
         }
       ]
@@ -6183,31 +6507,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6253,31 +6583,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6323,41 +6659,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6403,41 +6747,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6483,41 +6835,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6563,41 +6923,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6643,31 +7011,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6713,31 +7087,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -6783,11 +7163,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -6833,11 +7215,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -6883,11 +7267,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -6933,11 +7319,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -6983,11 +7371,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7033,11 +7423,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7083,11 +7475,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7133,11 +7527,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7183,11 +7579,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7233,11 +7631,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -7297,41 +7697,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7392,41 +7800,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7487,41 +7903,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7582,41 +8006,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7677,31 +8109,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7762,41 +8200,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7857,41 +8303,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -7942,31 +8396,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8027,41 +8487,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8112,31 +8580,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8197,21 +8671,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -8272,41 +8750,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8367,31 +8853,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8452,21 +8944,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -8527,41 +9023,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8622,31 +9126,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8707,31 +9217,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8792,41 +9308,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -8887,11 +9411,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -8952,41 +9478,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9047,31 +9581,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9132,31 +9672,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9217,41 +9763,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9311,41 +9865,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9405,11 +9967,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -9470,41 +10034,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9565,41 +10137,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9660,11 +10240,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -9725,41 +10307,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9820,41 +10410,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -9915,41 +10513,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10010,41 +10616,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10105,31 +10719,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10190,21 +10810,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -10265,41 +10889,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10360,41 +10992,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10455,41 +11095,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10550,41 +11198,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10644,31 +11300,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10729,31 +11391,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10814,31 +11482,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -10899,21 +11573,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -10975,41 +11653,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -11071,11 +11757,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -11137,11 +11825,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -11203,41 +11893,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -11299,41 +11997,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -11395,11 +12101,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -11461,41 +12169,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -11557,11 +12273,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -11623,21 +12341,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -11699,21 +12421,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -11775,21 +12501,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -11851,21 +12581,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -11927,21 +12661,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -12003,21 +12741,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -12079,21 +12821,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -12155,21 +12901,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -12232,41 +12982,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12329,41 +13087,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12426,41 +13192,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12523,41 +13297,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12619,31 +13401,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12706,41 +13494,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12802,41 +13598,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12898,41 +13702,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -12994,41 +13806,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13091,41 +13911,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13187,31 +14015,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13274,41 +14108,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13371,41 +14213,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13468,41 +14318,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13565,31 +14423,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -13651,21 +14515,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -13727,21 +14595,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -13803,21 +14675,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -13879,21 +14755,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -13955,21 +14835,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -14031,21 +14915,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -14107,21 +14995,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -14183,21 +15075,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -14259,21 +15155,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -14336,41 +15236,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14433,31 +15341,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14519,41 +15433,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14606,41 +15528,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14703,41 +15633,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14799,11 +15737,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -14866,31 +15806,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -14952,41 +15898,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15049,41 +16003,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15146,11 +16108,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -15212,41 +16176,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15308,41 +16280,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15404,11 +16384,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -15470,41 +16452,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15556,31 +16546,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15641,41 +16637,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15727,41 +16731,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15823,41 +16835,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -15918,41 +16938,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16014,41 +17042,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16110,11 +17146,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -16176,31 +17214,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16261,41 +17305,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16357,21 +17409,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -16433,21 +17489,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -16499,31 +17559,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16584,31 +17650,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16669,41 +17741,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16765,21 +17845,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -16841,41 +17925,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -16937,41 +18029,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17033,21 +18133,25 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 25000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 250
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 25
         }
       ]
@@ -17112,41 +18216,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17211,41 +18323,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17310,41 +18430,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17409,31 +18537,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17497,31 +18631,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17585,41 +18725,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17684,31 +18832,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17770,41 +18924,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -17867,11 +19029,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -17934,31 +19098,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -18010,41 +19180,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -18097,31 +19275,37 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 16000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 160
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -18183,11 +19367,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18250,41 +19436,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -18347,11 +19541,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18413,11 +19609,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18479,11 +19677,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18545,11 +19745,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18610,41 +19812,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -18695,11 +19905,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18760,11 +19972,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18825,11 +20039,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18890,11 +20106,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -18955,41 +20173,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -19050,41 +20276,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -19145,41 +20379,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -19230,11 +20472,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19295,11 +20539,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19360,11 +20606,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19425,11 +20673,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19490,41 +20740,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -19585,41 +20843,49 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "xiraniteComponent",
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "cupriumComponent",
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
           "amount": 50
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 8000
         },
         {
-          "name": "hetoniteComponent",
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
           "amount": 10
         }
       ],
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 80
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 5
         }
       ]
@@ -19680,11 +20946,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19745,11 +21013,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]
@@ -19810,11 +21080,13 @@ export const equipment = {
     "materials": [
       [
         {
-          "name": "wulingStockBill",
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
           "amount": 360
         },
         {
-          "name": "pyrroliteComponent",
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
           "amount": 50
         }
       ]

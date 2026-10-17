@@ -1920,7 +1920,7 @@
     </symbol>
 
     <symbol id="physRez" viewBox="0 0 23 32">
-        <path d="M0 0H23V22L11.5 31.5L0 22V0Z" fill="#FFFDFD"/>
+        <path d="M0 0H23V22L11.5 31.5L0 22V0Z" fill="#EAEAEA"/>
         <path d="M7 10.8667V16L16 7.13333V2L7 10.8667Z" fill="#424242"/>
         <path d="M7 17.8667V23L16 14.1333V9L7 17.8667Z" fill="#424242"/>
     </symbol>

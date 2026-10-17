@@ -1,15 +1,13 @@
-// src/lib/data/promocodes.js
-
 export const promocodes = [
     {
         code: "RETURNOFALL",
         rewards: [
-            { id: "oroberyl", count: 500 },
-            { id: "tCreds", count: 6000 },
-            { id: "elementaryCombatRecord", count: 30 },
-            { id: "protodisk", count: 5 },
-            { id: "protoprism", count: 5 },
-            { id: "tCreds", count: 30 }
+            { id: "item_diamond", count: 500 },
+            { id: "item_gold", count: 6000 },
+            { id: "item_expcard_stage1_low", count: 30 },
+            { id: "item_char_break_stage_1_2", count: 5 },
+            { id: "item_char_skill_level_1_6", count: 5 },
+            { id: "item_gold", count: 30 }
         ],
         startTime: "2024-01-22 00:00:00",
         condition: null,
@@ -19,13 +17,13 @@ export const promocodes = [
     {
         code: "ALLFIELD",
         rewards: [
-            { id: "oroberyl", count: 1500 },
-            { id: "tCreds", count: 6000 },
-            { id: "elementaryCombatRecord", count: 30 },
-            { id: "protodisk", count: 5 },
-            { id: "markOfPerseverance", count: 1 },
-            { id: "protoprism", count: 5 },
-            { id: "tCreds", count: 30 }
+            { id: "item_diamond", count: 1500 },
+            { id: "item_gold", count: 6000 },
+            { id: "item_expcard_stage1_low", count: 30 },
+            { id: "item_char_break_stage_1_2", count: 5 },
+            { id: "item_char_skill_crown", count: 1 },
+            { id: "item_char_skill_level_1_6", count: 5 },
+            { id: "item_gold", count: 30 }
         ],
         startTime: "2026-01-22 00:00:00",
         condition: null,
@@ -35,10 +33,10 @@ export const promocodes = [
     {
         code: "ENDFIELDGIFT",
         rewards: [
-            { id: "oroberyl", count: 150 },
-            { id: "tCreds", count: 10000 },
-            { id: "intermediateCombatRecord", count: 20 },
-            { id: "armsInspKit", count: 20 }
+            { id: "item_diamond", count: 150 },
+            { id: "item_gold", count: 10000 },
+            { id: "item_expcard_stage1_mid", count: 20 },
+            { id: "item_weapon_expcard_mid", count: 20 }
         ],
         startTime: "2026-01-22 00:00:00",
         condition: null,
@@ -48,9 +46,9 @@ export const promocodes = [
     {
         code: "ENDFIELD4PC",
         rewards: [
-            { id: "tCreds", count: 13000 },
-            { id: "advancedCombatRecord", count: 2 },
-            { id: "armsInspKit", count: 2 }
+            { id: "item_gold", count: 13000 },
+            { id: "item_expcard_stage1_high", count: 2 },
+            { id: "item_weapon_expcard_mid", count: 2 }
         ],
         startTime: "2026-01-22 00:00:00",
         condition: "home.conditions.onlyPc",
@@ -60,8 +58,8 @@ export const promocodes = [
     {
         code: "ZAU2SYXHWX5L4ZH",
         rewards: [
-            { id: "tCreds", count: 5000 },
-            { id: "armsInspKit", count: 10 }
+            { id: "item_gold", count: 5000 },
+            { id: "item_weapon_expcard_mid", count: 10 }
         ],
         startTime: "2026-04-18 00:00:00",
         condition: null,
@@ -71,8 +69,8 @@ export const promocodes = [
     {
         code: "ENDFIELDRENEW",
         rewards: [
-            { id: "tCreds", count: 71600 },
-            { id: "stickerSafetyHelmet", count: 1 }
+            { id: "item_gold", count: 71600 },
+            { id: "item_shot_sticker_channel_v1d3d6_1", count: 1 }
         ],
         startTime: "2026-07-10 00:00:00",
         condition: null,
@@ -82,10 +80,10 @@ export const promocodes = [
     {
         code: "ENDFIELDSTEAM",
         rewards: [
-            { id: "tCreds", count: 8000 },
-            { id: "elementaryCognitiveCarrier", count: 2 },
-            { id: "armsInspSet", count: 2 },
-            { id: "specialCommemorativePortraitFrame", count: 1 }
+            { id: "item_gold", count: 8000 },
+            { id: "item_expcard_stage2_low", count: 2 },
+            { id: "item_weapon_expcard_high", count: 2 },
+            { id: "item_user_avatar_frame_channel_v1d5_3", count: 1 }
         ],
         startTime: "2026-10-06 06:30:00",
         condition: null,

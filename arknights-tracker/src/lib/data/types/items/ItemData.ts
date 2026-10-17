@@ -7,7 +7,11 @@ import type { Rarity } from "$lib/classes/Rarity";
 export interface ItemData extends IData {
     iconId: string;
     rarity: Rarity;
-    groupId: `${ItemGroup}`;
-    type: `${ItemType}`;
-    material: `${ItemMaterial}` | null;
+    groupId?: `${ItemGroup}` | string;
+    type?: `${ItemType}` | string | number;
+    material?: `${ItemMaterial}` | string | null;
+    obtainWayIds?: string[];
+    usedByChars?: string[];
+    usedByWeapons?: string[];
+    droppedByEnemies?: string[];
 }

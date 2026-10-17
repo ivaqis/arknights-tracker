@@ -9,6 +9,7 @@
     import Image from "$lib/components/Image.svelte";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { getHexColorByElement } from "$lib/utils/colorUtils.js";
+    import { items } from "$lib/data/items/items";
 
     export let charId = "";
     export let skillKey = "";
@@ -75,14 +76,23 @@
 
         return mats
             .map((mat) => {
-                const item = itemsDb.find((i) => i.id === mat.name) || {
-                    id: mat.name,
-                    name: mat.name,
-                    rarity: 1,
+                const itemId = mat.id || mat.name;
+                const fromDb = itemsDb.find((i) => i.id === itemId);
+                const fromItems = items[itemId];
+                const rarity = fromItems?.rarity || fromDb?.rarity || 1;
+                return {
+                    id: itemId,
+                    name: itemId,
+                    ...fromDb,
+                    rarity,
+                    amount: mat.amount,
                 };
-                return { ...item, amount: mat.amount };
             })
-            .sort((a, b) => (a.id === "t_creds" ? -1 : a.rarity - b.rarity));
+            .sort((a, b) => {
+                if (a.id === "item_gold" || a.id === "t_creds" || a.id === "tCreds") return -1;
+                if (b.id === "item_gold" || b.id === "t_creds" || b.id === "tCreds") return 1;
+                return (a.rarity || 1) - (b.rarity || 1);
+            });
     })();
 
     function getValue(key, lvl, conditionKey = null) {

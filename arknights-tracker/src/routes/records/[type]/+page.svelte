@@ -791,8 +791,8 @@
                                 </span>
                                 <span class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-0.5 font-nums text-xl">
                                     <Image
-                                        id="oroberyl"
-                                        variant="currency"
+                                        id="item_diamond"
+                                        variant="item-game"
                                         size={25}
                                     />
                                     {spent}

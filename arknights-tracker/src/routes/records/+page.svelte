@@ -5,7 +5,6 @@
   import { pullData } from "$lib/stores/pulls";
   import { bannerTypes } from "$lib/data/bannerTypes";
   import { banners } from "$lib/data/banners";
-  import { currencies } from "$lib/data/items/currencies.js";
   import { user, checkSync, syncStatus } from "$lib/stores/cloudStore";
   import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import {
@@ -110,8 +109,6 @@
     .sort((a, b) => a.order - b.order);
 
   let isSettingsOpen = false;
-
-  const oroberyl = currencies.find((c) => c.id === "oroberyl");
 
   function openImport() {
     goto("/records/import");
@@ -640,13 +637,13 @@
                   <div
                     class="text-3xl font-black text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2 font-nums"
                   >
-                    <Image id="oroberyl" variant="currency" size={32} />
+                    <Image id="item_diamond" variant="item-game" size={32} />
                     {(billablePulls * 500).toLocaleString(normalizeLocale($currentUiLocale))}
                   </div>
                   <div
                     class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium flex items-center"
                   >
-                    ≈ <Image id="origeometry" variant="currency" size={20} />
+                    ≈ <Image id="item_originium_recharge" variant="item-game" size={20} />
                     {((charPullsOnly * 500) / 75).toFixed(0)}
                     {$t("page.banner.origeometry")}
                   </div>

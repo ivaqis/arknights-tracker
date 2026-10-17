@@ -1,13 +1,6 @@
-import { currencies } from '$lib/data/items/currencies';
-import { progression } from '$lib/data/items/progression';
 import { characters } from '$lib/data/characters';
 import { weapons } from '$lib/data/weapons';
 import { enemyVariantMap } from '$lib/data/enemies';
-
-const extractIds = (list) => {
-    if (!list) return [];
-    return list.map(item => (typeof item === 'string' ? item : item.id));
-};
 
 const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
     if (char?.apiId) {
@@ -26,8 +19,7 @@ const weaponIdToGameId = Object.values(weapons || {}).reduce((acc, w) => {
     return acc;
 }, {});
 
-const CURRENCY_IDS = new Set(extractIds(currencies));
-const PROGRESSION_IDS = new Set(extractIds(progression));
+
 
 const IMAGE_EXT_REGEX = /\.(png|jpg|jpeg|webp|gif|svg)$/i;
 
@@ -181,25 +173,15 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
         case 'operator-splash':
             return `/images/operators/splash/${withExt(name)}`;
         
+        case 'game-item':
+        case 'item-game':
         case 'item':
-            if (CURRENCY_IDS.has(name)) {
-                return `/images/items/currencies/${withExt(name)}`;
-            }
-
-            if (PROGRESSION_IDS.has(name)) {
-                return `/images/items/progression/${withExt(name)}`;
-            }
-
-            return `/images/items/progression/${withExt(name)}`;
-        
+        case 'item-icon':
         case 'currency':
-            return `/images/items/currencies/${withExt(name)}`;
+            return `/images/items/${withExt(name)}`;
 
         case 'building-icon':
             return `/images/buildings/icons/${withExt(name)}`;
-
-        case 'item-icon':
-            return `/images/items/items/${withExt(name)}`;
 
         case 'item-icon-bg':
             return `/images/items/icon-bg/${withExt(name)}`;
@@ -269,6 +251,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
         case 'achievement':
         case 'achievement-icon':
             return `/images/achievments/${withExt(name, 'webp')}`;
+
+        case 'item-tips':
+        case 'item-obtain':
+            return `/images/itemTips/${withExt(name)}`;
 
         case 'operator-icon':
         default:

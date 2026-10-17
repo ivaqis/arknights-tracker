@@ -15,8 +15,7 @@
     import TalentCard from "$lib/components/operators/TalentCard.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { characters } from "$lib/data/characters.js";
-    import { currencies } from "$lib/data/items/currencies.js";
-    import { progression } from "$lib/data/items/progression.js";
+    import { items } from "$lib/data/items/items";
     import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
     import { weapons } from "$lib/data/weapons.js";
     import { t } from "$lib/i18n";
@@ -229,8 +228,6 @@
     }
 
     const skillKeys = ["basicAttack", "battleSkill", "comboSkill", "ultimate"];
-
-    $: itemsDb = [...(progression || []), ...(currencies || [])];
 
     function getSkillMaterials(materials, skillKey) {
         if (!materials) return {};
@@ -633,38 +630,38 @@
             }
 
             if (totalGold > 0) {
-                const goldId = "tCreds";
+                const goldId = "item_gold";
                 required[goldId] = (required[goldId] || 0) + totalGold;
             }
 
-            const addExpItems = (expAmount, items) => {
+            const addExpItems = (expAmount, expList) => {
                 let remaining = expAmount;
-                for (const item of items) {
+                for (const it of expList) {
                     if (remaining <= 0) break;
-                    const count = Math.floor(remaining / item.val);
+                    const count = Math.floor(remaining / it.val);
                     if (count > 0) {
-                        required[item.id] = (required[item.id] || 0) + count;
-                        remaining -= count * item.val;
+                        required[it.id] = (required[it.id] || 0) + count;
+                        remaining -= count * it.val;
                     }
                 }
-                if (remaining > 0 && items.length > 0) {
-                    const smallest = items[items.length - 1];
+                if (remaining > 0 && expList.length > 0) {
+                    const smallest = expList[expList.length - 1];
                     required[smallest.id] = (required[smallest.id] || 0) + 1;
                 }
             };
 
             if (totalExp1to60 > 0) {
                 addExpItems(totalExp1to60, [
-                    { id: "advancedCombatRecord", val: 10000 },
-                    { id: "intermediateCombatRecord", val: 1000 },
-                    { id: "elementaryCombatRecord", val: 200 },
+                    { id: "item_expcard_stage1_high", val: 10000 },
+                    { id: "item_expcard_stage1_mid", val: 1000 },
+                    { id: "item_expcard_stage1_low", val: 200 },
                 ]);
             }
 
             if (totalExp60to90 > 0) {
                 addExpItems(totalExp60to90, [
-                    { id: "advancedCognitiveCarrier", val: 10000 },
-                    { id: "elementaryCognitiveCarrier", val: 1000 },
+                    { id: "item_expcard_stage2_high", val: 10000 },
+                    { id: "item_expcard_stage2_low", val: 1000 },
                 ]);
             }
         }
@@ -673,17 +670,18 @@
 
         return Object.entries(required)
             .map(([itemId, amount]) => {
-                const itemData = itemsDb.find((i) => i.id === itemId) || {
+                const fromItems = items[itemId];
+                const itemData = {
                     id: itemId,
                     name: itemId,
-                    rarity: 1,
-                    icon: "",
+                    rarity: fromItems?.rarity || 1,
+                    icon: fromItems?.iconId || "",
                 };
                 return { ...itemData, amount };
             })
             .sort((a, b) => {
-                if (a.id === "t_creds") return -1;
-                if (b.id === "t_creds") return 1;
+                if (a.id === "item_gold") return -1;
+                if (b.id === "item_gold") return 1;
                 return (b.rarity || 1) - (a.rarity || 1);
             });
     })();
@@ -1449,9 +1447,8 @@
                                                 {level === 1
                                                     ? $t(
                                                           "systemNames.noMaterialsNeeded",
-                                                      ) || "No materials needed"
-                                                    : $t("stats.maxed") ||
-                                                      "Max level reached"}
+                                                      )
+                                                    : $t("stats.maxed")}
                                             </div>
                                         {/if}
                                     </div>
@@ -1487,7 +1484,6 @@
                                                     charMaterials,
                                                     key,
                                                 )}
-                                                {itemsDb}
                                                 charLevel={level}
                                                 {charDetails}
                                             />

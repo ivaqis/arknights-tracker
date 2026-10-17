@@ -336,7 +336,7 @@
         const currentProfile = get(accountStore.currentAccount);
 
         try {
-            let targetServerUid = currentProfile.serverUid;
+            let targetServerUid = currentProfile.serverUid || currentPrivateId;
             let retryWithoutProfile = false;
 
             do {
@@ -375,9 +375,10 @@
                     }
                     else if (msg.type === "error") {
                         if (msg.message && msg.message.includes("Profile not found") && targetServerUid) {
-                            currentProfile.update({ uid: null });
+                            currentProfile.update({ uid: null, publicServerUid: null });
                             if (typeof window !== "undefined" && selectedAccId) {
                                 localStorage.removeItem(`ark_banner_private_id_${selectedAccId}`);
+                                localStorage.removeItem(`ark_banner_public_id_${selectedAccId}`);
                             }
                             targetServerUid = null;
                             previewReport = {
@@ -435,11 +436,12 @@
             });
 
         const cleanPulls = PullParser.parseGachaLog(rawList);
+
         const report = await pullData.smartImport(
             cleanPulls,
             backendServerId,
             false,
-            isRecoveryEnabled || (isGlobalStatsEnabled && data.profileId !== undefined && data.profileId === null)
+            isRecoveryEnabled
         );
 
         if (isGlobalStatsEnabled && data.profileId !== undefined) {
@@ -447,16 +449,6 @@
                 warningMsg = currentProfile.serverUid !== null
                     ? $t("import.warning_sync_creation")
                     : $t("import.warning_sync_write_on_local");
-            } else if (data.profileId !== currentPublicId) {
-                const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
-
-                if (existingProfile) {
-                    warningMsg = $t("import.warning_sync_switch");
-                } else if (currentPublicId === null && currentProfile.serverUid === null) {
-                    warningMsg = $t("import.warning_sync_write_on_local");
-                } else {
-                    warningMsg = $t("import.warning_sync_switch_creation");
-                }
             }
         }
 
@@ -481,31 +473,21 @@
                     const syncData = await fetchSyncPulls(signedSyncToken, true);
                     const profileData = syncData.profile;
 
-                    if (currentAcc.serverUid !== profileData.privateId) {
-                        let existingProfile = accountStore.findAccountByServerUid(profileData.privateId);
+                    if (profileData?.privateId) {
+                        currentAcc.update({
+                            uid: profileData.privateId,
+                            publicServerUid: profileData.publicId,
+                            serverId: serverId
+                        });
 
-                        if (!existingProfile) {
-                            existingProfile = currentAcc;
-                            currentAcc.update({
-                                uid: profileData.privateId,
-                                publicServerUid: profileData.publicId
-                            });
-                        }
+                        if (typeof window !== "undefined") {
+                            localStorage.setItem(`ark_banner_private_id_${currentAcc.id}`, profileData.privateId);
 
-                        accountStore.selectAccount(existingProfile.id);
-
-                        console.log(`Switch profile to ${existingProfile.id}`);
-                    }
-
-                    if (profileData?.privateId && typeof window !== "undefined" && selectedId) {
-                        localStorage.setItem(`ark_banner_private_id_${selectedId}`, profileData.privateId);
-
-                        if (profileData?.publicId) {
-                            localStorage.setItem(`ark_banner_public_id_${selectedId}`, profileData.publicId);
+                            if (profileData.publicId) {
+                                localStorage.setItem(`ark_banner_public_id_${currentAcc.id}`, profileData.publicId);
+                            }
                         }
                     }
-
-
                 } catch (e) {
                     console.error("Sync import failed:", e);
                 }

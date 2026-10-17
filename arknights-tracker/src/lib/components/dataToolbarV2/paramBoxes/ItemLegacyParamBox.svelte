@@ -6,7 +6,7 @@
     export let styleMode;
 
     export let paramId;
-    export let getLocaleFunc = (paramId) => $t(`items.${paramId}`);
+    export let getLocaleFunc = (paramId) => $t(`itemNames.${paramId}`);
 </script>
 
 <TextParamBoxTemplate styleMode={styleMode}>
@@ -18,7 +18,7 @@
 
         <Image
             id="{paramId}"
-            variant="item"
+            variant="item-game"
             className="w-full h-full object-contain"
         />
 

@@ -1177,8 +1177,8 @@
       >
         <div class="flex items-center gap-2">
           <Image
-            id="origeometry"
-            variant="item"
+            id="item_originium_recharge"
+            variant="item-game"
             size={32}
             className="object-contain"
           />

@@ -47,8 +47,8 @@
                 title={$t("global.spent")}
             >
                 <Image
-                    id="oroberyl"
-                    variant="currency"
+                    id="item_diamond"
+                    variant="item-game"
                     size={20}
                 />
                 {formatGlobalStatsCount(oroberylSpent)}
@@ -62,8 +62,8 @@
                 title={$t("global.spentArsenal")}
             >
                 <Image
-                    id="arsenalTicket"
-                    variant="currency"
+                    id="item_gachabyproducts_weapongold"
+                    variant="item-game"
                     size={20}
                 />
                 {formatGlobalStatsCount(arsenalTicketsSpent)}

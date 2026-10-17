@@ -214,7 +214,7 @@
 
                 {#if variant === "small" && !hideName}
                     <div
-                        class="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none z-10"
+                        class="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none z-10"
                     ></div>
                 {/if}
 
@@ -339,9 +339,9 @@
 
                 {#if materialIcon && materialCount > 0}
                     <div class="absolute right-0.5 bottom-[45px] z-30 flex flex-col items-center pointer-events-auto">
-                        <Tooltip text={$t(`items.${materialIcon}`) || materialIcon}>
+                        <Tooltip text={$t(`itemNames.${materialIcon}`)}>
                             <div class="flex flex-col items-center filter drop-shadow-md">
-                                <Image id={materialIcon} variant="item" size={32} className="object-contain mb-[-4px]" />
+                                <Image id={materialIcon} variant="item-game" size={32} className="object-contain mb-[-4px]" />
                                 <span
                                     class="text-[10px] font-black text-white leading-none tracking-tight font-nums"
                                     style="text-shadow: 1px 1px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 0 2px 2px rgba(0,0,0,0.8);"

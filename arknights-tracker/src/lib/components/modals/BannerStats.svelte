@@ -152,7 +152,7 @@
                     >{$t("page.banner.spent")}</span
                 >
                 <div class="flex items-center gap-1.5">
-                    <Image id="oroberyl" variant="currency" size={18} />
+                    <Image id="item_diamond" variant="item-game" size={18} />
                     <span
                         class="font-bold text-gray-800 dark:text-[#E0E0E0] font-nums text-lg leading-none"
                         >{spent}</span

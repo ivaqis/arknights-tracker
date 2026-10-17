@@ -6,8 +6,6 @@
     import { browser } from "$app/environment";
     import { pullData } from "$lib/stores/pulls";
     import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-    import { progression } from "$lib/data/items/progression.js";
-    import { currencies } from "$lib/data/items/currencies.js";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { changelogData } from "$lib/data/versions.js";
@@ -21,6 +19,7 @@
     import { locations } from "$lib/data/locations.js";
     import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
+    import { items } from "$lib/data/items/items";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -323,7 +322,6 @@
     let showAscension = true;
     let isCumulative = true;
 
-    $: itemsDb = [...(progression || []), ...(currencies || [])];
     $: baseAtk = weaponData.levels?.baseAtk
         ? weaponData.levels.baseAtk[level - 1] || 0
         : 0;
@@ -519,14 +517,14 @@
                 }
 
                 if (totalGold > 0) {
-                    required["tCreds"] = (required["tCreds"] || 0) + totalGold;
+                    required["item_gold"] = (required["item_gold"] || 0) + totalGold;
                 }
 
                 if (totalExp > 0) {
                     const expItems = [
-                        { id: "armsInspSet", val: 10000 },
-                        { id: "armsInspKit", val: 1000 },
-                        { id: "armsInspector", val: 200 },
+                        { id: "item_weapon_expcard_high", val: 10000 },
+                        { id: "item_weapon_expcard_mid", val: 1000 },
+                        { id: "item_weapon_expcard_low", val: 200 },
                     ];
 
                     let remaining = totalExp;
@@ -552,16 +550,17 @@
 
         return Object.entries(required)
             .map(([itemId, amount]) => {
-                const itemData = itemsDb.find((i) => i.id === itemId) || {
+                const fromItems = items[itemId];
+                const itemData = {
                     id: itemId,
                     name: itemId,
-                    rarity: 1,
+                    rarity: fromItems?.rarity || 1,
                 };
                 return { ...itemData, amount };
             })
             .sort((a, b) => {
-                if (a.id === "t_creds") return -1;
-                if (b.id === "t_creds") return 1;
+                if (a.id === "item_gold") return -1;
+                if (b.id === "item_gold") return 1;
                 return (b.rarity || 1) - (a.rarity || 1);
             });
     })();

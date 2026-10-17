@@ -100,19 +100,25 @@
 
     function getScriptName(recipe, index) {
         if (!recipe) return "";
-        const componentMat = recipe.find(m => m.name && m.name.endsWith("Component"));
+        const componentMat = recipe.find(m => (m.id || m.name)?.startsWith("item_equip_script_"));
         if (!componentMat) {
-            return `${$t("recipes")} ${index + 1}`;
+            return `${$t("pages.recipes")} ${index + 1}`;
         }
-        const techName = componentMat.name.replace("Component", "Technique");
-        const key = `equipmentScriptNames.${techName}`;
-        const translated = $t(key);
-        if (translated && translated !== key) {
-            return translated;
+        const matKey = componentMat.id || componentMat.name;
+        const scriptIdMap = {
+            item_equip_script_1: "amethystTechnique",
+            item_equip_script_2: "ferriumTechnique",
+            item_equip_script_3: "crystonTechnique",
+            item_equip_script_4: "xiraniteTechnique",
+            item_equip_script_4_1: "cupriumTechnique",
+            item_equip_script_4_2: "hetoniteTechnique",
+            item_equip_script_4_3: "pyrroliteTechnique",
+        };
+        const techName = scriptIdMap[matKey];
+        if (techName) {
+            return $t(`equipmentScriptNames.${techName}`);
         }
-        const baseName = componentMat.name.replace("Component", "");
-        const formattedBase = baseName.charAt(0).toUpperCase() + baseName.slice(1);
-        return `${formattedBase} Technique`;
+        return $t(`itemNames.${matKey}`);
     }
 
     function formatCostValue(val) {
@@ -143,8 +149,8 @@
 
     $: neededMaterials = (equipData.materials && equipData.materials[0])
         ? equipData.materials[0].map((m) => ({
-            id: m.name,
-            name: m.name,
+            id: m.id || m.name,
+            name: m.name || m.id,
             amount: m.amount,
         }))
         : [];
@@ -984,7 +990,7 @@
             >
                 <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3">
                     <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
-                        {$t("stats.materials" || "Materials")}
+                        {$t("stats.materials")}
                     </h2>
                 </div>
                 <div class="pt-1">
@@ -1000,7 +1006,7 @@
                                     {/if}
                                     <div class="flex flex-wrap gap-2.5">
                                         {#each recipe as mat}
-                                            <ItemCard item={{ id: mat.name, name: mat.name }} amount={mat.amount} linkToRecipe={true} />
+                                            <ItemCard item={{ id: mat.id || mat.name, name: mat.name || mat.id }} amount={mat.amount} linkToRecipe={true} />
                                         {/each}
                                     </div>
                                 </div>
