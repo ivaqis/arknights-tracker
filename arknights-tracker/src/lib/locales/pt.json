@@ -346,7 +346,8 @@
     "rewards": "Recompensas",
     "dayN": "Dia {n}",
     "addedInVersion": "Adicionado na versão {version}",
-    "currentlyUnavailable": "Indisponível no Momento"
+    "currentlyUnavailable": "Indisponível no Momento",
+    "foresight": "Prévia"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "Momento da Sobremesa",
     "jadeVessel": "Vaso de Jade",
     "longHeritage": "Legado Duradouro",
-    "complexedIndustry": "Indústria Complexa"
+    "complexedIndustry": "Indústria Complexa",
+    "lunarCalling": "Chamado Lunar"
   },
   "cookies": {
     "title": "Usamos cookies",

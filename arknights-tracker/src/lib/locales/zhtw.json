@@ -349,7 +349,8 @@
     "rewards": "獎勵",
     "dayN": "第 {n} 天",
     "addedInVersion": "在 {version} 版本中新增",
-    "currentlyUnavailable": "目前尚無"
+    "currentlyUnavailable": "目前尚無",
+    "foresight": "預告"
   },
   "status": {
     "won": "勝出 50:50",
@@ -1121,7 +1122,8 @@
     "dessertMoment": "點心時刻",
     "jadeVessel": "玉中身",
     "longHeritage": "悠久傳承",
-    "complexedIndustry": "聚合工業"
+    "complexedIndustry": "聚合工業",
+    "lunarCalling": "喚月"
   },
   "cookies": {
     "title": "我們使用 Cookie",

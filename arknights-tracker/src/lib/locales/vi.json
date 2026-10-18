@@ -349,7 +349,8 @@
     "rewards": "Phần thưởng",
     "dayN": "Ngày {n}",
     "addedInVersion": "Đã thêm trong phiên bản {version}",
-    "currentlyUnavailable": "Hiện Không Khả Dụng"
+    "currentlyUnavailable": "Hiện Không Khả Dụng",
+    "foresight": "Xem trước"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -1121,7 +1122,8 @@
     "dessertMoment": "Giờ Tráng Miệng",
     "jadeVessel": "Ngọc Khí",
     "longHeritage": "Di Sản Lâu Đời",
-    "complexedIndustry": "Tổ Hợp Công Nghiệp"
+    "complexedIndustry": "Tổ Hợp Công Nghiệp",
+    "lunarCalling": "Lời Gọi Trăng"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",

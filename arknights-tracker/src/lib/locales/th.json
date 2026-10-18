@@ -346,7 +346,8 @@
     "rewards": "รางวัล",
     "dayN": "วันที่ {n}",
     "addedInVersion": "เพิ่มในเวอร์ชัน {version}",
-    "currentlyUnavailable": "ไม่สามารถใช้ได้ตอนนี้"
+    "currentlyUnavailable": "ไม่สามารถใช้ได้ตอนนี้",
+    "foresight": "พรีวิว"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "ช่วงเวลา​แห่ง​ของหวาน",
     "jadeVessel": "ภาชนะ​หยก",
     "longHeritage": "มรดก​อัน​ยาวนาน",
-    "complexedIndustry": "อุตสาหกรรม​คอมเพล็กซ์"
+    "complexedIndustry": "อุตสาหกรรม​คอมเพล็กซ์",
+    "lunarCalling": "จันทรา​เรียกขาน"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",

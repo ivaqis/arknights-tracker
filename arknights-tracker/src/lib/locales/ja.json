@@ -346,7 +346,8 @@
     "rewards": "報酬",
     "dayN": "{n}日目",
     "addedInVersion": "バージョン{version}で追加",
-    "currentlyUnavailable": "未開放"
+    "currentlyUnavailable": "未開放",
+    "foresight": "プレビュー"
   },
   "status": {
     "won": "勝利 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "スイーツタイム",
     "jadeVessel": "玉中身",
     "longHeritage": "悠久の継承",
-    "complexedIndustry": "複合工業"
+    "complexedIndustry": "複合工業",
+    "lunarCalling": "問月"
   },
   "cookies": {
     "title": "クッキーを使用しています",

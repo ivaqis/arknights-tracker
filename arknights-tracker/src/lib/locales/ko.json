@@ -346,7 +346,8 @@
     "rewards": "보상",
     "dayN": "{n}일차",
     "addedInVersion": "버전 {version}에 추가됨",
-    "currentlyUnavailable": "현재 없음"
+    "currentlyUnavailable": "현재 없음",
+    "foresight": "미리보기"
   },
   "status": {
     "won": "승리 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "간식 시간",
     "jadeVessel": "옥에 깃든 형체",
     "longHeritage": "유구한 전승",
-    "complexedIndustry": "응집 공업"
+    "complexedIndustry": "응집 공업",
+    "lunarCalling": "환월"
   },
   "cookies": {
     "title": "쿠키 사용 안내",

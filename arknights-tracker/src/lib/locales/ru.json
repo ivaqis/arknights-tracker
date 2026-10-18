@@ -393,7 +393,8 @@
     "gearTemplate": "Шаблон снаряжения",
     "blueprintLocation": "Локация шаблона снаряжения",
     "currentlyUnavailable": "Сейчас недоступно",
-    "addedInVersion": "Добавлено в версии {version}"
+    "addedInVersion": "Добавлено в версии {version}",
+    "foresight": "Превью"
   },
   "status": {
     "won": "Выигрыш 50:50",
@@ -1302,7 +1303,8 @@
     "dessertMoment": "Время десерта",
     "jadeVessel": "Нефритовый сосуд",
     "longHeritage": "Вечное наследие",
-    "complexedIndustry": "Комплексная промышленность"
+    "complexedIndustry": "Комплексная промышленность",
+    "lunarCalling": "Зов луны"
   },
   "cookies": {
     "title": "Мы используем куки",

@@ -395,7 +395,8 @@
     "gearTemplate": "Gear Template",
     "blueprintLocation": "Gear template location",
     "currentlyUnavailable": "Currently Unavailable",
-    "addedInVersion": "Added in version {version}"
+    "addedInVersion": "Added in version {version}",
+    "foresight": "Preview"
   },
   "status": {
     "won": "Won 50:50",
@@ -1298,7 +1299,8 @@
     "dessertMoment": "Dessert Moment",
     "jadeVessel": "Jade Vessel",
     "longHeritage": "Long Heritage",
-    "complexedIndustry": "Complexed Industry"
+    "complexedIndustry": "Complexed Industry",
+    "lunarCalling": "Lunar Calling"
   },
   "cookies": {
     "title": "We use cookies",

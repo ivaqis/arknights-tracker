@@ -346,7 +346,8 @@
     "rewards": "Belohnungen",
     "dayN": "Tag {n}",
     "addedInVersion": "Hinzugefügt in Version {version}",
-    "currentlyUnavailable": "Derzeit nicht verfügbar."
+    "currentlyUnavailable": "Derzeit nicht verfügbar.",
+    "foresight": "Vorschau"
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "Desserthighlight",
     "jadeVessel": "Jadegefäß",
     "longHeritage": "Langes Erbe",
-    "complexedIndustry": "Angelagerte Industrie"
+    "complexedIndustry": "Angelagerte Industrie",
+    "lunarCalling": "Mondruf"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",

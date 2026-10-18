@@ -803,6 +803,14 @@
                                     {weaponName}
                                 </h1>
 
+                                {#if weaponBase.isForesight}
+                                    <div
+                                        class="px-2 py-0.5 self-center rounded text-[11px] font-bold bg-[#00E5FF]/20 text-[#00B8D4] dark:text-[#00E5FF] border border-[#00E5FF]/40 leading-none shrink-0"
+                                    >
+                                        {$t("systemNames.foresight")}
+                                    </div>
+                                {/if}
+
                                 <div
                                     class="flex items-center shrink-0 mt-2 relative"
                                 >
@@ -1051,247 +1059,265 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-3 mt-auto">
-                            <div
-                                class="w-9 h-9 rounded bg-[#8F8F8F] flex items-center justify-center shadow-sm"
-                            >
-                                <Icon name="atk" class="w-5 h-5 text-white" />
-                            </div>
-                            <span
-                                class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                                >{tOrFallback(
-                                    "stats.baseAtk",
-                                    "Base ATK",
-                                )}</span
-                            >
-                            <span
-                                class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
-                                style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);"
-                                >{@html formatNumberForSelection(baseAtk)}</span
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="px-6 pt-5 bg-white dark:bg-[#383838] flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-4 border-t border-gray-200 dark:border-[#444] transition-colors"
-                >
-                    <div
-                        class="flex items-center gap-1 shrink-0 w-full md:w-auto justify-between md:justify-start"
-                    >
-                        <div class="flex items-center gap-1.5">
-                            <div
-                                class="flex flex-col gap-1 shrink-0 h-full justify-center"
-                            >
-                                <button
-                                    on:click={setMaxAll}
-                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
-                                    >MAX</button
-                                >
-                                <button
-                                    on:click={setMinAll}
-                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
-                                    >MIN</button
-                                >
-                            </div>
-                            <div
-                                class="bg-gray-200 dark:bg-[#4A4A4A] w-[75px] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0"
-                            >
-                                <span
-                                    class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none"
-                                    >{level}</span
-                                >
-                                <span
-                                    class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest"
-                                    >LV.</span
-                                >
-                            </div>
-                        </div>
-
-                        <div class="relative pot-dropdown-container">
-                            <button
-                                on:click={() =>
-                                    (isPotDropdownOpen = !isPotDropdownOpen)}
-                                class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
-                            >
-                                <span class="text-[#21272C] dark:text-white"
-                                    >P{previewPot}</span
-                                >
-                                <Icon
-                                    name="arrowDown"
-                                    class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
-                                        ? 'rotate-180'
-                                        : ''}"
-                                />
-                            </button>
-
-                            {#if isPotDropdownOpen}
+                        {#if !weaponBase.isForesight}
+                            <div class="flex items-center gap-3 mt-auto">
                                 <div
-                                    class="absolute top-full right-0 md:left-0 mt-1 w-full min-w-[120px] bg-white dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444] rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.3)] overflow-hidden z-[60] animate-fadeIn"
+                                    class="w-9 h-9 rounded bg-[#8F8F8F] flex items-center justify-center shadow-sm"
                                 >
-                                    {#each Array(6) as _, i}
-                                        <button
-                                            class="w-full text-left px-3 py-2 text-[13px] font-bold font-nums transition-colors hover:bg-gray-100 dark:hover:bg-[#4A4A4A] {previewPot ===
-                                            i
-                                                ? 'bg-gray-50 dark:bg-[#383838] text-[#F9B90C]'
-                                                : 'text-gray-700 dark:text-[#E4E4E4]'}"
-                                            on:click={() => {
-                                                previewPot = i;
-                                                isPotDropdownOpen = false;
-                                            }}
-                                        >
-                                            P{i}
-                                        </button>
-                                    {/each}
+                                    <Icon name="atk" class="w-5 h-5 text-white" />
                                 </div>
-                            {/if}
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-4 w-full flex-1">
-                        <div class="flex-1 relative flex items-center md:px-4">
-                            <input
-                                type="range"
-                                min="1"
-                                max={maxLevel}
-                                step="1"
-                                value={targetLevel}
-                                on:input={handleInput}
-                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
-                            />
-                        </div>
-
-                        <button
-                            on:click={() => (showStatsTable = true)}
-                            class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
-                        >
-                            <Icon name="table" class="w-4 h-4" />
-                            <span>{tOrFallback("stats.table", "Table")}</span>
-                        </button>
+                                <span
+                                    class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                    >{tOrFallback(
+                                        "stats.baseAtk",
+                                        "Base ATK",
+                                    )}</span
+                                >
+                                <span
+                                    class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
+                                    style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);"
+                                    >{@html formatNumberForSelection(baseAtk)}</span
+                                >
+                            </div>
+                        {/if}
                     </div>
                 </div>
+
+                {#if !weaponBase.isForesight}
+                    <div
+                        class="px-6 pt-5 bg-white dark:bg-[#383838] flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-4 border-t border-gray-200 dark:border-[#444] transition-colors"
+                    >
+                        <div
+                            class="flex items-center gap-1 shrink-0 w-full md:w-auto justify-between md:justify-start"
+                        >
+                            <div class="flex items-center gap-1.5">
+                                <div
+                                    class="flex flex-col gap-1 shrink-0 h-full justify-center"
+                                >
+                                    <button
+                                        on:click={setMaxAll}
+                                        class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
+                                        >MAX</button
+                                    >
+                                    <button
+                                        on:click={setMinAll}
+                                        class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
+                                        >MIN</button
+                                    >
+                                </div>
+                                <div
+                                    class="bg-gray-200 dark:bg-[#4A4A4A] w-[75px] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0"
+                                >
+                                    <span
+                                        class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none"
+                                        >{level}</span
+                                    >
+                                    <span
+                                        class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest"
+                                        >LV.</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="relative pot-dropdown-container">
+                                <button
+                                    on:click={() =>
+                                        (isPotDropdownOpen = !isPotDropdownOpen)}
+                                    class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
+                                >
+                                    <span class="text-[#21272C] dark:text-white"
+                                        >P{previewPot}</span
+                                    >
+                                    <Icon
+                                        name="arrowDown"
+                                        class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
+                                            ? 'rotate-180'
+                                            : ''}"
+                                    />
+                                </button>
+
+                                {#if isPotDropdownOpen}
+                                    <div
+                                        class="absolute top-full right-0 md:left-0 mt-1 w-full min-w-[120px] bg-white dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444] rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.3)] overflow-hidden z-[60] animate-fadeIn"
+                                    >
+                                        {#each Array(6) as _, i}
+                                            <button
+                                                class="w-full text-left px-3 py-2 text-[13px] font-bold font-nums transition-colors hover:bg-gray-100 dark:hover:bg-[#4A4A4A] {previewPot ===
+                                                i
+                                                    ? 'bg-gray-50 dark:bg-[#383838] text-[#F9B90C]'
+                                                    : 'text-gray-700 dark:text-[#E4E4E4]'}"
+                                                on:click={() => {
+                                                    previewPot = i;
+                                                    isPotDropdownOpen = false;
+                                                }}
+                                            >
+                                                P{i}
+                                            </button>
+                                        {/each}
+                                    </div>
+                                {/if}
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 w-full flex-1">
+                            <div class="flex-1 relative flex items-center md:px-4">
+                                <input
+                                    type="range"
+                                    min="1"
+                                    max={maxLevel}
+                                    step="1"
+                                    value={targetLevel}
+                                    on:input={handleInput}
+                                    class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
+                                />
+                            </div>
+
+                            <button
+                                on:click={() => (showStatsTable = true)}
+                                class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
+                            >
+                                <Icon name="table" class="w-4 h-4" />
+                                <span>{tOrFallback("stats.table", "Table")}</span>
+                            </button>
+                        </div>
+                    </div>
+                {/if}
 
                 <div
                     class="p-6 flex flex-col gap-3 bg-white dark:bg-[#383838] transition-colors"
                 >
                     {#if weaponLocale.skills}
                         {#each weaponLocale.skills as skillData, index}
-                            {@const skillIndex = index + 1}
-                            {@const skillKey = `skill${skillIndex}`}
-                            {@const state = getSkillState(
-                                skillIndex,
-                                level,
-                                previewPot,
-                                manualSkillRanks,
-                            )}
-                            {@const bb = getSkillBb(skillIndex, state.rank)}
-
-                            <div class="flex flex-col gap-1">
-                                <div
-                                    class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
-                                >
-                                    <div
-                                        class="flex items-center gap-2 shrink-0"
+                            {#if weaponBase.isForesight}
+                                <div class="flex items-center gap-2 py-0.5">
+                                    <Icon
+                                        name="circle"
+                                        class="w-3 h-3 text-[#888888]"
+                                    />
+                                    <h3
+                                        class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
                                     >
-                                        <Icon
-                                            name="circle"
-                                            class="w-3 h-3 text-[#888888]"
-                                        />
-                                        <div class="flex gap-1 items-center">
-                                            <h3
-                                                class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
+                                        {skillData.name}
+                                    </h3>
+                                </div>
+                            {:else}
+                                {@const skillIndex = index + 1}
+                                {@const skillKey = `skill${skillIndex}`}
+                                {@const state = getSkillState(
+                                    skillIndex,
+                                    level,
+                                    previewPot,
+                                    manualSkillRanks,
+                                )}
+                                {@const bb = getSkillBb(skillIndex, state.rank)}
+
+                                <div class="flex flex-col gap-1">
+                                    <div
+                                        class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
+                                    >
+                                        <div
+                                            class="flex items-center gap-2 shrink-0"
+                                        >
+                                            <Icon
+                                                name="circle"
+                                                class="w-3 h-3 text-[#888888]"
+                                            />
+                                            <div class="flex gap-1 items-center">
+                                                <h3
+                                                    class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
+                                                >
+                                                    {skillData.name}
+                                                </h3>
+                                                <span
+                                                    class="pt-1 block sm:hidden min-w-[40px] flex text-xs font-bold text-gray-400 dark:text-gray-500 font-nums tracking-wider"
+                                                >
+                                                    (Lv. {state.rank})
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden sm:block flex-1"></div>
+
+                                        <div
+                                            class="flex items-center gap-3 w-full sm:w-auto pl-5 sm:pl-0 mt-1 sm:mt-0"
+                                        >
+                                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                                            <div
+                                                class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444] select-none"
+                                                on:mousedown={(e) =>
+                                                    startDraggingRank(e, skillKey)}
+                                                on:contextmenu|preventDefault
                                             >
-                                                {skillData.name}
-                                            </h3>
+                                                {#each Array(9) as _, i}
+                                                    <button
+                                                        type="button"
+                                                        aria-label="Set level {i +
+                                                            1}"
+                                                        title="Level {i + 1}"
+                                                        class="w-[7px] h-[13px] rounded-full transform rotate-[30deg] border-[1.5px] transition-all duration-200 cursor-pointer outline-none shrink-0 flex items-center justify-center hover:scale-110 focus:ring-1 focus:ring-[#F9B90C]
+                {i < state.rank
+                                                            ? 'bg-[#21272C] border-[#21272C] dark:bg-white dark:border-white shadow-sm'
+                                                            : i < state.upper
+                                                              ? 'bg-gray-300 border-gray-300 dark:bg-[#555] dark:border-[#555]'
+                                                              : 'bg-transparent border-gray-400 dark:border-[#666] hover:bg-gray-200 dark:hover:bg-[#444]'}"
+                                                        on:click={() =>
+                                                            (manualSkillRanks = {
+                                                                ...manualSkillRanks,
+                                                                [skillKey]: i + 1,
+                                                            })}
+                                                    ></button>
+                                                {/each}
+                                            </div>
+
+                                            <div class="block sm:hidden w-full">
+                                                <input
+                                                    type="range"
+                                                    min="1"
+                                                    max="9"
+                                                    step="1"
+                                                    value={manualSkillRanks[
+                                                        skillKey
+                                                    ] ||
+                                                        state.rank ||
+                                                        1}
+                                                    on:input={(e) =>
+                                                        (manualSkillRanks = {
+                                                            ...manualSkillRanks,
+                                                            [skillKey]: parseInt(
+                                                                e.target.value,
+                                                            ),
+                                                        })}
+                                                    class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C]"
+                                                />
+                                            </div>
+
+                                            <div
+                                                class="hidden sm:flex text-gray-400 dark:text-[#555] text-xs font-bold pl-1"
+                                            >
+                                                |
+                                            </div>
+
                                             <span
-                                                class="pt-1 block sm:hidden min-w-[40px] flex text-xs font-bold text-gray-400 dark:text-gray-500 font-nums tracking-wider"
+                                                class="hidden sm:flex text-[14px] font-bold text-[#21272C] dark:text-white font-nums w-8 text-center shrink-0"
                                             >
-                                                (Lv. {state.rank})
+                                                {state.rank}/{state.upper}
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="hidden sm:block flex-1"></div>
-
                                     <div
-                                        class="flex items-center gap-3 w-full sm:w-auto pl-5 sm:pl-0 mt-1 sm:mt-0"
+                                        class="text-[14px] text-gray-700 dark:text-[#A0A0A0] leading-relaxed pl-[20px] whitespace-pre-wrap"
+                                        use:hyperlinkAction
                                     >
-                                        <!-- svelte-ignore a11y_no_static_element_interactions -->
-                                        <div
-                                            class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444] select-none"
-                                            on:mousedown={(e) =>
-                                                startDraggingRank(e, skillKey)}
-                                            on:contextmenu|preventDefault
-                                        >
-                                            {#each Array(9) as _, i}
-                                                <button
-                                                    type="button"
-                                                    aria-label="Set level {i +
-                                                        1}"
-                                                    title="Level {i + 1}"
-                                                    class="w-[7px] h-[13px] rounded-full transform rotate-[30deg] border-[1.5px] transition-all duration-200 cursor-pointer outline-none shrink-0 flex items-center justify-center hover:scale-110 focus:ring-1 focus:ring-[#F9B90C]
-            {i < state.rank
-                                                        ? 'bg-[#21272C] border-[#21272C] dark:bg-white dark:border-white shadow-sm'
-                                                        : i < state.upper
-                                                          ? 'bg-gray-300 border-gray-300 dark:bg-[#555] dark:border-[#555]'
-                                                          : 'bg-transparent border-gray-400 dark:border-[#666] hover:bg-gray-200 dark:hover:bg-[#444]'}"
-                                                    on:click={() =>
-                                                        (manualSkillRanks = {
-                                                            ...manualSkillRanks,
-                                                            [skillKey]: i + 1,
-                                                        })}
-                                                ></button>
-                                            {/each}
-                                        </div>
-
-                                        <div class="block sm:hidden w-full">
-                                            <input
-                                                type="range"
-                                                min="1"
-                                                max="9"
-                                                step="1"
-                                                value={manualSkillRanks[
-                                                    skillKey
-                                                ] ||
-                                                    state.rank ||
-                                                    1}
-                                                on:input={(e) =>
-                                                    (manualSkillRanks = {
-                                                        ...manualSkillRanks,
-                                                        [skillKey]: parseInt(
-                                                            e.target.value,
-                                                        ),
-                                                    })}
-                                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C]"
-                                            />
-                                        </div>
-
-                                        <div
-                                            class="hidden sm:flex text-gray-400 dark:text-[#555] text-xs font-bold pl-1"
-                                        >
-                                            |
-                                        </div>
-
-                                        <span
-                                            class="hidden sm:flex text-[14px] font-bold text-[#21272C] dark:text-white font-nums w-8 text-center shrink-0"
-                                        >
-                                            {state.rank}/{state.upper}
-                                        </span>
+                                        {@html parseRichText(
+                                            interpolateBlackboard(
+                                                skillData.description,
+                                                bb,
+                                            ),
+                                        )}
                                     </div>
                                 </div>
-
-                                <div
-                                    class="text-[14px] text-gray-700 dark:text-[#A0A0A0] leading-relaxed pl-[20px] whitespace-pre-wrap"
-                                    use:hyperlinkAction
-                                >
-                                    {@html parseRichText(
-                                        interpolateBlackboard(
-                                            skillData.description,
-                                            bb,
-                                        ),
-                                    )}
-                                </div>
-                            </div>
+                            {/if}
                         {/each}
                     {/if}
                 </div>
@@ -1537,7 +1563,7 @@
                     class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1 items-start"
                 >
                     <div
-                        class="relative group flex flex-col bg-[#111] dark:bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 dark:border-[#333]"
+                        class="relative group flex flex-col bg-[#111] dark:bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 dark:border-[#333] {weaponBase.isForesight ? 'w-full max-w-[260px]' : ''}"
                     >
                         <div
                             role="button"
@@ -1623,115 +1649,119 @@
                         </div>
                     </div>
 
-                    <div
-                        class="relative group flex flex-col bg-[#111] dark:bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 dark:border-[#333]"
-                    >
+                    {#if !weaponBase.isForesight}
                         <div
-                            role="button"
-                            tabindex="0"
-                            class="relative w-full h-[400px] aspect-square group-hover:bg-black/10 cursor-zoom-in outline-none focus:bg-white/5 transition-colors overflow-hidden"
-                            on:click={() => openImageZoom("weapons-big")}
-                            on:keydown={(e) =>
-                                (e.key === "Enter" || e.key === " ") &&
-                                openImageZoom("weapons-big")}
+                            class="relative group flex flex-col bg-[#111] dark:bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 dark:border-[#333]"
                         >
                             <div
-                                class="absolute inset-4 flex items-center justify-center [&_img]:max-w-full [&_img]:max-h-full [&_img]:object-contain [&_img]:w-auto [&_img]:h-auto"
+                                role="button"
+                                tabindex="0"
+                                class="relative w-full h-[400px] aspect-square group-hover:bg-black/10 cursor-zoom-in outline-none focus:bg-white/5 transition-colors overflow-hidden"
+                                on:click={() => openImageZoom("weapons-big")}
+                                on:keydown={(e) =>
+                                    (e.key === "Enter" || e.key === " ") &&
+                                    openImageZoom("weapons-big")}
                             >
-                                <Image
-                                    {id}
-                                    interactive={true}
-                                    variant="weapons-big"
-                                    className="w-full h-full drop-shadow-2xl"
-                                    alt="{weaponName} Full"
-                                />
+                                <div
+                                    class="absolute inset-4 flex items-center justify-center [&_img]:max-w-full [&_img]:max-h-full [&_img]:object-contain [&_img]:w-auto [&_img]:h-auto"
+                                >
+                                    <Image
+                                        {id}
+                                        interactive={true}
+                                        variant="weapons-big"
+                                        className="w-full h-full drop-shadow-2xl"
+                                        alt="{weaponName} Full"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full pointer-events-none"
+                            >
+                                Full Art
+                            </div>
+
+                            <div
+                                class="absolute top-3 right-3 z-20 flex items-center gap-2"
+                            >
+                                <button
+                                    class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy"
+                                    title="Copy image"
+                                    on:click|stopPropagation={async () => {
+                                        try {
+                                            const imageUrl = getImagePath(id, 'weapons-big');
+                                            const response = await fetch(imageUrl);
+                                            const blob = await response.blob();
+                                            await navigator.clipboard.write([
+                                                new ClipboardItem({
+                                                    [blob.type]: blob,
+                                                }),
+                                            ]);
+
+                                            copiedImageId = "big";
+                                            setTimeout(() => {
+                                                if (copiedImageId === "big")
+                                                    copiedImageId = null;
+                                            }, 2000);
+                                        } catch (err) {
+                                            console.error("Error copying:", err);
+                                        }
+                                    }}
+                                >
+                                    {#if copiedImageId === "big"}
+                                        <Icon
+                                            name="success"
+                                            class="w-3.5 h-3.5 text-yellow-400"
+                                        />
+                                    {:else}
+                                        <Icon
+                                            name="copy"
+                                            class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                        />
+                                    {/if}
+                                </button>
+
+                                <button
+                                    class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
+                                    title="Download Art"
+                                    on:click|stopPropagation={() => {
+                                        const link = document.createElement("a");
+                                        link.href = getImagePath(id, 'weapons-big');
+                                        link.download = `${id}_big.png`;
+                                        document.body.appendChild(link);
+                                        link.click();
+                                        document.body.removeChild(link);
+                                    }}
+                                >
+                                    <Icon
+                                        name="import"
+                                        class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                    />
+                                </button>
                             </div>
                         </div>
-
-                        <div
-                            class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full pointer-events-none"
-                        >
-                            Full Art
-                        </div>
-
-                        <div
-                            class="absolute top-3 right-3 z-20 flex items-center gap-2"
-                        >
-                            <button
-                                class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy"
-                                title="Copy image"
-                                on:click|stopPropagation={async () => {
-                                    try {
-                                        const imageUrl = getImagePath(id, 'weapons-big');
-                                        const response = await fetch(imageUrl);
-                                        const blob = await response.blob();
-                                        await navigator.clipboard.write([
-                                            new ClipboardItem({
-                                                [blob.type]: blob,
-                                            }),
-                                        ]);
-
-                                        copiedImageId = "big";
-                                        setTimeout(() => {
-                                            if (copiedImageId === "big")
-                                                copiedImageId = null;
-                                        }, 2000);
-                                    } catch (err) {
-                                        console.error("Error copying:", err);
-                                    }
-                                }}
-                            >
-                                {#if copiedImageId === "big"}
-                                    <Icon
-                                        name="success"
-                                        class="w-3.5 h-3.5 text-yellow-400"
-                                    />
-                                {:else}
-                                    <Icon
-                                        name="copy"
-                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                    />
-                                {/if}
-                            </button>
-
-                            <button
-                                class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
-                                title="Download Art"
-                                on:click|stopPropagation={() => {
-                                    const link = document.createElement("a");
-                                    link.href = getImagePath(id, 'weapons-big');
-                                    link.download = `${id}_big.png`;
-                                    document.body.appendChild(link);
-                                    link.click();
-                                    document.body.removeChild(link);
-                                }}
-                            >
-                                <Icon
-                                    name="import"
-                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                />
-                            </button>
-                        </div>
-                    </div>
+                    {/if}
                 </div>
             </div>
         {/snippet}
 
         {#snippet descCardSnippet()}
-            <div
-                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-            >
-                <h2
-                    class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
-                >
-                    {tOrFallback("menu.description", "Описание")}
-                </h2>
+            {#if !weaponBase.isForesight && weaponLocale.description}
                 <div
-                    class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
+                    class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
                 >
-                    {weaponLocale.description}
+                    <h2
+                        class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
+                    >
+                        {tOrFallback("menu.description", "Описание")}
+                    </h2>
+                    <div
+                        class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
+                    >
+                        {weaponLocale.description}
+                    </div>
                 </div>
-            </div>
+            {/if}
         {/snippet}
 
         {#if showBackButton}

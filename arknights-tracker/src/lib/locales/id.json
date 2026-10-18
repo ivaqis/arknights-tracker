@@ -346,7 +346,8 @@
     "rewards": "Hadiah",
     "dayN": "Hari {n}",
     "addedInVersion": "Ditambahkan di versi {version}",
-    "currentlyUnavailable": "Saat Ini Tidak Tersedia"
+    "currentlyUnavailable": "Saat Ini Tidak Tersedia",
+    "foresight": "Pratinjau"
   },
   "status": {
     "won": "Menang 50:50",
@@ -1082,7 +1083,8 @@
     "dessertMoment": "Dessert Moment",
     "jadeVessel": "Jade Vessel",
     "longHeritage": "Long Heritage",
-    "complexedIndustry": "Complexed Industry"
+    "complexedIndustry": "Complexed Industry",
+    "lunarCalling": "Lunar Calling"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",

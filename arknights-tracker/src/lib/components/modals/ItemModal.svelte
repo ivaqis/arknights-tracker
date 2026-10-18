@@ -106,9 +106,11 @@
         .filter(Boolean);
 
     $: usedByWeapons = itemData?.usedByWeapons || [];
-    $: weaponObjects = usedByWeapons
-        .map((wId: string) => (weapons as Record<string, any>)[wId] || Object.values(weapons).find((w: any) => w.id === wId || w.gameId === wId) || null)
-        .filter(Boolean);
+    $: weaponObjects = [
+        ...usedByWeapons
+            .map((wId: string) => (weapons as Record<string, any>)[wId] || Object.values(weapons).find((w: any) => w.id === wId || w.gameId === wId) || null),
+        ...Object.values(weapons).filter((w: any) => w.isForesight && w.materials && (w.materials.includes(itemId) || (itemData?.id && w.materials.includes(itemData.id))))
+    ].filter((w, idx, self) => w && self.findIndex((other: any) => other?.id === w.id) === idx);
 
     $: droppedByEnemies = (itemData?.droppedByEnemies || []).filter((enemyId: string) => {
         const baseId = (enemyVariantMap as Record<string, any>)[enemyId]?.baseId || enemyId;
