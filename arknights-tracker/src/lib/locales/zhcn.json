@@ -3991,6 +3991,11 @@
     "sources": "来源一览",
     "usedFor": "用于",
     "droppedBy": "掉落自",
-    "crafting": "制造"
+    "crafting": "制造",
+    "chestContents": "箱子内容",
+    "chestChoices": "自选物品",
+    "chestContainsAll": "包含全部物品",
+    "chestContainsRandom": "随机获得物品",
+    "selectCount": "请选择：{count}"
   }
 }

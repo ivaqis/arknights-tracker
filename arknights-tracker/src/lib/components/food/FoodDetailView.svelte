@@ -9,6 +9,21 @@
     import { currentLocale } from "$lib/stores/locale";
     import { getRarityColor } from "$lib/utils/colorUtils";
     import { hyperlinkAction, parseRichText } from "$lib/utils/richText";
+    import { changelogData } from "$lib/data/versions.js";
+    import { RecipeDataStorage } from "$lib/classes/storages/recipes/RecipeDataStorage";
+    import { machineCraftDataStorage } from "$lib/dataStorages/crafts/machineCraftDataStorage";
+    import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
+    import { hubCraftDataStorage } from "$lib/dataStorages/crafts/hubCraftDataStorage";
+    import { buildings } from "$lib/data/buildings/buildings";
+    import RecipeFormula from "$lib/components/recipes/formulas/RecipeFormula.svelte";
+    import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
+    import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
+    import { CardSize } from "$lib/components/cards/CardSize";
+    import { itemStorage } from "$lib/dataStorages/items/itemStorage";
+    import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
+    import { openItemModal } from "$lib/stores/itemModal";
+    import type { IGasEnv } from "$lib/classes/gameData/gasEnv/IGasEnv";
+    import type { IResourcePoint } from "$lib/classes/gameData/resourcePoints/IResourcePoint";
 
     export let item: IFood;
 
@@ -115,6 +130,70 @@
 
     $: rarityColor = getRarityColor(item.rarity);
     $: hasRecipe = craftableItemsList.includes(item.gameId);
+
+    const machineRecipeStorage = new RecipeDataStorage(machineCraftDataStorage.list);
+    const manualRecipeStorage = new RecipeDataStorage(manualCraftDataStorage.list);
+    const hubRecipeStorage = new RecipeDataStorage(hubCraftDataStorage.list);
+
+    interface FoodRecipe {
+        id: string;
+        type: 'machine' | 'manual' | 'hub';
+        buildingNameKey?: string;
+        buildingIconId?: string;
+        craftTimeMs?: number;
+        gasEnv?: IGasEnv | null;
+        resourcePoint?: IResourcePoint | null;
+        ingredients: ReadonlyArray<{ itemId: string; count: number }>;
+        outcomes: ReadonlyArray<{ itemId: string; count: number }>;
+    }
+
+    function getItemRecipes(id: string | null | undefined): FoodRecipe[] {
+        if (!id) return [];
+        const result: FoodRecipe[] = [];
+
+        for (const f of machineRecipeStorage.asOutcome.get(id) || []) {
+            const b = buildings[f.buildingId];
+            result.push({
+                id: f.id,
+                type: 'machine',
+                buildingNameKey: b ? `itemNames.${b.itemId}` : undefined,
+                buildingIconId: b?.iconId,
+                craftTimeMs: f.craftTimeMs,
+                gasEnv: f.gasEnv ? (gasEnvStorage.byId.get(f.gasEnv) ?? null) : null,
+                ingredients: f.ingredients || [],
+                outcomes: f.outcomes || [],
+            });
+        }
+
+        for (const f of manualRecipeStorage.asOutcome.get(id) || []) {
+            result.push({
+                id: f.id,
+                type: 'manual',
+                buildingNameKey: 'formulaSidebar.craftSource.manual',
+                craftTimeMs: undefined,
+                gasEnv: null,
+                ingredients: f.ingredients || [],
+                outcomes: f.outcomes || [],
+            });
+        }
+
+        for (const f of hubRecipeStorage.asOutcome.get(id) || []) {
+            result.push({
+                id: f.id,
+                type: 'hub',
+                buildingNameKey: 'formulaSidebar.craftSource.hub',
+                craftTimeMs: undefined,
+                gasEnv: null,
+                ingredients: f.ingredients || [],
+                outcomes: f.outcomes || [],
+            });
+        }
+
+        return result;
+    }
+
+    $: itemRecipes = getItemRecipes(item?.gameId);
+    $: addedVersion = changelogData.find((v) => v.items?.includes(item.gameId))?.version || (item ? "1.0" : null);
 </script>
 
 <div class="md:py-1 pb-10 font-sans transition-colors">
@@ -274,6 +353,17 @@
 
                     {/if}
 
+                    {#if addedVersion}
+                        <div class="flex justify-end pt-1">
+                            <a
+                                href="/changelog?version={addedVersion}"
+                                class="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            >
+                                {$t("systemNames.addedInVersion", { version: addedVersion })}
+                            </a>
+                        </div>
+                    {/if}
+
                 </div>
 
             </div>
@@ -339,12 +429,154 @@
             }"
         >
 
-            {#if hasRecipe}
-
+            {#if itemRecipes.length > 0}
                 <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors shadow-sm">
+                    <div class="px-6 pb-5 flex flex-col gap-3 mt-4">
+                        <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 mb-1">
+                            <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                                {$t("page.food.recipe")}
+                            </h2>
+                            <div class="flex items-center gap-3">
+                                <a
+                                    href={`/recipes/tree?itemId=${item.gameId}`}
+                                    class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                                >
+                                    <span>{$t("pages.recipeTree")}</span>
+                                    <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                </a>
+                                <a
+                                    href={`/recipes?id=${item.gameId}`}
+                                    class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                                >
+                                    <span>{$t("pages.recipes")}</span>
+                                    <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                </a>
+                            </div>
+                        </div>
 
+                        <div class="flex flex-col gap-2.5">
+                            {#each itemRecipes as recipe (recipe.id)}
+                                <div class="bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-[#444444] rounded-2xl p-3 flex flex-col gap-2">
+                                    {#if recipe.buildingNameKey || recipe.buildingIconId}
+                                        <div class="flex items-center gap-1.5 text-xs text-gray-500 dark:text-[#aaaaaa] font-medium">
+                                            {#if recipe.buildingIconId}
+                                                <div class="w-4 h-4 shrink-0 flex items-center justify-center overflow-hidden">
+                                                    <Image
+                                                        id={recipe.buildingIconId}
+                                                        variant="building-icon"
+                                                        className="w-full h-full object-contain"
+                                                        width={16}
+                                                        height={16}
+                                                    />
+                                                </div>
+                                            {/if}
+                                            {#if recipe.buildingNameKey}
+                                                <span class="font-sdk text-gray-700 dark:text-gray-300">
+                                                    {$t(recipe.buildingNameKey)}
+                                                </span>
+                                            {/if}
+                                        </div>
+                                    {/if}
+
+                                    <div class="overflow-x-auto py-0.5">
+                                        <RecipeFormula
+                                            processTimeMs={recipe.craftTimeMs}
+                                            gasEnv={recipe.gasEnv}
+                                        >
+                                            <div slot="left" class="flex flex-row items-center gap-2 h-full">
+                                                {#if recipe.resourcePoint}
+                                                    <div class="shrink-0">
+                                                        <ResourcePointCard
+                                                            resourcePoint={recipe.resourcePoint}
+                                                            size={CardSize.MICRO}
+                                                            showTooltip={true}
+                                                        />
+                                                    </div>
+                                                    {#if recipe.ingredients.length > 0}
+                                                        <span class="font-sdk text-base text-gray-500 dark:text-gray-400 select-none">
+                                                            +
+                                                        </span>
+                                                    {/if}
+                                                {/if}
+
+                                                {#each recipe.ingredients as ing, idx (ing.itemId)}
+                                                    {@const ingItem = itemStorage.byGameId.get(ing.itemId)}
+                                                    {#if idx > 0}
+                                                        <span class="font-sdk text-base text-gray-500 dark:text-gray-400 select-none">
+                                                            +
+                                                        </span>
+                                                    {/if}
+                                                    {#if ingItem}
+                                                        <button
+                                                            type="button"
+                                                            class="shrink-0 cursor-pointer text-left focus:outline-none"
+                                                            on:click={() => openItemModal(ing.itemId)}
+                                                        >
+                                                            <ItemStackCard
+                                                                item={ingItem}
+                                                                amount={ing.count}
+                                                                size={CardSize.MICRO}
+                                                                showTooltip={true}
+                                                                showHoverEffect={true}
+                                                            />
+                                                        </button>
+                                                    {:else}
+                                                        <button
+                                                            type="button"
+                                                            class="w-[60px] h-[60px] shrink-0 flex flex-col items-center justify-center p-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444444] rounded-[6px] relative cursor-pointer"
+                                                            on:click={() => openItemModal(ing.itemId)}
+                                                        >
+                                                            <Image id={ing.itemId} variant="item-game" className="w-8 h-8 object-contain" interactive={false} width={32} height={32} />
+                                                            <span class="text-[10px] font-semibold text-amber-600 dark:text-[#FFD800]">×{ing.count}</span>
+                                                        </button>
+                                                    {/if}
+                                                {/each}
+                                            </div>
+
+                                            <div slot="right" class="flex flex-row items-center gap-2 h-full">
+                                                {#each recipe.outcomes as outcome, idx (outcome.itemId)}
+                                                    {@const outcomeItem = itemStorage.byGameId.get(outcome.itemId)}
+                                                    {#if idx > 0}
+                                                        <span class="font-sdk text-base text-gray-500 dark:text-gray-400 select-none">
+                                                            +
+                                                        </span>
+                                                    {/if}
+                                                    {#if outcomeItem}
+                                                        <button
+                                                            type="button"
+                                                            class="shrink-0 cursor-pointer text-left focus:outline-none"
+                                                            on:click={() => openItemModal(outcome.itemId)}
+                                                        >
+                                                            <ItemStackCard
+                                                                item={outcomeItem}
+                                                                amount={outcome.count}
+                                                                size={CardSize.MICRO}
+                                                                showTooltip={true}
+                                                                showHoverEffect={true}
+                                                            />
+                                                        </button>
+                                                    {:else}
+                                                        <button
+                                                            type="button"
+                                                            class="w-[60px] h-[60px] shrink-0 flex flex-col items-center justify-center p-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444444] rounded-[6px] relative cursor-pointer"
+                                                            on:click={() => openItemModal(outcome.itemId)}
+                                                        >
+                                                            <Image id={outcome.itemId} variant="item-game" className="w-8 h-8 object-contain" interactive={false} width={32} height={32} />
+                                                            <span class="text-[10px] font-semibold text-amber-600 dark:text-[#FFD800]">×{outcome.count}</span>
+                                                        </button>
+                                                    {/if}
+                                                {/each}
+                                            </div>
+                                        </RecipeFormula>
+                                    </div>
+                                </div>
+                            {/each}
+                        </div>
+                    </div>
+                </div>
+            {:else if hasRecipe}
+                <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors shadow-sm">
                     <div class="px-6 pb-5 flex flex-col gap-1 mt-4">
-
                         <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3 mb-4">
                             {$t("page.food.recipe")}
                         </h2>
@@ -353,20 +585,15 @@
                             class="flex flex-row items-center gap-2 py-2 px-6 rounded-full w-fit font-sdk text-xl text-[#21272c] bg-[#f9b90c] hover:bg-[#ffc01e]"
                             href="/recipes?id={item.gameId}"
                         >
-
                             <span>
                                 {$t("page.food.openRecipe")}
                             </span>
-
                             <Icon
                                 name="sendToLink"
                                 class="w-5 h-5"
                             />
-
                         </a>
-
                     </div>
-
                 </div>
 
             {/if}

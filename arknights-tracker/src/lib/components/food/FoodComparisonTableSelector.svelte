@@ -23,7 +23,7 @@
 
 </script>
 
-<div class="flex flex-col gap-3 p-5 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-3xl shadow-2xl border border-gray-200">
+<div class="flex flex-col gap-3 p-5 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-3xl shadow-md border border-gray-200">
 
     <div class="flex flex-col items-start gap-2">
 

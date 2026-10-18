@@ -73,8 +73,33 @@
         }
     }
 
+    const itemLocaleModules = import.meta.glob(
+        '/src/lib/locales/*/items.json',
+    );
+    let itemsLocaleData = {};
+
+    async function loadItemsLocale(localeCode) {
+        let safeLang = (localeCode || 'ru').toLowerCase().replace('-', '');
+        if (safeLang.startsWith('en')) safeLang = 'en';
+        else if (safeLang.startsWith('ru')) safeLang = 'ru';
+
+        const path = `/src/lib/locales/${safeLang}/items.json`;
+        const fallbackPath = '/src/lib/locales/en/items.json';
+
+        const loader = itemLocaleModules[path] || itemLocaleModules[fallbackPath];
+        if (loader) {
+            try {
+                const mod = await loader();
+                itemsLocaleData = mod.default || mod;
+            } catch (e) {
+                console.error('Failed to load items locale', e);
+            }
+        }
+    }
+
     $: if ($currentLocale) {
         loadAchievementsLocale($currentLocale);
+        loadItemsLocale($currentLocale);
     }
 
     $: currentVersionData = changelogData.find(
@@ -116,6 +141,21 @@
         .map((id) => itemStorage.byId.get(id))
         .filter((it) => it !== null && it !== undefined)
         .sort((a, b) => (b.rarity || 1) - (a.rarity || 1));
+
+    $: itemsByCategory = displayItems.reduce((acc, item) => {
+        const category =
+            itemsLocaleData[item.id]?.type ||
+            (item.groupId
+                ? $t(`sort.itemGroups.${item.groupId}`)
+                : $t("sort.itemGroups.other"));
+        if (!acc[category]) acc[category] = [];
+        acc[category].push(item);
+        return acc;
+    }, {});
+
+    $: sortedItemCategories = Object.keys(itemsByCategory).sort((a, b) =>
+        a.localeCompare(b, $currentLocale),
+    );
 
     $: displayBanners = banners
         .filter(
@@ -442,21 +482,33 @@
                     {$t("pages.items")}
                 </h3>
 
-                <div
-                    class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-4 justify-start"
-                >
-                    {#each displayItems as item (item.id)}
-                        <button
-                            type="button"
-                            class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 focus:outline-none"
-                            on:click|preventDefault|stopPropagation={() => openItemModal(item.id)}
-                        >
-                            <ItemStackCard
-                                {item}
-                                showHoverEffect={true}
-                                showTooltip={true}
-                            />
-                        </button>
+                <div class="flex flex-col gap-4">
+                    {#each sortedItemCategories as category}
+                        <div class="flex flex-col gap-2">
+                            <h4
+                                class="text-lg font-bold text-gray-600 dark:text-[#B7B6B3] font-sdk"
+                            >
+                                {category}
+                            </h4>
+
+                            <div
+                                class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-4 justify-start"
+                            >
+                                {#each itemsByCategory[category] as item (item.id)}
+                                    <button
+                                        type="button"
+                                        class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300 focus:outline-none"
+                                        on:click|preventDefault|stopPropagation={() => openItemModal(item.id)}
+                                    >
+                                        <ItemStackCard
+                                            {item}
+                                            showHoverEffect={true}
+                                            showTooltip={true}
+                                        />
+                                    </button>
+                                {/each}
+                            </div>
+                        </div>
                     {/each}
                 </div>
             </div>

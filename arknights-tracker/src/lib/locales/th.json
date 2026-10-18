@@ -3952,6 +3952,11 @@
     "sources": "แหล่ง",
     "usedFor": "จำเป็นสำหรับ",
     "droppedBy": "ดรอปจาก",
-    "crafting": "การคราฟต์"
+    "crafting": "การคราฟต์",
+    "chestContents": "เนื้อหาในกล่อง",
+    "chestChoices": "ไอเทมที่เลือกได้",
+    "chestContainsAll": "ได้รับไอเทมทั้งหมด",
+    "chestContainsRandom": "สุ่มรับไอเทม",
+    "selectCount": "เลือก: {count}"
   }
 }

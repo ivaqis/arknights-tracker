@@ -3991,6 +3991,11 @@
     "sources": "Nguồn",
     "usedFor": "Cần cho",
     "droppedBy": "Rớt từ",
-    "crafting": "Chế tạo"
+    "crafting": "Chế tạo",
+    "chestContents": "Nội dung rương",
+    "chestChoices": "Vật phẩm tự chọn",
+    "chestContainsAll": "Chứa tất cả vật phẩm",
+    "chestContainsRandom": "Vật phẩm ngẫu nhiên",
+    "selectCount": "Chọn: {count}"
   }
 }

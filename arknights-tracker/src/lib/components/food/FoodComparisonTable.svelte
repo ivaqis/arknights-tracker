@@ -475,7 +475,7 @@
         <tr class="odd:bg-white dark:odd:bg-[#363636] even:bg-gray-100 dark:even:bg-[#393939]">
 
             <td class="xl:sticky left-0 z-10 bg-inherit">
-                <div class="flex flex-row items-center gap-2 p-2">
+                <div class="flex flex-row items-center gap-2 p-1.5">
 
                     {#if $splitEquipmentView}
 
@@ -505,7 +505,7 @@
 
                     {/if}
 
-                    <div class="text-center flex-1">
+                    <div class="text-left flex-1">
                         {$t(food.i18nKey)}
                     </div>
 

@@ -3952,6 +3952,11 @@
     "sources": "Fonti",
     "usedFor": "Necessario per",
     "droppedBy": "Rilasciato da",
-    "crafting": "Fabbricazione"
+    "crafting": "Fabbricazione",
+    "chestContents": "Contenuto del forziere",
+    "chestChoices": "Oggetti a scelta",
+    "chestContainsAll": "Contiene tutti gli oggetti",
+    "chestContainsRandom": "Oggetto casuale",
+    "selectCount": "Scegli: {count}"
   }
 }

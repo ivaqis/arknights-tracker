@@ -11,16 +11,19 @@
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
+    import Button from "$lib/components/Button.svelte";
     import { weapons } from "$lib/data/weapons.js";
-    import { machineCraftItemAsOutcome, manualCraftItemAsOutcome, hubCraftItemAsOutcome, machineCraftItemAsIncome, manualCraftItemAsIncome, hubCraftItemAsIncome } from "$lib/data/crafts/craftMaps.js";
-    import { machineCrafts } from "$lib/data/crafts/machineCrafts";
-    import { manualCrafts } from "$lib/data/crafts/manualCrafts";
-    import { hubCrafts } from "$lib/data/crafts/hubCrafts";
+    import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
+    import { RecipeDataStorage } from "$lib/classes/storages/recipes/RecipeDataStorage";
+    import { machineCraftDataStorage } from "$lib/dataStorages/crafts/machineCraftDataStorage";
+    import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
+    import { hubCraftDataStorage } from "$lib/dataStorages/crafts/hubCraftDataStorage";
     import { buildings } from "$lib/data/buildings/buildings";
     import RecipeFormula from "$lib/components/recipes/formulas/RecipeFormula.svelte";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
     import { itemObtainIcons } from "$lib/data/items/itemObtainIcons";
+    import { chests } from "$lib/data/items/chests";
     import { CardSize } from "$lib/components/cards/CardSize";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
@@ -29,6 +32,10 @@
     import { pumpStorage } from "$lib/dataStorages/buildings/pumpStorage";
     import type { IGasEnv } from "$lib/classes/gameData/gasEnv/IGasEnv";
     import type { IResourcePoint } from "$lib/classes/gameData/resourcePoints/IResourcePoint";
+
+    const machineRecipeStorage = new RecipeDataStorage(machineCraftDataStorage.list);
+    const manualRecipeStorage = new RecipeDataStorage(manualCraftDataStorage.list);
+    const hubRecipeStorage = new RecipeDataStorage(hubCraftDataStorage.list);
 
     interface ModalRecipe {
         id: string;
@@ -103,7 +110,11 @@
         .map((wId: string) => (weapons as Record<string, any>)[wId] || Object.values(weapons).find((w: any) => w.id === wId || w.gameId === wId) || null)
         .filter(Boolean);
 
-    $: droppedByEnemies = itemData?.droppedByEnemies || [];
+    $: droppedByEnemies = (itemData?.droppedByEnemies || []).filter((enemyId: string) => {
+        const baseId = (enemyVariantMap as Record<string, any>)[enemyId]?.baseId || enemyId;
+        const enemy = (enemies as Record<string, any>)[baseId];
+        return enemy?.rarity !== undefined || $t(`enemies.${baseId}`) !== `enemies.${baseId}`;
+    });
 
     $: itemRecipes = getItemRecipes(itemId);
 
@@ -111,10 +122,7 @@
         if (!id) return [];
         const result: ModalRecipe[] = [];
 
-        const machineIds = (machineCraftItemAsOutcome as Record<string, string[]>)[id] || [];
-        for (const fId of machineIds) {
-            const f = machineCrafts[fId];
-            if (!f) continue;
+        for (const f of machineRecipeStorage.asOutcome.get(id) || []) {
             const b = buildings[f.buildingId];
             result.push({
                 id: f.id,
@@ -128,10 +136,7 @@
             });
         }
 
-        const manualIds = (manualCraftItemAsOutcome as Record<string, string[]>)[id] || [];
-        for (const fId of manualIds) {
-            const f = manualCrafts[fId];
-            if (!f) continue;
+        for (const f of manualRecipeStorage.asOutcome.get(id) || []) {
             result.push({
                 id: f.id,
                 type: 'manual',
@@ -143,10 +148,7 @@
             });
         }
 
-        const hubIds = (hubCraftItemAsOutcome as Record<string, string[]>)[id] || [];
-        for (const fId of hubIds) {
-            const f = hubCrafts[fId];
-            if (!f) continue;
+        for (const f of hubRecipeStorage.asOutcome.get(id) || []) {
             result.push({
                 id: f.id,
                 type: 'hub',
@@ -215,10 +217,7 @@
         if (!id) return [];
         const result: ModalRecipe[] = [];
 
-        const machineIds = (machineCraftItemAsIncome as Record<string, string[]>)[id] || [];
-        for (const fId of machineIds) {
-            const f = machineCrafts[fId];
-            if (!f) continue;
+        for (const f of machineRecipeStorage.asIncome.get(id) || []) {
             const b = buildings[f.buildingId];
             result.push({
                 id: f.id,
@@ -232,10 +231,7 @@
             });
         }
 
-        const manualIds = (manualCraftItemAsIncome as Record<string, string[]>)[id] || [];
-        for (const fId of manualIds) {
-            const f = manualCrafts[fId];
-            if (!f) continue;
+        for (const f of manualRecipeStorage.asIncome.get(id) || []) {
             result.push({
                 id: f.id,
                 type: 'manual',
@@ -245,10 +241,7 @@
             });
         }
 
-        const hubIds = (hubCraftItemAsIncome as Record<string, string[]>)[id] || [];
-        for (const fId of hubIds) {
-            const f = hubCrafts[fId];
-            if (!f) continue;
+        for (const f of hubRecipeStorage.asIncome.get(id) || []) {
             result.push({
                 id: f.id,
                 type: 'hub',
@@ -293,8 +286,18 @@
         return Array.from(map.values());
     })();
 
+    let itemHistory: string[] = [];
+    $: canGoBack = itemHistory.length > 0;
+
+    $: if (!itemId) {
+        itemHistory = [];
+    }
+
     function navigateToItem(id: string) {
-        if (!id) return;
+        if (!id || id === itemId) return;
+        if (itemId) {
+            itemHistory = [...itemHistory, itemId];
+        }
         openItemModal(id);
         const container = document.getElementById("item-modal-scroll-container");
         if (container) {
@@ -302,7 +305,21 @@
         }
     }
 
+    function handleBack() {
+        if (itemHistory.length === 0) return;
+        const previousId = itemHistory[itemHistory.length - 1];
+        itemHistory = itemHistory.slice(0, -1);
+        if (previousId) {
+            openItemModal(previousId);
+            const container = document.getElementById("item-modal-scroll-container");
+            if (container) {
+                container.scrollTop = 0;
+            }
+        }
+    }
+
     $: iconId = itemData?.iconId || itemId;
+    $: chestData = itemId ? chests[itemId] : null;
 
     async function copyImage() {
         if (!iconId) return;
@@ -345,7 +362,7 @@
         ></div>
 
         <button
-            class="absolute top-3.5 right-3.5 z-50 flex items-center justify-center w-8 h-8 rounded-full bg-black/10 hover:bg-black/20 dark:bg-black/40 dark:hover:bg-black/60 text-gray-500 hover:text-[#21272C] dark:text-gray-300 dark:hover:text-white transition-colors cursor-pointer border border-gray-200/60 dark:border-white/10"
+            class="hover:bg-[#FACC15] text-white hover:text-[#21272C] absolute top-3.5 right-3.5 p-2 z-20 bg-black/30 rounded-full transition-colors backdrop-blur-md cursor-pointer"
             on:click={closeItemModal}
             aria-label="Close"
         >
@@ -355,6 +372,18 @@
         <div id="item-modal-scroll-container" class="overflow-y-auto custom-scrollbar p-6 relative z-10 flex flex-col gap-6">
             <div class="flex items-start justify-between gap-4">
                 <div class="flex flex-col gap-1 min-w-0 pr-2">
+                    {#if canGoBack}
+                        <div class="mb-1 w-fit">
+                            <Button
+                                variant="roundSmall"
+                                color="white"
+                                onClick={handleBack}
+                            >
+                                <Icon name="arrowLeft" class="w-5 h-5" />
+                            </Button>
+                        </div>
+                    {/if}
+
                     <h2 class="text-2xl font-bold font-sdk text-[#21272C] dark:text-white leading-tight break-words">
                         {itemName}
                     </h2>
@@ -419,6 +448,168 @@
                 </div>
             </div>
 
+            {#if chestData}
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-[#21272C] dark:text-white font-sdk">
+                            {chestData.type > 0 && chestData.selectedCount > 0
+                                ? $t("itemModal.chestChoices")
+                                : $t("itemModal.chestContents")}
+                        </h3>
+                        {#if chestData.type > 0 && chestData.selectedCount > 0}
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-[#FFD800] border border-amber-500/20">
+                                {$t("itemModal.selectCount", { count: chestData.selectedCount })}
+                            </span>
+                        {/if}
+                    </div>
+
+                    <div class="flex flex-wrap gap-2.5">
+                        {#each chestData.options as opt}
+                            {#if opt.length === 1}
+                                {@const optItem = opt[0]}
+                                {#if optItem.type === "weapon"}
+                                    {@const wObj = (weapons as Record<string, any>)[optItem.id] || Object.values(weapons).find((w: any) => w.id === optItem.id || w.gameId === optItem.id)}
+                                    <a
+                                        href={`/weapons/${optItem.id}`}
+                                        class="block w-[72px] sm:w-[80px] aspect-square shrink-0 cursor-pointer"
+                                        on:click={closeItemModal}
+                                    >
+                                        <WeaponCard
+                                            weapon={wObj || { id: optItem.id }}
+                                            variant="small"
+                                            asLink={false}
+                                            className="w-full h-full"
+                                        />
+                                    </a>
+                                {:else if optItem.type === "character"}
+                                    {@const cObj = (characters as Record<string, any>)[optItem.id] || Object.values(characters).find((c: any) => c.id === optItem.id || c.gameId === optItem.id)}
+                                    <a
+                                        href={`/operators/${optItem.id}`}
+                                        class="block w-[72px] sm:w-[80px] aspect-[3/4] shrink-0 cursor-pointer"
+                                        on:click={closeItemModal}
+                                    >
+                                        <OperatorCard
+                                            operator={cObj || { id: optItem.id }}
+                                            variant="small"
+                                            className="w-full h-full"
+                                        />
+                                    </a>
+                                {:else}
+                                    {@const sItem = itemStorage.byGameId.get(optItem.id)}
+                                    {#if sItem}
+                                        <button
+                                            type="button"
+                                            class="shrink-0 cursor-pointer text-left focus:outline-none"
+                                            on:click={() => navigateToItem(optItem.id)}
+                                        >
+                                            <ItemStackCard
+                                                item={sItem}
+                                                amount={optItem.count > 1 ? optItem.count : null}
+                                                size={CardSize.SMALL}
+                                                showTooltip={true}
+                                                showHoverEffect={true}
+                                            />
+                                        </button>
+                                    {:else}
+                                        <button
+                                            type="button"
+                                            class="w-[72px] h-[72px] sm:w-[80px] sm:h-[80px] shrink-0 flex flex-col items-center justify-center p-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444444] rounded-xl relative cursor-pointer hover:border-amber-400 dark:hover:border-amber-400 transition-colors"
+                                            on:click={() => navigateToItem(optItem.id)}
+                                        >
+                                            <Image
+                                                id={optItem.id}
+                                                variant="item-game"
+                                                className="w-9 h-9 object-contain"
+                                                interactive={false}
+                                                width={36}
+                                                height={36}
+                                            />
+                                            {#if optItem.count > 1}
+                                                <span class="text-[10px] font-semibold text-amber-600 dark:text-[#FFD800]">×{optItem.count}</span>
+                                            {/if}
+                                            <span class="text-[10px] font-bold text-gray-700 dark:text-gray-300 truncate w-full text-center mt-0.5">
+                                                {$t(`itemNames.${optItem.id}`)}
+                                            </span>
+                                        </button>
+                                    {/if}
+                                {/if}
+                            {:else}
+                                <div class="flex items-center gap-1.5 p-1.5 rounded-lg bg-gray-50 dark:bg-[#2c2c2c]">
+                                    {#each opt as optItem, idx}
+                                        {#if idx > 0}
+                                            <span class="text-xs font-bold text-gray-400 select-none">+</span>
+                                        {/if}
+                                        {#if optItem.type === "weapon"}
+                                            {@const wObj = (weapons as Record<string, any>)[optItem.id] || Object.values(weapons).find((w: any) => w.id === optItem.id || w.gameId === optItem.id)}
+                                            <a
+                                                href={`/weapons/${optItem.id}`}
+                                                class="block w-[64px] sm:w-[72px] aspect-square shrink-0 cursor-pointer"
+                                                on:click={closeItemModal}
+                                            >
+                                                <WeaponCard
+                                                    weapon={wObj || { id: optItem.id }}
+                                                    variant="small"
+                                                    asLink={false}
+                                                    className="w-full h-full"
+                                                />
+                                            </a>
+                                        {:else if optItem.type === "character"}
+                                            {@const cObj = (characters as Record<string, any>)[optItem.id] || Object.values(characters).find((c: any) => c.id === optItem.id || c.gameId === optItem.id)}
+                                            <a
+                                                href={`/operators/${optItem.id}`}
+                                                class="block w-[64px] sm:w-[72px] aspect-[3/4] shrink-0 cursor-pointer"
+                                                on:click={closeItemModal}
+                                            >
+                                                <OperatorCard
+                                                    operator={cObj || { id: optItem.id }}
+                                                    variant="small"
+                                                    className="w-full h-full"
+                                                />
+                                            </a>
+                                        {:else}
+                                            {@const sItem = itemStorage.byGameId.get(optItem.id)}
+                                            {#if sItem}
+                                                <button
+                                                    type="button"
+                                                    class="shrink-0 cursor-pointer text-left focus:outline-none"
+                                                    on:click={() => navigateToItem(optItem.id)}
+                                                >
+                                                    <ItemStackCard
+                                                        item={sItem}
+                                                        amount={optItem.count > 1 ? optItem.count : null}
+                                                        size={CardSize.MICRO}
+                                                        showTooltip={true}
+                                                        showHoverEffect={true}
+                                                    />
+                                                </button>
+                                            {:else}
+                                                <button
+                                                    type="button"
+                                                    class="w-[60px] h-[60px] shrink-0 flex flex-col items-center justify-center p-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444444] rounded-lg relative cursor-pointer"
+                                                    on:click={() => navigateToItem(optItem.id)}
+                                                >
+                                                    <Image
+                                                        id={optItem.id}
+                                                        variant="item-game"
+                                                        className="w-7 h-7 object-contain"
+                                                        interactive={false}
+                                                        width={28}
+                                                        height={28}
+                                                    />
+                                                    {#if optItem.count > 1}
+                                                        <span class="text-[10px] font-semibold text-amber-600 dark:text-[#FFD800]">×{optItem.count}</span>
+                                                    {/if}
+                                                </button>
+                                            {/if}
+                                        {/if}
+                                    {/each}
+                                </div>
+                            {/if}
+                        {/each}
+                    </div>
+                </div>
+            {/if}
+
             {#if obtainWays.length > 0}
                 <div class="flex flex-col gap-2.5">
                     <h3 class="font-bold text-[#21272C] dark:text-white font-sdk">
@@ -452,14 +643,24 @@
                         <h3 class="font-bold text-[#21272C] dark:text-white font-sdk">
                             {$t("pages.recipes")}
                         </h3>
-                        <a
-                            href={`/recipes/tree?itemId=${itemId}`}
-                            on:click={closeItemModal}
-                            class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
-                        >
-                            <span>{$t("pages.recipeTree")}</span>
-                            <Icon name="sendToLink" class="w-3.5 h-3.5" />
-                        </a>
+                        <div class="flex items-center gap-3">
+                            <a
+                                href={`/recipes/tree?itemId=${itemId}`}
+                                on:click={closeItemModal}
+                                class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                            >
+                                <span>{$t("pages.recipeTree")}</span>
+                                <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                            </a>
+                            <a
+                                href={`/recipes?id=${itemId}`}
+                                on:click={closeItemModal}
+                                class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                            >
+                                <span>{$t("pages.recipes")}</span>
+                                <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                            </a>
+                        </div>
                     </div>
 
                     <div class="flex flex-col gap-2.5">
@@ -595,14 +796,24 @@
                                 <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                                     {$t("itemModal.crafting")}
                                 </span>
-                                <a
-                                    href={`/recipes/tree?itemId=${itemId}`}
-                                    on:click={closeItemModal}
-                                    class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
-                                >
-                                    <span>{$t("pages.recipeTree")}</span>
-                                    <Icon name="sendToLink" class="w-3.5 h-3.5" />
-                                </a>
+                                <div class="flex items-center gap-3">
+                                    <a
+                                        href={`/recipes/tree?itemId=${itemId}`}
+                                        on:click={closeItemModal}
+                                        class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                                    >
+                                        <span>{$t("pages.recipeTree")}</span>
+                                        <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                    </a>
+                                    <a
+                                        href={`/recipes?id=${itemId}`}
+                                        on:click={closeItemModal}
+                                        class="inline-flex items-center gap-1.5 text-xs font-medium text-amber-600 dark:text-[#FFD800] hover:underline"
+                                    >
+                                        <span>{$t("pages.recipes")}</span>
+                                        <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                    </a>
+                                </div>
                             </div>
                             <div class="flex flex-wrap gap-2.5">
                                 {#each usedInOutcomeItems as outItem (outItem.id)}

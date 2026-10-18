@@ -15,6 +15,7 @@
     import Modal from "$lib/components/modals/Modal.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { essences } from "$lib/data/items/essences.js";
+    import { enemyVariantMap } from "$lib/data/enemies.js";
     import { locations } from "$lib/data/locations.js";
     import { weapons } from "$lib/data/weapons.js";
     import { t } from "$lib/i18n";
@@ -1263,6 +1264,10 @@
                             locData.enemyIds && locData.enemyIds.length > 0
                                 ? locData.enemyIds[0]
                                 : null}
+                        {@const enemyMapping = firstEnemyId ? enemyVariantMap[firstEnemyId] : null}
+                        {@const baseEnemyId = enemyMapping ? enemyMapping.baseId : firstEnemyId}
+                        {@const enemyVariant = enemyMapping?.postfix}
+                        {@const enemyUrl = firstEnemyId ? `/enemies/${baseEnemyId}${enemyVariant ? `?variant=${enemyVariant}` : ''}` : ''}
                         {@const regionId = getLocationIcon(dungeon.dungeonId)}
                         {@const rColor = getRegionColor(regionId)}
 
@@ -1295,12 +1300,12 @@
                                     >
                                         {#if firstEnemyId}
                                             <a 
-                                                href={`/enemies/${firstEnemyId}`}
+                                                href={enemyUrl}
                                                 class="block w-full h-full overflow-hidden transition-all cursor-pointer rounded-[inherit]"
                                             >
                                                 <img
-                                                    src={`/images/enemies/${firstEnemyId}.png`}
-                                                    alt={$t(`enemies.${firstEnemyId}`) || firstEnemyId}
+                                                    src={`/images/enemies/${baseEnemyId}.png`}
+                                                    alt={$t(`enemies.${baseEnemyId}`)}
                                                     class="w-full h-full object-cover"
                                                     on:error={(e) => (e.target.src = "/images/boss_placeholder.png")}
                                                 />
@@ -1319,10 +1324,10 @@
                                         >
                                             {#if firstEnemyId}
                                                 <a 
-                                                    href={`/enemies/${firstEnemyId}`}
+                                                    href={enemyUrl}
                                                     class="text-md font-bold text-gray-900 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-white transition-opacity block w-max"
                                                 >
-                                                    {$t(`enemies.${firstEnemyId}`) || firstEnemyId}
+                                                    {$t(`enemies.${baseEnemyId}`)}
                                                 </a>
                                             {:else}
                                                 <div class="text-md font-bold text-gray-900 dark:text-[#E0E0E0]">

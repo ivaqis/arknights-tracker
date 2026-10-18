@@ -4470,6 +4470,11 @@
     "sources": "Источники",
     "usedFor": "Нужно для",
     "crafting": "Производство",
-    "droppedBy": "Падает с"
+    "droppedBy": "Падает с",
+    "chestContents": "Содержимое ящика",
+    "chestChoices": "Предметы на выбор",
+    "chestContainsAll": "Содержит все предметы",
+    "chestContainsRandom": "Случайный предмет",
+    "selectCount": "Выберите: {count}"
   }
 }

@@ -3952,6 +3952,11 @@
     "sources": "Sources",
     "usedFor": "Nécessaire pour",
     "droppedBy": "S'obtient sur",
-    "crafting": "Fabrication"
+    "crafting": "Fabrication",
+    "chestContents": "Contenu du coffre",
+    "chestChoices": "Objets au choix",
+    "chestContainsAll": "Contient tous les objets",
+    "chestContainsRandom": "Objet aléatoire",
+    "selectCount": "Choisir : {count}"
   }
 }

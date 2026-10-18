@@ -4497,6 +4497,11 @@
     "sources": "Sources",
     "usedFor": "Needed for",
     "crafting": "Crafting",
-    "droppedBy": "Drops from"
+    "droppedBy": "Drops from",
+    "chestContents": "Box Contents",
+    "chestChoices": "Selectable Items",
+    "chestContainsAll": "Contains All Items",
+    "chestContainsRandom": "Random Item",
+    "selectCount": "Choose: {count}"
   }
 }

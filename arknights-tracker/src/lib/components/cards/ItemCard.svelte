@@ -46,11 +46,11 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div 
-    class="w-[80px] flex flex-col group select-none shadow-sm hover:shadow-md transition-shadow relative cursor-pointer"
+    class="w-[80px] flex flex-col group select-none shadow-sm hover:shadow-md transition-shadow relative cursor-pointer h-fit"
     on:click={handleClick}
 >
     
-    <div class="relative w-full bg-[#E5E5E5] flex items-center justify-center overflow-visible">
+    <div class="relative w-full bg-[#E5E5E5] hover:bg-[#cccccc] transition-colors duration-200 flex items-center justify-center overflow-visible">
         
         <Image
             id={resolvedItemId || item.id} 

@@ -3952,6 +3952,11 @@
     "sources": "Sumber",
     "usedFor": "Dibutuhkan untuk",
     "droppedBy": "Didapat dari",
-    "crafting": "Kerajinan"
+    "crafting": "Kerajinan",
+    "chestContents": "Isi Peti",
+    "chestChoices": "Pilihan Item",
+    "chestContainsAll": "Berisi semua item",
+    "chestContainsRandom": "Item acak",
+    "selectCount": "Pilih: {count}"
   }
 }

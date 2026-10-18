@@ -3952,6 +3952,11 @@
     "sources": "獲得方法・履歴",
     "usedFor": "使用先",
     "droppedBy": "ドロップ元",
-    "crafting": "製造"
+    "crafting": "製造",
+    "chestContents": "ボックスの中身",
+    "chestChoices": "選択可能なアイテム",
+    "chestContainsAll": "すべてのアイテムを獲得",
+    "chestContainsRandom": "ランダムで獲得",
+    "selectCount": "選択：{count}"
   }
 }

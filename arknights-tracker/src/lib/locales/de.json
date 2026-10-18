@@ -3952,6 +3952,11 @@
     "sources": "Quellen",
     "usedFor": "Benötigt für",
     "droppedBy": "Fällt von",
-    "crafting": "Herstellung"
+    "crafting": "Herstellung",
+    "chestContents": "Kisteninhalt",
+    "chestChoices": "Wählbare Gegenstände",
+    "chestContainsAll": "Enthält alle Gegenstände",
+    "chestContainsRandom": "Zufälliger Gegenstand",
+    "selectCount": "Wähle: {count}"
   }
 }

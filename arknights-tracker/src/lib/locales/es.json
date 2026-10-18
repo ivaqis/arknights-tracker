@@ -3953,6 +3953,11 @@
     "sources": "Fuentes",
     "usedFor": "Necesario para",
     "droppedBy": "Se obtiene de",
-    "crafting": "Fabricación"
+    "crafting": "Fabricación",
+    "chestContents": "Contenido del cofre",
+    "chestChoices": "Objetos a elegir",
+    "chestContainsAll": "Contiene todos los objetos",
+    "chestContainsRandom": "Objeto aleatorio",
+    "selectCount": "Elige: {count}"
   }
 }

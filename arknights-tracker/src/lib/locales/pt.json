@@ -3952,6 +3952,11 @@
     "sources": "Fontes",
     "usedFor": "Necessário para",
     "droppedBy": "Dropa de",
-    "crafting": "Fabricação"
+    "crafting": "Fabricação",
+    "chestContents": "Conteúdo do baú",
+    "chestChoices": "Itens para escolher",
+    "chestContainsAll": "Contém todos os itens",
+    "chestContainsRandom": "Item aleatório",
+    "selectCount": "Escolha: {count}"
   }
 }

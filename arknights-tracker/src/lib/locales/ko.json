@@ -3952,6 +3952,11 @@
     "sources": "출처 목록",
     "usedFor": "사용처",
     "droppedBy": "드롭처",
-    "crafting": "제작"
+    "crafting": "제작",
+    "chestContents": "상자 내용물",
+    "chestChoices": "선택 가능 아이템",
+    "chestContainsAll": "모든 아이템 획득",
+    "chestContainsRandom": "무작위 획득",
+    "selectCount": "선택: {count}"
   }
 }
