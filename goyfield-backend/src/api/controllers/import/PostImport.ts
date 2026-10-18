@@ -70,19 +70,19 @@ export class PostImport extends StreamController<
                                   requestedProfileVersion: number | null
     ): string | null {
         if (tokenProfile && pullsProfile && tokenProfile !== pullsProfile) {
-            throw new Error(`Profile by tokenId and by pullsId must be equal\nrequested profile: ${requestedProfile}\ntoken profile: ${tokenProfile}\npulls profile: ${pullsProfile}`);
+            logger.warn(`Token profile (${tokenProfile}) differs from pulls profile (${pullsProfile}), using pulls profile`);
         }
 
         if (requestedProfileVersion !== null && requestedProfileVersion !== UserBannerProfileVersion.V_2) {
             return requestedProfile;
         }
 
-        if (tokenProfile) {
-            return tokenProfile;
-        }
-
         if (pullsProfile) {
             return pullsProfile;
+        }
+
+        if (tokenProfile) {
+            return tokenProfile;
         }
 
         if (!reachedLimit && requestedProfile) {
