@@ -332,8 +332,9 @@ function createPullStore() {
 
                             const oldList = newData[targetKey].pulls;
                             const incomeList = incomingByBanner[bannerId];
+                            const hasLegacyPulls = Array.isArray(oldList) && oldList.some(p => !p.seqId || String(p.id || "").startsWith("import_"));
 
-                            if (isRecoveryEnabled) {
+                            if (isRecoveryEnabled || hasLegacyPulls) {
                                 const matches = findLCSMatches(oldList, incomeList);
 
                                 matches.forEach(m => {
@@ -356,7 +357,7 @@ function createPullStore() {
                                 hasEnriched
                             } = mergePullsWithReport(oldList, incomeList);
 
-                            if (addedCount > 0 || hasEnriched || isRecoveryEnabled) {
+                            if (addedCount > 0 || hasEnriched || isRecoveryEnabled || hasLegacyPulls) {
                                 const pullsWithPity = calculatePity(mergedList, targetKey, serverId);
 
                                 newData[targetKey].pulls = pullsWithPity;
