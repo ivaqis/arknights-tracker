@@ -94,7 +94,11 @@ export class Account {
      * @param value
      */
     public set serverUid(value: string | null) {
-        const exists = value ? this._isExist({ serverUid: value }) : false;
+        if (this._serverUid === value) {
+            return;
+        }
+
+        const exists = value ? this._isExist({ serverUid: value, excludeId: this._id }) : false;
 
         if (exists) {
             throw new AccountExistError(`serverUid '${value}' already exists`);
@@ -128,7 +132,11 @@ export class Account {
      * @param value
      */
     public set publicServerUid(value: string | null) {
-        const exists = value ? this._isExist({ publicServerUid: value }) : false;
+        if (this._publicServerUid === value) {
+            return;
+        }
+
+        const exists = value ? this._isExist({ publicServerUid: value, excludeId: this._id }) : false;
 
         if (exists) {
             throw new AccountExistError(`publicServerUid '${value}' already exists`);
@@ -144,8 +152,8 @@ export class Account {
             this._name = updates.name;
         }
 
-        if (updates.uid !== undefined) {
-            const exists = updates.uid ? this._isExist({ serverUid: updates.uid }) : false;
+        if (updates.uid !== undefined && updates.uid !== this._serverUid) {
+            const exists = updates.uid ? this._isExist({ serverUid: updates.uid, excludeId: this._id }) : false;
 
             if (exists) {
                 throw new AccountExistError(`serverUid '${updates.uid}' already exists`);
@@ -158,8 +166,8 @@ export class Account {
             this._serverId = updates.serverId;
         }
 
-        if (updates.publicServerUid !== undefined) {
-            const exists = updates.publicServerUid ? this._isExist({ publicServerUid: updates.publicServerUid }) : false;
+        if (updates.publicServerUid !== undefined && updates.publicServerUid !== this._publicServerUid) {
+            const exists = updates.publicServerUid ? this._isExist({ publicServerUid: updates.publicServerUid, excludeId: this._id }) : false;
 
             if (exists) {
                 throw new AccountExistError(`publicServerUid '${updates.publicServerUid}' already exists`);

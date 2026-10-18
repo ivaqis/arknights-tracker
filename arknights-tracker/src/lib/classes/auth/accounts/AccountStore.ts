@@ -373,7 +373,7 @@ export class AccountStore {
         if (value.id) {
             const existing = this.findAccount(value.id);
 
-            if (existing) {
+            if (existing && existing.id !== value.excludeId) {
                 return true;
             }
         }
@@ -381,7 +381,7 @@ export class AccountStore {
         if (value.serverUid) {
             const existing = this.findAccountByServerUid(value.serverUid);
 
-            if (existing) {
+            if (existing && existing.id !== value.excludeId) {
                 return true;
             }
         }
@@ -389,7 +389,7 @@ export class AccountStore {
         if (value.publicServerUid) {
             const existing = this.findAccountByStoredPublicServerUid(value.publicServerUid);
 
-            if (existing) {
+            if (existing && existing.id !== value.excludeId) {
                 return true;
             }
         }

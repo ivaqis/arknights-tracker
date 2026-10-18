@@ -474,11 +474,15 @@
                     const profileData = syncData.profile;
 
                     if (profileData?.privateId) {
-                        currentAcc.update({
-                            uid: profileData.privateId,
-                            publicServerUid: profileData.publicId,
-                            serverId: serverId
-                        });
+                        try {
+                            currentAcc.update({
+                                uid: profileData.privateId,
+                                publicServerUid: profileData.publicId,
+                                serverId: serverId
+                            });
+                        } catch (updateErr) {
+                            console.warn("Could not bind profile to current account:", updateErr);
+                        }
 
                         if (typeof window !== "undefined") {
                             localStorage.setItem(`ark_banner_private_id_${currentAcc.id}`, profileData.privateId);

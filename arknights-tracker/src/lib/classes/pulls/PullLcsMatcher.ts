@@ -124,8 +124,13 @@ export class PullLcsMatcher {
             return;
         }
 
-        const existingSignatures = new Set(overlaps.map(p => `${p.time.getTime()}_${p.name}`));
-        const hasMatch = sortedNew.some(p => existingSignatures.has(`${p.time.getTime()}_${p.name}`));
+        const existingSignatures = new Set(overlaps.map(p => `${p.time.getTime()}_${String(p.name || "").toLowerCase().trim()}`));
+        let hasMatch = sortedNew.some(p => existingSignatures.has(`${p.time.getTime()}_${String(p.name || "").toLowerCase().trim()}`));
+
+        if (!hasMatch) {
+            const existingSecSignatures = new Set(overlaps.map(p => `${Math.floor(p.time.getTime() / 1000)}_${String(p.name || "").toLowerCase().trim()}`));
+            hasMatch = sortedNew.some(p => existingSecSignatures.has(`${Math.floor(p.time.getTime() / 1000)}_${String(p.name || "").toLowerCase().trim()}`));
+        }
 
         if (!hasMatch) {
             const loc = normalizeLocale(typeof window !== "undefined" ? get(currentUiLocale) : "en-US");

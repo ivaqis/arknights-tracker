@@ -811,10 +811,10 @@
                                     </div>
                                 {/if}
 
-                                <div
-                                    class="flex items-center shrink-0 mt-2 relative"
-                                >
-                                    {#if !isEditingPot}
+                                {#if !weaponBase.isForesight}
+                                    <div
+                                        class="flex items-center shrink-0 mt-2 relative"
+                                    >
                                         <div
                                             class="flex items-center gap-1 transition-opacity"
                                         >
@@ -827,9 +827,7 @@
                                             {/if}
 
                                             <Tooltip
-                                                text={$t(
-                                                    "stats.editPotential",
-                                                ) || "Edit Potential"}
+                                                text={$t("stats.editPotential")}
                                             >
                                                 <button
                                                     on:click={() => {
@@ -847,9 +845,7 @@
 
                                             <div class="relative">
                                                 <Tooltip
-                                                    text={$t(
-                                                        "stats.addEssence",
-                                                    ) || "Add essence"}
+                                                    text={$t("stats.addEssence")}
                                                 >
                                                     <button
                                                         on:click={() =>
@@ -943,19 +939,15 @@
                                                 </div>
                                             {/if}
                                         </div>
-                                    {:else}
-                                        <div
-                                            class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
-                                        ></div>
-                                    {/if}
-                                </div>
+                                    </div>
+                                {/if}
                             {:else}
                                 <div
                                     class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
                                 >
                                     {#if accountPots[id] !== undefined}
                                         <Tooltip
-                                            text={$t("stats.reset") || "Reset"}
+                                            text={$t("stats.reset")}
                                         >
                                             <button
                                                 on:click={resetPot}
@@ -1005,8 +997,7 @@
                                     ></div>
 
                                     <Tooltip
-                                        text={$t("settings.account.cancel") ||
-                                            "Cancel"}
+                                        text={$t("settings.account.cancel")}
                                     >
                                         <button
                                             on:click={cancelEdit}
@@ -1020,8 +1011,7 @@
                                     </Tooltip>
 
                                     <Tooltip
-                                        text={$t("settings.account.save") ||
-                                            "Save"}
+                                        text={$t("settings.account.save")}
                                     >
                                         <button
                                             on:click={savePot}
