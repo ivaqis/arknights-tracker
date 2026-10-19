@@ -441,7 +441,16 @@
     },
     "mainAttribute": "Główny",
     "specialAttribute": "Specjalny",
-    "subAttribute": "Drugorzędny"
+    "subAttribute": "Drugorzędny",
+    "enemyGroupTitle": "Frakcja",
+    "level": "Poziom",
+    "sortGroups": "Grupy w kolejności sortowania",
+    "grouping": "Grupowanie",
+    "inherit_sort": "Pierwszy parametr sortowania",
+    "localeNameTitle": "Nazwa",
+    "targetType": "Typ celu",
+    "equipCondTitle": "Typ warunku",
+    "buffTitle": "Efekt"
   },
   "menu": {
     "about": "O postaci",
@@ -824,6 +833,8 @@
     "contract_level": "Poziom Kontraktu",
     "time": "Czas Przejścia",
     "sec": "{time}s",
+    "min": "{m} min",
+    "min_sec": "{m} min {s} s",
     "team": "Drużyna",
     "no_entries": "Brak wpisów w tej tabeli.",
     "filter_all": "Wszystkie Serwery",

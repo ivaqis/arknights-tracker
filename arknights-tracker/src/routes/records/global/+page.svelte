@@ -60,7 +60,7 @@
         return selectableBanners.toReversed().map(item => ({
             value: item.gameId,
             label: $t(`banners.${item.id}`),
-            subLabel: `${item.getFormattedStartTime($currentLocale)} - ${item.getFormattedEndTime($currentLocale) ?? $t("permanent")}`,
+            subLabel: `${item.getFormattedStartTime($currentLocale)} - ${item.getFormattedEndTime($currentLocale) ?? $t("timer.permanent")}`,
             iconId: item.miniIcon ? item.miniIcon.replace(/\.[^/.]+$/, "") : item.id
         }));
     }

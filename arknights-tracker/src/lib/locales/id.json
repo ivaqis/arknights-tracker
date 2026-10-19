@@ -135,7 +135,13 @@
     "openXSource": "Postingan Resmi",
     "detailsXSource": "Lihat postingan di x.com",
     "openWebEvent": "Acara Web",
-    "detailsWebEvent": "Buka halaman acara"
+    "detailsWebEvent": "Buka halaman acara",
+    "food": {
+      "tabs": {
+        "overview": "Gambaran Umum"
+      },
+      "tactical": "Item Taktis"
+    }
   },
   "bannerTypes": {
     "standard": "Headhunting Standar",
@@ -331,7 +337,7 @@
     "hLeft": "j tersisa",
     "noMaterialsNeeded": "Material Tidak Dibutuhkan",
     "featuredCharacters": "Operator Unggulan",
-    "new": "BARU",
+    "new": "New",
     "version": "Versi",
     "weapons": "Senjata",
     "operators": "Operator",
@@ -420,7 +426,8 @@
     "profile": "Profil",
     "icons": "Ikon",
     "achievements": "Pencapaian",
-    "items": "Barang"
+    "items": "Barang",
+    "food": "Makanan"
   },
   "events": {
     "type": {
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "Utama",
     "specialAttribute": "Spesial",
-    "subAttribute": "Sekunder"
+    "subAttribute": "Sekunder",
+    "enemyGroupTitle": "Faksi",
+    "level": "Level",
+    "sortGroups": "Grup dalam urutan sortir",
+    "grouping": "Pengelompokan",
+    "inherit_sort": "Parameter Urutan Pertama",
+    "localeNameTitle": "Nama",
+    "targetType": "Tipe Target",
+    "equipCondTitle": "Tipe Kondisi",
+    "buffTitle": "Efek"
   },
   "menu": {
     "about": "Tentang",
     "talents": "Talenta",
-    "potentials": "Potensial",
+    "potentials": "Potensi",
     "combatSkills": "Skill Tempur",
     "artwork": "Artwork",
     "files": "File",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "Foundite",
     "wiki_group_monster_witchcraft": "Makhluk Sihir",
     "wiki_group_monster_else": "Lainnya",
-    "wiki_group_monster_ml": "Penampakan"
+    "wiki_group_monster_ml": "Penampakan",
+    "none": "Tidak ada data"
   },
   "resitances": {
     "heatRez": "Resistansi Heat",
@@ -3486,6 +3503,8 @@
     "contract_level": "Level Kontrak",
     "time": "Waktu",
     "sec": "{time}d",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}d",
     "team": "Tim",
     "no_entries": "Tidak ada rekor ditemukan.",
     "filter_all": "Semua Server",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "Berisi semua item",
     "chestContainsRandom": "Item acak",
     "selectCount": "Pilih: {count}"
+  },
+  "tacticalCondType": {
+    "null": "Tidak Ada"
   }
 }

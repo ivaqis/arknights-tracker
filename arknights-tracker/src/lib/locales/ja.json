@@ -135,7 +135,13 @@
     "openXSource": "公式投稿",
     "detailsXSource": "x.com でポストを見る",
     "openWebEvent": "Webイベント",
-    "detailsWebEvent": "イベントページへ移動"
+    "detailsWebEvent": "イベントページへ移動",
+    "food": {
+      "tabs": {
+        "overview": "一覧"
+      },
+      "tactical": "戦闘補助"
+    }
   },
   "bannerTypes": {
     "standard": "通常探索",
@@ -420,7 +426,8 @@
     "profile": "プロファイル",
     "icons": "アイコン",
     "achievements": "実績",
-    "items": "アイテム"
+    "items": "アイテム",
+    "food": "食品"
   },
   "events": {
     "type": {
@@ -556,7 +563,7 @@
   },
   "timer": {
     "ongoing_active": "開催中 ({n} 日経過)",
-    "permanent": "常設",
+    "permanent": "常時有効",
     "left_d_h": "残り {d}日 {h}時間",
     "left_h": "残り {h}時間",
     "left_h_m": "残り {h}時間 {m}分",
@@ -636,7 +643,16 @@
     },
     "mainAttribute": "メイン属性",
     "specialAttribute": "特殊属性",
-    "subAttribute": "サブ属性"
+    "subAttribute": "サブ属性",
+    "enemyGroupTitle": "陣営",
+    "level": "レベル",
+    "sortGroups": "ソート順グループ",
+    "grouping": "グループ化",
+    "inherit_sort": "第1ソートパラメータ",
+    "localeNameTitle": "名前",
+    "targetType": "ターゲットタイプ",
+    "equipCondTitle": "条件タイプ",
+    "buffTitle": "効果"
   },
   "menu": {
     "about": "概要",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "造裔",
     "wiki_group_monster_witchcraft": "巫術の造物",
     "wiki_group_monster_else": "その他",
-    "wiki_group_monster_ml": "化物"
+    "wiki_group_monster_ml": "化物",
+    "none": "情報なし"
   },
   "resitances": {
     "heatRez": "灼熱耐性",
@@ -3486,6 +3503,8 @@
     "contract_level": "契約レベル",
     "time": "クリアタイム",
     "sec": "{time}秒",
+    "min": "{m}分",
+    "min_sec": "{m}分{s}秒",
     "team": "チーム",
     "no_entries": "このランキングにはクリア記録がありません。",
     "filter_all": "全サーバー",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "すべてのアイテムを獲得",
     "chestContainsRandom": "ランダムで獲得",
     "selectCount": "選択：{count}"
+  },
+  "tacticalCondType": {
+    "null": "なし"
   }
 }

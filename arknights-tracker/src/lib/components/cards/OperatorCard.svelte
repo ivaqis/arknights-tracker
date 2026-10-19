@@ -391,7 +391,7 @@
                         <span
                             class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
                         >
-                            NEW
+                            {$t("systemNames.new")}
                         </span>
                     </div>
                 </div>

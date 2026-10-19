@@ -441,7 +441,16 @@
     },
     "mainAttribute": "الأساسي",
     "specialAttribute": "الخاص",
-    "subAttribute": "الثانوي"
+    "subAttribute": "الثانوي",
+    "enemyGroupTitle": "الفصيل",
+    "level": "المستوى",
+    "sortGroups": "مجموعات بترتيب الفرز",
+    "grouping": "تجميع",
+    "inherit_sort": "معيار الفرز الأول",
+    "localeNameTitle": "الاسم",
+    "targetType": "نوع الهدف",
+    "equipCondTitle": "نوع الشرط",
+    "buffTitle": "تأثير"
   },
   "menu": {
     "about": "حول",
@@ -824,6 +833,8 @@
     "contract_level": "مستوى العقد",
     "time": "وقت الإكمال",
     "sec": "{time}ث",
+    "min": "{m}د",
+    "min_sec": "{m}د {s}ث",
     "team": "الفريق",
     "no_entries": "لم يتم العثور على سجلات.",
     "filter_all": "جميع الخوادم",

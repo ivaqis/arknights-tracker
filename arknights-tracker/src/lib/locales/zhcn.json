@@ -135,7 +135,13 @@
     "openXSource": "官方动态",
     "detailsXSource": "在 x.com 查看帖子",
     "openWebEvent": "网页活动",
-    "detailsWebEvent": "前往活动页面"
+    "detailsWebEvent": "前往活动页面",
+    "food": {
+      "tabs": {
+        "overview": "总览"
+      },
+      "tactical": "战术物品"
+    }
   },
   "bannerTypes": {
     "standard": "标准寻访",
@@ -334,7 +340,7 @@
     "hLeft": "小时 剩余",
     "noMaterialsNeeded": "无需材料",
     "featuredCharacters": "UP干员",
-    "new": "NEW",
+    "new": "新增",
     "version": "版本",
     "weapons": "武器",
     "operators": "干员",
@@ -423,7 +429,8 @@
     "profile": "个人资料",
     "icons": "图标",
     "achievements": "成就",
-    "items": "物品"
+    "items": "物品",
+    "food": "食物"
   },
   "events": {
     "type": {
@@ -559,7 +566,7 @@
   },
   "timer": {
     "ongoing_active": "进行中 (已开展 {n} 天)",
-    "permanent": "常驻",
+    "permanent": "永久有效",
     "left_d_h": "剩余 {d}天 {h}小时",
     "left_h": "剩余 {h}小时",
     "left_h_m": "剩余 {h}小时 {m}分",
@@ -675,7 +682,16 @@
     },
     "mainAttribute": "主属性",
     "specialAttribute": "特殊属性",
-    "subAttribute": "副属性"
+    "subAttribute": "副属性",
+    "enemyGroupTitle": "阵营",
+    "level": "等级",
+    "sortGroups": "按排序顺序分组",
+    "grouping": "分组",
+    "inherit_sort": "首要排序参数",
+    "localeNameTitle": "名称",
+    "targetType": "目标类型",
+    "equipCondTitle": "条件类型",
+    "buffTitle": "效果"
   },
   "menu": {
     "about": "关于",
@@ -1797,7 +1813,8 @@
     "wiki_group_monster_js": "造裔",
     "wiki_group_monster_witchcraft": "巫术造物",
     "wiki_group_monster_else": "其他",
-    "wiki_group_monster_ml": "化物"
+    "wiki_group_monster_ml": "化物",
+    "none": "暂无信息"
   },
   "resitances": {
     "heatRez": "灼热抗性",
@@ -3526,6 +3543,8 @@
     "contract_level": "合约等级",
     "time": "通关时间",
     "sec": "{time}秒",
+    "min": "{m}分",
+    "min_sec": "{m}分{s}秒",
     "team": "队伍",
     "no_entries": "此排行榜暂无通关记录。",
     "filter_all": "所有服务器",
@@ -3999,5 +4018,8 @@
     "chestContainsAll": "包含全部物品",
     "chestContainsRandom": "随机获得物品",
     "selectCount": "请选择：{count}"
+  },
+  "tacticalCondType": {
+    "null": "无环境"
   }
 }

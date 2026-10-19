@@ -88,7 +88,7 @@ export const GET: RequestHandler = ({ url }) => {
 
     const content = `# Goyfield — Arknights: Endfield Database & Pull Tracker
 
-> A comprehensive database and pull tracker for Arknights: Endfield. Provides detailed information on operators, weapons, equipment, crafting recipes, enemies, and gacha pull history.
+> A comprehensive database and pull tracker for Arknights: Endfield. Provides detailed information on operators, weapons, equipment, crafting recipes, food, enemies, and gacha pull history.
 
 ## Database Hubs
 
@@ -98,6 +98,8 @@ export const GET: RequestHandler = ({ url }) => {
 - [Enemies](${origin}/enemies): Enemy archive detailing enemy stats, resistances, and encounter mechanics.
 - [Recipes & Crafting](${origin}/recipes): Production recipes, material trees, and factory crafting chains.
 - [Essences](${origin}/essences): Weapon essences, skill combinations, stat enhancements, and drop locations.
+- [Food](${origin}/food): Food and food recepies, food comparison table.
+- [Changelog](${origin}/changelog): Game changelog.
 
 ## Tools & Features
 

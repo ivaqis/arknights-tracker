@@ -135,7 +135,13 @@
     "openXSource": "공식 게시글",
     "detailsXSource": "x.com에서 게시글 보기",
     "openWebEvent": "웹 이벤트",
-    "detailsWebEvent": "이벤트 페이지로 이동"
+    "detailsWebEvent": "이벤트 페이지로 이동",
+    "food": {
+      "tabs": {
+        "overview": "전체"
+      },
+      "tactical": "전술 아이템"
+    }
   },
   "bannerTypes": {
     "standard": "통상 헤드헌팅",
@@ -331,7 +337,7 @@
     "hLeft": "시간 남음",
     "noMaterialsNeeded": "필요한 재료 없음",
     "featuredCharacters": "픽업 오퍼레이터",
-    "new": "NEW",
+    "new": "새로 추가",
     "version": "버전",
     "weapons": "무기",
     "operators": "오퍼레이터",
@@ -420,7 +426,8 @@
     "profile": "프로필",
     "icons": "아이콘",
     "achievements": "업적",
-    "items": "아이템"
+    "items": "아이템",
+    "food": "식품"
   },
   "events": {
     "type": {
@@ -556,7 +563,7 @@
   },
   "timer": {
     "ongoing_active": "진행 중 ({n}일째)",
-    "permanent": "상시",
+    "permanent": "영구 유효",
     "left_d_h": "{d}일 {h}시간 남음",
     "left_h": "{h}시간 남음",
     "left_h_m": "{h}시간 {m}분 남음",
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "주 속성",
     "specialAttribute": "특수 속성",
-    "subAttribute": "보조 속성"
+    "subAttribute": "보조 속성",
+    "enemyGroupTitle": "진영",
+    "level": "레벨",
+    "sortGroups": "정렬 순서 그룹",
+    "grouping": "그룹화",
+    "inherit_sort": "첫 번째 정렬 매개변수",
+    "localeNameTitle": "이름",
+    "targetType": "타겟 유형",
+    "equipCondTitle": "조건 유형",
+    "buffTitle": "효과"
   },
   "menu": {
     "about": "정보",
     "talents": "재능",
-    "potentials": "잠재능력",
+    "potentials": "잠재 능력",
     "combatSkills": "전투 스킬",
     "artwork": "일러스트",
     "files": "파일",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "파운다이트",
     "wiki_group_monster_witchcraft": "주술 피조물",
     "wiki_group_monster_else": "기타",
-    "wiki_group_monster_ml": "요괴"
+    "wiki_group_monster_ml": "요괴",
+    "none": "정보 없음"
   },
   "resitances": {
     "heatRez": "열기 저항",
@@ -3486,6 +3503,8 @@
     "contract_level": "협약 레벨",
     "time": "클리어 시간",
     "sec": "{time}초",
+    "min": "{m}분",
+    "min_sec": "{m}분 {s}초",
     "team": "팀",
     "no_entries": "이 리더보드에 대한 클리어 기록이 없습니다.",
     "filter_all": "모든 서버",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "모든 아이템 획득",
     "chestContainsRandom": "무작위 획득",
     "selectCount": "선택: {count}"
+  },
+  "tacticalCondType": {
+    "null": "환경 없음"
   }
 }

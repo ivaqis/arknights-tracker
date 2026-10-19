@@ -77,19 +77,19 @@
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-locale, 'Noto Sans', sans-serif);
   color: var(--color-main);
   background-color: #F9F9F9;
 }
 
 .font-nums {
-  font-family: 'HelveticaNeue-Bold', 'Noto Sans', sans-serif;
+  font-family: 'HelveticaNeue-Bold', var(--font-locale, 'Noto Sans', sans-serif);
   font-variant-numeric: tabular-nums;
   font-weight: normal;
 }
 
 .font-sdk {
-  font-family: 'Noto Sans';
+  font-family: var(--font-locale, 'Noto Sans', sans-serif);
   font-weight: 800;
 }
 

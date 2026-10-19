@@ -135,7 +135,13 @@
     "openXSource": "Offizieller Beitrag",
     "detailsXSource": "Beitrag auf x.com ansehen",
     "openWebEvent": "Web-Event",
-    "detailsWebEvent": "Zur Event-Seite gehen"
+    "detailsWebEvent": "Zur Event-Seite gehen",
+    "food": {
+      "tabs": {
+        "overview": "Übersicht"
+      },
+      "tactical": "Taktische Mittel"
+    }
   },
   "bannerTypes": {
     "standard": "Standard-Rekrutierung",
@@ -331,7 +337,7 @@
     "hLeft": "Std übrig",
     "noMaterialsNeeded": "Keine Materialien benötigt",
     "featuredCharacters": "Aktions-Operator",
-    "new": "NEU",
+    "new": "New",
     "version": "Version",
     "weapons": "Waffen",
     "operators": "Operatoren",
@@ -420,7 +426,8 @@
     "profile": "Profil",
     "icons": "Icons",
     "achievements": "Erfolge",
-    "items": "Gegenstände"
+    "items": "Gegenstände",
+    "food": "Nahrung"
   },
   "events": {
     "type": {
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "Hauptattribut",
     "specialAttribute": "Spezial",
-    "subAttribute": "Nebenattribut"
+    "subAttribute": "Nebenattribut",
+    "enemyGroupTitle": "Fraktion",
+    "level": "Level",
+    "sortGroups": "Gruppen in Sortierreihenfolge",
+    "grouping": "Gruppierung",
+    "inherit_sort": "Erster Sortierparameter",
+    "localeNameTitle": "Name",
+    "targetType": "Zieltyp",
+    "equipCondTitle": "Bedingungstyp",
+    "buffTitle": "Effekt"
   },
   "menu": {
     "about": "Über",
     "talents": "Talente",
-    "potentials": "Potenziale",
+    "potentials": "Potenzial",
     "combatSkills": "Kampffertigkeiten",
     "artwork": "Artwork",
     "files": "Akten",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "Fundit",
     "wiki_group_monster_witchcraft": "Geschöpf der Hexerei",
     "wiki_group_monster_else": "Andere",
-    "wiki_group_monster_ml": "Erscheinung"
+    "wiki_group_monster_ml": "Erscheinung",
+    "none": "Keine Daten"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -3486,6 +3503,8 @@
     "contract_level": "Vertragsstufe",
     "time": "Abschlusszeit",
     "sec": "{time}s",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}s",
     "team": "Team",
     "no_entries": "Keine Abschlussrekorde für diese Bestenliste gefunden.",
     "filter_all": "Alle Server",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "Enthält alle Gegenstände",
     "chestContainsRandom": "Zufälliger Gegenstand",
     "selectCount": "Wähle: {count}"
+  },
+  "tacticalCondType": {
+    "null": "Keine"
   }
 }

@@ -856,7 +856,7 @@
   "menu": {
     "about": "About",
     "talents": "Talents",
-    "potentials": "Potentials",
+    "potentials": "Potential",
     "combatSkills": "Combat Skills",
     "artwork": "Artwork",
     "files": "Files",
@@ -1966,7 +1966,7 @@
     "ElectricDmgReduction": "Electric DMG Reduction"
   },
   "enemiesGroups": {
-    "none": "No Data",
+    "none": "No data",
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Landbreakers",
     "wiki_group_monster_hongshan": "Cangzei Pirates",
@@ -3705,6 +3705,8 @@
     "contract_level": "Contract Level",
     "time": "Clear Time",
     "sec": "{time}s",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}s",
     "team": "Team",
     "no_entries": "No clear records found for this leaderboard.",
     "filter_all": "All Servers",

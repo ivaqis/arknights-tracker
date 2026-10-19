@@ -135,7 +135,13 @@
     "openXSource": "Post ufficiale",
     "detailsXSource": "Visualizza il post su x.com",
     "openWebEvent": "Evento Web",
-    "detailsWebEvent": "Vai alla pagina dell'evento"
+    "detailsWebEvent": "Vai alla pagina dell'evento",
+    "food": {
+      "tabs": {
+        "overview": "Panoramica"
+      },
+      "tactical": "Gadget"
+    }
   },
   "bannerTypes": {
     "standard": "Ricerca Standard",
@@ -331,7 +337,7 @@
     "hLeft": "h rimaste",
     "noMaterialsNeeded": "Nessun materiale necessario",
     "featuredCharacters": "Operatori in evidenza",
-    "new": "NUOVO",
+    "new": "New",
     "version": "Versione",
     "weapons": "Armi",
     "operators": "Operatori",
@@ -420,7 +426,8 @@
     "profile": "Profilo",
     "icons": "Icone",
     "achievements": "Obiettivi",
-    "items": "Oggetti"
+    "items": "Oggetti",
+    "food": "Alimenti"
   },
   "events": {
     "type": {
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "Principale",
     "specialAttribute": "Speciale",
-    "subAttribute": "Secondario"
+    "subAttribute": "Secondario",
+    "enemyGroupTitle": "Fazione",
+    "level": "Livello",
+    "sortGroups": "Gruppi in ordine di ordinamento",
+    "grouping": "Raggruppamento",
+    "inherit_sort": "Primo parametro di ordinamento",
+    "localeNameTitle": "Nome",
+    "targetType": "Tipo di bersaglio",
+    "equipCondTitle": "Tipo di condizione",
+    "buffTitle": "Effetto"
   },
   "menu": {
     "about": "Info",
     "talents": "Talenti",
-    "potentials": "Potenziali",
+    "potentials": "Potenziale",
     "combatSkills": "Abilità di Combattimento",
     "artwork": "Artwork",
     "files": "File",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "Foundite",
     "wiki_group_monster_witchcraft": "Creatura stregata",
     "wiki_group_monster_else": "Altri",
-    "wiki_group_monster_ml": "Apparizione"
+    "wiki_group_monster_ml": "Apparizione",
+    "none": "Nessun dato"
   },
   "resitances": {
     "heatRez": "Resistenza al fuoco",
@@ -3486,6 +3503,8 @@
     "contract_level": "Livello del Contratto",
     "time": "Tempo",
     "sec": "{time}s",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}s",
     "team": "Squadra",
     "no_entries": "Nessun record trovato per questa classifica.",
     "filter_all": "Tutti i Server",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "Contiene tutti gli oggetti",
     "chestContainsRandom": "Oggetto casuale",
     "selectCount": "Scegli: {count}"
+  },
+  "tacticalCondType": {
+    "null": "Nessuno"
   }
 }

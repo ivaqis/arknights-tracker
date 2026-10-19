@@ -441,7 +441,16 @@
     },
     "mainAttribute": "Основний",
     "specialAttribute": "Спеціальний",
-    "subAttribute": "Вторинний"
+    "subAttribute": "Вторинний",
+    "enemyGroupTitle": "Фракція",
+    "level": "Рівень",
+    "sortGroups": "Групи в порядку сортування",
+    "grouping": "Групування",
+    "inherit_sort": "Перший параметр сортування",
+    "localeNameTitle": "Назва",
+    "targetType": "Тип цілі",
+    "equipCondTitle": "Тип умови",
+    "buffTitle": "Ефект"
   },
   "menu": {
     "about": "Про персонажа",
@@ -824,6 +833,8 @@
     "contract_level": "Рівень контракту",
     "time": "Час проходження",
     "sec": "{time} с",
+    "min": "{m} хв",
+    "min_sec": "{m} хв {s} с",
     "team": "Команда",
     "no_entries": "Немає записів для цієї таблиці.",
     "filter_all": "Всі сервери",

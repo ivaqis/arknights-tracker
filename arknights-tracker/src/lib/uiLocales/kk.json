@@ -441,7 +441,16 @@
     },
     "mainAttribute": "Негізгі",
     "specialAttribute": "Арнайы",
-    "subAttribute": "Қосымша"
+    "subAttribute": "Қосымша",
+    "enemyGroupTitle": "Фракция",
+    "level": "Деңгей",
+    "sortGroups": "Сұрыптау ретіндегі топтар",
+    "grouping": "Топтау",
+    "inherit_sort": "Бірінші сұрыптау параметрі",
+    "localeNameTitle": "Атауы",
+    "targetType": "Нысана түрі",
+    "equipCondTitle": "Шарт түрі",
+    "buffTitle": "Әсері"
   },
   "menu": {
     "about": "Кейіпкер туралы",
@@ -824,6 +833,8 @@
     "contract_level": "Келісімшарт деңгейі",
     "time": "Уақыт",
     "sec": "{time}с",
+    "min": "{m}мин",
+    "min_sec": "{m}мин {s}с",
     "team": "Команда",
     "no_entries": "Жазбалар табылмады.",
     "filter_all": "Барлық серверлер",

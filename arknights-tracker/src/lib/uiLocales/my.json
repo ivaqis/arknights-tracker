@@ -441,7 +441,16 @@
     },
     "mainAttribute": "Utama",
     "specialAttribute": "Khas",
-    "subAttribute": "Sekunder"
+    "subAttribute": "Sekunder",
+    "enemyGroupTitle": "Puak",
+    "level": "Tahap",
+    "sortGroups": "Kumpulan mengikut susunan isihan",
+    "grouping": "Pengelompokan",
+    "inherit_sort": "Parameter Isihan Pertama",
+    "localeNameTitle": "Nama",
+    "targetType": "Jenis Sasaran",
+    "equipCondTitle": "Jenis Syarat",
+    "buffTitle": "Kesan"
   },
   "menu": {
     "about": "Tentang",
@@ -824,6 +833,8 @@
     "contract_level": "Tahap Kontrak",
     "time": "Masa Selesai",
     "sec": "{time}s",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}s",
     "team": "Pasukan",
     "no_entries": "Tiada rekod selesai ditemui untuk papan pendahulu ini.",
     "filter_all": "Semua Pelayan",

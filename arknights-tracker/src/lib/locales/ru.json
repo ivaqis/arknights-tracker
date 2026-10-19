@@ -380,7 +380,7 @@
     "rewards": "Награды",
     "dayN": "День {n}",
     "noMaterialsNeeded": "Материалы не требуются",
-    "new": "Новый",
+    "new": "New",
     "version": "Версия",
     "weapons": "Оружие",
     "operators": "Оперативники",
@@ -623,7 +623,7 @@
   },
   "timer": {
     "ongoing_active": "Идет (уже {n} дн.)",
-    "permanent": "Бессрочно",
+    "permanent": "Постоянно",
     "left_d_h": "{d}д {h}ч",
     "left_h_m": "{h}ч {m}мин",
     "starts_in_h_m": "{h}ч {m}мин",
@@ -3710,6 +3710,8 @@
     "contract_level": "Уровень контракта",
     "time": "Время",
     "sec": "{time} сек.",
+    "min": "{m}м",
+    "min_sec": "{m}м {s}с",
     "team": "Отряд",
     "no_entries": "Для этой таблицы лидеров не найдено записей.",
     "filter_all": "Все серверы",
@@ -4389,7 +4391,7 @@
     "recoverUpperCount": "0"
   },
   "tacticalCondType": {
-    "null": "Нет",
+    "null": "Ничего",
     "char_hp": "Процент от макс. ОЗ",
     "char_down": "Смерть оперативника",
     "arts_reaction": "Наложение реакции искусств",

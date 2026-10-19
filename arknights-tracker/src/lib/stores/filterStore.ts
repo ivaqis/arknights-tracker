@@ -288,6 +288,8 @@ export function getDefaultEnemySortParams(): EnemySortParams {
                 "wiki_group_monster_landbreaker",
                 "wiki_group_monster_hongshan",
                 "wiki_group_monster_animal",
+                "wiki_group_monster_else",
+                "wiki_group_monster_ml",
                 "none"
             ],
             locale: LocaleOrder.A_Z

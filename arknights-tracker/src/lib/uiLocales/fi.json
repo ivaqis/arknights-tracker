@@ -441,7 +441,16 @@
     },
     "mainAttribute": "Pääattribuutti",
     "specialAttribute": "Erityinen",
-    "subAttribute": "Toissijainen"
+    "subAttribute": "Toissijainen",
+    "enemyGroupTitle": "Ryhmittymä",
+    "level": "Taso",
+    "sortGroups": "Ryhmät lajittelujärjestyksessä",
+    "grouping": "Ryhmittely",
+    "inherit_sort": "Ensimmäinen lajitteluparametri",
+    "localeNameTitle": "Nimi",
+    "targetType": "Kohdetyyppi",
+    "equipCondTitle": "Ehtotyyppi",
+    "buffTitle": "Vaikutus"
   },
   "menu": {
     "about": "Tietoja",
@@ -824,6 +833,8 @@
     "contract_level": "Sopimustaso",
     "time": "Aika",
     "sec": "{time}s",
+    "min": "{m} min",
+    "min_sec": "{m} min {s} s",
     "team": "Tiimi",
     "no_entries": "Tuloksia ei löytynyt.",
     "filter_all": "Kaikki palvelimet",

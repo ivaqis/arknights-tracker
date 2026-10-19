@@ -1,4 +1,4 @@
-import { type Writable, writable } from "svelte/store";
+import { type Writable, writable, get } from "svelte/store";
 
 export interface LocaleLabel<T extends string> {
     code: T;
@@ -166,11 +166,77 @@ const initialMain = getInitialLocale();
 export const currentLocale: Writable<Locale> = writable(initialMain);
 export const currentUiLocale: Writable<UiLocale> = writable(getInitialUiLocale(initialMain));
 
+interface LocaleFontConfig {
+    fontName: string;
+    url: string;
+}
+
+const LOCALE_FONTS: Record<string, LocaleFontConfig> = {
+    "zh-CN": {
+        fontName: "'Noto Sans SC'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;800&display=swap"
+    },
+    "zh-TW": {
+        fontName: "'Noto Sans TC'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;800&display=swap"
+    },
+    "ja": {
+        fontName: "'Noto Sans JP'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;800&display=swap"
+    },
+    "ko": {
+        fontName: "'Noto Sans KR'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800&display=swap"
+    },
+    "th": {
+        fontName: "'Noto Sans Thai'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;800&display=swap"
+    },
+    "ka": {
+        fontName: "'Noto Sans Georgian'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;800&display=swap"
+    },
+    "ar": {
+        fontName: "'Noto Sans Arabic'",
+        url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;800&display=swap"
+    }
+};
+
+export function updateLocaleFont(uiCode: string, mainCode?: string) {
+    if (typeof document === "undefined") return;
+
+    const targetCode = LOCALE_FONTS[uiCode] ? uiCode : (mainCode && LOCALE_FONTS[mainCode] ? mainCode : null);
+    const fontConfig = targetCode ? LOCALE_FONTS[targetCode] : null;
+
+    const linkId = "dynamic-locale-font";
+    let linkElem = document.getElementById(linkId) as HTMLLinkElement | null;
+
+    if (!fontConfig) {
+        if (linkElem) linkElem.remove();
+        document.documentElement.style.removeProperty("--font-locale");
+        return;
+    }
+
+    if (!linkElem) {
+        linkElem = document.createElement("link");
+        linkElem.id = linkId;
+        linkElem.rel = "stylesheet";
+        document.head.appendChild(linkElem);
+    }
+    if (linkElem.href !== fontConfig.url) {
+        linkElem.href = fontConfig.url;
+    }
+
+    document.documentElement.style.setProperty("--font-locale", `${fontConfig.fontName}, 'Noto Sans', sans-serif`);
+}
+
 if (typeof window !== "undefined") {
     currentLocale.subscribe(value => {
         localStorage.setItem("user_locale", value);
+        updateLocaleFont(get(currentUiLocale), value);
     });
     currentUiLocale.subscribe(value => {
         localStorage.setItem("user_ui_locale", value);
+        updateLocaleFont(value, get(currentLocale));
     });
 }

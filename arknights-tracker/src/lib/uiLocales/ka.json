@@ -441,7 +441,16 @@
     },
     "mainAttribute": "ძირითადი",
     "specialAttribute": "სპეციალური",
-    "subAttribute": "მეორადი"
+    "subAttribute": "მეორადი",
+    "enemyGroupTitle": "ფრაქცია",
+    "level": "დონე",
+    "sortGroups": "ჯგუფები დახარისხების მიხედვით",
+    "grouping": "დაჯგუფება",
+    "inherit_sort": "დახარისხების პირველი პარამეტრი",
+    "localeNameTitle": "სახელი",
+    "targetType": "სამიზნის ტიპი",
+    "equipCondTitle": "პირობის ტიპი",
+    "buffTitle": "ეფექტი"
   },
   "menu": {
     "about": "პერსონაჟის შესახებ",
@@ -824,6 +833,8 @@
     "contract_level": "კონტრაქტის დონე",
     "time": "დრო",
     "sec": "{time}წმ",
+    "min": "{m}წთ",
+    "min_sec": "{m}წთ {s}წმ",
     "team": "გუნდი",
     "no_entries": "ჩანაწერები ვერ მოიძებნა.",
     "filter_all": "ყველა სერვერი",

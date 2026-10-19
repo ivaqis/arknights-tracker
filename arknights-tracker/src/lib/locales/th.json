@@ -135,7 +135,13 @@
     "openXSource": "โพสต์ทางการ",
     "detailsXSource": "ดูโพสต์บน x.com",
     "openWebEvent": "เว็บอีเวนต์",
-    "detailsWebEvent": "ไปยังหน้ากิจกรรม"
+    "detailsWebEvent": "ไปยังหน้ากิจกรรม",
+    "food": {
+      "tabs": {
+        "overview": "ภาพรวม"
+      },
+      "tactical": "อุปกรณ์​ยุทธวิธี"
+    }
   },
   "bannerTypes": {
     "standard": "การเฟ้นหามาตรฐาน",
@@ -331,7 +337,7 @@
     "hLeft": "ชม. เหลือ",
     "noMaterialsNeeded": "ไม่ต้องการวัสดุ",
     "featuredCharacters": "โอเปอเรเตอร์หน้าตู้",
-    "new": "ใหม่",
+    "new": "New",
     "version": "เวอร์ชัน",
     "weapons": "อาวุธ",
     "operators": "โอเปอเรเตอร์",
@@ -420,7 +426,8 @@
     "profile": "โปรไฟล์",
     "icons": "ไอคอน",
     "achievements": "ความสำเร็จ",
-    "items": "ไอเทม"
+    "items": "ไอเทม",
+    "food": "อาหาร"
   },
   "events": {
     "type": {
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "หลัก",
     "specialAttribute": "พิเศษ",
-    "subAttribute": "รอง"
+    "subAttribute": "รอง",
+    "enemyGroupTitle": "ฝ่าย",
+    "level": "เล​เวล",
+    "sortGroups": "กลุ่มตามลำดับการจัดเรียง",
+    "grouping": "การจัดกลุ่ม",
+    "inherit_sort": "พารามิเตอร์การจัดเรียงแรก",
+    "localeNameTitle": "ชื่อ",
+    "targetType": "ประเภทเป้าหมาย",
+    "equipCondTitle": "ประเภทเงื่อนไข",
+    "buffTitle": "ผลลัพธ์"
   },
   "menu": {
     "about": "เกี่ยวกับ",
     "talents": "พรสวรรค์",
-    "potentials": "ศักยภาพ",
+    "potentials": "ระดับ​ศักยภาพ",
     "combatSkills": "สกิลต่อสู้",
     "artwork": "ภาพประกอบ",
     "files": "ไฟล์",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "ฟาวน์​ได​ท์",
     "wiki_group_monster_witchcraft": "วัตถุ​เวทมนตร์",
     "wiki_group_monster_else": "อื่​นๆ",
-    "wiki_group_monster_ml": "ภูตผี"
+    "wiki_group_monster_ml": "ภูตผี",
+    "none": "ไม่มี​ข้อมูล"
   },
   "resitances": {
     "heatRez": "การต้าน​ทาน​ความร้อน",
@@ -3486,6 +3503,8 @@
     "contract_level": "ระดับสัญญา",
     "time": "เวลาเคลียร์",
     "sec": "{time} วิ",
+    "min": "{m} นาที",
+    "min_sec": "{m} นาที {s} วิ",
     "team": "ทีม",
     "no_entries": "ไม่พบข้อมูลในกระดานนี้",
     "filter_all": "ทุกเซิร์ฟเวอร์",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "ได้รับไอเทมทั้งหมด",
     "chestContainsRandom": "สุ่มรับไอเทม",
     "selectCount": "เลือก: {count}"
+  },
+  "tacticalCondType": {
+    "null": "ไม่มี"
   }
 }

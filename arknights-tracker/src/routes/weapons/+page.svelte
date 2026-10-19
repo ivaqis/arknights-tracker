@@ -180,21 +180,6 @@
         $weaponOwnedOnly = false;
     }
 
-    let displayLimit = 40;
-    $: if (searchQuery !== undefined || selectedFilters || sortField || sortDirection || showOwnedOnly) {
-        displayLimit = 40;
-    }
-    $: displayedWeapons = filteredWeapons.slice(0, displayLimit);
-
-    function infiniteScroll(node) {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && displayLimit < filteredWeapons.length) {
-                displayLimit += 40; 
-            }
-        }, { rootMargin: "400px" });
-        observer.observe(node);
-        return { destroy() { observer.disconnect(); } };
-    }
 </script>
 
 <svelte:head>
@@ -244,7 +229,7 @@
 
         <div class="w-full {$splitEquipmentView ? '' : 'xl:w-[85%]'} pb-8">
             <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
-                {#each displayedWeapons as wp (wp.id)}
+                {#each filteredWeapons as wp (wp.id)}
                     {#if $splitEquipmentView}
                         <button
                             tabindex="0"
@@ -267,9 +252,6 @@
                 {/each}
             </div>
 
-            {#if displayLimit < filteredWeapons.length}
-                <div use:infiniteScroll class="h-10 w-full mt-4"></div>
-            {/if}
 
             {#if filteredWeapons.length === 0}
                 <div class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444]">

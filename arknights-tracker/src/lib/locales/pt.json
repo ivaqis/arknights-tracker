@@ -135,7 +135,13 @@
     "openXSource": "Publicação oficial",
     "detailsXSource": "Ver publicação no x.com",
     "openWebEvent": "Evento Web",
-    "detailsWebEvent": "Ir para a página do evento"
+    "detailsWebEvent": "Ir para a página do evento",
+    "food": {
+      "tabs": {
+        "overview": "Visão Geral"
+      },
+      "tactical": "Item Tático"
+    }
   },
   "bannerTypes": {
     "standard": "Busca Padrão",
@@ -331,7 +337,7 @@
     "hLeft": "h restantes",
     "noMaterialsNeeded": "Nenhum material necessário",
     "featuredCharacters": "Operadores em destaque",
-    "new": "NOVO",
+    "new": "New",
     "version": "Versão",
     "weapons": "Armas",
     "operators": "Operadores",
@@ -420,7 +426,8 @@
     "profile": "Perfil",
     "icons": "Ícones",
     "achievements": "Conquistas",
-    "items": "Itens"
+    "items": "Itens",
+    "food": "Alimentos"
   },
   "events": {
     "type": {
@@ -636,12 +643,21 @@
     },
     "mainAttribute": "Principal",
     "specialAttribute": "Especial",
-    "subAttribute": "Secundário"
+    "subAttribute": "Secundário",
+    "enemyGroupTitle": "Facção",
+    "level": "Nível",
+    "sortGroups": "Grupos na ordem de classificação",
+    "grouping": "Agrupamento",
+    "inherit_sort": "Primeiro parâmetro de ordenação",
+    "localeNameTitle": "Nome",
+    "targetType": "Tipo de alvo",
+    "equipCondTitle": "Tipo de condição",
+    "buffTitle": "Efeito"
   },
   "menu": {
     "about": "Sobre",
     "talents": "Talentos",
-    "potentials": "Potenciais",
+    "potentials": "Potencial",
     "combatSkills": "Habilidades de Combate",
     "artwork": "Arte",
     "files": "Arquivos",
@@ -1758,7 +1774,8 @@
     "wiki_group_monster_js": "Fundite",
     "wiki_group_monster_witchcraft": "Criação da Feitiçaria",
     "wiki_group_monster_else": "Outros",
-    "wiki_group_monster_ml": "Aparição"
+    "wiki_group_monster_ml": "Aparição",
+    "none": "Sem dados"
   },
   "resitances": {
     "heatRez": "Resistência Térmica",
@@ -3486,6 +3503,8 @@
     "contract_level": "Nível do Contrato",
     "time": "Tempo",
     "sec": "{time}s",
+    "min": "{m}m",
+    "min_sec": "{m}m {s}s",
     "team": "Equipe",
     "no_entries": "Nenhum registro encontrado.",
     "filter_all": "Todos os Servidores",
@@ -3960,5 +3979,8 @@
     "chestContainsAll": "Contém todos os itens",
     "chestContainsRandom": "Item aleatório",
     "selectCount": "Escolha: {count}"
+  },
+  "tacticalCondType": {
+    "null": "Nenhum"
   }
 }

@@ -135,7 +135,13 @@
     "openXSource": "Bài viết chính thức",
     "detailsXSource": "Xem bài viết trên x.com",
     "openWebEvent": "Sự kiện Web",
-    "detailsWebEvent": "Đi đến trang sự kiện"
+    "detailsWebEvent": "Đi đến trang sự kiện",
+    "food": {
+      "tabs": {
+        "overview": "Tổng quan"
+      },
+      "tactical": "Vật Phẩm Chiến Thuật"
+    }
   },
   "bannerTypes": {
     "standard": "Chiêu mộ Tiêu chuẩn",
@@ -334,7 +340,7 @@
     "hLeft": "g còn lại",
     "noMaterialsNeeded": "Không cần vật liệu",
     "featuredCharacters": "Đặc vụ tiêu biểu",
-    "new": "MỚI",
+    "new": "New",
     "version": "Phiên bản",
     "weapons": "Vũ khí",
     "operators": "Toán tử",
@@ -423,7 +429,8 @@
     "profile": "Hồ Sơ",
     "icons": "Biểu tượng",
     "achievements": "Thành tựu",
-    "items": "Vật phẩm"
+    "items": "Vật phẩm",
+    "food": "Thực Phẩm"
   },
   "events": {
     "type": {
@@ -559,7 +566,7 @@
   },
   "timer": {
     "ongoing_active": "Đang diễn ra ({n} ngày hoạt động)",
-    "permanent": "Vĩnh viễn",
+    "permanent": "Vĩnh Viễn",
     "left_d_h": "còn {d}ng {h}g",
     "left_h": "còn {h}g",
     "left_h_m": "còn {h}g {m}ph",
@@ -675,7 +682,16 @@
     },
     "mainAttribute": "Chính",
     "specialAttribute": "Đặc biệt",
-    "subAttribute": "Phụ"
+    "subAttribute": "Phụ",
+    "enemyGroupTitle": "Phe",
+    "level": "Cấp",
+    "sortGroups": "Nhóm theo thứ tự sắp xếp",
+    "grouping": "Nhóm",
+    "inherit_sort": "Tham số sắp xếp đầu tiên",
+    "localeNameTitle": "Tên",
+    "targetType": "Loại mục tiêu",
+    "equipCondTitle": "Loại điều kiện",
+    "buffTitle": "Hiệu ứng"
   },
   "menu": {
     "about": "Giới thiệu",
@@ -1797,7 +1813,8 @@
     "wiki_group_monster_js": "Foundite",
     "wiki_group_monster_witchcraft": "Tạo Vật Phù Thuật",
     "wiki_group_monster_else": "Khác",
-    "wiki_group_monster_ml": "Linh Thể"
+    "wiki_group_monster_ml": "Linh Thể",
+    "none": "Không có dữ liệu"
   },
   "resitances": {
     "heatRez": "Kháng Nhiệt",
@@ -3525,6 +3542,8 @@
     "contract_level": "Cấp Hợp Đồng",
     "time": "Thời Gian",
     "sec": "{time}s",
+    "min": "{m}ph",
+    "min_sec": "{m}ph {s}s",
     "team": "Đội",
     "no_entries": "Không tìm thấy hồ sơ nào.",
     "filter_all": "Tất Cả Máy Chủ",
@@ -3999,5 +4018,8 @@
     "chestContainsAll": "Chứa tất cả vật phẩm",
     "chestContainsRandom": "Vật phẩm ngẫu nhiên",
     "selectCount": "Chọn: {count}"
+  },
+  "tacticalCondType": {
+    "null": "Không có"
   }
 }

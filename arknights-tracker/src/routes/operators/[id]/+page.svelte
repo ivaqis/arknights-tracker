@@ -1944,7 +1944,7 @@
                                                     <div
                                                         class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm z-10 pointer-events-none"
                                                     >
-                                                        Phase {realKey.replace(
+                                                        {$t("menu.potentials")} {realKey.replace(
                                                             "potential",
                                                             "",
                                                         )}

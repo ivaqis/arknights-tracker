@@ -643,7 +643,7 @@
             .map(b => {
                 const label = $t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name;
                 const startFormatted = formatBannerDate(b.startTime, $currentUiLocale);
-                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent");
+                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("timer.permanent");
                 const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
                 return {
                     value: b.id,
