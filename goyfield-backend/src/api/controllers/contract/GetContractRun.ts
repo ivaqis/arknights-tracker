@@ -61,7 +61,7 @@ export class GetContractRun extends Controller<
             throw new Error(`Cannot find user profile for ${JSON.stringify(gameProfile, null, 2)}`);
         }
 
-        if (profile.isPrivate.initValue && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
+        if ((profile.isPrivate.initValue || profile.hideLeaderboard.initValue) && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
             this.status = 403;
             this.message = "No access";
 

@@ -900,6 +900,7 @@
     "no_saved_tokens": "Немає збережених токенів",
     "delete_confirm": "Видалити цей токен?",
     "settings_title": "Налаштування профілю",
+    "settings_hide_account": "Приховати акаунт",
     "settings_hide_data": "Приховати дані в таблиці лідерів",
     "settings_hide_uid": "Приховати UID акаунтів",
     "settings_primary_account": "Прив'язати акаунт круток",

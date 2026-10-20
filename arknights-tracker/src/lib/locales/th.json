@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "ไม่มีโทเค็น",
     "delete_confirm": "ลบโทเค็นนี้?",
     "settings_title": "การตั้งค่าโปรไฟล์",
+    "settings_hide_account": "ซ่อนบัญชี",
     "settings_hide_data": "ซ่อนข้อมูลในกระดานผู้นำ",
     "settings_hide_uid": "ซ่อน UID บัญชี",
     "settings_primary_account": "เชื่อมโยงบัญชีกาชา",

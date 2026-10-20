@@ -3617,6 +3617,7 @@
     "no_saved_tokens": "Không có token nào",
     "delete_confirm": "Xóa token này?",
     "settings_title": "Cài Đặt Hồ Sơ",
+    "settings_hide_account": "Ẩn tài khoản",
     "settings_hide_data": "Ẩn dữ liệu trên bảng xếp hạng",
     "settings_hide_uid": "Ẩn UID tài khoản",
     "settings_primary_account": "Liên Kết Tài Khoản Gacha",

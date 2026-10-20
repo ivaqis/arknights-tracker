@@ -900,6 +900,7 @@
     "no_saved_tokens": "لا توجد رموز",
     "delete_confirm": "حذف هذا الرمز؟",
     "settings_title": "إعدادات الملف",
+    "settings_hide_account": "إخفاء الحساب",
     "settings_hide_data": "إخفاء التفاصيل",
     "settings_hide_uid": "إخفاء معرّفات الحسابات (UID)",
     "settings_primary_account": "ربط حساب السحوبات",

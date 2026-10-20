@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "Aucun token enregistré",
     "delete_confirm": "Supprimer ce token ?",
     "settings_title": "Paramètres du Profil",
+    "settings_hide_account": "Masquer le compte",
     "settings_hide_data": "Masquer les détails sur le classement",
     "settings_hide_uid": "Masquer les UID des comptes",
     "settings_primary_account": "Lier le Compte de Tirages",

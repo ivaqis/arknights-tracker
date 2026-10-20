@@ -900,6 +900,7 @@
     "no_saved_tokens": "არ არის ტოკენები",
     "delete_confirm": "წავშალოთ?",
     "settings_title": "პარამეტრები",
+    "settings_hide_account": "ანგარიშის დამალვა",
     "settings_hide_data": "დამალეთ მონაცემები",
     "settings_hide_uid": "ანგარიშის UID-ის დამალვა",
     "settings_primary_account": "დააკავშირეთ ანგარიში",

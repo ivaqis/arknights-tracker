@@ -160,4 +160,8 @@ export class MonumentLeaderboardRepository extends Repository {
     public async getCharactersNumberInRecordByGroupId(groupId: string, isHard: boolean): Promise<Amount[]> {
         return this._characterTable.getCharactersNumberInRecordByGroupId(groupId, isHard);
     }
+
+    public async findRunsWithRanksByGameUids(gameUids: string[]) {
+        return this._monumentTable.findRunsWithRanksByGameUids(gameUids);
+    }
 }

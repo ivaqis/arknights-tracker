@@ -243,8 +243,12 @@ function normalizeGameProfiles(data) {
                     chars,
                     contract,
                     stats,
-                    achieve
-                }
+                    achieve,
+                    monument: gp.monument || [],
+                    warEchoes: gp.warEchoes || []
+                },
+                monument: gp.monument || [],
+                warEchoes: gp.warEchoes || []
             };
         });
     }
@@ -278,7 +282,18 @@ export function normalizeProfile(data) {
     const picture = data.avatarId ?? data.picture ?? null;
     const background = data.backgroundId ?? data.background ?? null;
     const is_private = data.isPrivate !== undefined ? (data.isPrivate ? 1 : 0) : (data.is_private ?? 0);
+    const hide_leaderboard = data.hideLeaderboard !== undefined ? (data.hideLeaderboard ? 1 : 0) : (data.hide_leaderboard ?? 0);
     const hide_uid = data.hideUid !== undefined ? (data.hideUid ? 1 : 0) : (data.hide_uid !== undefined ? (data.hide_uid ? 1 : 0) : 1);
+    let favoriteChars = [];
+    if (Array.isArray(data.favoriteChars)) {
+        favoriteChars = data.favoriteChars;
+    } else if (typeof data.favoriteChars === 'string') {
+        try {
+            favoriteChars = JSON.parse(data.favoriteChars);
+        } catch {
+            favoriteChars = [];
+        }
+    }
     const details = normalizeGameProfiles(data);
     return {
         ...data,
@@ -290,8 +305,11 @@ export function normalizeProfile(data) {
         backgroundId: background,
         is_private,
         isPrivate: is_private === 1,
+        hide_leaderboard,
+        hideLeaderboard: hide_leaderboard === 1,
         hide_uid,
         hideUid: hide_uid === 1,
+        favoriteChars,
         details
     };
 }
@@ -371,8 +389,10 @@ export async function updateUserProfile(idToken, currentUid, updates = {}) {
     const body = {};
     if (updates.newUid !== undefined) body.newUid = updates.newUid;
     if (updates.isPrivate !== undefined) body.isPrivate = !!updates.isPrivate;
+    if (updates.hideLeaderboard !== undefined) body.hideLeaderboard = !!updates.hideLeaderboard;
     if (updates.hideUid !== undefined) body.hideUid = !!updates.hideUid;
     if (updates.backgroundId !== undefined) body.backgroundId = updates.backgroundId;
+    if (updates.favoriteChars !== undefined) body.favoriteChars = updates.favoriteChars;
 
     const res = await fetch(`${API_BASE}/user/profile/update?uid=${encodeURIComponent(uid)}`, {
         method: 'POST',

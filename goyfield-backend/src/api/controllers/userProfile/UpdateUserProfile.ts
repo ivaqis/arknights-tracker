@@ -26,8 +26,10 @@ export class UpdateUserProfile
     private readonly _uid: string;
     private readonly _newUid?: string;
     private readonly _isPrivate?: boolean;
+    private readonly _hideLeaderboard?: boolean;
     private readonly _hideUid?: boolean;
     private readonly _backgroundId?: string;
+    private readonly _favoriteChars?: string[];
 
     private constructor(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
         super(req, res);
@@ -35,8 +37,10 @@ export class UpdateUserProfile
         this._uid = req.query.uid;
         this._newUid = req.body.newUid;
         this._isPrivate = req.body.isPrivate;
+        this._hideLeaderboard = req.body.hideLeaderboard;
         this._hideUid = req.body.hideUid;
         this._backgroundId = req.body.backgroundId;
+        this._favoriteChars = req.body.favoriteChars;
     }
 
     public static async post(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
@@ -100,6 +104,10 @@ export class UpdateUserProfile
             profile.isPrivate.value = this._isPrivate;
         }
 
+        if (this._hideLeaderboard !== undefined) {
+            profile.hideLeaderboard.value = this._hideLeaderboard;
+        }
+
         if (this._hideUid !== undefined) {
             profile.hideUid.value = this._hideUid;
         }
@@ -108,14 +116,20 @@ export class UpdateUserProfile
             profile.backgroundId.value = this._backgroundId;
         }
 
+        if (this._favoriteChars !== undefined) {
+            profile.favoriteChars.value = JSON.stringify(this._favoriteChars);
+        }
+
         const newProfile = await this._database.users.updateUser(profile);
         const gameProfiles = await this._database.gameProfiles.findByUid(profile.uid);
         const gameProfilesData = gameProfiles.map(profile => profile.data.getEntity());
         const gameUids = gameProfilesData.map(profile => profile.base.roleId);
         const bestRecords = await this.getBestRecords(gameUids);
         const pullStats = await GetUserProfile.getPullsStats(this._database, gameProfiles);
+        const monumentMap = await GetUserProfile.getMonumentRuns(this._database, gameUids);
+        const warEchoesMap = await GetUserProfile.getWarEchoesRuns(this._database, gameUids);
 
-        this.data = GetUserProfile.getRespData(newProfile, gameProfilesData, bestRecords, pullStats);
+        this.data = GetUserProfile.getRespData(newProfile, gameProfilesData, bestRecords, pullStats, monumentMap, warEchoesMap);
 
         return;
     }

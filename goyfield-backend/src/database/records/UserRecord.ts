@@ -10,9 +10,11 @@ export class UserRecord {
     private readonly _publicUid: StringRecordField;
     private readonly _firebaseUid: NullableStringRecordField;
     private readonly _isPrivate: BooleanRecordField;
+    private readonly _hideLeaderboard: BooleanRecordField;
     private readonly _hideUid: BooleanRecordField;
     private readonly _avatarId: NullableStringRecordField;
     private readonly _backgroundId: NullableStringRecordField;
+    private readonly _favoriteChars: NullableStringRecordField;
     private readonly _displayAvatar: BooleanRecordField;
     private readonly _uploadCount: NumberRecordField;
     private readonly _lastUploadReset: DateRecordField;
@@ -24,9 +26,11 @@ export class UserRecord {
         this._publicUid = new StringRecordField(entity.publicUid);
         this._firebaseUid = new NullableStringRecordField(entity.firebaseUid);
         this._isPrivate = new BooleanRecordField(entity.isPrivate);
+        this._hideLeaderboard = new BooleanRecordField(entity.hideLeaderboard ?? false);
         this._hideUid = new BooleanRecordField(entity.hideUid ?? true);
         this._avatarId = new NullableStringRecordField(entity.avatarId);
         this._backgroundId = new NullableStringRecordField(entity.backgroundId);
+        this._favoriteChars = new NullableStringRecordField(entity.favoriteChars ?? null);
         this._displayAvatar = new BooleanRecordField(entity.displayAvatar);
         this._uploadCount = new NumberRecordField(entity.uploadCount);
         this._lastUploadReset = new DateRecordField(entity.lastUploadReset);
@@ -50,6 +54,10 @@ export class UserRecord {
         return this._isPrivate;
     }
 
+    public get hideLeaderboard(): BooleanRecordField {
+        return this._hideLeaderboard;
+    }
+
     public get hideUid(): BooleanRecordField {
         return this._hideUid;
     }
@@ -60,6 +68,10 @@ export class UserRecord {
 
     public get backgroundId(): NullableStringRecordField {
         return this._backgroundId;
+    }
+
+    public get favoriteChars(): NullableStringRecordField {
+        return this._favoriteChars;
     }
 
     public get displayAvatar(): BooleanRecordField {

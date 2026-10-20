@@ -3579,6 +3579,7 @@
     "no_saved_tokens": "No hay tokens guardados",
     "delete_confirm": "¿Eliminar este token guardado?",
     "settings_title": "Ajustes del Perfil",
+    "settings_hide_account": "Ocultar cuenta",
     "settings_hide_data": "Ocultar detalles en la tabla de clasificación",
     "settings_hide_uid": "Ocultar UID de cuentas",
     "settings_primary_account": "Vincular Cuenta de Tiradas",

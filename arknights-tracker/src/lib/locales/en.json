@@ -3780,6 +3780,7 @@
     "no_saved_tokens": "No saved tokens",
     "delete_confirm": "Delete this saved token?",
     "settings_title": "Profile Settings",
+    "settings_hide_account": "Hide account",
     "settings_hide_data": "Hide account details on leaderboard",
     "settings_hide_uid": "Hide account UIDs",
     "settings_primary_account": "Link Pulls Account",

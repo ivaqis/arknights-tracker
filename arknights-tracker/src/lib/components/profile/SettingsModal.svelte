@@ -9,6 +9,7 @@
 
     export let isOpen = false;
     export let isPrivate = false;
+    export let hideLeaderboard = false;
     export let hideUid = true;
     export let profile = null;
     export let activeAccount = null;
@@ -35,11 +36,21 @@
 
         <div class="flex items-center justify-between mb-6">
             <span class="text-sm text-gray-700 dark:text-gray-300 font-sdk pr-4 select-text">
-                {$t("profile.settings_hide_data")}
+                {$t("profile.settings_hide_account")}
             </span>
             <SwitchButton
                 isActive={isPrivate}
                 on:click={() => dispatch("togglePrivate")}
+            />
+        </div>
+
+        <div class="flex items-center justify-between mb-6">
+            <span class="text-sm text-gray-700 dark:text-gray-300 font-sdk pr-4 select-text">
+                {$t("profile.settings_hide_data")}
+            </span>
+            <SwitchButton
+                isActive={hideLeaderboard}
+                on:click={() => dispatch("toggleHideLeaderboard")}
             />
         </div>
 

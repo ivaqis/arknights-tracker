@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "保存済みトークンはありません",
     "delete_confirm": "この保存済みトークンを削除しますか？",
     "settings_title": "プロファイル設定",
+    "settings_hide_account": "アカウントを非公開にする",
     "settings_hide_data": "ランキングでアカウント情報を隠す",
     "settings_hide_uid": "アカウントUIDを非表示にする",
     "settings_primary_account": "ガチャアカウントを連携",

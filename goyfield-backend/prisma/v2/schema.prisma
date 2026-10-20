@@ -20,9 +20,11 @@ model User {
     publicUid       String   @unique
     firebaseUid     String?  @unique
     isPrivate       Boolean  @default(false)
+    hideLeaderboard Boolean  @default(false)
     hideUid         Boolean  @default(true)
     avatarId        String?
     backgroundId    String?
+    favoriteChars   String?
     displayAvatar   Boolean  @default(true)
     uploadCount     Int      @default(0)
     lastUploadReset DateTime @default(now())

@@ -155,6 +155,23 @@
     export let activeAccount = null;
     export let hideUid = false;
     export let accountSlot = 1;
+    export let favoriteChars = [];
+    export let canEditFavorite = false;
+
+    $: isFavorite = (() => {
+        const list = favoriteChars || [];
+        const charId = selectedChar?.id || opData?.id || svelteId;
+        return list.includes(charId) ||
+            (opData?.id && list.includes(opData.id)) ||
+            (svelteId && list.includes(svelteId)) ||
+            (selectedChar?.charData?.id && list.includes(selectedChar.charData.id));
+    })();
+
+    function handleToggleFavorite() {
+        if (!canEditFavorite) return;
+        const charId = opData?.id || svelteId || selectedChar?.id;
+        dispatch("toggleFavorite", { charId, char: selectedChar, opData });
+    }
 
     let isExporting = false;
 
@@ -1046,6 +1063,29 @@
                                         <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-xl leading-none" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
                                             {$t(`characters.${opData.id}`) !== `characters.${opData.id}` ? $t(`characters.${opData.id}`) : opData.name}
                                         </h3>
+                                        {#if !isExporting && canEditFavorite}
+                                            <Tooltip text={isFavorite ? $t("profile.remove_favorite") : $t("profile.set_favorite")}>
+                                                <button
+                                                    type="button"
+                                                    on:click={handleToggleFavorite}
+                                                    class="transition-all duration-200 cursor-pointer shrink-0 mt-1 flex items-center justify-center bg-transparent border-none outline-none p-0.5"
+                                                >
+                                                    {#if isFavorite}
+                                                        <Icon name="favorite" class="w-6 h-6 text-[#F9B90C] drop-shadow-[0_0_3px_rgba(249,185,12,0.45)]" />
+                                                    {:else}
+                                                        <Icon name="favorite-border" class="w-6 h-6 text-white/40 hover:text-white/80 transition-colors" />
+                                                    {/if}
+                                                </button>
+                                            </Tooltip>
+                                        {:else if isFavorite}
+                                            <Tooltip text={$t("profile.favorite_set")}>
+                                                <div
+                                                    class="shrink-0 ml-1.5 flex items-center justify-center p-0.5"
+                                                >
+                                                    <Icon name="favorite" class="w-6 h-6 text-[#F9B90C] drop-shadow-[0_0_8px_rgba(249,185,12,0.45)]" />
+                                                </div>
+                                            </Tooltip>
+                                        {/if}
                                     </div>
 
                                     <Tooltip text="P{selectedChar?.potential ?? selectedChar?.potentialLevel ?? 0}">

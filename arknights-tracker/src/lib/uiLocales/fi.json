@@ -900,6 +900,7 @@
     "no_saved_tokens": "Ei tallennettuja tokeneita",
     "delete_confirm": "Poistetaanko tämä?",
     "settings_title": "Asetukset",
+    "settings_hide_account": "Piilota tili",
     "settings_hide_data": "Piilota tiedot tulostaululla",
     "settings_hide_uid": "Piilota tilien UID:t",
     "settings_primary_account": "Yhdistä vetotili",

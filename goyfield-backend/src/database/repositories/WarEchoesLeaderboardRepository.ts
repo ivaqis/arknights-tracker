@@ -161,4 +161,8 @@ export class WarEchoesLeaderboardRepository extends Repository {
     public async getCharactersNumberInRecordByGroupId(groupId: string, difficulty: string): Promise<Amount[]> {
         return this._characterTable.getCharactersNumberInRecordByGroupId(groupId, difficulty);
     }
+
+    public async findRunsWithRanksByGameUids(gameUids: string[]) {
+        return this._warEchoesTable.findRunsWithRanksByGameUids(gameUids);
+    }
 }

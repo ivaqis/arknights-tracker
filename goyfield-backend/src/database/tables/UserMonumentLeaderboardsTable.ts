@@ -35,7 +35,8 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 userGameProfile: {
                     serverId: serverId ?? undefined,
                     user: {
-                        isPrivate: false
+                        isPrivate: false,
+                        hideLeaderboard: false
                     }
                 }
             };
@@ -57,7 +58,8 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 userGameProfile: {
                     serverId: serverId ?? undefined,
                     user: {
-                        isPrivate: false
+                        isPrivate: false,
+                        hideLeaderboard: false
                     }
                 }
             };
@@ -272,7 +274,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                                  GROUP BY C3."recordId") CharCount ON CharCount."recordId" = L.id
             WHERE L."dungeonId" = ${dungeonId}
                 ${serverId ? Prisma.sql`AND G."serverId" = ${serverId}` : Prisma.sql``}
-                ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+                ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ", ")})` : Prisma.sql``}
                 ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}
             ${UserMonumentLeaderboardsTable.getOrderSql(sortField, sortOrder)}
@@ -365,7 +367,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                   WHERE l."groupId" = ${groupId}
                     AND l."isHard" = ${isHard}
                       ${serverId ? Prisma.sql`AND game."serverId" = ${serverId}` : Prisma.sql``} 
-                      ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+                      ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                       ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
                       ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}
                   GROUP BY l."userGroupId"
@@ -386,7 +388,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                                  GROUP BY C3."recordId") CharCount ON CharCount."recordId" = L.id
             WHERE L."dungeonId" = ${dungeonId}
                 ${serverId ? Prisma.sql`AND Game."serverId" = ${serverId}` : Prisma.sql``}
-                ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+                ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
                 ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}`;
 
@@ -426,5 +428,83 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 dungeonId
             }
         });
+    }
+
+    public async findRunsWithRanksByGameUids(gameUids: string[]): Promise<{
+        id: string;
+        userGroupId: string;
+        gameUid: string;
+        dungeonId: string;
+        groupId: string;
+        isHard: boolean;
+        clearTimeSec: number;
+        data: string;
+        updatedAt: Date;
+        rank: number;
+        totalCount: number;
+    }[]> {
+        if (gameUids.length === 0) {
+            return [];
+        }
+
+        const query = Prisma.sql`
+            SELECT 
+                l.id,
+                l."userGroupId",
+                l."gameUid",
+                l."dungeonId",
+                l."groupId",
+                l."isHard",
+                l."clearTimeSec",
+                l.data,
+                l."updatedAt",
+                (
+                    SELECT count(*)::integer + 1 
+                    FROM "UserMonumentLeaderboard" l2
+                    LEFT JOIN "UserGameProfile" gp2 ON l2."gameUid" = gp2."gameUid"
+                    LEFT JOIN "User" u2 ON gp2.uid = u2.uid
+                    WHERE l2."dungeonId" = l."dungeonId"
+                      AND ((u2."isPrivate" = false AND u2."hideLeaderboard" = false) OR l2."gameUid" = l."gameUid")
+                      AND l2."clearTimeSec" < l."clearTimeSec"
+                ) as rank,
+                (
+                    SELECT count(*)::integer 
+                    FROM "UserMonumentLeaderboard" l3
+                    LEFT JOIN "UserGameProfile" gp3 ON l3."gameUid" = gp3."gameUid"
+                    LEFT JOIN "User" u3 ON gp3.uid = u3.uid
+                    WHERE l3."dungeonId" = l."dungeonId"
+                      AND ((u3."isPrivate" = false AND u3."hideLeaderboard" = false) OR l3."gameUid" = l."gameUid")
+                ) as total_count
+            FROM "UserMonumentLeaderboard" l
+            WHERE l."gameUid" IN (${Prisma.join(gameUids)})
+        `;
+
+        const rows = await this.prisma.$queryRaw<{
+            id: string;
+            userGroupId: string;
+            gameUid: string;
+            dungeonId: string;
+            groupId: string;
+            isHard: boolean;
+            clearTimeSec: number;
+            data: string;
+            updatedAt: Date;
+            rank: number;
+            total_count: number;
+        }[]>(query);
+
+        return rows.map(r => ({
+            id: r.id,
+            userGroupId: r.userGroupId,
+            gameUid: r.gameUid,
+            dungeonId: r.dungeonId,
+            groupId: r.groupId,
+            isHard: r.isHard,
+            clearTimeSec: r.clearTimeSec,
+            data: r.data,
+            updatedAt: r.updatedAt,
+            rank: Number(r.rank),
+            totalCount: Number(r.total_count)
+        }));
     }
 }

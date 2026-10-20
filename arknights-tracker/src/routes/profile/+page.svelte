@@ -18,6 +18,8 @@
     import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
     import CropModal from "$lib/components/profile/CropModal.svelte";
     import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
+    import MonumentWidget from "$lib/components/profile/MonumentWidget.svelte";
+    import WarEchoesWidget from "$lib/components/profile/WarEchoesWidget.svelte";
     import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import SettingsModal from "$lib/components/profile/SettingsModal.svelte";
     import SyncModal from "$lib/components/profile/SyncModal.svelte";
@@ -66,6 +68,7 @@
     }
     let avatarInput;
     let isPrivate = false;
+    let hideLeaderboard = false;
     let hideUid = true;
     let regHideUid = true;
 
@@ -290,7 +293,8 @@
     }
 
     $: if (profile) {
-        isPrivate = profile.is_private === 1;
+        isPrivate = profile.is_private === 1 || profile.isPrivate === true;
+        hideLeaderboard = profile.hide_leaderboard === 1 || profile.hideLeaderboard === true;
         hideUid = profile.hideUid !== undefined ? profile.hideUid : (profile.hide_uid !== undefined ? profile.hide_uid === 1 : true);
     }
 
@@ -308,6 +312,20 @@
         }
     }
 
+    async function handleToggleHideLeaderboard() {
+        try {
+            const token = await $user.getIdToken();
+            const nextHideLeaderboardVal = !hideLeaderboard;
+            await updateUserProfile(token, profile.name, { hideLeaderboard: nextHideLeaderboardVal });
+            hideLeaderboard = nextHideLeaderboardVal;
+            profile.hide_leaderboard = nextHideLeaderboardVal ? 1 : 0;
+            profile.hideLeaderboard = nextHideLeaderboardVal;
+            addNotification("success", $t("profile.privacy_settings_updated"));
+        } catch (e) {
+            addNotification("error", translateBackendError(e.message));
+        }
+    }
+
     async function handleToggleHideUid() {
         try {
             const token = await $user.getIdToken();
@@ -317,6 +335,38 @@
             profile.hide_uid = nextHideUidVal ? 1 : 0;
             profile.hideUid = nextHideUidVal;
             addNotification("success", $t("profile.privacy_settings_updated"));
+        } catch (e) {
+            addNotification("error", translateBackendError(e.message));
+        }
+    }
+
+    async function handleToggleFavoriteChar(event) {
+        if (!profile) return;
+        const { charId, char, opData } = event.detail;
+        const targetId = opData?.id || charId;
+        const currentFavs = Array.isArray(profile.favoriteChars) ? [...profile.favoriteChars] : [];
+        const isFav = currentFavs.includes(targetId) ||
+            (opData?.id && currentFavs.includes(opData.id)) ||
+            (char?.id && currentFavs.includes(char.id));
+
+        let nextFavs;
+        if (isFav) {
+            nextFavs = currentFavs.filter(id => id !== targetId && id !== opData?.id && id !== char?.id);
+            addNotification("success", $t("profile.favorite_removed"));
+        } else {
+            nextFavs = [...currentFavs, targetId];
+            addNotification("success", $t("profile.favorite_set"));
+        }
+
+        profile.favoriteChars = nextFavs;
+        profile = { ...profile };
+
+        try {
+            const token = await $user.getIdToken();
+            const updated = await updateUserProfile(token, profile.name, { favoriteChars: nextFavs });
+            if (updated) {
+                profile = updated;
+            }
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
         }
@@ -1044,49 +1094,56 @@
             </div>
 
             {#if activeAccount}
-                <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0" in:fade>
-                    
-                    <div class="min-w-0 2xl:col-start-1 2xl:row-start-1">
-                        <AccountSummary 
-                            stats={activeAccount.info?.stats || {}} 
-                            totalCharsCount={Object.keys(characters).length - 1} 
-                            profileBackground={!profile?.background}
-                        />
-                    </div>
+                <div class="flex flex-col gap-6" in:fade>
+                    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
+                        <div class="min-w-0 flex flex-col gap-6">
+                            <AccountSummary 
+                                stats={activeAccount.info?.stats || {}} 
+                                totalCharsCount={Object.keys(characters).length - 1} 
+                                profileBackground={!profile?.background}
+                            />
 
-                    <div class="min-w-0 flex flex-col 2xl:col-start-1 2xl:row-start-2">
-                        {#if activeAccount?.records_uid || activeAccount?.pulls}
-                            <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
-                        {:else}
-                            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
-                                <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/15 dark:border-[#444444]/15'} pb-3">
-                                    {$t("profile.stats")}
-                                </h2>
-                                <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/10 dark:border-[#444444]/20 rounded-lg bg-gray-400/10 dark:bg-[#2e2e2e]/10 text-xs text-gray-500 dark:text-gray-400 px-4">
-                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-70" />
-                                    <p class="italic text-shadow-xl">
-                                        {$t("profile.bind_to_view_luck")}
-                                    </p>
+                            {#if activeAccount?.records_uid || activeAccount?.pulls}
+                                <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
+                            {:else}
+                                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
+                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/15 dark:border-[#444444]/15'} pb-3">
+                                        {$t("profile.stats")}
+                                    </h2>
+                                    <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/10 dark:border-[#444444]/20 rounded-lg bg-gray-400/10 dark:bg-[#2e2e2e]/10 text-xs text-gray-500 dark:text-gray-400 px-4">
+                                        <Icon name="noData" class="w-8 h-8 mb-2 opacity-70" />
+                                        <p class="italic text-shadow-xl">
+                                            {$t("profile.bind_to_view_luck")}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        {/if}
+                            {/if}
+                        </div>
+
+                        <div class="min-w-0 md:col-span-2 2xl:col-span-1">
+                            <OperatorSection
+                                {activeAccount}
+                                profileName={profile?.name}
+                                hasBackground={!!profile?.background}
+                                {hideUid}
+                                accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
+                                favoriteChars={profile?.favoriteChars || []}
+                                canEditFavorite={true}
+                                on:toggleFavorite={handleToggleFavoriteChar}
+                            />
+                        </div>
                     </div>
 
-                    <!--<CrisisContract
-                        contract={activeAccount.info?.contract}
-                        hasBackground={!!profile?.background}
-                    />-->
-
-                    <div class="min-w-0 md:col-span-2 2xl:col-span-1 2xl:col-start-2 2xl:row-start-1 2xl:row-span-2">
-                        <OperatorSection
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                        <MonumentWidget
                             {activeAccount}
-                            profileName={profile?.name}
                             hasBackground={!!profile?.background}
-                            {hideUid}
-                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
+                        />
+                        <WarEchoesWidget
+                            {activeAccount}
+                            hasBackground={!!profile?.background}
                         />
                     </div>
-
                 </div>
             {:else}
                 <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
@@ -1101,6 +1158,7 @@
     <SettingsModal
         isOpen={settingsModalOpen}
         {isPrivate}
+        {hideLeaderboard}
         {hideUid}
         {profile}
         {activeAccount}
@@ -1110,6 +1168,7 @@
         bind:bgSearchQuery
         on:close={() => settingsModalOpen = false}
         on:togglePrivate={handleTogglePrivate}
+        on:toggleHideLeaderboard={handleToggleHideLeaderboard}
         on:toggleHideUid={handleToggleHideUid}
         on:selectRecordsUid={(e) => handleSelectRecordsUid(e.detail)}
         on:selectBackground={(e) => handleSelectBackground(e.detail)}

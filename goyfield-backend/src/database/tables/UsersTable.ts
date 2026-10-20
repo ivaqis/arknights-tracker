@@ -84,9 +84,11 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
             data: {
                 publicUid: record.publicUid.value,
                 isPrivate: record.isPrivate.value,
+                hideLeaderboard: record.hideLeaderboard.value,
                 hideUid: record.hideUid.value,
                 avatarId: record.avatarId.value,
                 backgroundId: record.backgroundId.value,
+                favoriteChars: record.favoriteChars.value,
                 displayAvatar: record.displayAvatar.value,
                 uploadCount: record.uploadCount.value,
                 lastUploadReset: record.lastUploadReset.value

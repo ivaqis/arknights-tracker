@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "저장된 토큰 없음",
     "delete_confirm": "이 저장된 토큰을 삭제하시겠습니까?",
     "settings_title": "프로필 설정",
+    "settings_hide_account": "계정 숨기기",
     "settings_hide_data": "리더보드에서 계정 세부정보 숨기기",
     "settings_hide_uid": "계정 UID 숨기기",
     "settings_primary_account": "뽑기 계정 연동",

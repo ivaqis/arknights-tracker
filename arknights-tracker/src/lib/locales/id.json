@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "Tidak ada token tersimpan",
     "delete_confirm": "Hapus token ini?",
     "settings_title": "Pengaturan Profil",
+    "settings_hide_account": "Sembunyikan akun",
     "settings_hide_data": "Sembunyikan detail akun di papan peringkat",
     "settings_hide_uid": "Sembunyikan UID akun",
     "settings_primary_account": "Tautkan Akun Tarikan",

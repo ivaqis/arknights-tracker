@@ -900,6 +900,7 @@
     "no_saved_tokens": "Brak zapisanych tokenów",
     "delete_confirm": "Usunąć ten token?",
     "settings_title": "Ustawienia Profilu",
+    "settings_hide_account": "Ukryj konto",
     "settings_hide_data": "Ukryj dane w tabeli",
     "settings_hide_uid": "Ukryj UID kont",
     "settings_primary_account": "Połącz Konto Losowań",

@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "Nessun token salvato",
     "delete_confirm": "Eliminare questo token salvato?",
     "settings_title": "Impostazioni Profilo",
+    "settings_hide_account": "Nascondi account",
     "settings_hide_data": "Nascondi i dettagli dell'account nella classifica",
     "settings_hide_uid": "Nascondi gli UID degli account",
     "settings_primary_account": "Collega Account Pull",

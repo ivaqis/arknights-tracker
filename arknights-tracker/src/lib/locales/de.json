@@ -3578,6 +3578,7 @@
     "no_saved_tokens": "Keine gespeicherten Tokens",
     "delete_confirm": "Dieses gespeicherte Token löschen?",
     "settings_title": "Profileinstellungen",
+    "settings_hide_account": "Konto verbergen",
     "settings_hide_data": "Kontodetails auf der Bestenliste verbergen",
     "settings_hide_uid": "Konto-UIDs verbergen",
     "settings_primary_account": "Ziehungen-Konto verknüpfen",

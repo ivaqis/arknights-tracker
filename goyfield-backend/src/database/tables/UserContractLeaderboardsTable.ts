@@ -38,7 +38,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                 userGameProfile: {
                     serverId: serverId ?? undefined,
                     user: {
-                        isPrivate: false
+                        isPrivate: false,
+                        hideLeaderboard: false
                     }
                 }
             };

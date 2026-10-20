@@ -7,6 +7,8 @@
     import Modal from "$lib/components/modals/Modal.svelte";
     import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
     import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
+    import MonumentWidget from "$lib/components/profile/MonumentWidget.svelte";
+    import WarEchoesWidget from "$lib/components/profile/WarEchoesWidget.svelte";
     import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import RatingCard from "$lib/components/records/RatingCard.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -315,38 +317,46 @@
             </div>
 
             {#if activeAccount}
-                <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0" in:fade>
-                    
-                    <div class="min-w-0 2xl:col-start-1 2xl:row-start-1">
-                        <AccountSummary 
-                            stats={activeAccount.info?.stats || {}} 
-                            totalCharsCount={Object.keys(characters).length - 1} 
-                            profileBackground={!profile?.background}
-                        />
+                <div class="flex flex-col gap-6" in:fade>
+                    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
+                        <div class="min-w-0 flex flex-col gap-6">
+                            <AccountSummary 
+                                stats={activeAccount.info?.stats || {}} 
+                                totalCharsCount={Object.keys(characters).length - 1} 
+                                profileBackground={!profile?.background}
+                            />
+
+                            {#if activeAccount?.records_uid || activeAccount?.pulls}
+                                <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
+                            {/if}
+                        </div>
+
+                        <div class="min-w-0 md:col-span-2 2xl:col-span-1">
+                            <OperatorSection
+                                {activeAccount}
+                                profileName={profile?.name || username}
+                                hasBackground={!!profile?.background}
+                                initialCharId={initialChar}
+                                hideUid={isUidHidden}
+                                accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
+                                favoriteChars={profile?.favoriteChars || []}
+                                canEditFavorite={false}
+                            />
+                        </div>
                     </div>
 
-                    {#if activeAccount?.records_uid || activeAccount?.pulls}
-                        <div class="min-w-0 flex flex-col 2xl:col-start-1 2xl:row-start-2">
-                            <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
+                    {#if !profile?.hideLeaderboard && !profile?.isPrivate}
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                            <MonumentWidget
+                                {activeAccount}
+                                hasBackground={!!profile?.background}
+                            />
+                            <WarEchoesWidget
+                                {activeAccount}
+                                hasBackground={!!profile?.background}
+                            />
                         </div>
                     {/if}
-
-                    <!--<CrisisContract
-                        contract={activeAccount.info?.contract}
-                        hasBackground={!!profile?.background}
-                    />-->
-
-                    <div class="min-w-0 md:col-span-2 2xl:col-span-1 2xl:col-start-2 2xl:row-start-1 2xl:row-span-2">
-                        <OperatorSection
-                            {activeAccount}
-                            profileName={profile?.name || username}
-                            hasBackground={!!profile?.background}
-                            initialCharId={initialChar}
-                            hideUid={isUidHidden}
-                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
-                        />
-                    </div>
-
                 </div>
             {:else}
                 <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>

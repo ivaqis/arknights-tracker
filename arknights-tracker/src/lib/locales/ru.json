@@ -3785,6 +3785,7 @@
     "no_saved_tokens": "Нет сохраненных токенов",
     "delete_confirm": "Удалить этот сохраненный токен?",
     "settings_title": "Настройки профиля",
+    "settings_hide_account": "Скрывать аккаунт",
     "settings_hide_data": "Скрыть данные аккаунта в лидерборде",
     "settings_hide_uid": "Скрывать UID аккаунтов",
     "settings_primary_account": "Привязать аккаунт с крутками",

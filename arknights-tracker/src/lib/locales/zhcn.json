@@ -3617,6 +3617,7 @@
     "no_saved_tokens": "没有已保存的 token",
     "delete_confirm": "删除此保存的 token？",
     "settings_title": "资料设置",
+    "settings_hide_account": "隐藏账户",
     "settings_hide_data": "在排行榜上隐藏账户详情",
     "settings_hide_uid": "隐藏账户 UID",
     "settings_primary_account": "绑定抽卡账户",

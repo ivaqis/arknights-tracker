@@ -56,7 +56,7 @@ export class GetWarEchoesGroupRun extends Controller<
             throw new Error(`Found game profile but not found user profile: gameUid: ${gameUid} / uid: ${gameProfile.uid}`);
         }
 
-        if (profile.isPrivate.initValue && (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid)) {
+        if ((profile.isPrivate.initValue || profile.hideLeaderboard.initValue) && (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid)) {
             this.status = 403;
             this.message = "No access";
 

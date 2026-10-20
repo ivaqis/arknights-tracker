@@ -111,7 +111,7 @@ export class UserWarEchoesGroupsTable extends Table<Prisma.UserWarEchoesGroupDel
             WHERE Gr."groupId" = ${groupId}
               AND Gr."difficulty" = ${difficulty}
               ${serverId ? Prisma.sql`AND G."serverId" = ${serverId}` : Prisma.sql``}
-              ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+              ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
               AND R.record_count >= ${minCountInGroup}
               ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ", ")})` : Prisma.sql``}
               ${filters.charCount ? Prisma.sql`AND CharCount.char_count IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}

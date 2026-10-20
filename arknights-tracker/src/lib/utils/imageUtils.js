@@ -101,7 +101,8 @@ const WEAPON_ATTACK_ICON_MAP = {
     lance: 'icon_attack_lance',
     artsUnit: 'icon_attack_funnel',
     funnel: 'icon_attack_funnel',
-    pistol: 'icon_attack_pistol'
+    pistol: 'icon_attack_pistol',
+    handcannon: 'icon_attack_pistol'
 };
 
 export function resolveSkillIconName(idOrName) {

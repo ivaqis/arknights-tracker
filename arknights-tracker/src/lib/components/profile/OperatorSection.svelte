@@ -6,6 +6,7 @@
     import Image from "$lib/components/Image.svelte";
     import OperatorDetailsCard from "$lib/components/profile/OperatorDetailsCard.svelte";
     import CardImageModal from "$lib/components/profile/CardImageModal.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
     import {
         charOrderMap,
         getOperatorData,
@@ -27,6 +28,16 @@
     export let profileName = "";
     export let hideUid = false;
     export let accountSlot = 1;
+    export let favoriteChars = [];
+    export let canEditFavorite = false;
+
+    function isCharFavorite(char, list) {
+        if (!list || !list.length) return false;
+        const op = getOperatorData(char);
+        const sId = getSvelteCharId(char);
+        const rawId = char?.id || char?.charId || char?.charData?.id;
+        return list.includes(op?.id) || list.includes(sId) || (rawId && list.includes(rawId));
+    }
 
     let selectedOperatorId = null;
 
@@ -50,6 +61,11 @@
     $: sortedChars = (() => {
         const chars = activeAccount?.info?.chars || [];
         return [...chars].sort((a, b) => {
+            const aFav = isCharFavorite(a, favoriteChars);
+            const bFav = isCharFavorite(b, favoriteChars);
+            if (aFav !== bFav) {
+                return aFav ? -1 : 1;
+            }
             const aData = getOperatorData(a);
             const bData = getOperatorData(b);
             const aRarity = aData?.rarity || 0;
@@ -250,6 +266,7 @@
             {#each sortedChars as char}
                 {@const opData = getOperatorData(char)}
                 {@const isSelected = char.id === selectedOperatorId}
+                {@const isFav = isCharFavorite(char, favoriteChars)}
                 <div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
                     <button
                         on:click={() => selectedOperatorId = char.id}
@@ -258,6 +275,13 @@
                     >
                         <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
                     </button>
+                    {#if isFav}
+                        <div class="absolute -top-0 -left-0 z-10 flex items-center justify-center">
+                            <div class="flex items-center justify-center">
+                                <Icon name="favorite" class="w-3 h-3 text-[#F9B90C]" />
+                            </div>
+                        </div>
+                    {/if}
                     <div class="absolute -bottom-1 -right-1 z-10 px-1 py-0.5 text-[12px] text-white bg-black/40 rounded-md leading-none font-nums select-none shadow-xl">
                         {char.level}
                     </div>
@@ -289,6 +313,9 @@
                     {profileName}
                     {hideUid}
                     {accountSlot}
+                    {favoriteChars}
+                    {canEditFavorite}
+                    on:toggleFavorite
                     on:openPhotoModal={handleOpenPhotoModal}
                 />
             {/key}

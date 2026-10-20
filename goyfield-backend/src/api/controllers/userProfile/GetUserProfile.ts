@@ -2,7 +2,7 @@ import { authenticator, database } from "@/serviceInstances.js";
 import { ResponseBody } from "@api/contracts/ResponseBody.js";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery.js";
 import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse.js";
-import { IGameProfile } from "@api/contracts/userProfile/IGameProfile.js";
+import { IGameProfile, IMonumentProfileRun, IWarEchoesProfileRun } from "@api/contracts/userProfile/IGameProfile.js";
 import { Controller } from "@api/controllers/Controller.js";
 import { Database } from "@database/Database.js";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
@@ -49,15 +49,25 @@ export class GetUserProfile extends Controller<
     public static getRespData(record: UserRecord,
                               gameProfiles: GameProfileEntity[],
                               contractRecords: Record<string, ContractRecord | null>,
-                              pullsStats: Record<string, PullProfileEntity | null>
+                              pullsStats: Record<string, PullProfileEntity | null>,
+                              monumentMap: Record<string, IMonumentProfileRun[]> = {},
+                              warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
     ): GetUserProfileResponse {
         return {
             publicUid: record.publicUid.initValue,
             isPrivate: record.isPrivate.initValue,
+            hideLeaderboard: record.hideLeaderboard.initValue,
             hideUid: record.hideUid.initValue,
             avatarId: record.avatarId.initValue,
             backgroundId: record.backgroundId.initValue,
-            gameProfiles: this.getGameProfiles(gameProfiles, contractRecords, pullsStats)
+            favoriteChars: (() => {
+                try {
+                    return record.favoriteChars.initValue ? JSON.parse(record.favoriteChars.initValue) : [];
+                } catch {
+                    return [];
+                }
+            })(),
+            gameProfiles: this.getGameProfiles(gameProfiles, contractRecords, pullsStats, monumentMap, warEchoesMap)
         };
     }
 
@@ -81,20 +91,83 @@ export class GetUserProfile extends Controller<
         return result;
     }
 
+    public static async getMonumentRuns(database: Database, gameUids: string[]): Promise<Record<string, IMonumentProfileRun[]>> {
+        if (gameUids.length === 0) return {};
+        const runs = await database.monumentLeaderboard.findRunsWithRanksByGameUids(gameUids);
+        const map: Record<string, IMonumentProfileRun[]> = {};
+        for (const run of runs) {
+            if (!map[run.gameUid]) map[run.gameUid] = [];
+            let parsedChars: any[] = [];
+            let parsedTs = "";
+            try {
+                const parsed = JSON.parse(run.data);
+                parsedChars = parsed.chars || [];
+                parsedTs = parsed.ts || "";
+            } catch {}
+            map[run.gameUid].push({
+                id: run.id,
+                dungeonId: run.dungeonId,
+                groupId: run.groupId,
+                isHard: run.isHard,
+                clearTimeSec: run.clearTimeSec,
+                rank: run.rank,
+                totalCount: run.totalCount,
+                ts: parsedTs,
+                chars: parsedChars,
+                updatedAt: run.updatedAt
+            });
+        }
+        return map;
+    }
+
+    public static async getWarEchoesRuns(database: Database, gameUids: string[]): Promise<Record<string, IWarEchoesProfileRun[]>> {
+        if (gameUids.length === 0) return {};
+        const runs = await database.warEchoesLeaderboard.findRunsWithRanksByGameUids(gameUids);
+        const map: Record<string, IWarEchoesProfileRun[]> = {};
+        for (const run of runs) {
+            if (!map[run.gameUid]) map[run.gameUid] = [];
+            let parsedChars: any[] = [];
+            let parsedTs = "";
+            try {
+                const parsed = JSON.parse(run.data);
+                parsedChars = parsed.chars || [];
+                parsedTs = parsed.ts || "";
+            } catch {}
+            map[run.gameUid].push({
+                id: run.id,
+                dungeonId: run.dungeonId,
+                groupId: run.groupId,
+                difficulty: run.difficulty,
+                clearTimeSec: run.clearTimeSec,
+                rank: run.rank,
+                totalCount: run.totalCount,
+                ts: parsedTs,
+                chars: parsedChars,
+                updatedAt: run.updatedAt
+            });
+        }
+        return map;
+    }
+
     private static getGameProfiles(gameProfiles: GameProfileEntity[],
                                    contractRecords: Record<string, ContractRecord | null>,
-                                   pullsStats: Record<string, PullProfileEntity | null>
+                                   pullsStats: Record<string, PullProfileEntity | null>,
+                                   monumentMap: Record<string, IMonumentProfileRun[]> = {},
+                                   warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
     ): IGameProfile[] {
         const result: IGameProfile[] = [];
 
         for (const gameProfile of gameProfiles) {
-            const record = contractRecords[gameProfile.base.roleId];
-            const pulls = pullsStats[gameProfile.base.roleId];
+            const roleId = gameProfile.base.roleId;
+            const record = contractRecords[roleId];
+            const pulls = pullsStats[roleId];
 
             result.push({
                 gameProfile: gameProfile,
                 contract: record?.getEntity() ?? null,
-                pulls: pulls
+                pulls: pulls,
+                monument: monumentMap[roleId] || [],
+                warEchoes: warEchoesMap[roleId] || []
             });
         }
 
@@ -116,20 +189,26 @@ export class GetUserProfile extends Controller<
             return;
         }
 
-        if (profile.isPrivate.initValue && (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid)) {
+        const isOwner = !!firebaseUid && profile.firebaseUid.initValue === firebaseUid;
+
+        if (profile.isPrivate.initValue && !isOwner) {
             this.status = 403;
             this.message = "User profile is private";
 
             return;
         }
 
+        const hideLeaderboard = (profile.isPrivate.initValue || profile.hideLeaderboard.initValue) && !isOwner;
+
         const gameProfiles = await this._database.gameProfiles.findByUid(profile.uid);
         const gameProfilesData = gameProfiles.map(profile => profile.data.getEntity());
         const gameUids = gameProfilesData.map(profile => profile.base.roleId);
-        const bestRecords = await this.getBestRecords(gameUids);
+        const bestRecords = hideLeaderboard ? {} : await this.getBestRecords(gameUids);
         const pullStats = await GetUserProfile.getPullsStats(this._database, gameProfiles);
+        const monumentMap = hideLeaderboard ? {} : await GetUserProfile.getMonumentRuns(this._database, gameUids);
+        const warEchoesMap = hideLeaderboard ? {} : await GetUserProfile.getWarEchoesRuns(this._database, gameUids);
 
-        this.data = GetUserProfile.getRespData(profile, gameProfilesData, bestRecords, pullStats);
+        this.data = GetUserProfile.getRespData(profile, gameProfilesData, bestRecords, pullStats, monumentMap, warEchoesMap);
     }
 
     private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
