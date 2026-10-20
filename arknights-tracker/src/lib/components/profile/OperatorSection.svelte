@@ -253,7 +253,7 @@
 </script>
 
 <div class="w-full min-w-0">
-    <div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
+    <div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-[7px] shadow-sm min-w-0 overflow-hidden">
         <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/15 dark:border-[#444444]/15'} pb-3 mb-3">
             <div class="flex gap-2">
                 <Icon name="operators" class="w-6 h-6 text-[#21272C] dark:text-[#FDFDFD]" />

@@ -221,6 +221,7 @@ export function updateLocaleFont(uiCode: string, mainCode?: string) {
         linkElem = document.createElement("link");
         linkElem.id = linkId;
         linkElem.rel = "stylesheet";
+        linkElem.crossOrigin = "anonymous";
         document.head.appendChild(linkElem);
     }
     if (linkElem.href !== fontConfig.url) {

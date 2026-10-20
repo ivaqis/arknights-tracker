@@ -110,9 +110,14 @@
         }
         return ['empty', 'empty', 'empty'];
     }
+
+    function cleanStageName(name) {
+        if (!name) return "";
+        return name.replace(/[:—\-\u00a0·]+\s*(Normal|Hard|Brutal|обычная|сложная|жестокая|обычный|сложный|жестокий|普通|困难|残酷|困難|殘酷).*$/i, '').trim();
+    }
 </script>
 
-<div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-5 flex flex-col w-full backdrop-blur-sm shadow-sm min-w-0">
+<div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-5 flex flex-col w-full backdrop-blur-[6px] shadow-sm min-w-0">
     <h2 class="text-2xl font-bold text-[#21272C] dark:text-white font-sdk">
         {$t("leaderboard.echoesOfWar")}
     </h2>
@@ -142,12 +147,14 @@
                             {@const brutalRun = findWarEchoesRun(stage.brutalId, 'brutal', week.id)}
                             {@const stars = getWarEchoesStars(normalRun, hardRun, brutalRun)}
                             {@const bestRun = brutalRun || hardRun || normalRun}
+                            {@const runDiff = brutalRun ? 'brutal' : (hardRun ? 'hard' : (normalRun ? 'normal' : 'brutal'))}
                             <DungeonRunCard
                                 index={i + 1}
-                                title={$t(`warEchoesStages.${stage.id}`)}
+                                title={cleanStageName($t(`warEchoesStages.${stage.id}`))}
                                 run={bestRun}
                                 {stars}
                                 {hasBackground}
+                                leaderboardUrl={`/leaderboard?event=echoesOfWar&season=${selectedWarEchoesSeason}&cycle=${week.id}&stage=${stage.id}&diff=${runDiff}`}
                             />
                         {/each}
                     </div>

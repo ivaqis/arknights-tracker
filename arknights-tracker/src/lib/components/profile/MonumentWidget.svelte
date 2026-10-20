@@ -95,7 +95,7 @@
     $: accountChars = activeAccount?.info?.chars || activeAccount?.chars || [];
 </script>
 
-<div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-5 flex flex-col w-full backdrop-blur-sm shadow-sm min-w-0">
+<div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-5 flex flex-col w-full backdrop-blur-[7px] shadow-sm min-w-0">
     <h2 class="text-2xl font-bold text-[#21272C] dark:text-white font-sdk">
         {$t("leaderboard.monument")}
     </h2>
@@ -132,6 +132,7 @@
                     title={$t(`monumentStages.${stage.id}`)}
                     run={stageRun}
                     {hasBackground}
+                    leaderboardUrl={`/leaderboard?event=monument&group=${currentGroup.id}&stage=${stage.id}&agony=${isAgony}`}
                 />
             {/each}
         {:else}

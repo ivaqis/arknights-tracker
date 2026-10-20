@@ -10,6 +10,7 @@
     export let run = null;
     export let stars = null;
     export let hasBackground = false;
+    export let leaderboardUrl = "";
 
     function getSvelteCharId(char) {
         if (!char) return "";
@@ -63,14 +64,39 @@
         {/if}
 
         <div class="flex flex-col min-w-0 justify-center gap-1">
-            <span class="font-bold text-xs sm:text-sm text-gray-900 dark:text-white truncate">
-                {title}
-            </span>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+                <span class="font-bold text-xs sm:text-sm text-gray-900 dark:text-white truncate">
+                    {title}
+                </span>
+                {#if stars && Array.isArray(stars)}
+                    <div class="flex sm:hidden items-center gap-0.5 shrink-0">
+                        {#each stars as star}
+                            {#if star === 'yellow'}
+                                <Icon name="echoStarCompl" class="w-3.5 h-3.5 shrink-0" />
+                            {:else if star === 'white'}
+                                <Icon name="echoStarWhite" class="w-3.5 h-3.5 shrink-0 text-gray-900 dark:text-white" />
+                            {:else}
+                                <Icon name="echoStar" class="w-3.5 h-3.5 shrink-0 text-gray-300 dark:text-white/40" />
+                            {/if}
+                        {/each}
+                    </div>
+                {/if}
+            </div>
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-x-2 gap-y-0.5 min-w-0">
                 {#if run}
-                    <span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 {getRankTagStyle(run.rank)}">
-                        #{run.rank}/{run.totalCount}
-                    </span>
+                    {#if leaderboardUrl}
+                        <a
+                            href={leaderboardUrl}
+                            class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 transition-transform active:scale-95 hover:opacity-90 cursor-pointer {getRankTagStyle(run.rank)}"
+                            title={$t("navigation.leaderboard")}
+                        >
+                            #{run.rank}/{run.totalCount}
+                        </a>
+                    {:else}
+                        <span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 {getRankTagStyle(run.rank)}">
+                            #{run.rank}/{run.totalCount}
+                        </span>
+                    {/if}
                     <span class="font-bold font-nums text-xs sm:text-sm text-[#FFE145] shrink-0">
                         {formatTime(run.clearTimeSec)}
                     </span>
@@ -83,7 +109,7 @@
 
     <div class="flex items-center gap-3 sm:gap-4 shrink-0">
         {#if stars && Array.isArray(stars)}
-            <div class="flex items-center gap-1 shrink-0">
+            <div class="hidden sm:flex items-center gap-1 shrink-0">
                 {#each stars as star}
                     {#if star === 'yellow'}
                         <Icon name="echoStarCompl" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />

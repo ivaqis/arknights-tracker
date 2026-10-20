@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import { browser } from "$app/environment";
+    import { page } from "$app/stores";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { fetchLeaderboard, fetchLeaderboardRun, getAvatarUrl } from "$lib/api.js";
@@ -119,25 +120,35 @@
     let currentPage = 1;
     let pageSize = (browser && typeof localStorage !== "undefined" && Number(localStorage.getItem("leaderboard_page_size"))) || 20;
     if (![10, 20, 50].includes(pageSize)) pageSize = 20;
-    let selectedEvent = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_event"))
+    const initialParams = browser ? new URLSearchParams(window.location.search) : null;
+    let selectedEvent = initialParams?.get("event")
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_event"))
         || "monument";
-    let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
+    let selectedMonumentGroup = initialParams?.get("group")
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
         || (monumentGroups[0]?.id)
         || "indie_group_h07";
-    let selectedStageId = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_stage_id"))
+    let selectedStageId = (selectedEvent === "monument" ? initialParams?.get("stage") : null)
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_stage_id"))
         || (monumentGroups[0]?.stages[0]?.id)
         || "indie_hard029";
-    let isAgony = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_is_agony") !== null)
-        ? localStorage.getItem("leaderboard_is_agony") === "true"
-        : true;
-    let selectedWarEchoesSeason = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_season"))
+    let isAgony = initialParams?.has("agony")
+        ? initialParams.get("agony") === "true"
+        : ((browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_is_agony") !== null)
+            ? localStorage.getItem("leaderboard_is_agony") === "true"
+            : true);
+    let selectedWarEchoesSeason = (selectedEvent === "echoesOfWar" ? initialParams?.get("season") : null)
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_season"))
         || (warEchoesSeasons[0]?.id)
         || "4";
-    let selectedWarEchoesCycle = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_cycle"))
+    let selectedWarEchoesCycle = (selectedEvent === "echoesOfWar" ? initialParams?.get("cycle") : null)
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_cycle"))
         || "1";
-    let selectedWarEchoesDifficulty = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_diff"))
+    let selectedWarEchoesDifficulty = (selectedEvent === "echoesOfWar" ? initialParams?.get("diff") : null)
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_diff"))
         || "brutal";
-    let selectedWarEchoesStageId = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_stage"))
+    let selectedWarEchoesStageId = (selectedEvent === "echoesOfWar" ? initialParams?.get("stage") : null)
+        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_stage"))
         || (warEchoesSeasons[0]?.weeks?.[0]?.stages?.[0]?.id)
         || "indie_battletower012";
     let serverFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_server"))
@@ -145,6 +156,34 @@
     let teamSizeFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_team_size"))
         ? Number(localStorage.getItem("leaderboard_team_size"))
         : null;
+
+    let lastHandledSearch = browser ? window.location.search : "";
+    $: if (browser && $page?.url?.search && $page.url.search !== lastHandledSearch) {
+        lastHandledSearch = $page.url.search;
+        const p = $page.url.searchParams;
+        const ev = p.get("event");
+        if (ev === "monument" || ev === "echoesOfWar") {
+            selectedEvent = ev;
+        }
+        if (selectedEvent === "echoesOfWar" || ev === "echoesOfWar") {
+            const season = p.get("season");
+            if (season) selectedWarEchoesSeason = season;
+            const cycle = p.get("cycle");
+            if (cycle) selectedWarEchoesCycle = cycle;
+            const diff = p.get("diff");
+            if (diff && ["normal", "hard", "brutal"].includes(diff)) selectedWarEchoesDifficulty = diff;
+            const stage = p.get("stage");
+            if (stage) selectedWarEchoesStageId = stage;
+        } else if (selectedEvent === "monument" || ev === "monument") {
+            const group = p.get("group");
+            if (group) selectedMonumentGroup = group;
+            const stage = p.get("stage");
+            if (stage) selectedStageId = stage;
+            if (p.has("agony")) {
+                isAgony = p.get("agony") === "true";
+            }
+        }
+    }
 
     $: totalPages = Math.max(1, Math.ceil(totalEntries / pageSize));
 

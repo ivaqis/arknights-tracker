@@ -144,7 +144,7 @@
 </script>
 
 <div class="w-full">
-    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col`}>
+    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-[7px] shadow-sm flex flex-col`}>
         {#if !hideHeader}
             <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
                 <div class="flex items-center gap-2">
@@ -199,7 +199,7 @@
                 </div>
             {/if}
         {:else}
-            <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50/20 dark:bg-[#2C2C2C]/20 rounded-2xl border border-gray-100/50 dark:border-[#444444]/50 w-full backdrop-blur-sm">
+            <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50/20 dark:bg-[#2C2C2C]/20 rounded-2xl border border-gray-100/50 dark:border-[#444444]/50 w-full backdrop-blur-[7px]">
                 <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
                 <p class="text-sm">
                     {$t("emptyState.noData") || "No records found"}
