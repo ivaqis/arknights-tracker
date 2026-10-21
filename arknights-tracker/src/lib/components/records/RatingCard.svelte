@@ -140,7 +140,9 @@
     let serverData = null;
     let lastFetchKey = "";
 
-    $: if (currentProfileStat) {
+    $: if (isProfile || profileStats !== undefined) {
+        serverData = currentProfileStat || null;
+    } else if (currentProfileStat) {
         serverData = currentProfileStat;
     } else if (browser && activeTab) {
         const queryType = activeTab === "total" ? "all" : activeTab;
@@ -191,12 +193,12 @@
     $: rankLuck5 = parseRating(serverData?.luck5?.rating ?? serverData?.rankLuck5);
     $: totalUsers = serverData?.totalUsers || 0;
 
-    $: displayTotal = serverData?.totalPulls?.count ?? serverData?.myStats?.total ?? localStats.total;
-    $: displayAvg6 = serverData?.luck6?.avg ?? serverData?.myStats?.avg6 ?? localStats.avg6;
-    $: displayAvg5 = serverData?.luck5?.avg ?? serverData?.myStats?.avg5 ?? localStats.avg5;
+    $: displayTotal = serverData?.totalPulls?.count ?? serverData?.myStats?.total ?? (isProfile || profileStats !== undefined ? 0 : localStats.total);
+    $: displayAvg6 = serverData?.luck6?.avg ?? serverData?.myStats?.avg6 ?? (isProfile || profileStats !== undefined ? "0.0" : localStats.avg6);
+    $: displayAvg5 = serverData?.luck5?.avg ?? serverData?.myStats?.avg5 ?? (isProfile || profileStats !== undefined ? "0.0" : localStats.avg5);
     $: displayWinRate = serverData?.luck5050?.winRate !== undefined && serverData?.luck5050?.winRate !== null
         ? (serverData.luck5050.winRate * 100).toFixed(1)
-        : (serverData?.myStats?.winRate ?? localStats.winRate);
+        : (serverData?.myStats?.winRate ?? (isProfile || profileStats !== undefined ? "0.0" : localStats.winRate));
 
     const getRankValue = (rank) => {
         if (rank === null) return null;
@@ -227,9 +229,9 @@
 
 <div
     class="rounded-xl p-6 shadow-sm h-full min-w-0 border
-  {hideBorders 
-    ? 'bg-white/5 dark:bg-[#383838]/5 border-white/10 backdrop-blur-sm' 
-    : 'bg-white dark:bg-[#383838] dark:border-[#444444] border-gray-100 dark:border-[#444444]'}"
+    {hideBorders 
+        ? 'bg-white/5 dark:bg-[#383838]/5 border-white/10 backdrop-blur-[6px]' 
+        : 'bg-white dark:bg-[#383838] dark:border-[#444444] border-gray-100'}"
 >
     <div class="flex justify-between items-center mb-4 relative z-20">
         <h3 class="text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]">
@@ -303,7 +305,7 @@
     <div class="space-y-6">
 
         {#if activeTab !== 'new-player'}
-            <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
+            <div class="flex justify-between items-center border-b {hideBorders ? 'border-gray-100/20 dark:border-[#444444]/30' : 'border-gray-100 dark:border-[#444444]'} pb-4 h-[72px]">
                 <div class="flex flex-col justify-center">
                     <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">{$t("page.rating.luckyTotal")}</div>
                     {#if rankTotal !== null}
@@ -338,7 +340,7 @@
         {/if}
 
         {#if activeTab !== 'standard' && activeTab !== 'new-player' && activeTab !== 'joint'}
-            <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
+            <div class="flex justify-between items-center border-b {hideBorders ? 'border-gray-100/20 dark:border-[#444444]/30' : 'border-gray-100 dark:border-[#444444]'} pb-4 h-[72px]">
                 <div class="flex flex-col justify-center">
                     <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">
                         {#if activeTab.includes('weap')}
@@ -378,7 +380,7 @@
             </div>
         {/if}
 
-        <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
+        <div class="flex justify-between items-center border-b {hideBorders ? 'border-gray-100/20 dark:border-[#444444]/30' : 'border-gray-100 dark:border-[#444444]'} pb-4 h-[72px]">
             <div class="flex flex-col justify-center">
                 <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
                     {$t("page.rating.lucky6")} 6
@@ -418,7 +420,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between items-center {showTabs ? 'dark:border-[#444444] border-b pb-4 h-[72px]' : ' h-[62px]'} {hideBorders ? 'border-gray-100/20' : 'border-gray-100'}">
+        <div class="flex justify-between items-center {showTabs ? 'border-b pb-4 h-[72px]' : ' h-[62px]'} {hideBorders ? 'border-gray-100/20 dark:border-[#444444]/30' : 'border-gray-100 dark:border-[#444444]'}">
             <div class="flex flex-col justify-center">
                 <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
                     {$t("page.rating.lucky5")} 5

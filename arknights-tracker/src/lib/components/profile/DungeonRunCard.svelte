@@ -3,6 +3,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import { characters } from "$lib/data/characters.js";
 
     export let index = 1;
@@ -141,6 +142,9 @@
                                 <div class="absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
                                 <div class="absolute bottom-0 left-1 skew-x-12 pointer-events-none select-none">
                                     <span class="text-[10px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
+                                </div>
+                                <div class="absolute top-0.5 right-0.5 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                                    <PotentialIcon pot={charPot} size={18} />
                                 </div>
                             </div>
                         </div>

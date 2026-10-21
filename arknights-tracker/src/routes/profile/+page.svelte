@@ -83,11 +83,16 @@
 
     $: primaryAccountOptions = [
         { value: "", label: $t("profile.settings_primary_account_none") },
-        ...($accounts || []).map(a => ({
-            value: a.id,
-            label: a.name || $t("settings.defaultAccountName"),
-            subLabel: getServerLabel(a.serverId || "3")
-        }))
+        ...($accounts || []).map(a => {
+            const hasPulls = !!(a.serverUid || (typeof window !== "undefined" && localStorage.getItem(`ark_banner_private_id_${a.id}`)));
+            return {
+                value: a.id,
+                label: a.name || $t("settings.defaultAccountName"),
+                subLabel: hasPulls
+                    ? getServerLabel(a.serverId || "3")
+                    : `${getServerLabel(a.serverId || "3")} • ${$t("page.rating.noData")}`
+            };
+        })
     ];
 
     $: activeAccountPullsAccountId = (() => {
@@ -112,7 +117,8 @@
         if (typeof window !== "undefined" && activeAccount.pulls?.profileId) {
             const targetPub = activeAccount.pulls.profileId;
             const byPub = allAccs.find(a => {
-                const pId = localStorage.getItem(`ark_banner_public_id_${a.id}`) ||
+                const pId = a.publicServerUid ||
+                            localStorage.getItem(`ark_banner_public_id_${a.id}`) ||
                             (a.serverUid ? localStorage.getItem(`ark_banner_public_id_${a.serverUid}`) : null);
                 return pId === targetPub;
             });
@@ -124,7 +130,7 @@
             if (byGameUid) return byGameUid.id;
 
             if (typeof window !== "undefined") {
-                const accsWithPulls = allAccs.filter(a => localStorage.getItem(`ark_banner_private_id_${a.id}`));
+                const accsWithPulls = allAccs.filter(a => a.serverUid || localStorage.getItem(`ark_banner_private_id_${a.id}`));
                 if (accsWithPulls.length === 1) return accsWithPulls[0].id;
             }
         }
@@ -250,10 +256,9 @@
             if (recordsUid) {
                 const targetAccount = ($accounts || []).find(a => a.id === recordsUid || (a.serverUid && a.serverUid === recordsUid));
                 const targetAccId = targetAccount ? targetAccount.id : recordsUid;
-                let privateId = null;
-                if (typeof window !== "undefined") {
+                let privateId = targetAccount?.serverUid || null;
+                if (!privateId && typeof window !== "undefined") {
                     privateId = localStorage.getItem(`ark_banner_private_id_${targetAccId}`) ||
-                        (targetAccount?.serverUid ? localStorage.getItem(`ark_banner_private_id_${targetAccount.serverUid}`) : null) ||
                         localStorage.getItem(`ark_banner_private_id_${recordsUid}`) ||
                         localStorage.getItem("ark_banner_private_id_main") ||
                         null;
@@ -266,6 +271,7 @@
                 activeAccount.records_uid = recordsUid;
                 if (typeof window !== "undefined") {
                     localStorage.setItem(`ark_banner_linked_acc_${activeAccount.game_uid}`, targetAccId);
+                    localStorage.setItem(`ark_banner_private_id_${targetAccId}`, privateId);
                 }
             } else {
                 await unlinkUserPulls(token, activeAccount.game_uid);
@@ -1095,8 +1101,8 @@
 
             {#if activeAccount}
                 <div class="flex flex-col gap-6" in:fade>
-                    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
-                        <div class="min-w-0 flex flex-col gap-6">
+                    <div class="grid grid-cols-1 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
+                        <div class="min-w-0 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-1 gap-6 items-start">
                             <AccountSummary 
                                 stats={activeAccount.info?.stats || {}} 
                                 totalCharsCount={Object.keys(characters).length - 1} 
@@ -1120,7 +1126,7 @@
                             {/if}
                         </div>
 
-                        <div class="min-w-0 md:col-span-2 2xl:col-span-1">
+                        <div class="min-w-0 flex flex-col gap-6">
                             <OperatorSection
                                 {activeAccount}
                                 profileName={profile?.name}
@@ -1131,18 +1137,18 @@
                                 canEditFavorite={true}
                                 on:toggleFavorite={handleToggleFavoriteChar}
                             />
-                        </div>
-                    </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                        <MonumentWidget
-                            {activeAccount}
-                            hasBackground={!!profile?.background}
-                        />
-                        <WarEchoesWidget
-                            {activeAccount}
-                            hasBackground={!!profile?.background}
-                        />
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                                <MonumentWidget
+                                    {activeAccount}
+                                    hasBackground={!!profile?.background}
+                                />
+                                <WarEchoesWidget
+                                    {activeAccount}
+                                    hasBackground={!!profile?.background}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             {:else}

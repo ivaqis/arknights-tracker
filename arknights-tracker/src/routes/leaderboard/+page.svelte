@@ -27,6 +27,7 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import MiniOperatorCard from "$lib/components/cards/MiniOperatorCard.svelte";
+    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
 
     const dungeonModules = import.meta.glob('/src/lib/locales/*/dungeons.json');
     let dungeonLocales = {};
@@ -1056,6 +1057,9 @@
                                                                 <div class="absolute bottom-0 left-1 skew-x-12 pointer-events-none select-none">
                                                                     <span class="text-[11px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
                                                                 </div>
+                                                                <div class="absolute top-0.5 right-0.5 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                                                                    <PotentialIcon pot={charPot} size={18} />
+                                                                </div>
                                                             </div>
                                                             {#if char.weapon}
                                                                 <div class="absolute -bottom-1 -right-1 z-10">
@@ -1147,6 +1151,7 @@
                                             {@const opData = getOperatorData(char)}
                                             {@const wpnData = getWeaponData(char.weapon)}
                                             {@const wpnRarity = wpnData?.rarity || char.weapon?.rarity || 4}
+                                            {@const charPot = char.potential ?? char.potentialLevel ?? 0}
                                             <div class="relative shrink-0">
                                                 <div class="w-9 h-11 -skew-x-12 overflow-hidden rounded-[3px] border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/5 relative shrink-0 shadow-sm">
                                                     <div class="w-full h-full skew-x-12 scale-125">
@@ -1160,6 +1165,9 @@
                                                     <div class="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
                                                     <div class="absolute bottom-0.5 left-1 skew-x-12 pointer-events-none select-none">
                                                         <span class="text-[10px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
+                                                    </div>
+                                                    <div class="absolute top-0.5 right-0.5 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                                                        <PotentialIcon pot={charPot} size={18} />
                                                     </div>
                                                 </div>
                                                 {#if char.weapon}

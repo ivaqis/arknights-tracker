@@ -318,20 +318,22 @@
 
             {#if activeAccount}
                 <div class="flex flex-col gap-6" in:fade>
-                    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
-                        <div class="min-w-0 flex flex-col gap-6">
-                            <AccountSummary 
-                                stats={activeAccount.info?.stats || {}} 
-                                totalCharsCount={Object.keys(characters).length - 1} 
-                                profileBackground={!profile?.background}
-                            />
+                    <div class="grid grid-cols-1 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0">
+                        <div class="min-w-0 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-1 gap-6 items-start">
+                            <div class={activeAccount?.records_uid || activeAccount?.pulls ? "" : "md:col-span-2 2xl:col-span-1"}>
+                                <AccountSummary 
+                                    stats={activeAccount.info?.stats || {}} 
+                                    totalCharsCount={Object.keys(characters).length - 1} 
+                                    profileBackground={!profile?.background}
+                                />
+                            </div>
 
                             {#if activeAccount?.records_uid || activeAccount?.pulls}
                                 <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
                             {/if}
                         </div>
 
-                        <div class="min-w-0 md:col-span-2 2xl:col-span-1">
+                        <div class="min-w-0 flex flex-col gap-6">
                             <OperatorSection
                                 {activeAccount}
                                 profileName={profile?.name || username}
@@ -342,21 +344,21 @@
                                 favoriteChars={profile?.favoriteChars || []}
                                 canEditFavorite={false}
                             />
+
+                            {#if !profile?.hideLeaderboard && !profile?.isPrivate}
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                                    <MonumentWidget
+                                        {activeAccount}
+                                        hasBackground={!!profile?.background}
+                                    />
+                                    <WarEchoesWidget
+                                        {activeAccount}
+                                        hasBackground={!!profile?.background}
+                                    />
+                                </div>
+                            {/if}
                         </div>
                     </div>
-
-                    {#if !profile?.hideLeaderboard && !profile?.isPrivate}
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                            <MonumentWidget
-                                {activeAccount}
-                                hasBackground={!!profile?.background}
-                            />
-                            <WarEchoesWidget
-                                {activeAccount}
-                                hasBackground={!!profile?.background}
-                            />
-                        </div>
-                    {/if}
                 </div>
             {:else}
                 <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-[7px] text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
