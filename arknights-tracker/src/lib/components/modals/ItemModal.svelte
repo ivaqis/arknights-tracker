@@ -371,52 +371,10 @@
             <Icon name="close" class="w-5 h-5" />
         </button>
 
-        <div id="item-modal-scroll-container" class="overflow-y-auto custom-scrollbar p-6 relative z-10 flex flex-col gap-6">
-            <div class="flex items-start justify-between gap-4">
-                <div class="flex flex-col gap-1 min-w-0 pr-2">
-                    {#if canGoBack}
-                        <div class="mb-1 w-fit">
-                            <Button
-                                variant="roundSmall"
-                                color="white"
-                                onClick={handleBack}
-                            >
-                                <Icon name="arrowLeft" class="w-5 h-5" />
-                            </Button>
-                        </div>
-                    {/if}
-
-                    <h2 class="text-2xl font-bold font-sdk text-[#21272C] dark:text-white leading-tight break-words">
-                        {itemName}
-                    </h2>
-
-                    {#if itemType}
-                        <div class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                            {itemType}
-                        </div>
-                    {/if}
-
-                    <div class="flex items-center gap-1 mt-1">
-                        {#each Array(rarity) as _}
-                            <Icon name="star" class="w-6 h-6 shrink-0" style="color: {rarityColor};" />
-                        {/each}
-                    </div>
-
-                    {#if itemDesc}
-                        <div class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed mt-2 break-words">
-                            {@html parseRichText(itemDesc)}
-                        </div>
-                    {/if}
-
-                    {#if itemDecoDesc}
-                        <div class="text-sm text-gray-500 dark:text-[#888888] leading-relaxed break-words">
-                            {@html parseRichText(itemDecoDesc)}
-                        </div>
-                    {/if}
-                </div>
-
-                <div class="relative shrink-0 flex flex-col items-center -mt-1 sm:-mt-2">
-                    <div class="w-[120px] sm:w-[150px] aspect-square flex items-center justify-center">
+        <div id="item-modal-scroll-container" class="overflow-y-auto custom-scrollbar p-6 relative z-10 flex flex-col gap-3">
+            <div class="flow-root">
+                <div class="float-right ml-4 mb-2 flex flex-col items-end select-none -mt-1 sm:-mt-2">
+                    <div class="w-[120px] sm:w-[145px] aspect-square flex items-center justify-center">
                         <Image
                             id={iconId}
                             variant="item-game"
@@ -426,7 +384,7 @@
                         />
                     </div>
 
-                    <div class="flex items-center justify-end w-full gap-2 mt-2">
+                    <div class="flex items-center justify-end w-full gap-2">
                         <button
                             class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down cursor-pointer"
                             title={copiedSuccess ? $t("common.copied") : $t("common.copy")}
@@ -448,6 +406,46 @@
                         </button>
                     </div>
                 </div>
+
+                {#if canGoBack}
+                    <div class="mb-1 w-fit">
+                        <Button
+                            variant="roundSmall"
+                            color="white"
+                            onClick={handleBack}
+                        >
+                            <Icon name="arrowLeft" class="w-5 h-5" />
+                        </Button>
+                    </div>
+                {/if}
+
+                <h2 class="text-2xl font-bold font-sdk text-[#21272C] dark:text-white leading-tight break-words pr-2">
+                    {itemName}
+                </h2>
+
+                {#if itemType}
+                    <div class="text-sm font-medium text-gray-500 dark:text-gray-400 mt-1">
+                        {itemType}
+                    </div>
+                {/if}
+
+                <div class="flex items-center gap-1 mt-1 mb-2">
+                    {#each Array(rarity) as _}
+                        <Icon name="star" class="w-6 h-6 shrink-0" style="color: {rarityColor};" />
+                    {/each}
+                </div>
+
+                {#if itemDesc}
+                    <div class="text-sm text-gray-700 dark:text-gray-200 leading-relaxed break-words">
+                        {@html parseRichText(itemDesc)}
+                    </div>
+                {/if}
+
+                {#if itemDecoDesc}
+                    <div class="text-sm text-gray-500 dark:text-[#888888] leading-relaxed break-words mt-2.5">
+                        {@html parseRichText(itemDecoDesc)}
+                    </div>
+                {/if}
             </div>
 
             {#if chestData}

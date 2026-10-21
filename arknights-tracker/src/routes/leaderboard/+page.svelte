@@ -1057,7 +1057,7 @@
                                                                 <div class="absolute bottom-0 left-1 skew-x-12 pointer-events-none select-none">
                                                                     <span class="text-[11px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
                                                                 </div>
-                                                                <div class="absolute top-0.5 right-0.5 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                                                                <div class="absolute top-0 right-0 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                                                                     <PotentialIcon pot={charPot} size={18} />
                                                                 </div>
                                                             </div>
@@ -1166,7 +1166,7 @@
                                                     <div class="absolute bottom-0.5 left-1 skew-x-12 pointer-events-none select-none">
                                                         <span class="text-[10px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
                                                     </div>
-                                                    <div class="absolute top-0.5 right-0.5 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                                                    <div class="absolute top-0 right-0 skew-x-12 pointer-events-none select-none z-10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                                                         <PotentialIcon pot={charPot} size={18} />
                                                     </div>
                                                 </div>
