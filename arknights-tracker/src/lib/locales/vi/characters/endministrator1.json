@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Đánh trúng tối thiểu 2 mục tiêu bằng KN chiến đấu hoặc Tuyệt Kỹ sẽ rút ngắn thời gian hồi chiêu KN liên hoàn {0,0:0.0} giây.",
-        "Đánh trúng tối thiểu 2 mục tiêu bằng KN chiến đấu hoặc Tuyệt Kỹ sẽ rút ngắn thời gian hồi chiêu KN liên hoàn {0,0:0.0} giây."
+        "Khi <#ba.originium>Tinh Thể Originium</> gắn trên kẻ địch bị <#ba.consume>tiêu hao</>, Endministrator nhận Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây. Hiệu ứng này không thể cộng dồn.",
+        "Khi <#ba.originium>Tinh Thể Originium</> gắn trên kẻ địch bị <#ba.consume>tiêu hao</>, Endministrator nhận Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây. Hiệu ứng này không thể cộng dồn."
       ],
       "name": "Hủy Hoại Tinh Chất"
     },
     "talent2": {
       "levels": [
-        "Kẻ địch bị phong ấn bởi <#ba.originium>tinh thể Originium</> nhận thêm <@ba.vup>{0,0:0%}</> ST Vật Lý.",
-        "Kẻ địch bị phong ấn bởi <#ba.originium>tinh thể Originium</> nhận thêm <@ba.vup>{0,0:0%}</> ST Vật Lý."
+        "Kẻ địch bị gắn <#ba.originium>Tinh Thể Originium</> sẽ có ST Vật Lý Nhận Vào <@ba.vup>+{dmg:0%}</>.",
+        "Kẻ địch bị gắn <#ba.originium>Tinh Thể Originium</> sẽ có ST Vật Lý Nhận Vào <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Đóng Băng Không Gian Thực"
     },

@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Jika skill tarung atau ultimate berhasil menghantam sedikitnya 2 target, cooldown skill kombo akan dipersingkat sebanyak {0,0:0.0} dtk.",
-        "Jika skill tarung atau ultimate berhasil menghantam sedikitnya 2 target, cooldown skill kombo akan dipersingkat sebanyak {0,0:0.0} dtk."
+        "Saat <#ba.originium>Kristal Originium</> yang terpasang pada musuh <#ba.consume>dipakai</>, Endministrator akan mendapatkan ATK <@ba.vup>+{atk_up:0%}</> selama {duration:0} dtk. Efek ini tidak bisa ditumpuk.",
+        "Saat <#ba.originium>Kristal Originium</> yang terpasang pada musuh <#ba.consume>dipakai</>, Endministrator akan mendapatkan ATK <@ba.vup>+{atk_up:0%}</> selama {duration:0} dtk. Efek ini tidak bisa ditumpuk."
       ],
       "name": "Essence Disintegration"
     },
     "talent2": {
       "levels": [
-        "Musuh yang terkurung oleh <#ba.originium>kristal Originium</> akan terkena <@ba.vup>{0,0:0%}</> Physical DMG lebih besar.",
-        "Musuh yang terkurung oleh <#ba.originium>Kristal Originium</> akan terkena <@ba.vup>{0,0:0%}</> Physical DMG lebih besar."
+        "Musuh yang dipasangi <#ba.originium>Kristal Originium</> akan terkena Physical DMG Taken <@ba.vup>+{dmg:0%}</>.",
+        "Musuh yang dipasangi <#ba.originium>Kristal Originium</> akan terkena Physical DMG Taken <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Realspace Stasis"
     },

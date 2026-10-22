@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Toucher au moins 2 cibles avec une compétence de combat ou un ultime réduit le temps de recharge de la compétence de combo de {0,0:0.0} s.",
-        "Toucher au moins 2 cibles avec une compétence de combat ou un ultime réduit le temps de recharge de la compétence de combo de {0,0:0.0} s."
+        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé.",
+        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé."
       ],
       "name": "Désintégration d'essence"
     },
     "talent2": {
       "levels": [
-        "Les ennemis scellés par des <#ba.originium>cristaux d'originium</> subissent <@ba.vup>{0,0:0%}</> de DÉG physiques supplémentaires.",
-        "Les ennemis scellés par des <#ba.originium>cristaux d'originium</> subissent <@ba.vup>{0,0:0%}</> de DÉG physiques supplémentaires."
+        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques.",
+        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques."
       ],
       "name": "Stase d'espace réel"
     },

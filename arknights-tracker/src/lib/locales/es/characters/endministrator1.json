@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Golpear al menos a 2 objetivos con la habilidad de batalla o la máxima acorta el tiempo de reutilización de la habilidad de combo en {0,0:0.0} s.",
-        "Golpear al menos a 2 objetivos con la habilidad de batalla o la máxima acorta el tiempo de reutilización de la habilidad de combo en {0,0:0.0} s."
+        "Cuando los <#ba.originium>Cristales de Originio</> adheridos al enemigo se <#ba.consume>consumen</>, el Endministrator obtiene ATQ <@ba.vup>+{atk_up:0%}</> durante {duration:0} s. Este efecto no se acumula.",
+        "Cuando los <#ba.originium>Cristales de Originio</> adheridos al enemigo se <#ba.consume>consumen</>, el Endministrator obtiene ATQ <@ba.vup>+{atk_up:0%}</> durante {duration:0} s. Este efecto no se acumula."
       ],
       "name": "Desintegración de esencia"
     },
     "talent2": {
       "levels": [
-        "Los enemigos sellados por <#ba.originium>Cristales de originio</> reciben <@ba.vup>{0,0:0%}</> más DAÑ físico.",
-        "Los enemigos sellados por <#ba.originium>Cristales de originio</> reciben <@ba.vup>{0,0:0%}</> más DAÑ físico."
+        "Los enemigos con <#ba.originium>Cristales de Originio</> adheridos sufren DAÑ físico recibido <@ba.vup>+{dmg:0%}</>.",
+        "Los enemigos con <#ba.originium>Cristales de Originio</> adheridos sufren DAÑ físico recibido <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Estasis de espacio real"
     },

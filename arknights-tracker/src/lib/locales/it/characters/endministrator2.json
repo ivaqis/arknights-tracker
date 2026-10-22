@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Colpire almeno 2 bersagli con l'abilità di combattimento o l'abilità suprema riduce il tempo di recupero dell'abilità combo di {0,0:0.0} s.",
-        "Colpire almeno 2 bersagli con l'abilità di combattimento o l'abilità suprema riduce il tempo di recupero dell'abilità combo di {0,0:0.0} s."
+        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula.",
+        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula."
       ],
       "name": "Disintegrazione d'essenza"
     },
     "talent2": {
       "levels": [
-        "I nemici sigillati dai <#ba.originium>cristalli di Originium</> subiscono +<@ba.vup>{0,0:0%}</> di danni fisici.",
-        "I nemici sigillati dai <#ba.originium>cristalli di Originium</> subiscono +<@ba.vup>{0,0:0%}</> di danni fisici."
+        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici.",
+        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici."
       ],
       "name": "Stasi dello spazio reale"
     },

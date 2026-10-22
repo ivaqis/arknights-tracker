@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s.",
-        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s."
+        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular.",
+        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular."
       ],
       "name": "Desintegração da Essência"
     },
     "talent2": {
       "levels": [
-        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico.",
-        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico."
+        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>.",
+        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Estase do Espaço Real"
     },

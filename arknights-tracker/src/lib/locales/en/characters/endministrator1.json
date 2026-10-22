@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Hitting at least 2 targets with the battle skill or ultimate shortens combo skill cooldown by {0,0:0.0}s.",
-        "Hitting at least 2 targets with the battle skill or ultimate shortens combo skill cooldown by {0,0:0.0}s."
+        "When the <#ba.originium>Originium Crystals</> attached to the enemy are <#ba.consume>consumed</>, the Endministrator gains ATK <@ba.vup>+{atk_up:0%}</> for {duration:0}s. This effect cannot stack.",
+        "When the <#ba.originium>Originium Crystals</> attached to the enemy are <#ba.consume>consumed</>, the Endministrator gains ATK <@ba.vup>+{atk_up:0%}</> for {duration:0}s. This effect cannot stack."
       ],
       "name": "Essence Disintegration"
     },
     "talent2": {
       "levels": [
-        "Enemies sealed by <#ba.originium>Originium crystals</> take <@ba.vup>{0,0:0%}</> more Physical DMG.",
-        "Enemies sealed by <#ba.originium>Originium crystals</> take <@ba.vup>{0,0:0%}</> more Physical DMG."
+        "Enemies with attached <#ba.originium>Originium Crystals</> suffer Physical DMG Taken <@ba.vup>+{dmg:0%}</>.",
+        "Enemies with attached <#ba.originium>Originium Crystals</> suffer Physical DMG Taken <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Realspace Stasis"
     },

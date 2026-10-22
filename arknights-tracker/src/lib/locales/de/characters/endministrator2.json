@@ -61,15 +61,15 @@
     },
     "talent1": {
       "levels": [
-        "Triffst du mindestens 2 Ziele mit der Kampffertigkeit oder der Ultimativen Fertigkeit, wird die Abklingzeit der Kombofertigkeit um {0,0:0.0} Sek. reduziert.",
-        "Triffst du mindestens 2 Ziele mit der Kampffertigkeit oder der Ultimativen Fertigkeit, wird die Abklingzeit der Kombofertigkeit um {0,0:0.0} Sek. reduziert."
+        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden.",
+        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
       ],
       "name": "Essenz-Zerfall"
     },
     "talent2": {
       "levels": [
-        "Durch <#ba.originium>Originium-Kristalle</> versiegelte Gegner erleiden zusätzlich <@ba.vup>{0,0:0%}</> Physischen SDN.",
-        "Durch <#ba.originium>Originium-Kristalle</> versiegelte Gegner erleiden zusätzlich <@ba.vup>{0,0:0%}</> Physischen SDN."
+        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>.",
+        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>."
       ],
       "name": "Realraum-Stasis"
     },
