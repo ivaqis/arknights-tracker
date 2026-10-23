@@ -123,7 +123,10 @@ export class SyncProfile extends Controller<
                 return;
             }
 
-            const gameProfileRecord = UserGameProfileRecord.createFromData(roleId, serverId, profile.uid, gameProfile);
+            const existingProfile = existingProfiles.find(p => p.gameUid === roleId) || await this._database.gameProfiles.find(roleId);
+            const bannerProfileId = existingProfile?.bannerProfileId.initValue ?? null;
+
+            const gameProfileRecord = UserGameProfileRecord.createFromData(roleId, serverId, profile.uid, gameProfile, bannerProfileId);
 
             await this._database.gameProfiles.upsert(gameProfileRecord);
 

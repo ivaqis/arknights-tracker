@@ -699,14 +699,17 @@
             if (refreshed) {
                 profile = refreshed;
                 if (profile.details && profile.details.length > 0) {
-                    const fav = favoriteGameUid;
-                    const hasFav = profile.details.some(d => d.game_uid === fav);
-                    const highestLevelAcc = [...profile.details].sort((a, b) => {
-                        const levelA = a.info?.base?.level ?? a.level ?? 1;
-                        const levelB = b.info?.base?.level ?? b.level ?? 1;
-                        return levelB - levelA;
-                    })[0];
-                    selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
+                    const currentSelectedExists = profile.details.some(d => d.game_uid === selectedGameUid);
+                    if (!currentSelectedExists) {
+                        const fav = favoriteGameUid;
+                        const hasFav = profile.details.some(d => d.game_uid === fav);
+                        const highestLevelAcc = [...profile.details].sort((a, b) => {
+                            const levelA = a.info?.base?.level ?? a.level ?? 1;
+                            const levelB = b.info?.base?.level ?? b.level ?? 1;
+                            return levelB - levelA;
+                        })[0];
+                        selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
+                    }
                 }
             }
             syncModalOpen = false;

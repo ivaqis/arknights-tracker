@@ -21,13 +21,13 @@ export class UserGameProfileRecord {
         this._data = data;
     }
 
-    public static createFromData(gameUid: string, serverId: string, uid: bigint, data: GameProfile): UserGameProfileRecord {
+    public static createFromData(gameUid: string, serverId: string, uid: bigint, data: GameProfile, bannerProfileId: bigint | null = null): UserGameProfileRecord {
         return new UserGameProfileRecord(
             gameUid,
             serverId,
             uid,
             new NumberRecordField(data.base.level),
-            new NullableBigIntRecordField(null),
+            new NullableBigIntRecordField(bannerProfileId),
             data
         );
     }
