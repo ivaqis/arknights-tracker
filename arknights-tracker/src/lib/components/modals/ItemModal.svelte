@@ -25,6 +25,7 @@
     import { itemObtainIcons } from "$lib/data/items/itemObtainIcons";
     import { chests } from "$lib/data/items/chests";
     import { CardSize } from "$lib/components/cards/CardSize";
+    import { changelogData } from "$lib/data/versions.js";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { minerStorage } from "$lib/dataStorages/buildings/minerStorage";
@@ -62,7 +63,13 @@
     let currentItemLocale: ItemLocaleData | null = null;
     let copiedSuccess = false;
 
+    const latestVersion = [...changelogData].sort((a, b) =>
+        b.version.localeCompare(a.version, undefined, { numeric: true })
+    )[0];
+    const latestItems = new Set(latestVersion?.items || []);
+
     $: itemId = $selectedItemId;
+    $: isNew = itemId ? latestItems.has(itemId) : false;
     $: isOpen = Boolean(itemId);
     $: itemData = itemId ? items[itemId] : null;
     $: rarity = itemData?.rarity || 3;
@@ -370,6 +377,21 @@
         >
             <Icon name="close" class="w-5 h-5" />
         </button>
+
+        {#if isNew}
+            <div
+                class="absolute right-0 mr-[-3px] top-[68px] sm:top-[74px] h-[18px] sm:h-[20px] flex items-stretch z-30 pointer-events-none"
+            >
+                <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                <div class="relative bg-[#FFC107]/85 pl-1 pr-1.5 -skew-x-[24deg] flex items-center justify-center">
+                    <div class="absolute left-[-4px] w-[8px] top-0 bottom-0"></div>
+                    <span class="relative z-10 text-[#111111] font-black text-[10px] sm:text-[11px] -skew-x-[-24deg] tracking-widest leading-none uppercase">
+                        {$t("systemNames.new")}
+                    </span>
+                </div>
+            </div>
+        {/if}
 
         <div id="item-modal-scroll-container" class="overflow-y-auto custom-scrollbar p-6 relative z-10 flex flex-col gap-3">
             <div class="flow-root">

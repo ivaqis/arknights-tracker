@@ -50,14 +50,11 @@
     $: serverId = activeAccount?.serverId || activeAccount?.info?.base?.serverId || 'all';
     $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g, serverId));
 
-    let selectedMonumentGroup = "";
+    let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("profile_monument_group"))
+        || (monumentGroups[0]?.id || "");
     let isAgony = false;
 
     if (browser && typeof localStorage !== "undefined") {
-        const savedGroup = localStorage.getItem("profile_monument_group");
-        if (savedGroup) {
-            selectedMonumentGroup = savedGroup;
-        }
         isAgony = localStorage.getItem("profile_monument_is_agony") === "true";
     }
 
@@ -89,7 +86,7 @@
         iconId: group.id
     }));
 
-    $: currentGroup = visibleMonumentGroups.find(g => g.id === selectedMonumentGroup) || visibleMonumentGroups[0];
+    $: currentGroup = visibleMonumentGroups.find(g => g.id === selectedMonumentGroup) || visibleMonumentGroups[0] || monumentGroups[0];
 
     $: userRuns = activeAccount?.info?.monument || activeAccount?.monument || [];
     $: accountChars = activeAccount?.info?.chars || activeAccount?.chars || [];

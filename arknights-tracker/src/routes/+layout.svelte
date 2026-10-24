@@ -11,6 +11,8 @@
     import SupportModal from "$lib/components/modals/SupportModal.svelte";
     import SyncModal from "$lib/components/modals/SyncModal.svelte";
     import ItemModal from "$lib/components/modals/ItemModal.svelte";
+    import { beforeNavigate } from "$app/navigation";
+    import { closeItemModal } from "$lib/stores/itemModal";
     import { isI18nReady, t } from "$lib/i18n";
     import { addNotification, hasProfileBackground, isPageLoading } from "$lib/stores";
     import { initAuth, justSynced, user } from "$lib/stores/cloudStore";
@@ -43,7 +45,7 @@
 
     onMount(() => {
         if (browser) {
-            fetch('/images/icons.svg?v=13')
+            fetch('/images/icons.svg?v=14')
                 .then(res => {
                     if (res.ok) return res.text();
                     throw new Error('Failed to load icons.svg');
@@ -83,8 +85,13 @@
         }
     });
 
+    beforeNavigate(() => {
+        closeItemModal();
+    });
+
     $: if ($page.url.pathname) {
         isMobileMenuOpen = false;
+        closeItemModal();
     }
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
     $: visuallyCollapsed = isCollapsed && !isMobileMenuOpen;
@@ -132,7 +139,6 @@
 </script>
 
 <svelte:head>
-    <title>{$t("seo.title")}</title>
     <link rel="canonical" href={`https://goyfield.moe${$page.url.pathname}`} />
     <meta name="keywords" content={$t("seo.keywords")} />
     <meta
@@ -232,17 +238,18 @@
             >
                 {#if !visuallyCollapsed}
                     <div class="pr-1">
-                        <h1
+                        <div
                             class="font-black text-2xl tracking-tighter text-gray-900 dark:text-white leading-none"
                         >
                             <a
                                 href="/"
                                 aria-label="Goyfield - Arknights Endfield Pull Tracker"
                                 class="block hover:opacity-80 transition-opacity"
+                                on:click={closeItemModal}
                             >
                                 <Icon name="siteLogo" class="w-full h-auto" />
                             </a>
-                        </h1>
+                        </div>
                     </div>
                 {/if}
 
@@ -290,6 +297,7 @@
                         {:else}
                             <a
                                 href={item.path}
+                                on:click={closeItemModal}
                                 class="
                                 flex items-center gap-3 py-3 rounded-lg group relative min-h-[48px]
                                 {ready ? 'transition-all' : ''} 

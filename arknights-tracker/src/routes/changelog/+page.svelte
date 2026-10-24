@@ -282,11 +282,11 @@
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
     <div class="flex flex-col gap-3 mb-6 font-sdk">
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3">
-            <h2
+            <h1
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
                 {$t("pages.changelog")}
-            </h2>
+            </h1>
         </div>
     </div>
 
@@ -502,6 +502,7 @@
                                     >
                                         <ItemStackCard
                                             {item}
+                                            isNew={false}
                                             showHoverEffect={true}
                                             showTooltip={true}
                                         />

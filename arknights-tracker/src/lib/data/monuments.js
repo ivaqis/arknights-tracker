@@ -16,6 +16,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0129_slwood"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -30,6 +36,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0120_klbear",
+                    "eny_0122_kltdbud"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -42,6 +56,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0128_babyents"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -54,6 +74,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0127_bigents"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -75,6 +101,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0070_agscorp2"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -89,6 +121,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0118_klhog_hdg026",
+                    "eny_0119_kltiger_hdg026"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -107,6 +147,18 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0117_klhound",
+                    "eny_0121_klbud",
+                    "eny_0122_kltdbud",
+                    "eny_0123_klcap_hdg028"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -119,6 +171,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0124_kltdcap_hdg027"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -148,6 +206,20 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0054_hsmino",
+                    "eny_0055_hscrane",
+                    "eny_0085_hsrogue",
+                    "eny_0053_hsmob",
+                    "eny_0084_hshunt"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -164,6 +236,16 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0046_lbshamman_hdg022",
+                    "eny_0065_lbmob2",
+                    "eny_0066_lbhunt2"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -178,6 +260,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0113_jzogre_hdg023",
+                    "eny_0112_jzmonk"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -190,6 +280,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0114_jzmking_hdg024"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -213,6 +309,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0088_wgthorns",
+                    "eny_0089_wgreflec"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -225,6 +329,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0107_wgshoal2"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -237,6 +347,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0046_lbshamman_hdg016"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -249,6 +365,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0102_hstiger2_hdg021"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -261,6 +383,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0095_ethillu"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -273,6 +401,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0082_hsbear_hdg018"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -296,6 +430,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0059_erhound",
+                    "eny_0060_lbmad"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -314,6 +456,18 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0099_slimeml2",
+                    "eny_0100_slimerg2",
+                    "eny_0108_slbomb2_hdg014",
+                    "eny_0098_sandb2"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -328,6 +482,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0087_wgslime_hdg010",
+                    "eny_0105_wgslime2_hdg010"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -340,6 +502,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0058_agdisk"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -354,6 +522,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0093_hshog_hdg",
+                    "eny_0109_hshog2_hdg"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -366,6 +542,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0090_wgabyss_hdg011"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -389,6 +571,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0085_hsrogue_hard",
+                    "eny_0055_hscrane_hard"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             },
             {
@@ -401,6 +591,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0047_firebat_hdg009"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -413,6 +609,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0054_hsmino_hdg007"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -436,6 +638,16 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0076_agfly",
+                    "eny_0064_agrange2_hdg002_assult",
+                    "eny_0027_agscorp_hdg002_assult"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -448,6 +660,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0023_aghornb_hdg001_assult"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             },
             {
@@ -460,6 +678,12 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0077_agshield_hdg003"
+                ],
+                "hardEnemyLevels": [
+                    90
                 ]
             }
         ]
@@ -489,6 +713,20 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0050_hound",
+                    "eny_0059_erhound",
+                    "eny_0074_lbshield",
+                    "eny_0049_rogue",
+                    "eny_0075_lbroshan"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -505,6 +743,16 @@ export const monumentGroups = [
                     60,
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0033_lbhunt_hdg005",
+                    "eny_0066_lbhunt2_hdg005",
+                    "eny_0007_mimicw_hdg005"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90,
+                    90
                 ]
             },
             {
@@ -519,6 +767,14 @@ export const monumentGroups = [
                 "enemyLevels": [
                     60,
                     60
+                ],
+                "hardEnemyIds": [
+                    "eny_0018_lbtough_hdg004_assult",
+                    "eny_0048_hvybow_hdg004_assult"
+                ],
+                "hardEnemyLevels": [
+                    90,
+                    90
                 ]
             }
         ]

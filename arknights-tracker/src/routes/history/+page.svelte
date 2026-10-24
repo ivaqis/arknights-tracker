@@ -28,6 +28,7 @@
     }
 
     const excludedBanners = ["new_player_01", "standard_01"];
+    const excludedOperators = ["pogranichnik", "ardelia"];
 
     $: versions = (() => {
         const vMap = new Map();
@@ -48,7 +49,9 @@
             .map(([version, time], index) => ({ version, time, index }));
     })();
 
-    const op6 = Object.values(characters).filter((c) => c.rarity === 6);
+    const op6 = Object.values(characters).filter(
+        (c) => c.rarity === 6 && !excludedOperators.includes(c.id),
+    );
     const weap6 = Object.values(weapons).filter((w) => w.rarity === 6);
 
     const sortOptions = [
@@ -260,11 +263,11 @@
 
 <div class="relative flex flex-col w-full text-[#21272C] dark:text-[#FDFDFD]">
     <div class="flex items-center gap-4 mb-1 shrink-0 font-sdk">
-        <h2
+        <h1
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
             {$t("pages.bannerHistory")}
-        </h2>
+        </h1>
     </div>
 
     <div

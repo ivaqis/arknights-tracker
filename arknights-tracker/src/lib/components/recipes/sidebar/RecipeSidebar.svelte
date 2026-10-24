@@ -1,5 +1,7 @@
 <script lang="ts">
     import Icon from "$lib/components/Icon.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import { goto } from "$app/navigation";
     import { t } from "$lib/i18n";
 
     export let title: string | null;
@@ -29,18 +31,19 @@
 
             {#if buttonTitle && buttonUrl}
 
-                <div class="flex-shrink-0 flex items-center justify-center h-20 pl-6 pr-6 pt-4 pb-4 border-t border-gray-200 dark:border-[#444]">
+                <div class="flex-shrink-0 flex items-center justify-center pl-6 pr-6 pt-4 pb-4 border-t border-gray-200 dark:border-[#444]">
 
-                    <a
-                        href={buttonUrl}
-                        class="relative h-full w-full rounded-2xl bg-[#F9B90C] hover:bg-[#FFC01E]"
+                    <Button
+                        variant="yellow"
+                        onClick={() => { if (buttonUrl) goto(buttonUrl); }}
                     >
-
-                        <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-sdk text-xl text-[#21272C] dark:text-[#21272C] whitespace-nowrap">
+                        <div slot="icon">
+                            <Icon name="chain" class="w-6 h-6" />
+                        </div>
+                        <span class="font-sdk whitespace-nowrap">
                             {buttonTitle}
                         </span>
-
-                    </a>
+                    </Button>
 
                 </div>
 

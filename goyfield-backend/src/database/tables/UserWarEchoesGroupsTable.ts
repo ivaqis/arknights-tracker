@@ -97,7 +97,7 @@ export class UserWarEchoesGroupsTable extends Table<Prisma.UserWarEchoesGroupDel
                                   skip?: number
     ): Promise<string[]> {
         const query = Prisma.sql`
-            SELECT DISTINCT Gr.id, G.level, CharCount.char_count, R.record_count, R.clear_time
+            SELECT DISTINCT Gr.id, G.level, CharCount.char_count, R.record_count, R.clear_time, Gr."updatedAt"
             FROM "UserWarEchoesGroup" Gr
                      LEFT JOIN "UserGameProfile" G ON Gr."gameUid" = G."gameUid"
                      LEFT JOIN "User" U ON G.uid = U.uid
@@ -134,12 +134,12 @@ export class UserWarEchoesGroupsTable extends Table<Prisma.UserWarEchoesGroupDel
         switch (sortField) {
             case WarEchoesLeaderboardSortField.TIME:
                 return sortOrder === SortOrder.DESC
-                    ? Prisma.sql`ORDER BY R.clear_time DESC`
-                    : Prisma.sql`ORDER BY R.clear_time ASC`;
+                    ? Prisma.sql`ORDER BY R.clear_time DESC, Gr."updatedAt" ASC`
+                    : Prisma.sql`ORDER BY R.clear_time ASC, Gr."updatedAt" ASC`;
             case WarEchoesLeaderboardSortField.LEVEL:
                 return sortOrder === SortOrder.DESC
-                    ? Prisma.sql`ORDER BY G.level DESC`
-                    : Prisma.sql`ORDER BY G.level ASC`;
+                    ? Prisma.sql`ORDER BY G.level DESC, R.clear_time ASC, Gr."updatedAt" ASC`
+                    : Prisma.sql`ORDER BY G.level ASC, R.clear_time ASC, Gr."updatedAt" ASC`;
         }
     }
 

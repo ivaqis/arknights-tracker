@@ -3,7 +3,35 @@
   "seo": {
     "title": "Goyfield - アークナイツ：エンドフィールド ガチャ計測・分析",
     "description": "アークナイツ：エンドフィールド（Arknights: Endfield）の高度なガチャ履歴トラッカー。ガチャ履歴の追跡、天井カウントの計算、次回の確定オペレーターや武器の予測機能を提供します。",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, アークナイツ エンドフィールド, エンドフィールド, ガチャ履歴, ガチャ分析, オペレーター, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, アークナイツ エンドフィールド, エンドフィールド, ガチャ履歴, ガチャ分析, オペレーター, Goyfield",
+    "descriptions": {
+      "history": "Chronology and schedule of all banners in Arknights: Endfield.",
+      "operators": "Database of all operators in Arknights: Endfield.",
+      "operatorDetail": "Stats and attributes of operator {name} in Arknights: Endfield.",
+      "weapons": "Weapons database for Arknights: Endfield.",
+      "weaponDetail": "Stats and attributes of weapon {name} in Arknights: Endfield.",
+      "events": "Calendar of events, activities, and banners in Arknights: Endfield.",
+      "changelog": "Patch and update changelog for Arknights: Endfield.",
+      "records": "Your pull records and gacha statistics in Arknights: Endfield.",
+      "import": "Import pull history from Arknights: Endfield into Goyfield.",
+      "global": "Global community pull statistics for Arknights: Endfield.",
+      "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
+      "equipment": "Equipment database in Arknights: Endfield.",
+      "equipmentDetail": "Stats and characteristics of gear {name} in Arknights: Endfield.",
+      "icons": "Icon gallery and database in Arknights: Endfield.",
+      "enemies": "Enemy database in Arknights: Endfield.",
+      "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
+      "recipes": "Factory recipe database in Arknights: Endfield.",
+      "recipeTree": "Interactive crafting and production chain tree for Arknights: Endfield.",
+      "essences": "Weapon essence optimizer and checker for Arknights: Endfield.",
+      "leaderboard": "Leaderboard for Arknights: Endfield.",
+      "settings": "Goyfield settings.",
+      "profile": "Player profile on Goyfield.",
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
+    }
   },
   "hints": {
     "editPotential": "武器の潜在能力を変更するには、鉛筆アイコンをクリックしてください。"
@@ -652,7 +680,9 @@
     "localeNameTitle": "名前",
     "targetType": "ターゲットタイプ",
     "equipCondTitle": "条件タイプ",
-    "buffTitle": "効果"
+    "buffTitle": "効果",
+    "usageEffect": "使用効果",
+    "usable": "使用可能"
   },
   "menu": {
     "about": "概要",

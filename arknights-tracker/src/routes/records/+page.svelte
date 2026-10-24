@@ -429,11 +429,11 @@
 
 <div class="w-full" style="max-width: max(1400px, calc(400px * {activeCols} + 6rem));">
   <div class="flex flex-wrap justify-left items-center mb-8 gap-6">
-    <h2
+    <h1
       class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
     >
       {$t("page.title")}
-    </h2>
+    </h1>
 
     <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto">
       <div class="w-full md:w-auto">

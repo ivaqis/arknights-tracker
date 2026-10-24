@@ -16,15 +16,28 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
     private static getDungeonOrderOptions(sortField: MonumentLeaderboardSortField, sortOrder: SortOrder) {
         switch (sortField) {
             case MonumentLeaderboardSortField.LEVEL:
-                return {
-                    userGameProfile: {
-                        level: sortOrder
+                return [
+                    {
+                        userGameProfile: {
+                            level: sortOrder
+                        }
+                    },
+                    {
+                        clearTimeSec: "asc" as const
+                    },
+                    {
+                        updatedAt: "asc" as const
                     }
-                };
+                ];
             case MonumentLeaderboardSortField.TIME:
-                return {
-                    clearTimeSec: sortOrder
-                };
+                return [
+                    {
+                        clearTimeSec: sortOrder
+                    },
+                    {
+                        updatedAt: "asc" as const
+                    }
+                ];
         }
     }
 
@@ -264,7 +277,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                                     skip?: number
     ): Promise<string[]> {
         const query = Prisma.sql`
-            SELECT DISTINCT L.id, G.level, L."clearTimeSec" clear_time_sec, CharCount.n count
+            SELECT DISTINCT L.id, G.level, L."clearTimeSec" clear_time_sec, CharCount.n count, L."updatedAt"
             FROM "UserMonumentLeaderboard" L
                      LEFT JOIN "UserGameProfile" G ON L."gameUid" = G."gameUid"
                      LEFT JOIN "User" U ON G.uid = U.uid
@@ -295,12 +308,12 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         switch (sortField) {
             case MonumentLeaderboardSortField.LEVEL:
                 return sortOrder === SortOrder.DESC
-                    ? Prisma.sql`ORDER BY G.level DESC`
-                    : Prisma.sql`ORDER BY G.level ASC`;
+                    ? Prisma.sql`ORDER BY G.level DESC, L."clearTimeSec" ASC, L."updatedAt" ASC`
+                    : Prisma.sql`ORDER BY G.level ASC, L."clearTimeSec" ASC, L."updatedAt" ASC`;
             case MonumentLeaderboardSortField.TIME:
                 return sortOrder === SortOrder.DESC
-                    ? Prisma.sql`ORDER BY L."clearTimeSec" DESC`
-                    : Prisma.sql`ORDER BY L."clearTimeSec" ASC`;
+                    ? Prisma.sql`ORDER BY L."clearTimeSec" DESC, L."updatedAt" ASC`
+                    : Prisma.sql`ORDER BY L."clearTimeSec" ASC, L."updatedAt" ASC`;
         }
     }
 
@@ -465,7 +478,10 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                     LEFT JOIN "User" u2 ON gp2.uid = u2.uid
                     WHERE l2."dungeonId" = l."dungeonId"
                       AND ((u2."isPrivate" = false AND u2."hideLeaderboard" = false) OR l2."gameUid" = l."gameUid")
-                      AND l2."clearTimeSec" < l."clearTimeSec"
+                      AND (
+                          l2."clearTimeSec" < l."clearTimeSec"
+                          OR (l2."clearTimeSec" = l."clearTimeSec" AND l2."updatedAt" < l."updatedAt")
+                      )
                 ) as rank,
                 (
                     SELECT count(*)::integer 

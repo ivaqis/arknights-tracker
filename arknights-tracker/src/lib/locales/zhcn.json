@@ -3,7 +3,35 @@
   "seo": {
     "title": "Goyfield - 明日方舟：终末地 寻访记录工具",
     "description": "明日方舟：终末地的高级寻访记录追踪器。追踪您的寻访历史，计算保底进度，并预测下一次必出的干员或武器。",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, 明日方舟终末地, 终末地, 寻访记录, 抽卡分析, 干员, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, 明日方舟终末地, 终末地, 寻访记录, 抽卡分析, 干员, Goyfield",
+    "descriptions": {
+      "history": "Chronology and schedule of all banners in Arknights: Endfield.",
+      "operators": "Database of all operators in Arknights: Endfield.",
+      "operatorDetail": "Stats and attributes of operator {name} in Arknights: Endfield.",
+      "weapons": "Weapons database for Arknights: Endfield.",
+      "weaponDetail": "Stats and attributes of weapon {name} in Arknights: Endfield.",
+      "events": "Calendar of events, activities, and banners in Arknights: Endfield.",
+      "changelog": "Patch and update changelog for Arknights: Endfield.",
+      "records": "Your pull records and gacha statistics in Arknights: Endfield.",
+      "import": "Import pull history from Arknights: Endfield into Goyfield.",
+      "global": "Global community pull statistics for Arknights: Endfield.",
+      "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
+      "equipment": "Equipment database in Arknights: Endfield.",
+      "equipmentDetail": "Stats and characteristics of gear {name} in Arknights: Endfield.",
+      "icons": "Icon gallery and database in Arknights: Endfield.",
+      "enemies": "Enemy database in Arknights: Endfield.",
+      "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
+      "recipes": "Factory recipe database in Arknights: Endfield.",
+      "recipeTree": "Interactive crafting and production chain tree for Arknights: Endfield.",
+      "essences": "Weapon essence optimizer and checker for Arknights: Endfield.",
+      "leaderboard": "Leaderboard for Arknights: Endfield.",
+      "settings": "Goyfield settings.",
+      "profile": "Player profile on Goyfield.",
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
+    }
   },
   "hints": {
     "editPotential": "要更改武器潜能，请点击铅笔图标。"
@@ -691,7 +719,9 @@
     "localeNameTitle": "名称",
     "targetType": "目标类型",
     "equipCondTitle": "条件类型",
-    "buffTitle": "效果"
+    "buffTitle": "效果",
+    "usageEffect": "使用效果",
+    "usable": "可使用"
   },
   "menu": {
     "about": "关于",

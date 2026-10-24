@@ -21,7 +21,8 @@
     $: equipMap = $currentLocale === "ru" ? ruEquip : enEquip;
     $: itemLocale = equipMap[id] || enEquip[id] || ruEquip[id] || {};
     $: equipName = itemLocale.name || id;
-    $: equipDesc = itemLocale.description || itemLocale.decoDesc || $t("seo.descriptions.equipmentDetail");
+    $: baseEquipDesc = $t("seo.descriptions.equipmentDetail", { name: equipName || id });
+    $: equipDesc = (itemLocale.description || itemLocale.decoDesc) ? `${equipName}. ${itemLocale.description || itemLocale.decoDesc}` : baseEquipDesc;
     $: pageTitle = equipName ? `${equipName} - ${$t("pages.equipment")} - Goyfield` : `${$t("pages.equipment")} - Goyfield`;
     $: imageUrl = `${$page.url.origin}${getImagePath(id, "equipment")}`;
 </script>

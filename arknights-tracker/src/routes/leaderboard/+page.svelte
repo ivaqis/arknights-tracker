@@ -127,12 +127,10 @@
         || "monument";
     let selectedMonumentGroup = initialParams?.get("group")
         || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
-        || (monumentGroups[0]?.id)
-        || "indie_group_h07";
+        || (monumentGroups[0]?.id || "");
     let selectedStageId = (selectedEvent === "monument" ? initialParams?.get("stage") : null)
         || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_stage_id"))
-        || (monumentGroups[0]?.stages[0]?.id)
-        || "indie_hard029";
+        || (monumentGroups[0]?.stages[0]?.id || "");
     let isAgony = initialParams?.has("agony")
         ? initialParams.get("agony") === "true"
         : ((browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_is_agony") !== null)
@@ -191,6 +189,7 @@
     $: if (browser && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_event", selectedEvent);
     }
+
     $: if (browser && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_monument_group", selectedMonumentGroup);
     }
@@ -220,7 +219,7 @@
         }
     }
 
-    $: if (visibleMonumentGroups.length > 0 && !visibleMonumentGroups.some(g => g.id === selectedMonumentGroup)) {
+    $: if (visibleMonumentGroups.length > 0 && (!selectedMonumentGroup || !visibleMonumentGroups.some(g => g.id === selectedMonumentGroup))) {
         selectedMonumentGroup = visibleMonumentGroups[0].id;
     }
 
@@ -229,7 +228,7 @@
     $: currentCoverPath = currentStage?.picPath || "dung_high_difficulty_s6_01";
 
     $: if (currentGroup && !currentGroup.stages.some(s => s.id === selectedStageId)) {
-        selectedStageId = currentGroup.stages[0]?.id || "indie_hard025";
+        selectedStageId = currentGroup.stages[0]?.id || "";
     }
 
     $: currentStage = currentGroup?.stages?.find(s => s.id === selectedStageId) || currentGroup?.stages?.[0];
@@ -267,12 +266,14 @@
         || {};
 
     $: currentEnemies = (selectedEvent === 'monument'
-        ? (currentStage?.enemyIds || []).map((rawId, idx) => {
+        ? ((isAgony && currentStage?.hardEnemyIds ? currentStage.hardEnemyIds : currentStage?.enemyIds) || []).map((rawId, idx) => {
             const mapping = enemyVariantMap[rawId];
             const baseId = mapping ? mapping.baseId : rawId;
             const variant = mapping ? mapping.postfix : undefined;
             const baseEnemy = enemies[baseId] || enemies[rawId] || {};
-            const level = isAgony ? 90 : (currentStage?.enemyLevels?.[idx] || 60);
+            const level = isAgony
+                ? (currentStage?.hardEnemyLevels?.[idx] || 90)
+                : (currentStage?.enemyLevels?.[idx] || 60);
             return {
                 id: rawId,
                 baseId,
@@ -587,9 +588,9 @@
 <div class="max-w-[1600px] mx-auto w-full pb-10">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 font-sdk">
         <div class="flex flex-wrap items-center gap-4">
-            <h2 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t("leaderboard.title")}
-            </h2>
+            </h1>
 
             <div class="flex bg-gray-200 dark:bg-black/30 p-1 rounded-xl max-w-full overflow-x-auto no-scrollbar [scrollbar-width:none] [&::-webkit-scrollbar]:hidden shrink-0">
                 <button

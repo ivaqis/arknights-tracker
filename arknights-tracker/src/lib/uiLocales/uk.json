@@ -1005,5 +1005,38 @@
     "noAccountsDesc": "У вашому профілі немає прив'язаних ігрових акаунтів. Прив'яжіть акаунт на сторінці профілю.",
     "noMedalsInProfile": "У вибраному ігровому акаунті немає даних про досягнення",
     "syncWarningProgress": "Синхронізація досягнень з ігровим профілем скине поточний прогрес досягнень."
+  },
+  "seo": {
+    "title": "Goyfield - Трекер круток для Arknights Endfield",
+    "description": "Відстежуйте історію круток в Arknights: Endfield. Розраховуйте гарант та аналізуйте статистику.",
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Трекер гачі, Історія круток, Оперативники, Гойфілд, Goyfield",
+    "descriptions": {
+      "history": "Хронологія та розклад усіх банерів в Arknights: Endfield.",
+      "operators": "База даних усіх оперативників Arknights: Endfield.",
+      "operatorDetail": "Характеристики оперативника {name} в Arknights: Endfield.",
+      "weapons": "База даних зброї Arknights: Endfield.",
+      "weaponDetail": "Характеристики зброї {name} в Arknights: Endfield.",
+      "events": "Календар подій, івентів та банерів Arknights: Endfield.",
+      "changelog": "Журнал змін і оновлень Arknights: Endfield.",
+      "records": "Статистика та трекер ваших круток в Arknights: Endfield.",
+      "import": "Імпорт історії круток з Arknights: Endfield у Goyfield.",
+      "global": "Глобальна статистика круток спільноти Arknights: Endfield.",
+      "recordsType": "Статистика для банера {name} в Arknights: Endfield.",
+      "equipment": "База даних спорядження в Arknights: Endfield.",
+      "equipmentDetail": "Характеристики та параметри спорядження {name} в Arknights: Endfield.",
+      "icons": "Галерея та база іконок Arknights: Endfield.",
+      "enemies": "База ворогів Arknights: Endfield.",
+      "enemyDetail": "Детальна інформація про ворога {name} в Arknights: Endfield.",
+      "recipes": "База рецептів заводу в Arknights: Endfield.",
+      "recipeTree": "Інтерактивне дерево ланцюжків крафту в Arknights: Endfield.",
+      "essences": "Оптимізатор та перевірка есенцій зброї для Arknights: Endfield.",
+      "leaderboard": "Таблиця лідерів Arknights: Endfield.",
+      "settings": "Налаштування Goyfield.",
+      "profile": "Профіль гравця на Goyfield.",
+      "userProfile": "Публічний профіль гравця {username} на Goyfield.",
+      "food": "База даних їжі та провізії в Arknights: Endfield.",
+      "foodDetail": "Характеристики та ефекти страви {name} в Arknights: Endfield.",
+      "achievements": "Трекер та база досягнень в Arknights: Endfield."
+    }
   }
 }

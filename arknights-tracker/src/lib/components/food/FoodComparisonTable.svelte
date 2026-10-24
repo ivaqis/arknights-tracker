@@ -9,7 +9,12 @@
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { CardSize } from "$lib/components/cards/CardSize";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
+    import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
+    import ResetButton from "$lib/components/dataToolbarV2/ResetButton.svelte";
+    import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
     import FoodComparisonTableSortButton from "$lib/components/food/FoodComparisonTableSortButton.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import { t } from "$lib/i18n";
     import { splitEquipmentView } from "$lib/stores/settings";
 
@@ -39,6 +44,7 @@
     export let condTypeOrderList: readonly CondType[];
     export let targetTypeOrderList: readonly UsableTargetType[];
     export let condTypeSelector: ISelector<CondType>;
+    export let targetTypeSelector: ISelector<UsableTargetType>;
     export let selectItemFn: (item: IItem) => void;
     export let selectedItem: IFood | null = null;
 
@@ -339,10 +345,46 @@
             .filter(entry => entry !== undefined && condTypeSelector.isSelected(entry.condType));
     }
 
+    let isTargetTypeOpen = false;
+    let isCondTypeOpen = false;
+
+    let targetTypeContainer: HTMLElement;
+    let condTypeContainer: HTMLElement;
+
+    function toggleTargetType() {
+        isCondTypeOpen = false;
+        isTargetTypeOpen = !isTargetTypeOpen;
+    }
+
+    function toggleCondType() {
+        isTargetTypeOpen = false;
+        isCondTypeOpen = !isCondTypeOpen;
+    }
+
+    function closeAllFilterDropdowns() {
+        isTargetTypeOpen = false;
+        isCondTypeOpen = false;
+    }
+
+    function handleWindowClick(e: MouseEvent) {
+        const target = e.target as Node;
+        if (isTargetTypeOpen && targetTypeContainer && !targetTypeContainer.contains(target)) {
+            isTargetTypeOpen = false;
+        }
+        if (isCondTypeOpen && condTypeContainer && !condTypeContainer.contains(target)) {
+            isCondTypeOpen = false;
+        }
+    }
+
+    function getEquipCondLocale(equipCond: CondType): string {
+        return $t(EquipableItemConditionType.getI18nKey(equipCond));
+    }
+
 </script>
 
+<svelte:window on:click={handleWindowClick} />
 
-<table class="min-w-full">
+<table class="min-w-full border-collapse">
 
     <thead class="bg-gray-200 dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
 
@@ -350,7 +392,7 @@
         <th
             class="p-0 xl:sticky left-0 z-10 bg-inherit"
             rowspan="2"
-            style="min-width: 250px; min-height: 500px;"
+            style="min-width: 250px;"
         >
                 <FoodComparisonTableSortButton
                     onClick={(cur) => toggleNameSort(cur)}
@@ -370,22 +412,138 @@
 
         {/each}
 
-        <th rowspan="2">
-            <FoodComparisonTableSortButton
-                onClick={cur => toggleFoodSort("targetType", cur)}
-                sortDirection={(sortFieldType === "food" && sortFoodField === "targetType") ? sortDirection : null}
-            >
-                {$t("usableTitle.targetType")}
-            </FoodComparisonTableSortButton>
+        <th rowspan="2" class="overflow-visible">
+            <div class="flex items-center justify-between h-full min-w-[150px]">
+                <div class="flex-1 h-full">
+                    <FoodComparisonTableSortButton
+                        onClick={cur => toggleFoodSort("targetType", cur)}
+                        sortDirection={(sortFieldType === "food" && sortFoodField === "targetType") ? sortDirection : null}
+                    >
+                        {$t("usableTitle.targetType")}
+                    </FoodComparisonTableSortButton>
+                </div>
+
+                <div bind:this={targetTypeContainer} class="relative shrink-0 mr-2  ">
+                    <button
+                        type="button"
+                        class="p-1.5 rounded-lg transition-colors cursor-pointer relative {
+                            !$targetTypeSelector.isEmpty
+                                ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B]'
+                                : 'text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white hover:bg-gray-300 dark:hover:bg-[#505050]'
+                        }"
+                        on:click={toggleTargetType}
+                        title={$t("sort.filters")}
+                        aria-label={$t("sort.filters")}
+                    >
+                        <Icon
+                            name="filter"
+                            class="w-4 h-4 pointer-events-none"
+                        />
+                    </button>
+
+                    {#if isTargetTypeOpen}
+                        <button
+                            type="button"
+                            aria-label="Close"
+                            class="fixed inset-0 z-[90] sm:hidden bg-black/40 cursor-default border-none p-0"
+                            on:click={closeAllFilterDropdowns}
+                        ></button>
+
+                        <div
+                            class="z-[100] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100vw-2rem)] max-w-[320px] sm:absolute sm:top-full sm:right-0 sm:left-auto sm:translate-x-0 sm:translate-y-0 sm:w-[320px] mt-2 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-2xl shadow-2xl border border-gray-200 p-4 flex flex-col gap-3 font-sdk text-left normal-case select-none whitespace-normal"
+                            role="dialog"
+                            aria-modal="true"
+                            tabindex="-1"
+                        >
+                            <div class="flex justify-between items-center">
+                                <GroupTitle
+                                    asButton={true}
+                                    onClick={() => targetTypeSelector.toggleAll()}
+                                >
+                                    {$t("sort.targetType")}
+                                </GroupTitle>
+
+                                <ResetButton
+                                    onClick={() => targetTypeSelector.clear()}
+                                />
+                            </div>
+
+                            <ParamSelector
+                                selector={targetTypeSelector}
+                                paramBox={TextParamBox}
+                                getLocaleFn={param => $t(UsableTargetType.getI18nKey(param))}
+                            />
+                        </div>
+                    {/if}
+                </div>
+            </div>
         </th>
 
-        <th rowspan="2">
-            <FoodComparisonTableSortButton
-                onClick={cur => toggleTacticalSort("condType", cur)}
-                sortDirection={(sortFieldType === "tactical" && sortTacticalField === "condType") ? sortDirection : null}
-            >
-                {$t("tacticalTitle.condType")}
-            </FoodComparisonTableSortButton>
+        <th rowspan="2" class="overflow-visible">
+            <div class="flex items-center justify-between h-full min-w-[160px]">
+                <div class="flex-1 h-full">
+                    <FoodComparisonTableSortButton
+                        onClick={cur => toggleTacticalSort("condType", cur)}
+                        sortDirection={(sortFieldType === "tactical" && sortTacticalField === "condType") ? sortDirection : null}
+                    >
+                        {$t("tacticalTitle.condType")}
+                    </FoodComparisonTableSortButton>
+                </div>
+
+                <div bind:this={condTypeContainer} class="relative shrink-0 mr-2">
+                    <button
+                        type="button"
+                        class="p-1.5 rounded-lg transition-colors cursor-pointer relative {
+                            !$condTypeSelector.isEmpty
+                                ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B]'
+                                : 'text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white hover:bg-gray-300 dark:hover:bg-[#505050]'
+                        }"
+                        on:click={toggleCondType}
+                        title={$t("sort.filters")}
+                        aria-label={$t("sort.filters")}
+                    >
+                        <Icon
+                            name="filter"
+                            class="w-4 h-4 pointer-events-none"
+                        />
+                    </button>
+
+                    {#if isCondTypeOpen}
+                        <button
+                            type="button"
+                            aria-label="Close"
+                            class="fixed inset-0 z-[90] sm:hidden bg-black/40 cursor-default border-none p-0"
+                            on:click={closeAllFilterDropdowns}
+                        ></button>
+
+                        <div
+                            class="z-[100] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100vw-2rem)] max-w-[320px] sm:absolute sm:top-full sm:right-0 sm:left-auto sm:translate-x-0 sm:translate-y-0 sm:w-[320px] mt-2 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-2xl shadow-2xl border border-gray-200 p-4 flex flex-col gap-3 font-sdk text-left normal-case select-none whitespace-normal"
+                            role="dialog"
+                            aria-modal="true"
+                            tabindex="-1"
+                        >
+                            <div class="flex justify-between items-center">
+                                <GroupTitle
+                                    asButton={true}
+                                    onClick={() => condTypeSelector.toggleAll()}
+                                >
+                                    {$t("sort.equipCondTitle")}
+                                </GroupTitle>
+
+                                <ResetButton
+                                    onClick={() => condTypeSelector.clear()}
+                                />
+                            </div>
+
+                            <ParamSelector
+                                selector={condTypeSelector}
+                                paramBox={TextParamBox}
+                                getLocaleFn={param => getEquipCondLocale(param)}
+                            />
+                        </div>
+                    {/if}
+                </div>
+            </div>
         </th>
 
         {#each displayedCondTypeTitles as condTypeTitle}
@@ -398,9 +556,9 @@
 
         {/each}
 
-        {#each sortTacticalFieldOrder as entry}
+        {#each sortTacticalFieldOrder as entry, i}
 
-            <th rowspan="2">
+            <th rowspan="2" class="{i === sortTacticalFieldOrder.length - 1 ? '!border-r-0' : ''}">
                 <FoodComparisonTableSortButton
                     sortDirection={(sortFieldType === "tactical" && sortTacticalField === entry.key) ? sortDirection : null}
                     onClick={cur => toggleTacticalSort(entry.key, cur)}
@@ -475,7 +633,7 @@
         <tr class="odd:bg-white dark:odd:bg-[#363636] even:bg-gray-100 dark:even:bg-[#393939]">
 
             <td class="xl:sticky left-0 z-10 bg-inherit">
-                <div class="flex flex-row items-center gap-2 p-1.5">
+                <div class="flex flex-row items-center gap-2.5 p-0.5">
 
                     {#if $splitEquipmentView}
 
@@ -526,7 +684,7 @@
 
                             {#if entry}
 
-                                <div class="p-2 text-right">
+                                <div class="p-2 text-center">
                                     {entry.getFormattedValue($t)}
                                 </div>
 
@@ -586,7 +744,7 @@
                         {#each condTypeTitle.params as condParamTitle}
 
                             <td>
-                                <div class="p-2 text-right">
+                                <div class="p-2 text-center">
                                     {tactical.formatCondParam(condParamTitle.key, $t)}
                                 </div>
                             </td>
@@ -608,37 +766,37 @@
                 {/each}
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatCastTime($t)}
                     </div>
                 </td>
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatCastCount($t)}
                     </div>
                 </td>
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatCastToMainCount($t)}
                     </div>
                 </td>
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatCooldown($t)}
                     </div>
                 </td>
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatRecoverTime($t)}
                     </div>
                 </td>
 
                 <td>
-                    <div class="p-2 text-right">
+                    <div class="p-2 text-center">
                         {tactical.formatRecoverUpperCount($t)}
                     </div>
                 </td>
@@ -659,15 +817,32 @@
         min-height: 20px;
     }
 
+    table {
+        border-collapse: collapse;
+    }
+
     th {
-        overflow: hidden;
         text-overflow: ellipsis;
         min-width: 150px;
         height: 50px;
         white-space: nowrap;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    :global(.dark) th {
+        border-right: 1px solid #444;
     }
 
     td {
         text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    :global(.dark) td {
+        border-right: 1px solid #444;
+    }
+
+    td:last-child {
+        border-right: none;
     }
 </style>

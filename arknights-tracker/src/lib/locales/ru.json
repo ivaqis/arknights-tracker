@@ -17,7 +17,8 @@
       "global": "Глобальная статистика круток сообщества Arknights: Endfield.",
       "recordsType": "Статистика для баннера {name} в Arknights: Endfield.",
       "equipment": "База данных снаряжения в Arknights: Endfield.",
-      "equipmentDetail": "Характеристики экипировки в Arknights: Endfield.",
+      "equipmentDetail": "Характеристики и параметры экипировки {name} в Arknights: Endfield.",
+      "icons": "Галерея и база иконок Arknights: Endfield.",
       "enemies": "База врагов Arknights: Endfield.",
       "enemyDetail": "Подробная информация о противнике {name} в Arknights: Endfield.",
       "recipes": "База рецептов завода в Arknights: Endfield.",
@@ -851,7 +852,9 @@
     "localeName": {
       "a-z": "А - Я",
       "z-a": "Я - А"
-    }
+    },
+    "usageEffect": "Эффект",
+    "usable": "Исп. предмет"
   },
   "menu": {
     "about": "Обзор",

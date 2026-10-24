@@ -17,7 +17,8 @@
       "global": "Global community pull statistics for Arknights: Endfield.",
       "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
       "equipment": "Equipment database in Arknights: Endfield.",
-      "equipmentDetail": "Gear characteristics in Arknights: Endfield.",
+      "equipmentDetail": "Stats and characteristics of gear {name} in Arknights: Endfield.",
+      "icons": "Icon gallery and database in Arknights: Endfield.",
       "enemies": "Enemy database in Arknights: Endfield.",
       "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
       "recipes": "Factory recipe database in Arknights: Endfield.",
@@ -851,7 +852,9 @@
     "localeName": {
       "a-z": "A - Z",
       "z-a": "Z - A"
-    }
+    },
+    "usageEffect": "Usage Effect",
+    "usable": "Usable"
   },
   "menu": {
     "about": "About",

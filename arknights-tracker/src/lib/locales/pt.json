@@ -3,7 +3,35 @@
   "seo": {
     "title": "Goyfield - Rastreador de Buscas de Arknights Endfield",
     "description": "Rastreador de desejos avançado para Arknights: Endfield. Acompanhe seu histórico de buscas, calcule o pity e preveja seu próximo operador ou arma garantida.",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Arknights Endfield Brasil, Rastreador Gacha, Histórico de Tiradas, Operadores, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Arknights Endfield Brasil, Rastreador Gacha, Histórico de Tiradas, Operadores, Goyfield",
+    "descriptions": {
+      "history": "Chronology and schedule of all banners in Arknights: Endfield.",
+      "operators": "Database of all operators in Arknights: Endfield.",
+      "operatorDetail": "Stats and attributes of operator {name} in Arknights: Endfield.",
+      "weapons": "Weapons database for Arknights: Endfield.",
+      "weaponDetail": "Stats and attributes of weapon {name} in Arknights: Endfield.",
+      "events": "Calendar of events, activities, and banners in Arknights: Endfield.",
+      "changelog": "Patch and update changelog for Arknights: Endfield.",
+      "records": "Your pull records and gacha statistics in Arknights: Endfield.",
+      "import": "Import pull history from Arknights: Endfield into Goyfield.",
+      "global": "Global community pull statistics for Arknights: Endfield.",
+      "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
+      "equipment": "Equipment database in Arknights: Endfield.",
+      "equipmentDetail": "Stats and characteristics of gear {name} in Arknights: Endfield.",
+      "icons": "Icon gallery and database in Arknights: Endfield.",
+      "enemies": "Enemy database in Arknights: Endfield.",
+      "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
+      "recipes": "Factory recipe database in Arknights: Endfield.",
+      "recipeTree": "Interactive crafting and production chain tree for Arknights: Endfield.",
+      "essences": "Weapon essence optimizer and checker for Arknights: Endfield.",
+      "leaderboard": "Leaderboard for Arknights: Endfield.",
+      "settings": "Goyfield settings.",
+      "profile": "Player profile on Goyfield.",
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
+    }
   },
   "hints": {
     "editPotential": "Para alterar os potenciais da arma, clique no ícone do lápis."
@@ -652,7 +680,9 @@
     "localeNameTitle": "Nome",
     "targetType": "Tipo de alvo",
     "equipCondTitle": "Tipo de condição",
-    "buffTitle": "Efeito"
+    "buffTitle": "Efeito",
+    "usageEffect": "Efeito de Uso",
+    "usable": "Utilizável"
   },
   "menu": {
     "about": "Sobre",

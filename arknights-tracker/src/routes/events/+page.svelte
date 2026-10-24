@@ -14,9 +14,9 @@
 <div class="fixed inset-0 z-20 w-full h-full flex flex-col overflow-hidden bg-[#F9F9F9] dark:bg-[#2C2C2C] md:p-8 p-4 md:ml-[var(--sb-w)]">
 
     <div class="flex items-center gap-4 mb-3 shrink-0">
-        <h2 class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3">
+        <h1 class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3">
             {$t("pages.events")}
-        </h2>
+        </h1>
     </div>
 
     <div class="relative flex-1 min-h-0 w-full rounded-2xl overflow-hidden">

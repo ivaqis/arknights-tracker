@@ -5,7 +5,13 @@
     import CardTemplate from "$lib/components/cards/CardTemplate.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
+    import { changelogData } from "$lib/data/versions.js";
     import { t } from "$lib/i18n";
+
+    const latestVersion = [...changelogData].sort((a, b) =>
+        b.version.localeCompare(a.version, undefined, { numeric: true })
+    )[0];
+    const latestItems = new Set(latestVersion?.items || []);
 
     export let item: IItem;
     export let event: IGameEvent | null = null;
@@ -13,6 +19,7 @@
     export let url: string | null = null;
     export let highlight: boolean = false;
     export let tooltipText: string | null = null;
+    export let isNew: boolean | undefined = undefined;
 
     export let showTooltip: boolean = false;
     export let showHoverEffect: boolean | undefined = undefined;
@@ -24,6 +31,7 @@
 
     $: textSize = getTextSize(size);
     $: eventStarSize = getEventStarSize(size);
+    $: computedIsNew = isNew !== undefined ? isNew : (item ? latestItems.has(item.id) || latestItems.has((item as any).gameId) : false);
 
     function getTextSize(size: CardSize) {
         switch (size) {
@@ -97,6 +105,31 @@
             </span>
         </div>
 
+    {/if}
+
+    {#if computedIsNew}
+        <div
+            class="absolute right-0 flex items-stretch z-30 pointer-events-none {size === CardSize.MICRO ? 'top-[21px] h-[12px] mr-[-2px]' : size === CardSize.SMALL ? 'top-[29px] h-[14px] mr-[-2px]' : 'top-[42px] h-[16px] mr-[-3px]'}"
+        >
+            <div
+                class="{size === CardSize.DEFAULT ? 'w-[3px] mr-[1.5px]' : 'w-[2px] mr-[1px]'} bg-[#FFC107]/85 -skew-x-[24deg]"
+            ></div>
+            <div
+                class="{size === CardSize.DEFAULT ? 'w-[3px] mr-[1.5px]' : 'w-[2px] mr-[1px]'} bg-[#FFC107]/85 -skew-x-[24deg]"
+            ></div>
+            <div
+                class="relative bg-[#FFC107]/85 {size === CardSize.DEFAULT ? 'pl-0.5 pr-1' : 'pl-0.5 pr-0.5'} -skew-x-[24deg] flex items-center justify-center"
+            >
+                <div
+                    class="absolute left-[-4px] w-[8px] top-0 bottom-0"
+                ></div>
+                <span
+                    class="relative z-10 text-[#111111] font-black {size === CardSize.MICRO ? 'text-[7px]' : size === CardSize.SMALL ? 'text-[8px]' : 'text-[9px]'} -skew-x-[-24deg] tracking-widest leading-none uppercase"
+                >
+                    {$t("systemNames.new")}
+                </span>
+            </div>
+        </div>
     {/if}
 
     <div

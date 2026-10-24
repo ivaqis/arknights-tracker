@@ -2701,4 +2701,16 @@
         <path d="M32.5 0H38V12H20C20 12 19 12.5 18.5 13C18 13.5 17.5 15 17.5 15V30H32V21H26V27H21V21H26V15H38V35H6V30H12V27H3V33L0 30V16L3 18V21H8.5V14C8.5 14 9.22934 10.9435 10.5 9.5C11.7171 8.11728 14.5 7 14.5 7H30L32.5 4.5V0Z" fill="#D9D9D9"/>
     </symbol>
 
+    <symbol id="usableItem" viewBox="0 0 45 42">
+        <rect x="13.8984" y="9.45312" width="13.3647" height="13.3647" transform="rotate(-45 13.8984 9.45312)" fill="currentColor"/>
+        <path d="M11 19.5547H28V24.5547H20V29.5547H30L40.5 19.5547L44.5 23.0547L31 36.5547H13L8.5 41.0547L0 31.5547L11 19.5547Z" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="chain" viewBox="0 0 54 49">
+        <path d="M0.5 14.5H20.5V34.5H0.5V14.5Z" fill="currentColor"/>
+        <path d="M33.5 0.5H53.5V20.5H33.5V0.5Z" fill="currentColor"/>
+        <path d="M33.5 29.5H53.5V48.5H33.5V29.5Z" fill="currentColor"/>
+        <path d="M27 39.5H25.5V26M26.5 12.5H25.5V26M25.5 26H24" stroke="currentColor"/>
+    </symbol>
+
 </svg>

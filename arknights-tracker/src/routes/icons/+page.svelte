@@ -41,7 +41,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.icons")} | Goyfield</title>
+    <title>{$t("pages.icons")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.icons")} />
+    <meta property="og:title" content={`${$t("pages.icons")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.icons")} />
 </svelte:head>
 
 <div class="min-h-screen w-full py-8 px-4 sm:px-8 max-w-7xl mx-auto flex flex-col gap-6 font-sans text-[#21272C] dark:text-[#FDFDFD]">

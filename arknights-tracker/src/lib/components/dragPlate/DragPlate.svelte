@@ -44,6 +44,16 @@
         y = y * scaleChange;
     }
 
+    function onSliderInput(e) {
+        const newScale = parseFloat(e.currentTarget.value);
+        if (newScale === scale || isNaN(newScale)) return;
+        const oldScale = scale;
+        scale = newScale;
+        const scaleChange = scale / oldScale;
+        x = x * scaleChange;
+        y = y * scaleChange;
+    }
+
     function reset() {
         scale = 1;
         x = 0;
@@ -258,7 +268,7 @@
 
     </div>
 
-    <div class="absolute top-1/2 right-3 -translate-y-1/2 flex flex-col gap-2">
+    <div class="absolute top-1/2 right-3 -translate-y-1/2 flex flex-col gap-2 items-center">
 
         <button
             class="flex w-8 h-8 items-center justify-center bg-white dark:bg-[#383838] rounded-xl border border-gray-200 dark:border-[#444]"
@@ -268,6 +278,20 @@
                 +
             </span>
         </button>
+
+        <div class="flex items-center justify-center h-32 w-8">
+            <input
+                type="range"
+                min={minScale}
+                max={maxScale}
+                step="0.01"
+                value={scale}
+                oninput={onSliderInput}
+                onmousedown={(e) => e.stopPropagation()}
+                ontouchstart={(e) => e.stopPropagation()}
+                class="touch-none w-32 h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none -rotate-90"
+            />
+        </div>
 
         <button
             class="flex w-8 h-8 items-center justify-center bg-white dark:bg-[#383838] rounded-xl border border-gray-200 dark:border-[#444]"

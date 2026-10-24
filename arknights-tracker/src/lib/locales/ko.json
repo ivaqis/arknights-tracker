@@ -3,7 +3,35 @@
   "seo": {
     "title": "Goyfield - 명일방주: 엔드필드 헤드헌팅 기록/분석",
     "description": "명일방주: 엔드필드를 위한 고급 기원 추적기. 헤드헌팅 기록을 추적하고, 천장 스택을 계산하며, 다음 확정 오퍼레이터나 무기를 예측해보세요.",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, 명일방주 엔드필드, 엔드필드, 가챠 분석, 뽑기 기록, 오퍼레이터, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, 명일방주 엔드필드, 엔드필드, 가챠 분석, 뽑기 기록, 오퍼레이터, Goyfield",
+    "descriptions": {
+      "history": "Chronology and schedule of all banners in Arknights: Endfield.",
+      "operators": "Database of all operators in Arknights: Endfield.",
+      "operatorDetail": "Stats and attributes of operator {name} in Arknights: Endfield.",
+      "weapons": "Weapons database for Arknights: Endfield.",
+      "weaponDetail": "Stats and attributes of weapon {name} in Arknights: Endfield.",
+      "events": "Calendar of events, activities, and banners in Arknights: Endfield.",
+      "changelog": "Patch and update changelog for Arknights: Endfield.",
+      "records": "Your pull records and gacha statistics in Arknights: Endfield.",
+      "import": "Import pull history from Arknights: Endfield into Goyfield.",
+      "global": "Global community pull statistics for Arknights: Endfield.",
+      "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
+      "equipment": "Equipment database in Arknights: Endfield.",
+      "equipmentDetail": "Stats and characteristics of gear {name} in Arknights: Endfield.",
+      "icons": "Icon gallery and database in Arknights: Endfield.",
+      "enemies": "Enemy database in Arknights: Endfield.",
+      "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
+      "recipes": "Factory recipe database in Arknights: Endfield.",
+      "recipeTree": "Interactive crafting and production chain tree for Arknights: Endfield.",
+      "essences": "Weapon essence optimizer and checker for Arknights: Endfield.",
+      "leaderboard": "Leaderboard for Arknights: Endfield.",
+      "settings": "Goyfield settings.",
+      "profile": "Player profile on Goyfield.",
+      "userProfile": "Public player profile of {username} on Goyfield.",
+      "food": "Food and meal database in Arknights: Endfield.",
+      "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
+      "achievements": "Achievement tracker and database in Arknights: Endfield."
+    }
   },
   "hints": {
     "editPotential": "무기 잠재력을 변경하려면 연필 아이콘을 클릭하세요."
@@ -652,7 +680,9 @@
     "localeNameTitle": "이름",
     "targetType": "타겟 유형",
     "equipCondTitle": "조건 유형",
-    "buffTitle": "효과"
+    "buffTitle": "효과",
+    "usageEffect": "사용 효과",
+    "usable": "사용 가능"
   },
   "menu": {
     "about": "정보",

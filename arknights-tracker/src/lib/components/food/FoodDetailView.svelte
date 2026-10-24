@@ -22,6 +22,7 @@
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { openItemModal } from "$lib/stores/itemModal";
+    import { getImagePath } from "$lib/utils/imageUtils.js";
     import type { IGasEnv } from "$lib/classes/gameData/gasEnv/IGasEnv";
     import type { IResourcePoint } from "$lib/classes/gameData/resourcePoints/IResourcePoint";
 
@@ -29,6 +30,8 @@
 
     export let inColumn: boolean = false;
     export let showSelfLink: boolean = false;
+
+    let copiedImageId: string | null = null;
 
     const foodLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
         en: import.meta.glob("/src/lib/locales/en/usableItems.json"),
@@ -231,6 +234,54 @@
                         />
                     </div>
 
+                    <div class="absolute top-4 right-4 z-20 flex flex-col gap-2">
+                        <button
+                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy cursor-pointer"
+                            title={copiedImageId === "icon" ? $t("common.copied") : $t("common.copy")}
+                            on:click|stopPropagation={async () => {
+                                try {
+                                    const imageUrl = getImagePath(item.icon.iconId, item.icon.imageVariant);
+                                    const response = await fetch(imageUrl);
+                                    const blob = await response.blob();
+                                    await navigator.clipboard.write([
+                                        new ClipboardItem({
+                                            [blob.type]: blob,
+                                        }),
+                                    ]);
+
+                                    copiedImageId = "icon";
+                                    setTimeout(() => {
+                                        if (copiedImageId === "icon")
+                                            copiedImageId = null;
+                                    }, 2000);
+                                } catch (err) {
+                                    console.error("Error copying:", err);
+                                }
+                            }}
+                        >
+                            {#if copiedImageId === "icon"}
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                            {:else}
+                                <Icon name="copy" class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110" />
+                            {/if}
+                        </button>
+
+                        <button
+                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down cursor-pointer"
+                            title={$t("profile.download_png")}
+                            on:click|stopPropagation={() => {
+                                const link = document.createElement("a");
+                                link.href = getImagePath(item.icon.iconId, item.icon.imageVariant);
+                                link.download = `${item.gameId || item.icon.iconId}_food.png`;
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }}
+                        >
+                            <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
+                        </button>
+                    </div>
+
                     <div class="relative z-20 gap-1 flex flex-col h-full w-[65%]">
 
                         <svelte:element
@@ -243,6 +294,16 @@
                         </svelte:element>
 
                         <div class="flex items-center gap-3 mb-6">
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm min-w-[35px]">
+                                    <Icon name="usableItem" class="w-6 h-6 text-white" />
+                                </div>
+                                <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
+                                    {$t("sort.usable")}
+                                </span>
+                            </div>
+                            <div class="w-[2px] h-6 bg-gray-300 dark:bg-[#555] rounded"></div>
 
                             <div class="flex">
 
@@ -265,13 +326,20 @@
                 <div class="px-6 pb-5 flex flex-col gap-4 mt-4">
 
                     {#if foodDetailLocale}
+                        <div class="flex flex-col gap-0.5">
 
-                        <div
-                            class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed"
-                            use:hyperlinkAction
-                        >
+                            <span class="text-lg text-[#21272C] dark:text-[#FDFDFD] font-bold font-sdk">
+                                {$t("sort.usageEffect")}
+                            </span>
 
-                            {@html parseRichText(parseFoodDesc(foodDetailLocale.desc))}
+                            <div
+                                class="text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed"
+                                use:hyperlinkAction
+                            >
+
+                                {@html parseRichText(parseFoodDesc(foodDetailLocale.desc))}
+
+                            </div>
 
                         </div>
 
@@ -281,15 +349,15 @@
 
                         {#each item.getDetailList($t) as node}
 
-                            <div class="flex flex-col">
+                            <div class="flex flex-col gap-0.5">
 
-                                    <span class="text-xs text-gray-500 dark:text-[#A0A0A0] font-bold uppercase">
-                                        {node.key}
-                                    </span>
+                                <span class="text-lg text-[#21272C] dark:text-[#FDFDFD] font-bold font-sdk">
+                                    {node.key}
+                                </span>
 
-                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] truncate">
+                                <span class="text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed">
                                         {node.value}
-                                    </span>
+                                </span>
 
                             </div>
 
@@ -301,11 +369,11 @@
 
                         <div>
 
-                            <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2">
+                            <h2 class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-1.5">
                                 {$t("stats.effects")}
                             </h2>
 
-                            <div class="flex flex-col gap-3 pl-2">
+                            <div class="flex flex-col gap-2.5 pl-2">
 
                                 {#each item.buffs as buff}
 
@@ -383,7 +451,7 @@
                         {#if equipDetailLocale}
 
                             <div
-                                class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed mb-4"
+                                class="text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed mb-4"
                                 use:hyperlinkAction
                             >
 

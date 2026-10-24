@@ -751,7 +751,7 @@
             <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
 
-        <h2
+        <h1
             class="font-sdk text-[#21272C] dark:text-[#FDFDFD] flex flex-col items-start gap-0 md:flex-row md:items-center md:gap-3"
         >
             <span class="text-2xl md:text-5xl tracking-wide">
@@ -761,7 +761,7 @@
             <span class="text-gray-400 text-lg md:text-3xl font-normal whitespace-nowrap">
                 / {bannerTitle}
             </span>
-        </h2>
+        </h1>
     </div>
 
     <div

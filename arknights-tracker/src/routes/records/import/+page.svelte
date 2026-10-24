@@ -701,11 +701,11 @@
         >
             <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
-        <h2
+        <h1
             class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-3"
         >
             {$t("import.title")}
-        </h2>
+        </h1>
     </div>
 
     <div

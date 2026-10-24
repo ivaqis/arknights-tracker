@@ -512,6 +512,7 @@
 <div
   class="min-h-screen w-full relative flex flex-col items-start justify-start py-6 font-sans text-[#21272C] dark:text-[#FDFDFD]"
 >
+  <h1 class="sr-only">{$t("seo.title")}</h1>
   <div class="mb-9 flex justify-center w-full">
     <div class="transition-opacity hover:opacity-80 inline-flex">
       <Icon name="siteLogo2" class="h-10 w-auto" />

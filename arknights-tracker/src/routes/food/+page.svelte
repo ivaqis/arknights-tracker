@@ -39,10 +39,12 @@
     import type { GroupSelectEvent } from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectEvent";
     import GroupSelectorDropdown from "$lib/components/dataToolbarV2/groupDropdowns/GroupSelectorDropdown.svelte";
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
+    import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
+    import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
     import FoodComparisonTable from "$lib/components/food/FoodComparisonTable.svelte";
-    import FoodComparisonTableSelector from "$lib/components/food/FoodComparisonTableSelector.svelte";
     import FoodDetailView from "$lib/components/food/FoodDetailView.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import ParamSelector from "$lib/components/selectors/ParamSelector.svelte";
     import type { ITabSelectEvent } from "$lib/components/tabSelector/ITabSelectEvent";
     import TabSelector from "$lib/components/tabSelector/TabSelector.svelte";
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
@@ -494,18 +496,17 @@
     <meta property="og:description" content={$t("seo.descriptions.food")} />
 </svelte:head>
 
-<div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
+<div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col {data.tab === FoodTabType.OVERVIEW ? 'xl:flex-row' : ''}">
 
     <div
-        class="w-full xl:w-[calc(100%-max(470px,40%))] mr-6 flex flex-col"
-        class:h-[calc(100vh-48px)]={data.tab === FoodTabType.COMPARISON}
+        class="w-full flex flex-col {data.tab === FoodTabType.OVERVIEW ? 'xl:w-[calc(100%-max(470px,40%))] mr-6' : ''}"
     >
 
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
 
-            <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
+            <h1 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t("pages.food")}
-            </h2>
+            </h1>
 
             <span class="text-gray-400 text-xl md:text-3xl font-normal">
                 / {data.tab === "overview" ? filteredItems.length : filteredTableItems.length}
@@ -670,13 +671,35 @@
 
         {:else if data.tab === FoodTabType.COMPARISON}
 
-            <div class="mt-4 w-full min-h-96 flex-1 rounded-xl overflow-scroll">
+            <div class="mt-5 flex flex-col gap-2">
+
+                <div class="flex items-center gap-3">
+
+                    <GroupTitle
+                        asButton={true}
+                        onClick={() => tableBuffFilter.toggleAll()}
+                    >
+                        {$t("sort.buffTitle")}
+                    </GroupTitle>
+
+                </div>
+
+                <ParamSelector
+                    selector={tableBuffFilter}
+                    paramBox={TextParamBox}
+                    getLocaleFn={buffId => $t(`buffNames.${buffId}`)}
+                />
+
+            </div>
+
+            <div class="mt-4 w-full rounded-xl overflow-x-auto">
 
                 <FoodComparisonTable
                     foodList={filteredTableItems}
                     condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
                     targetTypeOrderList={$foodSortParams.sortFieldParams.targetType}
                     condTypeSelector={tableCondTypeFilter}
+                    targetTypeSelector={tableTargetTypeFilter}
                     buffList={selectedBuffList}
                     selectItemFn={selectItem}
                     selectedItem={selectedItem}
@@ -688,7 +711,7 @@
 
     </div>
 
-    {#if data.tab === FoodTabType.COMPARISON || $splitEquipmentView}
+    {#if data.tab === FoodTabType.OVERVIEW && $splitEquipmentView && selectedItem}
 
         <BottomSheet
             bind:isOpen={isBottomSheetOpen}
@@ -696,41 +719,11 @@
 
             <div class="w-full min-h-[50vh] h-full xl:h-[calc(100vh-64px)] sticky top-8 overflow-y-auto">
 
-                {#if data.tab === FoodTabType.OVERVIEW && $splitEquipmentView && selectedItem}
-
-                    <FoodDetailView
-                        item={selectedItem}
-                        inColumn={true}
-                        showSelfLink={true}
-                    />
-
-                {:else if data.tab === FoodTabType.COMPARISON}
-
-                    <div class="flex flex-col gap-8">
-
-                        <div class="md:mt-[135px]">
-
-                            <FoodComparisonTableSelector
-                                condTypeSelector={tableCondTypeFilter}
-                                buffSelector={tableBuffFilter}
-                                targetTypeSelector={tableTargetTypeFilter}
-                            />
-
-                        </div>
-
-                        {#if selectedItem}
-
-                            <FoodDetailView
-                                item={selectedItem}
-                                inColumn={true}
-                                showSelfLink={true}
-                            />
-
-                        {/if}
-
-                    </div>
-
-                {/if}
+                <FoodDetailView
+                    item={selectedItem}
+                    inColumn={true}
+                    showSelfLink={true}
+                />
 
             </div>
 
@@ -740,7 +733,7 @@
 
 </div>
 
-{#if !isBottomSheetOpen && (data.itemId || data.tab === FoodTabType.COMPARISON)}
+{#if !isBottomSheetOpen && data.tab === FoodTabType.OVERVIEW && $splitEquipmentView && selectedItem}
 
     <button
         type="button"

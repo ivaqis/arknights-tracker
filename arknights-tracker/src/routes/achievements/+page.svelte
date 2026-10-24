@@ -299,9 +299,9 @@
 <div class="w-full min-h-screen text-gray-100 flex flex-col">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div class="flex items-center gap-3">
-            <h2 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t('pages.achievements')}
-            </h2>
+            </h1>
 
             <span
                 class="bg-[#2E2E2E] px-3.5 py-1 mt-1.5 text-xs md:text-sm font-bold text-gray-200 rounded-full border border-[#444444] shrink-0 font-nums"
