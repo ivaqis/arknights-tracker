@@ -141,12 +141,17 @@
         const activeId = currentAccountId;
         manualPotentials.update((pots) => {
             const currentAccPots = pots[activeId] || {};
+            const updated = {
+                ...currentAccPots,
+                [id]: draftPot,
+            };
+            if (isAlwaysOwned) {
+                updated["endministrator1"] = draftPot;
+                updated["endministrator2"] = draftPot;
+            }
             return {
                 ...pots,
-                [activeId]: {
-                    ...currentAccPots,
-                    [id]: draftPot,
-                },
+                [activeId]: updated,
             };
         });
         isEditingPot = false;
@@ -162,6 +167,10 @@
             const currentAccPots = pots[activeId] || {};
             const newAccPots = { ...currentAccPots };
             delete newAccPots[id];
+            if (isAlwaysOwned) {
+                delete newAccPots["endministrator1"];
+                delete newAccPots["endministrator2"];
+            }
 
             return {
                 ...pots,
@@ -196,11 +205,17 @@
     $: isAlwaysOwned = id === "endministrator1" || id === "endministrator2";
     $: basePot = gachaPulls > 0 ? gachaPulls - 1 : isAlwaysOwned ? 0 : -1;
     $: accountPots = $manualPotentials[currentAccountId] || {};
-    $: currentPot =
+    $: rawSavedPot =
         accountPots[id] !== undefined
+            ? accountPots[id]
+            : isAlwaysOwned
+            ? accountPots["endministrator1"] ?? accountPots["endministrator2"]
+            : undefined;
+    $: currentPot =
+        rawSavedPot !== undefined
             ? isAlwaysOwned
-                ? Math.max(0, accountPots[id])
-                : accountPots[id]
+                ? Math.max(0, rawSavedPot)
+                : rawSavedPot
             : basePot;
 
     $: isOwned = currentPot >= 0;
@@ -217,12 +232,17 @@
 
         manualPotentials.update((pots) => {
             const currentAccPots = pots[activeId] || {};
+            const updated = {
+                ...currentAccPots,
+                [id]: newPot,
+            };
+            if (isAlwaysOwned) {
+                updated["endministrator1"] = newPot;
+                updated["endministrator2"] = newPot;
+            }
             return {
                 ...pots,
-                [activeId]: {
-                    ...currentAccPots,
-                    [id]: newPot,
-                },
+                [activeId]: updated,
             };
         });
     }
@@ -941,7 +961,7 @@
                                 <div
                                     class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
                                 >
-                                    {#if accountPots[id] !== undefined}
+                                    {#if rawSavedPot !== undefined}
                                         <Tooltip
                                             text={$t("stats.reset") || "Reset"}
                                         >

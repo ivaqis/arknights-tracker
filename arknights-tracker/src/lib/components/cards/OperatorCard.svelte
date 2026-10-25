@@ -87,16 +87,22 @@
     $: basePot = gachaPulls > 0 ? gachaPulls - 1 : isAlwaysOwned ? 0 : -1;
 
     $: accountPots = $manualPotentials[currentAccountId] || {};
+    $: rawSavedPot =
+        accountPots[operator.id] !== undefined
+            ? accountPots[operator.id]
+            : isAlwaysOwned
+            ? accountPots["endministrator1"] ?? accountPots["endministrator2"]
+            : undefined;
     $: currentPot =
         potential !== undefined
             ? potential
-            : accountPots[operator.id] !== undefined
+            : rawSavedPot !== undefined
             ? isAlwaysOwned
-                ? Math.max(0, accountPots[operator.id])
-                : accountPots[operator.id]
+                ? Math.max(0, rawSavedPot)
+                : rawSavedPot
             : basePot;
 
-    $: manualPot = accountPots[operator.id];
+    $: manualPot = rawSavedPot;
     $: actualPulls = manualPot !== undefined ? manualPot + 1 : gachaPulls;
     $: hasOperator = owned !== undefined ? owned : currentPot >= 0;
     $: constCount = hasOperator ? currentPot : 0;
@@ -369,7 +375,7 @@
                     ></div>
                 </div>
             {/if}
-            {#if computedIsNew && variant !== "small"}
+            {#if computedIsNew && (variant !== "small" || isNew)}
                 <div
                     class="absolute right-0 mt-1 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none"
                 >

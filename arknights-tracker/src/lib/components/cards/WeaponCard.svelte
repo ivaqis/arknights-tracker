@@ -370,9 +370,9 @@
                         >
                     </div>
                 </div>
-            {:else if computedIsNew && variant !== "small"}
+            {:else if computedIsNew && (variant !== "small" || isNew)}
                 <div
-                    class="absolute right-0 mr-[-3px] top-[42px] h-[16px] flex items-stretch z-30 pointer-events-none"
+                    class="absolute right-0 mr-[-3px] {variant === 'small' ? 'top-[24px]' : 'top-[42px]'} h-[16px] flex items-stretch z-30 pointer-events-none"
                 >
                     <div
                         class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"

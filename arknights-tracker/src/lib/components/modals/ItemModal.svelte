@@ -67,6 +67,8 @@
         b.version.localeCompare(a.version, undefined, { numeric: true })
     )[0];
     const latestItems = new Set(latestVersion?.items || []);
+    const latestCharacters = new Set(latestVersion?.characters || []);
+    const latestWeapons = new Set(latestVersion?.weapons || []);
 
     $: itemId = $selectedItemId;
     $: isNew = itemId ? latestItems.has(itemId) : false;
@@ -500,6 +502,7 @@
                                             weapon={wObj || { id: optItem.id }}
                                             variant="small"
                                             asLink={false}
+                                            isNew={latestWeapons.has(optItem.id)}
                                             className="w-full h-full"
                                         />
                                     </a>
@@ -513,6 +516,7 @@
                                         <OperatorCard
                                             operator={cObj || { id: optItem.id }}
                                             variant="small"
+                                            isNew={latestCharacters.has(optItem.id)}
                                             className="w-full h-full"
                                         />
                                     </a>
@@ -572,6 +576,7 @@
                                                     weapon={wObj || { id: optItem.id }}
                                                     variant="small"
                                                     asLink={false}
+                                                    isNew={latestWeapons.has(optItem.id)}
                                                     className="w-full h-full"
                                                 />
                                             </a>
@@ -585,6 +590,7 @@
                                                 <OperatorCard
                                                     operator={cObj || { id: optItem.id }}
                                                     variant="small"
+                                                    isNew={latestCharacters.has(optItem.id)}
                                                     className="w-full h-full"
                                                 />
                                             </a>
@@ -885,6 +891,7 @@
                                         <OperatorCard
                                             operator={char}
                                             variant="small"
+                                            isNew={latestCharacters.has(char.id)}
                                             className="w-full h-full"
                                         />
                                     </a>
@@ -909,6 +916,7 @@
                                             {weapon}
                                             variant="small"
                                             asLink={false}
+                                            isNew={latestWeapons.has(weapon.id)}
                                             className="w-full h-full"
                                         />
                                     </a>
