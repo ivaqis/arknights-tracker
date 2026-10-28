@@ -131,7 +131,8 @@
         await autoScroll(
             () => document.querySelector(`[data-id=${data.itemId}]`),
             {
-                loadFn: () => loadMore()
+                loadFn: () => loadMore(),
+                delay: 5
             }
         );
     });

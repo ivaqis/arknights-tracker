@@ -77,7 +77,12 @@
 
     onMount(() => {
         if (data.itemId) {
-            autoScroll(() => document.querySelector(`[data-id=${data.itemId}]`));
+            autoScroll(
+                () => document.querySelector(`[data-id=${data.itemId}]`),
+                {
+                    delay: 5
+                }
+            );
         }
 
         return splitEquipmentView.subscribe((isSplitView) => {
