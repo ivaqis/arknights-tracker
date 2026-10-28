@@ -20,6 +20,8 @@
     export let highlight: boolean = false;
     export let tooltipText: string | null = null;
     export let isNew: boolean | undefined = undefined;
+    export let setElementId: boolean = false;
+    export let setDataId: boolean = false;
 
     export let showTooltip: boolean = false;
     export let showHoverEffect: boolean | undefined = undefined;
@@ -60,6 +62,8 @@
     highlight={highlight}
     size={size}
     showHoverEffect={showHoverEffect}
+    elementId={setElementId ? item.gameId : null}
+    dataId={setDataId ? item.gameId : null}
 >
 
     {#key item}

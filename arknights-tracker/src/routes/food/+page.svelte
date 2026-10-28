@@ -60,6 +60,7 @@
         getDefaultFoodSortParams
     } from "$lib/stores/filterStore";
     import { splitEquipmentView } from "$lib/stores/settings";
+    import { autoScroll } from "$lib/utils/autoScroll";
     import {
         getMapByList,
         groupManyCustomOrder,
@@ -75,6 +76,15 @@
     export let data;
 
     onMount(() => {
+        if (data.itemId) {
+            autoScroll(
+                () => document.querySelector(`[data-id=${data.itemId}]`),
+                {
+                    delay: 5
+                }
+            );
+        }
+
         return splitEquipmentView.subscribe((isSplitView) => {
             if (data.itemId && !isSplitView) {
                 goto(`/food/${data.itemId}`, {
@@ -605,6 +615,7 @@
                                                 item={item}
                                                 highlight={item.gameId === data.itemId}
                                                 showHoverEffect={true}
+                                                setDataId={true}
                                             />
 
                                         </button>
@@ -646,6 +657,7 @@
                                         item={item}
                                         highlight={item.gameId === data.itemId}
                                         showHoverEffect={true}
+                                        setDataId={true}
                                     />
 
                                 </button>

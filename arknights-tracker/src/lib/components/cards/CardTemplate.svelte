@@ -8,6 +8,8 @@
     export let tooltipText: string | null = null;
     export let url: string | null = null;
     export let highlight: boolean = false;
+    export let elementId: string | null = null;
+    export let dataId: string | null = null;
 
     export let size: CardSize = CardSize.DEFAULT;
     export let showHoverEffect: boolean = !!url;
@@ -52,6 +54,8 @@
         this={url ? "a" : "div"}
         href={url ?? undefined}
         role={url ? "link" : "presentation"}
+        id={elementId ?? undefined}
+        data-id={dataId ?? undefined}
         class="relative flex flex-col select-none group flex-shrink-0 {boxSize} no-underline focus:outline-none rounded-[6px] {highlightRing}"
         class:cursor-pointer={showHoverEffect}
     >
