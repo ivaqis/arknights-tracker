@@ -105,8 +105,10 @@
         itemSortParams
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
+    import { autoScroll } from "$lib/utils/autoScroll";
     import { groupPreservingOrderAndName } from "$lib/utils/collectionUtils";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
+    import { onMount } from "svelte";
 
     export let data;
 
@@ -120,6 +122,19 @@
             resetSort();
         }
     }
+
+    onMount(async () => {
+        if (!data.itemId) {
+            return;
+        }
+
+        await autoScroll(
+            () => document.querySelector(`[data-id=${data.itemId}]`),
+            {
+                loadFn: () => loadMore()
+            }
+        );
+    });
 
     let selectedItem: IItem | null;
 
@@ -671,6 +686,7 @@
                                         highlight={item.gameId === data.itemId}
                                         event={itemEventMap.get(item.gameId)}
                                         showHoverEffect={true}
+                                        setDataId={true}
                                     />
 
                                 </button>
@@ -700,6 +716,7 @@
                                 highlight={item.gameId === data.itemId}
                                 event={itemEventMap.get(item.gameId)}
                                 showHoverEffect={true}
+                                setDataId={true}
                             />
 
                         </button>
