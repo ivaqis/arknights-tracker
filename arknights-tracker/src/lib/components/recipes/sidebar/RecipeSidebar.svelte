@@ -1,7 +1,6 @@
 <script lang="ts">
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";
-    import { goto } from "$app/navigation";
     import { t } from "$lib/i18n";
 
     export let title: string | null;
@@ -35,7 +34,7 @@
 
                     <Button
                         variant="yellow"
-                        onClick={() => { if (buttonUrl) goto(buttonUrl); }}
+                        href={buttonUrl}
                     >
                         <div slot="icon">
                             <Icon name="chain" class="w-6 h-6" />

@@ -29,6 +29,15 @@
         "achPattern": {
             "viewBox": "0 0 302 360",
             "fill": "none"
+        },
+        "buttonGrid": {
+            "viewBox": "0 0 24 24",
+            "fill": "currentColor"
+        },
+        "buttonTopo": {
+            "viewBox": "0 0 135 53",
+            "fill": "none",
+            "preserveAspectRatio": "xMidYMid slice"
         }
     };
 
@@ -69,8 +78,9 @@
     $: strokeLinecap = meta.strokeLinecap || null;
     $: strokeLinejoin = meta.strokeLinejoin || null;
     $: opacity = meta.opacity || null;
+    $: preserveAspectRatio = meta.preserveAspectRatio || $$props.preserveAspectRatio || null;
 </script>
 
-<svg class={$$props.class} style={$$props.style} {viewBox} {width} {height} {fill} {stroke} stroke-width={strokeWidth} stroke-linecap={strokeLinecap} stroke-linejoin={strokeLinejoin} {opacity}>
+<svg class={$$props.class} style={$$props.style} {viewBox} {width} {height} {fill} {stroke} stroke-width={strokeWidth} stroke-linecap={strokeLinecap} stroke-linejoin={strokeLinejoin} {opacity} {preserveAspectRatio}>
     <use href="#{resolvedName}" {fill} {stroke} stroke-width={strokeWidth} stroke-linecap={strokeLinecap} stroke-linejoin={strokeLinejoin} />
 </svg>
