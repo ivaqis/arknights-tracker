@@ -27,6 +27,8 @@
     export let hideRarity = false;
     export let isStatic = false;
     export let onClick = undefined;
+    export let setDataId = false;
+    export let dataId = null;
 
     $: computedIsNew =
         isNew !== undefined
@@ -199,6 +201,7 @@
         href={asLink ? itemUrl : undefined}
         role={asLink ? "link" : "presentation"}
         data-sveltekit-preload-data="off"
+        data-id={dataId ?? (setDataId ? (isEnemy ? resolvedEnemyId : weapon.id) : undefined)}
         class="{rootClass} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:click={(e) => {
             if (onClick) {

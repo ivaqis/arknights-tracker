@@ -22,6 +22,7 @@
     import EnemySortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/EnemySortDropdown.svelte";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale.ts";
     import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
+    import { autoScroll } from "$lib/utils/autoScroll";
     import { onMount, onDestroy } from "svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -114,21 +115,35 @@
         }
     }
 
-    onMount(() => {
+    onMount(async () => {
+        let scrollId = null;
+
         if (queryId && allEnemies.some(e => e.id === queryId)) {
             if (!$splitEquipmentView) {
                 const lvlQuery = queryLevelParam ? `&level=${queryLevelParam}` : "";
                 const varQuery = queryVariant ? `&variant=${queryVariant}` : "";
                 const queryStr = (varQuery || lvlQuery) ? `?${(varQuery + lvlQuery).replace(/^&/, "")}` : "";
                 goto(`/enemies/${queryId}${queryStr}`, { replaceState: true });
-            } else {
-                localStorage.setItem("last_selected_enemy_id", queryId);
+                return;
             }
+            localStorage.setItem("last_selected_enemy_id", queryId);
+            scrollId = queryId;
         } else if (!queryId && $splitEquipmentView) {
             const savedId = localStorage.getItem("last_selected_enemy_id");
             if (savedId && allEnemies.some(e => e.id === savedId)) {
                 selectEnemy(savedId, true);
+                scrollId = savedId;
             }
+        }
+
+        if (scrollId) {
+            await autoScroll(
+                () => document.querySelector(`[data-id="${scrollId}"]`),
+                {
+                    loadFn: () => loadMore(),
+                    delay: 5
+                }
+            );
         }
     });
 
@@ -485,6 +500,7 @@
                                             hidePot={false}
                                             asLink={false}
                                             className="w-full h-full"
+                                            setDataId={true}
                                         />
                                         {#if selectedEnemyId === enemy.id}
                                             <div
@@ -499,6 +515,7 @@
                                             isEnemy={true}
                                             hideDarkness={true}
                                             hidePot={false}
+                                            setDataId={true}
                                         />
                                     </div>
                                 {/if}
@@ -516,7 +533,7 @@
                                 class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
                                 on:click|preventDefault|stopPropagation={() => selectEnemy(enemy.id)}
                             >
-                                <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} asLink={false} className="w-full h-full" />
+                                <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} asLink={false} className="w-full h-full" setDataId={true} />
                                 {#if selectedEnemyId === enemy.id}
                                     <div
                                         class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
@@ -525,7 +542,7 @@
                             </button>
                         {:else}
                             <div class="flex justify-center transition-transform">
-                                <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} />
+                                <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} setDataId={true} />
                             </div>
                         {/if}
                     {/each}

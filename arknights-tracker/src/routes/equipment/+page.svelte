@@ -37,6 +37,7 @@
     } from "$lib/stores/filterStore";
     import { currentLocale, normalizeLocale } from "$lib/stores/locale";
     import { groupPreservingOrderAndName, isListItemsEqual } from "$lib/utils/collectionUtils.ts";
+    import { autoScroll } from "$lib/utils/autoScroll";
     import { onDestroy, onMount } from "svelte";
 
     $: searchQuery = $equipmentSearch;
@@ -107,18 +108,32 @@
         }
     }
 
-    onMount(() => {
+    onMount(async () => {
+        let scrollId = null;
+
         if (queryId && allEquipment.some(e => e.id === queryId)) {
             if (!$splitEquipmentView) {
                 goto(`/equipment/${queryId}`, { replaceState: true });
-            } else {
-                localStorage.setItem("last_selected_equipment_id", queryId);
+                return;
             }
+            localStorage.setItem("last_selected_equipment_id", queryId);
+            scrollId = queryId;
         } else if (!queryId && $splitEquipmentView) {
             const savedId = localStorage.getItem("last_selected_equipment_id");
             if (savedId && allEquipment.some(e => e.id === savedId)) {
                 selectEquipment(savedId, true);
+                scrollId = savedId;
             }
+        }
+
+        if (scrollId) {
+            await autoScroll(
+                () => document.querySelector(`[data-id="${scrollId}"]`),
+                {
+                    loadFn: () => loadMore(),
+                    delay: 5
+                }
+            );
         }
     });
 
@@ -816,7 +831,7 @@
                                         class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
                                         on:click|preventDefault|stopPropagation={() => selectEquipment(eq.id)}
                                     >
-                                        <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" />
+                                        <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" setDataId={true} />
                                         {#if selectedEquipmentId === eq.id}
                                             <div
                                                 class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
@@ -825,7 +840,7 @@
                                     </button>
                                 {:else}
                                     <div class="flex justify-center">
-                                        <WeaponCard weapon={eq} isEquipment={true} />
+                                        <WeaponCard weapon={eq} isEquipment={true} setDataId={true} />
                                     </div>
                                 {/if}
                             {/each}
@@ -844,7 +859,7 @@
                                 class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
                                 on:click|preventDefault|stopPropagation={() => selectEquipment(eq.id)}
                             >
-                                <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" />
+                                <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" setDataId={true} />
                                 {#if selectedEquipmentId === eq.id}
                                     <div
                                         class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
@@ -853,7 +868,7 @@
                             </button>
                         {:else}
                             <div class="flex justify-center">
-                                <WeaponCard weapon={eq} isEquipment={true} />
+                                <WeaponCard weapon={eq} isEquipment={true} setDataId={true} />
                             </div>
                         {/if}
                     {/each}
