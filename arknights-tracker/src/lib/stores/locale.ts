@@ -173,31 +173,31 @@ interface LocaleFontConfig {
 
 const LOCALE_FONTS: Record<string, LocaleFontConfig> = {
     "zh-CN": {
-        fontName: "'Noto Sans SC'",
+        fontName: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;800&display=swap"
     },
     "zh-TW": {
-        fontName: "'Noto Sans TC'",
+        fontName: "'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;800&display=swap"
     },
     "ja": {
-        fontName: "'Noto Sans JP'",
+        fontName: "'Noto Sans JP', 'Hiragino Sans', 'Meiryo', 'Yu Gothic'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;800&display=swap"
     },
     "ko": {
-        fontName: "'Noto Sans KR'",
+        fontName: "'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800&display=swap"
     },
     "th": {
-        fontName: "'Noto Sans Thai'",
+        fontName: "'Noto Sans Thai', 'Leelawadee UI', 'Thonburi'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;800&display=swap"
     },
     "ka": {
-        fontName: "'Noto Sans Georgian'",
+        fontName: "'Noto Sans Georgian', 'Sylfaen'",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;800&display=swap"
     },
     "ar": {
-        fontName: "'Noto Sans Arabic'",
+        fontName: "'Noto Sans Arabic', 'Segoe UI', Tahoma",
         url: "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;800&display=swap"
     }
 };
@@ -228,7 +228,7 @@ export function updateLocaleFont(uiCode: string, mainCode?: string) {
         linkElem.href = fontConfig.url;
     }
 
-    document.documentElement.style.setProperty("--font-locale", `${fontConfig.fontName}, 'Noto Sans', sans-serif`);
+    document.documentElement.style.setProperty("--font-locale", `${fontConfig.fontName}, 'Noto Sans', system-ui, sans-serif`);
 }
 
 if (typeof window !== "undefined") {

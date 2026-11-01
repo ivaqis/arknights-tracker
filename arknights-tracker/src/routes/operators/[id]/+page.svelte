@@ -836,12 +836,16 @@
         currentIndex < menuItems.length - 1
             ? menuItems[currentIndex + 1]
             : null;
-    function switchTab(tabId) {
+    function switchTab(tabId, scroll = false) {
         activeTab = tabId;
-        const target = document.getElementById("tab-content");
-        if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-        } else {
+        if (typeof window === "undefined") return;
+
+        if (scroll) {
+            const target = document.getElementById("tab-content");
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        } else if (window.innerWidth >= 768 && window.scrollY > 0) {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
@@ -883,7 +887,7 @@
 {#if !char.id}
     <NotFound />
 {:else}
-    <div class="min-h-screen relative flex flex-col md:px-8 md:py-3">
+    <div class="min-h-screen relative flex flex-col md:px-8 md:py-3 2xl:py-8">
         <div
             class="fixed top-0 left-0 w-[100svw] h-[100svh] flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 will-change-transform {activeTab ===
             'about'
@@ -1197,7 +1201,7 @@
                         <Button
                             variant="menuButton"
                             active={activeTab === item.id}
-                            onClick={() => (activeTab = item.id)}
+                            onClick={() => switchTab(item.id)}
                             className="transition-all duration-300 {activeTab !==
                             item.id
                                 ? 'opacity-70 hover:opacity-100'
@@ -1211,7 +1215,7 @@
 
             <div
                 id="tab-content"
-                class="relative z-10 w-full flex-1 2xl:max-w-[1300px] 2xl:ml-auto grid items-start min-w-0 scroll-mt-5"
+                class="relative z-10 w-full flex-1 2xl:max-w-[1300px] 2xl:ml-auto grid items-start min-w-0 scroll-mt-5 2xl:min-h-[calc(100vh-4rem)]"
             >
                 {#key activeTab}
                     <div
@@ -1791,7 +1795,7 @@
                                 <h2
                                     class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
-                                    {$t("menu.potentials") || "Potentials"}
+                                    {$t("menu.potentials")}
                                 </h2>
 
                                 {#if charLocale?.potentials}
@@ -1923,7 +1927,7 @@
                                 <h2
                                     class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
-                                    {$t("menu.artwork") || "Artwork"}
+                                    {$t("menu.artwork")}
                                 </h2>
 
                                 {#if charLocale?.arts}
@@ -2407,7 +2411,7 @@
                             >
                                 {#if prevTab}
                                     <button
-                                        on:click={() => switchTab(prevTab.id)}
+                                        on:click={() => switchTab(prevTab.id, true)}
                                         class="flex items-center gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
                                     >
                                         <Icon
@@ -2428,7 +2432,7 @@
                             >
                                 {#if nextTab}
                                     <button
-                                        on:click={() => switchTab(nextTab.id)}
+                                        on:click={() => switchTab(nextTab.id, true)}
                                         class="flex items-center justify-end gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
                                     >
                                         <span

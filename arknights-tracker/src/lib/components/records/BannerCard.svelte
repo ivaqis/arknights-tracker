@@ -8,6 +8,8 @@
   import { recordsExcludedBanners } from "$lib/stores/filterStore";
   import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { pullData } from "$lib/stores/pulls";
+  import { splitEquipmentView } from "$lib/stores/settings.js";
+  import { getWeaponUrl } from "$lib/utils/linkUtils";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
 
@@ -733,8 +735,8 @@
             <Tooltip text={$t(icon.translationKey) || icon.name}>
               <!-- svelte-ignore a11y-no-noninteractive-element-to-interactive-role -->
               <div
-                on:click={() => goto(icon.isWeapon ? `/weapons/${icon.id}` : `/operators/${icon.id}`)}
-                on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(icon.isWeapon ? `/weapons/${icon.id}` : `/operators/${icon.id}`)}
+                on:click={() => goto(icon.isWeapon ? getWeaponUrl(icon.id, $splitEquipmentView) : `/operators/${icon.id}`)}
+                on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(icon.isWeapon ? getWeaponUrl(icon.id, $splitEquipmentView) : `/operators/${icon.id}`)}
                 role="button"
                 tabindex="0"
                 class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110 outline-none

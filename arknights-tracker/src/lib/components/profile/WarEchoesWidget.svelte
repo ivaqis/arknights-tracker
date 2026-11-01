@@ -1,6 +1,7 @@
 <script>
     import { browser } from "$app/environment";
     import { t } from "$lib/i18n";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import Select from "$lib/components/Select.svelte";
     import DungeonRunCard from "$lib/components/profile/DungeonRunCard.svelte";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
@@ -61,11 +62,17 @@
         selectedWarEchoesSeason = visibleWarEchoesSeasons[0].id;
     }
 
-    function formatSeasonDates(season) {
+    function formatSeasonDates(season, locale) {
         if (!season?.startTime || !season?.endTime) return "";
-        const start = season.startTime.split(" ")[0].split("-").reverse().join(".");
-        const end = season.endTime.split(" ")[0].split("-").reverse().join(".");
-        return `${start} - ${end}`;
+        try {
+            const start = new Date(season.startTime.replace(" ", "T"));
+            const end = new Date(season.endTime.replace(" ", "T"));
+            const opt = { day: "2-digit", month: "2-digit", year: "numeric" };
+            const loc = normalizeLocale(locale);
+            return `${start.toLocaleDateString(loc, opt)} - ${end.toLocaleDateString(loc, opt)}`;
+        } catch {
+            return `${season.startTime.slice(0, 10)} - ${season.endTime.slice(0, 10)}`;
+        }
     }
 
     function handleSeasonChange(val) {
@@ -82,7 +89,7 @@
     $: warEchoesSeasonOptions = visibleWarEchoesSeasons.map(season => ({
         value: season.id,
         label: $t(`warEchoesSeasons.${season.id}`),
-        subLabel: formatSeasonDates(season)
+        subLabel: formatSeasonDates(season, $currentUiLocale)
     }));
 
     $: currentSeason = visibleWarEchoesSeasons.find(s => s.id === selectedWarEchoesSeason) || visibleWarEchoesSeasons[0];

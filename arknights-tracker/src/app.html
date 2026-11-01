@@ -5,9 +5,8 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800&display=swap" crossorigin="anonymous" />
+    <link rel="preload" href="%sveltekit.assets%/fonts/noto-sans/noto-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%sveltekit.assets%/fonts/noto-sans/noto-sans-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
     <script src="%sveltekit.assets%/config.js"></script>
     
     <script>
@@ -21,15 +20,34 @@
         }
 
         try {
-            var lang = localStorage.getItem('user_locale');
-            if (lang) {
-                document.documentElement.lang = lang;
-                if (lang !== 'en') {
+            var userLocale = localStorage.getItem('user_ui_locale') || localStorage.getItem('user_locale');
+            if (userLocale) {
+                document.documentElement.lang = userLocale;
+                if (userLocale !== 'en' && userLocale !== 'en-US') {
                     var style = document.createElement('style');
                     style.id = 'i18n-hide';
                     style.textContent = 'body > div:not(#app-splash-screen) { opacity: 0; }';
                     document.head.appendChild(style);
                 }
+            }
+            var fontMap = {
+                'zh-CN': { font: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;800&display=swap' },
+                'zh-TW': { font: "'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;800&display=swap' },
+                'ja': { font: "'Noto Sans JP', 'Hiragino Sans', 'Meiryo', 'Yu Gothic'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;800&display=swap' },
+                'ko': { font: "'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800&display=swap' },
+                'th': { font: "'Noto Sans Thai', 'Leelawadee UI', 'Thonburi'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;800&display=swap' },
+                'ka': { font: "'Noto Sans Georgian', 'Sylfaen'", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;800&display=swap' },
+                'ar': { font: "'Noto Sans Arabic', 'Segoe UI', Tahoma", url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;800&display=swap' }
+            };
+            if (userLocale && fontMap[userLocale]) {
+                var cfg = fontMap[userLocale];
+                document.documentElement.style.setProperty('--font-locale', cfg.font + ", 'Noto Sans', system-ui, sans-serif");
+                var fontLink = document.createElement('link');
+                fontLink.id = 'dynamic-locale-font';
+                fontLink.rel = 'stylesheet';
+                fontLink.crossOrigin = 'anonymous';
+                fontLink.href = cfg.url;
+                document.head.appendChild(fontLink);
             }
         } catch (e) {
             console.error(e);

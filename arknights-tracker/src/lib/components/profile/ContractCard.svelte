@@ -1,6 +1,8 @@
 <script>
     import { t } from "$lib/i18n";
     import { equipment } from "$lib/data/items/equipment.js";
+    import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getEquipTier, getWeaponTerms } from "$lib/utils/profileUtils.js";
 
@@ -54,7 +56,7 @@
             {@const weaponName = $t(`weaponsList.${weaponData?.id}`) !== `weaponsList.${weaponData?.id}` ? $t(`weaponsList.${weaponData?.id}`) : (weaponData?.name || char.weapon.id)}
             {@const wpnTerms = (char.weapon.weaponTerms && char.weapon.weaponTerms.length > 0) ? char.weapon.weaponTerms : getWeaponTerms(char.weapon)}
             <Tooltip text={`${weaponName} P${char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 1}`}>
-                <a href="/weapons/{weaponData.id}?level={char.weapon.level}&refine={char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0}&skills={wpnTerms.join(',')}" class="relative w-[96px] h-[55px] flex items-center justify-between p-1 overflow-hidden shrink-0 z-20 ml-[-12px] transition-transform duration-200 hover:scale-105 cursor-pointer block"
+                <a href={getWeaponUrl(weaponData.id, $splitEquipmentView, { level: char.weapon.level, refine: char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0, skills: wpnTerms.join(',') })} class="relative w-[96px] h-[55px] flex items-center justify-between p-1 overflow-hidden shrink-0 z-20 ml-[-12px] transition-transform duration-200 hover:scale-105 cursor-pointer block"
                    style="border: 1px solid transparent; background: linear-gradient(to right, #363634, #111111) padding-box, linear-gradient(to right, #464644, #1b1b1a) border-box;">
                     
                     <img 
@@ -94,7 +96,7 @@
                     {@const staticId = (equip.equipData && getStaticEquipId) ? getStaticEquipId(equip.equipData) : (equip.id || "")}
                     {@const tier = getEquipTier(equip, equipment[staticId])}
                     <Tooltip text={equipmentNames[staticId]?.name || equip.equipData?.name || staticId}>
-                        <a href="/equipment/{staticId}" class="relative flex items-center justify-end w-[38px] h-[28px] py-0.5 pl-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
+                        <a href={getEquipmentUrl(staticId, $splitEquipmentView)} class="relative flex items-center justify-end w-[38px] h-[28px] py-0.5 pl-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
                            style="border: 1px solid transparent; background: linear-gradient(to right, #101010, #1A4558) padding-box, linear-gradient(to right, #3D3F3A, #194457) border-box;">
                             
                             <div class="absolute top-0.5 left-0.5 w-[14px] h-[8px] flex items-center justify-center shrink-0">

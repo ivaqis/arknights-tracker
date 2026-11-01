@@ -30,6 +30,8 @@
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
+    import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { getEnemyUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
     import { scale } from "svelte/transition";
@@ -1268,7 +1270,7 @@
                         {@const enemyMapping = firstEnemyId ? enemyVariantMap[firstEnemyId] : null}
                         {@const baseEnemyId = enemyMapping ? enemyMapping.baseId : firstEnemyId}
                         {@const enemyVariant = enemyMapping?.postfix}
-                        {@const enemyUrl = firstEnemyId ? `/enemies/${baseEnemyId}${enemyVariant ? `?variant=${enemyVariant}` : ''}` : ''}
+                        {@const enemyUrl = firstEnemyId ? getEnemyUrl(baseEnemyId, $splitEquipmentView, { variant: enemyVariant }) : ''}
                         {@const regionId = getLocationIcon(dungeon.dungeonId)}
                         {@const rColor = getRegionColor(regionId)}
 
@@ -1480,7 +1482,7 @@
                                                 </div>
                                             {:else}
                                                 <a
-                                                    href={`/weapons/${match.weapon.id}`}
+                                                    href={getWeaponUrl(match.weapon.id, $splitEquipmentView)}
                                                     class="block w-full h-full rounded border border-gray-300 dark:border-[#333] border-b-[3px] scale-110 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex items-center justify-center shadow-sm transition-all duration-300 hover:ring-2 hover:ring-white dark:hover:ring-white hover:border-white"
                                                     style="border-bottom-color: {getRarityColor(
                                                         match.weapon.rarity
@@ -1720,7 +1722,7 @@
                                                                                     </div>
                                                                                 {:else}
                                                                                     <a
-                                                                                        href={`/weapons/${wp.id}`}
+                                                                                        href={getWeaponUrl(wp.id, $splitEquipmentView)}
                                                                                         class="hover:ring-2 hover:ring-white/70 ring-inset duration-300"
                                                                                     >
                                                                                         <Image

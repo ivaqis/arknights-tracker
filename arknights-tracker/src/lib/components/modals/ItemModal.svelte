@@ -2,6 +2,8 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { selectedItemId, closeItemModal, openItemModal } from "$lib/stores/itemModal";
+    import { splitEquipmentView } from "$lib/stores/settings";
+    import { getEnemyUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { items } from "$lib/data/items/items";
     import { characters } from "$lib/data/characters.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
@@ -494,7 +496,7 @@
                                 {#if optItem.type === "weapon"}
                                     {@const wObj = (weapons as Record<string, any>)[optItem.id] || Object.values(weapons).find((w: any) => w.id === optItem.id || w.gameId === optItem.id)}
                                     <a
-                                        href={`/weapons/${optItem.id}`}
+                                        href={getWeaponUrl(optItem.id, $splitEquipmentView)}
                                         class="block w-[72px] sm:w-[80px] aspect-square shrink-0 cursor-pointer"
                                         on:click={closeItemModal}
                                     >
@@ -568,7 +570,7 @@
                                         {#if optItem.type === "weapon"}
                                             {@const wObj = (weapons as Record<string, any>)[optItem.id] || Object.values(weapons).find((w: any) => w.id === optItem.id || w.gameId === optItem.id)}
                                             <a
-                                                href={`/weapons/${optItem.id}`}
+                                                href={getWeaponUrl(optItem.id, $splitEquipmentView)}
                                                 class="block w-[64px] sm:w-[72px] aspect-square shrink-0 cursor-pointer"
                                                 on:click={closeItemModal}
                                             >
@@ -908,7 +910,7 @@
                             <div class="grid grid-cols-4 sm:grid-cols-5 gap-2.5">
                                 {#each weaponObjects as weapon (weapon.id)}
                                     <a
-                                        href={`/weapons/${weapon.id}`}
+                                        href={getWeaponUrl(weapon.id, $splitEquipmentView)}
                                         class="block w-full aspect-square cursor-pointer"
                                         on:click={closeItemModal}
                                     >
@@ -938,7 +940,7 @@
                     <div class="grid grid-cols-3 sm:grid-cols-4 gap-2.5">
                         {#each droppedByEnemies as enemyId (enemyId)}
                             <a
-                                href={`/enemies/${enemyId}`}
+                                href={getEnemyUrl(enemyId, $splitEquipmentView)}
                                 class="block w-full aspect-square cursor-pointer"
                                 on:click={closeItemModal}
                             >

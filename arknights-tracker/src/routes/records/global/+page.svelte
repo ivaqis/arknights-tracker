@@ -194,7 +194,7 @@
 
     </div>
 
-    <div class="flex flex-col sm:flex-row gap-4 mb-8 max-w-2xl">
+    <div class="flex flex-col sm:flex-row gap-4 mb-6 max-w-2xl">
 
         <div class="w-full sm:w-1/2">
 

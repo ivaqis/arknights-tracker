@@ -61,11 +61,14 @@
 
             isI18nReady.subscribe((isReady) => {
                 if (isReady) {
+                    const hideStyle = document.getElementById("i18n-hide");
+                    if (hideStyle) hideStyle.remove();
                     document.body.style.opacity = "1";
                 }
             });
 
-            setTimeout(() => {
+            const hideSplash = () => {
+                if (ready) return;
                 ready = true;
                 const splash = document.getElementById("app-splash-screen");
                 if (splash) {
@@ -74,7 +77,17 @@
                         splash.remove();
                     }, 500);
                 }
-            }, 100);
+            };
+
+            const splashFallbackTimer = setTimeout(hideSplash, 600);
+            if (typeof document !== "undefined" && document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => {
+                    clearTimeout(splashFallbackTimer);
+                    hideSplash();
+                }).catch(() => {
+                    hideSplash();
+                });
+            }
 
             initAuth();
 

@@ -17,6 +17,8 @@
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { pullData } from "$lib/stores/pulls";
     import { isDarkMode } from "$lib/stores/theme";
+    import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponCategory } from "$lib/utils/importUtils";
     import { onMount } from "svelte";
 
@@ -1141,8 +1143,8 @@
                                                 <div
                                                     role="button"
                                                     tabindex="0"
-                                                    on:click={() => goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
-                                                    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
+                                                    on:click={() => goto(isWeapon ? getWeaponUrl(itemId, $splitEquipmentView) : `/operators/${itemId}`)}
+                                                    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(isWeapon ? getWeaponUrl(itemId, $splitEquipmentView) : `/operators/${itemId}`)}
                                                     class="relative inline-flex items-center max-w-full cursor-pointer group/item outline-none"
                                                 >
                                                     <div

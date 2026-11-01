@@ -13,6 +13,8 @@
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { addNotification } from "$lib/stores/notifications.js";
+    import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponTerms as defaultGetWeaponTerms } from "$lib/utils/profileUtils.js";
 
     const localeModules = {
@@ -1259,7 +1261,7 @@
                     {@const wpnTerms = (wpn.weaponTerms && wpn.weaponTerms.length > 0) ? wpn.weaponTerms : (getWeaponTerms ? getWeaponTerms(wpn) : [])}
                     
                     <Tooltip class="w-full">
-                        <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}&skills={wpnTerms.join(',')}" class="relative pl-14 pr-3 py-2 flex flex-col justify-between gap-0.5 rounded-xl hover:bg-white/5 transition-all w-full select-none"
+                        <a href={getWeaponUrl(wpnStatic?.id, $splitEquipmentView, { level: wpn.level, refine: wpn.refineLevel, skills: wpnTerms.join(',') })} class="relative pl-14 pr-3 py-2 flex flex-col justify-between gap-0.5 rounded-xl hover:bg-white/5 transition-all w-full select-none"
                            style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
                             
                             <div class="flex flex-row items-stretch justify-between gap-3 w-full">
@@ -1483,7 +1485,7 @@
                             })()}
                             
                             <Tooltip class="w-full h-full">
-                                <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-all cursor-pointer min-w-0 w-full h-full"
+                                <a href={getEquipmentUrl(staticId || equip.equipId, $splitEquipmentView)} class="relative flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-all cursor-pointer min-w-0 w-full h-full"
                                    style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
                                     <div class="flex flex-col items-start justify-center shrink-0">
                                         {#if eqRarity >= 5}

@@ -1512,12 +1512,12 @@ export const rawEvents: GenericEventData[] = [
         startTime: "2026-10-31 12:00:00",
         endTime: "2026-11-25 17:00:00",
         endTimeAsia: "2026-11-14 04:00:00",
-        icon: "ev7-v1.6_v2.webp",
-        url: "",
+        icon: "ev7-v1.6_v3.webp",
+        url: "https://x.com/AKEndfield/status/2116382152736821405?a=Zw80jODIhPH_qGE8CC8&s=20",
         color: "#33F55D",
         layer: 3,
         type: "inGame",
-        iconPosition: 30,
+        iconPosition: 45,
         version: "1.6"
     },
     {

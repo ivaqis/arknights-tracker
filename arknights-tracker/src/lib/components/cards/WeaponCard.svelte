@@ -4,7 +4,8 @@
     import { manualPotentials } from "$lib/stores/potentials.js";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts.js";
-    import { disableDarkening } from "$lib/stores/settings.js";
+    import { disableDarkening, splitEquipmentView } from "$lib/stores/settings.js";
+    import { getEnemyUrl, getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { changelogData } from "$lib/data/versions.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
@@ -60,16 +61,13 @@
           ? "equipment"
           : "weaponsList";
     $: itemUrl = isEnemy
-        ? (() => {
-            const query = [];
-            if (resolvedEnemyVariant) query.push(`variant=${resolvedEnemyVariant}`);
-            if (weapon.level) query.push(`level=${weapon.level}`);
-            const qStr = query.length ? `?${query.join("&")}` : "";
-            return `/enemies/${resolvedEnemyId}${qStr}`;
-        })()
+        ? getEnemyUrl(resolvedEnemyId, $splitEquipmentView, {
+            variant: resolvedEnemyVariant || undefined,
+            level: weapon.level
+        })
         : isEquipment
-          ? `/equipment/${weapon.id}`
-          : `/weapons/${weapon.id}`;
+          ? getEquipmentUrl(weapon.id, $splitEquipmentView)
+          : getWeaponUrl(weapon.id, $splitEquipmentView);
     $: imageVariant = isEnemy
         ? "enemy-icon"
         : isEquipment
