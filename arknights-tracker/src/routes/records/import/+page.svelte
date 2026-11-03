@@ -20,6 +20,7 @@
     import { pullData } from "$lib/stores/pulls";
     import { onMount } from "svelte";
     import { get } from "svelte/store";
+    import { scrollHorizontalPeek } from "$lib/utils/autoScroll";
 
     let platformTab = "pc-web";
     let urlInput = "";
@@ -683,6 +684,13 @@
     ) {
         runSmartImportPreview(lastParsedPulls);
     }
+    let tabsContainer;
+
+    function scrollToTab(tabId) {
+        if (!tabsContainer) return;
+        const safeId = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(tabId) : tabId;
+        scrollHorizontalPeek(tabsContainer, `[data-tab-id="${safeId}"]`);
+    }
 </script>
 
 <svelte:head>
@@ -765,15 +773,20 @@
         </div>
         <div class="w-full mb-4 mt-4 sm:mb-6 sm:mt-6 overflow-hidden">
             <div
+                bind:this={tabsContainer}
                 class="flex w-full overflow-x-auto no-scrollbar max-[719px]:bg-gray-100 max-[719px]:dark:bg-[#2b2b2b] max-[719px]:p-1 max-[719px]:rounded-xl max-[719px]:border max-[719px]:border-gray-200/50 max-[719px]:dark:border-gray-800/50 max-[719px]:gap-1 max-[719px]:items-center min-[720px]:border-b min-[720px]:border-gray-200 min-[720px]:dark:border-[#444444] min-[720px]:gap-0 min-[720px]:items-end min-[720px]:pb-1"
             >
                 {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "endfieldtracker", label: "endfieldtracker.com" }, { id: "protorig", label: "PROTORIG.app" }, { id: "trackmypulls", label: "trackmypulls.com" }] as tab}
                     <button
+                        data-tab-id={tab.id}
                         class="font-bold transition-all whitespace-nowrap select-none
                             {platformTab === tab.id
                                 ? 'text-[#21272C] dark:text-[#FDFDFD] max-[719px]:bg-white max-[719px]:dark:bg-[#383838] max-[719px]:shadow-sm max-[719px]:rounded-lg max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-[#FFE145] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'
                                 : 'text-gray-400 dark:text-[#B7B6B3] hover:text-gray-600 max-[719px]:text-gray-500 max-[719px]:dark:text-[#B7B6B3] max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-transparent min-[720px]:hover:bg-gray-50 min-[720px]:hover:dark:bg-[#424242] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'}"
-                        on:click={() => (platformTab = tab.id)}
+                        on:click={() => {
+                            platformTab = tab.id;
+                            scrollToTab(tab.id);
+                        }}
                     >
                         {tab.label}
                     </button>

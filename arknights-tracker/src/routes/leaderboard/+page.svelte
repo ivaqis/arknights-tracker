@@ -253,6 +253,10 @@
 
     $: currentWarEchoesStage = currentCycle?.stages?.find(s => s.id === selectedWarEchoesStageId) || currentCycle?.stages?.[0];
 
+    $: currentWarEchoesCover = currentWarEchoesStage?.id
+        ? `/images/warEchoes/icon_seasontower_levels_${parseInt(currentWarEchoesStage.id.match(/\d+$/)?.[0] || '1', 10)}.webp`
+        : null;
+
     $: currentDungeonId = selectedEvent === 'monument'
         ? (isAgony ? (currentStage?.hardId || `${selectedStageId}_s`) : selectedStageId)
         : (selectedWarEchoesDifficulty === 'normal'
@@ -857,6 +861,18 @@
                 </div>
             {:else if selectedEvent === 'echoesOfWar' && currentWarEchoesStage}
                 <div class="relative bg-white dark:bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
+                    {#if currentWarEchoesCover}
+                        <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-3/5 lg:w-1/2 pointer-events-none ">
+                            <img
+                                src={currentWarEchoesCover}
+                                alt={currentWarEchoesStage.name}
+                                class="w-full h-full object-contain object-right scale-110 pr-10"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent dark:from-[#262626] dark:via-[#262626]/20"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-[#262626]/30"></div>
+                        </div>
+                    {/if}
+
                     <div class="relative z-10 p-5 sm:p-6 flex flex-col md:flex-row justify-between gap-6">
                         <div class="max-w-xl flex flex-col gap-2">
                             <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sdk tracking-wide">

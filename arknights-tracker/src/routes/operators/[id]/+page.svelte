@@ -25,7 +25,7 @@
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
-    import { getImagePath } from "$lib/utils/imageUtils.js";
+    import { getImagePath, getCharacterExtraArts } from "$lib/utils/imageUtils.js";
     import { hyperlinkAction, parseRichText } from "$lib/utils/richText.js";
     import { onDestroy } from "svelte";
     import { fly } from "svelte/transition";
@@ -73,6 +73,8 @@
     let charLocale = {};
     let charDetails = {};
     let copiedArtId = null;
+
+    $: extraArts = getCharacterExtraArts(char);
 
     $: loadCharacterData(id, $currentLocale);
 
@@ -887,7 +889,7 @@
 {#if !char.id}
     <NotFound />
 {:else}
-    <div class="min-h-screen relative flex flex-col md:px-8 md:py-3 2xl:py-8">
+    <div class="min-h-screen relative flex flex-col md:px-8">
         <div
             class="fixed top-0 left-0 w-[100svw] h-[100svh] flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 will-change-transform {activeTab ===
             'about'
@@ -1130,7 +1132,7 @@
                         {/if}
                     </div>
 
-                    <div class="flex flex-col items-start gap-2 mt-2 w-fit">
+                    <div class="flex flex-col items-start gap-1.5 mt-1 w-fit">
                         {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
                             <div
                                 class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
@@ -1226,7 +1228,7 @@
                             : ''}"
                     >
                         {#if activeTab === "about"}
-                            <div class="flex flex-wrap gap-5 items-start">
+                            <div class="flex flex-wrap gap-3 items-start">
                                 <div
                                     class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-5"
                                 >
@@ -1480,7 +1482,7 @@
                             </div>
                         {:else if activeTab === "skills"}
                             <div
-                                class="flex flex-col gap-5 animate-fadeIn w-full"
+                                class="flex flex-col gap-3 animate-fadeIn w-full"
                             >
                                 <h2
                                     class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
@@ -1489,7 +1491,7 @@
                                 </h2>
 
                                 <div
-                                    class="flex flex-wrap items-start gap-5 w-full justify-start 2xl:justify-end"
+                                    class="flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
                                 >
                                     {#each skillKeys as key}
                                         {#if skillsValuesData[key]}
@@ -1516,9 +1518,9 @@
                                 </div>
                             </div>
                         {:else if activeTab === "talents"}
-                            <div class="flex flex-col gap-5 animate-fadeIn">
+                            <div class="flex flex-col gap-3 animate-fadeIn">
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] mb-2 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.talents") || "Talents"}
                                 </h2>
@@ -1682,10 +1684,10 @@
                             </div>
                         {:else if activeTab === "files"}
                             <div
-                                class="flex flex-col gap-5 animate-fadeIn w-full"
+                                class="flex flex-col gap-3 animate-fadeIn w-full"
                             >
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.files")}
                                 </h2>
@@ -1790,16 +1792,16 @@
                             </div>
                         {:else if activeTab === "potentials"}
                             <div
-                                class="flex flex-col gap-5 animate-fadeIn w-full potentials-wrapper"
+                                class="flex flex-col gap-3 animate-fadeIn w-full potentials-wrapper"
                             >
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.potentials")}
                                 </h2>
 
                                 {#if charLocale?.potentials}
-                                    <div class="flex flex-col gap-4">
+                                    <div class="flex flex-col gap-3">
                                         {#each Object.entries(charLocale.potentials) as [potKey, potData]}
                                             {@const bbData =
                                                 charDetails.blackboard?.[
@@ -1860,15 +1862,15 @@
                             </div>
                         {:else if activeTab === "guides"}
                             <div
-                                class="flex flex-col gap-5 animate-fadeIn w-full"
+                                class="flex flex-col gap-3 animate-fadeIn w-full"
                             >
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.matchingWeapon")}
                                 </h2>
 
-                                <div class="flex flex-col gap-5 w-full">
+                                <div class="flex flex-col gap-3 w-full">
                                     <div
                                         class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
                                     >
@@ -1922,10 +1924,10 @@
                             </div>
                         {:else if activeTab === "artwork"}
                             <div
-                                class="flex flex-col gap-5 animate-fadeIn w-full"
+                                class="flex flex-col gap-3 animate-fadeIn w-full"
                             >
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.artwork")}
                                 </h2>
@@ -1941,7 +1943,7 @@
                                                     : artKey}
 
                                             <div
-                                                class="w-full max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
+                                                class="w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
                                             >
                                                 <div
                                                     role="button"
@@ -1957,7 +1959,7 @@
                                                     <Image
                                                         id={`${id}_${realKey}`}
                                                         variant="operator-art"
-                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                        className="w-full h-full object-cover"
                                                         alt={artData.name}
                                                     />
 
@@ -2109,7 +2111,7 @@
                                             </div>
                                         {/each}
                                         <div
-                                            class="w-full max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
+                                            class="w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
                                         >
                                             <div
                                                 role="button"
@@ -2266,20 +2268,143 @@
                                             </div>
                                         </div>
                                     </div>
-                                {:else}
+                                {/if}
+
+                                {#if extraArts.length > 0}
+                                    <div
+                                        class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance] mt-6 w-full"
+                                    >
+                                        {#each extraArts as art (art.id)}
+                                            <div
+                                                class="break-inside-avoid mb-6 w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
+                                            >
+                                                <div
+                                                    role="button"
+                                                    tabindex="0"
+                                                    class="relative w-full bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex items-center justify-center p-4 min-h-[160px] max-h-[440px] overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
+                                                    on:click={() =>
+                                                        (selectedArtId =
+                                                            art.url)}
+                                                    on:keydown={(e) =>
+                                                        (e.key === "Enter" ||
+                                                            e.key === " ") &&
+                                                        (selectedArtId =
+                                                            art.url)}
+                                                >
+                                                    <img
+                                                        src={art.url}
+                                                        alt="Art"
+                                                        loading="lazy"
+                                                        class="max-h-[380px] w-auto max-w-full object-contain drop-shadow-md select-none"
+                                                    />
+
+                                                    <div
+                                                        class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
+                                                    ></div>
+
+                                                    <div
+                                                        class="absolute top-3 right-3 z-20 flex items-center gap-2"
+                                                    >
+                                                        <button
+                                                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy"
+                                                            title="Copy image"
+                                                            on:click|stopPropagation={async () => {
+                                                                try {
+                                                                    const response =
+                                                                        await fetch(
+                                                                            art.url,
+                                                                        );
+                                                                    const blob =
+                                                                        await response.blob();
+                                                                    await navigator.clipboard.write(
+                                                                        [
+                                                                            new ClipboardItem(
+                                                                                {
+                                                                                    [blob.type]:
+                                                                                        blob,
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                    );
+                                                                    copiedArtId =
+                                                                        art.id;
+                                                                    setTimeout(
+                                                                        () => {
+                                                                            if (
+                                                                                copiedArtId ===
+                                                                                art.id
+                                                                            )
+                                                                                copiedArtId =
+                                                                                    null;
+                                                                        },
+                                                                        2000,
+                                                                    );
+                                                                } catch (
+                                                                    err
+                                                                ) {
+                                                                    console.error(
+                                                                        "Error copying:",
+                                                                        err,
+                                                                    );
+                                                                }
+                                                            }}
+                                                        >
+                                                            {#if copiedArtId === art.id}
+                                                                <Icon
+                                                                    name="success"
+                                                                    class="w-3.5 h-3.5 text-yellow-400"
+                                                                />
+                                                            {:else}
+                                                                <Icon
+                                                                    name="copy"
+                                                                    class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                                                />
+                                                            {/if}
+                                                        </button>
+                                                        <button
+                                                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
+                                                            title="Download Art"
+                                                            on:click|stopPropagation={() => {
+                                                                const link =
+                                                                    document.createElement(
+                                                                        "a",
+                                                                    );
+                                                                link.href =
+                                                                    art.url;
+                                                                link.download = `${char.id}_${art.id}.png`;
+                                                                document.body.appendChild(
+                                                                    link,
+                                                                );
+                                                                link.click();
+                                                                document.body.removeChild(
+                                                                    link,
+                                                                );
+                                                            }}
+                                                        >
+                                                            <Icon
+                                                                name="import"
+                                                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {/each}
+                                    </div>
+                                {:else if !charLocale?.arts}
                                     <div
                                         class="text-gray-500 text-center italic mt-10"
                                     >
-                                        {$t("global.noData") || "No Data"}
+                                        {$t("global.noData")}
                                     </div>
                                 {/if}
                             </div>
                         {:else if activeTab === "audio"}
                             <div
-                                class="flex flex-col gap-4 animate-fadeIn w-full relative"
+                                class="flex flex-col gap-3 animate-fadeIn w-full relative"
                             >
                                 <h2
-                                    class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
                                     {$t("menu.audio")}
                                 </h2>
@@ -2567,7 +2692,13 @@
                 on:click|stopPropagation
                 on:keydown|stopPropagation
             >
-                {#if selectedArtId.startsWith("splash_")}
+                {#if selectedArtId.startsWith("/") || selectedArtId.startsWith("http")}
+                    <img
+                        src={selectedArtId}
+                        class="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
+                        alt="Full Art"
+                    />
+                {:else if selectedArtId.startsWith("splash_")}
                     <img
                         src={`/images/operators/splash/${selectedArtId.replace("splash_", "")}.png`}
                         class="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"

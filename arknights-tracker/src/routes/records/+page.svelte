@@ -251,12 +251,16 @@
       }
   }
 
+  let availableWidth = 0;
   let windowWidth = 1200;
 
   $: activeCols = (() => {
     if (typeof window === "undefined") return 3;
-    const cols = Math.max(1, Math.min($recordsMaxCols, Math.floor((windowWidth - 32) / 380)));
-    return cols;
+    const width = availableWidth || (windowWidth >= 768 ? windowWidth - 320 : windowWidth - 32);
+    const gap = 24;
+    const minCardWidth = 340;
+    const cols = Math.floor((width + gap) / (minCardWidth + gap));
+    return Math.max(1, Math.min($recordsMaxCols, cols));
   })();
 
   $: columnsData = (() => {
@@ -427,8 +431,9 @@
   onClose={() => (isSettingsOpen = false)}
 />
 
-<div class="w-full" style="max-width: max(1400px, calc(400px * {activeCols} + 6rem));">
-  <div class="flex flex-wrap justify-left items-center mb-8 gap-6">
+<div class="w-full min-w-0" bind:clientWidth={availableWidth}>
+  <div class="w-full" style="max-width: max(1400px, calc(400px * {activeCols} + 6rem));">
+  <div class="flex flex-wrap justify-left items-center mb-6 gap-6">
     <h1
       class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
     >
@@ -655,4 +660,5 @@
       {/each}
     </div>
   {/if}
+  </div>
 </div>

@@ -12,6 +12,7 @@
   import { getWeaponUrl } from "$lib/utils/linkUtils";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
+  import { scrollHorizontalPeek } from "$lib/utils/autoScroll";
 
   import Button from "$lib/components/Button.svelte";
   import Image from "$lib/components/Image.svelte";
@@ -411,6 +412,13 @@
       iconId: b?.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : bId,
     };
   });
+  let scrollContainer;
+
+  function scrollToActiveBanner(bId) {
+    if (!scrollContainer) return;
+    const safeId = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(bId) : bId;
+    scrollHorizontalPeek(scrollContainer, `[data-banner-id="${safeId}"]`);
+  }
 </script>
 
 <div
@@ -418,17 +426,21 @@
 >
   {#if availableSubBanners.length > 1}
     <div
+      bind:this={scrollContainer}
       class="flex gap-1 overflow-x-auto pb-0.5 pt-0.5 banners-scroll -mx-1 px-0.5 snap-x"
     >
       {#each availableSubBanners as bId}
-        <div class="shrink-0">
+        <div class="shrink-0" data-banner-id={bId}>
           <Tooltip text={bId === "all" ? $t("systemNames.allBanners") : ($t(`banners.${bId}`) !== `banners.${bId}` ? $t(`banners.${bId}`) : bId)}>
             <button
               class="group relative {bId === 'all' ? 'px-2' : ''} h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none flex items-center justify-center
                     {selectedSubBannerId === bId
                 ? 'ring-2 ring-[#e44e25] border-[#e44e25] bg-transparent text-[#e44e25] dark:text-[#e44e25]'
                 : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-60 hover:opacity-100 bg-gray-50 dark:bg-[#2e2e2e] text-[#21272C] dark:text-[#FDFDFD]'}"
-              on:click={() => (selectedSubBannerId = bId)}
+              on:click={() => {
+                selectedSubBannerId = bId;
+                scrollToActiveBanner(bId);
+              }}
             >
               {#if bId === "all"}
                 <div class="flex flex-col items-center justify-center gap-1 font-bold text-[10px] uppercase">
@@ -491,6 +503,7 @@
                 on:click={() => {
                   selectedSubBannerId = option.value;
                   isDropdownOpen = false;
+                  scrollToActiveBanner(option.value);
                 }}
                 class="
                   w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3
@@ -728,7 +741,7 @@
     </h4>
 
     {#if icons.length > 0}
-      <div class="flex flex-wrap gap-3 overflow-visible justify-start">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(3rem,1fr))] justify-items-center gap-3 overflow-visible">
         {#each icons as icon}
           <div class="relative inline-flex">
             
