@@ -22,7 +22,8 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
             this.getSortOrderRule(),
             this.getServerIdsRule(),
             this.getPageRule(),
-            this.getRecordsOnPageRule()
+            this.getRecordsOnPageRule(),
+            this.getCharCountFilterRule()
         ];
     }
 
@@ -75,6 +76,13 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
         return new ValidationRule(
             item => rule.isValid(item.recordsOnPage) && this.recordsOnPageSet.has(item.recordsOnPage),
             "recordsOnPage must be one of: 10, 20, 40, 50, 60, 80, 100"
+        );
+    }
+
+    private static getCharCountFilterRule(): ValidationRule<GetContractListQuery> {
+        return new ValidationRule(
+            item => item.charCountFilter === undefined || item.charCountFilter === "" || /^[1-4]$/.test(item.charCountFilter),
+            "charCountFilter must be 1, 2, 3, or 4"
         );
     }
 }

@@ -1,5 +1,6 @@
 <script>
-    import { onDestroy } from "svelte";
+    import { onDestroy, tick } from "svelte";
+    import { scrollHorizontalPeek } from "$lib/utils/autoScroll";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import Icon from "$lib/components/Icon.svelte";
@@ -250,6 +251,20 @@
             URL.revokeObjectURL(photoImageUrl);
         }
     });
+
+    let scrollContainer;
+    let prevScrolledId = null;
+
+    function scrollToOperator(id) {
+        if (!scrollContainer || !id) return;
+        const safeId = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(id) : id;
+        scrollHorizontalPeek(scrollContainer, `[data-char-id="${safeId}"]`);
+    }
+
+    $: if (selectedOperatorId && scrollContainer && selectedOperatorId !== prevScrolledId) {
+        prevScrolledId = selectedOperatorId;
+        tick().then(() => scrollToOperator(selectedOperatorId));
+    }
 </script>
 
 <div class="w-full min-w-0">
@@ -262,16 +277,19 @@
                 </h2>
             </div>
         </div>
-        <div class="flex gap-3.5 overflow-x-auto pb-2.5 whitespace-nowrap max-w-full justify-start items-center">
+        <div bind:this={scrollContainer} class="flex gap-3 overflow-x-auto pb-2.5 whitespace-nowrap max-w-full justify-start items-center">
             {#each sortedChars as char}
                 {@const opData = getOperatorData(char)}
                 {@const isSelected = char.id === selectedOperatorId}
                 {@const isFav = isCharFavorite(char, favoriteChars)}
-                <div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
+                <div data-char-id={char.id} class="relative w-12 h-12 shrink-0 flex items-center justify-center">
                     <button
-                        on:click={() => selectedOperatorId = char.id}
+                        on:click={() => {
+                            selectedOperatorId = char.id;
+                            scrollToOperator(char.id);
+                        }}
                         class="w-11 h-11 rounded-full border-2 transition-all duration-300 outline-none cursor-pointer
-                        {isSelected ? 'ring-2 ring-gray-400 dark:ring-white shadow-md dark:border-gray-500'  : 'border-[#FF6600]/80 hover:opacity-85'}"
+                        {isSelected ? 'ring-2 ring-black/40 dark:ring-white shadow-md dark:border-gray-500'  : 'border-[#FF6600]/80 hover:opacity-85'}"
                     >
                         <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
                     </button>

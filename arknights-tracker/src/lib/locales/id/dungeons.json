@@ -299,6 +299,11 @@
     "description": "FILE 99: Diambil dari sebuah perisai yang hancur dengan struktur yang sesederhana karapas serangga. Spesimen ini telah berkali-kali dilas sehingga menciptakan gaung perang yang menggelegar.",
     "featureDesc": "<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
   },
+  "indie_contract001": {
+    "name": "Operasi Eksperimen Pengapian Ulang",
+    "description": "- Dalam operasi ini, ada 4 gelombang musuh berturut-turut yang harus dihadapi. Kalahkan semua gelombang musuh untuk menyelesaikan operasinya.\n- Massa Pemulih akan dijatuhkan di antara gelombang. Sentuh untuk memulihkan HP setiap rekan tim.\n- Ada sesi istirahat di antara gelombang. Selama waktu istirahat ini, operator dianggap sedang bertarung.\n- Operasi ini punya timer hitung mundur. Setelah timer berakhir atau HP semua operator dalam tim menjadi NOL, operasi akan dihentikan.\n- Item taktis dan item habis pakai tidak bisa digunakan.",
+    "featureDesc": "Musuh berupa berbagai tipe Aggelos.\n- Beberapa musuh bisa mengakibatkan Cryo Infliction kepada operator. Operator yang terkena 4 tumpuk Cryo Infliction akan membeku."
+  },
   "indie_hard001": {
     "name": "Perisai Mengamuk",
     "description": "Kabut bersalju di alam liar ini tak pernah benar-benar menghilang. Di balik gemuruh rendah, terdengar suara retakan yang tajam. \nDengarkan baik-baik. Apa kau bisa dengar ... suara batu yang bergesek dengan logam?",

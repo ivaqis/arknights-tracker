@@ -20,6 +20,8 @@
     import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
     import MonumentWidget from "$lib/components/profile/MonumentWidget.svelte";
     import WarEchoesWidget from "$lib/components/profile/WarEchoesWidget.svelte";
+    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
+    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import SettingsModal from "$lib/components/profile/SettingsModal.svelte";
     import SyncModal from "$lib/components/profile/SyncModal.svelte";
@@ -378,7 +380,6 @@
         }
     }
 
-    let testEmptySlot = false;
     let selectedGameUid = null;
     let favoriteGameUid = "";
 
@@ -414,17 +415,6 @@
     })();
 
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
-    $: contractChars = (() => {
-        const chars = activeAccount?.info?.contract?.chars || [];
-        let list = [...chars];
-        if (testEmptySlot && list.length > 0) {
-            list[list.length - 1] = null;
-        }
-        while (list.length < 4) {
-            list.push(null);
-        }
-        return list;
-    })();
 
     let localAvatar = "";
 
@@ -1045,7 +1035,9 @@
                                 <div class="flex-1 min-w-0 flex flex-col gap-0.5">
                                     <div class="flex items-center gap-1.5">
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
-                                        <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
+                                        {#if (d.info?.contract?.level || d.info?.contract?.contractLevel || d.info?.contract?.indicatorCount || d.contract?.level || d.contract?.indicatorCount || 0) > 0}
+                                            <ContractLevelTag level={d.info?.contract?.level || d.info?.contract?.contractLevel || d.info?.contract?.indicatorCount || d.contract?.level || d.contract?.indicatorCount || 0} />
+                                        {/if}
                                     </div>
                                     <div class="text-[10px] text-[#5B5B5B] dark:text-gray-400 font-mono truncate flex items-center gap-1">
                                         <span>UID: {d.game_uid}</span>
@@ -1142,10 +1134,16 @@
                             />
 
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                                <MonumentWidget
-                                    {activeAccount}
-                                    hasBackground={!!profile?.background}
-                                />
+                                <div class="flex flex-col gap-6">
+                                    <MonumentWidget
+                                        {activeAccount}
+                                        hasBackground={!!profile?.background}
+                                    />
+                                    <!--<CrisisContract
+                                        contract={activeAccount?.info?.contract || activeAccount?.contract}
+                                        hasBackground={!!profile?.background}
+                                    />-->
+                                </div>
                                 <WarEchoesWidget
                                     {activeAccount}
                                     hasBackground={!!profile?.background}

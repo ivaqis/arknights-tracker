@@ -299,6 +299,11 @@
     "description": "ARQUIVO 99: Retirado de um escudo fragmentado cuja simplicidade estrutural se assemelha à da carapaça de um inseto. O espécime foi submetido a inúmeras soldagens, criando um estrondoso eco de guerra.",
     "featureDesc": "<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
+  "indie_contract001": {
+    "name": "Operação Experimental de Reignição",
+    "description": "- A operação compreende 4 ondas consecutivas de combate contra o inimigo. Derrote todas as ondas inimigas para concluir a operação.\n- Massas de Cura serão lançadas entre as ondas. Toque nelas para restaurar PV de todos os membros da equipe.\n- Há um período de descanso entre as ondas durante o qual os operadores ainda são considerados em combate.\n- A operação possui um temporizador com contagem regressiva. Quando o temporizador zera ou todos os operadores da equipe terem PV reduzido a ZERO, a operação será interrompida.\n- Não é possível usar itens táticos nem consumíveis.",
+    "featureDesc": "- Os inimigos são vários tipos de Aggeloi.\n- Alguns inimigos aplicam Inflição Crio a operadores. Um operador que atinge 4 acúmulos de Inflição Crio se torna Solidificado."
+  },
   "indie_hard001": {
     "name": "Escudos Furiosos",
     "description": "A neblina nevada parece nunca se dissipar destas terras selvagens. Sons nítidos de estilhaços podiam ser ouvidos ocultos entre os estrondos baixos. \nEscute com atenção. Você ouviu... pedra rangendo contra metal?",

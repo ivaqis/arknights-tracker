@@ -299,6 +299,11 @@
     "description": "AKTE 99: Erhalten von einem zersplitterten Schild, dessen strukturelle Einfachheit an einen Insektenpanzer erinnert. Dieses Exemplar wurde mehrfach geschmiedet und erzeugt ein dröhnendes Echo des Krieges.",
     "featureDesc": "<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
+  "indie_contract001": {
+    "name": "Versuchseinsatz: Rückzündung",
+    "description": "– Der Einsatz umfasst 4 aufeinanderfolgende Gegnerwellen, die bekämpft werden müssen. Besiege alle Gegnerwellen, um den Einsatz abzuschließen.\n– Zwischen den Wellen werden Heilmassen verfügbar. Berühre sie, um die LP aller Teammitglieder wiederherzustellen.\n– Zwischen den Wellen ereignet sich eine Erholungsphase, während der die Operatoren weiterhin als im Kampf befindlich gelten.\n– Der Einsatz hat einen Countdown-Timer. Sobald der Timer endet oder die LP aller Operatoren im Team auf NULL sinken, wird der Einsatz unterbrochen.\n– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.",
+    "featureDesc": "– Die Gegner sind verschiedene Arten von Aggeloi.\n– Manche Gegner belegen Operatoren mit Kryo. Ein Operator, der 4 Kumulierungen Kryo erleidet, erstarrt."
+  },
   "indie_hard001": {
     "name": "Wütende Schilde",
     "description": "Der winterliche Nebel in der Wildnis scheint sich nie aufzulösen. Ein tiefes Brummen wird ab und an von einem schrillen Klirren durchbrochen. Es klingt, als ob etwas zersplittert. \nHör genau hin. Hörst du auch … wie Stein gegen Metall schleift?",

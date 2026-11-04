@@ -16,6 +16,7 @@
     import { parseRichText } from "$lib/utils/richText.js";
     import { monumentGroups } from "$lib/data/monuments.js";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
+    import { contingencyContracts } from "$lib/data/contracts.ts";
 
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
@@ -115,6 +116,28 @@
         subLabel: formatDateRange(s.startTime, s.endTime, $currentLocale)
     }));
 
+    $: visibleContracts = contingencyContracts.filter(c => isEventStarted(c));
+    $: activeContracts = visibleContracts.length ? visibleContracts : contingencyContracts;
+
+    let selectedContractId = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_contract_id"))
+        || (contingencyContracts[0]?.id || "indie_contract001");
+
+    $: if (activeContracts.length > 0 && (!selectedContractId || !activeContracts.some(c => c.id === selectedContractId))) {
+        selectedContractId = activeContracts[0].id;
+    }
+
+    $: currentContract = activeContracts.find(c => c.id === selectedContractId) || activeContracts[0] || contingencyContracts[0];
+
+    $: contractOptions = activeContracts.map(c => ({
+        value: c.id,
+        label: dungeonLocales[c.id]?.name || c.name,
+        subLabel: formatDateRange(serverFilter === '2' ? (c.startTimeAsia || c.startTime) : c.startTime, serverFilter === '2' ? (c.endTimeAsia || c.endTime) : c.endTime, $currentLocale)
+    }));
+
+    $: currentContractCover = currentContract?.picPath
+        ? `/images/crisisContract/cover/${currentContract.picPath}.webp`
+        : null;
+
     let entries = [];
     let totalEntries = 0;
     let loading = true;
@@ -161,7 +184,7 @@
         lastHandledSearch = $page.url.search;
         const p = $page.url.searchParams;
         const ev = p.get("event");
-        if (ev === "monument" || ev === "echoesOfWar") {
+        if (ev === "monument" || ev === "echoesOfWar" || ev === "contract") {
             selectedEvent = ev;
         }
         if (selectedEvent === "echoesOfWar" || ev === "echoesOfWar") {
@@ -181,6 +204,9 @@
             if (p.has("agony")) {
                 isAgony = p.get("agony") === "true";
             }
+        } else if (selectedEvent === "contract" || ev === "contract") {
+            const contract = p.get("contract") || p.get("contractId");
+            if (contract) selectedContractId = contract;
         }
     }
 
@@ -259,14 +285,16 @@
 
     $: currentDungeonId = selectedEvent === 'monument'
         ? (isAgony ? (currentStage?.hardId || `${selectedStageId}_s`) : selectedStageId)
-        : (selectedWarEchoesDifficulty === 'normal'
-            ? (currentWarEchoesStage?.id || selectedWarEchoesStageId)
-            : (selectedWarEchoesDifficulty === 'hard'
-                ? (currentWarEchoesStage?.hardId || `${selectedWarEchoesStageId}_s`)
-                : (currentWarEchoesStage?.brutalId || `${selectedWarEchoesStageId}_ex`)));
+        : (selectedEvent === 'contract'
+            ? (currentContract?.id || selectedContractId || 'indie_contract001')
+            : (selectedWarEchoesDifficulty === 'normal'
+                ? (currentWarEchoesStage?.id || selectedWarEchoesStageId)
+                : (selectedWarEchoesDifficulty === 'hard'
+                    ? (currentWarEchoesStage?.hardId || `${selectedWarEchoesStageId}_s`)
+                    : (currentWarEchoesStage?.brutalId || `${selectedWarEchoesStageId}_ex`))));
 
     $: currentDungeonLocale = dungeonLocales[currentDungeonId]
-        || dungeonLocales[selectedEvent === 'monument' ? selectedStageId : selectedWarEchoesStageId]
+        || dungeonLocales[selectedEvent === 'monument' ? selectedStageId : (selectedEvent === 'contract' ? selectedContractId : selectedWarEchoesStageId)]
         || {};
 
     $: currentEnemies = (selectedEvent === 'monument'
@@ -287,28 +315,44 @@
                 name: baseId
             };
         })
-        : (currentWarEchoesStage?.enemyIds || []).map((rawId, idx) => {
-            const mapping = enemyVariantMap[rawId];
-            const baseId = mapping ? mapping.baseId : rawId;
-            const variant = mapping ? mapping.postfix : undefined;
-            const baseEnemy = enemies[baseId] || enemies[rawId] || {};
-            let level = 60;
-            if (selectedWarEchoesDifficulty === 'normal') {
-                level = currentWarEchoesStage?.enemyLevels?.[idx] || 60;
-            } else if (selectedWarEchoesDifficulty === 'hard') {
-                level = currentWarEchoesStage?.hardEnemyLevels?.[idx] || 75;
-            } else {
-                level = currentWarEchoesStage?.brutalEnemyLevels?.[idx] || 90;
-            }
-            return {
-                id: rawId,
-                baseId,
-                variant,
-                rarity: baseEnemy.rarity || 4,
-                level,
-                name: baseId
-            };
-        }));
+        : (selectedEvent === 'contract'
+            ? (currentContract?.enemyIds || []).map((rawId, idx) => {
+                const mapping = enemyVariantMap[rawId];
+                const baseId = mapping ? mapping.baseId : rawId;
+                const variant = mapping ? mapping.postfix : undefined;
+                const baseEnemy = enemies[baseId] || enemies[rawId] || {};
+                const level = currentContract?.enemyLevels?.[idx] || 60;
+                return {
+                    id: rawId,
+                    baseId,
+                    variant,
+                    rarity: baseEnemy.rarity || 4,
+                    level,
+                    name: baseId
+                };
+            })
+            : (currentWarEchoesStage?.enemyIds || []).map((rawId, idx) => {
+                const mapping = enemyVariantMap[rawId];
+                const baseId = mapping ? mapping.baseId : rawId;
+                const variant = mapping ? mapping.postfix : undefined;
+                const baseEnemy = enemies[baseId] || enemies[rawId] || {};
+                let level = 60;
+                if (selectedWarEchoesDifficulty === 'normal') {
+                    level = currentWarEchoesStage?.enemyLevels?.[idx] || 60;
+                } else if (selectedWarEchoesDifficulty === 'hard') {
+                    level = currentWarEchoesStage?.hardEnemyLevels?.[idx] || 75;
+                } else {
+                    level = currentWarEchoesStage?.brutalEnemyLevels?.[idx] || 90;
+                }
+                return {
+                    id: rawId,
+                    baseId,
+                    variant,
+                    rarity: baseEnemy.rarity || 4,
+                    level,
+                    name: baseId
+                };
+            })));
 
     const weaponsById = Object.values(weapons || {}).reduce((acc, w) => {
         if (w && w.id) acc[w.id] = w;
@@ -444,6 +488,7 @@
         try {
             const data = await fetchLeaderboard({
                 event: selectedEvent,
+                contractId: selectedEvent === 'contract' ? (currentContract?.id || selectedContractId) : undefined,
                 dungeonId: (selectedEvent === 'monument' || selectedEvent === 'echoesOfWar') ? currentDungeonId : undefined,
                 groupId: selectedEvent === 'echoesOfWar' ? `s${selectedWarEchoesSeason}_w${selectedWarEchoesCycle}` : undefined,
                 serverId: serverFilter,
@@ -496,6 +541,16 @@
         loadLeaderboard();
     }
 
+    let prevContractId = selectedContractId;
+    $: if (selectedEvent === 'contract' && selectedContractId !== prevContractId) {
+        prevContractId = selectedContractId;
+        currentPage = 1;
+        if (browser && typeof localStorage !== "undefined") {
+            localStorage.setItem("leaderboard_contract_id", selectedContractId);
+        }
+        loadLeaderboard();
+    }
+
     onMount(() => {
         loadLeaderboard();
     });
@@ -517,7 +572,10 @@
 
     function formatRelativeTime(updatedAt) {
         if (!updatedAt) return "";
-        const parsed = typeof updatedAt === "number" ? updatedAt : new Date(String(updatedAt).replace(" ", "T")).getTime();
+        const num = Number(updatedAt);
+        const parsed = (!isNaN(num) && isFinite(num))
+            ? (num < 1e11 ? num * 1000 : num)
+            : new Date(String(updatedAt).replace(" ", "T")).getTime();
         if (isNaN(parsed)) return "";
         const diff = Date.now() - parsed;
         if (diff < 0) return $t("profile.time_just_now");
@@ -613,6 +671,14 @@
                     <Icon name="echoesOfWar" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                     {$t("leaderboard.echoesOfWar")}
                 </button>
+                <!--<button
+                    type="button"
+                    on:click={() => selectedEvent = "contract"}
+                    class="px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold font-sdk transition-colors flex items-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 {selectedEvent === 'contract' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
+                >
+                    <Icon name="contract" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                    {$t("leaderboard.contract")}
+                </button>-->
             </div>
         </div>
 
@@ -652,6 +718,18 @@
                     <Select
                         options={warEchoesSeasonOptions}
                         bind:value={selectedWarEchoesSeason}
+                        className="w-full"
+                        variant="gray"
+                    />
+                </div>
+            {:else if selectedEvent === 'contract'}
+                <div class="flex flex-col gap-1.5">
+                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                        {$t("leaderboard.contract")}
+                    </span>
+                    <Select
+                        options={contractOptions}
+                        bind:value={selectedContractId}
                         className="w-full"
                         variant="gray"
                     />
@@ -911,6 +989,58 @@
                         </div>
                     </div>
                 </div>
+            {:else if selectedEvent === 'contract' && currentContract}
+                <div class="relative bg-white dark:bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
+                    {#if currentContractCover}
+                        <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden">
+                            <img
+                                src={currentContractCover}
+                                alt={currentContract.name}
+                                class="w-full h-full object-cover scale-120 translate-x-8"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent dark:from-[#262626] dark:via-[#262626]/20"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-[#262626]/30"></div>
+                        </div>
+                    {/if}
+
+                    <div class="relative z-10 p-5 sm:p-6 flex flex-col md:flex-row justify-between gap-6">
+                        <div class="max-w-xl flex flex-col gap-2">
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sdk tracking-wide">
+                                {currentDungeonLocale.name || currentContract.name}
+                            </h3>
+
+                            {#if currentDungeonLocale.description}
+                                <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 whitespace-pre-line leading-relaxed font-sans">
+                                    {@html parseRichText(currentDungeonLocale.description)}
+                                </div>
+                            {/if}
+                        </div>
+
+                        <div class="flex flex-col justify-between items-start md:items-end gap-4 min-w-0 md:max-w-md">
+                            {#if currentDungeonLocale.featureDesc}
+                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug whitespace-pre-line">
+                                    {@html parseRichText(currentDungeonLocale.featureDesc)}
+                                </p>
+                            {/if}
+
+                            {#if currentEnemies.length > 0}
+                                <div class="flex flex-wrap items-center justify-end gap-2.5 mt-auto pt-2">
+                                    {#each currentEnemies as enemy}
+                                        <WeaponCard
+                                            weapon={enemy}
+                                            isEnemy={true}
+                                            variant="small"
+                                            isStatic={true}
+                                            hidePot={true}
+                                            hideDarkness={true}
+                                            className="w-[78px] h-[78px] sm:w-[92px] sm:h-[92px]"
+                                        />
+                                    {/each}
+                                </div>
+                            {/if}
+                        </div>
+                    </div>
+                </div>
             {/if}
 
             {#if loading}
@@ -1078,7 +1208,7 @@
                                                                     <PotentialIcon pot={charPot} size={18} />
                                                                 </div>
                                                             </div>
-                                                            {#if char.weapon}
+                                                            {#if char.weapon && selectedEvent !== 'contract'}
                                                                 <div class="absolute -bottom-1 -right-1 z-10">
                                                                     <img
                                                                         src={getImagePath(wpnData?.id || char.weapon.id, 'weapon-icon')}
@@ -1187,7 +1317,7 @@
                                                         <PotentialIcon pot={charPot} size={18} />
                                                     </div>
                                                 </div>
-                                                {#if char.weapon}
+                                                {#if char.weapon && selectedEvent !== 'contract'}
                                                     <div class="absolute -bottom-1 -right-1 z-10">
                                                         <img
                                                             src={getImagePath(wpnData?.id || char.weapon.id, 'weapon-icon')}
@@ -1317,6 +1447,7 @@
                             hideHeader={true}
                             hasBackground={false}
                             transparent={true}
+                            hideRank={true}
                             charHrefGenerator={(char) => {
                                 const op = getOperatorData(char);
                                 return (selectedEntry && op) ? `/u/${selectedEntry.user.name}?char=${op.id}${selectedEntry.serverId ? `&server=${selectedEntry.serverId}` : ''}` : null;

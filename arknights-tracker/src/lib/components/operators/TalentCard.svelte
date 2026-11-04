@@ -125,7 +125,7 @@
 </script>
 
 <div
-    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-xl p-5 shadow-sm dark:border-[#444444] border border-gray-200 w-full flex flex-col gap-2 transition-all hover:border-gray-300"
+    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-xl p-5 shadow-sm dark:border-[#444444] border border-gray-200 w-full grow basis-[calc(50%-6px)] min-w-[min(100%,425px)] max-w-full [@container(min-width:862px)]:max-w-[calc(50%-6px)] flex flex-col gap-2 transition-all hover:border-gray-300"
 >
     <div class="flex-1 flex flex-col gap-2">
         <div class="flex items-center gap-2 mb-1">

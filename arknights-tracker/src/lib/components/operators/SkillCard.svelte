@@ -419,7 +419,9 @@
 
 <div
     class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl shadow-sm border dark:border-[#444444] border-gray-100 flex flex-col gap-4 transition-all duration-300
-    {isTableMode ? 'w-full md:max-w-full is-table-mode' : 'w-full md:w-[calc(50%-10px)] md:max-w-[550px]'}"
+    {isTableMode
+        ? 'w-full basis-full max-w-full is-table-mode'
+        : 'w-full grow basis-[calc(50%-6px)] min-w-[min(100%,425px)] max-w-full [@container(min-width:862px)]:max-w-[calc(50%-6px)]'}"
 >
     <div class="flex items-start gap-4">
         <div

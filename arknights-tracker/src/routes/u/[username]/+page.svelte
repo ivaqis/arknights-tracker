@@ -9,6 +9,8 @@
     import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
     import MonumentWidget from "$lib/components/profile/MonumentWidget.svelte";
     import WarEchoesWidget from "$lib/components/profile/WarEchoesWidget.svelte";
+    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
+    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import RatingCard from "$lib/components/records/RatingCard.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -229,7 +231,7 @@
                                     class="w-full h-full object-cover"
                                 />
                             {:else}
-                                <div class="w-full h-full bg-white/10 flex items-center justify-center text-white/50 text-3xl font-bold">
+                                <div class="w-full h-full bg-gray-300/30 dark:bg-white/10 flex items-center justify-center text-gray-300 dark:text-white/50 text-3xl font-bold">
                                     {profile.name ? profile.name[0].toUpperCase() : "?"}
                                 </div>
                             {/if}
@@ -283,7 +285,9 @@
                                 <div class="flex-1 min-w-0 flex flex-col gap-0.5">
                                     <div class="flex items-center gap-1.5">
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
-                                        <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
+                                        {#if (d.info?.contract?.level || d.info?.contract?.contractLevel || d.info?.contract?.indicatorCount || d.contract?.level || d.contract?.indicatorCount || 0) > 0}
+                                            <ContractLevelTag level={d.info?.contract?.level || d.info?.contract?.contractLevel || d.info?.contract?.indicatorCount || d.contract?.level || d.contract?.indicatorCount || 0} />
+                                        {/if}
                                     </div>
                                     {#if !isUidHidden}
                                         <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
@@ -347,10 +351,16 @@
 
                             {#if !profile?.hideLeaderboard && !profile?.isPrivate}
                                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                                    <MonumentWidget
-                                        {activeAccount}
-                                        hasBackground={!!profile?.background}
-                                    />
+                                    <div class="flex flex-col gap-6">
+                                        <MonumentWidget
+                                            {activeAccount}
+                                            hasBackground={!!profile?.background}
+                                        />
+                                        <!--<CrisisContract
+                                            contract={activeAccount?.info?.contract || activeAccount?.contract}
+                                            hasBackground={!!profile?.background}
+                                        />-->
+                                    </div>
                                     <WarEchoesWidget
                                         {activeAccount}
                                         hasBackground={!!profile?.background}

@@ -25,7 +25,7 @@
       button: "bg-[#363636] border-[#363636] text-white hover:bg-[#404040]",
       dropdown: "bg-[#363636] border-[#454545] text-white",
       optionActive: "bg-[#505050] text-white",
-      optionHover: "hover:bg-[#404040]",
+      optionHover: "text-white hover:bg-[#404040]",
       subLabel: "text-gray-300",
       topoOpacity: "opacity-25"
     },
@@ -33,7 +33,7 @@
       button: "bg-white border-gray-200 text-[#21272C] hover:border-gray-300",
       dropdown: "bg-white border-gray-100 text-[#21272C]",
       optionActive: "bg-gray-100",
-      optionHover: "hover:bg-gray-50",
+      optionHover: "text-[#21272C] hover:bg-gray-50",
       subLabel: "text-gray-500",
       topoOpacity: "opacity-30"
     },
@@ -41,7 +41,7 @@
       button: "bg-[#FFE145] border-[#FFE145] text-black hover:bg-[#ebd03f]",
       dropdown: "bg-[#FFE145] border-[#ebd03f] text-black",
       optionActive: "bg-black/10 text-black",
-      optionHover: "hover:bg-black/5",
+      optionHover: "text-black hover:bg-black/5",
       subLabel: "text-black/60",
       topoOpacity: "opacity-20"
     },
@@ -49,7 +49,7 @@
       button: "bg-[#404040] border-[#404040] text-white hover:bg-[#3f3f3f]",
       dropdown: "bg-[#3A3A3A] border-[#404040] text-white",
       optionActive: "bg-[#404040] text-white",
-      optionHover: "hover:bg-[#404040]",
+      optionHover: "text-white hover:bg-[#404040]",
       subLabel: "text-white/60",
       topoOpacity: "opacity-20"
     }
@@ -100,6 +100,7 @@
 <div class="relative {className}" use:clickOutside>
   <button
     on:click={toggle}
+    title={selectedLabel}
     class="
       relative w-full h-14 px-4 flex items-center justify-between
       border transition-colors duration-200 group rounded-md
@@ -115,7 +116,7 @@
         {@html topoPattern}
     </div>
 
-    <span class="relative z-10 text-lg truncate pr-4 flex items-center gap-3">
+    <div class="relative z-10 flex-1 min-w-0 pr-3 flex items-center gap-3 text-left text-inherit">
       {#if selectedOption?.iconId}
          <div class="flex-shrink-0 flex items-center justify-center {isContain ? 'w-8 h-10' : 'w-12 h-8 rounded-sm overflow-hidden'} {hasBorder ? 'border border-white/10 shadow-sm' : ''}">
              <Image
@@ -128,18 +129,18 @@
          </div>
       {/if}
       {#if selectedOption?.subLabel}
-        <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
-          <span class="truncate leading-tight">{selectedLabel}</span>
-          <span class="text-xs font-mono tracking-tight mt-0.5 opacity-60 {theme.subLabel}">
+        <div class="flex flex-col min-w-0 flex-1 leading-none py-0.5">
+          <span class="truncate w-full leading-tight sm:text-lg">{selectedLabel}</span>
+          <span class="text-xs font-mono tracking-tight mt-0.5 opacity-60 truncate w-full {theme.subLabel}">
             {selectedOption.subLabel}
           </span>
         </div>
       {:else}
-        <span class="truncate">{selectedLabel}</span>
+        <span class="truncate w-full sm:text-lg">{selectedLabel}</span>
       {/if}
-    </span>
+    </div>
 
-    <div class="relative z-10 transition-transform duration-300 {isOpen ? 'rotate-180' : ''}">
+    <div class="relative z-10 shrink-0 transition-transform duration-300 {isOpen ? 'rotate-180' : ''}">
       <Icon name="arrowDown" class="w-3.5 h-3.5" />
     </div>
     
@@ -154,13 +155,14 @@
         {theme.dropdown}
       "
     >
-      <ul class="max-h-60 overflow-y-auto custom-scrollbar">
+      <ul class="max-h-60 overflow-y-auto overflow-x-hidden custom-scrollbar">
         {#each options as option}
           <li>
             <button
               on:click={() => select(option)}
+              title={option.label}
               class="
-                w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3
+                w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3 text-inherit
                 {value === option.value ? theme.optionActive : theme.optionHover}
               "
             >
@@ -176,14 +178,14 @@
                  </div>
               {/if}
               {#if option.subLabel}
-                <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
-                  <span class="truncate leading-tight">{option.label}</span>
-                  <span class="text-[11px] font-mono tracking-tight mt-0.5 opacity-60 {theme.subLabel}">
+                <div class="flex flex-col min-w-0 flex-1 leading-normal py-0.5">
+                  <span class="whitespace-normal break-words leading-tight">{option.label}</span>
+                  <span class="text-[11px] font-mono tracking-tight mt-1 opacity-60 {theme.subLabel}">
                     {option.subLabel}
                   </span>
                 </div>
               {:else}
-                <span class="truncate">{option.label}</span>
+                <span class="whitespace-normal break-words flex-1 leading-tight">{option.label}</span>
               {/if}
             </button>
           </li>

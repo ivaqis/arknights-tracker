@@ -11,4 +11,6 @@ export interface ContractRecordEntity {
     isBest: boolean;
     indicators: string[];
     chars: ContractCharEntity[];
+    rank?: number;
+    totalCount?: number;
 }

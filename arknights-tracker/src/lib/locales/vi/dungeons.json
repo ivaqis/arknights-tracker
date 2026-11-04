@@ -299,6 +299,11 @@
     "description": "HỒ SƠ 99: Lấy từ một chiếc khiên vỡ có kết cấu đơn giản chẳng kém gì lớp vỏ côn trùng. Mẫu vật này đã trải qua rất nhiều lần hàn nối, tạo nên tiếng vọng chiến tranh vang dội.",
     "featureDesc": "<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
   },
+  "indie_contract001": {
+    "name": "Chiến Dịch Thử Nghiệm Tái Kích Hoạt",
+    "description": "- Chiến dịch này bao gồm 4 đợt kẻ địch liên tiếp. Đánh bại toàn bộ kẻ địch để hoàn thành chiến dịch.\n- Khối Hồi Phục sẽ xuất hiện giữa các đợt. Chạm vào Khối Hồi Phục để hồi HP cho toàn bộ thành viên trong đội.\n- Giữa các đợt có giai đoạn nghỉ; trong thời gian này, các cán viên vẫn được xem là đang trong trạng thái chiến đấu.\n- Chiến dịch có giới hạn thời gian. Khi thời gian kết thúc hoặc HP của toàn bộ cán viên trong đội giảm về 0, chiến dịch sẽ bị gián đoạn.\n- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.",
+    "featureDesc": "- Kẻ địch thuộc nhiều chủng loại của Aggeloi.\n- Một số kẻ địch có thể áp dụng hiệu ứng Nhiễm Băng lên cán viên. Cán Viên chịu đủ 4 cộng dồn Nhiễm Băng sẽ bị đông cứng."
+  },
   "indie_hard001": {
     "name": "Khiên Cuồng Nộ",
     "description": "Lớp sương tuyết dường như chẳng bao giờ tan đi trên hoang địa này. Giữa những tiếng gầm trầm đục, vang lên âm thanh rạn vỡ lanh lảnh. \nHãy lắng nghe thật kỹ. Ngươi có nghe thấy không… tiếng đá nghiến vào kim loại?",

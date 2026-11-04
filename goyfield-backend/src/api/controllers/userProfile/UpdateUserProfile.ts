@@ -7,6 +7,7 @@ import { Controller } from "@api/controllers/Controller.js";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile.js";
 import { Database } from "@database/Database.js";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
 import { bannedWords, crisisContractRecords } from "@staticModels/instances.js";
 import e from "express";
@@ -134,14 +135,19 @@ export class UpdateUserProfile
         return;
     }
 
-    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
+    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecordEntity | null>> {
         const currentContractId = crisisContractRecords.current.id;
-        const records: Record<string, ContractRecord | null> = {};
+        const records: Record<string, ContractRecordEntity | null> = {};
+        if (gameUids.length === 0) return records;
 
-        for (const uid of gameUids) {
-            const record = await this._database.contractLeaderboard.findBestByGameUid(uid, currentContractId);
-
-            records[uid] = record?.data ?? null;
+        const runs = await this._database.contractLeaderboard.findRunsWithRanksByGameUids(gameUids, currentContractId);
+        for (const run of runs) {
+            try {
+                const entity: ContractRecordEntity = JSON.parse(run.data);
+                entity.rank = run.rank;
+                entity.totalCount = run.totalCount;
+                records[run.gameUid] = entity;
+            } catch {}
         }
 
         return records;

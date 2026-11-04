@@ -19,6 +19,7 @@
     export let hasBackground = false;
     export let hideHeader = false;
     export let transparent = false;
+    export let hideRank = false;
     export let charHrefGenerator = null;
 
     function getSvelteCharId(char) {
@@ -130,8 +131,15 @@
         }
     }
 
-    $: contractLevel = contract?.level || contract?.contractLevel || 0;
-    $: clearTime = contract?.clearTime !== undefined ? contract.clearTime : (contract?.clear_time || 0);
+    function getRankTagStyle(rank) {
+        if (rank === 1) return "bg-[#FFE145] text-gray-900";
+        if (rank === 2) return "bg-[#C0C0C0] text-gray-900";
+        if (rank === 3) return "bg-[#CD7F32] text-white";
+        return "bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/15";
+    }
+
+    $: contractLevel = contract?.level || contract?.contractLevel || contract?.indicatorCount || 0;
+    $: clearTime = contract?.clearTime !== undefined ? contract.clearTime : (contract?.clear_time !== undefined ? contract.clear_time : (contract?.passTs || 0));
 
     $: contractChars = (() => {
         const listChars = chars || contract?.chars || [];
@@ -144,7 +152,7 @@
 </script>
 
 <div class="w-full">
-    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-[7px] shadow-sm flex flex-col`}>
+    <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-[7px] shadow-sm flex flex-col`}>
         {#if !hideHeader}
             <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
                 <div class="flex items-center gap-2">
@@ -157,12 +165,23 @@
         {/if}
 
         {#if contract && contractLevel > 0}
-            <div class="flex items-center justify-between mb-4">
-                <div class="text-sm font-medium dark:text-gray-400 text-gray-600">
-                    {$t("profile.clear_time_label")} 
-                    <span class="dark:text-white text-gray-900 font-bold text-lg ml-1 font-nums">
-                        {$t("leaderboard.sec", { time: clearTime })}
-                    </span>
+            <div class="flex items-center justify-between mb-4 gap-2 flex-wrap">
+                <div class="flex items-center gap-2 flex-wrap">
+                    <div class="text-sm font-medium dark:text-gray-400 text-gray-600">
+                        {$t("profile.clear_time_label")} 
+                        <span class="dark:text-white text-gray-900 font-bold text-lg ml-1 font-nums">
+                            {$t("leaderboard.sec", { time: clearTime })}
+                        </span>
+                    </div>
+                    {#if !hideRank && contract.rank}
+                        <a
+                            href="/leaderboard?event=contract"
+                            class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 transition-transform active:scale-95 hover:opacity-90 cursor-pointer {getRankTagStyle(contract.rank)}"
+                            title={$t("navigation.leaderboard")}
+                        >
+                            #{contract.rank}/{contract.totalCount || contract.rank}
+                        </a>
+                    {/if}
                 </div>
                 <ContractLevelTag level={contractLevel} />
             </div>
@@ -202,7 +221,7 @@
             <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50/20 dark:bg-[#2C2C2C]/20 rounded-2xl border border-gray-100/50 dark:border-[#444444]/50 w-full backdrop-blur-[7px]">
                 <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
                 <p class="text-sm">
-                    {$t("emptyState.noData") || "No records found"}
+                    {$t("emptyState.noData")}
                 </p>
             </div>
         {/if}

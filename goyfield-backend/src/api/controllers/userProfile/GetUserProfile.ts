@@ -8,6 +8,7 @@ import { Database } from "@database/Database.js";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
 import { UserRecord } from "@database/records/UserRecord.js";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity.js";
 import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity.js";
 import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher.js";
@@ -48,7 +49,7 @@ export class GetUserProfile extends Controller<
 
     public static getRespData(record: UserRecord,
                               gameProfiles: GameProfileEntity[],
-                              contractRecords: Record<string, ContractRecord | null>,
+                              contractRecords: Record<string, ContractRecordEntity | null>,
                               pullsStats: Record<string, PullProfileEntity | null>,
                               monumentMap: Record<string, IMonumentProfileRun[]> = {},
                               warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
@@ -150,7 +151,7 @@ export class GetUserProfile extends Controller<
     }
 
     private static getGameProfiles(gameProfiles: GameProfileEntity[],
-                                   contractRecords: Record<string, ContractRecord | null>,
+                                   contractRecords: Record<string, ContractRecordEntity | null>,
                                    pullsStats: Record<string, PullProfileEntity | null>,
                                    monumentMap: Record<string, IMonumentProfileRun[]> = {},
                                    warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
@@ -164,7 +165,7 @@ export class GetUserProfile extends Controller<
 
             result.push({
                 gameProfile: gameProfile,
-                contract: record?.getEntity() ?? null,
+                contract: record ?? null,
                 pulls: pulls,
                 monument: monumentMap[roleId] || [],
                 warEchoes: warEchoesMap[roleId] || []
@@ -211,14 +212,19 @@ export class GetUserProfile extends Controller<
         this.data = GetUserProfile.getRespData(profile, gameProfilesData, bestRecords, pullStats, monumentMap, warEchoesMap);
     }
 
-    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
+    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecordEntity | null>> {
         const currentContractId = crisisContractRecords.current.id;
-        const records: Record<string, ContractRecord | null> = {};
+        const records: Record<string, ContractRecordEntity | null> = {};
+        if (gameUids.length === 0) return records;
 
-        for (const uid of gameUids) {
-            const record = await this._database.contractLeaderboard.findBestByGameUid(uid, currentContractId);
-
-            records[uid] = record?.data ?? null;
+        const runs = await this._database.contractLeaderboard.findRunsWithRanksByGameUids(gameUids, currentContractId);
+        for (const run of runs) {
+            try {
+                const entity: ContractRecordEntity = JSON.parse(run.data);
+                entity.rank = run.rank;
+                entity.totalCount = run.totalCount;
+                records[run.gameUid] = entity;
+            } catch {}
         }
 
         return records;

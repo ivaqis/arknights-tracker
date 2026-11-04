@@ -1491,7 +1491,7 @@
                                 </h2>
 
                                 <div
-                                    class="flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
+                                    class="[container-type:inline-size] flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
                                 >
                                     {#each skillKeys as key}
                                         {#if skillsValuesData[key]}
@@ -1528,38 +1528,30 @@
                                 {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
                                     <section>
                                         <div
-                                            class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                            class="[container-type:inline-size] flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
                                         >
                                             {#if skillsLocale?.talent1 || charMaterials?.talent1}
-                                                <div
-                                                    class="w-full max-w-[550px]"
-                                                >
-                                                    <TalentCard
-                                                        charId={id}
-                                                        type="talent"
-                                                        dataKey="talent1"
-                                                        materials={charMaterials?.talent1}
-                                                        indicatorType={charDetails?.indicatorType}
-                                                        localizedData={skillsLocale?.talent1}
-                                                        blackboard={charDetails?.blackboard}
-                                                    />
-                                                </div>
+                                                <TalentCard
+                                                    charId={id}
+                                                    type="talent"
+                                                    dataKey="talent1"
+                                                    materials={charMaterials?.talent1}
+                                                    indicatorType={charDetails?.indicatorType}
+                                                    localizedData={skillsLocale?.talent1}
+                                                    blackboard={charDetails?.blackboard}
+                                                />
                                             {/if}
 
                                             {#if skillsLocale?.talent2 || charMaterials?.talent2}
-                                                <div
-                                                    class="w-full max-w-[550px]"
-                                                >
-                                                    <TalentCard
-                                                        charId={id}
-                                                        type="talent"
-                                                        dataKey="talent2"
-                                                        materials={charMaterials?.talent2}
-                                                        localizedData={skillsLocale?.talent2}
-                                                        indicatorType={charDetails?.indicatorType}
-                                                        blackboard={charDetails?.blackboard}
-                                                    />
-                                                </div>
+                                                <TalentCard
+                                                    charId={id}
+                                                    type="talent"
+                                                    dataKey="talent2"
+                                                    materials={charMaterials?.talent2}
+                                                    localizedData={skillsLocale?.talent2}
+                                                    indicatorType={charDetails?.indicatorType}
+                                                    blackboard={charDetails?.blackboard}
+                                                />
                                             {/if}
                                         </div>
                                     </section>
@@ -1596,64 +1588,56 @@
                                     {#if (fac1 && hasBase1) || (fac2 && hasBase2)}
                                         <section>
                                             <div
-                                                class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                                class="[container-type:inline-size] flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
                                             >
                                                 {#if fac1 && hasBase1}
-                                                    <div
-                                                        class="w-full max-w-[550px]"
-                                                    >
-                                                        <TalentCard
-                                                            charId={id}
-                                                            type="base"
-                                                            index={0}
-                                                            dataKey="baseSkill1"
-                                                            materials={charMaterials?.baseSkill1}
-                                                            localizedData={skillsLocale?.baseSkill1}
-                                                            facSkillImage={fac1.name}
-                                                            blackboard={charDetails?.blackboard}
-                                                            postfixes={fac1Keys
-                                                                .map(
-                                                                    (k) =>
-                                                                        charDetails
-                                                                            .facSkills[
-                                                                            k
-                                                                        ]
-                                                                            ?.skillNamePostfix,
-                                                                )
-                                                                .filter(
-                                                                    Boolean,
-                                                                )}
-                                                        />
-                                                    </div>
+                                                    <TalentCard
+                                                        charId={id}
+                                                        type="base"
+                                                        index={0}
+                                                        dataKey="baseSkill1"
+                                                        materials={charMaterials?.baseSkill1}
+                                                        localizedData={skillsLocale?.baseSkill1}
+                                                        facSkillImage={fac1.name}
+                                                        blackboard={charDetails?.blackboard}
+                                                        postfixes={fac1Keys
+                                                            .map(
+                                                                (k) =>
+                                                                    charDetails
+                                                                        .facSkills[
+                                                                        k
+                                                                    ]
+                                                                        ?.skillNamePostfix,
+                                                            )
+                                                            .filter(
+                                                                Boolean,
+                                                            )}
+                                                    />
                                                 {/if}
 
                                                 {#if fac2 && hasBase2}
-                                                    <div
-                                                        class="w-full max-w-[550px]"
-                                                    >
-                                                        <TalentCard
-                                                            charId={id}
-                                                            type="base"
-                                                            index={1}
-                                                            dataKey="baseSkill2"
-                                                            materials={charMaterials?.baseSkill2}
-                                                            localizedData={skillsLocale?.baseSkill2}
-                                                            facSkillImage={fac2.name}
-                                                            blackboard={charDetails?.blackboard}
-                                                            postfixes={fac2Keys
-                                                                .map(
-                                                                    (k) =>
-                                                                        charDetails
-                                                                            .facSkills[
-                                                                            k
-                                                                        ]
-                                                                            ?.skillNamePostfix,
-                                                                )
-                                                                .filter(
-                                                                    Boolean,
-                                                                )}
-                                                        />
-                                                    </div>
+                                                    <TalentCard
+                                                        charId={id}
+                                                        type="base"
+                                                        index={1}
+                                                        dataKey="baseSkill2"
+                                                        materials={charMaterials?.baseSkill2}
+                                                        localizedData={skillsLocale?.baseSkill2}
+                                                        facSkillImage={fac2.name}
+                                                        blackboard={charDetails?.blackboard}
+                                                        postfixes={fac2Keys
+                                                            .map(
+                                                                (k) =>
+                                                                    charDetails
+                                                                        .facSkills[
+                                                                        k
+                                                                    ]
+                                                                        ?.skillNamePostfix,
+                                                            )
+                                                            .filter(
+                                                                Boolean,
+                                                            )}
+                                                    />
                                                 {/if}
                                             </div>
                                         </section>
@@ -1662,21 +1646,17 @@
                                     {#if skillsLocale?.indicator || charMaterials?.indicator}
                                         <section>
                                             <div
-                                                class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                                class="[container-type:inline-size] flex flex-wrap items-start gap-3 w-full justify-start 2xl:justify-end"
                                             >
-                                                <div
-                                                    class="w-full max-w-[550px]"
-                                                >
-                                                    <TalentCard
-                                                        charId={id}
-                                                        type="indicator"
-                                                        dataKey="indicator"
-                                                        maxLevels={4}
-                                                        materials={charMaterials?.indicator}
-                                                        indicatorType={charDetails?.indicatorType}
-                                                        localizedData={skillsLocale?.indicator}
-                                                    />
-                                                </div>
+                                                <TalentCard
+                                                    charId={id}
+                                                    type="indicator"
+                                                    dataKey="indicator"
+                                                    maxLevels={4}
+                                                    materials={charMaterials?.indicator}
+                                                    indicatorType={charDetails?.indicatorType}
+                                                    localizedData={skillsLocale?.indicator}
+                                                />
                                             </div>
                                         </section>
                                     {/if}
@@ -1934,7 +1914,7 @@
 
                                 {#if charLocale?.arts}
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-start justify-items-start 2xl:justify-items-end"
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-start justify-items-start 2xl:justify-items-end"
                                     >
                                         {#each Object.entries(charLocale.arts) as [artKey, artData]}
                                             {@const realKey =
@@ -2272,7 +2252,7 @@
 
                                 {#if extraArts.length > 0}
                                     <div
-                                        class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance] mt-6 w-full"
+                                        class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance] pt-3 border-t border-gray-200/50 dark:border-[#444444]/50 w-full"
                                     >
                                         {#each extraArts as art (art.id)}
                                             <div

@@ -299,6 +299,11 @@
     "description": "FICHIER 99 : Prélevé sur un bouclier brisé, dont la simplicité structurelle est comparable à celle d'une carapace d'insecte. Le spécimen a subi de nombreuses soudures, créant un écho guerrier rugissant.",
     "featureDesc": "<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
+  "indie_contract001": {
+    "name": "Opération expérimentale de Remise à feu",
+    "description": "- L'opération consiste en 4 vagues d'ennemis consécutives à affronter. Éliminez toutes les vagues d'ennemis pour terminer l'opération.\n- Des sphères de soin apparaîtront entre les vagues. Touchez-les pour restaurer les PV de vos coéquipiers.\n- Chaque vague est suivie d'une pause, durant laquelle les opérateurs sont toujours considérés comme étant au combat.\n- L'opération se déroule avec un chrono. À la fin du temps imparti ou si tous les opérateurs de l'équipe tombent à 0 PV, l'opération est interrompue.\n- Les objets tactiques et consommables sont inutilisables.",
+    "featureDesc": "- Les ennemis incluent divers types d'Aggeloi. \n- Certains ennemis appliquent une altération cryogénique aux opérateurs. Tout opérateur atteignant 4 altérations cryogéniques est solidifié."
+  },
   "indie_hard001": {
     "name": "Boucliers ravageurs",
     "description": "Les brumes enneigées n'ont jamais l'air de se dissiper sur ces terres sauvages. Des bruits clairs de fracas sont perceptibles au beau milieu des grondements. \nTendez l'oreille. Vous avez entendu... du métal frotté contre la pierre ?",

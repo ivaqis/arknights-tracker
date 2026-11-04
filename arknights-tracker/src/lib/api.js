@@ -157,6 +157,8 @@ function normalizeGameProfiles(data) {
             };
             const contract = gp.contract ? {
                 ...gp.contract,
+                rank: gp.contract.rank,
+                totalCount: gp.contract.totalCount,
                 level: gp.contract.indicatorCount || 0,
                 contractLevel: gp.contract.indicatorCount || 0,
                 clearTime: gp.contract.passTs || 0,
@@ -189,7 +191,12 @@ function normalizeGameProfiles(data) {
                         armEquip,
                         firstAccessory,
                         secondAccessory,
-                        equips: [bodyEquip, armEquip, firstAccessory, secondAccessory].filter(Boolean)
+                        equips: {
+                        bodyEquip,
+                        armEquip,
+                        firstAccessory,
+                        secondAccessory
+                    }
                     };
                 })
             } : null;
@@ -579,7 +586,7 @@ export async function fetchLeaderboard(params = 'contract') {
                     level: r.level,
                     contractLevel: 0,
                     clear_time: r.passTs,
-                    updatedAt: r.ts,
+                    updatedAt: r.updatedAt || r.ts,
                     serverId: r.serverId,
                     chars: (r.chars || []).map(c => ({
                         id: normalizeCharId(c.id),
@@ -602,11 +609,14 @@ export async function fetchLeaderboard(params = 'contract') {
 
         if (options.sortField && options.sortField !== 'default') {
             sortField = options.sortField === 'contractLevel' ? 'indicatorCount' : options.sortField;
-        }
-        if (options.sortOrder) {
-            sortOrder = options.sortOrder;
-        } else if (sortField === 'time') {
-            sortOrder = 'asc';
+            if (options.sortOrder) {
+                sortOrder = options.sortOrder;
+            } else if (sortField === 'time') {
+                sortOrder = 'asc';
+            }
+        } else {
+            sortField = 'indicatorCount';
+            sortOrder = 'desc';
         }
 
         const query = new URLSearchParams({
@@ -617,6 +627,10 @@ export async function fetchLeaderboard(params = 'contract') {
             page,
             recordsOnPage
         });
+
+        if (options.charCountFilter) {
+            query.set('charCountFilter', options.charCountFilter);
+        }
 
         const res = await fetch(`${API_BASE}/leaderboard/contract/list?${query.toString()}`);
         if (!res.ok) throw new Error('Failed to fetch contract leaderboard');
@@ -636,7 +650,7 @@ export async function fetchLeaderboard(params = 'contract') {
                 level: r.level,
                 contractLevel: r.indicatorCount,
                 clear_time: r.passTs,
-                updatedAt: r.ts,
+                updatedAt: r.updatedAt || r.ts,
                 serverId: r.serverId,
                 chars: (r.chars || []).map(c => ({
                     id: normalizeCharId(c.id),

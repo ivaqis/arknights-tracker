@@ -7,6 +7,8 @@ import { SyncProfileResponse } from "@api/contracts/syncProfile/SyncProfileRespo
 import { Controller } from "@api/controllers/Controller.js";
 import { Database } from "@database/Database.js";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
+import { ContractRecordData } from "@services/contractFetcher/contracts/ContractRecordData.js";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
 import { ContractStatus } from "@models/contingencyContract/ContractStatus.js";
 import { Character } from "@models/gameProfile/Character.js";
@@ -213,29 +215,86 @@ export class SyncProfile extends Controller<
     private async updateContractData(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatus: ContractStatus, profileChars: Character[]) {
         const contractData = await fetcher.getContractData(serverId, contractStatus.apiId);
 
-        if (!contractData || !contractData.history.bestRecord) {
+        if (!contractData || !contractData.history) {
             return;
         }
 
-        const bestRecordData = await fetcher.getContractRecordData(serverId, contractStatus.apiId, contractData.history.bestRecord.id);
-
-        if (!bestRecordData) {
-            return;
+        const candidateRecords: ContractRecordData[] = [];
+        if (contractData.history.bestRecord) {
+            candidateRecords.push(contractData.history.bestRecord);
+        }
+        if (Array.isArray(contractData.history.records)) {
+            for (const r of contractData.history.records) {
+                if (r && !candidateRecords.some(c => c.id === r.id)) {
+                    candidateRecords.push(r);
+                }
+            }
         }
 
-        const bestRecord = ContractRecord.getFromData(bestRecordData, profileChars, contractStatus.id);
-
-        const exists = await this._database.contractLeaderboard.findByRecordId(bestRecord.id) !== null;
-
-        if (exists) {
-            return;
+        const existingRecords = await this._database.contractLeaderboard.findByGameUid(gameUid, contractStatus.id);
+        const existingByTeamSize = new Map<number, UserContractLeaderboardRecord>();
+        for (const record of existingRecords) {
+            const size = record.data.chars?.length || 0;
+            if (size >= 1 && size <= 4) {
+                const current = existingByTeamSize.get(size);
+                if (!current) {
+                    existingByTeamSize.set(size, record);
+                } else {
+                    if (record.indicatorCount > current.indicatorCount ||
+                       (record.indicatorCount === current.indicatorCount && record.clearTimeSec < current.clearTimeSec)) {
+                        await this._database.contractLeaderboard.delete(current.recordId);
+                        existingByTeamSize.set(size, record);
+                    } else {
+                        await this._database.contractLeaderboard.delete(record.recordId);
+                    }
+                }
+            }
         }
 
-        const oldRecords = await this._database.contractLeaderboard.findByGameUid(gameUid, contractStatus.id);
-        for (const record of oldRecords) {
-            await this._database.contractLeaderboard.delete(record.recordId);
-        }
+        const isBetter = (a: { indicatorCount: number; passTs: number }, b: { indicatorCount: number; passTs: number }) => {
+            if (a.indicatorCount > b.indicatorCount) return true;
+            if (a.indicatorCount < b.indicatorCount) return false;
+            return a.passTs < b.passTs;
+        };
 
-        await this._database.contractLeaderboard.create(gameUid, bestRecord);
+        for (let teamSize = 1; teamSize <= 4; teamSize++) {
+            const sizeCandidates = candidateRecords.filter(c => c.isPass && c.chars && c.chars.length === teamSize);
+            if (sizeCandidates.length === 0) continue;
+
+            sizeCandidates.sort((a, b) => {
+                const aCount = a.indicatorCount || 0;
+                const bCount = b.indicatorCount || 0;
+                if (aCount !== bCount) return bCount - aCount;
+                return (parseFloat(a.passTs) || 0) - (parseFloat(b.passTs) || 0);
+            });
+
+            const bestCandidate = sizeCandidates[0];
+            const candIndicator = bestCandidate.indicatorCount || 0;
+            const candPassTs = parseFloat(bestCandidate.passTs) || 0;
+
+            const existing = existingByTeamSize.get(teamSize);
+            let shouldUpdate = false;
+
+            if (!existing) {
+                shouldUpdate = true;
+            } else {
+                if (existing.recordId === bestCandidate.id) {
+                    shouldUpdate = false;
+                } else if (isBetter({ indicatorCount: candIndicator, passTs: candPassTs }, { indicatorCount: existing.indicatorCount, passTs: existing.clearTimeSec })) {
+                    shouldUpdate = true;
+                }
+            }
+
+            if (shouldUpdate) {
+                const detailData = await fetcher.getContractRecordData(serverId, contractStatus.apiId, bestCandidate.id);
+                if (detailData) {
+                    if (existing) {
+                        await this._database.contractLeaderboard.delete(existing.recordId);
+                    }
+                    const newRecord = ContractRecord.getFromData(detailData, profileChars, contractStatus.id);
+                    await this._database.contractLeaderboard.create(gameUid, newRecord);
+                }
+            }
+        }
     }
 }

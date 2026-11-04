@@ -299,6 +299,11 @@
     "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
     "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
+  "indie_contract001": {
+    "name": "Re-Ignition Experimental Operation",
+    "description": "- The operation comprises 4 consecutive enemy waves to fight. Defeat all enemy waves to complete the operation.\n- Healing Masses will be dropped between the waves. Touch them to restore HP to every teammate.\n- There is a resting session between waves, during which the operators are still considered to be in battle.\n- The operation has a countdown timer. Once the timer ends or all operators in the team are reduced to ZERO HP, the operation is interrupted.\n- Tacticals and consumables cannot be used.",
+    "featureDesc": "- The enemies are various types of Aggeloi.\n- Some enemies apply Cryo Infliction to operators. An operator who reaches 4 Cryo Infliction stacks becomes solidified."
+  },
   "indie_hard001": {
     "name": "Rampaging Shields",
     "description": "The snowy fog never seems to dissipate from these wildlands. Crisp sounds of shattering could be heard hidden within the low rumblings. \nListen close. Did you hear ... stone grinding against metal?",

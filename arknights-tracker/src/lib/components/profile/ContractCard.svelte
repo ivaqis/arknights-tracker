@@ -73,7 +73,7 @@
                             <span class="text-[16px] text-white font-nums font-black leading-none" style="text-shadow: 1px 1px 0 #111;">
                                 {char.weapon.level}
                             </span>
-                            <div class="w-6 h-[2px] mt-0.5 rounded" style="background-color: {getRarityColor(char.weapon.rarity)}"></div>
+                            <div class="w-6 h-[2px] mt-0.5 rounded" style="background-color: {getRarityColor(weaponData?.rarity)}"></div>
                         </div>
                     </div>
 
@@ -91,7 +91,7 @@
 
         <div class="grid grid-cols-2 gap-1 p-1 bg-[#111111] rounded-b-[4px]">
             {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
-                {@const equip = char.equips?.[eqKey]}
+                {@const equip = char.equips?.[eqKey] || char[eqKey]}
                 {#if equip}
                     {@const staticId = (equip.equipData && getStaticEquipId) ? getStaticEquipId(equip.equipData) : (equip.id || "")}
                     {@const tier = getEquipTier(equip, equipment[staticId])}

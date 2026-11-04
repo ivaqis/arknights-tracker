@@ -299,6 +299,11 @@
     "description": "DOSSIER 99: ricavato da uno scudo infranto, dalla struttura semplice come il carapace di un insetto. È stato saldato così tante volte che ormai vi rimbomba l'eco della guerra.",
     "featureDesc": "<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
+  "indie_contract001": {
+    "name": "Operazione sperimentale di Riaccensione",
+    "description": "- L'operazione prevede 4 ondate nemiche consecutive da affrontare. Sconfiggi tutte le ondate nemiche per completarla.\n- Tra un'ondata e l'altra appariranno delle Masse curative. Toccale per ripristinare i PS di tutti i compagni di squadra.\n- Tra un'ondata e l'altra è prevista una sessione di pausa, durante la quale gli operatori sono comunque considerati in battaglia.\n- L'operazione ha una durata limitata. Una volta terminato il conto alla rovescia o quando i PS di tutti gli operatori della squadra sono arrivati a zero, l'operazione verrà interrotta.\n- Gadget e consumabili non possono essere utilizzati.",
+    "featureDesc": "- I nemici sono vari tipi di Aggeloi.\n- Alcuni nemici applicano Afflizione da ghiaccio agli operatori. Un operatore che arriva a 4 accumuli di Afflizione da ghiaccio subisce Solidificazione."
+  },
   "indie_hard001": {
     "name": "Protezioni furiose",
     "description": "La foschia nevosa non sembra mai disperdersi in queste terre selvagge. Rumori nitidi e fragorosi si nascondono tra i gravi rombi. \nAscolta attentamente. Hai sentito... la pietra sfregare contro il metallo?",
