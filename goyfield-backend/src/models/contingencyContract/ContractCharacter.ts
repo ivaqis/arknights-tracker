@@ -36,7 +36,9 @@ export class ContractCharacter implements IEntityClass<ContractCharEntity> {
     }
 
     public static getFromData(data: CharData, profileChar: Character): ContractCharacter {
-        if (data.charId !== profileChar.apiId) {
+        const isEndmin = profileChar.id === "chr_0002_endminm" || profileChar.id === "chr_0003_endminf";
+        const matchesApiId = data.charId === profileChar.apiId || (isEndmin && (data.charId === "93e76fbbc07f7b480cfe0870c6414494" || data.charId === "27e807f4caa5c4a9429bcb99760c0302"));
+        if (!matchesApiId) {
             throw new Error(`CharId & ApiCharId must be equal:\n${data.charId}\n${profileChar.apiId}`);
         }
 

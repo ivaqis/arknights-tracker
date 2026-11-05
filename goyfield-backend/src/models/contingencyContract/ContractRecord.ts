@@ -101,6 +101,10 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
 
         for (const char of profileChars) {
             map.set(char.apiId, char);
+            if (char.id === "chr_0002_endminm" || char.id === "chr_0003_endminf") {
+                map.set("93e76fbbc07f7b480cfe0870c6414494", char);
+                map.set("27e807f4caa5c4a9429bcb99760c0302", char);
+            }
         }
 
         return map;
