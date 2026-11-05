@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "“Pembersihan Indigo”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "3": {
+        "desc": "Di [Kontrak Kontingensi: Operasi Eksperimen Indigo], selesaikan tantangan hingga tuntas dengan ≥20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Total Kriteria Tes",
+        "completeDesc": "Hadiah itu ternodai oleh rona indigo yang tercemar. Tapi, selama kamu bersama kami, api pengapian ulang tak akan pernah padam."
+      }
+    },
+    "plating": {
+      "desc": "Di [Kontrak Kontingensi: Operasi Eksperimen Indigo], selesaikan tantangan hingga tuntas dengan ≥30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Total Kriteria Tes"
+    }
+  },
   "achv_event_dungfight": {
     "name": "“Penyintas Ahli”",
     "category": "Event",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Selesaikan misi sampingan [Segenggam Refleksi]",
         "completeDesc": "Tinju mereka meragukan tekadku, tapi Qi-ku menghantam tanah dan menantang guntur itu sendiri."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "“Kembali ke Pedesaan”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Kembali ke Pedesaan]",
+        "completeDesc": "Saat punggung pedang mampu menopang beberapa ranting baru dan bernyanyi layaknya para binatang, barulah kita akan memahami hakikat niat kita."
       }
     },
     "plating": null

@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "Eu já vi esse contador de histórias. Naquela ocasião, ele encontrou um lugar em uma esquina da cidade. Ele tinha um olhar de louco e não falava de outra coisa senão de espadas. \nOs espadeiros que ele descreveu trilhavam todos os tipos de caminhos. Alguns se dedicavam ao altruísmo e a salvar o mundo, alguns partiam em uma peregrinação solitária com a espada, enquanto outros vagavam pelo mundo em busca de alguém para desafiar. Diferentes espadeiros carregavam espadas diferentes, mas cada arma era extremamente afiada e uma lenda por si só. Sempre que o contador de histórias se empolgava demais, ele pegava sua espada gasta e executava sua dança de floreios, uma rajada de luz fria e brilhante cortando o vento. Era algo incrível para todos na plateia. As pessoas pensavam que estavam presenciando a arte suprema da espadomancia. \nQuanto à origem do contador de histórias, as pessoas também vinham com todos os tipos de histórias, mas nenhuma delas parecia concreta. Pelas roupas que usava, as pessoas achavam que ele era um ex-Tianshi. Alguém teve a curiosidade de perguntar, mas o contador de histórias respondeu: \"Isso é realmente importante? Sou apenas um viajante muito simples, um contador de histórias e um buscador da espada, uma pessoa comum que apenas narra histórias sobre o fio da espada.\" \nEle ainda contava histórias de espadas no dia em que se despediu de mim. Já era tarde e o público já havia ido embora. Eu era o único que restava... Como ferreiro, mal conseguia conter minha curiosidade sobre seu passado e a lâmina que ele carregava. Então finalmente encontrei a oportunidade de perguntar antes que ele seguisse seu caminho: \"Muitas histórias de espadas você compartilhou, contador de histórias. Você tem alguma história para contar sobre a lâmina que carrega?\" \nO contador de histórias sentou-se à mesa e esvaziou o barril de kohl que havia pedido. \nMeio bêbado, o contador de histórias começou a sua história. Certa vez, ele ouviu falar da \"Chamado Lunar\", uma lâmina perdida em Talos-II, uma arma forjada por um mestre ferreiro de Grande Yan. Ela podia atacar com um ímpeto incrível, sendo capaz de derrotar tudo em seu caminho. Após ele cruzar o Portão Cósmico e chegar a Talos-II, seu caminho de volta para casa foi logo interrompido. Sua busca pela lâmina tornou-se sua única obsessão e ele percorreu todo o Cinturão da Civilização para encontrá-la. Ele encontrou muitas pessoas que afirmavam ter visto a arma, mas suas descrições variavam muito. Confuso com os testemunhos díspares, o contador de histórias convenceu-se de que a \"Chamado Lunar\" poderia ser apenas uma lenda fictícia e até decidiu encerrar sua jornada infrutífera. \nCerto dia, enquanto descansava nas áreas selvagens, ele viu um jovem preso por vários Aggeloi e o resgatou. O jovem agradecido de repente reparou na espada que empunhava e mal conseguiu disfarçar a surpresa: \"O padrão do corpo da lâmina e as cores do punho... São exatamente como diz a lenda. Senhor, por acaso o senhor é o portador da 'Chamado Lunar'?\" \nA revelação repentina primeiro deixou o contador de histórias atônito, antes de o deixar perplexo. Ele viajou por lugares distantes e lutou em algumas batalhas para ajudar os necessitados. As pessoas falavam sobre seus feitos e até juravam que sua espada era a própria 'Chamado Lunar'. \nA revelação veio num instante e todas as pistas convergiram para uma só: os depoimentos díspares não estavam errados. Chamado Lunar não era uma única lâmina, mas uma infinidade delas. Não era um nome atribuído a uma única peça. Muitas armas já conquistaram esse título por seus feitos. \nApós me brindar com uma história, ele se levantou para ir embora. \n\"Suponho que poderíamos acrescentar algo a esta história\", pensei, com a emoção a mil, enquanto contemplava o reflexo da lua na minha bebida. \nUm sorriso radiante iluminou o rosto do contador de histórias. \"Sim, deveria haver algo mais.\" \nDito isso, ele acenou com a mão e desapareceu na noite. Ninguém sabia o que aconteceu depois. \nA história havia terminado e a lâmina foi forjada. Eu a entreguei ao jovem, porém calmo, espadeiro à minha frente. O luar brilhava enquanto ele a brandia. A espada emitiu um zumbido suave que ecoou longa e delicadamente pela noite. \nO espadeiro aceitou solenemente meu trabalho. Algo passava por sua cabeça, mas ele agradeceu antes de ir embora. Eu o vi se fundir gradualmente com o próprio luar... \nMinha visão borrou. Eu fiquei pensando. Será que vi um espadeiro caminhando na noite ou uma espada refletindo o chamado da lua?",
+    "decoDesc": "Uma obra-prima simbólica da Hongshan Swordmancers. A arma é construída utilizando as mais recentes tecnologias de fundição de metais e forjada com as antigas técnicas de produção das espadas yanesas. O resultado apresenta um desempenho excelente e uma beleza comprovada pelo tempo.",
+    "skills": [
+      {
+        "name": "Vontade [G]",
+        "description": "Vontade <@ba.vup>+ {will}</>"
+      },
+      {
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+ {atk:0.0%}</>"
+      },
+      {
+        "name": "Inflição: Estrelas em Curso",
+        "description": "Intensidade das Artes <@ba.vup>+ {phy_spell_up:0}</>.\nQuando a habilidade do portador aplica <#ba.conduct>Eletrificação</>, a equipe inteira ganha ATQ <@ba.vup>+ {atk_up:0.0%}</> por {duration:0} s.\nQuando o portador <#ba.consume>consome</> <#ba.spellinflict>Inflição de Artes</>, ganha DNO Elétrico Causado <@ba.vup>+ {pulse_dmg_up:0.0%}</> por {duration2:0} s.\n<@ba.info>Os dois efeitos são aplicados separadamente e não se acumulam.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Esta terra pode não ter nada de especial. \nAs mesmas planícies de sempre, o mesmo ar de sempre e o mesmo mar de sempre. Mas os céus são diferentes. Há um planeta enorme que podemos ver claramente durante o dia. Também não há luas gêmeas à noite. A vida não é tão diferente da vida em Terra. \nE isso é bom? Eu não sei. \nEstou aqui por causa do serviço militar obrigatório, mas recebo um soldo e alimentação. É só isso. \n\nMas, com o passar do tempo, comecei a sentir as diferenças. \nA terra não tem Originium. Raios, até as fronteiras nacionais pareciam uma piada. Pensei que era algum trabalho de pioneiro na fronteira de Columbia, onde as pessoas trabalhavam o dia todo nas áreas selvagens em busca de algo para comer. Mas hoje mesmo, alguém com a aparência de um nobre Leithaniano me perguntou, a mim, um mero recruta, sobre as especificações de peças de máquinas e como usar algumas máquinas. \nE o senhor nobre não estava brincando. \nUrsus, Leithaniano, Columbiano... Todos esses rótulos divisivos agora estão sendo reduzidos a companheiro de equipe, amigo e parceiro. \nGostei do rumo que as coisas tomaram, assim ficou ótimo! Mas como isso aconteceu? Eu realmente não sei. \nPerguntei por aí e todos estão tão confusos quanto eu. Então, demorei um pouco para receber uma resposta, até que... \n\n\"O que é Endfield?\" \nFiz essa pergunta ao líder da enorme equipe Sarkaz quando comecei a trabalhar. Endfield parece um nome realmente infeliz para uma empresa que atua nas fronteiras. \nEle não disse nada. Em vez disso, ele nos levou até a ponta da nave que servia temporariamente como QG da Endfield. Ele nos disse para observar bem o planeta e o mundo. \nO planeta e o mundo... Quase nunca tínhamos usado esses termos. \nO líder da equipe percebeu minha confusão e sorriu. Ele me disse que eles são o significado por trás da Endfield. \n\"Significa que temos que usar palavras novas e bonitas?\" \n\"Significa que deixamos nosso passado em Terra.\" \n\nTalvez ele estivesse certo. \nAntes de decidir atravessar o Portão Cósmico para chegar a este lugar, eu, e todos os outros, deixamos algo para trás para sempre em Terra. \nPessoas que trabalhavam duro nos poços das minas, que vagavam pelas áreas selvagens, que trabalhavam nas cidades, que apresentavam concertos nas espiras... Todos lado a lado a bordo da nave, prontos para construir um futuro juntos. \nO destino nos deu uma escolha. Optamos por algo diferente do passado para criar um novo estilo de vida. \n\nComo será esse mundo? Eu não sei. \nPorque o estamos construindo neste exato momento. \nEdifícios surgirão do chão e plantações brotarão da terra. \nEssa é a nossa resposta firme sobre o mundo que estamos criando.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Assalto: Visão para o Amanhã",
         "description": "Ao entrar em batalha, a equipe inteira ganha o benefício <@ba.key>Sonhe Lutando</> que concede DNO Causado <@ba.vup>+ {dmg_up:0.0%}</>, Intensidade das Artes <@ba.vup>+ {phy_spell_up:0}</> e DEF <@ba.vup>+ {def_up:0.0%}</> por {duration:0} s. Quando <@ba.key>Sonhe Lutando</> termina, o portador restaura <@ba.heal>{hp_up_c:0}</> PV para a equipe inteira.\n<@ba.info>Efeitos com o mesmo nome não podem se acumular.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Chamado Lunar",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Vontade [G]",
-        "description": "Vontade <@ba.vup>+ {will}</>"
-      },
-      {
-        "name": "ATQ [G]",
-        "description": "ATQ <@ba.vup>+ {atk:0.0%}</>"
-      },
-      {
-        "name": "Inflição: Estrelas em Curso",
-        "description": ""
       }
     ]
   }

@@ -1043,7 +1043,8 @@
     "typhoeus": "ティフォロス",
     "endministrator": "管理人",
     "purrchena": "プチエナ",
-    "si": "スー"
+    "si": "スー",
+    "argentFlow": "ミンホ"
   },
   "weaponsList": {
     "custom_weapon": "カスタム武器",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "「臨淵北望」10回スカウト券",
     "ticketgacha_special_ten_lt_1_4_2": "「煌めく明星」10回スカウト券",
     "ticketgacha_weaponbox_lt_1_2_2": "風火融合・申請証",
-    "ticketweaponbox_ten_1_lt": "10回武器申請券（時限）"
+    "ticketweaponbox_ten_1_lt": "10回武器申請券（時限）",
+    "business_card_topic_chr_0037_minghe": "光を携えて",
+    "item_activity_contract_gold_1": "結晶コイン・青藍",
+    "item_case_wpn_selfselect_gahca_1_6_2": "補充武庫ボックス・月映",
+    "item_char_equip_supply_minghe": "武庫装備ボックスα・天河",
+    "item_charpotentialup_chr_0037_minghe": "ミンホの印",
+    "item_mission_c37m1_foragel": "辛いエサ",
+    "item_mission_c37m3_branch": "イェ・ミンホから貰った枝",
+    "item_mission_c37m3_tools": "小屋修理用工具",
+    "item_mission_c37m3_woodenboard": "丈夫な板材",
+    "item_port_horse_1": "ゆらゆら怒驪",
+    "item_shot_anim_minghe_m_1": "相棒との時間",
+    "item_ticketgacha_special_single_lt_1_6_2": "「天河と共に」スカウト券",
+    "item_user_avatar_chr_0037_minghe": "ミンホ",
+    "ticketgacha_special_single_lt_1_6_2": "「天河と共に」スカウト券"
   },
   "buildingNames": {
     "component_mc_1": "組立機",
@@ -3790,7 +3805,8 @@
     "activity_contract_tag_312": "操作中のオペレーターが12秒間敵に重攻撃を与えなかった場合、SPの自然回復が停止する",
     "activity_contract_tag_114": "敵のHP<color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_115": "敵のHP+{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}",
-    "activity_contract_tag_116": "敵のHP+{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>"
+    "activity_contract_tag_116": "敵のHP+{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>",
+    "activity_contract_1_tag_key1": "SPの自然回復速度<color=#cc9900>+{recover_ratio:0%}</color>\nスキルのSP回復量<color=#cc9900>+{skill_ratio:0%}</color>\nオペレーターが戦技を発動すると、チーム全員が1回ずつ戦技を発動するまで再発動できない\nこの効果は初期状態の戦技にのみ適用される"
   },
   "monument": {
     "indie_group_h01": "死の争鳴",

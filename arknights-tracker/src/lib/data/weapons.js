@@ -980,6 +980,18 @@ export const weapons = {
       "burst"
     ]
   },
+  "lunarCalling": {
+    "id": "lunarCalling",
+    "gameId": "wpn_sword_0025",
+    "name": "Lunar Calling",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "magabn"
+    ]
+  },
   "farsight": {
     "id": "farsight",
     "gameId": "wpn_sword_0026",
@@ -991,27 +1003,5 @@ export const weapons = {
       "attr_physpell",
       "force"
     ]
-  },
-  "lunarCalling": {
-    "id": "lunarCalling",
-    "gameId": "wpn_sword_0025",
-    "name": "Lunar Calling",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_will",
-      "attr_atk",
-      "magabn"
-    ],
-    "materials": [
-      "item_weapon_break_low",
-      "item_plant_spcstone_1_1",
-      "item_plant_spcstone_1_2",
-      "item_weapon_break_high",
-      "item_plant_spcstone_1_3",
-      "item_plant_spcstone_2_3",
-      "item_char_skill_specialize_6"
-    ],
-    "isForesight": true
   }
 };

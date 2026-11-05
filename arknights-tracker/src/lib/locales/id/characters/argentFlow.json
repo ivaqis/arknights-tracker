@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Electrify",
+      "Crush"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Teknik Tempur",
+      "Keilmuan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Perajin Wuling"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Alam"
+    ],
+    "raceTag": "Lung"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Dust Resplendent",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
+    },
+    "battleSkill": {
+      "name": "Darkness Cowed",
+      "description": "Argent Flow akan mengayunkan tombaknya dan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar dan mengakibatkan <#ba.airborne>Lift</> kepada target di depannya.\nSetelah skill kombo Argent Flow digunakan, skill tarungnya akan diubah menjadi <@ba.key>Bolt Rush</> untuk sementara.\n<@ba.key>Bolt Rush</>: Argent Flow akan menunggangi galloper miliknya, Nuli, dan melompat ke udara, mengisi kekuatan dengan cepat, lalu menyerbu target untuk mengakibatkan <#ba.conduct>Electrification</> secara paksa dan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh dalam area luas di depannya. Saat diakibatkan kepada target dengan <#ba.pulseinflict>Electric Infliction</>, <#ba.conduct>Electrification</> ini akan <#ba.consume>memakai</> semua tumpukan <#ba.pulseinflict>Electric Infliction</> dari target dan memberikan <#ba.conduct>Electrification</> <#ba.statuslevel>Level Status +1</> per tumpukan yang dipakai. Setelah <#ba.consume>memakai</> <#ba.pulseinflict>Electric Infliction</> pada target, Argent Flow juga akan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</>.",
+      "baseDmgMultiplier": "Pengganda DMG Dasar",
+      "baseStagger": "Stagger Dasar",
+      "boltRushDmgMultiplier": "Pengganda DMG Bolt Rush",
+      "boltRushStagger": "Stagger Bolt Rush"
+    },
+    "comboSkill": {
+      "name": "Stars Shifted",
+      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.noguard>Vulnerable</>.\nArgent Flow akan mengayunkan pedangnya secepat kilat untuk melancarkan serangan beruntun yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh yang dilaluinya. Saat tahap akhir mengenai musuh, itu juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</>. Lalu, skill tarung Argent Flow akan berubah menjadi <@ba.key>Bolt Rush</> untuk sementara.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "battleSkillChangeDurationS": "Durasi Perubahan Skill Tarung (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
+    },
+    "ultimate": {
+      "name": "Heavens Sundered",
+      "description": "Argent Flow akan menunggangi Nuli dan menyerbu dengan tombaknya, menimbulkan <@ba.pulse>Electric DMG</> terus-menerus kepada target di depannya sambil menusuk dan membawa musuh yang lemah di hadapannya selama menyerbu. Setelah serbuan berakhir, Argent Flow akan melompat ke udara dan melepaskan Cleansing Cleave ke tanah. Tebasan tersebut akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan 1 tumpuk <#ba.pulseinflict>Electric Infliction</>. Lalu, Argent Flow akan menusukkan tombaknya ke tanah, mengakibatkan <#ba.crush>Crush</> dan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh dalam area luas.\n<@ba.info>Jika ultimate Argent Flow menyerbu musuh yang tidak lemah (yang tidak bisa ditusuk dan didorong), serbuannya akan berakhir lebih awal.</>",
+      "chargeDmgMultiplier": "Pengganda DMG Charge",
+      "cleansingCleaveDmgMultiplier": "Pengganda DMG Cleansing Cleave",
+      "groundPierceDmgMultiplier": "Pengganda DMG Ground Pierce",
+      "stagger": "Stagger"
+    },
+    "indicator": {
+      "levels": [
+        "Will Operator +10.",
+        "Will Operator +15.",
+        "Will Operator +15.",
+        "Will Operator +20."
+      ],
+      "name": "Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "Saat Argent Flow mengakibatkan <#ba.conduct>Electrification</>, <#ba.conduct>Electrification</> ini juga meningkatkan semua tipe DMG Taken target dengan durasi yang sama, dan dia juga mengakibatkan tumpukan <@ba.key>Sunderization</> pada target. Jumlah tumpukannya sama dengan <#ba.statuslevel>Level Status</> <#ba.conduct>Electrification</>, dan maksimal {max_stack:0} tumpukan. <@ba.key>Sunderization</> berlangsung selama {duration:0} dtk.\nSaat menimbulkan <#ba.crush>Crush DMG</> pada target yang terkena <@ba.key>Sunderization</>, <#ba.crush>Crush DMG</> ini meningkat menjadi <@ba.vup>{crush_damage+1:0.0}</> kali nilai aslinya dan meledakkan semua tumpukan <@ba.key>Sunderization</>. Ledakan tersebut menimbulkan <@ba.pulse>Electric DMG</> sebesar <@ba.vup>[Jumlah tumpukan Sunderization × {atk_scale:0%} ATK]</> pada target dan {other_damage_percent:0%} dari DMG tersebut pada musuh lain di dekat target itu.\n<@ba.info>Saat DMG ledakan Sunderization ditimbulkan kepada musuh lain yang terkena Sunderization, semua tumpukan Sunderization pada musuh itu juga akan meledak.</>",
+        "Saat Argent Flow mengakibatkan <#ba.conduct>Electrification</>, <#ba.conduct>Electrification</> ini juga meningkatkan semua tipe DMG Taken target dengan durasi yang sama, dan dia juga mengakibatkan tumpukan <@ba.key>Sunderization</> pada target. Jumlah tumpukannya sama dengan <#ba.statuslevel>Level Status</> <#ba.conduct>Electrification</>, dan maksimal {max_stack:0} tumpukan. <@ba.key>Sunderization</> berlangsung selama {duration:0} dtk.\nSaat menimbulkan <#ba.crush>Crush DMG</> pada target yang terkena <@ba.key>Sunderization</>, <#ba.crush>Crush DMG</> ini meningkat menjadi <@ba.vup>{crush_damage+1:0.0}</> kali nilai aslinya dan meledakkan semua tumpukan <@ba.key>Sunderization</>. Ledakan tersebut menimbulkan <@ba.pulse>Electric DMG</> sebesar <@ba.vup>[Jumlah tumpukan Sunderization × {atk_scale:0%} ATK]</> pada target dan {other_damage_percent:0%} dari DMG tersebut pada musuh lain di dekat target itu.\n<@ba.info>Saat DMG ledakan Sunderization ditimbulkan kepada musuh lain yang terkena Sunderization, semua tumpukan Sunderization pada musuh itu juga akan meledak.</>"
+      ],
+      "name": "Zenith of Voltmancy"
+    },
+    "talent2": {
+      "levels": [
+        "Skill tarung <@ba.key>Bolt Rush</> meningkat: Seluruh tim mendapatkan Intensitas Arts <@ba.vup>+{yuanshi_add:0}</> selama {duration:0} dtk.\nUntuk setiap poin Intensitas Arts yang dimiliki Argent Flow, DMG ledakan <@ba.key>Sunderization</> meningkat sebesar <@ba.vup>{damage_up:0.0%}</> lagi.",
+        "Skill tarung <@ba.key>Bolt Rush</> meningkat: Seluruh tim mendapatkan Intensitas Arts <@ba.vup>+{yuanshi_add:0}</> selama {duration:0} dtk.\nUntuk setiap poin Intensitas Arts yang dimiliki Argent Flow, DMG ledakan <@ba.key>Sunderization</> meningkat sebesar <@ba.vup>{damage_up:0.0%}</> lagi."
+      ],
+      "name": "Springvolt Galore"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +30%"
+      ],
+      "name": "Axiom of Combat"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Kabin Manufaktur, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
+      ],
+      "name": "Tools of Momentum"
+    },
+    "files": {
+      "main": "NAMA SANDI: Argent Flow \nGENDER: Laki-laki \nAUTENTIKASI: Hongshan Academy of Sciences \nTANGGAL LAHIR: 23 Oktober \nRAS: Lung \n[STATUS INFEKSI ORIPATI] \nNegatif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Sangat Baik \nKEMAMPUAN TEMPUR: Luar Biasa \nKECERDASAN TAKTIS: Sangat Baik \nASIMILASI ORIGINIUM ARTS: Standar \n\nWalau kesehatan fisiknya sangat baik, rutinitas hariannya sangat sehat, dan dia tidak punya kebiasaan buruk (hanya minum-minum dalam jumlah wajar), Operator Argent Flow tetap sangat kooperatif saat menceritakan riwayat penyakit dan cederanya .... Aku secara resmi mengajukan pengungkapan data ini kepada publik. Bocah-bocah nakal yang selalu teriak “TANPA PENGORBANAN, KEKUATAN TAKKAN BISA DIDAPATKAN” harus belajar dari seorang profesional sejati tentang cara bertanggung jawab atas kesehatan mereka sendiri. \n— Komentar ini disampaikan oleh seorang operator medis yang menyimpan dendam kesumat",
+      "humanResources": "Argent Flow (nama aslinya Ye Minghe) saat ini merupakan Pengawal Kekaisaran Yan dan Kapten Langit Damai Hongshan Academy of Sciences (HAS)*. Atas perintah HAS, saat ini dia bekerja sama erat dengan Endfield Industries untuk memberikan dukungan di medan pertempuran sekaligus membagikan instruksi tentang berbagai teknik tempur. *CATATAN: Berdasarkan Hukum Yan, Pengawal Kekaisaran bukan merupakan organisasi yang berada di bawah Afiliasi Hongshan Academy of Sciences, Biro Tianshi Yan Besar. Tapi, mengingat kompleksitas sejarah yang terlibat, CATATAN ini (tanpa detail lebih lanjut) sudah cukup untuk menjelaskan konvensi penamaan tersebut.\n\nOperator Argent Flow menunjukkan kedewasaan dan ketenangan saat berurusan dengan personel lain dan telah terbukti bisa bekerja sama dengan baik. Kekhawatiran mengenai “keangkuhan dan kearoganannya”, “sikapnya yang sangat tidak ramah”, dan masalah kepribadian lainnya yang disuarakan oleh beberapa operator tampaknya tidak beralasan. Operator Argent Flow memberikan dua penjelasan atas munculnya kesalahpahaman tersebut: (1) walau benar bahwa anggota Pengawal Kekaisaran bertindak dengan cara yang berbeda-beda, sebagian besar cerita tentang mereka adalah karangan; dan (2) beberapa “kebodohan memalukan di masa muda” yang terjadi bertahun-tahun lalu sudah terlalu lama beredar, dan mungkin telah dilebih-lebihkan dan/atau dipelintir. Dengan kata lain, seluruh personel dianjurkan untuk mematuhi etika umum dan tidak membahas masalah-masalah sensitif saat berinteraksi dengan Operator Argent Flow. Dengan mematuhi ini, kesempatan untuk melakukan latih tanding kasual atau mendapatkan instruksi teknik tempur dari sang Operator sudah pasti akan terbuka. Jangan lupa untuk melakukan reservasi sesi konsultasi lebih dulu dan siapkan mental untuk mengantre panjang.\nCATATAN UNTUK SEMUA KRU DARAT: Penilaian ini hanya berlaku khusus untuk Operator Argent Flow. Galloper miliknya adalah binatang dengan kekuatan luar biasa dan temperamen yang ganas. Harap waspada dan hati-hati jika ditugaskan untuk memberi pakan atau merawat binatang itu. Sang Operator sudah menyusun sendiri daftar lengkap hal-hal yang harus diperhatikan. Semua personel yang ditugaskan untuk mengurus galloper HARUS MEMBACA DENGAN TELITI DAN MENGHAFAL DAFTAR TERSEBUT BERULANG KALI.\n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "[REKAM PRESTASI: Performa Operator Minghe di “Operators Got Talent: Mega-Arena Bulanan”] \nPertarungan Bersenjata dengan Mata Tertutup. Juara 1 di Divisi (mengundurkan diri setelah tahu ini kompetisi). \nSeni Melempar. Juara 1. CATATAN: 10 lemparan sempurna dengan 3 belati menancap ke gagang belati sebelumnya. \nGulat dan Tarung. Juara 1 di kelas beratnya. CATATAN: Dia sengaja membatasi diri dengan mengikat satu tangan ke belakang. \nLari Simulasi SAR Cedera. Juara 1, Divisi: Forte Down. CATATAN: Banyak ahli bedah Dusthair memuji keterampilannya. \nRodeo Robot Burdo. Juara 1. CATATAN: Bertahan di pelana selama 600 detik. Mungkin bisa mencapai skor yang lebih tinggi kalau Robot Burdo-nya tidak rusak. \nKuis Kilat Herbal. Juara 2, Divisi Hobi. \nLomba Ukir Kreatif dan Improvisasi. Pemenang Penghargaan “IMUT BANGET”. CATATAN: Alat yang digunakan adalah jarum jahit. \nBalap Kursi Kantor Mikrogravitasi. Juara 2. CATATAN: Hanya selisih 0,4 detik dari rekor tertinggi. \nTENGGAK KOHL! Juara 1 di Divisi. CATATAN: Mengabaikan aturan dan bergabung ke Divisi Durin. \nPindahkan Tahu Pakai Sumpit. Juara 1. CATATAN: Berhasil memindahkan 36,5 tahu. \nDilarang Kedip. Juara 2. CATATAN: 928 detik tanpa berkedip. Kalah dari Operator Xaihi. \n\nIngat, ya. Ini semua cuma acara tidak resmi yang dibuat untuk senang-senang. Berhenti memaksa orang ikut hanya karena kalian lihat ada kata “Arena” di namanya. Oh iya, ini hari pertama orang itu di Endfield, ’kan? Gimana cara kalian meyakinkan dia supaya ikut lomba sebanyak itu? \n— Lil’ Dodge \n\nMeyakinkan? Mana ada, Dodge. Dia langsung ikut waktu lihat ada kerumunan orang lagi seru-seruan .... Memangnya siapa, sih, orang yang baru hari pertama di Endfield itu? \n— Operator Logistik (jelas lagi keasyikan)",
+      "file2": "[DAFTAR: Barang yang Diklaim oleh Operator Argent Flow dari Insiden Transportasi Bot Delta] \nKLAIM BARANG (1): \nUkiran kayu berbentuk gallopbeast. Dilapisi lilin. Dibuat dengan sangat rapi. \nCATATAN DARI PENGEKLAIM: \nHadiah kecil dari seorang Songseeker Hannabit Circuit. Saat itu dia sedang dikejar beberapa Sandreaver. Kebetulan aku lewat, jadi kuputuskan untuk membantunya. Sebelum kami berpisah, dia memberiku ini. Katanya ini kenang-kenangan khusus untuk pahlawannya. \nKenapa dia mengukir Nuli? Sebenarnya galloper-ku yang berjasa karena dia menghancurkan kapal-kapal Sandreaver itu satu demi satu. Tanpa bantuannya, pertarungan itu pasti berlangsung lama sekali. Jadi, aku menerimanya atas nama galloper-ku. Omong-omong soal insiden itu, sebenarnya aku punya penyesalan pribadi. Aku menyesal bukan karena tidak dapat hadiah, tapi karena sosok Songseeker itu. Dengan kebijaksanaan dan keberaniannya, dia membawa orang-orangnya ke tempat sembunyi yang aman di gurun dan melawan para Sandreaver sendirian selama berhari-hari. Harusnya aku yang memberi dia hadiah. \n\nKLAIM BARANG (2): \nDaftar nama dan alamat yang ditulis di atas kertas. Pemiliknya sudah mengizinkan kami memeriksa isinya. Sebagian besar nama yang tertera cocok dengan entri-entri yang ada di berbagai sistem pengelolaan identitas pribadi di Sentrapolis. \nCATATAN DARI PENGEKLAIM: \nYa, itu cuma daftar nama beberapa bocah. Mereka sangat menjanjikan. Aku bertemu dengan mereka saat menangani insiden letupan celah. Saat itu, beberapa penyintas terjebak total di gunung. Waktuku habis untuk meminjam kendaraan terbang dan membuat jalan. Aku sudah pesimis, tapi kemudian aku melihat sesuatu yang membuatku terkejut. Sekitar 12 anak-anak dan remaja menjaga lebih dari seratus penyintas bersama-sama dan terus bergerak mencari tempat aman, sambil membawa orang-orang terluka yang mereka temui di sepanjang jalan. Anak-anak itu bahkan membuat perangkat peringatan energi darurat yang membantuku menemukan lokasi celahnya. \nSaat kami berpisah, sebagian dari mereka sudah kembali ke sekolah. Aku mencatat nama dan informasi mereka dengan harapan kalau mereka melamar ke HAS, aku bisa mendapat kehormatan untuk menjadi pemberi rekomendasi resmi mereka. Mengarahkan mereka ke Endfield? Hah. Biar mereka yang tentukan sendiri. \n\nKLAIM BARANG (3): \nSebuah kamera usang. \nCATATAN DARI PENGEKLAIM: \nDulu ini milik seorang jurnalis tua. Aku memilikinya karena ... sebuah janji. Hanya karena sebuah janji. \nPersahabatan kami terbentuk tanpa terduga selama operasi pembersihan Aggelos. Walau jauh dari kata ahli medis yang kompeten, aku punya pengalaman dalam P3K di medan pertempuran, jadi kukawal dia melintasi rawa besar. Kami gagal menyelamatkan kakinya ... tapi dia memberiku kamera yang dibawanya sepanjang peristiwa mengerikan itu. Aku sering mengiriminya foto. Dia pernah bilang, tak ada yang tahu apakah celah Æther atau insiden lain akan tiba-tiba melanda tempat yang indah. Karena aku banyak bepergian, aku bisa menggunakan kameranya untuk menggantikannya melihat dunia. Takdir mempertemukan kami, dan aku tak punya alasan untuk menolak. \n\nAku pergi ke tempat yang jauh dan bertemu banyak orang setelah meninggalkan desa bernama Desa Pan’an .... dan aku senang karena pedangku berhasil melindungi mereka. Aku menggunakan kamera itu untuk merekam banyak momen tak terlupakan. Dunia memang luas, tapi dipertemukan oleh takdir adalah hal yang langka. Itu saja. \nAku sudah membubuhkan tanda tanganku. Aku tak akan menghalangi pengeklaim barang hilang lainnya. Sampai jumpa.",
+      "file3": "Atas undangan Lil’ Dodge, Operator Argent Flow sesekali mengunjungi Dijiang sebagai instruktur latihan khusus. Semua orang tahu bahwa operator Endfield punya banyak sekali teknik tempur dan menggunakan segala jenis Originium Arts sehingga membutuhkan berbagai metode latihan. Meskipun demikian, kemampuan bela diri yang ditunjukkan oleh Operator Argent Flow membuktikan reputasi luar biasa Pengawal Kekaisaran. Dalam pertarungan jarak dekat, pertempuran Arts jarak jauh, atau bahkan pertarungan berkuda, dia selalu mampu mengidentifikasi trik lawan hanya dalam beberapa gerakan, lalu langsung menyesuaikan taktiknya dan menahan serangannya untuk memperpanjang durasi latih tanding. Dalam setiap pertarungan, dia yang memegang inisiatif dan mengendalikan alurnya, sampai lawan akhirnya kalah karena kelelahan.\nSeorang operator yang sangat berpengalaman dalam menggunakan ruang latihan antigravitasi Dijiang pernah mencoba untuk mengalahkan Argent Flow dengan menantangnya di fasilitas khusus ini. Mereka menyalakan fitur antigravitasi dan berharap akan melihat Argent Flow mempermalukan dirinya sendiri. Tapi, sang Pengawal Kekaisaran dengan lembut mengetuk lantai dan terbang seperti kilatan petir yang membutakan pandangan para operator. Mereka bersiap menghadapi serangan yang tak pernah datang. Dengan satu ketukan ringan, satu kali salto, dan satu lompatan, Argent Flow melewati lawan-lawannya, lalu mendarat mantap di langit-langit ruang antigravitasi.\nKami semua terpukau oleh kemampuan adaptasi dan fokus Operator Argent Flow yang luar biasa, tapi jawabannya mungkin menyinggung cukup banyak orang yang meminta bimbingan darinya. Sang Operator hanya menyuruh mereka untuk beradaptasi dan berubah di sela-sela tarikan napas karena itu adalah bagian penting dari latihan Pengawal Kekaisaran. Dia juga menjelaskan bahwa dia cenderung lebih kreatif dalam bertarung, menyelingi gerakannya dengan momen-momen ketenangan, dan lebih suka mengikuti momentum lawannya. Sementara para operator mengelilingi Argent Flow untuk meminta saran dan tips, entah karena kekaguman atau sekadar candaan, tampaknya tak ada satu pun dari mereka yang menyadari sebuah fakta penting. Argent Flow tidak menyebutkan latihan brutal yang dialaminya atau aturan keras dan tak kenal ampun yang sepaket dengan teknik tempur rahasia keluarganya.\nKeluarga Ye sudah dikenal di medan pertempuran Yan dan meraih banyak kemenangan. Meski demikian, Argent Flow tetap seorang bocah ajaib, bahkan kalaupun dibandingkan dengan nama-nama terhormat dari generasi sebelumnya. Tak seorang pun di klan besarnya yang bisa bergerak seperti komet dengan kecepatan membara. Setelah pertemuannya yang tak terduga dengan tunggangannya, Nuli, prajurit berkuda itu menjadi petir kehancuran yang tak bisa didekati, dilawan, atau dihindari. Tapi, ini juga berarti Argent Flow harus berlatih lebih keras dan sering diberi tugas yang jauh lebih berbahaya.\nOperator Argent Flow merangkumnya dengan singkat: “Makin erat seseorang menggenggam petir, makin jernih pula pikirannya.”\n“Tapi, untuk bisa sehebat ini tentu tidak mudah! Mereka pasti sangat keras kepadamu!”\n“Pahitnya latihan jauh lebih manis daripada pahitnya kegagalan menyedihkan yang takkan mampu kita tanggung.”",
+      "file4": "Mentor pertamaku adalah instruktur ilmu pedangku. \nAku masih bocah waktu itu. Ayahku sibuk dengan tugas resminya dan mengundang dia dari Balai Tanjian untuk memperbaiki dasar-dasarku. Tapi, aku belajar terlalu cepat sehingga dia secara resmi mengakhiri pelajaran dan pergi hanya dalam beberapa bulan. \nSebelum kami berpisah, dia berkata bahwa aku hanya butuh satu musim untuk menguasai semua yang telah dia pelajari seumur hidupnya. Dia bercerita bahwa dia punya banyak penyesalan dalam hidupnya. Kalau aku bisa melampaui dia, aku akan menghadapi tantangan yang sama tanpa dibebani penyesalan. Dan kalau aku terus mengasah kemampuan bela diriku, kelak akan ada mentor dan instruktur lain yang membimbingku. Saat hari itu tiba, dia ingin aku mengingat pencapaian sekaligus kegagalan mereka, karena mungkin akulah yang mampu membalaskan penyesalan mereka. \nSaat itulah aku menyadari bahwa aku harus mencari tujuanku. Aggelos menghancurkan kampung halaman instruktur ilmu pedangku. Sebilah pedang saja takkan bisa melindungi semua orang. Zaman itu dipenuhi kegelapan, dan kisah seperti itu bukan barang langka. Bersama kemampuan, datang pula tanggung jawab dan kewajiban. \n\nMentor keduaku adalah rekanku, Nuli. \nAku baru berusia empat belas tahun saat bertemu dengannya di alam liar. Kami berdua ingin memburu mangsa yang sama, tapi perburuan itu dengan cepat berubah menjadi persaingan. Kami bertarung selama sehari semalam, merobohkan hampir setengah pepohonan di lereng bukit. Aku terlalu keras kepala untuk kalah, begitu juga dengannya. \nAku dan Nuli pingsan di tepi sungai hampir bersamaan. Dia, yang pada dasarnya memang berkepala batu, kembali berdiri, terhuyung-huyung ke arahku, dan mencoba menyerudukku dengan tanduknya ... sebelum akhirnya pingsan. Dia yang memenangkan pertarungan itu. Dia sangat ingin menang hingga membahayakan nyawanya sendiri. Sosok yang memikul tugas dan wewenang harus dibekali dengan keteguhan mental seperti itu. \n\nKau pasti tahu mentor ketigaku. Dia Tianshi Tan. \nSebenarnya aku bertemu dengannya tak lama setelah bergabung ke pasukan. Dia menyelonong ke dalam kamp kami saat waktu istirahat dan relaksasi. Awalnya aku bingung dan mengira ada yang tak sengaja membiarkan seorang bocah masuk ke kamp kami. Tapi, saat “bocah” itu menendang keluar para perwira tinggi yang berusaha menghentikannya, aku langsung sadar bahwa dia adalah Tianshi Tua Tan, sosok yang seorang diri menjaga Kutub Utara. \nTianshi Tan terus mencecarku dengan segala macam pertanyaan selama pertemuan itu. Mungkin dia yang mencegah HAS ikut campur saat aku beberapa kali bertindak gegabah .... Suatu hari, aku berbicara dengan Tianshi Tan tentang pertemuan pertama kami, dan dia memberitahuku bahwa dari pandangan pertama saja, dia sudah melihat bahwa aku penuh dengan ketidaksabaran. Dia menggambarkanku sebagai baja bermutu tinggi yang tidak bisa ditempa menjadi pedang yang bagus. Akulah masalahnya, dan aku harus diasah dan dipoles dengan benar. Yang bisa dia lakukan hanya membawaku ke medan pertempuran, tempat aku mungkin akan menemukan jawaban. \n\n“Cukup! Ya ampun! Pertanyaanku sederhana banget, tapi kau terus mengoceh ke sana kemari. Kau punya berapa mentor?” \n“Lumayan banyak, Nona Si. Seorang pemuda dari Desa Pan’an mengajariku cara memelihara burdenbeast. Seorang penjual dari Luoyi menunjukkanku cara menyempurnakan campuran dupa. Seorang Aldertone di alam liar mengajariku cara bernyanyi. Seorang pengemudi truk Simpang Aspal mengajariku cara menyeduh kohl manis dengan buah yang pahit .... Di antara tiga orang, pasti ada satu yang bisa menjadi mentor.” \n“Hmph. Lagi-lagi merendah untuk meroket.” \n“Bisa jadi, tapi lebih tepatnya itu kebodohan yang sudah ditumpulkan. Semasa muda, aku terlalu banyak berpikir. Butuh bertahun-tahun sampai akhirnya aku menyadari betapa sedikit yang kuketahui dan betapa terbatasnya pengalamanku.” \n“Aku bertanya soal mentor, tapi kau bahkan tidak menyebut Endministrator!” \n“Endministrator ... bagiku lebih dari sekadar ‘mentor’ ....” \n“...”"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Teknik Tempur",
+        "description": "Teknik Tempur: Pisau Musim Gugur\nTombak adalah Lung yang mengembara, pedang adalah cermin pisau musim gugur. Riam sungai dan aliran air mengalir dari hati yang dahulu dingin dan muram."
+      },
+      "expert2": {
+        "name": "Keilmuan",
+        "description": "Keilmuan: Memasuki Dunia\nPerjalanan panjang menyingkap banyak sisi dunia. Setelah menyaksikan keindahan alamnya, kuundang engkau, wahai aliran bintang."
+      },
+      "hobby1": {
+        "name": "Gaya Hidup",
+        "description": "Gaya Hidup: Penuh Kesadaran\nSegala macam keterampilan, segala cita rasa kehidupan. Jalan yang dipenuhi tungku, kepulangan yang diterangi cahaya."
+      },
+      "hobby2": {
+        "name": "Alam",
+        "description": "Alam: Menapak Bumi\nBerjalan di antara ladang, beristirahat di atas perbukitan. Seekor galloper menyambut panggilanku, tunggangan penuh laju dan debar."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Persiapan Operasi 1",
+        "text": "Kalau kita harus bergerak, berikan saja perintahnya."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Persiapan Operasi 2",
+        "text": "Menunggu aba-aba darimu."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Menambahkan ke Tim 1",
+        "text": "Sudah siap bertugas. Tak akan ragu-ragu."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Menambahkan ke Tim 2",
+        "text": "Hari cerah tanpa awan. Sempurna untuk membasmi musuh."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Berganti Senjata",
+        "text": "Andai senjata ini bisa bicara, ia tak akan pernah kalah debat."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Berganti Gear",
+        "text": "Bagus. Butuh alat yang tepat untuk melakukan tugas dengan baik."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Aktivasi Nodus Talent",
+        "text": "Peningkatan bukan hanya soal penguasaan bertahap, tapi juga tentang pencerahan mental."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Sesi belajar yang luar biasa .... Untuk membalasnya, aku akan merekam sesuatu untukmu. Lawan latih tanding? Sudah ada!"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Promosi Operator 1",
+        "text": "Dulu, banyak rekan prajurit garis depan yang ingin menerima penghargaan darimu .... Aku benar-benar beruntung dalam hal ini."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Promosi Operator 2",
+        "text": "Nuli, mundur. Berhenti menyundul Endmin .... Hmm. Sepertinya dia juga ingin dapat pujian. Bisakah kau mengelusnya beberapa kali lagi?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Promosi Operator 3",
+        "text": "Ini saja? Oh, bukan apa-apa. Aku cuma teringat saat pertama kali menjadi Kapten Langit Damai. Tianshi Tan hanya mentraktirku semangkuk mie. Kalian berdua pasti punya banyak kesamaan."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Promosi Operator 4",
+        "text": "Besarnya pohon ditentukan oleh kekuatan akarnya. Terlepas dari gelar, aku senang kau sudah mengakui fondasi yang kubangun selama bertahun-tahun .... Jangan khawatir. Dengan pedang yang tajam dan disiplin yang terasah, aku akan jadi pendukung terbesarmu."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Operator Siap Bertugas",
+        "text": "Minghe dari HAS, siap bertugas. Kapten Langit Damai? Gelar itu tak ada gunanya di sini, jadi kita lupakan saja untuk menghindari kebingungan."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "Siaga 1",
+        "text": "Tolong hangatkan anggur untukku. Pertarungan ini tak akan lama."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "Siaga 2",
+        "text": "Siap bertugas. Pasukan mana yang akan kita hancurkan hari ini?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Tentu saja. Aku punya keahlian lain selain ilmu pedang."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Menyapa 1",
+        "text": "Endmin, punya misi yang butuh aku?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Menyapa 2",
+        "text": "Lelah? Bagaimana kalau kita jalan-jalan sambil mengobrol menghabiskan waktu?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Aku sudah tahu kau akan datang .... Tidak, aku tidak mengaktifkan pendengaran superku. Keuntungan tinggi badan saja."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Aku menyesal tak membawa Nuli ke sini. Gadis arogan itu suka mengejar awan dan memamerkan kecepatannya. Ia pasti akan lebih menghargai gravitasi setelah beberapa hari di sini."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Endmin, apa kau bisa membawaku ke gudang senjata? Kudengar Pusat Penelitian itu diisi para perajin andal yang membuat koleksi senjata berkekuatan tinggi. Kenapa? Kurasa wajar saja kalau prajurit sepertiku tertarik pada alat perang. Hmm ... kenapa kau jadi kaget begitu, sih?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Apa kau melihat sepotong kayu? Yah, aku tidak bisa menahan diri untuk memahat saat sedang sepi. Potongan itu masih belum sempurna .... Aku mendapat inspirasi dan memutuskan untuk membuat patungmu. Aku tak mau kalau kau melihat hasil karyaku yang kurang rapi itu."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Aku terkejut melihat banyak rekan HAS di sini. Endfield Industries memang punya jaringan yang luas. Tapi, beberapa “orang yang serbatahu” mungkin melebih-lebihkan ... “masa lalu heroikku”. Bisa tolong ingatkan mereka untuk menahan diri? Satu ayunan saja tak mungkin bisa membelah gunung atau membuyarkan awan. Mereka terlalu berlebihan."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Di Yan, “Minghe” digunakan sebagai kiasan untuk aliran bintang. Eksplorasi angkasa penuh dengan kesulitan. Penduduk Terra akhirnya menembus langit palsu itu, dan mendapati diri mereka terjebak di langit asing lainnya .... Walau begitu, kau bisa lihat bahwa kita telah selangkah lebih dekat menuju surga."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Menawarkan Hadiah",
+        "text": "Endmin, terimalah ini. Jangan terlalu dipikirkan, ini bukan barang mahal. Hanya saja, menurutku ini akan membuatmu senang."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Menerima Hadiah",
+        "text": "Terima kasih. Aku harus memikirkan hadiah balasan yang bagus .... Apa kau tertarik menunggangi Nuli seharian? Dia sepertinya sudah lebih menyukaimu."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Dialog Kepercayaan 1",
+        "text": "Misi Endfield tidaklah mudah. Karena itu, HAS memutuskan untuk menugaskan aku untuk membantumu. Akan ada saat-saat ketika aku harus menjalankan tugas Pengawal Kekaisaran, tapi tak usah mengkhawatirkannya dan berikan saja perintahmu seperti biasa. Saat kau harus mengambil keputusan yang sulit, aku akan ada di sisimu. Kau bisa sepenuhnya memercayai ikatan kita."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Dialog Kepercayaan 2",
+        "text": "Aroma lembut? Mungkin dari bola dupa ini. Saat pertama kali mendaftar, aku agak tak sabaran. Aku memaksa diri untuk tetap terjaga dan waspada agar bisa menjalankan tugas dengan lebih baik. Tapi, hal ini malah makin membebani kesehatan mentalku. Lalu, rekan-rekanku memberiku resep dupa untuk menenangkan pikiranku. Mereka bilang tidur nyenyak adalah kunci untuk mengatasi kesulitan. Kata-kata mereka ternyata benar .... Endmin? Hmm. Sudah tidur. Kalau begitu, aku akan berjaga demi dirimu."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Dialog Kepercayaan 3",
+        "text": "Petugas medis bertanya tentang bekas lukaku? Luka di ekorku kudapatkan saat aku masih kecil dan nakal. Aku ceroboh, jatuh dari tebing, dan tergores batu. Awalnya tak seburuk itu, tapi seiring bertambahnya usiaku, lukanya jadi makin mengerikan. Sedangkan yang lainnya ... berasal dari berbagai pertarungan. Terlalu banyak untuk dihitung, dan setelah sekian lama, aku bahkan tak ingat kapan aku mendapatkan sebagian besar lukaku."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Dialog Kepercayaan 4",
+        "text": "Beberapa hari lalu, aku dan beberapa rekan menyetujui satu kelompok tentara cadangan Pengawal Kekaisaran untuk HAS. Mereka memang yang terbaik, tapi terlalu mencolok, suka pamer, dan butuh latihan mental serta spiritual. Kalau diberi tugas penting sekarang, aku khawatir mereka bisa salah mengartikan tugas sebagai alasan mereka hidup. Awal yang seperti itu ... Hah, omongan bapak-bapak? Tidak! Aku hanya ... berbagi kisah masa laluku. Aku tak mau anak-anak ini mengulangi kesalahanku."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Dialog Kepercayaan 5",
+        "text": "Ambil peluit ini. Tiuplah agar Nuli tahu lokasimu. Anggap saja itu cara melakukan kontak darurat. Tentu saja, ini juga hadiah pribadi. Lagi pula, kaulah yang menunjukkan daratan luas dan kota-kota makmur kepadaku. Jadi ya, di luar pertempuran, aku memang ingin bepergian ke berbagai tempat bersamamu. Mau coba tiup peluitnya sekarang? Nuli sedang istirahat di dekat sini. Kalau dia dengar peluit tapi melihat kita di sini, reaksinya pasti akan menarik."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Obrolan 1",
+        "text": "Katalog Kesatria di Bawah Naungan Langit itu hanya untuk hiburan. Buku itu disusun oleh para amatir yang punya banyak waktu luang. Aku belum pernah menghadapi kesatria TGCC, elite Biro Sekuriti, atau swordmancer wanita dari keluarga Chen, jadi peringkat itu murni fiksi. Soal “juara tak terbantahkan di bawah usia empat puluh”, mereka mungkin melihat pangkatku di Pengawal Kekaisaran dan mengarangnya. Oh ya Endmin, jangan menatapku terus. Aku terlahir seperti ini, jadi jangan salahkan aku karena terlihat muda."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Obrolan 2",
+        "text": "Setelah pulih, aku kembali ke desa itu beberapa kali. Banyak orang sudah tak ada di sana lagi, dan kunjunganku sangat singkat, jadi aku hanya bisa minta bantuan orang lain untuk menyampaikan pesan .... Walau begitu, tak perlu khawatir karena tempat itu tak pernah diserang Ankhorfall lagi. Hongshan juga membangun sejumlah kota di dekat sana dan banyak orang pindah ke sana. Sebenarnya, beberapa orang terus berpindah makin jauh. Mereka sering mengirimiku camilan khas setempat, dan aku masih punya sisa dua bungkus. Mau?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Obrolan 3",
+        "text": "Para pendatang baru dari Balai Tanjian itu datang lagi. Jangan salah paham. Aku senang mendiskusikan seni bela diri, tapi soal keterampilan berkuda .... Aku dan Nuli punya ikatan spiritual. Aku tidak mengendalikannya. Sebaliknya, aku bekerja sama dengannya dan itu tidak ada penjelasan teknisnya. Omong-omong, kenapa mereka begitu terobsesi dengan pertarungan berkuda? Hampir tak ada orang yang bertarung sambil menunggang galloper ...."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Obrolan 4",
+        "text": "HAS punya banyak buku tentang strategi militer Yan dan risalahnya. Sudah banyak yang kita ketahui, tapi masih belum cukup. Penempatan pasukan bisa menentukan hasil di medan pertarungan, tapi Sentrapolis sedang bertarung melawan seluruh Talos-II sendirian. Kemenangan tidak ditentukan oleh seberapa banyak sarang musuh yang kita hancurkan, tapi seberapa banyak yang bisa kita rebut kembali, pulihkan, dan pertahankan. Kalau situasinya memungkinkan, aku lebih suka bekerja di ladangku. Setidaknya mencurahkan keringat ke tanah akan menghasilkan lebih banyak makanan."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Obrolan 5",
+        "text": "Saat pertama kali bergabung dengan Arahan Zeroth, aku membayangkan setiap skenario pertemuan kita. Apakah di medan pertarungan utara? Hamparan pasir? Dalam misi darurat? Atau pengepungan yang putus asa ...? Aku berhenti membayangkannya karena tahu aku akan bertarung di sisimu, apa pun yang terjadi. Maaf kalau aku terlalu jujur, tapi rencana yang kaususun dengan Nona Si di pegunungan mungkin tak akan disetujui teman-temanmu. Kalau dia mengeluh lagi ... aku akan tetap di sisimu, dan kita hadapi amarahnya bersama-sama."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Topik: Rekan",
+        "text": "Aku dan Nuli sudah bertarung di medan pertarungan yang tak terhitung jumlahnya. Kami berdua lebih dari sekadar “rekan”. Dia juga tak mau makan jerami biasa. Harus dibumbui dengan sedikit Aggagrit dan lendir Siput Originium. Omong-omong, Nuli adalah galloper asli Talos-II. Apa itu berarti dia suka ... makanan asing dari Terra?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Topik: Pengawal Kekaisaran",
+        "text": "Hukum Yan menjadikan Pengawal Kekaisaran sebagai puncak seni bela diri, karena para petinju bayaran dianggap sebagai pelanggar hukum. Walau tak ada batas negara, Tiga Besar Talos-II masih menghadapi ancaman internal dan eksternal. Karena itu, Tianshi Tan menunjuk tiga belas Pengawal Kekaisaran. Keahlian bela diri hanyalah dasarnya. Masing-masing dari kami adalah ahli di bidang kami sehingga kami bisa melindungi rakyat kami. Keahlianku? Biasa saja, kok .... Aku berkuda sendirian menerobos musuh dan menghabisi komandan mereka. Itu saja."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Topik: Tianshi Tan",
+        "text": "Tianshi Tan biasanya bepergian ke utara dan melindungi garis depan kutub dengan Arts ledakan api. Dia jarang sekali terlibat urusan Hongshan. Tapi, karena dia sudah sangat senior, tak seorang pun di HAS berani bersikap tidak hormat kepadanya. Bahkan Nona Si pun menerima kritik Tianshi Tan tanpa protes. Keduanya jarang bertemu, tapi saat mereka bertemu, Tianshi Tan-lah yang biasanya menyeret Nona Si untuk berbuat jahil. Sejujurnya, aku tak bisa menebak siapa yang lebih senior di antara mereka."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Topik: Si",
+        "text": "Karena harus menyampaikan pesan dari Tianshi Tan, aku jadi sering berkorespondensi dengan Nona Si. Nona itu memang tampak keras kepala, tapi ada rahasia untuk bisa berkomunikasi secara efektif dengannya. Kalau kau tertarik ... hehe, sebenarnya tak terlalu sulit. Mulailah dari bagian yang paling menarik. Setelah dia penasaran, baru sampaikan hal lainnya .... Apa? Seperti bicara dengan anak kec—?! Eh, jangan, jangan, cukup sampai sini saja! Ada hal-hal yang terlalu berbahaya untuk diucapkan keras-keras."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Topik: Senjata",
+        "text": "Aku sudah lama menggunakan Fulei, si Lurking Thunder. Banyak Aggelos tumbang olehnya, begitu pula pohon dan rumput. Biro Swordmancer pernah memintanya untuk mereka pelajari, lalu marah besar kepadaku karena menggunakannya untuk tugas sehari-hari. Debatnya sangat panjang. Aku menganggap senjata sebagai alat untuk menaklukkan musuh dan melindungi yang hidup, dan bahkan senjata yang paling dipuja pun tak akan bisa melakukannya tanpa si pemakai. Oleh karena itu, kualitas sebuah senjata ada pada pemakainya, bukan pada senjata itu sendiri."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Ada harta karun tak bertuan. Ayo kita manfaatkan saja."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Di lokasi itu mungkin ada barang yang kita butuhkan. Kita periksa saja, yuk?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Aku lihat sesuatu yang tak biasa. Kita lihat lebih dekat saja?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Lawan ini kuat. Kita bisa menghindarinya, tapi lebih baik dihadapi langsung."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Penambangan 1",
+        "text": "Oh? Kualitasnya bagus."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Penambangan 2",
+        "text": "Biar aku saja. Punya dua senjata lebih baik dari satu."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Membuka Kerat",
+        "text": "Harta karun yang lama tersembunyi di dalam kerat, akhirnya ditemukan dan menanti takdirnya."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Mendapatkan Aurylene",
+        "text": "Ia terbang dengan baik dan bebas. Aku mulai iri kepadanya."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Menyingkirkan Hawar",
+        "text": "Ancaman sudah disingkirkan. Jalan sudah aman."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Istirahat",
+        "text": "Sudah cukup istirahat dan siap diterjunkan .... Ayo kita berangkat."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Penggunaan Taktis 1",
+        "text": "Pantau kekuatanmu."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Penggunaan Taktis 2",
+        "text": "Tadi perhatianku teralihkan. Ayo lanjutkan pertarungan ini."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Peringatan Bahaya",
+        "text": "Teman-teman, bersiap dan bersiagalah!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Cedera",
+        "text": "Tak apa-apa."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "0 HP",
+        "text": "Maaf Endmin, seharusnya aku ... terus bertahan ...."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Penyemangat Tim 1",
+        "text": "Aksimu sungguh luar biasa!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Penyemangat Tim 2",
+        "text": "Bagaikan air raksa yang jernih! Luar biasa!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Respons Penyemangat 1",
+        "text": "Ini memang sudah tugasku."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Respons Penyemangat 2",
+        "text": "Kerja sama tim inilah yang patut dipuji."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Mulai Pertarungan 1",
+        "text": "Jangan sampai kejahatan selamat dari pertarungan ini."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Mulai Pertarungan 2",
+        "text": "Baja ini akan mengikutinya."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Menang Pertarungan 1",
+        "text": "Semua sudah diselesaikan."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Menang Pertarungan 2",
+        "text": "Hasilnya memang sudah sewajarnya."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Menang Pertarungan 3",
+        "text": "Kemenangan hebat ini terwujud berkat tim yang hebat."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Menang Pertarungan 4",
+        "text": "Kita menang. Aku akan mengamankan perimeter. Semuanya, istirahatlah dulu."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Kalah Bertarung",
+        "text": "Pertarungan langka melawan musuh yang kuat .... Kita balas kekalahan ini pada upaya berikutnya."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "PETIR!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "HANCURLAH!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "Skill Tarung 1",
+        "text": "Hujan terbelah!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "Skill Tarung 2",
+        "text": "Tebas angin!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "Skill Tarung 3",
+        "text": "Koyak bayangan!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Skill Kombo Siap 1",
+        "text": "Saatnya serius."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Skill Kombo Siap 2",
+        "text": "Pedang sudah dihunus."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Penggunaan Kombo 1",
+        "text": "SAMBARAN PETIR!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Penggunaan Kombo 2",
+        "text": "BURSTING BLADE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Penuntas 1",
+        "text": "Kau boleh pergi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Penuntas 2",
+        "text": "Sebaiknya kau menyingkir."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Ke Utara, lihatlah langkahku!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Semuanya berakhir dalam gemuruh petir."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Kemarilah, rasakan aliran kosmiknya!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Talent <@ba.key>Zenith of Voltmancy</> meningkat: Saat mengakibatkan <#ba.crush>Crush</> pada target yang terkena <@ba.key>Sunderization</>, DMG yang ditimbulkan oleh <#ba.crush>Crush</> ini meningkat menjadi <@ba.vup>{1+crush_damage:0.0}</> kali nilai aslinya. Proporsi DMG ledakan <@ba.key>Sunderization</> yang ditimbulkan pada musuh lain di dekat target itu meningkat menjadi <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Wildswept Storm"
+    },
+    "potential2": {
+      "description": "Will <@ba.vup>+{Will:0}</>, Intensitas Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Electrified Spring"
+    },
+    "potential3": {
+      "description": "Skill tarung <@ba.key>Bolt Rush</> meningkat: Untuk setiap 1 tumpukan <#ba.pulseonchar>Electric Infliction</> yang <#ba.consume>dipakai</>, Argent Flow mendapatkan <@ba.pulse>Electric DMG Dealt</> <@ba.vup>+{potential_adddamage:0%}</> selama <@ba.vup>{potential_duration:0}</> dtk. Efek ini bisa mencapai <@ba.vup>{potential_maxstack:0}</> tumpuk. Durasi setiap tumpukan dihitung sendiri-sendiri.",
+      "name": "Storm Blitz"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Heavens Sundered</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Starflow Illuminated"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Springvolt Galore</> meningkat: Saat menggunakan skill tarung <@ba.key>Bolt Rush</>, seluruh tim mendapatkan tambahan Intensitas Arts <@ba.vup>+{extra_yuanshi_add:0}</>.\nBonus DMG ledakan <@ba.key>Sunderization</> per poin Intensitas Arts Argent Flow meningkat menjadi <@ba.vup>{thunderdamage_multi:0.0}</> kali nilai aslinya.",
+      "name": "Invitation to Celestial Lights"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Tombak Terang Alam Liar",
+      "author": "李吉吉",
+      "description": "Di bawah hamparan bintang, di malam yang diterangi oleh tombaknya, dia mengabdikan dirinya untuk menjaga dan melindungi negeri ini."
+    },
+    "potential3": {
+      "name": "Kemah Beratap Awan",
+      "author": "kera",
+      "description": "Di sebuah kemah beratap awan, sembari bersantai di tepi jalan, dia merayakan perjalanannya dengan bersulang."
+    },
+    "potential5": {
+      "name": "Pembawa Cahaya",
+      "author": "ALZiMi",
+      "description": "Bagai busur kilat yang terang, tekad yang terus menyala, harapannya adalah mewujudkan kedamaian abadi di dunia."
+    }
+  }
+}

@@ -2,5 +2,9 @@
     {
         "id": "indie_contract001",
         "name": "Contingency Contract: Re-Ignition Experimental Operation"
+    },
+    {
+        "id": "indie_contract002",
+        "name": "Contingency Contract: Indigo Experimental Operation"
     }
 ]

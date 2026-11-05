@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "\"Thanh Tẩy Lam Chàm\"",
+    "category": "Sự Kiện",
+    "group": "Sự Kiện",
+    "levels": {
+      "3": {
+        "desc": "Hoàn thành thành công một thử thách với ≥ 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Tổng Tiêu Chí Thử Nghiệm trong [Hợp Đồng Điều Kiện: Chiến Dịch Thử Nghiệm Lam Chàm]",
+        "completeDesc": "Món quà đã bị sắc lam chàm vấy bẩn. Nhưng chỉ cần ngài ở đây, ngọn lửa tái sinh sẽ không bao giờ lụi tàn."
+      }
+    },
+    "plating": {
+      "desc": "Hoàn thành thành công một thử thách với ≥30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Tổng Tiêu Chí Thử Nghiệm trong [Hợp Đồng Điều Kiện: Chiến Dịch Thử Nghiệm Lam Chàm]"
+    }
+  },
   "achv_event_dungfight": {
     "name": "\"Bậc Thầy Sinh Tồn\"",
     "category": "Sự Kiện",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Hoàn thành nhiệm vụ phụ [Một Thoáng Suy Ngẫm]",
         "completeDesc": "Nắm đấm của họ chất vấn ý chí ta, nhưng khí của ta xuyên phá đất trời, đối đầu với cả sấm sét."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "\"Trở Về Chốn Dân Dã\"",
+    "category": "Chương",
+    "group": "Nhiệm Vụ Khám Phá",
+    "levels": {
+      "2": {
+        "desc": "Hoàn thành nhiệm vụ phụ [Trở Về Chốn Dân Dã]",
+        "completeDesc": "Khi sống lưỡi kiếm có thể nâng đỡ vài nhành non mới, và cất tiếng ca như muông thú, cuối cùng chúng ta sẽ hiểu được chân ý thật sự của mình."
       }
     },
     "plating": null

@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "I've seen that storyteller. Back then, he found a place at a corner of the city. He wore a crazed look about him and talked about nothing but swords. \nThe swordmancers he described walked all sorts of paths. Some committed themselves to altruism and saving the world, some went on a solo pilgrimage of the blade, while others roamed the world to seek someone to challenge. Different swordmancers carried different swords, but every weapon was razor sharp and a legend in its own right. Whenever the storyteller got too excited, he would pick up his worn sword and perform his dance of flourishes, a flurry of cold gleaming light slicing through the wind. It was amazing to everyone in the audience. People thought they were seeing the ultimate art of swordmancy. \nAs for the storyteller's origin, people had all sorts of stories too, but none of them seemed concrete. From his outfits, people thought that he was a former Tianshi. Someone was inquisitive enough to ask, but the storyteller responded by saying, \"Is that really important? I'm but a most simple traveler, a storyteller, and a seeker of the sword, an ordinary person who only narrates stories of the razor edges.\" \nHe was still reciting sword tales on the day he bid me farewell. The hour grew late and the audience had left. I was the only one left. As a swordsmith, I could hardly contain my curiosity about his past and the blade he carried. So I finally found the chance to ask before he went his way: \"Many sword tales you have shared, storyteller. Do you have a tale for the blade you carry?\" \nThe storyteller sat by a table and emptied the cask of kohl he had ordered. \nHalf-drunk, the storyteller began his story. He once heard about \"Lunar Calling\", a blade lost upon Talos-II, a weapon forged by a master smith of Great Yan. It struck with incredible momentum that could defeat everything in its path. After he crossed the Cosmic Gate and arrived at Talos-II, his way home was soon severed. His search for the blade became his only obsession and he traveled the entire Civilization Band to find it. He found many who claimed to have seen the weapon, yet their descriptions varied greatly. Confused by the disparate testimonies, the storyteller was convinced that the \"Lunar Calling\" might simply be a fictional legend, and he even decided to end his fruitless journey. \nOne day while he rested in the wilderness, he saw a youth trapped by several Aggeloi and rescued him. The grateful youth suddenly took notice of the sword he wielded and could barely mask his surprise: \"The pattern of the blade body, and the colors of the hilt... They're just like what the legend has told. Sir, might you be the wielder of the 'Lunar Calling'?\" \nThe sudden revelation first stunned the storyteller before leaving him dazed. He traveled long and far, and fought a few battles to help those in need. People talked about his deeds, and even swore that his blade was 'Lunar Calling' itself. \nThe epiphany arrived in an instant and all the leads came down to one — the disparate testimonies were not wrong. Lunar Calling was not a single blade, but a multitude of razors. It was not a name given to a single piece. Many weapons had once earned this title by deeds. \nHaving lavished me with a story, he rose to leave. \n\"I suppose we could add something to this tale,\" my emotions stirred as I looked at the moon's reflection in my kohl. \nA smile beamed on the storyteller's face. \"Yes, there should be something else.\" \nWith that, he waved his hand and walked into the night. No one knew what happened afterwards. \nThe tale was done and the blade was forged. I gave it to the young yet calm swordmancer before me. The moonlight gleamed as he gave it a flick. The sword gave a soft hum that echoed long and gently in the night. \nThe swordmancer solemnly accepted my work. Something was on his mind, but he gave his thanks before leaving. I saw him gradually blend into the moonlight itself — \nMy vision blurred. I wondered to myself. Did I see a swordmancer walking in the night, or a sword reflecting the call of the moon?",
+    "decoDesc": "A symbolic masterpiece of Hongshan Swordmancers. The weapon is constructed using the latest metal smelting technologies and forged with ancient Yanese sword-forging techniques. The result features both excellent performance and time-tested beauty.",
+    "skills": [
+      {
+        "name": "Will [L]",
+        "description": "Will <@ba.vup>+{will}</>"
+      },
+      {
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Infliction: Coursing Stars",
+        "description": "Arts Intensity <@ba.vup>+{phy_spell_up:0}</>.\nWhen wielder's skill applies <#ba.conduct>Electrification</>, the entire team gains ATK <@ba.vup>+{atk_up:0.0%}</> for {duration:0}s.\nWhen the wielder <#ba.consume>consumes</> <#ba.spellinflict>Arts Infliction</>, the wielder gains Electric DMG Dealt <@ba.vup>+{pulse_dmg_up:0.0%}</> for {duration2:0}s.\n<@ba.info>The two effects apply separately and do not stack with themselves.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "This land might not be anything special. \nSame old plains, same old air, and same old sea. The skies are different, though. There is a huge planet that we could clearly see in the day. There are also no twin moons at night. Life is hardly different from that in Terra. \nIs that a good thing? I don't know. \nI'm here because of national conscription, but It pays and there's food. That's all there's to it. \n\nBut as time went on, I started to feel the differences. \nThe land has no Originium. Heck, even the national borders felt like a joke. I thought this was some Columbian frontier pioneering work, where people slogged all day in the wilderness for something to eat. But just today, someone who looked like Leithanian nobility asked me, a worker conscript, about the specifications of machine parts and how to use some machinery. \nAnd mister nobleman wasn't joking around. \nUrsusian, Leithanian, Columbian... All these divisive labels are now being reduced to crew mate, friend, and partner. \nI like how things turned out, it's great! But how did it happen? I don't really know. \nI asked around a bit and they're just as confused as I am. So I didn't get my answer for a while until... \n\n\"What is Endfield?\" \nI asked the huge Sarkaz team lead this question when I first reported to work. Endfield sounds like a really unlucky name for a company working on the frontiers. \nHe did not say anything. Instead, he brought us to the tip of the ship temporarily serving as the Endfield HQ. Told us to have a good look at the planet and the world. \nPlanet and world... We hardly used those terms before. \nThe team lead saw my confusion and smiled. He told me they are the meaning behind Endfield. \n\"Meaning that we gotta use new, pretty words?\" \n\"Meaning that we left our past on Terra.\" \n\nPerhaps he was right. \nBefore I decided to walk through the Cosmic Gate to reach this place, I, and everyone else, had forever left something back in Terra. \nPeople who struggled in the mine shafts, who roamed the wilderness, who worked in the cities, who gave concerts at the spires... Everyone standing shoulder to shoulder aboard the ship, ready to build a future together. \nFate gave us a choice. We chose something different from the past to create a new way of life. \n\nWhat is this world going to be like? I don't know. \nBecause we're building it right now. \nBuildings will rise from the ground and crops will sprout from the earth. \nThis is our resounding answer about the world we're making.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Assault: Vision for Tomorrow",
         "description": "When entering battle, the entire team gains the <@ba.key>Dream Striving</> buff that grants DMG Dealt <@ba.vup>+{dmg_up:0.0%}</>, Arts Intensity <@ba.vup>+{phy_spell_up:0}</>, and DEF <@ba.vup>+{def_up:0.0%}</> for {duration:0}s. When <@ba.key>Dream Striving</> ends, the wielder restores the entire team for <@ba.heal>{hp_up_c:0}</> HP.\n<@ba.info>Effects of the same name cannot stack.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Lunar Calling",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Will [L]",
-        "description": "Will <@ba.vup>+{will}</>"
-      },
-      {
-        "name": "ATK [L]",
-        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Infliction: Coursing Stars",
-        "description": ""
       }
     ]
   }

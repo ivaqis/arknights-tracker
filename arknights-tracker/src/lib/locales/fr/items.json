@@ -271,6 +271,15 @@
       "Cadeau : atteindre le potentiel d'un opérateur spécifique"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Porteur de lumière",
+    "type": "Thème du profil",
+    "desc": "Un thème pour l'écran Profil. Les thèmes de profil s'affichent à divers endroits.",
+    "decoDesc": "Un arc électrifié et lumineux, preuve d'un engagement sans limite. Il fit le vœu d'instaurer une paix éternelle dans le monde.",
+    "obtainWays": [
+      "Cadeau : atteindre le potentiel d'un opérateur spécifique"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Thème : par défaut",
     "type": "Thème du profil",
@@ -403,6 +412,13 @@
   },
   "item_activity_contract_gold_0": {
     "name": "Pièce vitrifiée",
+    "type": "Monnaie d'événement",
+    "desc": "Un objet spécial obtenu en terminant des contrats de mission. À échanger contre des récompenses lors de l'événement [Sanctuaire secret] de [Contrat de crise]. Cet objet sera supprimé à la fin de l'événement [Sanctuaire secret].",
+    "decoDesc": "Admirez-la sous tous ses angles. Son éclat chatoyant est la preuve que l'ancien contrat est toujours actif.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Indigo vitrifié",
     "type": "Monnaie d'événement",
     "desc": "Un objet spécial obtenu en terminant des contrats de mission. À échanger contre des récompenses lors de l'événement [Sanctuaire secret] de [Contrat de crise]. Cet objet sera supprimé à la fin de l'événement [Sanctuaire secret].",
     "decoDesc": "Admirez-la sous tous ses angles. Son éclat chatoyant est la preuve que l'ancien contrat est toujours actif.",
@@ -2146,6 +2162,15 @@
       "Offrande d'armes"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "CO d'armes : miroilune",
+    "type": "Caisse",
+    "desc": "Ouvrez ceci pour sélectionner et recevoir l'une des armes qu'il contient.",
+    "decoDesc": "Une lourde caisse particulièrement bien fermée. « Proposer un grand choix d'armes, c'est assurer des opérations plus sécurisées sur le champ de bataille », ont pensé les ingénieurs de l'arsenal. C'est pourquoi ils ont rempli cette caisse d'armes en rapport avec la miroilune.",
+    "obtainWays": [
+      "Offrande d'armes"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "CO d'armes : glace solide",
     "type": "Caisse",
@@ -2372,6 +2397,13 @@
     "type": "Caisse",
     "desc": "Ouvrez ceci pour obtenir de l'équipement renforcé au maximum et spécialement conçu pour un opérateur donné.",
     "decoDesc": "Les ingénieurs de l'arsenal ont pris grand soin de préparer cet équipement défensif de type β, avec des pièces d'équipement spécialement conçues pour l'opératrice Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Caisse de défense de l'arsenal α : Rivière étoilée",
+    "type": "Caisse",
+    "desc": "Contient un ensemble d'équipement renforcé au maximum et spécialement conçu pour un opérateur donné. Les caisses de défense s'ouvrent automatiquement à l'acquisition. Leur contenu sera stocké dans le coffre d'objets de valeur.",
+    "decoDesc": "Les ingénieurs de l'arsenal ont pris grand soin de préparer cet équipement défensif de type α, avec des pièces spécialement conçues pour l'opérateur Flux d'argent.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Jeton d'opérateur",
     "desc": "Augmente le potentiel de Si.",
     "decoDesc": "Un livre de comptes n'ayant pas l'air très épais. D'après les rumeurs, ce serait le « registre top secret » de l'aubergiste de Yuanyuan, dans lequel sont consignées toutes ses années d'activité. Mais lorsque vous l'avez ouvert, vous n'avez trouvé que des notes écrites à la va-vite, à propos de choses, de mots et de personnes chers à Si. En même temps, les principes derrière la gestion du manoir Yuanyuan sont évidents : son nom en dit déjà long.",
+    "obtainWays": [
+      "Cadeau : intégration d'opérateur"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Jeton de Flux d'argent",
+    "type": "Jeton d'opérateur",
+    "desc": "Augmente le potentiel de Flux d'argent.",
+    "decoDesc": "Un pendentif sphérique pouvant recueillir de l'encens et fonctionnant grâce aux Arts de l'originium. Son corps métallique est très usé et couvert de rayures. Une fois allumée, la sphère diffuse un doux parfum d'herbes aromatiques. Comme vous, il sait que toute occasion de se reposer sous une lumière paisible est rare et précieuse, surtout pour ceux en direction des champs de bataille.",
     "obtainWays": [
       "Cadeau : intégration d'opérateur"
     ]
@@ -6141,6 +6182,42 @@
       "Récompense : mission"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Appât piquant",
+    "type": "Objet de mission",
+    "desc": "Un appât fabriqué avec des poivriaigres.",
+    "decoDesc": "Cette boule d'appât herbacée dégage une odeur légèrement irritante. Elle attire la curiosité. Comment Minghe a-t-il découvert qu'elle soignait les troubles gastriques des bêtes de somme ?",
+    "obtainWays": [
+      "Récompense : mission"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Branche de Ye Minghe",
+    "type": "Objet de mission",
+    "desc": "Branche de Ye Minghe",
+    "decoDesc": "Branche de Ye Minghe",
+    "obtainWays": [
+      "Récompense : mission"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Outils de réparation d'enclos à bêtes",
+    "type": "Objet de mission",
+    "desc": "Un ensemble d'outils servant à réparer les enclos à bêtes.",
+    "decoDesc": "Des outils courants, mais utiles. Ils sont usés par des années d'utilisation intensive.",
+    "obtainWays": [
+      "Récompense : mission"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Planches solides",
+    "type": "Objet de mission",
+    "desc": "Des planches en bois servant à réparer les enclos à bêtes.",
+    "decoDesc": "Sans prétention, mais suffisamment solides.",
+    "obtainWays": [
+      "Récompense : mission"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "« Point de départ »",
     "type": "Objet de mission",
@@ -7274,8 +7351,7 @@
     "decoDesc": "Le ginseng roujade est une épice douce souvent consommée par les habitants de Hongshan comme complément nutritionnel fortifiant.",
     "obtainWays": [
       "Parc des sciences de l'originium : sentier de la falaise",
-      "Faites pousser des cultures à l'écoferme.",
-      "Caisse d'ingrédients"
+      "Faites pousser des cultures à l'écoferme."
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Matériau",
     "desc": "Des graines prélevées sur le ginseng roujade. Plantez-en pour cultiver du ginseng roujade.",
     "decoDesc": "Des graines de ginseng roujade sélectionnées avec soin pour leur taille et leur vitalité.",
-    "obtainWays": [
-      "Boutique : responsable de l'arrière-cuisine, « Flèche »"
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Graines de riz ambré",
@@ -7780,6 +7854,15 @@
     "desc": "Une installation lourde qui concasse et pulvérise des matériaux divers.",
     "decoDesc": "Entendez-vous les craquements des énormes concasseurs industriels ?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli à bascule",
+    "type": "Décoration",
+    "desc": "Une décoration qui peut être placée. Elle est stockée dans le panneau Décoration de la liste des installations.",
+    "decoDesc": "Un jouet amusant à l'image de Nuli. En selle, ma petite galopeuse... Qui regrette déjà son enfance ?",
+    "obtainWays": [
+      "Échange de talosite"
+    ]
   },
   "item_port_jail_1": {
     "name": "Cage à tigre",
@@ -9360,6 +9443,15 @@
       "Échange de talosite"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Flâner avec un vieil ami",
+    "type": "Pose d'appareil photo",
+    "desc": "Une pose que les opérateurs peuvent prendre devant l'appareil photo.",
+    "decoDesc": "Une interprétation du sens de l'expression « flâner avec un vieil ami ». Une impression claire, et pourtant ésotérique.",
+    "obtainWays": [
+      "Échange de talosite"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Sourire inhabituel",
     "type": "Pose d'appareil photo",
@@ -10281,6 +10373,15 @@
       "Centre d'acquisition : lots"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permis REC Les étoiles sont avec moi",
+    "type": "Objet de valeur à durée limitée",
+    "desc": "Un certificat à durée limitée des Industries Endfield. Utilisez-le pour lancer 1 recrutement dans le Recrutement certifié : [L'appel de l'âtre au flux étoilé]. Le certificat expirera à la fin du Recrutement certifié : [L'appel de l'âtre au flux étoilé].",
+    "decoDesc": "Un permis spécial émis par les RH d'Endfield afin de recruter des opérateurs possédant des compétences uniques. Vu l'urgence de la situation, ce permis expirera inévitablement après un certain temps.",
+    "obtainWays": [
+      "Centre d'acquisition : lots"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Permis REC ×10 certifié",
     "type": "Objet de valeur",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Portrait",
+    "desc": "Un portrait que vous pouvez choisir sur l'écran Profil. Les portraits de profil s'affichent à divers endroits.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Cadeau : intégration d'opérateur"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Flux d'argent",
     "type": "Portrait",
     "desc": "Un portrait que vous pouvez choisir sur l'écran Profil. Les portraits de profil s'affichent à divers endroits.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Permis REC Restauration de l'esprit",
     "type": "Objet de valeur à durée limitée",
     "desc": "Un certificat à durée limitée des Industries Endfield. Utilisez-le pour lancer 1 recrutement dans le recrutement certifié : [Renouvellement]. Le certificat expirera à la fin du recrutement certifié : [Renouvellement].",
+    "decoDesc": "Un permis spécial émis par les RH d'Endfield afin de recruter des opérateurs possédant des compétences uniques. Vu l'urgence de la situation, ce permis expirera inévitablement après un certain temps.",
+    "obtainWays": [
+      "Centre d'acquisition : lots"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permis REC Les étoiles sont avec moi",
+    "type": "Objet de valeur à durée limitée",
+    "desc": "Un certificat à durée limitée des Industries Endfield. Utilisez-le pour lancer 1 recrutement dans le Recrutement certifié : [L'appel de l'âtre au flux étoilé]. Le certificat expirera à la fin du Recrutement certifié : [L'appel de l'âtre au flux étoilé].",
     "decoDesc": "Un permis spécial émis par les RH d'Endfield afin de recruter des opérateurs possédant des compétences uniques. Vu l'urgence de la situation, ce permis expirera inévitablement après un certain temps.",
     "obtainWays": [
       "Centre d'acquisition : lots"

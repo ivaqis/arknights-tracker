@@ -1043,7 +1043,8 @@
     "typhoeus": "ไท​ฟี​อุส",
     "endministrator": "Endministrator",
     "purrchena": "เพอร์​ซี​น่า",
-    "si": "ซือ"
+    "si": "ซือ",
+    "argentFlow": "อาร์​เจน​ท์​ โฟลว์"
   },
   "weaponsList": {
     "custom_weapon": "อาวุธแบบกำหนดเอง",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "ใบอนุญาต​มอง​ทางเหนือ​สู่​รอยแยก​×10",
     "ticketgacha_special_ten_lt_1_4_2": "ใบอนุญาต​×10 ดาวรุ่ง​เจิด​จรัส",
     "ticketgacha_weaponbox_lt_1_2_2": "ใบรับรอง​ตั๋ว​เปลวไฟ​ใน​สายลม",
-    "ticketweaponbox_ten_1_lt": "ใบอนุญาต​ลัง​อาวุธ​×10 LTO"
+    "ticketweaponbox_ten_1_lt": "ใบอนุญาต​ลัง​อาวุธ​×10 LTO",
+    "business_card_topic_chr_0037_minghe": "ผู้​แบกรับ​แสงสว่าง",
+    "item_activity_contract_gold_1": "ผลึก​แก้วสี​คราม",
+    "item_case_wpn_selfselect_gahca_1_6_2": "OC อาวุธ​: มูน​กลี​ม",
+    "item_char_equip_supply_minghe": "ลัง​อุปกรณ์​ป้องกัน​คลังแสง​ α: สายนที​แห่ง​ดวงดาว",
+    "item_charpotentialup_chr_0037_minghe": "โท​เคน​ของ​อาร์​เจน​ท์​ โฟลว์",
+    "item_mission_c37m1_foragel": "เหยื่อ​รสเผ็ดร้อน",
+    "item_mission_c37m3_branch": "กิ่งไม้​จาก​เ​ย่​ หมิง​เห​อ",
+    "item_mission_c37m3_tools": "เครื่องมือ​ซ่อมแซม​คอก​สัตว์​บรรทุก",
+    "item_mission_c37m3_woodenboard": "แผ่น​ไม้​เนื้อ​แกร่ง",
+    "item_port_horse_1": "หนู​ลี่​โยกเยก",
+    "item_shot_anim_minghe_m_1": "เอ้อระเหย​กับ​เพื่อนเก่า",
+    "item_ticketgacha_special_single_lt_1_6_2": "ใบอนุญาต​ HH ดวงดาว​เคียงข้าง​ฉัน",
+    "item_user_avatar_chr_0037_minghe": "อาร์​เจน​ท์​ โฟลว์",
+    "ticketgacha_special_single_lt_1_6_2": "ใบอนุญาต​ HH ดวงดาว​เคียงข้าง​ฉัน"
   },
   "buildingNames": {
     "component_mc_1": "ยู​นิต​พิมพ์​แบบ",

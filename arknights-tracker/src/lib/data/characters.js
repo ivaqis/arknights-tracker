@@ -374,5 +374,16 @@ export const characters = {
     birthDate: "10-09",
     apiId: "",
     gameId: "chr_0036_jsspsi"
+  },
+  argentFlow: {
+    id: "argentFlow",
+    name: "Argent Flow",
+    rarity: 6,
+    element: "electric",
+    class: "guard",
+    weapon: "sword",
+    birthDate: "23-10",
+    apiId: "",
+    gameId: "chr_0037_minghe"
   }
 };

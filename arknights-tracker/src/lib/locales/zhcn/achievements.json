@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "“洗尽浊蓝”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "3": {
+        "desc": "在「危机合约 浸蓝测试作战」中，成功达成指标总计20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑战",
+        "completeDesc": "污秽的蓝色浸染了那份礼物，但有您在，重燃之火将永不熄灭。"
+      }
+    },
+    "plating": {
+      "desc": "在「危机合约 浸蓝测试作战」中，成功达成指标总计30<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑战"
+    }
+  },
   "achv_event_dungfight": {
     "name": "“生存专家”",
     "category": "活动奖章",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "完成支线任务「以拳问心」",
         "completeDesc": "再以双拳问我心，一气贯山水，执武向雷霆。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "“归野”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「归野」",
+        "completeDesc": "当剑脊上担得住几枚新叶、几声兽鸣，我们便能知道，自己的心总有来处。"
       }
     },
     "plating": null

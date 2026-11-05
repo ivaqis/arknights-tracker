@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "「濁青洗浄」",
+    "category": "特殊褒章",
+    "group": "特殊褒章",
+    "levels": {
+      "3": {
+        "desc": "「危機契約 青藍試験作戦」で評価値20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>以上の挑戦をクリアする",
+        "completeDesc": "濁りし青は、あの「贈り物」を染めてしまった。しかし、貴殿がいる限り、再燃の炎が消えることはない。"
+      }
+    },
+    "plating": {
+      "desc": "「危機契約 青藍試験作戦」で評価値30<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>以上の挑戦をクリアする"
+    }
+  },
   "achv_event_dungfight": {
     "name": "「サバイバルエキスパート」",
     "category": "特殊褒章",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "サブ任務「心映す一拳」を完了する",
         "completeDesc": "拳は心を映す――気もて山水を貫き、武もて雷霆に向かわん。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "「帰野」",
+    "category": "物語褒章",
+    "group": "探索任務褒章",
+    "levels": {
+      "2": {
+        "desc": "サブ任務「帰野」を完了する",
+        "completeDesc": "その剣に若葉を数枚、獣の声をいくつか携える時、己の心の来し方を知る。"
       }
     },
     "plating": null

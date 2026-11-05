@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Électrification",
+      "Broyage"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Académie des sciences de Hongshan (ASH)",
+    "expertTags": [
+      "Techniques de combat",
+      "Érudit"
+    ],
+    "giftPreferTags": [
+      "Sélection des artisans de Wuling"
+    ],
+    "hobbyTags": [
+      "Mode de vie",
+      "Nature"
+    ],
+    "raceTag": "Lung"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Poussière resplendissante",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+    },
+    "battleSkill": {
+      "name": "Obscurité domptée",
+      "description": "Flux d'argent effectue un balayage avec sa lance et inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité, tout en appliquant <#ba.airborne>Soulèvement</> à la ou les cibles devant lui.\nAprès avoir utilisé sa compétence de combo, la compétence de combat de Flux d'argent sera temporairement remplacée par <@ba.key>Charge fulgurante</>.\n<@ba.key>Charge fulgurante</> : Flux d'argent enfourche sa galopeuse Nuli pour bondir dans les airs, accumule rapidement de la puissance, puis charge la cible pour appliquer une <#ba.conduct>Électrification</> de force et infliger des <@ba.pulse>DÉG électriques</> aux ennemis dans une large zone devant lui. Lorsque cette <#ba.conduct>Électrification</> est appliquée à une cible déjà victime d'une <#ba.pulseinflict>altération électrique</>, elle <#ba.consume>consomme</> tous les cumuls d'<#ba.pulseinflict>altération électrique</> de la cible et octroie <#ba.statuslevel>+1 au niveau du statut</> de l'<#ba.conduct>Électrification</> pour chaque cumul consommé. Après avoir <#ba.consume>consommé</> l'<#ba.pulseinflict>altération électrique</> de la cible, Flux d'argent applique également 1 cumul de <#ba.noguard>Vulnérabilité</>.",
+      "baseDmgMultiplier": "Multiplicateur de DÉG de base",
+      "baseStagger": "Déséquilibre de base",
+      "boltRushDmgMultiplier": "Multiplicateur de DÉG de Charge fulgurante",
+      "boltRushStagger": "Déséquilibre de Charge fulgurante"
+    },
+    "comboSkill": {
+      "name": "Étoiles déplacées",
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi devient <#ba.noguard>Vulnérable</>.\nFlux d'argent manie sa lame à la vitesse de l'éclair pour lancer une attaque à séquences multiples qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis sur sa trajectoire. Si la dernière séquence touche un ennemi, elle applique également une <#ba.pulseinflict>altération électrique</>. La compétence de combat de Flux d'argent est temporairement remplacée par <@ba.key>Charge fulgurante</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "battleSkillChangeDurationS": "Durée de changement de compétence de combat (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
+    },
+    "ultimate": {
+      "name": "Cieux fendus",
+      "description": "Flux d'argent enfourche Nuli et charge avec sa lance, infligeant des <@ba.pulse>DÉG électriques</> continus à des cibles devant lui, empalant les ennemis qui se trouvent devant lui et emportant les plus faibles avec lui jusqu'au point d'arrivée de sa charge. Après la charge, Flux d'argent bondit dans les airs et lance une Entaille purificatrice sur le sol. Cette entaille inflige des <@ba.pulse>DÉG électriques</> et applique 1 cumul d'<#ba.pulseinflict>altération électrique</>. Flux d'argent transperce ensuite le sol de sa lance, appliquant <#ba.crush>Broyage</> et infligeant des <@ba.pulse>DÉG électriques</> aux ennemis dans une large zone.\n<@ba.info>Si l'ultime de Flux d'argent charge un ennemi qui n'est pas faible (qu'il ne peut pas empaler et repousser), sa charge s'arrêtera prématurément.</>",
+      "chargeDmgMultiplier": "Multiplicateur de DÉG de Charge",
+      "cleansingCleaveDmgMultiplier": "Multiplicateur de DÉG d'Entaille purificatrice",
+      "groundPierceDmgMultiplier": "Multiplicateur de DÉG de Transperce-terre",
+      "stagger": "Déséquilibre"
+    },
+    "indicator": {
+      "levels": [
+        "Volonté de l'opérateur +10.",
+        "Volonté de l'opérateur +15.",
+        "Volonté de l'opérateur +15.",
+        "Volonté de l'opérateur +20."
+      ],
+      "name": "Pilier"
+    },
+    "talent1": {
+      "levels": [
+        "Lorsque Flux d'argent applique une <#ba.conduct>Électrification</>, <#ba.conduct>cette dernière</> augmente également tous les types de DÉG subis par la cible pendant la même durée et applique un ou plusieurs cumuls de <@ba.key>Fragmentation</>. Le nombre de cumuls équivaut au <#ba.statuslevel>niveau du statut</> de l'<#ba.conduct>Électrification</>, jusqu'à un maximum de {max_stack:0}. La <@ba.key>Fragmentation</> dure pendant {duration:0} s. \nLorsque des <#ba.crush>DÉG de Broyage</> sont infligés à une cible victime d'une <@ba.key>Fragmentation</>, ces <#ba.crush>DÉG de Broyage</> sont multipliés par <@ba.vup>{crush_damage+1:0.0}</> et font exploser tous les cumuls de <@ba.key>Fragmentation</>. L'explosion inflige <@ba.vup>[Nombre de cumuls de Fragmentation × {atk_scale:0%} de l'ATQ]</> de <@ba.pulse>DÉG électriques</> à la cible, ainsi que {other_damage_percent:0%} de ces DÉG aux autres ennemis à proximité de la cible.\n<@ba.info>Lorsque les DÉG d'explosion de Fragmentation sont infligés à un autre ennemi qui subit une Fragmentation, les cumuls de Fragmentation de cet ennemi explosent également.</>",
+        "Lorsque Flux d'argent applique une <#ba.conduct>Électrification</>, <#ba.conduct>cette dernière</> augmente également tous les types de DÉG subis par la cible pendant la même durée et applique un ou plusieurs cumuls de <@ba.key>Fragmentation</>. Le nombre de cumuls équivaut au <#ba.statuslevel>niveau du statut</> de l'<#ba.conduct>Électrification</>, jusqu'à un maximum de {max_stack:0}. La <@ba.key>Fragmentation</> dure pendant {duration:0} s. \nLorsque des <#ba.crush>DÉG de Broyage</> sont infligés à une cible victime d'une <@ba.key>Fragmentation</>, ces <#ba.crush>DÉG de Broyage</> sont multipliés par <@ba.vup>{crush_damage+1:0.0}</> et font exploser tous les cumuls de <@ba.key>Fragmentation</>. L'explosion inflige <@ba.vup>[Nombre de cumuls de Fragmentation × {atk_scale:0%} de l'ATQ]</> de <@ba.pulse>DÉG électriques</> à la cible, ainsi que {other_damage_percent:0%} de ces DÉG aux autres ennemis à proximité de la cible.\n<@ba.info>Lorsque les DÉG d'explosion de Fragmentation sont infligés à un autre ennemi qui subit une Fragmentation, les cumuls de Fragmentation de cet ennemi explosent également.</>"
+      ],
+      "name": "Zénith de la voltmancie"
+    },
+    "talent2": {
+      "levels": [
+        "Renforce la compétence de combat <@ba.key>Charge fulgurante</> : toute l'équipe obtient <@ba.vup>+{yuanshi_add:0}</> d'intensité des Arts pendant {duration:0} s.\nPour chaque point d'intensité des Arts que Flux d'argent possède, les DÉG d'explosion de <@ba.key>Fragmentation</> augmentent de <@ba.vup>{damage_up:0.0%}</> supplémentaires.",
+        "Renforce la compétence de combat <@ba.key>Charge fulgurante</> : toute l'équipe obtient <@ba.vup>+{yuanshi_add:0}</> d'intensité des Arts pendant {duration:0} s.\nPour chaque point d'intensité des Arts que Flux d'argent possède, les DÉG d'explosion de <@ba.key>Fragmentation</> augmentent de <@ba.vup>{damage_up:0.0%}</> supplémentaires."
+      ],
+      "name": "Survoltage printanier"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 20 %.",
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 30 %."
+      ],
+      "name": "Axiome martial"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %."
+      ],
+      "name": "Outils adaptés"
+    },
+    "files": {
+      "main": "NOM DE CODE : Flux d'argent \nSEXE : Masculin \nAUTHENTIFICATION : Académie des sciences de Hongshan \nDATE DE NAISSANCE : 23 octobre \nRACE : Lung \n[STATUT D'INFECTION PAR L'ORIPATHIE] \nNégatif, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : Excellente \nCAPACITÉS AU COMBAT : Remarquables \nSENS TACTIQUE : Excellent \nASSIMILATION DES ARTS DE L'ORIGINIUM : Standard \n\nL'opérateur Flux d'argent, malgré une santé physique excellente, une hygiène de vie irréprochable et l'absence totale de mauvaises habitudes (ne boit qu'avec modération), se montre particulièrement coopératif lorsqu'il partage son historique de maladies et de blessures... Je soumets officiellement une demande de divulgation publique de ces données. Les jeunes effrontés qui ne cessent d'hurler qu'« IL FAUT DES SACRIFICES POUR GAGNER EN PUISSANCE » devraient regarder ce qu'est un vrai professionnel et apprendre comment assumer la responsabilité de leur bien-être. \n— Commentaire d'une opératrice médicale particulièrement rancunière",
+      "humanResources": "Flux d'argent (de son vrai nom Ye Minghe) est actuellement garde impérial de Yan et capitaine des cieux pacifiés de l'Académie des sciences de Hongshan (ASH)*. Suivant les ordres de l'ASH, il travaille désormais en étroite collaboration avec les Industries Endfield, apportant un soutien sur le champ de bataille et fournissant des instructions sur diverses techniques de combat. *REMARQUE : Conformément à la loi yanaise, les gardes impériaux ne sont pas une organisation subordonnée à l'Académie des sciences de Hongshan, filiale du Bureau des Tianshi du Grand Yan. Toutefois, compte tenu des complexités historiques sous-jacentes, cette remarque (en l'absence d'autres détails) fournit une explication suffisante à cette dénomination particulière.\n\nL'opérateur Flux d'argent s'est montré mature et posé dans ses relations avec les autres membres et a prouvé qu'il savait travailler en équipe. Les inquiétudes concernant son « arrogance hautaine », son « extrême froideur » et d'autres défauts de personnalité exprimés par certains opérateurs ne semblent pas fondées. Flux d'argent a apporté deux explications à l'origine de ces malentendus : (1) il est vrai que les membres de la garde impériale se comportent différemment, mais la plupart des histoires à leur sujet sont pure fiction ; et (2) certaines « erreurs de jeunesse embarrassantes » qui ont eu lieu il y a des années ont circulé trop longtemps, et ont probablement été exagérées et/ou déformées. En d'autres termes, tout le personnel est invité à respecter les règles de courtoisie et à éviter d'aborder des sujets sensibles lors des échanges avec Flux d'argent. Cette approche vous garantira presque à coup sûr une opportunité d'affrontement amical ou une séance d'instruction sur les techniques de combat avec cet opérateur. Veuillez également réserver vos séances de discussion à l'avance et vous préparer mentalement à attendre longtemps votre tour. \nREMARQUE POUR TOUT LE PERSONNEL AU SOL : Ces évaluations ne concernent que l'opérateur Flux d'argent lui-même. Sa galopeuse est une bête d'une force redoutable et d'un tempérament violent. Soyez vigilants et prudents si vous devez nourrir ou prendre soin de ladite bête. L'opérateur a rédigé personnellement une liste complète des choses dont il faut se méfier. Toute personne chargée de la gestion de cette galopeuse DOIT LIRE ET MÉMORISER CETTE LISTE À PLUSIEURS REPRISES. \n— Martin Marvin Malen, assistant, division des RH, Industries Endfield",
+      "file1": "[DOSSIER : Performance de l'opérateur Minghe lors de « Nos opérateurs on du talent : Méga-arène mensuelle »] \nCombat armé à l'aveugle. 1re place de la division (abandonne dès qu'il apprend qu'il s'agit d'une compétition). \nArt du lancer. 1re place. REMARQUE : 10 lancers parfaits, dont 3 dagues plantées dans le manche de la précédente. \nLutte et combat. 1re place de sa catégorie de poids. REMARQUE : S'est infligé un handicap en s'attachant un bras dans le dos. \nSimulation de R&S sur blessés. 1re place, division : Forté blessés. REMARQUE : De nombreux chirurgiens mange-poussière ont salué ses compétences. \nRodéo « Robot de somme ». 1re place. REMARQUE : Est resté en selle 600 s. Aurait pu obtenir un meilleur score si le robot-bête de somme n'était pas tombé en panne. \nQuiz rapide sur les herbes. 2e place, division amateur. \nSculpture créative et improvisée. Prix « C'EST TROP MIGNON ». REMARQUE : A utilisé une aiguille à coudre comme outil. \nCourse de chaises de bureau en microgravité. 2e place. REMARQUE : À seulement 0,4 s du record. \nDESCENTE DE COHL ! 1re place de la division. REMARQUE : A ignoré les règles et s'est inscrit dans la division des Durin. \nLivraison de tofu avec des baguettes. 1re place. REMARQUE : A transporté 36,5 morceaux. \nSans cligner des yeux. 2e place. REMARQUE : 928 s sans cligner. Battu par l'opératrice Xaihi. \n\nPetit rappel : ce sont des événements officieux, simplement pour s'amuser. Arrêtez d'y traîner les gens juste parce que vous voyez le mot « Arène ». Et je croyais que c'était le premier jour de ce type chez Endfield. Comment vous l'avez convaincu de participer à autant d'épreuves ? \n— P'tit Squive \n\nConvaincu ? Naaan, Squive. Il a juste vu une foule qui s'amusait et a rejoint le mouvement... Au fait, c'est quoi cette histoire de « premier jour chez Endfield » ? \n— Opérateur logistique (qui s'amuse visiblement beaucoup trop)",
+      "file2": "[LISTE : objets récupérés par l'opérateur Flux d'argent suite à des incidents de transport par des robots Delta] \nOBJET RÉCLAMÉ (1) : \nSculpture en bois d'une galopeuse. Cirée. Travail raffiné. \nNOTES DU DEMANDEUR : \nUn petit cadeau d'un Cherche-chant du circuit d'Hannabit. Des Pille-Sables le poursuivaient. Je passais par là et ai décidé d'intervenir. Avant de repartir, il m'a offert ceci. Il l'a décrit comme un souvenir spécial pour une héroïne. \nPourquoi a-t-il sculpté Nuli ? C'est ma galopeuse qui a fait tout le travail et a détruit un vaisseau Pille-Sable après l'autre. Sans son aide, cela aurait duré bien plus longtemps. Je l'accepte donc en son nom. Concernant cet incident, j'ai quand même quelques regrets personnels. Cela n'a rien à avoir avec le fait que je n'ai pas reçu de cadeau. C'est à propos du Cherche-chant. Grâce à sa sagesse et son courage, il a mis son peuple à l'abri dans les dunes et a affronté les Pille-Sables seul pendant plusieurs jours. C'est moi qui aurais dû lui offrir quelque chose. \n\nOBJET RÉCLAMÉ (2) : \nListe de noms et d'adresses écrite sur papier. Le propriétaire a accepté que nous en vérifiions le contenu. La plupart des noms correspondent à des entrées des divers systèmes de gestion d'identité personnelle de la Ceinture civilisée. \nNOTES DU DEMANDEUR : \nOui, ce sont juste quelques enfants. Plutôt prometteurs, d'ailleurs. Je les ai rencontrés lors d'une déchirure de faille. Certains survivants étaient complètement piégés dans la montagne. J'ai mis trop de temps à emprunter un véhicule volant et à dégager un chemin. J'étais pessimiste, mais ce que j'ai découvert m'a surpris. Une simple douzaine d'enfants et d'adolescents a réussi à garder plus d'une centaine de survivants rassemblés et à les mettre à l'abri, tout en prenant en charge les blessés qu'ils trouvaient en chemin. Les enfants ont même fabriqué un dispositif d'alerte énergétique rudimentaire qui m'a aidé à localiser la faille. \nQuand nous nous sommes séparés, certains étaient déjà retournés à l'école. J'ai noté leurs noms et infos en espérant que, s'ils postulaient à l'ASH, j'aurais l'honneur de leur fournir une recommandation officielle. Et pourquoi ne pas les orienter vers Endfield ? Ha. Ils choisiront bien ce qu'ils voudront. \n\nOBJET RÉCLAMÉ (3) : \nAppareil photo usé. \nNOTES DU DEMANDEUR : \nIl appartenait à une journaliste âgée. Je l'ai en ma possession en raison... d'une promesse. D'une simple promesse. \nCette amitié improbable est née lors d'une opération de nettoyage d'Aggeloi. Je suis loin d'être un vrai médecin, mais j'ai de l'expérience en premiers soins sur le champ de bataille et je l'ai escortée à travers un vaste marais. Nous n'avons pas pu sauver ses jambes... mais elle m'a offert cet appareil photo qu'elle portait sur elle durant toute cette terrible épreuve. Je lui envoie souvent des photos. Comme elle disait, personne ne sait si une faille d'Æther ou un autre accident peut soudainement frapper un endroit magnifique. Puisque je voyage beaucoup, je peux utiliser son appareil pour lui faire découvrir le monde. Le destin nous a réunis, et je n'ai aucune raison de refuser. \n\nJ'ai beaucoup voyagé et rencontré de nombreuses personnes après avoir quitté le village de Pan'an... Et j'étais heureux que ma lame ait pu les protéger. J'ai utilisé l'appareil pour capturer de nombreux moments mémorables. Le monde est vaste, mais le destin est rare. Voilà. \nJ'ai signé. Je ne gênerai pas les autres demandeurs d'objets perdus. Au revoir.",
+      "file3": "Sur invitation de P'tit Squive, l'opérateur Flux d'argent se rendait parfois sur le Dijiang en tant qu'instructeur spécial. Tout le monde sait que les opérateurs d'Endfield maîtrisent une large palette de techniques de combat et d'Arts de l'originium, ce qui nécessite diverses méthodes d'entraînement. Pourtant, les prouesses martiales de Flux d'argent ont témoigné de la formidable réputation des gardes impériaux. Au corps-à-corps, en escarmouche des Arts à distance ou même en combat monté, il identifiait les techniques de ses adversaires en quelques mouvements, ajustait aussitôt sa tactique et retenait ses ripostes pour prolonger le duel. À chaque combat, il gardait l'initiative et dictait le rythme, jusqu'à ce que l'adversaire tombe d'épuisement. \nDes opérateurs ayant une grande expérience de la chambre d'entraînement antigravité du Dijiang ont tenté de prendre l'avantage sur Flux d'argent en l'affrontant dans cette installation spéciale. Ils ont activé l'antigravité, espérant le voir se ridiculiser. Mais le garde impérial a effectué une légère poussée et s'est envolé comme un éclair, aveuglant les autres. Les opérateurs se sont préparés à une attaque qui n'est jamais venue. D'un simple geste, d'une pirouette et d'un saut, Flux d'argent a dépassé ses adversaires et atterri sans faillir au plafond de la chambre antigravité. \nNous sommes tous stupéfaits par les incroyables capacités d'adaptabilité et de concentration de Flux d'argent, mais ses réponses ont parfois déstabilisé ceux qui lui demandaient conseil. Il leur disait simplement de s'adapter et de changer entre deux souffles, car c'est un aspect essentiel de l'entraînement des gardes impériaux. Il expliquait aussi qu'il aimait improviser en combat, entrecouper ses mouvements d'instants d'immobilité, et qu'il préférait surfer sur la dynamique de l'adversaire. Tandis que les opérateurs entouraient Flux d'argent pour profiter de ses astuces et de ses conseils, par admiration ou par jeu, aucun n'a remarqué un fait crucial : Flux d'argent n'a jamais évoqué la rudesse de son entraînement ni les codes impitoyables régissant les techniques de combat secrètes de sa famille. \nLa famille Ye s'est illustrée sur les champs de bataille de Yan et a remporté de nombreuses victoires. Pourtant, même comparé aux grands noms des générations passées, Flux d'argent était un prodige. Aucun membre de sa lignée ne se déplaçait telle une comète propulsée par un feu ardent. Après sa rencontre inattendue avec sa galopeuse, Nuli, le guerrier monté est devenu un éclair de destruction impossible à approcher, à combattre ou à éviter. Mais cela signifiait aussi que Flux d'argent devait s'entraîner plus dur et qu'on lui confiait des missions bien plus dangereuses. \nL'opérateur Flux d'argent le résume ainsi : « Plus on agrippe fermement l'éclair, plus l'esprit doit être clair. » \n« Mais être aussi doué, ça ne doit pas être facile ! Ils ont dû être super exigeants avec vous ! » \n« L'amertume de l'entraînement est bien plus douce que la douleur cuisante de l'échec, que nul d'entre nous ne peut se permettre. »",
+      "file4": "Mon premier mentor fut mon instructeur de spadamancie. \nJ'étais un jeune garçon. Mon père, pris par ses fonctions officielles, lui a envoyé une invitation à la salle de Tanjian pour qu'il vienne m'apprendre les bases. Mais j'ai appris trop vite, et il a officiellement mis un terme aux leçons et est reparti au bout de quelques mois. \nAvant notre séparation, il m'a confié que j'avais assimilé en une saison ce qu'il avait mis toute une vie à maîtriser. Il m'a avoué regretter beaucoup de choses dans sa vie. Si je le surpassais, je ferais face aux mêmes défis sans peine. Et si je continuais à affiner mes compétences martiales, j'aurais d'autres mentors et instructeurs. Quand ce jour viendrait, il voulait que je me souvienne de leurs accomplissements comme de leurs échecs, car je pourrais être celui qui vengerait leur peine. \nC'est là que j'ai compris que je devais chercher mon but. Les Aggeloi ont détruit le foyer de mon instructeur de spadamancie. Une lame seule ne pouvait protéger tout le monde. Les temps étaient sombres et ce n'était pas un cas isolé. Avec la compétence vient la responsabilité et le devoir. \n\nMon second mentor fut ma partenaire, Nuli. \nJ'avais quatorze ans et je l'ai rencontrée dans les terres sauvages. Nous voulions tous les deux chasser la même proie, mais la traque est vite devenue une compétition. Nous nous sommes affrontés toute une journée et toute une nuit, abattant presque la moitié des arbres de la colline. Aucun de nous ne voulait céder. \nNuli et moi nous sommes effondrés près de la rivière presque en même temps. Elle, cette éternelle entêtée, s'est relevée, a titubé vers moi et a tenté de m'empaler avec sa corne... avant de finalement s'évanouir. Ce fut sa victoire. Elle voulait gagner et a réalisé son souhait au détriment de sa propre sécurité. Celui qui porte le devoir et l'autorité doit posséder une telle force mentale. \n\nVous connaissez sûrement mon troisième mentor. C'est la Tianshi Tan. \nJe l'ai rencontrée peu après mon entrée dans l'armée. Elle a débarqué dans notre camp pendant notre repos. J'ai d'abord cru qu'on avait laissé entrer une gamine par erreur. Mais quand cette « gamine » a viré les officiers haut gradés qui tentaient de l'arrêter, j'ai compris qu'il s'agissait de l'ancienne Tianshi Tan, la guerrière valant toute une armée, qui surveillait le Nord polaire. \nLa Tianshi Tan m'a posé toutes sortes de questions lors de cette rencontre. Elle a probablement empêché l'ASH de me tomber dessus lors des multiples occasions où j'ai agi de façon trop téméraire... Plus tard, j'ai discuté avec elle de notre première rencontre et elle m'a dit qu'elle avait vu dès le premier regard que je brûlais d'impatience. Elle m'a décrit comme de l'acier fin qui ne pouvait être forgé en lame digne de ce nom. J'étais le problème, il fallait me marteler et me polir. La seule chose qu'elle pouvait faire était de me jeter sur le champ de bataille pour que j'y trouve mes réponses. \n\n« Ça suffit ! Bon sang ! Je vous ai posé une question simple, mais vous n'arrêtez pas de radoter. Combien de mentors avez-vous eu, au juste ? » \n« Pas mal, Dame Si Un jeune du village de Pan'an m'a appris à élever des bêtes de somme. Un marchand de Luoyi m'a enseigné comment améliorer mon mélange d'encens. Une Voix-d'aulne dans les terres sauvages m'a appris à chanter. Un transporteur du Rond-point bitumé m'a montré comment préparer du cohl sucré avec des fruits amers... Dans un groupe de trois personnes, on peut certainement trouver un mentor. » \n« Hmpf. Vous faites encore semblant d'être humble et sympa. » \n« Peut-être, mais parler de naïveté émoussée serait plus proche de la vérité. J'ai trop réfléchi dans ma jeunesse. Il m'a fallu des années pour accepter à quel point j'en savais peu, et combien mon expérience était limitée. » \n« Je vous ai interrogé sur vos mentors, mais vous n'avez même pas mentionné l'Endministrator ! » \n« L'Endministrator... joue un rôle bien plus important que celui de simple \"mentor\" pour moi... » \n« ... »"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Techniques de combat",
+        "description": "Techniques de combat : Rasoir de l'automne\nLa lance est le Lung errant, l'épée est le miroir du rasoir de l'automne. Une cascade de rivières et de torrents jaillit d'un cœur jadis froid et solennel."
+      },
+      "expert2": {
+        "name": "Érudit",
+        "description": "Érudit : Entrée dans le monde\nLa longue marche qu'implique une campagne militaire révèle bien des facettes du monde. Ayant contemplé sa beauté naturelle, je t'invite à me rejoindre, ô flot étoilé."
+      },
+      "hobby1": {
+        "name": "Mode de vie",
+        "description": "Mode de vie : En harmonie avec la vie\nToutes sortes de compétences, toutes les saveurs de la vie. Une rue bordée de fourneaux, un retour illuminé."
+      },
+      "hobby2": {
+        "name": "Nature",
+        "description": "Nature : Les pieds sur terre\nUne promenade dans les champs, une sieste sur les collines. Une galopeuse répond à mon appel, une chevauchée pleine de vitesse et de frissons."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Préparation de l'opération 1",
+        "text": "Si nous devons y aller, il suffit de donner l'ordre."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Préparation de l'opération 2",
+        "text": "À votre signal."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Intégration à l'équipe 1",
+        "text": "Équipé et prêt. Rien ne m'arrêtera."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Intégration à l'équipe 2",
+        "text": "Un jour radieux, sans nuages. Parfait pour éliminer l'ennemi."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Changement d'arme",
+        "text": "Si cette arme parlait, elle ne perdrait jamais un débat."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Changement d'équipement",
+        "text": "Parfait. Il faut les bons outils pour accomplir un travail digne de ce nom."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Activation du nœud de talent",
+        "text": "L'amélioration est une question de maîtrise progressive, mais aussi de prise de conscience."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Visionnage d'archives de combat",
+        "text": "Une excellente session d'apprentissage... Pour vous rendre la pareille, laissez-moi créer une archive pour vous. Un partenaire d'entraînement ? Vous êtes déjà là !"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Promotion d'opérateur 1",
+        "text": "Autrefois, beaucoup de soldats en première ligne rêvaient d'être décorés par vos soins... À cet égard, j'ai énormément de chance."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Promotion d'opérateur 2",
+        "text": "Nuli, recule. Arrête de pousser l'Endmin... Hmm. On dirait qu'elle veut aussi une récompense. Peut-être pouvez-vous la caresser encore un peu ?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Promotion d'opérateur 3",
+        "text": "C'est tout ? Oh, peu importe. Je repensais simplement à ma première nomination comme capitaine des cieux pacifiés. La Tianshi Tan s'est contentée de m'offrir un bol de nouilles. Vous vous ressemblez beaucoup, c'est certain."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Promotion d'opérateur 4",
+        "text": "L'immensité d'un arbre dépend de la force de ses racines. Au-delà des titres, je suis heureux que vous reconnaissiez les fondations que j'ai posées au fil des années... Ne vous inquiétez pas. Avec une lame affûtée et une discipline de fer, je serai votre plus grand soutien."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Opérateur au rapport",
+        "text": "Minghe de l'ASH, à votre service. Capitaine des cieux pacifiés ? Ce titre n'a pas grande utilité ici, alors laissons-le de côté pour éviter toute confusion."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "En attente 1",
+        "text": "Faites-moi réchauffer un peu de vin. Ce combat ne durera pas longtemps."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "En attente 2",
+        "text": "Au rapport. Quelle armée allons-nous terrasser aujourd'hui ?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Affectation à une installation",
+        "text": "Bien sûr. J'ai bien d'autres talents que celui d'épéiste."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Salutation 1",
+        "text": "Endmin, y a-t-il des missions qui nécessitent ma présence ?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Salutation 2",
+        "text": "Vous ressentez de la fatigue ? Pourquoi ne pas marcher et discuter pour passer le temps ?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "J'avais repéré votre arrivée à des kilomètres... Et non, je n'ai pas activé mon ouïe améliorée. J'ai un simple avantage de taille."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Je commence à regretter de ne pas avoir embarqué Nuli. Cette petite arrogante adore poursuivre les nuages et exhiber sa vitesse. Quelques jours ici devraient lui faire apprécier un peu plus la gravité."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Endmin, pourriez-vous me montrer l'arsenal ? J'ai entendu dire que le centre de recherche était doté d'artisans très talentueux qui ont créé une collection d'armes redoutables. Pourquoi y aller ? Eh bien, c'est naturel pour un soldat comme moi de s'intéresser aux outils de guerre. Hmm... Pourquoi cela semble-t-il vous surprendre autant ?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Auriez-vous vu un morceau de bois quelque part ? Eh bien, je ne peux pas m'empêcher de sculpter quand les choses se calment un peu. Cette pièce est encore très imparfaite et... j'ai eu une poussée d'inspiration, alors j'ai décidé de faire votre portrait. Ce ne serait pas très flatteur de vous montrer une simple ébauche de mon travail."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Je suis surpris de voir autant de collègues de l'ASH ici. Endfield dispose vraiment d'un réseau étendu. Mais certains « individus bien informés » exagèrent peut-être un peu mon... « passé héroïque ». Pourriez-vous leur conseiller de faire preuve de retenue ? Un seul coup ne suffit pas à ouvrir une montagne en deux ou à disperser les nuages. Ils vont un peu trop loin."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "À Yan, « Minghe » est utilisé comme métaphore pour le flot des astres. Explorer les cieux était semé d'embûches. Les Terrans ont finalement franchi le faux ciel, tout ça pour se retrouver piégés dans un autre ciel étranger... Et pourtant, vous voyez, nous avons encore franchi une étape vers l'empyréen."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Cadeaux offerts",
+        "text": "Endmin, acceptez ceci, s'il vous plaît. Ne vous inquiétez pas, ce n'est rien de luxueux. Je me suis simplement dit que cela pourrait vous faire plaisir."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Cadeaux acceptés",
+        "text": "Merci. Je dois réfléchir à un cadeau à vous faire de retour... Cela vous dirait de monter Nuli pour une journée ? Elle semble beaucoup plus vous apprécier, désormais."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "La mission d'Endfield n'est pas facile. L'ASH a donc décidé de m'envoyer vous assister. Il y aura des moments où je devrai remplir mes fonctions de garde impérial, mais ne vous en préoccupez pas, vous pouvez me donner des ordres comme vous le faites d'habitude. Lorsque vous devrez prendre une décision difficile, je serai à vos côtés. Vous pouvez avoir pleinement confiance en notre lien."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Un doux parfum ? C'est sûrement cette boule qui permet de diffuser de l'encens. À mes débuts, je manquais de patience. Je me forçais à rester éveillé et alerte pour mieux accomplir mes tâches. Mais cela n'a fait que m'épuiser encore davantage mentalement. Mes collègues m'ont alors donné une recette d'encens pour apaiser mon esprit. Ils disaient que bien dormir est la clé pour surmonter les difficultés. Et la sagesse de leurs paroles a fait ses preuves... Endmin ? Hmm. Dormez bien, je monterai la garde pour vous."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Les médecins ont demandé d'où venaient mes cicatrices ? Celle sur ma queue, je l'ai eue quand j'étais encore un enfant turbulent. J'ai été imprudent, je suis tombé d'une falaise et je me suis blessé sur une pierre. Au début, elle n'était pas si laide, mais avec l'âge, elle est devenue bien plus effrayante. Quant aux autres... je les dois à de nombreux combats et affrontements. Trop pour les compter, et après tout ce temps, je ne me souviens même plus de leur origine pour la plupart."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Il y a quelques jours, des collègues et moi avons approuvé une cohorte de réservistes de la garde impériale pour l'ASH. Ce sont les meilleurs, certes, mais ils sont trop brillants, trop tape-à-l'œil, et ils ont vraiment besoin d'un entraînement mental et spirituel. Si on leur confiait des tâches importantes maintenant, j'ai peur qu'ils confondent devoir et raison d'être. En prenant un tel départ... Attendez, je suis trop paternaliste ? Non ! Je parle juste de... mon passé. Je ne veux pas que ces jeunes fassent les mêmes erreurs que moi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Prenez ce sifflet. Soufflez dedans pour que Nuli sache où vous trouver. Considérez-la comme un moyen de contact d'urgence. Bien sûr, c'est aussi un cadeau personnel. Après tout, c'est vous qui m'avez fait découvrir ces vastes territoires et ces villes prospères. Alors oui, en dehors des combats, j'aimerais voyager en votre compagnie. Pourquoi ne pas l'essayer maintenant ? Nuli se repose tout près. Quand elle entendra le sifflet, mais nous verra juste ici, sa réaction promet d'être amusante."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Discussion 1",
+        "text": "La collection des Guerriers sous les cieux n'est qu'une œuvre de divertissement. Elle a été compilée par des amateurs qui avaient trop de temps libre. Je n'ai jamais affronté de chevaliers de la CCGT, d'élites de l'agence de sécurité ni cette spadamancienne de la famille Chen, donc ces classements sont purement fictifs. Quant au « champion incontesté de moins de quarante ans », ils ont sûrement vu mon grade dans la garde impériale et inventé ça. Endmin, arrêtez de me fixer. Je suis né comme ça, alors ne me reprochez pas mon visage juvénile."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Discussion 2",
+        "text": "Après m'être remis de ma blessure, je suis retourné plusieurs fois dans ce hameau. Beaucoup de gens n'étaient plus là, et mes visites étaient courtes, donc je devais compter sur d'autres pour transmettre quelques messages... Mais ne vous inquiétez pas, aucune chute d'Ankhor n'a frappé cet endroit depuis. Le peuple de Hongshan a aussi construit quelques villes à proximité et beaucoup s'y sont installés. Et quelques-uns sont partis encore plus loin. Ils m'envoient souvent des spécialités locales, et il me reste encore deux paquets. Cela vous dit ?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Discussion 3",
+        "text": "Ces nouveaux venus de la salle de Tanjian sont encore là. Ne vous méprenez pas, j'ai toujours plaisir à discuter arts martiaux, mais l'équitation... Nuli et moi sommes liés spirituellement. Je ne la contrôle pas. Je travaille avec elle, et il n'y a rien de technique là-dedans. D'ailleurs, pourquoi sont-ils si obsédés par le combat à cheval ? Quasiment personne ne se bat sur une galopeuse..."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Discussion 4",
+        "text": "L'ASH possède de nombreux livres sur la stratégie militaire yanaise et les traités. Nous avons beaucoup appris, mais ce n'est pas suffisant. Un bon déploiement peut décider du sort de la bataille, mais la Ceinture civilisée affronte seule l'intégralité de Talos-II. La victoire ne dépend pas du nombre de repaires ennemis détruits, mais de tout ce que l'on peut reprendre, restaurer et préserver. Si la situation le permettait, je préférerais m'occuper de mes fermes. Au moins, en transpirant dans les champs, on fait pousser plus de nourriture."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Discussion 5",
+        "text": "Quand j'ai rejoint la Directive Zéro, j'ai imaginé tous les scénarios possibles pour nos retrouvailles. Se dérouleraient-elles sur les champs de bataille du Nord ? Dans les étendues sablonneuses ? Lors d'une mission urgente ? Ou pendant un siège désespéré... ? J'ai arrêté d'y penser, car je savais que je me battrais à vos côtés quoi qu'il arrive. Pardonnez ma franchise, mais les plans que vous avez élaborés avec Dame Si dans les montagnes risquent de ne pas plaire à vos amis. Si elle se plaint encore... laissez-moi rester près de vous pour affronter sa colère ensemble."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Thème : partenaire",
+        "text": "Nuli et moi avons combattu sur d'innombrables champs de bataille. Nous sommes bien plus que de simples « partenaires ». Et non, elle ne se contente pas de manger du foin. Il faut ajouter un peu d'aggagrit et de mucus de limace d'originium. D'ailleurs, Nuli est une galopeuse indigène de Talos-II. Est-ce que ça signifie qu'elle aime... la nourriture venue de Terra ?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Thème : gardes impériaux",
+        "text": "La loi de Yan a fait de la garde impériale l'apogée des arts martiaux, car les pugilistes étaient considérés comme des hors-la-loi. Malgré l'absence de frontières nationales, le Trio Majeur de Talos-II faisait toujours face à des menaces internes et externes. La Tianshi Tan a donc nommé treize gardes impériaux. La maîtrise martiale n'est que la base. Chacun de nous est expert dans son domaine, ce qui nous permet de protéger notre peuple. Mon domaine d'expertise ? Il est assez banal... Je chevauche seul au cœur des ennemis pour atteindre leur commandant. Rien de plus."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Thème : la Tianshi Tan",
+        "text": "La Tianshi Tan voyage généralement à travers le Nord et défend le front polaire grâce aux Arts de conflagration. Elle s'occupe rarement des affaires du peuple de Hongshan. Mais vu sa grande ancienneté, personne à l'ASH n'oserait lui manquer de respect. Même Dame Si accepterait sans broncher les critiques de la Tianshi Tan. Les deux ne se rencontrent pas souvent, mais quand cela arrive, c'est généralement la Tianshi Tan qui entraîne Dame Si dans ses mauvais coups. Honnêtement, je ne sais pas vraiment laquelle des deux est la plus âgée."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Thème : Si",
+        "text": "Je dois transmettre des messages de la Tianshi Tan, alors je corresponds souvent avec Dame Si. Elle semble plutôt capricieuse, mais il y a un secret pour bien communiquer avec elle, si cela vous intéresse... Hé hé, ce n'est pas si compliqué. Commencez simplement par la partie la plus intéressante. Une fois que vous avez piqué sa curiosité, vous pouvez lui parler du reste... Quoi ? C'est comme parler à une enfant ?! Euh, non, non, mieux vaut s'arrêter là ! Certaines choses sont trop dangereuses pour qu'on les dise à voix haute."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Thème : arme",
+        "text": "J'ai manié Fulei, le Tonnerre tapi, pendant un bon moment. De nombreux Aggeloi sont tombés sous ses coups, tout comme beaucoup d'arbres et de mauvaises herbes. Le bureau des spadamanciens a un jour demandé à l'étudier et ils se sont vraiment fâchés en voyant que je l'avais utilisée pour des tâches aussi ordinaires. Cela a provoqué une longue dispute. Pour moi, les armes sont des outils qui permettent de vaincre les ennemis et de protéger les vivants, et même les pièces les plus admirées ne peuvent faire cela sans un porteur. Ainsi, la valeur d'une arme dépend de celui qui la manie, non de l'objet en lui-même."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Un trésor sans propriétaire. Autant en faire bon usage."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Ce site pourrait contenir ce qu'il nous faut. On va jeter un œil ?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Zone inexplorée détectée",
+        "text": "J'ai repéré quelque chose d'inhabituel. Et si on allait voir ?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Un adversaire de taille. La discrétion est une option, mais un affrontement direct est préférable."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Extraction 1",
+        "text": "Oh ? Très bonne qualité."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Extraction 2",
+        "text": "Laissez-moi faire. Deux armes valent mieux qu'une pour l'extraction."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Ouverture de caisse",
+        "text": "Un trésor longtemps caché dans une caisse, enfin découvert et prêt à connaître son destin."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Obtention d'aurylène",
+        "text": "Elle vole bien et librement. Je commence à l'envier."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Élimination de la Gangrène",
+        "text": "Menace éliminée. La voie est dégagée."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Repos",
+        "text": "Bien reposé et prêt pour le déploiement... En avant."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Utilisation d'objet tactique 1",
+        "text": "Gardez un œil sur votre force."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Utilisation d'objet tactique 2",
+        "text": "Je me suis laissé distraire. Reprenons le combat."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Avertissement de danger",
+        "text": "Tenez-vous prêts, tout le monde !"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Blessure",
+        "text": "Ça ira."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "0 PV",
+        "text": "Désolé, Endmin, j'aurais dû... continuer..."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Encouragement de l'équipe 1",
+        "text": "Une technique remarquable !"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Encouragement de l'équipe 2",
+        "text": "Sans le moindre défaut, comme du vif-argent ! Merveilleux !"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Réaction face aux encouragements 1",
+        "text": "Je ne fais que mon devoir."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Réaction face aux encouragements 2",
+        "text": "C'est notre travail d'équipe qui mérite ces éloges."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Début du combat 1",
+        "text": "Qu'aucune malveillance ne survive à cette bataille."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Début du combat 2",
+        "text": "L'acier suivra."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Victoire au combat 1",
+        "text": "L'affaire est réglée."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Victoire au combat 2",
+        "text": "Une issue sans surprise."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Victoire au combat 3",
+        "text": "Une grande victoire rendue possible par une grande équipe."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Victoire au combat 4",
+        "text": "Nous avons gagné. Je vais sécuriser le périmètre. Profitez-en pour vous reposer."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Défaite au combat",
+        "text": "Un combat rare contre un adversaire puissant... Nous prendrons notre revanche lors de la prochaine tentative."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Coup final 1",
+        "text": "TONNERRE !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Coup final 2",
+        "text": "EN ÉCLATS !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "Compétence de combat 1",
+        "text": "Fendre la pluie !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "Compétence de combat 2",
+        "text": "Entaille du vent !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "Compétence de combat 3",
+        "text": "Déchirure de l'ombre !"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Compétence de combo prête 1",
+        "text": "Il est temps de passer aux choses sérieuses."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Compétence de combo prête 2",
+        "text": "La lame est dégainée."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Utilisation de combo 1",
+        "text": "FOUDRE !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Utilisation de combo 2",
+        "text": "LAME EXPLOSIVE !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Coup fatal 1",
+        "text": "Tu peux rentrer chez toi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Coup fatal 2",
+        "text": "Tu ferais mieux de t'écarter."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Ultime 1",
+        "text": "Vers le Nord, contemplez mon avancée !"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Ultime 2",
+        "text": "Tout s'achève dans le rugissement du tonnerre."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Ultime 3",
+        "text": "Allez, ressens le flux cosmique !"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce le talent <@ba.key>Zénith de la voltmancie</> : lorsque <#ba.crush>Broyage</> est appliqué à une cible victime d'une <@ba.key>Fragmentation</>, les DÉG infligés par ce <#ba.crush>Broyage</> sont multipliés par <@ba.vup>{1+crush_damage:0.0}</>. La proportion des DÉG d'explosion de <@ba.key>Fragmentation</> infligés aux ennemis à proximité passe à <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Tempête des terres sauvages"
+    },
+    "potential2": {
+      "description": "Volonté <@ba.vup>+{Will:0}</>, intensité des Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Printemps électrique"
+    },
+    "potential3": {
+      "description": "Renforce la compétence de combat <@ba.key>Charge fulgurante</> : pour chaque cumul d'<#ba.pulseonchar>altération électrique</> <#ba.consume>consommé</>, Flux d'argent inflige <@ba.vup>+{potential_adddamage:0%}</> de <@ba.pulse>DÉG électriques</> pendant <@ba.vup>{potential_duration:0}</> s. Cet effet peut être cumulé <@ba.vup>{potential_maxstack:0}</> fois au maximum. La durée de chaque cumul est décomptée séparément.",
+      "name": "Tempête éclair"
+    },
+    "potential4": {
+      "description": "Renforce l'ultime <@ba.key>Cieux fendus</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Flux d'étoiles illuminé"
+    },
+    "potential5": {
+      "description": "Renforce le talent <@ba.key>Survoltage printanier</> : en lançant la compétence de combat <@ba.key>Charge fulgurante</>, toute l'équipe obtient <@ba.vup>+{extra_yuanshi_add:0}</> d'intensité des Arts supplémentaire.\nLe bonus de DÉG d'explosion de <@ba.key>Fragmentation</> par point d'intensité des Arts de Flux d'argent est multiplié par <@ba.vup>{thunderdamage_multi:0.0}</>.",
+      "name": "Invitation aux lumières célestes"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Lance lumineuse des terres sauvages",
+      "author": "李吉吉",
+      "description": "Sous une rivière d'étoiles, dans une nuit éclairée par sa lance, il voua sa garde à la défense de ces terres."
+    },
+    "potential3": {
+      "name": "Un campement sous les nuages",
+      "author": "kera",
+      "description": "Dans un campement sous les nuages, en flânant au bord de la route, il célébra son voyage en trinquant joyeusement."
+    },
+    "potential5": {
+      "name": "Porteur de lumière",
+      "author": "ALZiMi",
+      "description": "Un arc électrifié et lumineux, preuve d'un engagement sans limite. Il fit le vœu d'instaurer une paix éternelle dans le monde."
+    }
+  }
+}

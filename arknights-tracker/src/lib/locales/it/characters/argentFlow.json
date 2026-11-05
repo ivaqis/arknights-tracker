@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Elettrificazione",
+      "Distruzione"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Accademia scientifica di Hongshan (ASH)",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Sapiente"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'artigiano di Wuling"
+    ],
+    "hobbyTags": [
+      "Stile di vita",
+      "Natura"
+    ],
+    "raceTag": "Lung"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Polvere splendente",
+      "description": "ATTACCO BASE:\nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento.\n\nATTACCO DALL'ALTO:\ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze.\n\nMOSSA LETALE:\ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
+    },
+    "battleSkill": {
+      "name": "Ombra domata",
+      "description": "Flusso argentato brandisce la lancia, infligge <@ba.pd>danni fisici</> ai nemici nelle vicinanze e applica <#ba.airborne>Sospensione</> a uno o più bersagli davanti a sé.\nDopo che Flusso argentato usa la sua abilità combo, la sua abilità di combattimento viene temporaneamente sostituita da <@ba.key>Impeto fulmineo</>.\n<@ba.key>Impeto fulmineo</>: Flusso argentato monta il suo cavalcone Nuli, balza in aria, accumula rapidamente potenza e poi carica verso il bersaglio, applicando forzatamente <#ba.conduct>Elettrificazione</> e infliggendo <@ba.pulse>danni da elettricità</> ai nemici in un'ampia area davanti a sé. Quando questa <#ba.conduct>Elettrificazione</> è applicata a un bersaglio affetto da <#ba.pulseinflict>Afflizione da elettricità</>, <#ba.consume>consuma</> tutti gli accumuli di <#ba.pulseinflict>Afflizione da elettricità</> del bersaglio e <#ba.statuslevel>aumenta di +1 il livello di stato</> di <#ba.conduct>Elettrificazione</> per ogni accumulo consumato. Dopo aver <#ba.consume>consumato</> l'<#ba.pulseinflict>Afflizione da elettricità</> del bersaglio, Flusso argentato applica anche 1 accumulo di <#ba.noguard>Vulnerabilità</>.",
+      "baseDmgMultiplier": "Moltiplicatore danni base",
+      "baseStagger": "Vacillamento base",
+      "boltRushDmgMultiplier": "Moltiplicatore danni Impeto fulmineo",
+      "boltRushStagger": "Vacillamento Impeto fulmineo"
+    },
+    "comboSkill": {
+      "name": "Stelle in movimento",
+      "description": "ATTIVAZIONE COMBO: quando un nemico diventa <#ba.noguard>Vulnerabile</>.\nFlusso argentato sferra una serie di fendenti fulminei, infliggendo <@ba.pulse>danni da elettricità</> ai nemici lungo il suo percorso. Quando la sequenza finale va a segno, applica anche <#ba.pulseinflict>Afflizione da elettricità</>. L'abilità di combattimento di Flusso argentato viene quindi temporaneamente sostituita da <@ba.key>Impeto fulmineo</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "battleSkillChangeDurationS": "Durata (s) cambio abilità di combattimento",
+      "ultimateEnergyGain": "Incremento energia suprema"
+    },
+    "ultimate": {
+      "name": "Cieli squarciati",
+      "description": "Flusso argentato monta Nuli e carica con la lancia, infliggendo continuamente <@ba.pulse>danni da elettricità</> ai bersagli davanti a sé mentre impala e trascina i nemici deboli davanti a sé durante la carica. Al termine della carica, Flusso argentato balza in aria e scaglia verso il terreno un fendente purificatore. Il fendente infligge <@ba.pulse>danni da elettricità</> e applica 1 accumulo di <#ba.pulseinflict>Afflizione da elettricità</>. Flusso argentato conficca quindi la lancia nel terreno, applicando <#ba.crush>Distruzione</> e infliggendo <@ba.pulse>danni da elettricità</> ai nemici in un'ampia area.\n<@ba.info>Se durante la carica Flusso argentato si scontra con un nemico non debole (che non può essere impalato e trascinato), la carica termina in anticipo.</>",
+      "chargeDmgMultiplier": "Carica moltiplicatore danni",
+      "cleansingCleaveDmgMultiplier": "Moltiplicatore danni Fendente purificatore",
+      "groundPierceDmgMultiplier": "Moltiplicatore danni Perforazione terreno",
+      "stagger": "Vacillamento"
+    },
+    "indicator": {
+      "levels": [
+        "Volontà operatore +10.",
+        "Volontà operatore +15.",
+        "Volontà operatore +15.",
+        "Volontà operatore +20."
+      ],
+      "name": "Convinzione"
+    },
+    "talent1": {
+      "levels": [
+        "Quando Flusso argentato applica <#ba.conduct>Elettrificazione</>, questa <#ba.conduct>Elettrificazione</> aumenta anche tutti i tipi di danni subiti dal bersaglio della stessa durata e applica al bersaglio anche accumuli di <@ba.key>Tuono lacerante</>. Il numero di accumuli è pari al <#ba.statuslevel>livello di stato</> di <#ba.conduct>Elettrificazione</>, fino a un massimo di {max_stack:0}. <@ba.key>Tuono lacerante</> dura {duration:0} s.\nQuando un bersaglio affetto da <@ba.key>Tuono lacerante</> subisce <#ba.crush>danni da Distruzione</>, i <#ba.crush>danni da Distruzione</> aumentano a <@ba.vup>{crush_damage+1:0.0}</> volte il valore originale e tutti gli accumuli di <@ba.key>Tuono lacerante</> vengono innescati. L'esplosione infligge al bersaglio <@ba.vup>[numero di accumuli di Tuono lacerante × {atk_scale:0%} ATT]</> di <@ba.pulse>danni da elettricità</> e agli altri nemici nelle vicinanze infligge {other_damage_percent:0%} di tali danni.\n<@ba.info>Quando i danni dell'esplosione di Tuono lacerante vengono inflitti a un altro nemico affetto da Tuono lacerante, fanno esplodere anche tutti i suoi accumuli di Tuono lacerante.</>",
+        "Quando Flusso argentato applica <#ba.conduct>Elettrificazione</>, questa <#ba.conduct>Elettrificazione</> aumenta anche tutti i tipi di danni subiti dal bersaglio della stessa durata e applica al bersaglio anche accumuli di <@ba.key>Tuono lacerante</>. Il numero di accumuli è pari al <#ba.statuslevel>livello di stato</> di <#ba.conduct>Elettrificazione</>, fino a un massimo di {max_stack:0}. <@ba.key>Tuono lacerante</> dura {duration:0} s.\nQuando un bersaglio affetto da <@ba.key>Tuono lacerante</> subisce <#ba.crush>danni da Distruzione</>, i <#ba.crush>danni da Distruzione</> aumentano a <@ba.vup>{crush_damage+1:0.0}</> volte il valore originale e tutti gli accumuli di <@ba.key>Tuono lacerante</> vengono innescati. L'esplosione infligge al bersaglio <@ba.vup>[numero di accumuli di Tuono lacerante × {atk_scale:0%} ATT]</> di <@ba.pulse>danni da elettricità</> e agli altri nemici nelle vicinanze infligge {other_damage_percent:0%} di tali danni.\n<@ba.info>Quando i danni dell'esplosione di Tuono lacerante vengono inflitti a un altro nemico affetto da Tuono lacerante, fanno esplodere anche tutti i suoi accumuli di Tuono lacerante.</>"
+      ],
+      "name": "Apice della voltomanzia"
+    },
+    "talent2": {
+      "levels": [
+        "Abilità di combattimento <@ba.key>Impeto fulmineo</> migliorata: tutta la squadra ottiene intensità delle Arti <@ba.vup>+{yuanshi_add:0}</> per {duration:0} s.\nPer ogni punto di intensità delle Arti di Flusso argentato, i danni dell'esplosione di <@ba.key>Tuono lacerante</> aumentano di un ulteriore <@ba.vup>{damage_up:0.0%}</>.",
+        "Abilità di combattimento <@ba.key>Impeto fulmineo</> migliorata: tutta la squadra ottiene intensità delle Arti <@ba.vup>+{yuanshi_add:0}</> per {duration:0} s.\nPer ogni punto di intensità delle Arti di Flusso argentato, i danni dell'esplosione di <@ba.key>Tuono lacerante</> aumentano di un ulteriore <@ba.vup>{damage_up:0.0%}</>."
+      ],
+      "name": "Tripudio di fulmini primaverili"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assegna alla cabina di produzione per conferire +20% di efficienza di produzione di materiali ESP operatori.",
+        "Assegna alla cabina di produzione per conferire +30% di efficienza di produzione di materiali ESP operatori."
+      ],
+      "name": "Assioma del combattimento"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assegna alla cabina di produzione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+        "Assegna alla cabina di produzione per rallentare del 18% il calo dell'umore di tutti gli operatori al suo interno."
+      ],
+      "name": "Strumenti del momentum"
+    },
+    "files": {
+      "main": "NOME IN CODICE: Flusso argentato \nGENERE: M \nAUTENTICAZIONE: Accademia scientifica di Hongshan \nDATA DI NASCITA: 23 ottobre \nRAZZA: Lung \n[STATO INFEZIONE ORIPATIA] \nNegatività all'Oripatia, secondo i referti medici. \n\n[ESAME FISICO COMPLETO] \nFORZA FISIOLOGICA: eccellente \nABILITÀ DI COMBATTIMENTO: eccezionale \nACUME TATTICO: eccellente \nASSIMILAZIONE ARTI DI ORIGINIUM: standard \n\nL'operatore Flusso argentato, pur vantando un'ottima salute fisica, routine quotidiane estremamente sane e nessuna cattiva abitudine (beve solo con moderazione), si mostra molto collaborativo nel condividere la sua storia di malattie e infortuni... Presento formalmente richiesta per la divulgazione pubblica di questi dati. Quei giovani sfrontati che continuavano a strillare \"PER OTTENERE FORZA OCCORRE SACRIFICIO\" dovrebbero osservare un vero professionista e imparare cosa significa prendersi cura di sé. \n- Commento di un operatore medico che nutre un profondo rancore",
+      "humanResources": "Flusso argentato (nome Ye Minghe) ricopre attualmente il ruolo di guardia imperiale di Yan e Capitano dei cieli pacificati presso l'Accademia scientifica di Hongshan (ASH)*. Su ordine dell'ASH collabora attualmente con la Endfield Industries, fornendo supporto sul campo e istruzioni sulle tecniche di combattimento. * NOTA: in base alla Legge di Yan, le guardie imperiali non sono un organismo subordinato all'Accademia scientifica affiliata di Hongshan dell'Istituto Tianshi del Grande Yan. Tuttavia, viste le complessità storiche, questa NOTA (in assenza di altri dettagli) fornisce una spiegazione sufficiente per questa particolare convenzione di denominazione.\n\nFlusso argentato ha dimostrato maturità e calma nei rapporti con gli altri membri del personale, rivelandosi un ottimo collaboratore. Le preoccupazioni per la sua \"arroganza altezzosa\", \"estrema scortesia\" e altri aspetti della sua personalità, espresse da alcuni operatori, si sono rivelate infondate. L'operatore Flusso argentato ha fornito due spiegazioni all'origine di tali incomprensioni: (1) sebbene sia vero che i membri delle guardie imperiali si comportano in modi diversi, la maggior parte delle storie che li riguardano è frutto di fantasia; (2) certe \"buffonate imbarazzanti della gioventù\" risalenti a molti anni fa continuano a circolare da troppo tempo e probabilmente sono state esagerate e/o distorte. In altre parole, tutto il personale è invitato a rispettare la normale etichetta ed evitare di soffermarsi su argomenti delicati quando interagisce con l'operatore Flusso argentato. Questo approccio offrirà quasi certamente l'opportunità di partecipare a uno scontro amichevole o di ricevere una lezione sulle tecniche di combattimento dall'operatore. Si raccomanda inoltre di prenotare in anticipo le sessioni di dialogo e di prepararsi mentalmente a una lunga attesa.\nNOTA PER TUTTO IL PERSONALE DI TERRA: le presenti osservazioni si riferiscono esclusivamente all'operatore Flusso argentato. Il suo cavalcone è una bestia di forza immensa e temperamento violento. Siate vigili e cauti se incaricati di nutrire o accudire la bestia. L'operatore ha personalmente compilato una lista dettagliata di aspetti a cui prestare attenzione. Chiunque sia incaricato della gestione del cavalcone DEVE LEGGERE, STUDIARE E MEMORIZZARE PIÙ VOLTE LA SUDDETTA LISTA.\n- Martin Marvin Malen, Assistente, reparto risorse umane, Endfield Industries",
+      "file1": "[RECORD: prestazioni dell'operatore Minghe a \"Operatori allo sbaraglio: mega-arena mensile\"] \nCombattimento armato a occhi bendati. 1° posto nella divisione (rinuncia appena scopre che è una gara). \nL'arte del lancio. 1° posto. NOTA: 10 lanci perfetti, con 3 pugnali conficcati nell'elsa del pugnale precedente. \nLotta e combattimento. 1° posto nella categoria di peso. NOTA: si è imposto un handicap legandosi un braccio dietro la schiena. \nScatto nella simulazione della squadra di soccorso di infortunio. 1° posto, Divisione: Fortis Down. NOTA: molti Chirurghi cinerici hanno lodato le sue abilità. \nBurdo-Bot-Bucker Rodeo. 1° posto. NOTA: è rimasto in sella per 600 secondi. Avrebbe potuto ottenere un punteggio migliore se il Bot-Bucker non si fosse rotto. \nQuiz di velocità sulle erbe. 2° posto, Divisione amatori. \nIntaglio creativo e improvvisato. Premio \"È COSÌ CARINO\". NOTA: lo strumento usato è un ago da cucito. \nCorsa su sedie da ufficio in micro-gravità. 2° posto. NOTA: solo 0,4 secondi dal record migliore. \nCHUG DA KOHL! 1° posto nella divisione. NOTA: ha ignorato le regole e si è iscritto alla Divisione Durin. \nTrasporto di tofu con bacchette. 1° posto. NOTA: ha trasportato 36,5 pezzi. \nGara senza sbattere le palpebre. 2° posto. NOTA: 928 secondi senza battere ciglio. Sconfitto dall'operatore Xaihi. \n\nDevo ricordarvi che questi sono eventi non ufficiali pensati per divertirsi. Basta coinvolgere la gente solo perché c'è la parola \"Arena\". E io pensavo fosse il primo giorno di questo ragazzo alla Endfield. Come avete fatto a convincerlo a partecipare a così tanti eventi? \n- Lil' Dodge \n\nConvincere? Ma no, Dodge. Il tipo ha semplicemente visto una folla che si divertiva e si è unito... E chi sarebbe comunque questo \"nuovo arrivato alla Endfield\"? \n- Operatore logistica (decisamente troppo entusiasta)",
+      "file2": "[ELENCO: Oggetti reclamati dall'operatore Flusso argentato da incidenti di trasporto di robot Delta] \nRECLAMO OGGETTO (1): \nintaglio in legno, raffigurante un cavalcone. Rivestito di cera. Realizzato con cura. \nNOTE DEL RICHIEDENTE: \nun piccolo dono da un Cercatore dei canti del Circuito Hannabit. Alcuni Predatori della sabbia lo stavano inseguendo. Mi trovavo lì per caso e ho deciso di aiutarlo. Prima che partissi, mi ha dato questo. Lo ha descritto come un ricordo speciale per un'eroina. \nPerché ha scolpito Nuli? Il mio cavalcone è quello che ha fatto il vero lavoro, abbattendo una nave dei Predatori della sabbia dopo l'altra. Senza il suo aiuto, sarebbe stato un affare molto più lungo. Quindi lo accetto a nome suo. A proposito di questo episodio, ho i miei rimpianti personali. Beh, non c'entra con il fatto che non ho ricevuto un regalo. Parlo del Cercatore dei canti. Con la sua saggezza e coraggio, ha portato la sua gente a nascondersi tra le dune e ha combattuto i Predatori della sabbia da solo per diversi giorni. Avrei dovuto essere io a dargli qualcosa. \n\nRECLAMO OGGETTO (2): \nun elenco di nomi e indirizzi scritto su carta. Il proprietario ha acconsentito all'ispezione dei contenuti. La maggior parte dei nomi ha corrispondenze nei vari sistemi di gestione delle identità della Cintura civilizzata. \nNOTE DEL RICHIEDENTE: \nsì, sono solo alcuni ragazzi. Promettenti, anche. Li ho incontrati durante un evento di apertura della spaccatura. Alcuni superstiti erano completamente bloccati sulla montagna. Ho impiegato troppo tempo a prendere un veicolo volante e creare un passaggio. Ero pessimista, ma quello che ho trovato mi ha sorpreso. Una dozzina di ragazzi e adolescenti hanno tenuto un centinaio di superstiti uniti e in movimento per la sicurezza, raccogliendo i feriti lungo il percorso. I ragazzi hanno persino costruito un rudimentale dispositivo di allerta energetica che mi ha aiutato a individuare la spaccatura. \nQuando ci siamo salutati, alcuni erano già tornati a scuola. Ho annotato i loro nomi e le informazioni, sperando che, se dovessero candidarsi alla ASH, avrei l'onore di raccomandarli ufficialmente. E se li indirizzassi alla Endfield? Beh. Sarà una loro scelta. \n\nRECLAMO OGGETTO (3): \nuna fotocamera usurata. \nNOTE DEL RICHIEDENTE: \nera di una vecchia giornalista. Ce l'ho per via di... una promessa. Solo per una promessa. \nÈ stata un'amicizia improbabile nata durante un'operazione di bonifica degli Aggeloi. Pur non essendo un medico competente, ho esperienza nel primo soccorso sul campo e l'ho accompagnata attraverso una grande palude. Non siamo riusciti a salvarle le gambe... ma mi ha donato questa fotocamera, che aveva portato con sé durante tutta quella esperienza. Le invio spesso delle foto. Come diceva lei, nessuno sa se una spaccatura nell'Æther o qualche altro incidente possa colpire all'improvviso un luogo meraviglioso. Siccome viaggio molto, posso usare la sua fotocamera per vedere il mondo al suo posto. Il destino ci ha fatti incontrare e non ho motivo di rifiutare. \n\nHo viaggiato molto e incontrato tante persone dopo aver lasciato il villaggio chiamato Pan'an... E sono felice che la mia lama sia riuscita a difenderli. Ho usato la fotocamera per immortalare molti momenti memorabili. Il mondo può essere vasto, ma il destino è cosa rara. Questo è tutto. \nHo firmato. Non ostacolerò altri richiedenti degli oggetti smarriti. Addio.",
+      "file3": "Su invito di Lil' Dodge, l'operatore Flusso argentato fa occasionalmente visita a Dijiang come istruttore speciale di addestramento. È noto che gli operatori della Endfield padroneggiano una vasta gamma di tecniche di combattimento e Arti di Originium, che richiedono metodi di addestramento diversificati. Tuttavia, le abilità marziali dimostrate da Flusso argentato confermano la grande reputazione delle guardie imperiali. Nei combattimenti ravvicinati, negli scontri a distanza con le Arti o persino nelle battaglie a cavallo, individua sempre i trucchi dell'avversario in pochi movimenti, adatta rapidamente la tattica e trattiene le contromosse per prolungare lo sparring. In ogni battaglia, tiene l'iniziativa e dirige il flusso, finché l'avversario non cede per pura stanchezza. \nGli operatori con lunga esperienza nell'uso della camera di addestramento anti-gravità di Dijiang hanno cercato di guadagnare un vantaggio su Flusso argentato sfidandolo in questa struttura speciale. Hanno attivato la funzione anti-gravità sperando di vederlo fare una figuraccia. Ma la guardia imperiale ha toccato delicatamente il suolo e si è mossa come un fulmine, abbagliando gli operatori. Questi si sono preparati per un attacco che non è mai arrivato. Con un semplice tocco, una capriola e un balzo, Flusso argentato ha superato gli avversari e si è posato con sicurezza sul soffitto della camera anti-gravità. \nSiamo tutti stupiti dall'incredibile adattabilità e concentrazione di Flusso argentato, ma le sue risposte hanno scatenato qualche reazione in alcune persone che gli hanno chiesto consigli. L'operatore ha semplicemente detto che adattarsi e cambiare tra un respiro e l'altro è parte integrante dell'addestramento delle guardie imperiali. Ha anche spiegato di preferire un approccio creativo al combattimento, alternando momenti di movimento e di quiete, e di cavalcare lo slancio dell'avversario. Mentre gli operatori circondavano Flusso argentato per chiedere consigli, sia per ammirazione che per scherzo, nessuno sembrava realizzare un fatto cruciale. Flusso argentato non ha mai menzionato l'addestramento brutale subito né i codici severi che accompagnano le tecniche segrete della sua famiglia. \nLa famiglia Ye si è distinta a lungo sui campi di battaglia di Yan, conquistando numerose vittorie. Tuttavia, Flusso argentato era già un prodigio anche rispetto ai nomi illustri delle generazioni passate. Nessuno nel suo clan si muoveva come una cometa con la velocità di una fiamma infernale. Dopo l'incontro con il suo destriero, Nuli, la guerriera cavalcante è diventata un fulmine di distruzione impossibile da avvicinare, affrontare o da cui sfuggire. Ciò ha comportato per Flusso argentato anche un addestramento più duro e incarichi molto più pericolosi. \nL'operatore Flusso argentato lo ha riassunto così: \"Più stretto si afferra il fulmine, più chiara dev'essere la mente\". \n\"Ma essere così bravo non è affatto facile! Devono essere stati molto severi con te!\" \n\"L'amarezza dell'addestramento è molto più dolce del fiele del fallimento che nessuno di noi potrebbe permettersi\".",
+      "file4": "Il mio primo mentore fu il mio istruttore di spadamanzia. \nEro solo un ragazzino. Mio padre era impegnato con gli affari di Stato e lo invitò dall'Accademia Tanjian per insegnarmi le basi. Ma imparai troppo in fretta, così concluse ufficialmente il mio addestramento e partì dopo pochi mesi. \nPrima di salutarci, mi disse che avevo impiegato una sola stagione per imparare ciò che lui aveva padroneggiato in una vita. Mi confidò di avere molti rimpianti. Se fossi riuscito a superarlo, avrei affrontato le stesse sfide senza lasciarmene sopraffare. E se avessi continuato a perfezionare le mie abilità marziali, avrei avuto altri mentori e istruttori. Quando quel giorno sarebbe arrivato, voleva che ricordassi tanto i loro successi quanto i loro fallimenti, perché avrei potuto essere colui che avrebbe vendicato i loro dolori. \nFu allora che capii che dovevo trovare il mio scopo. Gli Aggeloi distrussero la casa del mio istruttore di spadamanzia. Una lama solitaria non può proteggere tutti. I tempi erano bui e questa non era una storia isolata. Con l'abilità arrivano anche responsabilità e dovere. \n\nIl mio secondo mentore fu la mia compagna, Nuli. \nEro un ragazzo di quattordici anni quando la incontrai nelle terre selvagge. Entrambi volevamo dare la caccia alla stessa preda, ma ben presto l'inseguimento si trasformò in una competizione. Combattemmo per un giorno e una notte, abbattendo quasi metà degli alberi sul pendio collinare. Ero troppo testardo per perdere, e lo era anche lei. \nNuli e io crollammo sulla riva del fiume quasi nello stesso momento. Lei, testarda come sempre, riuscì a rimettersi in piedi sulle zampe, barcollò verso di me e cercò di incornarmi... prima di svenire definitivamente. Quella fu la sua vittoria. Voleva vincere e realizzò il suo desiderio a discapito della propria sicurezza. Chi porta il peso del dovere e dell'autorità deve possedere una simile forza d'animo. \n\nConosci sicuramente il mio terzo mentore. È Tianshi Tan. \nIn realtà l'ho incontrata poco dopo essermi arruolato. Si presentò al nostro accampamento durante una licenza. All'inizio rimasi interdetto e pensai che qualcuno avesse lasciato entrare una ragazzina per sbaglio. Ma quando quella \"ragazzina\" prese a calci gli ufficiali di alto rango che cercavano di fermarla, capii subito che era la vecchia Tianshi Tan, l'esercito di una sola donna che vegliava sul Polo Nord. \nDurante quell'incontro Tianshi Tan mi tempestò di domande. Probabilmente mi evitò parecchi problemi con la ASH nelle diverse occasioni in cui agii con avventatezza... Più tardi tornammo a parlare del nostro primo incontro e mi disse che, fin dal primo sguardo, aveva capito che bruciavo d'impazienza. Mi descrisse come acciaio di ottima qualità che non si riusciva a forgiare in una lama degna di questo nome. Il problema ero io: avevo bisogno di essere temprato e affinato. L'unica cosa che poteva fare era mandarmi sul campo di battaglia, dove avrei potuto trovare le risposte che cercavo. \n\n\"Basta! Uff! Era una domanda semplice, ma hai continuato a parlare senza mai fermarti. Quanti mentori hai avuto, poi?\" \n\"Parecchi, Lady Si. Un giovane di Pan'an mi ha insegnato a crescere bestie da soma. Un venditore di Luoyi mi ha dato consigli per migliorare l'incenso. Un Cantore nelle terre selvagge mi ha insegnato a cantare. Un camionista del Rondò d'asfalto mi ha insegnato a preparare il kohl dolce con frutti amari... Da un gruppo di tre, si trova sempre un mentore\". \n\"Bah. Sempre a fare il modesto e il gentile\". \n\"Forse, ma la stoltezza smussata è più vicina alla verità. Ho pensato troppo durante la giovinezza. Ci sono voluti anni prima che accettassi quanto poco sapessi e quanto fosse limitata la mia esperienza\". \n\"Ti ho chiesto dei mentori, ma non hai nemmeno menzionato l'Endministrator!\" \n\"L'Endministrator... è molto più di un semplice 'mentore' per me...\" \n\"...\""
+    },
+    "tags": {
+      "expert1": {
+        "name": "Tecnica di combattimento",
+        "description": "Tecnica di combattimento: Lama d'autunno\nLa lancia è un drago in volo, la spada è una riverberante lama d'autunno. Torrenti e fiumi scorrono impetuosi da un antico, gelido cuore."
+      },
+      "expert2": {
+        "name": "Sapiente",
+        "description": "Sapiente: Ingresso nel mondo\nUn lungo peregrinare svela quanto vasto sia il creato. Contemplata la sua bellezza, invito a me il fiume stellato."
+      },
+      "hobby1": {
+        "name": "Stile di vita",
+        "description": "Stile di vita: In sintonia con l'esistenza\nMille abilità da affinare, mille sapori da assaggiare. Tra cucine lungo i vicoli, mille luci per rincasare."
+      },
+      "hobby2": {
+        "name": "Natura",
+        "description": "Natura: Ritorno alle origini\nTra i campi passeggiare, sulle colline riposare. Al mio richiamo ecco un cavalcone, e via col vento a galoppare."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Preparazione all'operazione 1",
+        "text": "Se dobbiamo muoverci, basta dare l'ordine."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Preparazione all'operazione 2",
+        "text": "Ai tuoi ordini."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Aggiunta alla squadra 1",
+        "text": "Equipaggiato e pronto. Non ci saranno esitazioni."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Aggiunta alla squadra 2",
+        "text": "Una giornata luminosa e senza nuvole. Perfetta per eliminare il nemico."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Cambio arma",
+        "text": "Se quest'arma parlasse, non perderebbe mai una discussione."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Cambio equipaggiamento",
+        "text": "Bene. Servono gli strumenti giusti per fare un buon lavoro."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Attivazione nodo talento",
+        "text": "Migliorare non significa soltanto acquisire gradualmente maestria, ma anche raggiungere l'illuminazione mentale."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Una sessione di apprendimento eccellente... Per ricambiare, lascia che registri qualcosa per te. Un compagno di allenamento? Ho già te!"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Promozione operatore 1",
+        "text": "Un tempo, molti soldati in prima linea desideravano essere decorati dalle tue mani... Sono davvero fortunato per questo."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Promozione operatore 2",
+        "text": "Nuli, fai un passo indietro. Smettila di spingere l'Endmin... Mmh. Sembra che anche lei voglia un encomio. Forse puoi farle qualche carezza in più?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Promozione operatore 3",
+        "text": "Tutto qui? Oh, niente. Mi è tornato in mente quando sono diventato Capitano dei cieli pacificati. Tianshi Tan mi offrì solo una ciotola di noodle. Voi due dovete avere molto in comune."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Promozione operatore 4",
+        "text": "L'ampiezza di un albero dipende dalla forza delle sue radici. Al di là dei titoli, sono felice che tu abbia riconosciuto la base che ho costruito negli anni... Non preoccuparti. Con la lama affilata e la disciplina perfezionata, sarò il tuo più grande supporto."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Operatore a rapporto",
+        "text": "Minghe dell'ASH, al tuo servizio. Capitano dei cieli pacificati? Quel titolo non serve a molto qui, quindi lasciamolo da parte per evitare confusione."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "Attesa 1",
+        "text": "Per favore, scalda un po' di vino per me. Questa battaglia non durerà a lungo."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "Attesa 2",
+        "text": "A rapporto. Quale esercito dobbiamo sconfiggere oggi?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Assegnazione a una struttura",
+        "text": "Certo. Possiedo altre abilità oltre alla scherma."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Saluto 1",
+        "text": "Endmin, ci sono missioni che richiedono la mia presenza?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Saluto 2",
+        "text": "Hai esaurito le energie? Perché non facciamo due passi e chiacchieriamo per passare il tempo?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Sapevo che stavi arrivando già da un miglio di distanza... E no, non ho attivato il mio udito potenziato. È solo un vantaggio dato dall'altezza."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Inizio a pentirmi di non aver portato Nuli a bordo. Quella ragazza arrogante adora rincorrere le nuvole e mettere in mostra la sua velocità. Qualche giorno qui potrebbe farle apprezzare un po' di più la gravità."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Endmin, mi chiedevo se potessi mostrarmi l'arsenale. Ho sentito dire che al Centro di ricerca lavorano artigiani molto abili che hanno creato una collezione di armi potenti. Perché? Credo sia naturale che un soldato come me sia interessato agli strumenti di guerra. Mmh... perché quell'espressione così sorpresa?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Hai visto un pezzo di legno per caso? Quando le cose si fanno troppo tranquille, non posso fare a meno di scolpire. Quel pezzo è ancora piuttosto imperfetto e... ho avuto un'ispirazione improvvisa e ho deciso di realizzare una scultura a tua immagine. Non sarebbe bello se vedessi il mio lavoro così maldestro."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Mi sorprende vedere qui così tanti colleghi dell'ASH. La Endfield ha davvero una rete estesa. Ma alcuni \"individui ben informati\" forse stanno esagerando un po' sul mio... \"passato eroico\". Potresti consigliare loro di essere più discreti? Un solo colpo non apre una montagna né disperde le nuvole. È un po' troppo."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "A Yan, \"Minghe\" è usato come metafora per il flusso delle stelle. Esplorare i cieli era un'impresa ardua. Gli abitanti di Terra riuscirono finalmente a sfondare il cielo fasullo, solo per ritrovarsi intrappolati in un altro cielo estraneo... Eppure, si vede che abbiamo compiuto un altro passo verso l'empireo."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Offerta regali",
+        "text": "Endmin, prendi pure. Non pensarci troppo, non è niente di troppo costoso. Ho solo pensato che potesse renderti felice."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Accettazione regali",
+        "text": "Grazie. Dovrò pensare a un bel regalo per ricambiare... Ti piacerebbe cavalcare Nuli per un giorno? Sembra che ora ti apprezzi molto di più."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Dialogo fiducia 1",
+        "text": "L'impresa della Endfield non è facile. Per questo l'ASH ha deciso di assegnarmi come supporto. Ci saranno momenti in cui dovrò occuparmi dei compiti da guardia imperiale, ma non preoccuparti, impartisci pure i tuoi ordini normalmente. Quando dovrai prendere una decisione difficile, sarò al tuo fianco. Puoi avere piena fiducia nel nostro legame."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Dialogo fiducia 2",
+        "text": "Un aroma delicato? Probabilmente è questa pallina diffusore d'incenso. Quando mi sono arruolato, non ero esattamente una persona paziente. Mi costringevo a restare sveglio e vigile per adempiere al meglio ai miei doveri. Ma così ho solo messo a dura prova la mia salute mentale. I miei colleghi mi hanno dato una ricetta per un incenso che mi aiutasse a calmare la mente. Dicevano che un buon sonno è la chiave per superare le difficoltà. E la realtà ha confermato la saggezza delle loro parole... Endmin? Mmh. Già dormi. Allora farò la guardia per te."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Dialogo fiducia 3",
+        "text": "I medici hanno chiesto delle mie cicatrici? Questa sulla coda me la sono fatta da ragazzino, quando ero un vero monello. Ero spericolato, sono caduto da una scogliera e mi sono tagliato su una roccia. All'inizio non era così brutta, ma con l'età è diventata molto più inquietante. Le altre... sono il risultato di innumerevoli battaglie e scontri. Sono troppe per poterle contare e, dopo tutto questo tempo, non ricordo nemmeno quando mi sono procurato la maggior parte di esse."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Dialogo fiducia 4",
+        "text": "Qualche giorno fa, io e alcuni colleghi abbiamo approvato l'ammissione di un gruppo di riservisti delle guardie imperiali all'ASH. Sono i migliori, vero, ma troppo brillanti, troppo appariscenti, e hanno bisogno di molta formazione mentale e spirituale. Se affidassimo loro incarichi importanti subito, temo che potrebbero confondere il dovere con la ragione della loro esistenza. Un inizio così... Aspetta, sto facendo discorsi da padre? No! Sto solo... parlando del mio passato. Non voglio che questi ragazzi ripetano i miei errori."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Dialogo fiducia 5",
+        "text": "Prendi questo fischietto. Soffiaci dentro così Nuli saprà dove trovarti. Consideralo un modo per comunicare in caso di emergenza. Certo, è anche un regalo personale. In fondo, sei tu che mi hai mostrato queste terre immense e le città fiorenti. Quindi sì, al di fuori delle battaglie, desidero davvero viaggiare insieme a te. Perché non provi a soffiare nel fischietto ora? Nuli sta riposando qui vicino. Quando sentirà il fischio ma ci vedrà ancora qui, la sua reazione sarà sicuramente interessante."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Chiacchierata 1",
+        "text": "Il Catalogo dei Guerrieri sotto i Cieli è solo un'opera di intrattenimento. È stato compilato da dilettanti con troppo tempo libero. Non ho mai affrontato cavalieri della CCGT, élite del Dipartimento di sicurezza o quella spadamante della famiglia Chen, quindi quelle classifiche sono pura fantasia. Quanto al \"campione indiscusso sotto i quarant'anni\", probabilmente hanno visto il mio grado tra le guardie imperiali e si sono inventati tutto. E Endmin, per favore, smettila di fissarmi. Sono nato così, quindi non darmi la colpa se sembro giovane."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Chiacchierata 2",
+        "text": "Dopo essermi ripreso dall'infortunio, sono tornato in quel villaggio alcune volte. Molte persone non c'erano più e le mie visite sono state brevi, così ho potuto solo affidarmi agli altri per riferire qualche notizia... Ma non preoccuparti, perché nessuna caduta di un Ankhor ha più colpito quel posto. Gli abitanti di Hongshan hanno costruito alcune città nei dintorni e molti si sono trasferiti lì. Qualcuno si è spinto ancora più lontano, in realtà. Spesso mi mandano specialità locali... me ne sono rimasti ancora due pacchi. Ti interessa?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Chiacchierata 3",
+        "text": "Quei presuntuosi dell'Accademia Tanjian sono tornati di nuovo. Non fraintendermi. Sono sempre disponibile a discutere di arti marziali, ma le abilità equestri... Nuli e io condividiamo un legame spirituale. Non la controllo. Piuttosto, lavoro con lei, e non c'è nulla di tecnico in questo. A proposito, ma perché sono così ossessionati dal combattimento in sella? Ormai quasi nessuno combatte su un cavalcone..."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Chiacchierata 4",
+        "text": "L'ASH dispone di moltissimi libri sulla strategia militare e i trattati yanesi. Abbiamo imparato molto, ma non abbastanza. Un buon dispiegamento delle forze può decidere le sorti della battaglia, ma la Cintura civilizzata sta combattendo da sola contro l'intera Talos-II. La vittoria non dipende da quanti covi nemici riusciamo a distruggere, ma da quanto riusciamo a riconquistare, ripristinare e preservare. Se la situazione lo permettesse, preferirei lavorare nelle mie fattorie. Almeno, sudare sul terreno fa crescere più cibo."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Chiacchierata 5",
+        "text": "Quando sono entrato per la prima volta nella Direttiva Zero, ho immaginato ogni possibile scenario della nostra riunione. Nei campi di battaglia del Nord? Nella distesa sabbiosa? Durante una missione d'emergenza? Oppure in un assedio disperato...? Ho smesso di pensarci, perché sapevo che avrei combattuto al tuo fianco in ogni caso. Perdonami la schiettezza, ma i piani che hai fatto con Lady Si tra le montagne potrebbero non piacere ai tuoi amici. Se dovesse lamentarsi di nuovo... lasciami restare al tuo fianco e affrontiamo insieme i suoi capricci."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Argomento: partner",
+        "text": "Nuli e io abbiamo combattuto su innumerevoli campi di battaglia. Noi due siamo molto più che semplici \"partner\". E no, lei non mangerebbe mai del semplice fieno. Bisogna insaporirlo con un po' di aggagrit e muco di origilumaca. A proposito, Nuli è un cavalcone autoctono di Talos-II. Significa che le piace... il cibo alieno di Terra?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Argomento: guardie imperiali",
+        "text": "La legge di Yan ha reso le guardie imperiali il vertice delle arti marziali, perché i pugili venivano considerati dei trasgressori della legge. Nonostante l'assenza di confini nazionali, il Grande trio di Talos-II ha dovuto comunque affrontare minacce interne ed esterne. Così Tianshi Tan ha nominato tredici guardie imperiali. La competenza nelle arti marziali è solo la base. Ognuno di noi è un maestro nel proprio campo, il che ci permette di proteggere il nostro popolo. La mia maestria? È piuttosto noiosa... Mi lancio da solo contro i nemici ed elimino il loro comandante. Tutto qui."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Argomento: Tianshi Tan",
+        "text": "Tianshi Tan di solito viaggia attraverso il Nord e difende il fronte polare con le Arti della conflagrazione. Molto raramente si occupa delle questioni di Hongshan. Ma, considerata la sua lunga esperienza, nessuno all'ASH osa mancarle di rispetto. Persino Lady Si accetterebbe le sue critiche senza obiettare. Le due non si incontrano spesso, ma quando capita, è quasi sempre Tianshi Tan a trascinare Lady Si in qualche guaio. A dire il vero, non saprei proprio dire chi delle due sia la più anziana."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Argomento: Si",
+        "text": "Devo trasmettere i messaggi di Tianshi Tan, quindi mi capita spesso di essere in corrispondenza con Lady Si. Sembra piuttosto caparbia, ma c'è un trucco per comunicare efficacemente con lei. Se ti interessa... eh eh, non è così difficile. Inizia dal punto più intrigante. Quando la vedi incuriosita, puoi raccontarle il resto... Cosa? Come parlare con una bambin...?! Eh, no, no, meglio fermarsi qui! Alcune cose è meglio non dirle ad alta voce."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Argomento: armi",
+        "text": "Ho impugnato Fulei, il Tuono in agguato, per un bel po' di tempo. Molti Aggeloi sono caduti a causa sua, così come molti alberi e arbusti. Il Dipartimento degli Spadamanti una volta ne ha chiesto il prestito per studiarla, e si è arrabbiato parecchio con me per averla usata per faccende banali. Ne è nata una lunga discussione. Considero le armi strumenti per sottomettere i nemici e proteggere i vivi, e anche il pezzo più celebrato non serve a nulla senza chi lo brandisce. Quindi, la qualità di un'arma dipende da chi la impugna, non dall'arma stessa."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Individuazione risorsa/elemento collezionabile 1",
+        "text": "C'è un tesoro che nessuno ha ancora reclamato. Cerchiamo di sfruttarlo al meglio."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Individuazione risorsa/elemento collezionabile 2",
+        "text": "Quel sito potrebbe avere proprio quello che ci serve. Andiamo a dare un'occhiata?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Individuazione zona non esplorata",
+        "text": "Ho notato qualcosa di insolito. Andiamo a dare un'occhiata più da vicino?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Individuazione nemico potente",
+        "text": "Un avversario potente. La prudenza è un'opzione, ma affrontarlo direttamente è la scelta migliore."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Estrazione 1",
+        "text": "Oh? La qualità è buona."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Estrazione 2",
+        "text": "Lasciate fare a me. Due armi scavano meglio di una."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Apertura di una cassa",
+        "text": "Un tesoro rimasto a lungo nascosto in una cassa, ora scoperto e in attesa del suo destino."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Acquisizione di Aurylene",
+        "text": "Vola bene e vola libero. Comincio quasi a invidiarlo."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Eliminazione Contaminazione",
+        "text": "Minaccia eliminata. Il passaggio è libero."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Riposo",
+        "text": "Riposato e pronto a entrare in azione... Muoviamoci."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Utilizzo di gadget 1",
+        "text": "Controlla la tua forza."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Utilizzo di gadget 2",
+        "text": "Mi sono distratto. Che la battaglia continui."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Avviso di pericolo",
+        "text": "Squadra, tenetevi pronti!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Ferite",
+        "text": "Va bene."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "Esaurimento PS",
+        "text": "Scusa, Endmin. Non avrei... dovuto mollare..."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "La tua impresa è davvero notevole!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Come argento vivo impeccabile! Meraviglioso!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Sto solo facendo il mio dovere."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "È il lavoro di squadra che va lodato."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Inizio combattimento 1",
+        "text": "Che nessun rancore sopravviva a questa battaglia."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Inizio combattimento 2",
+        "text": "Seguirà l'acciaio."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Vittoria in combattimento 1",
+        "text": "La questione è chiusa."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Vittoria in combattimento 2",
+        "text": "Una conclusione prevedibile."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Vittoria in combattimento 3",
+        "text": "Una grande vittoria resa possibile da una grande squadra."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Vittoria in combattimento 4",
+        "text": "Abbiamo vinto. Metterò in sicurezza i perimetri. Ora, riposatevi tutti."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Sconfitta in combattimento",
+        "text": "Una battaglia straordinaria contro un nemico potente... Un nuovo tentativo vendicherà la nostra sconfitta."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Colpo finale 1",
+        "text": "TUONO!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Colpo finale 2",
+        "text": "INFRANGIMENTO!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "Abilità di combattimento 1",
+        "text": "Fendi pioggia!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "Abilità di combattimento 2",
+        "text": "Squarcia vento!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "Abilità di combattimento 3",
+        "text": "Strappo dell'ombra!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Abilità combo pronta 1",
+        "text": "È ora di fare sul serio."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Abilità combo pronta 2",
+        "text": "La lama è pronta."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Esecuzione combo 1",
+        "text": "FULMINE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Esecuzione combo 2",
+        "text": "LAMA ESPLOSIVA!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Mossa letale 1",
+        "text": "Puoi andare."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Mossa letale 2",
+        "text": "Dovresti farti da parte."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Abilità suprema 1",
+        "text": "Verso Nord, ammirate la mia avanzata!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Abilità suprema 2",
+        "text": "Tutto termina nel rombo del tuono."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Abilità suprema 3",
+        "text": "Su, senti il flusso cosmico!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Talento <@ba.key>Apice della voltomanzia</> migliorato: quando applica <#ba.crush>Distruzione</> a un bersaglio affetto da <@ba.key>Tuono lacerante</>, i danni inflitti da questa <#ba.crush>Distruzione</> aumentano a <@ba.vup>{1+crush_damage:0.0}</> volte il valore originale. La percentuale dei danni dell'esplosione di <@ba.key>Tuono lacerante</> inflitti agli altri nemici nelle vicinanze del bersaglio aumenta a un <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Tempesta sui campi"
+    },
+    "potential2": {
+      "description": "Volontà <@ba.vup>+{Will:0}</>, intensità delle Arti <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Primavera elettrizzante"
+    },
+    "potential3": {
+      "description": "Abilità di combattimento <@ba.key>Impeto fulmineo</> migliorata: per ogni accumulo di <#ba.pulseonchar>Afflizione da elettricità</> <#ba.consume>consumato</>, Flusso argentato ottiene <@ba.pulse>danni da elettricità inflitti</> <@ba.vup>+{potential_adddamage:0%}</> per <@ba.vup>{potential_duration:0}</> s. Questo effetto può raggiungere <@ba.vup>{potential_maxstack:0}</> accumuli. Ciascun accumulo ha una sua durata indipendente.",
+      "name": "Assalto fulmineo"
+    },
+    "potential4": {
+      "description": "Abilità suprema <@ba.key>Cieli squarciati</> migliorata: costo di energia suprema <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Flusso stellare radioso"
+    },
+    "potential5": {
+      "description": "Talento <@ba.key>Tripudio di fulmini primaverili</> migliorato: quando viene usata l'abilità di combattimento <@ba.key>Impeto fulmineo</>, tutta la squadra ottiene <@ba.vup>+{extra_yuanshi_add:0}</> punti di intensità delle Arti.\nIl bonus ai danni dell'esplosione di <@ba.key>Tuono lacerante</> per ogni punto di intensità delle Arti di Flusso argentato aumenta a <@ba.vup>{thunderdamage_multi:0.0}</> volte il valore originale.",
+      "name": "Invito alle luci celesti"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Lancia luminosa delle terre selvagge",
+      "author": "李吉吉",
+      "description": "Sotto un fiume di stelle, in una notte rischiarata dalla sua lancia, consacra la propria guardia alla difesa di queste terre."
+    },
+    "potential3": {
+      "name": "Accampato sotto le nuvole",
+      "author": "kera",
+      "description": "Un accampamento sotto le nuvole, una sosta oziosa lungo il cammino: brinda con gioia al proprio viaggio."
+    },
+    "potential5": {
+      "name": "Portatore di luce",
+      "author": "ALZiMi",
+      "description": "Un arco elettrico risplende, una volontà arde incrollabile: desidera portare la pace eterna nel mondo."
+    }
+  }
+}

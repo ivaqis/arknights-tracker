@@ -1043,7 +1043,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Silberfluss"
   },
   "weaponsList": {
     "custom_weapon": "Benutzerdefinierte Waffe",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "„Blicke nach Norden zum Riss“-10er-Genehmigung",
     "ticketgacha_special_ten_lt_1_4_2": "„Blendender Morgenstern“-10er-Genehmigung",
     "ticketgacha_weaponbox_lt_1_2_2": "„Flamme im Wind“-Ausgabe-Zerti",
-    "ticketweaponbox_ten_1_lt": "Zeitlich begrenztes 10er-Waffenkisten-Zerti"
+    "ticketweaponbox_ten_1_lt": "Zeitlich begrenztes 10er-Waffenkisten-Zerti",
+    "business_card_topic_chr_0037_minghe": "Träger des Lichts",
+    "item_activity_contract_gold_1": "Kristallisierter Indigo",
+    "item_case_wpn_selfselect_gahca_1_6_2": "Waffen-AK: Mondschimmer",
+    "item_char_equip_supply_minghe": "Arsenal-Verteidigungskiste α: Sternenfluss",
+    "item_charpotentialup_chr_0037_minghe": "Silberfluss’ Token",
+    "item_mission_c37m1_foragel": "Scharfer Köder",
+    "item_mission_c37m3_branch": "Zweig von Ye Minghe",
+    "item_mission_c37m3_tools": "Bestienstall-Reparaturwerkzeug",
+    "item_mission_c37m3_woodenboard": "Robuste Bretter",
+    "item_port_horse_1": "Schaukel-Nuli",
+    "item_shot_anim_minghe_m_1": "Müßiggang mit einem alten Freund",
+    "item_ticketgacha_special_single_lt_1_6_2": "Die Sterne sind mit mir – RK-Genehmigung",
+    "item_user_avatar_chr_0037_minghe": "Silberfluss",
+    "ticketgacha_special_single_lt_1_6_2": "Die Sterne sind mit mir – RK-Genehmigung"
   },
   "buildingNames": {
     "component_mc_1": "Einpasseinheit",

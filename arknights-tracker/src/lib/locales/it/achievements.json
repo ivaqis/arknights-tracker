@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "\"Indaco purificato\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "3": {
+        "desc": "In [Contratto di emergenza: Operazione sperimentale indaco], completa con successo una sfida con ≥20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criteri di test totali.",
+        "completeDesc": "Il dono è stato contaminato da una corrotta tonalità d'indaco. Ma finché sarai al nostro fianco, il fuoco della rinascita non si spegnerà mai."
+      }
+    },
+    "plating": {
+      "desc": "In [Contratto di emergenza: Operazione sperimentale indaco], completa con successo una sfida con ≥30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criteri di test totali."
+    }
+  },
   "achv_event_dungfight": {
     "name": "\"Specialista della sopravvivenza\"",
     "category": "Evento",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Completa la missione secondaria [Una serie di riflessioni].",
         "completeDesc": "I loro pugni mettono alla prova la mia determinazione, ma il mio Qi squarcia la terra e sfida il potere stesso del tuono."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "\"Ritorno alla vita agreste\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Ritorno alla vita agreste].",
+        "completeDesc": "Quando il dorso della lama potrà reggere qualche nuovo germoglio e risuonare dei versi degli animali, finalmente comprenderemo la vera natura delle nostre intenzioni."
       }
     },
     "plating": null

@@ -271,6 +271,15 @@
       "Quà Tặng: Đạt Tiềm Năng Cán Viên Cụ Thể"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Người Mang Ánh Sáng",
+    "type": "Chủ Đề Hồ Sơ",
+    "desc": "Chủ đề giao diện Hồ Sơ. Chủ Đề Hồ Sơ sẽ được hiển thị ở nhiều khu vực khác nhau.",
+    "decoDesc": "Một đường hồ quang rực sáng, một lời nguyện luôn cháy bỏng. Anh đã ước cho thế gian mãi được thái bình.",
+    "obtainWays": [
+      "Quà Tặng: Đạt Tiềm Năng Cán Viên Cụ Thể"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Chủ Đề: Mặc Định",
     "type": "Chủ Đề Hồ Sơ",
@@ -403,6 +412,13 @@
   },
   "item_activity_contract_gold_0": {
     "name": "Xu Thủy Tinh Hóa",
+    "type": "Tiền Sự Kiện",
+    "desc": "Vật phẩm đặc biệt, nhận được khi hoàn thành các nhiệm vụ hợp đồng. Có thể dùng để đổi thưởng tại [Thánh Địa Bí Mật] trong sự kiện [Hợp Đồng Điều Kiện]. Vật phẩm này sẽ bị xóa sau khi [Thánh Địa Bí Mật] đóng lại.",
+    "decoDesc": "Xoay nó trên đầu ngón tay. Ánh sáng rạng rỡ lấp lánh phản chiếu trên bề mặt là minh chứng rằng khế ước cổ xưa vẫn còn tồn tại.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Lam Chàm Thủy Tinh Hóa",
     "type": "Tiền Sự Kiện",
     "desc": "Vật phẩm đặc biệt, nhận được khi hoàn thành các nhiệm vụ hợp đồng. Có thể dùng để đổi thưởng tại [Thánh Địa Bí Mật] trong sự kiện [Hợp Đồng Điều Kiện]. Vật phẩm này sẽ bị xóa sau khi [Thánh Địa Bí Mật] đóng lại.",
     "decoDesc": "Xoay nó trên đầu ngón tay. Ánh sáng rạng rỡ lấp lánh phản chiếu trên bề mặt là minh chứng rằng khế ước cổ xưa vẫn còn tồn tại.",
@@ -2146,6 +2162,15 @@
       "Quà Tặng Vũ Khí"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "Thùng Cấp VK: Nguyệt Quang",
+    "type": "Thùng",
+    "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
+    "decoDesc": "Một thùng hàng nặng dán lớp niêm phong cực kỳ kín. Các Kỹ Sư Kho Vũ Khí cho rằng \"Mục đích khi cung cấp nhiều lựa chọn vũ khí khác nhau là để đảm bảo các hoạt động tác chiến trên chiến trường an toàn hơn\". Và thế là họ chất vào thùng các loại vũ khí mang dáng dấp của Nguyệt Quang.",
+    "obtainWays": [
+      "Quà Tặng Vũ Khí"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "Thùng Cấp VK: Băng Cứng",
     "type": "Thùng",
@@ -2372,6 +2397,13 @@
     "type": "Thùng",
     "desc": "Mở để nhận một bộ trang bị đã đạt mức chế tác tối đa phù hợp với cán viên được chỉ định.",
     "decoDesc": "Các Kỹ Sư Kho Vũ Khí đã dày công chuẩn bị gói trang bị phòng vệ loại β này, bao gồm những món trang bị phù hợp với Cán Viên Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Thùng Trang Bị Phòng Vệ Kho Vũ Khí α: Tinh Hà",
+    "type": "Thùng",
+    "desc": "Chứa một bộ trang bị đã được chế tác tối đa, phù hợp với cán viên được chỉ định. Thùng Phòng Thủ sẽ tự động mở khi nhận được. Trang bị bên trong sẽ được lưu vào Kho Đồ Giá Trị.",
+    "decoDesc": "Các Kỹ Sư Kho Vũ Khí đã dày công chuẩn bị gói trang bị phòng vệ loại α này, bao gồm những món trang bị phù hợp với Cán Viên Argent Flow.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Tín vật Cán Viên",
     "desc": "Tăng Tiềm Năng Của Si.",
     "decoDesc": "Một cuốn sổ sách trông không quá dày. Nghe nói đây chính là \"sổ cái tuyệt mật\" của Chủ Quán Trang Viên Yuanyuan sau bao năm kinh doanh. Thế nhưng khi lật ra đọc, bạn lại thấy bên trong chỉ là những ghi chép và chú thích được viết rất tùy hứng về những sự vật, lời nói và con người mà Si quan tâm nhất. Suy cho cùng, triết lý vận hành Trang Viên Yuanyuan vốn đã nằm ngay trong cái tên của quán trọ này.",
+    "obtainWays": [
+      "Quà Tặng: Cán Viên Mới Gia Nhập"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Tín Vật Của Argent Flow",
+    "type": "Tín vật Cán Viên",
+    "desc": "Tăng tiềm năng của Argent Flow.",
+    "decoDesc": "Một mặt dây lư hương vận hành bằng Thuật Pháp Originium. Lớp vỏ kim loại đã cũ mòn, phủ đầy vết xước. Khi được thắp lên, lư hương tỏa ra mùi thảo mộc thơm dịu. Cũng như bạn, anh hiểu rằng mọi cơ hội được nghỉ ngơi dưới ánh sáng dịu dàng đều hiếm hoi và đáng quý, nhất là với những người đang hành quân ra chiến trường.",
     "obtainWays": [
       "Quà Tặng: Cán Viên Mới Gia Nhập"
     ]
@@ -6141,6 +6182,42 @@
       "Phần Thưởng: Nhiệm Vụ"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Mồi Cay",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Một loại mồi làm từ ớt chua.",
+    "decoDesc": "Viên mồi cỏ này tỏa ra mùi hơi cay nồng, khiến người ta không khỏi tò mò: Làm sao cậu Minghe biết nó có thể chữa bệnh dạ dày cho quái thú chở hàng?",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Cành Cây Của Ye Minghe",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Cành Cây Của Ye Minghe",
+    "decoDesc": "Cành Cây Của Ye Minghe",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Dụng Cụ Sửa Chữa Chuồng Thú",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Một bộ dụng cụ dùng để sửa chữa chuồng thú.",
+    "decoDesc": "Một bộ dụng cụ thông thường nhưng hữu ích. Chúng đã sờn cũ sau nhiều năm sử dụng liên tục.",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Ván Gỗ Chắc Chắn",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Một bộ ván dùng để sửa chữa chuồng thú.",
+    "decoDesc": "Trông không nổi bật, nhưng đủ chắc chắn.",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "\"Điểm Bắt Đầu\"",
     "type": "Vật Phẩm Nhiệm Vụ",
@@ -7274,8 +7351,7 @@
     "decoDesc": "Hồng Sâm là một loại thảo mộc nhẹ thường được người dân Hongshan sử dụng như một loại thực phẩm bổ sung tăng cường sức khỏe.",
     "obtainWays": [
       "Công Viên Khoa Học Originium: Đường Mòn Vách Đá",
-      "Trồng cây tại Nông Trại Sinh Thái",
-      "Thùng Nguyên Liệu"
+      "Trồng cây tại Nông Trại Sinh Thái"
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Vật liệu",
     "desc": "Hạt giống thu được từ Hồng Sâm dại. Hãy gieo trồng trên những ô đất canh tác tự thiết kế để canh tác Hồng Sâm.",
     "decoDesc": "Hạt Hồng Sâm được lựa chọn cẩn thận có kích thước lớn và sức sống mạnh mẽ.",
-    "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Hạt Gạo Hổ Phách",
@@ -7780,6 +7854,15 @@
     "desc": "Một thiết bị hạng nặng có chức năng nghiền nhỏ và nghiền nát nhiều loại vật liệu khác nhau.",
     "decoDesc": "Bạn có nghe thấy tiếng kêu rắc rắc của máy hủy tài liệu công nghiệp nặng không?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli Bập Bênh",
+    "type": "Đồ Trang Trí",
+    "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
+    "decoDesc": "Một món đồ chơi vui nhộn trông giống Nuli. Lắc lư nào, bôn thú bé nhỏ... Ai đó bắt đầu nhớ tuổi thơ rồi nhỉ?",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
   },
   "item_port_jail_1": {
     "name": "Lồng Thú",
@@ -9360,6 +9443,15 @@
       "Trao Đổi Talosite"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Nhàn Du Cùng Cố Hữu",
+    "type": "Tư Thế Chụp Ảnh",
+    "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
+    "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Nhàn Du Cùng Cố Hữu\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Nụ Cười Khác Thường",
     "type": "Tư Thế Chụp Ảnh",
@@ -10281,6 +10373,15 @@
       "Trung Tâm Mua Sắm: Gói"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Vé Chiêu Mộ Có Sao Trời Bên Tôi",
+    "type": "Vật phẩm giá trị có thời hạn",
+    "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà]. Chứng nhận này sẽ hết hạn khi Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà] kết thúc.",
+    "decoDesc": "Giấy phép nhân sự đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
+    "obtainWays": [
+      "Trung Tâm Mua Sắm: Gói"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Vé Chiêu Mộ Đặc Quyền ×10",
     "type": "Giá Trị",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Chân dung",
+    "desc": "Chân dung có thể thay đổi trong màn hình Hồ Sơ. Chân dung hồ sơ sẽ được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Quà Tặng: Cán Viên Mới Gia Nhập"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Argent Flow",
     "type": "Chân dung",
     "desc": "Chân dung có thể thay đổi trong màn hình Hồ Sơ. Chân dung hồ sơ sẽ được hiển thị ở nhiều vị trí khác nhau.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Vé Chiêu Mộ Linh Hồn Tái Sinh",
     "type": "Vật phẩm giá trị có thời hạn",
     "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong Chiêu Mộ Đặc Quyền [Tân Sinh]. Chứng nhận này sẽ hết hạn khi kết thúc Chiêu Mộ Đặc Quyền [Tân Sinh].",
+    "decoDesc": "Giấy phép nhân sự đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
+    "obtainWays": [
+      "Trung Tâm Mua Sắm: Gói"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Vé Chiêu Mộ Có Sao Trời Bên Tôi",
+    "type": "Vật phẩm giá trị có thời hạn",
+    "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà]. Chứng nhận này sẽ hết hạn khi Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà] kết thúc.",
     "decoDesc": "Giấy phép nhân sự đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
     "obtainWays": [
       "Trung Tâm Mua Sắm: Gói"

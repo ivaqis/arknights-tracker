@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Construct File: Geist - Normal",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower019_ex": {
     "name": "Construct File: Geist - Brutal",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower019_s": {
     "name": "Construct File: Geist - Hard",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 5 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower020": {
     "name": "Defense File: Shield - Normal",
@@ -303,6 +303,11 @@
     "name": "Re-Ignition Experimental Operation",
     "description": "- The operation comprises 4 consecutive enemy waves to fight. Defeat all enemy waves to complete the operation.\n- Healing Masses will be dropped between the waves. Touch them to restore HP to every teammate.\n- There is a resting session between waves, during which the operators are still considered to be in battle.\n- The operation has a countdown timer. Once the timer ends or all operators in the team are reduced to ZERO HP, the operation is interrupted.\n- Tacticals and consumables cannot be used.",
     "featureDesc": "- The enemies are various types of Aggeloi.\n- Some enemies apply Cryo Infliction to operators. An operator who reaches 4 Cryo Infliction stacks becomes solidified."
+  },
+  "indie_contract002": {
+    "name": "Indigo Experimental Operation",
+    "description": "- The operation comprises 3 consecutive enemy waves to fight. Defeat all enemy waves to complete the operation.\n- Healing Masses will be dropped between the waves. Touch them to restore HP to every teammate.\n- There is a resting session between waves, during which the operators are still considered to be in battle.\n- The operation has a countdown timer. Once the timer ends or all operators in the team are reduced to ZERO HP, the operation is interrupted.\n- Tacticals and consumables cannot be used.",
+    "featureDesc": "- Enemies include various blightshades, witchcraft creations, feral beasts, and Cangzei pirates such as Cloud Obliterators.\n- You can still apply Vulnerability, Arts Inflictions, Physical Statuses, and Arts Reactions to enemies with shield stacks."
   },
   "indie_hard001": {
     "name": "Rampaging Shields",

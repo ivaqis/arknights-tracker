@@ -271,6 +271,15 @@
       "Presente: Alcançar Potenciais de Operador Específicos"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Portador da Luz",
+    "type": "Tema de Perfil",
+    "desc": "Um tema para a tela de Perfil. Os temas de perfil são mostrados em vários locais.",
+    "decoDesc": "Um arco luminoso e eletrizante, um compromisso sempre ardente, ele fez um desejo de trazer paz eterna ao mundo.",
+    "obtainWays": [
+      "Presente: Alcançar Potenciais de Operador Específicos"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Tema: Padrão",
     "type": "Tema de Perfil",
@@ -406,6 +415,13 @@
     "type": "Moeda do Evento",
     "desc": "Um item especial adquirido ao completar missões de contrato. Ele pode ser trocado por recompensas no [Santuário Secreto] do evento [Contrato de Contingência]. O item será removido quando o [Santuário Secreto] for encerrado.",
     "decoDesc": "Gire-o na ponta do seu dedo. O brilho cintilante que reflete em sua superfície é a prova de que o antigo contrato perdura.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Índigo Vitrificado",
+    "type": "Moeda do Evento",
+    "desc": "Um item especial adquirido ao completar missões de contrato. Ele pode ser trocado por recompensas no [Santuário Secreto] do evento [Contrato de Contingência]. O item será removido quando o [Santuário Secreto] for encerrado.",
+    "decoDesc": "Gire-o na ponta do seu dedo. O brilho cintilante que reflete em sua superfície é a prova de que o contrato antigo perdura.",
     "obtainWays": []
   },
   "item_activity_copper_poly": {
@@ -2146,6 +2162,15 @@
       "Oferta de Armas"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "CO Armas: Brilho da Lua",
+    "type": "Caixote",
+    "desc": "Abra para selecionar e receber uma das armas fornecidas.",
+    "decoDesc": "Um caixote pesado com vedações incrivelmente herméticas. \"O objetivo de fornecer opções diversificadas de armamento é garantir operações mais seguras no campo de batalha\", pensaram os Engenheiros de Arsenal. E assim eles encheram o caixote com armamento que refletia o Brilho da Lua.",
+    "obtainWays": [
+      "Oferta de Armas"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "CO Armas: Gelo Sólido",
     "type": "Caixote",
@@ -2372,6 +2397,13 @@
     "type": "Caixote",
     "desc": "Abra este item para obter um conjunto de equipamentos com aprimoramento máximo e compatível com um operador especificado.",
     "decoDesc": "Os Engenheiros de Arsenal prepararam meticulosamente este pacote de equipamentos defensivos do tipo β com peças adequadas para a Operadora Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Caixote de Defesa do Arsenal α: Rio da Estrela",
+    "type": "Caixote",
+    "desc": "Contém um conjunto de equipamentos com aprimoramento máximo que é adequado para um operador específico. Os caixotes de defesa são abertos automaticamente após a aquisição. Os equipamentos contidos neles serão armazenados na Reserva de Itens de Valor.",
+    "decoDesc": "Os Engenheiros de Arsenal prepararam meticulosamente este pacote de equipamentos defensivos do tipo α com peças adequadas para o Operador Argent Flow.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Símbolo do Operador",
     "desc": "Aumenta o potencial de Si.",
     "decoDesc": "Um livro de contabilidade que não parece muito grosso. Dizem que este é o \"livro-razão ultrassecreto\" do Administrador da Hospedaria Yuanyuan depois de todos esses anos no ramo. No entanto, ao abri-lo para ler, você encontra, em vez disso, um conjunto de registros e anotações escritas de forma casual sobre coisas, ditados e pessoas que Si mais valoriza. Afinal, os princípios de funcionamento da Mansão Yuanyuan estão no próprio nome da hospedaria.",
+    "obtainWays": [
+      "Presente: Integração do Operador"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Símbolo de Argent Flow",
+    "type": "Símbolo do Operador",
+    "desc": "Aumenta o potencial de Argent Flow.",
+    "decoDesc": "Um pingente em forma de orbe para incenso movido pelas Artes de Originium. A caixa metálica está muito desgastada e coberta de arranhões. Quando aceso, o orbe exala um aroma suave de ervas aromáticas. Assim como você, ele sabia que toda e qualquer oportunidade de descansar sob uma luz suave é rara e bem-vinda, especialmente para aqueles que marcham rumo aos campos de guerra.",
     "obtainWays": [
       "Presente: Integração do Operador"
     ]
@@ -6141,6 +6182,42 @@
       "Recompensa: Missão"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Isca Apimentada",
+    "type": "Item da Missão",
+    "desc": "Uma isca feita com pimentas azedas.",
+    "decoDesc": "Essa bola de isca feita de grama exala um cheiro que carrega um leve toque de irritação. Ela é motivo de curiosidade. Como Minghe descobriu que isso é uma espécie de cura para problemas gástricos em bestas de carga?",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Ramo de Ye Minghe",
+    "type": "Item da Missão",
+    "desc": "Ramo de Ye Minghe",
+    "decoDesc": "Ramo de Ye Minghe",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Ferramentas para Reparos de Currais de Bestas",
+    "type": "Item da Missão",
+    "desc": "Um conjunto de ferramentas para reparar currais de bestas.",
+    "decoDesc": "Um conjunto de ferramentas comuns, porém úteis. Elas estão bastante desgastadas após anos de uso intenso.",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Tábuas Resistentes",
+    "type": "Item da Missão",
+    "desc": "Um conjunto de tábuas para reparar currais de bestas.",
+    "decoDesc": "Simples, porém bastante resistentes.",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "\"Ponto de Partida\"",
     "type": "Item da Missão",
@@ -7274,8 +7351,7 @@
     "decoDesc": "O Ginseng Redjade é uma erva suave frequentemente consumida pelas pessoas em Hongshan como suplemento fortificante.",
     "obtainWays": [
       "Parque Científico de Originium: Trilha do Penhasco",
-      "Plante culturas na Fazenda Ecológica",
-      "Caixote de Ingredientes"
+      "Plante culturas na Fazenda Ecológica"
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Material",
     "desc": "Sementes colhidas da planta Ginseng Redjade selvagem. Cultive-as em lotes agrícolas preparados para produzir Ginseng Redjade.",
     "decoDesc": "Sementes de Ginseng Redjade cuidadosamente selecionadas por seu tamanho generoso e vitalidade.",
-    "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Sementes de Arroz Âmbar",
@@ -7780,6 +7854,15 @@
     "desc": "Uma instalação pesada que tritura e pulveriza vários materiais.",
     "decoDesc": "Você consegue ouvir o barulho dos trituradores industriais pesados?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli de Balanço",
+    "type": "Ornamento",
+    "desc": "Um ornamento que pode ser colocado. Ele está armazenado no painel Ornamento da Lista de Instalações.",
+    "decoDesc": "Um brinquedo divertido parecido com Nuli. Balance, minha pequena galopante... Quem já está com saudades da infância?",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
   },
   "item_port_jail_1": {
     "name": "Gaiola do Tigre",
@@ -9360,6 +9443,15 @@
       "Troca de Talosita"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "À Toa com um Velho Amigo",
+    "type": "Pose para a Câmera",
+    "desc": "Uma pose para os operadores.",
+    "decoDesc": "Uma interpretação do significado por trás de \"À Toa com um Velho Amigo\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Não é o Sorriso de Sempre",
     "type": "Pose para a Câmera",
@@ -10281,6 +10373,15 @@
       "Centro de Aquisições: Pacotes"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permissão para CT As Estrelas Estão Comigo",
+    "type": "Item de Valor STL",
+    "desc": "Um certificado da Endfield Industries com tempo limitado. Use isso para realizar 1 caça de talentos na Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela]. Este certificado irá expirar quando a Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela] terminar.",
+    "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
+    "obtainWays": [
+      "Centro de Aquisições: Pacotes"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Permissão para CT-10× Privilegiada",
     "type": "Item de Valor",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Retrato",
+    "desc": "Um retrato que pode ser alterado na tela de Perfil. Os retratos de perfil são mostrados em vários lugares.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Presente: Integração do Operador"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Argent Flow",
     "type": "Retrato",
     "desc": "Um retrato que pode ser alterado na tela de Perfil. Os retratos de perfil são mostrados em vários lugares.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Permissão para CT Restauração do Espírito",
     "type": "Item de Valor STL",
     "desc": "Um certificado da Endfield Industries com tempo limitado. Use isso para realizar 1 caça de talentos na Caça de Talentos Privilegiada [Rejuvenescimento]. Este certificado expirará quando a Caça de Talentos Privilegiada [Rejuvenescimento] terminar.",
+    "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
+    "obtainWays": [
+      "Centro de Aquisições: Pacotes"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permissão para CT As Estrelas Estão Comigo",
+    "type": "Item de Valor STL",
+    "desc": "Um certificado da Endfield Industries com tempo limitado. Use isso para realizar 1 caça de talentos na Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela]. Este certificado irá expirar quando a Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela] terminar.",
     "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
     "obtainWays": [
       "Centro de Aquisições: Pacotes"

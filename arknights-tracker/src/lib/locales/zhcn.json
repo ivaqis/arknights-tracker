@@ -1082,7 +1082,8 @@
     "typhoeus": "提弗洛斯",
     "endministrator": "管理员",
     "purrchena": "噗切娜",
-    "si": "祀"
+    "si": "祀",
+    "argentFlow": "明河"
   },
   "weaponsList": {
     "custom_weapon": "自定义武器",
@@ -3462,7 +3463,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "踞渊北眺十连凭证",
     "ticketgacha_special_ten_lt_1_4_2": "明耀晨星十连凭证",
     "ticketgacha_weaponbox_lt_1_2_2": "融火于风申领凭证",
-    "ticketweaponbox_ten_1_lt": "限时武器宝箱十连券"
+    "ticketweaponbox_ten_1_lt": "限时武器宝箱十连券",
+    "business_card_topic_chr_0037_minghe": "携光",
+    "item_activity_contract_gold_1": "晶化硬币·浸蓝",
+    "item_case_wpn_selfselect_gahca_1_6_2": "补充武库箱·月映",
+    "item_char_equip_supply_minghe": "武库防具箱α·天河",
+    "item_charpotentialup_chr_0037_minghe": "明河的信物",
+    "item_mission_c37m1_foragel": "辛辣饵料 ",
+    "item_mission_c37m3_branch": "夜明河赠与的树枝",
+    "item_mission_c37m3_tools": "修理兽棚的工具",
+    "item_mission_c37m3_woodenboard": "结实的木板",
+    "item_port_horse_1": "摇摇怒骊",
+    "item_shot_anim_minghe_m_1": "老友的闲时",
+    "item_ticketgacha_special_single_lt_1_6_2": "星河共我寻访凭证",
+    "item_user_avatar_chr_0037_minghe": "明河",
+    "ticketgacha_special_single_lt_1_6_2": "星河共我寻访凭证"
   },
   "buildingNames": {
     "component_mc_1": "配件机",

@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "\"Índigo Purificado\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "3": {
+        "desc": "Em [Contrato de Contingência: Operação Experimental Índigo], conclua com êxito um desafio com ≥ 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> de Total de Critérios de Teste",
+        "completeDesc": "O presente foi maculado por um tom corruptor de índigo. Mas, enquanto você estiver conosco, a chama da reignição jamais se apagará."
+      }
+    },
+    "plating": {
+      "desc": "Em [Contrato de Contingência: Operação Experimental Índigo], conclua com êxito um desafio com ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> de Total de Critérios de Teste"
+    }
+  },
   "achv_event_dungfight": {
     "name": "\"Sobrevivente Especialista\"",
     "category": "Evento",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Conclua a missão secundária [Um Punhado de Reflexões]",
         "completeDesc": "Seus punhos questionam minha determinação, mas meu Qi atravessa as terras e desafia o próprio trovão."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "\"De Volta ao Rústico\"",
+    "category": "Capítulo",
+    "group": "Missão de Exploração",
+    "levels": {
+      "2": {
+        "desc": "Conclua a missão secundária [De Volta ao Rústico]",
+        "completeDesc": "Quando a crista da lâmina puder sustentar várias folhas novas e alguns sons de feras, finalmente saberemos que nosso coração sempre tem um lugar de origem."
       }
     },
     "plating": null

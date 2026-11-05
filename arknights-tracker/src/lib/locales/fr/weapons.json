@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "J'ai croisé ce conteur. À l'époque, il était installé dans un coin de la ville. Il avait un air un peu fou et ne parlait que d'épées.\nLes spadamanciens qu'il décrivait avaient tous des parcours différents. Certains agissaient par pur altruisme et ne souhaitaient rien d'autre que sauver le monde. D'autres partaient seuls en pèlerinage pour perfectionner leur maîtrise de l'épée. D'autres encore parcouraient le monde en quête de nouveaux adversaires. Chaque spadamancien possédait une lame différente, mais toutes étaient tranchantes et surtout, chacune était une légende à part entière. À chaque fois que le conteur s'enflammait, il saisissait sa vieille épée et faisait de grands moulinets, la lame fendant le vent dans des éclairs de lumière froide. C'était un spectacle fascinant pour tous ceux qui y assistaient. Il semblait maîtriser l'art suprême de la spadamancie.\nQuant à l'origine du conteur, les rumeurs allaient bon train, mais rien n'était vraiment concret. Face à sa tenue, certains pensaient qu'il s'agissait d'un ancien Tianshi. Un jour, un curieux osa lui poser la question, mais le conteur répondit : « Est-ce vraiment important ? Je ne suis qu'un simple voyageur, un conteur, un amateur d'épées, une personne ordinaire qui ne fait que relater des histoires de lames tranchantes. »\nIl contait encore ses histoires d'épées le jour où il me fit ses adieux. La nuit tombait, le public était parti. Il ne restait que moi. En tant que forgeron, j'avais toujours eu du mal à contenir la curiosité que je ressentais à l'égard de son passé et de sa lame. Alors, je profitai de cette occasion pour lui demander, avant son départ : « Tu nous as conté bien des légendes d'épées. As-tu une histoire pour celle que tu portes ? »\nLe conteur s'assit à une table et vida la carafe de cohl qu'il avait commandée.\nÀ moitié ivre, il entama son récit. Il avait entendu parler de « l'Appel lunaire », une lame perdue sur Talos-II, forgée par un maître du Grand Yan. Elle frappait avec une force incroyable. Rien ne pouvait lui résister. Après avoir franchi le Portail cosmique et atteint Talos-II, il réalisa qu'il lui était désormais impossible de rentrer chez lui. Sa quête de la lame vira alors à l'obsession et il parcourut toute la Ceinture civilisée pour la retrouver. Il rencontra beaucoup de gens qui prétendaient l'avoir vue, mais leurs descriptions variaient énormément. Troublé par ces témoignages contradictoires, le conteur se persuada que l'Appel lunaire n'était qu'une légende et il décida même de mettre un terme à son voyage, jusqu'alors infructueux.\nUn jour, alors qu'il se reposait dans la nature, il vit un jeune homme encerclé par plusieurs Aggeloi et le sauva. Reconnaissant, le jeune remarqua soudain l'épée qu'il portait et ne put cacher sa surprise : « Le motif sur la lame, les couleurs du pommeau... Ce sont exactement ceux de la légende. Monsieur, seriez-vous le porteur de l'Appel lunaire ? »\nLa révélation laissa d'abord le conteur stupéfait, puis songeur. Il voyageait depuis si longtemps... Il avait même combattu pour aider les plus démunis. Les gens parlaient désormais de ses exploits et juraient que sa lame n'était autre que l'Appel lunaire.\nD'un coup, il eut une révélation. Tous les indices convergeaient : les témoignages contradictoires n'étaient pas erronés. L'Appel lunaire n'était pas une seule lame, mais une multitude d'épées. Ce n'était pas le nom d'un objet unique. Plusieurs armes avaient mérité ce titre par leurs exploits.\nAprès m'avoir raconté cette histoire, il se leva, prêt à partir.\n« Je suppose que nous pourrions ajouter quelque chose à cette histoire », dis-je, ému, en contemplant le reflet de la lune dans mon verre de cohl.\nUn sourire illumina le visage du conteur. « Oui. Elle ne peut pas s'arrêter là. »\nSur ce, il fit un geste de la main et s'enfonça dans la nuit. Nul ne sait ce qu'il advint par la suite.\nL'histoire s'acheva et la lame fut forgée. Je la remis au jeune spadamancien qui se tenait devant moi, étonnamment calme. La lumière de la lune scintilla lorsqu'il la fit vibrer. L'épée émit un doux son qui résonna longtemps et doucement dans la nuit.\nLe spadamancien accepta solennellement mon œuvre. Il semblait pensif, mais me remercia avant de partir. Je le vis disparaître sous le clair de lune...\nMa vision devint floue. Je me demandai : ai-je vu un spadamancien marcher dans la nuit, ou une épée reflétant l'appel de la lune ?",
+    "decoDesc": "Chef-d'œuvre emblématique des spadamanciens de Hongshan. Forgée à l'aide des dernières technologies de fusion de métaux et des techniques de forge ancestrales yanaises, cette arme allie performances exceptionnelles et beauté intemporelle.",
+    "skills": [
+      {
+        "name": "Volonté [G]",
+        "description": "Volonté <@ba.vup>+{will}</>."
+      },
+      {
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Altération : Ruissellement d'étoiles",
+        "description": "Octroie <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts.\nLorsque la compétence de l'utilisateur applique une <#ba.conduct>Électrification</>, toute l'équipe gagne <@ba.vup>+{atk_up:0.0%}</> d'ATQ pendant {duration:0} s.\nQuand l'utilisateur <#ba.consume>consomme</> une <#ba.spellinflict>altération des Arts</>, il inflige <@ba.vup>+{pulse_dmg_up:0.0%}</> de DÉG électriques pendant {duration2:0} s.\n<@ba.info>Les deux effets s'appliquent séparément et ne sont pas cumulables.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Cette terre n'a peut-être rien de spécial. \nLes mêmes vieilles plaines, le même vieil air et la même vieille mer. Le ciel est différent, par contre. Il y a une énorme planète qu'on peut voir clairement, même en plein jour. Et il n'y a pas de lunes jumelles la nuit. Mais la vie n'est pas très différente de ce qu'elle était sur Terra. \nEst-ce que c'est une bonne chose ? Je ne sais pas. \nJe suis là à cause de la mobilisation générale, mais ça paye et il y a à manger. Rien d'autre. \n\nMais le temps passant, j'ai commencé à ressentir les différences. \nLes Terres étaient exemptes d'originium. Bon sang, même les frontières étaient une vaste blague. Je pensais que c'était une sorte de travail de pionnier colombien, où les gens traînent toute la journée dans les terres sauvages pour trouver quelque chose à manger. Mais aujourd'hui, quelqu'un qui avait l'air d'appartenir à l'aristocratie leithanienne m'a demandé, à moi, un travailleur forcé, de lui expliquer les spécificités de certaines pièces de machines et la façon d'utiliser ces machines. \nEt ce cher noble ne plaisantait pas. \nUrsusien, leithanien, colombien... Toutes ces étiquettes différentes sont maintenant réduites aux idées d'équipier, d'ami et de partenaire. \nJ'aime bien la façon dont les choses ont tourné, c'est super ! Mais comment c'est arrivé ? Je ne sais pas vraiment. \nJ'ai posé quelques questions autour de moi et ils n'y comprennent pas grand-chose non plus. Alors, je n'ai pas eu de réponse pendant un bon moment, jusqu'à ce que... \n\n« C'est quoi, Endfield ? » \nJ'ai posé cette question à l'immense chef d'équipe sarkaz quand je me suis présenté au travail pour la première fois. End-field, ça me semblait un peu contre-indiqué comme nom pour une entreprise qui travaille dans les Confins. \nIl n'a rien dit. À la place, il nous a emmenés à la proue du vaisseau qui servait de QG temporaire à Endfield. Et il nous a dit de bien regarder la planète et le monde. \nLa planète et le monde... On n'avait quasiment jamais utilisé ces termes, avant. \nLe chef d'équipe a vu ma confusion et il a souri. Il m'a dit que c'était ça, la signification d'Endfield. \n« Ça veut dire qu'on doit utiliser de nouveaux mots qui sonnent bien ? » \n« Ça veut dire qu'on a laissé notre passé sur Terra. » \n\nIl avait peut-être raison. \nAvant qu'on décide de traverser le Portail cosmique pour arriver ici, moi et tous les autres, on avait laissé quelque chose sur Terra, pour toujours. \nLes gens qui luttaient dans les puits de mine, ceux qui parcouraient les terres sauvages, ceux qui travaillaient dans les villes, ceux qui faisaient des concerts dans les tours... On était tous à bord de ce vaisseau, épaule contre épaule, prêts à bâtir un avenir ensemble. \nLe destin nous avait laissé le choix. On a choisi de faire différemment du passé pour créer un nouveau mode de vie. \n\nÀ quoi ressemblera ce monde ? Aucune idée. \nParce qu'on est en train de le construire. \nDes bâtiments vont se dresser et des cultures vont sortir de terre. \nVoilà notre réponse retentissante, le monde qu'on est en train de construire.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Assaut : Vision d'avenir",
         "description": "Au début du combat, toute l'équipe gagne le bonus <@ba.key>Aspiration onirique</> qui augmente les DÉG infligés de <@ba.vup>{dmg_up:0.0%}</>, l'intensité des Arts de <@ba.vup>{phy_spell_up:0}</> et la DÉF de <@ba.vup>{def_up:0.0%}</> pendant {duration:0} s. Quand <@ba.key>Aspiration onirique</> prend fin, l'utilisateur soigne toute l'équipe à hauteur de <@ba.heal>{hp_up_c:0}</> PV.\n<@ba.info>Les effets du même nom ne sont pas cumulables.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Appel lunaire",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Volonté [G]",
-        "description": "Volonté <@ba.vup>+{will}</>."
-      },
-      {
-        "name": "ATQ [G]",
-        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Altération : Ruissellement d'étoiles",
-        "description": ""
       }
     ]
   }

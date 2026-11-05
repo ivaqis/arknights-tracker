@@ -1043,7 +1043,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Argent Flow"
   },
   "weaponsList": {
     "custom_weapon": "Arma Personalizada",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Permissão 10× Olhe para a Fenda ao Norte",
     "ticketgacha_special_ten_lt_1_4_2": "Permissão 10× Estrela do Alvorecer Deslumbrante",
     "ticketgacha_weaponbox_lt_1_2_2": "Certificado de Distribuição Chama aos Ventos",
-    "ticketweaponbox_ten_1_lt": "Certificado 10× de Caixote de Armas STL"
+    "ticketweaponbox_ten_1_lt": "Certificado 10× de Caixote de Armas STL",
+    "business_card_topic_chr_0037_minghe": "Portador da Luz",
+    "item_activity_contract_gold_1": "Índigo Vitrificado",
+    "item_case_wpn_selfselect_gahca_1_6_2": "CO Armas: Brilho da Lua",
+    "item_char_equip_supply_minghe": "Caixote de Defesa do Arsenal α: Rio da Estrela",
+    "item_charpotentialup_chr_0037_minghe": "Símbolo de Argent Flow",
+    "item_mission_c37m1_foragel": "Isca Apimentada",
+    "item_mission_c37m3_branch": "Ramo de Ye Minghe",
+    "item_mission_c37m3_tools": "Ferramentas para Reparos de Currais de Bestas",
+    "item_mission_c37m3_woodenboard": "Tábuas Resistentes",
+    "item_port_horse_1": "Nuli de Balanço",
+    "item_shot_anim_minghe_m_1": "À Toa com um Velho Amigo",
+    "item_ticketgacha_special_single_lt_1_6_2": "Permissão para CT As Estrelas Estão Comigo",
+    "item_user_avatar_chr_0037_minghe": "Argent Flow",
+    "ticketgacha_special_single_lt_1_6_2": "Permissão para CT As Estrelas Estão Comigo"
   },
   "buildingNames": {
     "component_mc_1": "Unidade de Montagem",

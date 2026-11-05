@@ -271,6 +271,15 @@
       "Regalo: Alcanza potenciales específicos de operadores"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Portador de la luz",
+    "type": "Tema del perfil",
+    "desc": "Un tema para la pantalla de Perfil. Los temas de perfil se muestran en varios lugares.",
+    "decoDesc": "Un brillante arco electrizante, un compromiso siempre ardiente, formuló el deseo de traer al mundo una paz eterna.",
+    "obtainWays": [
+      "Regalo: Alcanza potenciales específicos de operadores"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Tema: predeterminado",
     "type": "Tema del perfil",
@@ -403,6 +412,13 @@
   },
   "item_activity_contract_gold_0": {
     "name": "Moneda vitrificada",
+    "type": "Moneda de evento",
+    "desc": "Un objeto especial obtenido al completar misiones de contrato. Se puede canjear por recompensas en el [Santuario secreto] del evento [Contrato de contingencia]. El objeto se eliminará una vez que cierre el [Santuario secreto].",
+    "decoDesc": "Hazla girar en la punta de tu dedo. El resplandor centelleante que se refleja en su superficie es prueba de que el Contrato antiguo sigue vivo.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Índigo vitrificado",
     "type": "Moneda de evento",
     "desc": "Un objeto especial obtenido al completar misiones de contrato. Se puede canjear por recompensas en el [Santuario secreto] del evento [Contrato de contingencia]. El objeto se eliminará una vez que cierre el [Santuario secreto].",
     "decoDesc": "Hazla girar en la punta de tu dedo. El resplandor centelleante que se refleja en su superficie es prueba de que el Contrato antiguo sigue vivo.",
@@ -2146,6 +2162,15 @@
       "Ofrenda de armas"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "CO de armas: Resplandor lunar",
+    "type": "Caja",
+    "desc": "Ábrelo para seleccionar y recibir una de las armas que contiene.",
+    "decoDesc": "Una caja pesada con sellos increíblemente herméticos. “El objetivo de ofrecer diversas opciones de armas es garantizar operaciones de campo más seguras”, pensaron los Ingenieros del Arsenal. Y así llenaron la caja con armamento que reflejaba el Resplandor lunar.",
+    "obtainWays": [
+      "Ofrenda de armas"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "CO de armas: Hielo sólido",
     "type": "Caja",
@@ -2372,6 +2397,13 @@
     "type": "Caja",
     "desc": "Abre esto para obtener un conjunto de equipamiento con elaboración al máximo que corresponde a un operador específico.",
     "decoDesc": "Los Ingenieros del Arsenal prepararon minuciosamente este paquete de equipamiento defensivo de tipo β con piezas de equipamiento aptas para la operadora Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Caja de defensa de Arsenal α: Río estelar",
+    "type": "Caja",
+    "desc": "Contiene un conjunto de equipamiento compatible con un operador específico y con la elaboración al máximo. Las Cajas de defensa se abren automáticamente al obtenerlas. El equipamiento de su interior se guardará en la Reserva de objetos de valor.",
+    "decoDesc": "Los Ingenieros del Arsenal prepararon meticulosamente este paquete de equipamiento defensivo tipo α con piezas adecuadas para el operador Argent Flow.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2813,6 +2845,15 @@
     "type": "Ficha de operador",
     "desc": "Aumenta el potencial de Si.",
     "decoDesc": "Un libro de contabilidad que no parece muy grueso. Dicen que este es el “libro mayor ultrasecreto” de la posadera de Yuanyuan tras tantos años en el negocio. Sin embargo, al abrirlo para leerlo, encuentras una colección de registros y notas escritas despreocupadamente sobre cosas, dichos y personas que más le importan a Si. Después de todo, los principios para administrar la Mansión Yuanyuan se encuentran en el propio nombre de la posada.",
+    "obtainWays": [
+      "Regalo: Incorporación de operador"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Ficha de Argent Flow",
+    "type": "Ficha de operador",
+    "desc": "Aumenta el potencial de Argent Flow.",
+    "decoDesc": "Un colgante con un orbe de incienso alimentado por Artes de Originio. La carcasa metálica está muy desgastada y cubierta de arañazos. Al encenderse, el orbe desprende un suave aroma a hierbas fragantes. Como tú, él sabía que toda oportunidad de descansar bajo una luz apacible es rara y bienvenida, especialmente para quienes marchan hacia los campos de batalla.",
     "obtainWays": [
       "Regalo: Incorporación de operador"
     ]
@@ -6147,6 +6188,42 @@
       "Recompensa: Misión"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Cebo picante",
+    "type": "Objeto de misión",
+    "desc": "Cebo elaborado con Pimienta ácida.",
+    "decoDesc": "Esta bola de cebo herbáceo desprende un olor con un ligero toque irritante. Es algo que despierta la curiosidad. ¿Cómo descubrió Minghe que cura las dolencias estomacales de las bestias de carga?",
+    "obtainWays": [
+      "Recompensa: Misión"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Rama de Ye Minghe",
+    "type": "Objeto de misión",
+    "desc": "Rama de Ye Minghe",
+    "decoDesc": "Rama de Ye Minghe",
+    "obtainWays": [
+      "Recompensa: Misión"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Herramientas para reparar corrales de bestias",
+    "type": "Objeto de misión",
+    "desc": "Conjunto de herramientas para reparar corrales de bestias.",
+    "decoDesc": "Conjunto de herramientas comunes, pero útiles. Están muy desgastadas tras años de uso intensivo.",
+    "obtainWays": [
+      "Recompensa: Misión"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Tablones resistentes",
+    "type": "Objeto de misión",
+    "desc": "Conjunto de tablones para reparar corrales de bestias.",
+    "decoDesc": "Sencillos, pero suficientemente resistentes.",
+    "obtainWays": [
+      "Recompensa: Misión"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "“Punto inicial”",
     "type": "Objeto de misión",
@@ -7280,8 +7357,7 @@
     "decoDesc": "El Ginseng de jade rojo es una hierba suave consumida a menudo por los habitantes de Hongshan como un suplemento fortificante.",
     "obtainWays": [
       "Parque científico de Originio: Sendero del acantilado",
-      "Planta cosechas en la Granja ecológica",
-      "Caja de ingredientes"
+      "Planta cosechas en la Granja ecológica"
     ]
   },
   "item_plant_sp_4": {
@@ -7318,9 +7394,7 @@
     "type": "Material",
     "desc": "Semillas recolectadas de ginseng de jade rojo silvestre. Cultívalas con terrenos de cultivo diseñados para obtener ginseng de jade rojo.",
     "decoDesc": "Semillas de Ginseng de jade rojo cuidadosamente seleccionadas por su gran tamaño y vitalidad.",
-    "obtainWays": [
-      "Tienda: Guardiana de la despensa “Apresurada”"
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Semillas de arroz ámbar",
@@ -7786,6 +7860,15 @@
     "desc": "Una instalación pesada que tritura y pulveriza diversos materiales.",
     "decoDesc": "¿Puedes oír el crujido de las trituradoras industriales pesadas?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli balancín",
+    "type": "Decorativo",
+    "desc": "Un objeto decorativo que se puede colocar. Se almacena en el panel Decorativos de la Lista de instalaciones.",
+    "decoDesc": "Un juguete divertido que se parece a Nuli. Balancéate, mi pequeña galopante... ¿Quién ya está extrañando su infancia?",
+    "obtainWays": [
+      "Intercambio de Talosita"
+    ]
   },
   "item_port_jail_1": {
     "name": "Jaula de tigre",
@@ -9366,6 +9449,15 @@
       "Intercambio de Talosita"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Pasando el rato con una vieja amistad",
+    "type": "Pose para la cámara",
+    "desc": "Una pose para la cámara que los operadores pueden utilizar.",
+    "decoDesc": "Una interpretación del significado de “Pasando el rato con una vieja amistad”. Esta impresión es bastante clara y, al mismo tiempo, esotérica.",
+    "obtainWays": [
+      "Intercambio de Talosita"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Una sonrisa poco habitual",
     "type": "Pose para la cámara",
@@ -10287,6 +10379,15 @@
       "Centro de adquisición: Paquetes"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permiso de C.R. de Las estrellas están conmigo",
+    "type": "Objeto de valor de tiempo limitado",
+    "desc": "Un certificado de Endfield Industries por tiempo limitado. Úsalo para realizar 1 Caza de reclutas en la Caza de reclutas certificada [El Calor Terrenal atrae al Flujo Estelar]. Este certificado caducará cuando termine la Caza de reclutas certificada [El Calor Terrenal atrae al Flujo Estelar].",
+    "decoDesc": "Un permiso especial de RR. HH. para la Caza de reclutas de operadores que cumplen diversos requisitos únicos. Dada la urgencia de esta solicitud, este permiso inevitablemente vencerá después de cierto límite de tiempo.",
+    "obtainWays": [
+      "Centro de adquisición: Paquetes"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Permiso de C.R. certificada ×10",
     "type": "Objeto de valor",
@@ -10917,6 +11018,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Retrato",
+    "desc": "Un retrato que puedes cambiar en la pantalla de Perfil. Los retratos de perfil se muestran en varios lugares.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Regalo: Incorporación de operador"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Argent Flow",
     "type": "Retrato",
     "desc": "Un retrato que puedes cambiar en la pantalla de Perfil. Los retratos de perfil se muestran en varios lugares.",
     "decoDesc": "",
@@ -13541,6 +13651,15 @@
     "name": "Permiso de C.R. de Restauración del espíritu",
     "type": "Objeto de valor de tiempo limitado",
     "desc": "Un certificado de Endfield Industries por tiempo limitado. Úsalo para realizar 1 caza de reclutas en la Caza de reclutas certificada de [Rejuvenecimiento]. Este certificado caducará cuando termine la Caza de reclutas certificada de [Rejuvenecimiento].",
+    "decoDesc": "Un permiso especial de RR. HH. para la Caza de reclutas de operadores que cumplen diversos requisitos únicos. Dada la urgencia de esta solicitud, este permiso inevitablemente vencerá después de cierto límite de tiempo.",
+    "obtainWays": [
+      "Centro de adquisición: Paquetes"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permiso de C.R. de Las estrellas están conmigo",
+    "type": "Objeto de valor de tiempo limitado",
+    "desc": "Un certificado de Endfield Industries por tiempo limitado. Úsalo para realizar 1 Caza de reclutas en la Caza de reclutas certificada [El Calor Terrenal atrae al Flujo Estelar]. Este certificado caducará cuando termine la Caza de reclutas certificada [El Calor Terrenal atrae al Flujo Estelar].",
     "decoDesc": "Un permiso especial de RR. HH. para la Caza de reclutas de operadores que cumplen diversos requisitos únicos. Dada la urgencia de esta solicitud, este permiso inevitablemente vencerá después de cierto límite de tiempo.",
     "obtainWays": [
       "Centro de adquisición: Paquetes"

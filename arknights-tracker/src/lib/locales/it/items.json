@@ -271,6 +271,15 @@
       "Regalo: raggiungi specifici potenziali dell'operatore"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Portatore di luce",
+    "type": "Tema del profilo",
+    "desc": "Un tema per la schermata Profilo. I temi del profilo sono visibili in vari contesti.",
+    "decoDesc": "Un arco elettrico risplende, una volontà arde incrollabile: desidera portare la pace eterna nel mondo.",
+    "obtainWays": [
+      "Regalo: raggiungi specifici potenziali dell'operatore"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Tema predefinito",
     "type": "Tema del profilo",
@@ -406,6 +415,13 @@
     "type": "Valuta evento",
     "desc": "Un oggetto speciale ottenibile completando le missioni del contratto. Si può scambiare con ricompense al Santuario segreto dell'evento Contratto di emergenza. L'oggetto sarà rimosso alla chiusura del Santuario segreto.",
     "decoDesc": "Falla girare tra le dita. Il bagliore luccicante che si riflette sulla sua superficie dimostra che l'antico contratto è ancora valido.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Indaco vetrificato",
+    "type": "Valuta evento",
+    "desc": "Un oggetto speciale ottenibile completando le missioni del contratto. Si può scambiare con ricompense al [Santuario segreto] dell'evento [Contratto di emergenza]. L'oggetto sarà rimosso alla chiusura del [Santuario segreto].",
+    "decoDesc": "Fallo girare tra le dita. Il bagliore luccicante che si riflette sulla sua superficie dimostra che l'antico contratto è ancora valido.",
     "obtainWays": []
   },
   "item_activity_copper_poly": {
@@ -2146,6 +2162,15 @@
       "Offerta armi"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "CO armi: chiarore lunare",
+    "type": "Cassa",
+    "desc": "Apri per selezionare e ricevere un'arma al suo interno.",
+    "decoDesc": "Una cassa pesante con chiusura ermetica. Gli ingegneri dell'arsenale hanno pensato che un'ampia disponibilità di armi garantisce operazioni sul campo più sicure. Quindi, hanno riempito la cassa di armi che richiamano il chiarore lunare.",
+    "obtainWays": [
+      "Offerta armi"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "CO armi: ghiaccio solido",
     "type": "Cassa",
@@ -2372,6 +2397,13 @@
     "type": "Cassa",
     "desc": "Apri per ottenere un set di equipaggiamento con artificio al massimo adatto all'operatore specificato.",
     "decoDesc": "Gli ingegneri dell'arsenale hanno preparato con cura questo pacchetto di equipaggiamento difensivo di tipo β con elementi adatti all'operatrice Arcana.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Cassa di difesa dell'arsenale α: Fiume stellare",
+    "type": "Cassa",
+    "desc": "Contiene un set di equipaggiamento con artificio al massimo adatto all'operatore specificato. Le casse di difesa si aprono automaticamente al momento dell'acquisizione. L'equipaggiamento al loro interno verrà conservato nella scorta delle risorse chiave.",
+    "decoDesc": "Gli ingegneri dell'arsenale hanno preparato con cura questo pacchetto di equipaggiamento difensivo di tipo α con elementi adatti all'operatore Flusso argentato.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Gettone operatore",
     "desc": "Aumenta il potenziale di Si.",
     "decoDesc": "Un libro contabile piuttosto sottile. Si dice che sia il \"registro segretissimo\" della titolare della locanda di Yuanyuan, frutto di tanti anni di attività. Ma sfogliandolo, si scopre che assomiglia più a una raccolta informale di appunti su oggetti, detti e persone a cui Si tiene particolarmente. Dopotutto, i principi su cui si fonda la gestione della Tenuta di Yuanyuan sono racchiusi nel nome stesso della locanda.",
+    "obtainWays": [
+      "Regalo: reclutamento operatori"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Gettone di Flusso argentato",
+    "type": "Gettone operatore",
+    "desc": "Aumenta il potenziale di Flusso argentato.",
+    "decoDesc": "Un pendente a forma di turibolo alimentato dalle Arti di Originium. L'involucro metallico è molto usurato e ricoperto di graffi. Quando viene acceso, emana un lieve profumo di erbe aromatiche. Come te, sapeva bene che, per chi è sempre pronto a partire per il campo di battaglia, ogni momento di riposo sotto una luce soffusa è raro e prezioso.",
     "obtainWays": [
       "Regalo: reclutamento operatori"
     ]
@@ -6141,6 +6182,42 @@
       "Ricompensa: missione"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Esca piccante",
+    "type": "Oggetto missione",
+    "desc": "Un'esca preparata usando amaroncini.",
+    "decoDesc": "Questa pallina d'esca erbosa emana un odore leggermente pungente. È fonte di curiosità: come ha fatto Minghe a scoprire che è un rimedio per i disturbi gastrici delle bestie da soma?",
+    "obtainWays": [
+      "Ricompensa: missione"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Ramo di Ye Minghe",
+    "type": "Oggetto missione",
+    "desc": "Ramo di Ye Minghe",
+    "decoDesc": "Ramo di Ye Minghe",
+    "obtainWays": [
+      "Ricompensa: missione"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Attrezzi per la riparazione dei recinti delle bestie",
+    "type": "Oggetto missione",
+    "desc": "Un set di attrezzi per la riparazione dei recinti delle bestie.",
+    "decoDesc": "Un set di attrezzi comuni ma utili. Sono ben consumati dopo anni di duro utilizzo.",
+    "obtainWays": [
+      "Ricompensa: missione"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Assi robuste",
+    "type": "Oggetto missione",
+    "desc": "Un set di assi per riparare i recinti delle bestie.",
+    "decoDesc": "Semplici, ma abbastanza resistenti.",
+    "obtainWays": [
+      "Ricompensa: missione"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "\"Punto d'origine\"",
     "type": "Oggetto missione",
@@ -7274,8 +7351,7 @@
     "decoDesc": "Il ginseng giadarossa è una pianta comune spesso consumata dalla gente di Hongshan come integratore rafforzante.",
     "obtainWays": [
       "Parco scientifico dell'Originium: Sentiero del dirupo",
-      "Pianta colture nell'Ecofattoria.",
-      "Cassa di ingredienti."
+      "Pianta colture nell'Ecofattoria."
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Materiale",
     "desc": "Semi raccolti dalla pianta di ginseng giadarossa. Coltivali nei terreni per far crescere il ginseng giadarossa.",
     "decoDesc": "Semi di ginseng giadarossa accuratamente selezionati per dimensioni e vitalità.",
-    "obtainWays": [
-      "Negozio: commessa \"Instancabile\"."
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Semi di riso ambrato",
@@ -7780,6 +7854,15 @@
     "desc": "Una struttura ad uso intensivo per frantumare e polverizzare materiali di vario genere.",
     "decoDesc": "Riesci a sentire la dolce sinfonia dei frantumatori industriali?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli a dondolo",
+    "type": "Ornamentale",
+    "desc": "Un oggetto ornamentale che può essere posizionato. È conservato nel pannello Ornamentale dell'elenco strutture.",
+    "decoDesc": "Un giocattolo divertente che assomiglia a Nuli. Dondola, mio piccolo cavalcone... A chi manca già l'infanzia?",
+    "obtainWays": [
+      "Scambio talosite"
+    ]
   },
   "item_port_jail_1": {
     "name": "Gabbia per tigri",
@@ -9360,6 +9443,15 @@
       "Scambio talosite"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Oziare con una vecchia conoscenza",
+    "type": "Posa fotografica",
+    "desc": "Una posa fotografica utilizzabile dagli operatori.",
+    "decoDesc": "Un'interpretazione del significato di \"Oziare con una vecchia conoscenza\". Questa immagine è piuttosto chiara, ma allo stesso tempo un po' esoterica.",
+    "obtainWays": [
+      "Scambio talosite"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Non il solito sorriso",
     "type": "Posa fotografica",
@@ -10281,6 +10373,15 @@
       "Centro di acquisizione: pacchetti"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permesso CT Le stelle sono con me",
+    "type": "Risorsa chiave a tempo limitato",
+    "desc": "Un certificato a tempo limitato della Endfield Industries. Usalo per effettuare 1 caccia ai talenti nella caccia ai talenti certificata [Il focolare richiama il fiume di stelle]. Il certificato scadrà al termine di [Il focolare richiama il fiume di stelle].",
+    "decoDesc": "Uno speciale permesso CT per effettuare la caccia ai talenti per reclutare operatori che soddisfano requisiti specifici. Data l'urgenza della richiesta, questo permesso ha validità limitata.",
+    "obtainWays": [
+      "Centro di acquisizione: pacchetti"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Permesso CT-10 certificata",
     "type": "Risorsa chiave",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Ritratto",
+    "desc": "Un ritratto selezionabile nella schermata Profilo. I ritratti del profilo sono visibili in vari contesti.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Regalo: reclutamento operatori"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Flusso argentato",
     "type": "Ritratto",
     "desc": "Un ritratto selezionabile nella schermata Profilo. I ritratti del profilo sono visibili in vari contesti.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Permesso CT: Rinascita dello spirito",
     "type": "Risorsa chiave a tempo limitato",
     "desc": "Un certificato a tempo limitato della Endfield Industries. Usalo per effettuare 1 caccia ai talenti nella caccia ai talenti certificata [Rinnovamento]. Il certificato scadrà al termine di [Rinnovamento].",
+    "decoDesc": "Uno speciale permesso CT per effettuare la caccia ai talenti per reclutare operatori che soddisfano requisiti specifici. Data l'urgenza della richiesta, questo permesso ha validità limitata.",
+    "obtainWays": [
+      "Centro di acquisizione: pacchetti"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Permesso CT Le stelle sono con me",
+    "type": "Risorsa chiave a tempo limitato",
+    "desc": "Un certificato a tempo limitato della Endfield Industries. Usalo per effettuare 1 caccia ai talenti nella caccia ai talenti certificata [Il focolare richiama il fiume di stelle]. Il certificato scadrà al termine di [Il focolare richiama il fiume di stelle].",
     "decoDesc": "Uno speciale permesso CT per effettuare la caccia ai talenti per reclutare operatori che soddisfano requisiti specifici. Data l'urgenza della richiesta, questo permesso ha validità limitata.",
     "obtainWays": [
       "Centro di acquisizione: pacchetti"

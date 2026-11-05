@@ -3,7 +3,7 @@ export const warEchoesSeasons = [
         "id": "6",
         "name": "Season of Fervor",
         "startTime": "2026-11-05 12:00:00",
-        "endTime": "2026-11-26 06:00:00",
+        "endTime": "2026-11-25 06:00:00",
         "weeks": [
             {
                 "id": "1",
@@ -163,7 +163,7 @@ export const warEchoesSeasons = [
                 "id": "3",
                 "name": "Cycle of Fervor Ⅲ",
                 "startTime": "2026-11-19 04:00:00",
-                "endTime": "2026-11-26 06:00:00",
+                "endTime": "2026-11-25 06:00:00",
                 "stages": [
                     {
                         "id": "indie_battletower008",

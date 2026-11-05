@@ -2284,6 +2284,34 @@ export const achievements: Record<string, AchievementData> = {
         },
         "plateConditions": []
     },
+    "achv_event_contingency_contract_1": {
+        "id": "achv_event_contingency_contract_1",
+        "type": "achv_type_event",
+        "groupId": "achv_group_event_default",
+        "order": 14,
+        "initLevel": 3,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": true,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "3": {
+                "achieveLevel": 3,
+                "conditions": [
+                    {
+                        "conditionId": "achv_event_contingency_contract_1_3_cond_1",
+                        "progressToCompare": 20
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_event_contingency_contract_1_plating_cond_1",
+                "progressToCompare": 30
+            }
+        ]
+    },
     "achv_event_dungfight": {
         "id": "achv_event_dungfight",
         "type": "achv_type_event",
@@ -4977,6 +5005,29 @@ export const achievements: Record<string, AchievementData> = {
                 "conditions": [
                     {
                         "conditionId": "achv_quest_mifu_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_quest_minghe": {
+        "id": "achv_quest_minghe",
+        "type": "achv_type_quest",
+        "groupId": "achv_group_quest_side",
+        "order": 13,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_quest_minghe_2_cond_1",
                         "progressToCompare": 1
                     }
                 ]

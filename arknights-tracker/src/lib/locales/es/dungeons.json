@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Archivo de constructo: Espectro - Normal",
     "description": "ARCHIVO 50: Tomado de un pequeño cuchillo para tallar. El creador de las figuras de madera esculpió con delicadeza el corazón del bosque, otorgándoles la capacidad de protegerlo incluso hasta nuestros días.",
-    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 5 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 3 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower019_ex": {
     "name": "Archivo de constructo: Espectro - Brutal",
     "description": "ARCHIVO 50: Tomado de un pequeño cuchillo para tallar. El creador de las figuras de madera esculpió con delicadeza el corazón del bosque, otorgándoles la capacidad de protegerlo incluso hasta nuestros días.",
-    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 5 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 3 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower019_s": {
     "name": "Archivo de constructo: Espectro - Difícil",
     "description": "ARCHIVO 50: Tomado de un pequeño cuchillo para tallar. El creador de las figuras de madera esculpió con delicadeza el corazón del bosque, otorgándoles la capacidad de protegerlo incluso hasta nuestros días.",
-    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 5 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
+    "featureDesc": "- Los operadores ingresan al combate con <@ba.key>Energía máxima</> al máx. \n- Furia de Gloomwald empieza con 3 <@ba.key>acumulaciones de escudo</>. \n\n<@ba.info>- Los enemigos tienen mejores estadísticas.</> \n<@ba.info>- Solo se pueden usar ítems tácticos y consumibles para Tratamiento de PV.</>"
   },
   "indie_battletower020": {
     "name": "Archivo de defensa: Escudo - Normal",
@@ -303,6 +303,11 @@
     "name": "Operación experimental de reignición",
     "description": "- La operación consta de 4 oleadas consecutivas de enemigos. Derrota todas las oleadas enemigas para completar la operación.\n- Se soltarán Masas curativas entre oleadas. Tócalas para restaurar PV a todos los compañeros del equipo.\n- Hay una fase de descanso entre oleadas, durante la cual se considera que los operadores aún están en combate.\n- La operación tiene un temporizador de cuenta regresiva. Cuando el temporizador llegue a su fin o los PV de todos los operadores en el equipo se reduzcan a CERO, la operación se interrumpirá.\n- No se pueden usar ítems tácticos ni consumibles.",
     "featureDesc": "- Los enemigos son varios tipos de Aggeloi.\n- Algunos enemigos aplican Imposición criogénica a los operadores. Un operador que alcance 4 acumulaciones de Imposición criogénica quedará solidificado."
+  },
+  "indie_contract002": {
+    "name": "Operación experimental de Índigo",
+    "description": "- La operación consta de 3 oleadas consecutivas de enemigos. Derrota todas las oleadas enemigas para completar la operación.\n- Se soltarán Masas curativas entre oleadas. Tócalas para restaurar PV a todos los compañeros del equipo.\n- Hay una fase de descanso entre oleadas, durante la cual se sigue considerando que los operadores están en combate.\n- La operación tiene un temporizador de cuenta regresiva. Cuando el temporizador llegue a su fin o los PV de todos los operadores en el equipo se reduzcan a CERO, la operación se interrumpirá.\n- No se pueden usar items tácticos ni consumibles.",
+    "featureDesc": "- Los enemigos incluyen varias Sombras contaminadas, creaciones de hechicería, bestias salvajes y Piratas Cangzei, como los Destructores de nubes.\n- Aún puedes aplicar Vulnerabilidad, Imposición de artes, Estado físico y Reacción a artes a los enemigos con las acumulaciones de escudo."
   },
   "indie_hard001": {
     "name": "Escudos desenfrenados",

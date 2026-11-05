@@ -271,6 +271,15 @@
       "Geschenk: Erreichen spezifischer Operator-Potenziale"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Träger des Lichts",
+    "type": "Profil-Design",
+    "desc": "Ein Design für den Profilbildschirm. Profil-Designs werden an verschiedenen Stellen angezeigt.",
+    "decoDesc": "Ein heller, elektrifizierender Bogen, eine niemals endende Verpflichtung – er wollte der Welt ewigen Frieden bringen.",
+    "obtainWays": [
+      "Geschenk: Erreichen spezifischer Operator-Potenziale"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Design: Standard",
     "type": "Profil-Design",
@@ -403,6 +412,13 @@
   },
   "item_activity_contract_gold_0": {
     "name": "Kristallisierte Münze",
+    "type": "Event-Währung",
+    "desc": "Ein besonderer Gegenstand, der für den Abschluss von Vertragsmissionen verliehen wird. Er kann im [Geheimen Heiligtum] des Events [Krisenschutzvertrag] gegen Belohnungen eingetauscht werden. Der Gegenstand wird entfernt, sobald das [Geheime Heiligtum] schließt.",
+    "decoDesc": "Drehe ihn auf deiner Fingerspitze. Der schimmernde Glanz, der von seiner Oberfläche reflektiert wird, beweist, dass der uralte Vertrag fortbesteht.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Kristallisierter Indigo",
     "type": "Event-Währung",
     "desc": "Ein besonderer Gegenstand, der für den Abschluss von Vertragsmissionen verliehen wird. Er kann im [Geheimen Heiligtum] des Events [Krisenschutzvertrag] gegen Belohnungen eingetauscht werden. Der Gegenstand wird entfernt, sobald das [Geheime Heiligtum] schließt.",
     "decoDesc": "Drehe ihn auf deiner Fingerspitze. Der schimmernde Glanz, der von seiner Oberfläche reflektiert wird, beweist, dass der uralte Vertrag fortbesteht.",
@@ -2146,6 +2162,15 @@
       "Waffenangebot"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "Waffen-AK: Mondschimmer",
+    "type": "Kiste",
+    "desc": "Öffne sie und wähle eine der in ihr enthaltenen Waffen, um sie zu erhalten.",
+    "decoDesc": "Eine schwere Kiste, die unglaublich fest versiegelt ist. „Eine große Waffenauswahl soll mehr Sicherheit auf dem Schlachtfeld garantieren“, dachten die Waffeningenieure. Und so füllten sie die Kiste mit Waffen, die wie der Mond schimmerten.",
+    "obtainWays": [
+      "Waffenangebot"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "Waffen-AK: Festes Eis",
     "type": "Kiste",
@@ -2372,6 +2397,13 @@
     "type": "Kiste",
     "desc": "Nach dem Öffnen erhältst du ein Ausrüstungsset mit max. Veredelung für einen bestimmten Operator.",
     "decoDesc": "Die Waffeningenieure haben diese β-Verteidigungsausrüstung mit größter Sorgfalt zusammengestellt, sodass sie Operatorin Arkan passt wie angegossen.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Arsenal-Verteidigungskiste α: Sternenfluss",
+    "type": "Kiste",
+    "desc": "Enthält ein Ausrüstungsset mit max. Veredelung für einen bestimmten Operator. Verteidigungskisten werden nach dem Erhalt automatisch geöffnet. Die darin enthaltene Ausrüstung wird im Lager für Wertgegenstände eingelagert.",
+    "decoDesc": "Die Waffeningenieure haben diese α-Verteidigungsausrüstung mit größter Sorgfalt zusammengestellt, sodass sie Operator Silberfluss wie angegossen passt.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Operator-Token",
     "desc": "Erhöht Sis Potenzial.",
     "decoDesc": "Ein nicht besonders dickes Hauptbuch. Angeblich ist das das „streng geheime Kassenbuch“, in dem die Geschäftsvorgänge des Yuanyuan-Gastwirts über viele Jahre festgehalten wurden. Als du es jedoch aufschlägst, um es zu lesen, findest du stattdessen Aufzeichnungen und Notizen über Dinge, Sprüche und Menschen, die Si am meisten am Herzen liegen. Schließlich liegen die Grundsätze für den Betrieb des Guts Yuanyuan bereits im Namen des Gasthauses selbst verborgen.",
+    "obtainWays": [
+      "Geschenk: Operator-Einarbeitung"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Silberfluss’ Token",
+    "type": "Operator-Token",
+    "desc": "Erhöht Silberfluss’ Potenzial.",
+    "decoDesc": "Ein von Originium-Techniken angetriebener Räucherwerk-Anhänger. Die kugelförmige Metallhülle ist abgenutzt und voller Kratzer. Zündet man sie an, duftet die Kugel leicht nach Kräutern. Er wusste wie du, dass jede Gelegenheit zur Rast unter sanftem Licht selten und willkommen ist, besonders für jene, die auf das Schlachtfeld zumarschieren.",
     "obtainWays": [
       "Geschenk: Operator-Einarbeitung"
     ]
@@ -6141,6 +6182,42 @@
       "Belohnung: Mission"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Scharfer Köder",
+    "type": "Missionsgegenstand",
+    "desc": "Ein mit Scharfpaprika hergestellter Köder.",
+    "decoDesc": "Dieser grasige Knödel verströmt einen leicht stechenden Geruch. Der Köder wirft Fragen auf: Wie hat Minghe herausgefunden, dass er Magenbeschwerden von Monsterbestien lindert?",
+    "obtainWays": [
+      "Belohnung: Mission"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Zweig von Ye Minghe",
+    "type": "Missionsgegenstand",
+    "desc": "Zweig von Ye Minghe",
+    "decoDesc": "Zweig von Ye Minghe",
+    "obtainWays": [
+      "Belohnung: Mission"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Bestienstall-Reparaturwerkzeug",
+    "type": "Missionsgegenstand",
+    "desc": "Einige Werkzeuge für Reparaturarbeiten an Bestienställen.",
+    "decoDesc": "Eine Reihe gewöhnlicher, aber nützlicher Werkzeuge. Durch jahrelangen, intensiven Einsatz stark abgenutzt.",
+    "obtainWays": [
+      "Belohnung: Mission"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Robuste Bretter",
+    "type": "Missionsgegenstand",
+    "desc": "Ein Stapel Bretter zur Reparatur von Bestienställen.",
+    "decoDesc": "Unscheinbar, aber äußerst stabil.",
+    "obtainWays": [
+      "Belohnung: Mission"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "„Startpunkt“",
     "type": "Missionsgegenstand",
@@ -7274,8 +7351,7 @@
     "decoDesc": "In Hongshan wird Rotjade-Ginseng als Stärkungsmittel verzehrt.",
     "obtainWays": [
       "Originium-Wissenschaftspark: Klippenpfad",
-      "Pflanze Nutzpflanzen auf der Öko-Farm.",
-      "Zutatenkiste"
+      "Pflanze Nutzpflanzen auf der Öko-Farm."
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Material",
     "desc": "Samen des wilden Rotjade-Ginsengs. Kultiviere sie in hergestellten Beeten, um Rotjade-Ginseng anzubauen.",
     "decoDesc": "Diese Körner der Rotjade-Ginseng-Saat wurden nach ihrer Größe und ihrer Keimfähigkeit ausgewählt.",
-    "obtainWays": [
-      "Laden: Vorratsbeauftragte „Fleißbiene“"
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Bernsteinreis-Saat",
@@ -7780,6 +7854,15 @@
     "desc": "Eine schwere Anlage, die verschiedene Materialien zerkleinert und pulverisiert.",
     "decoDesc": "Hörst du das Knirschen der schweren Industrie-Schredderwerkzeuge?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Schaukel-Nuli",
+    "type": "Verzierung",
+    "desc": "Eine Verzierung, die platziert werden kann. Sie wird unter „Verzierung“ in der Anlagenliste gelagert.",
+    "decoDesc": "Ein lustiges Spielzeug, das wie Nuli aussieht. Schaukle weiter, mein kleiner Galopper … Wer vermisst schon jetzt die Kindheit?",
+    "obtainWays": [
+      "Talosit-Börse"
+    ]
   },
   "item_port_jail_1": {
     "name": "Tigerkäfig",
@@ -9360,6 +9443,15 @@
       "Talosit-Börse"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Müßiggang mit einem alten Freund",
+    "type": "Kamerapose",
+    "desc": "Eine Pose, die Operatoren vor der Kamera einnehmen können.",
+    "decoDesc": "Eine Interpretation des Ausdrucks „Müßiggang mit einem alten Freund“. Der Ausdruck ist eigentlich klar, aber gleichzeitig auch irgendwie ungewöhnlich.",
+    "obtainWays": [
+      "Talosit-Börse"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Außergewöhnliches Lächeln",
     "type": "Kamerapose",
@@ -10281,6 +10373,15 @@
       "Ankaufszentrum: Pakete"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Die Sterne sind mit mir – RK-Genehmigung",
+    "type": "Wertgegenstand (zeitlich begrenzt)",
+    "desc": "Ein befristetes Zertifikat von Endfield Industries. Damit kannst du 1 Rekrutierung in „[Das warme Herdfeuer ruft den Silberfluss] Rekrutierung: Priorisiert“ durchführen. Dieses Zertifikat verfällt, wenn „[Das warme Herdfeuer ruft den Silberfluss] Rekrutierung: Priorisiert“ endet.",
+    "decoDesc": "Eine besondere Genehmigung der Personalabteilung zur Rekrutierung von Operatoren bei besonderen Anforderungen. Da es sich um eine dringende Anfrage handelt, verfällt die Genehmigung nach einer gewissen Zeit.",
+    "obtainWays": [
+      "Ankaufszentrum: Pakete"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "10er-RK-Genehmigung: Priorisiert",
     "type": "Wertgegenstand",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Porträt",
+    "desc": "Ein Porträt, das im Profilbildschirm geändert werden kann. Profilbilder werden an verschiedenen Stellen angezeigt.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Geschenk: Operator-Einarbeitung"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Silberfluss",
     "type": "Porträt",
     "desc": "Ein Porträt, das im Profilbildschirm geändert werden kann. Profilbilder werden an verschiedenen Stellen angezeigt.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "„Wiederherstellung des Geistes“-RK-Genehmigung",
     "type": "Wertgegenstand (zeitlich begrenzt)",
     "desc": "Ein befristetes Zertifikat von Endfield Industries. Damit kannst du 1 Rekrutierung in „[Erneuerung] Rekrutierung: Priorisiert“ durchführen. Dieses Zertifikat verfällt, wenn „[Erneuerung] Rekrutierung: Priorisiert“ endet.",
+    "decoDesc": "Eine besondere Genehmigung der Personalabteilung zur Rekrutierung von Operatoren bei besonderen Anforderungen. Da es sich um eine dringende Anfrage handelt, verfällt die Genehmigung nach einer gewissen Zeit.",
+    "obtainWays": [
+      "Ankaufszentrum: Pakete"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Die Sterne sind mit mir – RK-Genehmigung",
+    "type": "Wertgegenstand (zeitlich begrenzt)",
+    "desc": "Ein befristetes Zertifikat von Endfield Industries. Damit kannst du 1 Rekrutierung in „[Das warme Herdfeuer ruft den Silberfluss] Rekrutierung: Priorisiert“ durchführen. Dieses Zertifikat verfällt, wenn „[Das warme Herdfeuer ruft den Silberfluss] Rekrutierung: Priorisiert“ endet.",
     "decoDesc": "Eine besondere Genehmigung der Personalabteilung zur Rekrutierung von Operatoren bei besonderen Anforderungen. Da es sich um eine dringende Anfrage handelt, verfällt die Genehmigung nach einer gewissen Zeit.",
     "obtainWays": [
       "Ankaufszentrum: Pakete"

@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "'잿빛을 씻어내기'",
+    "category": "이벤트 훈장",
+    "group": "이벤트 훈장",
+    "levels": {
+      "3": {
+        "desc": "[위기 협약 · 잿빛 실험 작전]에서 지표 총합 20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> 또는 그 이상으로 도전 완료",
+        "completeDesc": "탁한 푸른빛이 그 선물마저 물들였지만, 관리자님이 계시는 한 다시 타오른 불꽃은 영원히 꺼지지 않을 것입니다."
+      }
+    },
+    "plating": {
+      "desc": "[위기 협약 · 잿빛 실험 작전]에서 지표 총합 30<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> 또는 그 이상으로 도전 완료"
+    }
+  },
   "achv_event_dungfight": {
     "name": "'생존 전문가'",
     "category": "이벤트 훈장",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "서브 임무 [주먹, 부딪히는 마음] 완료",
         "completeDesc": "두 주먹으로 다시금 내 마음을 물으니, 한 줄기 기운으로 산천을 꿰뚫고 무예를 떨쳐 뇌정에 맞서리라."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "'야생으로'",
+    "category": "이야기 훈장",
+    "group": "탐색 임무 훈장",
+    "levels": {
+      "2": {
+        "desc": "서브 임무 [야생으로] 완료",
+        "completeDesc": "검등 위에 새잎이 내려앉고 짐승 울음이 깃들 때, 우리는 마음에도 언제나 뿌리가 있음을 알게 됩니다."
       }
     },
     "plating": null

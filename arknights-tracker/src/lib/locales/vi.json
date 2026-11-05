@@ -1082,7 +1082,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Argent Flow"
   },
   "weaponsList": {
     "custom_weapon": "Vũ Khí Tùy Chỉnh",
@@ -3462,7 +3463,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Vé Dõi Về Khe Nứt Phương Bắc ×10",
     "ticketgacha_special_ten_lt_1_4_2": "Vé Ánh Sao Mai Lộng Lẫy ×10",
     "ticketgacha_weaponbox_lt_1_2_2": "Chứng Nhận Gói Rút Lửa trong Gió",
-    "ticketweaponbox_ten_1_lt": "Chứng Nhận Thùng Vũ khí Có Thời Hạn ×10"
+    "ticketweaponbox_ten_1_lt": "Chứng Nhận Thùng Vũ khí Có Thời Hạn ×10",
+    "business_card_topic_chr_0037_minghe": "Người Mang Ánh Sáng",
+    "item_activity_contract_gold_1": "Lam Chàm Thủy Tinh Hóa",
+    "item_case_wpn_selfselect_gahca_1_6_2": "Thùng Cấp VK: Nguyệt Quang",
+    "item_char_equip_supply_minghe": "Thùng Trang Bị Phòng Vệ Kho Vũ Khí α: Tinh Hà",
+    "item_charpotentialup_chr_0037_minghe": "Tín Vật Của Argent Flow",
+    "item_mission_c37m1_foragel": "Mồi Cay",
+    "item_mission_c37m3_branch": "Cành Cây Của Ye Minghe",
+    "item_mission_c37m3_tools": "Dụng Cụ Sửa Chữa Chuồng Thú",
+    "item_mission_c37m3_woodenboard": "Ván Gỗ Chắc Chắn",
+    "item_port_horse_1": "Nuli Bập Bênh",
+    "item_shot_anim_minghe_m_1": "Nhàn Du Cùng Cố Hữu",
+    "item_ticketgacha_special_single_lt_1_6_2": "Vé Chiêu Mộ Có Sao Trời Bên Tôi",
+    "item_user_avatar_chr_0037_minghe": "Argent Flow",
+    "ticketgacha_special_single_lt_1_6_2": "Vé Chiêu Mộ Có Sao Trời Bên Tôi"
   },
   "buildingNames": {
     "component_mc_1": "Máy Lắp Ráp",

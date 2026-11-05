@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Elektrifizieren",
+      "Zertrümmern"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
+    "expertTags": [
+      "Kampftechnik",
+      "Gebildet"
+    ],
+    "giftPreferTags": [
+      "Wahl des Wuling-Handwerkers"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Natur"
+    ],
+    "raceTag": "Lung"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Strahlender Staub",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+    },
+    "battleSkill": {
+      "name": "Gebändigte Dunkelheit",
+      "description": "Silberfluss schwingt seine Lanze, fügt Gegnern in der Nähe <@ba.pd>Physischen SDN</> zu und belegt Ziele vor ihm mit <#ba.airborne>Anheben</>.\nNachdem Silberfluss seine Kombofertigkeit eingesetzt hat, wird seine Kampffertigkeit vorübergehend zu <@ba.key>Blitzsturm</> geändert.\n<@ba.key>Blitzsturm</>: Silberfluss besteigt seinen Galopper Nuli, springt in die Luft, lädt kurz auf und stürmt dann auf das Ziel zu, um es mit <#ba.conduct>Elektrifizierung</> zu belegen und Gegnern in einem großen Bereich vor ihm <@ba.pulse>Elektrischen SDN</> zuzufügen. Wenn ein Ziel <#ba.conduct>Elektrifiziert</> wird, das bereits mit <#ba.pulseinflict>Elektrik</> belegt ist, werden alle <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</>. Silberfluss erhält pro verbrauchter Kumulierung <#ba.statuslevel>Zustandslevel +1</> <#ba.conduct>Elektrifizierung</>. Nachdem Silberfluss die <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</> hat, verursacht er außerdem 1 Kumulierung <#ba.noguard>Anfälligkeit</>.",
+      "baseDmgMultiplier": "Standard-SDN-Multiplikator",
+      "baseStagger": "Standard-Taumeln",
+      "boltRushDmgMultiplier": "SDN-Multiplikator bei Blitzsturm",
+      "boltRushStagger": "Blitzsturm-Taumeln"
+    },
+    "comboSkill": {
+      "name": "Verschobene Sterne",
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.noguard>Anfällig</> belegt wird.\nSilberfluss führt einen blitzschnellen Angriff aus mehreren Sequenzen aus, der Gegnern entlang des Angriffspfads <@ba.pulse>Elektrischen SDN</> zufügt. Wenn die letzte Sequenz einen Treffer erzielt, fügt sie zudem <#ba.pulseinflict>Elektrik</> zu. Die Kampffertigkeit von Silberfluss wird dann vorübergehend zu <@ba.key>Blitzsturm</> geändert.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "battleSkillChangeDurationS": "Dauer: Kampffertigkeits-Wechsel (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+    },
+    "ultimate": {
+      "name": "Gespaltener Himmel",
+      "description": "Silberfluss besteigt Nuli und stürmt mit seiner Lanze nach vorn. Dabei fügt er Zielen vor sich fortwährend <@ba.pulse>Elektrischen SDN</> zu, spießt schwache Gegner vor ihm auf und nimmt sie während seines ganzen Ansturms mit. Sobald der Ansturm endet, springt Silberfluss in die Luft, stürzt hinab und entfesselt am Boden eine Reinigende Spaltung. Der Hieb verursacht <@ba.pulse>Elektrischen SDN</> und fügt 1 Kumulierung <#ba.pulseinflict>Elektrik</> zu. Anschließend sticht Silberfluss seine Lanze in den Boden. Dabei belegt er Gegner in einem großen Bereich mit <#ba.crush>Zertrümmern</> und fügt ihnen <@ba.pulse>Elektrischen SDN</> zu.\n<@ba.info>Falls Silberfluss während seiner Ultimativen Fertigkeit auf einen Gegner zustürmt, der nicht schwach ist (und deshalb nicht aufgespießt und gestoßen werden kann), endet sein Ansturm vorzeitig.</>",
+      "chargeDmgMultiplier": "SDN-Multiplikator bei Ansturm",
+      "cleansingCleaveDmgMultiplier": "SDN-Multiplikator bei Reinigende Spaltung",
+      "groundPierceDmgMultiplier": "SDN-Multiplikator bei Durchbohren",
+      "stagger": "Taumeln"
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Wille +10.",
+        "Operator-Wille +15.",
+        "Operator-Wille +15.",
+        "Operator-Wille +20."
+      ],
+      "name": "Unerschütterlich"
+    },
+    "talent1": {
+      "levels": [
+        "Wenn Silberfluss ein Ziel mit <#ba.conduct>Elektrifizierung</> belegt, erhöht diese <#ba.conduct>Elektrifizierung</> während ihrer Wirkungsdauer außerdem alle Arten von erlittenem SDN für das Ziel. Weiterhin belegt er das Ziel mit Kumulierungen von <@ba.key>Trennen</>. Die Anzahl dieser Kumulierungen entspricht dem <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> (max. {max_stack:0}). <@ba.key>Trennen</> bleibt {duration:0} Sek. lang aktiv.\nWird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</>-SDN zugefügt, wird der zugefügte <#ba.crush>Zertrümmern-SDN</> auf das <@ba.vup>{crush_damage+1:0.0}</>-Fache des ursprünglichen Werts erhöht und alle Kumulierungen <@ba.key>Trennen</> explodieren. Die Explosion fügt dem Ziel <@ba.pulse>Elektrischen SDN</> in Höhe von <@ba.vup>[Anzahl der Trennen-Kumulierungen × {atk_scale:0%} ANG]</> zu. Andere Gegner in der Nähe des Ziels erleiden {other_damage_percent:0%} dieses SDNs.\n<@ba.info>Wird der SDN der Trennen-Explosion einem anderen Gegner zugefügt, der ebenfalls mit Trennen belegt ist, explodieren auch alle Trennen-Kumulierungen dieses Gegners.</>",
+        "Wenn Silberfluss ein Ziel mit <#ba.conduct>Elektrifizierung</> belegt, erhöht diese <#ba.conduct>Elektrifizierung</> während ihrer Wirkungsdauer außerdem alle Arten von erlittenem SDN für das Ziel. Weiterhin belegt er das Ziel mit Kumulierungen von <@ba.key>Trennen</>. Die Anzahl dieser Kumulierungen entspricht dem <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> (max. {max_stack:0}). <@ba.key>Trennen</> bleibt {duration:0} Sek. lang aktiv.\nWird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</>-SDN zugefügt, wird der zugefügte <#ba.crush>Zertrümmern-SDN</> auf das <@ba.vup>{crush_damage+1:0.0}</>-Fache des ursprünglichen Werts erhöht und alle Kumulierungen <@ba.key>Trennen</> explodieren. Die Explosion fügt dem Ziel <@ba.pulse>Elektrischen SDN</> in Höhe von <@ba.vup>[Anzahl der Trennen-Kumulierungen × {atk_scale:0%} ANG]</> zu. Andere Gegner in der Nähe des Ziels erleiden {other_damage_percent:0%} dieses SDNs.\n<@ba.info>Wird der SDN der Trennen-Explosion einem anderen Gegner zugefügt, der ebenfalls mit Trennen belegt ist, explodieren auch alle Trennen-Kumulierungen dieses Gegners.</>"
+      ],
+      "name": "Gipfel der Elektromantie"
+    },
+    "talent2": {
+      "levels": [
+        "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Das gesamte Team erhält Technik-Intensität <@ba.vup>+{yuanshi_add:0}</> für {duration:0} Sek.\nFür jeden Punkt Technik-Intensität, den Silberfluss besitzt, steigt der Explosions-SDN von <@ba.key>Trennen</> um weitere <@ba.vup>{damage_up:0.0%}</>.",
+        "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Das gesamte Team erhält Technik-Intensität <@ba.vup>+{yuanshi_add:0}</> für {duration:0} Sek.\nFür jeden Punkt Technik-Intensität, den Silberfluss besitzt, steigt der Explosions-SDN von <@ba.key>Trennen</> um weitere <@ba.vup>{damage_up:0.0%}</>."
+      ],
+      "name": "Übersprudelnde Stromquelle"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +30 % zu erhöhen."
+      ],
+      "name": "Axiom des Kampfes"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen."
+      ],
+      "name": "Werkzeuge des Schwungs"
+    },
+    "files": {
+      "main": "DECKNAME: Silberfluss \nGESCHLECHT: Männlich \nAUTHENTIFIZIERUNG: Hongshan-Akademie der Wissenschaften \nGEB.: 23. Oktober \nSPEZIES: Lung \n[ORIPATHIE-INFEKTIONSSTATUS] \nOripathie-negativ, basierend auf ärztlichen Befunden. \n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG] \nPHYSIOLOGISCHE STÄRKE: Ausgezeichnet \nKAMPFFERTIGKEIT: Hervorragend \nTAKTISCHER SCHARFSINN: Ausgezeichnet \nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Standard \n\nUngeachtet seines fantastischen physischen Gesundheitszustands, gesundheitsfördernder Tagesroutinen und der vollständigen Abwesenheit schlechter Angewohnheiten (trinkt nur in geringen Mengen) war Operator Silberfluss sehr offen und bereit, über seine Krankheitsgeschichte und vergangene Verletzungen zu sprechen … Ich beantrage hiermit offiziell die Veröffentlichung dieses Datensets. Vorlaute Jugendliche, die immerzu proklamieren, dass „OPFER ERBRACHT WERDEN MÜSSEN, UM STÄRKE ZU ERLANGEN“ sollten sich ansehen, wie ein wirklicher Profi seinen Tag gestaltet. Vielleicht können sie so etwas darüber lernen, wie sie besser Verantwortung für ihre eigene Gesundheit übernehmen können. \n– Dieser Kommentar stammt von einem nachhaltig verstimmten Operator aus der medizinischen Abteilung",
+      "humanResources": "Silberfluss (mit bürgerlichem Namen Ye Minghe) dient aktuell als Kaiserlicher Wächter von Yan und Kapitän der befriedeten Lüfte* der Hongshan-Akademie der Wissenschaften (HAW). Nachdem die HAW ihm entsprechende Anweisungen erteilt hat, arbeitet er nun eng mit Endfield Industries zusammen, bietet Unterstützung im Kampf und fungiert als Ausbilder für verschiedene Kampftechniken. *HINWEIS: In Übereinstimmung mit dem Gesetz von Yan gelten die Kaiserlichen Wächter nicht als untergeordnete Organisation der Angeschlossenen Hongshan-Akademie der Wissenschaften der Tianshi-Behörde von Groß-Yan. In Anbetracht der komplexen historischen Umstände dient dieser HINWEIS (ohne weitere Ergänzungen) als hinreichende Erklärung für die Namensgebung.\n\nIm Umgang mit anderen Angestellten zeigt Operator Silberfluss eine reife, ruhige Seite und gilt als äußerst teamfähig. Bedenken bezüglich Schwächen seines Charakters wie „überhebliche Arroganz“ und „extreme Unfreundlichkeit“, die einige unserer Operatoren hegten, stellten sich als unbegründet heraus. Operator Silberfluss selbst nannte zwei mögliche Gründe für das Aufkommen solcher Missverständnisse: (1) Die Mitglieder der Kaiserlichen Wächter weisen zwar einige Eigenheiten in ihrem Verhalten auf, die meisten Erzählungen über sie sind jedoch frei erfunden und (2) kursieren noch immer Erzählungen über bestimmte „in jugendlichem Leichtsinn begangene peinliche Fehltritte“, die inzwischen vermutlich in Übertreibungen und/oder Verzerrungen ausgeartet sind. Wir rufen daher sämtliche Angestellte auf, gegenüber Operator Silberfluss die gängigen Umgangsformen zu wahren und sich nicht mit solchen Themen aufzuhalten. Wer diese Ratschläge befolgt, wird in Operator Silberfluss einen guten Partner für Trainingskämpfe und einen weisen Lehrer für Kampftechniken finden. Es wird empfohlen, im Voraus einen Gesprächstermin zu vereinbaren. Mit langen Wartezeiten ist zu rechnen.\nAN ALLE MITGLIEDER DES BODENPERSONALS: Diese Beurteilungen beziehen sich ausschließlich auf Operator Silberfluss persönlich. Sein Galopper verfügt über ungeheure Stärke und ein wildes Temperament. Bei der Pflege und der Fütterung dieses Tieres ist äußerste Vorsicht geboten. Operator Silberfluss hat persönlich eine Liste mit Punkten zusammengestellt, die es zu beachten gilt. Alle mit der Pflege des Galoppers beauftragten Mitglieder des Bodenpersonals MÜSSEN DIESE LISTE MEHRFACH DURCHGEHEN UND SICH EINPRÄGEN.\n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "[AUFZEICHNUNG: Operator Minghes Auftritt bei „Endfield sucht den Superstar: Monatliche Mega-Arena“] \nBewaffneter Kampf mit verbundenen Augen. 1. Platz innerhalb der Kohorte (nachdem man ihm mitteilte, dass es sich um einen Wettbewerb handelte, gab er diesen auf). \nWurfkunst. 1. Platz. ERGÄNZUNG: 10 perfekte Würfe, 3 Dolche steckten im Griff eines zuvor geworfenen. \nRingkampf. 1. Platz innerhalb der Gewichtsklasse. ERGÄNZUNG: Kämpfte mit einem selbst auferlegten Handicap und band sich einen Arm auf den Rücken. \nR-Team-Bergungssimulations-Sprint. 1. Platz, Kohorte: Forte am Boden. ERGÄNZUNG: Mehrere Staubhaar-Chirurgen lobten seine Fähigkeiten. \nMonsterhaftes Bestienrodeo. 1. Platz. ERGÄNZUNG: Hielt sich 600 Sek. lang im Sattel. Möglicherweise hätte er noch länger durchgehalten, aber die Rodeo-Maschine schaltete sich automatisch ab. \nKräuterkenner-Quiz. 2. Platz, Laien-Kohorte. \nKreatives Impro-Schnitzen. Gewinner des „IST-DAS-SÜSS“-Preises. ERGÄNZUNG: Verwendete zum Schnitzen eine Nähnadel. \nSchwereloses Bürostuhlrennen. 2. Platz. ERGÄNZUNG: Der Erstplatzierte überquerte die Ziellinie 0,4 Sek. schneller. \nTHANOL-EXXER! 1. Platz innerhalb der Kohorte. ERGÄNZUNG: Entgegen den Regeln trat er in der Durin-Kohorte an. \nStäbchen-Tofulieferant. 1. Platz. ERGÄNZUNG: Konnte 36,5 Blöcke transportieren. \nStarrwettkampf. 2. Platz. ERGÄNZUNG: Hielt 928 Sek. durch, ohne zu blinzeln. Unterlag schließlich gegen Operatorin Xaihi. \n\nWir möchten alle noch mal an Folgendes erinnern: Diese Veranstaltungen sind nicht offiziell und dienen allein der Unterhaltung. Hört auf, Leute dort hinzuschleppen, nur weil das Wort „Arena“ im Titel vorkommt. Ich dachte, der Kerl hätte gerade seinen 1. Arbeitstag bei Endfield. Wie habt ihr ihn überredet, an so vielen Wettkämpfen teilzunehmen? \n– Flinx \n\nÜberredet? Neee, Flinx. Der Kerl hat gesehen, wie eine Menge Leute Spaß hatten, und wollte mitmachen. Wer ist denn dieser ominöse „Neuling“ eigentlich? \n– Ein Logistik-Operator (der augenscheinlich zu viel Spaß hat)",
+      "file2": "[LISTE: Nach Delta-Bot-Transportvorfällen von Operator Silberfluss abgeholte Gegenstände] \nABGEHOLTER GEGENSTAND (1): \nHolzschnitzerei einer Galoppbestie. Wachs-Beschichtung vorhanden. Äußerst hochwertig. \nANMERKUNG DES ABHOLENDEN: \nEin kleines Geschenk eines Liedsuchers aus dem Hannabit-Zirkel. Er wurde von einer Gruppe Sandplünderer verfolgt. Ich war zufällig in der Nähe und habe ihm geholfen. Ehe unsere Wege sich trennten, gab er mir dies. Er nannte es ein besonderes Andenken für eine Heldin. \nWarum hat er Nuli geschnitzt? Mein Galopper hat die eigentliche Arbeit geleistet und alle Schiffe der Sandplünderer zertrümmert. Ohne ihre Hilfe hätte der Kampf sich viel länger hingezogen. Ich habe das Geschenk daher in ihrem Namen angenommen. Wo wir gerade diesen Vorfall erwähnen, es gibt diesbezüglich etwas, das ich bereue. Nein, es hat nichts damit zu tun, dass ich kein Geschenk erhalten habe. Es geht um den Liedsucher. Er hat sein Wissen genutzt, um all seine Gefolgsleute in ein sicheres Versteck in den Dünen zu bringen und war mutig genug, mehrere Tage lang allein gegen die Sandplünderer zu kämpfen. Ich hätte ihm etwas schenken sollen, nicht er mir. \n\nABGEHOLTER GEGENSTAND (2): \nEine auf Papier geschriebene Liste mit Namen und Adressen. Der Eigentümer war einverstanden, uns den Inhalt ansehen zu lassen. Die meisten der Namen finden sich auch in verschiedenen Identitäts-Erfassungssystemen im Zivilisationsgürtel. \nANMERKUNG DES ABHOLENDEN: \nJa, das sind nur ein paar Kinder. Sie alle verfügen über großes Potenzial. Ich bin ihnen begegnet, als ich wegen eines Riss-Vorfalls in der Gegend war. Einige Überlebende waren in den Bergen eingeschlossen. Ich habe viel Zeit damit verbracht, mit einem geliehenen Fluggerät einen Weg freizuräumen. Große Hoffnung hatte ich nicht, aber was ich fand, überraschte mich. Ein knappes Dutzend Kinder und Jugendliche hielten mehr als einhundert Überlebende in einer Gruppe zusammen, bahnten einen Weg in Richtung der sicheren Zone und sammelten Verwundete auf, die sie unterwegs vorfanden. Die Kinder hatten sogar ein einfaches Warngerät gebastelt, mit dem ich den Riss orten konnte. \nAls ich mich von ihnen verabschiedete, waren einige von ihnen schon wieder in der Schule. Ich habe mir ihre Namen und ein paar Eckdaten aufgeschrieben. Sollten einige von ihnen sich bei der HAW bewerben, wäre es mir eine Ehre, sie offiziell zu empfehlen. Wie wäre es, sie an Endfield zu empfehlen? Ha. Diese Entscheidung müssen sie selbst treffen. \n\nABGEHOLTER GEGENSTAND (3): \nEine abgenutzte Kamera. \nANMERKUNG DES ABHOLENDEN: \nDie hat früher einer alten Journalistin gehört. Ich habe sie noch, weil … ich ihr ein Versprechen gegeben habe. Nur wegen dieses Versprechens. \nUnsere Freundschaft entstand unerwarteterweise während einer Aggeloi-Ausdünnungsaktion. Ich bin alles andere als ein fähiger Sanitäter, aber ich verfüge über etwas Erfahrung auf dem Gebiet der Erstversorgung auf dem Schlachtfeld und habe sie durch einen großen Sumpf geführt. Wir konnten ihre Beine nicht retten … aber sie gab mir diese Kamera, die sie die ganze Zeit über bei sich getragen hatte. Ich schicke ihr oft Bilder. Sie meinte, dass man nie weiß, wann ein Ætherriss oder ein anderer Vorfall einen wunderschönen Ort plötzlich verwüstet. Ich bin viel unterwegs, daher kann ich ihre Kamera nutzen, um für sie die Welt zu sehen. Das Schicksal hat uns zusammengeführt, und ich habe keinen Grund, mich ihm zu widersetzen. \n\nIch bin weit gereist und vielen Leuten begegnet, seit ich das Dorf Pan’an verlassen habe … Es hat mich gefreut, sie mit meiner Klinge beschützen zu können. Mit der Kamera konnte ich viele unvergessliche Momente festhalten. Die Welt ist groß, aber das Schicksal spielt manchmal seltsame Streiche. Gut. \nHier ist meine Unterschrift. Ich möchte nicht, dass die anderen Besucher des Fundbüros meinetwegen warten müssen. Auf Wiedersehen.",
+      "file3": "Nach einer entsprechenden Einladung durch Flinx besucht Operator Silberfluss jetzt immer wieder die Dijiang als Sonder-Ausbilder. Es ist allgemein bekannt, dass Endfield-Operatoren eine Vielzahl von Kampftechniken und Originium-Techniken beherrschen und daher unterschiedlichste Trainingsmethoden zur Anwendung kommen müssen. Die durch Operator Silberfluss demonstrierten Kampffertigkeiten werden dem extrem guten Ruf der Kaiserlichen Wächter gerecht. In Kämpfen auf engem Raum, bei Fernkampf-Technik-Scharmützeln und selbst in berittenen Kämpfen kann er die Taktiken seiner Gegner innerhalb weniger Angriffe analysieren, seine eigene Strategie anpassen und seine Gegenschläge mäßigen, um den Trainingskampf in die Länge zu ziehen. In jedem Kampf übernahm er die Führung und gab den Kampfverlauf an, bis der Gegner allein wegen Erschöpfung aufgeben musste. \nOperatoren, die gut mit der Antischwerkraft-Trainingskammer an Bord der Dijiang vertraut sind, wollten sich Operator Silberfluss gegenüber einen Vorteil verschaffen und forderten ihn in dieser anspruchsvollen Kampfumgebung heraus. Sie aktivierten die Antischwerkraft-Funktion und hofften, Silberfluss so aus der Bahn werfen zu können. Der Kaiserliche Wächter jedoch tippte nur auf den Boden und schoss schnell und blendend wie ein Blitz auf seine Gegner zu. Die Operatoren machten sich bereit, einen Angriff abzuwehren, der jedoch nicht erfolgte. Mit einem sanften Tippen, einem Salto und einem Sprung manövrierte Silberfluss sich an seinen Gegnern vorbei und landete elegant an der Decke der Antischwerkraft-Kammer. \nWir alle sind beeindruckt von Silberfluss’ unglaublicher Anpassungsfähigkeit und Konzentration. Als einige Operatoren ihn im Anschluss um Tipps baten, dürften seine Antworten allerdings einigen Zuhörern sauer aufgestoßen sein. Silberfluss ließ die anderen Operatoren lediglich wissen, dass es ein wichtiger Bestandteil des Trainings der Kaiserlichen Wächter sei, innerhalb nur eines Atemzuges auf die Umgebung zu reagieren und sich daran anzupassen. Er erklärte weiterhin, dass er Kämpfe meist kreativ angehe, in seine Bewegungen auch immer wieder Momente der Reglosigkeit einbaue und am liebsten den Schwung seiner Gegner gegen diese verwende. Während die anderen Operatoren Silberfluss bedrängten und um Rat fragten (ob nun aus ernsthaftem Interesse oder um sich über ihn lustig zu machen), entging ihnen ein wesentlicher Umstand. Silberfluss erwähnte weder die brutale Ausbildung, die er selbst durchlaufen hatte, noch die strengen Verhaltensvorschriften, die mit den geheimen Kampftechniken seiner Familie weitergegeben wurden. \nDie Familie Ye hat sich auf vielen Schlachtfeldern in Yan bewährt und zahlreiche Siege errungen. Dennoch muss Silberfluss auch verglichen mit seinen legendären Vorfahren als Wunderkind angesehen werden. Niemand sonst in seinem Klan kann sich wie ein Komet mit der Geschwindigkeit von Loderndem Feuer fortbewegen. Nach der unerwarteten Begegnung mit seinem Reittier Nuli wurde der berittene Krieger zu einem Blitzschlag der Zerstörung, dem man sich nicht nähern, den man nicht bekämpfen und dem man nicht entkommen konnte. Dies bedeutete jedoch auch, dass Silberfluss härter trainieren musste als alle anderen und oftmals gefährlichere Aufgaben erhielt. \nOperator Silberfluss selbst fasste diese Umstände treffend zusammen: „Je fester man den Blitz greift, desto klarer müssen die eigenen Gedanken sein.“ \n„Aber so begabt zu sein, ist ganz sicher auch nicht einfach! Sicher waren alle extrem streng mit dir!“ \n„Die Härte des Trainings ist sehr viel süßer als die bittere Galle einer Niederlage, die keiner von uns sich erlauben kann.“",
+      "file4": "Mein erster Mentor war mein Ausbilder in der Schwertkunst. \nIch war damals noch ein Junge. Mein Vater hatte offizielle Pflichten zu erfüllen und wenig Zeit, daher lud er ihn aus der Tanjian-Halle ein, um mir die Grundlagen beizubringen. Ich lernte allerdings zu schnell, weshalb der Unterricht nach wenigen Monaten beendet wurde. \nEhe wir auseinandergingen, sagte er mir, dass ich in nur einer Jahreszeit alles gelernt hatte, was er im Laufe seines ganzen Lebens meistern konnte. Er vertraute mir an, dass es in seinem Leben viele Dinge gab, die er bereute. Würde es mir gelingen, ihn zu übertreffen, könnte ich mich denselben Herausforderungen frei von Bedauern stellen. Und sollte ich meine Kampffertigkeiten weiter verbessern, würden andere Mentoren und Ausbilder mich dabei unterstützen. Er meinte, ich sollte mich an die Leistungen und Fehler all meiner Lehrmeister erinnern, da ich vielleicht derjenige wäre, der ihr Bedauern eines Tages hinfortwaschen würde. \nBei diesen Worten wurde mir klar, dass ich nach dem Sinn meines Kämpfens suchen musste. Die Aggeloi haben das Zuhause meines Schwertkunst-Ausbilders zerstört. Eine Klinge hatte nicht ausgereicht, um alle zu beschützen. Es waren dunkle Zeiten, und es gibt viele ähnliche Geschichten. Wer über Talent verfügt, muss auch Verantwortungen und Pflichten schultern. \n\nMeine zweite Mentorin war meine Partnerin Nuli. \nIch war erst vierzehn Jahre alt, als ich ihr in der Wildnis begegnete. Wir beide machten Jagd auf dieselbe Beute, aber die Verfolgung entwickelte sich schnell zu einem Wettkampf. Wir kämpften einen Tag und eine Nacht lang und zerstörten dabei beinahe die Hälfte der Bäume auf dem Hügelhang. Ich war zu stur, um zu verlieren, und für sie galt dasselbe. \nNuli und ich stürzten beinahe zeitgleich in den Fluss. Sie gab selbst dann noch nicht auf, kämpfte sich wieder auf die Hufe und taumelte auf mich zu, um mich mit ihrem Horn zu rammen … ehe sie endlich das Bewusstsein verlor. Der Sieg gehörte ihr. Sie wollte gewinnen und stellte diesen Wunsch selbst über ihre eigene Sicherheit. Jeder, der Pflicht und Autorität schultert, muss über diese geistige Stärke verfügen. \n\nMeine dritte Mentorin kennst du sicherlich. Ich spreche von Tianshi Tan. \nSie ist mir kurz nach meinem Beitritt zur Armee begegnet. Während einer Pause stolzierte sie in unser Camp. Ich war zunächst verwirrt und dachte, jemand hätte versehentlich ein kleines Mädchen ins Camp gelassen. Als dieses „kleine Mädchen“ dann aber die hochrangigen Offiziere, die sie aufhalten wollten, einfach beiseitefegte, erkannte ich in ihr die alte Tianshi Tan, das Mädchen mit der Stärke einer Armee, das ganz allein über das Polargebiet wacht. \nBei unserer Begegnung stellte Tianshi Tan mir alle möglichen Fragen. Vermutlich hat sie mir bei einigen Gelegenheiten, bei denen ich Hals über Kopf gehandelt habe, die HAW vom Hals gehalten … Später sprach ich mit Tianshi Tan über unsere erste Begegnung, und sie erzählte mir, dass sie auf den ersten Blick erkannt hatte, wie viel Ungeduld in mir loderte. Sie verglich mich mit hochwertigem Stahl, aus dem noch niemand eine ordentliche Klinge geschmiedet hatte. Das Problem lag bei mir selbst. Man musste mich noch ordentlich schleifen und polieren. Sie konnte nicht mehr für mich tun, als mich aufs Schlachtfeld zu schicken, wo ich Antworten finden sollte. \n\n„Das reicht! Meine Güte! Das war doch nur eine einfache Frage, was quasselst du denn so viel? Wie viele Mentoren hattest du eigentlich?“ \n„Einige, Lady Si. Ein Junge aus dem Dorf Pan’an brachte mir bei, wie man Monsterbestien aufzieht. Ein Händler aus Luoyi gab mir Tipps dazu, wie ich die Zusammenstellung meines Räucherwerks optimieren konnte. Ein Aldertone in der Wildnis lehrte mich das Singen. Ein Trucker vom Asphalt-Rondell zeigte mir, wie man aus bitteren Früchten süßen Thanol brauen kann … In einer Gruppe von drei Personen findet man sicherlich einen Mentor.“ \n„Pah. Jetzt spielst du wieder den Bescheidenen.“ \n„Vielleicht. Richtiger wäre es, von dumpfer Torheit zu sprechen. In meiner Jugend habe ich mir zu viele Gedanken gemacht. Es mussten viele Jahre vergehen, bis ich endlich einsehen konnte, wie wenig ich wusste, und wie eingeschränkt meine Erfahrungen waren.“ \n„Ich habe nach deinen Mentoren gefragt, aber den Endministrator hast du mit keinem Wort erwähnt!“ \n„Der Endministrator … lässt sich nicht einfach in diese Schublade stecken …“\n„…“"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Kampftechnik",
+        "description": "Kampftechnik: Rasiermesser des Herbstes\nDer Speer ist die wandernde Lunge, das Schwert ist das spiegelnde Rasiermesser des Herbstes. Eine Kaskade aus Bächen und Flüssen strömt aus einem Herzen, das einst kalt und ernst war."
+      },
+      "expert2": {
+        "name": "Gebildet",
+        "description": "Gebildet: Das Betreten der Welt\nEin ganzer Feldzug voller Märsche offenbart viel von der Welt. Nachdem ich die natürliche Schönheit bestaunt habe, lade ich dich ein, oh sternenreicher Strom."
+      },
+      "hobby1": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: In Kontakt mit dem Leben\nAlle Arten von Fertigkeiten, alle Aromen des Lebens. Eine von Öfen gesäumte Straße, ein hell erleuchteter Rückweg."
+      },
+      "hobby2": {
+        "name": "Natur",
+        "description": "Natur: Bodenständig\nEin Spaziergang durch die Felder, ein Nickerchen auf den Hügeln. Ein Galopper folgt meinem Ruf, ein Ritt voller Tempo und Nervenkitzel."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Einsatzvorbereitung 1",
+        "text": "Wenn wir losmüssen, gib einfach den Befehl."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Einsatzvorbereitung 2",
+        "text": "Stehe zu Diensten."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ausgerüstet und bereit. Es wird keine Zurückhaltung geben."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ein strahlend wolkenloser Tag. Perfekt, um den Feind zu dezimieren."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Waffe wird gewechselt",
+        "text": "Könnte diese Waffe sprechen, wäre keine Debatte mehr verloren."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Gut. Für eine ordentliche Arbeit braucht man das richtige Werkzeug."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Talentknoten-Aktivierung",
+        "text": "Bei der Verbesserung geht es nicht nur um eine schrittweise Meisterung, sondern auch um geistige Erleuchtung."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Eine hervorragende Lernerfahrung … Um den Gefallen zu erwidern, möchte ich etwas für dich aufzeichnen. Ein Trainingspartner? Ich habe doch dich schon!"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Operator-Beförderung 1",
+        "text": "Damals haben sich viele Kameraden an der Front gewünscht, von dir ausgezeichnet zu werden … In dieser Hinsicht habe ich wirklich Glück."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Operator-Beförderung 2",
+        "text": "Nuli, zurück. Hör auf, den Endmin anzustupsen … Hmm. Sieht so aus, als wolle sie auch eine Belobigung. Vielleicht kannst du sie noch etwas streicheln?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Operator-Beförderung 3",
+        "text": "Was ist los? Ach, nichts. Ich habe mich gerade daran erinnert, wie ich zum ersten Mal Kapitän der befriedeten Lüfte wurde. Tianshi Tan hat mir lediglich eine Schüssel Nudeln gegeben. Ihr beiden müsst viel gemeinsam haben."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Operator-Beförderung 4",
+        "text": "Die Größe eines Baumes hängt von der Stärke seiner Wurzeln ab. Von Titeln einmal abgesehen, freue ich mich, dass du das Fundament erkannt hast, das ich im Laufe der Jahre aufgebaut habe … Keine Angst. Mit scharfer Klinge und gestählter Disziplin werde ich dir eine hervorragende Unterstützung sein."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Minghe von der HAW, zu deinen Diensten. Kapitän der befriedeten Lüfte? Dieser Titel erfüllt hier kaum einen Zweck. Lassen wir ihn also einfach weg, um Verwirrung zu vermeiden."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "Warten 1",
+        "text": "Bitte wärme etwas Wein für mich auf. Dieser Kampf wird nicht lange dauern."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "Warten 2",
+        "text": "Melde mich zum Dienst. Welche Armee vernichten wir heute?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Zuweisung zur Anlage",
+        "text": "Natürlich. Ich habe mehr drauf als Schwertkampf."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Gruß 1",
+        "text": "Endmin, brauchst du mich für irgendwelche Missionen?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Gruß 2",
+        "text": "Müde? Warum gehen wir nicht einfach spazieren und vertreiben uns die Zeit?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Dijiang-Geplauder 1",
+        "text": "Ich wusste schon lange, dass du kommst … Und nein, ich habe mein verbessertes Gehör nicht aktiviert. Ich habe einfach nur einen Höhenvorteil."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Dijiang-Geplauder 2",
+        "text": "Langsam bereue ich, Nuli nicht mit an Bord gebracht zu haben. Dieses arrogante Mädchen jagt gerne den Wolken nach und gibt mit ihrem Tempo an. Ein paar Tage hier, und sie würde die Schwerkraft etwas mehr zu schätzen wissen."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Dijiang-Geplauder 3",
+        "text": "Endmin, könntest du mir wohl das Arsenal zeigen? Ich habe gehört, das Forschungszentrum sei mit äußerst geschickten Handwerkern besetzt, die eine Sammlung mächtiger Waffen gefertigt haben. Warum? Ich schätze, für einen Soldaten wie mich ist es ganz normal, sich für die Werkzeuge des Krieges zu interessieren. Hmm … warum dieser schockierte Gesichtsausdruck?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Dijiang-Geplauder 4",
+        "text": "Gibt’s hier vielleicht irgendwo ein Stück Holz? Tja, ich muss einfach schnitzen, wenn es etwas ruhiger zugeht. Dieses Stück ist immer noch ziemlich fehlerhaft und … Ich hatte eine plötzliche Inspiration und habe beschlossen, ein Abbild von dir anzufertigen. Es wäre nicht nett, wenn du dir meine ungeschickte Arbeit ansehen würdest."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Dijiang-Geplauder 5",
+        "text": "Ich bin überrascht, hier so viele HAW-Leute zu sehen. Endfield mag anscheinend ein umfassendes Netzwerk. Aber ein paar „gut informierte Personen“ übertreiben womöglich meine … „heldenhafte Vergangenheit“. Ist es dir möglich, Zurückhaltung anzuraten? Ein einziger Schlag öffnet keinen Berg und vertreibt nicht die Wolken. Sie gehen etwas zu weit."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Dijiang-Geplauder 6",
+        "text": "In Yan wird „Minghe“ als Metapher für den Strom der Sterne verwendet. Die Erforschung des Himmels war mit Schwierigkeiten verbunden. Die Terraner durchbrachen schließlich den falschen Himmel, nur um in einem weiteren fremden Himmel gefangen zu sein … Schon daran lässt sich erkennen, dass wir einen weiteren Schritt in Richtung Himmel getan haben."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Geschenke anbieten",
+        "text": "Endmin, bitte nimm das. Keine Sorge, das ist nichts allzu Teures. Ich dachte nur, es könnte dir vielleicht gefallen."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Geschenke annehmen",
+        "text": "Danke. Ich muss mir ein schönes Gegengeschenk überlegen … Hättest du Interesse, einen Tag lang Nuli zu reiten? Sie scheint dich jetzt viel mehr zu mögen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Vertrauensgespräch 1",
+        "text": "Das Endfield-Unterfangen ist kein leichtes. Darum hat die HAW mich zu deiner Unterstützung entsandt. Es wird Zeiten geben, in denen ich meine Pflichten als Kaiserlicher Wächter wahrnehmen muss, aber lass dich davon nicht beirren und erteile deine Befehle ganz normal. Wenn du eine schwere Entscheidung fällen musst, bin ich an deiner Seite. Du kannst unserer Verbindung voll und ganz vertrauen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Vertrauensgespräch 2",
+        "text": "Ein leichtes Aroma? Das ist wahrscheinlich diese Räuchergefäß-Duftkugel. Als ich mich ursprünglich verpflichtet habe, war ich nicht gerade geduldig. Ich musste mich dazu zwingen, wach und aufmerksam zu sein, um meine Pflichten besser zu erfüllen. Aber das hat meine psychische Gesundheit nur noch weiter belastet. Meine Kollegen haben mir daraufhin zur Beruhigung ein Räuchergefäß-Rezept gegeben. Sie haben gesagt, guter Schlaf sei der Schlüssel zum Überwinden aller Widrigkeiten. Und die Realität hat die Richtigkeit ihrer Worte bewiesen … Endmin? Hmm. Schon eingeschlafen. Na dann werde ich deinetwegen Wache halten."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Vertrauensgespräch 3",
+        "text": "Die Sanitäter haben sich über meine Narben erkundigt? Die hier habe ich mir als unartiges Kind eingehandelt. Ich war leichtsinnig, bin von einer Klippe gestürzt und habe mich an einem Felsen geschnitten. Anfangs sah sie gar nicht so schlimm aus, aber mit der Zeit ist sie viel hässlicher geworden. Und die anderen … sind das Ergebnis zahlloser Schlachten und Kämpfe. Zu viele, um sie zu zählen, und nach all dieser Zeit weiß ich von den meisten nicht mal mehr, wann ich sie bekommen habe."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Vertrauensgespräch 4",
+        "text": "Vor einigen Tagen haben einige Kollegen und ich eine Gruppe von Reservisten der Kaiserlichen Wächter für die HAW genehmigt. Zweifellos die Crème de la Crème, aber zu ungestüm, zu sehr auf Selbstdarstellung bedacht und dringend auf geistige und spirituelle Schulung angewiesen. Wenn wir ihnen jetzt wichtige Aufgaben übertragen, fürchte ich, sie könnten ihre Pflicht für den alleinigen Grund ihrer Existenz halten. So ein Vorsprung … Moment mal, du klingst wie deren Papa! Nein! Ich … spreche nur über meine Vergangenheit. Ich will nicht, dass diese Kinder meine Fehler wiederholen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Vertrauensgespräch 5",
+        "text": "Nimm diese Pfeife. Blas hinein, damit Nuli weiß, wo sie dich finden kann. Betrachte es einfach als Möglichkeit zur Kontaktaufnahme im Notfall. Und außerdem ist sie natürlich ein persönliches Geschenk. Schließlich hast du mir die weiten Länder und wohlhabenden Städte gezeigt. Also ja, abseits der Kämpfe möchte ich tatsächlich mit dir an verschiedene Orte reisen. Blas doch jetzt einfach mal in die Pfeife! Nuli ruht sich in der Nähe aus. Wenn sie den Pfiff hört, uns aber hier sieht, wird ihre Reaktion sicher interessant sein."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Geplauder 1",
+        "text": "Das Kompendium der Krieger unter dem Himmel ist einfach nur zur Unterhaltung gedacht. Es wurde von Amateuren mit zu viel Zeit zusammengestellt. Ich habe nie gegen TAHK-Ritter, Elitekämpfer des Sicherheitsbüros oder diese Schwertkämpferin der Familie Chen gekämpft. Diese Rangliste ist also reine Fiktion. Was den „unangefochtenen Champion unter vierzig“ angeht – die haben wahrscheinlich meinen Rang bei den Kaiserlichen Wächtern gesehen und sich das einfach ausgedacht. Und Endmin, bitte starr mich nicht so an. Ich wurde so geboren, also gib mir nicht die Schuld für mein junges Aussehen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Geplauder 2",
+        "text": "Nachdem ich mich von meiner Verletzung erholt hatte, bin ich noch einige Male in dieses Dörfchen zurückgekehrt. Viele Leute waren nicht mehr da, und meine Besuche waren kurz, sodass ich mich darauf verlassen musste, dass andere ein paar Worte weitergaben … Das ist aber kein Problem, da dieser Ort nie mehr von einem Ankhor-Fall getroffen wurde. Hongshan hat auch einige Städte in der Nähe erbaut, und viele Menschen sind dort hingezogen. Einige sind aber auch weiter weg gezogen. Sie schicken mir oft lokale Spezialitäten – ich habe sogar noch zwei Packungen übrig. Interessiert?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Geplauder 3",
+        "text": "Diese Emporkömmlinge aus der Tanjian-Halle sind schon wieder da. Versteh mich nicht falsch. Auf Diskussionen über Kampfsport lasse ich mich immer gerne ein, aber was das Reiten angeht … Nuli und ich haben eine spirituelle Verbindung. Ich kontrolliere sie nicht. Vielmehr arbeite ich mit ihr zusammen, und daran ist nichts Technisches. Apropos: Warum sind sie so vom Kampf zu Pferd besessen? Es kämpft doch kaum jemand auf einem Galopper …"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Geplauder 4",
+        "text": "Die HAW hat jede Menge Bücher und Abhandlungen über yanesische Militärstrategie. Wir haben zwar viel, aber nicht genug erfahren. Eine gute Aufstellung kann über den Ausgang einer Schlacht entscheiden, aber der Zivilisationsgürtel kämpft ganz allein gegen ganz Talos-II. Der Sieg entscheidet sich nicht dadurch, wie viele gegnerische Unterschlupfe wir dem Erdboden gleichmachen, sondern dadurch, wie viele wir zurückerobern, wiederherstellen und bewahren können. Wenn es die Lage zulässt, würde ich lieber auf meinen Feldern arbeiten. Zumindest entsteht durch den in den Boden fließenden Schweiß neue Nahrung."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Geplauder 5",
+        "text": "Als ich der Zeroth-Direktive beigetreten bin, habe ich über jedes Szenario unserer Wiedervereinigung nachgedacht. Vielleicht auf den nördlichen Schlachtfeldern? In den Sandweiten? Während einer Notfallmission? Oder etwa während einer verzweifelten Belagerung …? Ich habe das Nachdenken eingestellt, weil ich wusste, dass ich an deiner Seite kämpfen würde – ganz gleich, was passiert. Verzeih meine Offenheit, aber die Pläne, die du mit Lady Si in den Bergen geschmiedet hast, dürften bei deinen Freunden nicht gut ankommen. Falls sie sich wieder beschwert … sollte ich an deiner Seite bleiben, damit wir uns gemeinsam ihrem Wutanfall stellen können."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Thema: Partner",
+        "text": "Nuli und ich haben auf zahllosen Schlachtfeldern gekämpft. Wir sind mehr als nur „Partner“. Und nein, sie frisst kein einfaches Heu. Man muss es schon mit etwas Aggagrit und Originium-Schnecken-Schleim aufpeppen. Apropos: Nuli ist ein auf Talos-II heimischer Galopper. Bedeutet das, dass sie … fremdartige Nahrung von Terra mag?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Thema: Kaiserliche Wächter",
+        "text": "Das Gesetz von Yan machte die Kaiserlichen Wächter zum Inbegriff der Kampfkunst, da Faustkämpfer als Gesetzlose galten. Trotz des Fehlens nationaler Grenzen waren die „Großen Drei“ von Talos-II weiterhin internen und externen Bedrohungen ausgesetzt. Daher ernannte Tianshi Tan dreizehn Kaiserliche Wächter. Kampfkunst-Kenntnisse sind nur der Anfang. Wir alle haben es zur Meisterschaft im eigenen Bereich gebracht, damit wir unsere Leute beschützen können. Meine Meisterschaft? Die ist recht langweilig … Ich reite alleine in die Reihen der Feinde und hole mir ihren Kommandanten. Nichts weiter."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Thema: Tianshi Tan",
+        "text": "Tianshi Tan reist für gewöhnlich durch den Norden und verteidigt die Polarfront mit Feuersbrunst-Techniken. Sie mischt sich nur ganz selten in Hongshan-Angelegenheiten ein. Doch angesichts ihres hohen Dienstalters wagt es niemand an der HAW, ihr gegenüber Respektlosigkeit zu zeigen. Selbst Lady Si nimmt die Kritik von Tianshi Tan widerspruchslos hin. Die beiden begegnen sich nicht oft, aber wenn sie es tun, ist es meist Tianshi Tan, die Lady Si in irgendein Unheil hineinzieht. Ehrlich gesagt kann ich nicht wirklich sagen, wer von beiden die Erfahrenere ist."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Thema: Si",
+        "text": "Ich muss Nachrichten von Tianshi Tan übermitteln, daher stehe ich tatsächlich recht häufig mit Lady Si in Verbindung. Sie wirkt zwar ziemlich eigensinnig, aber es gibt ein Geheimnis für eine effektive Kommunikation mit ihr. Falls du Interesse hast … hehe, so schwer ist es nicht. Fang einfach mit dem interessantesten Teil an. Sobald sie neugierig genug ist, erzähl ihr einfach den Rest … Was? Ich soll mit ihr wie mit einem Kin…? Äh, nein, nein, hör lieber auf! Einige Dinge sind zu gefährlich, um sie laut auszusprechen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Thema: Waffe",
+        "text": "Ich führe Fulei, den Lauernden Donner, jetzt schon eine ganze Weile. Er hat viele Aggeloi zu Fall gebracht – sowie auch viele Bäume und Gräser. Die Schwertkämpfer-Behörde hat diese Waffe einst zu Studienzwecken angefordert und war sehr verärgert darüber, dass ich sie für alltägliche Aufgaben einsetze. Das war ein langer Streit. Ich betrachte Waffen als Werkzeuge, um Feinde zu besiegen und die Lebenden zu schützen – aber auch die am meisten gepriesenen Stücke vermögen dies nicht ohne einen Anwender zu leisten. Die Qualität einer Waffe hängt also vom Anwender ab, nicht von der Waffe selbst."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Es gibt einen noch nicht gehobenen Schatz. Den sollten wir uns holen."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "An diesem Ort könnte es das geben, was wir brauchen. Sollen wir mal einen Blick riskieren?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Ich habe etwas Ungewöhnliches entdeckt. Sollen wir es uns ansehen?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Starker Gegner entdeckt",
+        "text": "Ein starker Gegner. Wir könnten ihn umgehen, aber ein direkter Angriff wäre besser."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Abbau 1",
+        "text": "Oh? Eine hohe Qualität."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Abbau 2",
+        "text": "Überlass das mir. Zwei Waffen graben besser als eine."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Kiste öffnen",
+        "text": "Ein lange in einer Kiste verborgener Schatz, jetzt gehoben und auf sein Schicksal wartend."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Aurylen erhalten",
+        "text": "Es fliegt gut und frei. Langsam werde ich neidisch."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Eliminierung der Verderbnis",
+        "text": "Bedrohung beseitigt. Der Weg ist frei."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Ausruhen",
+        "text": "Ausgeruht und einsatzbereit … Ziehen wir los."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Taktische Nutzung 1",
+        "text": "Achte auf deine Stärke."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Taktische Nutzung 2",
+        "text": "Ich bin abgelenkt worden. Setzen wir den Kampf fort."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Gefahrenwarnung",
+        "text": "Team, in Stellung gehen und bereit machen!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Verletzt",
+        "text": "Ja, geht schon."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "0 LP",
+        "text": "Tut mir leid, Endmin. Das hätte … nicht passieren dürfen …"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Teammotivation 1",
+        "text": "Ein bemerkenswerter Stunt!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Teammotivation 2",
+        "text": "Makellos wie Quecksilber! Wunderbar!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Motivationsreaktion 1",
+        "text": "Ich erfülle einfach nur meine Pflicht."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Motivationsreaktion 2",
+        "text": "Das Teamwork sollte gelobt werden."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Kampf beginnt 1",
+        "text": "Möge kein Übel diesen Kampf überleben."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Kampf beginnt 2",
+        "text": "Jetzt kommt der Stahl."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Kampfsieg 1",
+        "text": "Das wäre geregelt."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Kampfsieg 2",
+        "text": "Ein wenig überraschendes Ergebnis."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Kampfsieg 3",
+        "text": "Ein großartiger Sieg, ermöglicht durch ein großartiges Team."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Kampfsieg 4",
+        "text": "Wir haben gewonnen. Ich sichere die Umgebung. Ihr alle solltet euch ausruhen."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Niederlage im Kampf",
+        "text": "Ein seltener Kampf gegen einen starken Gegner … Ein weiterer Versuch wird unsere Niederlage ungeschehen machen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Abschlussangriff 1",
+        "text": "DONNER!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Abschlussangriff 2",
+        "text": "ZERSPLITTERE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "Kampffertigkeit 1",
+        "text": "Regenschnitt!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "Kampffertigkeit 2",
+        "text": "Windschnitt!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "Kampffertigkeit 3",
+        "text": "Schattenriss!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Jetzt wird’s ernst."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Die Klinge wurde gezogen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Kombo wirken 1",
+        "text": "BLITZSTOSS!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Kombo wirken 2",
+        "text": "EXPLODIERENDE KLINGE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Wuchtschlag 1",
+        "text": "Du darfst gehen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Wuchtschlag 2",
+        "text": "Du solltest zur Seite treten."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Nach Norden – erblicke meinen Marsch!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Alles endet im Donnergrollen."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Komm, spüre die kosmische Strömung!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Talent <@ba.key>Gipfel der Elektromantie</> verbessert: Wird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</> zugefügt, wird der durch dieses <#ba.crush>Zertrümmern</> verursachte SDN auf das <@ba.vup>{1+crush_damage:0.0}</>-Fache des ursprünglichen Werts erhöht. Der Anteil des SDNs der <@ba.key>Trennen</>-Explosion, den andere Gegner in der Nähe des Ziels erleiden, steigt auf <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Wildheit des Sturms"
+    },
+    "potential2": {
+      "description": "Wille <@ba.vup>+{Will:0}</>, Technik-Intensität <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Elektrifizierter Frühling"
+    },
+    "potential3": {
+      "description": "Kampffertigkeit <@ba.key>Blitzsturm</> verbessert: Für jede <#ba.consume>verbrauchte</> Kumulierung <#ba.pulseonchar>Elektrik</> erhält Silberfluss für <@ba.vup>{potential_duration:0}</> Sek. <@ba.pulse>Verursachter Elektrischer SDN</> <@ba.vup>+{potential_adddamage:0%}</>. Dieser Effekt kann bis zu <@ba.vup>{potential_maxstack:0}</>-mal kumuliert werden. Die Dauer der einzelnen Kumulierungen wird separat gezählt.",
+      "name": "Sturmblitz"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>Gespaltener Himmel</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Leuchtender Fluss der Sterne"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Übersprudelnde Stromquelle</> verbessert: Beim Wirken der Kampffertigkeit <@ba.key>Blitzsturm</> erhält das gesamte Team zusätzlich Technik-Intensität <@ba.vup>+{extra_yuanshi_add:0}</>.\nDer Bonus-SDN der Explosion von <@ba.key>Trennen</> pro Punkt Technik-Intensität von Silberfluss wird auf das <@ba.vup>{thunderdamage_multi:0.0}</>-Fache des Ursprungswertes erhöht.",
+      "name": "Einladung der Himmelslichter"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Leuchtende Lanze der Wildnis",
+      "author": "李吉吉",
+      "description": "Unter dem Fluss der Sterne, in einer von seiner Lanze erhellten Nacht widmete er seine Wache dem Schutz dieser Lande."
+    },
+    "potential3": {
+      "name": "Unter den Wolken gebettet",
+      "author": "kera",
+      "description": "Während einer Rast an der Straße feierte er seine Reise in einem Lager unter den Wolken."
+    },
+    "potential5": {
+      "name": "Träger des Lichts",
+      "author": "ALZiMi",
+      "description": "Ein heller, elektrifizierender Bogen, eine niemals endende Verpflichtung – er wollte der Welt ewigen Frieden bringen."
+    }
+  }
+}

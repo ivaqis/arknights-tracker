@@ -292,6 +292,10 @@
     "name": "\"Re-Ignition\""
   },
   {
+    "id": "achv_event_contingency_contract_1",
+    "name": "\"Indigo Cleansed\""
+  },
+  {
     "id": "achv_event_dungfight",
     "name": "\"Expert Survivor\""
   },
@@ -646,6 +650,10 @@
   {
     "id": "achv_quest_mifu",
     "name": "\"A Fistful of Reflections\""
+  },
+  {
+    "id": "achv_quest_minghe",
+    "name": "\"Back to the Rustics\""
   },
   {
     "id": "achv_quest_sm2l10m3",

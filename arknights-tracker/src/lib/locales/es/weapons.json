@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "He visto a ese cuentacuentos. Por aquel entonces se instaló en un rincón de la ciudad. Tenía una mirada enloquecida y no hablaba de otra cosa que no fueran espadas. \nLos espadachines de los que hablaba seguían toda clase de caminos. Algunos se consagraban al altruismo y a salvar el mundo, otros emprendían en solitario una peregrinación de la espada y otros vagaban por el mundo buscando a alguien a quien desafiar. Cada espadachín portaba una espada distinta, pero todas eran de un filo extraordinario y una leyenda por derecho propio. Cada vez que el cuentacuentos se emocionaba demasiado, tomaba su gastada espada y ejecutaba una danza de florituras, una ráfaga de fría luz centelleante que cortaba el viento. Todos los presentes quedaban maravillados. La gente creía estar contemplando la máxima expresión del arte de la espada. \nEn cuanto al origen del cuentacuentos, también circulaban toda clase de historias, pero ninguna parecía fiable. Por su atuendo, algunos creían que había sido un Tianshi. Alguien tuvo suficiente curiosidad para preguntárselo, pero el cuentacuentos respondió: “¿De verdad importa? No soy más que un simple viajero, un cuentacuentos y un buscador de la espada, una persona corriente que solo relata historias de filos afilados”. \nEl día que se despidió de mí aún seguía relatando historias de espadas. Se hizo tarde y el público ya se había marchado. Solo quedé yo. Como forjador de espadas, apenas podía contener mi curiosidad por su pasado y por el arma que portaba. Así que finalmente encontré la oportunidad de preguntarle antes de que siguiera su camino: “Muchas historias de espadas has contado, cuentacuentos. ¿Tienes alguna historia sobre la espada que portas?” \nEl cuentacuentos se sentó junto a una mesa y se terminó el barril de kohl que había pedido. \nMedio ebrio, comenzó su relato. Había oído hablar de “Llamado lunar”, una espada perdida en Talos-II, forjada por un maestro herrero de Gran Yan. Golpeaba con un impulso increíble capaz de derrotar todo cuanto se interpusiera en su camino. Tras cruzar la Puerta Cósmica y llegar a Talos-II, su camino de regreso no tardó en quedar cortado. La búsqueda de aquella espada se convirtió en su única obsesión y recorrió toda la Franja de la Civilización para encontrarla. Encontró a muchos que afirmaban haber visto el arma, pero sus descripciones diferían enormemente. Confundido por los testimonios contradictorios, el cuentacuentos llegó a convencerse de que “Llamado lunar” quizá no fuera más que una leyenda ficticia e incluso decidió poner fin a su infructuoso viaje. \nUn día, mientras descansaba en la naturaleza, vio a un joven acorralado por varios Aggeloi y lo rescató. El agradecido joven reparó de pronto en la espada que portaba y apenas pudo ocultar su sorpresa: “El patrón de la hoja y los colores de la empuñadura... Son exactamente como cuenta la leyenda. Señor, ¿acaso es usted el portador de ‘Llamado lunar’?” \nAquella revelación repentina dejó primero atónito al cuentacuentos y luego completamente desconcertado. Había recorrido largas distancias y librado varias batallas para ayudar a quienes lo necesitaban. La gente hablaba de sus hazañas e incluso juraba que su espada era el mismísimo ‘Llamado lunar’. \nLa revelación llegó en un instante y todas las pistas convergieron en una sola conclusión: los testimonios dispares no estaban equivocados. Llamado lunar no era una única espada, sino una multitud de filos. No era un nombre otorgado a una sola pieza. Muchas armas habían ganado ese título gracias a sus hazañas. \nTras deleitarme con aquella historia, se levantó para marcharse. \n“Supongo que podríamos añadir algo a esta historia”, dije conmovido mientras contemplaba el reflejo de la luna en mi kohl. \nEl rostro del cuentacuentos se iluminó con una sonrisa. “Sí, debería haber algo más”. \nDicho esto, agitó la mano y se internó en la noche. Nadie supo qué ocurrió después. \nLa historia había concluido y la espada estaba forjada. Se la entregué al joven y sereno espadachín que tenía ante mí. La luz de la luna relució cuando él le dio un ligero movimiento. La espada emitió un suave zumbido que resonó largo y apacible en la noche. \nEl espadachín aceptó solemnemente mi obra. Parecía tener algo en mente, pero me dio las gracias antes de marcharse. Lo vi fundirse poco a poco con la propia luz de la luna... \nMi visión se volvió borrosa. Me pregunté. ¿Había visto a un espadachín caminar bajo la noche o a una espada reflejando el llamado de la luna?",
+    "decoDesc": "Una obra maestra emblemática de los Espadachines de Hongshan. El arma está fabricada con las tecnologías de fundición de metales más recientes y forjada mediante antiguas técnicas yanesas de forjado de espadas. El resultado combina un rendimiento excelente con una belleza que ha resistido el paso del tiempo.",
+    "skills": [
+      {
+        "name": "Voluntad [G]",
+        "description": "Voluntad <@ba.vup>+{will}</>"
+      },
+      {
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Imposición: Estrellas fugaces",
+        "description": "Intensidad de artes <@ba.vup>+{phy_spell_up:0}</>.\nCuando la habilidad del portador aplica <#ba.conduct>Electrificación</>, todo el equipo obtiene ATQ <@ba.vup>+{atk_up:0.0%}</> durante {duration:0} s.\nCuando el portador <#ba.consume>consume</> <#ba.spellinflict>Imposición de artes</>, obtiene DAÑ eléctrico infligido <@ba.vup>+{pulse_dmg_up:0.0%}</> durante {duration2:0} s.\n<@ba.info>Los dos efectos se aplican por separado y no se acumulan entre sí.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Puede que esta tierra no tenga nada de especial. \nLas mismas llanuras de siempre, el mismo aire de siempre y el mismo mar de siempre. Aunque el cielo es distinto. Hay un planeta enorme que podemos ver claramente durante el día. Y tampoco hay lunas gemelas por la noche. La vida apenas es diferente de la de Terra. \n¿Eso es bueno? No lo sé. \nEstoy aquí por el reclutamiento nacional, pero pagan y hay comida. Eso es todo. \n\nPero con el paso del tiempo, empecé a notar las diferencias. \nLa tierra no tiene Originio. Demonios, incluso las fronteras nacionales parecían una broma. Pensé que esto era algún trabajo pionero de frontera Columbiana, donde la gente se parte el lomo todo el día en el Área silvestre por algo de comer. Pero justo hoy, alguien que parecía de la nobleza leithaniana me preguntó a mí, un trabajador reclutado, sobre las especificaciones de unas piezas mecánicas y cómo usar cierta maquinaria. \nY el señor noble no estaba bromeando. \nUrsusiano, Leithaniano, Columbiano... Todas esas etiquetas divisorias ahora se reducen a compañero de equipo, amigo y socio. \nMe gusta cómo resultaron las cosas, ¡es genial! ¿Pero cómo ocurrió? La verdad, no lo sé. \nPregunté un poco por ahí y están tan confundidos como yo. Así que no obtuve mi respuesta durante un tiempo hasta que... \n\n“¿Qué es Endfield?”. \nLe hice esta pregunta al enorme líder de equipo Sarkaz cuando me presenté a trabajar por primera vez. Endfield suena como un nombre de muy mala suerte para una compañía que trabaja en las fronteras. \nNo dijo nada. En cambio, nos llevó a la punta de la nave que servía temporalmente como CG de Endfield. Nos dijo que observáramos bien el planeta y el mundo. \nPlaneta y mundo... Antes casi no usábamos esos términos. \nEl líder de equipo vio mi confusión y sonrió. Me dijo que ese era el significado detrás de Endfield. \n“¿Eso significa que tenemos que usar palabras nuevas y bonitas?”. \n“Significa que dejamos nuestro pasado en Terra”. \n\nQuizá tenía razón. \nAntes de decidir atravesar la Puerta cósmica para llegar a este lugar, yo, y todos los demás, habíamos dejado algo en Terra para siempre. \nPersonas que lucharon en los pozos mineros, que recorrieron el Área silvestre, que trabajaron en las ciudades, que dieron conciertos en las agujas... Todos de pie hombro con hombro a bordo de la nave, listos para construir un futuro juntos. \nEl destino nos dio una elección. Elegimos algo distinto del pasado para crear una nueva forma de vida. \n\n¿Cómo será este mundo? No lo sé. \nPorque lo estamos construyendo ahora mismo. \nLos edificios se alzarán desde el suelo y los cultivos brotarán de la tierra. \nEsta es nuestra respuesta contundente sobre el mundo que estamos creando.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Asalto: Visión del mañana",
         "description": "Al entrar en batalla, todo el equipo obtiene la mejora <@ba.key>Lucha por un sueño</>, que otorga DAÑ infligido <@ba.vup>+{dmg_up:0.0%}</>, Intensidad de artes <@ba.vup>+{phy_spell_up:0}</> y DEF <@ba.vup>+{def_up:0.0%}</> durante {duration:0}s. Cuando termina <@ba.key>Lucha por un sueño</>, el portador restaura <@ba.heal>{hp_up_c:0}</> PV a todo el equipo.\n<@ba.info>Los efectos con el mismo nombre no se pueden acumular.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Llamado lunar",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Voluntad [G]",
-        "description": "Voluntad <@ba.vup>+{will}</>"
-      },
-      {
-        "name": "ATQ [G]",
-        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Imposición: Estrellas en movimiento",
-        "description": ""
       }
     ]
   }

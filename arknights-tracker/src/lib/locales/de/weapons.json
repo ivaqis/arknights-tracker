@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "Ich habe diesen Geschichtenerzähler gesehen. Damals fand er einen Platz an einem abgelegenen Winkel der Stadt. Er hatte einen irren Gesichtsausdruck und redete über nichts anderes als Schwerter. \nDie Schwertkämpfer, von denen er sprach, beschritten alle möglichen Lebenswege. Manche verschrieben sich dem Altruismus und der Rettung der Welt, andere begaben sich allein auf eine Pilgerreise des Schwertes und wiederum andere streiften durch die Welt auf der Suche nach einem würdigen Gegner. Die verschiedenen Schwertkämpfer führten unterschiedliche Schwerter, doch jede Waffe war rasiermesserscharf und eine Legende für sich. Wann immer der Geschichtenerzähler zu aufgeregt war, nahm er sein abgenutztes Schwert zur Hand und führte seinen kunstvollen Schwerttanz auf – ein Wirbel aus kaltem, gleißendem Licht, das durch die Luft schnitt. Er versetzte alle seine Zuschauer in Staunen. Die Menschen glaubten, sie bezeugten die vollkommene Form der Schwertkunst. \nWas die Herkunft des Geschichtenerzählers anbelangt, kursierten alle möglichen Erzählungen, doch keine davon schien Hand und Fuß zu haben. Seiner Kleidung nach zu urteilen, glaubten die Leute, er wäre ein ehemaliger Tianshi. Eine Person war neugierig genug, um den Geschichtenerzähler danach zu fragen, doch dieser erwiderte nur: „Ist das wirklich so wichtig? Ich bin ein bloßer Reisender, ein Geschichtenerzähler, ein Sucher des Schwertes und eine gewöhnliche Person, die lediglich Geschichten von des Messers Schneide erzählt.“ \nSelbst an dem Tag, als er sich von mir verabschiedete, erzählte er noch Geschichten des Schwertes. Es war spät und es waren keine Zuhörer mehr zugegen. Nur ich war noch da. Als Schwertschmied konnte ich meine Neugier über seine Vergangenheit und die Klinge, die er führte, kaum bändigen. Also ergriff ich schließlich die Gelegenheit, ihm vor seiner Abreise eine Frage zu stellen: „Du hast so viele Geschichten über Schwerter erzählt. Kennst du auch eine über das, das du mit dir führst?“ \nDer Geschichtenerzähler saß an einem Tisch und trank das Fass Thanol leer, das er bestellt hatte. \nBeschwipst begann der Geschichtenerzähler zu erzählen. Einst erfuhr er von „Mondruf“ – einer Klinge, die auf Talos-II verloren ging; einer Waffe, die von einem Meisterschmied von Groß-Yan geschmiedet wurde. Damit ausgeführte Hiebe waren von solcher Wucht, dass sie alles in ihrem Weg bezwangen. Nachdem er durch das Kosmische Tor nach Talos-II gekommen war, war ihm der Rückweg schon bald versperrt. Seine Suche nach der Klinge entwickelte sich zu einer Besessenheit und er bereiste den gesamten Zivilisationsgürtel, um sie zu finden. Er begegnete vielen, die behaupteten, die Waffe gesehen zu haben, doch ihre Beschreibungen wichen stark voneinander ab. Der Geschichtenerzähler, verwirrt von den widersprüchlichen Berichten, war überzeugt, dass „Mondruf“ möglicherweise nur eine erfundene Legende war, und beschloss sogar, seine erfolglose Reise zu beenden. \nDoch eines Tages, als er sich in der Wildnis ausruhte, sah er einen Teenager, der von mehreren Aggeloi umzingelt war, und rettete ihn. Der dankbare Teenager wurde plötzlich auf das Schwert aufmerksam, das er hielt, und konnte seine Überraschung kaum verbergen: „Das Muster auf der Klinge und die Farben am Griff … Sie entsprechen genau der Beschreibung aus der Legende. Ist das Schwert, das Sie führen, etwa ‚Mondruf‘?“ \nDie plötzliche Erkenntnis ließ den Geschichtenerzähler zunächst erstarren und ließ ihn dann benommen zurück. Er ist weit gereist und hat einige Schlachten geschlagen, um den Bedürftigen zu helfen. Die Menschen erzählten von seinen Taten und schwörten sogar darauf, dass seine Klinge selbst „Mondruf“ sei. \nDie Erkenntnis kam augenblicklich und alle Hinweise ließen nur eine Schlussfolgerung zu: die voneinander abweichenden Aussagen waren nicht falsch. Mondruf war nicht ein einziges Schwert, sondern eine Vielzahl an Klingen. „Mondruf“ war kein Name, der nur einer einzigen Waffe verliehen wurde. Viele Waffen hatten sich diesen Titel durch Taten verdient. \nNachdem er mich mit einer Geschichte bedacht hatte, erhob er sich, um zu gehen. \n„Ich schätze, wir könnten dieser Geschichte etwas hinzufügen.“ Meine Emotionen gerieten in Wallung, als ich die Spiegelung des Mondes in meinem Thanol betrachtete. \nAuf dem Gesicht des Geschichtenerzählers breitete sich ein strahlendes Lächeln aus. „Ja, da sollte es noch etwas geben.“ \nEr winkte zum Abschied und verschwand in der Nacht. Niemand weiß, was dann passierte. \nDie Geschichte war erzählt und die Klinge geschmiedet. Ich gab sie dem jungen, doch zugleich ruhigen Schwertkämpfer vor mir. Als er sie schwang, blitzte das Mondlicht in ihr auf. Das Schwert gab ein sanftes Summen von sich, das lange und leise durch die Nacht hallte. \nDer Schwertkämpfer nahm mein Werk feierlich entgegen. Etwas ging ihm durch den Kopf, doch er bedankte sich, bevor er ging. Ich habe gesehen, wie er allmählich selbst eins mit dem Mondlicht wurde … \nMeine Sicht verschwamm. Ich war mir nicht sicher: Hatte ich einen Schwertkämpfer gesehen, der des Nachts umherstreifte, oder ein Schwert, das den Ruf des Mondes reflektierte?",
+    "decoDesc": "Ein symbolträchtiges Meisterwerk der Hongshan-Schwertkämpfer. Diese Waffe vereint modernste Metallverhüttungstechnologien mit uralten yanesischen Schwertschmiedekünsten. Das Ergebnis besticht durch überragende Leistung und zeitlose Schönheit.",
+    "skills": [
+      {
+        "name": "Wille [L]",
+        "description": "Wille <@ba.vup>+{will}</>."
+      },
+      {
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Zufügung: Strömende Sterne",
+        "description": "Technik-Intensität <@ba.vup>+{phy_spell_up:0}</>.\nWenn der Anwender durch eine Fertigkeit <#ba.conduct>Elektrifizierung</> verursacht, erhält das gesamte Team ANG <@ba.vup>+{atk_up:0.0%}</> für {duration:0} Sek.\nWenn der Anwender <#ba.spellinflict>Technikkumulierungen</> <#ba.consume>verbraucht</>, verursacht er <@ba.vup>+{pulse_dmg_up:0.0%}</> Elektrischer SDN für {duration2:0} Sek.\n<@ba.info>Die beiden Effekte werden separat angewendet und sind nicht kumulierbar.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Dieses Land ist vielleicht nichts Besonderes. \nDieselben alten Ebenen, dieselbe alte Luft, dasselbe alte Meer. Aber der Himmel ist anders. Es gibt einen riesigen Planeten, den wir tagsüber deutlich sehen konnten. Und es gibt nachts keine Zwillingsmonde. Das Leben ist kaum anders als auf Terra. \nIst das gut? Das weiß ich nicht. \nIch bin wegen der nationalen Arbeitspflicht hier, aber ich bekomme Geld und etwas zu essen. Mehr ist es nicht. \n\nAber mit der Zeit habe ich angefangen, die Unterschiede zu bemerken. \nDas Land hat kein Originium. Scheiße, sogar die Landesgrenzen kamen mir wie ein Witz vor. Ich dachte, das wäre eine columbianische Pionierarbeit im Grenzgebiet, wo die Leute den ganzen Tag in der Wildnis schuften, um etwas zu essen. Aber erst heute hat jemand, der aussah wie leithanischer Adel, mich – einen Zwangsarbeiter – gefragt, wie eine Maschine funktioniert. \nUnd der blaublütige Herr hat keine Witze gemacht. \nUrsisch, leithanisch, columbianisch … Diese spalterischen Etiketten werden jetzt reduziert auf Crewmitglied, Freund und Partner. \nIch finde es schön, wie alles gekommen ist. Es ist toll! Aber wie ist das passiert? Das weiß ich nicht so richtig. \nIch habe mich ein wenig umgehört, und die sind ebenso verwirrt wie ich. Also habe ich eine ganze Weile keine Antwort bekommen, bis … \n\n„Was ist Endfield?“ \nDiese Frage habe ich dem riesigen sarkazischen Teamleiter an meinem ersten Tag gestellt. Endfield klingt nach einem sehr unglücklich gewählten Namen für eine Firma, die im Grenzgebiet tätig ist. \nEr hat nichts gesagt. Stattdessen hat er uns zur Spitze des Schiffs gebracht, das vorübergehend als Endfield-Hauptquartier gedient hat. Er hat gesagt, wir sollen uns den Planeten und die Welt einmal gut ansehen. \nPlanet und Welt … Vorher hatten wir diese Begriffe fast nie verwendet. \nDer Teamleiter hat gesehen, dass ich verwirrt war, und hat gelächelt. Er hat gesagt, sie seien die Bedeutung hinter Endfield. \n„Du meinst, dass wir neue, hübsche Wörter verwenden müssen?“ \n„Ich meine, dass wir unsere Vergangenheit auf Terra gelassen haben.“ \n\nVielleicht hatte er recht. \nBevor ich beschlossen habe, durch das Kosmische Tor zu gehen, um herzukommen, hatte ich – hatten wir alle – etwas für immer auf Terra zurückgelassen. \nMenschen, die in den Bergwerken geschuftet haben, die durch die Wildnis gezogen sind, die in den Städten gearbeitet haben, die Konzerte an den Türmen gegeben haben … Alle standen Schulter an Schulter an Bord des Schiffs, bereit, gemeinsam eine Zukunft aufzubauen. \nDas Schicksal hat uns vor eine Wahl gestellt. Wir haben etwas gewählt, was anders als die Vergangenheit war, um eine neue Lebensweise zu erschaffen. \n\nWie diese Welt sein wird,  das weiß ich nicht. \nWeil wir gerade dabei sind, sie aufzubauen. \nGebäude werden sich aus dem Boden erheben, Feldfrüchte werden aus der Erde sprießen. \nDas ist unsere lautstarke Antwort, welche Welt wir erschaffen.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Sturmangriff: Vision für morgen",
         "description": "Zu Kampfbeginn erhält das gesamte Team den Buff <@ba.key>Traumstreben</>. Dieser gewährt {duration:0} Sek. lang <@ba.vup>+{dmg_up:0.0%}</> Verursachter SDN, <@ba.vup>+{phy_spell_up:0}</> Technik-Intensität und <@ba.vup>+{def_up:0.0%}</> VERT. Wenn <@ba.key>Traumstreben</> endet, stellt der Anwender <@ba.heal>{hp_up_c:0}</> LP für das gesamte Team wieder her.\n<@ba.info>Effekte desselben Namens sind nicht kumulierbar.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Mondruf",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Wille [L]",
-        "description": "Wille <@ba.vup>+{will}</>."
-      },
-      {
-        "name": "ANG [L]",
-        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Zufügung: Strömende Sterne",
-        "description": ""
       }
     ]
   }

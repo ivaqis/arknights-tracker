@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Thường",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 5 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower019_ex": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Tàn Bạo",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 5 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower019_s": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Khó",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 5 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower020": {
     "name": "Hồ Sơ Phòng Thủ: Khiên - Thường",
@@ -303,6 +303,11 @@
     "name": "Chiến Dịch Thử Nghiệm Tái Kích Hoạt",
     "description": "- Chiến dịch này bao gồm 4 đợt kẻ địch liên tiếp. Đánh bại toàn bộ kẻ địch để hoàn thành chiến dịch.\n- Khối Hồi Phục sẽ xuất hiện giữa các đợt. Chạm vào Khối Hồi Phục để hồi HP cho toàn bộ thành viên trong đội.\n- Giữa các đợt có giai đoạn nghỉ; trong thời gian này, các cán viên vẫn được xem là đang trong trạng thái chiến đấu.\n- Chiến dịch có giới hạn thời gian. Khi thời gian kết thúc hoặc HP của toàn bộ cán viên trong đội giảm về 0, chiến dịch sẽ bị gián đoạn.\n- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.",
     "featureDesc": "- Kẻ địch thuộc nhiều chủng loại của Aggeloi.\n- Một số kẻ địch có thể áp dụng hiệu ứng Nhiễm Băng lên cán viên. Cán Viên chịu đủ 4 cộng dồn Nhiễm Băng sẽ bị đông cứng."
+  },
+  "indie_contract002": {
+    "name": "Chiến Dịch Thử Nghiệm Lam Chàm",
+    "description": "- Chiến dịch này bao gồm 3 đợt kẻ địch liên tiếp. Đánh bại toàn bộ kẻ địch để hoàn thành chiến dịch.\n- Khối Hồi Phục sẽ xuất hiện giữa các đợt. Chạm vào Khối Hồi Phục để hồi HP cho toàn bộ thành viên trong đội.\n- Giữa các đợt có giai đoạn nghỉ; trong thời gian này, các cán viên vẫn được xem là đang trong trạng thái chiến đấu.\n- Chiến dịch có giới hạn thời gian. Khi thời gian kết thúc hoặc HP của toàn bộ cán viên trong đội giảm về 0, chiến dịch sẽ bị gián đoạn.\n- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.",
+    "featureDesc": "- Kẻ địch bao gồm nhiều loại bóng nhiễm khuẩn, tạo vật phù thuật, thú hoang và Hải Tặc Cangzei như Khai Thiên Tướng.\n- Bạn vẫn có thể áp dụng Trừ Giáp, Nhiễm Thuật Pháp, Trạng Thái Vật Lý và Phản Ứng Thuật Pháp lên các kẻ địch có tầng khiên."
   },
   "indie_hard001": {
     "name": "Khiên Cuồng Nộ",

@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Electrify",
+      "Crush"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Combat Technique",
+      "Erudite"
+    ],
+    "giftPreferTags": [
+      "Wuling Crafter's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Nature"
+    ],
+    "raceTag": "Lung"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Dust Resplendent",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
+    },
+    "battleSkill": {
+      "name": "Darkness Cowed",
+      "description": "Argent Flow sweeps his lance and deals <@ba.pd>Physical DMG</> to nearby enemies and applies <#ba.airborne>Lift</> to target(s) in front of him.\nAfter Argent Flow casts his combo skill, his battle skill is temporarily changed to <@ba.key>Bolt Rush</>.\n<@ba.key>Bolt Rush</>: Argent Flow mounts his galloper Nuli to leap into mid-air, powers up quickly, and then charges at the target to forcibly apply <#ba.conduct>Electrification</> and deal <@ba.pulse>Electric DMG</> to enemies within a large area in front of him. When this <#ba.conduct>Electrification</> is applied on a target with <#ba.pulseinflict>Electric Infliction</>, it <#ba.consume>consumes</> all <#ba.pulseinflict>Electric Infliction</> stacks from the target and grants <#ba.conduct>Electrification</> <#ba.statuslevel>Status Level +1</> per 1 stack consumed. After <#ba.consume>consuming</> the target's <#ba.pulseinflict>Electric Infliction</>, Argent Flow also applies 1 stack of <#ba.noguard>Vulnerability</>.",
+      "baseDmgMultiplier": "Base DMG Multiplier",
+      "baseStagger": "Base Stagger",
+      "boltRushDmgMultiplier": "Bolt Rush DMG Multiplier",
+      "boltRushStagger": "Bolt Rush Stagger"
+    },
+    "comboSkill": {
+      "name": "Stars Shifted",
+      "description": "COMBO TRIGGER: When an enemy becomes <#ba.noguard>Vulnerable</>.\nArgent Flow wields his blade with lightning speed to unleash a multi-sequence attack that deals <@ba.pulse>Electric DMG</> to enemies along his path. When the final sequence scores a hit, it also applies <#ba.pulseinflict>Electric Infliction</>. Argent Flow's battle skill is then temporarily changed to <@ba.key>Bolt Rush</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "battleSkillChangeDurationS": "Battle Skill Change Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
+    },
+    "ultimate": {
+      "name": "Heavens Sundered",
+      "description": "Argent Flow mounts Nuli and charges with his lance, dealing continuous <@ba.pulse>Electric DMG</> to targets in front of him while impaling and carrying weak enemies before him throughout the charge. After the charge ends, Argent Flow leaps into the air and unleashes a Cleansing Cleave at the ground. The slash deals <@ba.pulse>Electric DMG</> and applies 1 stack of <#ba.pulseinflict>Electric Infliction</>. Argent Flow then pierces the ground with his lance, applying <#ba.crush>Crush</> and dealing <@ba.pulse>Electric DMG</> to enemies within a large area.\n<@ba.info>If Argent Flow's ultimate charges into a non-weak enemy (that cannot be impaled and pushed), his charge will end early.</>",
+      "chargeDmgMultiplier": "Charge DMG Multiplier",
+      "cleansingCleaveDmgMultiplier": "Cleansing Cleave DMG Multiplier",
+      "groundPierceDmgMultiplier": "Ground Pierce DMG Multiplier",
+      "stagger": "Stagger"
+    },
+    "indicator": {
+      "levels": [
+        "Operator Will +10.",
+        "Operator Will +15.",
+        "Operator Will +15.",
+        "Operator Will +20."
+      ],
+      "name": "Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "When Argent Flow applies <#ba.conduct>Electrification</>, this <#ba.conduct>Electrification</> also increases all types of DMG Taken of the target for the same duration, and he also applies <@ba.key>Sunderization</> stack(s) on the target, the number of stacks is equal to the <#ba.conduct>Electrification</> <#ba.statuslevel>Status Level</> and maxes out at {max_stack:0}. <@ba.key>Sunderization</> lasts for {duration:0}s.\nWhen dealing <#ba.crush>Crush DMG</> to a target with <@ba.key>Sunderization</>, this <#ba.crush>Crush DMG</> is increased to <@ba.vup>{crush_damage+1:0.0}</> times the original and detonates all <@ba.key>Sunderization</> stacks. The explosion deals <@ba.vup>[Number of Sunderization stacks × {atk_scale:0%} ATK]</> of <@ba.pulse>Electric DMG</> to the target and {other_damage_percent:0%} of that DMG to other enemies near the said target.\n<@ba.info>When the explosion DMG of Sunderization is dealt to another enemy with Sunderization, it also detonates all Sunderization stacks of that enemy.</>",
+        "When Argent Flow applies <#ba.conduct>Electrification</>, this <#ba.conduct>Electrification</> also increases all types of DMG Taken of the target for the same duration, and he also applies <@ba.key>Sunderization</> stack(s) on the target, the number of stacks is equal to the <#ba.conduct>Electrification</> <#ba.statuslevel>Status Level</> and maxes out at {max_stack:0}. <@ba.key>Sunderization</> lasts for {duration:0}s.\nWhen dealing <#ba.crush>Crush DMG</> to a target with <@ba.key>Sunderization</>, this <#ba.crush>Crush DMG</> is increased to <@ba.vup>{crush_damage+1:0.0}</> times the original and detonates all <@ba.key>Sunderization</> stacks. The explosion deals <@ba.vup>[Number of Sunderization stacks × {atk_scale:0%} ATK]</> of <@ba.pulse>Electric DMG</> to the target and {other_damage_percent:0%} of that DMG to other enemies near the said target.\n<@ba.info>When the explosion DMG of Sunderization is dealt to another enemy with Sunderization, it also detonates all Sunderization stacks of that enemy.</>"
+      ],
+      "name": "Zenith of Voltmancy"
+    },
+    "talent2": {
+      "levels": [
+        "Battle skill <@ba.key>Bolt Rush</> improved: The entire team gains Arts Intensity <@ba.vup>+{yuanshi_add:0}</> for {duration:0}s.\nFor every point of Arts Intensity that Argent Flow has, increase <@ba.key>Sunderization</> explosion DMG by another <@ba.vup>{damage_up:0.0%}</>.",
+        "Battle skill <@ba.key>Bolt Rush</> improved: The entire team gains Arts Intensity <@ba.vup>+{yuanshi_add:0}</> for {duration:0}s.\nFor every point of Arts Intensity that Argent Flow has, increase <@ba.key>Sunderization</> explosion DMG by another <@ba.vup>{damage_up:0.0%}</>."
+      ],
+      "name": "Springvolt Galore"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Manufacturing Cabin to grant operator EXP material production efficiency +20%",
+        "Assign to Manufacturing Cabin to grant operator EXP material production efficiency +30%"
+      ],
+      "name": "Axiom of Combat"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 14%",
+        "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 18%"
+      ],
+      "name": "Tools of Momentum"
+    },
+    "files": {
+      "main": "CODENAME: Argent Flow \nGENDER: Male \nAUTHENTICATION: Hongshan Academy of Sciences \nDOB: October 23 \nRACE: Lung \n[ORIPATHY INFECTION STATUS] \nOripathy negative, based on medical examination reports. \n\n[INTEGRATED PHYSICAL EXAMINATION] \nPHYSIOLOGICAL STRENGTH: Excellent \nCOMBAT SKILL: Outstanding \nTACTICAL ACUMEN: Excellent \nORIGINIUM ARTS ASSIMILATION: Standard \n\nOperator Argent Flow, despite having excellent physical health, extremely healthy daily routines, and zero bad habits (only drinks in moderation), remains highly cooperative when sharing his history of illnesses and injuries... I am formally applying for the public disclosure of this set of data. Bratty youths who kept screeching how \"THERE MUST BE SACRIFICES TO ACQUIRE POWER\" should take a look at a true professional and learn something about taking responsibility for their well-being. \n— Comment is made by a medic operator bearing a deep grudge",
+      "humanResources": "Argent Flow (given name Ye Minghe) is currently an Imperial Guard of Yan and Hongshan Academy of Sciences (HAS) Captain of Pacified Skies*. Following HAS orders, he is now working closely with Endfield Industries, offering battlefield support while providing instructions on various combat techniques. *NOTE: Pursuant to the Law of Yan, the Imperial Guards are not a subordinate organization under the Affiliated Hongshan Academy of Sciences of Tianshi Bureau of Great Yan. However, given the historical complexities involved, this NOTE (absent other details) provides a sufficient explanation for this particular naming convention.\n\nOperator Argent Flow revealed maturity and calm when dealing with other personnel and has proved to be a good team player. Concerns regarding his \"haughty arrogance\", \"extreme unfriendliness\", and other personality issues voiced by some operators seem to have been misplaced. Operator Argent Flow gave two explanations for the rise of such misunderstandings: (1) though it is true that members of the Imperial Guards act in different ways, most of the stories about them are fictional; and (2) certain \"embarrassing follies of youth\" that took place years ago have been passed around for too long, and were probably subject to exaggeration and/or distortion. In other words, all personnel are encouraged to observe common etiquette and avoid dwelling on sensitive subject matters when engaging Operator Argent Flow. This approach is almost certain to secure a chance of friendly sparring or combat technique instruction from the Operator. Please also reserve dialogue sessions in advance and be mentally prepared to wait in a long queue.\nNOTE TO ALL GROUND CREW: These assessments only apply to Operator Argent Flow himself. His galloper is a beast of immense strength and violent temper. Be vigilant and cautious if tasked with feeding or caring for said beast. The Operator has personally organized a comprehensive list of things to look out for. Any personnel tasked with galloper handling MUST PERUSE AND MEMORIZE THE SAID LIST REPEATEDLY.\n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "[RECORDS: Operator Minghe's Performance in the \"Operators Got Talent: Monthly Mega-Arena\"] \nBlindfolded & Armed Combat. 1st Place in Division (forfeits after knowing this is a competition). \nThe Art of Throwing. 1st Place. NOTE: 10 perfect throws, with 3 daggers plunged into the hilt of the previous. \nWrestle and Fight. 1st Place in weight class. NOTE: Handicapped himself by tying one arm to the back. \nInjury SAR Simulation Dash. 1st Place, Division: Forte Down. NOTE: Many Dusthair surgeons have commended his skills. \nBurdo-Bot-Bucker Rodeo. 1st Place. NOTE: Stayed in saddle for 600s. May have achieved a better score if the Bot-Bucker did not break down. \nHerbal Speed Trivia. 2nd Place, Hobbyist Division. \nCreative and Improvised Carving. \"IT'S SO CUTE\" Prizewinner. NOTE: Tool used is a sewing needle. \nMicro-Gravity Office Chair Racing. 2nd Place. NOTE: Only 0.4s behind best record. \nCHUG DA KOHL! 1st Place in Division. NOTE: Ignored the rules and joined the Durin Division. \nTofu Courier with Chopsticks. 1st Place. NOTE: Carried 36.5 pieces. \nNo Blinking. 2nd Place. NOTE: 928s without blinking. Defeated by Operator Xaihi. \n\nGotta remind you all. These are unofficial events designed for fun. Stop dragging people in because you see words like \"Arena\". And I thought this is the guy's day 1 at Endfield. How did you convince him to compete in so many events? \n— Lil' Dodge \n\nConvince? Naww Dodge. Dude just saw a crowd having fun and joined in... So who's this \"day 1 at Endfield guy\" anyways? \n— Logistics Operator (obviously having too much fun)",
+      "file2": "[LIST: Items Claimed by Operator Argent Flow From Delta Bot Transport Incidents] \nITEM CLAIM (1): \nWoodcarving, of a gallopbeast. Wax-coated. Finely made. \nNOTES BY CLAIMANT: \nA small gift from a Hannabit Circuit Songseeker. Some Sandreavers were chasing him. I happened to be passing by and decided to help him out. Before we departed, he gave me this. He described it as a special keepsake for a heroine. \nWhy did he carve Nuli? My galloper was the one who did the real work and crushed one Sandreaver ship after another. Without her aid, it would have been a drawn-out affair. So I accept it on her behalf. Speaking of this incident, I do have my own personal regrets. Well, it has nothing to do with the fact that I didn't get a gift. It's about the Songseeker. With his wisdom and courage, he got his people into a safe hiding spot in the dunes and fought the Sandreavers alone for several days. I should have been the one who gave him something. \n\nITEM CLAIM (2): \nA list of names and addresses written out on paper. The owner agreed to allow us to inspect its contents. Most of the names have matching entries in the various personal identity management systems of the Civilization Band. \nNOTES BY CLAIMANT: \nYeah, they're just a few kids. Promising ones, too. I met them when handling a rift rupture event. Some of the survivors were completely trapped in the mountain. I spent too much time borrowing a flying vehicle and creating a path. I was pessimistic, but what I found surprised me. Barely a dozen kids and teenagers kept over a hundred survivors together and on the move for safety, while picking up the wounded they found along the way. The kids even made a rudimentary energy warning device that helped me pinpoint the rift's location. \nWhen we parted ways, some of them were already back in school. I jotted down their names and information, hoping that if they were to apply to HAS, I'd be honored to vouch for them as their official recommender. How about directing them to Endfield? Hah. That will be their choice to make. \n\nITEM CLAIM (3): \nA worn camera. \nNOTES BY CLAIMANT: \nIt used to belong to an old journalist. I have it because of ... a promise. Just because of a promise. \nIt was an unlikely friendship during an Aggeloi clean-up operation. Though far from being a competent medic, I do have experience in battlefield first-aid and escorted her across a large swamp. We failed to save her legs ... but she gave me this camera that she carried with her throughout the harrowing affair. I often send her pictures. Like she said, nobody knew if an Æther rift or some other accident would suddenly strike a beautiful place. Since I travel a lot, I could use her camera to see the world for her. Fate brought us together, and I have no reason to refuse. \n\nI traveled far and met many people after leaving the village named Pan'an... And I was glad that my blade managed to defend them. I used the camera and recorded many memorable moments. The world may be vast, but fate is a rare thing. That's it. \nI've given my signature. I won't get in the way of other lost-and-found claimants. Farewell.",
+      "file3": "Following Lil' Dodge's invitation, Operator Argent Flow would occasionally visit Dijiang as a special training instructor. Everyone knows that Endfield operators have a vast range of combat techniques and wield all sorts of Originium Arts, requiring the provision of various training methods. Nevertheless, the martial skills demonstrated by Operator Argent Flow proved the immense reputation of the Imperial Guards. In close-quarter battles, ranged Arts skirmishes, or even mounted fights, he always identified his opponent's tricks within a few moves, adjusted his tactics just as quickly, and restrained his counters to extend the sparring. In every battle, he held the initiative and dictated the flow, until the opponent was defeated from sheer exhaustion. \nOperators with extensive experience using the Dijiang anti-gravity training chamber tried to gain an edge on Argent Flow by challenging him in this special facility. They switched on the anti-gravity feature and hoped to see Argent Flow make a fool of himself. But the Imperial Guard gently tapped the ground and flew like a bolt of lightning that blinded the operators' vision. The operators braced for an attack that never came. With a gentle tap, a flip, and a leap, Argent Flow got past his opponents and landed steadily on the ceiling of the anti-gravity chamber. \nWe are all astounded by Operator Argent Flow's incredible adaptability and focus, but his answers may have triggered quite a few people when they asked him for guidance. The Operator simply told them to adapt and change between breaths as it was an essential part of Imperial Guards training. He also explained how he tended to be more creative in fighting, interspersed his moves with moments of stillness, and preferred riding on the opponent's momentum. While the operators surrounded Argent Flow for advice and tips, be it out of admiration or jest, none of them seemed to realize a crucial fact. Argent Flow neither mentioned the brutal training he endured nor the harsh, unforgiving codes that accompanied his family's secret combat techniques. \nThe Ye family had long distinguished themselves on the battlefields of Yan and won numerous victories. Nevertheless, Argent Flow was a prodigy even when rated alongside esteemed names of past generations. No one in his extended clan moved like a comet with the speed of blazing fire. After his unexpected encounter with his mount, Nuli, the mounted warrior became a thunderbolt of destruction that could not be approached, fought against, nor evaded. However, this also meant that Argent Flow had to train harder and was often given far more dangerous tasks. \nOperator Argent Flow summarized it succinctly: \"The tighter one grips the thunderbolt, the clearer their mind must be.\" \n\"But being this good is definitely not easy! They must have been super hard on you!\" \n\"The bitterness of training is far sweeter than the grievous gall of failure that none of us could afford.\"",
+      "file4": "My first mentor was my instructor of swordmancy. \nI was just a young boy. My father was busy with official duties and invited him from Tanjian Hall to help with my fundamentals. But I learned too quickly, and he officially concluded the lessons and left in a few months. \nBefore we parted, he told me that I had only taken a single season to learn everything he had spent a lifetime mastering. He confided how he had many things to regret about in life. If I could surpass him, I would face the same challenges without grief. And should I continue to hone my martial skills, I would have other mentors and instructors. When that day comes, he wanted me to remember their achievements as well as their failures, for I might be the one who could avenge their grief. \nThat was when I realized that I must seek my purpose. The Aggeloi destroyed the home of my swordmancy instructor. A lone blade could not protect everyone. The times were dark, and this was not an isolated tale. With skill comes responsibility and duty. \n\nMy second mentor was my partner, Nuli. \nI was a lad of fourteen and encountered her in the wilderness. Both of us wanted to hunt down the same prey, but the chase quickly turned into a competition. We fought for a day and a night, tearing down almost half the trees on the hill slope. I was too stubborn to lose, and so was she. \nNuli and I collapsed by the river at almost the same time. She, ever the stiff-necked beast, got back to her hooves, staggered towards me, and tried to ram me with her horn ... before she ultimately passed out. It was her victory. She wanted to win and fulfilled her wish to the detriment of her own safety. The bearer of duty and authority must be armed with such mental fortitude. \n\nYou definitely know my third mentor. She is Tianshi Tan. \nI actually met her soon after I joined the army. She swaggered into our camp during our R&R. I was at first confused and thought someone accidentally let a brat into our camp. But when the \"brat\" kicked the high-ranking officers away when they tried to stop her, I suddenly realized that she was Old Tianshi Tan, the one-girl army who stood watch over the Polar North. \nTianshi Tan kept asking me all sorts of questions during that encounter. She probably kept HAS off my back during the several occasions when I acted out of recklessness... I later conversed with Tianshi Tan about our first encounter, and she told me that she saw, at first glance, that I was burning with impatience. She described me as fine steel that could not be forged into a proper blade. I was the problem, and I needed proper grinding and polishing. The only thing she could do was to get me into the battlefield where I might find my answers. \n\n\"Enough! Sheesh! It was a simple question, but you kept rambling on and on and on. How many mentors did you have anyway?\" \n\"Quite a few, Lady Si. A youth from Pan'an Village taught me how to raise burdenbeasts. A vendor of Luoyi gave me lessons on improving my incense mix. An Aldertone in the wildlands taught me how to sing. An Asphalt Roundabout trucker taught me to brew sweet kohl with bitter fruits... From a group of three, one can most certainly find a mentor.\" \n\"Hmph. Trying to act all humble and nice again.\" \n\"Maybe, but blunted foolishness is closer to the truth. I thought too much during my youth. Too many years had to pass before I came to terms with how little I know, and how limited my experience was.\" \n\"I asked you about mentors, but you didn't even mention the Endministrator!\" \n\"The Endministrator ... is more than just a 'mentor' to me...\" \n\"...\""
+    },
+    "tags": {
+      "expert1": {
+        "name": "Combat Technique",
+        "description": "Combat Technique: Razor of Autumn\nThe spear is the wandering lung, the sword is the mirror razor of autumn. A cascade of streams and rivers, flows from a heart once cold and solemn."
+      },
+      "expert2": {
+        "name": "Erudite",
+        "description": "Erudite: Entering the World\nA campaign's worth of marching reveals much of the world. Having gazed upon its natural beauty, I invite thee, o starry flow."
+      },
+      "hobby1": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: In Touch with Life\nAll manners of skills, all flavors of life. A street lined with stoves, a return lit up bright."
+      },
+      "hobby2": {
+        "name": "Nature",
+        "description": "Nature: Down to Earth\nA walk amongst the fields, a nap upon the hills. A galloper heeds my call, a ride of speed and thrill."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Operation Prep 1",
+        "text": "If we must move, just give the order."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Operation Prep 2",
+        "text": "At your command."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Adding to Team 1",
+        "text": "Suited up and ready. There will be no holding back."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Adding to Team 2",
+        "text": "A bright, cloudless day. Perfect for culling the foe."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Switching Weapon",
+        "text": "If this weapon talks, it'd never lose a debate."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Switching Gear",
+        "text": "Good. It takes proper tools to do a proper job."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Talent Node Activation",
+        "text": "Improvement is not only about gradual mastery, but also about mental enlightenment."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Watching Combat Records",
+        "text": "An excellent learning session... To return the favor, let me record something for you. A sparring partner? I've already got you!"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Operator Promotion 1",
+        "text": "Back in the day, many fellow frontline soldiers wished to be decorated by your hands... I am truly fortunate in this regard."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Operator Promotion 2",
+        "text": "Nuli, stand back. Stop nudging the Endmin... Hmm. Seems like she wants a commendation too. Perhaps you can give her a few more pats?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Operator Promotion 3",
+        "text": "This is it? Oh, it's nothing. I just remembered when I first became a Captain of Pacified Skies. Tianshi Tan only treated me to a bowl of noodles. The two of you must have a lot in common."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Operator Promotion 4",
+        "text": "The vastness of a tree depends on the strength of its root. Titles aside, I am happy that you have recognized the foundation I've built over the years... Don't worry. With blade sharp and discipline honed, I will be your greatest support."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Operator Reporting for Duty",
+        "text": "Minghe of HAS, at your service. Captain of Pacified Skies? That title serves little purpose here, so let's just drop it and avoid confusion."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "Standing by 1",
+        "text": "Please warm some wine for me. This battle won't take long."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "Standing by 2",
+        "text": "Reporting in. Which army are we breaking today?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Assigning to Facility",
+        "text": "Of course. I possess more skills than swordsmanship."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Greeting 1",
+        "text": "Endmin, any missions that require my presence?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Greeting 2",
+        "text": "Tired? Why don't we just walk and talk the hours away?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Dijiang Idle Chatter 1",
+        "text": "I knew you were coming from a mile away... And no, I didn't activate my enhanced hearing. It's just a height advantage."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Dijiang Idle Chatter 2",
+        "text": "I'm starting to regret not bringing Nuli aboard. The arrogant girl loves chasing the clouds and showing off her speed. A few days here should make her appreciate gravity a little more."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Endmin, I wonder if you could show me the arsenal? I heard the Research Center is staffed by very skilled artisans who fashioned a collection of powerful weapons. Why? I guess it's only natural for a soldier like me to be interested in the tools of war. Hmm... why do you look so shocked?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Dijiang Idle Chatter 4",
+        "text": "See a chunk of wood by any chance? Well, I can't help but carve when things get a little slow. That piece is still quite flawed and ... I got a burst of inspiration and decided to make a likeness of you. It wouldn't be nice if you saw my clumsy work."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Dijiang Idle Chatter 5",
+        "text": "I am surprised to see many HAS colleagues here. Endfield does enjoy an extensive network. But a few \"well-informed individuals\" might be exaggerating my ... \"heroic past\". Is it possible for you to advise restraint? A single swing does not open a mountain or scatter the clouds. They're going a bit too far."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Dijiang Idle Chatter 6",
+        "text": "In Yan, \"Minghe\" is used as a metaphor for the stream of stars. Exploration of the heavens was fraught with difficulty. The Terrans finally breached the fake sky, only to find themselves trapped in another foreign sky... Even then, you can see we've taken yet another step into the empyrean."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Offering Gifts",
+        "text": "Endmin, please take this. Don't overthink, it's nothing too expensive. I just thought it might make you happy."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Accepting Gifts",
+        "text": "Thank you. I'll need to think about a good return gift... Would you be interested in riding Nuli for a day? She seems to like you a lot more now."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Trust Dialog 1",
+        "text": "The Endfield endeavor is not an easy one. The HAS thus decided to assign me to support you. There will be times when I need to carry out Imperial Guards duties, but don't let that be a concern and just issue your orders normally. When you need to make a hard decision, I will be at your side. You can have full faith in our bond."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Trust Dialog 2",
+        "text": "A gentle aroma? It's probably this incense diffuser ball. When I first enlisted, I wasn't exactly patient. I forced myself awake and alert to better fulfill my duties. Yet this only taxed my mental health further. My colleagues then gave me an incense recipe to calm my mind. They said good sleep is the key to overcoming the odds. And reality proved the wisdom of their words... Endmin? Hmm. Asleep already. Well then, I shall stand vigil for your sake."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Trust Dialog 3",
+        "text": "The medics asked about my scars? I got this one on my tail when I was a naughty kid. I was reckless, fell off a cliff, and cut it on a rock. It wasn't that ugly at first, but age made it look far more terrifying. As for the rest... they're the result of countless battles and fights. Too many to count, and after all this time, I don't even remember when I got most of them."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Trust Dialog 4",
+        "text": "A few days ago, some colleagues and I approved a cohort of Imperial Guards reservists for HAS. Cream of the crop, true, but too bright, too showy, and in serious need of mental and spiritual training. If we give them important tasks right now, I'm afraid they might mistake duty as the reason of their existence. A headstart like that... Wait, dad talk? No! I'm just... talking about my past. I don't want these kids to repeat my mistakes."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Trust Dialog 5",
+        "text": "Take this whistle. Blow it so that Nuli will know where to find you. Just treat it as a way of making emergency contact. Of course, it's also a personal gift. After all, you are the one who showed me the vast lands and prosperous cities. So yes, outside of battles, I do wish to travel to places with you. Why don't you blow the whistle now? Nuli is resting nearby. When she hears the whistle but sees us right here, her reaction will sure be interesting."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Chat 1",
+        "text": "The Catalog of Warriors Under the Heavens is just a work of entertainment. It was compiled by amateurs with too much time on their hands. I never fought any TGCC knights, Security Bureau elites, or that swordmanceress from the Chen family, so those rankings are pure fiction. As for the \"undisputed champion under forty\", they probably saw my rank in the Imperial Guards and made it up. And Endmin, please stop staring. I was born this way, so don't blame me for looking young."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Chat 2",
+        "text": "After recovering from my injury, I returned to that hamlet a few more times. Many folks were no longer there, and my visits were short, so I could only rely on others to pass on a few words... No need to worry though, because no Ankhorfalls ever struck that place again. Hongshan also built a few towns nearby and many people moved there. A few kept moving further away, actually. They often send me local treats, and I still got two packs left. Interested?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Chat 3",
+        "text": "Those upstarts from Tanjian Hall are here again. Don't get me wrong. I always entertain martial arts discussions, but equestrian skills... Nuli and I share a spiritual link. I do not control her. Rather, I work with her and there is nothing technical about it. Speaking of which, why are they so obsessed with mounted combat? Hardly anyone fights on a galloper..."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Chat 4",
+        "text": "HAS has plenty of books on Yanese military strategy and treatises. We've learned much but not enough. Good deployment can decide the battlefield, but the Civilization Band is battling the entirety of Talos-II on its own. Victory is not decided by how many enemy lairs we raze to the ground, but by how much we can retake, restore and preserve. If the situation permits, I'd rather work on my farms. At least pouring sweat into the soil grows more food."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Chat 5",
+        "text": "When I first joined Zeroth Directive, I thought about every scenario of our reunion. Would it be in the northern battlefields? The sandy expanse? During an emergency mission? Or a desperate siege...? I stopped thinking because I knew I'd be fighting by your side no matter what. Pardon my bluntness, but the plans you made with Lady Si in the mountains might not sit well with your friends. If she complains again... let me stay by your side and face her tantrum together."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Topic: Partner",
+        "text": "Nuli and I fought in countless battlefields. The two of us are more than just \"partners\". And nope, she wouldn't eat simple hay. You have to spice it up with some Aggagrit and Originium Slug mucus. Speaking of which, Nuli is an indigenous galloper of Talos-II. Does that mean she likes ... alien food from Terra?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Topic: Imperial Guards",
+        "text": "The Law of Yan made the Imperial Guards the pinnacle of martial arts, as pugilists were seen as lawbreakers. Despite the lack of national boundaries, the Big Three of Talos-II still faced internal and external threats. Tianshi Tan thus appointed thirteen Imperial Guards. Martial expertise is just the basics. Each of us is a master of our field, allowing us to protect our people. My mastery? It's quite boring... I ride alone into enemies and get their commander. Nothing more."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Topic: Tianshi Tan",
+        "text": "Tianshi Tan is usually traveling across the north and defending the polar front with Arts of conflagration. Very rarely does she get involved with Hongshan matters. But given her great seniority, no one in HAS dares to show any disrespect. Even Lady Si would take Tianshi Tan's criticisms without objection. The two do not meet often, but when they do, Tianshi Tan is usually the one dragging Lady Si into mischief. Honestly, I can't really tell who's the senior between them."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Topic: Si",
+        "text": "I have to convey messages from Tianshi Tan, so I do correspond with Lady Si quite often. The Lady does seem rather willful, but there's a secret to communicating effectively with her. If you're interested... hehe, it's not that hard. Just start with the most interesting part. Once she's curious enough, just tell her the rest... What? Like talking to some little chil—?! Uh, no, no, better stop here! Some things are too dangerous to say out loud."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Topic: Weapon",
+        "text": "I've wielded Fulei, the Lurking Thunder, for quite a while. Many Aggeloi fell to it, as did many trees and weeds. The Bureau of Swordmancers once requested it for study, and got really upset at me for wasting it on mundane chores. It was a long argument. I regard weapons as tools for subduing enemies and protecting the living, and even the most lauded pieces cannot do so without a wielder. Thus, a weapon's quality lies in the wielder, and not in itself."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Resource/Collectible Detected 1",
+        "text": "There's an unclaimed treasure. Let's make better use of it."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Resource/Collectible Detected 2",
+        "text": "That site might have what we need. Let's go have a look?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Unexplored Area Detected",
+        "text": "I spotted something unusual. How about a closer look?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Powerful Enemy Discovered",
+        "text": "A strong adversary. Discretion is a choice, but direct engagement is better."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Mining 1",
+        "text": "Oh? The quality is good."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Mining 2",
+        "text": "Leave it to me. Two weapons mine better than one."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Opening a Crate",
+        "text": "A treasure long hidden in a crate, now discovered and awaiting its fate."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Acquiring Aurylene",
+        "text": "It flies well and it flies free. I'm starting to envy it."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Eliminating the Blight",
+        "text": "Threat eliminated. Passage is clear."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Rest",
+        "text": "Well-rested and ready for deployment... Let's move out."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Tactical Use 1",
+        "text": "Monitor your strength."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Tactical Use 2",
+        "text": "I got distracted. Let the battle continue."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Danger Warning",
+        "text": "Team, brace and prepare!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Injured",
+        "text": "It's fine."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "0 HP",
+        "text": "Sorry Endmin, I should have... kept going..."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Team Encouragement 1",
+        "text": "Your stunt is remarkable!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Team Encouragement 2",
+        "text": "Like flawless quick silver! Marvelous!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Encouragement Response 1",
+        "text": "I'm simply fulfilling my duty."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Encouragement Response 2",
+        "text": "It's the teamwork that deserves praise."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Combat Begins 1",
+        "text": "Let no malice survive this battle."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Combat Begins 2",
+        "text": "The steel shall follow."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Combat Victory 1",
+        "text": "It has been settled."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Combat Victory 2",
+        "text": "An unsurprising resolution."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Combat Victory 3",
+        "text": "A great victory made possible by a great team."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Combat Victory 4",
+        "text": "We won. I'll secure the perimeters. Everyone, please get some rest now."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Combat Defeat",
+        "text": "A rare fight against a strong foe... Another attempt shall avenge our defeat."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "THUNDER!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "SHATTER!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "Battle Skill 1",
+        "text": "Rain split!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "Battle Skill 2",
+        "text": "Slash wind!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "Battle Skill 3",
+        "text": "Shadow tear!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Combo Skill Ready 1",
+        "text": "Time to get serious."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Combo Skill Ready 2",
+        "text": "The blade is out."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Combo Casting 1",
+        "text": "LIGHTNING STRIKE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Combo Casting 2",
+        "text": "BURSTING BLADE!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Finisher 1",
+        "text": "You may take your leave."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Finisher 2",
+        "text": "You should step aside."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "To the North, behold my march!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "All ends in the roar of thunder."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Come, feel the cosmic flow!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Talent <@ba.key>Zenith of Voltmancy</> improved: When applying <#ba.crush>Crush</> to a target with <@ba.key>Sunderization</>, the DMG dealt by this <#ba.crush>Crush</> is increased to <@ba.vup>{1+crush_damage:0.0}</> times the original. Proportion of <@ba.key>Sunderization</> explosion DMG dealt to other enemies near the target is increased to <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Wildswept Storm"
+    },
+    "potential2": {
+      "description": "Will <@ba.vup>+{Will:0}</>, Arts Intensity <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Electrified Spring"
+    },
+    "potential3": {
+      "description": "Battle skill <@ba.key>Bolt Rush</> improved: For every 1 stack of <#ba.pulseonchar>Electric Infliction</> <#ba.consume>consumed</>, Argent Flow gains <@ba.pulse>Electric DMG Dealt</> <@ba.vup>+{potential_adddamage:0%}</> for <@ba.vup>{potential_duration:0}</>s. This effect can reach <@ba.vup>{potential_maxstack:0}</> stacks. Duration of each stack is counted separately.",
+      "name": "Storm Blitz"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Heavens Sundered</> improved: Ultimate Energy Cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Starflow Illuminated"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Springvolt Galore</> improved: When casting the battle skill <@ba.key>Bolt Rush</>, the entire team gains an additional Arts Intensity <@ba.vup>+{extra_yuanshi_add:0}</>.\n<@ba.key>Sunderization</> explosion DMG bonus per point of Argent Flow's Arts Intensity is increased to <@ba.vup>{thunderdamage_multi:0.0}</> times the original.",
+      "name": "Invitation to Celestial Lights"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Bright Lance of the Wilds",
+      "author": "李吉吉",
+      "description": "Beneath a river of stars, in a night lit by his lance, he dedicated his guard in the defense of these lands."
+    },
+    "potential3": {
+      "name": "Camped Beneath the Clouds",
+      "author": "kera",
+      "description": "A camp 'neath the clouds, while idling by the road, he celebrated his journey with a delightful toast."
+    },
+    "potential5": {
+      "name": "Bearer of Light",
+      "author": "ALZiMi",
+      "description": "A bright electrifying arc, a commitment ever burning, he made a wish to bring everlasting peace to the world."
+    }
+  }
+}

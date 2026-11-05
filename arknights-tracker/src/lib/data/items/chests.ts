@@ -2334,6 +2334,91 @@ export const chests: Record<string, ChestData> = {
             ]
         ]
     },
+    "item_case_wpn_selfselect_gahca_1_6_2": {
+        "id": "item_case_wpn_selfselect_gahca_1_6_2",
+        "type": 2,
+        "selectedCount": 1,
+        "options": [
+            [
+                {
+                    "id": "thermiteCutter",
+                    "gameId": "wpn_sword_0012",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "whiteNightNova",
+                    "gameId": "wpn_sword_0014",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "valiant",
+                    "gameId": "wpn_lance_0010",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "oblivion",
+                    "gameId": "wpn_funnel_0009",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "clannibal",
+                    "gameId": "wpn_pistol_0009",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "exemplar",
+                    "gameId": "wpn_claym_0004",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ]
+        ]
+    },
     "item_case_wpn_selfselect_gahca_c_1": {
         "id": "item_case_wpn_selfselect_gahca_c_1",
         "type": 2,

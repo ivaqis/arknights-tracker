@@ -1043,7 +1043,8 @@
     "typhoeus": "티프로스",
     "endministrator": "관리자",
     "purrchena": "푸치나",
-    "si": "사"
+    "si": "사",
+    "argentFlow": "명하"
   },
   "weaponsList": {
     "custom_weapon": "커스텀 무기",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "심연에서 북쪽을 바라보며 10회 허가증",
     "ticketgacha_special_ten_lt_1_4_2": "찬란한 샛별 10회 허가증",
     "ticketgacha_weaponbox_lt_1_2_2": "융화 신청 허가증",
-    "ticketweaponbox_ten_1_lt": "기간 한정 무기 보물 상자 10회권"
+    "ticketweaponbox_ten_1_lt": "기간 한정 무기 보물 상자 10회권",
+    "business_card_topic_chr_0037_minghe": "빛을 품으리라",
+    "item_activity_contract_gold_1": "결정화 화폐 · 잿빛",
+    "item_case_wpn_selfselect_gahca_1_6_2": "보충 무기고 상자 · 월영",
+    "item_char_equip_supply_minghe": "무기고 방어구 상자α · 천하",
+    "item_charpotentialup_chr_0037_minghe": "명하의 증표",
+    "item_mission_c37m1_foragel": "매운 미끼",
+    "item_mission_c37m3_branch": "야명하가 준 나뭇가지",
+    "item_mission_c37m3_tools": "우리 수리 도구",
+    "item_mission_c37m3_woodenboard": "튼튼한 목판",
+    "item_port_horse_1": "흔들 스프링 - 노여",
+    "item_shot_anim_minghe_m_1": "오랜 벗과의 한때",
+    "item_ticketgacha_special_single_lt_1_6_2": "은하수와 함께 헤드헌팅 허가증",
+    "item_user_avatar_chr_0037_minghe": "명하",
+    "ticketgacha_special_single_lt_1_6_2": "은하수와 함께 헤드헌팅 허가증"
   },
   "buildingNames": {
     "component_mc_1": "부품 가공기",

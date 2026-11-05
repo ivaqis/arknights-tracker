@@ -1845,7 +1845,8 @@ export const changelogData = [
     {
         "version": "1.6",
         "characters": [
-            "si"
+            "si",
+            "argentFlow"
         ],
         "weapons": [
             "jadeVessel",
@@ -1899,7 +1900,9 @@ export const changelogData = [
             "achv_quest_e12m1",
             "achv_quest_e12m4",
             "achv_quest_e12m5",
-            "achv_quest_sm2l10m3"
+            "achv_quest_sm2l10m3",
+            "achv_event_contingency_contract_1",
+            "achv_quest_minghe"
         ],
         "startTime": "2026-10-14 22:00:00",
         "startTimeAsia": "2026-10-15 11:00:00",
@@ -2030,7 +2033,21 @@ export const changelogData = [
             "item_user_avatar_activity_12",
             "item_user_avatar_activity_13",
             "item_user_avatar_frame_activity_8",
-            "item_user_avatar_frame_activity_9"
+            "item_user_avatar_frame_activity_9",
+            "business_card_topic_chr_0037_minghe",
+            "item_activity_contract_gold_1",
+            "item_case_wpn_selfselect_gahca_1_6_2",
+            "item_char_equip_supply_minghe",
+            "item_charpotentialup_chr_0037_minghe",
+            "item_mission_c37m1_foragel",
+            "item_mission_c37m3_branch",
+            "item_mission_c37m3_tools",
+            "item_mission_c37m3_woodenboard",
+            "item_port_horse_1",
+            "item_shot_anim_minghe_m_1",
+            "item_ticketgacha_special_single_lt_1_6_2",
+            "item_user_avatar_chr_0037_minghe",
+            "ticketgacha_special_single_lt_1_6_2"
         ]
     }
 ];

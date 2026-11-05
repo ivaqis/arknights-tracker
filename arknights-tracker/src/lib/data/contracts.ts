@@ -15,14 +15,30 @@ export const contingencyContracts: ContingencyContractStage[] = [
     {
         "id": "indie_contract002",
         "activityId": "activity_contingency_contract_1",
-        "name": "Contingency Contract #2",
+        "name": "Indigo Experimental Operation",
         "picPath": "dung_ss_01",
         "startTime": "2026-11-05 12:00:00",
         "startTimeAsia": "2026-11-05 12:00:00",
-        "endTime": "2026-12-03 04:00:00",
-        "endTimeAsia": "2026-12-03 04:00:00",
-        "enemyIds": [],
-        "enemyLevels": []
+        "endTime": "2026-12-02 04:00:00",
+        "endTimeAsia": "2026-12-02 04:00:00",
+        "enemyIds": [
+            "eny_0117_klhound",
+            "eny_0118_klhog_cc",
+            "eny_0124_kltdcap_cc",
+            "eny_0112_jzmonk_cc_2",
+            "eny_0128_babyents_cc",
+            "eny_0113_jzogre_cc",
+            "eny_0097_hsmino2_cc"
+        ],
+        "enemyLevels": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+        ]
     },
     {
         "id": "indie_contract001",

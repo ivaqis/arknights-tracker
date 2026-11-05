@@ -1216,7 +1216,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Argent Flow"
   },
   "weaponsList": {
     "custom_weapon": "Custom Weapon",
@@ -3596,7 +3597,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Gaze North to the Rift 10×Permit",
     "ticketgacha_special_ten_lt_1_4_2": "Bedazzling Dawnstar 10×Permit",
     "ticketgacha_weaponbox_lt_1_2_2": "Blaze in the Winds Issue Cert",
-    "ticketweaponbox_ten_1_lt": "LTO Weapon Crate 10×Cert"
+    "ticketweaponbox_ten_1_lt": "LTO Weapon Crate 10×Cert",
+    "business_card_topic_chr_0037_minghe": "Bearer of Light",
+    "item_activity_contract_gold_1": "Vitrified Indigo",
+    "item_case_wpn_selfselect_gahca_1_6_2": "Arms OC: Moongleam",
+    "item_char_equip_supply_minghe": "Arsenal Defense Crate α: Star River",
+    "item_charpotentialup_chr_0037_minghe": "Argent Flow's Token",
+    "item_mission_c37m1_foragel": "Spicy Bait",
+    "item_mission_c37m3_branch": "Branch From Ye Minghe",
+    "item_mission_c37m3_tools": "Beast Pen Repair Tools",
+    "item_mission_c37m3_woodenboard": "Sturdy Planks",
+    "item_port_horse_1": "Rocking Nuli",
+    "item_shot_anim_minghe_m_1": "Idling With an Old Friend",
+    "item_ticketgacha_special_single_lt_1_6_2": "The Stars Are With Me HH Permit",
+    "item_user_avatar_chr_0037_minghe": "Argent Flow",
+    "ticketgacha_special_single_lt_1_6_2": "The Stars Are With Me HH Permit"
   },
   "buildingNames": {
     "component_mc_1": "Fitting Unit",

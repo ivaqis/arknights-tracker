@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "File Konstruksi: Roh - Normal",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 5 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
   },
   "indie_battletower019_ex": {
     "name": "File Konstruksi: Roh - Brutal",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 5 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
   },
   "indie_battletower019_s": {
     "name": "File Konstruksi: Roh - Sulit",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 5 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
   },
   "indie_battletower020": {
     "name": "File Pertahanan: Perisai - Normal",
@@ -303,6 +303,11 @@
     "name": "Operasi Eksperimen Pengapian Ulang",
     "description": "- Dalam operasi ini, ada 4 gelombang musuh berturut-turut yang harus dihadapi. Kalahkan semua gelombang musuh untuk menyelesaikan operasinya.\n- Massa Pemulih akan dijatuhkan di antara gelombang. Sentuh untuk memulihkan HP setiap rekan tim.\n- Ada sesi istirahat di antara gelombang. Selama waktu istirahat ini, operator dianggap sedang bertarung.\n- Operasi ini punya timer hitung mundur. Setelah timer berakhir atau HP semua operator dalam tim menjadi NOL, operasi akan dihentikan.\n- Item taktis dan item habis pakai tidak bisa digunakan.",
     "featureDesc": "Musuh berupa berbagai tipe Aggelos.\n- Beberapa musuh bisa mengakibatkan Cryo Infliction kepada operator. Operator yang terkena 4 tumpuk Cryo Infliction akan membeku."
+  },
+  "indie_contract002": {
+    "name": "Operasi Eksperimen Indigo",
+    "description": "- Dalam operasi ini, ada 3 gelombang musuh berturut-turut yang harus dihadapi. Kalahkan semua gelombang musuh untuk menyelesaikan operasinya.\n- Massa Pemulih akan dijatuhkan di antara gelombang. Sentuh untuk memulihkan HP setiap rekan tim.\n- Ada sesi istirahat di antara gelombang. Selama waktu istirahat ini, operator dianggap sedang bertarung.\n- Operasi ini punya timer hitung mundur. Setelah timer berakhir atau HP semua operator dalam tim menjadi NOL, operasi akan dihentikan.\n- Item taktis dan item habis pakai tidak bisa digunakan.",
+    "featureDesc": "- Musuh mencakup berbagai bayang-bayang hawar, makhluk sihir, binatang buas, dan perompak Cangzei seperti Cloud Obliterator.\n- Kamu masih bisa mengakibatkan Vulnerability, Arts Infliction, Status Fisik, dan Arts Reaction kepada musuh yang memiliki tumpukan perisai."
   },
   "indie_hard001": {
     "name": "Perisai Mengamuk",

@@ -1220,7 +1220,8 @@
     "typhoeus": "Тифея",
     "endministrator": "Эндминистратор",
     "purrchena": "Муррчена",
-    "si": "Си"
+    "si": "Си",
+    "argentFlow": "Серебристый Поток"
   },
   "weaponsList": {
     "custom_weapon": "Кастомное оружие",
@@ -3600,7 +3601,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Разрешение х10 «Вид на северный разлом»",
     "ticketgacha_special_ten_lt_1_4_2": "Разрешение х10 «Ослепительная утренняя звезда»",
     "ticketgacha_weaponbox_lt_1_2_2": "Сертификат поставки «Жаркий ветер»",
-    "ticketweaponbox_ten_1_lt": "Сертификат х10 на врем. ящик с оружием"
+    "ticketweaponbox_ten_1_lt": "Сертификат х10 на врем. ящик с оружием",
+    "business_card_topic_chr_0037_minghe": "Несущий свет",
+    "item_activity_contract_gold_1": "Кристаллизованное индиго",
+    "item_case_wpn_selfselect_gahca_1_6_2": "Пополнение арсенала «Лунное сияние»",
+    "item_char_equip_supply_minghe": "Защитный ящик арсенала α «Звездная река»",
+    "item_charpotentialup_chr_0037_minghe": "Жетон Серебристого Потока",
+    "item_mission_c37m1_foragel": "Острая приманка",
+    "item_mission_c37m3_branch": "Ветка от Е Минхэ",
+    "item_mission_c37m3_tools": "Инструменты для ремонта загона",
+    "item_mission_c37m3_woodenboard": "Крепкие доски",
+    "item_port_horse_1": "Нули-качалка",
+    "item_shot_anim_minghe_m_1": "Отдых со старым другом",
+    "item_ticketgacha_special_single_lt_1_6_2": "Разрешение на наем «Звезды со мной»",
+    "item_user_avatar_chr_0037_minghe": "Серебристый Поток",
+    "ticketgacha_special_single_lt_1_6_2": "Разрешение на наем «Звезды со мной»"
   },
   "buildingNames": {
     "component_mc_1": "Модуль штамповки",

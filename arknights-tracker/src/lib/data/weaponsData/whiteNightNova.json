@@ -515,7 +515,8 @@
     "rOps": {
         "skill": [
             "arclight",
-            "laevatain"
+            "laevatain",
+            "argentFlow"
         ],
         "attr": []
     }

@@ -271,6 +271,15 @@
       "Gift: Reach Specific Operator Potentials"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Bearer of Light",
+    "type": "Profile Theme",
+    "desc": "A theme for the Profile screen. Profile themes are shown at various places.",
+    "decoDesc": "A bright electrifying arc, a commitment ever burning, he made a wish to bring everlasting peace to the world.",
+    "obtainWays": [
+      "Gift: Reach Specific Operator Potentials"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Theme: Default",
     "type": "Profile Theme",
@@ -403,6 +412,13 @@
   },
   "item_activity_contract_gold_0": {
     "name": "Vitrified Coin",
+    "type": "Event Currency",
+    "desc": "A special item acquired by completing contract missions. It is exchangeable for rewards at the [Secret Sanctuary] of the [Contingency Contract] event. The item will be removed once the [Secret Sanctuary] is closed.",
+    "decoDesc": "Spin it on your fingertip. The shimmering radiance reflecting off its surface is proof that the ancient contract lives on.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Vitrified Indigo",
     "type": "Event Currency",
     "desc": "A special item acquired by completing contract missions. It is exchangeable for rewards at the [Secret Sanctuary] of the [Contingency Contract] event. The item will be removed once the [Secret Sanctuary] is closed.",
     "decoDesc": "Spin it on your fingertip. The shimmering radiance reflecting off its surface is proof that the ancient contract lives on.",
@@ -2146,6 +2162,15 @@
       "Arms Offering"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "Arms OC: Moongleam",
+    "type": "Crate",
+    "desc": "Open this to select and receive one weapon provided within.",
+    "decoDesc": "A heavy crate with incredibly tight seals. \"The aim of providing diverse weapon choices is to ensure safer battlefield operations,\" thought the Arsenal Engineers. And thus they filled up the crate with weaponry that reflected the Moongleam.",
+    "obtainWays": [
+      "Arms Offering"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "Arms OC: Solid Ice",
     "type": "Crate",
@@ -2372,6 +2397,13 @@
     "type": "Crate",
     "desc": "Open this for a set of gear with maxed artificing that fits a specified operator.",
     "decoDesc": "The Arsenal Engineers have painstakingly prepared this β-type defensive gear bundle with pieces of equipment that fit Operator Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Arsenal Defense Crate α: Star River",
+    "type": "Crate",
+    "desc": "Contains a set of gear with maxed artificing that fits a specified operator. Defense Crates are automatically opened upon acquisition. The gear within will be stored in the Valuables Stash.",
+    "decoDesc": "The Arsenal Engineers have painstakingly prepared this α-type defensive gear bundle with pieces of equipment that fit Operator Argent Flow.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Operator Token",
     "desc": "Raises Si's potential.",
     "decoDesc": "An accounting book that does not look very thick. They say this is the \"top secret ledger\" of Yuanyuan Innkeeper after all those years in business. However, when you flipped it open for a read, you find instead a casually written set of records and notes about things, sayings, and people that Si cares most about. After all, the principles of running Yuanyuan Manor rest in the name of the inn itself.",
+    "obtainWays": [
+      "Gift: Operator Onboarding"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Argent Flow's Token",
+    "type": "Operator Token",
+    "desc": "Raises Argent Flow's potential.",
+    "decoDesc": "An incense orb pendant powered by Originium Arts. The metal casing is very worn and covered in scratches. When lit, the orb gives off a mild aroma of fragrant herbs. Like you, he knew that every opportunity for rest under gentle light is rare and welcome, especially to those marching to the fields of war.",
     "obtainWays": [
       "Gift: Operator Onboarding"
     ]
@@ -6141,6 +6182,42 @@
       "Reward: Mission"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Spicy Bait",
+    "type": "Mission Item",
+    "desc": "A bait made using tartpeppers.",
+    "decoDesc": "This grassy bait ball gives off a smell that carries a slight tinge of irritation. It is a cause of curiosity. How did Minghe find out that it is a cure for gastric ailments for burdenbeasts?",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Branch From Ye Minghe",
+    "type": "Mission Item",
+    "desc": "Branch From Ye Minghe",
+    "decoDesc": "Branch From Ye Minghe",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Beast Pen Repair Tools",
+    "type": "Mission Item",
+    "desc": "A set of tools for repairing beast pens.",
+    "decoDesc": "A set of common yet useful tools. They are well-worn after years of hard use.",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Sturdy Planks",
+    "type": "Mission Item",
+    "desc": "A set of planks for repairing beast pens.",
+    "decoDesc": "Unassuming, but sturdy enough.",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "\"Starting Point\"",
     "type": "Mission Item",
@@ -7274,8 +7351,7 @@
     "decoDesc": "Redjade Ginseng is a mild herb often consumed by people in Hongshan as a fortifying supplement.",
     "obtainWays": [
       "Originium Science Park: Cliffside Trail",
-      "Plant crops at the Eco-Farm",
-      "Ingredients Crate"
+      "Plant crops at the Eco-Farm"
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Material",
     "desc": "Seeds picked from wild Redjade Ginseng. Cultivate them with crafted farm plots to raise Redjade Ginseng.",
     "decoDesc": "Redjade Ginseng seeds carefully selected for their generous size and vitality.",
-    "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Amber Rice Seeds",
@@ -7780,6 +7854,15 @@
     "desc": "A heavy facility that shreds and pulverizes various materials.",
     "decoDesc": "Can you hear the crunch of the heavy industrial shredders?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Rocking Nuli",
+    "type": "Ornamental",
+    "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
+    "decoDesc": "A fun toy that looks like Nuli. Rock on my little galloper... Who's missing their childhood already?",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
   },
   "item_port_jail_1": {
     "name": "Tiger Cage",
@@ -9360,6 +9443,15 @@
       "Talosite Exchange"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Idling With an Old Friend",
+    "type": "Camera Pose",
+    "desc": "A camera pose that operators can use.",
+    "decoDesc": "An interpretation of the meaning behind \"Idling With an Old Friend\". This impression is quite clear, yet esoteric at the same time.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Not the Usual Smile",
     "type": "Camera Pose",
@@ -10281,6 +10373,15 @@
       "Acquisition Center: Bundles"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "The Stars Are With Me HH Permit",
+    "type": "LTO Valuable",
+    "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting. This certificate will expire when [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting ends.",
+    "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
+    "obtainWays": [
+      "Acquisition Center: Bundles"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Chartered HH-10×Permit",
     "type": "Valuable",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Portrait",
+    "desc": "A portrait that can be switched to at the Profile screen. Profile portraits are shown at various places.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Gift: Operator Onboarding"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Argent Flow",
     "type": "Portrait",
     "desc": "A portrait that can be switched to at the Profile screen. Profile portraits are shown at various places.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Spirit's Restoration HH Permit",
     "type": "LTO Valuable",
     "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [Rejuvenation] Chartered Headhunting. This certificate will expire when [Rejuvenation] Chartered Headhunting ends.",
+    "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
+    "obtainWays": [
+      "Acquisition Center: Bundles"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "The Stars Are With Me HH Permit",
+    "type": "LTO Valuable",
+    "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting. This certificate will expire when [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting ends.",
     "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
     "obtainWays": [
       "Acquisition Center: Bundles"

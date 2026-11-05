@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "\"Indigo Cleansed\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "3": {
+        "desc": "In [Contingency Contract: Indigo Experimental Operation], successfully complete a challenge with ≥ 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Total Test Criteria",
+        "completeDesc": "The gift has been tainted by a corrupting hue of indigo. But as long as you are with us, the fire of re-ignition shall never die."
+      }
+    },
+    "plating": {
+      "desc": "In [Contingency Contract: Indigo Experimental Operation], successfully complete a challenge with ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Total Test Criteria"
+    }
+  },
   "achv_event_dungfight": {
     "name": "\"Expert Survivor\"",
     "category": "Event",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Complete side mission [A Fistful of Reflections]",
         "completeDesc": "Their fists question my resolve, but my Qi punches through the lands and challenges the very thunder itself."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "\"Back to the Rustics\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Back to the Rustics]",
+        "completeDesc": "Once the blade's ridge can hold several new twigs and sing like the beasts, we'll finally learn the true character of our intent."
       }
     },
     "plating": null

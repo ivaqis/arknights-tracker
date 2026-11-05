@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "« Indigo purifié »",
+    "category": "Événements",
+    "group": "Événements",
+    "levels": {
+      "3": {
+        "desc": "Dans [Contrat de crise : Opération expérimentale indigo], réussir un défi avec ≥ 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> critères de test totaux",
+        "completeDesc": "Le don a été corrompu par une teinte indigo. Mais tant que vous êtes avec nous, la flamme de la remise à feu ne s'éteindra jamais."
+      }
+    },
+    "plating": {
+      "desc": "Dans [Contrat de crise : Opération expérimentale indigo], réussir un défi avec ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> critères de test totaux"
+    }
+  },
   "achv_event_dungfight": {
     "name": "« Expertise en survie »",
     "category": "Événements",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Terminer la mission annexe [Une poignée de reflets]",
         "completeDesc": "Leurs poings éprouvent ma volonté, mais mon chi détruit chaque obstacle sur mon chemin et défie le tonnerre lui-même."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "« Retour à la nature »",
+    "category": "Chapitres",
+    "group": "Mission d'exploration",
+    "levels": {
+      "2": {
+        "desc": "Terminer la mission annexe [Retour à la nature]",
+        "completeDesc": "Lorsque l'arête de la lame se couvrira de nouvelles brindilles et chantera comme les bêtes, nous découvrirons enfin la véritable nature de notre dessein."
       }
     },
     "plating": null

@@ -1044,7 +1044,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Argent Flow"
   },
   "weaponsList": {
     "custom_weapon": "Arma personalizada",
@@ -3424,7 +3425,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Permiso x10 de Mirada hacia el norte en la grieta",
     "ticketgacha_special_ten_lt_1_4_2": "Permiso x10 de Estrella del amanecer deslumbrante",
     "ticketgacha_weaponbox_lt_1_2_2": "Cert. de solicitud de Llamarada en los vientos",
-    "ticketweaponbox_ten_1_lt": "Certificado de caja de armas OTL ×10"
+    "ticketweaponbox_ten_1_lt": "Certificado de caja de armas OTL ×10",
+    "business_card_topic_chr_0037_minghe": "Portador de la luz",
+    "item_activity_contract_gold_1": "Índigo vitrificado",
+    "item_case_wpn_selfselect_gahca_1_6_2": "CO de armas: Resplandor lunar",
+    "item_char_equip_supply_minghe": "Caja de defensa de Arsenal α: Río estelar",
+    "item_charpotentialup_chr_0037_minghe": "Ficha de Argent Flow",
+    "item_mission_c37m1_foragel": "Cebo picante",
+    "item_mission_c37m3_branch": "Rama de Ye Minghe",
+    "item_mission_c37m3_tools": "Herramientas para reparar corrales de bestias",
+    "item_mission_c37m3_woodenboard": "Tablones resistentes",
+    "item_port_horse_1": "Nuli balancín",
+    "item_shot_anim_minghe_m_1": "Pasando el rato con una vieja amistad",
+    "item_ticketgacha_special_single_lt_1_6_2": "Permiso de C.R. de Las estrellas están conmigo",
+    "item_user_avatar_chr_0037_minghe": "Argent Flow",
+    "ticketgacha_special_single_lt_1_6_2": "Permiso de C.R. de Las estrellas están conmigo"
   },
   "buildingNames": {
     "component_mc_1": "Unidad de ajuste",

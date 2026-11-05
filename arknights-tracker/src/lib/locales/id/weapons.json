@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "Aku pernah melihat pendongeng itu. Saat itu, dia menemukan sebuah tempat di sudut kota. Dia memasang raut wajah gila dan tidak membicarakan apa pun selain pedang. \nPara swordmancer yang diceritakannya menempuh berbagai macam jalan. Beberapa mengabdi pada altruisme dan menyelamatkan dunia, beberapa melakukan ziarah seorang diri untuk mendalami ilmu pedang, sementara yang lainnya mengembara ke seluruh dunia untuk mencari seseorang yang bisa ditantang. Masing-masing swordmancer punya pedang yang berbeda, tapi semuanya setajam silet dan punya legenda tersendiri. Setiap kali si pendongeng terlalu bersemangat, dia akan mengambil pedang usangnya dan memperagakan rangkaian gerakan pedangnya, membuat kilatan cahaya dingin yang berkelebat membelah angin. Semua penonton terkesima. Mereka mengira sedang melihat seni ilmu pedang paling sempurna. \nMengenai asal usul si pendongeng, orang-orang juga punya cerita yang berbeda-beda, tapi tidak ada satu pun yang terdengar meyakinkan. Dari pakaiannya, orang-orang mengira bahwa dia adalah mantan Tianshi. Ada yang pernah menanyakannya, tapi si pendongeng menjawab, “Memangnya itu penting? Aku hanyalah seorang pengembara yang sangat sederhana, seorang pendongeng, dan seorang pencari pedang, hanya orang biasa yang menceritakan kisah-kisah tentang mata pedang yang tajam.” \nDia masih membacakan kisah-kisah tentang pedang di hari dia berpamitan padaku. Saat itu, hari sudah larut dan para penonton sudah pergi. Hanya aku yang tersisa. Sebagai pembuat pedang, aku hampir tidak bisa menahan rasa penasaranku tentang masa lalunya dan pedang yang dia bawa. Akhirnya, aku menemukan kesempatan untuk bertanya sebelum dia pergi: “Kau sudah menceritakan banyak kisah tentang pedang, Pendongeng. Apakah ada kisah tentang pedang yang kaubawa?” \nSi pendongeng duduk di tepi meja dan menenggak habis tong kohl yang dia pesan. \nSambil setengah mabuk, si pendongeng memulai ceritanya. Dia pernah mendengar tentang “Lunar Calling”, sebilah pedang yang hilang di Talos-II, sebuah senjata yang ditempa oleh guru pandai besi dari Yan Besar. Senjata itu mampu menyerang dengan momentum luar biasa yang dapat mengalahkan apa pun yang menghalanginya. Setelah dia melintasi Gerbang Kosmis dan tiba di Talos-II, jalan pulangnya tak lama terputus. Dia menjadi terobsesi untuk menemukan pedang itu dan mengelilingi seluruh Sentrapolis untuk mencarinya. Dia bertemu banyak orang yang mengaku pernah melihat senjata itu, tapi deskripsi mereka sangat beragam. Karena bingung oleh kesaksian yang berbeda-beda, si pendongeng menjadi yakin bahwa “Lunar Calling” hanyalah legenda fiksi belaka, dan bahkan memutuskan untuk mengakhiri perjalanannya yang sia-sia. \nSuatu hari, saat sedang beristirahat di alam liar, dia melihat seorang pemuda dikepung oleh beberapa Aggelos, lalu menyelamatkannya. Pemuda itu tiba-tiba menyadari pedang yang digunakan oleh si pendongeng dan nyaris tidak bisa menyembunyikan rasa terkejutnya: “Pola bilah pedang dan warna gagangnya .... Semuanya persis seperti yang diceritakan legenda itu. Tuan, apakah kau si pemakai ‘Lunar Calling’?” \nPencerahan yang datang tiba-tiba itu awalnya membuat si pendongeng tertegun, lalu membuatnya termangu. Dia melakukan perjalanan panjang nan jauh, dan beberapa kali bertarung untuk membantu orang-orang yang membutuhkan. Semua orang membicarakan perbuatan baiknya, dan bahkan bersumpah bahwa pedangnya adalah ‘Lunar Calling’ itu sendiri. \nPencerahan itu datang dalam sekejap dan semua petunjuk bermuara pada satu hal—kesaksian yang berbeda-beda itu tidaklah salah. Lunar Calling bukanlah nama sebuah pedang, melainkan nama banyak pedang. Itu bukanlah nama yang diberikan kepada satu senjata saja. Banyak senjata telah mendapatkan gelar ini melalui berbagai perbuatan baik. \nSetelah memuaskanku dengan cerita itu, dia beranjak untuk pergi. \n“Kurasa masih ada yang bisa ditambahkan ke kisah ini,” emosiku bergejolak saat aku melihat pantulan bulan di permukaan kohl-ku. \nSenyum terlukis di wajah si pendongeng. “Ya, seharusnya ada sesuatu lagi.” \nDengan kata-kata itu, dia melambaikan tangannya dan berjalan pergi menuju gelapnya malam. Tidak ada yang tahu apa yang terjadi setelahnya. \nKisah itu telah selesai dan pedang itu telah ditempa. Kuserahkan pedang itu kepada seorang swordmancer yang masih muda namun tenang di hadapanku. Cahaya bulan berkilau saat dia mengibaskannya. Pedang itu mengeluarkan dengungan lembut yang bergema panjang dan pelan di tengah malam. \nSwordmancer itu menerima hasil karyaku dengan khidmat. Sesuatu memenuhi pikirannya, tapi dia berterima kasih sebelum pergi. Kulihat sosoknya perlahan menyatu dengan cahaya bulan— \nPandanganku mengabur. Aku bertanya-tanya dalam hati. Apakah yang kulihat seorang swordmancer yang berjalan di malam hari, atau sebilah pedang yang memantulkan panggilan rembulan?",
+    "decoDesc": "Sebuah mahakarya simbolis dari Hongshan Swordmancers. Senjata ini dibuat menggunakan teknologi peleburan logam terkini dan ditempa dengan teknik penempaan pedang kuno Yan. Hasilnya adalah perpaduan antara performa yang unggul dan keindahan yang tak lekang oleh waktu.",
+    "skills": [
+      {
+        "name": "Will [L]",
+        "description": "Will <@ba.vup>+{will}</>"
+      },
+      {
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Infliction: Coursing Stars",
+        "description": "Intensitas Arts <@ba.vup>+{phy_spell_up:0}</>.\nSaat skill si pemakai mengakibatkan <#ba.conduct>Electrification</>, seluruh tim akan mendapatkan ATK <@ba.vup>+{atk_up:0.0%}</> selama {duration:0} dtk.\nSaat <#ba.consume>memakai</><#ba.spellinflict> Arts Infliction</>, si pemakai akan mendapatkan Electric DMG Dealt <@ba.vup>+{pulse_dmg_up:0.0%}</> selama {duration2:0} dtk.\n<@ba.info>Kedua efek ini berlaku secara terpisah dan tidak bisa ditumpuk satu sama lain.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Mungkin tak ada yang istimewa dari tanah ini. \nDatarannya sama, udaranya sama, lautnya juga sama. Walau begitu, langitnya berbeda. Ada planet besar yang bisa kami lihat dengan jelas saat siang hari. Selain itu, tidak ada bulan kembar saat malam hari. Kehidupan di sini hampir tidak berbeda dengan kehidupan di Terra. \nApa itu hal yang bagus? Aku tak tahu. \nAku di sini karena wajib militer nasional, tapi gajinya lumayan dan ada makanan. Hanya itu alasannya. \n\nTapi seiring berjalannya waktu, aku mulai merasakan perbedaannya. \nTanah ini tak mengandung Originium. Astaga, bahkan batas negara pun terasa seperti lelucon. Kukira ini pekerjaan perintis perbatasan Columbia, tempat orang-orang bekerja keras seharian di alam liar hanya untuk mencari makan. Tapi baru hari ini, seseorang yang tampak seperti bangsawan Leithanien bertanya kepadaku, seorang pekerja wajib militer, tentang spesifikasi suku cadang mesin dan cara menggunakan beberapa mesin. \nDan sang bangsawan itu sama sekali tak bercanda. \nUrsus, Leithanien, Columbia .... Semua label pemecah belah ini sekarang menyusut menjadi rekan kru, kawan, dan rekan. \nAku suka perubahan ini, sungguh luar biasa! Tapi bagaimana bisa jadi begini? Aku sama sekali tak tahu. \nKutanyai orang-orang, tapi ternyata mereka sama bingungnya denganku. Jadi aku tak dapat jawaban untuk sementara waktu, hingga .... \n\n“Apa itu Endfield?” \nAku menanyakan pertanyaan ini kepada ketua tim Sarkaz yang bertubuh besar saat pertama kali aku melapor untuk bekerja. Endfield terdengar seperti nama yang sangat sial untuk sebuah perusahaan yang bekerja di perbatasan. \nDia tidak mengatakan apa pun. Dia justru membawa kami ke ujung pesawat yang untuk sementara digunakan sebagai markas besar Endfield. Dia menyuruh kami memperhatikan planet dan dunia ini dengan cermat. \nPlanet dan dunia .... Kami hampir tak pernah menggunakan istilah itu sebelumnya. \nMelihat kebingunganku, ketua tim pun tersenyum. Dia bilang kepadaku bahwa itulah makna di balik Endfield. \n“Maksudnya, kita harus menggunakan kata-kata yang baru dan indah?” \n“Artinya, kita meninggalkan masa lalu kita di Terra.” \n\nMungkin dia benar. \nSebelum aku memutuskan untuk berjalan melewati Gerbang Kosmis untuk mencapai tempat ini, diriku, dan semua orang, telah meninggalkan sesuatu di Terra untuk selamanya. \nOrang-orang yang berjuang di lorong tambang, yang mengembara di alam liar, yang bekerja di kota, yang menggelar konser di menara .... Semuanya berdiri bahu-membahu di atas pesawat ini, siap membangun masa depan bersama-sama. \nTakdir memberi kita pilihan. Kita memilih sesuatu yang berbeda dari masa lalu untuk menciptakan cara hidup baru. \n\nAkan seperti apa dunia ini nantinya? Aku tak tahu. \nKarena saat inilah kita sedang membangunnya. \nBangunan-bangunan akan menjulang dari permukaan tanah dan tumbuhan panen akan bertunas dari bumi. \nInilah jawaban lantang kita tentang dunia yang sedang kita bangun.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Assault: Vision for Tomorrow",
         "description": "Saat memasuki pertarungan, seluruh tim akan mendapatkan buff <@ba.key>Dream Striving</> yang akan memberikan DMG Dealt <@ba.vup>+{dmg_up:0.0%}</>, Intensitas Arts <@ba.vup>+{phy_spell_up:0}</>, dan DEF <@ba.vup>+{def_up:0.0%}</> kepada tim selama {duration:0} dtk. Saat <@ba.key>Dream Striving</> berakhir, si pemakai akan memulihkan HP seluruh tim sebesar <@ba.heal>{hp_up_c:0}</>.\n<@ba.info>Efek yang namanya sama tidak bisa ditumpuk.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Lunar Calling",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Will [L]",
-        "description": "Will <@ba.vup>+{will}</>"
-      },
-      {
-        "name": "ATK [L]",
-        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Infliction: Coursing Stars",
-        "description": ""
       }
     ]
   }

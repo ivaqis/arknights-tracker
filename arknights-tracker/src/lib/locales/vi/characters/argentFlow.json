@@ -1,0 +1,569 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Điện Hóa",
+      "Nghiền"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Uyên Bác"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Thợ Chế Tác Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Phong Cách Sống",
+      "Tự Nhiên"
+    ],
+    "raceTag": "Long"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Bụi Trần Rực Sáng",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+    },
+    "battleSkill": {
+      "name": "Bóng Tối Khuất Phục",
+      "description": "Argent Flow quét giáo, gây <@ba.pd>ST Vật Lý</> lên kẻ địch xung quanh và áp dụng <#ba.airborne>Hất Tung</> lên mục tiêu phía trước.\nSau khi Argent Flow thi triển KN liên hoàn, KN chiến đấu của anh tạm thời đổi thành <@ba.key>Lôi Xung</>.\n<@ba.key>Lôi Xung</>: Argent Flow cưỡi bôn thú Nuli nhảy lên giữa không trung, nhanh chóng tụ lực, rồi xung kích vào mục tiêu để cưỡng chế áp dụng <#ba.conduct>Điện Hóa</> và gây <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi rộng phía trước. Khi <#ba.conduct>Điện Hóa</> này được áp dụng lên mục tiêu có <#ba.pulseinflict>Nhiễm Điện</>, nó sẽ <#ba.consume>tiêu hao</> toàn bộ tầng <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu và tăng <#ba.conduct>Cấp Trạng Thái +1</> cho <#ba.statuslevel>Điện Hóa</> với mỗi 1 tầng được tiêu hao. Sau khi <#ba.consume>tiêu hao</> <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu, Argent Flow cũng áp dụng 1 tầng <#ba.noguard>Trừ Giáp</>.",
+      "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
+      "baseStagger": "Suy Sụp Cơ Bản",
+      "boltRushDmgMultiplier": "Hệ Số ST Lôi Xung",
+      "boltRushStagger": "Suy Sụp Lôi Xung"
+    },
+    "comboSkill": {
+      "name": "Sao Đổi Ngôi",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch rơi vào trạng thái <#ba.noguard>Yếu Đuối</>.\nArgent Flow vung lưỡi kiếm nhanh như chớp để tung đòn tấn công nhiều chuỗi, gây <@ba.pulse>ST Điện</> lên kẻ địch trên đường đi của anh. Khi chuỗi cuối cùng đánh trúng, đòn này cũng áp dụng <#ba.pulseinflict>Nhiễm Điện</>. Sau đó, KN chiến đấu của Argent Flow tạm thời đổi thành <@ba.key>Lôi Xung</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "battleSkillChangeDurationS": "Hiệu Lực Thay Đổi KN Chiến Đấu (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+    },
+    "ultimate": {
+      "name": "Xé Toạc Thiên Khung",
+      "description": "Argent Flow cưỡi Nuli và xung kích bằng giáo, gây <@ba.pulse>ST Điện</> liên tục lên mục tiêu phía trước, đồng thời xiên và kéo theo kẻ địch yếu ở phía trước trong suốt cú xung kích. Sau khi cú xung kích kết thúc, Argent Flow nhảy lên không trung và tung Trảm Thanh Tẩy xuống mặt đất. Nhát chém gây <@ba.pulse>ST Điện</> và áp dụng 1 tầng <#ba.pulseinflict>Nhiễm Điện</>. Sau đó, Argent Flow đâm giáo xuống đất, áp dụng <#ba.crush>Nghiền</> và gây <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi rộng.\n<@ba.info>Nếu Tuyệt Kỹ của Argent Flow xung kích vào kẻ địch không yếu (không thể bị xiên và đẩy đi), cú xung kích của anh sẽ kết thúc sớm.</>",
+      "chargeDmgMultiplier": "Hệ Số ST Xung Kích",
+      "cleansingCleaveDmgMultiplier": "Hệ Số ST Trảm Thanh Tẩy",
+      "groundPierceDmgMultiplier": "Hệ Số ST Xuyên Địa",
+      "stagger": "Suy Sụp"
+    },
+    "indicator": {
+      "levels": [
+        "Ý Chí Cán Viên +10.",
+        "Ý Chí Cán Viên +15.",
+        "Ý Chí Cán Viên +15.",
+        "Ý Chí Cán Viên +20."
+      ],
+      "name": "Kiên Cường"
+    },
+    "talent1": {
+      "levels": [
+        "Khi Argent Flow áp dụng <#ba.conduct>Điện Hóa</>, <#ba.conduct>Điện Hóa</> này cũng làm tăng mọi loại ST mà mục tiêu gánh chịu trong cùng thời gian duy trì, đồng thời anh cũng áp dụng tầng <@ba.key>Xuyên Phá</> lên mục tiêu. Số tầng bằng với <#ba.statuslevel>Cấp Trạng Thái</> của <#ba.conduct>Điện Hóa</> và tối đa là {max_stack:0} tầng. <@ba.key>Xuyên Phá</> kéo dài {duration:0} giây. \nKhi gây <#ba.crush>ST Nghiền</> lên mục tiêu có <@ba.key>Xuyên Phá</>, <#ba.crush>ST Nghiền</> này tăng lên bằng <@ba.vup>{crush_damage+1:0.0}</> lần so với ban đầu và kích nổ toàn bộ tầng <@ba.key>Xuyên Phá</>. Vụ nổ gây <@ba.vup>[Số tầng Xuyên Phá × {atk_scale:0%} Tấn Công</>] <@ba.pulse>ST Điện</> lên mục tiêu và {other_damage_percent:0%} lượng ST đó lên các kẻ địch khác ở gần mục tiêu đó.\n<@ba.info>Khi ST vụ nổ Xuyên Phá gây lên một kẻ địch khác có Xuyên Phá, nó cũng sẽ kích nổ toàn bộ tầng Xuyên Phá của kẻ địch đó.</>",
+        "Khi Argent Flow áp dụng <#ba.conduct>Điện Hóa</>, <#ba.conduct>Điện Hóa</> này cũng làm tăng mọi loại ST mà mục tiêu gánh chịu trong cùng thời gian duy trì, đồng thời anh cũng áp dụng tầng <@ba.key>Xuyên Phá</> lên mục tiêu. Số tầng bằng với <#ba.statuslevel>Cấp Trạng Thái</> của <#ba.conduct>Điện Hóa</> và tối đa là {max_stack:0} tầng. <@ba.key>Xuyên Phá</> kéo dài {duration:0} giây. \nKhi gây <#ba.crush>ST Nghiền</> lên mục tiêu có <@ba.key>Xuyên Phá</>, <#ba.crush>ST Nghiền</> này tăng lên bằng <@ba.vup>{crush_damage+1:0.0}</> lần so với ban đầu và kích nổ toàn bộ tầng <@ba.key>Xuyên Phá</>. Vụ nổ gây <@ba.vup>[Số tầng Xuyên Phá × {atk_scale:0%} Tấn Công</>] <@ba.pulse>ST Điện</> lên mục tiêu và {other_damage_percent:0%} lượng ST đó lên các kẻ địch khác ở gần mục tiêu đó.\n<@ba.info>Khi ST vụ nổ Xuyên Phá gây lên một kẻ địch khác có Xuyên Phá, nó cũng sẽ kích nổ toàn bộ tầng Xuyên Phá của kẻ địch đó.</>"
+      ],
+      "name": "Đỉnh Cao Lôi Thuật"
+    },
+    "talent2": {
+      "levels": [
+        "KN chiến đấu <@ba.key>Lôi Xung</> được cường hóa: Toàn đội nhận Công Phép <@ba.vup>+{yuanshi_add:0}</> trong {duration:0} giây.\nVới mỗi điểm Công Phép mà Argent Flow có, ST vụ nổ <@ba.key>Xuyên Phá</> tăng thêm <@ba.vup>{damage_up:0.0%}</>.",
+        "KN chiến đấu <@ba.key>Lôi Xung</> được cường hóa: Toàn đội nhận Công Phép <@ba.vup>+{yuanshi_add:0}</> trong {duration:0} giây.\nVới mỗi điểm Công Phép mà Argent Flow có, ST vụ nổ <@ba.key>Xuyên Phá</> tăng thêm <@ba.vup>{damage_up:0.0%}</>."
+      ],
+      "name": "Xuân Lôi Vạn Phát"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +20%",
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +30%"
+      ],
+      "name": "Yếu Lý Chiến Đấu"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 14%",
+        "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 18%"
+      ],
+      "name": "Công Cụ Động Lực"
+    },
+    "files": {
+      "main": "MẬT DANH: Argent Flow \nGIỚI TÍNH: Nam \nNHẬN DẠNG: Học Viện Khoa Học Hongshan \nNGÀY SINH: 23 tháng 10 \nCHỦNG TỘC: Long \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Xuất Sắc \nKỸ NĂNG CHIẾN ĐẤU: Xuất Chúng \nTƯ DUY CHIẾN THUẬT: Xuất Sắc \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Cơ Bản \n\nCán viên Argent Flow, dù có thể chất xuất sắc, nếp sinh hoạt hằng ngày cực kỳ lành mạnh và không có thói quen xấu nào (chỉ uống rượu có chừng mực), vẫn rất hợp tác khi chia sẻ tiền sử bệnh tật và chấn thương của mình... Tôi xin chính thức đề nghị công khai bộ dữ liệu này. Đám nhóc ngang bướng suốt ngày gào lên rằng \"MUỐN CÓ SỨC MẠNH THÌ PHẢI CÓ HY SINH\" nên nhìn vào một người chuyên nghiệp thực thụ mà học hỏi đôi chút về việc có trách nhiệm với sức khỏe của bản thân. \n— Bình luận từ một cán viên y tế ôm mối hận sâu nặng",
+      "humanResources": "Argent Flow (tên: Ye Minghe) hiện là Vệ Binh Hoàng Gia Viêm Quốc và Đội Trưởng Bầu Trời Yên Bình* của Học Viện Khoa Học Hongshan (Học Viện). Theo lệnh của Học viện, anh hiện đang phối hợp chặt chẽ với Tập Đoàn Endfield, vừa hỗ trợ trên chiến trường, vừa hướng dẫn nhiều kỹ thuật chiến đấu khác nhau. *GHI CHÚ: Theo Luật Pháp Viêm Quốc, Vệ Binh Hoàng Gia không phải tổ chức trực thuộc Học Viện Khoa Học Hongshan trực thuộc Cục Thiên Sư Đại Viêm. Tuy nhiên, xét đến những yếu tố lịch sử phức tạp liên quan, GHI CHÚ này (khi không có thông tin khác) đã đủ để giải thích cho cách gọi trong trường hợp cụ thể này. \n\nCán viên Argent Flow đã thể hiện sự chín chắn và điềm tĩnh khi làm việc cùng các nhân sự khác, đồng thời chứng tỏ mình là một thành viên phối hợp đội nhóm rất tốt. Những lo ngại từ một số cán viên về tính \"kiêu ngạo ngạo mạn\", \"cực kỳ khó gần\" và các vấn đề tính cách khác của anh dường như đều không có cơ sở. Cán viên Argent Flow đưa ra hai lời giải thích cho những hiểu lầm này: (1) tuy các thành viên Vệ Binh Hoàng Gia quả thực có những cách hành xử khác nhau, nhưng phần lớn các câu chuyện về họ đều là hư cấu; và (2) một vài \"chuyện ngốc nghếch đáng xấu hổ thời trẻ\" xảy ra từ nhiều năm trước đã bị truyền miệng quá lâu, rất có thể đã bị phóng đại hoặc bóp méo. Nói cách khác, toàn thể nhân sự được khuyến nghị giữ phép lịch sự thông thường và tránh xoáy vào các chủ đề nhạy cảm khi trò chuyện với Cán viên Argent Flow. Làm như vậy gần như chắc chắn sẽ giúp mọi người có cơ hội giao đấu thân hữu hoặc được anh hướng dẫn kỹ thuật chiến đấu. Xin hãy đặt trước lịch trò chuyện, đồng thời chuẩn bị tinh thần chờ đợi trong hàng dài. \nGHI CHÚ GỬI TOÀN THỂ NHÂN SỰ MẶT ĐẤT: Những đánh giá trên chỉ áp dụng cho bản thân Cán viên Argent Flow. Bôn thú của anh là một dã thú có sức mạnh khủng khiếp và tính khí hung bạo. Hãy luôn cảnh giác, thận trọng nếu được giao nhiệm vụ cho ăn hoặc chăm sóc nó. Cán viên đã tự tay lập một danh sách đầy đủ các điều cần lưu ý. Bất kỳ nhân sự nào phụ trách xử lý bôn thú ĐỀU PHẢI ĐỌC KỸ VÀ GHI NHỚ DANH SÁCH NÀY NHIỀU LẦN. \n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "[GHI CHÉP: Thành tích của Cán viên Minghe tại \"Cán Viên Got Talent: Đại Đấu Trường Hằng Tháng\"] \nChiến Đấu Có Vũ Trang & Bịt Mắt. Hạng Nhất Bảng Đấu. (Bỏ cuộc sau khi biết đây là một cuộc thi.) \nNghệ Thuật Phi Đao. Hạng Nhất. GHI CHÚ: 10 lần ném trúng hoàn hảo, trong đó 3 con dao găm cắm vào chuôi con dao trước đó. \nĐấu Vật Và Đối Kháng. Hạng Nhất Hạng Cân. GHI CHÚ: Tự trói một tay ra sau lưng để chấp đối thủ. \nChạy Nước Rút Mô Phỏng Tìm Kiếm Cứu Hộ Cứu Nạn Người Bị Thương. Hạng Nhất, Bảng Forte Down. GHI CHÚ: Rất nhiều bác sĩ phẫu thuật Tóc Bụi đã khen ngợi kỹ năng của anh. \nCưỡi Burdo-Bot-Bucker. Hạng Nhất. GHI CHÚ: Trụ trên yên 600 giây. Có lẽ anh còn đạt điểm cao hơn nếu Bot-Bucker không hỏng giữa chừng. \nĐố Nhanh Thảo Dược. Hạng Nhì, Bảng Nghiệp Dư. \nChạm Khắc Sáng Tạo Ứng Biến. Giải thưởng \"DỄ THƯƠNG QUÁ\". GHI CHÚ: Dụng cụ sử dụng là kim khâu. \nĐua Ghế Văn Phòng Không Trọng Lực. Hạng Nhì. GHI CHÚ: Chỉ chậm hơn kỷ lục 0,4 giây. \nNỐC RƯỢU ĐI! Hạng Nhất Bảng Đấu. GHI CHÚ: Phớt lờ luật và tham gia Bảng Durin. \nChở Đậu Phụ Bằng Đũa. Hạng Nhất. GHI CHÚ: Chở được 36,5 miếng. \nKhông Chớp Mắt. Hạng Nhì. GHI CHÚ: Không chớp mắt trong 928 giây. Thua Cán viên Xaihi. \n\nNhắc mọi người nhé. Đây chỉ là mấy hoạt động không chính thức để vui vẻ thôi. Đừng thấy có chữ \"Đấu Trường\" là lôi người ta vào. Mà tôi cứ tưởng hôm đó là ngày đầu tiên anh ta đến Endfield cơ? Mọi người đã thuyết phục anh ấy tham gia từng ấy cuộc thi bằng cách nào vậy?\n— Nhóc Dodge \n\nThuyết phục á? Không đâu, Dodge. Anh ta chỉ thấy có đám đông đang vui nên nhập hội thôi... Mà cái người \"ngày đầu tiên ở Endfield\" này rốt cuộc là ai vậy?\n— Cán viên Vận Chuyển (rõ ràng đang vui quá mức)",
+      "file2": "[DANH SÁCH: Vật phẩm Cán viên Argent Flow nhận lại từ các sự cố vận chuyển Robot Delta] \nVẬT PHẨM NHẬN LẠI (1): \nTượng gỗ bôn thú. Phủ sáp. Chế tác tinh xảo. \nGHI CHÚ CỦA NGƯỜI NHẬN: \nĐây là món quà nhỏ của một Kẻ Tầm Ca thuộc Trường Địa Hannabit. Có vài Sandreaver đang truy đuổi cậu ấy. Tôi tình cờ đi ngang qua nên quyết định giúp một tay. Trước khi chia tay, cậu ấy tặng tôi thứ này. Cậu ấy nói đây là kỷ vật đặc biệt dành cho một nữ anh hùng. \nSao cậu ấy lại khắc Nuli nhỉ? Bôn thú của tôi mới là người làm hết việc, hết lần này đến lần khác nghiền nát chiến hạm Sandreaver. Không có nó hỗ trợ thì sự việc đã kéo dài hơn nhiều. Vì vậy, tôi nhận món quà này thay cho Nuli. Nhắc đến chuyện này, thật ra tôi cũng có một điều tiếc nuối. À, không liên quan đến việc tôi không được tặng quà đâu. Là chuyện của Kẻ Tầm Ca kia. Với trí tuệ và lòng can đảm của mình, cậu ấy đã đưa người dân vào nơi trú ẩn an toàn giữa cồn cát, rồi một mình chống lại Sandreaver suốt nhiều ngày. Lẽ ra tôi mới phải là người tặng cậu ấy thứ gì đó. \n\nVẬT PHẨM NHẬN LẠI (2): Danh sách họ tên và địa chỉ được viết trên giấy. Chủ sở hữu đã đồng ý cho chúng tôi kiểm tra nội dung. Phần lớn các tên trong danh sách đều có thông tin tương ứng trong nhiều hệ thống quản lý định danh cá nhân của Vành Đai Văn Minh. \nGHI CHÚ CỦA NGƯỜI NHẬN: \nỪ, chỉ là vài đứa trẻ thôi. Nhưng đều rất triển vọng. Tôi gặp chúng khi xử lý một sự kiện khe nứt vỡ. Một số người sống sót bị mắc kẹt hoàn toàn trong núi. Tôi mất quá nhiều thời gian để mượn một phương tiện bay và mở đường. Ban đầu tôi đã rất bi quan, nhưng những gì thấy được lại khiến tôi bất ngờ. \nChưa đầy một tá trẻ em và thiếu niên đã giữ cho hơn một trăm người sống sót đoàn kết, liên tục di chuyển đến nơi an toàn, đồng thời đưa theo những người bị thương mà chúng gặp trên đường. Bọn trẻ thậm chí còn chế tạo một thiết bị cảnh báo năng lượng thô sơ, giúp tôi xác định được vị trí của khe nứt. \nKhi chia tay, có vài em đã trở lại trường học. Tôi ghi lại tên và thông tin của các em, hy vọng rằng nếu các em nộp đơn vào Học Viện, tôi sẽ có vinh dự được bảo lãnh với tư cách người giới thiệu chính thức. Hướng các em đến Endfield ư? Ha. Đó sẽ là lựa chọn của các em. \n\nVẬT PHẨM NHẬN LẠI (3): \nMột chiếc máy ảnh cũ. \nGHI CHÚ CỦA NGƯỜI NHẬN: \nNó từng thuộc về một nữ phóng viên lớn tuổi. Tôi giữ nó vì... một lời hứa. Chỉ vì một lời hứa thôi. \nĐó là một tình bạn khó ngờ trong chiến dịch thanh trừng Aggeloi. Dù hoàn toàn không phải một nhân viên y tế giỏi, tôi vẫn có kinh nghiệm sơ cứu chiến trường và đã hộ tống bà ấy băng qua một vùng đầm lầy rộng lớn. Chúng tôi đã không thể cứu được đôi chân của bà ấy... nhưng bà đã trao cho tôi chiếc máy ảnh luôn mang theo trong suốt quãng thời gian gian nan ấy. Tôi thường gửi ảnh cho bà ấy. Như bà ấy từng nói, chẳng ai biết khi nào một khe nứt Æther hay tai nạn khác sẽ bất ngờ ập xuống một nơi tươi đẹp. Tôi đi nhiều nơi, nên có thể dùng máy ảnh của bà để thay bà nhìn ngắm thế giới. Số phận đã đưa chúng tôi gặp nhau, tôi không có lý do gì để từ chối. \n\nSau khi rời khỏi ngôi làng Pan'an, tôi đã đi rất xa và gặp gỡ rất nhiều người... Tôi mừng vì lưỡi kiếm của mình có thể bảo vệ họ. Tôi dùng chiếc máy ảnh này để lưu lại nhiều khoảnh khắc đáng nhớ. Thế giới có thể rộng lớn, nhưng duyên phận là điều hiếm có. Chỉ vậy thôi. \nTôi đã ký tên rồi. Tôi không muốn cản trở những người đến nhận đồ thất lạc khác. Tạm biệt.",
+      "file3": "Theo lời mời của Nhóc Dodge, Cán viên Argent Flow thỉnh thoảng đến Dijiang làm huấn luyện viên đặc biệt. Ai cũng biết các cán viên Endfield sở hữu vô vàn kỹ thuật chiến đấu và sử dụng đủ loại Thuật Pháp Originium, nên cần nhiều phương pháp huấn luyện khác nhau. Tuy nhiên, võ kỹ mà Cán viên Argent Flow thể hiện đã chứng minh danh tiếng lẫy lừng của Vệ Binh Hoàng Gia là hoàn toàn xứng đáng. Dù là cận chiến, giao tranh Thuật Pháp tầm xa hay thậm chí chiến đấu trên lưng thú cưỡi, anh luôn nhìn thấu mánh khóe của đối thủ chỉ trong vài chiêu, nhanh chóng điều chỉnh chiến thuật, rồi chủ động kìm hãm đòn phản công để kéo dài buổi giao đấu. Trong mọi trận chiến, anh đều nắm thế chủ động và làm chủ nhịp độ, cho đến khi đối thủ gục ngã vì kiệt sức. \nCác cán viên có nhiều kinh nghiệm sử dụng buồng huấn luyện phản trọng lực Dijiang từng cố chiếm ưu thế trước Argent Flow bằng cách thách đấu anh tại cơ sở đặc biệt này. Họ bật tính năng phản trọng lực, hy vọng được nhìn thấy Argent Flow lúng túng. Nhưng vị Vệ Binh Hoàng Gia chỉ khẽ chạm chân xuống đất, rồi lao đi như tia chớp khiến các cán viên hoa mắt. Mọi người chuẩn bị đón đỡ một đòn tấn công không bao giờ tới. Chỉ với một cú chạm nhẹ, một lần lộn người và một cú bật nhảy, Argent Flow đã vượt qua các đối thủ rồi đáp vững vàng trên trần buồng phản trọng lực. \nTất cả chúng tôi đều kinh ngạc trước khả năng thích nghi và sự tập trung phi thường của Cán viên Argent Flow, nhưng câu trả lời của anh có lẽ đã khiến không ít người nghẹn lời khi họ xin chỉ dẫn. Cán viên chỉ bảo rằng phải thích nghi, thay đổi trong từng nhịp thở, bởi đó là phần thiết yếu trong quá trình huấn luyện của Vệ Binh Hoàng Gia. Anh cũng giải thích rằng khi chiến đấu, mình thường sáng tạo hơn, đan xen chiêu thức với những khoảnh khắc bất động, đồng thời thích mượn đà của đối phương. Khi các cán viên vây quanh Argent Flow để xin lời khuyên và chỉ dẫn, dù xuất phát từ ngưỡng mộ hay trêu chọc, dường như không ai nhận ra một sự thật quan trọng: Argent Flow chưa từng nhắc đến quá trình huấn luyện khắc nghiệt mình đã trải qua, cũng không đề cập đến những quy tắc hà khắc, không khoan nhượng đi cùng bí kỹ chiến đấu bí truyền của gia tộc. \nGia tộc Ye từ lâu đã lập nhiều chiến công trên chiến trường Đại Viêm. Tuy vậy, ngay cả khi đặt cạnh những tên tuổi hiển hách của các thế hệ trước, Argent Flow vẫn là một thiên tài xuất chúng. Trong toàn bộ gia tộc, không ai có thể di chuyển như sao chổi, nhanh tựa lửa cháy. Sau cuộc gặp gỡ tình cờ với thú cưỡi Nuli, kỵ sĩ ấy đã trở thành tia sét hủy diệt không thể đến gần, không thể đối đầu, cũng không thể trốn thoát. Nhưng điều đó cũng đồng nghĩa Argent Flow phải luyện tập khắc nghiệt hơn và thường xuyên nhận những nhiệm vụ nguy hiểm hơn nhiều. \nCán viên Argent Flow đã tóm gọn điều này bằng một câu: \"Càng nắm chặt tia sét, đầu óc càng phải tỉnh táo.\" \n\"Nhưng giỏi đến mức này chắc chắn không hề dễ dàng! Mọi người hẳn đã rất khắt khe với cậu!\" \n\"Nỗi khổ của rèn luyện vẫn ngọt ngào hơn nhiều so với vị đắng cay của thất bại mà không ai trong chúng ta có thể gánh nổi.\"",
+      "file4": "Người cố vấn đầu tiên của tôi là kiếm thuật sư phụ của tôi. \nKhi ấy tôi vẫn chỉ là một cậu bé. Cha bận công vụ nên đã mời thầy từ Đàm Kiếm Đường đến để dạy tôi nền tảng. Nhưng tôi học quá nhanh, nên chỉ vài tháng sau thầy đã chính thức kết thúc việc giảng dạy và rời đi. \nTrước khi chia tay, thầy nói tôi chỉ mất một mùa để học hết những gì thầy đã dành cả đời mới tinh thông. Thầy tâm sự rằng trong đời mình có rất nhiều điều nuối tiếc. Nếu tôi có thể vượt qua thầy, tôi cũng sẽ đối mặt với những thử thách tương tự mà không còn phải mang nỗi tiếc nuối ấy. Nếu tôi tiếp tục trau dồi võ kỹ, tôi sẽ còn gặp những người thầy và giáo quan khác. Đến ngày đó, thầy muốn tôi ghi nhớ cả thành tựu lẫn thất bại của họ, bởi rất có thể tôi sẽ là người thay họ xóa đi những nuối tiếc. \nĐó là lúc tôi nhận ra mình phải tìm thấy mục đích của bản thân. Aggeloi đã hủy diệt quê hương của kiếm thuật sư phụ. Một lưỡi kiếm đơn độc không thể bảo vệ tất cả mọi người. Thời thế đen tối, và đó không phải câu chuyện duy nhất. Có kỹ năng thì phải gánh vác trách nhiệm và bổn phận. \n\nNgười cố vấn thứ hai của tôi là cộng sự của tôi, Nuli. \nNăm ấy tôi mười bốn tuổi và gặp nó nơi hoang dã. Cả hai chúng tôi đều muốn săn cùng một con mồi, nhưng cuộc truy đuổi nhanh chóng biến thành một cuộc phân tài cao thấp. Chúng tôi đánh nhau suốt một ngày một đêm, phá tan gần nửa số cây trên sườn đồi. Tôi quá bướng bỉnh để chịu thua, còn nó cũng vậy. \nNuli và tôi gần như cùng lúc gục xuống bên bờ sông. Con thú cứng đầu ấy lại cố đứng dậy, lảo đảo tiến về phía tôi, định dùng sừng húc tôi... rồi cuối cùng ngất đi. Nó đã thắng. Nó muốn chiến thắng và đã đạt được điều đó, dù phải đánh đổi bằng sự an toàn của chính mình. Người mang trách nhiệm và quyền uy phải có ý chí kiên định như vậy. \n\nNgười thầy thứ ba chắc chẳng hề xa lạ. Đó là Thiên Sư Tan. \nThực ra tôi gặp ngài ấy không lâu sau khi nhập ngũ. Trong lúc đơn vị nghỉ ngơi, ngài ấy nghênh ngang bước vào doanh trại. Ban đầu tôi rất bối rối, còn tưởng ai đó vô tình để một đứa trẻ lọt vào đây. Nhưng khi \"đứa trẻ\" ấy đá văng các sĩ quan cấp cao cố ngăn mình lại, tôi chợt nhận ra đó chính là Lão Thiên Sư Tan, người một mình canh giữ Cực Bắc. \nTrong lần gặp đó, Thiên Sư Tan liên tục hỏi tôi đủ thứ. Có lẽ ngài ấy cũng đã nhiều lần giúp tôi thoát khỏi sự truy cứu của Học Viện khi tôi hành động bốc đồng... Về sau, tôi từng nói chuyện với Thiên Sư Tan về lần đầu gặp gỡ, và ngài ấy bảo ngay từ cái nhìn đầu tiên đã thấy tôi cháy bỏng vì nôn nóng. Ngài ấy ví tôi như thép tốt nhưng không thể rèn thành lưỡi kiếm đúng nghĩa. Vấn đề nằm ở tôi, và tôi cần được mài giũa đúng cách. Điều duy nhất ngài ấy có thể làm là đưa tôi ra chiến trường, nơi tôi có thể tự tìm thấy câu trả lời. \n\n\"Đủ rồi! Trời đất ơi! Tôi chỉ hỏi một câu đơn giản thôi mà cậu kể mãi không dứt. Rốt cuộc cậu có bao nhiêu người cố vấn vậy?\"\n\"Khá nhiều, Quý cô Si ạ. Một thanh niên từ làng Pan'an dạy tôi cách nuôi quái thú chở hàng. Một người bán hàng ở Luoyi chỉ tôi cách cải thiện hỗn hợp hương. Một Đạo Sư ở vùng hoang dã dạy tôi hát. Một tài xế xe tải từ Bùng Binh Asphalt dạy tôi nấu rượu ngọt với trái đắng... Trong ba người, ắt hẳn sẽ có một người có thể làm người cố vấn.\" \n\"Hừm. Lại định tỏ ra khiêm tốn, dễ mến chứ gì.\" \n\"Có lẽ vậy, nhưng nói đúng hơn thì đó là sự ngu ngốc đã được mài mòn. Hồi trẻ tôi nghĩ quá nhiều. Phải qua rất nhiều năm tôi mới chấp nhận được rằng mình biết quá ít, trải nghiệm cũng quá hạn hẹp.\" \n\"Tôi hỏi cậu về những người cố vấn, vậy mà cậu còn chưa nhắc đến Endministrator!\" \n\"Endministrator... với tôi không chỉ là một 'người cố vấn'...\"\n\"...\""
+    },
+    "tags": {
+      "expert1": {
+        "name": "Kỹ Thuật Chiến Đấu",
+        "description": "Kỹ Thuật Chiến Đấu: Lưỡi Thu\nMũi thương thoắt lượn dáng rồng du, lưỡi kiếm ngang trời đượm sắc thu. Ôm kín cõi lòng băng tuyết lạnh, cuộn dòng sông lớn chảy nghìn thu."
+      },
+      "expert2": {
+        "name": "Uyên Bác",
+        "description": "Uyên Bác: Nhập Thế\nMãn kiếp bôn ba chốn bụi trần, tám phương bốn hướng mỏi bước chân. Bao la trời đất thu vào mắt, thắp mảnh hồn say cùng tinh vân."
+      },
+      "hobby1": {
+        "name": "Phong Cách Sống",
+        "description": "Phong Cách Sống: Chạm Vào Đời Sống\nTrăm nghề khéo léo ở trong tay, muôn vị tỏa hương ấm dạ này. Ngõ nhỏ quanh co tỏa khói bếp, đèn soi dẫn lối người về đây."
+      },
+      "hobby2": {
+        "name": "Tự Nhiên",
+        "description": "Tự Nhiên: Về Với Đất Trời\nThỏa chí dạo chơi giữa ruộng cày, lưng đồi ngả giấc phút nghỉ tay. Bôn thú tới đây theo tiếng gọi, phiêu bồng lướt gió cùng trời mây."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_01",
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Nếu cần lên đường, cứ việc ra lệnh."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_squad_02",
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Xin đợi lệnh."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_01",
+        "title": "Đang thêm vào Đội 1",
+        "text": "Trang bị đã sẵn sàng. Lần này tôi sẽ không nương tay."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_join_02",
+        "title": "Đang thêm vào Đội 2",
+        "text": "Trời quang mây tạnh. Thời tiết hoàn hảo để quét sạch quân địch."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_weap_01",
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Nếu vũ khí này biết nói, chắc tranh luận chẳng bao giờ thua."
+      },
+      {
+        "voId": "chr_0037_minghe_chrbark_gear_01",
+        "title": "Đang Đổi Trang Bị",
+        "text": "Tốt. Muốn làm việc cho ra trò thì phải có công cụ phù hợp."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_skill_01",
+        "title": "Kích hoạt Mốc Thiên Phú",
+        "text": "Tiến bộ không chỉ đến từ quá trình rèn luyện từng bước, mà còn từ sự khai sáng trong tâm trí."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_level_01",
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Một buổi học rất bổ ích... Để đáp lễ, tôi cũng ghi lại vài thứ cho ngài nhé. Còn đối tượng luyện tập ư? Tôi có sẵn rồi!"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt01_01",
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Trước đây, biết bao chiến sĩ nơi tiền tuyến mong được chính tay ngài trao huân chương... Về điểm này, tôi quả thực rất may mắn."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt02_01",
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Nuli, lùi lại nào. Đừng cọ vào Endmin nữa... Hmm, xem ra cô bé cũng muốn được khen thưởng. Hay ngài vuốt ve cô nhóc thêm vài cái nhé?"
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt03_01",
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Chỉ vậy thôi sao? À, không có gì. Tôi chỉ chợt nhớ đến ngày mình vừa trở thành Đội Trưởng Bầu Trời Yên Bình. Khi ấy, Thiên Sư Tan chỉ đãi tôi một bát mì. Có lẽ hai người sẽ rất hợp nhau đấy."
+      },
+      {
+        "voId": "chr_0037_minghe_chrup_promt04_01",
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Cây có vươn cao tỏa rộng hay không, cốt ở bộ rễ có vững chắc hay không. Danh vị chỉ là thứ yếu, điều khiến tôi vui hơn cả là ngài đã công nhận nền móng tôi vun đắp suốt bao năm qua... Xin ngài cứ an tâm. Lưỡi đao vẫn sắc, kỷ luật đã tôi rèn, tôi nhất định sẽ trở thành hậu thuẫn vững chắc nhất của ngài."
+      },
+      {
+        "voId": "chr_0037_minghe_introduce_01",
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Minghe của Học Viện, xin được phục vụ ngài. Còn danh hiệu Đội Trưởng Bầu Trời Yên Bình? Ở đây cũng chẳng có mấy tác dụng, chi bằng bỏ qua để tránh gây hiểu lầm."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_01",
+        "title": "Chờ Lệnh 1",
+        "text": "Phiền ngài hâm giúp tôi chút rượu. Trận này sẽ không kéo dài lâu đâu."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_switch_02",
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi đã có mặt. Hôm nay chúng ta sẽ phá tan đạo quân nào đây?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_assign_work_01",
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tất nhiên. Ngoài kiếm thuật, tôi vẫn còn nhiều sở trường khác."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_lower_01",
+        "title": "Lời Chào 1",
+        "text": "Endmin, có nhiệm vụ nào cần tôi ra tay không?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_hello_max_01",
+        "title": "Lời Chào 2",
+        "text": "Ngài mệt rồi sao? Hay chúng ta vừa đi dạo vừa trò chuyện cho khuây khỏa nhé?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv01_01",
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Tôi đã biết ngài đến từ đằng xa rồi... Không, tôi không dùng thính giác cường hóa đâu. Chỉ là nhờ lợi thế chiều cao thôi."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_01",
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Tôi bắt đầu thấy hối hận vì không đưa Nuli lên tàu rồi. Cô nhóc kiêu ngạo ấy thích nhất là đuổi theo mây trời, khoe khoang tốc độ. Ở đây vài ngày chắc sẽ khiến nó biết trân trọng trọng lực hơn đôi chút."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_lv02_02",
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Endmin, ngài có thể dẫn tôi đi xem kho vũ khí được không? Tôi nghe nói Trung Tâm Nghiên Cứu quy tụ rất nhiều nghệ nhân tài hoa, từng chế tạo cả một bộ sưu tập vũ khí uy lực. Tại sao tôi lại hỏi ư? Một người lính như tôi hứng thú với binh khí chẳng phải rất đỗi bình thường sao? Hmm... Sao ngài lại kinh ngạc đến thế?"
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_01",
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Ngài có tình cờ thấy một khúc gỗ nào không? Mỗi khi rảnh rỗi, tôi lại không nhịn được mà khắc vài nét. Tác phẩm ấy vẫn còn nhiều chỗ vụng về, mà... khi cảm hứng chợt đến, tôi đã quyết định tạc ngài. Để ngài nhìn thấy một tác phẩm chưa thành hình như thế thì không hay lắm."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_02",
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Tôi khá bất ngờ khi thấy nhiều đồng nghiệp bên Học Viện ở đây đến vậy. Mạng lưới quan hệ của Endfield quả thực rất rộng. Có điều, vài \"người thạo tin\" dường như đã thổi phồng \"chiến tích lẫy lừng\" của tôi hơi quá... Ngài có thể khuyên họ tiết chế đôi chút không? Chỉ một nhát kiếm thì làm sao xẻ núi, tan mây được. Họ nói quá rồi."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_talk_max_03",
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Ở Viêm Quốc, \"Minghe\" thường được dùng để ví với dòng sao giữa trời. Hành trình khám phá thiên không vốn đầy rẫy gian nan. Người Terra cuối cùng cũng xuyên qua được bầu trời giả, để rồi nhận ra mình vẫn bị giam hãm dưới một tầng trời xa lạ khác... Dẫu vậy, có thể thấy chúng ta đã tiến thêm một bước về phía cửu thiên."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_give_01",
+        "title": "Tặng Quà",
+        "text": "Endmin, xin ngài nhận lấy. Đừng nghĩ nhiều, cũng chẳng phải thứ gì quá đắt tiền đâu. Tôi chỉ nghĩ... có lẽ nó sẽ khiến ngài vui."
+      },
+      {
+        "voId": "chr_0037_minghe_sim_gift_recv_01",
+        "title": "Nhận Quà",
+        "text": "Cảm ơn ngài. Tôi phải nghĩ xem nên đáp lễ thế nào mới phải... Ngài có muốn cưỡi Nuli đi chơi một ngày không? Dạo này nó có vẻ quý ngài hơn nhiều rồi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line01",
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Sự nghiệp của Endfield vốn chẳng hề dễ dàng. Vì vậy, Học Viện đã quyết định phái tôi đến hỗ trợ ngài. Đôi lúc tôi vẫn phải thực hiện nhiệm vụ của Vệ Binh Hoàng Gia, nhưng ngài không cần bận tâm, cứ ra lệnh cho tôi như thường lệ. Mỗi khi phải đưa ra lựa chọn khó khăn, tôi sẽ luôn ở bên ngài. Ngài có thể hoàn toàn tin tưởng vào tình nghĩa giữa chúng ta."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line02",
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Một mùi hương dịu nhẹ ư? Chắc là từ quả cầu khuếch tán hương này. Khi mới nhập ngũ, tôi vốn chẳng phải người kiên nhẫn. Để làm tròn nhiệm vụ, tôi luôn ép mình phải tỉnh táo, nhưng làm vậy chỉ khiến tinh thần thêm kiệt quệ. Sau đó, các đồng đội đã cho tôi một công thức hương giúp an thần. Họ nói rằng ngủ ngon mới là bí quyết để vượt qua mọi nghịch cảnh. Thực tế đã chứng minh lời ấy quả không sai... Endmin? Hmm, ngài ngủ rồi sao? Vậy thì cứ yên giấc. Tôi sẽ canh chừng cho ngài."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line03",
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Các nhân viên y tế hỏi về những vết sẹo của tôi sao? Vết trên đuôi là từ hồi tôi còn nhỏ, nghịch ngợm lại liều lĩnh, chẳng may ngã xuống vách đá rồi bị đá cứa phải. Ban đầu trông cũng không đến nỗi nào, nhưng theo năm tháng lại hóa ra đáng sợ hơn nhiều. Còn những vết khác... đều là dấu tích của vô số trận chiến. Nhiều đến mức chẳng thể đếm xuể, mà đã qua lâu như vậy, chính tôi cũng không nhớ phần lớn chúng có từ khi nào nữa."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line04",
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Vài ngày trước, tôi cùng một số đồng nghiệp đã phê duyệt một khóa Vệ Binh Hoàng Gia dự bị cho Học Viện. Đúng là những nhân tài xuất chúng, nhưng lại quá sắc sảo, quá thích thể hiện, tâm tính vẫn cần được rèn giũa thêm nhiều. Nếu giao trọng trách cho họ ngay lúc này, e rằng họ sẽ lầm tưởng bổn phận chính là toàn bộ lẽ sống của mình. Khởi đầu như thế thì... Khoan, tôi nói chuyện như ông bố già lắm sao? Không! Tôi chỉ đang... nhắc lại chuyện trước đây của mình thôi. Tôi không muốn những đứa trẻ ấy đi vào vết xe đổ của tôi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_self_line05",
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Ngài cầm lấy chiếc còi này đi. Chỉ cần thổi lên, Nuli sẽ biết phải đến đâu tìm ngài. Cứ xem nó như một phương thức liên lạc khẩn cấp. Tất nhiên, đây cũng là món quà riêng tôi muốn tặng ngài. Dù sao, chính ngài đã cho tôi thấy những miền đất bao la và các thành thị phồn hoa. Vì vậy... ngoài những lúc chiến đấu, tôi cũng muốn được cùng ngài chu du nhiều nơi. Hay ngài thử thổi còi ngay bây giờ đi? Nuli đang nghỉ gần đây thôi. Nghe thấy tiếng còi rồi lại phát hiện chúng ta ở ngay đây, không biết nó sẽ phản ứng thế nào nhỉ?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line01",
+        "title": "Trò Chuyện 1",
+        "text": "Luận Bàn Võ Thuật Thiên Hạ chẳng qua chỉ là một tác phẩm giải trí do mấy người nghiệp dư rảnh rỗi biên soạn thôi. Tôi chưa từng giao đấu với kỵ sĩ Phòng Thương Mại Tổng Hợp, tinh anh của Cục An Ninh hay nữ kiếm sĩ Gia tộc Chen, nên những thứ hạng ấy hoàn toàn là hư cấu. Còn danh xưng \"vô địch dưới tuổi bốn mươi\"... chắc họ chỉ nhìn thấy cấp bậc Vệ Binh Hoàng Gia của tôi rồi tự nghĩ ra. Với lại, Endmin, xin ngài đừng nhìn tôi chằm chằm nữa. Tôi sinh ra đã có diện mạo thế này, trông trẻ cũng đâu phải lỗi của tôi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line02",
+        "title": "Trò Chuyện 2",
+        "text": "Sau khi bình phục, tôi còn quay lại thôn nhỏ ấy vài lần. Nhiều người đã không còn ở đó, mà mỗi lần tôi ghé qua đều khá vội nên chỉ có thể nhờ người khác chuyển lời... Nhưng ngài không cần lo, nơi ấy không còn phải hứng chịu bất kỳ trận Ankhorfall nào nữa. Hongshan cũng xây dựng vài thị trấn gần đó và rất nhiều người đã chuyển đến sinh sống. Một số người lại tiếp tục đi xa hơn. Họ thường gửi đặc sản địa phương cho tôi, hiện tôi vẫn còn hai gói. Ngài muốn nếm thử không?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line03",
+        "title": "Trò Chuyện 3",
+        "text": "Mấy người trẻ tuổi bên Đàm Kiếm Đường lại đến rồi. Ngài đừng hiểu lầm, tôi luôn sẵn lòng luận bàn võ học, nhưng còn kỹ thuật cưỡi ngựa thì... Nuli và tôi tâm ý tương thông. Tôi không điều khiển nó, mà phối hợp cùng nó, chuyện này vốn chẳng có bí quyết gì để truyền dạy cả. Mà nói mới nhớ, tại sao họ lại say mê kỵ chiến đến vậy nhỉ? Giờ gần như chẳng còn ai cưỡi bôn thú ra trận nữa..."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line04",
+        "title": "Trò Chuyện 4",
+        "text": "Học Viện lưu giữ rất nhiều binh thư và sách lược quân sự của Người Viêm. Chúng tôi đã học được không ít, nhưng vẫn chưa đủ. Bố trí binh lực hợp lý có thể định đoạt cục diện chiến trường, song Vành Đai Văn Minh đang phải đơn độc đối đầu với toàn bộ Talos-II. Thắng lợi không nằm ở số sào huyệt địch bị san phẳng, mà ở việc chúng ta có thể giành lại, khôi phục và gìn giữ được bao nhiêu. Nếu tình hình cho phép, tôi vẫn muốn chăm sóc ruộng đồng hơn. Ít nhất mồ hôi đổ xuống đất còn có thể đổi lấy lương thực."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_chat_line05",
+        "title": "Trò Chuyện 5",
+        "text": "Khi mới gia nhập Mệnh Lệnh Số 0, tôi từng hình dung đủ mọi hoàn cảnh mà chúng ta có thể trùng phùng. Liệu sẽ là trên chiến trường phương Bắc? Giữa biển cát mênh mông? Trong một nhiệm vụ khẩn cấp? Hay giữa một trận vây hãm tuyệt vọng...? Sau đó tôi không nghĩ nữa, bởi dù gặp lại ở đâu, tôi cũng biết mình sẽ chiến đấu bên ngài. Xin thứ lỗi vì tôi nói thẳng, nhưng những dự định giữa ngài và Quý cô Si trên núi có lẽ sẽ khiến các bằng hữu của ngài không vui. Nếu cô ấy lại nổi giận... hãy để tôi ở bên ngài, cùng ngài đối mặt."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line01",
+        "title": "Chủ Đề: Cộng Sự",
+        "text": "Nuli và tôi đã cùng nhau chinh chiến trên vô số chiến trường. Mối quan hệ giữa chúng tôi đâu chỉ đơn thuần là \"cộng sự\". Với lại, nó không chịu ăn cỏ khô bình thường đâu. Phải trộn thêm chút Aggagrit và dịch nhầy của Sên Originium mới được. Mà nhắc mới nhớ, Nuli là bôn thú bản địa của Talos-II. Vậy chẳng lẽ nó lại thích... món ngoại nhập từ Terra sao?"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line02",
+        "title": "Chủ Đề: Vệ Binh Hoàng Gia",
+        "text": "Luật Pháp Viêm Quốc từng coi người luyện võ là kẻ phạm pháp, và chính điều đó đã đưa Vệ Binh Hoàng Gia lên đỉnh cao võ học. Dù ranh giới quốc gia không còn tồn tại, Bộ Ba Quyền Lực của Talos-II vẫn phải đối mặt với đủ mối họa trong ngoài. Vì vậy, Thiên Sư Tan đã bổ nhiệm mười ba Vệ Binh Hoàng Gia. Võ nghệ cao cường chỉ là điều kiện cơ bản. Mỗi người chúng tôi đều tinh thông một lĩnh vực riêng, nhờ đó mới có thể bảo vệ người dân. Còn sở trường của tôi ư? Chẳng có gì thú vị đâu... Một mình xông vào giữa trận địa địch, lấy đầu chủ tướng. Chỉ vậy thôi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line03",
+        "title": "Chủ Đề: Thiên Sư Tan",
+        "text": "Thiên Sư Tan thường xuyên chu du khắp phương Bắc, dùng Thuật Pháp Liệt Diễm trấn giữ tiền tuyến vùng cực, hiếm khi can dự vào chuyện của Hongshan. Nhưng xét về vai vế và thâm niên của cô ấy, không ai trong Học Viện dám tỏ ý bất kính. Ngay cả Quý cô Si cũng luôn lắng nghe lời phê bình của Thiên Sư Tan mà không hề phản bác. Hai người họ hiếm khi gặp nhau, nhưng mỗi lần gặp, thường chính Thiên Sư Tan lại lôi kéo Quý cô Si đi nghịch ngợm. Thành thật mà nói, đôi khi tôi cũng chẳng biết rốt cuộc ai mới là tiền bối nữa."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line04",
+        "title": "Chủ Đề: Si",
+        "text": "Vì thường thay Thiên Sư Tan truyền lời nên tôi cũng khá hay trao đổi thư từ với Quý cô Si. Quả thật cô ấy có phần tùy hứng, nhưng muốn giao tiếp hiệu quả với cô ấy cũng có bí quyết cả. Nếu ngài hứng thú... Hehe, thật ra chẳng khó đâu. Chỉ cần bắt đầu từ phần thú vị nhất. Đợi đến khi cô ấy đủ tò mò rồi mới kể nốt phần còn lại... Sao cơ? Giống như dỗ trẻ con ư - ?! À, không, không, tôi nên dừng ở đây thì hơn! Có những lời nói ra nguy hiểm lắm."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_about_line05",
+        "title": "Chủ Đề: Vũ Khí",
+        "text": "Tôi đã sử dụng Phục Lôi từ rất lâu rồi. Vô số Aggeloi đã ngã xuống dưới lưỡi đao này, mà cây cối, cỏ dại cũng chẳng ít hơn là bao. Cục Kiếm Sĩ Hongshan từng mượn nó về nghiên cứu, rồi nổi giận vì tôi lại dùng một bảo vật như thế để làm mấy việc vặt tầm thường. Chúng tôi đã tranh luận rất lâu. Với tôi, vũ khí chỉ là công cụ để chế ngự kẻ địch và bảo vệ sinh linh. Dẫu là thần binh được người đời ca tụng đến đâu, nếu không có người sử dụng thì cũng chẳng thể hoàn thành sứ mệnh ấy. Vì vậy, giá trị của vũ khí nằm ở người cầm nó, chứ không phải bản thân nó."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_common_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Có kho báu chưa ai lấy kìa. Để không thì phí lắm."
+      },
+      {
+        "voId": "chr_0037_minghe_explore_point_valub_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Nơi đó có thể có thứ chúng ta cần. Đến xem thử nhé?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_locked_01",
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Tôi vừa thấy có gì đó lạ lắm. Lại gần xem sao?"
+      },
+      {
+        "voId": "chr_0037_minghe_explore_find_danger_01",
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Đối thủ này không tầm thường đâu. Thận trọng cũng được, nhưng cứ đánh thẳng vẫn hơn."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_01",
+        "title": "Khai thác 1",
+        "text": "Ồ? Hàng tốt đấy."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_mine_valub_echo2_01",
+        "title": "Khai thác 2",
+        "text": "Cứ để tôi. Hai vũ khí cùng khai thác chắc chắn nhanh hơn một."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_treasure_valub_01",
+        "title": "Mở Thùng",
+        "text": "Một kho báu đã ngủ quên trong thùng từ lâu... Giờ cuối cùng cũng có người tìm thấy nó."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_etherium_01",
+        "title": "Nhận Aurylene",
+        "text": "Bay cao, lại còn tự do tự tại. Làm tôi cũng thấy ghen tị rồi đấy."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_blight_break_01",
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Mối đe dọa đã được xử lý. Đường thông rồi."
+      },
+      {
+        "voId": "chr_0037_minghe_interact_rest_01",
+        "title": "Nghỉ ngơi",
+        "text": "Đã nghỉ ngơi đầy đủ, cũng sẵn sàng làm nhiệm vụ... Lên đường thôi."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_using_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Cẩn thận, đừng quá sức."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_suppuse_getheal_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Tôi sơ ý mất rồi. Tiếp tục chiến đấu thôi."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_danger_01",
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Cả đội, vững vàng, chuẩn bị ứng chiến!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_hurt_lowhp_01",
+        "title": "Bị thương",
+        "text": "Không sao đâu."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_dead_01",
+        "title": "0 HP",
+        "text": "Xin lỗi, Endmin... Lẽ ra tôi phải... gắng gượng thêm chút nữa..."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_01",
+        "title": "Cổ Vũ Đội 1",
+        "text": "Thân thủ đẹp mắt lắm!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_02",
+        "title": "Cổ Vũ Đội 2",
+        "text": "Nhanh nhẹn, uyển chuyển, không một động tác thừa! Tuyệt diệu!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_01",
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Tôi chỉ làm tròn bổn phận thôi."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_remind_praise_echo2_02",
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Công lớn là nhờ mọi người phối hợp ăn ý đấy."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_01",
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Không để bất kỳ kẻ ác nào sống sót qua trận chiến này."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_intobattle_echo2_01",
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Lưỡi thép xin tuân lệnh."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_01",
+        "title": "Thắng Trận 1",
+        "text": "Mọi chuyện đã được giải quyết."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_02",
+        "title": "Thắng Trận 2",
+        "text": "Kết quả không ngoài dự đoán."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_nor_echo2_01",
+        "title": "Thắng Trận 3",
+        "text": "Một chiến thắng vang dội nhờ công sức của cả đội."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_outbattle_hard_01",
+        "title": "Thắng Trận 4",
+        "text": "Chúng ta thắng rồi. Tôi sẽ kiểm tra khu vực xung quanh. Mọi người nghỉ ngơi đi."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_battle_defeat_01",
+        "title": "Bại Trận",
+        "text": "Hiếm khi mới gặp được một đối thủ mạnh thế này... Lần sau, chúng ta nhất định sẽ rửa được mối hận hôm nay."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_01",
+        "title": "Đòn Dứt Điểm 1",
+        "text": "LÔI ĐÌNH!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_last_02",
+        "title": "Đòn Dứt Điểm 2",
+        "text": "PHÁ TAN!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_01",
+        "title": "KN Chiến Đấu 1",
+        "text": "Xẻ mưa!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_02",
+        "title": "KN Chiến Đấu 2",
+        "text": "Trảm phong!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_nor_03",
+        "title": "KN Chiến Đấu 3",
+        "text": "Liệt ảnh!"
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_01",
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Đến lúc nghiêm túc rồi."
+      },
+      {
+        "voId": "chr_0037_minghe_combat_skill_comb_ready_02",
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Đao đã tuốt khỏi vỏ."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_01",
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "LÔI KÍCH!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_comb_release_02",
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "LƯỠI ĐAO BỘC PHÁ!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_01",
+        "title": "Kết Liễu 1",
+        "text": "Lui đi."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_attack_extra_02",
+        "title": "Kết Liễu 2",
+        "text": "Tránh sang một bên."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_01",
+        "title": "Tuyệt Kỹ 1",
+        "text": "Phương Bắc, hãy chứng kiến ta tiến bước!"
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_02",
+        "title": "Tuyệt Kỹ 2",
+        "text": "Vạn sự tận trong tiếng sấm rền."
+      },
+      {
+        "voId": "chr_0037_minghe_mono_skill_ultimate_03",
+        "title": "Tuyệt Kỹ 3",
+        "text": "Đến đây, cảm nhận dòng chảy càn khôn!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Thiên Phú <@ba.key>Đỉnh Cao Lôi Thuật</> được cường hóa: Khi áp dụng <#ba.crush>Nghiền</> lên mục tiêu có <@ba.key>Xuyên Phá</>, ST gây ra bởi <#ba.crush>Nghiền</> này tăng lên bằng <@ba.vup>{1+crush_damage:0.0}</> lần so với ban đầu. Tỷ lệ ST vụ nổ <@ba.key>Xuyên Phá</> gây lên các kẻ địch khác gần mục tiêu đó tăng lên <@ba.vup>{other_damage_percent:0%}</>.",
+      "name": "Cuồng Phong Hoang Dã"
+    },
+    "potential2": {
+      "description": "Ý Chí <@ba.vup>+{Will:0}</>, Công Phép <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Xuân Lôi Điện Khởi"
+    },
+    "potential3": {
+      "description": "KN chiến đấu <@ba.key>Lôi Xung</> được cường hóa: Với mỗi 1 tầng <#ba.pulseonchar>Nhiễm Điện</> được <#ba.consume>tiêu hao</>, Argent Flow nhận <@ba.pulse>ST Điện Gây Ra</> <@ba.vup>+{potential_adddamage:0%}</> trong <@ba.vup>{potential_duration:0}</> giây. Hiệu ứng này có thể đạt tới <@ba.vup>{potential_maxstack:0}</> tầng. Thời gian duy trì của mỗi cộng dồn được tính riêng.",
+      "name": "Lôi Bão Tập Kích"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>Xé Toạc Thiên Khung</> được cường hóa: Năng Lượng Tuyệt Kỹ tiêu hao <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Tinh Lưu Chiếu Rọi"
+    },
+    "potential5": {
+      "description": "Thiên Phú <@ba.key>Xuân Lôi Vạn Phát</> được cường hóa: Khi thi triển KN chiến đấu <@ba.key>Lôi Xung</>, toàn đội nhận thêm Công Phép <@ba.vup>+{extra_yuanshi_add:0}</>.\nHiệu ứng tăng ST vụ nổ <@ba.key>Xuyên Phá</> theo mỗi điểm Công Phép của Argent Flow tăng lên bằng <@ba.vup>{thunderdamage_multi:0.0}</> lần so với ban đầu.",
+      "name": "Chiêu Dẫn Thiên Quang"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Ngân Thương Sáng Nơi Đồng Nội",
+      "author": "李吉吉",
+      "description": "Dưới dòng tinh hà, trong đêm được mũi thương của anh soi sáng, anh đã dâng trọn sự bảo hộ của mình để gìn giữ vùng đất này."
+    },
+    "potential3": {
+      "name": "Cắm Trại Dưới Mây",
+      "author": "kera",
+      "description": "Dưới mây dựng trại, nhàn bước bên đường, anh nâng chén vui mừng cho hành trình đã qua."
+    },
+    "potential5": {
+      "name": "Người Mang Ánh Sáng",
+      "author": "ALZiMi",
+      "description": "Một đường hồ quang rực sáng, một lời nguyện luôn cháy bỏng. Anh đã ước cho thế gian mãi được thái bình."
+    }
+  }
+}

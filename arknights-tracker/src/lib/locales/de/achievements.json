@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "„Indigo-Reinigung“",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "3": {
+        "desc": "Schließe eine Herausforderung mit mindestens 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Gesamttestkriterien in [Krisenschutzvertrag: Versuchseinsatz Indigo] ab.",
+        "completeDesc": "Das Geschenk wurde mit einem verdorbenen Indigoton verunreinigt. Aber solange du bei uns bist, wird das Feuer der Rückzündung niemals erlöschen."
+      }
+    },
+    "plating": {
+      "desc": "Schließe eine Herausforderung mit mindestens 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Gesamttestkriterien in [Krisenschutzvertrag: Versuchseinsatz Indigo] ab."
+    }
+  },
   "achv_event_dungfight": {
     "name": "„Überlebensexperte“",
     "category": "Event",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Schließe die Nebenmission [Für eine Handvoll Reflexionen] ab.",
         "completeDesc": "Ihre Fäuste stellen meine Entschlossenheit in Frage, doch mein Qi erschüttert das Land und fordert den Donner höchstpersönlich heraus."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "„Zurück aufs Land“",
+    "category": "Kapitel",
+    "group": "Erkundungsmission",
+    "levels": {
+      "2": {
+        "desc": "Schließe die Nebenmission [Zurück aufs Land] ab.",
+        "completeDesc": "Wenn die Furchen der Klinge mehrere neue Zweige fassen können und singen wie die Bestien, werden wir endlich unsere wahren Absichten begreifen."
       }
     },
     "plating": null

@@ -1043,7 +1043,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Argent Flow"
   },
   "weaponsList": {
     "custom_weapon": "Senjata Kustom",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Surat Izin 10× Tataplah Celah di Utara",
     "ticketgacha_special_ten_lt_1_4_2": "Surat Izin 10× Bintang Fajar Gemerlap",
     "ticketgacha_weaponbox_lt_1_2_2": "Sertif Edisi Sambaran Api di Tengah Angin",
-    "ticketweaponbox_ten_1_lt": "Sertif 10× Kerat Senjata OBW"
+    "ticketweaponbox_ten_1_lt": "Sertif 10× Kerat Senjata OBW",
+    "business_card_topic_chr_0037_minghe": "Pembawa Cahaya",
+    "item_activity_contract_gold_1": "Indigo Vitrifikasi",
+    "item_case_wpn_selfselect_gahca_1_6_2": "KP Senjata: Kilau Rembulan",
+    "item_char_equip_supply_minghe": "Kerat Pertahanan Senjata α: Sungai Bintang",
+    "item_charpotentialup_chr_0037_minghe": "Token Argent Flow",
+    "item_mission_c37m1_foragel": "Umpan Pedas",
+    "item_mission_c37m3_branch": "Cabang Pohon dari Ye Minghe",
+    "item_mission_c37m3_tools": "Alat Reparasi Kandang Hewan",
+    "item_mission_c37m3_woodenboard": "Papan Kokoh",
+    "item_port_horse_1": "Nuli Mainan",
+    "item_shot_anim_minghe_m_1": "Santai Bersama Kawan Lama",
+    "item_ticketgacha_special_single_lt_1_6_2": "Surat Izin HH Bintang-Bintang Menyertaiku",
+    "item_user_avatar_chr_0037_minghe": "Argent Flow",
+    "ticketgacha_special_single_lt_1_6_2": "Surat Izin HH Bintang-Bintang Menyertaiku"
   },
   "buildingNames": {
     "component_mc_1": "Unit Pengepas",

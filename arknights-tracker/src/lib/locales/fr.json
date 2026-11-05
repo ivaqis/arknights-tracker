@@ -1043,7 +1043,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Flux d'argent"
   },
   "weaponsList": {
     "custom_weapon": "Arme personnalisée",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Permis ×10 Regard tourné vers le nord et vers la faille",
     "ticketgacha_special_ten_lt_1_4_2": "Permis ×10 Étoile du matin étincelante",
     "ticketgacha_weaponbox_lt_1_2_2": "Certif tirage Flammes dans le vent",
-    "ticketweaponbox_ten_1_lt": "Certificat Caisse d'armes x10 à durée limitée"
+    "ticketweaponbox_ten_1_lt": "Certificat Caisse d'armes x10 à durée limitée",
+    "business_card_topic_chr_0037_minghe": "Porteur de lumière",
+    "item_activity_contract_gold_1": "Indigo vitrifié",
+    "item_case_wpn_selfselect_gahca_1_6_2": "CO d'armes : miroilune",
+    "item_char_equip_supply_minghe": "Caisse de défense de l'arsenal α : Rivière étoilée",
+    "item_charpotentialup_chr_0037_minghe": "Jeton de Flux d'argent",
+    "item_mission_c37m1_foragel": "Appât piquant",
+    "item_mission_c37m3_branch": "Branche de Ye Minghe",
+    "item_mission_c37m3_tools": "Outils de réparation d'enclos à bêtes",
+    "item_mission_c37m3_woodenboard": "Planches solides",
+    "item_port_horse_1": "Nuli à bascule",
+    "item_shot_anim_minghe_m_1": "Flâner avec un vieil ami",
+    "item_ticketgacha_special_single_lt_1_6_2": "Permis REC Les étoiles sont avec moi",
+    "item_user_avatar_chr_0037_minghe": "Flux d'argent",
+    "ticketgacha_special_single_lt_1_6_2": "Permis REC Les étoiles sont avec moi"
   },
   "buildingNames": {
     "component_mc_1": "Unité d'ajustage",

@@ -246,5 +246,15 @@ export const characterStickers: Record<string, string[]> = {
         "sns_sticker_10/sns_sticker_10_06.png",
         "sns_sticker_10/sns_sticker_10_07.png",
         "sns_sticker_10/sns_sticker_10_08.png"
+    ],
+    "argentFlow": [
+        "sns_sticker_10/sns_sticker_10_09.png",
+        "sns_sticker_10/sns_sticker_10_10.png",
+        "sns_sticker_10/sns_sticker_10_11.png",
+        "sns_sticker_10/sns_sticker_10_12.png",
+        "sns_sticker_10/sns_sticker_10_13.png",
+        "sns_sticker_10/sns_sticker_10_14.png",
+        "sns_sticker_10/sns_sticker_10_15.png",
+        "sns_sticker_10/sns_sticker_10_16.png"
     ]
 };

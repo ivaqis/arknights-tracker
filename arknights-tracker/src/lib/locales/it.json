@@ -1043,7 +1043,8 @@
     "typhoeus": "Typhoeus",
     "endministrator": "Endministrator",
     "purrchena": "Purrchena",
-    "si": "Si"
+    "si": "Si",
+    "argentFlow": "Flusso argentato"
   },
   "weaponsList": {
     "custom_weapon": "Arma Personalizzata",
@@ -3423,7 +3424,21 @@
     "ticketgacha_special_ten_lt_1_4_1": "Permesso da 10 utilizzi Guarda a nord verso la spaccatura",
     "ticketgacha_special_ten_lt_1_4_2": "Permesso da 10 utilizzi Stella del mattino abbagliante",
     "ticketgacha_weaponbox_lt_1_2_2": "Certificato di distribuzione: Fiamma nei venti",
-    "ticketweaponbox_ten_1_lt": "Certificato per cassa da 10 armi a tempo limitato"
+    "ticketweaponbox_ten_1_lt": "Certificato per cassa da 10 armi a tempo limitato",
+    "business_card_topic_chr_0037_minghe": "Portatore di luce",
+    "item_activity_contract_gold_1": "Indaco vetrificato",
+    "item_case_wpn_selfselect_gahca_1_6_2": "CO armi: chiarore lunare",
+    "item_char_equip_supply_minghe": "Cassa di difesa dell'arsenale α: Fiume stellare",
+    "item_charpotentialup_chr_0037_minghe": "Gettone di Flusso argentato",
+    "item_mission_c37m1_foragel": "Esca piccante",
+    "item_mission_c37m3_branch": "Ramo di Ye Minghe",
+    "item_mission_c37m3_tools": "Attrezzi per la riparazione dei recinti delle bestie",
+    "item_mission_c37m3_woodenboard": "Assi robuste",
+    "item_port_horse_1": "Nuli a dondolo",
+    "item_shot_anim_minghe_m_1": "Oziare con una vecchia conoscenza",
+    "item_ticketgacha_special_single_lt_1_6_2": "Permesso CT Le stelle sono con me",
+    "item_user_avatar_chr_0037_minghe": "Flusso argentato",
+    "ticketgacha_special_single_lt_1_6_2": "Permesso CT Le stelle sono con me"
   },
   "buildingNames": {
     "component_mc_1": "Unità di adattamento",

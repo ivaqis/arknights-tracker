@@ -1537,6 +1537,25 @@
       }
     ]
   },
+  "lunarCalling": {
+    "name": "Lunar Calling",
+    "description": "Ho visto quel cantastorie. All'epoca si era sistemato in un angolo della città. Aveva un'aria quasi folle e non parlava d'altro che di spade.\nGli spadamanti di cui raccontava percorrevano le strade più disparate. Alcuni si dedicavano ad aiutare il prossimo e a salvare il mondo, altri intraprendevano in solitaria un pellegrinaggio sulla via della spada, mentre altri ancora vagavano per il mondo in cerca di avversari da sfidare. Spadamanti diversi impugnavano spade diverse, ma ogni arma era affilatissima e leggendaria a modo suo. Ogni volta che il cantastorie si lasciava prendere troppo dall'entusiasmo, sollevava la sua spada consunta e si esibiva in una danza di affondi e fendenti, mentre una raffica di freddi bagliori squarciava il vento. Il pubblico rimaneva a bocca aperta. Sembrava di assistere alla massima espressione dell'arte degli spadamanti.\nQuanto alle origini del cantastorie, anche su quelle circolavano storie di ogni genere, ma nessuna sembrava avere un fondamento concreto. Dal suo abbigliamento, si pensava che un tempo fosse stato un Tianshi. Qualcuno, abbastanza curioso da chiederglielo, si sentì rispondere: \"È davvero così importante? Non sono che un semplice viandante, un cantastorie e un cercatore della spada, una persona comune che racconta soltanto storie di lame affilate\".\nIl giorno in cui mi salutò, raccontava ancora storie di spade. Si era fatto tardi e il pubblico se n'era andato. C'ero solo io. Forgiavo spade di mestiere e riuscivo a malapena a contenere la curiosità per il suo passato e per la lama che portava con sé. Così, prima che riprendesse il suo cammino, trovai finalmente l'occasione di chiedergli: \"Hai raccontato molte storie di spade, cantastorie. Hai una storia anche per la lama che porti con te?\"\nIl cantastorie si sedette a un tavolo e vuotò il boccale di kohl che aveva ordinato.\nMezzo ubriaco, iniziò il suo racconto. Un tempo aveva sentito parlare di \"Richiamo lunare\", una lama perduta su Talos-II e forgiata da un maestro fabbro del Grande Yan. Si diceva che colpisse con una forza incredibile, capace di abbattere qualsiasi cosa incontrasse sul proprio cammino. Dopo aver attraversato il Portale cosmico ed essere giunto su Talos-II, la via di casa gli era stata ben presto preclusa. La ricerca di quella lama era diventata la sua unica ossessione e aveva percorso l'intera Cintura civilizzata per trovarla. Incontrò molte persone che sostenevano di aver visto l'arma, eppure le loro descrizioni differivano enormemente. Confuso da quelle testimonianze discordanti, il cantastorie si convinse che \"Richiamo lunare\" potesse essere soltanto una leggenda e arrivò persino a decidere di porre fine alla sua infruttuosa ricerca.\nUn giorno, mentre riposava nelle terre selvagge, vide un giovane intrappolato da diversi Aggeloi e lo salvò. Il giovane, riconoscente, notò improvvisamente la spada che impugnava e riuscì a malapena a nascondere la sorpresa: \"I motivi sulla lama e i colori dell'elsa... sono proprio come li descrive la leggenda. Signore, possibile che lei impugni 'Richiamo lunare'?\"\nQuella rivelazione lasciò dapprima il cantastorie di stucco, poi quasi frastornato. Aveva viaggiato in lungo e in largo e combattuto qualche battaglia per aiutare chi era in difficoltà. La gente raccontava le sue imprese e arrivava persino a giurare che la sua lama fosse proprio \"Richiamo lunare\".\nL'illuminazione giunse in un istante e tutti gli indizi confluirono in un'unica conclusione: le testimonianze discordanti non erano sbagliate. \"Richiamo lunare\" non era una singola spada, ma una moltitudine di lame. Non era un nome attribuito a un'unica arma. Molte armi si erano guadagnate quel titolo grazie alle proprie imprese.\nDopo avermi regalato quella storia, si alzò per andarsene.\n\"Immagino che potremmo aggiungere qualcosa a questa storia\", dissi, sentendomi pervadere dall'emozione mentre osservavo il riflesso della luna nel mio kohl.\nSul volto del cantastorie si aprì un sorriso. \"Sì, dovrebbe esserci qualcos'altro.\"\nDetto questo, mi salutò con un gesto della mano e si incamminò nella notte. Nessuno seppe più cosa gli accadde.\nIl racconto era finito e la lama era stata forgiata. La consegnai allo spadamante giovane ma composto che avevo davanti. La luce della luna brillò sulla lama quando la fece vibrare con un colpetto. La spada emise un lieve rintocco, che echeggiò a lungo e dolcemente nella notte.\nLo spadamante accettò solennemente il mio lavoro. Sembrava avere qualcosa per la testa, ma mi ringraziò prima di andarsene. Lo osservai fondersi a poco a poco con il chiarore della luna...\nLa vista mi si appannò. Mi domandai: avevo visto uno spadamante camminare nella notte o una spada che rifletteva il richiamo della luna?",
+    "decoDesc": "Un capolavoro simbolico della Spadamanti Hongshan. L'arma è costruita usando le più recenti tecnologie di fusione dei metalli e forgiata con antiche tecniche yanesi di lavorazione delle spade. Il risultato offre prestazioni eccellenti e una bellezza collaudata dal tempo.",
+    "skills": [
+      {
+        "name": "Volontà [L]",
+        "description": "Volontà <@ba.vup>+{will}</>"
+      },
+      {
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Afflizione: Stelle sfreccianti",
+        "description": "Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>.\nQuando l'abilità dell'attaccante applica <#ba.conduct>Elettrificazione</>, l'intera squadra ottiene <@ba.vup>+{atk_up:0.0%}</> di ATT per {duration:0} s.\nQuando l'attaccante <#ba.consume>consuma</> <#ba.spellinflict>Afflizione da Arti</>, ottiene <@ba.vup>+{pulse_dmg_up:0.0%}</> di danni da elettricità inflitti per {duration2:0} s.\n<@ba.info>I due effetti si applicano separatamente, senza accumularsi.</>"
+      }
+    ]
+  },
   "farsight": {
     "name": "Farsight",
     "description": "Questa terra potrebbe non avere niente di speciale.\nLe solite vecchie pianure, la solita vecchia aria e il solito vecchio mare. Tuttavia, i cieli sono diversi. C'è un grosso pianeta chiaramente visibile di giorno e non ci sono le lune gemelle di notte. La vita è quasi identica a quella di Terra.\nÈ un bene? Non lo so.\nSono qui per la leva obbligatoria, mi pagano e c'è cibo. Tutto qui.\n\nMa con il passare del tempo, ho iniziato a percepire le differenze.\nIntanto, l'assenza di Originium. Accidenti, persino i confini nazionali sembravano una presa in giro. Pensavo che si trattasse di una sorta di lavoro pionieristico alla frontiera di Colombia, dove la gente sgobbava tutto il giorno nelle terre selvagge per qualcosa da mangiare. Ma proprio oggi, un tipo che sembrava un nobile di Leithanien ha chiesto a me, una recluta addetta ai lavori, le specifiche di alcuni pezzi di una macchina e come usare alcuni macchinari.\nE il nobiluomo non stava scherzando.\nAbitanti di Ursus, Leithanien, Colombia... Tutte queste etichette divisive ora sono state ridotte a compagni, amici e colleghi.\nMi piace come sono andate le cose, è fantastico! Ma come è successo? Non ne ho idea.\nHo chiesto un po' in giro, ma gli altri sono confusi quanto me. Quindi non ho avuto una risposta finché...\n\n\"Cos'è la Endfield?\"\nHo fatto questa domanda al gigante caposquadra Sarkaz quando ho iniziato a lavorare. Endfield suona proprio sfortunato come nome per un'azienda che lavora sulle frontiere.\nLui non ha detto niente. Invece, ci ha portati sulla punta della nave temporaneamente utilizzata come QG della Endfield. Ci ha detto di guardare bene il pianeta e il mondo.\nPianeta e mondo... Prima usavamo raramente questi termini. \nIl caposquadra ha visto la mia confusione e ha sorriso. Mi ha detto che è ciò che significa la Endfield.\n\"Significa che dobbiamo utilizzare parole nuove e belle?\"\n\"Significa che abbiamo lasciato il nostro passato su Terra.\"\n\nForse aveva ragione.\nPrima di decidere di attraversare il Portale cosmico per arrivare qui, io e chiunque altro abbiamo lasciato per sempre qualcosa su Terra.\nLa gente che ha faticato nei pozzi minerari, che ha vagato nelle terre selvagge, che ha lavorato nelle città, che ha tenuto concerti tra le guglie... Tutti fianco a fianco sulla nave, pronti a costruire un futuro insieme.\nIl destino ci ha posto di fronte a una scelta. Abbiamo scelto qualcosa di diverso dal passato per creare un nuovo modo di vivere.\n\nCome diventerà questo mondo? Non lo so.\nPerché lo stiamo costruendo proprio adesso.\nI palazzi si ergeranno dal suolo e le colture germoglieranno dalla terra.\nQuesta è la nostra risposta fragorosa sul mondo che stiamo costruendo.",
@@ -1553,25 +1572,6 @@
       {
         "name": "Assalto: Visione del domani",
         "description": "All'inizio della battaglia, l'intera squadra ottiene il potenziamento <@ba.key>Slancio verso il sogno</>, che conferisce <@ba.vup>+{dmg_up:0.0%}</> di danni inflitti, <@ba.vup>+{phy_spell_up:0}</> di intensità delle Arti e <@ba.vup>+{def_up:0.0%}</> di DIF per {duration:0} s. Quando <@ba.key>Slancio verso il sogno</> termina, l'attaccante restituisce <@ba.heal>{hp_up_c:0}</> PS all'intera squadra.\n<@ba.info>Gli effetti dello stesso tipo non si accumulano.</>"
-      }
-    ]
-  },
-  "lunarCalling": {
-    "name": "Richiamo lunare",
-    "description": "",
-    "decoDesc": "",
-    "skills": [
-      {
-        "name": "Volontà [L]",
-        "description": "Volontà <@ba.vup>+{will}</>"
-      },
-      {
-        "name": "ATT [L]",
-        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
-      },
-      {
-        "name": "Afflizione: Stelle sfreccianti",
-        "description": ""
       }
     ]
   }

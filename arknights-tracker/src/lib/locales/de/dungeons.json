@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Konstrukt-Akte: Geist – Normal",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 5 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower019_ex": {
     "name": "Konstrukt-Akte: Geist – Brutal",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 5 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower019_s": {
     "name": "Konstrukt-Akte: Geist – Schwer",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 5 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower020": {
     "name": "Verteidigung-Akte: Schild – Normal",
@@ -303,6 +303,11 @@
     "name": "Versuchseinsatz: Rückzündung",
     "description": "– Der Einsatz umfasst 4 aufeinanderfolgende Gegnerwellen, die bekämpft werden müssen. Besiege alle Gegnerwellen, um den Einsatz abzuschließen.\n– Zwischen den Wellen werden Heilmassen verfügbar. Berühre sie, um die LP aller Teammitglieder wiederherzustellen.\n– Zwischen den Wellen ereignet sich eine Erholungsphase, während der die Operatoren weiterhin als im Kampf befindlich gelten.\n– Der Einsatz hat einen Countdown-Timer. Sobald der Timer endet oder die LP aller Operatoren im Team auf NULL sinken, wird der Einsatz unterbrochen.\n– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.",
     "featureDesc": "– Die Gegner sind verschiedene Arten von Aggeloi.\n– Manche Gegner belegen Operatoren mit Kryo. Ein Operator, der 4 Kumulierungen Kryo erleidet, erstarrt."
+  },
+  "indie_contract002": {
+    "name": "Versuchseinsatz: Indigo",
+    "description": "– Der Einsatz umfasst 3 aufeinanderfolgende Gegnerwellen, die bekämpft werden müssen. Besiege alle Gegnerwellen, um den Einsatz abzuschließen.\n– Zwischen den Wellen werden Heilmassen verfügbar. Berühre sie, um die LP aller Teammitglieder wiederherzustellen.\n– Zwischen den Wellen ereignet sich eine Erholungsphase, während der die Operatoren weiterhin als im Kampf befindlich gelten.\n– Der Einsatz hat einen Countdown-Timer. Sobald der Timer endet oder die LP aller Operatoren im Team auf NULL sinken, wird der Einsatz unterbrochen.\n– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.",
+    "featureDesc": "– Zu den Gegnern zählen verschiedene Verderbnisschatten, Geschöpfe der Hexerei, wilde Bestien und Cangzei-Piraten wie Wolkenvernichter.\n- Du kannst Gegner mit Schild-Kumulierungen weiterhin mit Anfälligkeit, Technikkumulierungen, Physischen Zuständen und Technikreaktionen belegen."
   },
   "indie_hard001": {
     "name": "Wütende Schilde",

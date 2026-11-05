@@ -271,6 +271,15 @@
       "Hadiah: Pencapaian Potensi Operator Spesifik"
     ]
   },
+  "business_card_topic_chr_0037_minghe": {
+    "name": "Pembawa Cahaya",
+    "type": "Tema Profil",
+    "desc": "Tema untuk layar Profil. Tema profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "Bagai busur kilat yang terang, tekad yang terus menyala, harapannya adalah mewujudkan kedamaian abadi di dunia.",
+    "obtainWays": [
+      "Hadiah: Pencapaian Potensi Operator Spesifik"
+    ]
+  },
   "business_card_topic_normal_1": {
     "name": "Tema: Default",
     "type": "Tema Profil",
@@ -405,6 +414,13 @@
     "name": "Koin Vitrifikasi",
     "type": "Mata Uang Event",
     "desc": "Item spesial yang didapatkan dengan menyelesaikan misi kontrak. Bisa ditukarkan dengan hadiah di [Suaka Rahasia] dalam event [Kontrak Kontingensi]. Item ini akan dihapus setelah [Suaka Rahasia] ditutup.",
+    "decoDesc": "Putar di ujung jarimu. Kilau cahaya yang memantul di permukaannya adalah bukti bahwa kontrak kuno itu masih ada.",
+    "obtainWays": []
+  },
+  "item_activity_contract_gold_1": {
+    "name": "Indigo Vitrifikasi",
+    "type": "Mata Uang Event",
+    "desc": "Item spesial yang didapatkan dengan menyelesaikan misi kontrak. Bisa ditukarkan dengan imbalan di [Suaka Rahasia] dalam event [Kontrak Kontingensi]. Item ini akan dihapus setelah [Suaka Rahasia] ditutup.",
     "decoDesc": "Putar di ujung jarimu. Kilau cahaya yang memantul di permukaannya adalah bukti bahwa kontrak kuno itu masih ada.",
     "obtainWays": []
   },
@@ -2146,6 +2162,15 @@
       "Penawaran Senjata"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_6_2": {
+    "name": "KP Senjata: Kilau Rembulan",
+    "type": "Kerat",
+    "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
+    "decoDesc": "Kerat berat dengan segel yang luar biasa rapat. “Dengan menyediakan berbagai pilihan senjata, operasi di medan pertarungan akan lebih aman,” begitu pikir para Ahli Mesin Senjata. Karenanya, mereka mengisi kerat ini dengan berbagai senjata yang mencerminkan Kilau Rembulan.",
+    "obtainWays": [
+      "Penawaran Senjata"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "KP Senjata: Es Padat",
     "type": "Kerat",
@@ -2372,6 +2397,13 @@
     "type": "Kerat",
     "desc": "Buka ini untuk mendapatkan satu set gear dengan penyempurnaan maksimum yang sesuai untuk operator tertentu.",
     "decoDesc": "Para Ahli Mesin Senjata dengan sangat cermat menyiapkan bundel gear pertahanan tipe β berisi peralatan yang sesuai untuk Operator Arcane.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_minghe": {
+    "name": "Kerat Pertahanan Senjata α: Sungai Bintang",
+    "type": "Kerat",
+    "desc": "Berisi set gear dengan penyempurnaan maksimum yang sesuai untuk operator tertentu. Kerat Pertahanan akan otomatis terbuka saat didapatkan. Gear di dalamnya akan disimpan di Simpanan Barang Berharga.",
+    "decoDesc": "Para Ahli Mesin Senjata dengan sangat cermat menyiapkan bundel gear pertahanan tipe α berisi peralatan yang sesuai untuk Operator Argent Flow.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2807,6 +2839,15 @@
     "type": "Token Operator",
     "desc": "Meningkatkan potensi Si.",
     "decoDesc": "Buku akuntansi yang kelihatannya tidak terlalu tebal. Konon, inilah “buku besar rahasia” milik Pengurus Losmen Yuanyuan setelah bertahun-tahun berbisnis. Tapi, saat kamu membuka untuk membacanya, yang kamu temukan malah sekumpulan catatan sederhana tentang berbagai hal, pepatah, dan orang-orang yang paling berarti bagi Si. Bagaimanapun juga, prinsip pengelolaan Lahan Yuanyuan terletak pada nama losmen itu sendiri.",
+    "obtainWays": [
+      "Hadiah: Orientasi Operator"
+    ]
+  },
+  "item_charpotentialup_chr_0037_minghe": {
+    "name": "Token Argent Flow",
+    "type": "Token Operator",
+    "desc": "Meningkatkan potensi Argent Flow.",
+    "decoDesc": "Liontin bola dupa dengan kekuatan Originium Arts. Wadahnya yang terbuat dari logam sudah sangat usang dan penuh goresan. Saat dinyalakan, bola itu menguarkan aroma lembut herba yang harum. Sama sepertimu, dia tahu bahwa setiap kesempatan untuk beristirahat di bawah cahaya yang lembut adalah hal langka yang patut disyukuri, terutama bagi mereka yang berkirab menuju medan pertarungan.",
     "obtainWays": [
       "Hadiah: Orientasi Operator"
     ]
@@ -6141,6 +6182,42 @@
       "Imbalan: Misi"
     ]
   },
+  "item_mission_c37m1_foragel": {
+    "name": "Umpan Pedas",
+    "type": "Item Misi",
+    "desc": "Umpan yang dibuat menggunakan tartpepper.",
+    "decoDesc": "Bola umpan berumput ini mengeluarkan aroma yang sedikit menyengat dan menimbulkan rasa ingin tahu. Bagaimana Minghe bisa tahu ini bisa mengobati gangguan pencernaan burdenbeast?",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
+  "item_mission_c37m3_branch": {
+    "name": "Cabang Pohon dari Ye Minghe",
+    "type": "Item Misi",
+    "desc": "Cabang Pohon dari Ye Minghe",
+    "decoDesc": "Cabang Pohon dari Ye Minghe",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
+  "item_mission_c37m3_tools": {
+    "name": "Alat Reparasi Kandang Hewan",
+    "type": "Item Misi",
+    "desc": "Seperangkat alat untuk memperbaiki kandang hewan.",
+    "decoDesc": "Seperangkat alat yang umum tapi berguna. Alat-alat ini tampak usang setelah digunakan bertahun-tahun.",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
+  "item_mission_c37m3_woodenboard": {
+    "name": "Papan Kokoh",
+    "type": "Item Misi",
+    "desc": "Seperangkat papan untuk memperbaiki kandang hewan.",
+    "decoDesc": "Sederhana, tapi cukup kokoh.",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
   "item_mission_e0m0_hubkey": {
     "name": "“Titik Awal”",
     "type": "Item Misi",
@@ -7274,8 +7351,7 @@
     "decoDesc": "Redjade Ginseng adalah herba ringan yang sering dikonsumsi oleh penduduk Hongshan sebagai suplemen penguat.",
     "obtainWays": [
       "Taman Sains Originium: Jalur Tepi Tebing",
-      "Tanam tumbuhan panen di Ladang Ramah Lingkungan",
-      "Kerat Bahan"
+      "Tanam tumbuhan panen di Ladang Ramah Lingkungan"
     ]
   },
   "item_plant_sp_4": {
@@ -7312,9 +7388,7 @@
     "type": "Material",
     "desc": "Benih yang dipetik dari Redjade Ginseng liar. Budidayakan di petak ladang buatan untuk menanam Redjade Ginseng.",
     "decoDesc": "Benih Redjade Ginseng yang dipilih dengan cermat karena ukurannya yang besar dan daya tahannya yang kuat.",
-    "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
-    ]
+    "obtainWays": []
   },
   "item_plant_sp_seed_4": {
     "name": "Benih Padi Amber",
@@ -7780,6 +7854,15 @@
     "desc": "Fasilitas berat yang mencacah dan menumbuk berbagai material menjadi bubuk.",
     "decoDesc": "Kau dengar bunyi derak mesin pencacah industri berat itu, tidak?",
     "obtainWays": []
+  },
+  "item_port_horse_1": {
+    "name": "Nuli Mainan",
+    "type": "Ornamen",
+    "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
+    "decoDesc": "Mainan seru yang mirip dengan Nuli. Teruslah bergoyang, galloper kecilku .... Siapa yang sudah kangen masa kecilnya?",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
   },
   "item_port_jail_1": {
     "name": "Kandang Macan",
@@ -9360,6 +9443,15 @@
       "Bursa Talosite"
     ]
   },
+  "item_shot_anim_minghe_m_1": {
+    "name": "Santai Bersama Kawan Lama",
+    "type": "Pose Kamera",
+    "desc": "Pose kamera yang bisa digunakan oleh operator.",
+    "decoDesc": "Interpretasi atas makna di balik “Santai Bersama Kawan Lama”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
   "item_shot_anim_pelica_s_1": {
     "name": "Senyumnya Agak Beda",
     "type": "Pose Kamera",
@@ -10281,6 +10373,15 @@
       "Pusat Akuisisi: Bundel"
     ]
   },
+  "item_ticketgacha_special_single_lt_1_6_2": {
+    "name": "Surat Izin HH Bintang-Bintang Menyertaiku",
+    "type": "Barang Berharga OBW",
+    "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang] berakhir.",
+    "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
+    "obtainWays": [
+      "Pusat Akuisisi: Bundel"
+    ]
+  },
   "item_ticketgacha_special_ten": {
     "name": "Surat Izin HH-10× Khusus",
     "type": "Barang Berharga",
@@ -10911,6 +11012,15 @@
   },
   "item_user_avatar_chr_0036_jsspsi": {
     "name": "Si",
+    "type": "Potret",
+    "desc": "Potret yang bisa diganti melalui layar Profil. Potret profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Hadiah: Orientasi Operator"
+    ]
+  },
+  "item_user_avatar_chr_0037_minghe": {
+    "name": "Argent Flow",
     "type": "Potret",
     "desc": "Potret yang bisa diganti melalui layar Profil. Potret profil ditampilkan di berbagai lokasi.",
     "decoDesc": "",
@@ -13533,6 +13643,15 @@
     "name": "Surat Izin HH Pemulihan Roh",
     "type": "Barang Berharga OBW",
     "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Rejuvenasi]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Rejuvenasi] berakhir.",
+    "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
+    "obtainWays": [
+      "Pusat Akuisisi: Bundel"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_6_2": {
+    "name": "Surat Izin HH Bintang-Bintang Menyertaiku",
+    "type": "Barang Berharga OBW",
+    "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang] berakhir.",
     "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
     "obtainWays": [
       "Pusat Akuisisi: Bundel"

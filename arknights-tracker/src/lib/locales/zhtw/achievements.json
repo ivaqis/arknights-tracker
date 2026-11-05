@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "「洗盡濁藍」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "3": {
+        "desc": "在「危機合約 浸藍測試作戰」中，成功達成指標總計20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑戰",
+        "completeDesc": "汙穢的藍色浸染了那份禮物，但有您在，重燃之火將永不熄滅。"
+      }
+    },
+    "plating": {
+      "desc": "在「危機合約 浸藍測試作戰」中，成功達成指標總計30<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑戰"
+    }
+  },
   "achv_event_dungfight": {
     "name": "「生存專家」",
     "category": "活動獎章",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "完成支線任務「以拳問心」",
         "completeDesc": "再以雙拳問我心，一氣貫山水，執武向雷霆。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "「歸野」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「歸野」",
+        "completeDesc": "當劍脊上擔得住幾枚新葉、幾聲獸鳴，我們便能知道，自己的心總有來處。"
       }
     },
     "plating": null

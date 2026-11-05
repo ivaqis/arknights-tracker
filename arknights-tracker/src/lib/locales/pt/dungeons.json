@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Arquivo de Construção: Espírito – Normal",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 5 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower019_ex": {
     "name": "Arquivo de Construção: Espírito – Brutal",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 5 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower019_s": {
     "name": "Arquivo de Construção: Espírito – Difícil",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 5 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower020": {
     "name": "Arquivo de Defesa: Escudo – Normal",
@@ -303,6 +303,11 @@
     "name": "Operação Experimental de Reignição",
     "description": "- A operação compreende 4 ondas consecutivas de combate contra o inimigo. Derrote todas as ondas inimigas para concluir a operação.\n- Massas de Cura serão lançadas entre as ondas. Toque nelas para restaurar PV de todos os membros da equipe.\n- Há um período de descanso entre as ondas durante o qual os operadores ainda são considerados em combate.\n- A operação possui um temporizador com contagem regressiva. Quando o temporizador zera ou todos os operadores da equipe terem PV reduzido a ZERO, a operação será interrompida.\n- Não é possível usar itens táticos nem consumíveis.",
     "featureDesc": "- Os inimigos são vários tipos de Aggeloi.\n- Alguns inimigos aplicam Inflição Crio a operadores. Um operador que atinge 4 acúmulos de Inflição Crio se torna Solidificado."
+  },
+  "indie_contract002": {
+    "name": "Operação Experimental Índigo",
+    "description": "- A operação compreende 3 ondas consecutivas de combate contra o inimigo. Derrote todas as ondas inimigas para concluir a operação.\n- Massas de Cura serão lançadas entre as ondas. Toque nelas para restaurar PV para todos os membros da equipe.\n- Há um período de descanso entre as ondas durante o qual os operadores ainda são considerados em combate.\n- A operação possui um temporizador com contagem regressiva. Quando o temporizador zerar ou o PV de todos os operadores da equipe for reduzido a ZERO, a operação será interrompida.\n- Não é possível usar itens táticos nem consumíveis.",
+    "featureDesc": "- Os inimigos incluem vários Sombras da Praga, criações da feitiçaria, feras selvagens e piratas Cangzei, como os Obliteradores de Nuvens.\n- Você ainda pode aplicar Vulnerabilidade, Inflições de Artes, Status Físicos e Reações de Artes a inimigos com acúmulos de escudo."
   },
   "indie_hard001": {
     "name": "Escudos Furiosos",

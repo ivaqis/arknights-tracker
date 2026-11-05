@@ -513,7 +513,9 @@
         }
     },
     "rOps": {
-        "skill": [],
+        "skill": [
+            "argentFlow"
+        ],
         "attr": []
     }
 }

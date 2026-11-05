@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Fichier de construction : Esprit - Normal",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 5 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower019_ex": {
     "name": "Fichier de construction : Esprit - Brutal",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 5 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower019_s": {
     "name": "Fichier de construction : Esprit - Difficile",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 5 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower020": {
     "name": "Fichier de défense : Bouclier - Normal",
@@ -303,6 +303,11 @@
     "name": "Opération expérimentale de Remise à feu",
     "description": "- L'opération consiste en 4 vagues d'ennemis consécutives à affronter. Éliminez toutes les vagues d'ennemis pour terminer l'opération.\n- Des sphères de soin apparaîtront entre les vagues. Touchez-les pour restaurer les PV de vos coéquipiers.\n- Chaque vague est suivie d'une pause, durant laquelle les opérateurs sont toujours considérés comme étant au combat.\n- L'opération se déroule avec un chrono. À la fin du temps imparti ou si tous les opérateurs de l'équipe tombent à 0 PV, l'opération est interrompue.\n- Les objets tactiques et consommables sont inutilisables.",
     "featureDesc": "- Les ennemis incluent divers types d'Aggeloi. \n- Certains ennemis appliquent une altération cryogénique aux opérateurs. Tout opérateur atteignant 4 altérations cryogéniques est solidifié."
+  },
+  "indie_contract002": {
+    "name": "Opération expérimentale indigo",
+    "description": "- L'opération consiste en 3 vagues d'ennemis consécutives à affronter. Éliminez toutes les vagues d'ennemis pour terminer l'opération.\n- Des sphères de soin apparaîtront entre les vagues. Touchez-les pour restaurer les PV de vos coéquipiers.\n- Chaque vague est suivie d'une pause, durant laquelle les opérateurs sont toujours considérés comme étant au combat.\n- L'opération se déroule avec un chrono. À la fin du temps imparti ou si tous les opérateurs de l'équipe tombent à 0 PV, l'opération est interrompue.\n- Impossible d'utiliser les objets tactiques et les consommables.",
+    "featureDesc": "- Les ennemis incluent diverses Gangrénombres, créations de magie noire, bêtes sauvages et pirates cangzei, tels que les brise-nuées.\n- Vous pouvez toujours appliquer une Vulnérabilité, des altérations des Arts, des statuts physiques et des réactions aux Arts aux ennemis qui bénéficient de cumuls de bouclier."
   },
   "indie_hard001": {
     "name": "Boucliers ravageurs",

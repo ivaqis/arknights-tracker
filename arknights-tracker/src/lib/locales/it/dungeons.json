@@ -272,17 +272,17 @@
   "indie_battletower019": {
     "name": "Dossier sui costrutti: Spettro - Normale",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 5 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower019_ex": {
     "name": "Dossier sui costrutti: Spettro - Brutale",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 5 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower019_s": {
     "name": "Dossier sui costrutti: Spettro - Difficile",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 5 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower020": {
     "name": "Dossier sulla difesa: Scudo - Normale",
@@ -303,6 +303,11 @@
     "name": "Operazione sperimentale di Riaccensione",
     "description": "- L'operazione prevede 4 ondate nemiche consecutive da affrontare. Sconfiggi tutte le ondate nemiche per completarla.\n- Tra un'ondata e l'altra appariranno delle Masse curative. Toccale per ripristinare i PS di tutti i compagni di squadra.\n- Tra un'ondata e l'altra è prevista una sessione di pausa, durante la quale gli operatori sono comunque considerati in battaglia.\n- L'operazione ha una durata limitata. Una volta terminato il conto alla rovescia o quando i PS di tutti gli operatori della squadra sono arrivati a zero, l'operazione verrà interrotta.\n- Gadget e consumabili non possono essere utilizzati.",
     "featureDesc": "- I nemici sono vari tipi di Aggeloi.\n- Alcuni nemici applicano Afflizione da ghiaccio agli operatori. Un operatore che arriva a 4 accumuli di Afflizione da ghiaccio subisce Solidificazione."
+  },
+  "indie_contract002": {
+    "name": "Operazione sperimentale indaco",
+    "description": "- L'operazione prevede 3 ondate di nemici consecutive da affrontare. Sconfiggi tutte le ondate di nemici per completarla.\n- Tra un'ondata e l'altra appariranno delle Masse curative. Toccale per ripristinare i PS di tutti i membri della squadra.\n- Tra un'ondata e l'altra è prevista una sessione di riposo, durante la quale gli operatori sono comunque considerati in battaglia.\n- L'operazione ha una durata limitata. Una volta scaduto il timer o quando i PS di tutti gli operatori della squadra arrivano a ZERO, l'operazione viene interrotta.\n- Gadget e consumabili non possono essere usati.",
+    "featureDesc": "- I nemici includono vari ombre contaminanti, creature stregate, bestie feroci e pirati di Cangzei come gli oblitera-nubi.\n- Puoi comunque applicare Vulnerabilità, Afflizioni da Arti, stati fisici e Reazioni delle Arti ai nemici con accumuli di scudo."
   },
   "indie_hard001": {
     "name": "Protezioni furiose",

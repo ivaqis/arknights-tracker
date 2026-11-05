@@ -983,6 +983,20 @@
     },
     "plating": null
   },
+  "achv_event_contingency_contract_1": {
+    "name": "“Índigo purificado”",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "3": {
+        "desc": "En [Contrato de Contingencia: Operación Experimental Índigo], completa con éxito un desafío con ≥ 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criterios de prueba totales",
+        "completeDesc": "El regalo ha sido mancillado por un corruptor matiz índigo. Pero mientras estés con nosotros, el fuego de la reignición jamás se apagará."
+      }
+    },
+    "plating": {
+      "desc": "En [Contrato de Contingencia: Operación Experimental Índigo], completa con éxito un desafío con ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criterios de prueba totales"
+    }
+  },
   "achv_event_dungfight": {
     "name": "“Especialista en supervivencia”",
     "category": "Evento",
@@ -2169,6 +2183,18 @@
       "2": {
         "desc": "Completa la misión secundaria [Un puñado de reflexiones]",
         "completeDesc": "Sus puños ponen en duda mi determinación, pero mi Chi atraviesa la tierra y desafía al mismo trueno."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_minghe": {
+    "name": "“De vuelta a lo rústico”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [De vuelta a lo rústico]",
+        "completeDesc": "Cuando la cresta de la hoja pueda sostener varias ramitas nuevas y cantar como las bestias, por fin conoceremos la verdadera naturaleza de nuestra intención."
       }
     },
     "plating": null

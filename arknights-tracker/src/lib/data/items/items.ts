@@ -1164,8 +1164,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         "material": "plant_sp_3",
         "obtainWayIds": [
             "item_obtain_gather_map01_lv005_1",
-            "item_obtain_plant",
-            "item_obtain_inn_food_box_crop_1"
+            "item_obtain_plant"
         ]
     },
     "item_plant_sp_4": {
@@ -1209,10 +1208,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         "rarity": 2,
         "groupId": "nature",
         "type": "plant_seed",
-        "material": "plant_sp_3",
-        "obtainWayIds": [
-            "item_obtain_inn_shop_1"
-        ]
+        "material": "plant_sp_3"
     },
     "item_plant_sp_seed_4": {
         "id": "item_plant_sp_seed_4",
@@ -3621,6 +3617,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -3721,6 +3718,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -3819,6 +3817,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -7617,7 +7616,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         ],
         "usedByWeapons": [
             "jadeVessel",
-            "longHeritage"
+            "longHeritage",
+            "lunarCalling"
         ]
     },
     "item_charpotentialup_chr_0002_endminm": {
@@ -9607,6 +9607,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -11212,6 +11213,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "dessertMoment",
             "farsight",
             "longHeritage",
+            "lunarCalling",
             "type42SolemnPhalanx",
             "umbraOfFrigidEventide"
         ]
@@ -15015,6 +15017,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -15114,6 +15117,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "loneBarge",
             "longHeritage",
             "longRoad",
+            "lunarCalling",
             "lupineScarlet",
             "monaihe",
             "mountainBearer",
@@ -18017,6 +18021,154 @@ export const items: Readonly<Record<string, ItemData>> = {
         "material": null,
         "obtainWayIds": [
             "item_obtain_explore"
+        ]
+    },
+    "business_card_topic_chr_0037_minghe": {
+        "id": "business_card_topic_chr_0037_minghe",
+        "iconId": "item_topic_chr_0037_minghe",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 68,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential_gift"
+        ]
+    },
+    "item_activity_contract_gold_1": {
+        "id": "item_activity_contract_gold_1",
+        "iconId": "item_activity_contract_gold_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 3,
+        "material": null
+    },
+    "item_case_wpn_selfselect_gahca_1_6_2": {
+        "id": "item_case_wpn_selfselect_gahca_1_6_2",
+        "iconId": "item_case_wpn_selfselect_gahca_1_6_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 43,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_weapon_gift"
+        ]
+    },
+    "item_char_equip_supply_minghe": {
+        "id": "item_char_equip_supply_minghe",
+        "iconId": "item_char_equip_supply_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 43,
+        "material": null
+    },
+    "item_charpotentialup_chr_0037_minghe": {
+        "id": "item_charpotentialup_chr_0037_minghe",
+        "iconId": "item_charpotentialup_chr_0037_minghe",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 42,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential"
+        ]
+    },
+    "item_mission_c37m1_foragel": {
+        "id": "item_mission_c37m1_foragel",
+        "iconId": "item_mission_c37m1_Forage",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_mission_c37m3_branch": {
+        "id": "item_mission_c37m3_branch",
+        "iconId": "item_mission_sm2l1m1_bamboo",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_mission_c37m3_tools": {
+        "id": "item_mission_c37m3_tools",
+        "iconId": "item_mission_c37m3_tools",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_mission_c37m3_woodenboard": {
+        "id": "item_mission_c37m3_woodenboard",
+        "iconId": "item_mission_sm2l1m1_bamboo",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_port_horse_1": {
+        "id": "item_port_horse_1",
+        "iconId": "item_port_horse_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 111,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_shot_anim_minghe_m_1": {
+        "id": "item_shot_anim_minghe_m_1",
+        "iconId": "item_shot_anim_minghe_m_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 105,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_ticketgacha_special_single_lt_1_6_2": {
+        "id": "item_ticketgacha_special_single_lt_1_6_2",
+        "iconId": "item_ticketgacha_special_single_lt_1_6_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 82,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_pack"
+        ]
+    },
+    "item_user_avatar_chr_0037_minghe": {
+        "id": "item_user_avatar_chr_0037_minghe",
+        "iconId": "item_chr_0037_minghe",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 66,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential"
+        ]
+    },
+    "ticketgacha_special_single_lt_1_6_2": {
+        "id": "ticketgacha_special_single_lt_1_6_2",
+        "iconId": "item_ticketgacha_special_single_lt_1_6_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 81,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_pack"
         ]
     }
 };
