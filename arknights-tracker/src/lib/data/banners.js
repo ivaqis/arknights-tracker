@@ -806,7 +806,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "weponbox_1_6_2",
+    id: "weaponbox_1_6_2",
     name: "Moongleam Issue",
     type: "weapon",
     startTime: "2026-11-05 12:00:00",
