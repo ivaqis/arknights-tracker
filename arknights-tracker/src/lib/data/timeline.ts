@@ -1586,7 +1586,7 @@ export const rawEvents: GenericEventData[] = [
         name: "Delver of the Cryptic",
         startTime: "2026-11-12 12:00:00",
         endTime: "2026-11-25 17:00:00",
-        endTimeAsia: "2026-11-14 04:00:00",
+        endTimeAsia: "2026-11-26 04:00:00",
         icon: "ev14-v1.0.webp",
         url: "",
         color: "#359abe",
