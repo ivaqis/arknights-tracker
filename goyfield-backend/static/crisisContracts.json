@@ -1,8 +1,210 @@
 [
     {
+        "id": "indie_contract002",
+        "apiId": "2b98d70ff72c60026f5cf697a8aebbe2",
+        "isCurrent": true,
+        "indicators": [
+            {
+                "id": "activity_contract_1_tag_101",
+                "tagId": "110001",
+                "nameId": "Edit: Thrill_1"
+            },
+            {
+                "id": "activity_contract_1_tag_102",
+                "tagId": "110002",
+                "nameId": "Edit: Thrill_2"
+            },
+            {
+                "id": "activity_contract_1_tag_201",
+                "tagId": "110101",
+                "nameId": "Ambient: Withering_1"
+            },
+            {
+                "id": "activity_contract_1_tag_key1",
+                "tagId": "110302",
+                "nameId": "Ambient: Silence_2"
+            },
+            {
+                "id": "activity_contract_1_tag_803",
+                "tagId": "110403",
+                "nameId": "Team: Lethargy_3"
+            },
+            {
+                "id": "activity_contract_1_tag_key2",
+                "tagId": "110502",
+                "nameId": "Ambient: Silence_2"
+            },
+            {
+                "id": "activity_contract_1_tag_301",
+                "tagId": "110601",
+                "nameId": "Team: Decapitate_1"
+            },
+            {
+                "id": "activity_contract_1_tag_302",
+                "tagId": "110602",
+                "nameId": "Team: Decapitate_2"
+            },
+            {
+                "id": "activity_contract_1_tag_403",
+                "tagId": "110703",
+                "nameId": "Ambient: Volatile Gains_3"
+            },
+            {
+                "id": "activity_contract_1_tag_501",
+                "tagId": "110801",
+                "nameId": "Team: Myolysis_1"
+            },
+            {
+                "id": "activity_contract_1_tag_502",
+                "tagId": "110802",
+                "nameId": "Team: Myolysis_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1101",
+                "tagId": "110901",
+                "nameId": "Edit: Blood Rush_1"
+            },
+            {
+                "id": "activity_contract_1_tag_1103",
+                "tagId": "110903",
+                "nameId": "Edit: Blood Rush_3"
+            },
+            {
+                "id": "activity_contract_1_tag_701",
+                "tagId": "111001",
+                "nameId": "Ambient: Binding_1"
+            },
+            {
+                "id": "activity_contract_1_tag_703",
+                "tagId": "111003",
+                "nameId": "Ambient: Binding_3"
+            },
+            {
+                "id": "activity_contract_1_tag_602",
+                "tagId": "111201",
+                "nameId": "Ambient: Partition_1"
+            },
+            {
+                "id": "activity_contract_1_tag_3001",
+                "tagId": "111301",
+                "nameId": "Team: Whittle Down_1"
+            },
+            {
+                "id": "activity_contract_1_tag_603",
+                "tagId": "111303",
+                "nameId": "Team: Whittle Down_3"
+            },
+            {
+                "id": "activity_contract_1_tag_1202",
+                "tagId": "111602",
+                "nameId": "Edit: Solid Body_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1403",
+                "tagId": "111703",
+                "nameId": "Team: Blunted Weapons_3"
+            },
+            {
+                "id": "activity_contract_1_tag_1602",
+                "tagId": "112302",
+                "nameId": "Edit: Team Mangler_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1603",
+                "tagId": "112303",
+                "nameId": "Edit: Team Mangler_3"
+            },
+            {
+                "id": "activity_contract_1_tag_1702",
+                "tagId": "112402",
+                "nameId": "Edit: Skyfall_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1703",
+                "tagId": "112403",
+                "nameId": "Edit: Skyfall_3"
+            },
+            {
+                "id": "activity_contract_1_tag_2201",
+                "tagId": "112501",
+                "nameId": "Edit: Reactive Formula_1"
+            },
+            {
+                "id": "activity_contract_1_tag_801",
+                "tagId": "112701",
+                "nameId": "Ambient: Aggro Focus_1"
+            },
+            {
+                "id": "activity_contract_1_tag_601",
+                "tagId": "112801",
+                "nameId": "Edit: Fruity Slippers_1"
+            },
+            {
+                "id": "activity_contract_1_tag_1002",
+                "tagId": "112901",
+                "nameId": "Edit: Light Protection_1"
+            },
+            {
+                "id": "activity_contract_1_tag_1003",
+                "tagId": "112903",
+                "nameId": "Edit: Light Protection_3"
+            },
+            {
+                "id": "activity_contract_1_tag_401",
+                "tagId": "113201",
+                "nameId": "Ambient: Partition_1"
+            },
+            {
+                "id": "activity_contract_1_tag_1302",
+                "tagId": "113302",
+                "nameId": "Team: Apathy_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1402",
+                "tagId": "113402",
+                "nameId": "Team: Blunted Weapons_2"
+            },
+            {
+                "id": "activity_contract_1_tag_key3",
+                "tagId": "113502",
+                "nameId": "Ambient: Combo Lock_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1203",
+                "tagId": "113603",
+                "nameId": "Edit: Hard Stacks_3"
+            },
+            {
+                "id": "activity_contract_1_tag_2901",
+                "tagId": "113701",
+                "nameId": "Team: Dueling Circle_1"
+            },
+            {
+                "id": "activity_contract_1_tag_2902",
+                "tagId": "113702",
+                "nameId": "Team: Dueling Circle_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1901",
+                "tagId": "113801",
+                "nameId": "Ambient: Time Limit_1"
+            },
+            {
+                "id": "activity_contract_1_tag_1902",
+                "tagId": "113802",
+                "nameId": "Ambient: Time Limit_2"
+            },
+            {
+                "id": "activity_contract_1_tag_1903",
+                "tagId": "113803",
+                "nameId": "Ambient: Time Limit_3"
+            }
+        ]
+    },
+    {
         "id": "indie_contract001",
         "apiId": "6e5575e7972af7d4ae63a26b98b87e9f",
-        "isCurrent": true,
+        "isCurrent": false,
         "indicators": [
             {
                 "id": "activity_contract_tag_201",

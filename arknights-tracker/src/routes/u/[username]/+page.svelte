@@ -356,10 +356,10 @@
                                             {activeAccount}
                                             hasBackground={!!profile?.background}
                                         />
-                                        <!--<CrisisContract
+                                        <CrisisContract
                                             contract={activeAccount?.info?.contract || activeAccount?.contract}
                                             hasBackground={!!profile?.background}
-                                        />-->
+                                        />
                                     </div>
                                     <WarEchoesWidget
                                         {activeAccount}
