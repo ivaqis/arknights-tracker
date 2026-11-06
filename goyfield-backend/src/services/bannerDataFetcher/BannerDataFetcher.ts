@@ -7,6 +7,7 @@ import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharB
 import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams.js";
 import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData.js";
 import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData.js";
+import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap.js";
 import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher.js";
 
 export class BannerDataFetcher {
@@ -42,20 +43,28 @@ export class BannerDataFetcher {
         return (count: number) => this._callbackFn?.(bannerType, count);
     }
 
-    public async getAllBannersData(lastPullTimeMs: number = 0): Promise<BannersPulls | null> {
+    public async getAllBannersData(lastPullTime: number | LastPullsMap = 0): Promise<BannersPulls | null> {
         const isTokenValid = await this.testToken();
 
         if (!isTokenValid) {
             return null;
         }
 
+        const getTime = (type: BannerType): number => {
+            if (typeof lastPullTime === "number") {
+                return lastPullTime;
+            }
+            const val = lastPullTime[type];
+            return val !== undefined && val !== null ? Number(val) : 0;
+        };
+
         await Promise.all([
-            this._standardFetcher.fetch(lastPullTimeMs),
-            this._beginnerFetcher.fetch(lastPullTimeMs),
-            this._specialFetcher.fetch(lastPullTimeMs),
-            this._jointFetcher.fetch(lastPullTimeMs),
-            this._rerunFetcher.fetch(lastPullTimeMs),
-            this._weaponFetcher.fetch(lastPullTimeMs)
+            this._standardFetcher.fetch(getTime(BannerType.CHAR_STANDARD)),
+            this._beginnerFetcher.fetch(getTime(BannerType.CHAR_BEGINNER)),
+            this._specialFetcher.fetch(getTime(BannerType.CHAR_SPECIAL)),
+            this._jointFetcher.fetch(getTime(BannerType.CHAR_JOINT)),
+            this._rerunFetcher.fetch(getTime(BannerType.CHAR_RERUN)),
+            this._weaponFetcher.fetch(getTime(BannerType.WEAPON))
         ]);
 
         return BannersPulls.createFromData({

@@ -11,9 +11,11 @@ import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTa
 import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable.js";
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable.js";
 import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { BannerType } from "@models/banners/BannerType.js";
 import { DbBannerType } from "@models/banners/DbBannerType.js";
 import { GlobalBannerStats } from "@models/globalBannerStats/GlobalBannerStats.js";
 import { IncludeRange } from "@models/IncludeRange.js";
+import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap.js";
 
 export class UserBannerStatsRepository extends Repository {
     private readonly _userBannerStatsTable: UserBannerStatsTable;
@@ -119,6 +121,25 @@ export class UserBannerStatsRepository extends Repository {
         }
 
         return lastChar > lastWeapon ? lastChar : lastWeapon;
+    }
+
+    public async getLastPullsMap(profileId: bigint): Promise<LastPullsMap> {
+        const charPulls = await this._userCharBannerTypePullsTable.getAll(profileId);
+        const lastWeapon = await this._userWeaponBannerPullsTable.getLastPullTimeTs(profileId);
+        const map: LastPullsMap = {};
+
+        for (const pull of charPulls) {
+            const bannerType = BannerType.getBannerTypeByShortName(pull.bannerType);
+            if (bannerType && pull.lastPullTimeTs !== null) {
+                map[bannerType] = pull.lastPullTimeTs;
+            }
+        }
+
+        if (lastWeapon !== null) {
+            map[BannerType.WEAPON] = lastWeapon;
+        }
+
+        return map;
     }
 
     public async getRatingStats(bannerType: DbBannerType | null,

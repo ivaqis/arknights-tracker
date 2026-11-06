@@ -324,9 +324,8 @@
             });
         }
 
-        const result = Object.values(lastPullTimes).reduce((max, cur) => cur > max ? cur : max, 0);
-
-        return result;
+        const validTimes = Object.values(lastPullTimes).filter(t => t > 0);
+        return validTimes.length > 0 ? Math.min(...validTimes) : 0;
     }
 
     async function handleUrlImport() {

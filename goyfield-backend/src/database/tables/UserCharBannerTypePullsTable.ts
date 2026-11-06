@@ -15,6 +15,14 @@ export class UserCharBannerTypePullsTable extends Table<Prisma.UserCharBannerTyp
         return new UserCharBannerTypePullsRecord(entity);
     }
 
+    public async getAll(profileId: bigint): Promise<UserCharBannerTypePullsEntity[]> {
+        return this.table.findMany({
+            where: {
+                profileId
+            }
+        });
+    }
+
     public async getLastPullTs(profileId: bigint): Promise<bigint | null> {
         const entity = await this.table.aggregate({
             where: {

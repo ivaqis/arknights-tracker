@@ -19,6 +19,7 @@ import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner
 import { StablePullId } from "@models/stablePullId/StablePullId.js";
 import { UserBannerProfileVersion } from "@models/UserBannerProfileVersion.js";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher.js";
+import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap.js";
 import { DAY_MS, getMondayTs, getWeek, WEEK_MS } from "@utils/dateUtils.js";
 import { importErrorCallback } from "@utils/errorCallbacks.js";
 import { getUniqueElements } from "@utils/generalUtils.js";
@@ -96,6 +97,27 @@ export class PostImport extends StreamController<
         return Math.max(getMondayTs(lastPullTimeTs - WEEK_MS), 0);
     }
 
+    private static getLastPullsMapWithOffset(map: LastPullsMap): LastPullsMap {
+        const result: LastPullsMap = {};
+        for (const [key, val] of Object.entries(map)) {
+            if (val !== undefined && val !== null) {
+                result[key as BannerType] = BigInt(PostImport.getLastPullWithOffset(Number(val)));
+            }
+        }
+        return result;
+    }
+
+    private static getMinPullOffset(map: LastPullsMap): number {
+        const values = Object.values(map);
+        if (values.length === 0) {
+            return 0;
+        }
+        return values.reduce((min: number, val) => {
+            const num = Number(val);
+            return num < min ? num : min;
+        }, Infinity);
+    }
+
     protected async execute(): Promise<void> {
         let privateId = this._privateId;
         let requestedProfile: UserBannerProfileRecord | null = null;
@@ -120,17 +142,14 @@ export class PostImport extends StreamController<
             });
         };
 
-        let lastPullTimeTs: number = 0;
+        let lastPullsMap: LastPullsMap = {};
 
         if (!this._isRecovery && requestedProfile && requestedProfile.version.initValue === UserBannerProfileVersion.V_2) {
-            const tempTime = await this._database.userBannerStats.getLastPullTimeTs(requestedProfile.profileId);
-
-            if (tempTime !== null) {
-                lastPullTimeTs = Number(tempTime);
-            }
+            lastPullsMap = await this._database.userBannerStats.getLastPullsMap(requestedProfile.profileId);
         }
 
-        const lastPullWithOffset = this._isRecovery ? 0 : PostImport.getLastPullWithOffset(lastPullTimeTs);
+        const lastPullsWithOffset = this._isRecovery ? {} : PostImport.getLastPullsMapWithOffset(lastPullsMap);
+        const lastPullWithOffset = PostImport.getMinPullOffset(lastPullsWithOffset);
 
         let pulls: BannersPulls | null = null;
         let serverId: string | null = null;
@@ -138,7 +157,7 @@ export class PostImport extends StreamController<
         for (const id of this._serverIds) {
             fetcher = new BannerDataFetcher(this._token, id, callback);
 
-            pulls = await fetcher.getAllBannersData(lastPullWithOffset);
+            pulls = await fetcher.getAllBannersData(lastPullsWithOffset);
 
             if (pulls !== null) {
                 serverId = id;
@@ -182,39 +201,41 @@ export class PostImport extends StreamController<
         if (!isLimitReached && privateId !== null && writeOn !== privateId) {
             logger.debug(`Wrong profileId provided: ${privateId}\nSearching for: ${writeOn}`);
 
-            let lastPullTsWithOffset;
+            let lastPullTsWithOffset: LastPullsMap;
 
             if (this._isRecovery) {
-                lastPullTsWithOffset = 0;
+                lastPullTsWithOffset = {};
             } else if (writeOn === null) {
                 logger.debug("Set new lastPullTsWithOffset");
 
-                lastPullTsWithOffset = 0;
+                lastPullTsWithOffset = {};
 
             } else if (tokenProfile && writeOn === tokenProfile.profile.publicId) {
                 logger.debug(`Set lastPullTsWithOffset by tokenId`);
 
-                const lastPullTs = await this._database.userBannerStats.getLastPullTimeTs(tokenProfile.profile.profileId) as bigint;
-                lastPullTsWithOffset = PostImport.getLastPullWithOffset(Number(lastPullTs));
+                const map = await this._database.userBannerStats.getLastPullsMap(tokenProfile.profile.profileId);
+                lastPullTsWithOffset = PostImport.getLastPullsMapWithOffset(map);
 
             } else if (pullProfile && writeOn === pullProfile.profile.publicId) {
                 logger.debug(`Set lastPullTsWithOffset by pullId`);
 
-                const lastPullTs = await this._database.userBannerStats.getLastPullTimeTs(pullProfile.profile.profileId) as bigint;
-                lastPullTsWithOffset = PostImport.getLastPullWithOffset(Number(lastPullTs));
+                const map = await this._database.userBannerStats.getLastPullsMap(pullProfile.profile.profileId);
+                lastPullTsWithOffset = PostImport.getLastPullsMapWithOffset(map);
 
             } else {
-                lastPullTsWithOffset = 0;
+                lastPullTsWithOffset = {};
             }
+
+            const secondOffset = PostImport.getMinPullOffset(lastPullTsWithOffset);
 
             fetcher = new BannerDataFetcher(this._token, serverId, callback);
             pulls = await fetcher.getAllBannersData(lastPullTsWithOffset) as BannersPulls;
 
-            pullIds = PostImport.getPullIds(pulls, lastPullTsWithOffset);
+            pullIds = PostImport.getPullIds(pulls, secondOffset);
             pullProfile = await this.getPullProfile(pullIds);
 
             const limit = Date.now() - PostImport.PULL_STORAGE_LIMIT_MS;
-            const isLimitReached = limit > lastPullWithOffset;
+            const isLimitReached = limit > secondOffset;
 
             writeOn = PostImport.writeOnProfile(
                 requestedProfile?.publicId ?? null,

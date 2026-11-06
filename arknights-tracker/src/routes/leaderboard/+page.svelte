@@ -1340,7 +1340,7 @@
                         {/each}
                     </div>
 
-                    {#if totalEntries > pageSize}
+                    {#if totalEntries >= 10}
                         <div class="flex flex-col sm:flex-row items-center justify-between gap-3 px-5 py-3.5 border-t border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/[0.02]">
                             <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 font-medium select-none">
                                 <span>{$t("leaderboard.per_page")}:</span>

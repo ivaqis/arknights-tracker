@@ -3280,6 +3280,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -3331,6 +3332,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -3380,6 +3382,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -3429,6 +3432,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -3480,6 +3484,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -3529,6 +3534,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7021,6 +7027,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7072,6 +7079,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7161,6 +7169,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7222,6 +7231,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7273,6 +7283,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -7503,6 +7514,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         "usedByChars": [
             "alesh",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "chenQianyu",
@@ -7562,6 +7574,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "akekuri",
             "alesh",
             "arcane",
+            "argentFlow",
             "avywenna",
             "daPan",
             "fluorite",
@@ -7612,6 +7625,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "item_obtain_dungeon_bossrush_common"
         ],
         "usedByChars": [
+            "argentFlow",
             "si"
         ],
         "usedByWeapons": [
@@ -9532,6 +9546,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "arcane",
             "arclight",
             "ardelia",
+            "argentFlow",
             "avywenna",
             "camille",
             "catcher",
@@ -10864,6 +10879,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         ],
         "usedByChars": [
             "arcane",
+            "argentFlow",
             "typhoeus"
         ]
     },
@@ -11007,6 +11023,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         ],
         "usedByChars": [
             "arcane",
+            "argentFlow",
             "liino",
             "purrchena",
             "typhoeus"
