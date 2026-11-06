@@ -89,5 +89,17 @@ export const promocodes = [
         condition: null,
         endTime: "2026-11-25 10:59:00",
         url: null
+    },
+    {
+        code: "AKEGACHAGAMING",
+        rewards: [
+            { id: "item_ap_supply_lt_n", count: 1 },
+            { id: "item_gold", count: 5000 },
+            { id: "item_expcard_stage1_mid", count: 10 }
+        ],
+        startTime: "2026-10-05 21:00:00",
+        condition: null,
+        endTime: "2026-12-31 10:59:00",
+        url: "https://www.reddit.com/r/Endfield/comments/1xowlbb/new_redemption_code_akegachagaming/"
     }
 ];

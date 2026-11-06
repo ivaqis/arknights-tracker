@@ -232,7 +232,10 @@ export function getEquipTier(equipOrLevel, staticEquipOrRarity) {
             if (count > 0) return Math.min(3, count);
         }
         if (equip.enhanceStatus !== undefined && equip.enhanceStatus !== null) {
-            return Math.max(0, Math.min(3, Number(equip.enhanceStatus) - 1));
+            const status = Number(equip.enhanceStatus);
+            if (status >= 3) return 3;
+            if (status === 2) return 1;
+            return 0;
         }
         return 0;
     }

@@ -24,6 +24,53 @@
 
     let platformTab = "pc-web";
     let urlInput = "";
+    let showToken = false;
+    $: isTokenPlatform = platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3";
+
+    function validateTokenOrUrl(raw) {
+        if (!raw || !raw.trim()) return null;
+        const val = raw.trim();
+
+        if (val.startsWith("http://") || val.startsWith("https://")) {
+            if (!val.startsWith("https://")) return false;
+            try {
+                const parsed = new URL(val);
+                const host = parsed.hostname.toLowerCase();
+                if (host !== "ef-webview.gryphline.com" && !host.endsWith(".gryphline.com")) {
+                    return false;
+                }
+                const u8 = parsed.searchParams.get("u8_token") || parsed.searchParams.get("token");
+                if (!u8) return false;
+                const decoded = decodeURIComponent(u8).trim();
+                return /^[A-Za-z0-9+/=_-]+$/.test(decoded) && /[a-zA-Z]/.test(decoded) && decoded.length >= 20 && decoded.length <= 256;
+            } catch {
+                return false;
+            }
+        }
+
+        let token = val;
+        if (val.startsWith("{") && val.endsWith("}")) {
+            try {
+                const obj = JSON.parse(val);
+                token = obj.token || obj.data?.content || obj.content || "";
+            } catch {
+                return false;
+            }
+        } else if (val.includes('"token"')) {
+            const m = val.match(/"token"\s*:\s*"([^"]+)"/);
+            if (m && m[1]) token = m[1];
+        }
+
+        token = decodeURIComponent(token).trim();
+        if (!token) return false;
+        return /^[A-Za-z0-9+/=_-]+$/.test(token) && /[a-zA-Z]/.test(token) && token.length >= 20 && token.length <= 256;
+    }
+
+    $: isInputValid = (() => {
+        if (!urlInput) return null;
+        if (isInputError && errorMsg !== $t("import.error_token_name")) return false;
+        return validateTokenOrUrl(urlInput);
+    })();
     let realImportUrl = "";
     let isLoading = false;
     let previewReport = null;
@@ -158,7 +205,7 @@
 
     function parseInputToken(raw) {
         let clean = (raw || "").trim();
-        if (clean.includes("token")) {
+        if (clean.includes("token") || (clean.startsWith("{") && clean.endsWith("}"))) {
             try {
                 const jsonMatch = clean.match(/"token"\s*:\s*"([^"]+)"/);
                 if (jsonMatch && jsonMatch[1]) clean = jsonMatch[1];
@@ -166,6 +213,8 @@
                     if (clean.startsWith("'") || clean.startsWith('"')) clean = clean.slice(1, -1);
                     const obj = JSON.parse(clean);
                     if (obj.token) clean = obj.token;
+                    else if (obj.data && obj.data.content) clean = obj.data.content;
+                    else if (obj.content) clean = obj.content;
                 }
             } catch {
                 clean = clean.replace(/^{"token":"/, "").replace(/"}$/, "");
@@ -176,7 +225,7 @@
         if (clean.startsWith("http")) {
             try {
                 const parsed = new URL(clean);
-                const u8 = parsed.searchParams.get("u8_token");
+                const u8 = parsed.searchParams.get("u8_token") || parsed.searchParams.get("token");
                 if (u8) token = u8;
                 const s = parsed.searchParams.get("server");
                 if (s) sId = s;
@@ -936,40 +985,69 @@
 
                         <div class="relative">
                             <input
-                                type="text"
+                                type={isTokenPlatform && !showToken ? "password" : "text"}
                                 value={urlInput}
                                 on:input={handleInputProcessing}
-                                placeholder={platformTab === "android" ||
-                                platformTab === "pc-web" ||
-                                platformTab === "pc2" ||
-                                platformTab === "pc3"
+                                placeholder={isTokenPlatform
                                     ? $t("import.placeholder_token")
                                     : $t("import.placeholder_url")}
-                                class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
-            {isInputError && errorMsg !== $t('import.error_token_name')
-                ? '!border-red-500 bg-red-50'
-                : ''}"
-                            />
+                                class="w-full p-4 {isTokenPlatform ? 'pr-16' : 'pr-12'} bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
+                                        {isInputError && errorMsg !== $t('import.error_token_name')
+                                            ? '!border-red-500 bg-red-50'
+                                            : ''}"
+                                />
 
-                                <div
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                >
-                                    {#if (platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3") && urlInput && !urlInput.startsWith("http")}
-                                        <Icon
-                                            name="check"
-                                            class="w-4 h-4 text-green-600"
-                                        />
-                                    {:else}
-                                        <div
-                                            class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
+                                {#if isTokenPlatform}
+                                    <div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                                        {#if isInputValid === true}
+                                            <Icon
+                                                name="check"
+                                                class="w-4 h-4 text-green-600 shrink-0"
+                                            />
+                                        {:else if isInputValid === false}
+                                            <Icon
+                                                name="close"
+                                                class="w-4 h-4 text-red-500 shrink-0"
+                                            />
+                                        {/if}
+                                        <button
+                                            type="button"
+                                            class="text-gray-400 dark:text-gray-400 hover:text-gray-600 dark:hover:text-white transition-colors flex items-center justify-center shrink-0"
+                                            on:click={() => (showToken = !showToken)}
+                                            aria-label="Toggle token visibility"
                                         >
                                             <Icon
-                                                name="link"
-                                                class="w-4 h-4"
+                                                name={showToken ? "eyeOpen" : "eyeClosed"}
+                                                class="w-5 h-5 fill-current"
                                             />
-                                        </div>
-                                    {/if}
-                                </div>
+                                        </button>
+                                    </div>
+                                {:else}
+                                    <div
+                                        class="absolute right-4 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"
+                                    >
+                                        {#if isInputValid === true}
+                                            <Icon
+                                                name="check"
+                                                class="w-4 h-4 text-green-600"
+                                            />
+                                        {:else if isInputValid === false}
+                                            <Icon
+                                                name="close"
+                                                class="w-4 h-4 text-red-500"
+                                            />
+                                        {:else}
+                                            <div
+                                                class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg text-gray-300"
+                                            >
+                                                <Icon
+                                                    name="link"
+                                                    class="w-4 h-4"
+                                                />
+                                            </div>
+                                        {/if}
+                                    </div>
+                                {/if}
                             </div>
 
                         {#if isInputError && errorMsg !== $t("import.error_token_name")}

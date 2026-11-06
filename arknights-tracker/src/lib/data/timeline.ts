@@ -1647,7 +1647,7 @@ export const rawEvents: GenericEventData[] = [
         startTime: "2026-11-05 12:00:00",
         endTime: "2026-11-25 17:00:00",
         endTimeAsia: "2026-11-26 04:00:00",
-        icon: "ev13-v1.6.webp",
+        icon: "ev13-v1.6_v2.webp",
         url: "",
         color: "#d2cc59ff",
         layer: 0,
