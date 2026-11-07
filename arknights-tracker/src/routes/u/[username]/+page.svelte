@@ -127,6 +127,8 @@
     })();
 
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
+    $: activeContract = activeAccount?.info?.contract || activeAccount?.contract;
+    $: hasContractRun = !!activeContract && ((activeContract.level || activeContract.contractLevel || activeContract.indicatorCount || 0) > 0 || (activeContract.indicators?.length || 0) > 0);
     $: isUidHidden = profile ? (profile.hideUid !== false && profile.hide_uid !== 0) : true;
 
     function handleCopyProfileLink() {
@@ -356,10 +358,12 @@
                                             {activeAccount}
                                             hasBackground={!!profile?.background}
                                         />
-                                        <CrisisContract
-                                            contract={activeAccount?.info?.contract || activeAccount?.contract}
-                                            hasBackground={!!profile?.background}
-                                        />
+                                        {#if hasContractRun}
+                                            <CrisisContract
+                                                contract={activeContract}
+                                                hasBackground={!!profile?.background}
+                                            />
+                                        {/if}
                                     </div>
                                     <WarEchoesWidget
                                         {activeAccount}

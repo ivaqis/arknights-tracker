@@ -200,7 +200,9 @@
             "Invalid image format.": "profile.image_format_error",
             "Banner profile not found": "profile.banner_profile_not_found",
             "Banner profile not found.": "profile.banner_profile_not_found",
-            "Max profiles reached": "profile.max_profiles_reached"
+            "Max profiles reached": "profile.max_profiles_reached",
+            "Too many requests. Please wait a minute.": "import.error_rate_limit",
+            "Too many requests": "import.error_rate_limit"
         };
 
         if (exactMappings[msg]) {

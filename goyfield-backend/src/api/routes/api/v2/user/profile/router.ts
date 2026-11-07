@@ -16,6 +16,7 @@ import { GetUserProfileRequestValidator } from "@api/middleware/validators/userP
 import {
     UpdateUserProfileRequestValidator
 } from "@api/middleware/validators/userProfile/UpdateUserProfileRequestValidator.js";
+import { updateProfileLimiter } from "@api/middleware/rateLimiters/updateProfileLimiter.js";
 import { AuthType } from "@services/auth/AuthType.js";
 import { Router } from "express";
 
@@ -26,6 +27,7 @@ profileRouter.get("/get",
     GetUserProfile.get
 );
 profileRouter.post("/update",
+    updateProfileLimiter,
     JsonRequestValidator.isJson,
     RequireAuth.require(AuthType.FIREBASE),
     UpdateUserProfileRequestValidator.validate,
