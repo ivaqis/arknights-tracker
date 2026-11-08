@@ -221,7 +221,7 @@
 <div class="w-full">
     <div class={transparent ? "flex flex-col" : `${!hasBackground ? 'bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10' : 'bg-white/15 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-[7px] shadow-sm flex flex-col`}>
         {#if !hideHeader}
-            <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
+            <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-white/10'} pb-2 mb-4">
                 <div class="flex items-center gap-2">
                     <Icon name="contract" class="w-7 h-7 text-[#21272C] dark:text-[#FDFDFD]" />
                     <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
@@ -231,7 +231,7 @@
                 {#if isOwner && contract && contractLevel > 0 && !contract.videoUrl}
                     <Button
                         variant="roundSmall"
-                        color="yellow"
+                        color="gray"
                         onClick={openVideoModal}
                         className="!h-8 !px-3 text-xs font-bold shrink-0"
                     >
@@ -300,7 +300,7 @@
 
             {#if contract.videoUrl}
                 {@const embedUrl = getYouTubeEmbedUrl(contract.videoUrl)}
-                <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10 flex flex-col gap-2">
+                <div class="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-bold text-gray-600 dark:text-gray-300 flex items-center gap-1.5">
                             <Icon name="youtube" class="w-4 h-4 text-red-500 fill-current" />

@@ -174,7 +174,7 @@
 
             {#if hashtag}
                 <div class="flex items-center justify-between gap-3 bg-gray-100 dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444444] rounded-xl px-4 py-2.5">
-                    <span class="font-mono font-bold text-sm sm:text-base text-[#d9a009] dark:text-[#FFE145] select-all">
+                    <span class="font-mono font-bold text-sm text-[#d9a009] dark:text-[#FFE145] select-all">
                         {hashtag}
                     </span>
                     <button
