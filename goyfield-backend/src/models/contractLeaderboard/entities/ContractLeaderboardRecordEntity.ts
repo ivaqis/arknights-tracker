@@ -9,5 +9,6 @@ export interface ContractLeaderboardRecordEntity {
     indicatorCount: number;
     ts: string;
     passTs: number;
+    videoUrl?: string | null;
     chars: ContractLeaderboardCharEntity[];
 }

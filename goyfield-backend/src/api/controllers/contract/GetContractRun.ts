@@ -31,6 +31,8 @@ export class GetContractRun extends Controller<
     public static getRecordData(record: UserContractLeaderboardRecord): ContractRecordEntity {
         const data = record.data.getEntity();
         data.recordId = record.id;
+        data.videoUrl = record.videoUrl;
+        data.videoCode = record.videoCode;
         return data;
     }
 

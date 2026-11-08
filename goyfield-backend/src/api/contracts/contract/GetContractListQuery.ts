@@ -10,4 +10,7 @@ export interface GetContractListQuery {
     page: string;
     recordsOnPage: "10" | "20" | "40" | "50" | "60" | "80" | "100";
     charCountFilter?: string;
+    withVideo?: string;
+    includeChars?: string;
+    excludeChars?: string;
 }

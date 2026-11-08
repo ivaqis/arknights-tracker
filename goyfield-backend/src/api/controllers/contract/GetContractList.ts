@@ -27,6 +27,9 @@ export class GetContractList extends Controller<
     private readonly _page: number;
     private readonly _recordsOnPage: number;
     private readonly _charCountFilter: number | null;
+    private readonly _withVideo: boolean;
+    private readonly _includeChars: string[];
+    private readonly _excludeChars: string[];
 
     public constructor(req: e.Request<{}, ResponseBody<GetContractListResponse>, undefined, GetContractListQuery>, res: e.Response<ResponseBody<GetContractListResponse>>) {
         super(req, res);
@@ -38,6 +41,9 @@ export class GetContractList extends Controller<
         this._page = parseInt(req.query.page, 10);
         this._recordsOnPage = parseInt(req.query.recordsOnPage, 10);
         this._charCountFilter = req.query.charCountFilter ? parseInt(req.query.charCountFilter, 10) : null;
+        this._withVideo = req.query.withVideo === "true";
+        this._includeChars = req.query.includeChars ? req.query.includeChars.split(',').map(s => s.trim()).filter(Boolean) : [];
+        this._excludeChars = req.query.excludeChars ? req.query.excludeChars.split(',').map(s => s.trim()).filter(Boolean) : [];
     }
 
     protected async execute(): Promise<void> {
@@ -47,7 +53,7 @@ export class GetContractList extends Controller<
         const take = this._recordsOnPage;
         const skip = this._recordsOnPage * (this._page - 1);
 
-        const count = await searcher.countPublic(this._contractId, serverId, this._charCountFilter);
+        const count = await searcher.countPublic(this._contractId, serverId, this._charCountFilter, this._withVideo, this._includeChars, this._excludeChars);
 
         if (count <= skip) {
             this.data = {
@@ -58,7 +64,7 @@ export class GetContractList extends Controller<
             return;
         }
 
-        const list = await searcher.findPublic(this._contractId, serverId, this._sortField, this._sortOrder, take, skip, this._charCountFilter);
+        const list = await searcher.findPublic(this._contractId, serverId, this._sortField, this._sortOrder, take, skip, this._charCountFilter, this._withVideo, this._includeChars, this._excludeChars);
 
         this.data = {
             list: list.map(record => record.getEntity()),

@@ -1,4 +1,5 @@
 <script>
+    import { createEventDispatcher } from "svelte";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { characters } from "$lib/data/characters.js";
@@ -6,11 +7,17 @@
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { formatContractDescription, normalizeContractTagId } from "$lib/utils/richText.js";
     import { equipment } from "$lib/data/items/equipment.js";
+    import { user } from "$lib/stores/cloudStore.js";
+    import { addNotification } from "$lib/stores/notifications.js";
+    import { deleteContractVideo } from "$lib/api.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import ContractCard from "$lib/components/profile/ContractCard.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import ContractVideoModal from "$lib/components/modals/ContractVideoModal.svelte";
     import ruEquip from "../../locales/ru/equipment.json";
     import enEquip from "../../locales/en/equipment.json";
 
@@ -21,6 +28,66 @@
     export let transparent = false;
     export let hideRank = false;
     export let charHrefGenerator = null;
+    export let isOwner = false;
+
+    const dispatch = createEventDispatcher();
+
+    let isVideoModalOpen = false;
+    let showDeleteModal = false;
+
+    function getYouTubeEmbedUrl(url) {
+        if (!url) return null;
+        try {
+            const u = new URL(url.trim());
+            const hostname = u.hostname.toLowerCase();
+            const validHosts = ["youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"];
+            if (!validHosts.includes(hostname)) return null;
+
+            let videoId = null;
+            if (hostname === "youtu.be") {
+                videoId = u.pathname.slice(1).split("/")[0] || null;
+            } else if (u.pathname === "/watch") {
+                videoId = u.searchParams.get("v");
+            } else if (u.pathname.startsWith("/embed/")) {
+                videoId = u.pathname.split("/")[2] || null;
+            } else if (u.pathname.startsWith("/v/")) {
+                videoId = u.pathname.split("/")[2] || null;
+            } else if (u.pathname.startsWith("/shorts/")) {
+                videoId = u.pathname.split("/")[2] || null;
+            } else if (u.pathname.startsWith("/live/")) {
+                videoId = u.pathname.split("/")[2] || null;
+            }
+
+            if (videoId && /^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
+                return `https://www.youtube.com/embed/${videoId}`;
+            }
+        } catch {}
+        return null;
+    }
+
+    function openVideoModal() {
+        isVideoModalOpen = true;
+    }
+
+    function openDeleteModal() {
+        showDeleteModal = true;
+    }
+
+    async function confirmDeleteVideo() {
+        showDeleteModal = false;
+        if (!$user) return;
+
+        try {
+            const token = await $user.getIdToken();
+            const recordId = contract.recordId || contract.id;
+            await deleteContractVideo(token, recordId);
+            contract.videoUrl = null;
+            addNotification("success", $t("contractVideo.success_deleted"));
+            dispatch("videoUpdated", { videoUrl: null });
+        } catch (e) {
+            addNotification("error", e.message || $t("contractVideo.error_generic"));
+        }
+    }
 
     function getSvelteCharId(char) {
         if (!char) return "";
@@ -161,6 +228,19 @@
                         {$t("profile.crisis_contract")}
                     </h2>
                 </div>
+                {#if isOwner && contract && contractLevel > 0 && !contract.videoUrl}
+                    <Button
+                        variant="roundSmall"
+                        color="yellow"
+                        onClick={openVideoModal}
+                        className="!h-8 !px-3 text-xs font-bold shrink-0"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <Icon name="youtube" class="w-3.5 h-3.5 text-red-600 fill-current" />
+                            <span>{$t("contractVideo.add_video_btn")}</span>
+                        </div>
+                    </Button>
+                {/if}
             </div>
         {/if}
 
@@ -217,6 +297,50 @@
                     {/each}
                 </div>
             {/if}
+
+            {#if contract.videoUrl}
+                {@const embedUrl = getYouTubeEmbedUrl(contract.videoUrl)}
+                <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10 flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-gray-600 dark:text-gray-300 flex items-center gap-1.5">
+                            <Icon name="youtube" class="w-4 h-4 text-red-500 fill-current" />
+                            {$t("contractVideo.video_title")}
+                        </span>
+                        {#if isOwner}
+                            <div class="flex items-center gap-2">
+                                <Button
+                                    variant="roundSmall"
+                                    color="gray"
+                                    onClick={openVideoModal}
+                                    className="!h-7 !px-3 text-xs"
+                                >
+                                    {$t("contractVideo.video_change")}
+                                </Button>
+                                <Button
+                                    variant="roundSmall"
+                                    color="red"
+                                    onClick={openDeleteModal}
+                                    className="!h-7 !px-3 text-xs"
+                                >
+                                    {$t("settings.account.delete")}
+                                </Button>
+                            </div>
+                        {/if}
+                    </div>
+                    {#if embedUrl}
+                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-md">
+                            <iframe
+                                src={embedUrl}
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                                class="w-full h-full"
+                            ></iframe>
+                        </div>
+                    {/if}
+                </div>
+            {/if}
         {:else}
             <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50/20 dark:bg-[#2C2C2C]/20 rounded-2xl border border-gray-100/50 dark:border-[#444444]/50 w-full backdrop-blur-[7px]">
                 <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
@@ -227,3 +351,26 @@
         {/if}
     </div>
 </div>
+
+<ContractVideoModal
+    isOpen={isVideoModalOpen}
+    recordId={contract?.recordId || contract?.id || ""}
+    videoCode={contract?.videoCode || ""}
+    clearTime={clearTime}
+    initialUrl={contract?.videoUrl || ""}
+    on:close={() => isVideoModalOpen = false}
+    on:success={(e) => {
+        if (contract) contract.videoUrl = e.detail.videoUrl;
+        dispatch("videoUpdated", { videoUrl: e.detail.videoUrl });
+    }}
+/>
+
+<ConfirmationModal
+    isOpen={showDeleteModal}
+    title={$t("settings.account.delete")}
+    description={$t("contractVideo.delete_confirm")}
+    confirmText={$t("settings.account.delete")}
+    isDestructive={true}
+    on:confirm={confirmDeleteVideo}
+    on:close={() => (showDeleteModal = false)}
+/>

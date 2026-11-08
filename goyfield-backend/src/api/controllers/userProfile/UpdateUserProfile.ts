@@ -146,6 +146,8 @@ export class UpdateUserProfile
                 const entity: ContractRecordEntity = JSON.parse(run.data);
                 entity.rank = run.rank;
                 entity.totalCount = run.totalCount;
+                entity.videoUrl = run.videoUrl;
+                entity.videoCode = run.videoCode;
                 records[run.gameUid] = entity;
             } catch {}
         }

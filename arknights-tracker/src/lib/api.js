@@ -631,6 +631,15 @@ export async function fetchLeaderboard(params = 'contract') {
         if (options.charCountFilter) {
             query.set('charCountFilter', options.charCountFilter);
         }
+        if (options.withVideo) {
+            query.set('withVideo', 'true');
+        }
+        if (options.includeChars) {
+            query.set('includeChars', Array.isArray(options.includeChars) ? options.includeChars.join(',') : options.includeChars);
+        }
+        if (options.excludeChars) {
+            query.set('excludeChars', Array.isArray(options.excludeChars) ? options.excludeChars.join(',') : options.excludeChars);
+        }
 
         const res = await fetch(`${API_BASE}/leaderboard/contract/list?${query.toString()}`);
         if (!res.ok) throw new Error('Failed to fetch contract leaderboard');
@@ -650,6 +659,7 @@ export async function fetchLeaderboard(params = 'contract') {
                 level: r.level,
                 contractLevel: r.indicatorCount,
                 clear_time: r.passTs,
+                videoUrl: r.videoUrl || null,
                 updatedAt: r.updatedAt || r.ts,
                 serverId: r.serverId,
                 chars: (r.chars || []).map(c => ({
@@ -689,6 +699,8 @@ export async function fetchLeaderboardRun(id, eventType = 'contract') {
             ...rd,
             uid: run.uid,
             avatarId: run.avatarId,
+            videoUrl: rd.videoUrl || null,
+            videoCode: rd.videoCode || null,
             level: rd.indicatorCount ?? run.level,
             contractLevel: rd.indicatorCount ?? 0,
             clearTime: rd.passTs ?? 0,
@@ -720,4 +732,33 @@ export async function fetchLeaderboardRun(id, eventType = 'contract') {
         return null;
     }
 }
+
+export async function attachContractVideo(idToken, recordId, videoUrl) {
+    const res = await fetch(`${API_BASE}/leaderboard/contract/video`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Firebase ${idToken}`
+        },
+        body: JSON.stringify({ recordId, videoUrl })
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.message || json.error || 'Failed to attach video');
+    return json.data;
+}
+
+export async function deleteContractVideo(idToken, recordId) {
+    const res = await fetch(`${API_BASE}/leaderboard/contract/video`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Firebase ${idToken}`
+        },
+        body: JSON.stringify({ recordId })
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.message || json.error || 'Failed to delete video');
+    return json.data;
+}
+
 

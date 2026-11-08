@@ -15,7 +15,7 @@ export default {
                 'img-src': ['self', 'data:', 'blob:', 'https:', 'http:'],
                 'media-src': ['self', 'data:', 'blob:', 'https:', 'http:'],
                 'connect-src': ['self', 'https:', 'http:', 'wss:', 'ws:'],
-                'frame-src': ['self', 'https://*.firebaseapp.com', 'https://apis.google.com', 'https://accounts.google.com'],
+                'frame-src': ['self', 'https://*.firebaseapp.com', 'https://apis.google.com', 'https://accounts.google.com', 'https://www.youtube.com', 'https://www.youtube-nocookie.com'],
                 'object-src': ['none'],
                 'base-uri': ['self'],
                 'frame-ancestors': ['self']

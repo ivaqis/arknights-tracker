@@ -13,4 +13,6 @@ export interface ContractRecordEntity {
     chars: ContractCharEntity[];
     rank?: number;
     totalCount?: number;
+    videoUrl?: string | null;
+    videoCode?: string | null;
 }

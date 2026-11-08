@@ -12,9 +12,10 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
     private readonly _indicatorCount: number;
     private readonly _ts: string;
     private readonly _passTs: number;
+    private readonly _videoUrl: string | null;
     private readonly _chars: ContractLeaderboardChar[];
 
-    private constructor(recordId: string, uid: string, avatarId: string | null, level: number, serverId: string, indicatorCount: number, ts: string, passTs: number, chars: ContractLeaderboardChar[]) {
+    private constructor(recordId: string, uid: string, avatarId: string | null, level: number, serverId: string, indicatorCount: number, ts: string, passTs: number, videoUrl: string | null, chars: ContractLeaderboardChar[]) {
         this._recordId = recordId;
         this._uid = uid;
         this._avatarId = avatarId;
@@ -23,6 +24,7 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
         this._indicatorCount = indicatorCount;
         this._ts = ts;
         this._passTs = passTs;
+        this._videoUrl = videoUrl;
         this._chars = chars;
     }
 
@@ -36,6 +38,7 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
             entity.indicatorCount,
             entity.ts,
             entity.passTs,
+            entity.videoUrl ?? null,
             entity.chars.map(ContractLeaderboardChar.createFromEntity)
         );
     }
@@ -53,8 +56,13 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
             record.indicatorCount,
             record.data.ts,
             record.data.passTs,
+            record.videoUrl,
             record.data.chars.map(ContractLeaderboardChar.createFromRecord)
         );
+    }
+
+    public get videoUrl(): string | null {
+        return this._videoUrl;
     }
 
     public getEntity(): ContractLeaderboardRecordEntity {
@@ -67,6 +75,7 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
             indicatorCount: this._indicatorCount,
             ts: this._ts,
             passTs: this._passTs,
+            videoUrl: this._videoUrl,
             chars: this._chars.map(char => char.getEntity())
         };
     }

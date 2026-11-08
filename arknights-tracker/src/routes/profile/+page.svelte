@@ -1144,6 +1144,11 @@
                                     <CrisisContract
                                         contract={activeAccount?.info?.contract || activeAccount?.contract}
                                         hasBackground={!!profile?.background}
+                                        isOwner={true}
+                                        on:videoUpdated={(e) => {
+                                            const c = activeAccount?.info?.contract || activeAccount?.contract;
+                                            if (c) c.videoUrl = e.detail.videoUrl;
+                                        }}
                                     />
                                 </div>
                                 <WarEchoesWidget

@@ -34,8 +34,8 @@ export class ContractLeaderboardRepository extends Repository {
         return this._userContractLeaderboardsTable.findByContractId(contractId, publicOnly, serverId);
     }
 
-    public async countByContractId(contractId: string, publicOnly: boolean, serverId: string | null, charCount?: number | null): Promise<number> {
-        return this._userContractLeaderboardsTable.countByContractId(contractId, publicOnly, serverId, charCount);
+    public async countByContractId(contractId: string, publicOnly: boolean, serverId: string | null, charCount?: number | null, withVideo?: boolean, includeChars?: string[], excludeChars?: string[]): Promise<number> {
+        return this._userContractLeaderboardsTable.countByContractId(contractId, publicOnly, serverId, charCount, withVideo, includeChars, excludeChars);
     }
 
     public async findByGameUid(gameUid: string, contractId?: string): Promise<UserContractLeaderboardRecord[]> {
@@ -50,17 +50,6 @@ export class ContractLeaderboardRepository extends Repository {
         return this._userContractLeaderboardsTable.findRunsWithRanksByGameUids(gameUids, contractId);
     }
 
-    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean, serverId: string | null): Promise<{
-        contractRecord: UserContractLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
-    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean, serverId: string | null, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number, charCount?: number | null): Promise<{
-        contractRecord: UserContractLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
-
     public async findContractRecordsIncludeGameProfileAndUser(contractId: string,
                                                               publicOnly: boolean,
                                                               serverId: string | null,
@@ -68,13 +57,24 @@ export class ContractLeaderboardRepository extends Repository {
                                                               sortOrder?: SortOrder,
                                                               take?: number,
                                                               skip?: number,
-                                                              charCount?: number | null
+                                                              charCount?: number | null,
+                                                              withVideo?: boolean,
+                                                              includeChars?: string[],
+                                                              excludeChars?: string[]
     ): Promise<{
         contractRecord: UserContractLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
-        return this._userContractLeaderboardsTable.findContractRecordsIncludeGameProfileAndUser(contractId, publicOnly, serverId, sortField, sortOrder, take, skip, charCount);
+        return this._userContractLeaderboardsTable.findContractRecordsIncludeGameProfileAndUser(contractId, publicOnly, serverId, sortField, sortOrder, take, skip, charCount, withVideo, includeChars, excludeChars);
+    }
+
+    public async updateVideo(id: string, videoUrl: string | null): Promise<UserContractLeaderboardRecord> {
+        return this._userContractLeaderboardsTable.updateVideo(id, videoUrl);
+    }
+
+    public async updateVideoCode(id: string, videoCode: string): Promise<UserContractLeaderboardRecord> {
+        return this._userContractLeaderboardsTable.updateVideoCode(id, videoCode);
     }
 
     public async create(gameUid: string, data: ContractRecord): Promise<UserContractLeaderboardRecord> {

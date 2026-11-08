@@ -8,16 +8,31 @@ export class UserContractLeaderboardRecord {
     private readonly _recordId: string;
     private readonly _indicatorCount: number;
     private readonly _clearTimeSec: number;
+    private readonly _videoUrl: string | null;
+    private readonly _videoCode: string | null;
     private readonly _updatedAt: Date;
     private readonly _data: ContractRecord;
 
-    private constructor(id: string, gameUid: string, contractId: string, recordId: string, indicatorCount: number, clearTimeSec: number, updatedAt: Date, data: ContractRecord) {
+    private constructor(
+        id: string,
+        gameUid: string,
+        contractId: string,
+        recordId: string,
+        indicatorCount: number,
+        clearTimeSec: number,
+        videoUrl: string | null,
+        videoCode: string | null,
+        updatedAt: Date,
+        data: ContractRecord
+    ) {
         this._id = id;
         this._gameUid = gameUid;
         this._contractId = contractId;
         this._recordId = recordId;
         this._indicatorCount = indicatorCount;
         this._clearTimeSec = clearTimeSec;
+        this._videoUrl = videoUrl;
+        this._videoCode = videoCode;
         this._updatedAt = updatedAt;
         this._data = data;
     }
@@ -30,6 +45,8 @@ export class UserContractLeaderboardRecord {
             entity.recordId,
             entity.indicatorCount,
             entity.clearTimeSec,
+            entity.videoUrl ?? null,
+            entity.videoCode ?? null,
             entity.updatedAt,
             ContractRecord.getFromEntity(JSON.parse(entity.data))
         );
@@ -61,6 +78,14 @@ export class UserContractLeaderboardRecord {
 
     public get clearTimeSec(): number {
         return this._clearTimeSec;
+    }
+
+    public get videoUrl(): string | null {
+        return this._videoUrl;
+    }
+
+    public get videoCode(): string | null {
+        return this._videoCode;
     }
 
     public get updatedAt(): Date {

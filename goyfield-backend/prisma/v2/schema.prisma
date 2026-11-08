@@ -67,6 +67,8 @@ model UserContractLeaderboard {
     contractId     String
     indicatorCount Int
     clearTimeSec   Int
+    videoUrl       String?
+    videoCode      String?
     data           String // json
     updatedAt      DateTime @updatedAt
 

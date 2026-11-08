@@ -24,7 +24,9 @@
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
     import Select from "$lib/components/Select.svelte";
+    import Checkbox from "$lib/components/Checkbox.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
+    import OperatorFilterModal from "$lib/components/modals/OperatorFilterModal.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import MiniOperatorCard from "$lib/components/cards/MiniOperatorCard.svelte";
@@ -178,6 +180,11 @@
     let teamSizeFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_team_size"))
         ? Number(localStorage.getItem("leaderboard_team_size"))
         : null;
+    let withVideoFilter = initialParams?.has("video")
+        ? initialParams.get("video") === "true"
+        : ((browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_with_video") !== null)
+            ? localStorage.getItem("leaderboard_with_video") === "true"
+            : false);
 
     let lastHandledSearch = browser ? window.location.search : "";
     $: if (browser && $page?.url?.search && $page.url.search !== lastHandledSearch) {
@@ -207,6 +214,9 @@
         } else if (selectedEvent === "contract" || ev === "contract") {
             const contract = p.get("contract") || p.get("contractId");
             if (contract) selectedContractId = contract;
+        }
+        if (p.has("video")) {
+            withVideoFilter = p.get("video") === "true";
         }
     }
 
@@ -242,6 +252,13 @@
             localStorage.setItem("leaderboard_team_size", String(teamSizeFilter));
         } else {
             localStorage.removeItem("leaderboard_team_size");
+        }
+    }
+    $: if (browser && typeof localStorage !== "undefined") {
+        if (withVideoFilter) {
+            localStorage.setItem("leaderboard_with_video", "true");
+        } else {
+            localStorage.removeItem("leaderboard_with_video");
         }
     }
 
@@ -482,6 +499,41 @@
         return [1, '...', current - 1, current, current + 1, '...', total];
     }
 
+    let includedChars = [];
+    let excludedChars = [];
+    let operatorModalOpen = false;
+    let operatorModalMode = 'include';
+
+    $: operatorModalTitle = operatorModalMode === 'include'
+        ? `${$t("leaderboard.filter_include")}: ${$t("leaderboard.filter_select_operators")}`
+        : `${$t("leaderboard.filter_exclude")}: ${$t("leaderboard.filter_select_operators")}`;
+
+    function openOperatorModal(mode) {
+        operatorModalMode = mode;
+        operatorModalOpen = true;
+    }
+
+    function handleOperatorModalSave(e) {
+        const newSelected = e.detail.selected || [];
+        if (operatorModalMode === 'include') {
+            includedChars = newSelected;
+            excludedChars = excludedChars.filter(id => !newSelected.includes(id));
+        } else {
+            excludedChars = newSelected;
+            includedChars = includedChars.filter(id => !newSelected.includes(id));
+        }
+    }
+
+    function removeIncludedChar(id) {
+        includedChars = includedChars.filter(x => x !== id);
+    }
+
+    function removeExcludedChar(id) {
+        excludedChars = excludedChars.filter(x => x !== id);
+    }
+
+    const mapCharIdsToBackend = (ids) => ids.map(id => characters[id]?.gameId || id);
+
     async function loadLeaderboard() {
         if (!browser) return;
         loading = true;
@@ -493,6 +545,9 @@
                 groupId: selectedEvent === 'echoesOfWar' ? `s${selectedWarEchoesSeason}_w${selectedWarEchoesCycle}` : undefined,
                 serverId: serverFilter,
                 charCountFilter: teamSizeFilter ? String(teamSizeFilter) : '',
+                withVideo: (selectedEvent === 'contract' && withVideoFilter) ? true : undefined,
+                includeChars: (selectedEvent === 'contract' && includedChars.length > 0) ? mapCharIdsToBackend(includedChars) : undefined,
+                excludeChars: (selectedEvent === 'contract' && excludedChars.length > 0) ? mapCharIdsToBackend(excludedChars) : undefined,
                 sortField: sortField === "default" ? undefined : sortField,
                 sortOrder: sortAsc ? "asc" : "desc",
                 page: currentPage,
@@ -548,6 +603,90 @@
         if (browser && typeof localStorage !== "undefined") {
             localStorage.setItem("leaderboard_contract_id", selectedContractId);
         }
+        loadLeaderboard();
+    }
+
+    let prevWithVideo = withVideoFilter;
+    $: if (selectedEvent === 'contract' && withVideoFilter !== prevWithVideo) {
+        prevWithVideo = withVideoFilter;
+        currentPage = 1;
+        loadLeaderboard();
+    }
+
+    let prevIncludedChars = [];
+    let prevExcludedChars = [];
+    $: if (selectedEvent === 'contract' && (JSON.stringify(includedChars) !== JSON.stringify(prevIncludedChars) || JSON.stringify(excludedChars) !== JSON.stringify(prevExcludedChars))) {
+        prevIncludedChars = [...includedChars];
+        prevExcludedChars = [...excludedChars];
+        currentPage = 1;
+        loadLeaderboard();
+    }
+
+    $: hasActiveFilters = (() => {
+        if (selectedEvent === 'monument') {
+            const defaultStage = currentGroup?.stages?.[0]?.id;
+            const defaultGroup = monumentGroups[0]?.id;
+            return selectedMonumentGroup !== defaultGroup ||
+                selectedStageId !== defaultStage ||
+                isAgony ||
+                serverFilter !== 'all' ||
+                teamSizeFilter !== null ||
+                sortField !== 'default';
+        }
+        if (selectedEvent === 'echoesOfWar') {
+            const defaultSeason = warEchoesSeasonOptions[0]?.value;
+            const defaultCycle = currentSeason?.weeks?.[0]?.id;
+            const defaultStage = currentCycle?.stages?.[0]?.id;
+            return selectedWarEchoesSeason !== defaultSeason ||
+                selectedWarEchoesCycle !== defaultCycle ||
+                selectedWarEchoesStageId !== defaultStage ||
+                selectedWarEchoesDifficulty !== 'normal' ||
+                serverFilter !== 'all' ||
+                teamSizeFilter !== null ||
+                sortField !== 'default';
+        }
+        if (selectedEvent === 'contract') {
+            const defaultContract = activeContracts[0]?.id;
+            return selectedContractId !== defaultContract ||
+                serverFilter !== 'all' ||
+                teamSizeFilter !== null ||
+                withVideoFilter ||
+                includedChars.length > 0 ||
+                excludedChars.length > 0 ||
+                sortField !== 'default';
+        }
+        return false;
+    })();
+
+    function resetFilters() {
+        if (selectedEvent === 'monument') {
+            if (monumentGroups[0]?.id) selectedMonumentGroup = monumentGroups[0].id;
+            if (currentGroup?.stages?.[0]?.id) selectedStageId = currentGroup.stages[0].id;
+            isAgony = false;
+            serverFilter = 'all';
+            teamSizeFilter = null;
+            sortField = 'default';
+            sortAsc = false;
+        } else if (selectedEvent === 'echoesOfWar') {
+            if (warEchoesSeasonOptions[0]?.value) selectedWarEchoesSeason = warEchoesSeasonOptions[0].value;
+            if (currentSeason?.weeks?.[0]?.id) selectedWarEchoesCycle = currentSeason.weeks[0].id;
+            if (currentCycle?.stages?.[0]?.id) selectedWarEchoesStageId = currentCycle.stages[0].id;
+            selectedWarEchoesDifficulty = 'normal';
+            serverFilter = 'all';
+            teamSizeFilter = null;
+            sortField = 'default';
+            sortAsc = false;
+        } else if (selectedEvent === 'contract') {
+            if (activeContracts[0]?.id) selectedContractId = activeContracts[0].id;
+            serverFilter = 'all';
+            teamSizeFilter = null;
+            withVideoFilter = false;
+            includedChars = [];
+            excludedChars = [];
+            sortField = 'default';
+            sortAsc = false;
+        }
+        currentPage = 1;
         loadLeaderboard();
     }
 
@@ -699,9 +838,20 @@
         <div class="w-full lg:w-[320px] xl:w-[340px] shrink-0 bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl p-5 shadow-sm flex flex-col gap-5">
             {#if selectedEvent === 'monument'}
                 <div class="flex flex-col gap-1.5">
-                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
-                        {$t("leaderboard.monument_filter")}
-                    </span>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                            {$t("leaderboard.monument_filter")}
+                        </span>
+                        {#if hasActiveFilters}
+                            <button
+                                type="button"
+                                on:click={resetFilters}
+                                class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer transition-colors"
+                            >
+                                {$t("sort.reset")}
+                            </button>
+                        {/if}
+                    </div>
                     <Select
                         options={monumentGroupOptions}
                         bind:value={selectedMonumentGroup}
@@ -712,9 +862,20 @@
                 </div>
             {:else if selectedEvent === 'echoesOfWar'}
                 <div class="flex flex-col gap-1.5">
-                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
-                        {$t("events.echoesOfWar")}
-                    </span>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                            {$t("events.echoesOfWar")}
+                        </span>
+                        {#if hasActiveFilters}
+                            <button
+                                type="button"
+                                on:click={resetFilters}
+                                class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer transition-colors"
+                            >
+                                {$t("sort.reset")}
+                            </button>
+                        {/if}
+                    </div>
                     <Select
                         options={warEchoesSeasonOptions}
                         bind:value={selectedWarEchoesSeason}
@@ -724,9 +885,20 @@
                 </div>
             {:else if selectedEvent === 'contract'}
                 <div class="flex flex-col gap-1.5">
-                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
-                        {$t("leaderboard.contract")}
-                    </span>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                            {$t("leaderboard.contract")}
+                        </span>
+                        {#if hasActiveFilters}
+                            <button
+                                type="button"
+                                on:click={resetFilters}
+                                class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer transition-colors"
+                            >
+                                {$t("sort.reset")}
+                            </button>
+                        {/if}
+                    </div>
                     <Select
                         options={contractOptions}
                         bind:value={selectedContractId}
@@ -877,6 +1049,93 @@
                     {/each}
                 </div>
             </div>
+
+            {#if selectedEvent === 'contract'}
+                <div class="flex items-center pt-1">
+                    <Checkbox
+                        bind:checked={withVideoFilter}
+                        variant="yellow"
+                        label={$t("leaderboard.filter_with_video")}
+                        className="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300 select-none"
+                    />
+                </div>
+
+                <div class="flex flex-col gap-3 pt-2 border-t border-gray-100 dark:border-white/10">
+                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                        {$t("leaderboard.filter_by_operators")}
+                    </span>
+
+                    <div class="flex flex-col gap-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                {$t("leaderboard.filter_include")}
+                            </span>
+                            <button
+                                type="button"
+                                on:click={() => openOperatorModal('include')}
+                                class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
+                            >
+                                {$t("leaderboard.filter_add_operator")}
+                            </button>
+                        </div>
+                        {#if includedChars.length > 0}
+                            <div class="flex flex-wrap gap-1.5">
+                                {#each includedChars as charId}
+                                    {@const opData = characters[charId]}
+                                    <div class="flex items-center bg-[#21272C] dark:bg-[#1E1E1E] text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-gray-300 dark:border-[#444] shadow-xs">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
+                                            <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
+                                        </div>
+                                        <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
+                                        <button
+                                            type="button"
+                                            on:click={() => removeIncludedChar(charId)}
+                                            class="text-gray-400 hover:text-white transition-colors cursor-pointer ml-0.5"
+                                        >
+                                            <Icon name="close" class="w-3.5 h-3.5" />
+                                        </button>
+                                    </div>
+                                {/each}
+                            </div>
+                        {/if}
+                    </div>
+
+                    <div class="flex flex-col gap-1.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                {$t("leaderboard.filter_exclude")}
+                            </span>
+                            <button
+                                type="button"
+                                on:click={() => openOperatorModal('exclude')}
+                                class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
+                            >
+                                {$t("leaderboard.filter_add_operator")}
+                            </button>
+                        </div>
+                        {#if excludedChars.length > 0}
+                            <div class="flex flex-wrap gap-1.5">
+                                {#each excludedChars as charId}
+                                    {@const opData = characters[charId]}
+                                    <div class="flex items-center bg-[#21272C] dark:bg-[#1E1E1E] text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-gray-300 dark:border-[#444] shadow-xs">
+                                        <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
+                                            <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
+                                        </div>
+                                        <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
+                                        <button
+                                            type="button"
+                                            on:click={() => removeExcludedChar(charId)}
+                                            class="text-gray-400 hover:text-white transition-colors cursor-pointer ml-0.5"
+                                        >
+                                            <Icon name="close" class="w-3.5 h-3.5" />
+                                        </button>
+                                    </div>
+                                {/each}
+                            </div>
+                        {/if}
+                    </div>
+                </div>
+            {/if}
         </div>
 
         <div class="flex-1 min-w-0 w-full flex flex-col gap-4">
@@ -1149,11 +1408,16 @@
                                                             </div>
                                                         </a>
                                                     {/if}
-                                                    <div class="flex items-center gap-1 shrink-0">
+                                                    <div class="flex items-center gap-1.5 shrink-0">
                                                         <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1 shrink-0" on:click|stopPropagation>
                                                             <span>{entry.user.name}</span>
                                                             <Icon name="sendToLink" class="w-3 h-3 text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-transform duration-200 shrink-0" />
                                                         </a>
+                                                        {#if entry.videoUrl}
+                                                            <a href={entry.videoUrl} target="_blank" rel="noopener noreferrer" class="text-red-500 hover:text-red-400 transition-colors inline-flex items-center shrink-0" title="YouTube" on:click|stopPropagation>
+                                                                <Icon name="youtube" class="w-4 h-4 text-red-500 fill-current" />
+                                                            </a>
+                                                        {/if}
                                                     </div>
                                                 </div>
                                                 {#if serverFilter === 'all'}
@@ -1274,7 +1538,14 @@
                                                 </div>
                                             {/if}
                                             <div class="flex flex-col">
-                                                <span class="font-bold text-gray-900 dark:text-white text-sm">{entry.user.name}</span>
+                                                <div class="flex items-center gap-1.5">
+                                                    <span class="font-bold text-gray-900 dark:text-white text-sm">{entry.user.name}</span>
+                                                    {#if entry.videoUrl}
+                                                        <a href={entry.videoUrl} target="_blank" rel="noopener noreferrer" class="text-red-500 hover:text-red-400 transition-colors inline-flex items-center shrink-0" title="YouTube" on:click|stopPropagation>
+                                                            <Icon name="youtube" class="w-3.5 h-3.5 text-red-500 fill-current" />
+                                                        </a>
+                                                    {/if}
+                                                </div>
                                                 <span class="text-[10px] text-gray-500 dark:text-gray-400">
                                                     Lvl {entry.level}{#if serverFilter === 'all'} &bull; {getServerName(entry.serverId)}{/if}
                                                 </span>
@@ -1497,4 +1768,12 @@
             </div>
         {/if}
     </Modal>
+
+    <OperatorFilterModal
+        isOpen={operatorModalOpen}
+        title={operatorModalTitle}
+        selected={operatorModalMode === 'include' ? includedChars : excludedChars}
+        on:save={handleOperatorModalSave}
+        on:close={() => operatorModalOpen = false}
+    />
 </div>

@@ -23,7 +23,10 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
             this.getServerIdsRule(),
             this.getPageRule(),
             this.getRecordsOnPageRule(),
-            this.getCharCountFilterRule()
+            this.getCharCountFilterRule(),
+            this.getWithVideoRule(),
+            this.getIncludeCharsRule(),
+            this.getExcludeCharsRule()
         ];
     }
 
@@ -83,6 +86,27 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
         return new ValidationRule(
             item => item.charCountFilter === undefined || item.charCountFilter === "" || /^[1-4]$/.test(item.charCountFilter),
             "charCountFilter must be 1, 2, 3, or 4"
+        );
+    }
+
+    private static getWithVideoRule(): ValidationRule<GetContractListQuery> {
+        return new ValidationRule(
+            item => item.withVideo === undefined || item.withVideo === "true" || item.withVideo === "false",
+            "withVideo must be true or false"
+        );
+    }
+
+    private static getIncludeCharsRule(): ValidationRule<GetContractListQuery> {
+        return new ValidationRule(
+            item => item.includeChars === undefined || typeof item.includeChars === "string",
+            "includeChars must be a comma-separated string"
+        );
+    }
+
+    private static getExcludeCharsRule(): ValidationRule<GetContractListQuery> {
+        return new ValidationRule(
+            item => item.excludeChars === undefined || typeof item.excludeChars === "string",
+            "excludeChars must be a comma-separated string"
         );
     }
 }

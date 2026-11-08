@@ -6,6 +6,7 @@ import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
 import { SortOrder } from "@models/SortOrder.js";
+import crypto from "node:crypto";
 
 export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {
@@ -116,7 +117,32 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         return entities.map(UserContractLeaderboardRecord.createFromEntity);
     }
 
-    public async countByContractId(contractId: string, publicOnly: boolean, serverId: string | null, charCount?: number | null): Promise<number> {
+    private static getCharFilterSql(includeChars?: string[], excludeChars?: string[]): Prisma.Sql {
+        let charFilterSql = Prisma.sql``;
+        if (includeChars && includeChars.length > 0) {
+            for (const charId of includeChars) {
+                if (charId === "chr_0002_endminm" || charId === "chr_0003_endminf") {
+                    charFilterSql = Prisma.sql`${charFilterSql} AND EXISTS (SELECT 1 FROM "UserContractCharacter" uc WHERE uc."userRecordId" = l.id AND uc."charId" IN ('chr_0002_endminm', 'chr_0003_endminf'))`;
+                } else {
+                    charFilterSql = Prisma.sql`${charFilterSql} AND EXISTS (SELECT 1 FROM "UserContractCharacter" uc WHERE uc."userRecordId" = l.id AND uc."charId" = ${charId})`;
+                }
+            }
+        }
+        if (excludeChars && excludeChars.length > 0) {
+            const hasEndmin = excludeChars.includes("chr_0002_endminm") || excludeChars.includes("chr_0003_endminf");
+            const regularExcludes = excludeChars.filter(c => c !== "chr_0002_endminm" && c !== "chr_0003_endminf");
+            if (hasEndmin) {
+                charFilterSql = Prisma.sql`${charFilterSql} AND NOT EXISTS (SELECT 1 FROM "UserContractCharacter" uc WHERE uc."userRecordId" = l.id AND uc."charId" IN ('chr_0002_endminm', 'chr_0003_endminf'))`;
+            }
+            if (regularExcludes.length > 0) {
+                charFilterSql = Prisma.sql`${charFilterSql} AND NOT EXISTS (SELECT 1 FROM "UserContractCharacter" uc WHERE uc."userRecordId" = l.id AND uc."charId" = ANY(${regularExcludes}::text[]))`;
+            }
+        }
+        return charFilterSql;
+    }
+
+    public async countByContractId(contractId: string, publicOnly: boolean, serverId: string | null, charCount?: number | null, withVideo?: boolean, includeChars?: string[], excludeChars?: string[]): Promise<number> {
+        const charFilterSql = UserContractLeaderboardsTable.getCharFilterSql(includeChars, excludeChars);
         const query = Prisma.sql`
             WITH RankedRuns AS (
                 SELECT 
@@ -137,6 +163,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                   ${serverId ? Prisma.sql`AND G."serverId" = ${serverId}` : Prisma.sql``}
                   ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                   ${charCount ? Prisma.sql`AND CharCount.n = ${charCount}` : Prisma.sql``}
+                  ${withVideo ? Prisma.sql`AND l."videoUrl" IS NOT NULL` : Prisma.sql``}
+                  ${charFilterSql}
             )
             SELECT count(*)::integer as total_count
             FROM RankedRuns
@@ -184,12 +212,16 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                                                               sortOrder?: SortOrder,
                                                               take?: number,
                                                               skip?: number,
-                                                              charCount?: number | null
+                                                              charCount?: number | null,
+                                                              withVideo?: boolean,
+                                                              includeChars?: string[],
+                                                              excludeChars?: string[]
     ): Promise<{
         contractRecord: UserContractLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
+        const charFilterSql = UserContractLeaderboardsTable.getCharFilterSql(includeChars, excludeChars);
         let orderSql = Prisma.sql`ORDER BY r."indicatorCount" DESC, r."clearTimeSec" ASC, r."updatedAt" ASC`;
         if (sortField && sortOrder) {
             switch (sortField) {
@@ -238,6 +270,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                   ${serverId ? Prisma.sql`AND G."serverId" = ${serverId}` : Prisma.sql``}
                   ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                   ${charCount ? Prisma.sql`AND CharCount.n = ${charCount}` : Prisma.sql``}
+                  ${withVideo ? Prisma.sql`AND l."videoUrl" IS NOT NULL` : Prisma.sql``}
+                  ${charFilterSql}
             )
             SELECT r.id
             FROM RankedRuns r
@@ -283,6 +317,7 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
     }
 
     public async create(gameUid: string, data: ContractRecord): Promise<UserContractLeaderboardRecord> {
+        const videoCode = crypto.randomBytes(4).toString("hex");
         const entity = await this.table.create({
             data: {
                gameUid,
@@ -290,7 +325,34 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                contractId: data.contractId,
                indicatorCount: data.indicatorCount,
                clearTimeSec: data.passTs,
+               videoCode,
                data: JSON.stringify(data.getEntity())
+            }
+        });
+
+        return UserContractLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async updateVideo(id: string, videoUrl: string | null): Promise<UserContractLeaderboardRecord> {
+        const entity = await this.table.update({
+            where: {
+                id
+            },
+            data: {
+                videoUrl
+            }
+        });
+
+        return UserContractLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async updateVideoCode(id: string, videoCode: string): Promise<UserContractLeaderboardRecord> {
+        const entity = await this.table.update({
+            where: {
+                id
+            },
+            data: {
+                videoCode
             }
         });
 
@@ -320,6 +382,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         contractId: string;
         indicatorCount: number;
         clearTimeSec: number;
+        videoUrl: string | null;
+        videoCode: string | null;
         data: string;
         updatedAt: Date;
         rank: number;
@@ -337,6 +401,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
                 l."contractId",
                 l."indicatorCount",
                 l."clearTimeSec",
+                l."videoUrl",
+                l."videoCode",
                 l.data,
                 l."updatedAt",
                 (
@@ -380,6 +446,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
             contractId: string;
             indicatorCount: number;
             clearTimeSec: number;
+            videoUrl: string | null;
+            videoCode: string | null;
             data: string;
             updatedAt: Date;
             rank: number;
@@ -393,6 +461,8 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
             contractId: r.contractId,
             indicatorCount: r.indicatorCount,
             clearTimeSec: r.clearTimeSec,
+            videoUrl: r.videoUrl ?? null,
+            videoCode: r.videoCode ?? null,
             data: r.data,
             updatedAt: r.updatedAt,
             rank: Number(r.rank),
