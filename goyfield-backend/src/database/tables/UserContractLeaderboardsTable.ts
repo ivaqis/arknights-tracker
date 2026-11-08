@@ -454,19 +454,26 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
             total_count: number;
         }[]>(query);
 
-        return rows.map(r => ({
-            id: r.id,
-            recordId: r.recordId,
-            gameUid: r.gameUid,
-            contractId: r.contractId,
-            indicatorCount: r.indicatorCount,
-            clearTimeSec: r.clearTimeSec,
-            videoUrl: r.videoUrl ?? null,
-            videoCode: r.videoCode ?? null,
-            data: r.data,
-            updatedAt: r.updatedAt,
-            rank: Number(r.rank),
-            totalCount: Number(r.total_count)
-        }));
+        return rows.map(r => {
+            let code = r.videoCode;
+            if (!code) {
+                code = crypto.randomBytes(4).toString("hex");
+                this.updateVideoCode(r.id, code).catch(() => {});
+            }
+            return {
+                id: r.id,
+                recordId: r.recordId,
+                gameUid: r.gameUid,
+                contractId: r.contractId,
+                indicatorCount: r.indicatorCount,
+                clearTimeSec: r.clearTimeSec,
+                videoUrl: r.videoUrl ?? null,
+                videoCode: code,
+                data: r.data,
+                updatedAt: r.updatedAt,
+                rank: Number(r.rank),
+                totalCount: Number(r.total_count)
+            };
+        });
     }
 }

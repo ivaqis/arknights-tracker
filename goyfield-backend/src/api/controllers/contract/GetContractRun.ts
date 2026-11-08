@@ -7,6 +7,7 @@ import { Database } from "@database/Database.js";
 import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
 import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
+import crypto from "node:crypto";
 import e from "express";
 
 export class GetContractRun extends Controller<
@@ -28,11 +29,11 @@ export class GetContractRun extends Controller<
         this._recordId = req.query.recordId;
     }
 
-    public static getRecordData(record: UserContractLeaderboardRecord): ContractRecordEntity {
+    public static getRecordData(record: UserContractLeaderboardRecord, overrideVideoCode?: string | null): ContractRecordEntity {
         const data = record.data.getEntity();
         data.recordId = record.id;
         data.videoUrl = record.videoUrl;
-        data.videoCode = record.videoCode;
+        data.videoCode = overrideVideoCode ?? record.videoCode;
         return data;
     }
 
@@ -70,12 +71,18 @@ export class GetContractRun extends Controller<
             return;
         }
 
+        let videoCode = record.videoCode;
+        if (!videoCode) {
+            videoCode = crypto.randomBytes(4).toString("hex");
+            this._database.contractLeaderboard.updateVideoCode(record.id, videoCode).catch(() => {});
+        }
+
         this.data = {
             uid: profile.publicUid.initValue,
             avatarId: profile.avatarId.initValue,
             level: gameProfile.data.base.level,
             serverId: gameProfile.serverId,
-            recordData: GetContractRun.getRecordData(record)
+            recordData: GetContractRun.getRecordData(record, videoCode)
         };
     }
 }
