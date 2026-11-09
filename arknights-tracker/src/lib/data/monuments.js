@@ -12,13 +12,13 @@ export const monumentGroups = [
                 "name": "Critters That Dig",
                 "picPath": "dung_gold",
                 "enemyIds": [
-                    "eny_0129_slwood"
+                    "eny_0129_slwood_hdg033"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0129_slwood"
+                    "eny_0129_slwood_hdg033"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -30,16 +30,16 @@ export const monumentGroups = [
                 "name": "Shadows That Bind",
                 "picPath": "dung_high_difficulty_s8_01",
                 "enemyIds": [
-                    "eny_0120_klbear",
-                    "eny_0122_kltdbud"
+                    "eny_0120_klbear_hdg030",
+                    "eny_0122_kltdbud_hdg030"
                 ],
                 "enemyLevels": [
                     60,
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0120_klbear",
-                    "eny_0122_kltdbud"
+                    "eny_0120_klbear_hdg030",
+                    "eny_0122_kltdbud_hdg030"
                 ],
                 "hardEnemyLevels": [
                     90,
@@ -52,13 +52,13 @@ export const monumentGroups = [
                 "name": "Woodcrafts That Link",
                 "picPath": "dung_high_difficulty_s8_03",
                 "enemyIds": [
-                    "eny_0128_babyents"
+                    "eny_0128_babyents_hdg031"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0128_babyents"
+                    "eny_0128_babyents_hdg031"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -70,13 +70,13 @@ export const monumentGroups = [
                 "name": "Hatred That Sprawls",
                 "picPath": "dung_high_difficulty_s8_02",
                 "enemyIds": [
-                    "eny_0127_bigents"
+                    "eny_0127_bigents_hdg032"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0127_bigents"
+                    "eny_0127_bigents_hdg032"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -97,13 +97,13 @@ export const monumentGroups = [
                 "name": "Tri-Aggelated Targeting",
                 "picPath": "dung_high_difficulty_s5_02",
                 "enemyIds": [
-                    "eny_0070_agscorp2"
+                    "eny_0070_agscorp2_hdg029"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0070_agscorp2"
+                    "eny_0070_agscorp2_hdg029"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -137,9 +137,9 @@ export const monumentGroups = [
                 "name": "Sudden Roar of Oblivion",
                 "picPath": "dung_high_difficulty_s7_02",
                 "enemyIds": [
-                    "eny_0117_klhound",
-                    "eny_0121_klbud",
-                    "eny_0122_kltdbud",
+                    "eny_0117_klhound_hdg028",
+                    "eny_0121_klbud_hdg028",
+                    "eny_0122_kltdbud_hdg028",
                     "eny_0123_klcap_hdg028"
                 ],
                 "enemyLevels": [
@@ -149,9 +149,9 @@ export const monumentGroups = [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0117_klhound",
-                    "eny_0121_klbud",
-                    "eny_0122_kltdbud",
+                    "eny_0117_klhound_hdg028",
+                    "eny_0121_klbud_hdg028",
+                    "eny_0122_kltdbud_hdg028",
                     "eny_0123_klcap_hdg028"
                 ],
                 "hardEnemyLevels": [
@@ -194,9 +194,9 @@ export const monumentGroups = [
                 "name": "Visitors of Qingbo",
                 "picPath": "dung_high_difficulty_s3_02",
                 "enemyIds": [
-                    "eny_0054_hsmino",
-                    "eny_0055_hscrane",
-                    "eny_0085_hsrogue",
+                    "eny_0054_hsmino_hdg025",
+                    "eny_0055_hscrane_hdg025",
+                    "eny_0085_hsrogue_hdg025",
                     "eny_0053_hsmob",
                     "eny_0084_hshunt"
                 ],
@@ -208,9 +208,9 @@ export const monumentGroups = [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0054_hsmino",
-                    "eny_0055_hscrane",
-                    "eny_0085_hsrogue",
+                    "eny_0054_hsmino_hdg025",
+                    "eny_0055_hscrane_hdg025",
+                    "eny_0085_hsrogue_hdg025",
                     "eny_0053_hsmob",
                     "eny_0084_hshunt"
                 ],
@@ -255,7 +255,7 @@ export const monumentGroups = [
                 "picPath": "dung_high_difficulty_s6_02",
                 "enemyIds": [
                     "eny_0113_jzogre_hdg023",
-                    "eny_0112_jzmonk"
+                    "eny_0112_jzmonk_hdg023"
                 ],
                 "enemyLevels": [
                     60,
@@ -263,7 +263,7 @@ export const monumentGroups = [
                 ],
                 "hardEnemyIds": [
                     "eny_0113_jzogre_hdg023",
-                    "eny_0112_jzmonk"
+                    "eny_0112_jzmonk_hdg023"
                 ],
                 "hardEnemyLevels": [
                     90,
@@ -303,16 +303,16 @@ export const monumentGroups = [
                 "name": "Phalanx of Thorns",
                 "picPath": "dung_high_difficulty_s1_01",
                 "enemyIds": [
-                    "eny_0088_wgthorns",
-                    "eny_0089_wgreflec"
+                    "eny_0088_wgthorns_hdg019",
+                    "eny_0089_wgreflec_hdg019"
                 ],
                 "enemyLevels": [
                     60,
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0088_wgthorns",
-                    "eny_0089_wgreflec"
+                    "eny_0088_wgthorns_hdg019",
+                    "eny_0089_wgreflec_hdg019"
                 ],
                 "hardEnemyLevels": [
                     90,
@@ -325,13 +325,13 @@ export const monumentGroups = [
                 "name": "Eyes of Solvent-Kind",
                 "picPath": "dung_high_difficulty_s3_01",
                 "enemyIds": [
-                    "eny_0107_wgshoal2"
+                    "eny_0107_wgshoal2_hdg020"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0107_wgshoal2"
+                    "eny_0107_wgshoal2_hdg020"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -379,13 +379,13 @@ export const monumentGroups = [
                 "name": "Harrowing Æthillu",
                 "picPath": "dung_high_difficulty_s5_03",
                 "enemyIds": [
-                    "eny_0095_ethillu"
+                    "eny_0095_ethillu_hdg017"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0095_ethillu"
+                    "eny_0095_ethillu_hdg017"
                 ],
                 "hardEnemyLevels": [
                     90
@@ -498,13 +498,13 @@ export const monumentGroups = [
                 "name": "Underflow Chasm",
                 "picPath": "dung_high_difficulty_s1_03",
                 "enemyIds": [
-                    "eny_0058_agdisk"
+                    "eny_0058_agdisk_hdg015"
                 ],
                 "enemyLevels": [
                     60
                 ],
                 "hardEnemyIds": [
-                    "eny_0058_agdisk"
+                    "eny_0058_agdisk_hdg015"
                 ],
                 "hardEnemyLevels": [
                     90
