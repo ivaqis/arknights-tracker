@@ -1,5 +1,7 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+    import { browser } from '$app/environment';
+    import { onMount, tick } from 'svelte';
+    import { page } from '$app/stores';
     import { t } from '$lib/i18n';
     import { currentLocale } from '$lib/stores/locale';
     import {
@@ -194,17 +196,104 @@
         animateScrollTo(targetY);
     }
 
+    let highlightedAchId: string | null = null;
+    let highlightTimeout: ReturnType<typeof setTimeout> | null = null;
+    let lastHandledId: string | null = null;
+
+    async function focusAchievement(achId: string) {
+        if (!achId) return;
+        const targetAch = (achievements as Record<string, AchievementData>)[achId];
+        if (!targetAch) return;
+
+        if (onlyIncomplete && isAchievementFullyCompleted(targetAch, $achievementStore[targetAch.id])) {
+            onlyIncomplete = false;
+        }
+        if (selectedVersion !== 'all' && getAchievementAddedVersion(targetAch.id) !== selectedVersion) {
+            selectedVersion = 'all';
+        }
+        if (searchQuery) {
+            searchQuery = '';
+        }
+
+        const foundCat = sortedCategories.find((c) => c.groupIds.includes(targetAch.groupId));
+        if (foundCat) {
+            selectedCategoryId = foundCat.id;
+        }
+        selectedGroupId = targetAch.groupId;
+        highlightedAchId = achId;
+
+        if (!browser) return;
+
+        if (typeof document !== 'undefined') {
+            document.body.style.overflow = '';
+        }
+
+        await tick();
+
+        isManualScrolling = true;
+        let attempts = 0;
+        function tryScroll() {
+            const el = document.getElementById(achId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => {
+                    const el2 = document.getElementById(achId);
+                    if (el2) {
+                        const rect = el2.getBoundingClientRect();
+                        const mid = window.innerHeight / 2;
+                        if (Math.abs(rect.top + rect.height / 2 - mid) > 60) {
+                            el2.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+                    isManualScrolling = false;
+                }, 400);
+                return;
+            }
+            if (attempts < 30) {
+                attempts++;
+                setTimeout(tryScroll, 50);
+            } else {
+                isManualScrolling = false;
+            }
+        }
+        setTimeout(tryScroll, 80);
+
+        if (highlightTimeout) clearTimeout(highlightTimeout);
+        highlightTimeout = setTimeout(() => {
+            if (highlightedAchId === achId) {
+                highlightedAchId = null;
+            }
+        }, 3000);
+    }
+
+    $: targetId = $page.url.searchParams.get('id') || ($page.url.hash ? $page.url.hash.slice(1) : '');
+    $: if (browser && targetId && targetId !== lastHandledId) {
+        lastHandledId = targetId;
+        focusAchievement(targetId);
+    }
+
     onMount(() => {
         loadAchievementsLocale($currentLocale || 'ru');
 
+        const handleFocusEvent = (e: Event) => {
+            const custom = e as CustomEvent<{ id: string }>;
+            if (custom.detail?.id) {
+                lastHandledId = custom.detail.id;
+                focusAchievement(custom.detail.id);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', handleScroll, { passive: true });
+        window.addEventListener('focus-achievement', handleFocusEvent);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);
+            window.removeEventListener('focus-achievement', handleFocusEvent);
             if (scrollRaf) cancelAnimationFrame(scrollRaf);
             if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
+            if (highlightTimeout) clearTimeout(highlightTimeout);
         };
     });
 
@@ -476,6 +565,7 @@
                                                 localeData={achievementsLocaleData[ach.id]}
                                                 latestVersion={latestVersion}
                                                 addedVersion={getAchievementAddedVersion(ach.id)}
+                                                isHighlighted={highlightedAchId === ach.id}
                                             />
                                         {/each}
                                     </div>

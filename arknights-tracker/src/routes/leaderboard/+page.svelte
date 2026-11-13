@@ -14,6 +14,7 @@
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { parseRichText } from "$lib/utils/richText.js";
+    import { isEventStarted, formatDateRange } from "$lib/utils/dateUtils";
     import { monumentGroups } from "$lib/data/monuments.js";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
     import { contingencyContracts } from "$lib/data/contracts.ts";
@@ -54,42 +55,8 @@
 
     let now = new Date();
 
-    function parseWithServerOffset(dateStr, serverId = "3") {
-        if (!dateStr) return new Date(0);
-        if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
-            return new Date(dateStr);
-        }
-        const offset = serverId === "2" ? 8 : -5;
-        const sign = offset >= 0 ? "+" : "-";
-        const pad = (n) => String(Math.abs(n)).padStart(2, "0");
-        const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-        return new Date(iso);
-    }
-
-    function isEventStarted(item) {
-        if (!item) return true;
-        if (serverFilter === '2') {
-            const str = item.startTimeAsia || item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '2');
-        }
-        if (serverFilter === '3') {
-            const str = item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '3');
-        }
-        const westStr = item.startTime;
-        const asiaStr = item.startTimeAsia || item.startTime;
-        const westDate = westStr ? parseWithServerOffset(westStr, '3') : null;
-        const asiaDate = asiaStr ? parseWithServerOffset(asiaStr, '2') : null;
-        if (!westDate && !asiaDate) return true;
-        if (westDate && asiaDate) {
-            return now >= westDate || now >= asiaDate;
-        }
-        return now >= (westDate || asiaDate);
-    }
-
-    $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g));
+    $: checkStarted = (item) => isEventStarted(item, serverFilter, now);
+    $: visibleMonumentGroups = monumentGroups.filter(checkStarted);
 
     $: monumentGroupOptions = visibleMonumentGroups.map(g => ({
         value: g.id,
@@ -97,20 +64,7 @@
         iconId: g.id
     }));
 
-    function formatDateRange(startTime, endTime, locale) {
-        if (!startTime || !endTime) return "";
-        try {
-            const start = new Date(startTime.replace(" ", "T"));
-            const end = new Date(endTime.replace(" ", "T"));
-            const opt = { day: "2-digit", month: "2-digit", year: "numeric" };
-            const loc = locale === "ru" ? "ru-RU" : (locale === "en" ? "en-US" : locale);
-            return `${start.toLocaleDateString(loc, opt)} - ${end.toLocaleDateString(loc, opt)}`;
-        } catch {
-            return `${startTime.slice(0, 10)} - ${endTime.slice(0, 10)}`;
-        }
-    }
-
-    $: visibleWarEchoesSeasons = warEchoesSeasons.filter(s => isEventStarted(s));
+    $: visibleWarEchoesSeasons = warEchoesSeasons.filter(checkStarted);
 
     $: warEchoesSeasonOptions = visibleWarEchoesSeasons.map(s => ({
         value: s.id,
@@ -118,7 +72,7 @@
         subLabel: formatDateRange(s.startTime, s.endTime, $currentLocale)
     }));
 
-    $: visibleContracts = contingencyContracts.filter(c => isEventStarted(c));
+    $: visibleContracts = contingencyContracts.filter(checkStarted);
     $: activeContracts = visibleContracts.length ? visibleContracts : contingencyContracts;
 
     let selectedContractId = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_contract_id"))
@@ -282,7 +236,7 @@
 
     $: currentSeason = visibleWarEchoesSeasons.find(s => s.id === selectedWarEchoesSeason) || visibleWarEchoesSeasons[0] || warEchoesSeasons[0];
 
-    $: visibleWeeks = (currentSeason?.weeks || []).filter(w => isEventStarted(w));
+    $: visibleWeeks = (currentSeason?.weeks || []).filter(checkStarted);
 
     $: if (visibleWeeks.length > 0 && !visibleWeeks.some(w => w.id === selectedWarEchoesCycle)) {
         selectedWarEchoesCycle = visibleWeeks[0]?.id || "1";

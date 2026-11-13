@@ -1069,5 +1069,7 @@
       "foodDetail": "Attributes and effects of food {name} in Arknights: Endfield.",
       "achievements": "Achievement tracker and database in Arknights: Endfield."
     }
-  }
+  },
+  "advancedSearch": "Zaawansowane wyszukiwanie",
+  "loadMore": "Załaduj więcej"
 }

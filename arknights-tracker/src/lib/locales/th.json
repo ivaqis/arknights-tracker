@@ -4147,5 +4147,7 @@
   },
   "tacticalCondType": {
     "null": "ไม่มี"
-  }
+  },
+  "advancedSearch": "การค้นหาขั้นสูง",
+  "loadMore": "โหลดเพิ่มเติม"
 }

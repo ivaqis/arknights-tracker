@@ -6,49 +6,15 @@
     import Select from "$lib/components/Select.svelte";
     import DungeonRunCard from "$lib/components/profile/DungeonRunCard.svelte";
     import { monumentGroups } from "$lib/data/monuments.js";
+    import { isEventStarted } from "$lib/utils/dateUtils";
 
     export let activeAccount = null;
     export let hasBackground = false;
 
     const now = new Date();
 
-    function parseWithServerOffset(dateStr, serverId = "3") {
-        if (!dateStr) return new Date(0);
-        if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
-            return new Date(dateStr);
-        }
-        const offset = serverId === "2" ? 8 : -5;
-        const sign = offset >= 0 ? "+" : "-";
-        const pad = (n) => String(Math.abs(n)).padStart(2, "0");
-        const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-        return new Date(iso);
-    }
-
-    function isEventStarted(item, serverId = "all") {
-        if (!item) return true;
-        if (serverId === '2') {
-            const str = item.startTimeAsia || item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '2');
-        }
-        if (serverId === '3') {
-            const str = item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '3');
-        }
-        const westStr = item.startTime;
-        const asiaStr = item.startTimeAsia || item.startTime;
-        const westDate = westStr ? parseWithServerOffset(westStr, '3') : null;
-        const asiaDate = asiaStr ? parseWithServerOffset(asiaStr, '2') : null;
-        if (!westDate && !asiaDate) return true;
-        if (westDate && asiaDate) {
-            return now >= westDate || now >= asiaDate;
-        }
-        return now >= (westDate || asiaDate);
-    }
-
     $: serverId = activeAccount?.serverId || activeAccount?.info?.base?.serverId || 'all';
-    $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g, serverId));
+    $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g, serverId, now));
 
     let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("profile_monument_group"))
         || (monumentGroups[0]?.id || "");

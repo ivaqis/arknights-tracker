@@ -1,7 +1,8 @@
 <script>
     import { browser } from "$app/environment";
     import { t } from "$lib/i18n";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+    import { currentUiLocale } from "$lib/stores/locale";
+    import { isEventStarted, formatDateRange } from "$lib/utils/dateUtils";
     import Select from "$lib/components/Select.svelte";
     import DungeonRunCard from "$lib/components/profile/DungeonRunCard.svelte";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
@@ -11,43 +12,8 @@
 
     const now = new Date();
 
-    function parseWithServerOffset(dateStr, serverId = "3") {
-        if (!dateStr) return new Date(0);
-        if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
-            return new Date(dateStr);
-        }
-        const offset = serverId === "2" ? 8 : -5;
-        const sign = offset >= 0 ? "+" : "-";
-        const pad = (n) => String(Math.abs(n)).padStart(2, "0");
-        const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-        return new Date(iso);
-    }
-
-    function isEventStarted(item, serverId = "all") {
-        if (!item) return true;
-        if (serverId === '2') {
-            const str = item.startTimeAsia || item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '2');
-        }
-        if (serverId === '3') {
-            const str = item.startTime;
-            if (!str) return true;
-            return now >= parseWithServerOffset(str, '3');
-        }
-        const westStr = item.startTime;
-        const asiaStr = item.startTimeAsia || item.startTime;
-        const westDate = westStr ? parseWithServerOffset(westStr, '3') : null;
-        const asiaDate = asiaStr ? parseWithServerOffset(asiaStr, '2') : null;
-        if (!westDate && !asiaDate) return true;
-        if (westDate && asiaDate) {
-            return now >= westDate || now >= asiaDate;
-        }
-        return now >= (westDate || asiaDate);
-    }
-
     $: serverId = activeAccount?.serverId || activeAccount?.info?.base?.serverId || 'all';
-    $: visibleWarEchoesSeasons = warEchoesSeasons.filter(s => isEventStarted(s, serverId));
+    $: visibleWarEchoesSeasons = warEchoesSeasons.filter(s => isEventStarted(s, serverId, now));
 
     let selectedWarEchoesSeason = "";
 
@@ -60,19 +26,6 @@
 
     $: if (visibleWarEchoesSeasons.length > 0 && (!selectedWarEchoesSeason || !visibleWarEchoesSeasons.some(s => s.id === selectedWarEchoesSeason))) {
         selectedWarEchoesSeason = visibleWarEchoesSeasons[0].id;
-    }
-
-    function formatSeasonDates(season, locale) {
-        if (!season?.startTime || !season?.endTime) return "";
-        try {
-            const start = new Date(season.startTime.replace(" ", "T"));
-            const end = new Date(season.endTime.replace(" ", "T"));
-            const opt = { day: "2-digit", month: "2-digit", year: "numeric" };
-            const loc = normalizeLocale(locale);
-            return `${start.toLocaleDateString(loc, opt)} - ${end.toLocaleDateString(loc, opt)}`;
-        } catch {
-            return `${season.startTime.slice(0, 10)} - ${season.endTime.slice(0, 10)}`;
-        }
     }
 
     function handleSeasonChange(val) {
@@ -89,7 +42,7 @@
     $: warEchoesSeasonOptions = visibleWarEchoesSeasons.map(season => ({
         value: season.id,
         label: $t(`warEchoesSeasons.${season.id}`),
-        subLabel: formatSeasonDates(season, $currentUiLocale)
+        subLabel: formatDateRange(season?.startTime, season?.endTime, $currentUiLocale)
     }));
 
     $: currentSeason = visibleWarEchoesSeasons.find(s => s.id === selectedWarEchoesSeason) || visibleWarEchoesSeasons[0];

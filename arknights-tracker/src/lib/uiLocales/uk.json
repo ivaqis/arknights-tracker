@@ -1069,5 +1069,7 @@
       "foodDetail": "Характеристики та ефекти страви {name} в Arknights: Endfield.",
       "achievements": "Трекер та база досягнень в Arknights: Endfield."
     }
-  }
+  },
+  "advancedSearch": "Розширений пошук",
+  "loadMore": "Завантажити ще"
 }

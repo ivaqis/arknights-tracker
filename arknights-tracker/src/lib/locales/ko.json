@@ -4147,5 +4147,7 @@
   },
   "tacticalCondType": {
     "null": "환경 없음"
-  }
+  },
+  "advancedSearch": "고급 검색",
+  "loadMore": "더 보기"
 }

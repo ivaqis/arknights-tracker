@@ -18,6 +18,7 @@
     export let latestVersion: string = '';
     export let addedVersion: string = '1.0';
     export let hideAddedVersion: boolean = false;
+    export let isHighlighted: boolean = false;
 
     interface SwitcherItem {
         id: string;
@@ -156,7 +157,8 @@
 </script>
 
 <div
-    class="relative border border-gray-300 dark:border-[#444444] rounded-xl px-3 md:px-3.5 py-3.5 flex flex-col justify-between overflow-hidden transition-colors duration-200 bg-transparent"
+    id={achievement.id}
+    class="relative border rounded-xl px-3 md:px-3.5 py-3.5 flex flex-col justify-between overflow-hidden transition-all duration-200 bg-transparent {isHighlighted ? 'border-[#FFE145] ring-2 ring-[#FFE145]' : 'border-gray-300 dark:border-[#444444]'}"
 >
     {#if isCompleted}
         <div

@@ -4148,5 +4148,7 @@
   },
   "tacticalCondType": {
     "null": "Ninguno"
-  }
+  },
+  "advancedSearch": "Búsqueda avanzada",
+  "loadMore": "Cargar más"
 }

@@ -11,6 +11,10 @@
     import SupportModal from "$lib/components/modals/SupportModal.svelte";
     import SyncModal from "$lib/components/modals/SyncModal.svelte";
     import ItemModal from "$lib/components/modals/ItemModal.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import CommandPalette from "$lib/components/search/CommandPalette.svelte";
+    import { closeSearchModal, openSearchModal, toggleSearchModal } from "$lib/stores/searchModal";
+    import { activeBannerModalData, closeBannerModal } from "$lib/stores/bannerModal";
     import { beforeNavigate } from "$app/navigation";
     import { closeItemModal } from "$lib/stores/itemModal";
     import { isI18nReady, t } from "$lib/i18n";
@@ -98,13 +102,21 @@
         }
     });
 
-    beforeNavigate(() => {
-        closeItemModal();
+    let lastPathname = "";
+    beforeNavigate((nav) => {
+        if (nav.to && nav.from && nav.to.url.pathname !== nav.from.url.pathname) {
+            closeItemModal();
+            closeSearchModal();
+        }
     });
 
     $: if ($page.url.pathname) {
-        isMobileMenuOpen = false;
-        closeItemModal();
+        if (lastPathname && lastPathname !== $page.url.pathname) {
+            isMobileMenuOpen = false;
+            closeItemModal();
+            closeSearchModal();
+        }
+        lastPathname = $page.url.pathname;
     }
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
     $: visuallyCollapsed = isCollapsed && !isMobileMenuOpen;
@@ -113,6 +125,17 @@
     function handleKeydown(e) {
         if (e.key === "Escape") {
             isMobileMenuOpen = false;
+        }
+        const isK = e.code === "KeyK" || e.key === "k" || e.key === "K" || e.key === "л" || e.key === "Л";
+        if ((e.ctrlKey || e.metaKey) && isK) {
+            e.preventDefault();
+            e.stopPropagation();
+            openSearchModal();
+            return;
+        }
+        if (e.key === "/" && e.target && !["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName)) {
+            e.preventDefault();
+            openSearchModal();
         }
     }
 
@@ -194,6 +217,8 @@
     </script>
 </svelte:head>
 
+<svelte:window on:keydown|capture={handleKeydown} />
+
 {#if $navigating || $isPageLoading}
     <div class="fixed top-0 left-0 right-0 h-[3px] z-[999999] pointer-events-none overflow-hidden bg-[#FFE145]/20">
         <div class="w-full h-full bg-[#FFE145] shadow-[0_0_8px_#FFE145] animate-nav-progress"></div>
@@ -214,11 +239,23 @@
             ></button>
         {/if}
 
-        <div class="md:hidden fixed top-4 right-4 z-[10001]">
+        <div class="md:hidden fixed top-4 right-4 z-[100003] flex items-center gap-2">
+            <button
+                aria-label="Search"
+                on:click={() => {
+                    isMobileMenuOpen = false;
+                    toggleSearchModal();
+                }}
+                class="p-2 bg-base text-primary border border-line rounded-lg shadow-md"
+            >
+                <Icon name="search" class="w-6 h-6" />
+            </button>
             <button
                 aria-label="Toggle menu"
-                on:click|stopPropagation={() =>
-                    (isMobileMenuOpen = !isMobileMenuOpen)}
+                on:click|stopPropagation={() => {
+                    closeSearchModal();
+                    isMobileMenuOpen = !isMobileMenuOpen;
+                }}
                 class="p-2 bg-base text-primary border border-line rounded-lg shadow-md"
             >
                 <Icon name="toggleManu" class="w-6 h-6" />
@@ -258,7 +295,10 @@
                                 href="/"
                                 aria-label="Goyfield - Arknights Endfield Pull Tracker"
                                 class="block hover:opacity-80 transition-opacity"
-                                on:click={closeItemModal}
+                                on:click={() => {
+                                    closeItemModal();
+                                    closeSearchModal();
+                                }}
                             >
                                 <Icon name="siteLogo" class="w-full h-auto" />
                             </a>
@@ -282,6 +322,22 @@
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
                 <nav class="flex flex-col gap-1.5 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
+                    <button
+                        type="button"
+                        on:click={openSearchModal}
+                        title={$t("achievements.searchPlaceholder")}
+                        class="hidden md:flex items-center gap-3 rounded-lg group text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-all mb-1 {visuallyCollapsed ? 'py-3 px-0 justify-center' : 'px-3 py-2 bg-gray-100/70 dark:bg-[#2e2e2e] border border-gray-200/50 dark:border-[#383838]'}"
+                    >
+                        <Icon name="search" class="w-5 h-5 shrink-0" />
+                        {#if !visuallyCollapsed}
+                            <span class="flex-1 text-left text-xs font-medium text-gray-400 dark:text-gray-400">
+                                {$t("achievements.searchPlaceholder")}
+                            </span>
+                            <kbd class="hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono font-medium text-gray-400 dark:text-gray-400 bg-white/80 dark:bg-[#383838] border border-gray-200 dark:border-[#484848] rounded">
+                                Ctrl K
+                            </kbd>
+                        {/if}
+                    </button>
                     {#each [
                         { path: "/", label: "sidebar.home", icon: "mainPage" },
                         { path: "/records", label: "sidebar.records", icon: "records" },
@@ -310,7 +366,10 @@
                         {:else}
                             <a
                                 href={item.path}
-                                on:click={closeItemModal}
+                                on:click={() => {
+                                    closeItemModal();
+                                    closeSearchModal();
+                                }}
                                 class="
                                 flex items-center gap-3 py-3 rounded-lg group relative min-h-[48px]
                                 {ready ? 'transition-all' : ''} 
@@ -604,6 +663,13 @@
                 on:close={() => (isDonateModalOpen = false)}
             />
             <ItemModal />
+            <CommandPalette />
+            {#if $activeBannerModalData}
+                <BannerModal
+                    banner={$activeBannerModalData}
+                    on:close={closeBannerModal}
+                />
+            {/if}
         </main>
     </div>
 {:else}

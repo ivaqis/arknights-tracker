@@ -13,7 +13,8 @@
     import { weapons } from "$lib/data/weapons.js";
     import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
-    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+    import { currentUiLocale } from "$lib/stores/locale";
+    import { parseWithServerOffset, formatDate } from "$lib/utils/dateUtils";
     import { pullData } from "$lib/stores/pulls.js";
     import { createEventDispatcher, onMount } from "svelte";
 
@@ -34,23 +35,8 @@
     let currentServerId = "3";
 
     $: isAsia = currentServerId === "2";
-    $: serverOffset =
-        currentServerId === "2" || currentServerId === "1" ? 8 : -5;
 
     let showServerTime = false;
-
-    function parseServerDate(dateStr) {
-        if (!dateStr) return null;
-        if (dateStr instanceof Date) return dateStr;
-        if (dateStr.includes("Z") || dateStr.includes("+"))
-            return new Date(dateStr);
-
-        const offset = serverOffset;
-        const sign = offset >= 0 ? "+" : "-";
-        const pad = (n) => String(Math.abs(n)).padStart(2, "0");
-        const isoStr = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-        return new Date(isoStr);
-    }
 
     onMount(() => {
         if (typeof window !== "undefined") {
@@ -80,30 +66,13 @@
 
     function formatTime(d, loc) {
         if (!d) return "";
-
-        let activeLocale = normalizeLocale(loc);
-
-        if (showServerTime) {
-            const shiftedMs = d.getTime() + serverOffset * 3600000;
-            const shiftedDate = new Date(shiftedMs);
-
-            return shiftedDate.toLocaleString(activeLocale, {
-                timeZone: "UTC",
-                day: "numeric",
-                month: "short",
-                year: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-            });
-        }
-
-        return d.toLocaleString(activeLocale, {
+        return formatDate(d, {
             day: "numeric",
-            month: "long",
+            month: showServerTime ? "short" : "long",
             year: "numeric",
             hour: "2-digit",
-            minute: "2-digit",
-        });
+            minute: "2-digit"
+        }, { locale: loc, serverId: currentServerId, showServerTime });
     }
 
     function getWeaponBg(rarity) {
@@ -278,8 +247,8 @@
             ? banner.endTimeAsia
             : banner?.endTime;
 
-    $: realStart = startStr ? parseServerDate(startStr) : new Date();
-    $: realEnd = endStr ? parseServerDate(endStr) : null;
+    $: realStart = startStr ? parseWithServerOffset(startStr, currentServerId) : new Date();
+    $: realEnd = endStr ? parseWithServerOffset(endStr, currentServerId) : null;
 
     $: bannerData = (() => {
         if (!banner || !categoryPulls.length || isEvent) {

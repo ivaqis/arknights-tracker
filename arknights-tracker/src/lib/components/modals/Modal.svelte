@@ -54,11 +54,19 @@
   });
 </script>
 
-<svelte:window on:keydown={(e) => isOpen && closeOnEscape && e.key === "Escape" && close()} />
+<svelte:window
+  on:keydown={(e) => {
+    if (isOpen && closeOnEscape && e.key === "Escape") {
+      e.preventDefault();
+      e.stopPropagation();
+      close();
+    }
+  }}
+/>
 
 {#if isOpen}
   <div
-    class="fixed inset-0 md:ml-[var(--sb-w)] z-[100] flex items-center justify-center p-4"
+    class="fixed inset-0 md:ml-[var(--sb-w)] z-[100005] flex items-center justify-center p-4"
     role="dialog"
     aria-modal="true"
   >

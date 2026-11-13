@@ -9,6 +9,7 @@
   import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { pullData } from "$lib/stores/pulls";
   import { splitEquipmentView } from "$lib/stores/settings.js";
+  import { formatDate } from "$lib/utils/dateUtils";
   import { getWeaponUrl } from "$lib/utils/linkUtils";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
@@ -373,22 +374,7 @@
   }
 
   function formatBannerDate(dateStr, locale) {
-    if (!dateStr) return "";
-    const parsed = new Date(dateStr.replace(" ", "T"));
-    if (isNaN(parsed.getTime())) return "";
-    let loc = normalizeLocale(locale);
-    try {
-      return new Intl.DateTimeFormat(loc, {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit"
-      }).format(parsed);
-    } catch (e) {
-      const y = String(parsed.getFullYear()).slice(-2);
-      const m = String(parsed.getMonth() + 1).padStart(2, '0');
-      const d = String(parsed.getDate()).padStart(2, '0');
-      return `${d}.${m}.${y}`;
-    }
+    return formatDate(dateStr, { day: "2-digit", month: "2-digit", year: "2-digit" }, { locale });
   }
 
   $: dropdownOptions = availableSubBanners.map((bId) => {

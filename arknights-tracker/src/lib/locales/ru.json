@@ -4618,5 +4618,7 @@
     "chestContainsAll": "Содержит все предметы",
     "chestContainsRandom": "Случайный предмет",
     "selectCount": "Выберите: {count}"
-  }
+  },
+  "advancedSearch": "Расширенный поиск",
+  "loadMore": "Загрузить еще"
 }

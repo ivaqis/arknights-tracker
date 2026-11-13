@@ -4147,5 +4147,7 @@
   },
   "tacticalCondType": {
     "null": "なし"
-  }
+  },
+  "advancedSearch": "高度な検索",
+  "loadMore": "さらに読み込む"
 }

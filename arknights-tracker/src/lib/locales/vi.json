@@ -4186,5 +4186,7 @@
   },
   "tacticalCondType": {
     "null": "Không có"
-  }
+  },
+  "advancedSearch": "Tìm kiếm nâng cao",
+  "loadMore": "Tải thêm"
 }

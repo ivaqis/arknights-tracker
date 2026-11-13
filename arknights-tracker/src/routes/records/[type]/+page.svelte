@@ -18,6 +18,7 @@
     import { pullData } from "$lib/stores/pulls";
     import { isDarkMode } from "$lib/stores/theme";
     import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { formatDate } from "$lib/utils/dateUtils";
     import { getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponCategory } from "$lib/utils/importUtils";
     import { onMount } from "svelte";
@@ -700,28 +701,11 @@
     }
 
     function formatDateShort(time, locale) {
-        if (!time) return "";
-        let loc = normalizeLocale(locale);
-        return new Date(time).toLocaleString(loc, {
-            day: "2-digit",
-            month: "2-digit",
-            year: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-        });
+        return formatDate(time, { day: "2-digit", month: "2-digit", year: "2-digit", hour: "2-digit", minute: "2-digit" }, { locale });
     }
 
     function formatDateFull(time, locale) {
-        if (!time) return "";
-        let loc = normalizeLocale(locale);
-        return new Date(time).toLocaleString(loc, {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-        });
+        return formatDate(time, { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit" }, { locale });
     }
 
     $: bannerTitle = (() => {

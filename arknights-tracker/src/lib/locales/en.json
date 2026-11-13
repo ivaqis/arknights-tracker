@@ -4645,5 +4645,7 @@
     "chestContainsAll": "Contains All Items",
     "chestContainsRandom": "Random Item",
     "selectCount": "Choose: {count}"
-  }
+  },
+  "advancedSearch": "Advanced search",
+  "loadMore": "Load more"
 }

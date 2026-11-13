@@ -4147,5 +4147,7 @@
   },
   "tacticalCondType": {
     "null": "Tidak Ada"
-  }
+  },
+  "advancedSearch": "Pencarian lanjutan",
+  "loadMore": "Muat lebih banyak"
 }

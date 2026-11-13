@@ -16,7 +16,8 @@
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";
   import { t } from "$lib/i18n";
-  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { currentUiLocale } from "$lib/stores/locale";
+  import { parseWithServerOffset, formatDate, formatDateTime, formatDateRange } from "$lib/utils/dateUtils";
   import { onDestroy, onMount, tick } from "svelte";
   import { fade } from "svelte/transition";
 
@@ -26,23 +27,11 @@
   let showServerTime = false;
   let isSupportOpen = false;
 
-  function parseWithServerOffset(dateStr) {
-    if (!dateStr) return new Date(9999, 11, 31);
-    if (
-      dateStr.includes("Z") ||
-      (dateStr.includes("T") && dateStr.includes("+"))
-    ) {
-      return new Date(dateStr);
-    }
-    const offset = currentServerId === "2" ? 8 : -5;
-    const sign = offset >= 0 ? "+" : "-";
-    const pad = (n) => String(Math.abs(n)).padStart(2, "0");
-    const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-    return new Date(iso);
-  }
+  const parseDate = (dateStr, fallback = new Date(9999, 11, 31)) =>
+    parseWithServerOffset(dateStr, currentServerId, fallback);
 
   function formatTimeLeft(endTimeStr) {
-    const end = parseWithServerOffset(endTimeStr);
+    const end = parseDate(endTimeStr);
     const diff = end - now;
     if (diff <= 0) return null;
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -55,7 +44,7 @@
 
   function getTimeStatus(endTimeStr) {
     if (!endTimeStr) return { timeLeft: null, status: "normal" };
-    const end = parseWithServerOffset(endTimeStr);
+    const end = parseDate(endTimeStr);
     const diff = end - now;
     if (diff <= 0) return { timeLeft: null, status: "ended" };
 
@@ -78,10 +67,8 @@
       const startStr =
         isAsia && b.startTimeAsia ? b.startTimeAsia : b.startTime;
       const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
-      const start = parseWithServerOffset(startStr);
-      const end = endStr
-        ? parseWithServerOffset(endStr)
-        : new Date(9999, 11, 31);
+      const start = parseDate(startStr, new Date(0));
+      const end = endStr ? parseDate(endStr) : new Date(9999, 11, 31);
       return now >= start && now <= end && b.showOnMain === true;
     })
     .sort((a, b) => {
@@ -98,8 +85,8 @@
         ...e,
         displayStartTime,
         displayEndTime,
-        startTimeMs: parseWithServerOffset(displayStartTime).getTime(),
-        endTimeMs: displayEndTime ? parseWithServerOffset(displayEndTime).getTime() : Infinity,
+        startTimeMs: parseDate(displayStartTime, new Date(0)).getTime(),
+        endTimeMs: displayEndTime ? parseDate(displayEndTime).getTime() : Infinity,
       };
     })
     .filter((e) => now.getTime() >= e.startTimeMs && now.getTime() <= e.endTimeMs)
@@ -145,33 +132,16 @@
     })
     .filter((p) => {
       if (p.displayEndTime === null || p.displayEndTime === "N/A") return true;
-      const end = parseWithServerOffset(p.displayEndTime);
+      const end = parseDate(p.displayEndTime);
       return now <= end;
     });
 
   function getFormattedDate(dateStr) {
-    const end = parseWithServerOffset(dateStr);
-    const dateOptions = { month: "short", day: "numeric" };
-    let loc = normalizeLocale($currentUiLocale);
-    if (showServerTime) {
-      const timeZone =
-        currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
-      return end.toLocaleString(loc, { ...dateOptions, timeZone });
-    }
-    return end.toLocaleString(loc, dateOptions);
+    return formatDate(dateStr, { month: "short", day: "numeric" }, { locale: $currentUiLocale, serverId: currentServerId, showServerTime });
   }
 
   function formatUpdateDate(dateStr) {
-    if (!dateStr) return "";
-    const dt = parseWithServerOffset(dateStr);
-    const dateOptions = { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
-    let loc = normalizeLocale($currentUiLocale);
-    if (showServerTime) {
-      const timeZone =
-        currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
-      return dt.toLocaleString(loc, { ...dateOptions, timeZone });
-    }
-    return dt.toLocaleString(loc, dateOptions);
+    return formatDateTime(dateStr, { locale: $currentUiLocale, serverId: currentServerId, showServerTime });
   }
 
   $: updateStatus = (() => {
@@ -184,7 +154,7 @@
       const endStr = isAsia && v.endTimeAsia ? v.endTimeAsia : v.endTime;
       const startStr = isAsia && v.startTimeAsia ? v.startTimeAsia : v.startTime;
       if (!endStr) continue;
-      const end = parseWithServerOffset(endStr);
+      const end = parseDate(endStr);
       const maintenanceEndMs = end.getTime() + 6 * 60 * 60 * 1000;
       if (now.getTime() < maintenanceEndMs) {
         target = {
@@ -208,7 +178,7 @@
             version: v.version,
             startStr,
             endStr,
-            endDate: parseWithServerOffset(endStr)
+            endDate: parseDate(endStr)
           };
           targetIndex = i;
           break;
@@ -456,12 +426,7 @@
   }
 
   function formatWeekLabel(weekConfig, locale) {
-    if (!weekConfig) return "";
-    const start = new Date(weekConfig.startDate);
-    const end = new Date(weekConfig.endDate);
-    let loc = normalizeLocale(locale);
-    const options = { month: "2-digit", day: "2-digit" };
-    return `${start.toLocaleDateString(loc, options)} - ${end.toLocaleDateString(loc, options)}`;
+    return formatDateRange(weekConfig?.startDate, weekConfig?.endDate, locale, { month: "2-digit", day: "2-digit" });
   }
 
   $: serverNow = getServerDate(now);

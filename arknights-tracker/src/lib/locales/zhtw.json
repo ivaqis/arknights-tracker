@@ -4186,5 +4186,7 @@
   },
   "tacticalCondType": {
     "null": "無環境"
-  }
+  },
+  "advancedSearch": "進階搜尋",
+  "loadMore": "載入更多"
 }

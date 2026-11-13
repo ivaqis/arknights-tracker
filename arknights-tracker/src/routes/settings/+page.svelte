@@ -22,6 +22,7 @@
     import { onDestroy, onMount } from "svelte";
     import { get } from "svelte/store";
     import { fade } from "svelte/transition";
+    import { formatDate } from "$lib/utils/dateUtils";
 
     let showCacheModal = false;
     let isEmailVisible = false;
@@ -137,24 +138,9 @@
     let lastSyncDate = "";
     $: if ($syncStatus && $currentUiLocale && typeof window !== "undefined") {
         const ts = parseInt(localStorage.getItem("ark_last_sync") || "0");
-        if (ts > 0) {
-            try {
-                let loc = $currentUiLocale;
-                if (loc === "my") loc = "ms-MY";
-                lastSyncDate = new Intl.DateTimeFormat(loc, {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                }).format(new Date(ts));
-            } catch (e) {
-                lastSyncDate = new Date(ts).toLocaleString();
-            }
-        } else {
-            lastSyncDate = "-";
-        }
+        lastSyncDate = ts > 0
+            ? formatDate(ts, { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }, { locale: $currentUiLocale })
+            : "-";
     }
 
     $: maskedName = $user?.displayName
