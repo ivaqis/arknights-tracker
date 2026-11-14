@@ -42,6 +42,29 @@ export class UserContractCharactersTable extends Table<Prisma.UserContractCharac
         }));
     }
 
+    public async getCharactersNumberInRecordByContractId(contractId: string): Promise<Amount[]> {
+        const query = Prisma.sql`
+            SELECT CharCount.n, count(*)
+            FROM (SELECT count(DISTINCT C."charId") n
+                  FROM "UserContractCharacter" C
+                  WHERE C."userRecordId" IN (SELECT L.id
+                                             FROM "UserContractLeaderboard" L
+                                             WHERE L."contractId" = ${contractId})
+                  GROUP BY C."userRecordId") as CharCount
+            GROUP BY CharCount.n
+            ORDER BY CharCount.n DESC`;
+
+        const result = await this.prisma.$queryRaw<{
+            n: bigint,
+            count: bigint
+        }[]>(query);
+
+        return result.map(e => ({
+            id: e.n.toString(),
+            count: Number(e.count)
+        }));
+    }
+
     public async create(userRecordId: string, charId: string): Promise<UserContractCharacterRecord> {
         const entity = await this.table.create({
             data: {

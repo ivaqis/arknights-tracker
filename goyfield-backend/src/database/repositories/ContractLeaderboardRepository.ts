@@ -108,4 +108,8 @@ export class ContractLeaderboardRepository extends Repository {
     public async getCharactersUsageByContractId(contractId: string): Promise<Amount[]> {
         return this._characterTable.getCharactersUsageByContractId(contractId);
     }
+
+    public async getCharactersNumberInRecordByContractId(contractId: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersNumberInRecordByContractId(contractId);
+    }
 }

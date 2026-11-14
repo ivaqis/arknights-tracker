@@ -26,8 +26,24 @@ export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuer
             this.getPageRule(),
             this.getRecordsOnPageRule(),
             this.getCharsFilterRule(),
-            this.getCharCountFilterRule()
+            this.getCharCountFilterRule(),
+            this.getIncludeCharsRule(),
+            this.getExcludeCharsRule()
         ];
+    }
+
+    private static getIncludeCharsRule(): ValidationRule<GetMonumentListQuery> {
+        return new ValidationRule(
+            item => item.includeChars === undefined || typeof item.includeChars === "string",
+            "includeChars must be a comma-separated string"
+        );
+    }
+
+    private static getExcludeCharsRule(): ValidationRule<GetMonumentListQuery> {
+        return new ValidationRule(
+            item => item.excludeChars === undefined || typeof item.excludeChars === "string",
+            "excludeChars must be a comma-separated string"
+        );
     }
 
     private static getCharsFilterRule(): ValidationRule<GetMonumentListQuery> {

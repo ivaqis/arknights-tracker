@@ -12,4 +12,6 @@ export interface GetWarEchoesListQuery {
     recordsOnPage: "10" | "20" | "40" | "50" | "60" | "80" | "100";
     charsFilter: string;
     charCountFilter: string;
+    includeChars?: string;
+    excludeChars?: string;
 }

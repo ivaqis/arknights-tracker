@@ -29,6 +29,8 @@ export class GetMonumentList extends Controller<
     private readonly _recordsOnPage: number;
     private readonly _charsFilter: string[];
     private readonly _charCountFilter: number[];
+    private readonly _includeChars: string[];
+    private readonly _excludeChars: string[];
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentListResponse>, undefined, GetMonumentListQuery>, res: e.Response<ResponseBody<GetMonumentListResponse>>) {
         super(req, res);
@@ -41,6 +43,8 @@ export class GetMonumentList extends Controller<
         this._recordsOnPage = parseInt(req.query.recordsOnPage, 10);
         this._charsFilter = req.query.charsFilter.split(",").filter(Boolean);
         this._charCountFilter = req.query.charCountFilter.split(",").filter(Boolean).map(Number);
+        this._includeChars = req.query.includeChars ? req.query.includeChars.split(',').map(s => s.trim()).filter(Boolean) : [];
+        this._excludeChars = req.query.excludeChars ? req.query.excludeChars.split(',').map(s => s.trim()).filter(Boolean) : [];
     }
 
     protected async execute(): Promise<void> {
@@ -52,7 +56,9 @@ export class GetMonumentList extends Controller<
 
         const monumentFilters: MonumentFilters = {
             chars: this._charsFilter.length === 0 ? null : this._charsFilter,
-            charCount: this._charCountFilter.length === 0 ? null : this._charCountFilter
+            charCount: this._charCountFilter.length === 0 ? null : this._charCountFilter,
+            includeChars: this._includeChars.length === 0 ? undefined : this._includeChars,
+            excludeChars: this._excludeChars.length === 0 ? undefined : this._excludeChars
         };
 
         const count = await searcher.countPublicRuns(this._dungeonId, serverId, monumentFilters);

@@ -6,5 +6,6 @@ export interface GetContractListResponse {
     totalCount: number;
     filters?: {
         chars: Amount[];
+        charCount?: Amount[];
     };
 }

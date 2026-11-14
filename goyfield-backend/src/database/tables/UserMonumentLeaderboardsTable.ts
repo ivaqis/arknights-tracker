@@ -267,6 +267,30 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return entities.map(UserMonumentLeaderboardRecord.createFromEntity);
     }
 
+    private static getCharFilterSql(includeChars?: string[], excludeChars?: string[]): Prisma.Sql {
+        let charFilterSql = Prisma.sql``;
+        if (includeChars && includeChars.length > 0) {
+            for (const charId of includeChars) {
+                if (charId === "chr_0002_endminm" || charId === "chr_0003_endminf") {
+                    charFilterSql = Prisma.sql`${charFilterSql} AND EXISTS (SELECT 1 FROM "UserMonumentCharacter" uc WHERE uc."recordId" = L.id AND uc."charId" IN ('chr_0002_endminm', 'chr_0003_endminf'))`;
+                } else {
+                    charFilterSql = Prisma.sql`${charFilterSql} AND EXISTS (SELECT 1 FROM "UserMonumentCharacter" uc WHERE uc."recordId" = L.id AND uc."charId" = ${charId})`;
+                }
+            }
+        }
+        if (excludeChars && excludeChars.length > 0) {
+            const hasEndmin = excludeChars.includes("chr_0002_endminm") || excludeChars.includes("chr_0003_endminf");
+            const regularExcludes = excludeChars.filter(c => c !== "chr_0002_endminm" && c !== "chr_0003_endminf");
+            if (hasEndmin) {
+                charFilterSql = Prisma.sql`${charFilterSql} AND NOT EXISTS (SELECT 1 FROM "UserMonumentCharacter" uc WHERE uc."recordId" = L.id AND uc."charId" IN ('chr_0002_endminm', 'chr_0003_endminf'))`;
+            }
+            if (regularExcludes.length > 0) {
+                charFilterSql = Prisma.sql`${charFilterSql} AND NOT EXISTS (SELECT 1 FROM "UserMonumentCharacter" uc WHERE uc."recordId" = L.id AND uc."charId" = ANY(${regularExcludes}::text[]))`;
+            }
+        }
+        return charFilterSql;
+    }
+
     public async findIdsByDungeonId(dungeonId: string,
                                     publicOnly: boolean,
                                     serverId: string | null,
@@ -276,6 +300,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                                     take?: number,
                                     skip?: number
     ): Promise<string[]> {
+        const charFilterSql = UserMonumentLeaderboardsTable.getCharFilterSql(filters.includeChars, filters.excludeChars);
         const query = Prisma.sql`
             SELECT DISTINCT L.id, G.level, L."clearTimeSec" clear_time_sec, CharCount.n count, L."updatedAt"
             FROM "UserMonumentLeaderboard" L
@@ -290,6 +315,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ", ")})` : Prisma.sql``}
                 ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}
+                ${charFilterSql}
             ${UserMonumentLeaderboardsTable.getOrderSql(sortField, sortOrder)}
             ${skip !== undefined ? Prisma.sql`OFFSET ${skip}` : Prisma.sql``} 
             ${take !== undefined ? Prisma.sql`LIMIT ${take}` : Prisma.sql``}`;
@@ -390,6 +416,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
     }
 
     public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
+        const charFilterSql = UserMonumentLeaderboardsTable.getCharFilterSql(filters.includeChars, filters.excludeChars);
         const query = Prisma.sql`
             SELECT count(DISTINCT L.id)
             FROM "UserMonumentLeaderboard" L
@@ -403,7 +430,8 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 ${serverId ? Prisma.sql`AND Game."serverId" = ${serverId}` : Prisma.sql``}
                 ${publicOnly ? Prisma.sql`AND U."isPrivate" = false AND U."hideLeaderboard" = false` : Prisma.sql``}
                 ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
-                ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}`;
+                ${filters.charCount ? Prisma.sql`AND CharCount.n IN (${Prisma.join(filters.charCount, ", ")})` : Prisma.sql``}
+                ${charFilterSql}`;
 
         const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
 

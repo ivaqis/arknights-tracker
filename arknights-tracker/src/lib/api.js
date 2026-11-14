@@ -568,6 +568,13 @@ export async function fetchLeaderboard(params = 'contract') {
                 query.set('groupId', options.groupId);
             }
 
+            if (options.includeChars) {
+                query.set('includeChars', Array.isArray(options.includeChars) ? options.includeChars.join(',') : options.includeChars);
+            }
+            if (options.excludeChars) {
+                query.set('excludeChars', Array.isArray(options.excludeChars) ? options.excludeChars.join(',') : options.excludeChars);
+            }
+
             const res = await fetch(`${endpoint}?${query.toString()}`);
             if (!res.ok) throw new Error(`Failed to fetch ${eventType} leaderboard`);
             const json = await res.json();

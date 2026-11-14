@@ -55,8 +55,10 @@ export class GetContractList extends Controller<
 
         const count = await searcher.countPublic(this._contractId, serverId, this._charCountFilter, this._withVideo, this._includeChars, this._excludeChars);
         const charFilters = await this._database.contractLeaderboard.getCharactersUsageByContractId(this._contractId);
+        const charCountFilters = await this._database.contractLeaderboard.getCharactersNumberInRecordByContractId(this._contractId);
 
         const filters = {
+            charCount: charCountFilters,
             chars: charFilters
         };
 

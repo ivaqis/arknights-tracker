@@ -27,8 +27,24 @@ export class GetWarEchoesListQueryValidator extends Validator<GetWarEchoesListQu
             this.getPageRule(),
             this.getRecordsOnPageRule(),
             this.getCharsFilterRule(),
-            this.getCharCountFilterRule()
+            this.getCharCountFilterRule(),
+            this.getIncludeCharsRule(),
+            this.getExcludeCharsRule()
         ];
+    }
+
+    private static getIncludeCharsRule(): ValidationRule<GetWarEchoesListQuery> {
+        return new ValidationRule(
+            item => item.includeChars === undefined || typeof item.includeChars === "string",
+            "includeChars must be a comma-separated string"
+        );
+    }
+
+    private static getExcludeCharsRule(): ValidationRule<GetWarEchoesListQuery> {
+        return new ValidationRule(
+            item => item.excludeChars === undefined || typeof item.excludeChars === "string",
+            "excludeChars must be a comma-separated string"
+        );
     }
 
     private static getGroupIdRule(): ValidationRule<GetWarEchoesListQuery> {
