@@ -643,9 +643,24 @@ function buildSnippetString(clean: string, bestIdx: number, termLen: number, hig
     return highlightText(snippet, highlightTerms);
 }
 
+function stripTags(text: string): string {
+    let prev = "";
+    let curr = text;
+    while (curr !== prev) {
+        prev = curr;
+        curr = curr.replace(/<[^>]*>/g, "");
+    }
+    prev = "";
+    while (curr !== prev) {
+        prev = curr;
+        curr = curr.replace(/\{[^{}]*\}/g, "");
+    }
+    return curr.replace(/\s+/g, " ").trim();
+}
+
 function extractSnippet(text: string, fullPhrase: string, terms: string[], stemmedTerms: string[]): string {
     if (!text) return "";
-    const clean = text.replace(/<[^>]+>/g, "").replace(/\{[^}]+\}/g, "").replace(/\s+/g, " ").trim();
+    const clean = stripTags(text);
     if (!clean) return "";
     const lower = clean.toLowerCase();
 
@@ -691,7 +706,7 @@ const descIndexMap: Record<string, Map<string, IndexedDesc[]>> = {};
 
 function addDesc(map: Map<string, IndexedDesc[]>, id: string, text: any): void {
     if (!id || typeof text !== "string") return;
-    const clean = text.replace(/<[^>]+>/g, "").replace(/\{[^}]+\}/g, "").replace(/\s+/g, " ").trim();
+    const clean = stripTags(text);
     if (!clean) return;
 
     let list = map.get(id);
