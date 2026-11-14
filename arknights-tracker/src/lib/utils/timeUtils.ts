@@ -19,16 +19,13 @@ export function formatRelativeTime(updatedAt: string | number | null | undefined
     const mins = Math.floor(diff / 60000);
     if (mins < 1) return t("profile.time_just_now");
     const hours = Math.floor(mins / 60);
-    if (hours < 1) return t("profile.time_hours", { n: hours });
+    if (hours < 1) return t("profile.time_mins", { n: mins });
     const days = Math.floor(hours / 24);
-    if (days < 1) return t("profile.time_days", { n: days });
+    if (days < 1) return t("profile.time_hours", { n: hours });
     return t("profile.time_days", { n: days });
 }
 
 export function getServerLabel(serverId: string | number | null | undefined): string {
-    const s = String(serverId);
-    if (s === "1") return "Americas/Europe";
-    if (s === "2") return "Asia";
-    return "";
+    return String(serverId) === "2" ? "Asia" : "Americas / Europe";
 }
 
