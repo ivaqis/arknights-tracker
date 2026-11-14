@@ -2,6 +2,7 @@ import { UserContractCharacterEntity } from "@database/entities/UserContractChar
 import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord.js";
 import { Table } from "@database/tables/Table.js";
 import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
+import { Amount } from "@models/Amount.js";
 
 export class UserContractCharactersTable extends Table<Prisma.UserContractCharacterDelegate> {
 
@@ -18,6 +19,27 @@ export class UserContractCharactersTable extends Table<Prisma.UserContractCharac
         });
 
         return entities.map(entity => new UserContractCharacterRecord(entity));
+    }
+
+    public async getCharactersUsageByContractId(contractId: string): Promise<Amount[]> {
+        const query = Prisma.sql`
+            SELECT C."charId" char_id, count(DISTINCT C."userRecordId") n
+            FROM "UserContractCharacter" C
+            WHERE C."userRecordId" IN (SELECT L.id
+                                       FROM "UserContractLeaderboard" L
+                                       WHERE L."contractId" = ${contractId})
+            GROUP BY C."charId"
+            ORDER BY n DESC`;
+
+        const result = await this.prisma.$queryRaw<{
+            char_id: string;
+            n: bigint;
+        }[]>(query);
+
+        return result.map(e => ({
+            id: e.char_id,
+            count: Number(e.n)
+        }));
     }
 
     public async create(userRecordId: string, charId: string): Promise<UserContractCharacterRecord> {

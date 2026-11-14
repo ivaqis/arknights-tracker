@@ -3580,7 +3580,8 @@
     "filter_include": "Inclusões",
     "filter_exclude": "Exclusões",
     "filter_add_operator": "+ Adicionar",
-    "filter_select_operators": "Selecionar operadores"
+    "filter_select_operators": "Selecionar operadores",
+    "top_operators": "Principais operadores por uso"
   },
   "contractVideo": {
     "add_video_btn": "Adicionar vídeo",

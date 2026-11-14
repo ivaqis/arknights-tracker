@@ -855,7 +855,8 @@
     "filter_include": "Қосу",
     "filter_exclude": "Шығару",
     "filter_add_operator": "+ Қосу",
-    "filter_select_operators": "Операторларды таңдаңыз"
+    "filter_select_operators": "Операторларды таңдаңыз",
+    "top_operators": "Қолданылуы бойынша үздік операторлар"
   },
   "contractVideo": {
     "add_video_btn": "Бейне қосу",

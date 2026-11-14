@@ -7,6 +7,7 @@ import { Repository } from "@database/repositories/Repository.js";
 import { UserContractCharactersTable } from "@database/tables/UserContractCharactersTable.js";
 import { UserContractLeaderboardsTable } from "@database/tables/UserContractLeaderboardsTable.js";
 import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { Amount } from "@models/Amount.js";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
 import { SortOrder } from "@models/SortOrder.js";
@@ -104,5 +105,7 @@ export class ContractLeaderboardRepository extends Repository {
         return this._characterTable.findByUserRecordId(userRecordId, charId);
     }
 
-    // public async countCharactersByContractId() // todo
+    public async getCharactersUsageByContractId(contractId: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersUsageByContractId(contractId);
+    }
 }

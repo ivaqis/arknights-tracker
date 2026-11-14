@@ -3580,7 +3580,8 @@
     "filter_include": "含む",
     "filter_exclude": "除外",
     "filter_add_operator": "+ 追加",
-    "filter_select_operators": "オペレーターを選択"
+    "filter_select_operators": "オペレーターを選択",
+    "top_operators": "使用率上位のオペレーター"
   },
   "contractVideo": {
     "add_video_btn": "動画を追加",

@@ -855,7 +855,8 @@
     "filter_include": "Sisällytä",
     "filter_exclude": "Sulje pois",
     "filter_add_operator": "+ Lisää",
-    "filter_select_operators": "Valitse operaattorit"
+    "filter_select_operators": "Valitse operaattorit",
+    "top_operators": "Käytetyimmät operaattorit"
   },
   "contractVideo": {
     "add_video_btn": "Lisää video",

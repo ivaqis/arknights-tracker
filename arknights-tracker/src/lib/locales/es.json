@@ -3581,7 +3581,8 @@
     "filter_include": "Inclusiones",
     "filter_exclude": "Exclusiones",
     "filter_add_operator": "+ Añadir",
-    "filter_select_operators": "Seleccionar operadores"
+    "filter_select_operators": "Seleccionar operadores",
+    "top_operators": "Mejores operadores por uso"
   },
   "contractVideo": {
     "add_video_btn": "Añadir video",

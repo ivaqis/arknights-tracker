@@ -596,7 +596,8 @@ export async function fetchLeaderboard(params = 'contract') {
                         weapon: normalizeWeapon(c.weapon)
                     }))
                 })),
-                totalCount
+                totalCount,
+                filters: json.data?.filters || null
             };
         }
 
@@ -670,13 +671,15 @@ export async function fetchLeaderboard(params = 'contract') {
                     weapon: normalizeWeapon(c.weapon)
                 }))
             })),
-            totalCount
+            totalCount,
+            filters: json.data?.filters || null
         };
     } catch (e) {
         console.error("fetchLeaderboard Error:", e);
         return {
             list: [],
-            totalCount: 0
+            totalCount: 0,
+            filters: null
         };
     }
 }

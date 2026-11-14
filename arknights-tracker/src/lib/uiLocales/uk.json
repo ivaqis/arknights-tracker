@@ -855,7 +855,8 @@
     "filter_include": "Включення",
     "filter_exclude": "Виключення",
     "filter_add_operator": "+ Додати",
-    "filter_select_operators": "Виберіть оперативників"
+    "filter_select_operators": "Виберіть оперативників",
+    "top_operators": "Топ оперативників за використанням"
   },
   "contractVideo": {
     "add_video_btn": "Додати відео",

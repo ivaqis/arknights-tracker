@@ -3759,7 +3759,8 @@
     "filter_include": "Включения",
     "filter_exclude": "Исключения",
     "filter_add_operator": "+ Добавить",
-    "filter_select_operators": "Выберите оперативников"
+    "filter_select_operators": "Выберите оперативников",
+    "top_operators": "Топ оперативников по использованию"
   },
   "contractVideo": {
     "add_video_btn": "Добавить видео",

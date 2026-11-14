@@ -54,11 +54,17 @@ export class GetContractList extends Controller<
         const skip = this._recordsOnPage * (this._page - 1);
 
         const count = await searcher.countPublic(this._contractId, serverId, this._charCountFilter, this._withVideo, this._includeChars, this._excludeChars);
+        const charFilters = await this._database.contractLeaderboard.getCharactersUsageByContractId(this._contractId);
+
+        const filters = {
+            chars: charFilters
+        };
 
         if (count <= skip) {
             this.data = {
                 list: [],
-                totalCount: count
+                totalCount: count,
+                filters
             };
 
             return;
@@ -68,7 +74,8 @@ export class GetContractList extends Controller<
 
         this.data = {
             list: list.map(record => record.getEntity()),
-            totalCount: count
+            totalCount: count,
+            filters
         };
     }
 }

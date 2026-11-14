@@ -3754,7 +3754,8 @@
     "filter_include": "Inclusions",
     "filter_exclude": "Exclusions",
     "filter_add_operator": "+ Add",
-    "filter_select_operators": "Select operators"
+    "filter_select_operators": "Select operators",
+    "top_operators": "Top Operators by Usage"
   },
   "contractVideo": {
     "add_video_btn": "Add video",

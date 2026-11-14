@@ -3619,7 +3619,8 @@
     "filter_include": "Bao gồm",
     "filter_exclude": "Loại trừ",
     "filter_add_operator": "+ Thêm",
-    "filter_select_operators": "Chọn đặc vụ"
+    "filter_select_operators": "Chọn đặc vụ",
+    "top_operators": "Đặc vụ hàng đầu theo mức sử dụng"
   },
   "contractVideo": {
     "add_video_btn": "Thêm video",

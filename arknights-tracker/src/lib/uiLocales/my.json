@@ -855,7 +855,8 @@
     "filter_include": "ပါဝင်မှုများ",
     "filter_exclude": "ချန်လှပ်မှုများ",
     "filter_add_operator": "+ ထည့်မည်",
-    "filter_select_operators": "အော်ပရေတာများကို ရွေးချယ်ပါ"
+    "filter_select_operators": "အော်ပရေတာများကို ရွေးချယ်ပါ",
+    "top_operators": "အသုံးအများဆုံး အော်ပရေတာများ"
   },
   "contractVideo": {
     "add_video_btn": "ဗီဒီယိုထည့်မည်",

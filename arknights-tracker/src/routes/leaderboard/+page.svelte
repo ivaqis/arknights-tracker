@@ -490,6 +490,27 @@
 
     const mapCharIdsToBackend = (ids) => ids.map(id => characters[id]?.gameId || id);
 
+    let rawCharFilters = [];
+
+    $: topOperators = (() => {
+        if (!rawCharFilters || rawCharFilters.length === 0) return [];
+        const baseTotal = totalEntries > 0 ? totalEntries : (rawCharFilters[0]?.count || 1);
+        return rawCharFilters.slice(0, 10).map(item => {
+            const svelteId = getSvelteCharId(item.id);
+            const opData = characters[svelteId] || getOperatorData({ id: svelteId });
+            const rawRate = (item.count / baseTotal) * 100;
+            const percent = rawRate >= 100 ? 100 : Math.max(0.01, Number(rawRate.toFixed(2)));
+            const percentLabel = percent % 1 === 0 ? `${percent}%` : `${percent.toFixed(2)}%`;
+            return {
+                id: svelteId,
+                count: item.count,
+                percent,
+                percentLabel,
+                opData
+            };
+        });
+    })();
+
     async function loadLeaderboard() {
         if (!browser) return;
         loading = true;
@@ -511,6 +532,7 @@
             });
             entries = data.list || [];
             totalEntries = data.totalCount || 0;
+            rawCharFilters = data.filters?.chars || [];
         } catch (e) {
             addNotification("error", $t("leaderboard.load_failed"));
         } finally {
@@ -727,7 +749,8 @@
     </div>
 
     <div class="flex flex-col lg:flex-row gap-6 items-start">
-        <div class="w-full lg:w-[320px] xl:w-[340px] shrink-0 bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl p-5 shadow-sm flex flex-col gap-5">
+        <div class="w-full lg:w-[320px] xl:w-[340px] shrink-0 flex flex-col gap-3">
+            <div class="bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl p-5 shadow-sm flex flex-col gap-5">
             {#if selectedEvent === 'monument'}
                 <div class="flex flex-col gap-1.5">
                     <div class="flex items-center justify-between">
@@ -1025,6 +1048,48 @@
                                 {/each}
                             </div>
                         {/if}
+                    </div>
+                </div>
+            {/if}
+            </div>
+
+            {#if topOperators.length > 0}
+                <div class="bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+                    <div class="px-4 py-3 border-b border-gray-100 dark:border-white/10 flex items-center justify-between">
+                        <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                            {$t("leaderboard.top_operators")}
+                        </span>
+                    </div>
+
+                    <div class="divide-y divide-gray-100 dark:divide-white/5">
+                        {#each topOperators as item}
+                            {@const rarityColor = getRarityColor(item.opData?.rarity || 4)}
+                            <div class="relative px-3.5 py-1.5 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-white/5 transition-colors gap-2 overflow-hidden">
+                                <div
+                                    class="absolute bottom-0 left-0 h-[1px] transition-all"
+                                    style="width: {item.percent}%; background-color: {rarityColor};"
+                                ></div>
+                                <div class="flex items-center gap-2.5 min-w-0">
+                                    <div
+                                        class="w-7 h-7 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border shrink-0"
+                                        style="border-color: {rarityColor};"
+                                    >
+                                        <Image
+                                            id={item.id}
+                                            variant="operator-preview"
+                                            className="w-full h-full object-cover scale-110"
+                                            alt={item.opData?.name || item.id}
+                                        />
+                                    </div>
+                                    <span class="text-xs font-medium text-gray-900 dark:text-[#FDFDFD] truncate" title={getOperatorName(item.opData)}>
+                                        {getOperatorName(item.opData)}
+                                    </span>
+                                </div>
+                                <span class="text-xs font-bold font-nums text-gray-900 dark:text-[#FDFDFD] shrink-0">
+                                    {item.percentLabel}
+                                </span>
+                            </div>
+                        {/each}
                     </div>
                 </div>
             {/if}

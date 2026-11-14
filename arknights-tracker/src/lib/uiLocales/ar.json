@@ -855,7 +855,8 @@
     "filter_include": "تضمين",
     "filter_exclude": "استبعاد",
     "filter_add_operator": "+ إضافة",
-    "filter_select_operators": "اختر العملاء"
+    "filter_select_operators": "اختر العملاء",
+    "top_operators": "أعلى العملاء استخدامًا"
   },
   "contractVideo": {
     "add_video_btn": "إضافة فيديو",

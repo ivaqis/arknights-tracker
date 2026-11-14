@@ -3580,7 +3580,8 @@
     "filter_include": "Sertakan",
     "filter_exclude": "Kecualikan",
     "filter_add_operator": "+ Tambah",
-    "filter_select_operators": "Pilih operator"
+    "filter_select_operators": "Pilih operator",
+    "top_operators": "Operator Teratas berdasarkan Penggunaan"
   },
   "contractVideo": {
     "add_video_btn": "Tambah video",

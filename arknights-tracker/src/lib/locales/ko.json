@@ -3580,7 +3580,8 @@
     "filter_include": "포함",
     "filter_exclude": "제외",
     "filter_add_operator": "+ 추가",
-    "filter_select_operators": "오퍼레이터 선택"
+    "filter_select_operators": "오퍼레이터 선택",
+    "top_operators": "사용률 상위 오퍼레이터"
   },
   "contractVideo": {
     "add_video_btn": "영상 추가",

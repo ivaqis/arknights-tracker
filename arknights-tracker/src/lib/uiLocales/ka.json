@@ -855,7 +855,8 @@
     "filter_include": "ჩართვა",
     "filter_exclude": "გამორიცხვა",
     "filter_add_operator": "+ დამატება",
-    "filter_select_operators": "აირჩიეთ ოპერატორები"
+    "filter_select_operators": "აირჩიეთ ოპერატორები",
+    "top_operators": "ყველაზე გამოყენებადი ოპერატორები"
   },
   "contractVideo": {
     "add_video_btn": "ვიდეოს დამატება",
