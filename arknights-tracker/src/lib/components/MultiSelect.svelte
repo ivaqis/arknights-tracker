@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
+  import { clickOutside } from "$lib/actions/clickOutside";
 
   import Image from "$lib/components/Image.svelte";
   import Icon from "$lib/components/Icon.svelte";
@@ -36,24 +37,10 @@
     dispatch('change', value);
   }
 
-  function clickOutside(node) {
-    const handleClick = event => {
-      if (node && !node.contains(event.target) && !event.defaultPrevented) {
-        isOpen = false;
-      }
-    };
-    document.addEventListener('click', handleClick, true);
-    return {
-      destroy() {
-        document.removeEventListener('click', handleClick, true);
-      }
-    };
-  }
-
   $: selectedOptions = options.filter(o => value.includes(o.value));
 </script>
 
-<div class="relative {className}" use:clickOutside>
+<div class="relative {className}" use:clickOutside={() => isOpen = false}>
   <div
     on:click={toggle}
     on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggle()}

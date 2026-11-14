@@ -215,6 +215,28 @@
         closeSearchModal();
     }
 
+    function getItemTargetUrl(item: SearchResult): string {
+        return item.category === "achievements" ? `/achievements?id=${item.id}` : (item.url || "");
+    }
+
+    function handleItemAuxClick(e: MouseEvent, item: SearchResult): void {
+        if (e.button !== 1) return;
+        const targetUrl = getItemTargetUrl(item);
+        if (!targetUrl) return;
+        e.preventDefault();
+        e.stopPropagation();
+        saveToRecent(item);
+        if (browser) {
+            window.open(targetUrl, "_blank", "noopener,noreferrer");
+        }
+    }
+
+    function handleItemMouseDown(e: MouseEvent, item: SearchResult): void {
+        if (e.button === 1 && getItemTargetUrl(item)) {
+            e.preventDefault();
+        }
+    }
+
     function selectItem(item: SearchResult): void {
         saveToRecent(item);
 
@@ -227,7 +249,7 @@
             if (browser) {
                 document.body.style.overflow = "";
             }
-            const targetUrl = item.category === "achievements" ? `/achievements?id=${item.id}` : item.url;
+            const targetUrl = getItemTargetUrl(item);
             if (item.category === "achievements" && browser) {
                 window.dispatchEvent(new CustomEvent("focus-achievement", { detail: { id: item.id } }));
             }
@@ -381,6 +403,8 @@
                                 data-index={index}
                                 class="w-full text-left p-2.5 rounded-xl flex items-center justify-between gap-3 transition-colors {selectedIndex === index ? 'bg-[#FFE145]/15 dark:bg-[#FFE145]/10 border border-[#FFE145]/60 text-gray-900 dark:text-white shadow-sm' : 'hover:bg-gray-100/70 dark:hover:bg-[#2f2f2f] text-gray-800 dark:text-gray-200 border border-transparent'}"
                                 on:click={() => selectItem(item)}
+                                on:mousedown={(e) => handleItemMouseDown(e, item)}
+                                on:auxclick={(e) => handleItemAuxClick(e, item)}
                                 on:mouseenter={() => (selectedIndex = index)}
                             >
                                 <div class="flex items-center gap-3 min-w-0 flex-1">
@@ -458,6 +482,8 @@
                             data-index={index}
                             class="w-full text-left p-2.5 rounded-xl flex items-center justify-between gap-3 transition-colors {selectedIndex === index ? 'bg-[#FFE145]/15 dark:bg-[#FFE145]/10 border border-[#FFE145]/60 text-gray-900 dark:text-white shadow-sm' : 'hover:bg-gray-100/70 dark:hover:bg-[#2f2f2f] text-gray-800 dark:text-gray-200 border border-transparent'}"
                             on:click={() => selectItem(item)}
+                            on:mousedown={(e) => handleItemMouseDown(e, item)}
+                            on:auxclick={(e) => handleItemAuxClick(e, item)}
                             on:mouseenter={() => (selectedIndex = index)}
                         >
                             <div class="flex items-center gap-3 min-w-0">

@@ -1,5 +1,3 @@
-// src/lib/data/weaponLevelUpTable.js
-
 export const levels = {
     "weapon_upgrade_curve_3star": {
         "list": [

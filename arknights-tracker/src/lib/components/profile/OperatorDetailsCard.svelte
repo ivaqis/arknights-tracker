@@ -10,46 +10,14 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
+    import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils";
+    import { interpolateBlackboard } from "$lib/utils/blackboardUtils";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { addNotification } from "$lib/stores/notifications.js";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import { getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponTerms as defaultGetWeaponTerms } from "$lib/utils/profileUtils.js";
-
-    const localeModules = {
-        en: import.meta.glob("/src/lib/locales/en/equipment.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/equipment.json"),
-        de: import.meta.glob("/src/lib/locales/de/equipment.json"),
-        es: import.meta.glob("/src/lib/locales/es/equipment.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/equipment.json"),
-        id: import.meta.glob("/src/lib/locales/id/equipment.json"),
-        it: import.meta.glob("/src/lib/locales/it/equipment.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/equipment.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/equipment.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/equipment.json"),
-        th: import.meta.glob("/src/lib/locales/th/equipment.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/equipment.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/equipment.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/equipment.json"),
-    };
-
-    const weaponLocaleModules = {
-        en: import.meta.glob("/src/lib/locales/en/weapons.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/weapons.json"),
-        de: import.meta.glob("/src/lib/locales/de/weapons.json"),
-        es: import.meta.glob("/src/lib/locales/es/weapons.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/weapons.json"),
-        id: import.meta.glob("/src/lib/locales/id/weapons.json"),
-        it: import.meta.glob("/src/lib/locales/it/weapons.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/weapons.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/weapons.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/weapons.json"),
-        th: import.meta.glob("/src/lib/locales/th/weapons.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/weapons.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/weapons.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/weapons.json"),
-    };
+    import { loadLocaleNamespace } from "$lib/utils/localeLoader";
 
     let equipLocaleData = {};
     let weaponLocaleData = {};
@@ -59,75 +27,11 @@
     $: curLabel = $currentLocale === 'ru' ? 'текущ.' : 'current';
 
     async function loadEquipLocale(lang) {
-        lang = lang || "en";
-        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
-        const localePath = `/src/lib/locales/${safeLang}/equipment.json`;
-        const fallbackPath = `/src/lib/locales/en/equipment.json`;
-
-        let localeLoader = localeModules[safeLang]?.[localePath];
-        if (!localeLoader && safeLang !== "en") {
-            localeLoader = localeModules["en"]?.[fallbackPath];
-        }
-
-        if (localeLoader) {
-            const mod = await localeLoader();
-            equipLocaleData = mod.default || mod;
-        } else {
-            equipLocaleData = {};
-        }
+        equipLocaleData = await loadLocaleNamespace("equipment", lang);
     }
 
     async function loadWeaponLocale(lang) {
-        lang = lang || "en";
-        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
-        const localePath = `/src/lib/locales/${safeLang}/weapons.json`;
-        const fallbackPath = `/src/lib/locales/en/weapons.json`;
-
-        let localeLoader = weaponLocaleModules[safeLang]?.[localePath];
-        if (!localeLoader && safeLang !== "en") {
-            localeLoader = weaponLocaleModules["en"]?.[fallbackPath];
-        }
-
-        if (localeLoader) {
-            const mod = await localeLoader();
-            weaponLocaleData = mod.default || mod;
-        } else {
-            weaponLocaleData = {};
-        }
-    }
-
-    function interpolateBlackboard(text, bb) {
-        if (!text) return "";
-        if (!bb || Object.keys(bb).length === 0) return text;
-
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
-
-            for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
-            }
-
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
-
-            let result = 0;
-            try {
-                result = new Function("return " + mathStr)();
-            } catch (e) {
-                return match;
-            }
-            if (format) {
-                if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(4)) + "%";
-                } else if (format === "0") {
-                    result = Math.round(result);
-                } else {
-                    result = parseFloat(Number(result).toFixed(4));
-                }
-            }
-            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-        });
+        weaponLocaleData = await loadLocaleNamespace("weapons", lang);
     }
 
     function tOrFallback(key, fallback) {

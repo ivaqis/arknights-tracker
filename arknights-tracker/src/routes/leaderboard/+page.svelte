@@ -11,10 +11,12 @@
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor, getRankColor } from "$lib/utils/colorUtils";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { parseRichText } from "$lib/utils/richText.js";
     import { isEventStarted, formatDateRange } from "$lib/utils/dateUtils";
+    import { getOperatorData, getSvelteCharId, mapProfessionToClass, mapPropertyToElement } from "$lib/utils/operatorUtils";
+    import { formatDuration, formatRelativeTime as formatRelTime, getServerLabel } from "$lib/utils/timeUtils";
     import { monumentGroups } from "$lib/data/monuments.js";
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
     import { contingencyContracts } from "$lib/data/contracts.ts";
@@ -650,73 +652,9 @@
 
     $: filteredEntries = entries;
 
-    function formatTime(seconds) {
-        if (!seconds || isNaN(seconds)) return $t("leaderboard.sec", { time: 0 });
-        const m = Math.floor(seconds / 60);
-        const s = Math.round(seconds % 60);
-        if (m > 0 && s > 0) {
-            return $t("leaderboard.min_sec", { m, s });
-        }
-        if (m > 0) {
-            return $t("leaderboard.min", { m });
-        }
-        return $t("leaderboard.sec", { time: s });
-    }
-
-    function formatRelativeTime(updatedAt) {
-        if (!updatedAt) return "";
-        const num = Number(updatedAt);
-        const parsed = (!isNaN(num) && isFinite(num))
-            ? (num < 1e11 ? num * 1000 : num)
-            : new Date(String(updatedAt).replace(" ", "T")).getTime();
-        if (isNaN(parsed)) return "";
-        const diff = Date.now() - parsed;
-        if (diff < 0) return $t("profile.time_just_now");
-        const mins = Math.floor(diff / 60000);
-        if (mins < 1) return $t("profile.time_just_now");
-        const hours = Math.floor(mins / 60);
-        if (hours < 1) return $t("profile.time_mins", { n: mins });
-        const days = Math.floor(hours / 24);
-        if (days < 1) return $t("profile.time_hours", { n: hours });
-        return $t("profile.time_days", { n: days });
-    }
-
-    function getServerName(serverId) {
-        return serverId === "2" ? "Asia" : "Americas/Europe";
-    }
-
-    function getSvelteCharId(char) {
-        if (!char) return "";
-        const raw = typeof char === "string" ? char : (char.id || char.charId || char.charData?.id || "");
-        const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
-        return found ? found.id : raw;
-    }
-
-    function mapProfessionToClass(key) {
-        if (!key) return "guard";
-        return key.replace("profession_", "");
-    }
-
-    function mapPropertyToElement(key) {
-        if (!key) return null;
-        return key.replace("char_property_", "");
-    }
-
-    function getOperatorData(char) {
-        const svelteId = getSvelteCharId(char);
-        const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
-        if (staticData) {
-            return staticData;
-        }
-
-        return {
-            id: char.charData?.avatarSqUrl || svelteId || char.id,
-            name: char.charData?.name || char.name || "Operator",
-            rarity: Number(char.charData?.rarity?.value || char.rarity || 4),
-            class: mapProfessionToClass(char.charData?.profession?.key) || "guard",
-            element: mapPropertyToElement(char.charData?.property?.key) || null
-        };
-    }
+    $: formatTime = (seconds) => formatDuration(seconds, $t);
+    $: formatRelativeTime = (updatedAt) => formatRelTime(updatedAt, $t);
+    const getServerName = getServerLabel;
 
     function getOperatorName(opData) {
         if (!opData) return "";
@@ -1324,20 +1262,10 @@
                                         class="hover:bg-white/5 transition-colors cursor-pointer"
                                     >
                                         <td class="py-1 px-5">
-                                            {#if rank === 1}
-                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
+                                            {#if rank <= 3}
+                                                <div class="relative w-8 h-8 flex items-center justify-center shrink-0" style="color: {getRankColor(rank)}" title="{rank === 1 ? '1st' : rank === 2 ? '2nd' : '3rd'} Place">
                                                     <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                    <span class="relative font-black font-nums text-xs pb-0.5">1</span>
-                                                </div>
-                                            {:else if rank === 2}
-                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
-                                                    <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                    <span class="relative font-black font-nums text-xs pb-0.5">2</span>
-                                                </div>
-                                            {:else if rank === 3}
-                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
-                                                    <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                    <span class="relative font-black font-nums text-xs pb-0.5">3</span>
+                                                    <span class="relative font-black font-nums text-xs pb-0.5">{rank}</span>
                                                 </div>
                                             {:else}
                                                 <span class="w-8 text-center text-gray-600 dark:text-gray-400 font-bold font-nums text-sm block">{rank}</span>
@@ -1460,20 +1388,10 @@
                             >
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
-                                        {#if rank === 1}
-                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
+                                        {#if rank <= 3}
+                                            <div class="relative w-7 h-7 flex items-center justify-center shrink-0" style="color: {getRankColor(rank)}" title="{rank === 1 ? '1st' : rank === 2 ? '2nd' : '3rd'} Place">
                                                 <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                <span class="relative font-black font-nums text-[11px] pb-0.5">1</span>
-                                            </div>
-                                        {:else if rank === 2}
-                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
-                                                <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                <span class="relative font-black font-nums text-[11px] pb-0.5">2</span>
-                                            </div>
-                                        {:else if rank === 3}
-                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
-                                                <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
-                                                <span class="relative font-black font-nums text-[11px] pb-0.5">3</span>
+                                                <span class="relative font-black font-nums text-[11px] pb-0.5">{rank}</span>
                                             </div>
                                         {:else}
                                             <span class="w-7 text-center text-gray-500 dark:text-gray-400 font-bold font-nums text-xs shrink-0">{rank}</span>

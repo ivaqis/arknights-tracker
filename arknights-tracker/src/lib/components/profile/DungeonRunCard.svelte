@@ -4,7 +4,9 @@
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import { characters } from "$lib/data/characters.js";
+    import { getOperatorData } from "$lib/utils/operatorUtils";
+    import { formatDuration } from "$lib/utils/timeUtils";
+    import { getRankTagStyle } from "$lib/utils/colorUtils";
 
     export let index = 1;
     export let title = "";
@@ -13,24 +15,6 @@
     export let hasBackground = false;
     export let leaderboardUrl = "";
 
-    function getSvelteCharId(char) {
-        if (!char) return "";
-        const raw = typeof char === "string" ? char : (char.id || char.charId || char.charData?.id || "");
-        const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
-        return found ? found.id : raw;
-    }
-
-    function getOperatorData(char) {
-        const svelteId = getSvelteCharId(char);
-        const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
-        if (staticData) return staticData;
-        return {
-            id: svelteId || char.id,
-            name: char.name || "Operator",
-            rarity: Number(char.rarity || 4)
-        };
-    }
-
     function getOperatorName(opData) {
         if (!opData) return "";
         const key = `characters.${opData.id}`;
@@ -38,21 +22,7 @@
         return trans !== key ? trans : opData.name;
     }
 
-    function formatTime(seconds) {
-        if (!seconds || isNaN(seconds)) return $t("leaderboard.sec", { time: 0 });
-        const m = Math.floor(seconds / 60);
-        const s = Math.round(seconds % 60);
-        if (m > 0 && s > 0) return $t("leaderboard.min_sec", { m, s });
-        if (m > 0) return $t("leaderboard.min", { m });
-        return $t("leaderboard.sec", { time: s });
-    }
-
-    function getRankTagStyle(rank) {
-        if (rank === 1) return "bg-[#FFE145] text-gray-900";
-        if (rank === 2) return "bg-[#C0C0C0] text-gray-900";
-        if (rank === 3) return "bg-[#CD7F32] text-white";
-        return "bg-white/10 text-gray-300 border border-white/15";
-    }
+    const rankTagStyle = (rank) => getRankTagStyle(rank, false);
 </script>
 
 <div class="flex items-center justify-between gap-3 p-3 sm:p-3.5 rounded-xl backdrop-blur-xl border transition-all {!hasBackground ? 'bg-gray-50/70 dark:bg-white/5 border-gray-200 dark:border-white/5' : 'bg-black/20 border-white/10'}">
@@ -94,12 +64,12 @@
                             #{run.rank}/{run.totalCount}
                         </a>
                     {:else}
-                        <span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 {getRankTagStyle(run.rank)}">
+                        <span class="px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold font-nums inline-flex items-center justify-center shrink-0 {rankTagStyle(run.rank)}">
                             #{run.rank}/{run.totalCount}
                         </span>
                     {/if}
                     <span class="font-bold font-nums text-xs sm:text-sm text-[#FFE145] shrink-0">
-                        {formatTime(run.clearTimeSec)}
+                        {formatDuration(run.clearTimeSec, $t)}
                     </span>
                 {:else}
                     <span class="text-xs text-gray-400 font-mono shrink-0">—</span>

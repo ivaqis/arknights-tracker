@@ -10,6 +10,7 @@
   import { pullData } from "$lib/stores/pulls";
   import { splitEquipmentView } from "$lib/stores/settings.js";
   import { formatDate } from "$lib/utils/dateUtils";
+  import { clickOutside } from "$lib/actions/clickOutside";
   import { getWeaponUrl } from "$lib/utils/linkUtils";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
@@ -359,20 +360,6 @@
     }
   }
 
-  function clickOutside(node) {
-    const handleClick = event => {
-      if (node && !node.contains(event.target) && !event.defaultPrevented) {
-        isDropdownOpen = false;
-      }
-    };
-    document.addEventListener('click', handleClick, true);
-    return {
-      destroy() {
-        document.removeEventListener('click', handleClick, true);
-      }
-    };
-  }
-
   function formatBannerDate(dateStr, locale) {
     return formatDate(dateStr, { day: "2-digit", month: "2-digit", year: "2-digit" }, { locale });
   }
@@ -451,7 +438,7 @@
     </div>
   {/if}
 
-  <div class="flex justify-between items-start mb-2.5 pt-1 relative" use:clickOutside>
+  <div class="flex justify-between items-start mb-2.5 pt-1 relative" use:clickOutside={() => isDropdownOpen = false}>
     <div class="w-2/3 min-w-0">
       <button
         class="w-full text-left font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xl leading-tight transition-opacity

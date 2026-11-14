@@ -7,7 +7,7 @@
     import { disableDarkening, splitEquipmentView } from "$lib/stores/settings.js";
     import { getEnemyUrl, getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { changelogData } from "$lib/data/versions.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
     import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
 
     import Image from "$lib/components/Image.svelte";

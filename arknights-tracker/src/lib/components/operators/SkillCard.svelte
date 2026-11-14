@@ -8,7 +8,7 @@
     import Button from "$lib/components/Button.svelte";
     import Image from "$lib/components/Image.svelte";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
-    import { getHexColorByElement } from "$lib/utils/colorUtils.js";
+    import { getHexColorByElement } from "$lib/utils/colorUtils";
     import { items } from "$lib/data/items/items";
 
     export let charId = "";

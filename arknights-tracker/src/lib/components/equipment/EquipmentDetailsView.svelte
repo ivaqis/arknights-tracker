@@ -5,7 +5,10 @@
     import { changelogData } from "$lib/data/versions.js";
     import { isDarkMode } from "$lib/stores/theme";
     import { browser } from "$app/environment";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
+    import { interpolateBlackboard } from "$lib/utils/blackboardUtils";
+    import { copyTableToClipboard } from "$lib/utils/clipboardUtils";
+    import { loadLocaleItem } from "$lib/utils/localeLoader";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -30,23 +33,6 @@
         return translated === key ? fallback : translated;
     }
 
-    const localeModules = {
-        en: import.meta.glob("/src/lib/locales/en/equipment.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/equipment.json"),
-        de: import.meta.glob("/src/lib/locales/de/equipment.json"),
-        es: import.meta.glob("/src/lib/locales/es/equipment.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/equipment.json"),
-        id: import.meta.glob("/src/lib/locales/id/equipment.json"),
-        it: import.meta.glob("/src/lib/locales/it/equipment.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/equipment.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/equipment.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/equipment.json"),
-        th: import.meta.glob("/src/lib/locales/th/equipment.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/equipment.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/equipment.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/equipment.json"),
-    };
-
     $: equipData = equipment[id] || { rarity: 1, partType: 0 };
 
     let equipLocale = {};
@@ -55,27 +41,7 @@
     $: loadEquipData(id, $currentLocale);
 
     async function loadEquipData(targetId, lang) {
-        if (!targetId) return;
-
-        lang = lang || "en";
-        const safeLang = lang.toLowerCase().replace("-", "");
-
-        const localePath = `/src/lib/locales/${safeLang}/equipment.json`;
-        const fallbackPath = `/src/lib/locales/en/equipment.json`;
-
-        let localeLoader = localeModules[safeLang]?.[localePath];
-
-        if (!localeLoader && safeLang !== "en") {
-            localeLoader = localeModules["en"]?.[fallbackPath];
-        }
-
-        if (localeLoader) {
-            const mod = await localeLoader();
-            const allEquipLocale = mod.default || mod;
-            equipLocale = allEquipLocale[targetId] || {};
-        } else {
-            equipLocale = {};
-        }
+        equipLocale = await loadLocaleItem("equipment", targetId, lang);
     }
 
     $: equipName = equipLocale.name || id;
@@ -155,84 +121,33 @@
         }))
         : [];
 
-    function interpolateBlackboard(text, bb) {
-        if (!text) return "";
-        if (!bb || Object.keys(bb).length === 0) return text;
-
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
-
-            for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
-            }
-
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
-
-            let result = 0;
-            try {
-                result = new Function("return " + mathStr)();
-            } catch (e) {
-                return match;
-            }
-            if (format) {
-                if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(4)) + "%";
-                } else if (format === "0") {
-                    result = Math.round(result);
-                } else {
-                    result = parseFloat(Number(result).toFixed(4));
-                }
-            }
-            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-        });
-    }
     $: tiers = rarity >= 5 ? [0, 1, 2, 3] : [0];
 
     let isTableCopied = false;
 
     async function copyStatsTable() {
-        let headers = [tOrFallback("sort.stats", "Атрибут")];
-        for (let tier of tiers) {
-            headers.push(`Tier ${tier}`);
-        }
-        let textData = headers.join("\t") + "\n";
-
-        if (equipData.displayAttr) {
-            equipData.displayAttr.forEach((attr) => {
-                let row = [
-                    tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType),
-                ];
-                const isDef = attr.attrType.toLowerCase() === "def";
-                const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar";
-
-                tiers.forEach((valIndex) => {
-                    let val = attr.values[valIndex];
-                    if (isDef && valIndex > 0) {
-                        row.push("-");
-                    } else if (val === 0 || !val) {
-                        row.push("-");
-                    } else if (Math.abs(val) > 0 && Math.abs(val) < 1) {
+        const headers = [tOrFallback("sort.stats", "Атрибут"), ...tiers.map(tier => `Tier ${tier}`)];
+        const rows = (equipData.displayAttr || []).map(attr => {
+            const isDef = attr.attrType.toLowerCase() === "def";
+            const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar";
+            return [
+                tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType),
+                ...tiers.map(valIndex => {
+                    const val = attr.values[valIndex];
+                    if ((isDef && valIndex > 0) || !val) return "-";
+                    if (Math.abs(val) > 0 && Math.abs(val) < 1) {
                         const displayVal = isAllDamage ? (1 - val) : val;
-                        const pct = Math.round(displayVal * 1000) / 10;
-                        row.push(`${pct}%`);
-                    } else {
-                        row.push(`${val}`);
+                        return `${Math.round(displayVal * 1000) / 10}%`;
                     }
-                });
-                textData += row.join("\t") + "\n";
-            });
-        }
-
-        try {
-            await navigator.clipboard.writeText(textData);
+                    return `${val}`;
+                })
+            ];
+        });
+        if (await copyTableToClipboard(headers, rows)) {
             isTableCopied = true;
             setTimeout(() => {
                 isTableCopied = false;
             }, 2000);
-        } catch (err) {
-            console.error("Failed to copy table: ", err);
         }
     }
 

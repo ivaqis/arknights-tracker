@@ -3,7 +3,7 @@ import { weapons } from '$lib/data/weapons';
 import { enemyVariantMap } from '$lib/data/enemies';
 import { characterStickers } from '$lib/data/characterStickers';
 
-const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
+const apiIdToCharId: Record<string, string> = Object.values(characters || {}).reduce((acc: Record<string, string>, char: any) => {
     if (char?.apiId) {
         acc[char.apiId] = char.id;
     }
@@ -13,28 +13,27 @@ const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
     return acc;
 }, {});
 
-const weaponIdToGameId = Object.values(weapons || {}).reduce((acc, w) => {
+const weaponIdToGameId: Record<string, string> = Object.values(weapons || {}).reduce((acc: Record<string, string>, w: any) => {
     if (w?.id && w?.gameId) {
         acc[w.id] = w.gameId;
     }
     return acc;
 }, {});
 
-
-
 const IMAGE_EXT_REGEX = /\.(png|jpg|jpeg|webp|gif|svg)$/i;
 
-export function normalizeId(str) {
+export function normalizeId(str: string | number | null | undefined): string {
     if (!str) return "";
-    if (str.toString().startsWith("http")) return str;
-    const clean = str.toString().trim();
+    const strVal = str.toString();
+    if (strVal.startsWith("http")) return strVal;
+    const clean = strVal.trim();
     if (apiIdToCharId[clean]) {
         return apiIdToCharId[clean];
     }
     return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-./]/g, "");
 }
 
-export function resolveArtName(idOrName) {
+export function resolveArtName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
@@ -62,30 +61,30 @@ export function resolveArtName(idOrName) {
         potNum = "1_ex01";
     }
 
-    const char = characters[charId] || Object.values(characters || {}).find(c => c.id === charId || c.gameId === charId);
+    const char = (characters as Record<string, any>)[charId] || Object.values(characters || {}).find((c: any) => c.id === charId || c.gameId === charId);
     if (char?.gameId) {
         return `pic_${potNum}_${char.gameId}`;
     }
     return clean;
 }
 
-export function resolveWeaponName(idOrName) {
+export function resolveWeaponName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("wpn_")) return clean;
-    const w = weapons[clean] || Object.values(weapons || {}).find(item => item.id === clean || item.gameId === clean);
+    const w = (weapons as Record<string, any>)[clean] || Object.values(weapons || {}).find((item: any) => item.id === clean || item.gameId === clean);
     return w?.gameId || weaponIdToGameId[clean] || clean;
 }
 
-export function resolvePreviewName(idOrName) {
+export function resolvePreviewName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("icon_") || clean.startsWith("common_")) return clean;
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
     if (gameId) {
         return `icon_${gameId}`;
@@ -93,7 +92,7 @@ export function resolvePreviewName(idOrName) {
     return clean;
 }
 
-const WEAPON_ATTACK_ICON_MAP = {
+const WEAPON_ATTACK_ICON_MAP: Record<string, string> = {
     sword: 'icon_attack_sword',
     greatSword: 'icon_attack_claym',
     claymore: 'icon_attack_claym',
@@ -106,64 +105,64 @@ const WEAPON_ATTACK_ICON_MAP = {
     handcannon: 'icon_attack_pistol'
 };
 
-export function resolveBattleIconName(idOrName) {
+export function resolveBattleIconName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("icon_")) return clean;
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
     if (gameId) return `icon_${gameId}`;
     return clean;
 }
 
-export function resolveBarkIconName(idOrName) {
+export function resolveBarkIconName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("aibark_")) return clean;
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
     if (gameId) return `aibark_${gameId}`;
     return clean;
 }
 
-export function resolveCharGameId(idOrName) {
+export function resolveCharGameId(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     return char?.gameId || clean;
 }
 
-export function resolveCharInfoName(idOrName) {
+export function resolveCharInfoName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("bg_charinfo_")) return clean;
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
     if (gameId) return `bg_charinfo_${gameId}`;
     return clean;
 }
 
-export function resolveReceptionPosterName(idOrName) {
+export function resolveReceptionPosterName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
     if (clean.includes(".")) clean = clean.split(".")[0];
     if (clean.startsWith("poster_")) return clean;
-    const char = characters[clean] || Object.values(characters || {}).find(c => c.id === clean || c.gameId === clean || c.apiId === clean);
+    const char = (characters as Record<string, any>)[clean] || Object.values(characters || {}).find((c: any) => c.id === clean || c.gameId === clean || c.apiId === clean);
     const gameId = char?.gameId || (clean.startsWith("chr_") ? clean : null);
     if (gameId) return `poster_${gameId}`;
     return clean;
 }
 
-export function resolveSkillIconName(idOrName) {
+export function resolveSkillIconName(idOrName: string | number | null | undefined): string {
     if (!idOrName) return "";
     let clean = idOrName.toString().trim();
     if (clean.startsWith("http")) return clean;
@@ -181,7 +180,7 @@ export function resolveSkillIconName(idOrName) {
         const charKey = match[1];
         const skillType = match[2].toLowerCase();
 
-        const char = characters[charKey] || Object.values(characters || {}).find(c => c.id === charKey || c.gameId === charKey || c.apiId === charKey);
+        const char = (characters as Record<string, any>)[charKey] || Object.values(characters || {}).find((c: any) => c.id === charKey || c.gameId === charKey || c.apiId === charKey);
         if (char?.gameId) {
             const shortName = char.gameId.replace(/^chr_\d+_/, '');
             const skillShortName = (shortName === 'endminm' || shortName === 'endminf') ? 'endmin' : shortName;
@@ -215,12 +214,26 @@ export function resolveSkillIconName(idOrName) {
     return clean;
 }
 
-export function getImagePath(idOrName, variant = 'operator-icon') {
+const CHAPTER_ICON_MAP: Record<string, string> = {
+    chr_0006_wolfgd: 'chapter_character_char_icon_01',
+    chr_0013_aglina: 'chapter_character_char_icon_02',
+    chr_0016_laevat: 'chapter_character_char_icon_03',
+    chr_0017_yvonne: 'chapter_character_char_icon_04',
+    chr_0028_wulfa: 'chapter_character_char_icon_06',
+    chr_0031_mifu: 'chapter_character_char_icon_07',
+    chr_0033_camille: 'chapter_character_char_icon_08',
+    chr_0032_lizhiyan: 'chapter_character_char_icon_09',
+    chr_0035_liino: 'chapter_character_char_icon_010',
+    chr_0034_typhoea: 'chapter_character_char_icon_011'
+};
+
+export function getImagePath(idOrName: string | number | null | undefined, variant: string = 'operator-icon'): string {
     if (!idOrName) return "";
-    if (idOrName.toString().startsWith("http")) return idOrName;
+    const str = idOrName.toString();
+    if (str.startsWith("http")) return str;
 
     const name = normalizeId(idOrName);
-    const withExt = (n, defaultExt = 'png') => {
+    const withExt = (n: string, defaultExt: string = 'png') => {
         if (!IMAGE_EXT_REGEX.test(n)) return `${n}.${defaultExt}`;
         if (defaultExt === 'webp') {
             return n.replace(IMAGE_EXT_REGEX, '.webp');
@@ -273,7 +286,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/weaponsBig/${withExt(resolveWeaponName(name))}`;
 
         case 'enemy-icon': {
-            const mappedName = enemyVariantMap[name]?.baseId || name;
+            const mappedName = (enemyVariantMap as Record<string, any>)[name]?.baseId || name;
             return `/images/enemies/${withExt(mappedName)}`;
         }
 
@@ -297,7 +310,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'operator-art-lq':
             return `/images/operators/artsLQ/${withExt(resolveArtName(name), 'webp')}`;
-            
+
         case 'contract-tag-icon':
             return `/images/crisisContract/tags/icon_${withExt(name)}`;
 
@@ -341,7 +354,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'operator-chapter-icon':
         case 'chaptchariconnew': {
-            const mapped = CHAPTER_ICON_MAP[name] || CHAPTER_ICON_MAP[characters[name]?.gameId] || name;
+            const mapped = CHAPTER_ICON_MAP[name] || CHAPTER_ICON_MAP[(characters as Record<string, any>)[name]?.gameId] || name;
             return `/images/operators/chaptchariconnew/${withExt(mapped)}`;
         }
 
@@ -366,29 +379,21 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
     }
 }
 
-const CHAPTER_ICON_MAP = {
-    chr_0006_wolfgd: 'chapter_character_char_icon_01',
-    chr_0013_aglina: 'chapter_character_char_icon_02',
-    chr_0016_laevat: 'chapter_character_char_icon_03',
-    chr_0017_yvonne: 'chapter_character_char_icon_04',
-    chr_0028_wulfa: 'chapter_character_char_icon_06',
-    chr_0031_mifu: 'chapter_character_char_icon_07',
-    chr_0033_camille: 'chapter_character_char_icon_08',
-    chr_0032_lizhiyan: 'chapter_character_char_icon_09',
-    chr_0035_liino: 'chapter_character_char_icon_010',
-    chr_0034_typhoea: 'chapter_character_char_icon_011'
-};
+export interface CharacterExtraArt {
+    id: string;
+    url: string;
+}
 
-export function getCharacterExtraArts(characterOrId) {
+export function getCharacterExtraArts(characterOrId: any): CharacterExtraArt[] {
     const char = typeof characterOrId === 'object' && characterOrId !== null
         ? characterOrId
-        : (characters[characterOrId] || Object.values(characters || {}).find(c => c.id === characterOrId || c.gameId === characterOrId));
+        : ((characters as Record<string, any>)[characterOrId] || Object.values(characters || {}).find((c: any) => c.id === characterOrId || c.gameId === characterOrId));
 
     if (!char?.gameId) return [];
     const gid = char.gameId;
     const isEndmin = char.id === 'endministrator1' || char.id === 'endministrator2';
 
-    const arts = [
+    const arts: CharacterExtraArt[] = [
         { id: 'receptionroom', url: getImagePath(gid, 'receptionroom') },
         { id: 'charhorheadicon', url: getImagePath(gid, 'charhorheadicon') },
         { id: 'chargacha', url: getImagePath(gid, 'chargacha') },
@@ -410,7 +415,7 @@ export function getCharacterExtraArts(characterOrId) {
         arts.push({ id: 'chaptcharicon', url: getImagePath(chapterIcon, 'chaptchariconnew') });
     }
 
-    const stickers = characterStickers[char.id] || [];
+    const stickers = (characterStickers as Record<string, string[]>)[char.id] || [];
     for (const file of stickers) {
         const id = file.replace(/^.*[\\/]/, '').replace(/\.[^/.]+$/, '');
         arts.push({
@@ -421,3 +426,4 @@ export function getCharacterExtraArts(characterOrId) {
 
     return arts;
 }
+

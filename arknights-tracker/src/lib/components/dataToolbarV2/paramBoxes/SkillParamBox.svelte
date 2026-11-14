@@ -2,7 +2,7 @@
     import TextParamBoxTemplate from "$lib/components/dataToolbarV2/paramBoxes/TextParamBoxTemplate.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import { t } from "$lib/i18n";
-    import { getTextColorByAttr } from "$lib/utils/colorUtils.js";
+    import { getTextColorByAttr } from "$lib/utils/colorUtils";
     import { getIconIdByAttr } from "$lib/utils/IconUtils.js";
 
     export let styleMode;

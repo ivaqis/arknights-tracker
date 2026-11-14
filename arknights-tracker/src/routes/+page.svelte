@@ -625,7 +625,7 @@
         </div>
 
         <div
-          class="flex flex-col gap-1.5 overflow-y-auto max-h-[500px] pr-1 py-1 custom-scrollbar"
+          class="flex flex-col gap-1.5 overflow-y-auto pr-1 py-1 custom-scrollbar"
         >
           {#if activeEvents.length === 0}
             <div
@@ -729,7 +729,7 @@
 
     <div class="flex flex-col gap-4 lg:col-span-1 xl:col-span-1 2xl:col-span-1 w-full">
       <div
-        class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] overflow-hidden flex flex-col h-[400px] w-full"
+        class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] overflow-hidden flex flex-col h-full w-full"
       >
         <div
           class="flex items-center gap-2 bg-white border-b border-gray-200 dark:border-[#444444] dark:bg-[#424242] py-3 px-4 text-xs font-bold text-gray-700 dark:text-[#FDFDFD]"

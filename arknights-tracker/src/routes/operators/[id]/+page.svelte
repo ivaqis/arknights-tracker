@@ -24,7 +24,10 @@
     import { addNotification } from "$lib/stores/notifications.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
+    import { interpolateBlackboard } from "$lib/utils/blackboardUtils";
+    import { copyTableToClipboard } from "$lib/utils/clipboardUtils";
+    import { loadCharacterLocale } from "$lib/utils/localeLoader";
     import { getImagePath, getCharacterExtraArts } from "$lib/utils/imageUtils.js";
     import { hyperlinkAction, parseRichText } from "$lib/utils/richText.js";
     import { onDestroy } from "svelte";
@@ -47,23 +50,6 @@
             return null;
         }
     }
-
-    const localeModules = {
-        de: import.meta.glob("/src/lib/locales/de/characters/*.json"),
-        en: import.meta.glob("/src/lib/locales/en/characters/*.json"),
-        es: import.meta.glob("/src/lib/locales/es/characters/*.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/characters/*.json"),
-        id: import.meta.glob("/src/lib/locales/id/characters/*.json"),
-        it: import.meta.glob("/src/lib/locales/it/characters/*.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/characters/*.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/characters/*.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/characters/*.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/characters/*.json"),
-        th: import.meta.glob("/src/lib/locales/th/characters/*.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/characters/*.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/characters/*.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/characters/*.json"),
-    };
 
     const dataModules = import.meta.glob("/src/lib/data/charactersData/*.json");
 
@@ -94,21 +80,7 @@
             charDetails = {};
         }
 
-        const localePath = `/src/lib/locales/${safeLang}/characters/${targetId}.json`;
-        const fallbackPath = `/src/lib/locales/en/characters/${targetId}.json`;
-
-        let localeLoader = localeModules[safeLang]?.[localePath];
-
-        if (!localeLoader && safeLang !== "en") {
-            localeLoader = localeModules["en"]?.[fallbackPath];
-        }
-
-        if (localeLoader) {
-            const mod = await localeLoader();
-            charLocale = mod.default || mod;
-        } else {
-            charLocale = {};
-        }
+        charLocale = await loadCharacterLocale(targetId, lang);
     }
 
     $: skillsLocale = charLocale.skills || {};
@@ -739,7 +711,7 @@
 
     async function copyStatsTable() {
         const headers = [
-            $t("stats.level") || "Level",
+            $t("stats.level"),
             "HP",
             "ATK",
             "STR",
@@ -747,11 +719,9 @@
             "INT",
             "WILL",
         ];
-
-        let textData = headers.join("\t") + "\n";
-
-        for (let i = 1; i <= 90; i++) {
-            const row = [
+        const rows = Array.from({ length: 90 }, (_, idx) => {
+            const i = idx + 1;
+            return [
                 i,
                 calculateStat(charStats.hp, i),
                 calculateStat(charStats.atk, i),
@@ -760,77 +730,13 @@
                 calculateStat(charStats.attributes.int, i),
                 calculateStat(charStats.attributes.will, i),
             ];
-            textData += row.join("\t") + "\n";
-        }
-
-        try {
-            await navigator.clipboard.writeText(textData);
-
+        });
+        if (await copyTableToClipboard(headers, rows)) {
             isTableCopied = true;
-
             setTimeout(() => {
                 isTableCopied = false;
             }, 2000);
-        } catch (err) {
-            console.error("Failed to copy", err);
         }
-    }
-
-    const BLACKBOARD_FALLBACKS = {
-        PhysicalAndSpellInflictionEnhance: ["OriginiumArts"],
-        NormalSkillDamageIncrease: ["NormalSkillEfficiency"],
-    };
-
-    function interpolateBlackboard(text, bb) {
-        if (!text) return "";
-        if (!bb || Object.keys(bb).length === 0) return text;
-
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-
-            let localBb = { ...bb };
-            for (const [key, fallbacks] of Object.entries(
-                BLACKBOARD_FALLBACKS,
-            )) {
-                if (localBb[key] === undefined) {
-                    for (const fallbackKey of fallbacks) {
-                        if (localBb[fallbackKey] !== undefined) {
-                            localBb[key] = localBb[fallbackKey];
-                            break;
-                        }
-                    }
-                }
-            }
-
-            let mathStr = expr.replace(
-                /\b(\d+),(\d+)\b/g,
-                (m, f) => Object.keys(bb)[f] || m,
-            );
-
-            for (const key in localBb) {
-                const regex = new RegExp(`\\b${key}\\b`, "gi");
-                mathStr = mathStr.replace(regex, `(${localBb[key]})`);
-            }
-
-            if (/[a-z_]/i.test(mathStr)) return match;
-
-            let result = 0;
-            try {
-                result = new Function("return " + mathStr)();
-            } catch (e) {
-                return match;
-            }
-            if (format) {
-                if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(4)) + "%";
-                } else if (format === "0") {
-                    result = Math.round(result);
-                } else {
-                    result = parseFloat(Number(result).toFixed(4));
-                }
-            }
-            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-        });
     }
     $: currentIndex = menuItems.findIndex((item) => item.id === activeTab);
     $: prevTab = currentIndex > 0 ? menuItems[currentIndex - 1] : null;

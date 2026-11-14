@@ -19,6 +19,7 @@
     import { isDarkMode } from "$lib/stores/theme";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import { formatDate } from "$lib/utils/dateUtils";
+    import { getRarityColor, getWeaponBg } from "$lib/utils/colorUtils";
     import { getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponCategory } from "$lib/utils/importUtils";
     import { onMount } from "svelte";
@@ -374,13 +375,6 @@
         return pastBanners[0];
     }
 
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#D97D48";
-        if (rarity === 5) return "#E3BC55";
-        if (rarity === 4) return "#9C62F6";
-        return "#888";
-    }
-
     $: getRowBackground = (rarity) => {
         if ($isDarkMode) {
             if (rarity === 6)
@@ -573,13 +567,6 @@
 
         return processed.reverse();
     })();
-
-    function getWeaponBg(rarity) {
-        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
-        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
-        if (rarity === 4) return "bg-gradient-to-t from-[#1A002E] to-[#9C62F6]";
-        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
-    }
 
     let selectedRarities = [6, 5, 4];
 

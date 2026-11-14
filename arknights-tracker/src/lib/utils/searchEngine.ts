@@ -83,7 +83,7 @@ const achievementLocaleModules = import.meta.glob<Record<string, any>>("../local
 });
 const achievementsByLocale: Record<string, Record<string, any>> = {};
 for (const [path, mod] of Object.entries(achievementLocaleModules)) {
-    const match = path.match(/locales\/([^/]+)\/achievements\.json/);
+    const match = /locales\/([^/]+)\/achievements\.json/.exec(path);
     if (match) {
         achievementsByLocale[match[1]] = mod?.default ?? mod;
     }
@@ -97,14 +97,7 @@ export function getAchievementName(localeCode: string, id: string): string {
 
 let cachedIndex: SearchEntry[] | null = null;
 
-export function buildSearchIndex(): SearchEntry[] {
-    if (cachedIndex) {
-        return cachedIndex;
-    }
-
-    const list: SearchEntry[] = [];
-    const itemsMap = items as Record<string, any>;
-
+function indexOperators(list: SearchEntry[]): void {
     for (const [id, char] of Object.entries(characters as Record<string, any>)) {
         if (!char) continue;
         list.push({
@@ -119,7 +112,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: `${char.class || ""} ${char.element || ""} ${char.weapon || ""}`
         });
     }
+}
 
+function indexWeapons(list: SearchEntry[]): void {
     for (const [id, wpn] of Object.entries(weapons as Record<string, any>)) {
         if (!wpn) continue;
         list.push({
@@ -134,7 +129,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: `${wpn.weapon || ""} ${wpn.gameId || ""}`
         });
     }
+}
 
+function indexEquipment(list: SearchEntry[], itemsMap: Record<string, any>): void {
     for (const [id, eq] of Object.entries(equipment as Record<string, any>)) {
         if (!eq) continue;
         const itm = itemsMap[id];
@@ -149,7 +146,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: eq.pack || ""
         });
     }
+}
 
+function indexEnemies(list: SearchEntry[]): void {
     for (const [id, eny] of Object.entries(enemies as Record<string, any>)) {
         if (!eny) continue;
         list.push({
@@ -164,7 +163,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: id
         });
     }
+}
 
+function indexFood(list: SearchEntry[], itemsMap: Record<string, any>): void {
     for (const [id, fd] of Object.entries(food as Record<string, any>)) {
         if (!fd) continue;
         const itm = itemsMap[id];
@@ -178,9 +179,10 @@ export function buildSearchIndex(): SearchEntry[] {
             url: `/food/${id}`
         });
     }
+}
 
-    const recipeIds = new Set(craftableItemsList);
-    for (const itemId of recipeIds) {
+function indexRecipes(list: SearchEntry[], itemsMap: Record<string, any>): void {
+    for (const itemId of new Set(craftableItemsList)) {
         const itm = itemsMap[itemId];
         list.push({
             id: itemId,
@@ -192,7 +194,9 @@ export function buildSearchIndex(): SearchEntry[] {
             url: getRecipeTreeUrlItem(itemId)
         });
     }
+}
 
+function indexItems(list: SearchEntry[], itemsMap: Record<string, any>): void {
     const equipmentSet = new Set(Object.keys(equipment));
     const foodSet = new Set(Object.keys(food));
     for (const [id, itm] of Object.entries(itemsMap)) {
@@ -209,7 +213,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: `${itm.type || ""} ${itm.groupId || ""}`
         });
     }
+}
 
+function indexAchievements(list: SearchEntry[]): void {
     const enAch = achievementsByLocale["en"] || {};
     for (const [id, ach] of Object.entries(achievements as Record<string, any>)) {
         if (!ach) continue;
@@ -224,7 +230,9 @@ export function buildSearchIndex(): SearchEntry[] {
             url: `/achievements?id=${id}`
         });
     }
+}
 
+function indexEvents(list: SearchEntry[]): void {
     for (const ev of rawEvents) {
         list.push({
             id: ev.id,
@@ -244,7 +252,9 @@ export function buildSearchIndex(): SearchEntry[] {
             keywords: ev.version || ""
         });
     }
+}
 
+function indexBanners(list: SearchEntry[]): void {
     for (const b of banners as any[]) {
         const featIds = [...(b.featured6 || []), ...(b.featured5 || [])];
         list.push({
@@ -266,6 +276,24 @@ export function buildSearchIndex(): SearchEntry[] {
             featuredIds: featIds
         });
     }
+}
+
+export function buildSearchIndex(): SearchEntry[] {
+    if (cachedIndex) return cachedIndex;
+
+    const list: SearchEntry[] = [];
+    const itemsMap = items as Record<string, any>;
+
+    indexOperators(list);
+    indexWeapons(list);
+    indexEquipment(list, itemsMap);
+    indexEnemies(list);
+    indexFood(list, itemsMap);
+    indexRecipes(list, itemsMap);
+    indexItems(list, itemsMap);
+    indexAchievements(list);
+    indexEvents(list);
+    indexBanners(list);
 
     cachedIndex = list;
     return cachedIndex;
@@ -372,77 +400,131 @@ function transliterate(str: string): string[] {
     if (/[а-яё]/.test(lower)) {
         let lat = "";
         for (const ch of lower) {
-            lat += RU_TO_LATIN[ch] !== undefined ? RU_TO_LATIN[ch] : ch;
+            lat += RU_TO_LATIN[ch] ?? ch;
         }
         if (lat !== lower) res.push(lat);
     }
     return res;
 }
 
-function stemRussian(word: string): string {
-    word = word.toLowerCase().replace(/ё/g, "е");
-    const match = word.match(/[аеиоуыэюя]/);
-    if (!match) return word;
-    const start = (match.index ?? 0) + 1;
-    let rv = word.slice(start);
-    if (!rv) return word;
+function findLongestSuffix(text: string, suffixes: string[]): string | null {
+    for (const s of suffixes) {
+        if (text.endsWith(s)) return s;
+    }
+    return null;
+}
 
-    const PERFECTIVE_GERUND = /((ив|ивши|ившись|ыв|ывши|ывшись)|((?<=[ая])(в|вши|вшись)))$/;
-    const REFLEXIVE = /(ся|сь)$/;
-    const ADJECTIVE = /(ее|ие|ые|ое|ими|ыми|ей|ий|ый|ой|ем|им|ым|ом|его|ого|ему|ому|их|ых|ую|юю|ая|яя|ою|ею)$/;
-    const PARTICIPLE = /(((?<=[ая])(ем|нн|вш|ющ|щ))|(ивш|ывш|ующ))$/;
-    const VERB = /((ила|ыла|ена|ейте|уйте|ите|или|ыли|ей|уй|ил|ыл|им|ым|ен|ило|ыло|ено|ят|ует|уют|ит|ыт|ены|ить|ыть|ишь|ую|ю)|((?<=[ая])(ла|на|ете|йте|ли|й|л|ем|н|ло|но|ет|ют|ны|ть|ешь|нно)))$/;
-    const NOUN = /(а|ев|ов|ие|ье|е|иями|ями|ами|еи|ии|и|ией|ей|ой|ий|й|иям|ям|ием|ем|ам|ом|о|у|ах|иях|ях|ы|ь|ию|ью|ю|ия|ья|я)$/;
+const GERUND_BASE = ["ившись", "ывшись", "ивши", "ывши", "ив", "ыв"];
+const GERUND_VOWEL = ["вшись", "вши", "в"];
+const REFLEXIVE_SUFFIXES = ["ся", "сь"];
+const ADJECTIVE_SUFFIXES = [
+    "ими", "ыми", "его", "ого", "ему", "ому", "ее", "ие", "ые", "ое",
+    "ей", "ий", "ый", "ой", "ем", "им", "ым", "ом", "их", "ых", "ую", "юю", "ая", "яя", "ою", "ею"
+];
+const PARTICIPLE_BASE = ["ивш", "ывш", "ующ"];
+const PARTICIPLE_VOWEL = ["нн", "вш", "ющ", "ем", "щ"];
+const VERB_BASE = [
+    "ейте", "уйте", "ите", "или", "ыли", "ила", "ыла", "ена", "ило", "ыло", "ено",
+    "ует", "уют", "ены", "ить", "ыть", "ишь", "ей", "уй", "ил", "ыл", "им", "ым", "ен", "ят", "ит", "ыт", "ую", "ю"
+];
+const VERB_VOWEL = [
+    "ейте", "нно", "ете", "йте", "ешь", "ла", "на", "ли", "ем", "ло", "но", "ет", "ют", "ны", "ть", "й", "л", "н"
+];
+const NOUN_SUFFIXES = [
+    "иями", "ями", "ами", "ией", "иям", "ием", "иях", "ев", "ов", "ие", "ье", "еи", "ии",
+    "ей", "ой", "ий", "ям", "ем", "ам", "ом", "ах", "ях", "ию", "ью", "ия", "ья",
+    "а", "е", "и", "й", "о", "у", "ы", "ь", "ю", "я"
+];
 
-    let m = rv.match(PERFECTIVE_GERUND);
-    if (m) {
-        rv = rv.slice(0, -m[0].length);
-    } else {
-        rv = rv.replace(REFLEXIVE, "");
-        m = rv.match(ADJECTIVE);
-        if (m) {
-            rv = rv.slice(0, -m[0].length);
-            const pm = rv.match(PARTICIPLE);
-            if (pm) rv = rv.slice(0, -pm[0].length);
-        } else {
-            m = rv.match(VERB);
-            if (m) {
-                rv = rv.slice(0, -m[0].length);
-            } else {
-                m = rv.match(NOUN);
-                if (m) rv = rv.slice(0, -m[0].length);
-            }
+function stripVowelSuffix(word: string, rv: string, suffixes: string[]): string | null {
+    const s = findLongestSuffix(rv, suffixes);
+    if (!s) return null;
+    const charBeforeIdx = word.length - s.length - 1;
+    if (charBeforeIdx >= 0) {
+        const prev = word[charBeforeIdx];
+        if (prev === "а" || prev === "я") {
+            return rv.slice(0, -s.length);
         }
     }
+    return null;
+}
 
-    rv = rv.replace(/и$/, "").replace(/ость?$/, "");
-    if (rv.endsWith("ейше") || rv.endsWith("ейш")) rv = rv.replace(/ейше?$/, "");
+function stripStepOne(word: string, rv: string): string {
+    const gerund = findLongestSuffix(rv, GERUND_BASE);
+    if (gerund) return rv.slice(0, -gerund.length);
+    const gerundVowel = stripVowelSuffix(word, rv, GERUND_VOWEL);
+    if (gerundVowel !== null) return gerundVowel;
+
+    let res = rv;
+    const refl = findLongestSuffix(res, REFLEXIVE_SUFFIXES);
+    if (refl) res = res.slice(0, -refl.length);
+
+    const adj = findLongestSuffix(res, ADJECTIVE_SUFFIXES);
+    if (adj) {
+        res = res.slice(0, -adj.length);
+        const part = findLongestSuffix(res, PARTICIPLE_BASE);
+        if (part) return res.slice(0, -part.length);
+        const partV = stripVowelSuffix(word, res, PARTICIPLE_VOWEL);
+        if (partV !== null) return partV;
+        return res;
+    }
+
+    const verb = findLongestSuffix(res, VERB_BASE);
+    if (verb) return res.slice(0, -verb.length);
+    const verbV = stripVowelSuffix(word, res, VERB_VOWEL);
+    if (verbV !== null) return verbV;
+
+    const noun = findLongestSuffix(res, NOUN_SUFFIXES);
+    if (noun) return res.slice(0, -noun.length);
+
+    return res;
+}
+
+function stemRussian(word: string): string {
+    const normalized = word.toLowerCase().replaceAll("ё", "е");
+    const match = /[аеиоуыэюя]/.exec(normalized);
+    if (!match) return normalized;
+    const start = (match.index ?? 0) + 1;
+    let rv = normalized.slice(start);
+    if (!rv) return normalized;
+
+    rv = stripStepOne(normalized, rv);
+
+    if (rv.endsWith("и")) rv = rv.slice(0, -1);
+    if (rv.endsWith("ость")) rv = rv.slice(0, -4);
+    else if (rv.endsWith("ост")) rv = rv.slice(0, -3);
+
+    if (rv.endsWith("ейше")) rv = rv.slice(0, -4);
+    else if (rv.endsWith("ейш")) rv = rv.slice(0, -3);
+
     if (rv.endsWith("нн")) rv = rv.slice(0, -1);
-    rv = rv.replace(/ь$/, "");
+    if (rv.endsWith("ь")) rv = rv.slice(0, -1);
 
-    return word.slice(0, start) + rv;
+    return normalized.slice(0, start) + rv;
 }
 
 function stemEnglish(w: string): string {
-    w = w.toLowerCase();
-    if (w.length < 3) return w;
-    if (w.endsWith("sses")) w = w.slice(0, -2);
-    else if (w.endsWith("ies")) w = w.slice(0, -2);
-    else if (w.endsWith("ss")) {}
-    else if (w.endsWith("s")) w = w.slice(0, -1);
+    let res = w.toLowerCase();
+    if (res.length < 3) return res;
 
-    if (w.endsWith("eed")) {
-        if (w.length > 4) w = w.slice(0, -1);
-    } else if (w.endsWith("ed")) {
-        if (/[aeiou].*ed$/.test(w)) w = w.slice(0, -2);
-    } else if (w.endsWith("ing")) {
-        if (/[aeiou].*ing$/.test(w)) w = w.slice(0, -3);
+    if (res.endsWith("sses") || res.endsWith("ies")) {
+        res = res.slice(0, -2);
+    } else if (res.endsWith("s") && !res.endsWith("ss")) {
+        res = res.slice(0, -1);
     }
 
-    if (w.endsWith("y") && /[bcdfghjklmnpqrstvwxz]y$/.test(w)) {
-        w = w.slice(0, -1) + "i";
+    if (res.endsWith("eed")) {
+        if (res.length > 4) res = res.slice(0, -1);
+    } else if (res.endsWith("ed")) {
+        if (/[aeiou]/.test(res.slice(0, -2))) res = res.slice(0, -2);
+    } else if (res.endsWith("ing")) {
+        if (/[aeiou]/.test(res.slice(0, -3))) res = res.slice(0, -3);
     }
-    return w;
+
+    if (res.endsWith("y") && /[bcdfghjklmnpqrstvwxz]y$/.test(res)) {
+        res = `${res.slice(0, -1)}i`;
+    }
+    return res;
 }
 
 function stemWord(word: string): string {
@@ -481,11 +563,11 @@ function tokenize(text: string): string[] {
 
 function escapeHtml(str: string): string {
     return str
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
 }
 
 function highlightText(text: string, terms: string[]): string {
@@ -493,8 +575,72 @@ function highlightText(text: string, terms: string[]): string {
     const escaped = escapeHtml(text);
     const validTerms = [...new Set(terms.filter(t => t.length > 0))].sort((a, b) => b.length - a.length);
     if (!validTerms.length) return escaped;
-    const pattern = new RegExp("(" + validTerms.map(t => t.replace(/[.*+?^${}()|[\]\\\/]/g, "\\$&")).join("|") + ")", "gi");
+    const escapedTerms = validTerms.map(t => t.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&"));
+    const pattern = new RegExp(`(${escapedTerms.join("|")})`, "gi");
     return escaped.replace(pattern, '<b class="font-bold text-amber-600 dark:text-[#FFE145]">$1</b>');
+}
+
+function findPhraseMatch(lower: string, fullPhrase: string): { idx: number; len: number } | null {
+    if (!fullPhrase || fullPhrase.length <= 2) return null;
+    const pIdx = lower.indexOf(fullPhrase.toLowerCase());
+    return pIdx !== -1 ? { idx: pIdx, len: fullPhrase.length } : null;
+}
+
+function findTwoStemMatch(clean: string, lower: string, stemmedTerms: string[]): { idx: number; len: number; words: string[] } | null {
+    if (stemmedTerms.length < 2) return null;
+    const tokens = tokenize(clean);
+    for (let i = 0; i < tokens.length - 1; i++) {
+        if (stemWord(tokens[i]) === stemmedTerms[0] && stemWord(tokens[i + 1]) === stemmedTerms[1]) {
+            const wIdx = lower.indexOf(tokens[i]);
+            if (wIdx !== -1) {
+                return {
+                    idx: wIdx,
+                    len: tokens[i].length + 1 + tokens[i + 1].length,
+                    words: [tokens[i], tokens[i + 1]]
+                };
+            }
+        }
+    }
+    return null;
+}
+
+function findTokenMatch(clean: string, lower: string, terms: string[], stemmedTerms: string[]): { idx: number; len: number; word: string } | null {
+    const tokens = tokenize(clean);
+    let charOffset = 0;
+    for (const tok of tokens) {
+        const idx = lower.indexOf(tok, charOffset);
+        if (idx !== -1) {
+            charOffset = idx + tok.length;
+            const sTok = stemWord(tok);
+            const isMatch = terms.includes(tok) || stemmedTerms.some(st => st === sTok || tok.startsWith(st) || sTok.startsWith(st));
+            if (isMatch) {
+                return { idx, len: tok.length, word: tok };
+            }
+        }
+    }
+    return null;
+}
+
+function buildSnippetString(clean: string, bestIdx: number, termLen: number, highlightTerms: string[]): string {
+    let start = 0;
+    if (bestIdx > 0) {
+        const prevSpace = clean.lastIndexOf(" ", bestIdx - 2);
+        start = (prevSpace !== -1 && (bestIdx - prevSpace) <= 18) ? prevSpace + 1 : Math.max(0, bestIdx - 12);
+    }
+
+    let end = Math.min(clean.length, bestIdx + termLen + 45);
+    if (end < clean.length) {
+        const nextSpace = clean.indexOf(" ", end);
+        if (nextSpace !== -1 && (nextSpace - (bestIdx + termLen)) <= 55) {
+            end = nextSpace;
+        }
+    }
+
+    let snippet = clean.slice(start, end);
+    if (start > 0) snippet = `...${snippet}`;
+    if (end < clean.length) snippet = `${snippet}...`;
+
+    return highlightText(snippet, highlightTerms);
 }
 
 function extractSnippet(text: string, fullPhrase: string, terms: string[], stemmedTerms: string[]): string {
@@ -507,73 +653,34 @@ function extractSnippet(text: string, fullPhrase: string, terms: string[], stemm
     let termLen = 4;
     const highlightTerms = [...terms];
 
-    if (fullPhrase && fullPhrase.length > 2) {
-        const pIdx = lower.indexOf(fullPhrase.toLowerCase());
-        if (pIdx !== -1) {
-            bestIdx = pIdx;
-            termLen = fullPhrase.length;
-            if (!highlightTerms.includes(fullPhrase)) highlightTerms.push(fullPhrase);
-        }
+    const phraseMatch = findPhraseMatch(lower, fullPhrase);
+    if (phraseMatch) {
+        bestIdx = phraseMatch.idx;
+        termLen = phraseMatch.len;
+        if (!highlightTerms.includes(fullPhrase)) highlightTerms.push(fullPhrase);
     }
 
-    if (bestIdx === -1 && stemmedTerms.length > 1) {
-        const tokens = tokenize(clean);
-        for (let i = 0; i < tokens.length - 1; i++) {
-            if (stemWord(tokens[i]) === stemmedTerms[0] && stemWord(tokens[i + 1]) === stemmedTerms[1]) {
-                const wIdx = lower.indexOf(tokens[i]);
-                if (wIdx !== -1) {
-                    bestIdx = wIdx;
-                    termLen = tokens[i].length + 1 + tokens[i + 1].length;
-                    highlightTerms.push(tokens[i], tokens[i + 1]);
-                    break;
-                }
-            }
+    if (bestIdx === -1) {
+        const twoStemMatch = findTwoStemMatch(clean, lower, stemmedTerms);
+        if (twoStemMatch) {
+            bestIdx = twoStemMatch.idx;
+            termLen = twoStemMatch.len;
+            highlightTerms.push(...twoStemMatch.words);
         }
     }
 
     if (bestIdx === -1) {
-        const tokens = tokenize(clean);
-        let charOffset = 0;
-        for (const tok of tokens) {
-            const idx = lower.indexOf(tok, charOffset);
-            if (idx !== -1) {
-                charOffset = idx + tok.length;
-                const sTok = stemWord(tok);
-                if (terms.includes(tok) || stemmedTerms.some(st => st === sTok || tok.startsWith(st) || sTok.startsWith(st))) {
-                    bestIdx = idx;
-                    termLen = tok.length;
-                    highlightTerms.push(tok);
-                    break;
-                }
-            }
+        const tokenMatch = findTokenMatch(clean, lower, terms, stemmedTerms);
+        if (tokenMatch) {
+            bestIdx = tokenMatch.idx;
+            termLen = tokenMatch.len;
+            highlightTerms.push(tokenMatch.word);
         }
     }
 
     if (bestIdx === -1) return "";
 
-    let start = 0;
-    if (bestIdx > 0) {
-        const prevSpace = clean.lastIndexOf(" ", bestIdx - 2);
-        if (prevSpace !== -1 && (bestIdx - prevSpace) <= 18) {
-            start = prevSpace + 1;
-        } else {
-            start = Math.max(0, bestIdx - 12);
-        }
-    }
-
-    let end = Math.min(clean.length, bestIdx + termLen + 45);
-    if (end < clean.length) {
-        const nextSpace = clean.indexOf(" ", end);
-        if (nextSpace !== -1 && (nextSpace - (bestIdx + termLen)) <= 55) {
-            end = nextSpace;
-        }
-    }
-
-    let snippet = clean.slice(start, end);
-    if (start > 0) snippet = "..." + snippet;
-    if (end < clean.length) snippet = snippet + "...";
-
-    return highlightText(snippet, highlightTerms);
+    return buildSnippetString(clean, bestIdx, termLen, highlightTerms);
 }
 
 const allLocaleDescModules = import.meta.glob<Record<string, any>>("../locales/*/*.json");
@@ -600,6 +707,118 @@ function addDesc(map: Map<string, IndexedDesc[]>, id: string, text: any): void {
     list.push({ text: clean, lower, tokens, stems });
 }
 
+function indexGeneralItemEntry(map: Map<string, IndexedDesc[]>, id: string, entry: any): void {
+    if (!entry || typeof entry !== "object") return;
+    const fields = [
+        entry.description, entry.decoDesc, entry.desc, entry.extraDesc,
+        entry.setBonus, entry.nickname, entry.featureDesc, entry.category, entry.group
+    ];
+    for (const val of fields) {
+        if (typeof val === "string") addDesc(map, id, val);
+    }
+
+    if (Array.isArray(entry.skills)) {
+        for (const s of entry.skills) {
+            if (typeof s === "string") addDesc(map, id, s);
+            else if (s && typeof s === "object") {
+                addDesc(map, id, s.name);
+                addDesc(map, id, s.description || s.desc);
+            }
+        }
+    }
+    if (Array.isArray(entry.abilities)) {
+        for (const a of entry.abilities) {
+            if (typeof a === "string") addDesc(map, id, a);
+            else if (a && typeof a === "object") {
+                addDesc(map, id, a.name);
+                addDesc(map, id, a.desc || a.description);
+            }
+        }
+    }
+    if (Array.isArray(entry.obtainWays)) {
+        for (const o of entry.obtainWays) addDesc(map, id, o);
+    }
+    if (entry.levels && typeof entry.levels === "object") {
+        for (const lv of Object.values(entry.levels)) {
+            if (lv && typeof lv === "object") {
+                addDesc(map, id, (lv as any).desc);
+                addDesc(map, id, (lv as any).completeDesc);
+            }
+        }
+    }
+}
+
+function indexCharacterBaseInfo(map: Map<string, IndexedDesc[]>, charId: string, baseInfo: any): void {
+    if (!baseInfo) return;
+    addDesc(map, charId, baseInfo.bio);
+    addDesc(map, charId, baseInfo.profession);
+    addDesc(map, charId, baseInfo.humanResources);
+    addDesc(map, charId, baseInfo.raceTag);
+    addDesc(map, charId, baseInfo.blocTag);
+    const tagArrays = [baseInfo.tags, baseInfo.expertTags, baseInfo.hobbyTags, baseInfo.giftPreferTags];
+    for (const arr of tagArrays) {
+        if (Array.isArray(arr)) {
+            for (const t of arr) addDesc(map, charId, t);
+        }
+    }
+}
+
+function indexCharacterData(map: Map<string, IndexedDesc[]>, charId: string, data: any): void {
+    if (!charId || !data) return;
+    indexCharacterBaseInfo(map, charId, data.baseInfo);
+
+    if (data.skills && typeof data.skills === "object") {
+        for (const s of Object.values(data.skills)) {
+            if (s && typeof s === "object") {
+                addDesc(map, charId, (s as any).name);
+                addDesc(map, charId, (s as any).desc || (s as any).description);
+                if (Array.isArray((s as any).levels)) {
+                    for (const lv of (s as any).levels) addDesc(map, charId, lv);
+                }
+            }
+        }
+    }
+    if (data.potentials && typeof data.potentials === "object") {
+        for (const p of Object.values(data.potentials)) {
+            if (p && typeof p === "object") {
+                addDesc(map, charId, (p as any).name);
+                addDesc(map, charId, (p as any).desc || (p as any).description);
+            }
+        }
+    }
+    if (data.tags && typeof data.tags === "object") {
+        for (const t of Object.values(data.tags)) {
+            if (t && typeof t === "object") {
+                addDesc(map, charId, (t as any).name);
+                addDesc(map, charId, (t as any).description);
+            }
+        }
+    }
+    if (Array.isArray(data.voiceLines)) {
+        for (const v of data.voiceLines) {
+            if (v && typeof v === "object") {
+                addDesc(map, charId, v.title);
+                addDesc(map, charId, v.text);
+            }
+        }
+    }
+    if (data.arts && typeof data.arts === "object") {
+        for (const art of Object.values(data.arts)) {
+            if (art && typeof art === "object") {
+                addDesc(map, charId, (art as any).name);
+                addDesc(map, charId, (art as any).description);
+                addDesc(map, charId, (art as any).author);
+            }
+        }
+    }
+    const charFiles = data.files || data.skills?.files || data.baseInfo?.files;
+    if (charFiles && typeof charFiles === "object") {
+        for (const fileText of Object.values(charFiles)) {
+            if (typeof fileText === "string") addDesc(map, charId, fileText);
+        }
+    }
+}
+
 export async function ensureDescriptionsLoaded(localeCode: string = "ru"): Promise<void> {
     const langFolder = getLangFolder(localeCode);
     if (descIndexLoaded[langFolder]) return;
@@ -614,56 +833,13 @@ export async function ensureDescriptionsLoaded(localeCode: string = "ru"): Promi
             try {
                 const mod: any = await loader();
                 const data = mod?.default ?? mod;
-                if (!data) return;
-
-                if (typeof data !== "object") return;
-
+                if (!data || typeof data !== "object") return;
                 for (const [id, entry] of Object.entries(data as Record<string, any>)) {
-                    if (!entry || typeof entry !== "object") continue;
-
-                    if (typeof entry.description === "string") addDesc(map, id, entry.description);
-                    if (typeof entry.decoDesc === "string") addDesc(map, id, entry.decoDesc);
-                    if (typeof entry.desc === "string") addDesc(map, id, entry.desc);
-                    if (typeof entry.extraDesc === "string") addDesc(map, id, entry.extraDesc);
-                    if (typeof entry.setBonus === "string") addDesc(map, id, entry.setBonus);
-                    if (typeof entry.nickname === "string") addDesc(map, id, entry.nickname);
-                    if (typeof entry.featureDesc === "string") addDesc(map, id, entry.featureDesc);
-                    if (typeof entry.category === "string") addDesc(map, id, entry.category);
-                    if (typeof entry.group === "string") addDesc(map, id, entry.group);
-
-                    if (Array.isArray(entry.skills)) {
-                        for (const s of entry.skills) {
-                            if (typeof s === "string") {
-                                addDesc(map, id, s);
-                            } else if (s && typeof s === "object") {
-                                addDesc(map, id, s.name);
-                                addDesc(map, id, s.description || s.desc);
-                            }
-                        }
-                    }
-                    if (Array.isArray(entry.abilities)) {
-                        for (const a of entry.abilities) {
-                            if (typeof a === "string") {
-                                addDesc(map, id, a);
-                            } else if (a && typeof a === "object") {
-                                addDesc(map, id, a.name);
-                                addDesc(map, id, a.desc || a.description);
-                            }
-                        }
-                    }
-                    if (Array.isArray(entry.obtainWays)) {
-                        for (const o of entry.obtainWays) addDesc(map, id, o);
-                    }
-                    if (entry.levels && typeof entry.levels === "object") {
-                        for (const lv of Object.values(entry.levels)) {
-                            if (lv && typeof lv === "object") {
-                                addDesc(map, id, (lv as any).desc);
-                                addDesc(map, id, (lv as any).completeDesc);
-                            }
-                        }
-                    }
+                    indexGeneralItemEntry(map, id, entry);
                 }
-            } catch (e) {}
+            } catch (e) {
+                console.error(e);
+            }
         });
 
     const charPromises = Object.entries(allCharDescModules)
@@ -673,80 +849,10 @@ export async function ensureDescriptionsLoaded(localeCode: string = "ru"): Promi
                 const mod: any = await loader();
                 const data = mod?.default ?? mod;
                 const charId = path.split("/").pop()?.replace(".json", "") || "";
-                if (charId && data) {
-                    if (data.baseInfo) {
-                        addDesc(map, charId, data.baseInfo.bio);
-                        addDesc(map, charId, data.baseInfo.profession);
-                        addDesc(map, charId, data.baseInfo.humanResources);
-                        addDesc(map, charId, data.baseInfo.raceTag);
-                        addDesc(map, charId, data.baseInfo.blocTag);
-                        if (Array.isArray(data.baseInfo.tags)) {
-                            for (const t of data.baseInfo.tags) addDesc(map, charId, t);
-                        }
-                        if (Array.isArray(data.baseInfo.expertTags)) {
-                            for (const t of data.baseInfo.expertTags) addDesc(map, charId, t);
-                        }
-                        if (Array.isArray(data.baseInfo.hobbyTags)) {
-                            for (const t of data.baseInfo.hobbyTags) addDesc(map, charId, t);
-                        }
-                        if (Array.isArray(data.baseInfo.giftPreferTags)) {
-                            for (const t of data.baseInfo.giftPreferTags) addDesc(map, charId, t);
-                        }
-                    }
-                    if (data.skills && typeof data.skills === "object") {
-                        for (const s of Object.values(data.skills)) {
-                            if (s && typeof s === "object") {
-                                addDesc(map, charId, (s as any).name);
-                                addDesc(map, charId, (s as any).desc || (s as any).description);
-                                if (Array.isArray((s as any).levels)) {
-                                    for (const lv of (s as any).levels) addDesc(map, charId, lv);
-                                }
-                            }
-                        }
-                    }
-                    if (data.potentials && typeof data.potentials === "object") {
-                        for (const p of Object.values(data.potentials)) {
-                            if (p && typeof p === "object") {
-                                addDesc(map, charId, (p as any).name);
-                                addDesc(map, charId, (p as any).desc || (p as any).description);
-                            }
-                        }
-                    }
-                    if (data.tags && typeof data.tags === "object") {
-                        for (const t of Object.values(data.tags)) {
-                            if (t && typeof t === "object") {
-                                addDesc(map, charId, (t as any).name);
-                                addDesc(map, charId, (t as any).description);
-                            }
-                        }
-                    }
-                    if (Array.isArray(data.voiceLines)) {
-                        for (const v of data.voiceLines) {
-                            if (v && typeof v === "object") {
-                                addDesc(map, charId, v.title);
-                                addDesc(map, charId, v.text);
-                            }
-                        }
-                    }
-                    if (data.arts && typeof data.arts === "object") {
-                        for (const art of Object.values(data.arts)) {
-                            if (art && typeof art === "object") {
-                                addDesc(map, charId, (art as any).name);
-                                addDesc(map, charId, (art as any).description);
-                                addDesc(map, charId, (art as any).author);
-                            }
-                        }
-                    }
-                    const charFiles = data.files || data.skills?.files || data.baseInfo?.files;
-                    if (charFiles && typeof charFiles === "object") {
-                        for (const fileText of Object.values(charFiles)) {
-                            if (typeof fileText === "string") {
-                                addDesc(map, charId, fileText);
-                            }
-                        }
-                    }
-                }
-            } catch (e) {}
+                indexCharacterData(map, charId, data);
+            } catch (e) {
+                console.error(e);
+            }
         });
 
     await Promise.all([...loadPromises, ...charPromises]);
@@ -762,6 +868,266 @@ export async function ensureDescriptionsLoaded(localeCode: string = "ru"): Promi
     descIndexLoaded[langFolder] = true;
 }
 
+function computeVariants(raw: string, isRu: boolean): string[] {
+    const variants = [raw.toLowerCase()];
+    if (!isRu) return variants;
+    for (const v of convertLayout(raw)) {
+        if (!variants.includes(v)) variants.push(v);
+    }
+    for (const v of transliterate(raw)) {
+        if (!variants.includes(v)) variants.push(v);
+    }
+    return variants;
+}
+
+function collectHighlightTerms(raw: string, variants: string[]): string[] {
+    const highlightTerms: string[] = [];
+    for (const v of variants) {
+        for (const t of tokenize(v)) {
+            if ((t.length >= 2 || raw.length === 1) && !highlightTerms.includes(t)) {
+                highlightTerms.push(t);
+            }
+        }
+    }
+    return highlightTerms;
+}
+
+function resolveDisplayTitle(
+    item: SearchEntry,
+    translate: (key: string) => string,
+    langFolder: string
+): string {
+    if (item.titleKey) {
+        const translated = translate(item.titleKey);
+        if (translated && translated !== item.titleKey) return translated;
+    }
+    if (item.category === "achievements") {
+        const achItem = achievementsByLocale[langFolder]?.[item.id] || achievementsByLocale["en"]?.[item.id];
+        if (achItem?.name) return achItem.name;
+    }
+    return item.staticName || item.id;
+}
+
+function matchVariantScore(
+    lowerTitle: string,
+    lowerStatic: string,
+    lowerId: string,
+    lowerKeywords: string,
+    v: string
+): number {
+    if (lowerTitle === v) return 600;
+    if (lowerTitle.startsWith(v)) return 400;
+    if (lowerTitle.includes(` ${v}`) || lowerTitle.includes(`(${v}`)) return 300;
+    if (lowerTitle.includes(v)) return 200;
+    if (v.length >= 4 && lowerTitle.length >= 4 && isDistanceOne(lowerTitle, v)) return 180;
+    if (lowerStatic) {
+        if (lowerStatic.startsWith(v)) return 140;
+        if (lowerStatic.includes(v)) return 110;
+        if (v.length >= 4 && lowerStatic.length >= 4 && isDistanceOne(lowerStatic, v)) return 100;
+    }
+    if (lowerId.startsWith(v)) return 90;
+    if (lowerId.includes(v)) return 70;
+    if (lowerKeywords.includes(v)) return 50;
+    return 0;
+}
+
+function scoreByVariants(
+    lowerTitle: string,
+    lowerStatic: string,
+    lowerId: string,
+    lowerKeywords: string,
+    variants: string[],
+    rawTokens: string[],
+    matchedRawTokens: Set<number>
+): number {
+    let score = 0;
+    for (const v of variants) {
+        const s = matchVariantScore(lowerTitle, lowerStatic, lowerId, lowerKeywords, v);
+        if (s > 0) {
+            score = Math.max(score, s);
+            rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+        }
+    }
+    return score;
+}
+
+function matchTokenScore(tt: string, ts: string, qt: string, qs: string): number {
+    if (tt === qt) return 80;
+    if (tt.startsWith(qt)) return 60;
+    if (ts === qs) return 50;
+    if (qt.length >= 4 && tt.length >= 4 && isDistanceOne(tt, qt)) return 45;
+    if (qs.length >= 4 && ts.length >= 4 && isDistanceOne(ts, qs)) return 40;
+    return 0;
+}
+
+function scoreTitleTokens(
+    titleTokens: string[],
+    titleStems: string[],
+    rawTokens: string[],
+    rawStems: string[],
+    highlightTerms: string[],
+    matchedRawTokens: Set<number>
+): number {
+    let score = 0;
+    for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
+        const qt = rawTokens[qIdx];
+        const qs = rawStems[qIdx];
+        for (let i = 0; i < titleTokens.length; i++) {
+            const tt = titleTokens[i];
+            const s = matchTokenScore(tt, titleStems[i], qt, qs);
+            if (s > 0) {
+                score += s;
+                matchedRawTokens.add(qIdx);
+                if (s <= 50 && !highlightTerms.includes(tt)) highlightTerms.push(tt);
+                break;
+            }
+        }
+    }
+    return score;
+}
+
+function resolveFeaturedName(featId: string, translate: (key: string) => string): string {
+    const charKey = `characters.${featId}`;
+    const charTrans = translate(charKey);
+    if (charTrans && charTrans !== charKey) return charTrans;
+    const wpnKey = `weaponsList.${featId}`;
+    const wpnTrans = translate(wpnKey);
+    if (wpnTrans && wpnTrans !== wpnKey) return wpnTrans;
+    const charObj = (characters as Record<string, any>)[featId];
+    const wpnObj = (weapons as Record<string, any>)[featId];
+    return charObj?.name || wpnObj?.name || featId;
+}
+
+function scoreSingleFeatured(
+    featName: string,
+    variants: string[],
+    rawTokens: string[],
+    rawStems: string[],
+    highlightTerms: string[],
+    matchedRawTokens: Set<number>
+): number {
+    const lowerFeat = featName.toLowerCase();
+    const featTokens = tokenize(featName);
+    const featStems = featTokens.map(stemWord);
+    let featScore = 0;
+
+    for (const v of variants) {
+        if (lowerFeat === v) featScore = Math.max(featScore, 260);
+        else if (lowerFeat.startsWith(v)) featScore = Math.max(featScore, 210);
+        else if (lowerFeat.includes(v)) featScore = Math.max(featScore, 170);
+        else if (v.length >= 4 && lowerFeat.length >= 4 && isDistanceOne(lowerFeat, v)) featScore = Math.max(featScore, 150);
+        if (featScore > 0) rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+    }
+
+    for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
+        const qt = rawTokens[qIdx];
+        const qs = rawStems[qIdx];
+        for (let i = 0; i < featTokens.length; i++) {
+            const ft = featTokens[i];
+            const s = matchTokenScore(ft, featStems[i], qt, qs);
+            if (s > 0) {
+                featScore += s;
+                matchedRawTokens.add(qIdx);
+                if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
+                break;
+            }
+        }
+    }
+    return featScore;
+}
+
+function scoreBannerFeatured(
+    featuredIds: string[],
+    translate: (key: string) => string,
+    variants: string[],
+    rawTokens: string[],
+    rawStems: string[],
+    highlightTerms: string[],
+    matchedRawTokens: Set<number>
+): { score: number; snippet?: string } {
+    let bestScore = 0;
+    let snippet: string | undefined;
+
+    for (const featId of featuredIds) {
+        const featName = resolveFeaturedName(featId, translate);
+        if (!featName) continue;
+        const res = scoreSingleFeatured(featName, variants, rawTokens, rawStems, highlightTerms, matchedRawTokens);
+        if (res > 0) {
+            bestScore = Math.max(bestScore, res);
+            if (!snippet) snippet = highlightText(featName, highlightTerms);
+        }
+    }
+    return { score: bestScore, snippet };
+}
+
+function scoreDescriptions(
+    descs: IndexedDesc[],
+    variants: string[],
+    raw: string,
+    rawTokens: string[],
+    rawStems: string[],
+    highlightTerms: string[],
+    matchedRawTokens: Set<number>
+): { score: number; snippet?: string } {
+    let totalScore = 0;
+    let bestQuality = -1;
+    let snippet: string | undefined;
+
+    for (const d of descs) {
+        let quality = 0;
+        for (const v of variants) {
+            if (d.lower.includes(v)) {
+                totalScore += 450;
+                quality += 1000;
+                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                break;
+            }
+        }
+
+        if (quality < 1000 && rawStems.length > 1) {
+            for (let i = 0; i < d.stems.length - 1; i++) {
+                if (d.stems[i] === rawStems[0] && d.stems[i + 1] === rawStems[1]) {
+                    totalScore += 320;
+                    quality += 500;
+                    rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                    break;
+                }
+            }
+        }
+
+        for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
+            const qt = rawTokens[qIdx];
+            const qs = rawStems[qIdx];
+            for (let i = 0; i < d.tokens.length; i++) {
+                if (d.tokens[i] === qt) {
+                    totalScore += 30;
+                    quality += 50;
+                    matchedRawTokens.add(qIdx);
+                    break;
+                } else if (d.tokens[i].startsWith(qt)) {
+                    totalScore += 20;
+                    quality += 30;
+                    matchedRawTokens.add(qIdx);
+                    break;
+                } else if (d.stems[i] === qs) {
+                    totalScore += 15;
+                    quality += 20;
+                    matchedRawTokens.add(qIdx);
+                    if (!highlightTerms.includes(d.tokens[i])) highlightTerms.push(d.tokens[i]);
+                    break;
+                }
+            }
+        }
+
+        if (quality > bestQuality) {
+            bestQuality = quality;
+            snippet = extractSnippet(d.text, raw, highlightTerms, rawStems);
+        }
+    }
+
+    return { score: totalScore, snippet };
+}
+
 export function performSearch(
     query: string,
     selectedCategory: SearchCategory,
@@ -772,32 +1138,12 @@ export function performSearch(
 ): SearchResponse {
     const raw = (query || "").trim();
     if (!raw) return { results: [], hasMore: false, total: 0 };
-    const lowerRaw = raw.toLowerCase();
 
-    const variants = [lowerRaw];
     const isRu = (localeCode || "").toLowerCase().startsWith("ru");
-    if (isRu) {
-        for (const v of convertLayout(raw)) {
-            if (!variants.includes(v)) variants.push(v);
-        }
-        for (const v of transliterate(raw)) {
-            if (!variants.includes(v)) variants.push(v);
-        }
-    }
-
+    const variants = computeVariants(raw, isRu);
     const rawTokens = tokenize(raw);
     const rawStems = rawTokens.map(stemWord);
-
-    const highlightTerms: string[] = [];
-
-    for (const v of variants) {
-        const toks = tokenize(v);
-        for (const t of toks) {
-            if (t.length >= 2 || raw.length === 1) {
-                if (!highlightTerms.includes(t)) highlightTerms.push(t);
-            }
-        }
-    }
+    const highlightTerms = collectHighlightTerms(raw, variants);
 
     const index = buildSearchIndex();
     const scored: { item: SearchEntry; score: number; displayTitle: string; matchedSnippet?: string }[] = [];
@@ -810,239 +1156,36 @@ export function performSearch(
             continue;
         }
 
-        let displayTitle = "";
-        if (item.titleKey) {
-            const translated = translate(item.titleKey);
-            if (translated && translated !== item.titleKey) {
-                displayTitle = translated;
-            }
-        }
-        if (!displayTitle && item.category === "achievements") {
-            const achItem = achievementsByLocale[langFolder]?.[item.id] || achievementsByLocale["en"]?.[item.id];
-            if (achItem?.name) {
-                displayTitle = achItem.name;
-            }
-        }
-        if (!displayTitle) {
-            displayTitle = item.staticName || item.id;
-        }
-
+        const displayTitle = resolveDisplayTitle(item, translate, langFolder);
         const lowerTitle = displayTitle.toLowerCase();
         const lowerStatic = (item.staticName || "").toLowerCase();
         const lowerId = item.id.toLowerCase();
         const achItem = item.category === "achievements" ? (achievementsByLocale[langFolder]?.[item.id] || achievementsByLocale["en"]?.[item.id]) : null;
         const lowerKeywords = `${item.keywords || ""} ${achItem?.category || ""} ${achItem?.group || ""}`.toLowerCase();
 
-        let score = 0;
-        let matchedSnippet: string | undefined = undefined;
-        let bestDescQuality = -1;
         const matchedRawTokens = new Set<number>();
-
-        for (const v of variants) {
-            if (lowerTitle === v) {
-                score = Math.max(score, 600);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerTitle.startsWith(v)) {
-                score = Math.max(score, 400);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerTitle.includes(` ${v}`) || lowerTitle.includes(`(${v}`)) {
-                score = Math.max(score, 300);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerTitle.includes(v)) {
-                score = Math.max(score, 200);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (v.length >= 4 && lowerTitle.length >= 4 && isDistanceOne(lowerTitle, v)) {
-                score = Math.max(score, 180);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerStatic && lowerStatic.startsWith(v)) {
-                score = Math.max(score, 140);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerStatic && lowerStatic.includes(v)) {
-                score = Math.max(score, 110);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerStatic && v.length >= 4 && lowerStatic.length >= 4 && isDistanceOne(lowerStatic, v)) {
-                score = Math.max(score, 100);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerId.startsWith(v)) {
-                score = Math.max(score, 90);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerId.includes(v)) {
-                score = Math.max(score, 70);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            } else if (lowerKeywords.includes(v)) {
-                score = Math.max(score, 50);
-                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-            }
-        }
+        let score = scoreByVariants(lowerTitle, lowerStatic, lowerId, lowerKeywords, variants, rawTokens, matchedRawTokens);
 
         const titleTokens = tokenize(displayTitle);
         const titleStems = titleTokens.map(stemWord);
+        score += scoreTitleTokens(titleTokens, titleStems, rawTokens, rawStems, highlightTerms, matchedRawTokens);
 
-        for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
-            const qt = rawTokens[qIdx];
-            const qs = rawStems[qIdx];
-            for (let i = 0; i < titleTokens.length; i++) {
-                const tt = titleTokens[i];
-                if (tt === qt) {
-                    score += 80;
-                    matchedRawTokens.add(qIdx);
-                    break;
-                } else if (tt.startsWith(qt)) {
-                    score += 60;
-                    matchedRawTokens.add(qIdx);
-                    break;
-                } else if (titleStems[i] === qs) {
-                    score += 50;
-                    matchedRawTokens.add(qIdx);
-                    if (!highlightTerms.includes(tt)) highlightTerms.push(tt);
-                    break;
-                } else if (qt.length >= 4 && tt.length >= 4 && isDistanceOne(tt, qt)) {
-                    score += 45;
-                    matchedRawTokens.add(qIdx);
-                    if (!highlightTerms.includes(tt)) highlightTerms.push(tt);
-                    break;
-                } else if (qs.length >= 4 && titleStems[i].length >= 4 && isDistanceOne(titleStems[i], qs)) {
-                    score += 40;
-                    matchedRawTokens.add(qIdx);
-                    if (!highlightTerms.includes(tt)) highlightTerms.push(tt);
-                    break;
-                }
-            }
-        }
+        let matchedSnippet: string | undefined;
 
-        if (item.category === "banners" && item.featuredIds && item.featuredIds.length > 0) {
-            for (const featId of item.featuredIds) {
-                let featName = "";
-                const charKey = `characters.${featId}`;
-                const charTrans = translate(charKey);
-                if (charTrans && charTrans !== charKey) {
-                    featName = charTrans;
-                } else {
-                    const wpnKey = `weaponsList.${featId}`;
-                    const wpnTrans = translate(wpnKey);
-                    if (wpnTrans && wpnTrans !== wpnKey) {
-                        featName = wpnTrans;
-                    } else {
-                        const charObj = (characters as any)[featId];
-                        const wpnObj = (weapons as any)[featId];
-                        featName = charObj?.name || wpnObj?.name || featId;
-                    }
-                }
-                if (!featName) continue;
-                const lowerFeat = featName.toLowerCase();
-                const featTokens = tokenize(featName);
-                const featStems = featTokens.map(stemWord);
-
-                let featScore = 0;
-                for (const v of variants) {
-                    if (lowerFeat === v) {
-                        featScore = Math.max(featScore, 260);
-                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                    } else if (lowerFeat.startsWith(v)) {
-                        featScore = Math.max(featScore, 210);
-                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                    } else if (lowerFeat.includes(v)) {
-                        featScore = Math.max(featScore, 170);
-                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                    } else if (v.length >= 4 && lowerFeat.length >= 4 && isDistanceOne(lowerFeat, v)) {
-                        featScore = Math.max(featScore, 150);
-                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                    }
-                }
-
-                for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
-                    const qt = rawTokens[qIdx];
-                    const qs = rawStems[qIdx];
-                    for (let i = 0; i < featTokens.length; i++) {
-                        const ft = featTokens[i];
-                        if (ft === qt) {
-                            featScore += 70;
-                            matchedRawTokens.add(qIdx);
-                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
-                            break;
-                        } else if (ft.startsWith(qt)) {
-                            featScore += 50;
-                            matchedRawTokens.add(qIdx);
-                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
-                            break;
-                        } else if (featStems[i] === qs) {
-                            featScore += 45;
-                            matchedRawTokens.add(qIdx);
-                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
-                            break;
-                        } else if (qt.length >= 4 && ft.length >= 4 && isDistanceOne(ft, qt)) {
-                            featScore += 40;
-                            matchedRawTokens.add(qIdx);
-                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
-                            break;
-                        }
-                    }
-                }
-
-                if (featScore > 0) {
-                    score = Math.max(score, featScore);
-                    if (!matchedSnippet) {
-                        matchedSnippet = `${highlightText(featName, highlightTerms)}`;
-                    }
-                }
+        if (item.category === "banners" && (item.featuredIds?.length ?? 0) > 0) {
+            const featRes = scoreBannerFeatured(item.featuredIds!, translate, variants, rawTokens, rawStems, highlightTerms, matchedRawTokens);
+            if (featRes.score > 0) {
+                score = Math.max(score, featRes.score);
+                matchedSnippet = featRes.snippet;
             }
         }
 
         if (descMap) {
             const descs = descMap.get(item.id);
             if (descs) {
-                for (const d of descs) {
-                    let descQuality = 0;
-
-                    for (const v of variants) {
-                        if (d.lower.includes(v)) {
-                            score += 450;
-                            descQuality += 1000;
-                            rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                            break;
-                        }
-                    }
-
-                    if (descQuality < 1000 && rawStems.length > 1) {
-                        for (let i = 0; i < d.stems.length - 1; i++) {
-                            if (d.stems[i] === rawStems[0] && d.stems[i + 1] === rawStems[1]) {
-                                score += 320;
-                                descQuality += 500;
-                                rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
-                                break;
-                            }
-                        }
-                    }
-
-                    for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
-                        const qt = rawTokens[qIdx];
-                        const qs = rawStems[qIdx];
-                        for (let i = 0; i < d.tokens.length; i++) {
-                            if (d.tokens[i] === qt) {
-                                score += 30;
-                                descQuality += 50;
-                                matchedRawTokens.add(qIdx);
-                                break;
-                            } else if (d.tokens[i].startsWith(qt)) {
-                                score += 20;
-                                descQuality += 30;
-                                matchedRawTokens.add(qIdx);
-                                break;
-                            } else if (d.stems[i] === qs) {
-                                score += 15;
-                                descQuality += 20;
-                                matchedRawTokens.add(qIdx);
-                                if (!highlightTerms.includes(d.tokens[i])) highlightTerms.push(d.tokens[i]);
-                                break;
-                            }
-                        }
-                    }
-
-                    if (descQuality > bestDescQuality) {
-                        bestDescQuality = descQuality;
-                        matchedSnippet = extractSnippet(d.text, raw, highlightTerms, rawStems);
-                    }
-                }
+                const descRes = scoreDescriptions(descs, variants, raw, rawTokens, rawStems, highlightTerms, matchedRawTokens);
+                score += descRes.score;
+                if (descRes.snippet) matchedSnippet = descRes.snippet;
             }
         }
 

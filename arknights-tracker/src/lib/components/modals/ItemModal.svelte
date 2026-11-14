@@ -6,7 +6,8 @@
     import { getEnemyUrl, getWeaponUrl } from "$lib/utils/linkUtils";
     import { items } from "$lib/data/items/items";
     import { characters } from "$lib/data/characters.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
+    import { loadLocaleItem } from "$lib/utils/localeLoader";
     import { parseRichText } from "$lib/utils/richText.js";
     import Image from "$lib/components/Image.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -60,8 +61,6 @@
         obtainWays: string[];
     }
 
-    const localeLoaders: Record<string, () => Promise<any>> = import.meta.glob("/src/lib/locales/*/items.json");
-
     let currentItemLocale: ItemLocaleData | null = null;
     let copiedSuccess = false;
 
@@ -84,22 +83,7 @@
     }
 
     async function loadLocale(id: string, lang: string) {
-        const safeLang = lang ? lang.toLowerCase().replace("-", "") : "en";
-        const path = `/src/lib/locales/${safeLang}/items.json`;
-        const fallbackPath = `/src/lib/locales/en/items.json`;
-
-        const loader = localeLoaders[path] || localeLoaders[fallbackPath];
-        if (loader) {
-            try {
-                const mod = await loader();
-                const dict = mod.default || mod;
-                currentItemLocale = dict[id] || null;
-            } catch {
-                currentItemLocale = null;
-            }
-        } else {
-            currentItemLocale = null;
-        }
+        currentItemLocale = (await loadLocaleItem("items", id, lang)) as ItemLocaleData | null;
     }
 
     $: itemName = currentItemLocale?.name || (itemId ? $t(`itemNames.${itemId}`) : "");

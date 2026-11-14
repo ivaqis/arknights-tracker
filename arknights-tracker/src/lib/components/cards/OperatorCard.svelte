@@ -11,6 +11,7 @@
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import { getBaseSkillLocale, getBaseSkillMappedFilter } from "$lib/utils/filterUtils";
+    import { getRarityColor } from "$lib/utils/colorUtils";
 
     export let operator = {};
     export let variant = "default"; // "small" | "default"
@@ -121,14 +122,6 @@
         variant === "default" &&
         !isAccountEmpty &&
         !$disableDarkening;
-
-
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#F4700C";
-        if (rarity === 5) return "#F9B90C";
-        if (rarity === 4) return "#9253F1";
-        return "#888";
-    }
 
     $: safeRarity = operator?.rarity || 1;
     $: rarityColor = getRarityColor(safeRarity);

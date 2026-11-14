@@ -3,7 +3,7 @@
     import { equipment } from "$lib/data/items/equipment.js";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import { getEquipmentUrl, getWeaponUrl } from "$lib/utils/linkUtils";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
     import { getEquipTier, getWeaponTerms } from "$lib/utils/profileUtils.js";
 
     import Image from "$lib/components/Image.svelte";

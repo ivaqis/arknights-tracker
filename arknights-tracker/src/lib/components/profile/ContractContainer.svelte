@@ -2,8 +2,8 @@
     import { createEventDispatcher } from "svelte";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
-    import { characters } from "$lib/data/characters.js";
-    import { weapons } from "$lib/data/weapons.js";
+    import { getSvelteCharId, mapProfessionToClass, mapPropertyToElement, getOperatorData, getWeaponData } from "$lib/utils/operatorUtils";
+    import { getRankTagStyle } from "$lib/utils/colorUtils";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { formatContractDescription, normalizeContractTagId } from "$lib/utils/richText.js";
     import { equipment } from "$lib/data/items/equipment.js";
@@ -89,55 +89,6 @@
         }
     }
 
-    function getSvelteCharId(char) {
-        if (!char) return "";
-        const raw = typeof char === "string" ? char : (char.id || char.charId || char.charData?.id || "");
-        const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
-        return found ? found.id : raw;
-    }
-
-    function mapProfessionToClass(key) {
-        if (!key) return "guard";
-        return key.replace("profession_", "");
-    }
-
-    function mapPropertyToElement(key) {
-        if (!key) return null;
-        return key.replace("char_property_", "");
-    }
-
-    function getOperatorData(char) {
-        const svelteId = getSvelteCharId(char);
-        const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
-        if (staticData) {
-            return staticData;
-        }
-
-        return {
-            id: char.charData?.avatarSqUrl || svelteId || char.id,
-            name: char.charData?.name || char.name || "Operator",
-            rarity: Number(char.charData?.rarity?.value || char.rarity || 4),
-            class: mapProfessionToClass(char.charData?.profession?.key) || "guard",
-            element: mapPropertyToElement(char.charData?.property?.key) || null
-        };
-    }
-
-    function getWeaponData(weapon) {
-        if (!weapon) return null;
-        const skillKey = weapon.weaponData?.skills?.find(s => s.key?.startsWith("sk_wpn_"))?.key;
-        const gameId = skillKey ? skillKey.replace("sk_", "") : (weapon.id || weapon.weaponData?.id);
-        const staticData = Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
-        if (staticData) {
-            return staticData;
-        }
-        return {
-            id: gameId,
-            name: weapon.weaponData?.name || weapon.name || gameId,
-            rarity: Number(weapon.weaponData?.rarity?.value || weapon.rarity?.value || weapon.rarity || 4),
-            type: weapon.weaponData?.type?.value || weapon.type || "sword"
-        };
-    }
-
     function getWeaponIcon(weapon) {
         if (!weapon) return "";
         const mapped = getWeaponData(weapon);
@@ -196,13 +147,6 @@
                 equipmentNames = mod.default || mod;
             } catch (err) {}
         }
-    }
-
-    function getRankTagStyle(rank) {
-        if (rank === 1) return "bg-[#FFE145] text-gray-900";
-        if (rank === 2) return "bg-[#C0C0C0] text-gray-900";
-        if (rank === 3) return "bg-[#CD7F32] text-white";
-        return "bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/15";
     }
 
     $: contractLevel = contract?.level || contract?.contractLevel || contract?.indicatorCount || 0;

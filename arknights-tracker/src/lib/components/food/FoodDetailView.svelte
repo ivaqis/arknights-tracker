@@ -8,6 +8,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { getRarityColor } from "$lib/utils/colorUtils";
+    import { loadLocaleItem } from "$lib/utils/localeLoader";
     import { hyperlinkAction, parseRichText } from "$lib/utils/richText";
     import { changelogData } from "$lib/data/versions.js";
     import { RecipeDataStorage } from "$lib/classes/storages/recipes/RecipeDataStorage";
@@ -33,83 +34,14 @@
 
     let copiedImageId: string | null = null;
 
-    const foodLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
-        en: import.meta.glob("/src/lib/locales/en/usableItems.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/usableItems.json"),
-        de: import.meta.glob("/src/lib/locales/de/usableItems.json"),
-        es: import.meta.glob("/src/lib/locales/es/usableItems.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/usableItems.json"),
-        id: import.meta.glob("/src/lib/locales/id/usableItems.json"),
-        it: import.meta.glob("/src/lib/locales/it/usableItems.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/usableItems.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/usableItems.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/usableItems.json"),
-        th: import.meta.glob("/src/lib/locales/th/usableItems.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/usableItems.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/usableItems.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/usableItems.json"),
-    } as const;
-
-    const equipLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
-        en: import.meta.glob("/src/lib/locales/en/equipItems.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/equipItems.json"),
-        de: import.meta.glob("/src/lib/locales/de/equipItems.json"),
-        es: import.meta.glob("/src/lib/locales/es/equipItems.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/equipItems.json"),
-        id: import.meta.glob("/src/lib/locales/id/equipItems.json"),
-        it: import.meta.glob("/src/lib/locales/it/equipItems.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/equipItems.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/equipItems.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/equipItems.json"),
-        th: import.meta.glob("/src/lib/locales/th/equipItems.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/equipItems.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/equipItems.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/equipItems.json"),
-    } as const;
-
     let foodDetailLocale: { desc: string } | null = null;
     let equipDetailLocale: { desc: string; extraDesc: string } | null = null;
 
     $: loadLocales(item.gameId, $currentLocale);
 
     async function loadLocales(itemId: string, lang: string) {
-        lang = lang || "en";
-        const safeLang = lang.toLowerCase().replace("-", "");
-
-        loadFoodDetails(itemId, safeLang);
-        loadEquipDetails(itemId, safeLang);
-    }
-
-    async function loadFoodDetails(itemId: string, safeLang: string) {
-        const foodLocalePath = `/src/lib/locales/${safeLang}/usableItems.json`;
-        const foodFallbackPath = `/src/lib/locales/en/usableItems.json`;
-
-        let foodLoader = foodLocaleModules[safeLang]?.[foodLocalePath];
-
-        if (!foodLoader) {
-            foodLoader = foodLocaleModules["en"]?.[foodFallbackPath];
-        }
-
-        const mod = await foodLoader() as any;
-        const locales = mod.default || mod;
-
-        foodDetailLocale = locales[itemId];
-    }
-
-    async function loadEquipDetails(itemId: string, safeLang: string) {
-        const equipLocalePath = `/src/lib/locales/${safeLang}/equipItems.json`;
-        const equipFallbackPath = `/src/lib/locales/en/equipItems.json`;
-
-        let equipLoader = equipLocaleModules[safeLang]?.[equipLocalePath];
-
-        if (!equipLoader) {
-            equipLoader = equipLocaleModules["en"]?.[equipFallbackPath];
-        }
-
-        const mod = await equipLoader() as any;
-        const locales = mod.default || mod;
-
-        equipDetailLocale = locales[itemId];
+        foodDetailLocale = await loadLocaleItem("usableItems", itemId, lang);
+        equipDetailLocale = await loadLocaleItem("equipItems", itemId, lang);
     }
 
     function parseFoodDesc(desc: string): string {

@@ -4,7 +4,7 @@
     import { items } from "$lib/data/items/items";
     import { openItemModal } from "$lib/stores/itemModal";
 
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
     import Image from "$lib/components/Image.svelte";
 
     export let item = {};

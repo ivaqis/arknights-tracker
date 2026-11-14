@@ -15,6 +15,7 @@
     import { accountStore } from "$lib/stores/accounts.js";
     import { currentUiLocale } from "$lib/stores/locale";
     import { parseWithServerOffset, formatDate } from "$lib/utils/dateUtils";
+    import { getWeaponBg } from "$lib/utils/colorUtils";
     import { pullData } from "$lib/stores/pulls.js";
     import { createEventDispatcher, onMount } from "svelte";
 
@@ -73,18 +74,6 @@
             hour: "2-digit",
             minute: "2-digit"
         }, { locale: loc, serverId: currentServerId, showServerTime });
-    }
-
-    function getWeaponBg(rarity) {
-        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
-        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
-        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
-    }
-
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#D0926E";
-        if (rarity === 5) return "#E3BC55";
-        return "#888";
     }
 
     function close() {

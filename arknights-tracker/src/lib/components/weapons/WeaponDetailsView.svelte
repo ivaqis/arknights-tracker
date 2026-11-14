@@ -13,7 +13,10 @@
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
+    import { interpolateBlackboard } from "$lib/utils/blackboardUtils";
+    import { copyTableToClipboard, formatNumberForSelection as formatNumForSelection } from "$lib/utils/clipboardUtils";
+    import { loadLocaleItem } from "$lib/utils/localeLoader";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { essences } from "$lib/data/items/essences.js";
     import { locations } from "$lib/data/locations.js";
@@ -47,14 +50,7 @@
 
     let showPotHint = false;
 
-    function formatNumberForSelection(num) {
-        if (num === undefined || num === null) return "0";
-        const formatted = num.toLocaleString(normalizeLocale($currentUiLocale));
-        return formatted.replace(
-            /[\s\u00A0\u202F]/g,
-            '<span class="select-none"> </span>',
-        );
-    }
+    $: formatNumberForSelection = (num) => formatNumForSelection(num, $currentUiLocale);
 
     onMount(() => {
         if (browser) {
@@ -632,50 +628,21 @@
     $: rarityColor = getRarityColor(weaponBase.rarity);
     $: addedVersion = changelogData.find((v) => v.weapons?.includes(id))?.version || (weapons[id] ? "1.0" : null);
 
-    function interpolateBlackboard(text, bb) {
-        if (!text || !bb) return text;
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-            let mathStr = expr.replace(
-                /\b(\d+),(\d+)\b/g,
-                (m, f) => Object.keys(bb)[f] || m,
-            );
-            for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
-            }
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
-            try {
-                let result = new Function("return " + mathStr)();
-                if (format) {
-                    if (format.includes("%"))
-                        result = parseFloat((result * 100).toFixed(1)) + "%";
-                    else if (format === "0") result = Math.round(result);
-                    else result = parseFloat(Number(result).toFixed(1));
-                }
-                return `<span class="text-[#38BDF8] font-bold">${result}</span>`;
-            } catch (e) {
-                return match;
-            }
-        });
-    }
-
     async function copyStatsTable() {
         const headers = [
             tOrFallback("stats.level", "Level"),
             tOrFallback("stats.baseAtk", "Base ATK"),
         ];
-        let textData = headers.join("\t") + "\n";
-        for (let i = 0; i < 90; i++) {
-            textData += `${i + 1}\t${weaponData.levels?.baseAtk ? weaponData.levels.baseAtk[i] : 0}\n`;
-        }
-        try {
-            await navigator.clipboard.writeText(textData);
+        const rows = Array.from({ length: 90 }, (_, i) => [
+            i + 1,
+            weaponData.levels?.baseAtk ? weaponData.levels.baseAtk[i] : 0,
+        ]);
+        if (await copyTableToClipboard(headers, rows)) {
             isTableCopied = true;
             setTimeout(() => {
                 isTableCopied = false;
             }, 2000);
-        } catch (err) {}
+        }
     }
     function setMinAll() {
         level = 1;

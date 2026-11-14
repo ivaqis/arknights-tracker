@@ -1,5 +1,3 @@
-// src/lib/data/levelUpTable.js
-
 export const levels = [
 {
     "1": {

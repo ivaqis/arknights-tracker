@@ -3,6 +3,7 @@
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+    import { getWeaponBg } from "$lib/utils/colorUtils";
     
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -102,12 +103,6 @@
         if (p <= 60) return "#D4AD3D";
         if (p <= 85) return "#C55E2F";
         return "#9A3404";
-    }
-
-    function getWeaponBg(rarity) {
-        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
-        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
-        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
     }
 
     function getAvgColor(val, max) {

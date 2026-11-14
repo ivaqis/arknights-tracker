@@ -21,7 +21,7 @@
         getStatIcon,
         getTalents
     } from "$lib/utils/profileUtils.js";
-    import { getGradientColorByElement } from "$lib/utils/colorUtils.js";
+    import { getGradientColorByElement } from "$lib/utils/colorUtils";
 
     export let activeAccount = null;
     export let hasBackground = false;

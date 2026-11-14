@@ -1588,7 +1588,7 @@ export const rawEvents: GenericEventData[] = [
         endTime: "2026-11-24 17:00:00",
         endTimeAsia: "2026-11-25 04:00:00",
         icon: "ev14-v1.0.webp",
-        url: "",
+        url: "https://x.com/AKEndfield/status/2120365905632755787?a=o_4JTCyAX5i9rz23GqU&s=20",
         color: "#359abe",
         layer: 7,
         type: "inGamePermanent",

@@ -1,6 +1,7 @@
 <script>
     import { t } from "$lib/i18n";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
+    import { interpolateBlackboard } from "$lib/utils/blackboardUtils";
     
     import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Image from "$lib/components/Image.svelte";
@@ -67,41 +68,6 @@
     $: name = localizedData?.name || dataKey;
     $: description =
         localizedData?.levels?.[currentLevel - 1] || "No description";
-
-
-    function interpolateBlackboard(text, bb) {
-        if (!text) return "";
-        if (!bb || Object.keys(bb).length === 0) return text;
-
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
-
-            for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
-            }
-
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
-
-            let result = 0;
-            try {
-                result = new Function("return " + mathStr)();
-            } catch (e) {
-                return match;
-            }
-            if (format) {
-                if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(4)) + "%";
-                } else if (format === "0") {
-                    result = Math.round(result);
-                } else {
-                    result = parseFloat(Number(result).toFixed(4));
-                }
-            }
-            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-        });
-    }
 
     $: bbKey = `${dataKey}_${currentLevel}`;
     $: currentBlackboard = blackboard?.[bbKey] || blackboard?.[dataKey] || {};

@@ -1,65 +1,31 @@
 import { characters } from "$lib/data/characters.js";
 import { weapons } from "$lib/data/weapons.js";
 import { equipment } from "$lib/data/items/equipment.js";
-import { getImagePath } from "$lib/utils/imageUtils.js";
+import { getImagePath } from "$lib/utils/imageUtils";
 import ruEquip from "$lib/locales/ru/equipment.json";
 import enEquip from "$lib/locales/en/equipment.json";
+import { interpolateBlackboard } from "./blackboardUtils";
+import {
+    charOrderMap,
+    getSvelteCharId,
+    mapProfessionToClass,
+    mapPropertyToElement,
+    getOperatorData,
+    getWeaponData
+} from "./operatorUtils";
 
-export const charOrderMap = Object.keys(characters || {}).reduce((acc, key, idx) => {
-    acc[key] = idx;
-    return acc;
-}, {});
+export {
+    charOrderMap,
+    getSvelteCharId,
+    mapProfessionToClass,
+    mapPropertyToElement,
+    getOperatorData,
+    getWeaponData
+};
 
-export function getSvelteCharId(char) {
-    if (!char) return "";
-    const raw = typeof char === "string" ? char : (char.id || char.charId || char.charData?.id || "");
-    const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
-    return found ? found.id : raw;
-}
+export { interpolateBlackboard };
 
-export function mapProfessionToClass(key) {
-    if (!key) return "guard";
-    return key.replace("profession_", "");
-}
-
-export function mapPropertyToElement(key) {
-    if (!key) return null;
-    return key.replace("char_property_", "");
-}
-
-export function getOperatorData(char) {
-    const svelteId = getSvelteCharId(char);
-    const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
-    if (staticData) {
-        return staticData;
-    }
-
-    return {
-        id: char.charData?.avatarSqUrl || svelteId || char.id,
-        name: char.charData?.name || char.name || "Operator",
-        rarity: Number(char.charData?.rarity?.value || char.rarity || 4),
-        class: mapProfessionToClass(char.charData?.profession?.key) || "guard",
-        element: mapPropertyToElement(char.charData?.property?.key) || null
-    };
-}
-
-export function getWeaponData(weapon) {
-    if (!weapon) return null;
-    const skillKey = weapon.weaponData?.skills?.find(s => s.key?.startsWith("sk_wpn_"))?.key;
-    const gameId = skillKey ? skillKey.replace("sk_", "") : (weapon.id || weapon.weaponData?.id);
-    const staticData = Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
-    if (staticData) {
-        return staticData;
-    }
-    return {
-        id: gameId,
-        name: weapon.weaponData?.name || weapon.name || gameId,
-        rarity: Number(weapon.weaponData?.rarity?.value || weapon.rarity?.value || weapon.rarity || 4),
-        type: weapon.weaponData?.type?.value || weapon.type || "sword"
-    };
-}
-
-export function getWeaponIcon(weapon) {
+export function getWeaponIcon(weapon: any): string {
     if (!weapon) return "";
     const mapped = getWeaponData(weapon);
     const wpnId = mapped?.id || weapon.id;
@@ -69,7 +35,7 @@ export function getWeaponIcon(weapon) {
     return weapon.icon || "";
 }
 
-const SKILL_ALIASES = {
+const SKILL_ALIASES: Record<string, string[]> = {
     attr_str: ["strength", "сила", "str"],
     attr_atk: ["attack", "atk", "атака"],
     attr_will: ["will", "воля"],
@@ -103,7 +69,7 @@ const SKILL_ALIASES = {
     ult: ["twilight", "ult", "ultimate", "сумерки", "ульта", "абсолютный навык"]
 };
 
-function termMatchesSkill(t, skillId) {
+function termMatchesSkill(t: any, skillId: string): boolean {
     if (!t || !skillId) return false;
     const tid = String(t.id || "").toLowerCase().trim();
     const tname = String(t.name || "").toLowerCase().trim();
@@ -127,13 +93,13 @@ function termMatchesSkill(t, skillId) {
     return false;
 }
 
-export function getWeaponTerms(wpn) {
+export function getWeaponTerms(wpn: any): number[] {
     if (!wpn) return [];
     if (Array.isArray(wpn.weaponTerms) && wpn.weaponTerms.length > 0) {
         return wpn.weaponTerms;
     }
-    if (Array.isArray(wpn.skills) && wpn.skills.length > 0 && wpn.skills.every(s => typeof s === 'number' || typeof s?.level === 'number')) {
-        return wpn.skills.map(s => typeof s === 'number' ? s : s.level);
+    if (Array.isArray(wpn.skills) && wpn.skills.length > 0 && wpn.skills.every((s: any) => typeof s === 'number' || typeof s?.level === 'number')) {
+        return wpn.skills.map((s: any) => typeof s === 'number' ? s : s.level);
     }
 
     const refine = Number(wpn.refineLevel) || 0;
@@ -151,8 +117,8 @@ export function getWeaponTerms(wpn) {
         else bt = 0;
     }
 
-    let baseTerms;
-    let upperBounds;
+    let baseTerms: number[];
+    let upperBounds: number[];
     if (rarity === 3) {
         const s1 = bt === 4 ? 5 : bt === 3 ? 4 : bt === 2 ? 3 : bt === 1 ? 2 : 1;
         const u1 = bt === 4 ? 9 : bt === 3 ? 8 : bt === 2 ? 6 : bt === 1 ? 5 : 3;
@@ -179,7 +145,7 @@ export function getWeaponTerms(wpn) {
                 const skillId = skillKeys[idx];
                 let bonus = 0;
                 const found = skillId
-                    ? gemTerms.find(t => termMatchesSkill(t, skillId))
+                    ? gemTerms.find((t: any) => termMatchesSkill(t, skillId))
                     : null;
                 if (found) {
                     bonus = Number(found.cost ?? found.level ?? found.value ?? 0) || 0;
@@ -204,7 +170,7 @@ export function getWeaponTerms(wpn) {
     return baseTerms.map((v, idx) => Math.min(upperBounds[idx] || 9, Math.max(1, v)));
 }
 
-export function getStaticEquipId(equipData, equipmentNames = {}) {
+export function getStaticEquipId(equipData: any, equipmentNames: Record<string, any> = {}): string | null {
     if (!equipData) return null;
     const nameToMatch = equipData.name;
     if (!nameToMatch) return null;
@@ -212,17 +178,17 @@ export function getStaticEquipId(equipData, equipmentNames = {}) {
     let matched = Object.keys(equipmentNames).find(key => equipmentNames[key]?.name === nameToMatch);
     if (matched) return matched;
 
-    matched = Object.keys(ruEquip).find(key => ruEquip[key]?.name === nameToMatch);
+    matched = Object.keys(ruEquip).find(key => (ruEquip as Record<string, any>)[key]?.name === nameToMatch);
     if (matched) return matched;
 
-    matched = Object.keys(enEquip).find(key => enEquip[key]?.name === nameToMatch);
+    matched = Object.keys(enEquip).find(key => (enEquip as Record<string, any>)[key]?.name === nameToMatch);
     if (matched) return matched;
 
-    if (equipment[equipData.id]) return equipData.id;
+    if ((equipment as Record<string, any>)[equipData.id]) return equipData.id;
     return null;
 }
 
-export function getEquipTier(equipOrLevel, staticEquipOrRarity) {
+export function getEquipTier(equipOrLevel: any, staticEquipOrRarity?: any): number {
     if (!equipOrLevel) return 0;
 
     if (typeof equipOrLevel === "object") {
@@ -249,7 +215,7 @@ export function getEquipTier(equipOrLevel, staticEquipOrRarity) {
     return 0;
 }
 
-export function getEquipRarity(equip, staticEquip) {
+export function getEquipRarity(equip: any, staticEquip: any): number {
     if (staticEquip?.rarity) return Number(staticEquip.rarity);
     const key = equip?.equipData?.rarity?.key || "";
     const match = key.match(/equip_rarity_(\d+)/);
@@ -258,12 +224,12 @@ export function getEquipRarity(equip, staticEquip) {
     return Number.isNaN(val) ? 4 : val;
 }
 
-export function getPropertyLabel(propKey) {
+export function getPropertyLabel(propKey: string): string {
     if (!propKey) return "Stat";
     const rawKey = propKey.replace("equip_attr_", "").replace("equip_", "");
     const lowerKey = rawKey.toLowerCase();
 
-    const mappings = {
+    const mappings: Record<string, string> = {
         "wisd": "Wisdom",
         "str": "Strength",
         "agi": "Agility",
@@ -292,7 +258,7 @@ export function getPropertyLabel(propKey) {
         .join(" ");
 }
 
-const STAT_ICON_RULES = [
+const STAT_ICON_RULES: [string[], string][] = [
     [["wisd", "int"], "int"],
     [["str"], "str"],
     [["agi"], "agi"],
@@ -312,65 +278,31 @@ const STAT_ICON_RULES = [
     [["crit"], "crirate"]
 ];
 
-export function getStatIcon(propKey) {
+export function getStatIcon(propKey: string): string | null {
     if (!propKey) return null;
     const key = propKey.toLowerCase();
     const rule = STAT_ICON_RULES.find(([needles]) => needles.some(needle => key.includes(needle)));
     return rule ? rule[1] : null;
 }
 
-export function getCultivationLabel(node, lvl) {
+export function getCultivationLabel(node: any, lvl: number | string): string {
     if (!node) return lvl.toString();
     const match = node.name.match(/[αβγ]\s*$/);
     return match ? match[0] : lvl.toString();
 }
 
-export function interpolateBlackboard(text, bb) {
-    if (!text) return "";
-    if (!bb || Object.keys(bb).length === 0) return text;
-
-    return text.replace(/\{([^{}]+)\}/g, (match, content) => {
-        let [expr, format] = content.split(":");
-        let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
-
-        for (const key in bb) {
-            const regex = new RegExp(String.raw`\b${key}\b`, "g");
-            mathStr = mathStr.replace(regex, `(${bb[key]})`);
-        }
-
-        if (/[^0-9+\-*/().\s]/.test(mathStr)) return match;
-
-        let result = 0;
-        try {
-            result = new Function("return " + mathStr)();
-        } catch (e) {
-            return match;
-        }
-        if (format) {
-            if (format.includes("%")) {
-                result = Number.parseFloat((result * 100).toFixed(4)) + "%";
-            } else if (format === "0") {
-                result = Math.round(result);
-            } else {
-                result = Number.parseFloat(Number(result).toFixed(4));
-            }
-        }
-        return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-    });
-}
-
-export function getTalents(char, detailedChar, staticDetails = null, charLocale = null) {
+export function getTalents(char: any, detailedChar: any, staticDetails: any = null, charLocale: any = null): any[] {
     const svelteId = getSvelteCharId(char);
     const hasCharData = char?.charData && (char.charData.combatTalents?.length || char.charData.cultivationTalents?.length || char.charData.abilityTalents?.length);
     if (!hasCharData) {
         if (!staticDetails && !charLocale) return [];
-        const talents = [];
+        const talents: any[] = [];
 
         for (const idx of [1, 2]) {
             const localeData = charLocale?.skills?.[`talent${idx}`];
             if (localeData && localeData.name) {
                 const pNodes = detailedChar?.talent?.latestPassiveSkillNodes || char?.talent?.latestPassiveSkillNodes || [];
-                const tNode = pNodes.find(id => id.includes(`passive_skill_${idx - 1}_`));
+                const tNode = pNodes.find((id: string) => id.includes(`passive_skill_${idx - 1}_`));
                 const match = tNode?.match(/passive_skill_\d+_(\d+)/);
                 const currentLevel = match ? Number.parseInt(match[1], 10) : (detailedChar?.talentLevels?.[`talent${idx}`] || 0);
                 const descIndex = Math.max(0, currentLevel - 1);
@@ -395,7 +327,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
             const localeData = charLocale?.skills?.[`baseSkill${idx}`];
             if (localeData && localeData.name) {
                 const fNodes = detailedChar?.talent?.latestFactorySkillNodes || detailedChar?.talent?.latestSpaceshipSkillNodes || char?.talent?.latestFactorySkillNodes || char?.talent?.latestSpaceshipSkillNodes || [];
-                const fNode = fNodes.find(id => id.includes(`_${idx - 1}_`) || id.includes(`_${idx}_`) || (idx === 1 && id.endsWith('_a')) || (idx === 2 && id.endsWith('_b')));
+                const fNode = fNodes.find((id: string) => id.includes(`_${idx - 1}_`) || id.includes(`_${idx}_`) || (idx === 1 && id.endsWith('_a')) || (idx === 2 && id.endsWith('_b')));
                 let currentLevel = 0;
                 if (fNode) {
                     const m = fNode.match(/_(\d+)$/);
@@ -429,13 +361,14 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         const localeData = charLocale?.skills?.indicator;
         if (localeData) {
             const attrNodes = new Set(detailedChar?.talent?.attrNodes || char?.talent?.attrNodes || []);
-            const charStatic = characters[svelteId] || Object.values(characters).find(c => c.id === svelteId || c.gameId === svelteId || c.apiId === svelteId);
+            const charStatic = (characters as Record<string, any>)[svelteId] || Object.values(characters).find((c: any) => c.id === svelteId || c.gameId === svelteId || c.apiId === svelteId);
             const charPrefix = (charStatic?.gameId || svelteId).replace(/m$|f$/, "");
             let activeNodesCount = 0;
             let totalValue = 0;
             const levels = localeData.levels || [];
             attrNodes.forEach(nodeId => {
-                if ((nodeId.includes('endmin') && svelteId.includes('endministrator')) || (charPrefix && nodeId.includes(charPrefix)) || (svelteId && nodeId.includes(svelteId))) {
+                const nId = String(nodeId);
+                if ((nId.includes('endmin') && svelteId.includes('endministrator')) || (charPrefix && nId.includes(charPrefix)) || (svelteId && nId.includes(svelteId))) {
                     activeNodesCount++;
                 }
             });
@@ -468,16 +401,16 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         return talents;
     }
     const combatNodes = char.charData.combatTalents || [];
-    const groupedCombat = {};
-    combatNodes.forEach(node => {
+    const groupedCombat: Record<string, any[]> = {};
+    combatNodes.forEach((node: any) => {
         if (!groupedCombat[node.name]) {
             groupedCombat[node.name] = [];
         }
         groupedCombat[node.name].push(node);
     });
     
-    const talents = [];
-    const combatList = [];
+    const talents: any[] = [];
+    const combatList: any[] = [];
     Object.entries(groupedCombat).forEach(([name, nodes]) => {
         nodes.sort((a, b) => a.id.localeCompare(b.id));
         const levelsCount = nodes.length;
@@ -525,8 +458,8 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
     combatList.forEach(item => talents.push(item.data));
 
     const cultNodes = char.charData.cultivationTalents || [];
-    const groupedCult = {};
-    cultNodes.forEach(node => {
+    const groupedCult: Record<string, any[]> = {};
+    cultNodes.forEach((node: any) => {
         const baseName = node.name.replace(/[αβγ]\s*$/, "").trim();
         if (!groupedCult[baseName]) {
             groupedCult[baseName] = [];
@@ -534,7 +467,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         groupedCult[baseName].push(node);
     });
 
-    const cultList = [];
+    const cultList: any[] = [];
     Object.entries(groupedCult).forEach(([baseName, nodes]) => {
         nodes.sort((a, b) => a.id.localeCompare(b.id));
         const levelsCount = nodes.length;
@@ -606,18 +539,18 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
     const abilityNodes = char.charData.abilityTalents || [];
     if (abilityNodes.length > 0) {
         const attrNodes = new Set(detailedChar?.talent?.attrNodes || char.talent?.attrNodes || []);
-        const hasNode = (nodeId) => {
+        const hasNode = (nodeId: string) => {
             if (attrNodes.has(nodeId)) return true;
             if (nodeId.includes('endmin')) {
                 const suffix = nodeId.split('_').pop();
-                return Array.from(attrNodes).some(attrId => attrId.includes('endmin') && attrId.endsWith('_' + suffix));
+                return Array.from(attrNodes).some((attrId: any) => String(attrId).includes('endmin') && String(attrId).endsWith('_' + suffix));
             }
             return false;
         };
         let totalValue = 0;
         let activeNodesCount = 0;
         
-        abilityNodes.forEach(node => {
+        abilityNodes.forEach((node: any) => {
             if (hasNode(node.id)) {
                 activeNodesCount++;
                 const valMatch = node.desc?.match(/(\d+)/);
@@ -630,8 +563,8 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
         const firstNode = abilityNodes[0] || {};
         let description = firstNode.desc || "";
         if (activeNodesCount > 0) {
-            const activeNodeList = abilityNodes.filter(n => hasNode(n.id));
-            activeNodeList.sort((a, b) => a.id.localeCompare(b.id));
+            const activeNodeList = abilityNodes.filter((n: any) => hasNode(n.id));
+            activeNodeList.sort((a: any, b: any) => a.id.localeCompare(b.id));
             const highestActive = activeNodeList[activeNodeList.length - 1];
             if (highestActive) {
                 description = highestActive.desc || "";
@@ -653,7 +586,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
 
         description = description.replace(/([-+]?\s*)(\d+(?:\.\d+)?)/, `$1${totalValue}`);
 
-        const getAttributeType = (desc) => {
+        const getAttributeType = (desc: string) => {
             if (!desc) return "str";
             const d = desc.toLowerCase();
             if (d.includes("ловкост") || d.includes("agility") || d.includes("agi")) return "agi";
@@ -683,6 +616,7 @@ export function getTalents(char, detailedChar, staticDetails = null, charLocale 
     return talents;
 }
 
-export function getServerLabel(serverId) {
+export function getServerLabel(serverId: string | number | null | undefined): string {
     return serverId === "2" ? "Asia" : "Americas / Europe";
 }
+

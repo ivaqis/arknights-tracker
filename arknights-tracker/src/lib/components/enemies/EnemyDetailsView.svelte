@@ -4,7 +4,9 @@
     import { enemies, enemyVariantMap } from "$lib/data/enemies.js";
     import { enemyVariants } from "$lib/data/enemyVariants.js";
     import { changelogData } from "$lib/data/versions.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
+    import { copyTableToClipboard, formatNumberForSelection as formatNumForSelection } from "$lib/utils/clipboardUtils";
+    import { loadLocaleItem } from "$lib/utils/localeLoader";
 
     import Icon from "$lib/components/Icon.svelte";
     import ItemCard from "$lib/components/cards/ItemCard.svelte";
@@ -71,28 +73,7 @@
         return translated === key ? fallback : translated;
     }
 
-    function formatNumberForSelection(num) {
-        if (num === undefined || num === null) return '0';
-        const formatted = num.toLocaleString(normalizeLocale($currentUiLocale));
-        return formatted.replace(/[\s\u00A0\u202F]/g, '<span class="select-none"> </span>');
-    }
-
-    const localeModules = {
-        en: import.meta.glob("/src/lib/locales/en/enemies.json"),
-        ru: import.meta.glob("/src/lib/locales/ru/enemies.json"),
-        de: import.meta.glob("/src/lib/locales/de/enemies.json"),
-        es: import.meta.glob("/src/lib/locales/es/enemies.json"),
-        fr: import.meta.glob("/src/lib/locales/fr/enemies.json"),
-        id: import.meta.glob("/src/lib/locales/id/enemies.json"),
-        it: import.meta.glob("/src/lib/locales/it/enemies.json"),
-        ja: import.meta.glob("/src/lib/locales/ja/enemies.json"),
-        ko: import.meta.glob("/src/lib/locales/ko/enemies.json"),
-        pt: import.meta.glob("/src/lib/locales/pt/enemies.json"),
-        th: import.meta.glob("/src/lib/locales/th/enemies.json"),
-        vi: import.meta.glob("/src/lib/locales/vi/enemies.json"),
-        zhcn: import.meta.glob("/src/lib/locales/zhcn/enemies.json"),
-        zhtw: import.meta.glob("/src/lib/locales/zhtw/enemies.json"),
-    };
+    $: formatNumberForSelection = (num) => formatNumForSelection(num, $currentUiLocale);
 
     let copiedImageId = null;
     let showStatsTable = false;
@@ -137,22 +118,7 @@
     $: loadEnemyData(baseId, $currentLocale);
 
     async function loadEnemyData(targetId, lang) {
-        if (!targetId) return;
-        lang = lang || "en";
-        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
-
-        const localePath = `/src/lib/locales/${safeLang}/enemies.json`;
-        const fallbackPath = `/src/lib/locales/en/enemies.json`;
-
-        let localeLoader = localeModules[safeLang]?.[localePath] || localeModules["en"]?.[fallbackPath];
-
-        if (localeLoader) {
-            const mod = await localeLoader();
-            const allEnemiesLocale = mod.default || mod;
-            enemyLocale = allEnemiesLocale[targetId] || {};
-        } else {
-            enemyLocale = {};
-        }
+        enemyLocale = await loadLocaleItem("enemies", targetId, lang);
     }
 
     $: enemyName = enemyLocale.name || baseId;
@@ -225,25 +191,21 @@
     }
 
     async function copyStatsTable() {
-        let textData = `${tOrFallback("stats.level", "Level")}\tHP\tATK\tDEF\n`;
-        const count = maxLevel;
+        const headers = [tOrFallback("stats.level", "Level"), "HP", "ATK", "DEF"];
         const hpArr = activeStatData.hp || enemyData.hp || [];
         const atkArr = activeStatData.atk || enemyData.atk || [];
         const defArr = activeStatData.def || enemyData.def || [];
-        for (let i = 0; i < count; i++) {
-            const h = hpArr[i] ?? 0;
-            const a = atkArr[i] ?? 0;
-            const d = defArr[i] ?? 0;
-            textData += `${i + 1}\t${h}\t${a}\t${d}\n`;
-        }
-        try {
-            await navigator.clipboard.writeText(textData);
+        const rows = Array.from({ length: maxLevel }, (_, i) => [
+            i + 1,
+            hpArr[i] ?? 0,
+            atkArr[i] ?? 0,
+            defArr[i] ?? 0
+        ]);
+        if (await copyTableToClipboard(headers, rows)) {
             isTableCopied = true;
             setTimeout(() => {
                 isTableCopied = false;
             }, 2000);
-        } catch (err) {
-            console.error("Failed to copy:", err);
         }
     }
 </script>

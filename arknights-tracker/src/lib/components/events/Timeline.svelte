@@ -221,11 +221,6 @@
               4
             : HEADER_HEIGHT_PX + 40;
 
-    function handleClickOutside(event) {
-        const clickedBadge = event.target.closest("[data-timezone-badge]");
-        const clickedMenu = event.target.closest("[data-timezone-menu]");
-    }
-
     function getVariant(item) {
         if (!item) return "event-icon";
         if (
@@ -508,14 +503,11 @@
             timerInterval = setInterval(() => {
                 now = new Date();
             }, 1000);
-
-            document.addEventListener("click", handleClickOutside);
         }
     });
 
     onDestroy(() => {
         if (browser && timerInterval) clearInterval(timerInterval);
-        if (browser) document.removeEventListener("click", handleClickOutside);
     });
 
     let bannerForModal = null;

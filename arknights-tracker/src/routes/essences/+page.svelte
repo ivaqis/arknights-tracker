@@ -32,7 +32,7 @@
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import { getEnemyUrl, getWeaponUrl } from "$lib/utils/linkUtils";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
     import { scale } from "svelte/transition";
 

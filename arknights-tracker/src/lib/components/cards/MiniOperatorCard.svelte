@@ -1,35 +1,18 @@
 <script>
     import { t } from "$lib/i18n";
-    import { characters } from "$lib/data/characters.js";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import { getSvelteCharId, getOperatorData as getOpDataFallback } from "$lib/utils/operatorUtils";
 
     export let char = null;
     export let getOperatorData = null;
     export let href = null;
 
-    function getSvelteCharId(item) {
-        if (!item) return "";
-        const raw = typeof item === "string" ? item : (item.id || item.charId || item.charData?.id || "");
-        const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
-        return found ? found.id : raw;
-    }
-
     function resolveOperator(item) {
         if (!item) return null;
-        if (getOperatorData) return getOperatorData(item);
-        const svelteId = getSvelteCharId(item);
-        const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
-        if (staticData) {
-            return staticData;
-        }
-        return {
-            id: item.charData?.avatarSqUrl || svelteId || item.id || "endministrator1",
-            name: item.charData?.name || item.name || "Operator",
-            rarity: Number(item.charData?.rarity?.value || item.rarity || 4)
-        };
+        return (getOperatorData || getOpDataFallback)(item);
     }
 
     $: isEmpty = !char || Object.keys(char).length === 0;
