@@ -36,6 +36,7 @@ export interface SearchEntry {
     isItemModal?: boolean;
     bannerData?: any;
     keywords?: string;
+    featuredIds?: string[];
 }
 
 export interface SearchResult extends SearchEntry {
@@ -245,6 +246,7 @@ export function buildSearchIndex(): SearchEntry[] {
     }
 
     for (const b of banners as any[]) {
+        const featIds = [...(b.featured6 || []), ...(b.featured5 || [])];
         list.push({
             id: b.id,
             category: "banners",
@@ -260,7 +262,8 @@ export function buildSearchIndex(): SearchEntry[] {
                 startTime: b.startTime,
                 endTime: b.endTime
             },
-            keywords: `${b.type || ""} ${(b.featured6 || []).join(" ")}`
+            keywords: `${b.type || ""} ${featIds.join(" ")}`,
+            featuredIds: featIds
         });
     }
 
@@ -548,8 +551,24 @@ function extractSnippet(text: string, fullPhrase: string, terms: string[], stemm
 
     if (bestIdx === -1) return "";
 
-    const start = Math.max(0, bestIdx - 30);
-    const end = Math.min(clean.length, bestIdx + termLen + 50);
+    let start = 0;
+    if (bestIdx > 0) {
+        const prevSpace = clean.lastIndexOf(" ", bestIdx - 2);
+        if (prevSpace !== -1 && (bestIdx - prevSpace) <= 18) {
+            start = prevSpace + 1;
+        } else {
+            start = Math.max(0, bestIdx - 12);
+        }
+    }
+
+    let end = Math.min(clean.length, bestIdx + termLen + 45);
+    if (end < clean.length) {
+        const nextSpace = clean.indexOf(" ", end);
+        if (nextSpace !== -1 && (nextSpace - (bestIdx + termLen)) <= 55) {
+            end = nextSpace;
+        }
+    }
+
     let snippet = clean.slice(start, end);
     if (start > 0) snippet = "..." + snippet;
     if (end < clean.length) snippet = snippet + "...";
@@ -887,6 +906,84 @@ export function performSearch(
                     matchedRawTokens.add(qIdx);
                     if (!highlightTerms.includes(tt)) highlightTerms.push(tt);
                     break;
+                }
+            }
+        }
+
+        if (item.category === "banners" && item.featuredIds && item.featuredIds.length > 0) {
+            for (const featId of item.featuredIds) {
+                let featName = "";
+                const charKey = `characters.${featId}`;
+                const charTrans = translate(charKey);
+                if (charTrans && charTrans !== charKey) {
+                    featName = charTrans;
+                } else {
+                    const wpnKey = `weaponsList.${featId}`;
+                    const wpnTrans = translate(wpnKey);
+                    if (wpnTrans && wpnTrans !== wpnKey) {
+                        featName = wpnTrans;
+                    } else {
+                        const charObj = (characters as any)[featId];
+                        const wpnObj = (weapons as any)[featId];
+                        featName = charObj?.name || wpnObj?.name || featId;
+                    }
+                }
+                if (!featName) continue;
+                const lowerFeat = featName.toLowerCase();
+                const featTokens = tokenize(featName);
+                const featStems = featTokens.map(stemWord);
+
+                let featScore = 0;
+                for (const v of variants) {
+                    if (lowerFeat === v) {
+                        featScore = Math.max(featScore, 260);
+                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                    } else if (lowerFeat.startsWith(v)) {
+                        featScore = Math.max(featScore, 210);
+                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                    } else if (lowerFeat.includes(v)) {
+                        featScore = Math.max(featScore, 170);
+                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                    } else if (v.length >= 4 && lowerFeat.length >= 4 && isDistanceOne(lowerFeat, v)) {
+                        featScore = Math.max(featScore, 150);
+                        rawTokens.forEach((_, idx) => matchedRawTokens.add(idx));
+                    }
+                }
+
+                for (let qIdx = 0; qIdx < rawTokens.length; qIdx++) {
+                    const qt = rawTokens[qIdx];
+                    const qs = rawStems[qIdx];
+                    for (let i = 0; i < featTokens.length; i++) {
+                        const ft = featTokens[i];
+                        if (ft === qt) {
+                            featScore += 70;
+                            matchedRawTokens.add(qIdx);
+                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
+                            break;
+                        } else if (ft.startsWith(qt)) {
+                            featScore += 50;
+                            matchedRawTokens.add(qIdx);
+                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
+                            break;
+                        } else if (featStems[i] === qs) {
+                            featScore += 45;
+                            matchedRawTokens.add(qIdx);
+                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
+                            break;
+                        } else if (qt.length >= 4 && ft.length >= 4 && isDistanceOne(ft, qt)) {
+                            featScore += 40;
+                            matchedRawTokens.add(qIdx);
+                            if (!highlightTerms.includes(ft)) highlightTerms.push(ft);
+                            break;
+                        }
+                    }
+                }
+
+                if (featScore > 0) {
+                    score = Math.max(score, featScore);
+                    if (!matchedSnippet) {
+                        matchedSnippet = `${highlightText(featName, highlightTerms)}`;
+                    }
                 }
             }
         }

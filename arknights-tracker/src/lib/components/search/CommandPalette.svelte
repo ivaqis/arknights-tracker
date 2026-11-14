@@ -383,7 +383,7 @@
                                 on:click={() => selectItem(item)}
                                 on:mouseenter={() => (selectedIndex = index)}
                             >
-                                <div class="flex items-center gap-3 min-w-0">
+                                <div class="flex items-center gap-3 min-w-0 flex-1">
                                     <div class="w-10 h-10 rounded-lg bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] flex items-center justify-center shrink-0 overflow-hidden">
                                         {#if item.iconId}
                                             <Image id={item.iconId} variant={item.imageVariant || "operator-icon"} width={40} height={40} className="w-full h-full object-cover" />
@@ -392,7 +392,7 @@
                                         {/if}
                                     </div>
 
-                                    <div class="min-w-0 flex flex-col justify-center">
+                                    <div class="min-w-0 flex-1 flex flex-col justify-center">
                                         <div class="font-semibold text-sm truncate flex items-center gap-2">
                                             <span>{@html item.highlightedTitle || item.displayTitle}</span>
                                             {#if item.rarity}
@@ -412,7 +412,7 @@
                                             {/if}
                                         </div>
                                         {#if item.matchedSnippet}
-                                            <div class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">
+                                            <div class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 md:line-clamp-1 mt-0.5 break-words">
                                                 {@html item.matchedSnippet}
                                             </div>
                                         {/if}
@@ -420,7 +420,7 @@
                                 </div>
 
                                 <div class="shrink-0 flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
-                                    <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040]">
+                                    <span class="px-1.5 md:px-2 py-0.5 rounded bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] text-[10px] md:text-xs">
                                         {$t(item.categoryLabelKey)}
                                     </span>
                                 </div>
