@@ -33,6 +33,7 @@
     let isAdvancedSearch = false;
     let loadedLocale = "";
     let prevSearchModalOpen = false;
+    let isMouseDownOnBackdrop = false;
 
     const PAGE_SIZE = 20;
     let displayLimit = PAGE_SIZE;
@@ -105,6 +106,7 @@
 
     $: if (browser) {
         if ($isSearchModalOpen && !prevSearchModalOpen) {
+            isMouseDownOnBackdrop = false;
             loadRecentItems();
             searchQuery = "";
             selectedIndex = -1;
@@ -113,6 +115,7 @@
                 inputEl?.focus();
             });
         } else if (!$isSearchModalOpen && prevSearchModalOpen) {
+            isMouseDownOnBackdrop = false;
             document.body.style.overflow = "";
         }
         prevSearchModalOpen = $isSearchModalOpen;
@@ -203,7 +206,21 @@
         });
     }
 
-    function handleBackdropClick(): void {
+    function handleBackdropMouseDown(e: MouseEvent): void {
+        isMouseDownOnBackdrop = e.target === e.currentTarget;
+    }
+
+    function handleBackdropMouseUp(e: MouseEvent): void {
+        if (e.target !== e.currentTarget) {
+            isMouseDownOnBackdrop = false;
+        }
+    }
+
+    function handleBackdropClick(e: MouseEvent): void {
+        const canClose = isMouseDownOnBackdrop && e.target === e.currentTarget;
+        isMouseDownOnBackdrop = false;
+        if (!canClose) return;
+
         if ($selectedItemId) {
             closeItemModal();
             return;
@@ -217,6 +234,10 @@
 
     function getItemTargetUrl(item: SearchResult): string {
         return item.category === "achievements" ? `/achievements?id=${item.id}` : (item.url || "");
+    }
+
+    function isLinkItem(item: SearchResult): boolean {
+        return !item.bannerData && !item.isItemModal && !!getItemTargetUrl(item);
     }
 
     function handleItemAuxClick(e: MouseEvent, item: SearchResult): void {
@@ -336,7 +357,9 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div
         class="fixed inset-0 md:ml-[var(--sb-w)] z-[100002] bg-black/60 backdrop-blur-sm flex items-start justify-center pt-16 md:pt-24 px-3 md:px-4"
-        on:click|self={handleBackdropClick}
+        on:mousedown={handleBackdropMouseDown}
+        on:mouseup={handleBackdropMouseUp}
+        on:click={handleBackdropClick}
     >
         <div
             class="w-full max-w-2xl bg-white dark:bg-[#252525] border border-gray-200 dark:border-[#3F3F3F] rounded-2xl shadow-2xl flex flex-col max-h-[82vh] overflow-hidden animate-in fade-in zoom-in-95 duration-150"
@@ -447,6 +470,9 @@
                                     <span class="px-1.5 md:px-2 py-0.5 rounded bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] text-[10px] md:text-xs">
                                         {$t(item.categoryLabelKey)}
                                     </span>
+                                    {#if isLinkItem(item)}
+                                        <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                    {/if}
                                 </div>
                             </button>
                         {/each}
@@ -486,7 +512,7 @@
                             on:auxclick={(e) => handleItemAuxClick(e, item)}
                             on:mouseenter={() => (selectedIndex = index)}
                         >
-                            <div class="flex items-center gap-3 min-w-0">
+                            <div class="flex items-center gap-3 min-w-0 flex-1">
                                 <div class="w-9 h-9 rounded-lg bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] flex items-center justify-center shrink-0 overflow-hidden">
                                     {#if item.iconId}
                                         <Image id={item.iconId} variant={item.imageVariant || "operator-icon"} width={36} height={36} className="w-full h-full object-cover" />
@@ -494,7 +520,7 @@
                                         <Icon name={CATEGORY_ICONS[item.category]} class="w-4 h-4 text-gray-400" />
                                     {/if}
                                 </div>
-                                <div class="min-w-0 flex flex-col justify-center">
+                                <div class="min-w-0 flex-1 flex flex-col justify-center">
                                     <div class="font-semibold text-sm truncate flex items-center gap-2">
                                         <span>{itemTitle}</span>
                                         {#if item.rarity}
@@ -516,9 +542,14 @@
                                 </div>
                             </div>
 
-                            <span class="text-xs px-2 py-0.5 rounded bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] text-gray-400 dark:text-gray-500">
-                                {$t(item.categoryLabelKey)}
-                            </span>
+                            <div class="shrink-0 flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                                <span class="px-1.5 md:px-2 py-0.5 rounded bg-gray-100 dark:bg-[#323232] border border-gray-200 dark:border-[#404040] text-[10px] md:text-xs">
+                                    {$t(item.categoryLabelKey)}
+                                </span>
+                                {#if isLinkItem(item)}
+                                    <Icon name="sendToLink" class="w-3.5 h-3.5" />
+                                {/if}
+                            </div>
                         </button>
                     {/each}
                 {:else}
