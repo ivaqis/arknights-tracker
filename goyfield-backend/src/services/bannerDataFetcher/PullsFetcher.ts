@@ -103,7 +103,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
             let resp: BannerResponse<T>;
 
             try {
-                resp = await this.getResponseData(url);
+                resp = await this.getResponseDataWithRetry(url);
             } catch (e) {
                 this._hasMore = false;
                 logger.error(`[PullsFetcher] Error while fetching pulls: ${e}`);
@@ -113,7 +113,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
                     this._error = e.message;
                 }
 
-                break;
+                throw e;
             }
 
             let resolvedData = this.resolveResponseData(resp);
@@ -121,7 +121,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
             if (resolvedData.errorMsg) {
                 this._hasMore = false;
                 this._error = resolvedData.errorMsg;
-                break;
+                throw new Error(resolvedData.errorMsg);
             }
 
             this._hasMore = resolvedData.hasMore;
@@ -167,6 +167,21 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
 
     private getParamString(): string {
         return this._urlParams.getParamString();
+    }
+
+    private async getResponseDataWithRetry(url: string, retries: number = 3): Promise<BannerResponse<T>> {
+        for (let attempt = 0; attempt <= retries; attempt++) {
+            try {
+                return await this.getResponseData(url);
+            } catch (e) {
+                if (attempt < retries) {
+                    await sleep(500 * Math.pow(2, attempt));
+                    continue;
+                }
+                throw e;
+            }
+        }
+        throw new Error("Failed to fetch response after retries");
     }
 
     private async getResponseData(url: string) {

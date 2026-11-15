@@ -80,6 +80,7 @@
     let warningMsg = "";
     let isGlobalStatsEnabled = true;
     let isRecoveryEnabled = false;
+    let activeImportRecovery = false;
     let activeTab = "new";
     let selectedServer = "3";
     let isSaveTokenEnabled = false;
@@ -306,12 +307,12 @@
         return $t("import.error_unknown");
     }
 
-    function getLastPullTimeTs() {
+    function getLastPullTimeTs(isRecovery = isRecoveryEnabled) {
         const lastPullTimes = {};
 
         const currentPullData = get(pullData);
 
-        if (currentPullData && !isRecoveryEnabled) {
+        if (currentPullData && !isRecovery) {
             Object.entries(currentPullData).forEach(([catId, cat]) => {
                 let maxTimeForCat = 0;
                 if (cat.pulls && Array.isArray(cat.pulls)) {
@@ -375,10 +376,14 @@
         const primaryServer = (serverId === "2" || serverId === "3") ? serverId : (selectedServer === "2" || selectedServer === "3" ? selectedServer : "3");
         const serverCandidates = primaryServer === "2" ? ["2", "3"] : ["3", "2"];
         const selectedAccId = get(accountStore.selectedId);
+        const isAccountHealed = typeof window !== "undefined" && selectedAccId
+            ? localStorage.getItem(`ark_gaps_healed_v1_${selectedAccId}`) === "true"
+            : true;
+        activeImportRecovery = isRecoveryEnabled || !isAccountHealed;
 
         let currentPrivateId = null;
 
-        if (typeof window !== "undefined" && selectedAccId && !isRecoveryEnabled) {
+        if (typeof window !== "undefined" && selectedAccId && !activeImportRecovery) {
             currentPrivateId = localStorage.getItem(`ark_banner_private_id_${selectedAccId}`) || null;
         }
 
@@ -393,10 +398,10 @@
                 let stream;
 
                 if (isGlobalStatsEnabled) {
-                    stream = await fetchPostImport(token, serverCandidates, targetServerUid, isRecoveryEnabled);
+                    stream = await fetchPostImport(token, serverCandidates, targetServerUid, activeImportRecovery);
                 }
                 else {
-                    stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs());
+                    stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs(activeImportRecovery));
                 }
 
                 for await (const msg of stream) {
@@ -490,7 +495,7 @@
             cleanPulls,
             backendServerId,
             false,
-            isRecoveryEnabled
+            activeImportRecovery
         );
 
         if (isGlobalStatsEnabled && data.profileId !== undefined) {
@@ -550,8 +555,12 @@
                 pendingData,
                 serverId,
                 true,
-                isRecoveryEnabled
+                activeImportRecovery
             );
+
+            if (typeof window !== "undefined" && selectedId) {
+                localStorage.setItem(`ark_gaps_healed_v1_${selectedId}`, "true");
+            }
 
             goto("/records");
         } catch (err) {
