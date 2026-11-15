@@ -85,7 +85,7 @@
                     {#if star === 'yellow'}
                         <Icon name="echoStarCompl" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                     {:else if star === 'white'}
-                        <Icon name="echoStarWhite" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-gray-900 dark:text-white" />
+                        <Icon name="echoStarWhite" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-white" />
                     {:else}
                         <Icon name="echoStar" class="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-gray-300 dark:text-white/40" />
                     {/if}

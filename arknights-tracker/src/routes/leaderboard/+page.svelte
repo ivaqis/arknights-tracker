@@ -657,7 +657,7 @@
             includedChars = [];
             excludedChars = [];
             sortField = 'default';
-            sortAsc = false;
+            sortAsc = true;
         } else if (selectedEvent === 'echoesOfWar') {
             if (warEchoesSeasonOptions[0]?.value) selectedWarEchoesSeason = warEchoesSeasonOptions[0].value;
             if (currentSeason?.weeks?.[0]?.id) selectedWarEchoesCycle = currentSeason.weeks[0].id;
@@ -668,7 +668,7 @@
             includedChars = [];
             excludedChars = [];
             sortField = 'default';
-            sortAsc = false;
+            sortAsc = true;
         } else if (selectedEvent === 'contract') {
             if (activeContracts[0]?.id) selectedContractId = activeContracts[0].id;
             serverFilter = 'all';
@@ -677,7 +677,7 @@
             includedChars = [];
             excludedChars = [];
             sortField = 'default';
-            sortAsc = false;
+            sortAsc = true;
         }
         currentPage = 1;
         loadLeaderboard();
@@ -764,7 +764,7 @@
     </div>
 
     <div class="flex flex-col lg:flex-row gap-6 items-start">
-        <div class="w-full lg:w-[320px] xl:w-[340px] shrink-0 flex flex-col gap-3">
+        <div class="w-full lg:w-[320px] xl:w-[340px] shrink-0 flex flex-col gap-4">
             <div class="bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl p-5 shadow-sm flex flex-col gap-5">
             {#if selectedEvent === 'monument'}
                 <div class="flex flex-col gap-1.5">
