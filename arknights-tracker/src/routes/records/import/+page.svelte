@@ -307,7 +307,7 @@
         return $t("import.error_unknown");
     }
 
-    function getLastPullTimeTs(isRecovery = isRecoveryEnabled) {
+    function getLastPullTimes(isRecovery = isRecoveryEnabled) {
         const lastPullTimes = {};
 
         const currentPullData = get(pullData);
@@ -321,12 +321,13 @@
                         if (t > maxTimeForCat) maxTimeForCat = t;
                     });
                 }
-                lastPullTimes[catId] = maxTimeForCat;
+                if (maxTimeForCat > 0) {
+                    lastPullTimes[catId] = maxTimeForCat;
+                }
             });
         }
 
-        const validTimes = Object.values(lastPullTimes).filter(t => t > 0);
-        return validTimes.length > 0 ? Math.min(...validTimes) : 0;
+        return lastPullTimes;
     }
 
     async function handleUrlImport() {
@@ -397,11 +398,13 @@
                 retryWithoutProfile = false;
                 let stream;
 
+                const lastPullsMap = getLastPullTimes(activeImportRecovery);
+
                 if (isGlobalStatsEnabled) {
-                    stream = await fetchPostImport(token, serverCandidates, targetServerUid, activeImportRecovery);
+                    stream = await fetchPostImport(token, serverCandidates, targetServerUid, activeImportRecovery, lastPullsMap);
                 }
                 else {
-                    stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs(activeImportRecovery));
+                    stream = await fetchGetImport(token, serverCandidates, lastPullsMap);
                 }
 
                 for await (const msg of stream) {

@@ -47,6 +47,7 @@ export class PostImport extends StreamController<
     private readonly _serverIds: string[];
     private readonly _privateId: string | null;
     private readonly _isRecovery: boolean;
+    private readonly _lastPulls?: Record<string, number>;
 
     private _currentServerId?: string;
 
@@ -62,6 +63,7 @@ export class PostImport extends StreamController<
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
         this._privateId = req.body.privateId;
         this._isRecovery = req.body.recovery === true;
+        this._lastPulls = req.body.lastPulls;
     }
 
     private static writeOnProfile(requestedProfile: string | null,
@@ -146,6 +148,16 @@ export class PostImport extends StreamController<
 
         if (!this._isRecovery && requestedProfile && requestedProfile.version.initValue === UserBannerProfileVersion.V_2) {
             lastPullsMap = await this._database.userBannerStats.getLastPullsMap(requestedProfile.profileId);
+        }
+
+        if (!this._isRecovery && this._lastPulls && typeof this._lastPulls === "object") {
+            for (const [key, val] of Object.entries(this._lastPulls)) {
+                const bt = BannerType.getBannerTypeByShortName(key) || (Object.values(BannerType).includes(key as BannerType) ? key as BannerType : null);
+                const num = Number(val);
+                if (bt && !Number.isNaN(num) && num > 0 && lastPullsMap[bt] === undefined) {
+                    lastPullsMap[bt] = num;
+                }
+            }
         }
 
         const lastPullsWithOffset = this._isRecovery ? {} : PostImport.getLastPullsMapWithOffset(lastPullsMap);

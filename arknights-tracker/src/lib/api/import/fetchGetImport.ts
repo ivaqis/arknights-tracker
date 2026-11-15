@@ -2,10 +2,16 @@ import type { GetImportGenericResponse } from "$lib/api/import/contracts/GetImpo
 import { parseStream } from "$lib/api/parseStream";
 import { config } from "$lib/config";
 
-export async function fetchGetImport(token: string, serverIds: string[], lastPullTs: bigint | number): Promise<AsyncGenerator<GetImportGenericResponse, void, unknown>> {
+export async function fetchGetImport(token: string, serverIds: string[], lastPulls: Record<string, number> | bigint | number = 0): Promise<AsyncGenerator<GetImportGenericResponse, void, unknown>> {
     const encodedToken = encodeURIComponent(token);
     const encodedServerIds = encodeURIComponent(serverIds.join(","));
-    const url = `${config.API_BASE}/api/v2/import?token=${encodedToken}&serverIds=${encodedServerIds}&lastPullTs=${lastPullTs}`;
+    let queryParam = "";
+    if (typeof lastPulls === "object" && lastPulls !== null) {
+        queryParam = `&lastPulls=${encodeURIComponent(JSON.stringify(lastPulls))}`;
+    } else {
+        queryParam = `&lastPullTs=${lastPulls}`;
+    }
+    const url = `${config.API_BASE}/api/v2/import?token=${encodedToken}&serverIds=${encodedServerIds}${queryParam}`;
 
     console.log(url);
 
