@@ -8651,7 +8651,7 @@ export const items: Readonly<Record<string, ItemData>> = {
     },
     "item_expcard_stage1_high": {
         "id": "item_expcard_stage1_high",
-        "iconId": "item_expcard_2_3",
+        "iconId": "item_expcard_stage1_high",
         "rarity": 3,
         "groupId": "usable",
         "type": 7,
@@ -8666,7 +8666,7 @@ export const items: Readonly<Record<string, ItemData>> = {
     },
     "item_expcard_stage1_low": {
         "id": "item_expcard_stage1_low",
-        "iconId": "item_expcard_2_1",
+        "iconId": "item_expcard_stage1_low",
         "rarity": 1,
         "groupId": "usable",
         "type": 7,
@@ -8680,7 +8680,7 @@ export const items: Readonly<Record<string, ItemData>> = {
     },
     "item_expcard_stage1_mid": {
         "id": "item_expcard_stage1_mid",
-        "iconId": "item_expcard_2_2",
+        "iconId": "item_expcard_stage1_mid",
         "rarity": 2,
         "groupId": "usable",
         "type": 7,

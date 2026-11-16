@@ -282,7 +282,7 @@
         "
         >
             <div
-                class="mb-3.5 flex items-center min-h-[40px] px-4 {visuallyCollapsed
+                class="mb-2 flex items-center min-h-[40px] px-4 {visuallyCollapsed
                     ? 'justify-center'
                     : 'justify-between'}"
             >
@@ -321,7 +321,7 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
-                <nav class="flex flex-col gap-1.5 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
+                <nav class="flex flex-col gap-1 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
                     <button
                         type="button"
                         on:click={openSearchModal}

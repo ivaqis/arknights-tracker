@@ -20,6 +20,12 @@ const weaponIdToGameId: Record<string, string> = Object.values(weapons || {}).re
     return acc;
 }, {});
 
+const ITEM_ALIAS_MAP: Record<string, string> = {
+    item_expcard_2_1: 'item_expcard_stage1_low',
+    item_expcard_2_2: 'item_expcard_stage1_mid',
+    item_expcard_2_3: 'item_expcard_stage1_high'
+};
+
 const IMAGE_EXT_REGEX = /\.(png|jpg|jpeg|webp|gif|svg)$/i;
 
 export function normalizeId(str: string | number | null | undefined): string {
@@ -250,7 +256,7 @@ export function getImagePath(idOrName: string | number | null | undefined, varia
         case 'item':
         case 'item-icon':
         case 'currency':
-            return `/images/items/${withExt(name)}`;
+            return `/images/items/${withExt(ITEM_ALIAS_MAP[name] || name)}`;
 
         case 'building-icon':
             return `/images/buildings/icons/${withExt(name)}`;
