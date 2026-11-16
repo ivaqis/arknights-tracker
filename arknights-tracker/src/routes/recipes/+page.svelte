@@ -141,10 +141,9 @@
 
     $: selectedItem = data.itemId ? itemStorage.byGameId.getOrThrow(data.itemId) : null;
 
-    const craftableItems: readonly IItem[] = craftableItemsList.values()
+    const craftableItems: readonly IItem[] = craftableItemsList
         .map(itemId => itemStorage.byGameId.get(itemId))
-        .filter(item => item !== undefined)
-        .toArray();
+        .filter((item): item is IItem => item !== undefined);
 
     const rarityFilter: IFilterSelector<IItem, Rarity> = itemFilters[ItemFieldComparatorName.RARITY];
     const eventFilter: IFilterSelector<IItem, string | "nonEvent"> = itemFilters[ItemFieldComparatorName.EVENT];

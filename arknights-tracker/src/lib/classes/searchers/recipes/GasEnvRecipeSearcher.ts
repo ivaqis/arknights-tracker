@@ -19,10 +19,9 @@ export class GasEnvRecipeSearcher implements IGasEnvRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = vaporizer.groups.values()
+        const recipes = Array.from(vaporizer.groups.values())
             .map(group => vaporizer.getGasEnvRecipe(group.gasEnv.id))
-            .filter(recipe => recipe !== null)
-            .toArray();
+            .filter((recipe): recipe is IGasEnvRecipe => recipe !== null);
 
         return new BuildingRecipeSearchResult(recipes);
     }
@@ -34,7 +33,7 @@ export class GasEnvRecipeSearcher implements IGasEnvRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = vaporizers.values()
+        const recipes = Array.from(vaporizers.values())
             .map(vaporizer => {
                 const group = vaporizer.getGroupByItem(itemId);
 
@@ -44,8 +43,7 @@ export class GasEnvRecipeSearcher implements IGasEnvRecipeSearcher {
 
                 return vaporizer.getGasEnvRecipe(group.gasEnv.id);
             })
-            .filter(recipe => recipe !== null)
-            .toArray();
+            .filter((recipe): recipe is IGasEnvRecipe => recipe !== null);
 
         return new BuildingRecipeSearchResult(recipes);
     }
@@ -61,10 +59,9 @@ export class GasEnvRecipeSearcher implements IGasEnvRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = vaporizers.values()
+        const recipes = Array.from(vaporizers.values())
             .map(vaporizer => vaporizer.getGasEnvRecipe(gasEnvId))
-            .filter(recipe => recipe !== null)
-            .toArray();
+            .filter((recipe): recipe is IGasEnvRecipe => recipe !== null);
 
         return new BuildingRecipeSearchResult(recipes);
     }

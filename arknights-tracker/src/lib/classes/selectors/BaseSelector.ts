@@ -166,7 +166,7 @@ export class BaseSelector<TParam extends string | number = string> implements IB
     }
 
     public getSelectedList(): TParam[] {
-        return this._paramSet.values().toArray();
+        return Array.from(this._paramSet);
     }
 
     public notify() {
