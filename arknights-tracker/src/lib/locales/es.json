@@ -562,7 +562,8 @@
     "monumentalEtchingForestOfMaras": "Grabado monumental: Bosque de Maras",
     "protocolPassInkScroll": "Pase de protocolo: Pergamino de tinta",
     "spiritsRestorationSignIn": "Inicio de sesión de Restauración del espíritu",
-    "theStarsAreWithMeSignIn": "Inicio de sesión de Las estrellas están conmigo"
+    "theStarsAreWithMeSignIn": "Inicio de sesión de Las estrellas están conmigo",
+    "shroomyGatheringSignIn": "Inicio de sesión de Reunión de hongos"
   },
   "mouths": {
     "january": "Enero",
@@ -1134,7 +1135,10 @@
     "jadeVessel": "Vasija de jade",
     "longHeritage": "Tradición ancestral",
     "complexedIndustry": "Industria compleja",
-    "lunarCalling": "Llamado lunar"
+    "lunarCalling": "Llamado lunar",
+    "sweetDeal": "Oferta dulce",
+    "raidComet": "Cometa de incursión",
+    "starOfTomorrow": "Estrella del mañana"
   },
   "cookies": {
     "title": "Usamos cookies",

@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "การแกะสลัก​อนุสรณ์​: ป่า​มา​ราส",
     "protocolPassInkScroll": "บัตร​ผ่าน​โปร​โต​คอล​: ม้วน​ภาพ​หมึก",
     "spiritsRestorationSignIn": "ลงชื่อ​เข้าสู่​ระ​บ​การฟื้นฟู​จิตวิญญาณ",
-    "theStarsAreWithMeSignIn": "ลงชื่อ​เข้าสู่ระบบ​แล้ว​รับ​ดวงดาว​เคียงข้าง​ฉัน"
+    "theStarsAreWithMeSignIn": "ลงชื่อ​เข้าสู่ระบบ​แล้ว​รับ​ดวงดาว​เคียงข้าง​ฉัน",
+    "shroomyGatheringSignIn": "ลงชื่อ​เข้าสู่ระบบ​หมู่​เห็ด​พิศวง"
   },
   "mouths": {
     "january": "มกราคม",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "ภาชนะ​หยก",
     "longHeritage": "มรดก​อัน​ยาวนาน",
     "complexedIndustry": "อุตสาหกรรม​คอมเพล็กซ์",
-    "lunarCalling": "จันทรา​เรียกขาน"
+    "lunarCalling": "จันทรา​เรียกขาน",
+    "sweetDeal": "ข้อเสนอ​สุด​คุ้ม",
+    "raidComet": "ดาวหาง​จู่โจม",
+    "starOfTomorrow": "ดาว​แห่ง​วันพรุ่งนี้"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",

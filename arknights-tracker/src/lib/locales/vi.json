@@ -564,7 +564,8 @@
     "monumentalEtchingForestOfMaras": "Văn Khắc Kỷ Niệm: Rừng Maras",
     "protocolPassInkScroll": "Thẻ Giao Thức: Cuộn Tranh Thủy Mặc",
     "spiritsRestorationSignIn": "Điểm Danh Linh Hồn Tái Sinh",
-    "theStarsAreWithMeSignIn": "Điểm Danh Có Sao Trời Bên Tôi"
+    "theStarsAreWithMeSignIn": "Điểm Danh Có Sao Trời Bên Tôi",
+    "shroomyGatheringSignIn": "Điểm Danh Thu Hoạch Nấm"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -1172,7 +1173,10 @@
     "jadeVessel": "Ngọc Khí",
     "longHeritage": "Di Sản Lâu Đời",
     "complexedIndustry": "Tổ Hợp Công Nghiệp",
-    "lunarCalling": "Lời Gọi Trăng"
+    "lunarCalling": "Lời Gọi Trăng",
+    "sweetDeal": "Thương Vụ Ngọt Ngào",
+    "raidComet": "Sao Chổi Đột Kích",
+    "starOfTomorrow": "Ngôi Sao Ngày Mai"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",

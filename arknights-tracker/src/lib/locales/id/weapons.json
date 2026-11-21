@@ -1574,5 +1574,62 @@
         "description": "Saat memasuki pertarungan, seluruh tim akan mendapatkan buff <@ba.key>Dream Striving</> yang akan memberikan DMG Dealt <@ba.vup>+{dmg_up:0.0%}</>, Intensitas Arts <@ba.vup>+{phy_spell_up:0}</>, dan DEF <@ba.vup>+{def_up:0.0%}</> kepada tim selama {duration:0} dtk. Saat <@ba.key>Dream Striving</> berakhir, si pemakai akan memulihkan HP seluruh tim sebesar <@ba.heal>{hp_up_c:0}</>.\n<@ba.info>Efek yang namanya sama tidak bisa ditumpuk.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Sweet Deal",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [L]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Nature DMG [L]",
+        "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Flow: Sweetening Function",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Raid Comet",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [L]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Efisiensi ULT [L]",
+        "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Skybreaker",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Star of Tomorrow",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [M]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Efisiensi ULT [M]",
+        "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Assault: Total Support",
+        "description": ""
+      }
+    ]
   }
 }

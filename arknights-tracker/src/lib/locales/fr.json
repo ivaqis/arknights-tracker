@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "Gravure monumentale : forêt de Maras",
     "protocolPassInkScroll": "Pass de Protocole : Parchemin d'encre",
     "spiritsRestorationSignIn": "Connexion - Restauration de l'esprit",
-    "theStarsAreWithMeSignIn": "Connexion - Les étoiles sont avec moi"
+    "theStarsAreWithMeSignIn": "Connexion - Les étoiles sont avec moi",
+    "shroomyGatheringSignIn": "Connexion - Rassemblement de champis"
   },
   "mouths": {
     "january": "Janvier",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "Vaisseau de jade",
     "longHeritage": "Long héritage",
     "complexedIndustry": "Industrie intégrée",
-    "lunarCalling": "Appel lunaire"
+    "lunarCalling": "Appel lunaire",
+    "sweetDeal": "Offre alléchante",
+    "raidComet": "Comète d'assaut",
+    "starOfTomorrow": "Étoile de demain"
   },
   "cookies": {
     "title": "Nous utilisons des cookies",

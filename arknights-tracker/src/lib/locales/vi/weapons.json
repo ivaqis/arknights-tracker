@@ -1574,5 +1574,62 @@
         "description": "Khi vào trận, toàn đội nhận hiệu ứng tăng cường <@ba.key>Theo Đuổi Giấc Mơ</>, ST Gây Ra <@ba.vup>+{dmg_up:0.0%}</>, Công Phép <@ba.vup>+{phy_spell_up:0}</> và Thủ <@ba.vup>+{def_up:0.0%}</> trong {duration:0} giây. Khi <@ba.key>Theo Đuổi Giấc Mơ</> kết thúc, người thi triển hồi lại <@ba.heal>{hp_up_c:0}</> HP cho toàn đội.\n<@ba.info>Hiệu ứng cùng tên không cộng dồn.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Thương Vụ Ngọt Ngào",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Sức Mạnh [Lớn]",
+        "description": "Sức Mạnh <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "ST Tự Nhiên [Lớn]",
+        "description": "ST Tự Nhiên Gây Ra <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Uyển Chuyển: Chức Năng Tạo Ngọt",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Sao Chổi Đột Kích",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Sức Mạnh [Lớn]",
+        "description": "Sức Mạnh <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Hiệu Quả Nhận TK [Lớn]",
+        "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Kích Nổ: Phá Thiên",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Ngôi Sao Ngày Mai",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Sức Mạnh [Vừa]",
+        "description": "Sức Mạnh <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Hiệu Quả Nhận TK [Vừa]",
+        "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Đột Kích: Hỗ Trợ Toàn Diện",
+        "description": ""
+      }
+    ]
   }
 }

@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "기억의 흔적 · 악몽의 숲",
     "protocolPassInkScroll": "프로토콜 통행증 · 묵권",
     "spiritsRestorationSignIn": "만물의 영혼 출석 체크",
-    "theStarsAreWithMeSignIn": "은하수와 함께 출석 체크"
+    "theStarsAreWithMeSignIn": "은하수와 함께 출석 체크",
+    "shroomyGatheringSignIn": "버섯 군락 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "옥에 깃든 형체",
     "longHeritage": "유구한 전승",
     "complexedIndustry": "응집 공업",
-    "lunarCalling": "환월"
+    "lunarCalling": "환월",
+    "sweetDeal": "달콤한 거래",
+    "raidComet": "유성 돌격",
+    "starOfTomorrow": "떠오르는 별"
   },
   "cookies": {
     "title": "쿠키 사용 안내",

@@ -1574,5 +1574,62 @@
         "description": "Al entrar en batalla, todo el equipo obtiene la mejora <@ba.key>Lucha por un sueño</>, que otorga DAÑ infligido <@ba.vup>+{dmg_up:0.0%}</>, Intensidad de artes <@ba.vup>+{phy_spell_up:0}</> y DEF <@ba.vup>+{def_up:0.0%}</> durante {duration:0}s. Cuando termina <@ba.key>Lucha por un sueño</>, el portador restaura <@ba.heal>{hp_up_c:0}</> PV a todo el equipo.\n<@ba.info>Los efectos con el mismo nombre no se pueden acumular.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Oferta dulce",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Fuerza [G]",
+        "description": "Fuerza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "DAÑ por naturaleza [G]",
+        "description": "DAÑ por naturaleza infligido <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Flujo: Función endulzante",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Cometa de incursión",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Fuerza [G]",
+        "description": "Fuerza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Eficiencia MÁX. [G]",
+        "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Detonación: Rompecielos",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Estrella del mañana",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Fuerza [M]",
+        "description": "Fuerza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Eficiencia MÁX. [M]",
+        "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Asalto: Soporte total",
+        "description": ""
+      }
+    ]
   }
 }

@@ -1574,5 +1574,62 @@
         "description": "Zu Kampfbeginn erhält das gesamte Team den Buff <@ba.key>Traumstreben</>. Dieser gewährt {duration:0} Sek. lang <@ba.vup>+{dmg_up:0.0%}</> Verursachter SDN, <@ba.vup>+{phy_spell_up:0}</> Technik-Intensität und <@ba.vup>+{def_up:0.0%}</> VERT. Wenn <@ba.key>Traumstreben</> endet, stellt der Anwender <@ba.heal>{hp_up_c:0}</> LP für das gesamte Team wieder her.\n<@ba.info>Effekte desselben Namens sind nicht kumulierbar.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Süßer Deal",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Stärke [L]",
+        "description": "Stärke <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "Natur-SDN [L]",
+        "description": "Verursachter Natur-SDN <@ba.vup>+{naturaldam:0.0%}</>."
+      },
+      {
+        "name": "Strömung: Süßer Impuls",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Überfall-Komet",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Stärke [L]",
+        "description": "Stärke <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "ULT-Effizienz [L]",
+        "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
+      },
+      {
+        "name": "Zünden: Himmelsbrecher",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Stern von morgen",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Stärke [M]",
+        "description": "Stärke <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "ULT-Effizienz [M]",
+        "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
+      },
+      {
+        "name": "Sturmangriff: Absolute Unterstützung",
+        "description": ""
+      }
+    ]
   }
 }

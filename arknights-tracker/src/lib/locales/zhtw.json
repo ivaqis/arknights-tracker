@@ -564,7 +564,8 @@
     "monumentalEtchingForestOfMaras": "豐碑留名·魘林",
     "protocolPassInkScroll": "協議通行證·墨卷",
     "spiritsRestorationSignIn": "萬物有靈簽到",
-    "theStarsAreWithMeSignIn": "星河共我簽到"
+    "theStarsAreWithMeSignIn": "星河共我簽到",
+    "shroomyGatheringSignIn": "蕈屬集群簽到"
   },
   "mouths": {
     "january": "一月",
@@ -1172,7 +1173,10 @@
     "jadeVessel": "玉中身",
     "longHeritage": "悠久傳承",
     "complexedIndustry": "聚合工業",
-    "lunarCalling": "喚月"
+    "lunarCalling": "喚月",
+    "sweetDeal": "甜美交易",
+    "raidComet": "突擊流星",
+    "starOfTomorrow": "明日之星"
   },
   "cookies": {
     "title": "我們使用 Cookie",

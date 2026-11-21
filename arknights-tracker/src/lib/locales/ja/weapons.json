@@ -1574,5 +1574,62 @@
         "description": "チームが戦闘に入るとき、チーム全員が<@ba.key>憧憬</>を獲得し、{duration:0}秒間与えるダメージ<@ba.vup>+{dmg_up:0.0%}</>、アーツ強度<@ba.vup>+{phy_spell_up:0}</>、防御力<@ba.vup>+{def_up:0.0%}</>\n<@ba.key>憧憬</>終了時、自身がチーム全員のHPを<@ba.heal>{hp_up_c:0}</>回復する\n<@ba.info>同名効果は重ね掛け不可</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "スウィートディール",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "筋力UP・大",
+        "description": "筋力<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "自然ダメージUP・大",
+        "description": "自然ダメージ<@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "流回・あまいエネルギー",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "アサルトメテオ",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "筋力UP・大",
+        "description": "筋力<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "必殺技効率UP・大",
+        "description": "必殺チャージの回復効率<@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "噴発・スカイブレイカー",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "ライジングスター",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "筋力UP・中",
+        "description": "筋力<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "必殺技効率UP・中",
+        "description": "必殺チャージの回復効率<@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "強攻・全般支援",
+        "description": ""
+      }
+    ]
   }
 }

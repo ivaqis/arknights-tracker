@@ -84,10 +84,6 @@ export const changelogData = [
             "achv_quest_yvonne",
             "achv_social_spaceship_be_helped"
         ],
-        "startTime": "2025-12-09 08:00:00",
-        "startTimeAsia": "2025-12-09 08:00:00",
-        "endTime": "2026-03-11 17:00:00",
-        "endTimeAsia": "2026-03-12 04:00:00",
                 "items": [
             "item_weekraid_enemy_drop_7",
             "item_weekraid_collection_4_5",
@@ -999,7 +995,11 @@ export const changelogData = [
             "sysbp_wuling_xiranite_powder_1",
             "ticketgacha_special_single_lt_1_0_2",
             "ticketgacha_special_ten_lt_1_0_3"
-        ]
+        ],
+        startTime: "2025-12-09 08:00:00",
+        startTimeAsia: "2025-12-09 08:00:00",
+        endTime: "2026-03-11 17:00:00",
+        endTimeAsia: "2026-03-12 04:00:00"
     },
     {
         "version": "1.1",
@@ -1071,10 +1071,6 @@ export const changelogData = [
             "achv_fac_techtree_jinlong_2",
             "achv_quest_e7m4"
         ],
-        "startTime": "2026-03-11 22:00:00",
-        "startTimeAsia": "2026-03-12 11:00:00",
-        "endTime": "2026-04-16 17:00:00",
-        "endTimeAsia": "2026-04-17 04:00:00",
                 "items": [
             "item_fbottle_copper_xiranite_poly",
             "item_mission_c28m2_2",
@@ -1171,7 +1167,11 @@ export const changelogData = [
             "sysbp_wuling_xiranite_poly_1",
             "ticketgacha_special_single_lt_1_1_2",
             "ticketgacha_special_ten_lt_1_1_2"
-        ]
+        ],
+        startTime: "2026-03-11 22:00:00",
+        startTimeAsia: "2026-03-12 11:00:00",
+        endTime: "2026-04-16 17:00:00",
+        endTimeAsia: "2026-04-17 04:00:00"
     },
     {
         "version": "1.2",
@@ -1229,10 +1229,6 @@ export const changelogData = [
             "achv_hide_root",
             "achv_quest_e9m3"
         ],
-        "startTime": "2026-04-16 22:00:00",
-        "startTimeAsia": "2026-04-17 11:00:00",
-        "endTime": "2026-06-04 17:00:00",
-        "endTimeAsia": "2026-06-05 04:00:00",
                 "items": [
             "item_shot_filter_nm_7",
             "item_gift_jinlong_5",
@@ -1378,7 +1374,11 @@ export const changelogData = [
             "sysbp_wuling_copper_enr_cmpt_1",
             "sysbp_wuling_liquid_copper_enr_1",
             "ticketweaponbox_ten_1_lt"
-        ]
+        ],
+        startTime: "2026-04-16 22:00:00",
+        startTimeAsia: "2026-04-17 11:00:00",
+        endTime: "2026-06-04 17:00:00",
+        endTimeAsia: "2026-06-05 04:00:00"
     },
     {
         "version": "1.3",
@@ -1420,10 +1420,6 @@ export const changelogData = [
             "achv_quest_camille",
             "achv_quest_mifu"
         ],
-        "startTime": "2026-06-04 22:00:00",
-        "startTimeAsia": "2026-06-05 11:00:00",
-        "endTime": "2026-07-15 17:00:00",
-        "endTimeAsia": "2026-07-16 04:00:00",
                 "items": [
             "item_shot_filter_sp_4",
             "item_ticketgacha_special_ten_lt_1_3_1",
@@ -1465,7 +1461,11 @@ export const changelogData = [
             "item_user_avatar_frame_channel_v1d3_1",
             "ticketgacha_special_single_lt_1_3_1",
             "ticketgacha_special_ten_lt_1_3_1"
-        ]
+        ],
+        startTime: "2026-06-04 22:00:00",
+        startTimeAsia: "2026-06-05 11:00:00",
+        endTime: "2026-07-15 17:00:00",
+        endTimeAsia: "2026-07-16 04:00:00"
     },
     {
         "version": "1.4",
@@ -1542,10 +1542,6 @@ export const changelogData = [
             "achv_quest_e11m1",
             "achv_quest_e11m3"
         ],
-        "startTime": "2026-07-15 22:00:00",
-        "startTimeAsia": "2026-07-16 11:00:00",
-        "endTime": "2026-09-01 17:00:00",
-        "endTimeAsia": "2026-09-02 04:00:00",
                 "items": [
             "item_device_balloon_recycle_1",
             "item_charpotentialup_chr_0032_lizhiyan",
@@ -1713,7 +1709,11 @@ export const changelogData = [
             "sysbp_wuling_copperjar_xiranite_01",
             "ticketgacha_special_single_lt_1_4_2",
             "ticketgacha_special_ten_lt_1_4_2"
-        ]
+        ],
+        startTime: "2026-07-15 22:00:00",
+        startTimeAsia: "2026-07-16 11:00:00",
+        endTime: "2026-09-01 17:00:00",
+        endTimeAsia: "2026-09-02 04:00:00"
     },
     {
         "version": "1.5",
@@ -1763,10 +1763,6 @@ export const changelogData = [
             "achv_quest_gm02m27",
             "achv_quest_typhoea"
         ],
-        "startTime": "2026-09-01 22:00:00",
-        "startTimeAsia": "2026-09-02 11:00:00",
-        "endTime": "2026-10-14 17:00:00",
-        "endTimeAsia": "2026-10-15 04:00:00",
                 "items": [
             "item_mission_c34m2_dreamcatcher",
             "item_user_avatar_frame_bp_1_5",
@@ -1840,7 +1836,11 @@ export const changelogData = [
             "item_user_avatar_frame_channel_v1d5_1",
             "item_user_avatar_frame_channel_v1d5_2",
             "ticketgacha_special_single_lt_1_5_1"
-        ]
+        ],
+        startTime: "2026-09-01 22:00:00",
+        startTimeAsia: "2026-09-02 11:00:00",
+        endTime: "2026-10-14 17:00:00",
+        endTimeAsia: "2026-10-15 04:00:00"
     },
     {
         "version": "1.6",
@@ -1904,10 +1904,6 @@ export const changelogData = [
             "achv_event_contingency_contract_1",
             "achv_quest_minghe"
         ],
-        "startTime": "2026-10-14 22:00:00",
-        "startTimeAsia": "2026-10-15 11:00:00",
-        "endTime": "2026-11-25 17:00:00",
-        "endTimeAsia": "2026-11-26 04:00:00",
                 "items": [
             "item_inn_drink_6",
             "item_shot_sticker_giftpack_4",
@@ -2048,6 +2044,10 @@ export const changelogData = [
             "item_ticketgacha_special_single_lt_1_6_2",
             "item_user_avatar_chr_0037_minghe",
             "ticketgacha_special_single_lt_1_6_2"
-        ]
+        ],
+        startTime: "2026-10-14 22:00:00",
+        startTimeAsia: "2026-10-15 11:00:00",
+        endTime: "2026-11-24 17:00:00",
+        endTimeAsia: "2026-11-25 04:00:00"
     }
 ];

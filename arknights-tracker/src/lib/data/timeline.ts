@@ -1656,5 +1656,20 @@ export const rawEvents: GenericEventData[] = [
         type: "signIn",
         iconPosition: 27,
         version: "1.6"
+    },
+    {
+        id: "ev14-v1.6",
+        title: "events.shroomyGatheringSignIn",
+        name: "Shroomy Gathering Sign-In",
+        startTime: "2026-11-21 12:00:00",
+        endTime: "2026-11-24 17:00:00",
+        endTimeAsia: "2026-11-25 04:00:00",
+        icon: "ev14-v1.6.webp",
+        url: "https://x.com/AKEndfield/status/2124110583335408008?a=mpJNdZPk5XVgIep2JQo&s=20",
+        color: "#d2cc59ff",
+        layer: 1,
+        type: "signIn",
+        iconPosition: 27,
+        version: "1.6"
     }
 ];

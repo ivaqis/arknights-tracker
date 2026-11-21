@@ -1574,5 +1574,62 @@
         "description": "Au début du combat, toute l'équipe gagne le bonus <@ba.key>Aspiration onirique</> qui augmente les DÉG infligés de <@ba.vup>{dmg_up:0.0%}</>, l'intensité des Arts de <@ba.vup>{phy_spell_up:0}</> et la DÉF de <@ba.vup>{def_up:0.0%}</> pendant {duration:0} s. Quand <@ba.key>Aspiration onirique</> prend fin, l'utilisateur soigne toute l'équipe à hauteur de <@ba.heal>{hp_up_c:0}</> PV.\n<@ba.info>Les effets du même nom ne sont pas cumulables.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Offre alléchante",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Force [G]",
+        "description": "Force <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "DÉG naturels [G]",
+        "description": "DÉG naturels infligés <@ba.vup>+{naturaldam:0.0%}</>."
+      },
+      {
+        "name": "Flux : Fonction édulcorante",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Comète d'assaut",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Force [G]",
+        "description": "Force <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "Vitesse ULT [G]",
+        "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
+      },
+      {
+        "name": "Détonation : Brise-ciel",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Étoile de demain",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Force [M]",
+        "description": "Force <@ba.vup>+{str}</>."
+      },
+      {
+        "name": "Vitesse ULT [M]",
+        "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
+      },
+      {
+        "name": "Assaut : Soutien total",
+        "description": ""
+      }
+    ]
   }
 }

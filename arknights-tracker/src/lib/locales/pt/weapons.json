@@ -1574,5 +1574,62 @@
         "description": "Ao entrar em batalha, a equipe inteira ganha o benefício <@ba.key>Sonhe Lutando</> que concede DNO Causado <@ba.vup>+ {dmg_up:0.0%}</>, Intensidade das Artes <@ba.vup>+ {phy_spell_up:0}</> e DEF <@ba.vup>+ {def_up:0.0%}</> por {duration:0} s. Quando <@ba.key>Sonhe Lutando</> termina, o portador restaura <@ba.heal>{hp_up_c:0}</> PV para a equipe inteira.\n<@ba.info>Efeitos com o mesmo nome não podem se acumular.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Doce Negócio",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Força [G]",
+        "description": "Força <@ba.vup>+ {str}</>"
+      },
+      {
+        "name": "DNO Natureza [G]",
+        "description": "DNO Natureza Causado <@ba.vup>+ {naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Fluxo: Função de Adoçante",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Cometa Feroz",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Força [G]",
+        "description": "Força <@ba.vup>+ {str}</>"
+      },
+      {
+        "name": "Eficiência SUP [G]",
+        "description": "Eficiência de Ganho Supremo <@ba.vup>+ {usgs:0.0%}</>"
+      },
+      {
+        "name": "Detonar: Quebra-Céus",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Estrela do Amanhã",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Força [M]",
+        "description": "Força <@ba.vup>+ {str}</>"
+      },
+      {
+        "name": "Eficiência SUP [M]",
+        "description": "Eficiência de Ganho Supremo <@ba.vup>+ {usgs:0.0%}</>"
+      },
+      {
+        "name": "Assalto: Apoio Total",
+        "description": ""
+      }
+    ]
   }
 }

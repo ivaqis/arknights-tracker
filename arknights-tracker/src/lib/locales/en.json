@@ -594,7 +594,8 @@
     "monumentalEtchingForestOfMaras": "Monumental Etching: Forest of Maras",
     "protocolPassInkScroll": "Protocol Pass: Ink Scroll",
     "spiritsRestorationSignIn": "Spirit's Restoration Sign-In",
-    "theStarsAreWithMeSignIn": "The Stars Are With Me Sign-In"
+    "theStarsAreWithMeSignIn": "The Stars Are With Me Sign-In",
+    "shroomyGatheringSignIn": "Shroomy Gathering Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -1306,7 +1307,10 @@
     "jadeVessel": "Jade Vessel",
     "longHeritage": "Long Heritage",
     "complexedIndustry": "Complexed Industry",
-    "lunarCalling": "Lunar Calling"
+    "lunarCalling": "Lunar Calling",
+    "sweetDeal": "Sweet Deal",
+    "raidComet": "Raid Comet",
+    "starOfTomorrow": "Star of Tomorrow"
   },
   "cookies": {
     "title": "We use cookies",

@@ -1574,5 +1574,62 @@
         "description": "팀이 전투에 진입하면 팀 전체가 <@ba.key>동경</>을 획득합니다. 주는 피해 <@ba.vup>+{dmg_up:0.0%}</>, 오리지늄 아츠 강도 <@ba.vup>+{phy_spell_up:0}</>, 방어력 <@ba.vup>+{def_up:0.0%}</>, {duration:0}초 동안 지속. <@ba.key>동경</> 종료 시, 장착자가 팀 전체에게 생명력 <@ba.heal>{hp_up_c:0}</>포인트를 회복시킵니다.\n<@ba.info>같은 이름의 효과는 중첩되지 않습니다.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "달콤한 거래",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "힘 증가 · 대",
+        "description": "힘 <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "자연 피해 증가 · 대",
+        "description": "자연 피해 <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "흐름 · 달콤한 에너지",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "유성 돌격",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "힘 증가 · 대",
+        "description": "힘 <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "궁극기 충전 효율 증가 · 대",
+        "description": "궁극기 충전 효율 <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "방출 · 하늘 가르기",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "떠오르는 별",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "힘 증가 · 중",
+        "description": "힘 <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "궁극기 충전 효율 증가 · 중",
+        "description": "궁극기 충전 효율 <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "강공 · 전면적 지원",
+        "description": ""
+      }
+    ]
   }
 }

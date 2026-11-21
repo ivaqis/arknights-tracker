@@ -1574,5 +1574,62 @@
         "description": "When entering battle, the entire team gains the <@ba.key>Dream Striving</> buff that grants DMG Dealt <@ba.vup>+{dmg_up:0.0%}</>, Arts Intensity <@ba.vup>+{phy_spell_up:0}</>, and DEF <@ba.vup>+{def_up:0.0%}</> for {duration:0}s. When <@ba.key>Dream Striving</> ends, the wielder restores the entire team for <@ba.heal>{hp_up_c:0}</> HP.\n<@ba.info>Effects of the same name cannot stack.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Sweet Deal",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [L]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Nature DMG [L]",
+        "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Flow: Sweetening Function",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Raid Comet",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [L]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "ULT Efficiency [L]",
+        "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Skybreaker",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Star of Tomorrow",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Strength [M]",
+        "description": "Strength <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "ULT Efficiency [M]",
+        "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Assault: Total Support",
+        "description": ""
+      }
+    ]
   }
 }

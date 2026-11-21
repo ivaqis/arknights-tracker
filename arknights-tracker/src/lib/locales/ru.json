@@ -594,7 +594,8 @@
     "monumentalEtchingForestOfMaras": "Памятные знаки: Лес Марас",
     "protocolPassInkScroll": "Протопропуск «Чернильный свиток»",
     "spiritsRestorationSignIn": "Вход «Возрождение духа»",
-    "theStarsAreWithMeSignIn": "Вход «Звезды со мной»"
+    "theStarsAreWithMeSignIn": "Вход «Звезды со мной»",
+    "shroomyGatheringSignIn": "Вход «Грибной сбор»"
   },
   "mouths": {
     "january": "Январь",
@@ -1310,7 +1311,10 @@
     "jadeVessel": "Нефритовый сосуд",
     "longHeritage": "Вечное наследие",
     "complexedIndustry": "Комплексная промышленность",
-    "lunarCalling": "Зов луны"
+    "lunarCalling": "Зов луны",
+    "sweetDeal": "Приятная сделка",
+    "raidComet": "Штурмовая комета",
+    "starOfTomorrow": "Звезда завтрашнего дня"
   },
   "cookies": {
     "title": "Мы используем куки",

@@ -1574,5 +1574,62 @@
         "description": "All'inizio della battaglia, l'intera squadra ottiene il potenziamento <@ba.key>Slancio verso il sogno</>, che conferisce <@ba.vup>+{dmg_up:0.0%}</> di danni inflitti, <@ba.vup>+{phy_spell_up:0}</> di intensità delle Arti e <@ba.vup>+{def_up:0.0%}</> di DIF per {duration:0} s. Quando <@ba.key>Slancio verso il sogno</> termina, l'attaccante restituisce <@ba.heal>{hp_up_c:0}</> PS all'intera squadra.\n<@ba.info>Gli effetti dello stesso tipo non si accumulano.</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "Dolce affare",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Forza [L]",
+        "description": "Forza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Danni da natura [L]",
+        "description": "Danni da natura inflitti <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Flusso: Funzione dolcificante",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "Cometa d'assalto",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Forza [L]",
+        "description": "Forza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Velocità SUP [L]",
+        "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Detonazione: Frantuma-cielo",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "Stella del domani",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "Forza [M]",
+        "description": "Forza <@ba.vup>+{str}</>"
+      },
+      {
+        "name": "Velocità SUP [M]",
+        "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "Assalto: Supporto totale",
+        "description": ""
+      }
+    ]
   }
 }

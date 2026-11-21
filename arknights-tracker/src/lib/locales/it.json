@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "Incisione monumentale: Foresta degli incubi",
     "protocolPassInkScroll": "Pass protocollare: pergamena d'inchiostro",
     "spiritsRestorationSignIn": "Accesso a Rinascita dello spirito",
-    "theStarsAreWithMeSignIn": "Accesso a Le stelle sono con me"
+    "theStarsAreWithMeSignIn": "Accesso a Le stelle sono con me",
+    "shroomyGatheringSignIn": "Accesso a Raduno fungino"
   },
   "mouths": {
     "january": "Gennaio",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "Contenitore di giada",
     "longHeritage": "Eredità antica",
     "complexedIndustry": "Industria complessa",
-    "lunarCalling": "Richiamo lunare"
+    "lunarCalling": "Richiamo lunare",
+    "sweetDeal": "Dolce affare",
+    "raidComet": "Cometa d'assalto",
+    "starOfTomorrow": "Stella del domani"
   },
   "cookies": {
     "title": "Utilizziamo i cookie",

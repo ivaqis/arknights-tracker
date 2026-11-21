@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "記憶の痕・呪林",
     "protocolPassInkScroll": "協約通行証・墨画",
     "spiritsRestorationSignIn": "万物宿魂スタンプ",
-    "theStarsAreWithMeSignIn": "天河と共にスタンプ"
+    "theStarsAreWithMeSignIn": "天河と共にスタンプ",
+    "shroomyGatheringSignIn": "キノコ大量発生スタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "玉中身",
     "longHeritage": "悠久の継承",
     "complexedIndustry": "複合工業",
-    "lunarCalling": "問月"
+    "lunarCalling": "問月",
+    "sweetDeal": "スウィートディール",
+    "raidComet": "アサルトメテオ",
+    "starOfTomorrow": "ライジングスター"
   },
   "cookies": {
     "title": "クッキーを使用しています",

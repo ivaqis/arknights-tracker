@@ -1574,5 +1574,62 @@
         "description": "当队伍进入战斗时，全队获得<@ba.key>憧憬</>，造成的伤害<@ba.vup>+{dmg_up:0.0%}</>，源石技艺强度<@ba.vup>+{phy_spell_up:0}</>，防御力<@ba.vup>+{def_up:0.0%}</>，持续{duration:0}秒；<@ba.key>憧憬</>结束时，装备者为全队回复<@ba.heal>{hp_up_c:0}</>点生命值。\n<@ba.info>同名效果无法叠加。</>"
       }
     ]
+  },
+  "sweetDeal": {
+    "name": "甜美交易",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "力量提升·大",
+        "description": "力量<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "自然伤害提升·大",
+        "description": "自然伤害<@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "流转·甘甜动能",
+        "description": ""
+      }
+    ]
+  },
+  "raidComet": {
+    "name": "突击流星",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "力量提升·大",
+        "description": "力量<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "终结技充能效率提升·大",
+        "description": "终结技充能效率<@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "迸发·划破天际",
+        "description": ""
+      }
+    ]
+  },
+  "starOfTomorrow": {
+    "name": "明日之星",
+    "description": "",
+    "decoDesc": "",
+    "skills": [
+      {
+        "name": "力量提升·中",
+        "description": "力量<@ba.vup>+{str}</>"
+      },
+      {
+        "name": "终结技充能效率提升·中",
+        "description": "终结技充能效率<@ba.vup>+{usgs:0.0%}</>"
+      },
+      {
+        "name": "强攻·全般支援",
+        "description": ""
+      }
+    ]
   }
 }

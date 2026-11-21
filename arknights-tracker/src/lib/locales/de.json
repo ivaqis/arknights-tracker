@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "Monumentales Ätzen: Maras-Wald",
     "protocolPassInkScroll": "Protokollpass: Tintenschriftrolle",
     "spiritsRestorationSignIn": "Wiederherstellung des Geistes – Anmeldung",
-    "theStarsAreWithMeSignIn": "Die Sterne sind mit mir – Anmeldung"
+    "theStarsAreWithMeSignIn": "Die Sterne sind mit mir – Anmeldung",
+    "shroomyGatheringSignIn": "Anmeldung: Pilzige Versammlung"
   },
   "mouths": {
     "january": "Januar",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "Jadegefäß",
     "longHeritage": "Langes Erbe",
     "complexedIndustry": "Angelagerte Industrie",
-    "lunarCalling": "Mondruf"
+    "lunarCalling": "Mondruf",
+    "sweetDeal": "Süßer Deal",
+    "raidComet": "Überfall-Komet",
+    "starOfTomorrow": "Stern von morgen"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",

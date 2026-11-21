@@ -561,7 +561,8 @@
     "monumentalEtchingForestOfMaras": "Pengukiran Monumental: Hutan Maras",
     "protocolPassInkScroll": "Tiket Akses Protokol: Gulungan Tinta",
     "spiritsRestorationSignIn": "Sign-In Pemulihan Roh",
-    "theStarsAreWithMeSignIn": "Sign-In Bintang-Bintang Menyertaiku"
+    "theStarsAreWithMeSignIn": "Sign-In Bintang-Bintang Menyertaiku",
+    "shroomyGatheringSignIn": "Sign In Perkumpulan Jamur"
   },
   "mouths": {
     "january": "Januari",
@@ -1133,7 +1134,10 @@
     "jadeVessel": "Jade Vessel",
     "longHeritage": "Long Heritage",
     "complexedIndustry": "Complexed Industry",
-    "lunarCalling": "Lunar Calling"
+    "lunarCalling": "Lunar Calling",
+    "sweetDeal": "Sweet Deal",
+    "raidComet": "Raid Comet",
+    "starOfTomorrow": "Star of Tomorrow"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",
