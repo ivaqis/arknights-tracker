@@ -79,6 +79,7 @@
     let errorMsg = "";
     let warningMsg = "";
     let isGlobalStatsEnabled = true;
+    let isGlobalStatsLoaded = false;
     let isRecoveryEnabled = false;
     let activeImportRecovery = false;
     let activeTab = "new";
@@ -96,7 +97,24 @@
 
     onMount(() => {
         loadSavedTokens();
+        try {
+            const savedGlobalStats = localStorage.getItem("ark_import_global_stats");
+            if (savedGlobalStats !== null) {
+                isGlobalStatsEnabled = savedGlobalStats === "true";
+            }
+        } catch (e) {
+            console.error(e);
+        }
+        isGlobalStatsLoaded = true;
     });
+
+    $: if (isGlobalStatsLoaded && typeof localStorage !== "undefined") {
+        try {
+            localStorage.setItem("ark_import_global_stats", String(isGlobalStatsEnabled));
+        } catch (e) {
+            console.error(e);
+        }
+    }
 
     function loadSavedTokens() {
         try {

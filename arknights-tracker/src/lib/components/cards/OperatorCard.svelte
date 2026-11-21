@@ -368,7 +368,33 @@
                     ></div>
                 </div>
             {/if}
-            {#if computedIsNew && (variant !== "small" || isNew)}
+            {#if operator.isForesight && variant !== "small"}
+                <div
+                    class="absolute right-0 mt-1 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none"
+                >
+                    <div
+                        class="w-[3px] mr-[1.5px] bg-[#00E5FF]/85 -skew-x-[24deg]"
+                    ></div>
+
+                    <div
+                        class="w-[3px] mr-[1.5px] bg-[#00E5FF]/85 -skew-x-[24deg]"
+                    ></div>
+
+                    <div
+                        class="relative bg-[#00E5FF]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center"
+                    >
+                        <div
+                            class="absolute left-[-4px] w-[8px] top-0 bottom-0"
+                        ></div>
+
+                        <span
+                            class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
+                        >
+                            {$t("systemNames.foresight")}
+                        </span>
+                    </div>
+                </div>
+            {:else if computedIsNew && (variant !== "small" || isNew)}
                 <div
                     class="absolute right-0 mt-1 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none"
                 >

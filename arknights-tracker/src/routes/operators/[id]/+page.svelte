@@ -55,12 +55,16 @@
 
     $: id = $page.params.id;
     $: char = Object.values(characters).find((c) => c.id === id) || {};
+    $: isForesight = Boolean(char?.isForesight);
 
     let charLocale = {};
     let charDetails = {};
     let copiedArtId = null;
 
-    $: extraArts = getCharacterExtraArts(char);
+    $: extraArts = isForesight ? [] : getCharacterExtraArts(char);
+    $: sortedForesightMaterials = (char?.materials || [])
+        .slice()
+        .sort((a, b) => (items[b]?.rarity || 1) - (items[a]?.rarity || 1));
 
     $: loadCharacterData(id, $currentLocale);
 
@@ -470,6 +474,17 @@
         { id: "audio", label: "menu.audio" },
     ];
 
+    $: effectiveMenuItems = isForesight
+        ? [
+            { id: "about", label: "stats.materials" },
+            { id: "artwork", label: "menu.artwork" },
+          ]
+        : menuItems;
+
+    $: if (isForesight && activeTab !== "about" && activeTab !== "artwork") {
+        activeTab = "about";
+    }
+
     function getWeaponObj(wpnId) {
         if (!wpnId) return null;
         const found = Object.values(weapons || {}).find(
@@ -738,11 +753,11 @@
             }, 2000);
         }
     }
-    $: currentIndex = menuItems.findIndex((item) => item.id === activeTab);
-    $: prevTab = currentIndex > 0 ? menuItems[currentIndex - 1] : null;
+    $: currentIndex = effectiveMenuItems.findIndex((item) => item.id === activeTab);
+    $: prevTab = currentIndex > 0 ? effectiveMenuItems[currentIndex - 1] : null;
     $: nextTab =
-        currentIndex < menuItems.length - 1
-            ? menuItems[currentIndex + 1]
+        currentIndex < effectiveMenuItems.length - 1
+            ? effectiveMenuItems[currentIndex + 1]
             : null;
     function switchTab(tabId, scroll = false) {
         activeTab = tabId;
@@ -839,121 +854,129 @@
                             {$t(`characters.${id}`) || char.name}
                         </h1>
 
-                        <div
-                            class="flex items-center shrink-0 relative mt-1 md:mt-0"
-                        >
-                            {#if !isEditingPot}
-                                <div
-                                    class="flex items-center gap-3 transition-opacity"
-                                >
-                                    {#if isOwned}
-                                        <div
-                                            class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
-                                        >
-                                            P{currentPot}
-                                        </div>
-                                    {/if}
-
-                                    <Tooltip
-                                        text={$t("stats.editPotential") ||
-                                            "Edit Potential"}
+                        {#if isForesight}
+                            <div
+                                class="px-2 py-0.5 self-center rounded text-[11px] font-bold bg-[#00E5FF]/20 text-[#00B8D4] dark:text-[#00E5FF] border border-[#00E5FF]/40 leading-none shrink-0"
+                            >
+                                {$t("systemNames.foresight")}
+                            </div>
+                        {:else}
+                            <div
+                                class="flex items-center shrink-0 relative mt-1 md:mt-0"
+                            >
+                                {#if !isEditingPot}
+                                    <div
+                                        class="flex items-center gap-3 transition-opacity"
                                     >
-                                        <button
-                                            on:click={startEditing}
-                                            class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
-                                        >
-                                            <Icon
-                                                name="pen"
-                                                class="w-3.5 h-3.5 opacity-80"
-                                            />
-                                        </button>
-                                    </Tooltip>
-                                </div>
-                            {:else}
-                                <div
-                                    class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
-                                >
-                                    {#if rawSavedPot !== undefined}
+                                        {#if isOwned}
+                                            <div
+                                                class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
+                                            >
+                                                P{currentPot}
+                                            </div>
+                                        {/if}
+
                                         <Tooltip
-                                            text={$t("stats.reset") || "Reset"}
+                                            text={$t("stats.editPotential") ||
+                                                "Edit Potential"}
                                         >
                                             <button
-                                                on:click={resetPot}
-                                                class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                                on:click={startEditing}
+                                                class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
                                             >
                                                 <Icon
-                                                    name="refresh"
+                                                    name="pen"
+                                                    class="w-3.5 h-3.5 opacity-80"
+                                                />
+                                            </button>
+                                        </Tooltip>
+                                    </div>
+                                {:else}
+                                    <div
+                                        class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
+                                    >
+                                        {#if rawSavedPot !== undefined}
+                                            <Tooltip
+                                                text={$t("stats.reset") || "Reset"}
+                                            >
+                                                <button
+                                                    on:click={resetPot}
+                                                    class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                                >
+                                                    <Icon
+                                                        name="refresh"
+                                                        class="w-4 h-4"
+                                                    />
+                                                </button>
+                                            </Tooltip>
+                                            <div
+                                                class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
+                                            ></div>
+                                        {/if}
+
+                                        <button
+                                            on:click={() => changeDraft(-1)}
+                                            class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                            disabled={draftPot ===
+                                                (isAlwaysOwned ? 0 : -1)}
+                                        >
+                                            <span
+                                                class="font-bold text-lg leading-none"
+                                                >-</span
+                                            >
+                                        </button>
+
+                                        <span
+                                            class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
+                                        >
+                                            {draftPot === -1 ? "" : `P${draftPot}`}
+                                        </span>
+
+                                        <button
+                                            on:click={() => changeDraft(1)}
+                                            class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                            disabled={draftPot >= 9999}
+                                        >
+                                            <span
+                                                class="font-bold text-lg leading-none"
+                                                >+</span
+                                            >
+                                        </button>
+
+                                        <div
+                                            class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
+                                        ></div>
+
+                                        <Tooltip
+                                            text={$t("settings.account.cancel") ||
+                                                "Cancel"}
+                                        >
+                                            <button
+                                                on:click={cancelEdit}
+                                                class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
+                                            >
+                                                <Icon
+                                                    name="close"
                                                     class="w-4 h-4"
                                                 />
                                             </button>
                                         </Tooltip>
-                                        <div
-                                            class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                        ></div>
-                                    {/if}
 
-                                    <button
-                                        on:click={() => changeDraft(-1)}
-                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                        disabled={draftPot ===
-                                            (isAlwaysOwned ? 0 : -1)}
-                                    >
-                                        <span
-                                            class="font-bold text-lg leading-none"
-                                            >-</span
+                                        <Tooltip
+                                            text={$t("settings.account.save") ||
+                                                "Save"}
                                         >
-                                    </button>
-
-                                    <span
-                                        class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
-                                    >
-                                        {draftPot === -1 ? "" : `P${draftPot}`}
-                                    </span>
-
-                                    <button
-                                        on:click={() => changeDraft(1)}
-                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                        disabled={draftPot >= 9999}
-                                    >
-                                        <span
-                                            class="font-bold text-lg leading-none"
-                                            >+</span
-                                        >
-                                    </button>
-
-                                    <div
-                                        class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                    ></div>
-
-                                    <Tooltip
-                                        text={$t("settings.account.cancel") ||
-                                            "Cancel"}
-                                    >
-                                        <button
-                                            on:click={cancelEdit}
-                                            class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
-                                        >
-                                            <Icon
-                                                name="close"
-                                                class="w-4 h-4"
-                                            />
-                                        </button>
-                                    </Tooltip>
-
-                                    <Tooltip
-                                        text={$t("settings.account.save") ||
-                                            "Save"}
-                                    >
-                                        <button
-                                            on:click={savePot}
-                                            class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
-                                        >
-                                            <Icon name="save" class="w-4 h-4" />
-                                        </button>
-                                    </Tooltip>
-                                </div>
-                            {/if}
-                        </div>
+                                            <button
+                                                on:click={savePot}
+                                                class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
+                                            >
+                                                <Icon name="save" class="w-4 h-4" />
+                                            </button>
+                                        </Tooltip>
+                                    </div>
+                                {/if}
+                            </div>
+                        {/if}
                     </div>
 
                     <div
@@ -1038,74 +1061,76 @@
                         {/if}
                     </div>
 
-                    <div class="flex flex-col items-start gap-1.5 mt-1 w-fit">
-                        {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
-                            <div
-                                class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
-                            >
+                    {#if !isForesight}
+                        <div class="flex flex-col items-start gap-1.5 mt-1 w-fit">
+                            {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
                                 <div
-                                    class="bg-[#333] text-white px-4 flex items-center justify-center font-bold whitespace-nowrap min-w-[120px]"
+                                    class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
                                 >
-                                    {$t(item.label) || item.label}
-                                </div>
+                                    <div
+                                        class="bg-[#333] text-white px-4 flex items-center justify-center font-bold whitespace-nowrap min-w-[120px]"
+                                    >
+                                        {$t(item.label) || item.label}
+                                    </div>
 
-                                <div
-                                    class="bg-[#E5E5E5] text-[#333] px-4 py-1.5 flex items-center font-medium leading-tight"
-                                >
-                                    {#if item.localizedVal}
-                                        {item.localizedVal}
-                                    {:else if item.type === "date" && formatBirthDate(item.rawVal, $currentLocale)}
-                                        {formatBirthDate(
-                                            item.rawVal,
-                                            $currentLocale,
-                                        )}
-                                    {:else}
-                                        {$t(
-                                            `bioValues.${item.rawVal || "Unknown"}`,
-                                        ) ||
-                                            item.rawVal ||
-                                            "-"}
-                                    {/if}
-                                </div>
-                            </div>
-                        {/each}
-
-                        {#if charDetails?.cv && Object.keys(charDetails.cv).length > 0}
-                            <div
-                                class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
-                            >
-                                <div
-                                    class="bg-[#333] text-white px-2 flex items-center justify-center font-bold whitespace-nowrap min-w-[100px]"
-                                >
-                                    {$t("stats.voiceOver")}
-                                </div>
-
-                                <div
-                                    class="bg-[#E5E5E5] text-[#333] px-3 py-1.5 flex flex-col justify-center gap-0.5 font-medium text-sm"
-                                >
-                                    {#each Object.entries(charDetails.cv) as [langKey, name]}
-                                        {#if name}
-                                            <div
-                                                class="leading-tight whitespace-nowrap"
-                                            >
-                                                <strong
-                                                    class="uppercase text-gray-700"
-                                                    >{langKey}:</strong
-                                                >
-                                                {name}
-                                            </div>
+                                    <div
+                                        class="bg-[#E5E5E5] text-[#333] px-4 py-1.5 flex items-center font-medium leading-tight"
+                                    >
+                                        {#if item.localizedVal}
+                                            {item.localizedVal}
+                                        {:else if item.type === "date" && formatBirthDate(item.rawVal, $currentLocale)}
+                                            {formatBirthDate(
+                                                item.rawVal,
+                                                $currentLocale,
+                                            )}
+                                        {:else}
+                                            {$t(
+                                                `bioValues.${item.rawVal || "Unknown"}`,
+                                            ) ||
+                                                item.rawVal ||
+                                                "-"}
                                         {/if}
-                                    {/each}
+                                    </div>
                                 </div>
-                            </div>
-                        {/if}
-                    </div>
+                            {/each}
+
+                            {#if charDetails?.cv && Object.keys(charDetails.cv).length > 0}
+                                <div
+                                    class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
+                                >
+                                    <div
+                                        class="bg-[#333] text-white px-2 flex items-center justify-center font-bold whitespace-nowrap min-w-[100px]"
+                                    >
+                                        {$t("stats.voiceOver")}
+                                    </div>
+
+                                    <div
+                                        class="bg-[#E5E5E5] text-[#333] px-3 py-1.5 flex flex-col justify-center gap-0.5 font-medium text-sm"
+                                    >
+                                        {#each Object.entries(charDetails.cv) as [langKey, name]}
+                                            {#if name}
+                                                <div
+                                                    class="leading-tight whitespace-nowrap"
+                                                >
+                                                    <strong
+                                                        class="uppercase text-gray-700"
+                                                        >{langKey}:</strong
+                                                    >
+                                                    {name}
+                                                </div>
+                                            {/if}
+                                        {/each}
+                                    </div>
+                                </div>
+                            {/if}
+                        </div>
+                    {/if}
                 </div>
 
                 <div
                     class="flex flex-col gap-2 w-full md:max-w-[240px] max-w-[550px]"
                 >
-                    {#each menuItems as item}
+                    {#each effectiveMenuItems as item}
                         <Button
                             variant="menuButton"
                             active={activeTab === item.id}
@@ -1135,6 +1160,7 @@
                     >
                         {#if activeTab === "about"}
                             <div class="flex flex-wrap gap-3 items-start">
+                                {#if !isForesight}
                                 <div
                                     class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-5"
                                 >
@@ -1318,6 +1344,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {/if}
 
                                 <div
                                     class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md p-6 dark:bg-[#383838]/90 dark:border-[#444444] rounded-2xl shadow-xl border border-white/50 flex flex-col gap-4"
@@ -1334,6 +1361,7 @@
                                             </span>
                                         </div>
 
+                                        {#if !isForesight}
                                         <div
                                             class="flex items-center gap-2 flex-wrap"
                                         >
@@ -1360,28 +1388,46 @@
                                                     "Cumulative"}
                                             </label>
                                         </div>
+                                        {/if}
                                     </div>
 
                                     <div
                                         class="flex flex-wrap justify-center gap-2 pt-1"
                                     >
-                                        {#if neededMaterials.length > 0}
-                                            {#each neededMaterials as mat (mat.id)}
-                                                <ItemCard
-                                                    item={mat}
-                                                    amount={mat.amount}
-                                                />
-                                            {/each}
+                                        {#if isForesight}
+                                            {#if sortedForesightMaterials.length > 0}
+                                                {#each sortedForesightMaterials as matId (matId)}
+                                                    <ItemCard
+                                                        item={{ id: matId }}
+                                                        hideAmount={true}
+                                                    />
+                                                {/each}
+                                            {:else}
+                                                <div
+                                                    class="w-full text-center text-gray-400 text-sm py-4 italic"
+                                                >
+                                                    {$t("systemNames.noMaterialsNeeded")}
+                                                </div>
+                                            {/if}
                                         {:else}
-                                            <div
-                                                class="w-full text-center text-gray-400 text-sm py-4 italic"
-                                            >
-                                                {level === 1
-                                                    ? $t(
-                                                          "systemNames.noMaterialsNeeded",
-                                                      )
-                                                    : $t("stats.maxed")}
-                                            </div>
+                                            {#if neededMaterials.length > 0}
+                                                {#each neededMaterials as mat (mat.id)}
+                                                    <ItemCard
+                                                        item={mat}
+                                                        amount={mat.amount}
+                                                    />
+                                                {/each}
+                                            {:else}
+                                                <div
+                                                    class="w-full text-center text-gray-400 text-sm py-4 italic"
+                                                >
+                                                    {level === 1
+                                                        ? $t(
+                                                              "systemNames.noMaterialsNeeded",
+                                                          )
+                                                        : $t("stats.maxed")}
+                                                </div>
+                                            {/if}
                                         {/if}
                                     </div>
                                 </div>
@@ -1818,11 +1864,12 @@
                                     {$t("menu.artwork")}
                                 </h2>
 
-                                {#if charLocale?.arts}
+                                {#if charLocale?.arts || isForesight}
                                     <div
                                         class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-start justify-items-start 2xl:justify-items-end"
                                     >
-                                        {#each Object.entries(charLocale.arts) as [artKey, artData]}
+                                        {#if charLocale?.arts}
+                                            {#each Object.entries(charLocale.arts) as [artKey, artData]}
                                             {@const realKey =
                                                 artKey === "potential6"
                                                     ? "potential5"
@@ -1995,7 +2042,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        {/each}
+                                            {/each}
+                                        {/if}
                                         <div
                                             class="w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
                                         >
@@ -2010,14 +2058,11 @@
                                                         e.key === " ") &&
                                                     (selectedArtId = `splash_${id}`)}
                                             >
-                                                <img
-                                                    src={`/images/operators/splash/${id}.png`}
-                                                    class="w-full h-full object-cover"
+                                                <Image
+                                                    id={id}
+                                                    variant="operator-splash"
+                                                    className="w-full h-full object-cover"
                                                     alt="Splash Art"
-                                                    loading="lazy"
-                                                    on:error={(e) =>
-                                                        (e.target.style.display =
-                                                            "none")}
                                                 />
 
                                                 <div
@@ -2038,7 +2083,7 @@
                                                         title="Copy image"
                                                         on:click|stopPropagation={async () => {
                                                             try {
-                                                                const imageUrl = `/images/operators/splash/${id}.png`;
+                                                                const imageUrl = getImagePath(id, "operator-splash");
                                                                 const response =
                                                                     await fetch(
                                                                         imageUrl,
@@ -2094,7 +2139,7 @@
                                                         class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
                                                         title="Download Art"
                                                         on:click|stopPropagation={() => {
-                                                            const imageUrl = `/images/operators/splash/${id}.png`;
+                                                            const imageUrl = getImagePath(id, "operator-splash");
                                                             const link =
                                                                 document.createElement(
                                                                     "a",
@@ -2156,7 +2201,7 @@
                                     </div>
                                 {/if}
 
-                                {#if extraArts.length > 0}
+                                {#if !isForesight && extraArts.length > 0}
                                     <div
                                         class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance] pt-3 border-t border-gray-200/50 dark:border-[#444444]/50 w-full"
                                     >
@@ -2277,7 +2322,7 @@
                                             </div>
                                         {/each}
                                     </div>
-                                {:else if !charLocale?.arts}
+                                {:else if !charLocale?.arts && !isForesight}
                                     <div
                                         class="text-gray-500 text-center italic mt-10"
                                     >
@@ -2585,9 +2630,10 @@
                         alt="Full Art"
                     />
                 {:else if selectedArtId.startsWith("splash_")}
-                    <img
-                        src={`/images/operators/splash/${selectedArtId.replace("splash_", "")}.png`}
-                        class="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
+                    <Image
+                        id={selectedArtId.replace("splash_", "")}
+                        variant="operator-splash"
+                        className="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
                         alt="Splash Art Full"
                     />
                 {:else}
