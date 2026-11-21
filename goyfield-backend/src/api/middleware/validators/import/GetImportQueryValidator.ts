@@ -18,7 +18,8 @@ export class GetImportQueryValidator extends Validator<GetImportQuery> {
         return [
             this.getTokenRule(),
             this.getServerIdsRule(),
-            this.getLastPullTsRule()
+            this.getLastPullTsRule(),
+            this.getLastPullsRule()
         ];
     }
 
@@ -40,8 +41,15 @@ export class GetImportQueryValidator extends Validator<GetImportQuery> {
 
     private static getLastPullTsRule(): ValidationRule<GetImportQuery> {
         return new ValidationRule(
-            item => item.lastPullTs === "" || (typeof item.lastPullTs === "string" && this.LAST_PULL_TS_REGEX.test(item.lastPullTs)),
+            item => item.lastPullTs === undefined || item.lastPullTs === "" || (typeof item.lastPullTs === "string" && this.LAST_PULL_TS_REGEX.test(item.lastPullTs)),
             "lastPullTs must be a string of digits or empty"
+        );
+    }
+
+    private static getLastPullsRule(): ValidationRule<GetImportQuery> {
+        return new ValidationRule(
+            item => item.lastPulls === undefined || typeof item.lastPulls === "string",
+            "lastPulls must be a string or undefined"
         );
     }
 }

@@ -7,7 +7,7 @@ export async function fetchGetImport(token: string, serverIds: string[], lastPul
     const encodedServerIds = encodeURIComponent(serverIds.join(","));
     let queryParam = "";
     if (typeof lastPulls === "object" && lastPulls !== null) {
-        queryParam = `&lastPulls=${encodeURIComponent(JSON.stringify(lastPulls))}`;
+        queryParam = `&lastPullTs=&lastPulls=${encodeURIComponent(JSON.stringify(lastPulls))}`;
     } else {
         queryParam = `&lastPullTs=${lastPulls}`;
     }
