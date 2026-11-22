@@ -1727,7 +1727,7 @@ export const rawEvents: GenericEventData[] = [
         endTimeAsia: "2027-01-07 04:00:00",
         icon: "ev4-v1.7.webp",
         url: "",
-        color: "#D6507E",
+        color: "#5E848D",
         layer: 4,
         type: "inGame",
         iconPosition: 55,
