@@ -100,47 +100,19 @@
     let totalEntries = 0;
     let loading = true;
     let currentPage = 1;
-    let pageSize = (browser && typeof localStorage !== "undefined" && Number(localStorage.getItem("leaderboard_page_size"))) || 20;
-    if (![10, 20, 50].includes(pageSize)) pageSize = 20;
-    const initialParams = browser ? new URLSearchParams(window.location.search) : null;
-    let selectedEvent = initialParams?.get("event")
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_event"))
-        || "monument";
-    let selectedMonumentGroup = initialParams?.get("group")
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
-        || (monumentGroups[0]?.id || "");
-    let selectedStageId = (selectedEvent === "monument" ? initialParams?.get("stage") : null)
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_stage_id"))
-        || (monumentGroups[0]?.stages[0]?.id || "");
-    let isAgony = initialParams?.has("agony")
-        ? initialParams.get("agony") === "true"
-        : ((browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_is_agony") !== null)
-            ? localStorage.getItem("leaderboard_is_agony") === "true"
-            : true);
-    let selectedWarEchoesSeason = (selectedEvent === "echoesOfWar" ? initialParams?.get("season") : null)
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_season"))
-        || (warEchoesSeasons[0]?.id)
-        || "4";
-    let selectedWarEchoesCycle = (selectedEvent === "echoesOfWar" ? initialParams?.get("cycle") : null)
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_cycle"))
-        || "1";
-    let selectedWarEchoesDifficulty = (selectedEvent === "echoesOfWar" ? initialParams?.get("diff") : null)
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_diff"))
-        || "brutal";
-    let selectedWarEchoesStageId = (selectedEvent === "echoesOfWar" ? initialParams?.get("stage") : null)
-        || (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_we_stage"))
-        || (warEchoesSeasons[0]?.weeks?.[0]?.stages?.[0]?.id)
-        || "indie_battletower012";
-    let serverFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_server"))
-        || "all";
-    let teamSizeFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_team_size"))
-        ? Number(localStorage.getItem("leaderboard_team_size"))
-        : null;
-    let withVideoFilter = initialParams?.has("video")
-        ? initialParams.get("video") === "true"
-        : ((browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_with_video") !== null)
-            ? localStorage.getItem("leaderboard_with_video") === "true"
-            : false);
+    let pageSize = 20;
+    let selectedEvent = $page.url.searchParams.get("event") || "monument";
+    let selectedMonumentGroup = $page.url.searchParams.get("group") || (monumentGroups[0]?.id || "");
+    let selectedStageId = (selectedEvent === "monument" ? $page.url.searchParams.get("stage") : null) || (monumentGroups[0]?.stages[0]?.id || "");
+    let isAgony = $page.url.searchParams.has("agony") ? $page.url.searchParams.get("agony") === "true" : true;
+    let selectedWarEchoesSeason = (selectedEvent === "echoesOfWar" ? $page.url.searchParams.get("season") : null) || (warEchoesSeasons[0]?.id) || "4";
+    let selectedWarEchoesCycle = (selectedEvent === "echoesOfWar" ? $page.url.searchParams.get("cycle") : null) || "1";
+    let selectedWarEchoesDifficulty = (selectedEvent === "echoesOfWar" ? $page.url.searchParams.get("diff") : null) || "brutal";
+    let selectedWarEchoesStageId = (selectedEvent === "echoesOfWar" ? $page.url.searchParams.get("stage") : null) || (warEchoesSeasons[0]?.weeks?.[0]?.stages?.[0]?.id) || "indie_battletower012";
+    let serverFilter = "all";
+    let teamSizeFilter = null;
+    let withVideoFilter = $page.url.searchParams.has("video") ? $page.url.searchParams.get("video") === "true" : false;
+    let mounted = false;
 
     let lastHandledSearch = browser ? window.location.search : "";
     $: if (browser && $page?.url?.search && $page.url.search !== lastHandledSearch) {
@@ -178,44 +150,50 @@
 
     $: totalPages = Math.max(1, Math.ceil(totalEntries / pageSize));
 
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_event", selectedEvent);
     }
 
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_monument_group", selectedMonumentGroup);
     }
-    $: if (browser && typeof localStorage !== "undefined" && selectedStageId) {
+    $: if (mounted && typeof localStorage !== "undefined" && selectedStageId) {
         localStorage.setItem("leaderboard_stage_id", selectedStageId);
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_we_season", selectedWarEchoesSeason);
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_we_cycle", selectedWarEchoesCycle);
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_we_diff", selectedWarEchoesDifficulty);
     }
-    $: if (browser && typeof localStorage !== "undefined" && selectedWarEchoesStageId) {
+    $: if (mounted && typeof localStorage !== "undefined" && selectedWarEchoesStageId) {
         localStorage.setItem("leaderboard_we_stage", selectedWarEchoesStageId);
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_server", serverFilter);
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         if (teamSizeFilter !== null) {
             localStorage.setItem("leaderboard_team_size", String(teamSizeFilter));
         } else {
             localStorage.removeItem("leaderboard_team_size");
         }
     }
-    $: if (browser && typeof localStorage !== "undefined") {
+    $: if (mounted && typeof localStorage !== "undefined") {
         if (withVideoFilter) {
             localStorage.setItem("leaderboard_with_video", "true");
         } else {
             localStorage.removeItem("leaderboard_with_video");
         }
+    }
+    $: if (mounted && typeof localStorage !== "undefined") {
+        localStorage.setItem("leaderboard_page_size", String(pageSize));
+    }
+    $: if (mounted && typeof localStorage !== "undefined") {
+        localStorage.setItem("leaderboard_is_agony", String(isAgony));
     }
 
     $: if (visibleMonumentGroups.length > 0 && (!selectedMonumentGroup || !visibleMonumentGroups.some(g => g.id === selectedMonumentGroup))) {
@@ -684,6 +662,53 @@
     }
 
     onMount(() => {
+        const p = $page.url.searchParams;
+        if (!p.has("pageSize")) {
+            const savedSize = Number(localStorage.getItem("leaderboard_page_size"));
+            if ([10, 20, 50].includes(savedSize)) pageSize = savedSize;
+        }
+        if (!p.has("event")) {
+            const savedEvent = localStorage.getItem("leaderboard_event");
+            if (savedEvent) selectedEvent = savedEvent;
+        }
+        if (!p.has("group")) {
+            const savedGroup = localStorage.getItem("leaderboard_monument_group");
+            if (savedGroup) selectedMonumentGroup = savedGroup;
+        }
+        if (!p.has("stage")) {
+            const savedStage = localStorage.getItem("leaderboard_stage_id");
+            if (savedStage) selectedStageId = savedStage;
+        }
+        if (!p.has("agony")) {
+            const savedAgony = localStorage.getItem("leaderboard_is_agony");
+            if (savedAgony !== null) isAgony = savedAgony === "true";
+        }
+        if (!p.has("season")) {
+            const savedSeason = localStorage.getItem("leaderboard_we_season");
+            if (savedSeason) selectedWarEchoesSeason = savedSeason;
+        }
+        if (!p.has("cycle")) {
+            const savedCycle = localStorage.getItem("leaderboard_we_cycle");
+            if (savedCycle) selectedWarEchoesCycle = savedCycle;
+        }
+        if (!p.has("diff")) {
+            const savedDiff = localStorage.getItem("leaderboard_we_diff");
+            if (savedDiff) selectedWarEchoesDifficulty = savedDiff;
+        }
+        if (!p.has("stage")) {
+            const savedWeStage = localStorage.getItem("leaderboard_we_stage");
+            if (savedWeStage) selectedWarEchoesStageId = savedWeStage;
+        }
+        const savedServer = localStorage.getItem("leaderboard_server");
+        if (savedServer) serverFilter = savedServer;
+        const savedTeam = localStorage.getItem("leaderboard_team_size");
+        if (savedTeam !== null) teamSizeFilter = Number(savedTeam);
+        if (!p.has("video")) {
+            const savedVideo = localStorage.getItem("leaderboard_with_video");
+            if (savedVideo !== null) withVideoFilter = savedVideo === "true";
+        }
+
+        mounted = true;
         loadLeaderboard();
     });
 

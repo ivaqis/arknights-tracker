@@ -76,7 +76,7 @@
 
     let bgSearchQuery = "";
     $: availableBackgrounds = Object.values(characters || {})
-        .filter(char => char.id && char.id !== "endministrator1" && char.id !== "endministrator2")
+        .filter(char => char.id && char.id !== "endministrator1" && char.id !== "endministrator2" && !char.isForesight)
         .flatMap(char => [
             { id: `${char.id}_potential1`, name: char.name, pot: 1 },
             { id: `${char.id}_potential3`, name: char.name, pot: 3 },

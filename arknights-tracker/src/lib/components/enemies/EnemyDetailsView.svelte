@@ -7,6 +7,7 @@
     import { getRarityColor } from "$lib/utils/colorUtils";
     import { copyTableToClipboard, formatNumberForSelection as formatNumForSelection } from "$lib/utils/clipboardUtils";
     import { loadLocaleItem } from "$lib/utils/localeLoader";
+    import { replaceState } from "$app/navigation";
 
     import Icon from "$lib/components/Icon.svelte";
     import ItemCard from "$lib/components/cards/ItemCard.svelte";
@@ -49,7 +50,7 @@
             } else {
                 url.searchParams.delete("variant");
             }
-            window.history.replaceState({}, "", url.toString());
+            replaceState(url.toString(), {});
         }
     }
 

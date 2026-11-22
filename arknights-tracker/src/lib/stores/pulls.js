@@ -334,12 +334,15 @@ function createPullStore() {
                             const incomeList = incomingByBanner[bannerId];
                             const hasLegacyPulls = Array.isArray(oldList) && oldList.some(p => !p.seqId || String(p.id || "").startsWith("import_"));
 
-                            if (isRecoveryEnabled || hasLegacyPulls) {
+                            if (hasLegacyPulls) {
                                 const matches = findLCSMatches(oldList, incomeList);
 
                                 matches.forEach(m => {
                                     const oldP = m.oldPull;
                                     const newP = m.newPull;
+
+                                    const isOldLegacy = !oldP.seqId || String(oldP.id || "").startsWith("import_");
+                                    if (!isOldLegacy) return;
 
                                     oldP.id = newP.id;
                                     oldP.time = newP.time;

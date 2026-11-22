@@ -1,5 +1,5 @@
 <script>
-    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
     import { t } from "$lib/i18n";
     import { currentUiLocale } from "$lib/stores/locale";
     import { isEventStarted, formatDateRange } from "$lib/utils/dateUtils";
@@ -15,14 +15,16 @@
     $: serverId = activeAccount?.serverId || activeAccount?.info?.base?.serverId || 'all';
     $: visibleWarEchoesSeasons = warEchoesSeasons.filter(s => isEventStarted(s, serverId, now));
 
-    let selectedWarEchoesSeason = "";
+    let selectedWarEchoesSeason = warEchoesSeasons[0]?.id || "";
+    let mounted = false;
 
-    if (browser && typeof localStorage !== "undefined") {
+    onMount(() => {
         const savedSeason = localStorage.getItem("profile_warechoes_season");
         if (savedSeason) {
             selectedWarEchoesSeason = savedSeason;
         }
-    }
+        mounted = true;
+    });
 
     $: if (visibleWarEchoesSeasons.length > 0 && (!selectedWarEchoesSeason || !visibleWarEchoesSeasons.some(s => s.id === selectedWarEchoesSeason))) {
         selectedWarEchoesSeason = visibleWarEchoesSeasons[0].id;
@@ -30,12 +32,12 @@
 
     function handleSeasonChange(val) {
         selectedWarEchoesSeason = val;
-        if (browser && typeof localStorage !== "undefined") {
+        if (typeof localStorage !== "undefined") {
             localStorage.setItem("profile_warechoes_season", val);
         }
     }
 
-    $: if (selectedWarEchoesSeason && browser && typeof localStorage !== "undefined") {
+    $: if (mounted && selectedWarEchoesSeason && typeof localStorage !== "undefined") {
         localStorage.setItem("profile_warechoes_season", selectedWarEchoesSeason);
     }
 

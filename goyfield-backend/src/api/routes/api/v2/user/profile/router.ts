@@ -34,7 +34,7 @@ profileRouter.post("/update",
     UpdateUserProfile.post
 );
 profileRouter.post("/create",
-    // RequireService.require(sightengine, avatarUploader), // todo ВКЛЮЧИТЬ
+    updateProfileLimiter,
     RequireAuth.require(AuthType.FIREBASE),
     JsonRequestValidator.isJson,
     CreateUserProfileRequestValidator.validate,

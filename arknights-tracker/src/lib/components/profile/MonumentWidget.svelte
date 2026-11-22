@@ -1,5 +1,5 @@
 <script>
-    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
     import { t } from "$lib/i18n";
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -16,13 +16,17 @@
     $: serverId = activeAccount?.serverId || activeAccount?.info?.base?.serverId || 'all';
     $: visibleMonumentGroups = monumentGroups.filter(g => isEventStarted(g, serverId, now));
 
-    let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("profile_monument_group"))
-        || (monumentGroups[0]?.id || "");
+    let selectedMonumentGroup = monumentGroups[0]?.id || "";
     let isAgony = false;
+    let mounted = false;
 
-    if (browser && typeof localStorage !== "undefined") {
-        isAgony = localStorage.getItem("profile_monument_is_agony") === "true";
-    }
+    onMount(() => {
+        const savedGroup = localStorage.getItem("profile_monument_group");
+        if (savedGroup) selectedMonumentGroup = savedGroup;
+        const savedAgony = localStorage.getItem("profile_monument_is_agony");
+        if (savedAgony !== null) isAgony = savedAgony === "true";
+        mounted = true;
+    });
 
     $: if (visibleMonumentGroups.length > 0 && (!selectedMonumentGroup || !visibleMonumentGroups.some(g => g.id === selectedMonumentGroup))) {
         selectedMonumentGroup = visibleMonumentGroups[0].id;
@@ -30,19 +34,19 @@
 
     function toggleAgony() {
         isAgony = !isAgony;
-        if (browser && typeof localStorage !== "undefined") {
+        if (typeof localStorage !== "undefined") {
             localStorage.setItem("profile_monument_is_agony", isAgony.toString());
         }
     }
 
     function handleGroupChange(val) {
         selectedMonumentGroup = val;
-        if (browser && typeof localStorage !== "undefined") {
+        if (typeof localStorage !== "undefined") {
             localStorage.setItem("profile_monument_group", val);
         }
     }
 
-    $: if (selectedMonumentGroup && browser && typeof localStorage !== "undefined") {
+    $: if (mounted && selectedMonumentGroup && typeof localStorage !== "undefined") {
         localStorage.setItem("profile_monument_group", selectedMonumentGroup);
     }
 

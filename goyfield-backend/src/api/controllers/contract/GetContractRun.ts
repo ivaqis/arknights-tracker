@@ -64,7 +64,9 @@ export class GetContractRun extends Controller<
             throw new Error(`Cannot find user profile for ${JSON.stringify(gameProfile, null, 2)}`);
         }
 
-        if ((profile.isPrivate.initValue || profile.hideLeaderboard.initValue) && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
+        const isOwner = !!firebaseUid && firebaseUid === profile.firebaseUid.initValue;
+
+        if ((profile.isPrivate.initValue || profile.hideLeaderboard.initValue) && !isOwner) {
             this.status = 403;
             this.message = "No access";
 
@@ -72,7 +74,7 @@ export class GetContractRun extends Controller<
         }
 
         let videoCode = record.videoCode;
-        if (!videoCode) {
+        if (!videoCode && isOwner) {
             videoCode = crypto.randomBytes(4).toString("hex");
             this._database.contractLeaderboard.updateVideoCode(record.id, videoCode).catch(() => {});
         }
@@ -82,7 +84,7 @@ export class GetContractRun extends Controller<
             avatarId: profile.avatarId.initValue,
             level: gameProfile.data.base.level,
             serverId: gameProfile.serverId,
-            recordData: GetContractRun.getRecordData(record, videoCode)
+            recordData: GetContractRun.getRecordData(record, isOwner ? videoCode : null)
         };
     }
 }

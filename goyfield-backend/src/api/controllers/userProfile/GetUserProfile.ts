@@ -52,7 +52,8 @@ export class GetUserProfile extends Controller<
                               contractRecords: Record<string, ContractRecordEntity | null>,
                               pullsStats: Record<string, PullProfileEntity | null>,
                               monumentMap: Record<string, IMonumentProfileRun[]> = {},
-                              warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
+                              warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {},
+                              maskUid: boolean = false
     ): GetUserProfileResponse {
         return {
             publicUid: record.publicUid.initValue,
@@ -68,7 +69,7 @@ export class GetUserProfile extends Controller<
                     return [];
                 }
             })(),
-            gameProfiles: this.getGameProfiles(gameProfiles, contractRecords, pullsStats, monumentMap, warEchoesMap)
+            gameProfiles: this.getGameProfiles(gameProfiles, contractRecords, pullsStats, monumentMap, warEchoesMap, maskUid)
         };
     }
 
@@ -154,17 +155,29 @@ export class GetUserProfile extends Controller<
                                    contractRecords: Record<string, ContractRecordEntity | null>,
                                    pullsStats: Record<string, PullProfileEntity | null>,
                                    monumentMap: Record<string, IMonumentProfileRun[]> = {},
-                                   warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {}
+                                   warEchoesMap: Record<string, IWarEchoesProfileRun[]> = {},
+                                   maskUid: boolean = false
     ): IGameProfile[] {
         const result: IGameProfile[] = [];
 
-        for (const gameProfile of gameProfiles) {
+        for (let i = 0; i < gameProfiles.length; i++) {
+            const gameProfile = gameProfiles[i];
             const roleId = gameProfile.base.roleId;
             const record = contractRecords[roleId];
             const pulls = pullsStats[roleId];
 
+            const profileToReturn = maskUid
+                ? {
+                    ...gameProfile,
+                    base: {
+                        ...gameProfile.base,
+                        roleId: `acc_${i + 1}`
+                    }
+                }
+                : gameProfile;
+
             result.push({
-                gameProfile: gameProfile,
+                gameProfile: profileToReturn,
                 contract: record ?? null,
                 pulls: pulls,
                 monument: monumentMap[roleId] || [],
@@ -204,15 +217,15 @@ export class GetUserProfile extends Controller<
         const gameProfiles = await this._database.gameProfiles.findByUid(profile.uid);
         const gameProfilesData = gameProfiles.map(profile => profile.data.getEntity());
         const gameUids = gameProfilesData.map(profile => profile.base.roleId);
-        const bestRecords = hideLeaderboard ? {} : await this.getBestRecords(gameUids);
+        const bestRecords = hideLeaderboard ? {} : await this.getBestRecords(gameUids, isOwner);
         const pullStats = await GetUserProfile.getPullsStats(this._database, gameProfiles);
         const monumentMap = hideLeaderboard ? {} : await GetUserProfile.getMonumentRuns(this._database, gameUids);
         const warEchoesMap = hideLeaderboard ? {} : await GetUserProfile.getWarEchoesRuns(this._database, gameUids);
 
-        this.data = GetUserProfile.getRespData(profile, gameProfilesData, bestRecords, pullStats, monumentMap, warEchoesMap);
+        this.data = GetUserProfile.getRespData(profile, gameProfilesData, bestRecords, pullStats, monumentMap, warEchoesMap, !isOwner && profile.hideUid.initValue);
     }
 
-    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecordEntity | null>> {
+    private async getBestRecords(gameUids: string[], isOwner: boolean = false): Promise<Record<string, ContractRecordEntity | null>> {
         const currentContractId = crisisContractRecords.current.id;
         const records: Record<string, ContractRecordEntity | null> = {};
         if (gameUids.length === 0) return records;
@@ -224,7 +237,7 @@ export class GetUserProfile extends Controller<
                 entity.rank = run.rank;
                 entity.totalCount = run.totalCount;
                 entity.videoUrl = run.videoUrl;
-                entity.videoCode = run.videoCode;
+                entity.videoCode = isOwner ? run.videoCode : null;
                 records[run.gameUid] = entity;
             } catch {}
         }

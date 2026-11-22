@@ -31,7 +31,7 @@ export const config = {
     hiveApiKey: process.env.HIVE_API_KEY || null,
     youtubeApiKey: process.env.YOUTUBE_API_KEY || null,
     dailyUploadLimit: Number(process.env.DAILY_UPLOAD_LIMIT) || 30,
-    signSecret: process.env.SIGN_SECRET || "super_secret_key_123",
+    signSecret: getSignSecret(),
     signIssuer: process.env.SIGN_ISSUER || "admin",
 } as const;
 
@@ -104,4 +104,12 @@ function getLoggingLevel() {
     }
 
     return current;
+}
+
+function getSignSecret(): string {
+    const secret = process.env.SIGN_SECRET;
+    if (!secret) {
+        throw new Error("SIGN_SECRET environment variable is required");
+    }
+    return secret;
 }

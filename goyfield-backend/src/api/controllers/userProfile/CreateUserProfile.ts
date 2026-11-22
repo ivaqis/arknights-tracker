@@ -67,6 +67,7 @@ export class CreateUserProfile extends Controller<
         if (profiles.length > 0) {
             this.status = 400;
             this.message = "Profile already exists";
+            return;
         }
 
         const exists = await this._database.users.isUserExist(this._uid);

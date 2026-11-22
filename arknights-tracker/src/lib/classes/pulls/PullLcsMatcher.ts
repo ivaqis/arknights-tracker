@@ -28,8 +28,26 @@ export class PullLcsMatcher {
     private static isSamePull(a: PullRecord, b: PullRecord): boolean {
         const normA = String(a.name || "").toLowerCase().trim();
         const normB = String(b.name || "").toLowerCase().trim();
+        if (normA !== normB) return false;
+
         const isSameType = !a.type || !b.type || a.type === b.type;
-        return normA === normB && isSameType;
+        if (!isSameType) return false;
+
+        const seqA = Number(a.seqId || 0);
+        const seqB = Number(b.seqId || 0);
+        if (seqA > 0 && seqB > 0 && seqA !== seqB) {
+            return false;
+        }
+
+        const timeA = a.time instanceof Date ? a.time.getTime() : new Date(a.time).getTime();
+        const timeB = b.time instanceof Date ? b.time.getTime() : new Date(b.time).getTime();
+        if (!Number.isNaN(timeA) && !Number.isNaN(timeB) && timeA > 0 && timeB > 0) {
+            if (Math.abs(timeA - timeB) > 30 * 24 * 60 * 60 * 1000) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private static backtrackMatches(
@@ -95,14 +113,6 @@ export class PullLcsMatcher {
             return;
         }
 
-        if (isRecoveryEnabled) {
-            const matches = this.findMatches(existingPulls, newPulls);
-            if (matches.length === 0) {
-                throw new AccountMismatchError("ACCOUNT_MISMATCH_RECOVERY");
-            }
-            return;
-        }
-
         const validNew = newPulls.filter(p => typeof p?.time?.getTime === "function" && !Number.isNaN(p.time.getTime()));
         if (validNew.length === 0) {
             return;
@@ -117,7 +127,7 @@ export class PullLcsMatcher {
                 return false;
             }
             const time = p.time.getTime();
-            return minNewTime <= time && time <= maxNewTime;
+            return (minNewTime - 86400000) <= time && time <= (maxNewTime + 86400000);
         });
 
         if (overlaps.length === 0) {
@@ -130,6 +140,14 @@ export class PullLcsMatcher {
         if (!hasMatch) {
             const existingSecSignatures = new Set(overlaps.map(p => `${Math.floor(p.time.getTime() / 1000)}_${String(p.name || "").toLowerCase().trim()}`));
             hasMatch = sortedNew.some(p => existingSecSignatures.has(`${Math.floor(p.time.getTime() / 1000)}_${String(p.name || "").toLowerCase().trim()}`));
+        }
+
+        if (!hasMatch && isRecoveryEnabled) {
+            const matches = this.findMatches(overlaps, sortedNew);
+            if (matches.length > 0) {
+                return;
+            }
+            throw new AccountMismatchError("ACCOUNT_MISMATCH_RECOVERY");
         }
 
         if (!hasMatch) {

@@ -11,6 +11,13 @@ export class App {
         this._port = port;
 
         this._app.set("trust proxy", 1);
+        this._app.disable("x-powered-by");
+        this._app.use((req, res, next) => {
+            res.setHeader("X-Content-Type-Options", "nosniff");
+            res.setHeader("X-Frame-Options", "SAMEORIGIN");
+            res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+            next();
+        });
         this._app.use(cors());
         this._app.use("/", root);
 

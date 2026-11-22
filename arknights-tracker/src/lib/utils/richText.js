@@ -131,7 +131,7 @@ export function parseRichText(text) {
         if (showIconPlaceholder) {
             const imgName = `icon_term_${tagKey}.png`;
             const imgSrc = `/images/textIcons/${imgName}`;
-            iconPlaceholder = `<img src="${imgSrc}" class="w-5 h-5 inline-block align-text-bottom shrink-0 transition-transform duration-200 hover:scale-110" style="display: none;" onload="this.style.display='inline-block'" />`;
+            iconPlaceholder = `<img src="${imgSrc}" width="44" height="36" alt="" class="h-5 mr-[-1px] w-auto inline-block align-text-bottom shrink-0 object-contain transition-transform duration-200 hover:scale-110" style="aspect-ratio: 44/36;" onerror="this.style.display='none'" />`;
         }
         
         return `<span class="rich-term ${styleClass}" data-term-id="${tag}">${iconPlaceholder}`;
@@ -357,7 +357,7 @@ export function hyperlinkAction(node) {
 
             const titleHtml = `
                 <div class="${historyClass}" data-index="${index}" style="font-weight:700; ${isLast ? 'border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:4px; margin-bottom:4px;' : ''} font-size:13px; letter-spacing:0.025em; color:${isLast ? '#facc15' : '#a1a1aa'}; display:flex; align-items:center; gap:4px; ${historyStyle}">
-                    <img src="${titleImgSrc}" style="width:20px;height:20px;display:none;flex-shrink:0;vertical-align:text-bottom; filter: ${isLast ? 'none' : 'grayscale(100%) opacity(50%)'};" onload="this.style.display='inline-block'" />
+                    <img src="${titleImgSrc}" width="44" height="36" alt="" style="height:20px;width:auto;aspect-ratio:44/36;object-fit:contain;flex-shrink:0;vertical-align:text-bottom; filter: ${isLast ? 'none' : 'grayscale(100%) opacity(50%)'};" onerror="this.style.display='none'" />
                     <span style="${isLast ? '' : 'opacity: 0.7;'}">${card.title}</span>
                     ${backButtonHtml}
                 </div>
