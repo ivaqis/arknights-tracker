@@ -1772,7 +1772,7 @@ export const rawEvents: GenericEventData[] = [
         icon: "ev16-v1.2.webp",
         url: "",
         color: "#b0a803",
-        layer: 5,
+        layer: 7,
         type: "inGame",
         iconPosition: 50,
         version: "1.7"
