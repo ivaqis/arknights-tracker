@@ -283,6 +283,7 @@ export function getImagePath(idOrName: string | number | null | undefined, varia
             return `/images/operators/skills/${withExt(resolveSkillIconName(name))}`;
 
         case 'operator-preview':
+        case 'preview':
             return `/images/operators/preview/${withExt(resolvePreviewName(name))}`;
 
         case 'weapon-icon':
@@ -398,14 +399,24 @@ export function getCharacterExtraArts(characterOrId: any): CharacterExtraArt[] {
     if (!char?.gameId) return [];
     const gid = char.gameId;
     const isEndmin = char.id === 'endministrator1' || char.id === 'endministrator2';
+    const isForesight = Boolean(char.isForesight);
 
     const arts: CharacterExtraArt[] = [
+        { id: 'icon', url: getImagePath(char.id, 'operator-icon') },
+        { id: 'preview', url: getImagePath(gid, 'operator-preview') }
+    ];
+
+    if (isForesight) {
+        return arts;
+    }
+
+    arts.push(
         { id: 'receptionroom', url: getImagePath(gid, 'receptionroom') },
         { id: 'charhorheadicon', url: getImagePath(gid, 'charhorheadicon') },
         { id: 'chargacha', url: getImagePath(gid, 'chargacha') },
         { id: 'charbattleicon', url: getImagePath(gid, 'charbattleicon') },
         { id: 'charinfo', url: getImagePath(gid, 'charinfo') }
-    ];
+    );
 
     if (!isEndmin) {
         arts.push(

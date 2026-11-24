@@ -61,7 +61,7 @@
     let charDetails = {};
     let copiedArtId = null;
 
-    $: extraArts = isForesight ? [] : getCharacterExtraArts(char);
+    $: extraArts = getCharacterExtraArts(char);
     $: sortedForesightMaterials = (char?.materials || [])
         .slice()
         .sort((a, b) => (items[b]?.rarity || 1) - (items[a]?.rarity || 1));
@@ -1156,6 +1156,8 @@
                         class="col-start-1 row-start-1 flex flex-col gap-1 min-w-0 w-full {activeTab ===
                         'about'
                             ? '2xl:max-w-[400px] 2xl:ml-auto'
+                            : isForesight && activeTab === 'artwork'
+                            ? 'md:max-w-[640px] md:ml-auto'
                             : ''}"
                     >
                         {#if activeTab === "about"}
@@ -1866,7 +1868,9 @@
 
                                 {#if charLocale?.arts || isForesight}
                                     <div
-                                        class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full items-start justify-items-start 2xl:justify-items-end"
+                                        class="grid grid-cols-1 {isForesight
+                                            ? ''
+                                            : 'md:grid-cols-2'} gap-6 w-full items-start justify-items-start 2xl:justify-items-end"
                                     >
                                         {#if charLocale?.arts}
                                             {#each Object.entries(charLocale.arts) as [artKey, artData]}
@@ -2201,18 +2205,22 @@
                                     </div>
                                 {/if}
 
-                                {#if !isForesight && extraArts.length > 0}
+                                {#if extraArts.length > 0}
                                     <div
-                                        class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance] pt-3 border-t border-gray-200/50 dark:border-[#444444]/50 w-full"
+                                        class="{isForesight
+                                            ? 'grid grid-cols-2 gap-4'
+                                            : 'columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance]'} pt-3 border-t border-gray-200/50 dark:border-[#444444]/50 w-full"
                                     >
                                         {#each extraArts as art (art.id)}
                                             <div
-                                                class="break-inside-avoid mb-6 w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
+                                                class="break-inside-avoid {isForesight
+                                                    ? 'mb-0 h-full'
+                                                    : 'mb-6'} w-full bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
                                             >
                                                 <div
                                                     role="button"
                                                     tabindex="0"
-                                                    class="relative w-full bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex items-center justify-center p-4 min-h-[160px] max-h-[440px] overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
+                                                    class="relative w-full h-full flex-1 bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex items-center justify-center p-4 min-h-[160px] max-h-[440px] overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
                                                     on:click={() =>
                                                         (selectedArtId =
                                                             art.url)}
