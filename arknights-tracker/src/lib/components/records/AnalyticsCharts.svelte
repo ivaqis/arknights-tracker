@@ -2,6 +2,7 @@
   import { t } from "$lib/i18n";
   import { banners } from "$lib/data/banners";
   import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { PullDateHelper } from "$lib/classes/pulls/PullDateHelper";
 
   import Icon from "$lib/components/Icon.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
@@ -43,19 +44,21 @@
 
     sortedPulls.forEach((p) => {
       const pullTime = new Date(p.time).getTime();
-      let matchedBanner = banners.find((b) => b.id === p.rawPoolId);
+      let matchedBanner = !PullDateHelper.isGenericBannerId(p.rawPoolId)
+        ? banners.find((b) => b.id === p.rawPoolId)
+        : undefined;
       if (!matchedBanner) {
           matchedBanner = relevantBanners.find((b) => {
-            const start = new Date(b.startTime).getTime();
-            const end = b.endTime ? new Date(b.endTime).getTime() : Infinity;
-            return pullTime >= start && pullTime <= end;
+            const dates = PullDateHelper.getBannerDates(b);
+            const start = PullDateHelper.parseDateWithServer(dates.startStr)?.getTime() || 0;
+            const end = dates.endStr ? (PullDateHelper.parseDateWithServer(dates.endStr)?.getTime() || Infinity) : Infinity;
+            return pullTime >= start - PullDateHelper.BUFFER_MS && pullTime <= end + PullDateHelper.BUFFER_MS;
           });
       }
 
       let bannerId = matchedBanner ? matchedBanner.id : (p.rawPoolId || p.bannerId || "Unknown");
       let displayName = matchedBanner ? matchedBanner.name : bannerId;
-      const genericIds = ['special', 'standard', 'weapon', 'weap-special', 'weap-standard', 'weapon_rerun', 'weap-rerun', 'rerun', 'new-player', 'unknown'];
-      if (genericIds.includes(bannerId.toLowerCase())) {
+      if (PullDateHelper.isGenericBannerId(bannerId)) {
         const d = new Date(p.time);
         const month = String(d.getMonth() + 1).padStart(2, '0');
         bannerId = `generic_${p.bannerId}_${d.getFullYear()}_${month}`;

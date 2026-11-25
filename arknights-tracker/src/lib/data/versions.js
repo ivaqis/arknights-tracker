@@ -2052,7 +2052,7 @@ export const changelogData = [
     },
     {
         version: "1.7",
-        characters: ["kay"],
+        characters: ["kay", "mimino"],
         weapons: ["sweetDeal", "raidComet", "starOfTomorrow"],
         equipment: ["item_equip_t4_parts_wuling00_body_07", "item_equip_t4_parts_wuling00_edc_07", "item_equip_t4_parts_wuling00_hand_07", "item_equip_t4_parts_wuling02_body_05", "item_equip_t4_parts_wuling02_body_06", "item_equip_t4_parts_wuling02_edc_03", "item_equip_t4_parts_wuling02_hand_05", "item_equip_t4_parts_wuling02_hand_06", "item_equip_t4_suit_atb01_body_06", "item_equip_t4_suit_atb01_body_07", "item_equip_t4_suit_atb01_edc_07", "item_equip_t4_suit_atb01_edc_08", "item_equip_t4_suit_atb01_hand_04", "item_equip_t4_suit_atb01_hand_05", "item_equip_t4_suit_usp02_hand_06"],
         enemies: ["eny_0159_mushman", "eny_0160_mushro", "eny_0158_mushbug", "eny_0161_mushshd"],

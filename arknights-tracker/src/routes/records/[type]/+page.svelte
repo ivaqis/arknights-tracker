@@ -22,6 +22,7 @@
     import { getRarityColor, getWeaponBg } from "$lib/utils/colorUtils";
     import { getWeaponUrl } from "$lib/utils/linkUtils";
     import { getWeaponCategory } from "$lib/utils/importUtils";
+    import { PullDateHelper } from "$lib/classes/pulls/PullDateHelper";
     import { onMount } from "svelte";
 
     $: bannerType = $page.params.type;
@@ -240,16 +241,9 @@
         if (!pull) return null;
 
         const rawId = pull.rawPoolId || pull.bannerId;
-        if (rawId) {
-            const genericIds = [
-                "special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "weapon_rerun", "rerun", "new-player", "joint", "other", "unknown",
-                "e_charactergachapooltype_rerun", "e_charactergachapooltype_special", "e_charactergachapooltype_standard", "e_charactergachapooltype_joint", "e_charactergachapooltype_beginner",
-                "e_weapongachapooltype_rerun", "e_weapongachapooltype_special", "e_weapongachapooltype_standard"
-            ];
-            if (!genericIds.includes(rawId.toLowerCase())) {
-                const exactMatch = banners.find((b) => b.id === rawId);
-                if (exactMatch) return exactMatch;
-            }
+        if (rawId && !PullDateHelper.isGenericBannerId(rawId)) {
+            const exactMatch = banners.find((b) => b.id === rawId);
+            if (exactMatch) return exactMatch;
         }
 
         const pullTime = pull.time;
@@ -426,19 +420,24 @@
         let bannerCounts = {};
 
         let rateUpCounters = {};
+        let rateUpObtained = {};
 
         const isWeapon =
             bannerType.includes("weap") || bannerType.includes("wepon");
+        const isJoint = bannerType.includes("joint");
         const hardPityLimit = isWeapon ? 80 : 120;
 
         let processed = sorted.map((pull, i) => {
             const p = { ...pull };
             p.pullNumber = i + 1;
             const banner = getBannerForPull(p, bannerType);
-            const bid = banner ? banner.id : "other";
+            const bid = banner
+                ? banner.id
+                : PullDateHelper.getDistinctBannerId(p, currentServerId);
 
             if (!bannerCounts[bid]) bannerCounts[bid] = 0;
             if (rateUpCounters[bid] === undefined) rateUpCounters[bid] = 0;
+            if (rateUpObtained[bid] === undefined) rateUpObtained[bid] = false;
 
             let isFree = false;
 
@@ -500,8 +499,9 @@
             }
 
             let isHardPityTriggered = false;
+            const alreadyGuaranteed = !isWeapon && !isJoint && rateUpObtained[bid];
             if (!isFree) {
-                if (rateUpCounters[bid] >= hardPityLimit - 1) {
+                if (!alreadyGuaranteed && rateUpCounters[bid] >= hardPityLimit - 1) {
                     isHardPityTriggered = true;
                 }
                 rateUpCounters[bid]++;
@@ -511,6 +511,7 @@
                 if (bannerType !== "standard" && bannerType !== "new-player") {
                     if (!banner) {
                         p.status = "won";
+                        if (p.rarity === 6) p.isGuaranteed = false;
                     } else {
                         const hasFeatured5 =
                             banner.featured5 && banner.featured5.length > 0;
@@ -521,14 +522,20 @@
                             if (featured) {
                                 if (isHardPityTriggered && p.rarity === 6) {
                                     p.status = "guaranteed";
+                                    p.isGuaranteed = true;
                                 } else {
                                     p.status = "won";
+                                    if (p.rarity === 6) p.isGuaranteed = false;
                                 }
                                 if (p.rarity === 6) {
                                     rateUpCounters[bid] = 0;
+                                    if (!isWeapon && !isJoint) {
+                                        rateUpObtained[bid] = true;
+                                    }
                                 }
                             } else {
                                 p.status = "lost";
+                                if (p.rarity === 6) p.isGuaranteed = false;
                             }
                         }
                     }

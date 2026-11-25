@@ -84,21 +84,37 @@ export class PullDateHelper {
         return Number.isNaN(parsed.getTime()) ? null : parsed;
     }
 
+    private static readonly GENERIC_BANNER_IDS = new Set([
+        "special",
+        "standard",
+        "weapon",
+        "weap-special",
+        "weap-standard",
+        "weap-rerun",
+        "weapon_rerun",
+        "rerun",
+        "new-player",
+        "joint",
+        "other",
+        "unknown"
+    ]);
+
+    public static isGenericBannerId(rawId: string | null | undefined): boolean {
+        if (!rawId) return true;
+        const lower = rawId.toLowerCase();
+        return (
+            this.GENERIC_BANNER_IDS.has(lower) ||
+            lower.startsWith("e_charactergachapooltype_") ||
+            lower.startsWith("e_weapongachapooltype_")
+        );
+    }
+
     public static getDistinctBannerId(
         pull: { rawPoolId?: string; bannerId?: string; time?: DateLike },
         serverId?: string | null
     ): string {
         const rawId = pull.rawPoolId || pull.bannerId || "unknown";
-        const genericIds = [
-            "special",
-            "standard",
-            "weapon",
-            "weap-special",
-            "weap-standard",
-            "new-player",
-            "joint"
-        ];
-        if (!genericIds.includes(rawId.toLowerCase())) {
+        if (!this.isGenericBannerId(rawId)) {
             return rawId;
         }
         if (pull.time) {
@@ -153,11 +169,14 @@ export class PullDateHelper {
 
     private static resolveTargetType(categoryContext?: string | null): string | null {
         if (!categoryContext) return null;
-        if (categoryContext.includes("weap") || categoryContext.includes("constant")) return "weapon";
-        if (categoryContext.includes("new")) return "new-player";
-        if (categoryContext.includes("joint")) return "joint";
-        if (categoryContext === "standard") return "standard";
-        if (categoryContext === "special") return "special";
+        const ctx = categoryContext.toLowerCase();
+        const isWeap = ctx.includes("weap") || ctx.includes("wepon") || ctx.includes("constant");
+        if (ctx.includes("rerun")) return isWeap ? "weapon_rerun" : "rerun";
+        if (isWeap) return "weapon";
+        if (ctx.includes("new") || ctx.includes("beginner")) return "new-player";
+        if (ctx.includes("joint")) return "joint";
+        if (ctx.includes("standard")) return "standard";
+        if (ctx.includes("special")) return "special";
         return null;
     }
 
@@ -165,12 +184,14 @@ export class PullDateHelper {
         if (targetType) {
             if (targetType === "special") return banner.type === "special";
             if (targetType === "standard") return banner.type === "standard";
+            if (targetType === "rerun") return banner.type === "rerun" || banner.id.includes("rerun_chr");
+            if (targetType === "weapon_rerun") return banner.type === "weapon_rerun" || banner.type === "weap-rerun" || banner.id.includes("rerun_wpn");
             if (targetType === "new-player") return banner.type === "new-player";
             if (targetType === "joint") return banner.type === "joint";
-            if (targetType === "weapon") return banner.type === "weapon" || banner.id.includes("weap");
+            if (targetType === "weapon") return banner.type === "weapon" || banner.type === "weapon_rerun" || banner.type === "weap-rerun" || banner.id.includes("weap");
             return true;
         }
-        const isBannerWeapon = banner.type === "weapon" || banner.id?.includes("weap");
+        const isBannerWeapon = banner.type === "weapon" || banner.type === "weapon_rerun" || banner.type === "weap-rerun" || banner.id?.includes("weap");
         return banner.type !== "new-player" && banner.type !== "joint" && !isBannerWeapon;
     }
 }

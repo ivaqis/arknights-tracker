@@ -29,6 +29,7 @@ export class PullStatsCalculator {
 
     private readonly _bannerSpecificCounts: Record<string, number> = {};
     private readonly _rateUpCounters: Record<string, number> = {};
+    private readonly _bannerRateUpObtained: Record<string, boolean> = {};
 
     private constructor(pulls: PullRecord[], bannerId: string, accountServerId: string | null = null) {
         this._pulls = [...pulls].sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
@@ -107,7 +108,9 @@ export class PullStatsCalculator {
             return;
         }
 
-        const isHardPityTriggered = this._rateUpCounters[uniqueKey] >= hardPityLimit - 1;
+        const isHardPityTriggered =
+            !this._bannerRateUpObtained[uniqueKey] &&
+            this._rateUpCounters[uniqueKey] >= hardPityLimit - 1;
         this._rateUpCounters[uniqueKey]++;
 
         const pullTime = new Date(pull.time).getTime();
@@ -163,11 +166,15 @@ export class PullStatsCalculator {
                 this._won5050++;
                 this._total5050++;
                 pull.status = "won";
+                pull.isGuaranteed = false;
             } else {
                 pull.status = "guaranteed";
                 pull.isGuaranteed = true;
             }
 
+            if (!this._isWeaponType && !this._isJointType) {
+                this._bannerRateUpObtained[uniqueKey] = true;
+            }
             this._rateUpCounters[uniqueKey] = 0;
             if (pullTime >= this._mileageStart && pullTime <= this._mileageEnd) {
                 this._hasReceivedRateUp = true;
@@ -175,6 +182,7 @@ export class PullStatsCalculator {
         } else {
             this._total5050++;
             pull.status = "lost";
+            pull.isGuaranteed = false;
         }
 
         this._currentPity6 = 0;

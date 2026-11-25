@@ -81,7 +81,8 @@ export const characterStickers: Record<string, string[]> = {
     "yvonne": [
         "sns_sticker_02/sns_sticker_02_15.png",
         "sns_sticker_03/sns_sticker_03_03.png",
-        "sns_sticker_04/sns_sticker_04_08.png"
+        "sns_sticker_04/sns_sticker_04_08.png",
+        "sns_sticker_11/sns_sticker_11_13.png"
     ],
     "ember": [
         "sns_sticker_02/sns_sticker_02_16.png",
@@ -92,7 +93,9 @@ export const characterStickers: Record<string, string[]> = {
         "sns_sticker_03/sns_sticker_03_05.png",
         "sns_sticker_03/sns_sticker_03_06.png",
         "sns_sticker_04/sns_sticker_04_09.png",
-        "sns_sticker_06/sns_sticker_06_11.png"
+        "sns_sticker_06/sns_sticker_06_11.png",
+        "sns_sticker_11/sns_sticker_11_11.png",
+        "sns_sticker_11/sns_sticker_11_12.png"
     ],
     "lifeng": [
         "sns_sticker_03/sns_sticker_03_07.png",
@@ -134,7 +137,8 @@ export const characterStickers: Record<string, string[]> = {
         "sns_sticker_05/sns_sticker_05_05.png",
         "sns_sticker_05/sns_sticker_05_06.png",
         "sns_sticker_05/sns_sticker_05_07.png",
-        "sns_sticker_05/sns_sticker_05_08.png"
+        "sns_sticker_05/sns_sticker_05_08.png",
+        "sns_sticker_11/sns_sticker_11_14.png"
     ],
     "rossi": [
         "sns_sticker_05/sns_sticker_05_09.png",
@@ -144,7 +148,9 @@ export const characterStickers: Record<string, string[]> = {
         "sns_sticker_05/sns_sticker_05_13.png",
         "sns_sticker_05/sns_sticker_05_14.png",
         "sns_sticker_05/sns_sticker_05_15.png",
-        "sns_sticker_05/sns_sticker_05_16.png"
+        "sns_sticker_05/sns_sticker_05_16.png",
+        "sns_sticker_11/sns_sticker_11_15.png",
+        "sns_sticker_11/sns_sticker_11_16.png"
     ],
     "zhuangfy": [
         "sns_sticker_06/sns_sticker_06_01.png",
@@ -256,5 +262,19 @@ export const characterStickers: Record<string, string[]> = {
         "sns_sticker_10/sns_sticker_10_14.png",
         "sns_sticker_10/sns_sticker_10_15.png",
         "sns_sticker_10/sns_sticker_10_16.png"
+    ],
+    "kay": [
+        "sns_sticker_11/sns_sticker_11_01.png",
+        "sns_sticker_11/sns_sticker_11_02.png",
+        "sns_sticker_11/sns_sticker_11_03.png",
+        "sns_sticker_11/sns_sticker_11_04.png",
+        "sns_sticker_11/sns_sticker_11_05.png",
+        "sns_sticker_11/sns_sticker_11_06.png",
+        "sns_sticker_11/sns_sticker_11_07.png",
+        "sns_sticker_11/sns_sticker_11_08.png"
+    ],
+    "mimino": [
+        "sns_sticker_11/sns_sticker_11_09.png",
+        "sns_sticker_11/sns_sticker_11_10.png"
     ]
 };
