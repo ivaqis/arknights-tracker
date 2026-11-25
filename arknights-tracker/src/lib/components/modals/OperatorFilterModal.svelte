@@ -13,16 +13,19 @@
 
     export let isOpen = false;
     export let title = "";
-    export let selected = [];
+    export let included = [];
+    export let excluded = [];
     export let usageRates = {};
 
     const dispatch = createEventDispatcher();
 
-    let tempSelected = [];
+    let tempIncluded = [];
+    let tempExcluded = [];
     let searchQuery = "";
 
     $: if (isOpen) {
-        tempSelected = [...selected];
+        tempIncluded = [...included];
+        tempExcluded = [...excluded];
         searchQuery = "";
     }
 
@@ -51,15 +54,23 @@
     });
 
     function toggle(id) {
-        if (tempSelected.includes(id)) {
-            tempSelected = tempSelected.filter(x => x !== id);
+        if (tempIncluded.includes(id)) {
+            tempIncluded = tempIncluded.filter(x => x !== id);
+            tempExcluded = [...tempExcluded, id];
+        } else if (tempExcluded.includes(id)) {
+            tempExcluded = tempExcluded.filter(x => x !== id);
         } else {
-            tempSelected = [...tempSelected, id];
+            tempIncluded = [...tempIncluded, id];
         }
     }
 
+    function handleClear() {
+        tempIncluded = [];
+        tempExcluded = [];
+    }
+
     function handleSave() {
-        dispatch("save", { selected: tempSelected });
+        dispatch("save", { included: tempIncluded, excluded: tempExcluded });
         dispatch("close");
     }
 
@@ -85,7 +96,7 @@
             {title}
         </h3>
 
-        <div class="mb-4">
+        <div class="mb-3">
             <input
                 type="text"
                 bind:value={searchQuery}
@@ -94,16 +105,41 @@
             />
         </div>
 
+        <div class="flex items-center justify-between gap-2 mb-3 text-xs text-gray-500 dark:text-gray-400">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                    <span>{$t("leaderboard.filter_include")}</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-red-500 shrink-0"></span>
+                    <span>{$t("leaderboard.filter_exclude")}</span>
+                </span>
+            </div>
+            {#if tempIncluded.length > 0 || tempExcluded.length > 0}
+                <button
+                    type="button"
+                    on:click={handleClear}
+                    class="font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
+                >
+                    {$t("essencesPage.reset")}
+                </button>
+            {/if}
+        </div>
+
         <div class="flex-1 overflow-y-auto min-h-0 p-1 pr-1 flex flex-wrap gap-1.5 content-start">
             {#each filteredList as op (op.id)}
-                {@const isSelected = tempSelected.includes(op.id)}
+                {@const isIncluded = tempIncluded.includes(op.id)}
+                {@const isExcluded = tempExcluded.includes(op.id)}
                 {@const usageRate = usageRates[op.id]}
                 <button
                     type="button"
                     on:click={() => toggle(op.id)}
-                    class="flex items-center rounded-full h-8 pl-0.5 pr-3 gap-2 border transition-all cursor-pointer select-none {isSelected
-                        ? 'bg-[#FFE145]/20 border-[#FFE145] text-gray-900 dark:text-[#FFE145] ring-1 ring-[#FFE145]'
-                        : 'bg-gray-100 dark:bg-[#2C2C2C] border-gray-300 dark:border-[#555] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-white/30'}"
+                    class="flex items-center rounded-full h-8 pl-0.5 pr-3 gap-2 border transition-all cursor-pointer select-none {isIncluded
+                        ? 'bg-emerald-500/15 border-emerald-500 text-emerald-800 dark:text-emerald-300 ring-1 ring-emerald-500'
+                        : isExcluded
+                            ? 'bg-red-500/15 border-red-500 text-red-700 dark:text-red-300 ring-1 ring-red-500'
+                            : 'bg-gray-100 dark:bg-[#2C2C2C] border-gray-300 dark:border-[#555] text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-white/30'}"
                 >
                     <div class="w-7 h-7 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
                         <Image id={op.id} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />

@@ -436,26 +436,14 @@
     let includedChars = [];
     let excludedChars = [];
     let operatorModalOpen = false;
-    let operatorModalMode = 'include';
 
-    $: operatorModalTitle = operatorModalMode === 'include'
-        ? `${$t("leaderboard.filter_include")}: ${$t("leaderboard.filter_select_operators")}`
-        : `${$t("leaderboard.filter_exclude")}: ${$t("leaderboard.filter_select_operators")}`;
-
-    function openOperatorModal(mode) {
-        operatorModalMode = mode;
+    function openOperatorModal() {
         operatorModalOpen = true;
     }
 
     function handleOperatorModalSave(e) {
-        const newSelected = e.detail.selected || [];
-        if (operatorModalMode === 'include') {
-            includedChars = newSelected;
-            excludedChars = excludedChars.filter(id => !newSelected.includes(id));
-        } else {
-            excludedChars = newSelected;
-            includedChars = includedChars.filter(id => !newSelected.includes(id));
-        }
+        includedChars = e.detail.included || [];
+        excludedChars = e.detail.excluded || [];
     }
 
     function removeIncludedChar(id) {
@@ -470,6 +458,7 @@
 
     let rawCharFilters = [];
     let stageTotalRuns = 0;
+    let showAllTopOperators = false;
 
     $: operatorUsageList = (() => {
         if (!rawCharFilters || rawCharFilters.length === 0) return [];
@@ -487,10 +476,10 @@
                 percentLabel,
                 opData
             };
-        });
+        }).sort((a, b) => b.percent - a.percent);
     })();
 
-    $: topOperators = operatorUsageList.slice(0, 10);
+    $: topOperators = showAllTopOperators ? operatorUsageList : operatorUsageList.slice(0, 10);
 
     $: operatorUsageRates = operatorUsageList.reduce((acc, item) => {
         if (item.id && !acc[item.id]) {
@@ -1025,80 +1014,56 @@
                 </div>
             {/if}
 
-            <div class="flex flex-col gap-3 pt-2 border-t border-gray-100 dark:border-white/10">
-                <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
-                    {$t("leaderboard.filter_by_operators")}
-                </span>
-
-                <div class="flex flex-col gap-1.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
-                            {$t("leaderboard.filter_include")}
-                        </span>
-                        <button
-                            type="button"
-                            on:click={() => openOperatorModal('include')}
-                            class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
-                        >
-                            {$t("leaderboard.filter_add_operator")}
-                        </button>
-                    </div>
-                    {#if includedChars.length > 0}
-                        <div class="flex flex-wrap gap-1.5">
-                            {#each includedChars as charId}
-                                {@const opData = characters[charId]}
-                                <div class="flex items-center bg-[#21272C] dark:bg-[#1E1E1E] text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-gray-300 dark:border-[#444] shadow-xs">
-                                    <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
-                                        <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
-                                    </div>
-                                    <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
-                                    <button
-                                        type="button"
-                                        on:click={() => removeIncludedChar(charId)}
-                                        class="text-gray-400 hover:text-white transition-colors cursor-pointer ml-0.5"
-                                    >
-                                        <Icon name="close" class="w-3.5 h-3.5" />
-                                    </button>
-                                </div>
-                            {/each}
-                        </div>
-                    {/if}
+            <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between">
+                    <span class="text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300">
+                        {$t("leaderboard.filter_by_operators")}
+                    </span>
+                    <button
+                        type="button"
+                        on:click={openOperatorModal}
+                        class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
+                    >
+                        {$t("leaderboard.filter_add_operator")}
+                    </button>
                 </div>
 
-                <div class="flex flex-col gap-1.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
-                            {$t("leaderboard.filter_exclude")}
-                        </span>
-                        <button
-                            type="button"
-                            on:click={() => openOperatorModal('exclude')}
-                            class="text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:underline cursor-pointer"
-                        >
-                            {$t("leaderboard.filter_add_operator")}
-                        </button>
-                    </div>
-                    {#if excludedChars.length > 0}
-                        <div class="flex flex-wrap gap-1.5">
-                            {#each excludedChars as charId}
-                                {@const opData = characters[charId]}
-                                <div class="flex items-center bg-[#21272C] dark:bg-[#1E1E1E] text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-gray-300 dark:border-[#444] shadow-xs">
-                                    <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
-                                        <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
-                                    </div>
-                                    <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
-                                    <button
-                                        type="button"
-                                        on:click={() => removeExcludedChar(charId)}
-                                        class="text-gray-400 hover:text-white transition-colors cursor-pointer ml-0.5"
-                                    >
-                                        <Icon name="close" class="w-3.5 h-3.5" />
-                                    </button>
+                {#if includedChars.length > 0 || excludedChars.length > 0}
+                    <div class="flex flex-wrap gap-1.5">
+                        {#each includedChars as charId}
+                            {@const opData = characters[charId]}
+                            <div class="flex items-center bg-emerald-500/10 dark:bg-emerald-500/15 text-gray-900 dark:text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-emerald-500/60 shadow-xs">
+                                <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
+                                    <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
                                 </div>
-                            {/each}
-                        </div>
-                    {/if}
-                </div>
+                                <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
+                                <button
+                                    type="button"
+                                    on:click={() => removeIncludedChar(charId)}
+                                    class="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors cursor-pointer ml-0.5"
+                                >
+                                    <Icon name="close" class="w-3.5 h-3.5" />
+                                </button>
+                            </div>
+                        {/each}
+                        {#each excludedChars as charId}
+                            {@const opData = characters[charId]}
+                            <div class="flex items-center bg-red-500/10 dark:bg-red-500/15 text-gray-900 dark:text-white rounded-full h-7 pl-0.5 pr-2 gap-1.5 border border-red-500/60 shadow-xs">
+                                <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0">
+                                    <Image id={charId} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
+                                </div>
+                                <span class="text-xs font-bold leading-none">{getOperatorName(opData)}</span>
+                                <button
+                                    type="button"
+                                    on:click={() => removeExcludedChar(charId)}
+                                    class="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors cursor-pointer ml-0.5"
+                                >
+                                    <Icon name="close" class="w-3.5 h-3.5" />
+                                </button>
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
             </div>
             </div>
 
@@ -1140,6 +1105,15 @@
                             </div>
                         {/each}
                     </div>
+                    {#if !showAllTopOperators && operatorUsageList.length > 10}
+                        <button
+                            type="button"
+                            on:click={() => showAllTopOperators = true}
+                            class="w-full py-2.5 text-xs font-bold text-[#e8cc3c] dark:text-[#FFE145] hover:bg-gray-50 dark:hover:bg-white/5 border-t border-gray-100 dark:border-white/10 transition-colors cursor-pointer text-center"
+                        >
+                            {$t("loadMore")}
+                        </button>
+                    {/if}
                 </div>
             {/if}
         </div>
@@ -1757,8 +1731,9 @@
 
     <OperatorFilterModal
         isOpen={operatorModalOpen}
-        title={operatorModalTitle}
-        selected={operatorModalMode === 'include' ? includedChars : excludedChars}
+        title={$t("leaderboard.filter_select_operators")}
+        included={includedChars}
+        excluded={excludedChars}
         usageRates={operatorUsageRates}
         on:save={handleOperatorModalSave}
         on:close={() => operatorModalOpen = false}
