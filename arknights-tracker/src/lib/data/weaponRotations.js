@@ -448,9 +448,57 @@ export const weaponRotations = {
     {
       "week": 44,
       "startDate": "2026/11/19",
-      "endDate": "2026/11/25",
+      "endDate": "2026/11/26",
       "weekly6": "sunderedPrince",
       "weekly5": "sunderingSteel",
+      "dailyTemplate": "B"
+    },
+    {
+      "week": 45,
+      "startDate": "2026/11/26",
+      "endDate": "2026/12/03",
+      "weekly6": "grandVision",
+      "weekly5": "chimericJustice",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 46,
+      "startDate": "2026/12/03",
+      "endDate": "2026/12/10",
+      "weekly6": "oblivion",
+      "weekly5": "cohesiveTraction",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 47,
+      "startDate": "2026/12/10",
+      "endDate": "2026/12/17",
+      "weekly6": "exemplar",
+      "weekly5": "wildWanderer",
+      "dailyTemplate": "B"
+    },
+    {
+      "week": 48,
+      "startDate": "2026/12/17",
+      "endDate": "2026/12/24",
+      "weekly6": "jet",
+      "weekly5": "objEdgeOfLightness",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 49,
+      "startDate": "2026/12/24",
+      "endDate": "2026/12/31",
+      "weekly6": "wedge",
+      "weekly5": "ancientCanal",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 50,
+      "startDate": "2026/12/31",
+      "endDate": "2027/01/07",
+      "weekly6": "valiant",
+      "weekly5": "rationalFarewell",
       "dailyTemplate": "B"
     }
   ]
