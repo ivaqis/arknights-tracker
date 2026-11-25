@@ -3648,7 +3648,8 @@
     "transmuter_1": "Máy Chuyển Hóa Khí Lỏng",
     "transmuter_2": "Máy Chuyển Hóa Khí Rắn",
     "gas_pump_1": "Máy Tách Khí",
-    "vaporizer_1": "Máy Khuếch Tán Khí"
+    "vaporizer_1": "Máy Khuếch Tán Khí",
+    "magic_balancer_1": "Lò Cân Bằng"
   },
   "buildingModes": {
     "normal": "Chế Độ STD",

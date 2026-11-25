@@ -3609,7 +3609,8 @@
     "transmuter_1": "Flüssigkeit-Gas-Transmutationseinheit",
     "transmuter_2": "Feststoff-Gas-Transmutationseinheit",
     "gas_pump_1": "Gasextraktor",
-    "vaporizer_1": "Gasverteilungseinheit"
+    "vaporizer_1": "Gasverteilungseinheit",
+    "magic_balancer_1": "Schmiede des Equilibriums"
   },
   "buildingModes": {
     "normal": "STD-Modus",

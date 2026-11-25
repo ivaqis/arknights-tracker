@@ -3782,7 +3782,8 @@
     "transmuter_1": "Fluid-Gas Transmuting Unit",
     "transmuter_2": "Solid-Gas Transmuting Unit",
     "gas_pump_1": "Gas Extractor",
-    "vaporizer_1": "Gas Dispersing Unit"
+    "vaporizer_1": "Gas Dispersing Unit",
+    "magic_balancer_1": "Forge of Equilibrium"
   },
   "buildingModes": {
     "normal": "STD Mode",
@@ -4450,7 +4451,8 @@
     "buff_common_usprt_buff_potion_1": "ULT Gain Efficiency Increase",
     "buff_common_healrt_buff_potion_1": "Treatment Output Increase",
     "buff_common_healrt_buff_potion_2": "Treatment Received Increase",
-    "buff_common_dispel_potion": "Dispel Arts Inflictions & Reactions"
+    "buff_common_dispel_potion": "Dispel Arts Inflictions & Reactions",
+    "buff_common_mushroom_buff_potion_1": "Random buff"
   },
   "buffs": {
     "buff_common_heal_potion_1": {
@@ -4531,7 +4533,10 @@
       "value": "Treatment Received",
       "duration": "Duration"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "Duration"
+    }
   },
   "buffsShort": {
     "buff_common_heal_potion_1": {
@@ -4612,7 +4617,10 @@
       "value": "Treatment Received",
       "duration": "Duration"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "Duration"
+    }
   },
   "buffValues": {
     "buff_common_heal_potion_1": {
@@ -4693,7 +4701,10 @@
       "value": "+{value:0.##%}",
       "duration": "{duration:0} s"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "{duration:0} s"
+    }
   },
   "tacticalTitle": {
     "condType": "Condition Type",

@@ -3786,7 +3786,8 @@
     "transmuter_1": "Модуль жидкостно-газового видоизменения",
     "transmuter_2": "Модуль твердотельно-газового видоизменения",
     "gas_pump_1": "Газовый экстрактор",
-    "vaporizer_1": "Модуль рассеивания газа"
+    "vaporizer_1": "Модуль рассеивания газа",
+    "magic_balancer_1": "Равновесная кузница"
   },
   "buildingModes": {
     "normal": "Стандартный режим",
@@ -4455,7 +4456,8 @@
     "buff_common_usprt_buff_potion_1": "Увеличение восст. суперэнергии",
     "buff_common_healrt_buff_potion_1": "Увеличение исходящего лечения",
     "buff_common_healrt_buff_potion_2": "Увеличение получаемого лечения",
-    "buff_common_dispel_potion": "Снятие поражений и реакций искусств"
+    "buff_common_dispel_potion": "Снятие поражений и реакций искусств",
+    "buff_common_mushroom_buff_potion_1": "Случайное усиление"
   },
   "buffs": {
     "buff_common_heal_potion_1": {
@@ -4536,7 +4538,10 @@
       "value": "Получаемое лечение",
       "duration": "Длительность"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "Длительность"
+    }
   },
   "buffsShort": {
     "buff_common_heal_potion_1": {
@@ -4617,7 +4622,10 @@
       "value": "Получаемое лечение",
       "duration": "Длительность"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "Длительность"
+    }
   },
   "buffValues": {
     "buff_common_heal_potion_1": {},
@@ -4672,7 +4680,10 @@
     "buff_common_healrt_buff_potion_2": {
       "duration": "{duration:0} с"
     },
-    "buff_common_dispel_potion": {}
+    "buff_common_dispel_potion": {},
+    "buff_common_mushroom_buff_potion_1": {
+      "duration": "{duration:0} c"
+    }
   },
   "tacticalTitle": {
     "condType": "Тип условия",

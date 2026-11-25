@@ -2183,5 +2183,51 @@ export const manualCrafts: Readonly<Record<string, ManualCraftData>> = {
                 "itemId": "item_inkkirin_1_hscrane_1_1"
             }
         ]
+    },
+    "hdwk_wgthorns_1_mushbug_spmushroom1_1": {
+        "id": "hdwk_wgthorns_1_mushbug_spmushroom1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_wgthorns_1"
+            },
+            {
+                "count": 2,
+                "itemId": "item_drop_mushbug_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_plant_grass_spmushroom_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_wgthorns_1_mushbug_spmushroom1_1"
+            }
+        ]
+    },
+    "hdwk_jzmonk_1_mushbug_spmushroom1_1": {
+        "id": "hdwk_jzmonk_1_mushbug_spmushroom1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_jzmonk_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_mushbug_1"
+            },
+            {
+                "count": 2,
+                "itemId": "item_plant_grass_spmushroom_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_jzmonk_1_mushbug_spmushroom1_1"
+            }
+        ]
     }
 };

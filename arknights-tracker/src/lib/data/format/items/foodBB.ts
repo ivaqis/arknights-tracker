@@ -86,4 +86,10 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, BbVal
         duration: {}
     },
     buff_common_dispel_potion: {},
+    buff_common_mushroom_buff_potion_1: {
+        value: {
+            display: false
+        },
+        duration: {}
+    },
 };

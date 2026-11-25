@@ -30,5 +30,10 @@ export const fuel: Readonly<Record<string, FuelData>> = {
         "id": "item_proc_battery_5",
         "powerProvide": 3200,
         "progressRound": 40
+    },
+    "item_proc_battery_6": {
+        "id": "item_proc_battery_6",
+        "powerProvide": 6400,
+        "progressRound": 40
     }
 };

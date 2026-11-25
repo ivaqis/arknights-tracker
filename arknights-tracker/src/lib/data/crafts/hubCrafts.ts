@@ -1025,5 +1025,65 @@ export const hubCrafts: Readonly<Record<string, ManualCraftData>> = {
                 "itemId": "item_port_vaporizer_1"
             }
         ]
+    },
+    "wonder_supply_port_1": {
+        "id": "wonder_supply_port_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_wonder_supply_port_1"
+            }
+        ]
+    },
+    "magic_balancer_1": {
+        "id": "magic_balancer_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_magic_balancer_1"
+            }
+        ]
+    },
+    "magic_spawner_2": {
+        "id": "magic_spawner_2",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_magic_spawner_2"
+            }
+        ]
+    },
+    "magic_spawner_1": {
+        "id": "magic_spawner_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_magic_spawner_1"
+            }
+        ]
     }
 };
