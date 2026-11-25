@@ -3,6 +3,8 @@
     import { scale } from "svelte/transition";
     import { t } from "$lib/i18n";
     import { characters } from "$lib/data/characters.js";
+    import { getPickRateColor } from "$lib/utils/colorUtils";
+    import { isDarkMode } from "$lib/stores/theme";
 
     import Image from "$lib/components/Image.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -12,6 +14,7 @@
     export let isOpen = false;
     export let title = "";
     export let selected = [];
+    export let usageRates = {};
 
     const dispatch = createEventDispatcher();
 
@@ -23,9 +26,8 @@
         searchQuery = "";
     }
 
-    const operatorList = Object.values(characters)
-        .filter(c => c && c.id && c.id !== "endministrator2")
-        .sort((a, b) => (b.rarity || 4) - (a.rarity || 4));
+    const baseOperators = Object.values(characters)
+        .filter(c => c && c.id && c.id !== "endministrator2");
 
     function getOperatorName(op) {
         if (!op) return "";
@@ -34,7 +36,14 @@
         return trans !== key ? trans : op.name;
     }
 
-    $: filteredList = operatorList.filter(op => {
+    $: sortedOperators = [...baseOperators].sort((a, b) => {
+        const rateA = usageRates[a.id]?.percent ?? -1;
+        const rateB = usageRates[b.id]?.percent ?? -1;
+        if (rateA !== rateB) return rateB - rateA;
+        return (b.rarity || 4) - (a.rarity || 4);
+    });
+
+    $: filteredList = sortedOperators.filter(op => {
         if (!searchQuery.trim()) return true;
         const q = searchQuery.trim().toLowerCase();
         const name = (getOperatorName(op) || op.name || "").toLowerCase();
@@ -85,9 +94,10 @@
             />
         </div>
 
-        <div class="flex-1 overflow-y-auto min-h-0 pr-1 flex flex-wrap gap-2 content-start">
+        <div class="flex-1 overflow-y-auto min-h-0 p-1 pr-1 flex flex-wrap gap-1.5 content-start">
             {#each filteredList as op (op.id)}
                 {@const isSelected = tempSelected.includes(op.id)}
+                {@const usageRate = usageRates[op.id]}
                 <button
                     type="button"
                     on:click={() => toggle(op.id)}
@@ -99,6 +109,14 @@
                         <Image id={op.id} variant="operator-preview" className="scale-[1.35] w-full h-full object-cover" />
                     </div>
                     <span class="text-xs font-bold leading-none whitespace-nowrap">{getOperatorName(op)}</span>
+                    {#if usageRate}
+                        <span
+                            class="text-[11px] font-bold font-nums leading-none whitespace-nowrap"
+                            style="color: {getPickRateColor(usageRate.percent, $isDarkMode)};"
+                        >
+                            {usageRate.percentLabel}
+                        </span>
+                    {/if}
                 </button>
             {/each}
         </div>

@@ -14,6 +14,13 @@
 
     export let platformTab = "pc-web";
 
+    const linkClass = "font-mono font-bold text-[#21272C] dark:text-white hover:text-[#FACC15] transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-[#FACC15] break-all";
+
+    function formatStepHtml(html) {
+        if (!html || typeof html !== "string") return html;
+        return html.replace(/class=['"][^'"]*text-blue-600[^'"]*['"]/g, `class="${linkClass}"`);
+    }
+
     $: iosSteps = [
         { text: $t("import.ios_step1") },
         { text: $t("import.ios_step2") },
@@ -72,7 +79,7 @@
                 <div
                     class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl"
                 >
-                    {@html step.text}
+                    {@html formatStepHtml(step.text)}
                     {#if step.subList}
                         <ul
                             class="list-disc pl-5 mt-3 space-y-2 text-gray-600 text-base dark:border-[#444444] dark:bg-[#343434] dark:text-[#E0E0E0] bg-gray-50 p-4 rounded-lg border border-gray-100"
@@ -164,7 +171,7 @@
             >
                 {$t("import.manual_text_pre")}
                 <code
-                    class="select-all bg-gray-100 dark:bg-[#444] px-1.5 py-0.5 rounded font-mono text-sm"
+                    class="select-all bg-gray-100 dark:bg-[#444] px-1.5 py-0.5 rounded font-mono text-sm break-all"
                 >%LocalAppData%\PlatformProcess\Cache\data_1</code>,
                 {$t("import.manual_text_mid")}
                 <span
@@ -229,7 +236,7 @@
                 <div
                     class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
                 >
-                    {@html step.text}
+                    {@html formatStepHtml(step.text)}
                 </div>
                 {#if step.code}
                     <div class="max-w-4xl mt-3 mb-2">
@@ -255,11 +262,11 @@
             >
                 {$t("import.pc_web_step1")}
                 <a
-                    href="https://act.skport.com/endfield/recordBook"
+                    href="https://endfield.gryphline.com/version_briefing/latest"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-blue-600 underline"
-                >act.skport.com/endfield/recordBook</a>
+                    class={linkClass}
+                >endfield.gryphline.com/version_briefing/latest</a>
             </div>
         </div>
 

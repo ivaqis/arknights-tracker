@@ -4,7 +4,7 @@ export const powerShellScript2 = `$f=[System.IO.File]::Open("$env:LOCALAPPDATA\\
 
 export const powerShellScript3 = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url2.ps1'))}"`;
 
-export const browserBookmarklet = `javascript:(async()=>{try{let e=null;for(let[t,n]of Object.entries(sessionStorage))if(t.startsWith("APP_ROLE_U8_TOKEN:")){e=n.toString().split(":")[0];break}if(!e)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(e),alert("Success! Token copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
+export const browserBookmarklet = `javascript:(async()=>{try{const raw=localStorage.getItem("ONE_ACCOUNT_ROLE_META");const data=raw?JSON.parse(raw):null;const token=data&&data.token;if(!token)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(token);alert("Success! Token copied to clipboard.");}catch(e){alert("Error: "+e.message);}})();`;
 
 export const toolsdevBookmarklet = `javascript:(async()=>{try{let e=localStorage.getItem("headhunt_user_data_v2");if(!e)throw new Error("Data not found.");await navigator.clipboard.writeText(e),alert("Success! Data copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
 

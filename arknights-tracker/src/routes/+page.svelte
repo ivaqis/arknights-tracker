@@ -357,10 +357,21 @@
     });
   }
 
+  const DAILY_TEMPLATE_CYCLE = ["A", "B", "C"];
+  const DAILY_BASE_UTC = Date.UTC(2026, 0, 22);
+
+  function getDailyTemplateForDate(date) {
+    if (!date) return "A";
+    const currentUTC = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+    const weeksPassed = Math.floor((currentUTC - DAILY_BASE_UTC) / (7 * 86400000));
+    if (weeksPassed < 0) return "A";
+    return DAILY_TEMPLATE_CYCLE[weeksPassed % DAILY_TEMPLATE_CYCLE.length];
+  }
+
   function getDailyWeaponsForDate(date) {
-    const weekConfig = getWeekForDate(date);
-    if (!weekConfig) return [];
-    const template = weaponRotations.dailyTemplates[weekConfig.dailyTemplate];
+    if (!date) return [];
+    const templateKey = getDailyTemplateForDate(date);
+    const template = weaponRotations.dailyTemplates[templateKey];
     if (!template) return [];
     
     const dayKeys = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -393,6 +404,15 @@
 
   function getNextWeeklyResetTimeUTC(nowDate) {
     const isAsia = currentServerId === "2";
+    const gameNow = new Date(getServerDate(nowDate).getTime() - 4 * 3600000);
+    const weekConfig = getWeekForDate(gameNow);
+    if (weekConfig?.endDate) {
+      const [y, m, d] = weekConfig.endDate.split("/").map(Number);
+      if (y && m && d) {
+        return new Date(Date.UTC(y, m - 1, d, isAsia ? -4 : 9, 0, 0));
+      }
+    }
+
     const targetDay = isAsia ? 3 : 4;
     const targetHour = isAsia ? 20 : 9;
     
@@ -436,6 +456,12 @@
   $: tomorrowWeapons = getDailyWeaponsForDate(tomorrowDate);
 
   $: currentDayKey = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][gameServerNow.getDay()];
+  $: currentDailyTemplate = getDailyTemplateForDate(gameServerNow);
+  $: currentDailyWeekNumber = !currentWeekConfig
+    ? null
+    : currentWeekConfig.dailyTemplate === currentDailyTemplate
+      ? currentWeekConfig.week
+      : currentWeekConfig.week - 1;
 
   $: currentWeekConfig = getWeekForDate(gameServerNow);
   $: currentWeekIndex = currentWeekConfig
@@ -1245,7 +1271,7 @@
                         </td>
                         {#each ["thu", "fri", "sat", "sun", "mon", "tue", "wed"] as day}
                             {@const dayWeaponIds = weaponRotations.dailyTemplates[w.dailyTemplate][day] || []}
-                            {@const isCurrentDay = isCurrentWeek && day === currentDayKey}
+                            {@const isCurrentDay = w.week === currentDailyWeekNumber && day === currentDayKey}
                             <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/40 dark:bg-yellow-400/30 ring-1 ring-inset ring-yellow-500/60 font-black' : ''}">
                                 <div class="flex flex-col gap-1.5 items-center justify-center">
                                     {#each dayWeaponIds as id}

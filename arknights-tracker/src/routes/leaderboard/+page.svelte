@@ -471,10 +471,10 @@
     let rawCharFilters = [];
     let stageTotalRuns = 0;
 
-    $: topOperators = (() => {
+    $: operatorUsageList = (() => {
         if (!rawCharFilters || rawCharFilters.length === 0) return [];
         const baseTotal = stageTotalRuns > 0 ? stageTotalRuns : (rawCharFilters[0]?.count || 1);
-        return rawCharFilters.slice(0, 10).map(item => {
+        return rawCharFilters.map(item => {
             const svelteId = getSvelteCharId(item.id);
             const opData = characters[svelteId] || getOperatorData({ id: svelteId });
             const rawRate = (item.count / baseTotal) * 100;
@@ -489,6 +489,15 @@
             };
         });
     })();
+
+    $: topOperators = operatorUsageList.slice(0, 10);
+
+    $: operatorUsageRates = operatorUsageList.reduce((acc, item) => {
+        if (item.id && !acc[item.id]) {
+            acc[item.id] = { percent: item.percent, percentLabel: item.percentLabel };
+        }
+        return acc;
+    }, {});
 
     async function loadLeaderboard() {
         if (!browser) return;
@@ -1750,6 +1759,7 @@
         isOpen={operatorModalOpen}
         title={operatorModalTitle}
         selected={operatorModalMode === 'include' ? includedChars : excludedChars}
+        usageRates={operatorUsageRates}
         on:save={handleOperatorModalSave}
         on:close={() => operatorModalOpen = false}
     />

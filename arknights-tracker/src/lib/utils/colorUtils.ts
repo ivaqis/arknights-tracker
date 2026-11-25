@@ -83,3 +83,9 @@ export function getRankColor(rank: number | null | undefined): string {
     return "";
 }
 
+export function getPickRateColor(percent: number, isDark = false): string {
+    const t = Math.max(0, Math.min(1, percent / 100));
+    const target = isDark ? "#FFE145" : "#CA8A04";
+    return `color-mix(in srgb, ${target} ${(t * 100).toFixed(1)}%, #9CA3AF)`;
+}
+

@@ -406,30 +406,28 @@ export function getCharacterExtraArts(characterOrId: any): CharacterExtraArt[] {
         { id: 'preview', url: getImagePath(gid, 'operator-preview') }
     ];
 
-    if (isForesight) {
-        return arts;
-    }
-
-    arts.push(
-        { id: 'receptionroom', url: getImagePath(gid, 'receptionroom') },
-        { id: 'charhorheadicon', url: getImagePath(gid, 'charhorheadicon') },
-        { id: 'chargacha', url: getImagePath(gid, 'chargacha') },
-        { id: 'charbattleicon', url: getImagePath(gid, 'charbattleicon') },
-        { id: 'charinfo', url: getImagePath(gid, 'charinfo') }
-    );
-
-    if (!isEndmin) {
+    if (!isForesight) {
         arts.push(
-            { id: 'gachashadow', url: getImagePath(gid, 'gachashadow') },
-            { id: 'gachashadow_s', url: getImagePath(`${gid}_s`, 'gachashadow') }
+            { id: 'receptionroom', url: getImagePath(gid, 'receptionroom') },
+            { id: 'charhorheadicon', url: getImagePath(gid, 'charhorheadicon') },
+            { id: 'chargacha', url: getImagePath(gid, 'chargacha') },
+            { id: 'charbattleicon', url: getImagePath(gid, 'charbattleicon') },
+            { id: 'charinfo', url: getImagePath(gid, 'charinfo') }
         );
-    }
 
-    arts.push({ id: 'aibarkcharicon', url: getImagePath(gid, 'aibarkcharicon') });
+        if (!isEndmin) {
+            arts.push(
+                { id: 'gachashadow', url: getImagePath(gid, 'gachashadow') },
+                { id: 'gachashadow_s', url: getImagePath(`${gid}_s`, 'gachashadow') }
+            );
+        }
 
-    const chapterIcon = CHAPTER_ICON_MAP[gid] || CHAPTER_ICON_MAP[char.id];
-    if (chapterIcon) {
-        arts.push({ id: 'chaptcharicon', url: getImagePath(chapterIcon, 'chaptchariconnew') });
+        arts.push({ id: 'aibarkcharicon', url: getImagePath(gid, 'aibarkcharicon') });
+
+        const chapterIcon = CHAPTER_ICON_MAP[gid] || CHAPTER_ICON_MAP[char.id];
+        if (chapterIcon) {
+            arts.push({ id: 'chaptcharicon', url: getImagePath(chapterIcon, 'chaptchariconnew') });
+        }
     }
 
     const stickers = (characterStickers as Record<string, string[]>)[char.id] || [];

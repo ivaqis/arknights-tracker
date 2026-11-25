@@ -448,22 +448,22 @@ export const weaponRotations = {
     {
       "week": 44,
       "startDate": "2026/11/19",
-      "endDate": "2026/11/26",
+      "endDate": "2026/11/25",
       "weekly6": "sunderedPrince",
       "weekly5": "sunderingSteel",
       "dailyTemplate": "B"
     },
     {
       "week": 45,
-      "startDate": "2026/11/26",
-      "endDate": "2026/12/03",
+      "startDate": "2026/11/25",
+      "endDate": "2026/12/02",
       "weekly6": "grandVision",
       "weekly5": "chimericJustice",
       "dailyTemplate": "C"
     },
     {
       "week": 46,
-      "startDate": "2026/12/03",
+      "startDate": "2026/12/02",
       "endDate": "2026/12/10",
       "weekly6": "oblivion",
       "weekly5": "cohesiveTraction",
