@@ -459,11 +459,21 @@
     let rawCharFilters = [];
     let stageTotalRuns = 0;
     let showAllTopOperators = false;
+    let prevRoomKey = '';
+    $: currentRoomKey = selectedEvent === 'contract'
+        ? `contract:${currentContract?.id || selectedContractId}`
+        : selectedEvent === 'echoesOfWar'
+            ? `echoesOfWar:${currentWarEchoesGroup}:${currentDungeonId}`
+            : `${selectedEvent}:${currentDungeonId}`;
+    $: if (currentRoomKey !== prevRoomKey) {
+        prevRoomKey = currentRoomKey;
+        showAllTopOperators = false;
+    }
 
     $: operatorUsageList = (() => {
         if (!rawCharFilters || rawCharFilters.length === 0) return [];
         const baseTotal = stageTotalRuns > 0 ? stageTotalRuns : (rawCharFilters[0]?.count || 1);
-        return rawCharFilters.map(item => {
+        const list = rawCharFilters.map(item => {
             const svelteId = getSvelteCharId(item.id);
             const opData = characters[svelteId] || getOperatorData({ id: svelteId });
             const rawRate = (item.count / baseTotal) * 100;
@@ -477,12 +487,26 @@
                 opData
             };
         }).sort((a, b) => b.percent - a.percent);
+
+        const seen = new Set(list.map(item => item.id));
+        const unused = Object.values(characters)
+            .filter(c => c && c.id && c.id !== "endministrator2" && !c.isForesight && !seen.has(c.id))
+            .sort((a, b) => (b.rarity || 4) - (a.rarity || 4))
+            .map(c => ({
+                id: c.id,
+                count: 0,
+                percent: 0,
+                percentLabel: "0%",
+                opData: c
+            }));
+
+        return [...list, ...unused];
     })();
 
     $: topOperators = showAllTopOperators ? operatorUsageList : operatorUsageList.slice(0, 10);
 
     $: operatorUsageRates = operatorUsageList.reduce((acc, item) => {
-        if (item.id && !acc[item.id]) {
+        if (item.id && item.count > 0 && !acc[item.id]) {
             acc[item.id] = { percent: item.percent, percentLabel: item.percentLabel };
         }
         return acc;
