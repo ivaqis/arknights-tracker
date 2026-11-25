@@ -168,5 +168,11 @@ export const buildings: Readonly<Record<string, BuildingData>> = {
         "type": "vaporizer",
         "itemId": "item_port_vaporizer_1",
         "iconId": "icon_port_vaporizer_1"
+    },
+    "magic_balancer_1": {
+        "id": "magic_balancer_1",
+        "type": "crafter",
+        "itemId": "item_port_magic_balancer_1",
+        "iconId": "icon_port_magic_balancer_1"
     }
 };

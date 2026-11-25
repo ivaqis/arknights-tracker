@@ -3609,7 +3609,8 @@
     "transmuter_1": "Unidade de Transmutação Fluido-Gás",
     "transmuter_2": "Unidade de Transmutação Sólido-Gás",
     "gas_pump_1": "Extrator de Gás",
-    "vaporizer_1": "Unidade de Dispersão de Gás"
+    "vaporizer_1": "Unidade de Dispersão de Gás",
+    "magic_balancer_1": "Forja do Equilíbrio"
   },
   "buildingModes": {
     "normal": "Modo PDR",

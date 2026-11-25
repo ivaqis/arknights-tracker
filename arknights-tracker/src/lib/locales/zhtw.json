@@ -3648,7 +3648,8 @@
     "transmuter_1": "液氣轉化機",
     "transmuter_2": "固氣轉化機",
     "gas_pump_1": "氣體收集泵",
-    "vaporizer_1": "氣體散布機"
+    "vaporizer_1": "氣體散布機",
+    "magic_balancer_1": "平衡爐"
   },
   "buildingModes": {
     "normal": "基礎模式",

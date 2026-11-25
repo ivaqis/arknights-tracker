@@ -3610,7 +3610,8 @@
     "transmuter_1": "Unidad de transmutación fluido-gas",
     "transmuter_2": "Unidad de transmutación sólido-gas",
     "gas_pump_1": "Extractor de gas",
-    "vaporizer_1": "Unidad de dispersión de gas"
+    "vaporizer_1": "Unidad de dispersión de gas",
+    "magic_balancer_1": "Forja de Equilibrio"
   },
   "buildingModes": {
     "normal": "Modo estándar",

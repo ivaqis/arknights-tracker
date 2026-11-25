@@ -13,7 +13,10 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "component_copper_enr_cmpt_1",
             "component_activity_xiranite_cmpt_1",
             "component_activity_xiranite_enr_cmpt_1",
-            "component_copper_enr2_cmpt_1"
+            "component_copper_enr2_cmpt_1",
+            "component_copper_ming_cmpt_1",
+            "component_copper_hui_cmpt_1",
+            "component_copper_bright_cmpt_1"
         ]
     },
     "group_dismantler_liquid": {
@@ -279,7 +282,11 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "tools_proc_activity_xiranite_hulu_1",
             "tools_proc_activity_xiranite_enr_hulu_1",
             "tools_proc_activity_xiranite_enr_tool_1",
-            "tools_proc_filter_core_2"
+            "tools_proc_filter_core_2",
+            "tools_proc_copper_xiranite_ming",
+            "tools_proc_copper_xiranite_hui",
+            "tools_proc_copper_bright_cube",
+            "tools_proc_battery_6_1"
         ]
     },
     "group_liquid_purifier_liquid": {
@@ -316,6 +323,7 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
     "group_mix_pool_2_liquid": {
         "id": "group_mix_pool_2_liquid",
         "craftList": [
+            "pool_Ingredient_oil_1_2",
             "pool_ranch_fodder_1_2",
             "pool_ranch_fodder_2_2",
             "pool_liquid_plant_grass_1_2",
@@ -394,6 +402,10 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "dismantler_copperjar_gas_copper_1",
             "dismantler_copperjar_gas_copper_enr_1",
             "dismantler_copperjar_gas_copper_enr2_1",
+            "dismantler_copperjar_gas_copper_bright_turbid_1",
+            "dismantler_copperjar_gas_copper_bright_clear_1",
+            "dismantler_copperjar_xiranite_enr_heng_1",
+            "dismantler_copperjar_gas_copper_enr_heng_1",
             "dismantler_glass_water_1",
             "dismantler_glass_acid_1",
             "dismantler_glass_sewage_1",
@@ -473,6 +485,10 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "filling_copperjar_gas_copper_1",
             "filling_copperjar_gas_copper_enr_1",
             "filling_copperjar_copper_enr2_1",
+            "filling_copperjar_gas_copper_enr_heng_1",
+            "filling_copperjar_gas_xiranite_enr_heng_1",
+            "filling_copperjar_gas_copper_bright_turbid_1",
+            "filling_copperjar_gas_copper_bright_clear_1",
             "filling_bottled_glass_water",
             "filling_bottled_glass_acid",
             "filling_bottled_glass_sewage",
@@ -546,7 +562,8 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
         "id": "group_gas_reactor_gas",
         "craftList": [
             "gas_reactor_activity_copper_poly_gas_1",
-            "gas_reactor_gas_copper_enr2_1"
+            "gas_reactor_gas_copper_enr2_1",
+            "gas_reactor_gas_copper_bright_clear_1"
         ]
     },
     "group_liquid_purifier_gas": {
@@ -555,7 +572,8 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "liquid_purifier_gas_xiranite_enr_1",
             "liquid_purifier_gas_xiranite_enr_2",
             "liquid_purifier_gas_copper_enr_1",
-            "liquid_purifier_gas_copper_enr_2"
+            "liquid_purifier_gas_copper_enr_2",
+            "liquid_purifier_gas_copper_bright_clear_1"
         ]
     },
     "group_shaper_gas": {
@@ -595,7 +613,10 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "liquid_transmuter_2_gas_gas_xiranite_enr_1",
             "liquid_transmuter_2_gas_gas_copper_1",
             "liquid_transmuter_2_gas_gas_copper_enr_1",
-            "liquid_transmuter_2_gas_gas_copper_enr2_1"
+            "liquid_transmuter_2_gas_gas_copper_enr2_1",
+            "liquid_transmuter_2_gas_copper_enr_heng_1",
+            "liquid_transmuter_2_gas_xiranite_enr_heng_1",
+            "liquid_transmuter_2_gas_copper_bright_clear_1"
         ]
     },
     "group_transmuter_2_solidtrans": {
@@ -606,7 +627,10 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "liquid_transmuter_2_solid_xiranite_enr_powder_1",
             "liquid_transmuter_2_solid_copper_nugget_1",
             "liquid_transmuter_2_solid_copper_enr_1",
-            "liquid_transmuter_2_solid_copper_enr2_1"
+            "liquid_transmuter_2_solid_copper_enr2_1",
+            "liquid_transmuter_2_copper_enr_heng_1",
+            "liquid_transmuter_2_xiranite_enr_heng_1",
+            "liquid_transmuter_2_copper_bright_1"
         ]
     },
     "group_xiranite_oven_gasliquid": {
@@ -616,6 +640,34 @@ export const machineCraftGroups: Readonly<Record<string, MachineCraftGroupData>>
             "xiranite_oven_xiranite_powder_2",
             "xiranite_oven_xiranite_enr_powder_1",
             "xiranite_oven_muck_xiranite_1"
+        ]
+    },
+    "group_magic_balancer_1_normal": {
+        "id": "group_magic_balancer_1_normal",
+        "craftList": [
+            "magic_balancer_1_xiranite_enr",
+            "magic_balancer_1_copper_enr",
+            "magic_balancer_1_copper_bright_1",
+            "formation_magic_heng_item_copper_enr_heng_1",
+            "formation_magic_heng_item_copper_enr_heng_2",
+            "formation_magic_heng_item_xiranite_enr_heng_1",
+            "formation_magic_heng_item_xiranite_enr_heng_2",
+            "formation_magic_ming_item_copper_ming_1",
+            "formation_magic_ming_item_copper_ming_2",
+            "formation_magic_ming_item_copper_ming_3",
+            "formation_magic_ming_item_copper_ming_4",
+            "formation_magic_ming_item_xiranite_ming_1",
+            "formation_magic_ming_item_xiranite_ming_2",
+            "formation_magic_ming_item_xiranite_ming_3",
+            "formation_magic_ming_item_xiranite_ming_4",
+            "formation_magic_hui_item_copper_hui_1",
+            "formation_magic_hui_item_copper_hui_2",
+            "formation_magic_hui_item_copper_hui_3",
+            "formation_magic_hui_item_copper_hui_4",
+            "formation_magic_hui_item_xiranite_hui_1",
+            "formation_magic_hui_item_xiranite_hui_2",
+            "formation_magic_hui_item_xiranite_hui_3",
+            "formation_magic_hui_item_xiranite_hui_4"
         ]
     }
 };

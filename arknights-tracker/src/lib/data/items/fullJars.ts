@@ -11,25 +11,40 @@ export const fullJars: Readonly<Record<string, FullJarData>> = {
         "emptyJarId": "item_copper_jar",
         "gasId": "item_gas_copper"
     },
+    "item_gasjar_copper_gas_copper_bright_turbid": {
+        "id": "item_gasjar_copper_gas_copper_bright_turbid",
+        "emptyJarId": "item_copper_jar",
+        "gasId": "item_gas_copper_bright_turbid"
+    },
     "item_gasjar_copper_gas_copper_enr": {
         "id": "item_gasjar_copper_gas_copper_enr",
         "emptyJarId": "item_copper_jar",
         "gasId": "item_gas_copper_enr"
+    },
+    "item_gasjar_copper_gas_water": {
+        "id": "item_gasjar_copper_gas_water",
+        "emptyJarId": "item_copper_jar",
+        "gasId": "item_gas_water"
+    },
+    "item_gasjar_copper_gas_copper_bright_clear": {
+        "id": "item_gasjar_copper_gas_copper_bright_clear",
+        "emptyJarId": "item_copper_jar",
+        "gasId": "item_gas_copper_bright_clear"
     },
     "item_gasjar_copper_gas_copper_enr2": {
         "id": "item_gasjar_copper_gas_copper_enr2",
         "emptyJarId": "item_copper_jar",
         "gasId": "item_gas_copper_enr2"
     },
+    "item_gasjar_copper_gas_copper_enr_heng": {
+        "id": "item_gasjar_copper_gas_copper_enr_heng",
+        "emptyJarId": "item_copper_jar",
+        "gasId": "item_gas_copper_enr_heng"
+    },
     "item_gasjar_copper_gas_inert": {
         "id": "item_gasjar_copper_gas_inert",
         "emptyJarId": "item_copper_jar",
         "gasId": "item_gas_inert"
-    },
-    "item_gasjar_copper_gas_water": {
-        "id": "item_gasjar_copper_gas_water",
-        "emptyJarId": "item_copper_jar",
-        "gasId": "item_gas_water"
     },
     "item_gasjar_copper_gas_xiranite": {
         "id": "item_gasjar_copper_gas_xiranite",
@@ -40,5 +55,10 @@ export const fullJars: Readonly<Record<string, FullJarData>> = {
         "id": "item_gasjar_copper_gas_xiranite_enr",
         "emptyJarId": "item_copper_jar",
         "gasId": "item_gas_xiranite_enr"
+    },
+    "item_gasjar_copper_gas_xiranite_enr_heng": {
+        "id": "item_gasjar_copper_gas_xiranite_enr_heng",
+        "emptyJarId": "item_copper_jar",
+        "gasId": "item_gas_xiranite_enr_heng"
     }
 };

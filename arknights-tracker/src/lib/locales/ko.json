@@ -3609,7 +3609,8 @@
     "transmuter_1": "액체 · 기체 전환기",
     "transmuter_2": "고체 · 기체 전환기",
     "gas_pump_1": "기체 수집기",
-    "vaporizer_1": "기체 분산기"
+    "vaporizer_1": "기체 분산기",
+    "magic_balancer_1": "균형로"
   },
   "buildingModes": {
     "normal": "기본 모드",

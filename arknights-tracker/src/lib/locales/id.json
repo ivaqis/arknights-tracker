@@ -3609,7 +3609,8 @@
     "transmuter_1": "Unit Transmutasi Cair-Gas",
     "transmuter_2": "Unit Transmutasi Padat-Gas",
     "gas_pump_1": "Ekstraktor Gas",
-    "vaporizer_1": "Unit Penyebar Gas"
+    "vaporizer_1": "Unit Penyebar Gas",
+    "magic_balancer_1": "Tempaan Ekuilibrium"
   },
   "buildingModes": {
     "normal": "Mode STD",

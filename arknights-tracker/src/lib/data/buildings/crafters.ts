@@ -211,5 +211,14 @@ export const crafters: Readonly<Record<string, CrafterData>> = {
                 "modeName": "solidtrans"
             }
         ]
+    },
+    "magic_balancer_1": {
+        "id": "magic_balancer_1",
+        "modeMap": [
+            {
+                "formulaGroupId": "group_magic_balancer_1_normal",
+                "modeName": "normal"
+            }
+        ]
     }
 };
