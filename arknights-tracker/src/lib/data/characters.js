@@ -393,7 +393,7 @@ export const characters = {
     element: "nature",
     class: "vanguard",
     weapon: "polearm",
-    birthDate: "",
+    birthDate: "25-02",
     apiId: "",
     gameId: "chr_0040_sweetpie"
   },

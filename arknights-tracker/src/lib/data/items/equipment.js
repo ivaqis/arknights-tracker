@@ -8714,6 +8714,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_body_06": {
     "level": 70,
+    "url": "https://oem.re/0NCzqQH",
     "tier": "T4.3",
     "partType": 0,
     "rarity": 5,
@@ -8780,6 +8781,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_body_07": {
     "level": 70,
+    "url": "https://oem.re/028mG6k",
     "tier": "T4.3",
     "partType": 0,
     "rarity": 5,
@@ -9396,6 +9398,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_edc_07": {
     "level": 70,
+    "url": "https://oem.re/0NCzqQH",
     "tier": "T4.3",
     "partType": 2,
     "rarity": 5,
@@ -9462,6 +9465,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_edc_08": {
     "level": 70,
+    "url": "https://oem.re/028mG6k",
     "tier": "T4.3",
     "partType": 2,
     "rarity": 5,
@@ -9801,6 +9805,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_hand_04": {
     "level": 70,
+    "url": "https://oem.re/028mG6k",
     "tier": "T4.3",
     "partType": 1,
     "rarity": 5,
@@ -9867,6 +9872,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_atb01_hand_05": {
     "level": 70,
+    "url": "https://oem.re/028mG6k",
     "tier": "T4.3",
     "partType": 1,
     "rarity": 5,
@@ -22057,6 +22063,7 @@ export const equipment = {
   },
   "item_equip_t4_suit_usp02_hand_06": {
     "level": 70,
+    "url": "https://oem.re/0NCzqQH",
     "tier": "T4.3",
     "partType": 1,
     "rarity": 5,

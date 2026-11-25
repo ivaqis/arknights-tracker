@@ -869,7 +869,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "rerun_chr_gilberta",
+    id: "rerun_chr_aglina",
     name: "To Every Wish Adrift",
     type: "rerun",
     startTime: "2026-11-24 22:00:00",
@@ -880,8 +880,8 @@ export const banners = [
     featured5: [],
     isServerTime: true,
     timezone: "UTC+8",
-    icon: "rerun_chr_gilberta.webp",
-    miniIcon: "rerun_chr_gilberta.webp",
+    icon: "rerun_chr_aglina.webp",
+    miniIcon: "rerun_chr_aglina.webp",
     url: "",
     officialUrl: "",
     layer: 10,
@@ -890,7 +890,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "rerun_wpn_gilberta",
+    id: "rerun_wpn_aglina",
     name: "Floaty Traveler Issue",
     type: "weapon_rerun",
     startTime: "2026-11-24 22:00:00",
@@ -901,8 +901,8 @@ export const banners = [
     featured5: [],
     isServerTime: true,
     timezone: "UTC+8",
-    icon: "rerun_wpn_gilberta.webp",
-    miniIcon: "rerun_wpn_gilberta.webp",
+    icon: "rerun_wpn_aglina.webp",
+    miniIcon: "rerun_wpn_aglina.webp",
     url: "",
     officialUrl: "",
     layer: 15,
@@ -911,7 +911,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "rerun_chr_rossi",
+    id: "rerun_chr_wulfa",
     name: "Precious Scarlet",
     type: "rerun",
     startTime: "2026-12-16 12:00:00",
@@ -922,8 +922,8 @@ export const banners = [
     featured5: [],
     isServerTime: true,
     timezone: "UTC+8",
-    icon: "rerun_chr_rossi.webp",
-    miniIcon: "rerun_chr_rossi.webp",
+    icon: "rerun_chr_wulfa.webp",
+    miniIcon: "rerun_chr_wulfa.webp",
     url: "",
     officialUrl: "",
     layer: 10,
@@ -932,7 +932,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "rerun_wpn_rossi",
+    id: "rerun_wpn_wulfa",
     name: "Scarlet Claws Issue",
     type: "weapon_rerun",
     startTime: "2026-12-16 12:00:00",
@@ -943,8 +943,8 @@ export const banners = [
     featured5: [],
     isServerTime: true,
     timezone: "UTC+8",
-    icon: "rerun_wpn_rossi.webp",
-    miniIcon: "rerun_wpn_rossi.webp",
+    icon: "rerun_wpn_wulfa.webp",
+    miniIcon: "rerun_wpn_wulfa.webp",
     url: "",
     officialUrl: "",
     layer: 15,
