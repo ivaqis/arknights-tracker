@@ -1,8 +1,8 @@
 [
     {
         "id": "indie_contract002",
-        "apiId": null,
-        "isCurrent": false,
+        "apiId": "2b98d70ff72c60026f5cf697a8aebbe2",
+        "isCurrent": true,
         "indicators": [
             {
                 "id": "activity_contract_1_tag_101",
@@ -203,7 +203,7 @@
     },
     {
         "id": "indie_contract001",
-        "apiId": null,
+        "apiId": "6e5575e7972af7d4ae63a26b98b87e9f",
         "isCurrent": false,
         "indicators": [
             {
