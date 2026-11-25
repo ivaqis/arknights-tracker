@@ -752,7 +752,7 @@
   "eny_0131_inkscroll": {
     "name": "Schriftrolle der Taktiken",
     "nickname": "Schriftrolle der Taktiken",
-    "description": "Eine von Si erleuchtete Erscheinung. Meister der Schlacht, ein Freund der Täuschung. Träger der Waffen und Verteidiger des Friedens.",
+    "description": "Eine von Si erleuchtete Erscheinung. Meister der Schlacht, ein Freund der List. Träger der Waffen und Verteidiger des Friedens.",
     "abilities": [
       "Die geworfenen Hellebarden erzeugen beim Aufprall Tintenpfützen. Diese Pfützen können Operatoren, die auf sie treten, mit Tintensiegeln belegen. Versuche, ihnen auszuweichen."
     ]
@@ -781,6 +781,39 @@
     "abilities": [
       "Versuche, dich daran zu erinnern, wo die Angriffsbereiche waren, wenn Si ihr Gemälde entrollt, und weiche den Angriffen in der richtigen Reihenfolge aus.",
       "Si kann gefährliche Tintenpfützen erschaffen. Halte dich von diesen tintenbefleckten Bereichen fern."
+    ]
+  },
+  "eny_0158_mushbug": {
+    "name": "Pilzbrecher-Nidwurm",
+    "nickname": "Pilzbrecher-Nidwurm",
+    "description": "Normale Nidwürmer graben sich in der Regel ein, um sich zu verstecken. Dieses mit Sporen infizierte Exemplar zeigt ein ungewöhnliches Verhalten. Es versucht, weitere Sporen zu verteilen.",
+    "abilities": [
+      "Wenn sich der Pilzbrecher-Nidwurm unterirdisch vorarbeitet, liegt sein Oberkörper frei und stellt somit eine Schwachstelle dar.",
+      "Der Rankenkäfig bleibt für eine Weile bestehen. Er fügt Operatoren, die ihn berühren, SDN zu."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Röhrenpilz-Prinz",
+    "nickname": "Röhrenpilz-Prinz",
+    "description": "Ein seltsamer Pilz. Er hat eine umgängliche Persönlichkeit, und man kann sich auf ihn verlassen. Er ist die Zukunft und die Hoffnung der Pilzfamilie.",
+    "abilities": [
+      "Wenn sich der Röhrenpilz-Prinz unterirdisch vorarbeitet, liegt sein Oberkörper frei und stellt somit eine Schwachstelle dar."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Pilzbrecher-Sporenfaust",
+    "nickname": "Pilzbrecher-Sporenfaust",
+    "description": "Ein mit Sporen infizierter Landbrecher, der sich eigenartig verhält. Vorsicht! Seine weichen, flauschigen Fäuste täuschen über die Gefahr hinweg, die von ihm ausgeht.",
+    "abilities": [
+      "Die Pilzbrecher-Sporenfaust kann ihre Arme umherschwingen, um einen Wirbelwind zu erzeugen, der Operatoren kontinuierlich zu sich zieht."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Pilzbrecher-Sporenwächter",
+    "nickname": "Pilzbrecher-Sporenwächter",
+    "description": "Ein mit Sporen infizierter Landbrecher, der sich eigenartig verhält. Sein Schild ist … fertiggestellt.",
+    "abilities": [
+      "Der Pilzbrecher-Sporenwächter kann seinen Schild heben, um die Standardangriffe deiner Operatoren zu blockieren."
     ]
   },
   "tatget_001_normal": {

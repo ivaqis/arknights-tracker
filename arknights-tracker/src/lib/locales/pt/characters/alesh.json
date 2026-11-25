@@ -170,22 +170,22 @@
       },
       {
         "voId": "chr_0024_deepfin_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Espere aí... Esta cerimônia é para mim? Nossa... o que eu digo? O-obrigado?"
       },
       {
         "voId": "chr_0024_deepfin_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Não precisa continuar me incentivando assim, Endmin. É estranho, mas elogios me fazem murchar como uma flor regada demais."
       },
       {
         "voId": "chr_0024_deepfin_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Deve ser cansativo assumir toda essa responsabilidade, Endmin. Ahh. Acho que não tenho escolha a não ser ajudar você por enquanto."
       },
       {
         "voId": "chr_0024_deepfin_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Por que você está parecendo mais feliz do que eu? Achei que essa fosse *minha* promoção. OK, então. Vamos comemorar na churrascaria. Eu só quero os melhores cortes de churrasco, e você vai pagar a conta."
       },
       {
@@ -195,12 +195,12 @@
       },
       {
         "voId": "chr_0024_deepfin_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Que belo dia. Perfeito para a minha soneca."
       },
       {
         "voId": "chr_0024_deepfin_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Carteira vazia, a história da minha vida..."
       },
       {

@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Fichier de Gangrénombre : Coup de tonnerre - Normal",
     "description": "FICHIER 01 : Prélevé sur un fragment de griffe de bête récupéré dans les ruines. Nous avons temporairement attribué l'agressivité de la bête soit au plan æthérique, soit à ses instincts de prédatrice.",
-    "featureDesc": "- La Gangrénombre de Fracas n'entre pas en état enragé. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - La Gangrénombre de Fracas n'entre pas en état enragé.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower015_ex": {
     "name": "Fichier de Gangrénombre : Coup de tonnerre - Brutal",
     "description": "FICHIER 01 : Prélevé sur un fragment de griffe de bête récupéré dans les ruines. Nous avons temporairement attribué l'agressivité de la bête soit au plan æthérique, soit à ses instincts de prédatrice.",
-    "featureDesc": "- La Gangrénombre de Fracas n'entre pas en état enragé. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - La Gangrénombre de Fracas n'entre pas en état enragé.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower015_s": {
     "name": "Fichier de Gangrénombre : Coup de tonnerre - Difficile",
     "description": "FICHIER 01 : Prélevé sur un fragment de griffe de bête récupéré dans les ruines. Nous avons temporairement attribué l'agressivité de la bête soit au plan æthérique, soit à ses instincts de prédatrice.",
-    "featureDesc": "- La Gangrénombre de Fracas n'entre pas en état enragé. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - La Gangrénombre de Fracas n'entre pas en état enragé.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower016": {
     "name": "Fichier de lancier : Yinglung - Normal",
     "description": "FICHIER 22 : Prélevé sur l'armement personnel d'un membre des FSY. La lame comporte plus de vingt encoches, dont la plupart sont apparues lors d'opérations défensives et de missions d'assaut.",
-    "featureDesc": "- Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>. \n- Récupération et régénération de PC : -50%. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>.\n - Récupération et régénération de PC : -50%.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower016_ex": {
     "name": "Fichier de lancier : Yinglung - Brutal",
     "description": "FICHIER 22 : Prélevé sur l'armement personnel d'un membre des FSY. La lame comporte plus de vingt encoches, dont la plupart sont apparues lors d'opérations défensives et de missions d'assaut.",
-    "featureDesc": "- Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>. \n- Récupération et régénération de PC : -50%. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>.\n - Récupération et régénération de PC : -50%.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower016_s": {
     "name": "Fichier de lancier : Yinglung - Difficile",
     "description": "FICHIER 22 : Prélevé sur l'armement personnel d'un membre des FSY. La lame comporte plus de vingt encoches, dont la plupart sont apparues lors d'opérations défensives et de missions d'assaut.",
-    "featureDesc": "- Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>. \n- Récupération et régénération de PC : -50%. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après le début du combat, les PC initiaux et max. des opérateurs passent à <@ba.vup>700</>.\n - Récupération et régénération de PC : -50%.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower017": {
     "name": "Fichier de vengeur : Broyeur d'os - Normal",
     "description": "FICHIER 07 : Prélevé sur une arme de Broyeur d'os grossièrement fabriquée, récupérée sur le site d'une bataille entre membres de clans rivaux. Elle atteste clairement des conflits internes et des querelles sanglantes.",
-    "featureDesc": "- Intensité des Arts de toute l'équipe <@ba.vup>+100%</>. \n- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Intensité des Arts de toute l'équipe <@ba.vup>+100%</>.\n - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower017_ex": {
     "name": "Fichier de vengeur : Broyeur d'os - Brutal",
     "description": "FICHIER 07 : Prélevé sur une arme de Broyeur d'os grossièrement fabriquée, récupérée sur le site d'une bataille entre membres de clans rivaux. Elle atteste clairement des conflits internes et des querelles sanglantes.",
-    "featureDesc": "- Intensité des Arts de toute l'équipe <@ba.vup>+100%</>. \n- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Intensité des Arts de toute l'équipe <@ba.vup>+100%</>.\n - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower017_s": {
     "name": "Fichier de vengeur : Broyeur d'os - Difficile",
     "description": "FICHIER 07 : Prélevé sur une arme de Broyeur d'os grossièrement fabriquée, récupérée sur le site d'une bataille entre membres de clans rivaux. Elle atteste clairement des conflits internes et des querelles sanglantes.",
-    "featureDesc": "- Intensité des Arts de toute l'équipe <@ba.vup>+100%</>. \n- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Intensité des Arts de toute l'équipe <@ba.vup>+100%</>.\n - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower018": {
     "name": "Fichier de bête : Palanque de Qingbo - Normal",
     "description": "FICHIER 19 : Prélevé sur une cage pour les bêtes de la palanque de Qingbo. L'enclos a été forgé à partir d'armes brisées. Avant que les bâtisseurs de la palanque de Qingbo ne puissent dompter les bêtes, ils doivent d'abord vaincre les animaux sauvages.",
-    "featureDesc": "- Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>. \n- Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>. \n- Après avoir vaincu le dard lourd α, restaure immédiatement <@ba.vup>+25</> PC lorsqu'un cumul d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> est consommé. \n- Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>.\n - Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>.\n - Après avoir vaincu le dard lourd α, consommer les cumuls d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> restaure immédiatement <@ba.vup>+25</> PC.\n - Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower018_ex": {
     "name": "Fichier de bête : Palanque de Qingbo - Brutal",
     "description": "FICHIER 19 : Prélevé sur une cage pour les bêtes de la palanque de Qingbo. L'enclos a été forgé à partir d'armes brisées. Avant que les bâtisseurs de la palanque de Qingbo ne puissent dompter les bêtes, ils doivent d'abord vaincre les animaux sauvages.",
-    "featureDesc": "- Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>. \n- Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>. \n- Après avoir vaincu le dard lourd α, restaure immédiatement <@ba.vup>+25</> PC lorsqu'un cumul d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> est consommé. \n- Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>.\n - Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>.\n - Après avoir vaincu le dard lourd α, consommer les cumuls d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> restaure immédiatement <@ba.vup>+25</> PC.\n - Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower018_s": {
     "name": "Fichier de bête : Palanque de Qingbo - Difficile",
     "description": "FICHIER 19 : Prélevé sur une cage pour les bêtes de la palanque de Qingbo. L'enclos a été forgé à partir d'armes brisées. Avant que les bâtisseurs de la palanque de Qingbo ne puissent dompter les bêtes, ils doivent d'abord vaincre les animaux sauvages.",
-    "featureDesc": "- Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>. \n- Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>. \n- Après avoir vaincu le dard lourd α, restaure immédiatement <@ba.vup>+25</> PC lorsqu'un cumul d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> est consommé. \n- Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Après avoir vaincu le traque-nuées, applique <@ba.vup>+1</> cumul(s) d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</>.\n - Après avoir vaincu la bêtaplume, applique <@ba.vup>+1</> au niveau du statut des <@ba.key>réactions aux Arts</> / du <@ba.key>Broyage</> / de la <@ba.key>Brèche</>.\n - Après avoir vaincu le dard lourd α, consommer les cumuls d'<@ba.key>altération des Arts</> / de <@ba.key>Vulnérabilité</> restaure immédiatement <@ba.vup>+25</> PC.\n - Vaincre n'importe quel groupe d'ennemis octroie +50% de PV aux ennemis restants.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower019": {
     "name": "Fichier de construction : Esprit - Normal",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n - Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower019_ex": {
     "name": "Fichier de construction : Esprit - Brutal",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n - Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower019_s": {
     "name": "Fichier de construction : Esprit - Difficile",
     "description": "FICHIER 50 : Prélevé sur un petit couteau de sculpture. Le créateur des œuvres en bois a sculpté le cœur des bois avec douceur, leur donnant la capacité de protéger la forêt jusqu'à aujourd'hui.",
-    "featureDesc": "- Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum. \n- Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>. \n\n<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n - Rage de Gloomwald commence le combat avec 3 <@ba.key>cumul(s) de bouclier</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower020": {
     "name": "Fichier de défense : Bouclier - Normal",
     "description": "FICHIER 99 : Prélevé sur un bouclier brisé, dont la simplicité structurelle est comparable à celle d'une carapace d'insecte. Le spécimen a subi de nombreuses soudures, créant un écho guerrier rugissant.",
-    "featureDesc": "<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower020_ex": {
     "name": "Fichier de défense : Bouclier - Brutal",
     "description": "FICHIER 99 : Prélevé sur un bouclier brisé, dont la simplicité structurelle est comparable à celle d'une carapace d'insecte. Le spécimen a subi de nombreuses soudures, créant un écho guerrier rugissant.",
-    "featureDesc": "<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_battletower020_s": {
     "name": "Fichier de défense : Bouclier - Difficile",
     "description": "FICHIER 99 : Prélevé sur un bouclier brisé, dont la simplicité structurelle est comparable à celle d'une carapace d'insecte. Le spécimen a subi de nombreuses soudures, créant un écho guerrier rugissant.",
-    "featureDesc": "<@ba.info>- Améliorations des stats ennemies.</> \n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower021": {
+    "name": "Fichier de domination : hurleur-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 17. Le hurlepic arracha la tête d'un de ses congénères. Son crâne blanchi devint sa nouvelle couronne et le symbole de son autorité. Il ne peut y avoir qu'un seul roi sur la montagne.",
+    "featureDesc": "- Vitesse de régénération de PC : -30%.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "Fichier de domination : hurleur-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 17. Le hurlepic arracha la tête d'un de ses congénères. Son crâne blanchi devint sa nouvelle couronne et le symbole de son autorité. Il ne peut y avoir qu'un seul roi sur la montagne.",
+    "featureDesc": "- Vitesse de régénération de PC : -30%.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "Fichier de domination : hurleur-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 17. Le hurlepic arracha la tête d'un de ses congénères. Son crâne blanchi devint sa nouvelle couronne et le symbole de son autorité. Il ne peut y avoir qu'un seul roi sur la montagne.",
+    "featureDesc": "- Vitesse de régénération de PC : -30%.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower022": {
+    "name": "Fichier de codex : mesure-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 653. La Mesure à crinière... gardienne de la loi... et arpenteuse du monde du lavis d'encre. Son maître lui a ordonné de parcourir les terres des mortels qui touchent les cieux, de punir le monde et d'y instaurer une certaine forme d'ordre.",
+    "featureDesc": "- Chaque instance de DÉG de compétence subie par la Mesure à crinière lui inflige <@ba.vup>5</> point(s) de Déséquilibre supplémentaire(s). Cet effet ne se déclenche qu'une fois toutes les 0.05 s.\n- Lorsque la Mesure à crinière est déséquilibrée, les deux moitiés de son orbe de jade ne lui octroient plus de réduction des DÉG.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "Fichier de codex : mesure-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 653. La Mesure à crinière... gardienne de la loi... et arpenteuse du monde du lavis d'encre. Son maître lui a ordonné de parcourir les terres des mortels qui touchent les cieux, de punir le monde et d'y instaurer une certaine forme d'ordre.",
+    "featureDesc": "- Chaque instance de DÉG de compétence subie par la Mesure à crinière lui inflige <@ba.vup>5</> point(s) de Déséquilibre supplémentaire(s). Cet effet ne se déclenche qu'une fois toutes les 0.05 s.\n- Lorsque la Mesure à crinière est déséquilibrée, les deux moitiés de son orbe de jade ne lui octroient plus de réduction des DÉG.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "Fichier de codex : mesure-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 653. La Mesure à crinière... gardienne de la loi... et arpenteuse du monde du lavis d'encre. Son maître lui a ordonné de parcourir les terres des mortels qui touchent les cieux, de punir le monde et d'y instaurer une certaine forme d'ordre.",
+    "featureDesc": "- Chaque instance de DÉG de compétence subie par la Mesure à crinière lui inflige <@ba.vup>5</> point(s) de Déséquilibre supplémentaire(s). Cet effet ne se déclenche qu'une fois toutes les 0.05 s.\n- Lorsque la Mesure à crinière est déséquilibrée, les deux moitiés de son orbe de jade ne lui octroient plus de réduction des DÉG.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower023": {
+    "name": "Fichier pisté : chasseur-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 23. Les parchemins de tactiques chassent les entités et les créatures protéiformes sans répit, jusqu'au fin fond des bois... Nul n'a le droit de profaner le monde peint.",
+    "featureDesc": "- Lorsque vous éliminez un groupe d'ennemis, chaque opérateur peut utiliser gratuitement son ultime après l'avoir lancé une première fois.\n- Vaincre n'importe quel groupe d'ennemis octroie +20% de PV aux ennemis restants.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "Fichier pisté : chasseur-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 23. Les parchemins de tactiques chassent les entités et les créatures protéiformes sans répit, jusqu'au fin fond des bois... Nul n'a le droit de profaner le monde peint.",
+    "featureDesc": "- Lorsque vous éliminez un groupe d'ennemis, chaque opérateur peut utiliser gratuitement son ultime après l'avoir lancé une première fois.\n- Vaincre n'importe quel groupe d'ennemis octroie +20% de PV aux ennemis restants.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "Fichier pisté : chasseur-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 23. Les parchemins de tactiques chassent les entités et les créatures protéiformes sans répit, jusqu'au fin fond des bois... Nul n'a le droit de profaner le monde peint.",
+    "featureDesc": "- Lorsque vous éliminez un groupe d'ennemis, chaque opérateur peut utiliser gratuitement son ultime après l'avoir lancé une première fois.\n- Vaincre n'importe quel groupe d'ennemis octroie +20% de PV aux ennemis restants.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower024": {
+    "name": "Fichier de siège : armure lourde-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 37. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands poings blindés pouvaient briser les murs d'une forteresse. Il tomba sous les tirs nourris de l'ennemi.",
+    "featureDesc": "- Chaque cumul d'<@ba.key>altération des Arts</> consommé ou absorbé applique 1 cumul de <@ba.key>Vulnérabilité</> et restaure <@ba.vup>10</> PC.\n- Chaque cumul de <@ba.key>Vulnérabilité</> consommé ou absorbé applique 1 cumul d'<@ba.key>altération des Arts</> (du premier élément appliqué au cours de ce combat) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "Fichier de siège : armure lourde-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 37. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands poings blindés pouvaient briser les murs d'une forteresse. Il tomba sous les tirs nourris de l'ennemi.",
+    "featureDesc": "- Chaque cumul d'<@ba.key>altération des Arts</> consommé ou absorbé applique 1 cumul de <@ba.key>Vulnérabilité</> et restaure <@ba.vup>10</> PC.\n- Chaque cumul de <@ba.key>Vulnérabilité</> consommé ou absorbé applique 1 cumul d'<@ba.key>altération des Arts</> (du premier élément appliqué au cours de ce combat) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "Fichier de siège : armure lourde-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 37. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands poings blindés pouvaient briser les murs d'une forteresse. Il tomba sous les tirs nourris de l'ennemi.",
+    "featureDesc": "- Chaque cumul d'<@ba.key>altération des Arts</> consommé ou absorbé applique 1 cumul de <@ba.key>Vulnérabilité</> et restaure <@ba.vup>10</> PC.\n- Chaque cumul de <@ba.key>Vulnérabilité</> consommé ou absorbé applique 1 cumul d'<@ba.key>altération des Arts</> (du premier élément appliqué au cours de ce combat) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower025": {
+    "name": "Fichier transpercé : baliste-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 38. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands carreaux pouvaient transpercer des collines entières. Il fut écrasé et tué par un colosse.",
+    "featureDesc": "- La compétence de combo inflige <@ba.vup>+50%</> de DÉG.\n- Lorsque vous lancez une compétence de combo, toute l'équipe gagne <@ba.vup>+4%</> de réduction du temps de recharge de compétence de combo (cumuls max. pour cet effet : 40) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "Fichier transpercé : baliste-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 38. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands carreaux pouvaient transpercer des collines entières. Il fut écrasé et tué par un colosse.",
+    "featureDesc": "- La compétence de combo inflige <@ba.vup>+50%</> de DÉG.\n- Lorsque vous lancez une compétence de combo, toute l'équipe gagne <@ba.vup>+4%</> de réduction du temps de recharge de compétence de combo (cumuls max. pour cet effet : 40) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "Fichier transpercé : baliste-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 38. Un guerrier qui défendait autrefois le seigneur de guerre Jakub. Ses grands carreaux pouvaient transpercer des collines entières. Il fut écrasé et tué par un colosse.",
+    "featureDesc": "- La compétence de combo inflige <@ba.vup>+50%</> de DÉG.\n- Lorsque vous lancez une compétence de combo, toute l'équipe gagne <@ba.vup>+4%</> de réduction du temps de recharge de compétence de combo (cumuls max. pour cet effet : 40) et récupère <@ba.vup>10</> PC.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower026": {
+    "name": "Fichier de destruction : æthillu-N",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 66. Un æthillu qui refuse de se dissiper. Sa forme tordue et turbulente a été capturée et enregistrée.",
+    "featureDesc": "- Une fois vaincus, les æthillus reviennent à la vie (ne peut arriver qu'une seule fois) au bout d'un certain temps. Si vous les éliminez tous avant que cela n'arrive, aucun ne se réanimera.\n- Les æthillus sont immunisés contre les DÉG d'attaque de base infligés par des opérateurs non contrôlés.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "Fichier de destruction : æthillu-B",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 66. Un æthillu qui refuse de se dissiper. Sa forme tordue et turbulente a été capturée et enregistrée.",
+    "featureDesc": "- Une fois vaincus, les æthillus reviennent à la vie (ne peut arriver qu'une seule fois) au bout d'un certain temps. Si vous les éliminez tous avant que cela n'arrive, aucun ne se réanimera.\n- Les æthillus sont immunisés contre les DÉG d'attaque de base infligés par des opérateurs non contrôlés.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "Fichier de destruction : æthillu-H",
+    "description": "Données extraites du dispositif de stockage de données endommagé n° 66. Un æthillu qui refuse de se dissiper. Sa forme tordue et turbulente a été capturée et enregistrée.",
+    "featureDesc": "- Une fois vaincus, les æthillus reviennent à la vie (ne peut arriver qu'une seule fois) au bout d'un certain temps. Si vous les éliminez tous avant que cela n'arrive, aucun ne se réanimera.\n- Les æthillus sont immunisés contre les DÉG d'attaque de base infligés par des opérateurs non contrôlés.\n\n<@ba.info>- Améliorations des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
   },
   "indie_contract001": {
     "name": "Opération expérimentale de Remise à feu",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Opération expérimentale indigo",
     "description": "- L'opération consiste en 3 vagues d'ennemis consécutives à affronter. Éliminez toutes les vagues d'ennemis pour terminer l'opération.\n- Des sphères de soin apparaîtront entre les vagues. Touchez-les pour restaurer les PV de vos coéquipiers.\n- Chaque vague est suivie d'une pause, durant laquelle les opérateurs sont toujours considérés comme étant au combat.\n- L'opération se déroule avec un chrono. À la fin du temps imparti ou si tous les opérateurs de l'équipe tombent à 0 PV, l'opération est interrompue.\n- Impossible d'utiliser les objets tactiques et les consommables.",
-    "featureDesc": "- Les ennemis incluent diverses Gangrénombres, créations de magie noire, bêtes sauvages et pirates cangzei, tels que les brise-nuées.\n- Vous pouvez toujours appliquer une Vulnérabilité, des altérations des Arts, des statuts physiques et des réactions aux Arts aux ennemis qui bénéficient de cumuls de bouclier."
+    "featureDesc": "- Les ennemis incluent diverses Gangrénombres, créations de magie noire, bêtes sauvages et brise-nuées (pirates cangzei).\n- Vous pouvez toujours appliquer une Vulnérabilité, des altérations des Arts, des statuts physiques et des réactions aux Arts aux ennemis qui bénéficient de cumuls de bouclier."
   },
   "indie_hard001": {
     "name": "Boucliers ravageurs",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Carnage sauvage de l'ombre",
     "description": "Les griffes tordues des bêtes sauvages ont d'abord surgi des ténèbres. Nous avons ensuite découvert que la lumière impitoyable avait marqué leur nature féroce.",
-    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>5</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG de <@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, son état <@ba.key>Éthéré</> prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>5</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG d'<@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, l'état <@ba.key>Éthéré</> de la Gangrénombre ratisseur prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
   },
   "indie_hard026_s": {
     "name": "Carnage sauvage de l'ombre : Agonie",
     "description": "Les griffes tordues des bêtes sauvages ont d'abord surgi des ténèbres. Nous avons ensuite découvert que la lumière impitoyable avait marqué leur nature féroce.",
-    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>7</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG de <@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, son état <@ba.key>Éthéré</> prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>7</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG d'<@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, l'état <@ba.key>Éthéré</> de la Gangrénombre ratisseur prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
   },
   "indie_hard027": {
     "name": "Arc de l'éclat d'ombre",
@@ -638,5 +728,85 @@
     "name": "Les limaces qui s'enfouissent : Agonie",
     "description": "La saison froide et sombre touche à sa fin. Les créatures qui hibernaient s'éveillent et s'appellent entre elles... Elles sont légion et elles reprennent vie.",
     "featureDesc": " - Attention. La brume inflige des <@ba.key>DÉG croissants</> à tous les opérateurs. <@ba.key>Les DÉG de la brume sont également fortement augmentés</>.\n - La limace sylvaine s'enfouit régulièrement sous terre afin de récupérer tous ses <@ba.key>cumuls de bouclier</>. Vaincre une limace sylvaine réduit temporairement les DÉG de la brume.\n - Après le début du combat, une limace sylvaine aléatoire perd tous ses <@ba.key>cumuls de bouclier</> et ne peut pas les restaurer. La vaincre fera perdre tous ses <@ba.key>cumuls de bouclier</> à une autre limace sylvaine aléatoire, qui ne pourra pas non plus les restaurer.\n\n<@ba.info> - Impossible d'utiliser les objets tactiques et les consommables.</>\n<@ba.info> - Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Le mal révélé : Triaggelos I",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Le mal révélé : Triaggelos II",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Le mal révélé : Triaggelos III",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Le mal révélé : Triaggelos IV",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants.\n - Lorsque le Triaggelos se reconstitue, ses PV max et son déséquilibre max augmentent de façon permanente.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Le mal révélé : Triaggelos V",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants.\n - Lorsque le Triaggelos se reconstitue, ses PV max et son déséquilibre max augmentent de façon permanente.\n - Lorsqu'un opérateur utilise <@ba.key>3</> fois une compétence de combat et une compétence de combo, le Triaggelos lance <@ba.key>1</> météore à l'opérateur contrôlé.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Le mal révélé : Triaggelos VI",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants.\n - Lorsque le Triaggelos se reconstitue, ses PV max et son déséquilibre max augmentent de façon permanente.\n - Lorsqu'un opérateur utilise <@ba.key>3</> fois une compétence de combat et une compétence de combo, le Triaggelos lance <@ba.key>1</> météore à l'opérateur contrôlé.\n - Dans sa <@ba.key>forme de tromperie</>, les compétences du Triaggelos sont renforcées.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Le mal révélé : Triaggelos VII",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts. \n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées. \n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente. \n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants. \n - Lorsque le Triaggelos se reconstitue, ses PV max et son déséquilibre max augmentent de façon permanente. \n - Lorsqu'un opérateur utilise <@ba.key>3</> fois une compétence de combat et une compétence de combo, le Triaggelos lance <@ba.key>1</> météore à l'opérateur contrôlé. \n - Dans sa <@ba.key>forme de tromperie</>, les compétences du Triaggelos sont renforcées. \n - Après avoir lancé <@ba.key>3</> météores, le Triaggelos déclenche son ultime et inflige de lourds DÉG à l'opérateur contrôlé. Ces DÉG ne peuvent pas être esquivés. \n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Le mal révélé : Triaggelos VIII",
+    "description": "",
+    "featureDesc": " - Nouvelle action des outils simplifiés : utiliser le bouton Outils simplifiés crée un <@ba.key>arbrisseau d'originium</> à l'emplacement de l'opérateur contrôlé. Les opérateurs situés dans le champ protecteur de l'<@ba.key>arbrisseau d'originium</> sont immunisés contre tous les types de dégâts.\n - Les ondes de choc d'Ankhor ne peuvent pas être esquivées.\n - Lorsque le Triaggelos est déséquilibré, il supprime tous ses cumuls d'<@ba.key>altération des Arts</> et de <@ba.phy>Vulnérabilité</>, et son ATQ augmente de façon permanente.\n - Dans sa <@ba.key>forme de recherche</>, le Triaggelos invoque des Aggeloi plus puissants.\n - Lorsque le Triaggelos se reconstitue, ses PV max et son déséquilibre max augmentent de façon permanente.\n - Lorsqu'un opérateur utilise <@ba.key>3</> fois une compétence de combat et une compétence de combo, le Triaggelos lance <@ba.key>1</> météore à l'opérateur contrôlé.\n - Dans sa <@ba.key>forme de tromperie</>, les compétences du Triaggelos sont renforcées.\n - Après avoir lancé <@ba.key>3</> météores, le Triaggelos déclenche son ultime et inflige de lourds DÉG à l'opérateur contrôlé. Ces DÉG ne peuvent pas être esquivés.\n - Les <@ba.key>esquives parfaites sont impossibles</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Le mal révélé : Nefarith I",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Le mal révélé : Nefarith II",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Le mal révélé : Nefarith III",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Le mal révélé : Nefarith IV",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n - Certaines compétences de <@ba.key>Nefarith, « Conquérante »</> ne peuvent être arrêtées qu'avec <@ba.key>plusieurs coups d'interruption</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Le mal révélé : Nefarith V",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n - Certaines compétences de <@ba.key>Nefarith, « Conquérante »</> ne peuvent être arrêtées qu'avec <@ba.key>plusieurs coups d'interruption</>.\n - L'action des outils simplifiés <@ba.key>Impulsion de xiranite</> met plus de temps à se recharger. Le rayon de DÉG de l'ATQ plongeante spéciale est également réduit après avoir utilisé <@ba.key>Impulsion de xiranite</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Le mal révélé : Nefarith VI",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n - Certaines compétences de <@ba.key>Nefarith, « Conquérante »</> ne peuvent être arrêtées qu'avec <@ba.key>plusieurs coups d'interruption</>.\n - L'action des outils simplifiés <@ba.key>Impulsion de xiranite</> met plus de temps à se recharger. Le rayon de DÉG de l'ATQ plongeante spéciale est également réduit après avoir utilisé <@ba.key>Impulsion de xiranite</>.\n - Toutes les <@ba.fire>altérations thermiques</> appliquées aux opérateurs sont directement converties en <@ba.fire>Combustion</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Le mal révélé : Nefarith VII",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n - Certaines compétences de <@ba.key>Nefarith, « Conquérante »</> ne peuvent être arrêtées qu'avec <@ba.key>plusieurs coups d'interruption</>.\n - L'action des outils simplifiés <@ba.key>Impulsion de xiranite</> met plus de temps à se recharger. Le rayon de DÉG de l'ATQ plongeante spéciale est également réduit après avoir utilisé <@ba.key>Impulsion de xiranite</>.\n - Toutes les <@ba.fire>altérations thermiques</> appliquées aux opérateurs sont directement converties en <@ba.fire>Combustion</>.\n - À intervalle régulier, <@ba.key>Nefarith, « Conquérante »</> utilisera un <@ba.key>Ankhor</> pour piéger un opérateur aléatoire non contrôlé.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Le mal révélé : Nefarith VIII",
+    "description": "",
+    "featureDesc": " - Lorsque <@ba.key>Nefarith, « Broyeuse d'os »</> déchire l'espace-temps, ses compétences sont renforcées.\n - Lorsque <@ba.key>Nefarith, « Conquérante »</> restaure son bouclier æthérique, elle lance davantage d'attaques à distance continues ciblant l'opérateur contrôlé.\n - Les vagues æthériques ne peuvent pas être esquivées et infligent beaucoup plus de DÉG.\n - Certaines compétences de <@ba.key>Nefarith, « Conquérante »</> ne peuvent être arrêtées qu'avec <@ba.key>plusieurs coups d'interruption</>.\n - L'action des outils simplifiés <@ba.key>Impulsion de xiranite</> met plus de temps à se recharger. Le rayon de DÉG de l'ATQ plongeante spéciale est également réduit après avoir utilisé <@ba.key>Impulsion de xiranite</>.\n - Toutes les <@ba.fire>altérations thermiques</> appliquées aux opérateurs sont directement converties en <@ba.fire>Combustion</>.\n - À intervalle régulier, <@ba.key>Nefarith, « Conquérante »</> utilisera un <@ba.key>Ankhor</> pour piéger un opérateur aléatoire non contrôlé.\n - <@ba.key>Une fois sa défaite certaine, Nefarith tentera un dernier coup de poker et forcera l'opérateur contrôlé à la combattre seul.</>\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
   }
 }

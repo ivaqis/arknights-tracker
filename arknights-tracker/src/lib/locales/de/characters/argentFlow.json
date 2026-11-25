@@ -34,7 +34,7 @@
     },
     "battleSkill": {
       "name": "Gebändigte Dunkelheit",
-      "description": "Silberfluss schwingt seine Lanze, fügt Gegnern in der Nähe <@ba.pd>Physischen SDN</> zu und belegt Ziele vor ihm mit <#ba.airborne>Anheben</>.\nNachdem Silberfluss seine Kombofertigkeit eingesetzt hat, wird seine Kampffertigkeit vorübergehend zu <@ba.key>Blitzsturm</> geändert.\n<@ba.key>Blitzsturm</>: Silberfluss besteigt seinen Galopper Nuli, springt in die Luft, lädt kurz auf und stürmt dann auf das Ziel zu, um es mit <#ba.conduct>Elektrifizierung</> zu belegen und Gegnern in einem großen Bereich vor ihm <@ba.pulse>Elektrischen SDN</> zuzufügen. Wenn ein Ziel <#ba.conduct>Elektrifiziert</> wird, das bereits mit <#ba.pulseinflict>Elektrik</> belegt ist, werden alle <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</>. Silberfluss erhält pro verbrauchter Kumulierung <#ba.statuslevel>Zustandslevel +1</> <#ba.conduct>Elektrifizierung</>. Nachdem Silberfluss die <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels <#ba.consume>verbraucht</> hat, verursacht er außerdem 1 Kumulierung <#ba.noguard>Anfälligkeit</>.",
+      "description": "Silberfluss schwingt seine Lanze, um Gegnern in der Nähe <@ba.pd>physischen SDN</> zuzufügen und ein oder mehrere Ziele vor ihm <#ba.airborne>anzuheben</>.\nNachdem Silberfluss seine Kombofertigkeit gewirkt hat, wird seine Kampffertigkeit vorübergehend zu <@ba.key>Blitzsturm</> geändert.\n<@ba.key>Blitzsturm</>: Silberfluss springt mit seinem Galopper Nuli in die Luft, lädt sich schnell auf und entlädt sich schließlich am Ziel, um Gegner in einem großen Bereich vor ihm gewaltsam mit <#ba.conduct>Elektrifizierung</> zu belegen und ihnen <@ba.pulse>Elektrischen SDN</> zuzufügen. Wenn ein mit <#ba.pulseinflict>Elektrik</> belegtes Ziel weiter mit dieser <#ba.conduct>Elektrifizierung</> belegt wird, <#ba.consume>verbraucht</> die Fertigkeit alle <#ba.pulseinflict>Elektrik</>-Kumulierungen des Ziels und gewährt je verbrauchter Kumulierung <#ba.conduct>Elektrifizierung</> <#ba.statuslevel>Zustandslevel +1</>. Nachdem die <#ba.pulseinflict>Elektrik</> des Ziels <#ba.consume>verbraucht</> wurde, fügt Silberfluss außerdem 1 Kumulierung <#ba.noguard>Anfälligkeit</> zu.",
       "baseDmgMultiplier": "Standard-SDN-Multiplikator",
       "baseStagger": "Standard-Taumeln",
       "boltRushDmgMultiplier": "SDN-Multiplikator bei Blitzsturm",
@@ -88,8 +88,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
-        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen."
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen."
       ],
       "name": "Werkzeuge des Schwungs"
     },
@@ -104,7 +104,7 @@
     "tags": {
       "expert1": {
         "name": "Kampftechnik",
-        "description": "Kampftechnik: Rasiermesser des Herbstes\nDer Speer ist die wandernde Lunge, das Schwert ist das spiegelnde Rasiermesser des Herbstes. Eine Kaskade aus Bächen und Flüssen strömt aus einem Herzen, das einst kalt und ernst war."
+        "description": "Kampftechnik: Rasiermesser des Herbstes\nDer Speer ist ein wandernder Lung, das Schwert ist das spiegelnde Rasiermesser des Herbstes. Eine Kaskade aus Bächen und Flüssen strömt aus einem Herzen, das einst kalt und ernst war."
       },
       "expert2": {
         "name": "Gebildet",
@@ -173,7 +173,7 @@
       {
         "voId": "chr_0037_minghe_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
-        "text": "Was ist los? Ach, nichts. Ich habe mich gerade daran erinnert, wie ich zum ersten Mal Kapitän der befriedeten Lüfte wurde. Tianshi Tan hat mir lediglich eine Schüssel Nudeln gegeben. Ihr beiden müsst viel gemeinsam haben."
+        "text": "Das ist alles? Ach, nichts. Ich musste nur gerade daran denken, wie ich Kapitän der befriedeten Lüfte wurde. Tianshi Tan hat mir lediglich eine Schüssel Nudeln ausgegeben. Ihr beiden müsst viel gemeinsam haben."
       },
       {
         "voId": "chr_0037_minghe_chrup_promt04_01",
@@ -258,7 +258,7 @@
       {
         "voId": "chr_0037_minghe_mono_self_line02",
         "title": "Vertrauensgespräch 2",
-        "text": "Ein leichtes Aroma? Das ist wahrscheinlich diese Räuchergefäß-Duftkugel. Als ich mich ursprünglich verpflichtet habe, war ich nicht gerade geduldig. Ich musste mich dazu zwingen, wach und aufmerksam zu sein, um meine Pflichten besser zu erfüllen. Aber das hat meine psychische Gesundheit nur noch weiter belastet. Meine Kollegen haben mir daraufhin zur Beruhigung ein Räuchergefäß-Rezept gegeben. Sie haben gesagt, guter Schlaf sei der Schlüssel zum Überwinden aller Widrigkeiten. Und die Realität hat die Richtigkeit ihrer Worte bewiesen … Endmin? Hmm. Schon eingeschlafen. Na dann werde ich deinetwegen Wache halten."
+        "text": "Ein leichtes Aroma? Das ist wahrscheinlich diese Räucherwerk-Duftkugel. Als ich mich ursprünglich verpflichtet habe, war ich nicht gerade geduldig. Ich musste mich dazu zwingen, wach und aufmerksam zu sein, um meine Pflichten besser zu erfüllen. Aber das hat meine psychische Gesundheit nur noch weiter belastet. Meine Kollegen haben mir daraufhin zur Beruhigung ein Räucherwerk-Rezept gegeben. Sie haben gesagt, guter Schlaf sei der Schlüssel zum Überwinden aller Widrigkeiten. Und die Realität hat die Richtigkeit ihrer Worte bewiesen … Endmin? Hmm. Schon eingeschlafen. Na dann werde ich deinetwegen Wache halten."
       },
       {
         "voId": "chr_0037_minghe_mono_self_line03",
@@ -288,7 +288,7 @@
       {
         "voId": "chr_0037_minghe_mono_chat_line03",
         "title": "Geplauder 3",
-        "text": "Diese Emporkömmlinge aus der Tanjian-Halle sind schon wieder da. Versteh mich nicht falsch. Auf Diskussionen über Kampfsport lasse ich mich immer gerne ein, aber was das Reiten angeht … Nuli und ich haben eine spirituelle Verbindung. Ich kontrolliere sie nicht. Vielmehr arbeite ich mit ihr zusammen, und daran ist nichts Technisches. Apropos: Warum sind sie so vom Kampf zu Pferd besessen? Es kämpft doch kaum jemand auf einem Galopper …"
+        "text": "Diese Emporkömmlinge aus der Tanjian-Halle sind schon wieder da. Versteh mich nicht falsch. Auf Diskussionen über Kampfsport lasse ich mich immer gerne ein, aber was das Reiten angeht … Nuli und ich haben eine spirituelle Verbindung. Ich kontrolliere sie nicht. Vielmehr arbeite ich mit ihr zusammen, und daran ist nichts Technisches. Apropos: Warum sind sie so vom berittenen Kampf besessen? Es kämpft doch kaum jemand auf einem Galopper …"
       },
       {
         "voId": "chr_0037_minghe_mono_chat_line04",
@@ -529,7 +529,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Talent <@ba.key>Gipfel der Elektromantie</> verbessert: Wird einem Ziel mit <@ba.key>Trennen</> <#ba.crush>Zertrümmern</> zugefügt, wird der durch dieses <#ba.crush>Zertrümmern</> verursachte SDN auf das <@ba.vup>{1+crush_damage:0.0}</>-Fache des ursprünglichen Werts erhöht. Der Anteil des SDNs der <@ba.key>Trennen</>-Explosion, den andere Gegner in der Nähe des Ziels erleiden, steigt auf <@ba.vup>{other_damage_percent:0%}</>.",
+      "description": "Talent <@ba.key>Gipfel der Elektromantie</> verbessert: Wird ein mit <@ba.key>Trennen</> belegtes Ziel mit <#ba.crush>Zertrümmern</> belegt, wird der durch dieses <#ba.crush>Zertrümmern</> verursachte SDN auf das <@ba.vup>{1+crush_damage:0.0}</>-Fache des ursprünglichen Werts erhöht. Der Anteil des SDNs der <@ba.key>Trennen</>-Explosion, den andere Gegner in der Nähe des Ziels erleiden, steigt auf <@ba.vup>{other_damage_percent:0%}</>.",
       "name": "Wildheit des Sturms"
     },
     "potential2": {

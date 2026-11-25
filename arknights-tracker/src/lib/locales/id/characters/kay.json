@@ -1,0 +1,574 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Pemulihan SP",
+      "Nature Inflict"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Memasak",
+      "Bertahan Hidup di Alam"
+    ],
+    "giftPreferTags": [
+      "Pilihan Wisatawan Wuling"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Gaya Hidup"
+    ],
+    "raceTag": "Perro"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Wild Wacky-Whack",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
+    },
+    "battleSkill": {
+      "name": "“Really Heavy Bash”",
+      "description": "Kay akan melompat ke udara untuk memperkuat diri sejenak, mengumpulkan kembali semua <@ba.key>Senjata</> miliknya, lalu melancarkan hantaman kuat ke tanah dengan palu beratnya. Hantaman ini akan menimbulkan <@ba.natur>Nature DMG</> (berdasarkan jumlah tumpukan <@ba.key>Hot Edgy Naives</> miliknya), mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di area efek, dan memakai semua tumpukan <@ba.key>Hot Edgy Naives</>. Jika Kay memakai 3 tumpukan <@ba.key>Hot Edgy Naives</>, dia juga akan secara paksa mengakibatkan <#ba.burning>Combustion</> kepada musuh.\n<@ba.info>Jika ＞ 3 tumpukan Hot Edgy Naives dipakai, efeknya akan sama dengan efek dari 3 tumpukan.</>",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "bonusDmgMultiplierPerHotEdgyNaives": "Pengganda Bonus DMG per Hot Edgy Naives",
+      "combustionDurationS": "Durasi Combustion (dtk)"
+    },
+    "comboSkill": {
+      "name": "“Really Kwik Smash”",
+      "description": "PEMICU KOMBO: Saat Kay punya ≥ 1 <@ba.key>Senjata</> dan musuh terkena <#ba.naturalinflict>Nature Infliction</> ATAU <#ba.spellburst>Arts Burst</> DMG.\nKay akan melemparkan <@ba.key>Senjata</> ke arah target untuk menimbulkan <@ba.natur>Nature DMG</>. Jika mengenai musuh, sejumlah SP akan dipulihkan dan <#ba.naturalburst>Nature Burst</> akan diakibatkan secara paksa. <@ba.key>Senjata</> itu kemudian akan jatuh di sembarang lokasi di medan pertarungan. Kay akan <@ba.key>mengambil kembali</> <@ba.key>Senjata</> itu saat operator terkontrol menyentuhnya.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate",
+      "spRecovery": "Pemulihan SP"
+    },
+    "ultimate": {
+      "name": "“Really Sweet Combi-Bonker!”",
+      "description": "Kay akan merakit combi-bonker lalu mengayunkannya beberapa kali sebelum dilemparkan untuk memicu ledakan yang menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di area efek, memulihkan sejumlah SP, dan meninggalkan beberapa <@ba.key>Camilan Piknik</>. Saat operator terkontrol menyentuh <@ba.key>Camilan Piknik</> dan mengambilnya, Kay akan memberikan HP treatment kepada operator itu dan memulihkan sejumlah SP. Atribut Agility bisa meningkatkan jumlah HP treatment.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
+      "stagger": "Stagger",
+      "spRecovery": "Pemulihan SP",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerAgility": "Peningkatan Treatment per Agility",
+      "spRecoveryPerPicnicSnack": "Pemulihan SP per Camilan Piknik"
+    },
+    "indicator": {
+      "levels": [
+        "Strength Operator +10.",
+        "Strength Operator +15.",
+        "Strength Operator +15.",
+        "Strength Operator +20."
+      ],
+      "name": "Forged"
+    },
+    "talent1": {
+      "levels": [
+        "Kay akan mulai dengan 3 <@ba.key>Senjata</>. Saat pertarungan berakhir, Kay akan mengambil kembali semua <@ba.key>Senjata</> yang dilemparkannya.\nJika berhasil mengambil kembali <@ba.key>Senjata</>, Kay akan mendapatkan 1 tumpuk <@ba.key>Hot Edgy Naives</>.",
+        "Kay akan mulai dengan 3 <@ba.key>Senjata</>. Saat pertarungan berakhir, Kay akan mengambil kembali semua <@ba.key>Senjata</> yang dilemparkannya.\nJika berhasil mengambil kembali <@ba.key>Senjata</>, Kay akan mendapatkan 1 tumpuk <@ba.key>Hot Edgy Naives</>, dan seluruh tim akan mendapatkan <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0%}</>, serta tambahan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{atk_up:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk. Tumpukan maks untuk efek ini: {stack:0}.",
+        "Kay akan mulai dengan 3 <@ba.key>Senjata</>. Saat pertarungan berakhir, Kay akan mengambil kembali semua <@ba.key>Senjata</> yang dilemparkannya.\nJika berhasil mengambil kembali <@ba.key>Senjata</>, Kay akan mendapatkan 1 tumpuk <@ba.key>Hot Edgy Naives</>, dan seluruh tim akan mendapatkan <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>, serta tambahan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk. Tumpukan maks untuk efek ini: {stack:0}."
+      ],
+      "name": "Bottomless Arsenal"
+    },
+    "talent2": {
+      "levels": [
+        "Jika terkena <@ba.poise>Staggered</> atau mengaktifkan <#ba.poiseknot>Nodus Stagger</>, musuh akan menjatuhkan 1 <@ba.key>Wafel Piknik</>. Efek hanya bisa aktif setiap {cd:0} dtk.\n<@ba.info>Wafel Piknik punya efek yang sama dengan Camilan Piknik.</>",
+        "Jika terkena <@ba.poise>Staggered</> atau mengaktifkan <#ba.poiseknot>Nodus Stagger</>, musuh akan menjatuhkan 1 <@ba.key>Wafel Piknik</>. Efek hanya bisa aktif setiap {cd:0} dtk.\n<@ba.info>Wafel Piknik punya efek yang sama dengan Camilan Piknik.</>"
+      ],
+      "name": "Have a Waffle!"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +30%"
+      ],
+      "name": "Truly Wild Smithing"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Kabin Manufaktur, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
+      ],
+      "name": "Honey Waffle Break"
+    },
+    "files": {
+      "main": "NAMA SANDI: Kay\nGENDER: Perempuan\nAUTENTIKASI: Rhodes Island\nTANGGAL LAHIR: 25 Februari\nRAS: Perro\n[STATUS INFEKSI ORIPATI]\nNegatif Oripati, berdasarkan laporan pemeriksaan medis.\n\n[PEMERIKSAAN FISIK TERPADU]\nKEKUATAN FISIOLOGIS: Sangat Baik\nKEMAMPUAN TEMPUR: Standar\nKECERDASAN TAKTIS: Normal\nASIMILASI ORIGINIUM ARTS: Sangat Baik\n\nP.S. Sistem pencernaan Kay tampaknya luar biasa kuat, jadi perlu perhatian khusus saat menyusun rencana nutrisinya.\nP.P.S. Aku benar-benar penasaran bagaimana dia bisa makan sebanyak itu dan tetap ramping!\n\nKenapa tak coba bergerak-gerak seperti dia?\n—Chen Qianyu",
+      "humanResources": "Operator Kay, nama asli Cerube, merupakan seorang reconvener dari Rhodes Island. Atas instruksi Warfarin, dia meninggalkan Rhodes Island dan mengembara melintasi Talos-II. \n\nBergabungnya Kay dengan Endfield memang bukan sepenuhnya kebetulan. Bahkan, Endfield merupakan tujuan akhir dari perjalanannya. Lebih dari setengah tahun yang lalu, kami menerima kabar dari Rhodes Island: seorang reconvener muda telah berangkat dari Rhodes Island dan akan segera tiba di Endfield untuk melapor. “Segera” yang dimaksud ternyata adalah saat ini juga—seratus delapan puluh lima hari, delapan jam, dua belas menit, dan lima puluh lima detik kemudian. Sistem pencarian dataku sendiri memerlukan waktu hampir setengah detik untuk merespons sebelum akhirnya menemukan namanya di daftar tindak lanjut personel. \nMengenai keterlambatan lapornya yang cukup ekstrem, dia menjelaskan bahwa dia memang meninggalkan Rhodes Island khusus untuk mencari Endministrator. Dalam kisah-kisah Warfarin, Endministrator selalu berada di dalam Dijiang. Oleh sebab itu, dia menjelajahi permukaan Talos-II untuk mencari sebuah pesawat kerja antariksa bernama “Dijiang”. Seandainya dia tak kebetulan bertemu dengan Endministrator di pinggiran Wuling, mungkin dia masih akan terus mencari. \nSetelah seorang diri melintasi Talos-II selama sekian lama dan tetap berhasil tiba di hadapan kami dalam keadaan selamat dan tanpa kekurangan apa pun, hal ini saja sudah cukup untuk menegaskan bahwa dia memang seorang ahli dalam penjelajahan alam liar. \n—Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Ketika ditanya nama sandi yang ingin digunakannya selama bertugas di Endfield, Cerube memilih nama yang biasa digunakan teman-temannya untuk memanggilnya: “Kay”. \nDi Endfield, cara Kay menghadapi berbagai hal memang cukup sederhana. \nDia tak berusaha memahami hierarki administratif yang rumit ataupun urutan pertempuran yang kompleks. Setelah menghabiskan waktu bersama semua orang di Endfield, dia membagi mereka ke dalam tiga kelompok besar: “orang baik yang bisa memberiku makanan”, “orang kuat yang bisa bertarung bersamaku”, dan “orang yang sangat sibuk dan tak punya banyak waktu”. Cara pandangnya yang sederhana terhadap orang lain ini justru membuatnya tampak sangat santai di tengah kehidupan Endfield yang tegang dan teratur, sekaligus membuatnya mudah mendapatkan cukup banyak teman tak lama setelah tiba di Endfield. Dengan kesederhanaannya yang blak-blakan dan energi yang seolah tak pernah habis, siapa yang tega menolaknya? \nOleh sebab itu, kau bisa melihat Kay berlarian ke sana kemari di antara para operator. Dengan penuh semangat, dia akan menyeret operator yang baru keluar dari ruang latihan untuk mengunjungi “markas rahasia” yang baru ditemukannya: biasanya berupa jendela observasi dengan pemandangan Talos-II, atau istana kecil yang dibangun dari suku cadang bekas di belakang divisi teknik. Kau juga sering bisa melihatnya berbagi hidangan penutup es krim baru dengan Laevatain, atau menghabiskan waktu seharian di ruang uji senjata bersama Yvonne. Sesekali, dia bahkan tepergok oleh operator logistik dan dihentikan di depan pintu setelah mencoba menyelinap masuk ke area persiapan makanan di kantin. \nKay berinteraksi dengan semua orang dengan cara yang paling sederhana, dan para operator pun sering memilih cara yang sama sederhananya untuk membalas keramahan Kay. Semua orang akhirnya tahu bahwa Kay bisa dibilang tak pernah menolak makanan apa pun, sehingga lama-kelamaan tasnya dipenuhi segala macam makanan dengan cita rasa yang aneh-aneh. Sampai suatu hari, ranselnya yang penuh camilan memicu peringatan saat pemeriksaan sebelum keberangkatan karena beratnya melebihi batas. Sejak saat itu, atas usul Kay, semua camilan yang diberikan kepadanya dititipkan kepada Perlica untuk diawasi dan disimpan. \n“Jangan macam-macam. Jangan kira cuma karena kau memberinya makan, kau bisa menang kontes makan berikutnya .... Kau tak akan pernah bisa membuatnya kenyang.”",
+      "file2": "Sekian lama bersama Endfield, belum pernah kujumpai operator yang begitu antusias terhadap misi medan. \nLingkungan Talos-II begitu kompleks dan terus berubah, belum lagi musuh yang sering kali merepotkan. Bahayanya sudah jelas, sementara besarnya tanggung jawab juga memberi tekanan yang cukup besar bagi sebagian besar operator. Tapi, bagi Operator Kay, misi medan lebih mirip ekspedisi yang sudah mendapatkan izin resmi. Terkadang, begitu namanya dimasukkan ke dalam daftar personel, dia akan lari menghampiri untuk memastikan waktu keberangkatan, dengan antusiasme dalam suaranya yang jelas tak bisa dia sembunyikan. Dibandingkan Dijiang yang serba tertutup, dunia Talos-II yang luas tampaknya merupakan tempat bermain yang lebih disukai Kay. Tapi sampai sekarang, aku masih tak mengerti .... Setelah perjalanan yang begitu panjang, bagaimana dia masih bisa mempertahankan rasa ingin tahu sebesar itu terhadap segala sesuatu di sekitarnya? \nBerkat pengalamannya bertahun-tahun menjelajahi alam liar, Kay sering menjadi pemandu dalam misi. Tapi, kalau turun ke medan bersamanya, kau harus selalu waspada karena dia suka menguji seberapa jauh dia bisa menjauh dari rombongan: mengendus di sini, mengutak-atik sesuatu di sana, dan kalau kau lengah sedetik saja, dia sudah menghilang dari pandangan semua orang. Hebatnya, cukup sekali memanggilnya dan kau akan mendengar jawabannya dari balik semak di dekat sana, dan mendapati bahwa ternyata dia selama ini ada tepat di sampingmu. Lalu, dia akan membawa kembali sebutir kerikil yang bentuknya sangat mirip Dijiang, atau bunga berwarna cerah yang tak diketahui namanya, tapi punya aroma yang luar biasa harum. \nOh, jangan salah paham. Dia tak akan mengabaikan tugasnya sebagai pemandu hanya karena suka main-main. Aku malah berpikir alasan dia bisa terus peka terhadap keadaan sekitar justru karena pikirannya selalu penuh energi. Dia sering menyadari perubahan di lingkungan sekitar lebih cepat daripada siapa pun di dalam tim, lalu langsung masuk mode tempur dengan semangat tinggi. Saat menghadapi situasi mendadak, dia bahkan bisa memberikan peringatan atas pergerakan musuh sebelum sensor merespons, atau memberi tahu kita lokasi bahaya dengan tepat. Dan kalau ditanya bagaimana sebenarnya dia bisa melakukan semua itu, dia hanya akan menjawab seperti, “bau udaranya aneh”, atau “arah sana rasanya tak nyaman.” Kalau ini bukan semacam Originium Arts, mungkin itu adalah intuisi dan firasat yang terasah setelah bertahun-tahun menjelajahi Talos-II.",
+      "file3": "[Perintah Perbaikan Senjata D1] \nFasilitas yang menunggu perbaikan: Palu Kejut Kinetik \nProdusen asli: Mieszko Industries (Morospolis) \nAku akhirnya paham kenapa Kay selalu berlari ke gudang senjata. Dengan caranya memperlakukan peralatan, cepat atau lambat persediaan senjata di gudang kita pasti akan habis. \nKemarin, saat membersihkan benteng yang sudah ditinggalkan, dia tiba-tiba mengeluarkan Palu Kejut Kinetik buatan Mieszko entah dari mana. Setahuku, palu ini seharusnya membutuhkan tiga orang untuk mengoperasikannya dengan aman, tapi Kay mengangkatnya seorang diri. Dia tak menyambungkan palu kinetik itu ke eksoskeleton berdaya. Dia hanya menggenggam gagangnya dengan tangan kosong, padahal gagang itu masih mengalami panas berlebih akibat frekuensi tinggi. Suhu seperti itu seharusnya sudah cukup untuk membuat tangan operator biasa terbakar. Di tangannya, senjata berat itu diayunkan tak ubahnya seperti ranting ringan. Dia bahkan tak mengaktifkan mode tekanan kejut. Dia hanya memanfaatkan gaya inersia yang dihasilkan oleh bobot palu itu sendiri untuk menghantam Aggelos yang mencoba menyergap kami hingga tertancap hidup-hidup di dinding, seperti menancapkan pasak. \nIni pertama kalinya aku melihat dengan mata kepalaku sendiri bagaimana Kay menggunakan senjata-senjata itu. Sejujurnya, sungguh ajaib “harta karun” miliknya belum hancur berkeping-keping. \n\nPalunya tidak rusak, lihat sendiri, ‘kan? Masih berdaya penuh! \n—Kay \n\n[Perintah Perbaikan Senjata E3] \nFasilitas yang menunggu perbaikan: Kapak Baja \nProdusen asli: Tidak diketahui \nTeknik penempaan senjata ini agak kuno. Setahuku, tak ada lagi produsen di Talos-II yang masih menggunakan teknik seperti ini. \nAda rangkaian tulisan Minos kuno yang terukir pada kepala kapak. Mungkin itu nama pabriknya, atau mungkin nama seseorang? Mungkin aku harus bertanya kepada rekan kerja yang mengerti bahasa Minos. \n\n[Perintah Perbaikan Senjata I4] \nFasilitas yang menunggu perbaikan: Tombak Edisi Standar \nProdusen asli: Fort Forgefane \nSaat pertama kali bertemu dengannya, kami sedang melacak Aggelos berukuran besar. \nAggelos itu memancing kami masuk ke dataran bersalju, dan kami berputar-putar selama tiga hari sampai semua persediaan kami habis. Tepat saat kami bersiap menghadapi pertempuran hidup-mati dengan Aggelos itu, sebuah tombak raksasa tiba-tiba melesat masuk ke pandangan kami. Di ujung lainnya, seorang gadis muda menggenggam gagangnya. Dengan kekuatan yang sama sekali tak sebanding dengan tubuhnya, dia menusukkan tombak itu menembus tubuh Aggelos itu .... \nSetelah Aggelos itu terhempas ke tanah, barulah gadis itu bicara. Katanya, dia diutus oleh Order of Steel Oath untuk membawa kami pulang ....",
+      "file4": "Sejak sadar di Rhodes Island, Kay tinggal di kapal itu cukup lama. Suasana Rhodes Island tampaknya tak banyak berubah dari sebelumnya. Para operator sibuk dengan misi masing-masing, dan banyak dari mereka jarang berada di kapal. Tak ada yang memberinya tugas khusus. Dia hanya perlu berlatih, tidur cukup, dan makan dengan baik, persis seperti yang selama ini dia inginkan. Terkadang, dia menemui Warfarin dan mendengarkan kisahnya tentang planet ini, tentang Terra, dan tentang dirinya sendiri. Dia bisa duduk menatap kosong pemandangan di luar jendela kapal selama berjam-jam, melihat pemandangan berganti dari pegunungan bersalju menjadi hutan, lalu gurun, dan kembali lagi menjadi pegunungan bersalju. Sepertinya, selama dia mau, masa-masa seperti ini tak akan pernah berakhir. \nSampai suatu hari, dia memutuskan untuk mengemasi barang-barangnya. \nDia duduk lama di depan jendela kapal, telinganya bergerak sedikit, seolah menangkap suara yang bergema di dekatnya. Kisah-kisah yang pernah diceritakan Warfarin perlahan terhubung di benaknya menjadi sebuah jalan. Di ujung jalan itu ada sebuah tempat bernama “Endfield”. \nDia tak tahu apa arti semua itu. Apakah itu sebuah tujuan akhir? Tempat untuk menetap? Atau semacam jawaban yang sedang menunggunya? Dia tak bisa memahaminya, tapi samar-samar dia merasa ada sesuatu di sana yang memanggilnya. \nMaka dia pun berdiri. \nPersiapan keberangkatannya terasa lebih seperti permainan yang menyenangkan baginya. Dia memilih ransel yang paling besar dan kokoh, lalu mengisinya dengan berbagai macam camilan dan ransum kering. Wafel madu khususnya mendapatkan tempat yang paling utama. Lalu, dia mencoba memanggil beberapa senjata yang berguna, memperhatikan senjata-senjata itu muncul lalu menghilang di sekelilingnya, dan mengangguk puas. Dia sudah siap. \nWarfarin tampaknya sudah tahu bahwa dia akan pergi. Dia memberikan satu kantong kecil berisi wafel madu ekstra. “Kalau kau tersesat,” kata Warfarin, “Endmin akan memberitahumu jalan mana yang harus ditempuh.” \nKay mengangguk sungguh-sungguh, walau dia sendiri tak yakin seperti apa rasanya “tersesat”. Ini pertama kalinya dia berangkat untuk menjelajahi dunia baru yang benar-benar asing baginya. \nPada hari keberangkatan, dia berjalan menuju pintu kabin dengan ransel yang menggembung di punggungnya. Pintu perlahan terbuka, dan angin dari luar berembus masuk, membawa aroma yang belum dikenalnya. Talos-II terbentang di hadapannya. \n“Endfield .... ” Dia mengulang nama itu pelan, seolah sedang memastikan arah yang harus dituju. \nLalu, dia mengambil langkah pertamanya. \nDia tak tahu apa yang menantinya, berapa lama perjalanan ini akan berlangsung, atau berapa kali lagi dia akan melakukan perjalanan seperti ini. Tapi, samar-samar dia memahami bahwa perjalanan bukan hanya untuk mencari makanan lezat yang belum pernah dicicipinya, dan bukan pula hanya untuk melihat pemandangan yang belum pernah dilihatnya—\nDia sedang mencari perasaan yang hanya bisa ditemukan dalam sebuah perjalanan. \nPerasaan yang disebut “pulang”."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Memasak",
+        "description": "Memasak: Solusinya Cuma Wafel \nPengembaraan tak butuh keahlian apa pun, cukup tahu cara memanfaatkan wafel untuk mengatasi segala masalah."
+      },
+      "expert2": {
+        "name": "Bertahan Hidup di Alam",
+        "description": "Bertahan Hidup di Alam: Seni Berkelana saat Tersesat \nJalan memutarnya mungkin agak gila, tapi dia tetap membawamu ke tujuan tepat waktu, ‘kan?"
+      },
+      "hobby1": {
+        "name": "Alam",
+        "description": "Alam: Mengais di Alam Liar \nRasakan setiap embusan angin, lukis setiap gugusan awan."
+      },
+      "hobby2": {
+        "name": "Gaya Hidup",
+        "description": "Gaya Hidup: Perutku Keroncongan \nJuara tak terkalahkan dalam berbagai kontes makan besar ini masih mencari lawan. Siapa yang cukup lapar untuk menantangnya?"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_01",
+        "title": "Persiapan Operasi 1",
+        "text": "Ke mana, ke mana? Boleh ikut tidak?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_02",
+        "title": "Persiapan Operasi 2",
+        "text": "Hari yang cerah! Ayo berangkat!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_01",
+        "title": "Menambahkan ke Tim 1",
+        "text": "Ta-da, aku di sini! Ada makanan enak?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_02",
+        "title": "Menambahkan ke Tim 2",
+        "text": "Ayo jalan! Kalau camilanmu kurang, akan kukasih punyaku diam-diam!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_weap_01",
+        "title": "Berganti Senjata",
+        "text": "Buat aku juga? Hore! Koleksi senjataku makin banyak!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_gear_01",
+        "title": "Berganti Gear",
+        "text": "Gear ini ... akan aman bersamaku! Aku akan merawatnya dengan superbaik!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_skill_01",
+        "title": "Aktivasi Nodus Talent",
+        "text": "Ah, trik ini super duper keren! Pasti aku jadi sedikit lebih kuat!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_level_01",
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Aku memperhatikan, kok! Beneran!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt01_01",
+        "title": "Promosi Operator 1",
+        "text": "Promosi? Bagaimana kalau aku dapat senjata baru sebagai hadiah?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt02_01",
+        "title": "Promosi Operator 2",
+        "text": "Perutku sudah keroncongan berjam-jam. Setelah ini kita boleh makan, ‘kan?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt03_01",
+        "title": "Promosi Operator 3",
+        "text": "Dinginkan yang ini, hangatkan yang itu. Kau cuma butuh sedikit bum, bam, dar! Daaan selesai! Dari dulu aku selalu simpel orangnya."
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt04_01",
+        "title": "Promosi Operator 4",
+        "text": "Dari sana sampai ke sini .... Wah, aku sudah jalan sejauh ini dan mengalahkan banyak sekali orang jahat! Endmin, berarti aku sudah cukup kuat untuk bersamamu terus selamanya?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_introduce_01",
+        "title": "Operator Siap Bertugas",
+        "text": "Hai! Aku Cerube, tapi teman-temanku memanggilku Kay. Aku punya mimpi yang besaaar banget, yaitu menjelajahi setiap sudut Talos-II bermiliar-miliar kali! Kau juga boleh ikut, asal bawa camilan sendiri."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_01",
+        "title": "Siaga 1",
+        "text": "Lagi makan apa? Boleh minta satu gigit?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_02",
+        "title": "Siaga 2",
+        "text": "Uji senjata? Karyawisata? Aku teman terbaik untuk keduanya!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_assign_work_01",
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Ooh, asyik, waktunya makan! Oh ... bukan kantin, ya?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_lower_01",
+        "title": "Menyapa 1",
+        "text": "Haiii, Endmin! Mau ke kantin? Ajak aku, dong!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_max_01",
+        "title": "Menyapa 2",
+        "text": "Endmin! Lihat kapak baru yang berkilau ini? Senjata ini aku banget, ‘kan?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv01_01",
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Makanan di sebelah sini, senjata di sebelah sana, latihan di belakang sana, dan tempat tidur semua orang di sana itu .... Tempat tidur Endmin di mana, ya? Waaah, terlalu banyak kabin! Kok orang-orang bisa tidak tersesat di Dijiang, ya?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_01",
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Benda besar ini pesawat luar angkasa, namanya Dijiang, Dijiang milik Endfield, dan kau adalah Endministrator .... Berarti ... itu artinya kau kapten kapal ini! Benar, ‘kan, Endministrator?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_02",
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Walaupun Dijiang bisa membawa kita superjauh dalam sekejap mata, aku tetap lebih suka jalan kaki. Endmin, bukankah menemukan hal-hal kecil di sepanjang jalan jauh lebih menyenangkan daripada langsung sampai di tujuan?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_01",
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Satu, dua, tiga, empat .... Hah? Endmin, lihat kapak baru berkilau yang kubawa ke Dijiang tidak? Tadi ada di sini .... Aduh, pasti ketinggalan di ruang latihan!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_02",
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Ini belatiku, “Plum Madu”, paluku, “Kepala Besi”, dan gergaji mesinku, “Penghancur Putar Kecepatan Super”! Apa? Menurutmu namanya aneh? Hmph! Bukan aku yang memilihnya—mereka sendiri yang memberitahuku!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_03",
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Hari ini, di kantin ada meatloaf, sup kacang-kacangan, kue pastri, dan risotto. Oh, dan ssshh ... ada menu rahasia pai krim superlezat. Mau coba? Tapi jangan bilang siapa-siapa, ya. Ini rahasia besar!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_give_01",
+        "title": "Menawarkan Hadiah",
+        "text": "Endmin, Endmin! Aku punya hadiah untukmu! Tidaaak, aku tidak asal pungut batu sembarangan dari tanah, kok!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_recv_01",
+        "title": "Menerima Hadiah",
+        "text": "Oh-oh-oh! Ini kelihatan keren! Aku akan menukarnya dengan wafel madu .... Hah? Ini hadiah? Aww, kau baik sekali!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line01",
+        "title": "Dialog Kepercayaan 1",
+        "text": "Dulu, di Rhodes Island, semua orang bilang Originium Arts milikku superkuat, dan aku harus terus berlatih untuk mengendalikannya. Jadi aku melakukannya! Setiap hari! Begitulah caraku bisa membantumu dan Endfield! Jadi ... apa aku berguna?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line02",
+        "title": "Dialog Kepercayaan 2",
+        "text": "Prosedur taktis, hierarki komando, astaga. Aku disuruh menghafal itu semua? Kenapa tidak ... begini, kau saja yang memikirkan hal-hal bikin pusing itu dan aku fokus rawr-rawr melawan musuh? Dengan begitu, semua waktu latihannya bisa kupakai untuk tidur siang! Mau, ya, Endmin, plis!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line03",
+        "title": "Dialog Kepercayaan 3",
+        "text": "Aku mau bilang sesuatu! Aku makan wafel madu buat sarapan, lalu makan satu lagi buat makan siang, dan satu lagi buat makan malam. Aku tak pernah bosan. Kau mirip wafel madu, tahu. Aku melihatmu saat pagi hari, melihatmu lagi saat siang hari, dan aku masih ingin terus ikut denganmu saat malam hari."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line04",
+        "title": "Dialog Kepercayaan 4",
+        "text": "Aku bisa menghafal bentuk senjata, rasanya di tanganku, dan suaranya saat kuayunkan. Lalu, aku tinggal memikirkannya, dan bam! Senjata itu langsung ada di tanganku. Keren ‘kan? Kalau aku bisa memikirkanmu dan kau langsung muncul di sebelahku juga, Endmin ... pasti bakal superkeren, ‘kan?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line05",
+        "title": "Dialog Kepercayaan 5",
+        "text": "Bantal empuk ini untukmu. Aku juga mengambil selimut yang supernyaman .... Kenapa? Kaubilang kalau aku bersikap baik, tidak malas-malasan, tidak mencuri camilan, aku boleh memindahkan sarang kecilku ke sebelah sarangmu! Janji nggak boleh ditarik! Sekarang, tolong bantu aku pindahan, ya, pliiiis!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line01",
+        "title": "Obrolan 1",
+        "text": "Endmin, kalau sedang senggang, ayo kita jalan-jalan berdua! Lupakan pekerjaan, kita akan menjelajahi tempat-tempat rahasia yang indah. Kau bekerja terlalu keras, sesekali harus bersantai juga, dong?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line02",
+        "title": "Obrolan 2",
+        "text": "Sebelum bergabung dengan Endfield, aku selalu dengar ceritamu dan Endfield ke mana pun aku pergi. Makin banyak yang kulihat, aku makin paham betapa kerasnya usahamu untuk Talos-II .... Waktu itu kau masih tidur, jadi aku membantu orang-orang seperti yang akan kaulakukan. Begitulah caraku dapat banyak sekali teman baik! Sekarang, seluruh planet besar ini penuh dengan teman-temanku!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line03",
+        "title": "Obrolan 3",
+        "text": "Endmin, kau sedang sibuk? Sedang lihat apa? Apa itu laporan pertarunganku? Coba lihat, coba lihat! Bagaimana hasilnya? Aku hebat tidak? Pasti aku kelihatan superkeren, ‘kan? Jadiii ... aku dapat wafel madu tambahan? Kuanggap iya! Horeee! Asyik!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line04",
+        "title": "Obrolan 4",
+        "text": "Baumu entah kenapa rasanya tak asing ... tapi aku tak tahu bau apa itu. Mirip aroma wafel madu yang baru dipanggang, api tempaan yang hangat, atau tempat tidur yang nyaman di hari yang dingin. Menenangkan sekali .... Aku pernah menciumnya di mana, ya ...?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line05",
+        "title": "Obrolan 5",
+        "text": "Waktu perutku keroncongan, wafel madu rasanya jadi dua kali lebih enak. Waktu aku mengantuk, selimutku rasanya jauh lebih hangat. Persis seperti kata Nona Warfarin: makin jauh aku mengembara, rumah akan terasa makin jelas di hatiku. Jadi, aku berjalan melintasi Talos-II ... dan akhirnya, aku menemukanmu. ... Hah? Tapi, kau kan ada di sini, Endmin. Tentu saja aku bisa melihatmu dengan jelas ...."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line01",
+        "title": "Topik: Rhodes Island",
+        "text": "Sebelum aku meninggalkan Rhodes Island, Nona Warfarin berpesan agar aku tidak membicarakannya dengan orang asing. Dia bilang ada misi baru di Talos-II, jadi makin sedikit orang yang tahu, makin aman. Hmm .... Nona Warfarin kadang bisa sangat serius. Gawat ... kuharap aku tidak bicara terlalu banyak ...."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line02",
+        "title": "Topik: Keahlian Memasak Da Pan",
+        "text": "Pak Da Pan memasak seperti penyihir bersenjata sendok! Semua masakannya enaaak banget! Masakan pedasnya PALING MAKNYUS! Suatu kali, dia membuatkanku wafel madu pedas dan dia bilang, “Kalau makan ini, kau bakal cegukan api!” Kumakan beneran, tuh. Waaah, itu trik sulap terbaik yang pernah ada!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line03",
+        "title": "Topik: Petualangan di Alam Liar",
+        "text": "Berkeliaran di alam liar itu super-berbahaya! Ada orang jahat, cuaca buruk ... tapi yang paling gawat adalah perut kosong. Soalnya tak ada makanan berarti tak ada tenaga. Tak ada tenaga berarti tidak bisa bertarung atau jalan lurus .... Kelaparan itu super duper gawat. Saking gawatnya sampai tak bisa kaulupakan. Jadi, sekarang aku selalu mengisi tasku sampai superpenuh sebelum pergi ke mana pun!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line04",
+        "title": "Topik: Teman Perjalanan",
+        "text": "Aku suka membawa semua senjataku ke mana pun aku pergi. Di alam liar, mereka sahabat terbaikku. Saat masalah datang, mereka selalu melindungiku dan jadi kekuatan tambahan! Sekarang, karena aku sudah tak perlu membawa semuanya di punggungku, aku bisa bawa lebih banyak makanan lezat!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line05",
+        "title": "Topik: Order of Steel Oath",
+        "text": "Aku sudah lamaaaaa sekali tinggal bersama para Oathkeeper di utara. Mereka sangat mirip dengan Endfield—penuh dengan orang-orang kuat yang semuanya mengejar sesuatu yang besar. Mereka tak punya Dijiang, tapi mereka punya Forgefane setinggi gunung. Para pandai besi selalu memukul dan menempa, membuat berbagai macam senjata luar biasa. Aku suka sekali tidur di sana ... dentang dan gemerincingnya selalu membuatku mimpi indah."
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_common_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Oooh ... baunya enak banget. Mau coba intip sedikit?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_valub_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada harta karun! Ke arah sana!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_locked_01",
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Mungkin kita harus tambah persiapan lagi. Misalnya, bawa lebih banyak makanan lezat?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_danger_01",
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Ada musuh kuat di depan. Mau aku dulu yang maju untuk icip-icip sedikit?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_01",
+        "title": "Penambangan 1",
+        "text": "Wah, kau suka sekali mengumpulkan batu, ya!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_echo2_01",
+        "title": "Penambangan 2",
+        "text": "Batu-batu ini harta karun kecil, ‘kan? Kalau begitu, aku juga mau bantu!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_treasure_valub_01",
+        "title": "Membuka Kerat",
+        "text": "Barang-barang ini semuanya super-berguna! Kita beruntung sekali, ya!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_etherium_01",
+        "title": "Mendapatkan Aurylene",
+        "text": "Benda berkilau ini “Aurylene”, ‘kan? Aku lihat banyak sekali di alam liar. Harusnya kuambil semuanya!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_blight_break_01",
+        "title": "Menyingkirkan Hawar",
+        "text": "Beres-beres selesai! Sekarang wafel madunya jadi dua kali lebih menggoda!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_rest_01",
+        "title": "Istirahat",
+        "text": "Fiuh! Istirahat yang cukup sama nikmatnya dengan makan besar!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_using_01",
+        "title": "Penggunaan Taktis 1",
+        "text": "Cepat! Gigit sedikit!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_getheal_01",
+        "title": "Penggunaan Taktis 2",
+        "text": "Aku hidup lagi! Keren!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_danger_01",
+        "title": "Peringatan Bahaya",
+        "text": "Cepat, menghindar!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_hurt_lowhp_01",
+        "title": "Cedera",
+        "text": "Sini, mendekat kalau berani. Kugigit kau!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_dead_01",
+        "title": "0 HP",
+        "text": "Musuh-musuh itu ... kuserahkan kepadamu sekarang ...."
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_01",
+        "title": "Penyemangat Tim 1",
+        "text": "Wah, tadi itu keren banget!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_02",
+        "title": "Penyemangat Tim 2",
+        "text": "Kalian kuat sekali!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_01",
+        "title": "Respons Penyemangat 1",
+        "text": "Hehe, sebenarnya aku ini super duper kuat!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_02",
+        "title": "Respons Penyemangat 2",
+        "text": "Kau bisa mengandalkanku, tak masalah!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_01",
+        "title": "Mulai Pertarungan 1",
+        "text": "Skuad camilan Kay, ayo kita kunyah!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_echo2_01",
+        "title": "Mulai Pertarungan 2",
+        "text": "Oke, Kay, saatnya fokus!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_01",
+        "title": "Menang Pertarungan 1",
+        "text": "Begitulah! Kita mengalahkan mereka bersama-sama!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_02",
+        "title": "Menang Pertarungan 2",
+        "text": "Kemenangan ini terasa lezat! Habis ini, aku layak dapat wafel!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_echo2_01",
+        "title": "Menang Pertarungan 3",
+        "text": "Aku juga ikut membantu, ‘kan?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_hard_01",
+        "title": "Menang Pertarungan 4",
+        "text": "Benar-benar alot. Jadi ... kapan kita makan? Pasti perut kalian sudah keroncongan!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_battle_defeat_01",
+        "title": "Kalah Bertarung",
+        "text": "Untung semuanya berhasil lolos. Oke, isi perut dulu, baru kita coba lagi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Maju!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Duar! Paw!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_01",
+        "title": "Skill Tarung 1",
+        "text": "Jangan kabur!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_02",
+        "title": "Skill Tarung 2",
+        "text": "Diam di situ, Mangsaku!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_03",
+        "title": "Skill Tarung 3",
+        "text": "Biar kuurus!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_01",
+        "title": "Skill Kombo Siap 1",
+        "text": "Siap menerjang!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_02",
+        "title": "Skill Kombo Siap 2",
+        "text": "Kay sudah siap!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_01",
+        "title": "Penggunaan Kombo 1",
+        "text": "Dadadadada!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_02",
+        "title": "Penggunaan Kombo 2",
+        "text": "Ha-yah!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_01",
+        "title": "Penuntas 1",
+        "text": "Ada celah!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_02",
+        "title": "Penuntas 2",
+        "text": "Gigit mereka!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Makan ini!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Serangan madu! Kekuatan penuh!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Kugepengkan kau seperti panekuk!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Saat memasuki pertarungan, Kay mendapatkan 1 tumpuk <@ba.key>Hot Edgy Naives</>.\nTalent <@ba.key>Bottomless Arsenal</> meningkat: Setiap <@ba.key>Senjata</> yang diambil kembali akan memberi seluruh tim tambahan <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>, serta tambahan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>, dan durasinya bertambah <@ba.vup>+{duration:0}</> dtk.",
+      "name": "Wildness Ignited"
+    },
+    "potential2": {
+      "description": "Strength <@ba.vup>+{Str:0}</>, <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{NaturalDamageIncrease:0%}</>.",
+      "name": "Expert Roamer"
+    },
+    "potential3": {
+      "description": "Skill tarung <@ba.key>“Really Heavy Bash”</> diperkuat: Pengganda Bonus DMG per tumpukan <@ba.key>Hot Edgy Naives</> akan meningkat menjadi <@ba.vup>{atk_scale_per_weapon:0.0}</> kali nilai aslinya. Ultimate <@ba.key>“Really Sweet Combi-Bonker!”</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya.",
+      "name": "Picnic Prep"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>“Really Sweet Combi-Bonker!”</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "“Bonkie I Made”"
+    },
+    "potential5": {
+      "description": "Skill kombo <@ba.key>“Really Kwik Smash”</> meningkat: Durasi cooldown <@ba.vup>{coolDown:0}</> dtk. Pengganda DMG meningkat hingga <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya. Pemulihan SP meningkat hingga <@ba.vup>{atb:0.0}</> kali nilai aslinya.",
+      "name": "“Kwikker Smash”"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Kaget?",
+      "author": "LM7",
+      "description": "Kamu selalu tahu persis rasa yang bisa memuaskan rasa ingin tahunya."
+    },
+    "potential3": {
+      "name": "Snapshot Orientasi",
+      "author": "八雲Crack",
+      "description": "“Hentikan tampang sok serius itu! Jangan garing kayak sereal!”"
+    },
+    "potential5": {
+      "name": "Markas Rahasia",
+      "author": "수줍(Sjoop)",
+      "description": "“Sssst. Aku menyembunyikan banyak makanan enak di sini. Cuma kau yang tahu tempat ini. Rahasiakan ini demi aku, ya!”"
+    }
+  }
+}

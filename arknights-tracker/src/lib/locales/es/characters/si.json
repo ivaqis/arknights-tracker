@@ -35,7 +35,7 @@
     },
     "battleSkill": {
       "name": "Reino de pinceladas",
-      "description": "Si inflige <@ba.cryst>DAÑ criogénico</> y aplica <@ba.key>Intención artística</>, <#ba.static>Inmovilización</> e <#ba.crystinflict>Imposición criogénica</> (o <#ba.fireinflict>Imposición de calor</> si hay un operador de elemento <@ba.fire>Calor</> en la <@ba.key>Posición de Equipo 1</>) al objetivo. Después de que un objetivo con <@ba.key>Intención artística</> recibe DAÑ, se registra parte del DAÑ recibido. Cuando termina la duración de <@ba.key>Intención artística</>, crea una ráfaga e inflige <#ba.fixeddamage>DAÑ fijo</> equivalente al DAÑ registrado. Después de lanzar la habilidad, la habilidad de batalla de Si cambia temporalmente a <@ba.key>Trazo inicial</>.\n<@ba.key>Trazo inicial</>: Cuesta <@ba.vup>15</> PH. Si extrae una <@ba.key>Alma de tinta</> de un objetivo con <@ba.key>Intención artística</>. El DAÑ total infligido y los efectos aplicados al <@ba.key>Alma de tinta</> también se infligirán a su anfitrión (dicho objetivo). El <@ba.key>Alma de tinta</> dura tanto como la duración restante de <@ba.key>Intención artística</>. Después de lanzar la habilidad, la habilidad de batalla de Si cambia temporalmente a <@ba.key>Trazo final</>.\n<@ba.key>Trazo final</>: No cuesta PH. Hace que el <@ba.key>Alma de tinta</> desaparezca antes de tiempo. Al desaparecer, el <@ba.key>Alma de tinta</> se desplazará hasta su anfitrión y activará una ráfaga similar a la ráfaga final de <@ba.key>Intención artística</>.\n<@ba.info>Cuando se inflige DAÑ o se aplican efectos al Alma de tinta y el huésped, solo se inflige 1 instancia de DAÑ o se aplica 1 instancia de efecto. Si el huésped es derrotado durante el efecto del Alma de tinta, se enlazará a otro enemigo en combate y le aplicará Intención artística. Si un objetivo con Intención artística es derrotado sin que se le quite el Alma de tinta, el objetivo derrotado soltará un Alma de tinta en su ubicación.</>",
+      "description": "Si inflige <@ba.cryst>DAÑ criogénico</> y aplica <@ba.key>Intención artística</>, <#ba.static>Inmovilización</> e <#ba.crystinflict>Imposición criogénica</> (o <#ba.fireinflict>Imposición de calor</> si hay un operador de elemento <@ba.fire>Calor</> en la <@ba.key>Posición de Equipo 1</>) al objetivo. Después de que un objetivo con <@ba.key>Intención artística</> recibe DAÑ, se registra parte del DAÑ recibido. Cuando termina la duración de <@ba.key>Intención artística</>, crea una ráfaga e inflige <#ba.fixeddamage>DAÑ fijo</> equivalente al DAÑ registrado. Después de lanzar la habilidad, la habilidad de batalla de Si cambia temporalmente a <@ba.key>Trazo inicial</>.\n <@ba.key>Trazo inicial</>: Cuesta <@ba.vup>15</> PH. Si extrae una <@ba.key>Alma de tinta</> de un objetivo con <@ba.key>Intención artística</>. El DAÑ total infligido y los efectos aplicados al <@ba.key>Alma de tinta</> también se infligirán a su anfitrión (dicho objetivo). El <@ba.key>Alma de tinta</> dura tanto como la duración restante de <@ba.key>Intención artística</>. Después de lanzar la habilidad, la habilidad de batalla de Si cambia temporalmente a <@ba.key>Trazo final</>.\n <@ba.key>Trazo final</>: No cuesta PH. Hace que el <@ba.key>Alma de tinta</> desaparezca antes de tiempo. Al desaparecer, el <@ba.key>Alma de tinta</> se desplazará hasta su anfitrión y activará una ráfaga similar a la ráfaga final de <@ba.key>Intención artística</>.\n <@ba.info>Cuando se inflige DAÑ o se aplican efectos al Alma de tinta y el huésped, solo se inflige 1 instancia de DAÑ o se aplica 1 instancia de efecto. Si el huésped es derrotado durante el efecto del Alma de tinta, se enlazará a otro enemigo en combate y le aplicará Intención artística. Esto no reinicia la duración de Intención artística. Si un objetivo con Intención artística es derrotado sin que se le quite el Alma de tinta, el objetivo derrotado soltará un Alma de tinta en su ubicación.</>",
       "dmgMultiplier": "Multiplicador de DAÑ",
       "immobilizationDurationS": "Duración de Inmovilización (s)",
       "artfulIntentDurationS": "Duración de Intención artística (s)",
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Tema: Poder de Feranmut",
-        "text": "La Base de datos de RR. HH. de Endfield tiene problemas. Para la sección de “Habilidades”, hice una lista de doce objetos, incluidas las artes marciales, la literatura, la pintura, la metalúrgica, el derecho, la jardinería... y luego arrojó un error. ¿Qué quieres decir con que tengo demasiadas habilidades? Mira, fracasar ocasionalmente en algo no te las quita. Será mejor que te expliques, ¡o no dejaré esto a un lado!"
+        "text": "La base de datos de RR. HH. de Endfield tiene problemas. Para la sección de “Habilidades”, hice una lista de doce objetos, incluidas las artes marciales, la literatura, la pintura, la metalurgia, el derecho, la jardinería... y luego arrojó un error. ¿Cómo que tengo demasiadas habilidades? Mira, fallar de vez en cuando no significa que pierda mis habilidades. ¡Más te vale explicarte bien, porque no pienso dejar pasar esto!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,19 +541,19 @@
       "name": "Primavera y otoño como tinta"
     },
     "potential2": {
-      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Cuando se lanza, Si gana <@ba.vup> de ATQ + [{potential2_base:0%} + {potential2_enhance:0%} × (las acumulaciones más altas de Imposición de artes <#ba.consume>consumidas</> o <#ba.absorb>absorbidas</> de un solo objetivo)]</> durante <@ba.vup>{potential2_duration:0}</> s. Este efecto no se puede acumular.",
+      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Al lanzarla, Si obtiene ATQ <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%}×(Mayor cantidad de acumulaciones de Imposición de artes <#ba.consume>consumidas</> o <#ba.absorb>absorbidas</> de un solo objetivo)]</> durante <@ba.vup>{potential2_duration:0}</> s. Este efecto no se puede acumular.",
       "name": "Tres marcas profundas en la madera"
     },
     "potential3": {
-      "description": "Máxima <@ba.key>Nadie arruina la diversión</> mejorada: El DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.0}</> veces el original; el efecto de <#ba.enhance>Amp</> aumenta a <@ba.vup>{enhance_final:0.0}</> veces el original.",
+      "description": "Habilidad máxima <@ba.key>Nadie arruina la diversión</> mejorada: El DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.0}</> veces el original; el efecto de <#ba.enhance>Amp</> aumenta a <@ba.vup>{enhance_final:0.0}</> veces el original.",
       "name": "Estudio de músculos y huesos"
     },
     "potential4": {
-      "description": "Máxima <@ba.key>Nadie arruina la diversión</> mejorada: Costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "description": "Habilidad máxima <@ba.key>Nadie arruina la diversión</> mejorada: Costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
       "name": "Perfectamente compuesto en espíritu"
     },
     "potential5": {
-      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Duración del tiempo de reutilización de la habilidad de combo <@ba.vup>{coolDown:0}</> s y el DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.00}</> veces el original. Al activarse, considera que la habilidad de combo <#ba.consume>consumió</> o <#ba.absorb>absorbió</> 1 acumulación adicional de Imposición.",
+      "description": "Habilidad de combo <@ba.key>Plenamente concebido</> mejorada: Tiempo de reutilización de la habilidad de combo <@ba.vup>{coolDown:0}</> s y DAÑ infligido aumenta a <@ba.vup>{atk_scale:0.00}</> veces el original. Al activarse, considera que la habilidad de combo <#ba.consume>consumió</> o <#ba.absorb>absorbió</> 1 acumulación adicional de Imposición.",
       "name": "Pincelada en el blanco del ojo"
     }
   },

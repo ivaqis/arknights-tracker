@@ -253,12 +253,12 @@
       },
       {
         "voId": "chr_0032_lizhiyan_mono_switch_01",
-        "title": "Standing by 1",
+        "title": "Standing By 1",
         "text": "Be of ferrium will, move as a razor's edge. Yinglung wins by momentum."
       },
       {
         "voId": "chr_0032_lizhiyan_mono_switch_02",
-        "title": "Standing by 2",
+        "title": "Standing By 2",
         "text": "Consider me a blade at your command. Point me at where you need me, and I'll strike."
       },
       {
@@ -458,7 +458,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_combat_remind_danger_01",
-        "title": "Warning Teammate",
+        "title": "Danger Warning",
         "text": "Caution! Incoming!"
       },
       {

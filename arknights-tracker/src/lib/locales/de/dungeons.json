@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Verderbnisschatten-Akte: Paukenschlag – Normal",
     "description": "AKTE 01: Erhalten von einem Bestienklauen-Fragment aus den Ruinen. Wir schreiben die Aggression der Bestie vorläufig der Ætherside oder ihren Raubtierinstinkten zu.",
-    "featureDesc": "– Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower015_ex": {
     "name": "Verderbnisschatten-Akte: Paukenschlag – Brutal",
     "description": "AKTE 01: Erhalten von einem Bestienklauen-Fragment aus den Ruinen. Wir schreiben die Aggression der Bestie vorläufig der Ætherside oder ihren Raubtierinstinkten zu.",
-    "featureDesc": "– Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower015_s": {
     "name": "Verderbnisschatten-Akte: Paukenschlag – Schwer",
     "description": "AKTE 01: Erhalten von einem Bestienklauen-Fragment aus den Ruinen. Wir schreiben die Aggression der Bestie vorläufig der Ætherside oder ihren Raubtierinstinkten zu.",
-    "featureDesc": "– Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Blitzcrashs Verderbnisschatten aktiviert seine Raserei nicht.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower016": {
     "name": "Glefenträger-Akte: Yinglung – Normal",
     "description": "AKTE 22: Erhalten aus der persönlichen Waffe eines Mitglieds der YSE. Die Klinge weist mehr als 20 Kerben auf, von denen die meisten aus Verteidigungsmissionen und Sturmangriffen stammen.",
-    "featureDesc": "– Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht. \n– Sämtliche FP-Wiederherstellung und -Regenerierung -50%. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht.\n – Sämtliche FP-Wiederherstellung und -Regenerierung -50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower016_ex": {
     "name": "Glefenträger-Akte: Yinglung – Brutal",
     "description": "AKTE 22: Erhalten aus der persönlichen Waffe eines Mitglieds der YSE. Die Klinge weist mehr als 20 Kerben auf, von denen die meisten aus Verteidigungsmissionen und Sturmangriffen stammen.",
-    "featureDesc": "– Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht. \n– Sämtliche FP-Wiederherstellung und -Regenerierung -50%. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht.\n – Sämtliche FP-Wiederherstellung und -Regenerierung -50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower016_s": {
     "name": "Glefenträger-Akte: Yinglung – Schwer",
     "description": "AKTE 22: Erhalten aus der persönlichen Waffe eines Mitglieds der YSE. Die Klinge weist mehr als 20 Kerben auf, von denen die meisten aus Verteidigungsmissionen und Sturmangriffen stammen.",
-    "featureDesc": "– Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht. \n– Sämtliche FP-Wiederherstellung und -Regenerierung -50%. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf <@ba.vup>700</> erhöht.\n – Sämtliche FP-Wiederherstellung und -Regenerierung -50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower017": {
     "name": "Rächer-Akte: Knochenbrecher – Normal",
     "description": "AKTE 07: Erhalten von einer kruden Knochenbrecher-Waffe, die am Schauplatz eines internen Konflikts zwischen rivalisierenden Klanmitgliedern geborgen wurde. Sie ist ein eindeutiger Beweis für interne Konflikte und Blutfehden.",
-    "featureDesc": "– Technik-Intensität des gesamten Teams <@ba.vup>+100%</>. \n– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Gesamte Technik-Intensität des Teams <@ba.vup>+100%</>.\n – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower017_ex": {
     "name": "Rächer-Akte: Knochenbrecher – Brutal",
     "description": "AKTE 07: Erhalten von einer kruden Knochenbrecher-Waffe, die am Schauplatz eines internen Konflikts zwischen rivalisierenden Klanmitgliedern geborgen wurde. Sie ist ein eindeutiger Beweis für interne Konflikte und Blutfehden.",
-    "featureDesc": "– Technik-Intensität des gesamten Teams <@ba.vup>+100%</>. \n– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Gesamte Technik-Intensität des Teams <@ba.vup>+100%</>.\n – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower017_s": {
     "name": "Rächer-Akte: Knochenbrecher – Schwer",
     "description": "AKTE 07: Erhalten von einer kruden Knochenbrecher-Waffe, die am Schauplatz eines internen Konflikts zwischen rivalisierenden Klanmitgliedern geborgen wurde. Sie ist ein eindeutiger Beweis für interne Konflikte und Blutfehden.",
-    "featureDesc": "– Technik-Intensität des gesamten Teams <@ba.vup>+100%</>. \n– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Gesamte Technik-Intensität des Teams <@ba.vup>+100%</>.\n – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower018": {
     "name": "Bestien-Akte: Qingbo-Palisade – Normal",
     "description": "AKTE 19: Erhalten von einem Bestienkäfig auf der Qingbo-Palisade. Das Gehege wurde aus kaputten Waffen geschmiedet. Bevor die Erbauer der Qingbo-Palisade die Bestien zähmen konnten, mussten sie zunächst die Wildtiere besiegen.",
-    "featureDesc": "– <@ba.vup>+1</> auf die angewendeten Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</>, nachdem der Wolkenstelzer besiegt wurde. \n– <@ba.vup>+1</> auf das angewendete Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</>, nachdem das Federbiest besiegt wurde. \n– Stellt sofort <@ba.vup>+25</> FP wieder her, wenn Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</> verbraucht werden, nachdem Schwerer Skorpio α besiegt wurde. \n– Das Besiegen einer beliebigen Gegnergruppe gewährt den verbleibenden Gegnern +50% LP. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nachdem der Wolkenstelzer besiegt wurde: <@ba.vup>+1</> auf die <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen angewandt.\n – Nachdem das Federbiest besiegt wurde: <@ba.vup>+1</> auf das Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</> angewandt.\n – Nachdem Schwerer Skorpio α besiegt wurde, stellt der Verbrauch von <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen sofort <@ba.vup>+25</> FP wieder her.\n – Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower018_ex": {
     "name": "Bestien-Akte: Qingbo-Palisade – Brutal",
     "description": "AKTE 19: Erhalten von einem Bestienkäfig auf der Qingbo-Palisade. Das Gehege wurde aus kaputten Waffen geschmiedet. Bevor die Erbauer der Qingbo-Palisade die Bestien zähmen konnten, mussten sie zunächst die Wildtiere besiegen.",
-    "featureDesc": "– <@ba.vup>+1</> auf die angewendeten Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</>, nachdem der Wolkenstelzer besiegt wurde. \n– <@ba.vup>+1</> auf das angewendete Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</>, nachdem das Federbiest besiegt wurde. \n– Stellt sofort <@ba.vup>+25</> FP wieder her, wenn Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</> verbraucht werden, nachdem Schwerer Skorpio α besiegt wurde. \n– Das Besiegen einer beliebigen Gegnergruppe gewährt den verbleibenden Gegnern +50% LP. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nachdem der Wolkenstelzer besiegt wurde: <@ba.vup>+1</> auf die <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen angewandt.\n – Nachdem das Federbiest besiegt wurde: <@ba.vup>+1</> auf das Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</> angewandt.\n – Nachdem Schwerer Skorpio α besiegt wurde, stellt der Verbrauch von <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen sofort <@ba.vup>+25</> FP wieder her.\n – Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower018_s": {
     "name": "Bestien-Akte: Qingbo-Palisade – Schwer",
     "description": "AKTE 19: Erhalten von einem Bestienkäfig auf der Qingbo-Palisade. Das Gehege wurde aus kaputten Waffen geschmiedet. Bevor die Erbauer der Qingbo-Palisade die Bestien zähmen konnten, mussten sie zunächst die Wildtiere besiegen.",
-    "featureDesc": "– <@ba.vup>+1</> auf die angewendeten Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</>, nachdem der Wolkenstelzer besiegt wurde. \n– <@ba.vup>+1</> auf das angewendete Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</>, nachdem das Federbiest besiegt wurde. \n– Stellt sofort <@ba.vup>+25</> FP wieder her, wenn Kumulierungen von <@ba.key>Technikkumulierung</> / <@ba.key>Anfälligkeit</> verbraucht werden, nachdem Schwerer Skorpio α besiegt wurde. \n– Das Besiegen einer beliebigen Gegnergruppe gewährt den verbleibenden Gegnern +50% LP. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Nachdem der Wolkenstelzer besiegt wurde: <@ba.vup>+1</> auf die <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen angewandt.\n – Nachdem das Federbiest besiegt wurde: <@ba.vup>+1</> auf das Zustandslevel von <@ba.key>Technikreaktionen</> / <@ba.key>Zertrümmern</> / <@ba.key>Brechen</> angewandt.\n – Nachdem Schwerer Skorpio α besiegt wurde, stellt der Verbrauch von <@ba.key>Technikkumulierungen</> / <@ba.key>Anfälligkeit</>-Kumulierungen sofort <@ba.vup>+25</> FP wieder her.\n – Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +50%.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower019": {
     "name": "Konstrukt-Akte: Geist – Normal",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n – Finstereiches Zorn beginnt mit 3 <@ba.key>Schild-Kumulierung(en)</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower019_ex": {
     "name": "Konstrukt-Akte: Geist – Brutal",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n – Finstereiches Zorn beginnt mit 3 <@ba.key>Schild-Kumulierung(en)</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower019_s": {
     "name": "Konstrukt-Akte: Geist – Schwer",
     "description": "AKTE 50: Erhalten von einem kleinen Schnitzmesser. Der Erschaffer dieser Schnitzerei bearbeitete den Kern des Holzes ganz sanft und verlieh ihm die Fähigkeit, den Wald bis heute zu beschützen.",
-    "featureDesc": "– Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>. \n– Finstereiches Zorn beginnt mit 3 <@ba.key>Schildkumulierung(en)</>. \n\n<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n – Finstereiches Zorn beginnt mit 3 <@ba.key>Schild-Kumulierung(en)</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower020": {
     "name": "Verteidigung-Akte: Schild – Normal",
     "description": "AKTE 99: Erhalten von einem zersplitterten Schild, dessen strukturelle Einfachheit an einen Insektenpanzer erinnert. Dieses Exemplar wurde mehrfach geschmiedet und erzeugt ein dröhnendes Echo des Krieges.",
-    "featureDesc": "<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower020_ex": {
     "name": "Verteidigung-Akte: Schild – Brutal",
     "description": "AKTE 99: Erhalten von einem zersplitterten Schild, dessen strukturelle Einfachheit an einen Insektenpanzer erinnert. Dieses Exemplar wurde mehrfach geschmiedet und erzeugt ein dröhnendes Echo des Krieges.",
-    "featureDesc": "<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_battletower020_s": {
     "name": "Verteidigung-Akte: Schild – Schwer",
     "description": "AKTE 99: Erhalten von einem zersplitterten Schild, dessen strukturelle Einfachheit an einen Insektenpanzer erinnert. Dieses Exemplar wurde mehrfach geschmiedet und erzeugt ein dröhnendes Echo des Krieges.",
-    "featureDesc": "<@ba.info>– Gegner haben bessere Werte.</> \n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower021": {
+    "name": "Dominanz-Akte: Heuler-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 17. Der Klippenheuler riss den Schädel eines anderen Klippenheulers auf. Der gebleichte Schädel wurde dessen neue Krone und ein Symbol für seine Dominanz. Nur einer kann über den Berg herrschen.",
+    "featureDesc": "– FP-Regenerierung: -30%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "Dominanz-Akte: Heuler-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 17. Der Klippenheuler riss den Schädel eines anderen Klippenheulers auf. Der gebleichte Schädel wurde dessen neue Krone und ein Symbol für seine Dominanz. Nur einer kann über den Berg herrschen.",
+    "featureDesc": "– FP-Regenerierung: -30%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "Dominanz-Akte: Heuler-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 17. Der Klippenheuler riss den Schädel eines anderen Klippenheulers auf. Der gebleichte Schädel wurde dessen neue Krone und ein Symbol für seine Dominanz. Nur einer kann über den Berg herrschen.",
+    "featureDesc": "– FP-Regenerierung: -30%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower022": {
+    "name": "Kodex-Akte: Maßnehmer-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 653. Die Maßnahme mit Mähne … Hüter des Gesetzes … und Vermesser des tintengetränkten Reichs. Von seinem Meister dazu bestimmt, durch die sterblichen Lande zu streifen, die den Himmel berühren, um die Welt zu richten und ihr ein Maß an Ordnung aufzuerlegen.",
+    "featureDesc": "– Immer, wenn die Maßnahme mit Mähne Fertigkeits-SDN erleidet, erleidet sie zusätzlich <@ba.vup>5</> Taumeln. Der Effekt wird nur einmal alle 0.05 Sek. ausgelöst.\n– Wird die Maßnahme mit Mähne zum Taumeln gebracht, setzt die SDN-Reduzierung durch ihre Jadekugel-Sphären aus.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "Kodex-Akte: Maßnehmer-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 653. Die Maßnahme mit Mähne … Hüter des Gesetzes … und Vermesser des tintengetränkten Reichs. Von seinem Meister dazu bestimmt, durch die sterblichen Lande zu streifen, die den Himmel berühren, um die Welt zu richten und ihr ein Maß an Ordnung aufzuerlegen.",
+    "featureDesc": "– Immer, wenn die Maßnahme mit Mähne Fertigkeits-SDN erleidet, erleidet sie zusätzlich <@ba.vup>5</> Taumeln. Der Effekt wird nur einmal alle 0.05 Sek. ausgelöst.\n– Wird die Maßnahme mit Mähne zum Taumeln gebracht, setzt die SDN-Reduzierung durch ihre Jadekugel-Sphären aus.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "Kodex-Akte: Maßnehmer-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 653. Die Maßnahme mit Mähne … Hüter des Gesetzes … und Vermesser des tintengetränkten Reichs. Von seinem Meister dazu bestimmt, durch die sterblichen Lande zu streifen, die den Himmel berühren, um die Welt zu richten und ihr ein Maß an Ordnung aufzuerlegen.",
+    "featureDesc": "– Immer, wenn die Maßnahme mit Mähne Fertigkeits-SDN erleidet, erleidet sie zusätzlich <@ba.vup>5</> Taumeln. Der Effekt wird nur einmal alle 0.05 Sek. ausgelöst.\n– Wird die Maßnahme mit Mähne zum Taumeln gebracht, setzt die SDN-Reduzierung durch ihre Jadekugel-Sphären aus.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower023": {
+    "name": "Nachgezeichnet-Akte: Jäger-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 23. Durch die tiefen Wälder und in großer Eile jagen die Schriftrollen der Taktiken den sich ständig wandelnden Wesen und Bestien hinterher … Niemand darf das bemalte Reich verderben.",
+    "featureDesc": "– Nachdem eine beliebige Gruppe von Gegnern besiegt wurde, können alle Operatoren ihre Ultimative Fertigkeit nach dem Wirken einer Ultimativen Fertigkeit einmal ohne Kosten wirken.\n– Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +20%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "Nachgezeichnet-Akte: Jäger-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 23. Durch die tiefen Wälder und in großer Eile jagen die Schriftrollen der Taktiken den sich ständig wandelnden Wesen und Bestien hinterher … Niemand darf das bemalte Reich verderben.",
+    "featureDesc": "– Nachdem eine beliebige Gruppe von Gegnern besiegt wurde, können alle Operatoren ihre Ultimative Fertigkeit nach dem Wirken einer Ultimativen Fertigkeit einmal ohne Kosten wirken.\n– Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +20%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "Nachgezeichnet-Akte: Jäger-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 23. Durch die tiefen Wälder und in großer Eile jagen die Schriftrollen der Taktiken den sich ständig wandelnden Wesen und Bestien hinterher … Niemand darf das bemalte Reich verderben.",
+    "featureDesc": "– Nachdem eine beliebige Gruppe von Gegnern besiegt wurde, können alle Operatoren ihre Ultimative Fertigkeit nach dem Wirken einer Ultimativen Fertigkeit einmal ohne Kosten wirken.\n– Wird ein Gegnerset besiegt, erhalten die verbleibenden Gegner LP +20%.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower024": {
+    "name": "Belagerung-Akte: Schwere-Rüstung-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 37. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Er kämpfte mit großen gepanzerten Fäusten, die es vermochten, die Mauern der Festung zu durchschlagen. Er wurde durch gezieltes Sperrfeuer getötet.",
+    "featureDesc": "– Für je 1 verbrauchte oder absorbierte <@ba.key>Technikkumulierung</> wird das Ziel mit 1 Kumulierung <@ba.key>Anfälligkeit</> belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n– Für je 1 verbrauchte oder absorbierte Kumulierung <@ba.key>Anfälligkeit</> wird das Ziel mit 1 <@ba.key>Technikkumulierung</> (des ersten in diesem Kampf angewendeten Elements) belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "Belagerung-Akte: Schwere-Rüstung-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 37. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Er kämpfte mit großen gepanzerten Fäusten, die es vermochten, die Mauern der Festung zu durchschlagen. Er wurde durch gezieltes Sperrfeuer getötet.",
+    "featureDesc": "– Für je 1 verbrauchte oder absorbierte <@ba.key>Technikkumulierung</> wird das Ziel mit 1 Kumulierung <@ba.key>Anfälligkeit</> belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n– Für je 1 verbrauchte oder absorbierte Kumulierung <@ba.key>Anfälligkeit</> wird das Ziel mit 1 <@ba.key>Technikkumulierung</> (des ersten in diesem Kampf angewendeten Elements) belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "Belagerung-Akte: Schwere-Rüstung-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 37. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Er kämpfte mit großen gepanzerten Fäusten, die es vermochten, die Mauern der Festung zu durchschlagen. Er wurde durch gezieltes Sperrfeuer getötet.",
+    "featureDesc": "– Für je 1 verbrauchte oder absorbierte <@ba.key>Technikkumulierung</> wird das Ziel mit 1 Kumulierung <@ba.key>Anfälligkeit</> belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n– Für je 1 verbrauchte oder absorbierte Kumulierung <@ba.key>Anfälligkeit</> wird das Ziel mit 1 <@ba.key>Technikkumulierung</> (des ersten in diesem Kampf angewendeten Elements) belegt und es werden <@ba.vup>10</> FP wiederhergestellt.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower025": {
+    "name": "Durchbohrt-Akte: Balliste-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 38. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Seine großen Bolzen konnten ganze Hügelkuppen durchdringen. Er wurde von einem Koloss zertrümmert und niedergestreckt.",
+    "featureDesc": "– Verursachter Kombofertigkeits-SDN <@ba.vup>+50%</>.\n– Wird eine Kombofertigkeit gewirkt, erhält das gesamte Team Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+4%</> (max. Kumulierungen dieses Effekts: 40) und stellt <@ba.vup>10</> FP wieder her.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "Durchbohrt-Akte: Balliste-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 38. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Seine großen Bolzen konnten ganze Hügelkuppen durchdringen. Er wurde von einem Koloss zertrümmert und niedergestreckt.",
+    "featureDesc": "– Verursachter Kombofertigkeits-SDN <@ba.vup>+50%</>.\n– Wird eine Kombofertigkeit gewirkt, erhält das gesamte Team Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+4%</> (max. Kumulierungen dieses Effekts: 40) und stellt <@ba.vup>10</> FP wieder her.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "Durchbohrt-Akte: Balliste-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 38. Ein Krieger, der einst Kriegsherr Jakub verteidigte. Seine großen Bolzen konnten ganze Hügelkuppen durchdringen. Er wurde von einem Koloss zertrümmert und niedergestreckt.",
+    "featureDesc": "– Verursachter Kombofertigkeits-SDN <@ba.vup>+50%</>.\n– Wird eine Kombofertigkeit gewirkt, erhält das gesamte Team Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+4%</> (max. Kumulierungen dieses Effekts: 40) und stellt <@ba.vup>10</> FP wieder her.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower026": {
+    "name": "Zerstörung-Akte: Æthillu-N",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 66. Ein Æthillu, der sich weigert, sich aufzulösen. Seine verdrehte, kämpfende Gestalt wurde eingefangen und dokumentiert.",
+    "featureDesc": "– Ein besiegter Æthillu erwacht nach einer Weile wieder zum Leben (er kann nur einmal wiederbelebt werden). Werden innerhalb dieser Zeit alle Æthillu besiegt, erwacht keiner von ihnen wieder zum Leben.\n– Die Æthillu sind immun gegen von nicht gesteuerten Operatoren verursachten Standardangriff-SDN.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "Zerstörung-Akte: Æthillu-B",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 66. Ein Æthillu, der sich weigert, sich aufzulösen. Seine verdrehte, kämpfende Gestalt wurde eingefangen und dokumentiert.",
+    "featureDesc": "– Ein besiegter Æthillu erwacht nach einer Weile wieder zum Leben (er kann nur einmal wiederbelebt werden). Werden innerhalb dieser Zeit alle Æthillu besiegt, erwacht keiner von ihnen wieder zum Leben.\n– Die Æthillu sind immun gegen von nicht gesteuerten Operatoren verursachten Standardangriff-SDN.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "Zerstörung-Akte: Æthillu-S",
+    "description": "Geborgen aus dem beschädigten Datenspeicher Nr. 66. Ein Æthillu, der sich weigert, sich aufzulösen. Seine verdrehte, kämpfende Gestalt wurde eingefangen und dokumentiert.",
+    "featureDesc": "– Ein besiegter Æthillu erwacht nach einer Weile wieder zum Leben (er kann nur einmal wiederbelebt werden). Werden innerhalb dieser Zeit alle Æthillu besiegt, erwacht keiner von ihnen wieder zum Leben.\n– Die Æthillu sind immun gegen von nicht gesteuerten Operatoren verursachten Standardangriff-SDN.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
   },
   "indie_contract001": {
     "name": "Versuchseinsatz: Rückzündung",
@@ -305,9 +395,9 @@
     "featureDesc": "– Die Gegner sind verschiedene Arten von Aggeloi.\n– Manche Gegner belegen Operatoren mit Kryo. Ein Operator, der 4 Kumulierungen Kryo erleidet, erstarrt."
   },
   "indie_contract002": {
-    "name": "Versuchseinsatz: Indigo",
+    "name": "Versuchseinsatz Indigo",
     "description": "– Der Einsatz umfasst 3 aufeinanderfolgende Gegnerwellen, die bekämpft werden müssen. Besiege alle Gegnerwellen, um den Einsatz abzuschließen.\n– Zwischen den Wellen werden Heilmassen verfügbar. Berühre sie, um die LP aller Teammitglieder wiederherzustellen.\n– Zwischen den Wellen ereignet sich eine Erholungsphase, während der die Operatoren weiterhin als im Kampf befindlich gelten.\n– Der Einsatz hat einen Countdown-Timer. Sobald der Timer endet oder die LP aller Operatoren im Team auf NULL sinken, wird der Einsatz unterbrochen.\n– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.",
-    "featureDesc": "– Zu den Gegnern zählen verschiedene Verderbnisschatten, Geschöpfe der Hexerei, wilde Bestien und Cangzei-Piraten wie Wolkenvernichter.\n- Du kannst Gegner mit Schild-Kumulierungen weiterhin mit Anfälligkeit, Technikkumulierungen, Physischen Zuständen und Technikreaktionen belegen."
+    "featureDesc": "– Zu den Gegnern zählen verschiedene Verderbnisschatten, Geschöpfe der Hexerei, wilde Bestien und Wolkenvernichter (Cangzei-Piraten).\nGegner mit Schild-Kumulierungen können weiterhin mit Anfälligkeit, Technikkumulierungen, Physischen Zuständen und Technikreaktionen belegt werden."
   },
   "indie_hard001": {
     "name": "Wütende Schilde",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Wildes Gemetzel der Schatten",
     "description": "Sich windende Klauen wilder Bestien reckten sich zuerst aus den Schatten hervor. Später erfuhren wir, dass das gnadenlose Licht seine Spuren in ihrem wilden Wesen hinterlassen hatte.",
-    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>5</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet sein <@ba.key>ätherischer</> Zustand. Die Gegner greifen dann gemeinsam an.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>5</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet der <@ba.key>ätherische</> Zustand des Wüstlingsbestie-Verderbnisschattens. Die Gegner greifen dann gemeinsam an.\n\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
   },
   "indie_hard026_s": {
     "name": "Wildes Gemetzel der Schatten: Tortur",
     "description": "Sich windende Klauen wilder Bestien reckten sich zuerst aus den Schatten hervor. Später erfuhren wir, dass das gnadenlose Licht seine Spuren in ihrem wilden Wesen hinterlassen hatte.",
-    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>7</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet sein <@ba.key>ätherischer</> Zustand. Die Gegner greifen dann gemeinsam an.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>7</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet der <@ba.key>ätherische</> Zustand des Wüstlingsbestie-Verderbnisschattens. Die Gegner greifen dann gemeinsam an.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
   },
   "indie_hard027": {
     "name": "Lichtbogen der Schattenflamme",
@@ -622,12 +712,12 @@
   "indie_hard032": {
     "name": "Wuchernder Hass",
     "description": "Mögen die Wurzeln gen Himmel greifen, möge sich der Hass im Land ausbreiten … Und möge die durch Jahre der Verlassenheit entbrannte Wut in jeder Legende widerhallen.",
-    "featureDesc": " – Nach Kampfbeginn werden die anfänglichen FP der Operatoren auf 400 erhöht.\n – Finstereiches Zorn wechselt regelmäßig in den Aufladezustand und erhält eine große Anzahl an <@ba.key>Schild-Kumulierungen</>. Sobald das Aufladen abgeschlossen ist, setzt er seine ultimative Fertigkeit ein, die allen Operatoren massiven SDN zufügt. Entferne alle <@ba.key>Schild-Kumulierungen</>, um den Aufladezustand zu unterbrechen.\n – Wenn Finstereiches Zorn in den Aufladezustand wechselt, beschwört er außerdem 4 Schnitzkunst-Wanderer. Nachdem die <@ba.key>Schild-Kumulierungen</> eines Schnitzkunst-Wanderers entfernt wurden, verschwindet er sofort und stellt für die Operatoren 200 FP wieder her.\n – Solange Finstereiches Zorn durch <@ba.key>Schildkumulierung(en)</> geschützt ist, <@ba.key>haben Operatoren keine FP-Regenerierung und ihre Abschlussangriffe sowie Wuchtschläge stellen keine FP wieder her</>.\n\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+    "featureDesc": "– Nach Kampfbeginn werden die max. FP der Operatoren auf 400 erhöht.\n– Finstereiches Zorn wechselt regelmäßig in den Aufladezustand und erhält eine große Anzahl an <@ba.key>Schild-Kumulierungen</>. Sobald das Aufladen abgeschlossen ist, setzt er seine ultimative Fertigkeit ein, die allen Operatoren massiven SDN zufügt. Entferne alle <@ba.key>Schild-Kumulierungen</>, um den Aufladezustand zu unterbrechen.\n– Wenn Finstereiches Zorn in den Aufladezustand wechselt, beschwört er außerdem 4 Schnitzkunst-Wanderer. Nachdem die <@ba.key>Schild-Kumulierungen</> eines Schnitzkunst-Wanderers entfernt wurden, verschwindet er sofort und stellt für die Operatoren 200 FP wieder her.\n– Solange Finstereiches Zorn durch <@ba.key>Schildkumulierung(en)</> geschützt ist, <@ba.key>haben Operatoren keine FP-Regenerierung und ihre Abschlussangriffe sowie Wuchtschläge stellen keine FP wieder her</>.\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
   },
   "indie_hard032_s": {
     "name": "Wuchernder Hass: Tortur",
     "description": "Mögen die Wurzeln gen Himmel greifen, möge sich der Hass im Land ausbreiten … Und möge die durch Jahre der Verlassenheit entbrannte Wut in jeder Legende widerhallen.",
-    "featureDesc": " – Nach Kampfbeginn werden die anfänglichen FP der Operatoren auf 400 erhöht. \n – Finstereiches Zorn wechselt regelmäßig in den Aufladezustand und erhält eine große Anzahl an <@ba.key>Schild-Kumulierungen</>. Sobald das Aufladen abgeschlossen ist, setzt er seine ultimative Fertigkeit ein, die allen Operatoren massiven SDN zufügt. Entferne alle <@ba.key>Schild-Kumulierungen</>, um den Aufladezustand zu unterbrechen. \n – Wenn Finstereiches Zorn in den Aufladezustand wechselt, beschwört er außerdem 4 Schnitzkunst-Wanderer. Nachdem die <@ba.key>Schild-Kumulierungen</> eines Schnitzkunst-Wanderers entfernt wurden, verschwindet er sofort und stellt für die Operatoren 200 FP wieder her. \n – Solange Finstereiches Zorn durch <@ba.key>Schildkumulierung(en)</> geschützt ist, <@ba.key>haben Operatoren keine FP-Regenerierung und ihre Abschlussangriffe sowie Wuchtschläge stellen keine FP wieder her.</> Finstereiches Zorn sammelt außerdem nach und nach immer mehr <@ba.key>Schildkumulierungen</> an. \n\n<@ba.info> – Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+    "featureDesc": " – Nach Kampfbeginn werden die max. FP der Operatoren auf 400 erhöht. \n – Finstereiches Zorn wechselt regelmäßig in den Aufladezustand und erhält eine große Anzahl an <@ba.key>Schild-Kumulierungen</>. Sobald das Aufladen abgeschlossen ist, setzt er seine ultimative Fertigkeit ein, die allen Operatoren massiven SDN zufügt. Entferne alle <@ba.key>Schild-Kumulierungen</>, um den Aufladezustand zu unterbrechen. \n – Wenn Finstereiches Zorn in den Aufladezustand wechselt, beschwört er außerdem 4 Schnitzkunst-Wanderer. Nachdem die <@ba.key>Schild-Kumulierungen</> eines Schnitzkunst-Wanderers entfernt wurden, verschwindet er sofort und stellt für die Operatoren 200 FP wieder her. \n – Solange Finstereiches Zorn durch <@ba.key>Schildkumulierung(en)</> geschützt ist, <@ba.key>haben Operatoren keine FP-Regenerierung und ihre Abschlussangriffe sowie Wuchtschläge stellen keine FP wieder her.</> Finstereiches Zorn sammelt außerdem nach und nach immer mehr <@ba.key>Schildkumulierungen</> an. \n\n<@ba.info> – Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
   },
   "indie_hard033": {
     "name": "Grabende Viecher",
@@ -638,5 +728,85 @@
     "name": "Grabende Viecher: Tortur",
     "description": "Die kalte und dunkle Zeit ist vorbei. Die Tiere regen sich in ihrem Winterschlaf und rufen sich zu … Sie sind eine Heerschar, und sie erwachen.",
     "featureDesc": " – Vorsicht! Der Nebel fügt allen Operatoren <@ba.key>fortlaufend steigenden SDN</> zu. <@ba.key>Der Nebel-SDN ist außerdem deutlich erhöht.</>\n – Die Schnitzkunst-Schnecke gräbt sich in den Boden und stellt regelmäßig alle ihre <@ba.key>Schildkumulierungen</> wieder her. Das Besiegen einer Schnitzkunst-Schnecke verringert vorübergehend den Nebel-SDN.\n – Nach Kampfbeginn verliert 1 zufällige Schnitzkunst-Schnecke alle ihre <@ba.key>Schild-Kumulierungen</> und stellt sie nicht wieder her. Wird sie besiegt, verliert 1 zufällige Schnitzkunst-Schnecke alle ihre <@ba.key>Schild-Kumulierungen</> und stellt sie nicht wieder her.\n\n<@ba.info> – Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Die Verruchten: Triaggelos I",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Die Verruchten: Triaggelos II",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Die Verruchten: Triaggelos III",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Die Verruchten: Triaggelos IV",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n – Wenn Triaggelos sich erholt, erhält er einen dauerhaften Bonus auf seine max. LP und seinen max. Taumeln-Wert.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Die Verruchten: Triaggelos V",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n – Wenn Triaggelos sich erholt, erhält er einen dauerhaften Bonus auf seine max. LP und seinen max. Taumeln-Wert.\n – Wenn ein Operator <@ba.key>3</>-mal eine Kampffertigkeit und eine Kombofertigkeit einsetzt, feuert Triaggelos <@ba.key>1</> Meteor auf den gesteuerten Operator.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Die Verruchten: Triaggelos VI",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n – Wenn Triaggelos sich erholt, erhält er einen dauerhaften Bonus auf seine max. LP und seinen max. Taumeln-Wert.\n – Wenn ein Operator <@ba.key>3</>-mal eine Kampffertigkeit und eine Kombofertigkeit einsetzt, feuert Triaggelos <@ba.key>1</> Meteor auf den gesteuerten Operator.\n – In seiner <@ba.key>Täuschungsform</> werden die Fertigkeiten von Triaggelos mächtiger.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Die Verruchten: Triaggelos VII",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n – Wenn Triaggelos sich erholt, erhält er einen dauerhaften Bonus auf seine max. LP und seinen max. Taumeln-Wert.\n – Wenn ein Operator <@ba.key>3</>-mal eine Kampffertigkeit und eine Kombofertigkeit einsetzt, feuert Triaggelos <@ba.key>1</> Meteor auf den gesteuerten Operator.\n – In seiner <@ba.key>Täuschungsform</> werden die Fertigkeiten von Triaggelos mächtiger.\n – Wenn Triaggelos <@ba.key>3</> Meteore abgefeuert hat, wirkt er seine ultimative Fertigkeit, die dem gesteuerten Operator massiven SDN zufügt. Diesem SDN kann man nicht ausweichen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Die Verruchten: Triaggelos VIII",
+    "description": "",
+    "featureDesc": " – Neue Aktion für die Einfachen Werkzeuge: Wenn du die Schaltfläche „Einfache Werkzeuge“ drückst, wird ein <@ba.key>Originium-Setzling</> an der Position des gesteuerten Operators erschaffen. Operatoren im Schutzradius des <@ba.key>Originium-Setzlings</> sind gegen alle Arten von SDN immun.\n – Ankhor-Schockwellen kann man nicht ausweichen.\n – Wenn Triaggelos ins Taumeln gebracht wird, werden alle <@ba.key>Technikkumulierungen</> und <@ba.phy>Anfälligkeitskumulierungen</> von ihm entfernt, und er erhält dauerhaft ein wenig ANG.\n – In seiner <@ba.key>Suchform</> beschwört Triaggelos noch mächtigere Aggeloi.\n – Wenn Triaggelos sich erholt, erhält er einen dauerhaften Bonus auf seine max. LP und seinen max. Taumeln-Wert.\n – Wenn ein Operator <@ba.key>3</>-mal eine Kampffertigkeit und eine Kombofertigkeit einsetzt, feuert Triaggelos <@ba.key>1</> Meteor auf den gesteuerten Operator.\n – In seiner <@ba.key>Täuschungsform</> werden die Fertigkeiten von Triaggelos mächtiger.\n – Wenn Triaggelos <@ba.key>3</> Meteore abgefeuert hat, wirkt er seine ultimative Fertigkeit, die dem gesteuerten Operator massiven SDN zufügt. Diesem SDN kann man nicht ausweichen.\n – <@ba.key>Perfektes Ausweichen kann nicht durchgeführt werden</>.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Die Verruchten: Nefarith I",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Die Verruchten: Nefarith II",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Die Verruchten: Nefarith III",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Die Verruchten: Nefarith IV",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n – Bestimmte Fertigkeiten von <@ba.key>„Eroberin“ Nefarith</> können nur durch <@ba.key>mehrere unterbrechende Treffer</> aufgehalten werden.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Die Verruchten: Nefarith V",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n – Bestimmte Fertigkeiten von <@ba.key>„Eroberin“ Nefarith</> können nur durch <@ba.key>mehrere unterbrechende Treffer</> aufgehalten werden.\n – Die Aktion <@ba.key>Xiranit-Unterstützung</> für die Einfachen Werkzeuge hat eine wesentlich längere Abklingzeit. Der SDN-Radius des speziellen Sturz-ANG nach dem Einsatz von <@ba.key>Xiranit-Unterstützung</> ist ebenfalls viel kleiner.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Die Verruchten: Nefarith VI",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n – Bestimmte Fertigkeiten von <@ba.key>„Eroberin“ Nefarith</> können nur durch <@ba.key>mehrere unterbrechende Treffer</> aufgehalten werden.\n – Die Aktion <@ba.key>Xiranit-Unterstützung</> für die Einfachen Werkzeuge hat eine wesentlich längere Abklingzeit. Der SDN-Radius des speziellen Sturz-ANG nach dem Einsatz von <@ba.key>Xiranit-Unterstützung</> ist ebenfalls viel kleiner.\n – Alle <@ba.fire>Hitzekumulierungen</>, mit denen Operatoren belegt werden, werden direkt in <@ba.fire>Verbrannt</> umgewandelt.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Die Verruchten: Nefarith VII",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n – Bestimmte Fertigkeiten von <@ba.key>„Eroberin“ Nefarith</> können nur durch <@ba.key>mehrere unterbrechende Treffer</> aufgehalten werden.\n – Die Aktion <@ba.key>Xiranit-Unterstützung</> für die Einfachen Werkzeuge hat eine wesentlich längere Abklingzeit. Der SDN-Radius des speziellen Sturz-ANG nach dem Einsatz von <@ba.key>Xiranit-Unterstützung</> ist ebenfalls viel kleiner.\n – Alle <@ba.fire>Hitzekumulierungen</>, mit denen Operatoren belegt werden, werden direkt in <@ba.fire>Verbrannt</> umgewandelt.\n – <@ba.key>„Eroberin“ Nefarith</> nimmt in regelmäßigen Abständen einen zufälligen nicht gesteuerten Operator mit einem <@ba.key>Ankhor</> gefangen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Die Verruchten: Nefarith VIII",
+    "description": "",
+    "featureDesc": " – Wenn <@ba.key>„Knochenbrecherin“ Nefarith</> die Raumzeit zerreißt, werden ihre Fertigkeiten mächtiger.\n – Wenn <@ba.key>„Eroberin“ Nefarith</> ihren Æther-Schild wiederherstellt, führt sie mehr durchgehende Fernangriffe auf den gesteuerten Operator aus.\n – Æther-Wellen kann man nicht ausweichen; sie verursachen erheblich mehr SDN.\n – Bestimmte Fertigkeiten von <@ba.key>„Eroberin“ Nefarith</> können nur durch <@ba.key>mehrere unterbrechende Treffer</> aufgehalten werden.\n – Die Aktion <@ba.key>Xiranit-Unterstützung</> für die Einfachen Werkzeuge hat eine wesentlich längere Abklingzeit. Der SDN-Radius des speziellen Sturz-ANG nach dem Einsatz von <@ba.key>Xiranit-Unterstützung</> ist ebenfalls viel kleiner.\n – Alle <@ba.fire>Hitzekumulierungen</>, mit denen Operatoren belegt werden, werden direkt in <@ba.fire>Verbrannt</> umgewandelt.\n – <@ba.key>„Eroberin“ Nefarith</> nimmt in regelmäßigen Abständen einen zufälligen nicht gesteuerten Operator mit einem <@ba.key>Ankhor</> gefangen.\n – <@ba.key>Wenn die Niederlage unvermeidlich scheint, unternimmt Nefarith einen letzten Versuch und zwingt den gesteuerten Operator, alleine gegen sie zu kämpfen.</>\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info> – Gegner haben dieselbe Resistenz gegen jedes Element.</>"
   }
 }

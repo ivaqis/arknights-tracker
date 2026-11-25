@@ -752,7 +752,7 @@
   "eny_0131_inkscroll": {
     "name": "Pergamino de tácticas",
     "nickname": "Pergamino de tácticas",
-    "description": "Una Aparición iluminada por Si. Maestro del combate y conocedor del engaño. Portador de armas y defensor de la paz.",
+    "description": "Una aparición iluminada por Si. Maestro del combate, conocedor del engaño. Portador de armas y defensor de la paz.",
     "abilities": [
       "Las alabardas lanzadas crean Charcos de tinta cuando aterrizan. Estos charcos pueden aplicar una Marca de tinta a los operadores que los pisen. Intenta evitarlos."
     ]
@@ -781,6 +781,39 @@
     "abilities": [
       "Cuando Si despliegue su pintura, intenta recordar dónde están las zonas de ataque y luego evadelas en la secuencia correcta.",
       "Si puede crear Charcos de tinta muy peligrosos. No pises estas zonas manchadas de tinta."
+    ]
+  },
+  "eny_0158_mushbug": {
+    "name": "Nidwyrm Rompehongos",
+    "nickname": "Nidwyrm Rompehongos",
+    "description": "Un nidwyrm normal suele excavar túneles subterráneos para mantenerse oculto. Esta variante afectada por las esporas presenta un comportamiento errático. También intenta esparcir más esporas por todas partes.",
+    "abilities": [
+      "Cuando el Nidwyrm Rompehongos se entierra, su parte superior queda expuesta como punto débil.",
+      "La jaula de enredaderas permanece durante un tiempo. Inflige DAÑ a los operadores que la tocan."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Príncipe Bolete",
+    "nickname": "Príncipe Bolete",
+    "description": "Un hongo extraño. Tiene una personalidad tranquila y puede ser bastante confiable. Es el futuro y la esperanza de la familia de los hongos.",
+    "abilities": [
+      "Cuando el Príncipe Bolete se entierra, su parte superior queda expuesta como punto débil."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Puñoespora Rompehongos",
+    "nickname": "Puñoespora Rompehongos",
+    "description": "Un Rompesuelos afectado por las esporas que presenta un comportamiento errático. Ten cuidado. A pesar de sus puños suaves y acolchados, son igual de peligrosos.",
+    "abilities": [
+      "El Puñoespora Rompehongos puede mover los brazos para crear un torbellino que atrae continuamente a los operadores."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Guardiaespora Rompehongos",
+    "nickname": "Guardiaespora Rompehongos",
+    "description": "Un Rompesuelos afectado por las esporas que presenta un comportamiento errático. Su escudo ahora está... completo.",
+    "abilities": [
+      "El Guardiaespora Rompehongos puede levantar su escudo para bloquear los ataques básicos de los operadores."
     ]
   },
   "tatget_001_normal": {

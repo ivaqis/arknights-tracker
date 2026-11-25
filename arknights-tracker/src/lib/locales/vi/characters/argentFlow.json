@@ -34,7 +34,7 @@
     },
     "battleSkill": {
       "name": "Bóng Tối Khuất Phục",
-      "description": "Argent Flow quét giáo, gây <@ba.pd>ST Vật Lý</> lên kẻ địch xung quanh và áp dụng <#ba.airborne>Hất Tung</> lên mục tiêu phía trước.\nSau khi Argent Flow thi triển KN liên hoàn, KN chiến đấu của anh tạm thời đổi thành <@ba.key>Lôi Xung</>.\n<@ba.key>Lôi Xung</>: Argent Flow cưỡi bôn thú Nuli nhảy lên giữa không trung, nhanh chóng tụ lực, rồi xung kích vào mục tiêu để cưỡng chế áp dụng <#ba.conduct>Điện Hóa</> và gây <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi rộng phía trước. Khi <#ba.conduct>Điện Hóa</> này được áp dụng lên mục tiêu có <#ba.pulseinflict>Nhiễm Điện</>, nó sẽ <#ba.consume>tiêu hao</> toàn bộ tầng <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu và tăng <#ba.conduct>Cấp Trạng Thái +1</> cho <#ba.statuslevel>Điện Hóa</> với mỗi 1 tầng được tiêu hao. Sau khi <#ba.consume>tiêu hao</> <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu, Argent Flow cũng áp dụng 1 tầng <#ba.noguard>Trừ Giáp</>.",
+      "description": "Argent Flow quét giáo, gây <@ba.pd>ST Vật Lý</> lên kẻ địch xung quanh và áp dụng <#ba.airborne>Hất Tung</> lên mục tiêu phía trước.\nSau khi Argent Flow thi triển KN liên hoàn, KN chiến đấu của anh tạm thời đổi thành <@ba.key>Lôi Xung</>.\n<@ba.key>Lôi Xung</>: Argent Flow cưỡi bôn thú Nuli nhảy lên giữa không trung, nhanh chóng tụ lực, rồi xung kích vào mục tiêu để cưỡng chế áp dụng <#ba.conduct>Điện Hóa</> và gây <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi rộng phía trước. Khi <#ba.conduct>Điện Hóa</> này được áp dụng lên mục tiêu có <#ba.pulseinflict>Nhiễm Điện</>, nó sẽ <#ba.consume>tiêu hao</> toàn bộ tầng <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu và tăng <#ba.statuslevel>Cấp Trạng Thái</> +1 cho <#ba.conduct>Điện Hóa</> với mỗi 1 tầng được tiêu hao. Sau khi <#ba.consume>tiêu hao</> <#ba.pulseinflict>Nhiễm Điện</> của mục tiêu, Argent Flow cũng áp dụng 1 tầng <#ba.noguard>Trừ Giáp</>.",
       "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
       "baseStagger": "Suy Sụp Cơ Bản",
       "boltRushDmgMultiplier": "Hệ Số ST Lôi Xung",
@@ -158,7 +158,7 @@
       {
         "voId": "chr_0037_minghe_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
-        "text": "Một buổi học rất bổ ích... Để đáp lễ, tôi cũng ghi lại vài thứ cho ngài nhé. Còn đối tượng luyện tập ư? Tôi có sẵn rồi!"
+        "text": "Một buổi học rất bổ ích... Để đáp lễ, tôi cũng ghi lại vài thứ cho ngài nhé. Còn đối tượng luyện võ ư? Chẳng phải có ngài đây sao."
       },
       {
         "voId": "chr_0037_minghe_chrup_promt01_01",

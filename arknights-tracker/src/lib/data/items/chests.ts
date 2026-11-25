@@ -1037,6 +1037,125 @@ export const chests: Record<string, ChestData> = {
             ]
         ]
     },
+    "item_case_wpn_selfselect_bp_8": {
+        "id": "item_case_wpn_selfselect_bp_8",
+        "type": 2,
+        "selectedCount": 1,
+        "options": [
+            [
+                {
+                    "id": "raidComet",
+                    "gameId": "wpn_lance_0018",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "longHeritage",
+                    "gameId": "wpn_claym_0019",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "complexedIndustry",
+                    "gameId": "wpn_sword_0024",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "sufferingsEnd",
+                    "gameId": "wpn_funnel_0020",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "junctionPoint",
+                    "gameId": "wpn_funnel_0018",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "goldenAge",
+                    "gameId": "wpn_lance_0016",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "phantomPain",
+                    "gameId": "wpn_claym_0016",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "beaconOfDuty",
+                    "gameId": "wpn_lance_0007",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "flickersInTheMist",
+                    "gameId": "wpn_funnel_0017",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "gloriousMemory",
+                    "gameId": "wpn_sword_0017",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "homeLonging",
+                    "gameId": "wpn_pistol_0007",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "opusEtchFigure",
+                    "gameId": "wpn_funnel_0006",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "navigator",
+                    "gameId": "wpn_pistol_0005",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ],
+            [
+                {
+                    "id": "umbralTorch",
+                    "gameId": "wpn_sword_0010",
+                    "type": "weapon",
+                    "count": 1
+                }
+            ]
+        ]
+    },
     "item_case_wpn_selfselect_common_advlevel": {
         "id": "item_case_wpn_selfselect_common_advlevel",
         "type": 2,
@@ -2419,6 +2538,176 @@ export const chests: Record<string, ChestData> = {
             ]
         ]
     },
+    "item_case_wpn_selfselect_gahca_1_7_1": {
+        "id": "item_case_wpn_selfselect_gahca_1_7_1",
+        "type": 2,
+        "selectedCount": 1,
+        "options": [
+            [
+                {
+                    "id": "rapidAscent",
+                    "gameId": "wpn_sword_0011",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "valiant",
+                    "gameId": "wpn_lance_0010",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "jet",
+                    "gameId": "wpn_lance_0011",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "detonationUnit",
+                    "gameId": "wpn_funnel_0008",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "wedge",
+                    "gameId": "wpn_pistol_0008",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "formerFinery",
+                    "gameId": "wpn_claym_0006",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ]
+        ]
+    },
+    "item_case_wpn_selfselect_gahca_aglina": {
+        "id": "item_case_wpn_selfselect_gahca_aglina",
+        "type": 2,
+        "selectedCount": 1,
+        "options": [
+            [
+                {
+                    "id": "chivalricVirtues",
+                    "gameId": "wpn_funnel_0010",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "oblivion",
+                    "gameId": "wpn_funnel_0009",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "wedge",
+                    "gameId": "wpn_pistol_0008",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "thermiteCutter",
+                    "gameId": "wpn_sword_0012",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "whiteNightNova",
+                    "gameId": "wpn_sword_0014",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "exemplar",
+                    "gameId": "wpn_claym_0004",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ]
+        ]
+    },
     "item_case_wpn_selfselect_gahca_c_1": {
         "id": "item_case_wpn_selfselect_gahca_c_1",
         "type": 2,
@@ -2918,6 +3207,91 @@ export const chests: Record<string, ChestData> = {
                 {
                     "id": "jet",
                     "gameId": "wpn_lance_0011",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ]
+        ]
+    },
+    "item_case_wpn_selfselect_gahca_wulfa": {
+        "id": "item_case_wpn_selfselect_gahca_wulfa",
+        "type": 2,
+        "selectedCount": 1,
+        "options": [
+            [
+                {
+                    "id": "rapidAscent",
+                    "gameId": "wpn_sword_0011",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "eminentRepute",
+                    "gameId": "wpn_sword_0013",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "wedge",
+                    "gameId": "wpn_pistol_0008",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "formerFinery",
+                    "gameId": "wpn_claym_0006",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "detonationUnit",
+                    "gameId": "wpn_funnel_0008",
+                    "type": "weapon",
+                    "count": 1
+                },
+                {
+                    "id": "item_gachabyproducts_weaponticket",
+                    "type": "item",
+                    "count": 50
+                }
+            ],
+            [
+                {
+                    "id": "valiant",
+                    "gameId": "wpn_lance_0010",
                     "type": "weapon",
                     "count": 1
                 },

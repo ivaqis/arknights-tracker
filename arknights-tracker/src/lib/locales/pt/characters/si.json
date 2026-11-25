@@ -151,7 +151,7 @@
       {
         "voId": "chr_0036_jsspsi_chrbark_gear_01",
         "title": "Trocando de Equipamento",
-        "text": "Ele até leva as minhas asas em consideração... Aham. N... Nada mal, mas não vou ser legal só por causa disso."
+        "text": "Está levando até minhas asas em consideração... Aham. N... Nada mal, mas não vou ser legal só por causa disso."
       },
       {
         "voId": "chr_0036_jsspsi_chrup_skill_01",
@@ -190,12 +190,12 @@
       },
       {
         "voId": "chr_0036_jsspsi_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Isso, depois aquilo... Muito bem, enrole. Aham. Seu rascunho está concluído. É preciso ter paciência!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Você anda comigo há anos, por que não consegue aprender nada comigo? Como, por exemplo, falsificar minha assinatura."
       },
       {
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Tópico: Poder dos Feranmut",
-        "text": "O banco de dados de RH da Endfield tem problemas. Na seção \"Habilidades\", listei doze itens, incluindo artes marciais, literatura, pintura, metalurgia, direito, jardinagem... e então simplesmente apresentou um erro. O que você quer dizer com eu tenho habilidades demais? Veja, falhar ocasionalmente em algo não as tira de mim. É melhor você se explicar melhor, ou eu não vou deixar isso ficar assim."
+        "text": "O banco de dados de RH da Endfield tem problemas. Na seção \"Habilidades\", listei doze itens, incluindo artes marciais, literatura, pintura, metalurgia, direito, jardinagem... e então simplesmente apresentou um erro. O que você quer dizer com eu tenho habilidades demais? Olha, falhar ocasionalmente em algo não significa que você não as tenha. É melhor você se explicar direito, ou não vou deixar isso passar!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -541,7 +541,7 @@
       "name": "Primavera e Outono como Tinta"
     },
     "potential2": {
-      "description": "Combo de habilidades <@ba.key>Totalmente Idealizado</> melhorado: durante a conjuração, Si ganha ATQ <@ba.vup>+ [{potential2_base:0%} + {potential2_enhance:0%} × (maiores acúmulos de Inflição de Artes <#ba.consume>consumidos</> ou <#ba.absorb>absorvidos</> de um único alvo)]</> por <@ba.vup>{potential2_duration:0}</> s. Esse efeito não pode se acumular.",
+      "description": "Combo de habilidades <@ba.key>Totalmente Idealizado</> melhorado: ao conjurar, Si ganha ATQ <@ba.vup>+ [{potential2_base:0%} + {potential2_enhance:0%} × (maiores acúmulos de Inflição de Artes <#ba.consume>consumidos</> ou <#ba.absorb>absorvidos</> de um único alvo)]</> por <@ba.vup>{potential2_duration:0}</> s. Esse efeito não pode se acumular.",
       "name": "Três Marcas Profundas na Madeira"
     },
     "potential3": {

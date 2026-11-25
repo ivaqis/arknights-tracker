@@ -120,5 +120,33 @@
             "indie_hard032",
             "indie_hard033"
         ]
+    },
+    {
+        "id": "indie_group_h09",
+        "hardDungeons": [],
+        "normalDungeons": [
+            "indie_hard034_n1",
+            "indie_hard034_n2",
+            "indie_hard034_n3",
+            "indie_hard034_n4",
+            "indie_hard034_n5",
+            "indie_hard034_n6",
+            "indie_hard034_n7",
+            "indie_hard034_n8"
+        ]
+    },
+    {
+        "id": "indie_group_h10",
+        "hardDungeons": [],
+        "normalDungeons": [
+            "indie_hard035_n1",
+            "indie_hard035_n2",
+            "indie_hard035_n3",
+            "indie_hard035_n4",
+            "indie_hard035_n5",
+            "indie_hard035_n6",
+            "indie_hard035_n7",
+            "indie_hard035_n8"
+        ]
     }
 ]

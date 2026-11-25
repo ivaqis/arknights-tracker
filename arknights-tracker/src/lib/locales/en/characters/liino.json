@@ -205,12 +205,12 @@
       },
       {
         "voId": "chr_0035_liino_mono_switch_01",
-        "title": "Standing by 1",
+        "title": "Standing By 1",
         "text": "Hehe! How's this for a cute pose?"
       },
       {
         "voId": "chr_0035_liino_mono_switch_02",
-        "title": "Standing by 2",
+        "title": "Standing By 2",
         "text": "La—lala—! Mic check complete! I'm ready to go!"
       },
       {
@@ -405,7 +405,7 @@
       },
       {
         "voId": "chr_0035_liino_combat_remind_danger_01",
-        "title": "Warning Teammate",
+        "title": "Danger Warning",
         "text": "Get down! Don't force yourself!"
       },
       {

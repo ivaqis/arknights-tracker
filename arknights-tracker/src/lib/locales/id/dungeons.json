@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "File Bayang-bayang Hawar: Halilintar - Normal",
     "description": "FILE 01: Diambil dari pecahan cakar hewan buas yang ditemukan di reruntuhan. Untuk sementara, kami mengaitkan agresivitas monster tersebut dengan Ætherside atau naluri predator alaminya.",
-    "featureDesc": "- Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+    "featureDesc": " - Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower015_ex": {
     "name": "File Bayang-bayang Hawar: Halilintar - Brutal",
     "description": "FILE 01: Diambil dari pecahan cakar hewan buas yang ditemukan di reruntuhan. Untuk sementara, kami mengaitkan agresivitas monster tersebut dengan Ætherside atau naluri predator alaminya.",
-    "featureDesc": "- Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+    "featureDesc": " - Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower015_s": {
     "name": "File Bayang-bayang Hawar: Halilintar - Sulit",
     "description": "FILE 01: Diambil dari pecahan cakar hewan buas yang ditemukan di reruntuhan. Untuk sementara, kami mengaitkan agresivitas monster tersebut dengan Ætherside atau naluri predator alaminya.",
-    "featureDesc": "- Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+    "featureDesc": " - Bayang-bayang Hawar Blitzcrash tidak akan memasuki kondisi Mengamuk.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower016": {
     "name": "File Glaiver: Yinglung - Normal",
     "description": "FILE 22: Diambil dari persenjataan pribadi seorang anggota Satgassus Yinglung. Terdapat lebih dari 20 torehan pada bilahnya, yang sebagian besar berkaitan dengan operasi pertahanan dan misi penyerbuan.",
-    "featureDesc": "- Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>. \n- Semua pemulihan dan regenerasi SP -50%. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>.\n- Semua pemulihan dan regenerasi SP -50%.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower016_ex": {
     "name": "File Glaiver: Yinglung - Brutal",
     "description": "FILE 22: Diambil dari persenjataan pribadi seorang anggota Satgassus Yinglung. Terdapat lebih dari 20 torehan pada bilahnya, yang sebagian besar berkaitan dengan operasi pertahanan dan misi penyerbuan.",
-    "featureDesc": "- Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>. \n- Semua pemulihan dan regenerasi SP -50%. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>.\n- Semua pemulihan dan regenerasi SP -50%.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower016_s": {
     "name": "File Glaiver: Yinglung - Sulit",
     "description": "FILE 22: Diambil dari persenjataan pribadi seorang anggota Satgassus Yinglung. Terdapat lebih dari 20 torehan pada bilahnya, yang sebagian besar berkaitan dengan operasi pertahanan dan misi penyerbuan.",
-    "featureDesc": "- Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>. \n- Semua pemulihan dan regenerasi SP -50%. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi <@ba.vup>700</>.\n- Semua pemulihan dan regenerasi SP -50%.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower017": {
     "name": "File Avenger: Bonekrusher - Normal",
     "description": "FILE 07: Diambil dari senjata Bonekrusher yang dibuat secara kasar dan ditemukan di lokasi pertarungan mematikan antara anggota klan yang berseteru. Ini menjadi bukti kuat adanya konflik internal dan pertikaian berdarah.",
-    "featureDesc": "- Intensitas Arts seluruh tim <@ba.vup>+100%</>. \n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Intensitas Arts seluruh tim <@ba.vup>+100%</>.\n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower017_ex": {
     "name": "File Avenger: Bonekrusher - Brutal",
     "description": "FILE 07: Diambil dari senjata Bonekrusher yang dibuat secara kasar dan ditemukan di lokasi pertarungan mematikan antara anggota klan yang berseteru. Ini menjadi bukti kuat adanya konflik internal dan pertikaian berdarah.",
-    "featureDesc": "- Intensitas Arts seluruh tim <@ba.vup>+100%</>. \n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Intensitas Arts seluruh tim <@ba.vup>+100%</>.\n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower017_s": {
     "name": "File Avenger: Bonekrusher - Sulit",
     "description": "FILE 07: Diambil dari senjata Bonekrusher yang dibuat secara kasar dan ditemukan di lokasi pertarungan mematikan antara anggota klan yang berseteru. Ini menjadi bukti kuat adanya konflik internal dan pertikaian berdarah.",
-    "featureDesc": "- Intensitas Arts seluruh tim <@ba.vup>+100%</>. \n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Intensitas Arts seluruh tim <@ba.vup>+100%</>.\n- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower018": {
     "name": "File Hewan Buas: Kampung Benteng Qingbo - Normal",
     "description": "FILE 19: Diambil dari kandang hewan buas di Kampung Benteng Qingbo. Kandang itu ditempa dari senjata yang hancur. Sebelum orang-orang yang membangun Kampung Benteng Qingbo bisa menjinakkan hewan-hewan buas itu, mereka harus mengalahkannya dulu.",
-    "featureDesc": "- Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan. \n- Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan. \n- Setelah mengalahkan Heavy Sting α, <@ba.vup>+25</> SP akan langsung dipulihkan saat memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>. \n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +50% HP. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan.\n - Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan.\n - Setelah mengalahkan Heavy Sting α, jika memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>, <@ba.vup>+25</> SP akan langsung dipulihkan.\n - Jika berhasil mengalahkan set musuh mana pun, musuh yang tersisa akan mendapatkan +50% HP.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower018_ex": {
     "name": "File Hewan Buas: Kampung Benteng Qingbo - Brutal",
     "description": "FILE 19: Diambil dari kandang hewan buas di Kampung Benteng Qingbo. Kandang itu ditempa dari senjata yang hancur. Sebelum orang-orang yang membangun Kampung Benteng Qingbo bisa menjinakkan hewan-hewan buas itu, mereka harus mengalahkannya dulu.",
-    "featureDesc": "- Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan. \n- Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan. \n- Setelah mengalahkan Heavy Sting α, <@ba.vup>+25</> SP akan langsung dipulihkan saat memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>. \n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +50% HP. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan.\n - Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan.\n - Setelah mengalahkan Heavy Sting α, jika memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>, <@ba.vup>+25</> SP akan langsung dipulihkan.\n - Jika berhasil mengalahkan set musuh mana pun, musuh yang tersisa akan mendapatkan +50% HP.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower018_s": {
     "name": "File Hewan Buas: Kampung Benteng Qingbo - Sulit",
     "description": "FILE 19: Diambil dari kandang hewan buas di Kampung Benteng Qingbo. Kandang itu ditempa dari senjata yang hancur. Sebelum orang-orang yang membangun Kampung Benteng Qingbo bisa menjinakkan hewan-hewan buas itu, mereka harus mengalahkannya dulu.",
-    "featureDesc": "- Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan. \n- Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan. \n- Setelah mengalahkan Heavy Sting α, <@ba.vup>+25</> SP akan langsung dipulihkan saat memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>. \n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +50% HP. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Setelah mengalahkan Cloud Stalker, <@ba.vup>+1</> tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</> yang diakibatkan.\n - Setelah mengalahkan Quillbeast, <@ba.vup>+1</> Level Status dari <@ba.key>Arts Reaction</>/<@ba.key>Crush</>/<@ba.key>Breach</> yang diakibatkan.\n - Setelah mengalahkan Heavy Sting α, jika memakai tumpukan <@ba.key>Arts Infliction</>/<@ba.key>Vulnerability</>, <@ba.vup>+25</> SP akan langsung dipulihkan.\n - Jika berhasil mengalahkan set musuh mana pun, musuh yang tersisa akan mendapatkan +50% HP.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower019": {
     "name": "File Konstruksi: Roh - Normal",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n - Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower019_ex": {
     "name": "File Konstruksi: Roh - Brutal",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n - Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower019_s": {
     "name": "File Konstruksi: Roh - Sulit",
     "description": "FILE 50: Diambil dari sebuah pisau ukir kecil. Sang pencipta kerajinan kayu memahat jantung pepohonan dengan kelembutan dan memberi mereka kemampuan untuk menjaga hutan bahkan hingga hari ini.",
-    "featureDesc": "- Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks. \n- Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>. \n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n - Amarah Gloomwald mulai dengan 3 <@ba.key>tumpukan perisai</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower020": {
     "name": "File Pertahanan: Perisai - Normal",
     "description": "FILE 99: Diambil dari sebuah perisai yang hancur dengan struktur yang sesederhana karapas serangga. Spesimen ini telah berkali-kali dilas sehingga menciptakan gaung perang yang menggelegar.",
-    "featureDesc": "<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower020_ex": {
     "name": "File Pertahanan: Perisai - Brutal",
     "description": "FILE 99: Diambil dari sebuah perisai yang hancur dengan struktur yang sesederhana karapas serangga. Spesimen ini telah berkali-kali dilas sehingga menciptakan gaung perang yang menggelegar.",
-    "featureDesc": "<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_battletower020_s": {
     "name": "File Pertahanan: Perisai - Sulit",
     "description": "FILE 99: Diambil dari sebuah perisai yang hancur dengan struktur yang sesederhana karapas serangga. Spesimen ini telah berkali-kali dilas sehingga menciptakan gaung perang yang menggelegar.",
-    "featureDesc": "<@ba.info>- Musuh punya stat yang lebih tinggi.</> \n<@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower021": {
+    "name": "File Dominasi: Howler-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 17 yang rusak. Craghowler ini mengoyak kepala craghowler lain. Tengkorak yang memutih itu menjadi mahkota baru sekaligus simbol kekuasaannya. Hanya boleh ada satu penguasa di gunung itu.",
+    "featureDesc": "- Laju Regen SP: -30%.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "File Dominasi: Howler-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 17 yang rusak. Craghowler ini mengoyak kepala craghowler lain. Tengkorak yang memutih itu menjadi mahkota baru sekaligus simbol kekuasaannya. Hanya boleh ada satu penguasa di gunung itu.",
+    "featureDesc": "- Laju Regen SP: -30%.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "File Dominasi: Howler-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 17 yang rusak. Craghowler ini mengoyak kepala craghowler lain. Tengkorak yang memutih itu menjadi mahkota baru sekaligus simbol kekuasaannya. Hanya boleh ada satu penguasa di gunung itu.",
+    "featureDesc": "- Laju Regen SP: -30%.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower022": {
+    "name": "File Kodeks: Measurer-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 653 yang rusak. Maned Measure ... penjaga hukum ... dan surveyor alam tinta. Ditugaskan oleh tuannya untuk menjelajahi negeri fana yang menyentuh langit, serta untuk menghakimi dunia dan menegakkan ketertiban ke dalamnya.",
+    "featureDesc": "- Setiap kali menerima Skill DMG, Maned Measure akan terkena <@ba.vup>5</> Stagger tambahan. Efek ini hanya bisa diaktifkan satu kali setiap 0.05 dtk.\n- Saat Maned Measure terkena Staggered, belahan bola giok di kedua sisinya tidak akan lagi memberikan Pengurangan DMG.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "File Kodeks: Measurer-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 653 yang rusak. Maned Measure ... penjaga hukum ... dan surveyor alam tinta. Ditugaskan oleh tuannya untuk menjelajahi negeri fana yang menyentuh langit, serta untuk menghakimi dunia dan menegakkan ketertiban ke dalamnya.",
+    "featureDesc": "- Setiap kali menerima Skill DMG, Maned Measure akan terkena <@ba.vup>5</> Stagger tambahan. Efek ini hanya bisa diaktifkan satu kali setiap 0.05 dtk.\n- Saat Maned Measure terkena Staggered, belahan bola giok di kedua sisinya tidak akan lagi memberikan Pengurangan DMG.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "File Kodeks: Measurer-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 653 yang rusak. Maned Measure ... penjaga hukum ... dan surveyor alam tinta. Ditugaskan oleh tuannya untuk menjelajahi negeri fana yang menyentuh langit, serta untuk menghakimi dunia dan menegakkan ketertiban ke dalamnya.",
+    "featureDesc": "- Setiap kali menerima Skill DMG, Maned Measure akan terkena <@ba.vup>5</> Stagger tambahan. Efek ini hanya bisa diaktifkan satu kali setiap 0.05 dtk.\n- Saat Maned Measure terkena Staggered, belahan bola giok di kedua sisinya tidak akan lagi memberikan Pengurangan DMG.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower023": {
+    "name": "File Terlacak: Pemburu-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 23 yang rusak. Menembus hutan lebat dengan sangat tergesa-gesa, Scroll of Tactics memburu entitas dan monster yang terus berubah wujud itu .... Tak ada yang boleh menodai alam lukisan.",
+    "featureDesc": "- Setelah mengalahkan kelompok musuh mana pun, setiap operator akan mendapatkan satu penggunaan ultimate gratis yang tersedia setelah menggunakan ultimate.\n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +20% HP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "File Terlacak: Pemburu-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 23 yang rusak. Menembus hutan lebat dengan sangat tergesa-gesa, Scroll of Tactics memburu entitas dan monster yang terus berubah wujud itu .... Tak ada yang boleh menodai alam lukisan.",
+    "featureDesc": "- Setelah mengalahkan kelompok musuh mana pun, setiap operator akan mendapatkan satu penggunaan ultimate gratis yang tersedia setelah menggunakan ultimate.\n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +20% HP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "File Terlacak: Pemburu-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 23 yang rusak. Menembus hutan lebat dengan sangat tergesa-gesa, Scroll of Tactics memburu entitas dan monster yang terus berubah wujud itu .... Tak ada yang boleh menodai alam lukisan.",
+    "featureDesc": "- Setelah mengalahkan kelompok musuh mana pun, setiap operator akan mendapatkan satu penggunaan ultimate gratis yang tersedia setelah menggunakan ultimate.\n- Jika set musuh mana pun kalah, musuh yang tersisa akan mendapatkan +20% HP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower024": {
+    "name": "File Pengepungan: Armor Berat-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 37 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Dia bertarung dengan tinju berlapis baja yang mampu menjebol tembok benteng. Dia tewas akibat rentetan tembakan yang difokuskan kepadanya.",
+    "featureDesc": "- Setiap kali 1 tumpuk <@ba.key>Arts Infliction</> dipakai atau diserap, 1 tumpuk <@ba.key>Vulnerability</> akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n- Setiap kali 1 tumpuk <@ba.key>Vulnerability</> dipakai atau diserap, 1 tumpuk <@ba.key>Arts Infliction</> (dengan elemen yang pertama kali diakibatkan dalam pertarungan ini) akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "File Pengepungan: Armor Berat-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 37 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Dia bertarung dengan tinju berlapis baja yang mampu menjebol tembok benteng. Dia tewas akibat rentetan tembakan yang difokuskan kepadanya.",
+    "featureDesc": "- Setiap kali 1 tumpuk <@ba.key>Arts Infliction</> dipakai atau diserap, 1 tumpuk <@ba.key>Vulnerability</> akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n- Setiap kali 1 tumpuk <@ba.key>Vulnerability</> dipakai atau diserap, 1 tumpuk <@ba.key>Arts Infliction</> (dengan elemen yang pertama kali diakibatkan dalam pertarungan ini) akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "File Pengepungan: Armor Berat-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 37 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Dia bertarung dengan tinju berlapis baja yang mampu menjebol tembok benteng. Dia tewas akibat rentetan tembakan yang difokuskan kepadanya.",
+    "featureDesc": "- Setiap kali 1 tumpuk <@ba.key>Arts Infliction</> dipakai atau diserap, 1 tumpuk <@ba.key>Vulnerability</> akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n- Setiap kali 1 tumpuk <@ba.key>Vulnerability</> dipakai atau diserap, 1 tumpuk <@ba.key>Arts Infliction</> (dengan elemen yang pertama kali diakibatkan dalam pertarungan ini) akan diakibatkan dan <@ba.vup>10</> SP akan dipulihkan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower025": {
+    "name": "File Tertembus: Ballista-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 38 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Anak panahnya yang dahsyat bisa menembus seluruh puncak bukit. Dia diremukkan dan dihabisi oleh seorang raksasa.",
+    "featureDesc": "- DMG Dealt dari Skill Kombo <@ba.vup>+50%</>.\n- Saat menggunakan skill kombo, seluruh tim akan mendapatkan Pengurangan Cooldown Skill Kombo <@ba.vup>+4%</> (tumpukan maks efek ini: 40) dan memulihkan <@ba.vup>10</> SP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "File Tertembus: Ballista-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 38 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Anak panahnya yang dahsyat bisa menembus seluruh puncak bukit. Dia diremukkan dan dihabisi oleh seorang raksasa.",
+    "featureDesc": "- DMG Dealt dari Skill Kombo <@ba.vup>+50%</>.\n- Saat menggunakan skill kombo, seluruh tim akan mendapatkan Pengurangan Cooldown Skill Kombo <@ba.vup>+4%</> (tumpukan maks efek ini: 40) dan memulihkan <@ba.vup>10</> SP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "File Tertembus: Ballista-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 38 yang rusak. Seorang pejuang yang pernah melindungi Panglima Perang Jakub. Anak panahnya yang dahsyat bisa menembus seluruh puncak bukit. Dia diremukkan dan dihabisi oleh seorang raksasa.",
+    "featureDesc": "- DMG Dealt dari Skill Kombo <@ba.vup>+50%</>.\n- Saat menggunakan skill kombo, seluruh tim akan mendapatkan Pengurangan Cooldown Skill Kombo <@ba.vup>+4%</> (tumpukan maks efek ini: 40) dan memulihkan <@ba.vup>10</> SP.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower026": {
+    "name": "File Penghancuran: Æthillu-N",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 66 yang rusak. Æthillu yang tak kunjung lenyap. Wujudnya yang terpelintir dan meronta-ronta itu sudah diabadikan dan direkam.",
+    "featureDesc": "- Setelah dikalahkan, Æthillu akan hidup lagi setelah beberapa saat (hanya sekali). Jika semua Æthillu berhasil dikalahkan dalam kurun waktu itu, mereka tidak akan hidup lagi.\n- Æthillu kebal terhadap DMG Serangan Dasar yang ditimbulkan operator non-terkontrol.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "File Penghancuran: Æthillu-B",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 66 yang rusak. Æthillu yang tak kunjung lenyap. Wujudnya yang terpelintir dan meronta-ronta itu sudah diabadikan dan direkam.",
+    "featureDesc": "- Setelah dikalahkan, Æthillu akan hidup lagi setelah beberapa saat (hanya sekali). Jika semua Æthillu berhasil dikalahkan dalam kurun waktu itu, mereka tidak akan hidup lagi.\n- Æthillu kebal terhadap DMG Serangan Dasar yang ditimbulkan operator non-terkontrol.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "File Penghancuran: Æthillu-H",
+    "description": "Diselamatkan dari perangkat penyimpanan data No. 66 yang rusak. Æthillu yang tak kunjung lenyap. Wujudnya yang terpelintir dan meronta-ronta itu sudah diabadikan dan direkam.",
+    "featureDesc": "- Setelah dikalahkan, Æthillu akan hidup lagi setelah beberapa saat (hanya sekali). Jika semua Æthillu berhasil dikalahkan dalam kurun waktu itu, mereka tidak akan hidup lagi.\n- Æthillu kebal terhadap DMG Serangan Dasar yang ditimbulkan operator non-terkontrol.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n<@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
   },
   "indie_contract001": {
     "name": "Operasi Eksperimen Pengapian Ulang",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Operasi Eksperimen Indigo",
     "description": "- Dalam operasi ini, ada 3 gelombang musuh berturut-turut yang harus dihadapi. Kalahkan semua gelombang musuh untuk menyelesaikan operasinya.\n- Massa Pemulih akan dijatuhkan di antara gelombang. Sentuh untuk memulihkan HP setiap rekan tim.\n- Ada sesi istirahat di antara gelombang. Selama waktu istirahat ini, operator dianggap sedang bertarung.\n- Operasi ini punya timer hitung mundur. Setelah timer berakhir atau HP semua operator dalam tim menjadi NOL, operasi akan dihentikan.\n- Item taktis dan item habis pakai tidak bisa digunakan.",
-    "featureDesc": "- Musuh mencakup berbagai bayang-bayang hawar, makhluk sihir, binatang buas, dan perompak Cangzei seperti Cloud Obliterator.\n- Kamu masih bisa mengakibatkan Vulnerability, Arts Infliction, Status Fisik, dan Arts Reaction kepada musuh yang memiliki tumpukan perisai."
+    "featureDesc": "- Musuh mencakup: Berbagai Bayang-bayang Hawar, makhluk sihir, binatang buas, dan Cloud Obliterator (perompak Cangzei).\n- Vulnerability, Arts Infliction, Status Fisik, dan Arts Reaction masih bisa diakibatkan kepada musuh yang memiliki tumpukan perisai."
   },
   "indie_hard001": {
     "name": "Perisai Mengamuk",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Pembantaian Bayangan Buas",
     "description": "Cakar bengkok binatang-binatang buas mula-mula meregang dari balik bayangan. Kemudian, barulah kami sadar bahwa cahaya yang tak berbelas kasihan itu telah meninggalkan jejak pada sifat ganas mereka.",
-    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>5</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</>-nya akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>5</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Rakerbeast akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
   },
   "indie_hard026_s": {
     "name": "Pembantaian Bayangan Buas: Agoni",
     "description": "Cakar bengkok binatang-binatang buas mula-mula meregang dari balik bayangan. Kemudian, barulah kami sadar bahwa cahaya yang tak berbelas kasihan itu telah meninggalkan jejak pada sifat ganas mereka.",
-    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>7</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</>-nya akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>7</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Rakerbeast akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Item Taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
   },
   "indie_hard027": {
     "name": "Sambaran Suar Bayangan",
@@ -638,5 +728,85 @@
     "name": "Makhluk Kecil yang Menggali: Agoni",
     "description": "Musim yang sangat dingin dan gelap telah berakhir. Makhluk-makhluk kecil yang berhibernasi mulai bergerak dan saling memanggil .... Jumlah mereka sangat banyak, dan mereka mulai terbangun.",
     "featureDesc": " - Hati-hati. Kabut akan terus-menerus menimbulkan <@ba.key>DMG yang meningkat bertahap</> kepada semua operator. <@ba.key>DMG Kabut juga akan meningkat banyak</>.\n - Siput Kayu akan menggali ke bawah tanah dan memulihkan semua <@ba.key>tumpukan perisai</> miliknya secara berkala. Jika berhasil mengalahkan Siput Kayu, DMG Kabut akan berkurang untuk sementara.\n - Setelah pertarungan dimulai, 1 Siput Kayu mana saja akan kehilangan semua <@ba.key>tumpukan perisai</> miliknya dan tidak akan lagi memulihkannya. Jika berhasil mengalahkannya, 1 Siput Kayu mana saja akan kehilangan semua <@ba.key>tumpukan perisai</> miliknya dan tidak akan lagi memulihkannya.\n\n<@ba.info> - Item taktis dan item habis pakai tidak bisa digunakan.</>\n<@ba.info> - Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅰ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅱ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅲ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅳ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n - Setiap kali Triaggelos menyusun ulang dirinya, HP Maks dan Stagger Maks-nya akan mendapatkan peningkatan permanen.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅴ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n - Setiap kali Triaggelos menyusun ulang dirinya, HP Maks dan Stagger Maks-nya akan mendapatkan peningkatan permanen.\n - Setiap kali operator melancarkan skill tarung dan skill kombo sebanyak <@ba.key>3</> kali, Triaggelos akan meluncurkan <@ba.key>1</> meteor ke arah operator terkontrol.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅵ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n - Setiap kali Triaggelos menyusun ulang dirinya, HP Maks dan Stagger Maks-nya akan mendapatkan peningkatan permanen.\n - Setiap kali operator melancarkan skill tarung dan skill kombo sebanyak <@ba.key>3</> kali, Triaggelos akan meluncurkan <@ba.key>1</> meteor ke arah operator terkontrol.\n - Dalam <@ba.key>Wujud Tipuan</>, skill Triaggelos akan menjadi lebih kuat.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅶ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menghilangkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n - Setiap kali Triaggelos menyusun ulang dirinya, HP Maks dan Stagger Maks-nya akan mendapatkan peningkatan permanen.\n - Setiap kali operator melancarkan skill tarung dan skill kombo sebanyak <@ba.key>3</> kali, Triaggelos akan meluncurkan <@ba.key>1</> meteor ke arah operator terkontrol.\n - Dalam <@ba.key>Wujud Tipuan</>, skill Triaggelos akan menjadi lebih kuat.\n - Setelah meluncurkan <@ba.key>3</> meteor, Triaggelos akan melancarkan ultimate yang menimbulkan DMG sangat besar kepada operator terkontrol. DMG ini tidak bisa dihindari.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Kejahatan Terungkap: Triaggelos Ⅷ",
+    "description": "",
+    "featureDesc": " - Tindakan Alat Praktis baru: Saat tombol Alat Praktis digunakan, <@ba.key>Bibit Originium</> akan muncul di lokasi operator terkontrol. Operator yang ada dalam radius perlindungan <@ba.key>Bibit Originium</> akan kebal terhadap semua bentuk DMG.\n - Gelombang kejut Ankhor tidak bisa dihindari.\n - Setiap kali terkena Staggered, Triaggelos akan menyingkirkan semua tumpukan <@ba.key>Arts Infliction</> dan <@ba.phy>Vulnerability</> dari dirinya sendiri, serta mendapatkan sejumlah ATK secara permanen.\n - Dalam <@ba.key>Wujud Pencarian</>, Triaggelos akan memanggil Aggelos yang lebih kuat.\n - Setiap kali Triaggelos menyusun ulang dirinya, HP Maks dan Stagger Maks-nya akan mendapatkan peningkatan permanen.\n - Setiap kali operator melancarkan skill tarung dan skill kombo sebanyak <@ba.key>3</> kali, Triaggelos akan meluncurkan <@ba.key>1</> meteor ke arah operator terkontrol.\n - Dalam <@ba.key>Wujud Tipuan</>, skill Triaggelos akan menjadi lebih kuat.\n - Setelah meluncurkan <@ba.key>3</> meteor, Triaggelos akan melancarkan ultimate yang menimbulkan DMG sangat besar kepada operator terkontrol. DMG ini tidak bisa dihindari.\n - <@ba.key>Hindaran sempurna tidak bisa dilakukan</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅰ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅱ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅲ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅳ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n - Skill tertentu milik <@ba.key>Nefarith “sang Penakluk”</> hanya bisa dihentikan dengan <@ba.key>beberapa serangan penyelaan</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅴ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n - Skill tertentu milik <@ba.key>Nefarith “sang Penakluk”</> hanya bisa dihentikan dengan <@ba.key>beberapa serangan penyelaan</>.\n - Tindakan Alat Praktis <@ba.key>Xiranite Support</> punya cooldown yang jauh lebih lama. Radius DMG dari ATK Menukik khusus setelah menggunakan <@ba.key>Xiranite Support</> juga akan menjadi jauh lebih kecil.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅵ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n - Skill tertentu milik <@ba.key>Nefarith “sang Penakluk”</> hanya bisa dihentikan dengan <@ba.key>beberapa serangan penyelaan</>.\n - Tindakan Alat Praktis <@ba.key>Xiranite Support</> punya cooldown yang jauh lebih lama. Radius DMG dari ATK Menukik khusus setelah menggunakan <@ba.key>Xiranite Support</> juga akan menjadi jauh lebih kecil.\n - Semua <@ba.fire>Heat Infliction</> yang diakibatkan kepada operator akan langsung diubah menjadi <@ba.fire>Combustion</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅶ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n - Skill tertentu milik <@ba.key>Nefarith “sang Penakluk”</> hanya bisa dihentikan dengan <@ba.key>beberapa serangan penyelaan</>.\n - Tindakan Alat Praktis <@ba.key>Xiranite Support</> punya cooldown yang jauh lebih lama. Radius DMG dari ATK Menukik khusus setelah menggunakan <@ba.key>Xiranite Support</> juga akan menjadi jauh lebih kecil.\n - Semua <@ba.fire>Heat Infliction</> yang diakibatkan kepada operator akan langsung diubah menjadi <@ba.fire>Combustion</>.\n - <@ba.key>Nefarith “sang Penakluk”</> secara berkala akan menjebak satu operator non-terkontrol secara acak dengan <@ba.key>Ankhor</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Kejahatan Terungkap: Nefarith Ⅷ",
+    "description": "",
+    "featureDesc": " - Setiap kali <@ba.key>“Bonekrusher” Nefarith</> mengoyak ruang dan waktu, skill-nya akan menjadi lebih kuat.\n - Setiap kali <@ba.key>Nefarith “sang Penakluk”</> memulihkan Perisai Æther-nya, dia akan meluncurkan lebih banyak serangan jarak jauh beruntun ke arah operator terkontrol.\n - Gelombang Æther tidak bisa dihindari dan akan menimbulkan DMG yang jauh lebih besar.\n - Skill tertentu milik <@ba.key>Nefarith “sang Penakluk”</> hanya bisa dihentikan dengan <@ba.key>beberapa serangan penyelaan</>.\n - Tindakan Alat Praktis <@ba.key>Xiranite Support</> punya cooldown yang jauh lebih lama. Radius DMG dari ATK Menukik khusus setelah menggunakan <@ba.key>Xiranite Support</> juga akan menjadi jauh lebih kecil.\n - Semua <@ba.fire>Heat Infliction</> yang diakibatkan kepada operator akan langsung diubah menjadi <@ba.fire>Combustion</>.\n - <@ba.key>Nefarith “sang Penakluk”</> secara berkala akan menjebak satu operator non-terkontrol secara acak dengan <@ba.key>Ankhor</>.\n - <@ba.key>Saat kekalahan tak lagi terelakkan, Nefarith akan melakukan taktik terakhir dan memaksa operator terkontrol untuk melawannya sendirian.</>\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
   }
 }

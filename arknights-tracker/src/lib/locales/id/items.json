@@ -118,6 +118,22 @@
       "Tiket Akses Protokol: Protokol Kustom"
     ]
   },
+  "business_card_topic_bp_1_7": {
+    "name": "Kota Jamur dan Madu",
+    "type": "Tema Profil",
+    "desc": "Tema untuk layar Profil. Tema profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "Kisah kita bermula di sebuah kota yang penuh rasa manis dan imajinasi liar.",
+    "obtainWays": [
+      "Tiket Akses Protokol: Protokol Kustom"
+    ]
+  },
+  "business_card_topic_channel_1_7": {
+    "name": "Lingkaran Gema",
+    "type": "Tema Profil",
+    "desc": "Tema untuk layar Profil. Tema profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "Musik membentuk alam semesta. Musik melahirkan kehidupan. Musik menciptakan segalanya.",
+    "obtainWays": []
+  },
   "business_card_topic_chr_0009_azrila": {
     "name": "Baluarti Tak Tertembus",
     "type": "Tema Profil",
@@ -276,6 +292,15 @@
     "type": "Tema Profil",
     "desc": "Tema untuk layar Profil. Tema profil ditampilkan di berbagai lokasi.",
     "decoDesc": "Bagai busur kilat yang terang, tekad yang terus menyala, harapannya adalah mewujudkan kedamaian abadi di dunia.",
+    "obtainWays": [
+      "Hadiah: Pencapaian Potensi Operator Spesifik"
+    ]
+  },
+  "business_card_topic_chr_0040_sweetpie": {
+    "name": "Markas Rahasia",
+    "type": "Tema Profil",
+    "desc": "Tema untuk layar Profil. Tema profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "“Sssst. Aku menyembunyikan banyak makanan enak di sini. Cuma kau yang tahu tempat ini. Rahasiakan ini demi aku, ya!”",
     "obtainWays": [
       "Hadiah: Pencapaian Potensi Operator Spesifik"
     ]
@@ -839,6 +864,13 @@
     "decoDesc": "Kue yang rumit tapi cantik alami buatan Perlica untukmu. Dia menggunakan lapisan fondan untuk membuat hiasan bergambar jalanan dan pemandangan yang kalian lalui bersama. Dia ingat semuanya.",
     "obtainWays": []
   },
+  "item_birthday_ap_supply_2027": {
+    "name": "Kue Ulang Tahun ke-2",
+    "type": "Obat Sanity",
+    "desc": "Gunakan item ini untuk memulihkan 40 Sanity.",
+    "decoDesc": "Kue yang dipanggang dengan sangat baik. Semerbak aromanya yang lezat begitu menenangkan dan menghibur hati. Dunia perlahan menjadi tempat yang lebih baik, dan kami percaya perjalanan indah tengah menantimu.",
+    "obtainWays": []
+  },
   "item_book_002_01": {
     "name": "Iklan Real Estate",
     "type": "Item Misi",
@@ -1348,9 +1380,9 @@
     ]
   },
   "item_bp_liquid_cleaner_1": {
-    "name": "Templat Unit Pengolah Air",
+    "name": "Templat Unit Pengolah Limbah",
     "type": "Rakitan Templat Standar",
-    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Unit Pengolah Air.",
+    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Unit Pengolah Limbah.",
     "decoDesc": "",
     "obtainWays": [
       "Penelitian: Teknologi Bagan Pabrik AIC"
@@ -1414,6 +1446,60 @@
     "name": "Templat Porta Bus Depot",
     "type": "Rakitan Templat Standar",
     "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Porta Bus Depot.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_balancer_1": {
+    "name": "Templat Tempaan Ekuilibrium",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Tempaan Ekuilibrium.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_spawner_1": {
+    "name": "Templat Tempaan Luminansi",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Tempaan Luminansi.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_spawner_2": {
+    "name": "Templat Tempaan Luminansi Bipolar",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Tempaan Luminansi Bipolar.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_spawner_heng": {
+    "name": "Templat Susunan E",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan templat ini, Susunan L dan Susunan T bisa ditumpuk untuk menghasilkan Susunan E.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_spawner_hui": {
+    "name": "Templat Susunan T",
+    "type": "Rakitan Templat Standar",
+    "desc": "Templat ini menambahkan opsi untuk memproyeksikan Susunan T di Tempaan Luminansi.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_bp_magic_spawner_ming": {
+    "name": "Templat Susunan L",
+    "type": "Rakitan Templat Standar",
+    "desc": "Templat ini menambahkan opsi untuk memproyeksikan Susunan L di Tempaan Luminansi.",
     "decoDesc": "",
     "obtainWays": [
       "Penelitian: Teknologi Bagan Pabrik AIC"
@@ -1734,6 +1820,15 @@
       "Penelitian: Teknologi Bagan Pabrik AIC"
     ]
   },
+  "item_bp_wonder_supply_port_1": {
+    "name": "Templat Porta Pasokan Rekonstruksi",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan templat ini, Protokol Automasi Canggih (PAC) bisa membangun Porta Pasokan Rekonstruksi.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
   "item_bp_xiranite_oven_1": {
     "name": "Templat Tempaan Langit",
     "type": "Rakitan Templat Standar",
@@ -2022,6 +2117,15 @@
       "Imbalan: Tiket Akses Protokol"
     ]
   },
+  "item_case_wpn_selfselect_bp_8": {
+    "name": "Suplai Senjata: Dunia Jamur",
+    "type": "Kerat",
+    "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
+    "decoDesc": "Pilihan pasokan yang berisi banyak senjata. Sebagian besar prajurit yang bertempur dalam Perang Aggelos Kedua menguasai berbagai macam senjata sehingga mereka bisa mengambil apa pun dari pasokan ini dan bertarung dengan hebat.",
+    "obtainWays": [
+      "Imbalan: Tiket Akses Protokol"
+    ]
+  },
   "item_case_wpn_selfselect_common_advlevel": {
     "name": "Suplai Senjata Hasil Kurasi",
     "type": "Kerat",
@@ -2171,6 +2275,24 @@
       "Penawaran Senjata"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_7_1": {
+    "name": "KP Senjata: Pengembara Santai",
+    "type": "Kerat",
+    "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
+    "decoDesc": "Kerat berat dengan segel yang luar biasa rapat. “Dengan menyediakan berbagai pilihan senjata, operasi di medan pertarungan akan lebih aman,” begitu pikir para Ahli Mesin Senjata. Karenanya, mereka mengisi kerat ini dengan berbagai senjata yang mencerminkan pengembaraan santai.",
+    "obtainWays": [
+      "Penawaran Senjata"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_aglina": {
+    "name": "KP Senjata: Pengelana Melayang",
+    "type": "Kerat",
+    "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
+    "decoDesc": "Kerat berat dengan segel yang luar biasa rapat. “Dengan menyediakan berbagai pilihan senjata, operasi di medan pertarungan akan lebih aman,” begitu pikir para Ahli Mesin Senjata. Karenanya, mereka mengisi kerat ini dengan berbagai senjata yang mencerminkan perjalanan melayang.",
+    "obtainWays": [
+      "Penawaran Senjata"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "KP Senjata: Es Padat",
     "type": "Kerat",
@@ -2221,6 +2343,15 @@
     "type": "Kerat",
     "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
     "decoDesc": "Kerat berat dengan segel yang luar biasa rapat. “Dengan menyediakan berbagai pilihan senjata, operasi di medan pertarungan akan lebih aman,” begitu pikir para Ahli Mesin Senjata. Karenanya, mereka mengisi kerat ini dengan berbagai senjata yang mencerminkan Tunas Muda.",
+    "obtainWays": [
+      "Penawaran Senjata"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_wulfa": {
+    "name": "KP Senjata: Cakar Merah",
+    "type": "Kerat",
+    "desc": "Buka untuk memilih dan mendapatkan satu senjata di dalamnya.",
+    "decoDesc": "Kerat berat dengan segel yang luar biasa rapat. “Dengan menyediakan berbagai pilihan senjata, operasi di medan pertarungan akan lebih aman,” begitu pikir para Ahli Mesin Senjata. Karenanya, mereka mengisi kerat ini dengan berbagai senjata yang mencerminkan cakar merah.",
     "obtainWays": [
       "Penawaran Senjata"
     ]
@@ -2313,18 +2444,25 @@
     "decoDesc": "Sekotak kue kecil yang menyerupai si sahabat Argent Flow. Setiap potongnya menunjukkan temperamen yang berbeda. Ada yang terlihat bahagia, sementara yang lain terlihat angkuh. Kotak ini merupakan pajangan yang cukup menarik, memadukan teknik memanggang yang apik dan desain yang cerdas secara harmonis.",
     "obtainWays": []
   },
-  "item_char_ap_supply_tangtang": {
-    "name": "Ikan Kering",
+  "item_char_ap_supply_sweetpie": {
+    "name": "Timbunan Wafel",
     "type": "Obat Sanity",
     "desc": "Gunakan item ini untuk memulihkan 40 Sanity.",
-    "decoDesc": "Dikeringkan dengan cermat di bawah sinar matahari melalui serangkaian proses rumit yang butuh waktu kira-kira dua bulan. Saat dikunyah, camilan ini menawarkan rasa ikan yang gurih dan manis. Apa pun yang berawal dengan kepahitan dan kesulitan biasanya justru akan berujung pada kebahagiaan. Inilah yang ingin disampaikan Tangtang kepadamu.",
+    "decoDesc": "Wafel yang sangat manis dalam porsi yang sangat melimpah dan rasa yang sangat lezat.",
+    "obtainWays": []
+  },
+  "item_char_ap_supply_tangtang": {
+    "name": "Sirip Kering",
+    "type": "Obat Sanity",
+    "desc": "Gunakan item ini untuk memulihkan 40 Sanity.",
+    "decoDesc": "Dikeringkan dengan cermat di bawah sinar matahari melalui serangkaian proses rumit yang butuh waktu kira-kira dua bulan. Saat dikunyah, camilan ini menawarkan rasa sirip yang gurih dan manis. Apa pun yang berawal dengan kepahitan dan kesulitan biasanya justru akan berujung pada kebahagiaan. Inilah yang ingin disampaikan Tangtang kepadamu.",
     "obtainWays": []
   },
   "item_char_ap_supply_typhoea": {
-    "name": "Ikan Asin Samivegr",
+    "name": "Sirip Asin Samivegr",
     "type": "Obat Sanity",
     "desc": "Gunakan item ini untuk memulihkan 40 Sanity.",
-    "decoDesc": "Ikan asin khas Samivegr. Rasanya lumayan unik, tapi kalau diolah dan dimasak dengan benar, rasanya akan sangat gurih dan tiada duanya.",
+    "decoDesc": "Sirip asin khas Samivegr. Rasanya lumayan unik, tapi kalau diolah dan dimasak dengan benar, rasanya akan sangat gurih dan tiada duanya.",
     "obtainWays": []
   },
   "item_char_ap_supply_wulfa": {
@@ -2404,6 +2542,13 @@
     "type": "Kerat",
     "desc": "Berisi set gear dengan penyempurnaan maksimum yang sesuai untuk operator tertentu. Kerat Pertahanan akan otomatis terbuka saat didapatkan. Gear di dalamnya akan disimpan di Simpanan Barang Berharga.",
     "decoDesc": "Para Ahli Mesin Senjata dengan sangat cermat menyiapkan bundel gear pertahanan tipe α berisi peralatan yang sesuai untuk Operator Argent Flow.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_sweetpie": {
+    "name": "Kerat Pertahanan Senjata α: Pengembara Liar",
+    "type": "Kerat",
+    "desc": "Berisi set gear dengan penyempurnaan maksimum yang sesuai untuk operator tertentu. Kerat Pertahanan akan otomatis terbuka saat didapatkan. Gear di dalamnya akan disimpan di Simpanan Barang Berharga.",
+    "decoDesc": "Para Ahli Mesin Senjata dengan sangat cermat menyiapkan bundel gear pertahanan tipe α berisi peralatan yang sesuai untuk Operator Kay.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2730,7 +2875,7 @@
     "name": "Token Alesh",
     "type": "Token Operator",
     "desc": "Menaikkan Potensi Alesh.",
-    "decoDesc": "Umpan yang sangat mirip ikan asli. Ini trik baru Alesh, dan umpan ini mampu menarik perhatian ikan pemangsa ganas sekalipun. Tak ada yang tahu siapa yang akan terpancing berikutnya.",
+    "decoDesc": "Umpan yang sangat mirip sirip asli. Ini trik baru Alesh, dan umpan ini mampu menarik perhatian sirip pemangsa ganas sekalipun. Tak ada yang tahu siapa yang akan terpancing berikutnya.",
     "obtainWays": [
       "Hadiah: Orientasi Operator"
     ]
@@ -2757,7 +2902,7 @@
     "name": "Token Tangtang",
     "type": "Token Operator",
     "desc": "Menaikkan Potensi Tangtang.",
-    "decoDesc": "Keranjang kecil yang rumit, dianyam dengan bambu terkuat dari Lembah Jingyu. Ada ikan kecil buatan tangan yang ditambahkan sebagai hiasan. Oh iya, jangan lupa simpan Sertifikat Tangtang yang kamu terima darinya dengan rapi dan aman. Ini perintah resmi dari Ketua!",
+    "decoDesc": "Keranjang kecil yang rumit, dianyam dengan bambu terkuat dari Lembah Jingyu. Ada sirip kecil buatan tangan yang ditambahkan sebagai hiasan. Oh iya, jangan lupa simpan Sertifikat Tangtang yang kamu terima darinya dengan rapi dan aman. Ini perintah resmi dari Ketua!",
     "obtainWays": [
       "Hadiah: Orientasi Operator"
     ]
@@ -2861,6 +3006,15 @@
       "Hadiah: Orientasi Operator"
     ]
   },
+  "item_charpotentialup_chr_0040_sweetpie": {
+    "name": "Token Kay",
+    "type": "Token Operator",
+    "desc": "Meningkatkan potensi Kay.",
+    "decoDesc": "Bilah ferrium yang baru ditempa. Kelihaian sang pandai besi (atau ketiadaannya) tampak jelas dari tampilannya yang tidak rata, berlubang-lubang, dan tepiannya yang tumpul. Tapi, bilah ini tetaplah senjata yang berharga di persenjataan Kay.",
+    "obtainWays": [
+      "Hadiah: Orientasi Operator"
+    ]
+  },
   "item_charpotentialup_chr_9000_endmin": {
     "name": "Token Endministrator",
     "type": "Token Operator",
@@ -2906,6 +3060,15 @@
       "Eksplorasi dan Pengumpulan"
     ]
   },
+  "item_collection_sweetpie_mushroom": {
+    "name": "Jamur Romantis",
+    "type": "Item Misi",
+    "desc": "Jamur Romantis",
+    "decoDesc": "Jamur yang melambangkan romansa",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
   "item_collection_trstar": {
     "name": "Talosite",
     "type": "Item Misi",
@@ -2920,6 +3083,27 @@
     "type": "Material",
     "desc": "Botol logam yang dibuat dengan memproses Cuprium. Bisa digunakan untuk memproduksi item lain. Sering digunakan untuk menampung cairan.",
     "decoDesc": "Botol Cuprium cukup langka di pasaran karena Cuprium adalah logam yang lebih mahal daripada Ferrium.",
+    "obtainWays": []
+  },
+  "item_copper_bright": {
+    "name": "Lucidolite",
+    "type": "Material",
+    "desc": "Paduan logam yang dibuat dengan memproses Equprium dan Equiranite di Tempaan Ekuilibrium. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Biarkan qi luminous dan qi turbid memasukkan sifat cuprium ke dalam Xiranite. Biarkan qi tempaan yang berpendar menerangi seluruh negeri dan disaksikan semua orang.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cmpt": {
+    "name": "Bagian Lucidolite",
+    "type": "Material",
+    "desc": "Bagian perangkat yang dibuat dengan memproses Lucidolite. Bisa digunakan untuk memproduksi item lain.",
+    "decoDesc": "Bagian Lucidolite dengan berbagai macam kegunaan.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cube": {
+    "name": "Balok Energi Lucidolite",
+    "type": "Material",
+    "desc": "Balok energi yang diproduksi dengan mengemas Bagian Lucidolite bersama Bubuk Originium Padat. Bisa digunakan untuk Rekonstruksi Zona Eksklusi Wuling Utara.",
+    "decoDesc": "Balok energi penting yang disegel dengan Lucidolite. Harus disimpan dengan benar karena kondisi penyimpanan yang salah bisa memicu ledakan dahsyat.",
     "obtainWays": []
   },
   "item_copper_cmpt": {
@@ -2964,11 +3148,46 @@
     "decoDesc": "Bagian Hetonite dengan berbagai macam kegunaan.",
     "obtainWays": []
   },
+  "item_copper_enr_heng": {
+    "name": "Equprium",
+    "type": "Material",
+    "desc": "Bentuk Cuprium yang telah melalui transmutasi Susunan E. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Cuprium yang telah diselaraskan menunjukkan sifat yang sangat seimbang (E). Jika batangan cuprium yang seimbang ini digenggam, penggenggamnya akan merasakan sensasi menenangkan (walau ini mungkin sekadar efek plasebo).",
+    "obtainWays": []
+  },
+  "item_copper_hui": {
+    "name": "Cuprium T",
+    "type": "Material",
+    "desc": "Bentuk Cuprium yang telah melalui transmutasi Susunan T. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Cuprium yang diisi sifat turbid (T) berbobot lebih berat dan memiliki kelenturan yang lebih baik.",
+    "obtainWays": []
+  },
+  "item_copper_hui_cmpt": {
+    "name": "Bagian Cuprium T",
+    "type": "Material",
+    "desc": "Bagian perangkat yang dibuat dengan memproses Cuprium T. Bisa digunakan untuk memproduksi item lain.",
+    "decoDesc": "Bagian Cuprium T dengan berbagai macam kegunaan.",
+    "obtainWays": []
+  },
   "item_copper_jar": {
     "name": "Tabung Cuprium",
     "type": "Material",
     "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
     "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
+    "obtainWays": []
+  },
+  "item_copper_ming": {
+    "name": "Cuprium L",
+    "type": "Material",
+    "desc": "Bentuk Cuprium yang telah melalui transmutasi Susunan L. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Cuprium yang diisi sifat luminous (L) berbobot lebih ringan dan memiliki kekuatan tarik yang lebih tinggi.",
+    "obtainWays": []
+  },
+  "item_copper_ming_cmpt": {
+    "name": "Bagian Cuprium L",
+    "type": "Material",
+    "desc": "Bagian perangkat yang dibuat dengan memproses Cuprium L. Bisa digunakan untuk memproduksi item lain.",
+    "decoDesc": "Bagian Cuprium L dengan berbagai macam kegunaan.",
     "obtainWays": []
   },
   "item_copper_nugget": {
@@ -2994,6 +3213,20 @@
     "type": "Material",
     "desc": "Cuprium yang dicacah dan dibuat menjadi bubuk. Bisa digunakan untuk memproduksi item lain.",
     "decoDesc": "Produk yang dibuat menggunakan cacahan Cuprium akan menghasilkan tekstur yang lebih homogen.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_hui": {
+    "name": "KT Berat CuKMS",
+    "type": "Material",
+    "desc": "Komponen yang diproduksi dengan mengemas Xiranite Berat bersama Bagian Cuprium T. Bisa digunakan untuk Rekonstruksi Zona Eksklusi Wuling Utara.",
+    "decoDesc": "Komponen terintegrasi (KT) penting yang dikemas dalam cuprium (CuKMS). Berbobot berat dan tahan korosi, KT ini bisa beroperasi di lingkungan ekstrem tanpa mengalami kerusakan.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_ming": {
+    "name": "Komponen Luminarite CuKMS",
+    "type": "Material",
+    "desc": "Komponen yang diproduksi dengan mengemas Luminarite bersama Bagian Cuprium L. Bisa digunakan untuk Rekonstruksi Zona Eksklusi Wuling Utara.",
+    "decoDesc": "Komponen penting yang dikemas dalam cuprium (CuKMS). Berbobot ringan, tahan lama, dan mampu berfungsi di berbagai lingkungan.",
     "obtainWays": []
   },
   "item_corp1_animal_1": {
@@ -3371,6 +3604,27 @@
     "type": "Perangkat Pribadi",
     "desc": "Pasang item ke slot perangkat pribadi di Ransel untuk mendapatkan regen 10 SP/dtk setelah memasuki pertarungan di wilayah Wuling. Durasi: 5 dtk.",
     "decoDesc": "Lukisan tua karya Si. Panjangnya hampir mencapai dua meter, dan menggambarkan pemandangan alam yang cerah dan indah, yang bisa membangkitkan semangat.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_1": {
+    "name": "Jamur Murung",
+    "type": "Perangkat Pribadi",
+    "desc": "Pasang item ke slot perangkat pribadi di Ransel untuk mendapatkan DMG Bahan Peledak Kelas Industri +<@ba.vup>100%</> di wilayah Wuling.",
+    "decoDesc": "Dalam kegelapan yang tersembunyi, dendamnya terus membara saat ia berusaha meledakkan semua bahan peledak kelas industri di ranselmu.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_2": {
+    "name": "Jamur Berang",
+    "type": "Perangkat Pribadi",
+    "desc": "Pasang item ke slot perangkat pribadi di Ransel untuk mendapatkan DMG Bahan Peledak Kelas Industri +<@ba.vup>300%</> di wilayah Wuling.",
+    "decoDesc": "Dengan amarah yang dahsyat bagai gunung berapi, ia meraung dan memekik saat berusaha meledakkan semua bahan peledak kelas industri di ranselmu.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_3": {
+    "name": "Jamur Geram",
+    "type": "Perangkat Pribadi",
+    "desc": "Pasang item ke slot perangkat pribadi di Ransel untuk mendapatkan DMG Bahan Peledak Kelas Industri +<@ba.vup>500%</> di wilayah Wuling.",
+    "decoDesc": "ASTAGA! BAKALAN MELEDAK!",
     "obtainWays": []
   },
   "item_device_buff_snow_1": {
@@ -3958,7 +4212,7 @@
   "item_drop_klcaps_1": {
     "name": "Fragmen Glaive",
     "type": "Material",
-    "desc": "Bisa dikumpulkan dari Bayang-bayang Hawar Glaiver Satgassus Yinglung dan Bayang-bayang Hawar Kapten Satgassus Yinglung yang kalah. Bisa digunakan untuk membuat makanan dan obat-obatan berkualitas (M&O Berkualitas).",
+    "desc": "Bisa dikumpulkan dari Bayang-bayang Hawar Glaiver Satgassus Yinglung dan Bayang-bayang Hawar Kapten Satgassus Yinglung yang kalah. Bisa digunakan di nodus depot untuk fungsi Kemas dan Antar.",
     "decoDesc": "Fragmen senjata galah ini tampak rusak parah dan kelihatannya nyaris remuk total. Bentuknya saat ini hanya bisa dipertahankan menggunakan wadah khusus. Meski begitu, fragmen ini merupakan sampel penting untuk studi Bayang-bayang Hawar.",
     "obtainWays": [
       "Peluang Drop: Bayang-bayang Hawar Glaiver Satgassus Yinglung"
@@ -4025,6 +4279,26 @@
     "decoDesc": "Nidwyrm punya “kumis” yang tumbuh di kepalanya. Organ julur ini mirip akar pohon dan berfungsi sebagai organ sensoris. Kumis ini rontok dengan sendirinya saat musim semi beralih ke musim panas. Walau nilai gizinya terbatas, teksturnya sungguh luar biasa.",
     "obtainWays": [
       "Peluang Drop: Nidwyrm Penggali"
+    ]
+  },
+  "item_drop_mushbug_1": {
+    "name": "Serbuk Raja Fungi",
+    "type": "Material",
+    "desc": "Bisa dikumpulkan dari Shroomkrusher Nidwyrm dan Pangeran Boletus yang kalah. Bisa digunakan untuk membuat makanan dan obat-obatan berkualitas (M&O Berkualitas).",
+    "decoDesc": "Massa spora yang menumpuk di insang dan lipatan bahu Pangeran Boletus yang lembut. Serbuknya akan bertaburan setiap kali sang Pangeran menggesek-gesekkan kepalanya.",
+    "obtainWays": [
+      "Peluang Drop: Shroomkrusher Nidwyrm",
+      "Peluang Drop: Pangeran Boletus"
+    ]
+  },
+  "item_drop_mushro_1": {
+    "name": "Massa Miselium Berkilau",
+    "type": "Material",
+    "desc": "Bisa dikumpulkan dari Shroomkrusher Sporeknuckle dan Shroomkrusher Sporeguard yang kalah. Bisa digunakan di nodus depot untuk fungsi Kemas dan Antar.",
+    "decoDesc": "Massa miselium yang corak dan warnanya aneh. Kami tak bisa memastikan apakah gumpalan ini berasal dari kepala atau senjata Shroomkrusher.",
+    "obtainWays": [
+      "Peluang Drop: Shroomkrusher Sporeknuckle",
+      "Peluang Drop: Shroomkrusher Sporeguard"
     ]
   },
   "item_drop_sandb_1": {
@@ -4134,6 +4408,15 @@
     "obtainWays": [
       "Pembelian: Redistribusi Stok Wuling",
       "Upgrade untuk Terminal Redistribusi Stok"
+    ]
+  },
+  "item_equip_prime_enhance_wuling": {
+    "name": "Cairan Penyempurna Origo Mk I",
+    "type": "Cairan Penyempurna",
+    "desc": "Material langka untuk penyempurnaan gear. Menjamin keberhasilan dalam 1 upaya penyempurnaan gear Wuling tanpa menggunakan Katalis Penyempurna Gear.",
+    "decoDesc": "Cairan penyempurna Mk I yang sangat langka dan menggunakan material yang sulit ditemukan dan hampir tak tergantikan. Cairan ini menjamin keberhasilan satu upaya penyempurnaan. Sejumlah besar logam yang diolah dengan Originium telah terkuras habis selama Perang Aggelos. Untungnya, kini orang-orang berkesempatan untuk menyaksikan kilau gemerlapnya sekali lagi.",
+    "obtainWays": [
+      "Rekonstruksi Zona Eksklusi"
     ]
   },
   "item_equip_script_1": {
@@ -4428,6 +4711,15 @@
   },
   "item_factech_wuling_oven_amount_4": {
     "name": "Perluasan Tempa IV",
+    "type": "Rakitan Templat Standar",
+    "desc": "Dengan teknologi ini, 4 lagi Tempaan Langit bisa ditempatkan di Wuling.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Penelitian: Teknologi Bagan Pabrik AIC"
+    ]
+  },
+  "item_factech_wuling_oven_amount_5": {
+    "name": "Perluasan Tempa V",
     "type": "Rakitan Templat Standar",
     "desc": "Dengan teknologi ini, 4 lagi Tempaan Langit bisa ditempatkan di Wuling.",
     "decoDesc": "",
@@ -5002,6 +5294,20 @@
     "decoDesc": "APD wajib dikenakan dengan benar saat mengoperasikan Unit Transmutasi Padat-Gas. Jangan lengah hanya karena uap merahnya tampak tak berbahaya. Uap itu bisa membakar jiwa manusia.",
     "obtainWays": []
   },
+  "item_gas_copper_bright_clear": {
+    "name": "Gas Lucidolite Bersih",
+    "type": "Material",
+    "desc": "Produk yang didapatkan melalui reaksi kimia antara Equiragen dengan Gas Equprium. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Gas Lucidolite yang halus dan bersih. Jika tabung berisi gas ini digenggam, penggenggamnya akan merasa seolah-olah sedang melayang terbawa awan sirus yang mengalir.",
+    "obtainWays": []
+  },
+  "item_gas_copper_bright_turbid": {
+    "name": "Gas Lucidolite Keruh",
+    "type": "Material",
+    "desc": "Produk sampingan dari reaksi kimia antara Gas Equprium dan Equiragen. Bisa diproses di Unit Pengolah Limbah untuk pembuangan, atau dimurnikan di Unit Pemurni.",
+    "decoDesc": "Gas Lucidolite yang kasar dan keruh. Jika tabung berisi gas ini digenggam, penggenggamnya akan merasa seolah-olah sedang menopang gunung.",
+    "obtainWays": []
+  },
   "item_gas_copper_enr": {
     "name": "Gas Hetonite",
     "type": "Material",
@@ -5014,6 +5320,13 @@
     "type": "Material",
     "desc": "Wujud gas dari Pyrrolite. Bisa digunakan untuk memproduksi material lain.",
     "decoDesc": "Sejumlah ilmuwan percaya bahwa Gas Pyrrolite bisa dijadikan senjata. Lepaskan gas ini perlahan-lahan dan musuh yang berada di arah embusan angin akan hancur dengan cepat.",
+    "obtainWays": []
+  },
+  "item_gas_copper_enr_heng": {
+    "name": "Gas Equprium",
+    "type": "Material",
+    "desc": "Wujud gas dari Equprium. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Gas Equprium sangat stabil. Pengisian sifat luminous (L) dan turbid (T) ke dalam cuprium telah menghasilkan keseimbangan (E) sempurna di dalam logam serta memberikan fluiditas yang lebih tinggi pada gas itu.",
     "obtainWays": []
   },
   "item_gas_inert": {
@@ -5052,6 +5365,13 @@
     "decoDesc": "Untuk melindungi “keseimbangan dinamis” alami Xiranite Berat selama proses transmutasi, para ahli mesin membekali instrumen tersebut dengan modul pemantauan dan modulasi real-time tambahan.",
     "obtainWays": []
   },
+  "item_gas_xiranite_enr_heng": {
+    "name": "Equiragen",
+    "type": "Material",
+    "desc": "Wujud gas dari Equiranite. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Equiragen adalah bentuk stabil dari Xiragen. Pengisian sifat luminous (L) dan turbid (T) ke dalam Xiranite telah menghasilkan keseimbangan (E) sempurna, dan membuat Xiragen yang “berat” jadi makin berat.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_acid": {
     "name": "Tabung Cuprium (Acridgen)",
     "type": "Material",
@@ -5066,6 +5386,20 @@
     "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
     "obtainWays": []
   },
+  "item_gasjar_copper_gas_copper_bright_clear": {
+    "name": "Tabung Cuprium (Gas Lucidolite Bersih)",
+    "type": "Material",
+    "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
+    "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_bright_turbid": {
+    "name": "Tabung Cuprium (Gas Lucidolite Keruh)",
+    "type": "Material",
+    "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
+    "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_copper_enr": {
     "name": "Tabung Cuprium (Gas Hetonite)",
     "type": "Material",
@@ -5075,6 +5409,13 @@
   },
   "item_gasjar_copper_gas_copper_enr2": {
     "name": "Tabung Cuprium (Gas Pyrrolite)",
+    "type": "Material",
+    "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
+    "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_enr_heng": {
+    "name": "Tabung Cuprium (Gas Equprium)",
     "type": "Material",
     "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
     "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
@@ -5103,6 +5444,13 @@
   },
   "item_gasjar_copper_gas_xiranite_enr": {
     "name": "Tabung Cuprium (Xiragen Berat)",
+    "type": "Material",
+    "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
+    "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_xiranite_enr_heng": {
+    "name": "Tabung Cuprium (Equiragen)",
     "type": "Material",
     "desc": "Tabung bertekanan yang dibuat dengan mencetak Cuprium. Bisa digunakan untuk memproduksi item lain. Kerap digunakan untuk menyimpan gas.",
     "decoDesc": "Wadah logam kompleks yang dulu banyak dicari oleh para penggemar metalurgi.",
@@ -5209,6 +5557,16 @@
       "Upgrade untuk Terminal Redistribusi Stok"
     ]
   },
+  "item_gemcustomization_wuling_4": {
+    "name": "Kit Ukiran Multibaris Wuling",
+    "type": "Kit Ukiran Esensi",
+    "desc": "Gunakan item ini untuk mendapatkan satu esensi dengan 3 stat kustom.",
+    "decoDesc": "Kit ukiran untuk menyesuaikan esensi.\nTekno-Protokol berhasil melakukan peningkatan menyeluruh yang membuat penerapannya makin luas di bidang permesinan presisi. Hasilnya adalah pengembangan kit ukiran multibaris.",
+    "obtainWays": [
+      "Pembelian: Redistribusi Stok Wuling",
+      "Upgrade untuk Terminal Redistribusi Stok"
+    ]
+  },
   "item_gift_jinlong_1": {
     "name": "Kotak Teh Eureka",
     "type": "Hadiah",
@@ -5259,6 +5617,26 @@
       "Upgrade untuk Terminal Redistribusi Stok"
     ]
   },
+  "item_gift_jinlong_14": {
+    "name": "WOW-FEL: Event Fusi",
+    "type": "Hadiah",
+    "desc": "Berikan kepada operator yang hobinya adalah [Kreatif] dan/atau [Gaya Hidup] untuk meningkatkan kepercayaan mereka.",
+    "decoDesc": "Wafel madu dengan varian rasa baru yang disiapkan bersama oleh LA-ME-DA Hotpot dan Hongwei. Perpaduan rasanya unik dan bahan-bahan alaminya mengandung banyak turunan biotik jamur untuk membantu pencernaan. Camilan ini berpotensi menjadi sangat populer.",
+    "obtainWays": [
+      "Pembelian: Redistribusi Stok Wuling",
+      "Upgrade untuk Terminal Redistribusi Stok"
+    ]
+  },
+  "item_gift_jinlong_15": {
+    "name": "Unipolis",
+    "type": "Hadiah",
+    "desc": "Berikan kepada operator yang hobinya adalah [Olahraga] dan/atau [Teknologi] untuk meningkatkan kepercayaan mereka.",
+    "decoDesc": "“Majulah, para pekerja! Menembus pegunungan dan melintasi sungai! Biarkan peluit uap bernyanyi dan bergema di alam liar! Kita akan tinggalkan jalan raya, pabrik, dan masa depan bagi seluruh umat manusia!”",
+    "obtainWays": [
+      "Pembelian: Redistribusi Stok Wuling",
+      "Upgrade untuk Terminal Redistribusi Stok"
+    ]
+  },
   "item_gift_jinlong_2": {
     "name": "Dumbel Yinglung",
     "type": "Hadiah",
@@ -5303,7 +5681,7 @@
     "name": "Fin-n-Chip",
     "type": "Hadiah",
     "desc": "Berikan kepada operator yang hobinya adalah [Gaya Hidup] dan/atau [Budaya] untuk meningkatkan kepercayaan mereka.",
-    "decoDesc": "“Kentang organik dan ikan yang baru ditangkap! Dimarinasi dengan bumbu rahasia, lalu digoreng sesuai pesanan. Makanan klasik era Victoria yang autentik sekarang ada di Jalan Lebar Fangxing, Kota Wuling! Untuk pertama kalinya! Kaget banget, sih! Akhirnya, setelah sekian lama!”",
+    "decoDesc": "“Kentang organik dan sirip yang baru ditangkap! Dimarinasi dengan bumbu rahasia, lalu digoreng sesuai pesanan. Makanan klasik era Victoria yang autentik sekarang ada di Jalan Lebar Fangxing, Kota Wuling! Untuk pertama kalinya! Kaget banget, sih! Akhirnya, setelah sekian lama!”",
     "obtainWays": [
       "Pembelian: Redistribusi Stok Wuling",
       "Upgrade untuk Terminal Redistribusi Stok"
@@ -5531,16 +5909,18 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Satu teko seduhan teh tumbuk yang berkualitas. Tumbukan hijau zamrud yang diseduh dengan air mengalir. Aromanya bisa tercium dari jarak sangat jauh.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_10": {
     "name": "Jus Duskberry Botolan",
     "type": "Item Habis Pakai",
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
-    "decoDesc": "Buah beri dengan kualitas terbaik sering dijuluki “Senja yang Beredar”. Walau demikian, semua orang yang pernah mencicipi jus duskberi ini sepakat akan satu hal: “Ini cuma sourberry versi cair.”",
+    "decoDesc": "Buah beri dengan kualitas terbaik sering dijuluki “Senja yang Beredar”. Walau demikian, semua orang yang pernah mencicipi jus duskberry ini sepakat akan satu hal: “Ini cuma sourberry versi cair.”",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_2": {
@@ -5549,7 +5929,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Ada bukti empiris yang menunjukkan bahwa anak-anak yang sering minum susu cenderung lebih tinggi.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_3": {
@@ -5558,7 +5939,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "“Aku bukannya mau pilih-pilih, tapi jus jagungmu ini teksturnya mirip bubur jagung. Menurutmu, ‘jus’ itu seperti apa sih?”",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_4": {
@@ -5567,7 +5949,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Orang-orang mungkin mengeluhkan betapa manisnya minuman ini, atau bahwa mereka bisa sakit maag kalau minum terlalu banyak. Tapi pada akhirnya, minuman ini tetap jadi yang paling populer di menu.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_5": {
@@ -5576,7 +5959,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Sejumput bunga pir, simbol kerinduan dan nostalgia.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_6": {
@@ -5585,7 +5969,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Minuman keras terkenal hasil penyulingan yang sering secara keliru dikaitkan dengan para Songseeker dari Hannabit Circuit. Kohl ini menyentuh tenggorokan bagaikan minyak yang dituang ke wajan yang sangat panas, dan memberikan pelajaran sejarah tentang kebrutalan Perang Aggelos.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_7": {
@@ -5594,7 +5979,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Ada bukti empiris yang menunjukkan bahwa anak-anak tetap bisa tumbuh tinggi badan secara mengesankan tanpa harus rutin meminum ini. Tapi, hal ini bisa dimaklumi karena minuman yang satu ini rasanya enak sekali.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_8": {
@@ -5603,7 +5989,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Akankah setetes grapedew yang harum ini mengingatkanmu pada cuaca yang kejam, pembantaian, serta puisi tentang kampung halaman?",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_9": {
@@ -5612,7 +5999,8 @@
     "desc": "Minuman yang bisa disajikan di Pengelolaan Losmen. Memberikan efek tertentu saat digunakan.",
     "decoDesc": "Diseduh dari daun yang dipetik dari semak-semak yang tumbuh di wilayah Wuling sebelum terjadinya Ombak Hawar Parah. Teh ini sangat mahal karena produksinya yang terbatas.",
     "obtainWays": [
-      "Toko: Pengurus Pantri “Job Rusher”"
+      "Toko: Pengurus Pantri “Job Rusher”",
+      "Kerat Bahan"
     ]
   },
   "item_inn_drink_water": {
@@ -5628,7 +6016,7 @@
     "desc": "Bisa digunakan untuk Pengelolaan Losmen dan membeli Renovasi Losmen.",
     "decoDesc": "Semangat kehidupan sehari-hari terasa dalam setiap kesibukan dan cita rasa.",
     "obtainWays": [
-      "Diperoleh dari Pengelolaan Losmen"
+      "Pendapatan Pengelolaan Losmen"
     ]
   },
   "item_iron_bottle": {
@@ -5703,6 +6091,13 @@
     "type": "Item Habis Pakai",
     "desc": "Gunakan item habis pakai ini untuk meningkatkan performa tempur operator.",
     "decoDesc": "Hidangan dingin yang lezat. Renyah dengan aroma yang menyegarkan. Menurut beberapa chef veteran dari Hongshan, makin tua kulitnya, makin enak rasanya.",
+    "obtainWays": []
+  },
+  "item_jzmonk_1_mushbug_spmushroom1_1": {
+    "name": "Wafel si Perebut",
+    "type": "Item Habis Pakai",
+    "desc": "Makanan ini bisa mendefinisikan ulang matamu, kakimu, dan seluruh dunia.",
+    "decoDesc": "Makanan yang berupaya meniru wafel madu. Rasanya aneh seperti pemanis buatan. Tapi, si Jamur Ceriwis tak mau membeberkan apa pun mengenai efek praktis dari item habis pakai ini.",
     "obtainWays": []
   },
   "item_klbuds_1_hsfly_1_1": {
@@ -5795,7 +6190,7 @@
   "item_liquid_sewage": {
     "name": "Limbah Cair",
     "type": "Material",
-    "desc": "Pada dasarnya, Limbah Cair adalah air yang berisi berbagai material terlarut dan/atau tersuspensi. Limbah ini harus diolah di Unit Pengolah Air agar tetap aman.",
+    "desc": "Pada dasarnya, Limbah Cair adalah air yang berisi berbagai material terlarut dan/atau tersuspensi. Limbah ini harus diolah di Unit Pengolah Limbah agar tetap aman.",
     "decoDesc": "Limbah Cair dan perairan tercemar yang ada di alam liar sering kali berisi berbagai macam kontaminan. Butuh teknologi canggih untuk membersihkannya dengan benar.",
     "obtainWays": []
   },
@@ -5826,14 +6221,14 @@
   "item_liquid_xiranite_lowpoly": {
     "name": "Cairan Sisa Proses Xircon Lembam",
     "type": "Material",
-    "desc": "Larutan yang didapatkan melalui reaksi kimia antara Xiranite Cair dengan Limbah Cair. Larutan ini harus diolah di Unit Pengolah Air agar tetap aman.",
+    "desc": "Produk sampingan yang didapatkan melalui reaksi kimia antara Xiranite Cair dengan Limbah Cair. Harus diolah di Unit Pengolah Limbah agar tetap aman.",
     "decoDesc": "Jenis Cairan Sisa Proses Xircon dari berbagai penerapan yang seluruh energi unsur Originium-nya sudah habis. Hanya sebagian kecil dari energi Feranmut telah masuk ke kondisi aktif. Secara umum, cairan sisa proses semacam ini bisa dianggap sebagai bahan kimia yang tidak reaktif.",
     "obtainWays": []
   },
   "item_liquid_xiranite_poly": {
     "name": "Cairan Sisa Proses Xircon",
     "type": "Material",
-    "desc": "Larutan yang didapatkan melalui reaksi kimia antara Xiranite Cair dengan Limbah Cair. Bisa digunakan untuk memproduksi material lain atau diolah di Unit Pengolah Air agar tetap aman.",
+    "desc": "Larutan yang didapatkan melalui reaksi kimia antara Xiranite Cair dengan Limbah Cair. Bisa digunakan untuk memproduksi material lain atau diolah di Unit Pengolah Limbah agar tetap aman.",
     "decoDesc": "Cairan Sisa Proses Xircon adalah bentuk Xiranite Cair yang sebagian tidak aktif, tapi sebagian kecil unsurnya tetap dalam keadaan sangat aktif. Energi unsur Originium dalam Xiranite Cair perlahan-lahan menghilang saat digunakan dalam berbagai penerapan. Proses “pengeringan” ini terkadang akan memicu aktivasi kekuatan Feranmut dalam Xiranite.",
     "obtainWays": []
   },
@@ -6452,6 +6847,15 @@
       "Imbalan: Misi"
     ]
   },
+  "item_mission_gm02m28_sample": {
+    "name": "Sampel Uji Pupuk",
+    "type": "Item Misi",
+    "desc": "Berisi sampel uji untuk prototipe pupuk.",
+    "decoDesc": "Sisa-sisa materi dari prototipe pupuk yang ditemukan di sudut terdalam bendungan lama. Baunya yang sangat menyengat kini sudah jauh berkurang.",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
   "item_mission_sm1l2m2_key": {
     "name": "Kunci Bengkok",
     "type": "Item Misi",
@@ -6666,6 +7070,24 @@
     "type": "Piringan Hitam",
     "desc": "Ini bisa diputar dengan Fonograf MKV-I di Ruang Resepsionis di Dijiang.",
     "decoDesc": "Cahaya menerpa pepohonan Jingyu, sementara rakit membawa para pelancong menyeberangi sungai.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
+  "item_music_exp_wuling_10": {
+    "name": "Where We Go, When We Return",
+    "type": "Piringan Hitam",
+    "desc": "Ini bisa diputar dengan Fonograf MKV-I di Ruang Resepsionis di Dijiang.",
+    "decoDesc": "Selama ada tempat tujuan, akan selalu ada saat kepulangan.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
+  "item_music_exp_wuling_11": {
+    "name": "Drifting Raft",
+    "type": "Piringan Hitam",
+    "desc": "Ini bisa diputar dengan Fonograf MKV-I di Ruang Resepsionis di Dijiang.",
+    "decoDesc": "Rakit yang terapung mengantarku ke musim gugur.",
     "obtainWays": [
       "Bursa Talosite"
     ]
@@ -7068,6 +7490,15 @@
     "decoDesc": "Tanaman Yazhen bisa dicacah menjadi bubuk, yang kemudian bisa dilarutkan dan dikemas dalam wadah agar lebih mudah digunakan.",
     "obtainWays": []
   },
+  "item_plant_grass_spmushroom_1": {
+    "name": "Jamur Ceriwis",
+    "type": "Material",
+    "desc": "Fungi spesial yang tumbuh di Bendungan Lama. Bisa digunakan untuk membuat wafel madu.",
+    "decoDesc": "“Asal tahu saja ya aku sudah menguak hakikat sejati kosmos dan segala sesuatu di antara langit dan bumi karena kau tahu kan segalanya itu mengacu padaku dan seluruh dunia ini dan aku sudah memahami semuanya jadi tunggu apa lagi ayo cepat kunyah aku KUMOHON kunyah saja sekarang dan cepatlah karena kau sama sekali tak akan menyesal sumpah!”",
+    "obtainWays": [
+      "Bendungan Lama"
+    ]
+  },
   "item_plant_moss_1": {
     "name": "Buckflower",
     "type": "Material",
@@ -7350,7 +7781,6 @@
     "desc": "Tumbuhan panen ini hanya bisa tumbuh melalui budi daya presisi. Bisa langsung digunakan untuk membuat makanan dan obat-obatan berkualitas.",
     "decoDesc": "Redjade Ginseng adalah herba ringan yang sering dikonsumsi oleh penduduk Hongshan sebagai suplemen penguat.",
     "obtainWays": [
-      "Taman Sains Originium: Jalur Tepi Tebing",
       "Tanam tumbuhan panen di Ladang Ramah Lingkungan"
     ]
   },
@@ -7569,6 +7999,13 @@
       "Item yang Bisa Dikumpulkan: Eksplorasi Dunia"
     ]
   },
+  "item_plantpoint_chalk_1": {
+    "name": "Petak Anggrek Ocellate",
+    "type": "Ventilasi Gas",
+    "desc": "Waduk Xiragen di alam liar. Pasang Ekstraktor Gas di sana untuk mengekstrak Xiragen.",
+    "decoDesc": "Porta koneksi Xiranite yang mungkin dirancang untuk fasilitas Xiranite tertentu. Waduk ini menyimpan cadangan Xiragen yang melimpah.",
+    "obtainWays": []
+  },
   "item_port_air_dancer_1": {
     "name": "Profesor Tabung",
     "type": "Ornamen",
@@ -7713,6 +8150,15 @@
     "decoDesc": "Menara tembak baru yang sangat direkomendasikan oleh para ahli mesin senjata Endfield Industries. Seorang ahli mesin pernah berlari bermil-mil di bawah badai hujan es yang dahsyat. Tidak heran kalau dia akhirnya merancang platform senjata yang mampu melepaskan hujan tembakan dengan daya hancur luar biasa.",
     "obtainWays": []
   },
+  "item_port_biscuitmountain_1": {
+    "name": "Doa yang Manis",
+    "type": "Ornamen",
+    "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
+    "decoDesc": "Dengarkan doanya yang meminta rasa manis tiada akhir.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
   "item_port_burger_1": {
     "name": "Penakluk Hamburger",
     "type": "Ornamen",
@@ -7768,6 +8214,15 @@
     "type": "Ornamen",
     "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
     "decoDesc": "Perlahan ia memberikan kasihnya di bentangan salju yang mungil dan tenang ini.",
+    "obtainWays": [
+      "Imbalan: Misi"
+    ]
+  },
+  "item_port_dg017oven_1": {
+    "name": "“Tempaan Manis”",
+    "type": "Ornamen",
+    "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
+    "decoDesc": "Satu langkah kecil bagi Endfield Industries, satu langkah mantap memasuki sektor kuliner.",
     "obtainWays": [
       "Imbalan: Misi"
     ]
@@ -7874,10 +8329,10 @@
     ]
   },
   "item_port_liquid_cleaner_1": {
-    "name": "Unit Pengolah Air",
+    "name": "Unit Pengolah Limbah",
     "type": "Fasilitas Dasar",
-    "desc": "Fasilitas pemrosesan Limbah Cair. Fasilitas ini juga bisa memproses Cairan Sisa Proses Xircon dan Cairan Sisa Proses Xircon Lembam, tapi efisiensinya terbatas.",
-    "decoDesc": "Endfield berhasil meningkatkan efisiensi proses pengolahan airnya secara signifikan dengan menggunakan Tekno-Protokol pada tahap disinfeksi dan remediasi.",
+    "desc": "Fasilitas pemrosesan limbah. Fasilitas ini juga bisa memproses Limbah Cair, Cairan Sisa Proses Xircon, Cairan Sisa Proses Xircon Lembam, dan Gas Lucidolite Keruh.",
+    "decoDesc": "Kini hadir dengan serangkaian peningkatan fungsi yang lebih komprehensif dan efektif.",
     "obtainWays": []
   },
   "item_port_liquid_purifier_1": {
@@ -7913,6 +8368,27 @@
     "type": "Fasilitas Dasar",
     "desc": "Asal Bus Depot. Porta Bus Depot bisa ditempatkan di mana saja di Area AIC Inti.",
     "decoDesc": "Bagi sebagian ahli mesin, Xiranite sering kali memunculkan inspirasi liar yang bahkan tak bisa mereka jelaskan. Apa sebenarnya titik akhir industri? Adakah kemungkinan lain untuk Xiranite, material yang begitu “bebas”? Akankah teknologi industri manusia mencapai kondisi “tak berwujud”? Makin keras ahli mesin memikirkannya, makin yakinlah mereka bahwa setiap langkah yang mereka ambil adalah langkah revolusioner.",
+    "obtainWays": []
+  },
+  "item_port_magic_balancer_1": {
+    "name": "Tempaan Ekuilibrium",
+    "type": "Fasilitas Dasar",
+    "desc": "Fasilitas yang bisa menggabungkan bentuk Luminous dan Turbid dari suatu material untuk membuat bentuk seimbang yang baru.",
+    "decoDesc": "Fasilitas untuk proses penyelarasan. Setelah suatu material dipilah menjadi bentuk luminous (L) dan turbid (T), keduanya bisa digabungkan kembali untuk menciptakan sesuatu yang baru dan membuka peluang baru bagi ilmuwan ilmu material.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_1": {
+    "name": "Tempaan Luminansi",
+    "type": "Fasilitas Dasar",
+    "desc": "Fasilitas yang bisa diaktifkan dengan Xiragen untuk memproyeksikan 1 susunan tertentu di depannya.",
+    "decoDesc": "Fasilitas tempa ini memilah Xiranite secara presisi untuk mengubah tingkat aktivitasnya. Bentuk yang lebih ringan disebut Luminarite, sedangkan bentuk yang lebih berat disebut Turbidarite.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_2": {
+    "name": "Tempaan Luminansi Bipolar",
+    "type": "Fasilitas Dasar",
+    "desc": "Fasilitas yang bisa diaktifkan dengan Xiragen untuk memproyeksikan 2 susunan tertentu di depan dan sampingnya.",
+    "decoDesc": "Peningkatan dari Tempaan Luminansi orisinal yang memberikan efisiensi performa yang jauh lebih tinggi.",
     "obtainWays": []
   },
   "item_port_marker_1": {
@@ -7972,6 +8448,15 @@
     "desc": "Fasilitas untuk menjalankan reaksi kimia berwujud padat atau cair. Juga dilengkapi dengan porta input dan porta output tambahan serta mampu menjalankan beberapa reaksi sekaligus.",
     "decoDesc": "Kapasitas lebih besar. Keamanan lebih baik.",
     "obtainWays": []
+  },
+  "item_port_mushman_1": {
+    "name": "“Pangeran Eukariotik”",
+    "type": "Ornamen",
+    "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
+    "decoDesc": "Meski tidak punya kisah masa lalu yang jelas, dia bisa memandang dunia dengan jelas.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
   },
   "item_port_pear_blossom_bonsai_1": {
     "name": "Miniatur Pohon di Bukit",
@@ -8310,7 +8795,7 @@
   "item_port_stock_board_1": {
     "name": "Redistribusi Terwujud",
     "type": "Ornamen",
-    "desc": "Item ornamen. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
+    "desc": "Ornamen yang bisa ditempatkan. Disimpan dalam panel Ornamen di Daftar Fasilitas.",
     "decoDesc": "“Wortel Hoki sudah diisi ulang? Saatnya menjual semuanya.”",
     "obtainWays": [
       "Bursa Talosite"
@@ -8414,6 +8899,13 @@
     "type": "Fasilitas Dasar",
     "desc": "Fasilitas yang melaminasi beragam material menjadi satu untuk membuat komponen gear.",
     "decoDesc": "Peralatan tingkat atas harus menjalani berbagai tahap pemrosesan yang mencakup penenunan tekstil dan laminasi kompresi berbagai jenis kain dan pelapis.",
+    "obtainWays": []
+  },
+  "item_port_wonder_supply_port_1": {
+    "name": "Porta Pasokan Rekonstruksi",
+    "type": "Fasilitas Dasar",
+    "desc": "Porta pasokan untuk proyek Rekonstruksi Zona Eksklusi Wuling Utara (ZEWU). Masukkan material rekonstruksi yang dibutuhkan ke dalam porta ini untuk meningkatkan progresi proyek secara otomatis.",
+    "decoDesc": "Porta pasokan khusus untuk mengangkut item khusus yang dikemas dalam cuprium (CuKMS). Aman dan mudah digunakan.",
     "obtainWays": []
   },
   "item_port_xiranite_oven_1": {
@@ -8656,6 +9148,13 @@
     "type": "Material",
     "desc": "Baterai yang dikemas oleh fasilitas Pabrik AIC. Bisa digunakan untuk mengalirkan listrik, mengisi daya fasilitas, atau diperdagangkan di pos depan.",
     "decoDesc": "Keuntungan terbesar yang ditawarkan oleh baterai ini adalah tidak ada risiko kebakaran spontan.",
+    "obtainWays": []
+  },
+  "item_proc_battery_6": {
+    "name": "Baterai KT Wuling",
+    "type": "Material",
+    "desc": "Baterai yang dikemas oleh fasilitas Pabrik AIC. Bisa digunakan untuk mengalirkan listrik, mengisi daya fasilitas, atau diperdagangkan di pos depan.",
+    "decoDesc": "Baterai yang mampu bertahan selama alam semesta itu sendiri. Inilah tujuan utama dari rancangan baterai KT.",
     "obtainWays": []
   },
   "item_proc_bomb_1": {
@@ -8973,10 +9472,10 @@
     ]
   },
   "item_ranch_fishmeat_1": {
-    "name": "Filet Ikan",
+    "name": "Filet Sirip",
     "type": "Material",
     "desc": "Produk peternakan. Bisa digunakan untuk membuat makanan dalam gameplay Pengelolaan Losmen.",
-    "decoDesc": "Filet dari ikan hasil budi daya. Sebaiknya jangan dikonsumsi dalam keadaan mentah karena spesies ikan dan metode budi dayanya.",
+    "decoDesc": "Filet dari sirip hasil budi daya. Sebaiknya jangan dikonsumsi dalam keadaan mentah karena spesies sirip dan metode budi dayanya.",
     "obtainWays": [
       "Peternakan: Memelihara Hewan",
       "Kerat Bahan",
@@ -8984,10 +9483,10 @@
     ]
   },
   "item_ranch_fishmeat_2": {
-    "name": "Filet Ikan [A]",
+    "name": "Filet Sirip [A]",
     "type": "Material",
     "desc": "Produk peternakan. Bisa digunakan untuk membuat makanan dalam gameplay Pengelolaan Losmen.",
-    "decoDesc": "Filet ikan yang gurih dan manis. Ikan yang sering bergerak cenderung menghasilkan filet terbaik. Wah wah! Waktunya berolahraga!",
+    "decoDesc": "Filet sirip yang gurih dan manis. Sirip yang sering bergerak cenderung menghasilkan filet terbaik. Wah wah! Waktunya berolahraga!",
     "obtainWays": [
       "Peternakan: Memelihara Hewan",
       "Kerat Bahan",
@@ -9177,7 +9676,7 @@
     "name": "Medical Reserves",
     "type": "Buff Regional",
     "desc": "Setelah beristirahat di Titik TP, kamu akan mendapatkan 1 tumpuk buff Medical Reserves. Jika ada operator mana saja dalam tim yang HP-nya turun hingga kurang dari batas tertentu, buff ini akan secara otomatis dipakai dan langsung memulihkan HP untuk setiap rekan tim. \nHanya berlaku di Wuling.",
-    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang",
+    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9186,7 +9685,7 @@
     "name": "Medical Reserves",
     "type": "Buff Regional",
     "desc": "Setelah beristirahat di Titik TP, kamu akan mendapatkan 1 tumpuk buff Medical Reserves. Jika ada operator mana saja dalam tim yang HP-nya turun hingga kurang dari batas tertentu, buff ini akan secara otomatis dipakai dan langsung memulihkan HP untuk setiap rekan tim. \nHanya berlaku di Wuling.",
-    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang",
+    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9195,7 +9694,7 @@
     "name": "Medical Reserves",
     "type": "Buff Regional",
     "desc": "Setelah beristirahat di Titik TP, kamu akan mendapatkan 1 tumpuk buff Medical Reserves. Jika ada operator mana saja dalam tim yang HP-nya turun hingga kurang dari batas tertentu, buff ini akan secara otomatis dipakai dan langsung memulihkan HP untuk setiap rekan tim. \nHanya berlaku di Wuling.",
-    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang",
+    "decoDesc": "Karena sudah memahami intel lokal, persiapan medismu pun selalu matang.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9204,7 +9703,7 @@
     "name": "Full Vigor",
     "type": "Buff Regional",
     "desc": "Stamina akan pulih lebih cepat. \nHanya berlaku di Wuling.",
-    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik",
+    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9213,7 +9712,7 @@
     "name": "Full Vigor",
     "type": "Buff Regional",
     "desc": "Stamina akan pulih lebih cepat. \nHanya berlaku di Wuling.",
-    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik",
+    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9222,7 +9721,7 @@
     "name": "Full Vigor",
     "type": "Buff Regional",
     "desc": "Stamina akan pulih lebih cepat. \nHanya berlaku di Wuling.",
-    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik",
+    "decoDesc": "Pengelolaan stamina secara ilmiah menghasilkan peningkatan ketahanan yang lebih baik.",
     "obtainWays": [
       "Kirimkan Aurylene di Titik TP"
     ]
@@ -9479,6 +9978,15 @@
       "Bursa Talosite"
     ]
   },
+  "item_shot_anim_sweetpie_m_1": {
+    "name": "Bingung dalam Pikir",
+    "type": "Pose Kamera",
+    "desc": "Pose kamera yang bisa digunakan oleh operator.",
+    "decoDesc": "Interpretasi atas makna di balik “Bingung dalam Pikir”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
   "item_shot_anim_tangtang_m_1": {
     "name": "AKULAH YANG TERHEBAT",
     "type": "Pose Kamera",
@@ -9497,11 +10005,38 @@
       "Bursa Talosite"
     ]
   },
+  "item_shot_anim_whiten_s_1": {
+    "name": "Diam Dulu",
+    "type": "Pose Kamera",
+    "desc": "Pose kamera yang bisa digunakan oleh operator.",
+    "decoDesc": "Interpretasi atas makna di balik “Diam Dulu”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
+  "item_shot_anim_wulfa_m_1": {
+    "name": "Pengukuran Kompetitif",
+    "type": "Pose Kamera",
+    "desc": "Pose kamera yang bisa digunakan oleh operator.",
+    "decoDesc": "Interpretasi atas makna di balik “Pengukuran Kompetitif”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
   "item_shot_anim_yvonne_m_1": {
     "name": "Langkah Cepat Neo-Nista",
     "type": "Pose Kamera",
     "desc": "Pose kamera yang bisa digunakan oleh operator.",
     "decoDesc": "Interpretasi atas makna di balik “Langkah Cepat Neo-Nista”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
+    "obtainWays": [
+      "Bursa Talosite"
+    ]
+  },
+  "item_shot_anim_zhuangfy_m_1": {
+    "name": "Seperti yang Terlihat",
+    "type": "Pose Kamera",
+    "desc": "Pose kamera yang bisa digunakan oleh operator.",
+    "decoDesc": "Interpretasi atas makna di balik “Seperti yang Terlihat”. Kesan yang ingin disampaikan cukup jelas, tapi juga sulit dipahami.",
     "obtainWays": [
       "Bursa Talosite"
     ]
@@ -9629,6 +10164,15 @@
     "type": "Filter Kamera",
     "desc": "Filter untuk menyesuaikan warna foto. Bisa digunakan pada fitur Kamera.",
     "decoDesc": "Para penggemar fotografi di Endfield menganggapnya salah satu filter paling populer. Orang-orang sering membicarakan keindahan musim semi di Wuling.",
+    "obtainWays": [
+      "Imbalan: Tiket Akses Protokol"
+    ]
+  },
+  "item_shot_filter_sp_8": {
+    "name": "Filter: Senja Keemasan",
+    "type": "Filter Kamera",
+    "desc": "Filter untuk menyesuaikan warna foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Para penggemar fotografi di Endfield menganggapnya salah satu filter paling populer. Bukankah filter ini mengingatkanmu pada minuman hangat pertamamu setelah pulang ke rumah saat senja?",
     "obtainWays": [
       "Imbalan: Tiket Akses Protokol"
     ]
@@ -9770,6 +10314,13 @@
     "decoDesc": "Stiker yang didapatkan sebagai hadiah ulang tahun. Semoga sukacita dan kebahagiaan selalu menyertaimu di tahun-tahun mendatang.",
     "obtainWays": []
   },
+  "item_shot_sticker_birthday_2027": {
+    "name": "Stiker: Ulang Tahun ke-2",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker dari “Perayaan Ulang Tahun”. Semoga kamu selalu menikmati kebahagiaan di setiap hari mendatang dan semoga semua harapanmu terwujud.",
+    "obtainWays": []
+  },
   "item_shot_sticker_bp_1": {
     "name": "Stiker: Ingatan",
     "type": "Stiker Foto",
@@ -9833,6 +10384,15 @@
       "Imbalan: Tiket Akses Protokol"
     ]
   },
+  "item_shot_sticker_bp_8": {
+    "name": "Stiker: Lengket & Manis",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker dari “Aroma Manis”. Biarkan sirupnya mengalir! Hari ini aku lagi ngidam, demi cinta uwu di masa depan!",
+    "obtainWays": [
+      "Imbalan: Tiket Akses Protokol"
+    ]
+  },
   "item_shot_sticker_channel_v1d3d6_1": {
     "name": "Stiker: Helm Pengaman",
     "type": "Stiker Foto",
@@ -9848,6 +10408,41 @@
     "obtainWays": [
       "Pusat Akuisisi: Bundel"
     ]
+  },
+  "item_shot_sticker_channel_v1d7_1": {
+    "name": "Stiker: Tudung Puding",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker ini masuk dalam daftar rekomendasi teratas di kalangan penggemar fotografi di Endfield. Tampilannya saja sudah terlihat manis dan nyaman.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_2": {
+    "name": "Stiker: PIZZA-LA",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker ini masuk dalam daftar rekomendasi teratas di kalangan penggemar fotografi di Endfield. Cita rasa yang tak pernah membuat bosan.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_3": {
+    "name": "Stiker: Pola Gema",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker dari “Gema”. Konser akbar akan segera dimulai.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_4": {
+    "name": "Stiker: Stik OriGO-GO",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker dari grup penggemar “OriGO-GO”, simbol cinta yang membara, dukungan penggemar, dan Originium Arts.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_5": {
+    "name": "Stiker: Mahkota Logam yang Tergores",
+    "type": "Stiker Foto",
+    "desc": "Stiker hiasan yang bisa ditempelkan pada foto. Bisa digunakan pada fitur Kamera.",
+    "decoDesc": "Stiker dari “Metal Gahar Menggila”. Kenakan ini, dan jadilah Penguasa Metal Gahar.",
+    "obtainWays": []
   },
   "item_shot_sticker_giftpack_1": {
     "name": "Stiker: Supresor",
@@ -10106,6 +10701,13 @@
       "Pembelian: Redistribusi Stok Wuling",
       "Upgrade untuk Terminal Redistribusi Stok"
     ]
+  },
+  "item_spaceship_exhibits_mushroom": {
+    "name": "Maskot Jamur Mewah",
+    "type": "Dijiang: Item Pajangan",
+    "desc": "Bisa dipamerkan di Menara Jalur di Ring Pusat Dijiang.",
+    "decoDesc": "Maskot peringatan untuk Taman Ekologi Bendungan Lama Wuling. Konon, sang perancang mendapatkan inspirasinya lewat mimpi. Maskot ini ditujukan untuk melambangkan persahabatan antara UWST dan Hongshan Academy of Sciences.",
+    "obtainWays": []
   },
   "item_spaceship_exhibits_shanshantu": {
     "name": "Figurin Rekan",
@@ -10377,6 +10979,15 @@
     "name": "Surat Izin HH Bintang-Bintang Menyertaiku",
     "type": "Barang Berharga OBW",
     "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang] berakhir.",
+    "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
+    "obtainWays": [
+      "Pusat Akuisisi: Bundel"
+    ]
+  },
+  "item_ticketgacha_special_single_lt_1_7_1": {
+    "name": "Surat Izin HH Wilderpaw Pengembara",
+    "type": "Barang Berharga OBW",
+    "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Paron, Ransel, dan Madu]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Paron, Ransel, dan Madu] berakhir.",
     "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
     "obtainWays": [
       "Pusat Akuisisi: Bundel"
@@ -10722,6 +11333,15 @@
       "Tiket Akses Protokol: Protokol Kustom"
     ]
   },
+  "item_user_avatar_bp_1_7": {
+    "name": "Jamur nan Nyaman",
+    "type": "Potret",
+    "desc": "Potret yang bisa diganti melalui layar Profil. Potret profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "Pada suatu hari, pada suatu bulan pada suatu tahun, sebuah foto diambil untuk mengabadikan dua warga Dunia Jamur yang bermartabat.",
+    "obtainWays": [
+      "Tiket Akses Protokol: Protokol Kustom"
+    ]
+  },
   "item_user_avatar_chr_0002_endminm": {
     "name": "Endministrator",
     "type": "Potret",
@@ -11037,6 +11657,15 @@
       "Hadiah: Orientasi Operator"
     ]
   },
+  "item_user_avatar_chr_0040_sweetpie": {
+    "name": "Kay",
+    "type": "Potret",
+    "desc": "Potret yang bisa diganti melalui layar Profil. Potret profil ditampilkan di berbagai lokasi.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Hadiah: Orientasi Operator"
+    ]
+  },
   "item_user_avatar_frame_activity_1": {
     "name": "Dongeng Carly",
     "type": "Bingkai Potret",
@@ -11116,6 +11745,15 @@
       "Kontrak Kontingensi: Operasi Eksperimen Indigo"
     ]
   },
+  "item_user_avatar_frame_activity_takestwo_2": {
+    "name": "Bintang Terang Perampas Mahkota",
+    "type": "Bingkai Potret",
+    "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
+    "decoDesc": "Bukti yang diberikan kepada sang juara yang telah merajai RISE ARENA yang membara (walau prosesnya tak terlepas dari insiden). Prajurit sejati niscaya punya kekuatan untuk menggenggam bintang itu sendiri.",
+    "obtainWays": [
+      "Event: [BANGKIT! MEGAARENA!]"
+    ]
+  },
   "item_user_avatar_frame_bp_1_0": {
     "name": "Cakrawala Baru",
     "type": "Bingkai Potret",
@@ -11175,6 +11813,15 @@
     "type": "Bingkai Potret",
     "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
     "decoDesc": "Kuas ini menciptakan sungai dan puncak gunung, membingkai pemandangan berlapis yang indah.",
+    "obtainWays": [
+      "Tiket Akses Protokol: Protokol Kustom"
+    ]
+  },
+  "item_user_avatar_frame_bp_1_7": {
+    "name": "Segigit Lalu Warna-Warni",
+    "type": "Bingkai Potret",
+    "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
+    "decoDesc": "Sebenarnya, menerima persahabatan dari kaum jamur bisa membuka indramu hingga jauh melampaui spektrum tujuh warna pelangi.",
     "obtainWays": [
       "Tiket Akses Protokol: Protokol Kustom"
     ]
@@ -11253,7 +11900,7 @@
     "name": "Manis & Bersalju",
     "type": "Bingkai Potret",
     "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
-    "decoDesc": "Aroma buah, suara lembut gemersik jerami .... Dengar itu? Kenangannya mulai kembali.",
+    "decoDesc": "Aroma buah, suara lembut kemersik di sedotan .... Dengar itu? Kenangannya mulai kembali.",
     "obtainWays": []
   },
   "item_user_avatar_frame_channel_v1d5_2": {
@@ -11268,6 +11915,13 @@
     "type": "Bingkai Potret",
     "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
     "decoDesc": "Biarlah setiap hati berkobar oleh harapan, dan bergejolak seiring setiap putaran roda giginya.",
+    "obtainWays": []
+  },
+  "item_user_avatar_frame_channel_v1d7_1": {
+    "name": "Panggung Retro-Metal",
+    "type": "Bingkai Potret",
+    "desc": "Bingkai potret yang bisa diganti melalui layar Profil. Bingkai potret ditampilkan di berbagai lokasi.",
+    "decoDesc": "Metal Gahar memang selalu suka hal-hal berbau retro. Tapi, kalau waktu memang sebuah siklus, mungkin mereka pun akan kembali begitu jauh ke masa lalu sampai akhirnya menembus masa depan.",
     "obtainWays": []
   },
   "item_user_avatar_frame_endfield_1": {
@@ -12900,6 +13554,13 @@
     "decoDesc": "Hidangan yang benar-benar menantang bagi koki. Hati quillbeast bisa matang terlalu cepat dan teksturnya jadi seperti kulit karet. Koki yang terampil harus mencari cara agar hasil akhirnya tetap renyah dan lembut seperti rebung muda.",
     "obtainWays": []
   },
+  "item_wgthorns_1_mushbug_spmushroom1_1": {
+    "name": "Darah Raja Fungi",
+    "type": "Item Taktis",
+    "desc": "Gunakan item taktis ini untuk menyadarkan operator yang tidak bisa bertarung lagi.",
+    "decoDesc": "Minuman menyegarkan dengan aroma jamur yang kaya dan rasa mirip sayuran. Jika diminum, minuman ini seolah membangkitkan suara orang terkasih yang memanggilmu pulang.",
+    "obtainWays": []
+  },
   "item_wpngem_enhance_dust": {
     "name": "Gel Pendingin",
     "type": "Material Esensi",
@@ -12962,6 +13623,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "item_xiranite_enr_heng": {
+    "name": "Equiranite",
+    "type": "Material",
+    "desc": "Bentuk Xiranite yang telah melalui transmutasi Susunan E. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Xiranite dengan keseimbangan yang selaras bisa disesuaikan secara fleksibel untuk penggunaan di lingkungan yang sangat reaktif maupun lingkungan yang sangat stabil.",
+    "obtainWays": []
+  },
   "item_xiranite_enr_powder": {
     "name": "Xiranite Berat",
     "type": "Material",
@@ -12969,11 +13637,25 @@
     "decoDesc": "Xiranite Berat pertama kali ditemukan dalam upaya untuk meningkatkan hasil Xiranite. Saat pengujian, Tianshi menjalankan eksperimen dengan berbagai campuran polimorfis Xiranite dan berhasil mencapai semacam keseimbangan bersama antara dinamis dan statis. Walau tujuannya tidak tercapai, pengujian ini menghasilkan suatu bentuk Xiranite Berat yang mengalami peningkatan kecil tapi signifikan dalam hal daya tahan.",
     "obtainWays": []
   },
+  "item_xiranite_hui": {
+    "name": "Turbidarite",
+    "type": "Material",
+    "desc": "Bentuk Xiranite yang telah melalui transmutasi Susunan T. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Induksi oleh Xiragen yang kasar dan berat telah meningkatkan stabilitas gumpalan Xiranite ini.",
+    "obtainWays": []
+  },
   "item_xiranite_lowpoly": {
     "name": "Xircon Ringan",
     "type": "Material",
     "desc": "Didapatkan melalui peluruhan kristal. Bisa digunakan untuk memproduksi material lain.",
     "decoDesc": "Xircon Ringan punya kepadatan yang lebih rendah daripada Xircon. Saat ini, Tianshi Wuling sedang berusaha menggunakan material ini untuk membuat armor badan perorangan bagi anggota Satuan Tugas Khusus Yinglung.",
+    "obtainWays": []
+  },
+  "item_xiranite_ming": {
+    "name": "Luminarite",
+    "type": "Material",
+    "desc": "Bentuk Xiranite yang telah melalui transmutasi Susunan L. Bisa digunakan untuk memproduksi material lain.",
+    "decoDesc": "Induksi oleh Xiragen yang halus dan ringan telah meningkatkan aktivitas gumpalan Xiranite ini.",
     "obtainWays": []
   },
   "item_xiranite_poly": {
@@ -13347,6 +14029,20 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_copper_bright_cube_01": {
+    "name": "Balok Energi Lucidolite",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Cuprium</>, <@gd.key>Xiranite</>, <@gd.key>Bubuk Originium Padat</>, dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>Balok Energi Lucidolite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_bright_cube_02": {
+    "name": "Lucidolite Efisien",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Equprium</>, <@gd.key>Equiranite</>, <@gd.key>Inti Pemisah</>, dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>Lucidolite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_copper_cmpt_1": {
     "name": "Bagian Cuprium",
     "type": "Cetak Biru Sistem",
@@ -13358,6 +14054,20 @@
     "name": "Bagian Hetonite",
     "type": "Cetak Biru Sistem",
     "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Larutan Hetonite</> dan <@gd.key>Bijih Ferrium</> untuk secara otomatis memproduksi <@gd.key>Bagian Hetonite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_hui_01": {
+    "name": "KT Berat CuKMS",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini di Area AIC Inti, lalu masukkan <@gd.key>Cuprium</>, <@gd.key>Xiranite Berat</>, dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>KT Berat CuKMS</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_ming_01": {
+    "name": "Komponen Luminarite CuKMS",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Cuprium</>, <@gd.key>Xiranite</>, dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>Komponen Luminarite CuKMS</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13452,6 +14162,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_magic_spawner_1_heng_01": {
+    "name": "Produk “E”",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>material yang bisa diinfusi dengan sifat Equilibrated (E)</> dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>bentuk E dari material input itu</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_proc_battery_4_1": {
     "name": "Baterai KR Wuling",
     "type": "Cetak Biru Sistem",
@@ -13491,6 +14208,20 @@
     "name": "Xiranite Efisien",
     "type": "Cetak Biru Sistem",
     "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Inergen</>, <@gd.key>Air Bersih</>, dan <@gd.key>Karbon</> untuk secara otomatis memproduksi <@gd.key>Xiranite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_01": {
+    "name": "Tempaan Ekuilibrium: Xiranite Berat",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Xiranite</> dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>Xiranite Berat</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_02": {
+    "name": "Xiranite Berat Efisien",
+    "type": "Cetak Biru Sistem",
+    "desc": "Tempatkan cetak biru ini ke Area AIC Inti, lalu masukkan <@gd.key>Xiranite</> dan <@gd.key>Xiragen</> untuk secara otomatis memproduksi <@gd.key>Xiranite Berat</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13652,6 +14383,15 @@
     "name": "Surat Izin HH Bintang-Bintang Menyertaiku",
     "type": "Barang Berharga OBW",
     "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Hangatnya Perapian Mengundang Laut Gemintang] berakhir.",
+    "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
+    "obtainWays": [
+      "Pusat Akuisisi: Bundel"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_7_1": {
+    "name": "Surat Izin HH Wilderpaw Pengembara",
+    "type": "Barang Berharga OBW",
+    "desc": "Sertifikat Endfield Industries berbatas waktu. Gunakan item ini untuk melakukan 1 headhunt di Headhunt Khusus [Paron, Ransel, dan Madu]. Sertifikat ini akan kedaluwarsa saat Headhunt Khusus [Paron, Ransel, dan Madu] berakhir.",
     "decoDesc": "Surat izin SDM spesial untuk melakukan headhunt demi mendapatkan operator yang memenuhi berbagai persyaratan unik. Karena permintaan ini bersifat darurat, izin ini akan kedaluwarsa setelah batas waktu tertentu.",
     "obtainWays": [
       "Pusat Akuisisi: Bundel"

@@ -34,7 +34,7 @@
     },
     "battleSkill": {
       "name": "Obscurité domptée",
-      "description": "Flux d'argent effectue un balayage avec sa lance et inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité, tout en appliquant <#ba.airborne>Soulèvement</> à la ou les cibles devant lui.\nAprès avoir utilisé sa compétence de combo, la compétence de combat de Flux d'argent sera temporairement remplacée par <@ba.key>Charge fulgurante</>.\n<@ba.key>Charge fulgurante</> : Flux d'argent enfourche sa galopeuse Nuli pour bondir dans les airs, accumule rapidement de la puissance, puis charge la cible pour appliquer une <#ba.conduct>Électrification</> de force et infliger des <@ba.pulse>DÉG électriques</> aux ennemis dans une large zone devant lui. Lorsque cette <#ba.conduct>Électrification</> est appliquée à une cible déjà victime d'une <#ba.pulseinflict>altération électrique</>, elle <#ba.consume>consomme</> tous les cumuls d'<#ba.pulseinflict>altération électrique</> de la cible et octroie <#ba.statuslevel>+1 au niveau du statut</> de l'<#ba.conduct>Électrification</> pour chaque cumul consommé. Après avoir <#ba.consume>consommé</> l'<#ba.pulseinflict>altération électrique</> de la cible, Flux d'argent applique également 1 cumul de <#ba.noguard>Vulnérabilité</>.",
+      "description": "Flux d'argent effectue un balayage avec sa lance et inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité, tout en appliquant <#ba.airborne>Soulèvement</> à la ou les cibles devant lui.\nAprès avoir utilisé sa compétence de combo, la compétence de combat de Flux d'argent sera temporairement remplacée par <@ba.key>Charge fulgurante</>.\n<@ba.key>Charge fulgurante</> : Flux d'argent enfourche sa galopeuse Nuli pour bondir dans les airs, accumule rapidement de la puissance, puis charge la cible pour appliquer une <#ba.conduct>Électrification</> de force et infliger des <@ba.pulse>DÉG électriques</> aux ennemis dans une large zone devant lui. Lorsque cette <#ba.conduct>Électrification</> est appliquée à une cible déjà victime d'une <#ba.pulseinflict>altération électrique</>, elle <#ba.consume>consomme</> tous les cumuls d'<#ba.pulseinflict>altération électrique</> de la cible et octroie <#ba.statuslevel>+1 au niveau du statut</> de l'<#ba.conduct>Électrification</> pour chaque cumul consommé. Après avoir <#ba.consume>consommé</> l'<#ba.pulseinflict>altération électrique</> de la cible, Flux d'argent applique également 1 cumul de <#ba.noguard>Vulnérabilité</>.",
       "baseDmgMultiplier": "Multiplicateur de DÉG de base",
       "baseStagger": "Déséquilibre de base",
       "boltRushDmgMultiplier": "Multiplicateur de DÉG de Charge fulgurante",
@@ -88,8 +88,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
-        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %."
+        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+        "En l'affectant à la cabine de fabrication, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %."
       ],
       "name": "Outils adaptés"
     },
@@ -529,7 +529,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Renforce le talent <@ba.key>Zénith de la voltmancie</> : lorsque <#ba.crush>Broyage</> est appliqué à une cible victime d'une <@ba.key>Fragmentation</>, les DÉG infligés par ce <#ba.crush>Broyage</> sont multipliés par <@ba.vup>{1+crush_damage:0.0}</>. La proportion des DÉG d'explosion de <@ba.key>Fragmentation</> infligés aux ennemis à proximité passe à <@ba.vup>{other_damage_percent:0%}</>.",
+      "description": "Renforce le talent <@ba.key>Zénith de la voltmancie</> : lorsque <#ba.crush>Broyage</> est appliqué à une cible victime d'une <@ba.key>Fragmentation</>, les DÉG infligés par ce <#ba.crush>Broyage</> sont multipliés par <@ba.vup>{1+crush_damage:0.0}</>. La proportion des DÉG d'explosion de <@ba.key>Fragmentation</> infligés aux ennemis à proximité passe à <@ba.vup>{other_damage_percent:0%}</>.",
       "name": "Tempête des terres sauvages"
     },
     "potential2": {
@@ -545,7 +545,7 @@
       "name": "Flux d'étoiles illuminé"
     },
     "potential5": {
-      "description": "Renforce le talent <@ba.key>Survoltage printanier</> : en lançant la compétence de combat <@ba.key>Charge fulgurante</>, toute l'équipe obtient <@ba.vup>+{extra_yuanshi_add:0}</> d'intensité des Arts supplémentaire.\nLe bonus de DÉG d'explosion de <@ba.key>Fragmentation</> par point d'intensité des Arts de Flux d'argent est multiplié par <@ba.vup>{thunderdamage_multi:0.0}</>.",
+      "description": "Renforce le talent <@ba.key>Survoltage printanier</> : en lançant la compétence de combat <@ba.key>Charge fulgurante</>, toute l'équipe obtient <@ba.vup>+{extra_yuanshi_add:0}</> d'intensité des Arts supplémentaire.\nLe bonus de DÉG d'explosion de <@ba.key>Fragmentation</> par point d'intensité des Arts de Flux d'argent est multiplié par <@ba.vup>{thunderdamage_multi:0.0}</>.",
       "name": "Invitation aux lumières célestes"
     }
   },

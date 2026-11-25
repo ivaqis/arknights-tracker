@@ -388,6 +388,10 @@
         "name": "AIC Fieldwork CQB Armor"
     },
     {
+        "id": "item_equip_t4_parts_wuling00_body_07",
+        "name": "AIC Fieldwork Mecha-Armor"
+    },
+    {
         "id": "item_equip_t4_parts_wuling00_edc_01",
         "name": "AIC Fieldwork Machete"
     },
@@ -412,6 +416,10 @@
         "name": "AIC Fieldwork CQB Hacksaw"
     },
     {
+        "id": "item_equip_t4_parts_wuling00_edc_07",
+        "name": "AIC Fieldwork Mecha-Slab"
+    },
+    {
         "id": "item_equip_t4_parts_wuling00_hand_01",
         "name": "AIC Fieldwork Gloves"
     },
@@ -434,6 +442,10 @@
     {
         "id": "item_equip_t4_parts_wuling00_hand_06",
         "name": "AIC Fieldwork CQB Gloves"
+    },
+    {
+        "id": "item_equip_t4_parts_wuling00_hand_07",
+        "name": "AIC Fieldwork Mecha-Gloves"
     },
     {
         "id": "item_equip_t4_parts_wuling01_body_01",
@@ -484,12 +496,24 @@
         "name": "Rift Trekker Overalls"
     },
     {
+        "id": "item_equip_t4_parts_wuling02_body_05",
+        "name": "Rift Trekker HVY Plate"
+    },
+    {
+        "id": "item_equip_t4_parts_wuling02_body_06",
+        "name": "Rift Trekker LITE Armor"
+    },
+    {
         "id": "item_equip_t4_parts_wuling02_edc_01",
         "name": "Rift Trekker Armor Slab"
     },
     {
         "id": "item_equip_t4_parts_wuling02_edc_02",
         "name": "Rift Trekker Silver Blade"
+    },
+    {
+        "id": "item_equip_t4_parts_wuling02_edc_03",
+        "name": "Rift Trekker Rock Pick"
     },
     {
         "id": "item_equip_t4_parts_wuling02_hand_01",
@@ -506,6 +530,14 @@
     {
         "id": "item_equip_t4_parts_wuling02_hand_04",
         "name": "Rift Trekker Gauntlets"
+    },
+    {
+        "id": "item_equip_t4_parts_wuling02_hand_05",
+        "name": "Rift Trekker LITE Wraps"
+    },
+    {
+        "id": "item_equip_t4_parts_wuling02_hand_06",
+        "name": "Rift Trekker HVY Gauntlets"
     },
     {
         "id": "item_equip_t4_suit_atb01_body_01",
@@ -526,6 +558,14 @@
     {
         "id": "item_equip_t4_suit_atb01_body_05",
         "name": "Frontiers Protection Suit"
+    },
+    {
+        "id": "item_equip_t4_suit_atb01_body_06",
+        "name": "Frontiers HVY Steel Plate"
+    },
+    {
+        "id": "item_equip_t4_suit_atb01_body_07",
+        "name": "Frontiers LITE Armor"
     },
     {
         "id": "item_equip_t4_suit_atb01_edc_01",
@@ -552,6 +592,14 @@
         "name": "Frontiers Extra O2 Tube T1"
     },
     {
+        "id": "item_equip_t4_suit_atb01_edc_07",
+        "name": "Frontiers Composite RHA"
+    },
+    {
+        "id": "item_equip_t4_suit_atb01_edc_08",
+        "name": "Frontiers Compressed Slab"
+    },
+    {
         "id": "item_equip_t4_suit_atb01_hand_01",
         "name": "Frontiers Blight RES Gloves"
     },
@@ -562,6 +610,14 @@
     {
         "id": "item_equip_t4_suit_atb01_hand_03",
         "name": "Frontiers Fiber Gloves T1"
+    },
+    {
+        "id": "item_equip_t4_suit_atb01_hand_04",
+        "name": "Frontiers HVY Gauntlets"
+    },
+    {
+        "id": "item_equip_t4_suit_atb01_hand_05",
+        "name": "Frontiers LITE Gloves"
     },
     {
         "id": "item_equip_t4_suit_atk02_body_01",
@@ -1102,5 +1158,9 @@
     {
         "id": "item_equip_t4_suit_usp02_hand_05",
         "name": "Eternal Xiranite Channeling Gloves"
+    },
+    {
+        "id": "item_equip_t4_suit_usp02_hand_06",
+        "name": "Eternal Xiranite HVY Gauntlets"
     }
 ]

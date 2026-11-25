@@ -581,6 +581,12 @@
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix.\nModification de l'équipement de terrain du GIA défensif, adapté au combat rapproché. Protège le porteur pendant les combats au corps-à-corps.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "Méca-armure de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nDésormais doté d'un hub multiport facile à calibrer permettant d'accueillir plusieurs systèmes d'armes.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machette de terrain du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -617,6 +623,12 @@
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix.\n« Je me suis dit qu'une scie à métaux électrique miniature ferait une bonne arme de corps-à-corps ! »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "Méca-plaque de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Je me suis fait percuter de plein fouet par un verminoïde et j'ai volé sur une dizaine de mètres. Mais ça n'a laissé qu'une petite éraflure sur la plaque. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Gants de terrain du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -651,6 +663,12 @@
     "name": "Gants de terrain du GIA (CR)",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix.\nLeur épaisseur permet au porteur d'exécuter des techniques de spadamancie ou d'escrime à la perfection.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "Méca-gants de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nDésormais doté de renforts supplémentaires au niveau des poignets permettant de manipuler aisément des armes montées sur véhicule.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. « J'ai écrit des ouvrages et des parchemins pour révéler les secrets des cieux. »",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Plaque lourde d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Mon corps brûle comme une fournaise et prête sa lumière à l'obscurité. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Armure ALLÉGÉE d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« J'escalade les sommets les plus vertigineux pour y glaner des nuages et de la brume. »",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Plaque d'armure d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -735,6 +765,12 @@
     "name": "Lame en argent d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. « J'ai forgé une lame d'argent pour purger les ombres malveillantes. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Pioche d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je porte des montagnes entières, pour mieux supporter les coups de tonnerre. »",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Gantelets d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. « J'ai frappé les tambours pourpres pour faire trembler les montagnes. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Bandes pour mains légères d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je purifie les désirs de mon cœur, pour intimider le feu céleste. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Gantelets lourds d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je regarde les flammes et la fumée, qui annoncent la fin d'une gloire passée. »",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Combinaison de protection des Confins",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une armure de commandement issue de l'ensemble d'armures des confinards. Les plaques de protection ont été affinées pour permettre l'utilisation d'armes à distance et de modules de communications cryptées.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Plaque d'acier lourde des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une armure extrêmement lourde pour confinard. Il s'agit du produit phare du centre d'assistance de Marchenord. Quiconque la porte peut affronter quatre à cinq aggeloïdes sans difficulté.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Armure légère des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une armure de soutien intégrée pour confinard, pensée pour la mobilité sur le terrain. Cet équipement vous suivra partout, de la Ceinture civilisée jusqu'aux confins glacés du Nord.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "Le tube à oxygène standard de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène. La version améliorée fait passer cette durée à 6 heures.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "BHL composite des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un insert d'armure extrêmement lourd pour confinard. Il insuffle au porteur courage et assurance face à l'artillerie ennemie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Plaque comprimée des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Kit de soutien intégré pour confinard, conçu pour la mobilité sur le terrain. Léger, fin, infaillible et pratique. Essayez donc de l'entamer avec vos lames : nous sommes persuadés que vous n'y laisserez pas la moindre trace.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Gants anti-Gangrène des Confins",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
@@ -843,6 +915,18 @@
     "name": "Gants en fibres des Confins G1",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un modèle de combat sous-marin issu de l'ensemble d'armures des confinards. Une technologie de tissage spéciale permet à ces gants de recycler l'oxygène.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Gantelets lourds des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Des protections de main extrêmement lourdes pour confinard. Transformer manuellement un aggeloïde en aggagrit devient aussi simple que d'écraser un morceau de boue sèche.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Gants légers des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une paire de gants de soutien intégrés pour confinard, conçus pour la mobilité sur le terrain. Bien équilibrés, ils préservent vos doigts... Mille excuses. Trouver un slogan accrocheur pour des produits auxiliaires, ce n'est pas évident.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -924,7 +1008,7 @@
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t4_suit_atk02_hand_03": {
-    "name": "EPI pour mains de Yinglung type 50",
+    "name": "EPI pour mains de Yinglung type 50",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base. \n« C'est alors qu'il se demanda : si c'était lui qui devait faire face à ce Nefarith dans ce raz-de-marée de Gangrène, aurait-il le courage de prendre les armes ? »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
@@ -1653,6 +1737,12 @@
     "name": "Gants de canalisation en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \n« La conductivité énergétique est correcte... mais on risque de se brûler les mains. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Gantelets lourds en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Héritage d'un Tianshi « fou ».\n« Cela fait bien des années que ma folie t'accompagne. J'ai exaucé ton dernier souhait. Ce monde entendra parler de la série d'armures en xiranite éternelle, et on se souviendra de ton nom. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   }
 }

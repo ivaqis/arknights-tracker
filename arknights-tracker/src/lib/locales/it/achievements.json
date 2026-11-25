@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "Rompicasse del mondo dei funghi",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Nella Diga vecchia, apri 47 casse.",
+        "completeDesc": "Hai aperto molte casse di contenimento a Wuling. Valgono un sacco di waffle al miele."
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "\"Un vero gol da lumaca\"",
     "category": "Regionale",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "Nella Foresta innevata e nel Dipinto di Si, sblocca 18 punti TP.",
         "completeDesc": "Hai esteso la rete protocollare fino alle zone più remote di Wuling, persino a quelle che si trovano in altri mondi."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "Radici a Wuling V",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Nella Diga vecchia, sblocca 7 punti TP.",
+        "completeDesc": "Hai esteso la rete protocollare fino alle zone più remote di Wuling. Per fortuna, nessuno dei nodi della rete si è messo a parlarti."
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "Nella Foresta innevata e nel Dipinto di Si, raccogli 41 unità di Aurylene.",
         "completeDesc": "I frammenti perduti del primo manufatto sono nuovamente nelle tue mani. Forse sono soltanto barlumi di luce provenienti da un altro mondo, ma questi antichi manufatti rispondono ancora a te."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "\"Frammenti riassemblati\" V",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Nella Diga vecchia, raccogli 17 Aurylene.",
+        "completeDesc": "Molti frammenti perduti del primo manufatto si sono nuovamente riuniti nelle tue mani. Mmh... Questi Aurylene sembrano spore, non trovi?"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "Nel Dipinto di Si, risolvi 11 enigmi delle lanterne di pietra.",
         "completeDesc": "Hai risolto i numerosi enigmi lasciati da Si. Anche gli spiriti d'inchiostro che trascorrono abbastanza tempo nel dipinto finiscono per diventare giocherelloni."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "Pioniere della diga",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Nella Diga vecchia, usa una Scarica di waffle o gli attacchi degli operatori per interagire 20 volte con funghi speciali (inclusi funghi di alimentazione, funghi arcobaleno, viticci fungini e Illusimuri).",
+        "completeDesc": "In realtà, potresti saperne di più su questa diga rispetto ai progettisti originali."
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "Nel [Monumento d'ombra], completa tutte le fasi di \"Sussurri della foresta profonda\" in modalità Agonia."
     }
   },
+  "achv_bat_hard_9": {
+    "name": "\"Brutalità dispotica\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di difficoltà III di \"Despota armato\".",
+        "completeDesc": "Hai annientato i despoti pesantemente armati e mostrato sul grande schermo tutta la loro brutalità."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di difficoltà VI di \"Despota armato\"."
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "\"L'arte dello spazio bianco\"",
     "category": "Tecnica",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "Applica 500 stati fisici in combattimento.",
         "completeDesc": "Non hai eguali nel combattimento fisico."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "\"Elasticità dei funghi\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Fai in modo che l'operatore controllato si trovi nello stato Sospeso ≥4 volte durante 1 round dell'attacco sismico continuo della nocchespora Schiacciafunghi.",
+        "completeDesc": "A quanto pare, hai sperimentato in prima persona l'elasticità dei funghi. Un'esperienza davvero straordinaria, proprio come saltare su un trampolino."
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "\"Stregoneria 21\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Ottieni ≥21 punti senza sballare.",
+        "completeDesc": "A quanto pare, ormai te la cavi piuttosto bene con il passatempo di stregoneria introdotto da \"Carota fortunata\"."
+      }
+    },
+    "plating": {
+      "desc": "Ottieni ≥30 punti senza sballare."
+    }
+  },
   "achv_event_clean": {
     "name": "\"Pulito pulitissimo\"",
     "category": "Evento",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "In [Contratto di emergenza: Operazione sperimentale indaco], completa con successo una sfida con ≥30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criteri di test totali."
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "\"Potere del jolly del Signore della guerra\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Gioca 1 carta jolly nero.",
+        "completeDesc": "E con quella fragorosa esplosione, il dispotico Signore della guerra è finalmente caduto... ma la sua leggenda continua a vivere sui tavoli da gioco."
+      }
+    },
+    "plating": {
+      "desc": "Gioca 1 carta jolly rosso."
     }
   },
   "achv_event_dungfight": {
@@ -1045,7 +1147,7 @@
     "group": "Evento",
     "levels": {
       "2": {
-        "desc": "In una singola prova, ottieni un punteggio massimo di ≥500.000.",
+        "desc": "In una singola prova, ottieni un punteggio dell'arena di ≥500.000.",
         "completeDesc": "Oltre a eccellere in combattimento, te la cavi alla grande anche con i numeri e hai una fortuna davvero invidiabile."
       }
     },
@@ -1079,6 +1181,20 @@
     },
     "plating": {
       "desc": "Completa tutti i livelli di \"FURIA INCANDESCENTE! MEGA ARENA!\" in modalità AL MASSIMO e completa uno dei seguenti livelli entro 180 secondi:\n· \"Empietà! Fenditerra e canaglie! AL MASSIMO!\"\n· \"Tattica! Sconfiggi i loro domatori! AL MASSIMO!\"\n· \"Caos! Carneficina totale! AL MASSIMO!\""
+    }
+  },
+  "achv_event_takestwo_2": {
+    "name": "\"LA MIGLIORE ARENA DI TALOS-II!\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "In [AVANTI! MEGA ARENA!], completa tutti i livelli in modalità Normale.",
+        "completeDesc": "A Wuling si è conclusa alla grande un'arena capace di accendere davvero la passione dei combattenti! Abbiate fiducia: presto arriverà un'altra grande arena!"
+      }
+    },
+    "plating": {
+      "desc": "In [AVANTI! MEGA ARENA!], completa questi livelli entro 200 s:\n· [Yuanyuan! Inaugurazione! AL MASSIMO!]\n· [Combattimento! Wuling in fiamme! AL MASSIMO!]."
     }
   },
   "achv_event_tundra_challenge_dung": {
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "In [Esplorazione del mistero], completa in modo perfetto tutti gli spazi protocollari di \"Luce oltre il dipinto\"."
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "\"Città dei funghi\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "In [Esplorazione del mistero], completa tutti gli spazi protocollari di \"Micologia esoterica\".",
+        "completeDesc": "Hai fatto luce, uno dopo l'altro, sugli spazi protocollari frammentati. La Città dei funghi ti ha aperto le porte (e no, questa volta non stai avendo un'allucinazione)."
+      }
+    },
+    "plating": {
+      "desc": "In [Esplorazione del mistero], completa in modo perfetto tutti gli spazi protocollari di \"Micologia esoterica\"."
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "Pionierismo industriale di Wuling V",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Svolgi ricerche su 50 tecnologie nel progetto del SIA di Wuling.",
+        "completeDesc": "Hai portato a termine ulteriori ricerche su varie tecnologie nel progetto del SIA di Wuling.\nLe nostre tecnologie si sono intrecciate con la visione di Wuling, facendo sbocciare un fiore completamente nuovo."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "Pionierismo industriale della Valle",
     "category": "Costruzione",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "Nel [Poligono di tiro con l'arco di Typhoeus], completa ogni \"Addestramento avanzato\" ed \"Esercitazione quotidiana 04\" con 3★"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "\"Le nostre vite, ricostruite\"",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "A Wuling, porta la Ricostruzione dell'Area interdetta alla fase 4 (Manutenzione ordinaria).",
+        "completeDesc": "Ricorda il passato. Accogli il futuro."
+      }
+    },
+    "plating": {
+      "desc": "Completa 5 rifornimenti di Manutenzione ordinaria."
     }
   },
   "achv_growth_adventure_level": {
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "\"Forza, striscia fuori dai tubi\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Quando il drago delle sabbie Schiacciafunghi si nasconde, usa i waffle al miele per attirarlo fuori dal terreno.",
+        "completeDesc": "Le squadre di riparazione USLT di tunnel e tubazioni si imbattono spesso nei draghi delle sabbie. Attirarli allo scoperto sarebbe un'ottima idea."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "\"Il dominio del creatore\"",
     "category": "Sorpresa",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "Mentre Ruan Yi è Furente, mantieni il suo Tocco indebolente attivo per almeno 60 s.",
         "completeDesc": "Con rami avvizziti ha intrecciato un regno di morte, eppure tu l'hai attraversato indenne."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "\"Nascondiglio da professionisti\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "1": {
+        "desc": "Nella Diga vecchia, raggiungi la Base segreta.",
+        "completeDesc": "Una vera professionista si assicura sempre che il proprio rifugio sia pronto prima di entrare in azione. Mai sottovalutare la professionalità di Kay... o la sua mancanza."
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "Missione principale",
     "levels": {
       "3": {
-        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅵ: Fondamenta già gettate].",
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione VI: Anime affini con la stessa visione].",
         "completeDesc": "Zhuang Fangyi ha atteso, e finalmente l'hai raggiunta."
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "Missione principale",
     "levels": {
       "3": {
-        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII: Locanda nel dipinto].",
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII: Dentro il mondo dipinto].",
         "completeDesc": "Hanno ammirato lo splendido dipinto e si sono addentrati nella montagna."
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "Missione principale",
     "levels": {
       "3": {
-        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII - Prova III: Un sentiero dove non c'è].",
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII: Oltre l'io].",
         "completeDesc": "Fare luce sulla mia ossessione e guarire i miei mali più profondi."
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "Missione principale",
     "levels": {
       "3": {
-        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII: La conclusione].",
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione VIII: Dipingi con inchiostro fresco].",
         "completeDesc": "Diluisci le vecchie macchie d'inchiostro, così da poter tracciare pennellate più brillanti e rinnovare il dipinto."
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "Missione principale",
     "levels": {
       "3": {
-        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅴ: La battaglia della colonna principale].",
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione V: La breccia].",
         "completeDesc": "È una conquistatrice il cui cuore ardeva d'ambizione, disposta a sacrificare decine di migliaia di vite pur di riuscire a scorgere il regno proibito. Hai distrutto la malvagità di Nefarith."
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "Completa la missione secondaria [Un giorno da ricordare].",
         "completeDesc": "Davvero meraviglioso. Un crestalone che compone poesie e il fumo dei fornelli che ci scalda il cuore."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "\"Tra moglie e marito, il kohl è gradito\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Il giorno dopo].",
+        "completeDesc": "E così, lo sposo e la spora... Ma si può dire? Non possiamo chiamarla semplicemente sposa? Comunque, vissero felici e contenti."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "\"Io sogno waffle al miele\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Io sogno waffle al miele].",
+        "completeDesc": "Tu e Kay avete viaggiato attraverso un meraviglioso mondo di funghi, waffle al miele e una generosa dose di fantasia. Non preoccuparti e non dubitare. Questa sì che è una vera avventura."
       }
     },
     "plating": null

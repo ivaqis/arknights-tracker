@@ -581,6 +581,12 @@
     "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nModifikasi dari peralatan pertahanan Misi Lapangan AIC untuk latihan pertarungan jarak dekat. Memberikan perlindungan yang efektif kepada pemakainya dalam aksi jarak dekat.",
     "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "Armor Mecha Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nKini dengan multiport yang mudah dikalibrasi untuk mengakomodasi pemasangan berbagai sistem senjata secara efektif.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Parang Misi Lapangan AIC",
     "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -617,6 +623,12 @@
     "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Kurasa miniatur gergaji listrik juga termasuk senjata jarak dekat, ‘kan?”",
     "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "Lempeng Mecha Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Lihat? Aku ditabrak monster batu sampai terpental belasan meter. Tapi lempengan ini hanya tergores sedikit.”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Sarung Tangan Misi Lapangan AIC",
     "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -651,6 +663,12 @@
     "name": "Sarung Tangan CQB Misi Lapangan AIC",
     "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nBerkat ketebalannya yang sempurna, si pemakai bisa melakukan berbagai gerakan anggar atau ilmu pedang tanpa cela.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "Sarung Tangan Mecha Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nKini dengan pelindung pergelangan tangan ekstra kuat untuk membantu si pemakai menggunakan senjata yang terpasang pada kendaraan dengan mudah.",
     "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering mendatangi area yang sangat berbahaya untuk menjalankan berbagai misi. “Kutulis buku dan gulungan untuk mengungkap rahasia surga.”",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Pelat BRT Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering menjalankan misi di area yang sangat berbahaya. \n“Kubakar tubuhku layaknya tungku, demi menerangi kegelapan.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Armor RGN Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering menjalankan misi di area yang sangat berbahaya. \n“Kudaki puncak-puncak terjal, dan kukumpulkan kabut serta awan yang berarak.”",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Lempeng Armor Penjelajah Celah",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -735,6 +765,12 @@
     "name": "Pisau Perak Penjelajah Celah",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering mendatangi area yang sangat berbahaya untuk menjalankan berbagai misi. “Kutempa pisau perak untuk membasmi bayangan-bayangan jahat.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Beliung Batu Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering menjalankan misi di area yang sangat berbahaya. \n“Kupanggul seluruh gunung, demi menahan sambaran petir yang dahsyat.”",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Gauntlet Penjelajah Celah",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering mendatangi area yang sangat berbahaya untuk menjalankan berbagai misi. “Kugemakan genderang merah hingga gunung-gunung bergetar.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Bebat Tangan RGN Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering menjalankan misi di area yang sangat berbahaya. \n“Kubersihkan hasrat hatiku, demi menundukkan api surgawi.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Gauntlet BRT Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancer merancang set peralatan khusus ini untuk para petarung yang sering menjalankan misi di area yang sangat berbahaya. \n“Kupandangi kobaran api berasap, demi menyaksikan kehancuran dari ketenaran.”",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Setelan Pelindung Perbatasan",
     "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Seri Armor Frontiersmate dengan model komandan. Dilengkapi dengan pelat pelindung yang lebih tipis untuk mengakomodasi senjata jarak jauh dan modul komunikasi terenkripsi.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Pelat Baja BRT Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Setelan armor Frontiersmate dengan kerangka superberat—sekaligus produk unggulan dari Hub Pendukung Northmarch. Si pemakai dijamin mampu menghadapi empat hingga lima Aggelos sendirian.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Armor RGN Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Setelan armor pendukung Frontiersmate terintegrasi untuk mobilitas medan—Frontiersmate senantiasa menemanimu di setiap langkah, dari Sentrapolis hingga ke Utara yang jauh dan dingin.",
     "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "Tabung oksigen Frontiersmate standar menjamin pengoperasian di bawah air selama minimum 4 jam untuk tugas berat berkat teknologi siklus oksigennya. Versi yang ditingkatkan lebih lanjut memperpanjang durasi ini hingga 6 jam.",
     "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "RHA Komposit Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Sisipan armor Frontiersmate dengan kerangka superberat—Memberikan keberanian dan rasa percaya diri kepada si pemakai saat menghadapi artileri musuh.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Lempeng Kompresi Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Kit pendukung Frontiersmate terintegrasi untuk mobilitas medan—Ringan, ramping, mulus, dan praktis. Coba tebas dengan senjata tajammu sendiri. Kami yakin kamu tak akan meninggalkan goresan sedikit pun.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Sarung Tangan Tahan Hawar Tambang",
     "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -843,6 +915,18 @@
     "name": "Sarung Tangan Serat Tambang T1",
     "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh Pabrik AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Seri Armor Frontiersmate dengan model pertarungan bawah air. Teknologi tenun serat khusus memberikan fungsi sirkulasi oksigen pada sarung tangan ini.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Gauntlet BRT Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set pelindung tangan Frontiersmate dengan kerangka superberat—Konversi manual Aggelos menjadi Aggagrit jadi terasa semudah meremukkan segumpal tanah liat kering.",
+    "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Sarung Tangan RGN Frontiers",
+    "description": "Dirancang oleh Hub Pendukung Northmarch dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set pelindung tangan pendukung Frontiersmate terintegrasi untuk mobilitas medan—Seimbang dan tak membuat jemarimu lelah .... Maaf. Sulit memikirkan slogan promosi yang kreatif untuk produk-produk pendukung.",
     "setBonus": "Efek set 3 bagian: Pengurangan Cooldown Skill Kombo si pemakai <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nSetelah skill si pemakai memulihkan SP, tim akan mendapatkan DMG <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -1653,6 +1737,12 @@
     "name": "Sarung Tangan Penyalur Eternal Xiranite",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Peninggalan seorang Tianshi “gila”. \n“Konduktivitas energinya lumayan ... tapi akan terasa sedikit panas untuk tangan.”",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>.\nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protection</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakness</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Gauntlet BRT Eternal Xiranite",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Warisan seorang Tianshi “gila”.\n“Aku telah menjadi rekan gilamu selama bertahun-tahun, kawan lama. Aku sudah mewujudkan permintaan terakhirmu. Dunia ini akan mengenal seri Armor Eternal Xiranite, dan mereka akan mengingat namamu.”",
     "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>.\nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protection</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakness</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   }
 }

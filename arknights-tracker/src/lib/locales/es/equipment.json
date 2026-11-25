@@ -581,6 +581,12 @@
     "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nUna modificación del equipamiento defensivo para Trabajo de campo del CAI destinada al entrenamiento de Combate en Espacios Cerrados. Proporciona una protección eficaz durante el combate cuerpo a cuerpo.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "Armadura mecánica para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nAhora incluye puertos múltiples fáciles de calibrar para facilitar el montaje de varios sistemas de armas.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machete para trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -617,6 +623,12 @@
     "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Entonces pensé: una sierra mecánica en miniatura también es un arma cuerpo a cuerpo, ¿no?”.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "Losa mecánica para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“¿Ves? Un bicholoide me embistió de lleno y salí volando una docena de metros. Pero solo dejó este pequeño rasguño en la losa”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Guantes para trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -651,6 +663,12 @@
     "name": "Guantes CEC para Trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nSu grosor perfecto permite realizar impecablemente diversos movimientos de esgrima o del Arte de la espada.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "Guantes mecánicos para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nAhora con refuerzos de muñeca adicionales para ayudar a quien los lleve a manejar con facilidad armas montadas en vehículos.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que frecuentan zonas de alto riesgo para cumplir diversas misiones. “Escribí los libros y los pergaminos, para revelar los secretos que el cielo ha creado.”",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Placa PES de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Quemo mi cuerpo como un horno, para iluminar la oscuridad”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Armadura LITE de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Escalo cumbres escarpadas y reúno las nubes y las brumas que fluyen”.",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Losa de armadura de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -735,6 +765,12 @@
     "name": "Hoja de plata del Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
     "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que frecuentan zonas de alto riesgo para cumplir diversas misiones. “Forjé una hoja de plata, para purgar las sombras maliciosas.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Pico de roca de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Cargo montañas enteras para soportar los golpes del relámpago brillante”.",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Guanteletes del Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
     "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que frecuentan zonas de alto riesgo para cumplir diversas misiones. “Hice retumbar los tambores carmesí, para hacer temblar las montañas.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Vendas LIGERAS de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Purifico los deseos de mi corazón para intimidar el fuego celestial”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Guanteletes PES de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Contemplo las llamas humeantes para presenciar la caída desde la gloria”.",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Traje protector Fronteras",
     "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "El modelo de comandante de la serie de Armadura de Compañero de la frontera. Cuenta con placas protectoras más delgadas para acomodar armamento a distancia y módulos de comunicación cifrada.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Placa de acero PES Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Una armadura de armazón superpesado del Compañero de la Frontera, y el producto estrella insignia de la Base de apoyo de Northmarch. Se garantiza que quien la lleve podrá enfrentarse en solitario a entre cuatro y cinco entidades Aggeloides.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Armadura LIGERA Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Una armadura de apoyo integrada del Compañero de la Frontera para movilidad en el campo: el Compañero de la Frontera te acompaña en cada paso del camino, desde la Franja de la Civilización hasta el distante y gélido Norte.",
     "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "El tubo de oxígeno estándar de Compañero de la frontera garantiza al menos 4 horas de operaciones submarinas de trabajo pesado gracias a su tecnología de ciclo de oxígeno. La versión mejorada extiende aún más esta duración a 6 horas.",
     "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "RHA compuesto Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un inserto de armadura de armazón superpesado del Compañero de la Frontera: otorga valor y confianza a quien lo lleva para enfrentarse a la artillería enemiga.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Losa comprimida Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Una pieza del kit de soporte integrado del Compañero de la Frontera para movilidad en el campo: ligera, delgada, impecable y práctica. Intenta cortarla con tus propias armas de filo. Estamos seguros de que no le harás ni un rasguño.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Guantes antiplaga Fronteras",
     "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -843,6 +915,18 @@
     "name": "Guantes de fibra Fronteras T1",
     "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado en la Fábrica del CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "El modelo de combate submarino de la serie de Armadura de Compañero de la frontera. Una tecnología especial de tejido de fibra permite a estos guantes funciones de circulación de oxígeno.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Guanteletes PES Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de protectores de manos de armazón superpesado del Compañero de la Frontera: hace que convertir manualmente Aggeloi en Aggagrit se sienta como aplastar un trozo de barro seco.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Guantes LIGEROS Fronteras",
+    "description": "Diseñado por la Base de apoyo de Northmarch y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de protección integrada para manos del Compañero de la Frontera para movilidad en el campo: bien equilibrado y no te desgasta los dedos... Una disculpa. Es difícil idear un eslogan promocional creativo para productos auxiliares.",
     "setBonus": "Efecto de conjunto de 3 piezas: Reducción de tiempo de reutilización de habilidad de combo del portador <@ba.vup>+{1-comboskill_cooldown:0%}</>. \nDespués de que la habilidad del portador recupere PH, el equipo obtiene DAÑ <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -924,7 +1008,7 @@
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_hand_03": {
-    "name": "EPP para Manos Yinglung tipo 50",
+    "name": "EPP para Manos Yinglung Tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Una versión civil del equipo del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \n“Entonces se preguntó: si fuera él quien tuviera que enfrentarse a Nefarith en medio de la gigantesca Ola de plaga, ¿tendría el valor de empuñar un arma?”",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
@@ -1653,6 +1737,12 @@
     "name": "Guantes canalizadores de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n“La conductividad energética es aceptable... pero las manos pueden llegar a calentarse un poco.”",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Guanteletes PES de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”.\n“He sido tu amigo loco durante años, viejo amigo. Cumplí tu último deseo. Este mundo conocerá la serie de Armaduras de Xiranita eterna y recordará tu nombre”.",
     "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   }
 }

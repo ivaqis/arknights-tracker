@@ -118,6 +118,22 @@
       "Passe do Protocolo: Personalizado pelo Protocolo"
     ]
   },
+  "business_card_topic_bp_1_7": {
+    "name": "Cidade dos Cogumelos e Mel",
+    "type": "Tema de Perfil",
+    "desc": "Um tema para a tela de Perfil. Os temas de Perfil são mostrados em vários locais.",
+    "decoDesc": "Nossa história começa em uma cidade cheia de doçura e imaginações selvagens.",
+    "obtainWays": [
+      "Passe do Protocolo: Personalizado pelo Protocolo"
+    ]
+  },
+  "business_card_topic_channel_1_7": {
+    "name": "Ciclo do Eco",
+    "type": "Tema de Perfil",
+    "desc": "Um tema para a tela de Perfil. Os temas de Perfil são mostrados em vários locais.",
+    "decoDesc": "A música comanda o universo. A música é a origem da vida. A música cria tudo.",
+    "obtainWays": []
+  },
   "business_card_topic_chr_0009_azrila": {
     "name": "O Bastião Nunca Rompido",
     "type": "Tema de Perfil",
@@ -276,6 +292,15 @@
     "type": "Tema de Perfil",
     "desc": "Um tema para a tela de Perfil. Os temas de perfil são mostrados em vários locais.",
     "decoDesc": "Um arco luminoso e eletrizante, um compromisso sempre ardente, ele fez um desejo de trazer paz eterna ao mundo.",
+    "obtainWays": [
+      "Presente: Alcançar Potenciais de Operador Específicos"
+    ]
+  },
+  "business_card_topic_chr_0040_sweetpie": {
+    "name": "Base Secreta",
+    "type": "Tema de Perfil",
+    "desc": "Um tema para a tela de Perfil. Os temas de Perfil são mostrados em vários locais.",
+    "decoDesc": "\"Shh. Escondi um estoque enorme de guloseimas aqui. Você é a única pessoa que conhece este lugar. Por favor, guarde segredo por mim!\"",
     "obtainWays": [
       "Presente: Alcançar Potenciais de Operador Específicos"
     ]
@@ -839,6 +864,13 @@
     "decoDesc": "Um bolo detalhado, com toques caseiros, que Perlica preparou para você. Ela usou pasta americana para decorar as estradas e os lugares por onde vocês passaram. Ela se lembra de tudo.",
     "obtainWays": []
   },
+  "item_birthday_ap_supply_2027": {
+    "name": "Bolo de Aniversário de 2 Anos",
+    "type": "Medicamentos de Sanidade",
+    "desc": "Use para recuperar 40 de Sanidade.",
+    "decoDesc": "Um bolo muito bem assado. Basta sentir seu cheiro delicioso para reconfortar e acalmar o coração. O mundo está se tornando um lugar melhor, e acreditamos que uma bela jornada está à sua espera.",
+    "obtainWays": []
+  },
   "item_book_002_01": {
     "name": "Anúncio Imobiliário",
     "type": "Item da Missão",
@@ -1348,9 +1380,9 @@
     ]
   },
   "item_bp_liquid_cleaner_1": {
-    "name": "Gabarito de Unidade de Tratamento de Água",
+    "name": "Gabarito de Unidade de Tratamento de Resíduos",
     "type": "Montagem de Gabarito Padrão",
-    "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Unidades de Tratamento de Água.",
+    "desc": "Este gabarito permite que o Núcleo de Automação do Protocolo (NAP) construa Unidades de Tratamento de Resíduos.",
     "decoDesc": "",
     "obtainWays": [
       "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
@@ -1414,6 +1446,60 @@
     "name": "Gabarito de Porta do Transportador do Depósito",
     "type": "Montagem de Gabarito Padrão",
     "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Portas do Transportador do Depósito.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_balancer_1": {
+    "name": "Gabarito de Forja do Equilíbrio",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Forjas do Equilíbrio.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_spawner_1": {
+    "name": "Gabarito de Forja de Luminância",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Forjas de Luminância.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_spawner_2": {
+    "name": "Gabarito de Forja de Luminância Bipolar",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Forjas de Luminância Bipolares.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_spawner_heng": {
+    "name": "Gabarito de Conjunto E",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito permite o empilhamento de conjuntos L e conjuntos T para criar conjuntos E.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_spawner_hui": {
+    "name": "Gabarito de Conjunto T",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito adiciona a opção de projetar Conjuntos T para Forjas de Luminância.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_bp_magic_spawner_ming": {
+    "name": "Gabarito de Conjunto L",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito adiciona a opção de projetar Conjuntos L para Forjas de Luminância.",
     "decoDesc": "",
     "obtainWays": [
       "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
@@ -1734,6 +1820,15 @@
       "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
     ]
   },
+  "item_bp_wonder_supply_port_1": {
+    "name": "Gabarito de Porta de Suprimentos de Reconstrução",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Este gabarito permite ao Núcleo de Automação do Protocolo (NAP) construir Portas de Suprimentos de Reconstrução.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
   "item_bp_xiranite_oven_1": {
     "name": "Gabarito de Forja dos Céus",
     "type": "Montagem de Gabarito Padrão",
@@ -2022,6 +2117,15 @@
       "Recompensa: Passe do Protocolo"
     ]
   },
+  "item_case_wpn_selfselect_bp_8": {
+    "name": "Suprimentos de Armas: Mundo dos Cogumelos",
+    "type": "Caixote",
+    "desc": "Abra para selecionar e receber uma das armas fornecidas.",
+    "decoDesc": "Uma opção de suprimento com muitas armas. A maioria dos soldados que lutaram na Segunda Guerra dos Aggeloi dominava tantas armas que conseguia pegar qualquer coisa e lutar de forma impressionante.",
+    "obtainWays": [
+      "Recompensa: Passe do Protocolo"
+    ]
+  },
   "item_case_wpn_selfselect_common_advlevel": {
     "name": "Suprimento de Armas Selecionadas",
     "type": "Caixote",
@@ -2171,6 +2275,24 @@
       "Oferta de Armas"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_7_1": {
+    "name": "CO Armas: Viajante Casual",
+    "type": "Caixote",
+    "desc": "Abra para selecionar e receber uma das armas fornecidas.",
+    "decoDesc": "Um caixote pesado com vedações incrivelmente herméticas. \"O objetivo de fornecer opções diversificadas de armamento é garantir operações mais seguras no campo de batalha\", pensaram os Engenheiros de Arsenal. E assim eles encheram o caixote com armamento adequado para viagens casuais.",
+    "obtainWays": [
+      "Oferta de Armas"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_aglina": {
+    "name": "CO Armas: Viajante Flutuante",
+    "type": "Caixote",
+    "desc": "Abra para selecionar e receber uma das armas fornecidas.",
+    "decoDesc": "Um caixote pesado com vedações incrivelmente herméticas. \"O objetivo de fornecer opções diversificadas de armamento é garantir operações mais seguras no campo de batalha\", pensaram os Engenheiros de Arsenal. E assim eles encheram o caixote com armamento adequado para viagens flutuantes.",
+    "obtainWays": [
+      "Oferta de Armas"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "CO Armas: Gelo Sólido",
     "type": "Caixote",
@@ -2221,6 +2343,15 @@
     "type": "Caixote",
     "desc": "Abra para selecionar e receber uma das armas fornecidas.",
     "decoDesc": "Um caixote pesado com vedações incrivelmente herméticas. \"O objetivo de fornecer opções diversificadas de armamento é garantir operações mais seguras no campo de batalha\", pensaram os Engenheiros de Arsenal. E assim eles encheram o caixote com armamento que refletia o Broto Tenro.",
+    "obtainWays": [
+      "Oferta de Armas"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_wulfa": {
+    "name": "CO Armas: Garras Escarlates",
+    "type": "Caixote",
+    "desc": "Abra para selecionar e receber uma das armas fornecidas.",
+    "decoDesc": "Um caixote pesado com vedações incrivelmente herméticas. \"O objetivo de fornecer opções diversificadas de armamento é garantir operações mais seguras no campo de batalha\", pensaram os Engenheiros de Arsenal. E assim eles encheram o caixote com armamento que reflete garras escarlates.",
     "obtainWays": [
       "Oferta de Armas"
     ]
@@ -2311,6 +2442,13 @@
     "type": "Medicamentos de Sanidade",
     "desc": "Use para recuperar 40 de Sanidade.",
     "decoDesc": "Uma caixa de bolinhos que lembram a companheira inseparável de Argent Flow. Cada pedaço revela um temperamento diferente. Alguns parecem felizes, enquanto outros parecem arrogantes. A caixa é um mostruário bastante atraente de técnicas de confeitaria refinadas e designs inteligentes galopando lado a lado.",
+    "obtainWays": []
+  },
+  "item_char_ap_supply_sweetpie": {
+    "name": "Monte de Waffles",
+    "type": "Medicamentos de Sanidade",
+    "desc": "Use para recuperar 40 de Sanidade.",
+    "decoDesc": "Waffles muito doces, em porção generosa e com sabores deliciosos.",
     "obtainWays": []
   },
   "item_char_ap_supply_tangtang": {
@@ -2404,6 +2542,13 @@
     "type": "Caixote",
     "desc": "Contém um conjunto de equipamentos com aprimoramento máximo que é adequado para um operador específico. Os caixotes de defesa são abertos automaticamente após a aquisição. Os equipamentos contidos neles serão armazenados na Reserva de Itens de Valor.",
     "decoDesc": "Os Engenheiros de Arsenal prepararam meticulosamente este pacote de equipamentos defensivos do tipo α com peças adequadas para o Operador Argent Flow.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_sweetpie": {
+    "name": "Caixote de Defesa do Arsenal α: Andarilha Selvagem",
+    "type": "Caixote",
+    "desc": "Contém um conjunto de equipamentos com aprimoramento máximo que é adequado para um operador específico. Os caixotes de defesa são abertos automaticamente após a aquisição. Os equipamentos contidos neles serão armazenados na Reserva de Itens de Valor.",
+    "decoDesc": "Os Engenheiros de Arsenal prepararam meticulosamente este pacote de equipamentos defensivos do tipo α com peças adequadas para a Operadora Kay.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2838,7 +2983,7 @@
     "name": "Símbolo de Si",
     "type": "Símbolo do Operador",
     "desc": "Aumenta o potencial de Si.",
-    "decoDesc": "Um livro de contabilidade que não parece muito grosso. Dizem que este é o \"livro-razão ultrassecreto\" do Administrador da Hospedaria Yuanyuan depois de todos esses anos no ramo. No entanto, ao abri-lo para ler, você encontra, em vez disso, um conjunto de registros e anotações escritas de forma casual sobre coisas, ditados e pessoas que Si mais valoriza. Afinal, os princípios de funcionamento da Mansão Yuanyuan estão no próprio nome da hospedaria.",
+    "decoDesc": "Um livro de contabilidade que não parece muito grosso. Dizem que este é o \"livro-razão ultrassecreto\" do Administrador da Hospedaria Yuanyuan depois de todos esses anos de atividade. No entanto, ao abri-lo para ler, você encontra, em vez disso, um conjunto de registros e notas escritas de forma casual sobre coisas, ditados e pessoas que Si mais valoriza. Afinal, os princípios de funcionamento da Mansão Yuanyuan estão no próprio nome da hospedaria.",
     "obtainWays": [
       "Presente: Integração do Operador"
     ]
@@ -2857,6 +3002,15 @@
     "type": "Símbolo do Operador",
     "desc": "Aumenta o Potencial de Purrchena.",
     "decoDesc": "Uma medalha em forma de bolo com o nome de Purrchena gravado que parece exalar o doce aroma de um bolo quentinho. Mas por que será que ela ganhou essa medalha? Foi por tirar notas excelentes? Por ser uma Embaixadora da Marca? Ou será um presente de um paciente que Purrchena ajudou? Sua história pode ser um mistério, mas Purrchena nunca se separou dela, até mesmo na hora de domir. Sem dúvida, é uma lembrança de uma experiência maravilhosa.",
+    "obtainWays": [
+      "Presente: Integração do Operador"
+    ]
+  },
+  "item_charpotentialup_chr_0040_sweetpie": {
+    "name": "Símbolo de Kay",
+    "type": "Símbolo do Operador",
+    "desc": "Aumenta o potencial de Kay.",
+    "decoDesc": "Uma lâmina de ferrium recém-forjada. A habilidade do ferreiro – ou a falta dela – é bastante óbvia pela aparência irregular e cheia de buracos, além da lâmina cega. No entanto, continua sendo uma peça valiosa do arsenal de Kay.",
     "obtainWays": [
       "Presente: Integração do Operador"
     ]
@@ -2906,6 +3060,15 @@
       "Exploração e Coleta"
     ]
   },
+  "item_collection_sweetpie_mushroom": {
+    "name": "Cogumelo Romântico",
+    "type": "Item da Missão",
+    "desc": "Cogumelo Romântico",
+    "decoDesc": "Um cogumelo que simboliza o romance",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
   "item_collection_trstar": {
     "name": "Talosita",
     "type": "Item da Missão",
@@ -2920,6 +3083,27 @@
     "type": "Material",
     "desc": "Uma garrafa metálica produzida pelo processamento de Cuprium. Pode ser utilizada para produzir outros itens. Usada frequentemente para acomodar líquidos.",
     "decoDesc": "As garrafas de Cuprium são bastante raras no mercado porque o Cuprium é um metal mais caro que o Ferrium.",
+    "obtainWays": []
+  },
+  "item_copper_bright": {
+    "name": "Lucidolita",
+    "type": "Material",
+    "desc": "Uma liga produzida pelo processamento de Equprium e Equiranita em uma Forja do Equilíbrio. Pode ser usada para produzir outros materiais.",
+    "decoDesc": "Deixe que o Qi luminoso e turvo infunda propriedades de cuprium na Xiranita. Que o Qi brilhante da forja ilumine a terra para que todos possam ver.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cmpt": {
+    "name": "Peça de Lucidolita",
+    "type": "Material",
+    "desc": "Uma peça de dispositivo feita pelo processamento de Lucidolita. Pode ser usada para produzir outros itens.",
+    "decoDesc": "Uma Peça de Lucidolita com uma ampla variedade de usos.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cube": {
+    "name": "Bloco de Energia de Lucidolita",
+    "type": "Material",
+    "desc": "Um bloco de energia produzido a partir da combinação de Peças de Lucidolita com Pó de Originium Denso. Pode ser utilizado para a reconstrução da Zona de Exclusão do Norte de Wuling.",
+    "decoDesc": "Um importante bloco de energia vedado com Lucidolita. Ele deve ser armazenado adequadamente, pois condições de armazenamento incorretas podem provocar explosões poderosas.",
     "obtainWays": []
   },
   "item_copper_cmpt": {
@@ -2964,11 +3148,46 @@
     "decoDesc": "Uma Peça de Hetonita com uma ampla variedade de usos.",
     "obtainWays": []
   },
+  "item_copper_enr_heng": {
+    "name": "Equprium",
+    "type": "Material",
+    "desc": "Uma forma de Cuprium que sofreu transmutação por Conjunto E. Pode ser utilizado para produzir outros materiais.",
+    "decoDesc": "O Cuprium harmonizado apresenta propriedades altamente equilibradas (E). Segurar um lingote de cuprium equilibrado parece proporcionar uma sensação de calma (embora isso possa ser simplesmente um efeito placebo).",
+    "obtainWays": []
+  },
+  "item_copper_hui": {
+    "name": "Cuprium T",
+    "type": "Material",
+    "desc": "Uma forma de Cuprium que sofreu transmutação por Conjunto T. Pode ser utilizado para produzir outros materiais.",
+    "decoDesc": "O Cuprium infundido com propriedades turvas (T) é mais pesado e apresenta melhor maleabilidade.",
+    "obtainWays": []
+  },
+  "item_copper_hui_cmpt": {
+    "name": "Peça de Cuprium T",
+    "type": "Material",
+    "desc": "Uma peça de dispositivo feita pelo processamento de Cuprium T. Pode ser usada para produzir outros itens.",
+    "decoDesc": "Uma Peça de Cuprium T com uma ampla variedade de usos.",
+    "obtainWays": []
+  },
   "item_copper_jar": {
     "name": "Cilindro de Cuprium",
     "type": "Material",
     "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
     "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
+    "obtainWays": []
+  },
+  "item_copper_ming": {
+    "name": "Cuprium L",
+    "type": "Material",
+    "desc": "Uma forma de Cuprium que sofreu transmutação por Conjunto L. Pode ser utilizado para produzir outros materiais.",
+    "decoDesc": "O Cuprium infundido com propriedades luminosas (L) é mais leve e apresenta maior resistência à tração.",
+    "obtainWays": []
+  },
+  "item_copper_ming_cmpt": {
+    "name": "Peça de Cuprium L",
+    "type": "Material",
+    "desc": "Uma peça de dispositivo feita pelo processamento de Cuprium L. Pode ser usada para produzir outros itens.",
+    "decoDesc": "Uma Peça de Cuprium L com uma ampla variedade de usos.",
     "obtainWays": []
   },
   "item_copper_nugget": {
@@ -2994,6 +3213,20 @@
     "type": "Material",
     "desc": "Cuprium triturado e pulverizado. Pode ser usado para produzir outros itens.",
     "decoDesc": "Os produtos feitos com Cuprium triturado apresentam uma textura mais homogênea.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_hui": {
+    "name": "CI Pesado EnCUP",
+    "type": "Material",
+    "desc": "Um componente produzido pela combinação de Xiranita Pesada com Peças de Cuprium T. Pode ser utilizado para a reconstrução da Zona de Exclusão do Norte de Wuling.",
+    "decoDesc": "Um componente integrado (CI) importante encapsulado em cuprium (EnCUP). Pesado e resistente à corrosão, esse CI pode operar em ambientes extremos sem falhar.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_ming": {
+    "name": "Componente de Luminarita EnCUP",
+    "type": "Material",
+    "desc": "Um componente produzido pela combinação de Luminarita com peças de Cuprium L. Pode ser utilizado para a reconstrução da Zona de Exclusão do Norte de Wuling.",
+    "decoDesc": "Um componente importante encapsulado em cuprium (EnCUP). Leve, durável e capaz de funcionar em diversos ambientes.",
     "obtainWays": []
   },
   "item_corp1_animal_1": {
@@ -3371,6 +3604,27 @@
     "type": "Dispositivo Pessoal",
     "desc": "Coloque este item no espaço para dispositivo pessoal da Mochila para conceder 10 PH/s de regeneração após entrar em batalha na região de Wuling. Duração: 5 s.",
     "decoDesc": "Uma antiga pintura de Si. Ela mede 1,8 metro de comprimento e retrata uma paisagem brilhante e bela que revigora o espírito.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_1": {
+    "name": "Cogumelo Ressentido",
+    "type": "Dispositivo Pessoal",
+    "desc": "Coloque este item no espaço para dispositivo pessoal da Mochila para conceder DNO de Explosivo Industrial + <@ba.vup>100%</> na região de Wuling.",
+    "decoDesc": "Na escuridão secreta, seus rancores se intensificam enquanto tenta detonar todos os explosivos industriais em sua mochila.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_2": {
+    "name": "Cogumelo Irritado",
+    "type": "Dispositivo Pessoal",
+    "desc": "Coloque este item no espaço para dispositivo pessoal da Mochila para conceder DNO de Explosivo Industrial + <@ba.vup>300%</> na região de Wuling.",
+    "decoDesc": "Com fúria vulcânica, ele ruge e grita enquanto tenta detonar todos os explosivos industriais em sua mochila.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_3": {
+    "name": "Cogumelo Furioso",
+    "type": "Dispositivo Pessoal",
+    "desc": "Coloque este item no espaço para dispositivo pessoal da Mochila para conceder DNO de Explosivo Industrial + <@ba.vup>500%</> na região de Wuling.",
+    "decoDesc": "PRAGAS ME MORDAM! VAI FAZER CABABUUM!",
     "obtainWays": []
   },
   "item_device_buff_snow_1": {
@@ -3958,7 +4212,7 @@
   "item_drop_klcaps_1": {
     "name": "Fragmento de Guja",
     "type": "Material",
-    "desc": "Obtido em Sombras da Praga de Guja da FTEY e Sombras da Praga de Capitão da FTEY derrotados. Pode ser usado para produzir alimentos e medicamentos finos (A&M Finos).",
+    "desc": "Obtido em Sombras da Praga de Guja da FTEY e Sombras da Praga de Capitão da FTEY derrotados. Pode ser usado em um nó de depósito para Empacotar e Entregar.",
     "decoDesc": "Este fragmento de uma arma de haste parece completamente quebrado e à beira da desintegração total. Um recipiente especial deve ser usado para manter sua forma atual. No entanto, ele oferece uma amostra importante para o estudo dos Sombras da Praga.",
     "obtainWays": [
       "Chance de Soltar: Sombra da Praga de Guja da FTEY"
@@ -4025,6 +4279,26 @@
     "decoDesc": "Os Verminídeos têm \"bigodes\" crescendo em suas cabeças. Esses apêndices se assemelham a raízes de árvores e servem como órgãos sensoriais. Esses bigodes caem naturalmente quando a primavera dá lugar ao verão. Embora ofereçam valor nutricional limitado, têm uma textura incrível.",
     "obtainWays": [
       "Chance de Soltar: Verminídeo Escavador de Túneis"
+    ]
+  },
+  "item_drop_mushbug_1": {
+    "name": "Poeira do Rei dos Fungos",
+    "type": "Material",
+    "desc": "Obtida de Verminídeos Quebramelos e Boletas Príncipes derrotados. Pode ser usada para produzir alimentos e medicamentos finos (A&M Finos).",
+    "decoDesc": "Uma massa de acúmulos de esporos encontrada nas delicadas brânquias e dobras do Boleta Príncipe. A poeira se espalha sempre que o Príncipe esfrega a cabeça.",
+    "obtainWays": [
+      "Chance de Soltar: Verminídeo Quebramelos",
+      "Chance de Soltar: Boleta Príncipe"
+    ]
+  },
+  "item_drop_mushro_1": {
+    "name": "Massa Micelial Brilhante",
+    "type": "Material",
+    "desc": "Obtida de Cogumurros Quebramelos e Guarda-Esporos Quebramelos derrotados. Pode ser usada em um nó de depósito para Empacotar e Entregar.",
+    "decoDesc": "Uma massa micelial com tonalidades e cores estranhas. Não conseguimos determinar se essa massa veio da cabeça ou da arma de um Quebramelo.",
+    "obtainWays": [
+      "Chance de Soltar: Cogumurros Quebramelos",
+      "Chance de Soltar: Guarda-Esporos Quebramelos"
     ]
   },
   "item_drop_sandb_1": {
@@ -4134,6 +4408,15 @@
     "obtainWays": [
       "Compre: Redistribuição do Estoque de Wuling",
       "Upgrade do Terminal de Redistribuição do Estoque"
+    ]
+  },
+  "item_equip_prime_enhance_wuling": {
+    "name": "Fluido de Origo-Aprimoramento Mk I",
+    "type": "Fluido de Aprimoramento",
+    "desc": "Um material raro para aprimoramento de equipamentos. Garante o sucesso de 1 tentativa de aprimoramento de equipamento de Wuling sem usar nenhum Catalisador de Aprimoramento de Equipamento.",
+    "decoDesc": "Um fluido de aprimoramento Mk I extremamente raro que utiliza materiais muito escassos e dificilmente substituíveis. O fluido garante o sucesso de uma tentativa de aprimoramento. Quantidades imensas de metais preparados com Originium foram consumidas durante a Guerra dos Aggeloi. Felizmente, as pessoas agora têm a oportunidade de testemunhar seu brilho cintilante mais uma vez.",
+    "obtainWays": [
+      "Reconstrução da Zona de Exclusão"
     ]
   },
   "item_equip_script_1": {
@@ -4430,6 +4713,15 @@
     "name": "Expansão da Forja IV",
     "type": "Montagem de Gabarito Padrão",
     "desc": "Permite colocar mais 4 Forjas dos Céus em Wuling.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
+    ]
+  },
+  "item_factech_wuling_oven_amount_5": {
+    "name": "Expansão da Forja V",
+    "type": "Montagem de Gabarito Padrão",
+    "desc": "Permite a colocação de mais 4 Forjas dos Céus em Wuling.",
     "decoDesc": "",
     "obtainWays": [
       "Pesquisa: Tecnologias do Plano da Fábrica do CAI"
@@ -5002,6 +5294,20 @@
     "decoDesc": "É obrigatório o uso de EPI adequado durante a operação da Unidade de Transmutação Sólido-Gás. Não se deixe enganar pelos vapores vermelhos de aparência inofensiva. Eles podem incendiar a alma de uma pessoa.",
     "obtainWays": []
   },
+  "item_gas_copper_bright_clear": {
+    "name": "Gás de Lucidolita Limpo",
+    "type": "Material",
+    "desc": "Um produto obtido pela reação química entre Equiragênio e Gás de Equprium. Pode ser usado para produzir outros materiais.",
+    "decoDesc": "Gás de Lucidolita limpo e fino. Segurar um cilindro desse gás transmite a sensação de estar sendo sustentado por nuvens cirros em movimento.",
+    "obtainWays": []
+  },
+  "item_gas_copper_bright_turbid": {
+    "name": "Gás de Lucidolita Turvo",
+    "type": "Material",
+    "desc": "Um subproduto da reação química do Gás de Equprium com o Equiragênio. Ele pode ser processado na Unidade de Tratamento de Resíduos para descarte ou purificado em uma Unidade de Purificação.",
+    "decoDesc": "Gás de Lucidolita turvo e grosso. Segurar um cilindro com esse gás é como segurar uma montanha inteira.",
+    "obtainWays": []
+  },
   "item_gas_copper_enr": {
     "name": "Gás de Hetonita",
     "type": "Material",
@@ -5014,6 +5320,13 @@
     "type": "Material",
     "desc": "O estado gasoso da Pirrolita. Pode ser utilizado para produzir outros materiais.",
     "decoDesc": "Diversos cientistas acreditam que o Gás de Pirrolita pode ser usado como arma. Libere-o suavemente e observe o inimigo a favor do vento se desintegrar.",
+    "obtainWays": []
+  },
+  "item_gas_copper_enr_heng": {
+    "name": "Gás de Equprium",
+    "type": "Material",
+    "desc": "O estado gasoso do Equprium. Pode ser usado para produzir outros materiais.",
+    "decoDesc": "O Gás de Equprium é muito estável. A infusão de propriedades luminosas (L) e turvas (T) no cuprium alcançou o equilíbrio perfeito (E) dentro do metal e confere maior fluidez ao gás.",
     "obtainWays": []
   },
   "item_gas_inert": {
@@ -5052,6 +5365,13 @@
     "decoDesc": "Para proteger o \"equilíbrio dinâmico\" inerente da Xiranita Pesada durante o processo de transmutação, os engenheiros equiparam os instrumentos com módulos adicionais de monitoramento e modulação em tempo real.",
     "obtainWays": []
   },
+  "item_gas_xiranite_enr_heng": {
+    "name": "Equiragênio",
+    "type": "Material",
+    "desc": "O estado gasoso da Equiranita. Pode ser usado para produzir outros materiais.",
+    "decoDesc": "O Equiragênio é uma forma estável de Xiragênio. A infusão de Xiranita com propriedades luminosas (L) e turvas (T) alcançou o equilíbrio perfeito (E) e tornou o Xiragênio \"pesado\" ainda mais pesado.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_acid": {
     "name": "Cilindro de Cuprium (Acridgênio)",
     "type": "Material",
@@ -5066,6 +5386,20 @@
     "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
     "obtainWays": []
   },
+  "item_gasjar_copper_gas_copper_bright_clear": {
+    "name": "Cilindro de Cuprium (Gás de Lucidolita Limpo)",
+    "type": "Material",
+    "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
+    "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_bright_turbid": {
+    "name": "Cilindro de Cuprium (Gás de Lucidolita Turvo)",
+    "type": "Material",
+    "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
+    "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_copper_enr": {
     "name": "Cilindro de Cuprium (Gás de Hetonita)",
     "type": "Material",
@@ -5075,6 +5409,13 @@
   },
   "item_gasjar_copper_gas_copper_enr2": {
     "name": "Cilindro de Cuprium (Gás de Pirrolita)",
+    "type": "Material",
+    "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
+    "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_enr_heng": {
+    "name": "Cilindro de Cuprium (Gás de Equprium)",
     "type": "Material",
     "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
     "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
@@ -5103,6 +5444,13 @@
   },
   "item_gasjar_copper_gas_xiranite_enr": {
     "name": "Cilindro de Cuprium (Xiragênio Pesado)",
+    "type": "Material",
+    "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
+    "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_xiranite_enr_heng": {
+    "name": "Cilindro de Cuprium (Equiragênio)",
     "type": "Material",
     "desc": "Um cilindro pressurizado feito pela moldagem de Cuprium. Pode ser utilizado para produzir outros itens. Frequentemente utilizado para armazenar gases.",
     "decoDesc": "Um recipiente de metal intrincado, outrora muito procurado por entusiastas da metalurgia.",
@@ -5209,6 +5557,16 @@
       "Upgrade do Terminal de Redistribuição do Estoque"
     ]
   },
+  "item_gemcustomization_wuling_4": {
+    "name": "Kit de Gravação Multilinhas de Wuling",
+    "type": "Kit de Gravação de Essências",
+    "desc": "Use-o para adquirir uma essência com 3 atributos personalizados.",
+    "decoDesc": "Um kit de gravação para personalização de essências.\nO Tecnoprotocolo sofreu melhorias gerais que ampliaram suas aplicações em máquinas de precisão. Isso levou ao desenvolvimento bem-sucedido do kit de gravação multilinhas.",
+    "obtainWays": [
+      "Compre: Redistribuição do Estoque de Wuling",
+      "Upgrade do Terminal de Redistribuição do Estoque"
+    ]
+  },
   "item_gift_jinlong_1": {
     "name": "Caixa de Chá Eureka",
     "type": "Presente",
@@ -5254,6 +5612,26 @@
     "type": "Presente",
     "desc": "Ofereça a operadores cujos hobbies são [Estilo de Vida] e/ou [Natureza] para ganhar sua confiança.",
     "decoDesc": "Grande parte do povo de Hongshan costuma guardar em casa espadas estilizadas feitas de madeira perfumada. Embora sua capacidade de afastar o mal seja questionável, elas continuam sendo ferramentas de treinamento úteis.",
+    "obtainWays": [
+      "Compre: Redistribuição do Estoque de Wuling",
+      "Upgrade do Terminal de Redistribuição do Estoque"
+    ]
+  },
+  "item_gift_jinlong_14": {
+    "name": "UAU-FFLE: Evento Fusion",
+    "type": "Presente",
+    "desc": "Ofereça a operadores cujos hobbies são [Criatividade] e/ou [Estilo de Vida] para ganhar sua confiança.",
+    "decoDesc": "Um waffle de mel de um novo sabor preparado em conjunto pela LA-ME-DA Hot Pot e Hongwei. Apresenta uma combinação única de sabores e ingredientes totalmente naturais ricos em derivados fúngicos e bióticos que auxiliam na digestão. Ele tem potencial para se tornar um lanche incrivelmente popular.",
+    "obtainWays": [
+      "Compre: Redistribuição do Estoque de Wuling",
+      "Upgrade do Terminal de Redistribuição do Estoque"
+    ]
+  },
+  "item_gift_jinlong_15": {
+    "name": "A Unicidade",
+    "type": "Presente",
+    "desc": "Ofereça a operadores cujos hobbies são [Esportes] e/ou [Tecnologia] para ganhar sua confiança.",
+    "decoDesc": "\"Avante, trabalhadores! Pelas montanhas e sobre os rios! Que o apito a vapor cante e ecoe pela natureza selvagem! Por onde passarmos, deixaremos estradas, fábricas e o futuro para toda a humanidade!\"",
     "obtainWays": [
       "Compre: Redistribuição do Estoque de Wuling",
       "Upgrade do Terminal de Redistribuição do Estoque"
@@ -5531,7 +5909,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Uma boa chaleira com chá macerado de qualidade. Macerado esmeralda preparado em águas correntes. O aroma pode ser sentido a quilômetros de distância.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_10": {
@@ -5540,7 +5919,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "As amoras de melhor qualidade são frequentemente conhecidas como \"Crepúsculo Vespertino em Circulação\". No entanto, todos que provaram esse suco de amora-preta concordam com um fato: \"É simplesmente azedinha em estado líquido.\"",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_2": {
@@ -5549,7 +5929,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Há evidências empíricas de que crianças que bebem leite com frequência tendem a ser mais altas.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_3": {
@@ -5558,7 +5939,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "\"Não quero ser inconveniente, mas seu suco de milho é igualzinho a mingau de milho. Você poderia explicar o que 'suco' significa para você?\"",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_4": {
@@ -5567,7 +5949,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "As pessoas podem reclamar porque ele é doce demais ou porque causa úlceras se você beber demais. Mas, no fim das contas, esse ainda é o item mais popular do cardápio.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_5": {
@@ -5576,7 +5959,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Uma pitada de flor de pera, símbolo de saudade e nostalgia.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_6": {
@@ -5585,7 +5969,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Uma famosa bebida destilada falsamente atribuída aos Caçadores de Músicas do Circuito Hannabit. O kohl atinge a garganta como óleo derramado sobre uma frigideira em brasa, proporcionando uma lição histórica sobre a brutalidade da Guerra dos Aggeloi.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_7": {
@@ -5594,7 +5979,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Há evidências empíricas de que crianças ainda podem atingir alturas impressionantes mesmo sem consumi-lo regularmente. Mas isso pode ser perdoado, já que essa bebida em particular tem um ótimo sabor.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_8": {
@@ -5603,7 +5989,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Será que esta gota de orvalho de uva aromático fará você lembrar do clima implacável, da violência e da poesia da sua terra natal?",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_9": {
@@ -5612,7 +5999,8 @@
     "desc": "Uma bebida que pode ser servida em Administração da Hospedaria. Concede certos efeitos quando usada.",
     "decoDesc": "Preparada com folhas colhidas de arbustos que crescem nas regiões periféricas de Wuling antes da Grande Maré de Praga. O chá é notavelmente caro devido à sua produção limitada.",
     "obtainWays": [
-      "Loja: \"Apressadinha\" da Despensa"
+      "Loja: \"Apressadinha\" da Despensa",
+      "Caixote de Ingredientes"
     ]
   },
   "item_inn_drink_water": {
@@ -5628,7 +6016,7 @@
     "desc": "Pode ser usada na Administração da Hospedaria e para pagar por Reformas na Hospedaria.",
     "decoDesc": "O espírito da vida cotidiana permanece em cada movimento e sabor.",
     "obtainWays": [
-      "Obtido na Administração da Hospedaria"
+      "Ganhos da Administração da Hospedaria"
     ]
   },
   "item_iron_bottle": {
@@ -5703,6 +6091,13 @@
     "type": "Consumível",
     "desc": "Use este consumível para melhorar o desempenho de combate do operador.",
     "decoDesc": "Um prato frio delicioso. Crocante e com aroma refrescante. De acordo com alguns chefs veteranos de Hongshan, quanto mais velha a casca, melhor o sabor.",
+    "obtainWays": []
+  },
+  "item_jzmonk_1_mushbug_spmushroom1_1": {
+    "name": "Waffle do Usurpador",
+    "type": "Consumível",
+    "desc": "Ele vai redefinir seus olhos, suas pernas e o mundo inteiro.",
+    "decoDesc": "Um alimento que tenta imitar o waffle de mel. Ele tem um gosto estranho de adoçantes artificiais. O Cogumelo Loquaz, no entanto, se recusa a dizer qualquer coisa sobre os efeitos práticos desse consumível.",
     "obtainWays": []
   },
   "item_klbuds_1_hsfly_1_1": {
@@ -5795,7 +6190,7 @@
   "item_liquid_sewage": {
     "name": "Esgoto",
     "type": "Material",
-    "desc": "Esgoto é basicamente água com diferentes tipos de materiais suspensos e/ou dissolvidos. Ele deve ser processado em uma Unidade de Tratamento de Água para torná-lo inofensivo.",
+    "desc": "Esgoto é basicamente água com todos os tipos de materiais suspensos e/ou dissolvidos. Ele deve ser processado em uma Unidade de Tratamento de Resíduos para se tornar inofensivo.",
     "decoDesc": "Esgotos e corpos d'água poluídos encontrados nas terras selvagens frequentemente contêm uma grande quantidade de contaminantes. Tecnologia avançada é necessária para sua limpeza adequada.",
     "obtainWays": []
   },
@@ -5826,14 +6221,14 @@
   "item_liquid_xiranite_lowpoly": {
     "name": "Efluente de Xircônio Inerte",
     "type": "Material",
-    "desc": "Uma solução obtida pela reação química da Xiranita Líquida com o esgoto. Deve ser processada na Unidade de Tratamento de Água para torná-la inofensiva.",
+    "desc": "Um subproduto da reação de Xiranita Líquida com Esgoto. Ele precisa ser processado na Unidade de Tratamento de Resíduos para se tornar inofensivo.",
     "decoDesc": "Um tipo de Efluente de Xircônio de diversas aplicações que esgotaram completamente a energia de seus constituintes de Originium. Apenas uma pequena fração da energia do Feranmut entrou em estado ativo. Tais efluentes podem ser amplamente considerados quimicamente inertes.",
     "obtainWays": []
   },
   "item_liquid_xiranite_poly": {
     "name": "Efluente de Xircônio",
     "type": "Material",
-    "desc": "Uma solução obtida pela reação química da Xiranita Líquida com o esgoto. Ela pode ser usada para produzir outros materiais ou processada na Unidade de Tratamento de Água para torná-la inofensiva.",
+    "desc": "Uma solução obtida pela reação química da Xiranita Líquida com Esgoto. Pode ser usada para produzir outros materiais ou processada na Unidade de Tratamento de Resíduos para se tornar inofensiva.",
     "decoDesc": "O Efluente de Xircônio é uma forma de Xiranita Líquida parcialmente inativada, mas uma fração de seus constituintes permanece em estado hiperativo. A energia dos constituintes de Originium dentro da Xiranita Líquida dissipa-se gradualmente durante diversas aplicações. Esse processo de \"desidratação\" ocasionalmente desencadeia a ativação da energia do Feranmut contida na Xiranita.",
     "obtainWays": []
   },
@@ -6452,6 +6847,15 @@
       "Recompensa: Missão"
     ]
   },
+  "item_mission_gm02m28_sample": {
+    "name": "Amostra de Fertilizante de Teste",
+    "type": "Item da Missão",
+    "desc": "Contém uma amostra de teste de um protótipo de fertilizante.",
+    "decoDesc": "Resíduos de um protótipo de fertilizante encontrados nos recônditos mais profundos da Barragem Antiga. Seu odor, antes terrível, até que melhorou bastante.",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
   "item_mission_sm1l2m2_key": {
     "name": "Chave Distorcida",
     "type": "Item da Missão",
@@ -6666,6 +7070,24 @@
     "type": "Vinil",
     "desc": "Este disco pode ser reproduzido com o Fonógrafo MKV-I na Sala da Recepção a bordo da Dijiang.",
     "decoDesc": "A luz é filtrada pelos bosques de Jingyu, enquanto jangadas transportam viajantes através dos rios.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
+  "item_music_exp_wuling_10": {
+    "name": "Where We Go, When We Return",
+    "type": "Vinil",
+    "desc": "Este disco pode ser reproduzido com o Fonógrafo MKV-I na Sala da Recepção a bordo da Dijiang.",
+    "decoDesc": "Onde houver um lugar para ir, haverá uma hora para retornar.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
+  "item_music_exp_wuling_11": {
+    "name": "Drifting Raft",
+    "type": "Vinil",
+    "desc": "Este disco pode ser reproduzido com o Fonógrafo MKV-I na Sala da Recepção a bordo da Dijiang.",
+    "decoDesc": "Em uma jangada à deriva, rumo ao outono ela me leva.",
     "obtainWays": [
       "Troca de Talosita"
     ]
@@ -7068,6 +7490,15 @@
     "decoDesc": "A planta de Broto-Agulha pode ser triturada até virar pó. Esse deve então ser dissolvido e embalado em um recipiente para facilitar o uso.",
     "obtainWays": []
   },
+  "item_plant_grass_spmushroom_1": {
+    "name": "Cogumelo Loquaz",
+    "type": "Material",
+    "desc": "Um fungo especial que cresce na Barragem Antiga. Ele pode ser usado para fazer waffles de mel.",
+    "decoDesc": "\"Você sabe que eu elucidei a verdadeira natureza do cosmos e tudo entre os céus e a terra, porque você sabe que tudo se refere a mim e ao resto do mundo real, e eu já entendi tudo, então o que você está esperando? Comece a me devorar logo, POR FAVOR. Faça isso e se apresse, porque você não vai se arrepender, eu prometo!\"",
+    "obtainWays": [
+      "Barragem Antiga"
+    ]
+  },
   "item_plant_moss_1": {
     "name": "Flor de Cervina",
     "type": "Material",
@@ -7081,7 +7512,7 @@
   "item_plant_moss_2": {
     "name": "Citroma",
     "type": "Material",
-    "desc": "Uma fruta que pode ser coletada na natureza ou cultivada no CAI. Triture-a para produzir alimentos ou materiais para outros produtos.",
+    "desc": "Uma fruta que pode ser coletada nas áreas selvagens ou cultivada no CAI. Triture-a para produzir alimentos ou materiais para outros produtos.",
     "decoDesc": "As Citromas fazem parte do gênero botânico Zitros, que geralmente cresce na região continental central de Talos-II. As espécies e culturas cultivadas no Cinturão da Civilização tendem a produzir frutos grandes com polpa dura e fibrosa.",
     "obtainWays": [
       "A Base: Local de Construção",
@@ -7350,7 +7781,6 @@
     "desc": "Esta cultura só pode ser desenvolvida por meio de cultivo fino. Ela pode ser usada diretamente na produção de alimentos e itens farmacêuticos de qualidade.",
     "decoDesc": "O Ginseng Redjade é uma erva suave frequentemente consumida pelas pessoas em Hongshan como suplemento fortificante.",
     "obtainWays": [
-      "Parque Científico de Originium: Trilha do Penhasco",
       "Plante culturas na Fazenda Ecológica"
     ]
   },
@@ -7569,6 +7999,13 @@
       "Coletável: Exploração do Mundo"
     ]
   },
+  "item_plantpoint_chalk_1": {
+    "name": "Mancha de Orquídea Ocelada",
+    "type": "Saída de Gás",
+    "desc": "Um reservatório de Xiragênio nas áreas selvagens. Equipe-o com extratores de gás para extrair Xiragênio.",
+    "decoDesc": "Uma porta de conexão de Xiranita que pode ter sido projetada para determinadas instalações de Xiranita. Contém uma reserva generosa de Xiragênio.",
+    "obtainWays": []
+  },
   "item_port_air_dancer_1": {
     "name": "Professor de Tubos",
     "type": "Ornamento",
@@ -7713,6 +8150,15 @@
     "decoDesc": "Uma nova torre de armas recomendada pelos engenheiros de arsenal da Endfield Industries. Após correr quilômetros para escapar de uma tempestade de granizo, a engenheira responsável projetou essa arma capaz de realizar disparos altamente destrutivos.",
     "obtainWays": []
   },
+  "item_port_biscuitmountain_1": {
+    "name": "Doce Oração",
+    "type": "Ornamento",
+    "desc": "Um ornamento que pode ser colocado. Ele está armazenado no painel Ornamento da Lista de Instalações.",
+    "decoDesc": "Escute a oração dela por uma doçura sem fim.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
   "item_port_burger_1": {
     "name": "Senhor dos Hambúrgueres",
     "type": "Ornamento",
@@ -7768,6 +8214,15 @@
     "type": "Ornamento",
     "desc": "Um ornamento que pode ser colocado em vários locais. Ele está armazenado no painel Ornamento da Lista de Instalações.",
     "decoDesc": "Lentamente, ela ofereceu seu amor nesta pequena e serena paisagem nevada.",
+    "obtainWays": [
+      "Recompensa: Missão"
+    ]
+  },
+  "item_port_dg017oven_1": {
+    "name": "\"Forja da Doçura\"",
+    "type": "Ornamento",
+    "desc": "Um ornamento que pode ser colocado. Ele está armazenado no painel Ornamento da Lista de Instalações.",
+    "decoDesc": "Um pequeno passo para a Endfield Industries, um salto enorme no setor culinário.",
     "obtainWays": [
       "Recompensa: Missão"
     ]
@@ -7874,10 +8329,10 @@
     ]
   },
   "item_port_liquid_cleaner_1": {
-    "name": "Unidade de Tratamento de Água",
+    "name": "Unidade de Tratamento de Resíduos",
     "type": "Instalação Básica",
-    "desc": "Uma instalação para tratamento de esgoto. Ela também pode processar Efluente de Xircônio e Efluente de Xircônio Inerte, embora com eficiência limitada.",
-    "decoDesc": "A Endfield melhorou muito a eficiência do processo de tratamento de água ao empregar o Tecnoprotocolo nas etapas de desinfecção e remediação.",
+    "desc": "Uma instalação para processamento de resíduos. Ela também pode processar Esgoto, Efluente de Xircônio, Efluente de Xircônio Inerte e Gás de Lucidolita Turvo.",
+    "decoDesc": "Agora com um conjunto mais abrangente e eficaz de upgrades funcionais.",
     "obtainWays": []
   },
   "item_port_liquid_purifier_1": {
@@ -7913,6 +8368,27 @@
     "type": "Instalação Básica",
     "desc": "A origem do Transportador do Depósito. A porta do Transportador do Depósito pode ser colocada em qualquer lugar na Área Central do CAI.",
     "decoDesc": "Para alguns engenheiros, a Xiranita frequentemente inspirava ideias malucas que eles próprios não conseguiam explicar. Qual é o ponto final da indústria? Existem outras possibilidades para a Xiranita, o material da \"liberdade\" sem precedentes? A tecnologia industrial humana algum dia alcançará o estado \"sem forma\"? Quanto mais os engenheiros pensam, mais acreditam que cada passo que dão é revolucionário.",
+    "obtainWays": []
+  },
+  "item_port_magic_balancer_1": {
+    "name": "Forja do Equilíbrio",
+    "type": "Instalação Básica",
+    "desc": "Uma instalação capaz de combinar as formas Luminosa e Turva de um material para criar uma forma inovadora e equilibrada.",
+    "decoDesc": "Uma instalação para o processo de harmonização. Após um material ser separado em suas formas luminosa (L) e turva (T), elas podem ser recombinadas para criar algo novo e abrir novas possibilidades para os cientistas de materiais.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_1": {
+    "name": "Forja de Luminância",
+    "type": "Instalação Básica",
+    "desc": "Uma instalação que pode ser ativada com Xiragênio para projetar 1 conjunto especificado à frente dela.",
+    "decoDesc": "Esta forja classifica com precisão a Xiranita para alterar seus níveis de atividade. A forma mais leve é chamada de Luminarita, enquanto a forma mais pesada é chamada de Turbidarita.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_2": {
+    "name": "Forja de Luminância Bipolar",
+    "type": "Instalação Básica",
+    "desc": "Uma instalação que pode ser ativada com Xiragênio para projetar 2 conjuntos especificados à frente e ao lado dela.",
+    "decoDesc": "Uma versão aprimorada da Forja de Luminância original que apresenta eficiência de desempenho significativamente melhorada.",
     "obtainWays": []
   },
   "item_port_marker_1": {
@@ -7972,6 +8448,15 @@
     "desc": "Uma instalação para a realização de reações químicas em estado sólido ou líquido. Ela também possui portas de entrada e saída adicionais e a capacidade de realizar várias reações ao mesmo tempo.",
     "decoDesc": "Maior capacidade. Melhor segurança.",
     "obtainWays": []
+  },
+  "item_port_mushman_1": {
+    "name": "\"Príncipe Eucariótico\"",
+    "type": "Ornamento",
+    "desc": "Um ornamento que pode ser colocado. Ele está armazenado no painel Ornamento da Lista de Instalações.",
+    "decoDesc": "Apresenta um histórico complexo, mas, ao mesmo tempo, lança um olhar lúcido sobre o mundo.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
   },
   "item_port_pear_blossom_bonsai_1": {
     "name": "Árvore em Miniatura em Uma Colina",
@@ -8308,9 +8793,9 @@
     "obtainWays": []
   },
   "item_port_stock_board_1": {
-    "name": "Manifesto Feito da Redistribuição",
+    "name": "Manifesto Materializado",
     "type": "Ornamento",
-    "desc": "Um item ornamental. Ele está armazenado no painel Ornamento da Lista de Instalações.",
+    "desc": "Um ornamento que pode ser colocado. Ele está armazenado no painel Ornamento da Lista de Instalações.",
     "decoDesc": "\"Cenoura da Sorte está de volta ao estoque? Hora de descarregar tudo.\"",
     "obtainWays": [
       "Troca de Talosita"
@@ -8414,6 +8899,13 @@
     "type": "Instalação Básica",
     "desc": "Uma instalação que lamina diferentes materiais para criar componentes de equipamentos.",
     "decoDesc": "Um equipamento de primeira linha deve passar por várias etapas de processamento que incluem tecelagem e laminação por compressão de vários tecidos e forros.",
+    "obtainWays": []
+  },
+  "item_port_wonder_supply_port_1": {
+    "name": "Porta de Suprimentos de Reconstrução",
+    "type": "Instalação Básica",
+    "desc": "Uma porta de suprimentos para o projeto de Reconstrução da Zona de Exclusão do Norte de Wuling (ZENW). Coloque os materiais de reconstrução necessários nesta porta para que o progresso do projeto seja acelerado automaticamente.",
+    "decoDesc": "Uma porta de suprimentos especial para o transporte de itens especiais encapsulados em cuprium (EnCUP). Ela é segura e fácil de usar.",
     "obtainWays": []
   },
   "item_port_xiranite_oven_1": {
@@ -8656,6 +9148,13 @@
     "type": "Material",
     "desc": "Uma bateria embalada por instalações da Fábrica do CAI. Ela pode ser usada para fornecer energia e para carregar instalações ou pode ser negociada em vários postos avançados.",
     "decoDesc": "A maior vantagem oferecida por esta bateria é o risco zero de combustão espontânea.",
+    "obtainWays": []
+  },
+  "item_proc_battery_6": {
+    "name": "Bateria CA de Wuling",
+    "type": "Material",
+    "desc": "Uma bateria embalada por instalações da Fábrica do CAI. Ela pode ser usada para fornecer energia e para carregar instalações ou pode ser negociada em vários postos avançados.",
+    "decoDesc": "Uma bateria feita para durar tanto quanto o próprio universo. Este é o principal objetivo do projeto das baterias CA.",
     "obtainWays": []
   },
   "item_proc_bomb_1": {
@@ -9149,7 +9648,7 @@
   "item_regionbuff_wuling_4_1": {
     "name": "Especialista em Natureza",
     "type": "Benefício Regional",
-    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido apenas em Wuling.",
+    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido somente em Wuling.",
     "decoDesc": "Após procurar Aurilenos em todos os lugares, você agora conhece cada filete de grama e pedaço de minério desta região. Você se tornou um especialista na natureza selvagem.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
@@ -9158,7 +9657,7 @@
   "item_regionbuff_wuling_4_2": {
     "name": "Especialista em Natureza",
     "type": "Benefício Regional",
-    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido apenas em Wuling.",
+    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido somente em Wuling.",
     "decoDesc": "Após procurar Aurilenos em todos os lugares, você agora conhece cada filete de grama e pedaço de minério desta região. Você se tornou um especialista na natureza selvagem.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
@@ -9167,7 +9666,7 @@
   "item_regionbuff_wuling_4_3": {
     "name": "Especialista em Natureza",
     "type": "Benefício Regional",
-    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido apenas em Wuling.",
+    "desc": "Coletar plantas pode fornecer mais 1 material (não funciona para materiais raros). \nVálido somente em Wuling.",
     "decoDesc": "Após procurar Aurilenos em todos os lugares, você agora conhece cada filete de grama e pedaço de minério desta região. Você se tornou um especialista na natureza selvagem.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
@@ -9177,7 +9676,7 @@
     "name": "Reservas Médicas",
     "type": "Benefício Regional",
     "desc": "Após descansar em um Ponto de TP, adquire 1 acúmulo de benefício de Reservas Médicas. Quando o PV de qualquer operador da equipe cai abaixo de um determinado valor, consome imediatamente o benefício e restaura imediatamente o PV de cada companheiro de equipe. \nVálido somente em Wuling.",
-    "decoDesc": "Você está sempre preparado clinicamente graças à sua familiaridade com as informações locais",
+    "decoDesc": "Você está sempre com tudo preparado clinicamente graças à sua familiaridade com as informações locais.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9186,7 +9685,7 @@
     "name": "Reservas Médicas",
     "type": "Benefício Regional",
     "desc": "Após descansar em um Ponto de TP, adquire 1 acúmulo de benefício de Reservas Médicas. Quando o PV de qualquer operador da equipe cai abaixo de um determinado valor, consome imediatamente o benefício e restaura imediatamente o PV de cada companheiro de equipe. \nVálido somente em Wuling.",
-    "decoDesc": "Você está sempre preparado clinicamente graças à sua familiaridade com as informações locais",
+    "decoDesc": "Você está sempre com tudo preparado clinicamente graças à sua familiaridade com as informações locais.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9195,7 +9694,7 @@
     "name": "Reservas Médicas",
     "type": "Benefício Regional",
     "desc": "Após descansar em um Ponto de TP, adquire 1 acúmulo de benefício de Reservas Médicas. Quando o PV de qualquer operador da equipe cai abaixo de um determinado valor, consome imediatamente o benefício e restaura imediatamente o PV de cada companheiro de equipe. \nVálido somente em Wuling.",
-    "decoDesc": "Você está sempre preparado clinicamente graças à sua familiaridade com as informações locais",
+    "decoDesc": "Você está sempre com tudo preparado clinicamente graças à sua familiaridade com as informações locais.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9204,7 +9703,7 @@
     "name": "Vigor Total",
     "type": "Benefício Regional",
     "desc": "A Vitalidade se regenera mais rápido. \nVálido apenas em Wuling.",
-    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma recuperação de resistência melhorada",
+    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma melhor recuperação da resistência.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9213,7 +9712,7 @@
     "name": "Vigor Total",
     "type": "Benefício Regional",
     "desc": "A Vitalidade se regenera mais rápido. \nVálido apenas em Wuling.",
-    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma recuperação de resistência melhorada",
+    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma melhor recuperação da resistência.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9222,7 +9721,7 @@
     "name": "Vigor Total",
     "type": "Benefício Regional",
     "desc": "A Vitalidade se regenera mais rápido. \nVálido apenas em Wuling.",
-    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma recuperação de resistência melhorada",
+    "decoDesc": "O gerenciamento científico da vitalidade proporciona uma melhor recuperação da resistência.",
     "obtainWays": [
       "Enviar Aurileno em Pontos de TP"
     ]
@@ -9479,6 +9978,15 @@
       "Troca de Talosita"
     ]
   },
+  "item_shot_anim_sweetpie_m_1": {
+    "name": "Pensamentos Perdidos",
+    "type": "Pose para a Câmera",
+    "desc": "Uma pose para os operadores.",
+    "decoDesc": "Uma interpretação do significado por trás de \"Pensamentos Perdidos\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
   "item_shot_anim_tangtang_m_1": {
     "name": "EU SOU SUPREMO",
     "type": "Pose para a Câmera",
@@ -9497,11 +10005,38 @@
       "Troca de Talosita"
     ]
   },
+  "item_shot_anim_whiten_s_1": {
+    "name": "Shhh, Por Favor",
+    "type": "Pose para a Câmera",
+    "desc": "Uma pose para os operadores.",
+    "decoDesc": "Uma interpretação do significado por trás de \"Shhh, Por Favor\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
+  "item_shot_anim_wulfa_m_1": {
+    "name": "Medição Competitiva",
+    "type": "Pose para a Câmera",
+    "desc": "Uma pose para os operadores.",
+    "decoDesc": "Uma interpretação do significado por trás de \"Medição Competitiva\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
   "item_shot_anim_yvonne_m_1": {
     "name": "Passos Quentes de Neo-Nista",
     "type": "Pose para a Câmera",
     "desc": "Uma pose para os operadores.",
     "decoDesc": "Uma interpretação do significado por trás de \"Passos Quentes de Neo-Nista\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
+    "obtainWays": [
+      "Troca de Talosita"
+    ]
+  },
+  "item_shot_anim_zhuangfy_m_1": {
+    "name": "Como Podemos Ver",
+    "type": "Pose para a Câmera",
+    "desc": "Uma pose para os operadores.",
+    "decoDesc": "Uma interpretação do significado por trás de \"Como Podemos Ver\". Essa impressão é bastante clara, mas sem deixar de ser esotérica.",
     "obtainWays": [
       "Troca de Talosita"
     ]
@@ -9629,6 +10164,15 @@
     "type": "Filtro de Câmera",
     "desc": "Um filtro para ajustar a cor de uma fotografia. Pode ser usado no recurso de Câmera.",
     "decoDesc": "Entusiastas de fotografia da Endfield o identificaram como um dos filtros mais populares. As pessoas costumam falar sobre a beleza da primavera em Wuling.",
+    "obtainWays": [
+      "Recompensa: Passe do Protocolo"
+    ]
+  },
+  "item_shot_filter_sp_8": {
+    "name": "Filtro: Pôr do Sol Dourado",
+    "type": "Filtro de Câmera",
+    "desc": "Um filtro para ajustar a cor de uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Entusiastas de fotografia da Endfield o identificaram como um dos filtros mais populares. Isso não faz você lembrar da sua primeira bebida quente depois de voltar para casa ao pôr do sol?",
     "obtainWays": [
       "Recompensa: Passe do Protocolo"
     ]
@@ -9770,6 +10314,13 @@
     "decoDesc": "Um adesivo recebido como presente de aniversário. Desejamos a você muita felicidade e alegria em todos os anos que se seguem.",
     "obtainWays": []
   },
+  "item_shot_sticker_birthday_2027": {
+    "name": "Adesivo: Aniversário de 2 Anos",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Um adesivo de \"Comemoração de Aniversário\". Que você seja sempre feliz e que todos os seus desejos se realizem.",
+    "obtainWays": []
+  },
   "item_shot_sticker_bp_1": {
     "name": "Adesivo: Memórias",
     "type": "Adesivo de Fotografia",
@@ -9833,6 +10384,15 @@
       "Recompensa: Passe do Protocolo"
     ]
   },
+  "item_shot_sticker_bp_8": {
+    "name": "Adesivo: Grudento e Doce",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Um adesivo de \"Aromas Doces\". Deixe o xarope fluir! Hoje eu senti uma vontade do amor de amanhã!",
+    "obtainWays": [
+      "Recompensa: Passe do Protocolo"
+    ]
+  },
   "item_shot_sticker_channel_v1d3d6_1": {
     "name": "Adesivo: Capacete de Segurança",
     "type": "Adesivo de Fotografia",
@@ -9848,6 +10408,41 @@
     "obtainWays": [
       "Centro de Aquisições: Pacotes"
     ]
+  },
+  "item_shot_sticker_channel_v1d7_1": {
+    "name": "Adesivo: Capuz de Pudim",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Esse adesivo entrou na lista dos mais recomendados entre os entusiastas de fotografia da Endfield. Já parece aconchegante e charmoso.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_2": {
+    "name": "Adesivo: PIZZA-LA",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Esse adesivo entrou na lista dos mais recomendados entre os entusiastas de fotografia da Endfield. Um sabor que nunca cansa ninguém.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_3": {
+    "name": "Adesivo: Padrão dos Ecos",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Um adesivo dos \"Ecos\". O grande show está prestes a começar.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_4": {
+    "name": "Adesivo: Bastão OriGO-GO",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Um adesivo do grupo de fãs de \"OriGO-GO\", um símbolo de amor apaixonado, apoio dos fãs e das Artes de Originium.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_5": {
+    "name": "Adesivo: Coroa Metal Scar",
+    "type": "Adesivo de Fotografia",
+    "desc": "Um adesivo decorativo que pode ser aplicado a uma fotografia. Pode ser usado no recurso de Câmera.",
+    "decoDesc": "Um adesivo de \"Metal Scar Sem Limites\". Use-o e ascenda como o Senhor da Metal Scar.",
+    "obtainWays": []
   },
   "item_shot_sticker_giftpack_1": {
     "name": "Adesivo: Supressor",
@@ -10106,6 +10701,13 @@
       "Compre: Redistribuição do Estoque de Wuling",
       "Upgrade do Terminal de Redistribuição do Estoque"
     ]
+  },
+  "item_spaceship_exhibits_mushroom": {
+    "name": "Mascote de Cogumelo Luxuosa",
+    "type": "Dijiang: Itens de Exibição",
+    "desc": "Esse item pode ser mostrado na Torre das Trilhas no Anel Central da Dijiang.",
+    "decoDesc": "Um mascote em memória do Parque Ecológico da Barragem Antiga de Wuling. Dizem que a inspiração veio ao designer em um sonho. O mascote tem como objetivo simbolizar a amizade entre o STUT e a Academia de Ciências de Hongshan.",
+    "obtainWays": []
   },
   "item_spaceship_exhibits_shanshantu": {
     "name": "Miniaturas de Companheiros",
@@ -10377,6 +10979,15 @@
     "name": "Permissão para CT As Estrelas Estão Comigo",
     "type": "Item de Valor STL",
     "desc": "Um certificado da Endfield Industries com tempo limitado. Use isso para realizar 1 caça de talentos na Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela]. Este certificado irá expirar quando a Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela] terminar.",
+    "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
+    "obtainWays": [
+      "Centro de Aquisições: Pacotes"
+    ]
+  },
+  "item_ticketgacha_special_single_lt_1_7_1": {
+    "name": "Permissão para CT Garra Selvagem Errante",
+    "type": "Item de Valor STL",
+    "desc": "Um certificado da Endfield Industries com tempo limitado. Use-o para realizar 1 caça de talentos na Caça de Talentos Privilegiada [Bigorna, Mochila e Um Pote de Mel]. Este certificado expirará quando a Caça de Talentos Privilegiada [Bigorna, Mochila e Um Pote de Mel] terminar.",
     "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
     "obtainWays": [
       "Centro de Aquisições: Pacotes"
@@ -10722,6 +11333,15 @@
       "Passe do Protocolo: Personalizado pelo Protocolo"
     ]
   },
+  "item_user_avatar_bp_1_7": {
+    "name": "Cogumelos Caseiros",
+    "type": "Retrato",
+    "desc": "Um retrato que pode ser alterado na tela de Perfil. Os retratos de perfil são mostrados em vários lugares.",
+    "decoDesc": "Em um determinado dia de um determinado mês de um determinado ano, uma foto de dois orgulhosos residentes do Mundo dos Cogumelos foi tirada.",
+    "obtainWays": [
+      "Passe do Protocolo: Personalizado pelo Protocolo"
+    ]
+  },
   "item_user_avatar_chr_0002_endminm": {
     "name": "O Endministrator",
     "type": "Retrato",
@@ -11037,6 +11657,15 @@
       "Presente: Integração do Operador"
     ]
   },
+  "item_user_avatar_chr_0040_sweetpie": {
+    "name": "Kay",
+    "type": "Retrato",
+    "desc": "Um retrato que pode ser alterado na tela de Perfil. Os retratos de perfil são mostrados em vários lugares.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Presente: Integração do Operador"
+    ]
+  },
   "item_user_avatar_frame_activity_1": {
     "name": "Conto de Fadas de Carly",
     "type": "Moldura para Retrato",
@@ -11116,6 +11745,15 @@
       "Contrato de Contingência: Operação Experimental Índigo"
     ]
   },
+  "item_user_avatar_frame_activity_takestwo_2": {
+    "name": "Estrela Brilhante do Arrebatador de Coroas",
+    "type": "Moldura para Retrato",
+    "desc": "Uma moldura de retrato que pode ser selecionada na tela de Perfil. As molduras de retrato são mostradas em vários locais.",
+    "decoDesc": "Uma prova entregue ao campeão que reinou absoluto na ARENA DA ASCENSÃO em chamas (embora o processo não tenha ocorrido sem acidentes). Um verdadeiro guerreiro terá o poder de agarrar as próprias estrelas.",
+    "obtainWays": [
+      "Evento: [LEVANTEM-SE! MEGA-ARENA!]"
+    ]
+  },
   "item_user_avatar_frame_bp_1_0": {
     "name": "Novos Horizontes",
     "type": "Moldura para Retrato",
@@ -11175,6 +11813,15 @@
     "type": "Moldura para Retrato",
     "desc": "Uma moldura de retrato que pode ser alterada na tela de Perfil. As molduras de retrato são mostradas em vários locais.",
     "decoDesc": "O pincel cria os rios e picos, uma moldura para cenas lindamente sobrepostas.",
+    "obtainWays": [
+      "Passe do Protocolo: Personalizado pelo Protocolo"
+    ]
+  },
+  "item_user_avatar_frame_bp_1_7": {
+    "name": "Cores Após uma Mordida",
+    "type": "Moldura para Retrato",
+    "desc": "Uma moldura de retrato que pode ser selecionada na tela de Perfil. As molduras de retrato são mostradas em vários locais.",
+    "decoDesc": "Na verdade, aceitar a amizade dos fungos deve abrir seus sentidos para muito além do espectro de sete cores do arco-íris.",
     "obtainWays": [
       "Passe do Protocolo: Personalizado pelo Protocolo"
     ]
@@ -11253,7 +11900,7 @@
     "name": "Doçura e Neve",
     "type": "Moldura para Retrato",
     "desc": "Uma moldura de retrato que pode ser alterada na tela de Perfil. As molduras de retrato são mostradas em vários locais.",
-    "decoDesc": "Aromas frutados, farfalhares suaves na palha... Está ouvindo? As memórias estão voltando.",
+    "decoDesc": "Aromas frutados, farfalhar suave na palha... Estão ouvindo? As memórias estão voltando.",
     "obtainWays": []
   },
   "item_user_avatar_frame_channel_v1d5_2": {
@@ -11268,6 +11915,13 @@
     "type": "Moldura para Retrato",
     "desc": "Uma moldura de retrato que pode ser alterada na tela de Perfil. As molduras de retrato são mostradas em vários locais.",
     "decoDesc": "Que cada coração arda de esperança e ferva a cada giro da engrenagem.",
+    "obtainWays": []
+  },
+  "item_user_avatar_frame_channel_v1d7_1": {
+    "name": "Palco Retrô-Metal",
+    "type": "Moldura para Retrato",
+    "desc": "Uma moldura de retrato que pode ser selecionada na tela de Perfil. As molduras para retrato são mostradas em vários locais.",
+    "decoDesc": "Metal Scar curte coisas retrô. Mas se o tempo é um ciclo, eles podem retroceder tanto e acabar alcançando o futuro.",
     "obtainWays": []
   },
   "item_user_avatar_frame_endfield_1": {
@@ -12900,6 +13554,13 @@
     "decoDesc": "Um prato que representa um sério desafio para o chef. O fígado de Penoso pode cozinhar demais rapidamente e assumir uma textura semelhante à de couro borrachudo. Um cozinheiro habilidoso precisa primeiro encontrar uma maneira de dar a ele a mesma maciez e crocância dos brotos de bambu jovens.",
     "obtainWays": []
   },
+  "item_wgthorns_1_mushbug_spmushroom1_1": {
+    "name": "Sangue do Rei Fúngico",
+    "type": "Item tático",
+    "desc": "Use esse item tático para ressuscitar um operador que não pode mais lutar.",
+    "decoDesc": "Uma bebida refrescante com um aroma rico e fúngico e um sabor que lembra vegetais. Consumi-la parece evocar o som de uma pessoa querida chamando para casa.",
+    "obtainWays": []
+  },
   "item_wpngem_enhance_dust": {
     "name": "Gel Resfriador",
     "type": "Material de Essência",
@@ -12962,6 +13623,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "item_xiranite_enr_heng": {
+    "name": "Equiranita",
+    "type": "Material",
+    "desc": "Uma forma de Xiranita que passou por transmutação por Conjunto E. Pode ser usada para produzir outros materiais.",
+    "decoDesc": "A Xiranita com equilíbrio harmonizado pode ser adaptada de forma flexível para usos tanto em ambientes altamente reativos quanto em ambientes altamente estáveis.",
+    "obtainWays": []
+  },
   "item_xiranite_enr_powder": {
     "name": "Xiranita Pesada",
     "type": "Material",
@@ -12969,11 +13637,25 @@
     "decoDesc": "A Xiranita Pesada foi descoberta inicialmente na tentativa de melhorar o rendimento da Xiranita. Durante os testes, os Tianshi experimentaram diversas misturas polimórficas de Xiranita e alcançaram um tipo de equilíbrio dinâmico-estático. Embora os testes não tenham atingido seu objetivo, eles conseguiram produzir uma forma de Xiranita com uma pequena, porém significativa, melhoria na durabilidade.",
     "obtainWays": []
   },
+  "item_xiranite_hui": {
+    "name": "Turbidarita",
+    "type": "Material",
+    "desc": "Uma forma de Xiranita que sofreu transmutação por Conjunto T. Pode ser usada para produzir outros materiais.",
+    "decoDesc": "A indução por Xiragênio Pesado e grosso aumentou a estabilidade dessa massa de Xiranita.",
+    "obtainWays": []
+  },
   "item_xiranite_lowpoly": {
     "name": "Xircônio Leve",
     "type": "Material",
     "desc": "Obtido pela precipitação de cristais. Pode ser usado para produzir outros materiais.",
     "decoDesc": "O Xircônio Leve tem densidade menor que o Xircônio. Atualmente, os Tianshi de Wuling estão tentando usar esse material para construir armaduras corporais para membros da Força-Tarefa Especial de Yinglung.",
+    "obtainWays": []
+  },
+  "item_xiranite_ming": {
+    "name": "Luminarita",
+    "type": "Material",
+    "desc": "Uma forma de Xiranita que sofreu transmutação por Conjunto L. Pode ser usada para produzir outros materiais.",
+    "decoDesc": "A indução por Xiragênio fino e leve aumentou a atividade dessa massa de Xiranita.",
     "obtainWays": []
   },
   "item_xiranite_poly": {
@@ -13347,6 +14029,20 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_copper_bright_cube_01": {
+    "name": "Bloco de Energia de Lucidolita",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Cuprium</>, <@gd.key>Xiranita</>, <@gd.key>Pó de Originium Denso</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>Blocos de Energia de Lucidolita</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_bright_cube_02": {
+    "name": "Lucidolita Eficiente",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Equprium</>, <@gd.key>Equiranita</>, <@gd.key>Núcleos Separadores</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>Lucidolita</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_copper_cmpt_1": {
     "name": "Peça de Cuprium",
     "type": "Projeto de Sistema",
@@ -13358,6 +14054,20 @@
     "name": "Peça de Hetonita",
     "type": "Projeto de Sistema",
     "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Solução de Hetonita</> e <@gd.key>Minério de Ferrium</> para produzir automaticamente <@gd.key>Peças de Hetonita</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_hui_01": {
+    "name": "CI Pesado EnCUP",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Cuprium</>, <@gd.key>Xiranita Pesada</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>CI Pesado EnCUP</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_ming_01": {
+    "name": "Componente de Luminarita EnCUP",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Cuprium</>, <@gd.key>Xiranita</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>Componentes de Luminarita EnCUP</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13452,6 +14162,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_magic_spawner_1_heng_01": {
+    "name": "Produtos \"E\"",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e, em seguida, forneça <@gd.key>materiais que podem ser infundidos com propriedades Equilibradas (E)</> e <@gd.key>Xiragênio</> para produzir automaticamente a <@gd.key>forma E do material de entrada</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_proc_battery_4_1": {
     "name": "Bateria CB de Wuling",
     "type": "Projeto de Sistema",
@@ -13491,6 +14208,20 @@
     "name": "Xiranita Eficiente",
     "type": "Projeto de Sistema",
     "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Inergênio</>, <@gd.key>Água Limpa</> e <@gd.key>Carbono</> para produzir automaticamente <@gd.key>Xiranita</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_01": {
+    "name": "Forja do Equilíbrio: Xiranita Pesada",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Xiranita</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>Xiranita Pesada</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_02": {
+    "name": "Xiranita Pesada Eficiente",
+    "type": "Projeto de Sistema",
+    "desc": "Coloque este projeto na Área Central do CAI e forneça <@gd.key>Xiranita</> e <@gd.key>Xiragênio</> para produzir automaticamente <@gd.key>Xiranita Pesada</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13652,6 +14383,15 @@
     "name": "Permissão para CT As Estrelas Estão Comigo",
     "type": "Item de Valor STL",
     "desc": "Um certificado da Endfield Industries com tempo limitado. Use isso para realizar 1 caça de talentos na Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela]. Este certificado irá expirar quando a Caça de Talentos Privilegiada [O Aconchego do Lar Chama a Estrela] terminar.",
+    "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
+    "obtainWays": [
+      "Centro de Aquisições: Pacotes"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_7_1": {
+    "name": "Permissão para CT Garra Selvagem Errante",
+    "type": "Item de Valor STL",
+    "desc": "Um certificado da Endfield Industries com tempo limitado. Use-o para realizar 1 caça de talentos na Caça de Talentos Privilegiada [Bigorna, Mochila e Um Pote de Mel]. Este certificado expirará quando a Caça de Talentos Privilegiada [Bigorna, Mochila e Um Pote de Mel] terminar.",
     "decoDesc": "Uma permissão de RH especial para a caça de talentos de operadores que atendem a diversos requisitos específicos. Considerando a urgência dessa solicitação, essa permissão inevitavelmente expirará após um determinado prazo.",
     "obtainWays": [
       "Centro de Aquisições: Pacotes"

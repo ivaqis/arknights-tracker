@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "Pembuka Kerat Dunia Jamur",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Bendungan Lama, buka 47 kerat",
+        "completeDesc": "Kamu berhasil membuka sebagian besar kerat penyimpanan di Wuling. Isinya setara dengan berton-ton wafel madu."
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "“Gol Pakai Siput”",
     "category": "Regional",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "Di Hutan Salju dan Lukisan Si, buka 18 Titik TP",
         "completeDesc": "Kamu berhasil memperluas Jaringan Protokol hingga ke wilayah Wuling yang lebih dalam walau wilayah itu berada di alam lain."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "Berpegang pada Wuling Ⅴ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Bendungan Lama, buka 7 Titik TP",
+        "completeDesc": "Kamu berhasil memperluas Jaringan Protokol hingga ke wilayah Wuling yang lebih dalam. Untungnya, tak ada nodus jaringan yang mengajakmu bicara secara langsung."
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "Di Hutan Salju dan Lukisan Si, kumpulkan 41 Aurylene",
         "completeDesc": "Fragmen artefak purba yang hilang telah kembali terkumpul di tanganmu. Walau mungkin hanya berupa serpihan cahaya yang ditemukan di alam lain, artefak-artefak purba ini meresponsmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "“Fragmen Bersatu Kembali” Ⅴ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Bendungan Lama, kumpulkan 17 Aurylene",
+        "completeDesc": "Fragmen-fragmen artefak purba yang hilang telah kembali terkumpul di tanganmu. Hmm .... Aurylene ini mirip spora, ya?"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "Di Lukisan Si, selesaikan 11 puzzle Lentera Batu",
         "completeDesc": "Kamu menyelesaikan banyak puzzle yang ditinggalkan Si. Bahkan Roh Tinta yang tinggal cukup lama di dalam lukisan itu juga akan mulai punya sifat suka bermain."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "Penjelajah Bendungan",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Bendungan Lama, gunakan Serangan Wafel atau serangan operator untuk berinteraksi dengan jamur spesial (termasuk: Jamur Pemasok Daya, Jamur Pelangi, Sulur Jamur, dan Dinding Delulu) sebanyak 20 kali",
+        "completeDesc": "Bisa jadi, kau lebih mengenal bendungan ini daripada perancang aslinya."
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "Di [Monumen Umbra], selesaikan semua stage “Bisikan Hutan Rimbun” dalam mode Agoni"
     }
   },
+  "achv_bat_hard_9": {
+    "name": "“Brutal Tanpa Ampun”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage Tingkat Kesulitan Ⅲ di “Tiran Dipersenjatai”",
+        "completeDesc": "Kamu sudah menghancurkan para tiran bersenjata berat dan mengungkap kebrutalan mereka di layar perak."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage Tingkat Kesulitan Ⅵ di “Tiran Dipersenjatai”"
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "“Seni Kekosongan”",
     "category": "Teknis",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "Akibatkan 500 Status Fisik selama pertarungan",
         "completeDesc": "Kamu adalah master pertarungan sejati."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "“Daya Pantul Fungi”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Biarkan operator terkontrol terkena efek Lifted ≥ 4 kali dalam 1 putaran serangan gempa beruntun Shroomkrusher Sporeknuckle",
+        "completeDesc": "Sepertinya kamu sudah merasakan daya pantul fungi yang sesungguhnya. Ajaib sekali, seperti bermain di atas trampolin."
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "“Ilmu Sihir 21”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Raih ≥ 21 poin tanpa bust",
+        "completeDesc": "Sepertinya kamu makin mahir memainkan ilmu sihir yang diperkenalkan oleh “Wortel Hoki”."
+      }
+    },
+    "plating": {
+      "desc": "Raih ≥ 30 poin tanpa mengalami bust"
+    }
+  },
   "achv_event_clean": {
     "name": "“Dibasuh dan Dibilas Bersih”",
     "category": "Event",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "Di [Kontrak Kontingensi: Operasi Eksperimen Indigo], selesaikan tantangan hingga tuntas dengan ≥30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Total Kriteria Tes"
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "“Kekuatan Panglima Perang Joker”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Mainkan 1 kartu Joker Hitam",
+        "completeDesc": "Dan dengan ledakan dahsyat itu, sang Panglima Perang yang lalim akhirnya tumbang .... Tapi, legendanya terus menyebar di berbagai meja kartu."
+      }
+    },
+    "plating": {
+      "desc": "Mainkan 1 kartu Joker Merah"
     }
   },
   "achv_event_dungfight": {
@@ -1045,7 +1147,7 @@
     "group": "Event",
     "levels": {
       "2": {
-        "desc": "Dari satu Uji Coba saja, dapatkan skor tertinggi ≥ 500.000",
+        "desc": "Dari satu Uji Coba, dapatkan Skor Arena ≥ 500.000",
         "completeDesc": "Kamu tidak cuma pandai bertarung, tapi juga mahir berhitung dan sangat beruntung."
       }
     },
@@ -1079,6 +1181,20 @@
     },
     "plating": {
       "desc": "Selesaikan semua stage [AMARAH MEMBARA! MEGAARENA!] dalam Mode MAKS, dan selesaikan stage mana pun berikut ini dalam 180 dtk:\n· [Terkutuk! Breaker dan Monster Batu! Sudah MAKS!]\n· [Taktik! Kalahkan Pemimpin Kawanannya! Sudah MAKS!]\n· [Kacau! Pembantaian Habis-habisan! Sudah MAKS!]"
+    }
+  },
+  "achv_event_takestwo_2": {
+    "name": "“TERBAIK! ARENA TALOS-II!”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [BANGKIT! MEGAARENA!], selesaikan semua stage dalam mode Normal",
+        "completeDesc": "Di Wuling, arena megah yang benar-benar mampu mengobarkan semangat tarung para pejuang telah berakhir dengan sempurna! Percayalah kepada kami! Arena megah lainnya sedang disiapkan!"
+      }
+    },
+    "plating": {
+      "desc": "Di [BANGKIT! MEGAARENA!], selesaikan rangkaian stage ini dalam 200 dtk:\n· [Yuanyuan! Sudah Buka! Sudah Maks!]\n· [Bertarung! Wuling Membara! Sudah Maks!]"
     }
   },
   "achv_event_tundra_challenge_dung": {
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "Di [Penggali Teka-Teki], selesaikan dengan sempurna semua Dimensi Protokol “Memudar Melampaui Lukisan”"
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "“Kota Jamur”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Penggali Teka-Teki], selesaikan semua Dimensi Protokol “Mikologi Esoterik”",
+        "completeDesc": "Satu per satu, kamu menerangi Dimensi Protokol yang tercerai-berai. Kota Jamur telah membuka gerbangnya untukmu (dan kali ini, kamu tidak berhalusinasi)."
+      }
+    },
+    "plating": {
+      "desc": "Di [Penggali Teka-Teki], selesaikan dengan sempurna semua Dimensi Protokol “Mikologi Esoterik”"
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "Perintis Pabrik Wuling V",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Teliti 50 teknologi di Bagan AIC Wuling",
+        "completeDesc": "Kamu berhasil meneliti lebih banyak teknologi di Bagan AIC Wuling.\nTeknologi kami telah berpadu dengan visi Wuling, lalu mekar menjadi bunga yang benar-benar baru."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "Perintis Pabrik Lembah",
     "category": "Konstruksi",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "Di [Lapangan Panahan Typhoeus], selesaikan semua “Latihan Tingkat Lanjut” dan selesaikan “Latihan Harian 04” dengan 3★"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "“Hidup Kita Dibangun Kembali”",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Di Wuling, tingkatkan progres Rekonstruksi Zona Eksklusi hingga Fase 4 (Pemeliharaan Rutin)",
+        "completeDesc": "Kenang masa lalu. Sambut masa depan."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan 5 pasokan untuk Pemeliharaan Rutin"
     }
   },
   "achv_growth_adventure_level": {
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "“Merayaplah Keluar dari Pipa”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Saat Shroomkrusher Nidwyrm bersembunyi, gunakan wafel madu untuk memancingnya keluar dari bawah tanah",
+        "completeDesc": "Kru reparasi terowongan dan jalur pipa UWST sering bertemu dengan nidwyrm. Memancing mereka bisa jadi solusinya."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "“Dominasi Pencipta”",
     "category": "Keajaiban",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "Saat Ruan Yi Murka, pertahankan efek Withering Touch-nya selama setidaknya 60 dtk",
         "completeDesc": "Dengan ranting-ranting yang mengering, ia menciptakan dunia kematian, tapi kau bisa bebas mengarunginya."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "“Rumah Lindung Profesional”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "1": {
+        "desc": "Di Bendungan Lama, capai Markas Rahasia",
+        "completeDesc": "Seorang operator profesional selalu menyiapkan rumah lindung sebelum menjalankan operasi. Jangan remehkan profesionalisme Kay ... atau betapa tidak profesionalnya dia."
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "Misi Utama",
     "levels": {
       "3": {
-        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅵ: Ditempa sejak Awal]",
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅵ: Sependapat, Sepemikiran]",
         "completeDesc": "Zhuang Fangyi sudah menunggu, dan akhirnya kamu sampai."
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "Misi Utama",
     "levels": {
       "3": {
-        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Losmen dalam Lukisan]",
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Masuk ke Dunia Lukisan]",
         "completeDesc": "Mereka melihat lukisan yang indah itu, lalu melangkah lebih dalam ke pegunungan."
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "Misi Utama",
     "levels": {
       "3": {
-        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Ujian Ⅲ - Jalan yang Tiada]",
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Menyingkap Jati Diri]",
         "completeDesc": "Untuk menjelaskan obsesiku dan menyembuhkan luka terdalamku."
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "Misi Utama",
     "levels": {
       "3": {
-        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Kesimpulan]",
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅷ: Melukis dengan Tinta Baru]",
         "completeDesc": "Larutkan bercak tinta lama, dan goreskan warna yang lebih cemerlang untuk membuat lukisan itu kembali baru."
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "Misi Utama",
     "levels": {
       "3": {
-        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅴ: Pertempuran Pilar Utama]",
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅴ: Menerobos]",
         "completeDesc": "Dia adalah penakluk yang hatinya terbakar oleh ambisi, yang tak ragu mengorbankan puluhan ribu jiwa demi bisa melihat sekilas dunia terlarang. Kamu berhasil mengalahkan kejahatan Nefarith."
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "Selesaikan misi sampingan [Hari yang Tak Terlupakan]",
         "completeDesc": "Sungguh luar biasa. Seekor fowlbeast yang menggubah puisi dan tungku berasap yang menggugah hati kita."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "“Pernikahan Langgeng Butuh Kohl Enak”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Esok Hari]",
+        "completeDesc": "Dengan ini, sang mempelai pria dan sang jamur .... Apa ini benar? Kenapa tidak disebut sang mempelai wanita saja? Ah, sudahlah. Pokoknya, mereka hidup bahagia selamanya."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "“Aku Mimpi Wafel Madu”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Aku Mimpi Wafel Madu]",
+        "completeDesc": "Kamu dan Kay menjelajahi dunia ajaib penuh jamur, wafel madu, dan sedikit sentuhan fantasi. Jangan khawatir, dan jangan ragu. Petualangan sungguhan menantimu."
       }
     },
     "plating": null

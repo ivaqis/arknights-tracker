@@ -63,7 +63,7 @@
       "description": "삐삐를 배치하여 지원을 요청하고 메인 컨트롤 오퍼레이터로 전환합니다.\n일정 시간 동안, 이본의 일반 공격이 <@ba.key>강화</>되며 일반 공격을 할 때마다 자신의 치명타 확률이 증가합니다. 스택 수치가 최대로 쌓였을 경우, 자신의 치명타 피해가 증가합니다. 지속 시간이 끝나기 전의 마지막 공격은 <#ba.lastcombo>강력한 일격</>으로 바뀌어 대량의 <@ba.cryst>냉기 피해</>를 줍니다.\n적이 <#ba.frozen>동결 </> 상태라면, 추가로 <@ba.cryst>냉기 피해</>를 1회 준 후, <#ba.frozen>동결</> 상태를 <#ba.consume>소모</>합니다.",
       "durationS": "지속 시간(초)",
       "batkDmgMultiplier": "일반 공격 피해 배율",
-      "enhancedFinalStrikeDmgMultiplier": "강력 공격 피해 배율",
+      "enhancedFinalStrikeDmgMultiplier": "강력한 공격 피해 배율",
       "additionalAtkDmgMultiplier": "추가 공격 피해 배율",
       "enhancedFinalStrikeStagger": "강력한 공격 불균형치",
       "maxStacks": "최대 중첩 스택 수치",

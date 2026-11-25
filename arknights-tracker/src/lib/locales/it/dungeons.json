@@ -107,17 +107,17 @@
   "indie_battletower008": {
     "name": "Breve storia di guerra: normale",
     "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
-    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Sconfiggere il drago delle sabbie scavatore conferisce <@ba.vup>+30%</> di tasso di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero dell'abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower008_ex": {
     "name": "Breve storia di guerra: brutale",
     "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
-    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Sconfiggere il drago delle sabbie scavatore conferisce <@ba.vup>+30%</> di tasso di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero dell'abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower008_s": {
     "name": "Breve storia di guerra: difficile",
     "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
-    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Sconfiggere il drago delle sabbie scavatore conferisce <@ba.vup>+30%</> di tasso di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero dell'abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower009": {
     "name": "Fronte sepolto: Normale",
@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Dossier sull'ombra contaminante: Tuono - Normale",
     "description": "DOSSIER 01: ricavato da un frammento d'artiglio di bestia rinvenuto nelle rovine. Per il momento, abbiamo attribuito l'aggressività della bestia all'Ætherspazio o ai suoi istinti predatori.",
-    "featureDesc": "- L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower015_ex": {
     "name": "Dossier sull'ombra contaminante: Tuono - Brutale",
     "description": "DOSSIER 01: ricavato da un frammento d'artiglio di bestia rinvenuto nelle rovine. Per il momento, abbiamo attribuito l'aggressività della bestia all'Ætherspazio o ai suoi istinti predatori.",
-    "featureDesc": "- L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower015_s": {
     "name": "Dossier sull'ombra contaminante: Tuono - Difficile",
     "description": "DOSSIER 01: ricavato da un frammento d'artiglio di bestia rinvenuto nelle rovine. Per il momento, abbiamo attribuito l'aggressività della bestia all'Ætherspazio o ai suoi istinti predatori.",
-    "featureDesc": "- L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - L'ombra contaminante di Bottoblitz non entrerà in stato di Furia.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower016": {
     "name": "Dossier sul falcione: Yinglung - Normale",
     "description": "DOSSIER 22: ricavato dall'arma personale di un membro della STEY. La lama presenta oltre 20 tacche, la maggior parte delle quali reca echi di operazioni difensive e missioni d'assalto.",
-    "featureDesc": "- Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower016_ex": {
     "name": "Dossier sul falcione: Yinglung - Brutale",
     "description": "DOSSIER 22: ricavato dall'arma personale di un membro della STEY. La lama presenta oltre 20 tacche, la maggior parte delle quali reca echi di operazioni difensive e missioni d'assalto.",
-    "featureDesc": "- Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower016_s": {
     "name": "Dossier sul falcione: Yinglung - Difficile",
     "description": "DOSSIER 22: ricavato dall'arma personale di un membro della STEY. La lama presenta oltre 20 tacche, la maggior parte delle quali reca echi di operazioni difensive e missioni d'assalto.",
-    "featureDesc": "- Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo l'inizio della battaglia, i PA iniziali e i PA max degli operatori aumentano a <@ba.vup>700</>.\n- Recupero e rigenerazione dei PA totali -50%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower017": {
     "name": "Dossier sulla vendetta: Spacca-Ossa - Normale",
     "description": "DOSSIER 07: ricavato da un'arma rudimentale degli Spacca-Ossa, recuperata sul luogo di uno scontro intestino tra membri di clan rivali. Costituisce una prova concreta dei conflitti interni e delle faide di sangue.",
-    "featureDesc": "- Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower017_ex": {
     "name": "Dossier sulla vendetta: Spacca-Ossa - Brutale",
     "description": "DOSSIER 07: ricavato da un'arma rudimentale degli Spacca-Ossa, recuperata sul luogo di uno scontro intestino tra membri di clan rivali. Costituisce una prova concreta dei conflitti interni e delle faide di sangue.",
-    "featureDesc": "- Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower017_s": {
     "name": "Dossier sulla vendetta: Spacca-Ossa - Difficile",
     "description": "DOSSIER 07: ricavato da un'arma rudimentale degli Spacca-Ossa, recuperata sul luogo di uno scontro intestino tra membri di clan rivali. Costituisce una prova concreta dei conflitti interni e delle faide di sangue.",
-    "featureDesc": "- Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Intensità delle Arti di tutta la squadra <@ba.vup>+100%</>.\n- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower018": {
     "name": "Dossier sulle bestie: Palizzata di Qingbo - Normale",
     "description": "DOSSIER 19: ricavato da una gabbia per bestie della Palizzata di Qingbo. La struttura è stata forgiata fondendo armi spezzate. Prima di poter domare le bestie, i costruttori della Palizzata di Qingbo dovettero sconfiggere la fauna selvatica.",
-    "featureDesc": "- Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> applicati.\n- Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</> / <@ba.key>Distruzione</> / <@ba.key>Sfondamento</> applicati.\n- Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> applicati.\n - Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</>/<@ba.key>Distruzione</>/<@ba.key>Sfondamento</> applicati.\n - Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n - Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower018_ex": {
     "name": "Dossier sulle bestie: Palizzata di Qingbo - Brutale",
     "description": "DOSSIER 19: ricavato da una gabbia per bestie della Palizzata di Qingbo. La struttura è stata forgiata fondendo armi spezzate. Prima di poter domare le bestie, i costruttori della Palizzata di Qingbo dovettero sconfiggere la fauna selvatica.",
-    "featureDesc": "- Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> applicati.\n- Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</> / <@ba.key>Distruzione</> / <@ba.key>Sfondamento</> applicati.\n- Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> applicati.\n - Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</>/<@ba.key>Distruzione</>/<@ba.key>Sfondamento</> applicati.\n - Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n - Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower018_s": {
     "name": "Dossier sulle bestie: Palizzata di Qingbo - Difficile",
     "description": "DOSSIER 19: ricavato da una gabbia per bestie della Palizzata di Qingbo. La struttura è stata forgiata fondendo armi spezzate. Prima di poter domare le bestie, i costruttori della Palizzata di Qingbo dovettero sconfiggere la fauna selvatica.",
-    "featureDesc": "- Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> applicati.\n- Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</> / <@ba.key>Distruzione</> / <@ba.key>Sfondamento</> applicati.\n- Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</> / <@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Dopo aver sconfitto il fendi-nubi, <@ba.vup>+1</> agli accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> applicati.\n - Dopo aver sconfitto il bestiaspina, <@ba.vup>+1</> al livello di stato di <@ba.key>Reazioni delle Arti</>/<@ba.key>Distruzione</>/<@ba.key>Sfondamento</> applicati.\n - Dopo aver sconfitto il telson pesante α, consumare accumuli di <@ba.key>Afflizione da Arti</>/<@ba.key>Vulnerabilità</> ripristina immediatamente <@ba.vup>+25</> PA.\n - Sconfiggere un qualsiasi gruppo di nemici conferisce PS +50% ai nemici rimasti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower019": {
     "name": "Dossier sui costrutti: Spettro - Normale",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower019_ex": {
     "name": "Dossier sui costrutti: Spettro - Brutale",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower019_s": {
     "name": "Dossier sui costrutti: Spettro - Difficile",
     "description": "DOSSIER 50: ricavato da un piccolo coltello da intaglio. Chi creò i costrutti del bosco ne scolpì con delicatezza il cuore, permettendo loro di vegliare sulla foresta fino a oggi.",
-    "featureDesc": "- Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n- Furia di Gloomwald inizia con 3 <@ba.key>accumulo/i di scudo</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower020": {
     "name": "Dossier sulla difesa: Scudo - Normale",
     "description": "DOSSIER 99: ricavato da uno scudo infranto, dalla struttura semplice come il carapace di un insetto. È stato saldato così tante volte che ormai vi rimbomba l'eco della guerra.",
-    "featureDesc": "<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower020_ex": {
     "name": "Dossier sulla difesa: Scudo - Brutale",
     "description": "DOSSIER 99: ricavato da uno scudo infranto, dalla struttura semplice come il carapace di un insetto. È stato saldato così tante volte che ormai vi rimbomba l'eco della guerra.",
-    "featureDesc": "<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_battletower020_s": {
     "name": "Dossier sulla difesa: Scudo - Difficile",
     "description": "DOSSIER 99: ricavato da uno scudo infranto, dalla struttura semplice come il carapace di un insetto. È stato saldato così tante volte che ormai vi rimbomba l'eco della guerra.",
-    "featureDesc": "<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower021": {
+    "name": "File del dominio: ululatore-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 17. L'ulularupi ha spaccato il cranio di un suo simile. Il teschio sbiancato è diventato la sua nuova corona e il simbolo della sua autorità. La montagna può avere un solo padrone.",
+    "featureDesc": "- Tasso di rigenerazione dei PA: -30%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "File del dominio: ululatore-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 17. L'ulularupi ha spaccato il cranio di un suo simile. Il teschio sbiancato è diventato la sua nuova corona e il simbolo della sua autorità. La montagna può avere un solo padrone.",
+    "featureDesc": "- Tasso di rigenerazione dei PA: -30%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "File del dominio: ululatore-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 17. L'ulularupi ha spaccato il cranio di un suo simile. Il teschio sbiancato è diventato la sua nuova corona e il simbolo della sua autorità. La montagna può avere un solo padrone.",
+    "featureDesc": "- Tasso di rigenerazione dei PA: -30%.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower022": {
+    "name": "File del codice: misuratore-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 653. La misura crinita... il custode della legge... e il cartografo del regno d'inchiostro. Per decreto del suo padrone, è destinato a vagare per le terre mortali che sfiorano i cieli, a giudicare il mondo e a imporvi una misura di ordine.",
+    "featureDesc": "- Per ogni unità di danni da abilità che subisce, la misura crinita accumula <@ba.vup>5</> punti di Vacillamento aggiuntivi. L'effetto si attiva una sola volta ogni 0.05 s.\n- Quando la misura crinita entra in Vacillamento, le semisfere di giada ai suoi lati non forniscono più riduzione dei danni.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "File del codice: misuratore-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 653. La misura crinita... il custode della legge... e il cartografo del regno d'inchiostro. Per decreto del suo padrone, è destinato a vagare per le terre mortali che sfiorano i cieli, a giudicare il mondo e a imporvi una misura di ordine.",
+    "featureDesc": "- Per ogni unità di danni da abilità che subisce, la misura crinita accumula <@ba.vup>5</> punti di Vacillamento aggiuntivi. L'effetto si attiva una sola volta ogni 0.05 s.\n- Quando la misura crinita entra in Vacillamento, le semisfere di giada ai suoi lati non forniscono più riduzione dei danni.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "File del codice: misuratore-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 653. La misura crinita... il custode della legge... e il cartografo del regno d'inchiostro. Per decreto del suo padrone, è destinato a vagare per le terre mortali che sfiorano i cieli, a giudicare il mondo e a imporvi una misura di ordine.",
+    "featureDesc": "- Per ogni unità di danni da abilità che subisce, la misura crinita accumula <@ba.vup>5</> punti di Vacillamento aggiuntivi. L'effetto si attiva una sola volta ogni 0.05 s.\n- Quando la misura crinita entra in Vacillamento, le semisfere di giada ai suoi lati non forniscono più riduzione dei danni.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower023": {
+    "name": "File dei tracciati: cacciatore-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 23. Attraverso le selve più fitte e con inarrestabile velocità, le pergamene della strategia inseguono le entità e le bestie in continua metamorfosi... A nessuno è concesso profanare il regno dipinto.",
+    "featureDesc": "- Dopo aver sconfitto un qualsiasi gruppo di nemici, ogni operatore ottiene un uso gratuito dell'abilità suprema, che diventa disponibile dopo aver usato un'abilità suprema.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +20% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "File dei tracciati: cacciatore-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 23. Attraverso le selve più fitte e con inarrestabile velocità, le pergamene della strategia inseguono le entità e le bestie in continua metamorfosi... A nessuno è concesso profanare il regno dipinto.",
+    "featureDesc": "- Dopo aver sconfitto un qualsiasi gruppo di nemici, ogni operatore ottiene un uso gratuito dell'abilità suprema, che diventa disponibile dopo aver usato un'abilità suprema.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +20% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "File dei tracciati: cacciatore-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 23. Attraverso le selve più fitte e con inarrestabile velocità, le pergamene della strategia inseguono le entità e le bestie in continua metamorfosi... A nessuno è concesso profanare il regno dipinto.",
+    "featureDesc": "- Dopo aver sconfitto un qualsiasi gruppo di nemici, ogni operatore ottiene un uso gratuito dell'abilità suprema, che diventa disponibile dopo aver usato un'abilità suprema.\n- Sconfiggere un qualsiasi gruppo di nemici conferisce PS +20% ai nemici rimasti.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower024": {
+    "name": "File dell'assedio: armatura pesante-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 37. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi possenti pugni corazzati erano in grado di sfondare le mura delle fortezze. Trovò la morte di fronte a uno sbarramento di fuoco convergente.",
+    "featureDesc": "- Per ogni accumulo di <@ba.key>Afflizione da Arti</> consumato o assorbito, applica 1 accumulo di <@ba.key>Vulnerabilità</> e recupera <@ba.vup>10</> PA.\n- Per ogni accumulo di <@ba.key>Vulnerabilità</> consumato o assorbito, applica 1 accumulo di <@ba.key>Afflizione da Arti</> (dell'elemento applicato per primo in questa battaglia) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "File dell'assedio: armatura pesante-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 37. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi possenti pugni corazzati erano in grado di sfondare le mura delle fortezze. Trovò la morte di fronte a uno sbarramento di fuoco convergente.",
+    "featureDesc": "- Per ogni accumulo di <@ba.key>Afflizione da Arti</> consumato o assorbito, applica 1 accumulo di <@ba.key>Vulnerabilità</> e recupera <@ba.vup>10</> PA.\n- Per ogni accumulo di <@ba.key>Vulnerabilità</> consumato o assorbito, applica 1 accumulo di <@ba.key>Afflizione da Arti</> (dell'elemento applicato per primo in questa battaglia) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "File dell'assedio: armatura pesante-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 37. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi possenti pugni corazzati erano in grado di sfondare le mura delle fortezze. Trovò la morte di fronte a uno sbarramento di fuoco convergente.",
+    "featureDesc": "- Per ogni accumulo di <@ba.key>Afflizione da Arti</> consumato o assorbito, applica 1 accumulo di <@ba.key>Vulnerabilità</> e recupera <@ba.vup>10</> PA.\n- Per ogni accumulo di <@ba.key>Vulnerabilità</> consumato o assorbito, applica 1 accumulo di <@ba.key>Afflizione da Arti</> (dell'elemento applicato per primo in questa battaglia) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower025": {
+    "name": "File della perforazione: balista-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 38. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi enormi dardi potevano attraversare intere cime di colline. Fu distrutto e ucciso da un colosso.",
+    "featureDesc": "- Le abilità combo infliggono <@ba.vup>+50%</> di danni.\n- Quando viene usata un'abilità combo, l'intera squadra ottiene <@ba.vup>+4%</> di riduzione del tempo di recupero dell'abilità combo (accumuli massimi di questo effetto: 40) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "File della perforazione: balista-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 38. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi enormi dardi potevano attraversare intere cime di colline. Fu distrutto e ucciso da un colosso.",
+    "featureDesc": "- Le abilità combo infliggono <@ba.vup>+50%</> di danni.\n- Quando viene usata un'abilità combo, l'intera squadra ottiene <@ba.vup>+4%</> di riduzione del tempo di recupero dell'abilità combo (accumuli massimi di questo effetto: 40) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "File della perforazione: balista-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 38. Guerriero un tempo al servizio del Signore della guerra Jakub. I suoi enormi dardi potevano attraversare intere cime di colline. Fu distrutto e ucciso da un colosso.",
+    "featureDesc": "- Le abilità combo infliggono <@ba.vup>+50%</> di danni.\n- Quando viene usata un'abilità combo, l'intera squadra ottiene <@ba.vup>+4%</> di riduzione del tempo di recupero dell'abilità combo (accumuli massimi di questo effetto: 40) e recupera <@ba.vup>10</> PA.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower026": {
+    "name": "File della distruzione: Æthillu-N",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 66. Æthillu che si ostina a non svanire. La sua forma contorta e tormentata è stata catturata e registrata.",
+    "featureDesc": "- Una volta sconfitto, un Æthillu torna in vita dopo un po' (questa rinascita avviene solo una volta). Se nel frattempo tutti gli Æthillu vengono sconfitti, nessuno tornerà in vita.\n- Gli Æthillu sono immuni ai danni da attacco base inflitti dagli operatori non controllati.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "File della distruzione: Æthillu-B",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 66. Æthillu che si ostina a non svanire. La sua forma contorta e tormentata è stata catturata e registrata.",
+    "featureDesc": "- Una volta sconfitto, un Æthillu torna in vita dopo un po' (questa rinascita avviene solo una volta). Se nel frattempo tutti gli Æthillu vengono sconfitti, nessuno tornerà in vita.\n- Gli Æthillu sono immuni ai danni da attacco base inflitti dagli operatori non controllati.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "File della distruzione: Æthillu-H",
+    "description": "Recuperato dal dispositivo di archiviazione dei dati danneggiato n. 66. Æthillu che si ostina a non svanire. La sua forma contorta e tormentata è stata catturata e registrata.",
+    "featureDesc": "- Una volta sconfitto, un Æthillu torna in vita dopo un po' (questa rinascita avviene solo una volta). Se nel frattempo tutti gli Æthillu vengono sconfitti, nessuno tornerà in vita.\n- Gli Æthillu sono immuni ai danni da attacco base inflitti dagli operatori non controllati.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
   },
   "indie_contract001": {
     "name": "Operazione sperimentale di Riaccensione",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Operazione sperimentale indaco",
     "description": "- L'operazione prevede 3 ondate di nemici consecutive da affrontare. Sconfiggi tutte le ondate di nemici per completarla.\n- Tra un'ondata e l'altra appariranno delle Masse curative. Toccale per ripristinare i PS di tutti i membri della squadra.\n- Tra un'ondata e l'altra è prevista una sessione di riposo, durante la quale gli operatori sono comunque considerati in battaglia.\n- L'operazione ha una durata limitata. Una volta scaduto il timer o quando i PS di tutti gli operatori della squadra arrivano a ZERO, l'operazione viene interrotta.\n- Gadget e consumabili non possono essere usati.",
-    "featureDesc": "- I nemici includono vari ombre contaminanti, creature stregate, bestie feroci e pirati di Cangzei come gli oblitera-nubi.\n- Puoi comunque applicare Vulnerabilità, Afflizioni da Arti, stati fisici e Reazioni delle Arti ai nemici con accumuli di scudo."
+    "featureDesc": "- I nemici includono: varie ombre contaminanti, creature stregate, bestie feroci e oblitera-nubi (pirata di Cangzei).\n- Vulnerabilità, Afflizione da Arti, stati fisici e Reazioni delle Arti possono comunque essere applicati ai nemici con accumuli di scudo."
   },
   "indie_hard001": {
     "name": "Protezioni furiose",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Carneficina selvaggia dell'ombra",
     "description": "I lunghi artigli ritorti delle bestie selvagge emersero per primi dalle ombre. In seguito scoprimmo che quella luce spietata aveva lasciato il segno sulla loro natura feroce.",
-    "featureDesc": " - Un nemico in stato <@ba.key>Etereo</> è immune ai danni e non può essere scelto come bersaglio.\n - Una volta cominciata la battaglia, l'ombra contaminante di bestiaspina entrerà nello stato <@ba.key>Etereo</> ed eseguirà costantemente attacchi in carica. Nel frattempo, l'ombra contaminante di rastrobestia attiverà regolarmente <@ba.key>Scudo</> su se stessa. Le cariche dell'ombra contaminante di bestiaspina possono distruggere questo <@ba.key>Scudo</>.\n - Quando i PS dell'ombra contaminante di rastrobestia scendono a un livello più basso, entrerà nello stato <@ba.key>Etereo</> mentre lo stato <@ba.key>Etereo</> dell'ombra contaminante di bestiaspina terminerà. Successivamente, l'ombra contaminante di rastrobestia scaglierà regolarmente Colpi di tuono sull'operatore controllato (fino a <@ba.key>5</> colpi in totale). I danni del Colpo di tuono non possono essere schivati. Attivare <@ba.key>Esplosione delle Arti</>, <@ba.phy>Sfondamento</> o <@ba.phy>Distruzione</> sull'ombra contaminante di bestiaspina creerà <@ba.key>sfere di fulmini</>. L'operatore controllato può raccogliere una <@ba.key>sfera di fulmine</> per ottenere uno scudo che blocca i danni di <@ba.key>1</> Colpo di tuono.\n - Una volta che l'ombra contaminante di bestiaspina sarà scesa a pochi PS, il suo stato <@ba.key>Etereo</> terminerà. Poi, i nemici attaccheranno insieme.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+    "featureDesc": " - Un nemico in stato <@ba.key>Etereo</> è immune ai danni e non può essere scelto come bersaglio.\n - Una volta cominciata la battaglia, l'ombra contaminante di bestiaspina entrerà nello stato <@ba.key>Etereo</> ed eseguirà costantemente attacchi in carica. Nel frattempo, l'ombra contaminante di rastrobestia attiverà regolarmente <@ba.key>Scudo</> su se stessa. Le cariche dell'ombra contaminante di bestiaspina possono distruggere questo <@ba.key>Scudo</>.\n - Quando i PS dell'ombra contaminante di rastrobestia scendono a un livello più basso, entrerà nello stato <@ba.key>Etereo</> mentre lo stato <@ba.key>Etereo</> dell'ombra contaminante di bestiaspina terminerà. Successivamente, l'ombra contaminante di rastrobestia scaglierà regolarmente Colpi di tuono sull'operatore controllato (fino a <@ba.key>5</> colpi in totale). I danni del Colpo di tuono non possono essere schivati. Attivare <@ba.key>Esplosione delle Arti</>, <@ba.phy>Sfondamento</> o <@ba.phy>Distruzione</> sull'ombra contaminante di bestiaspina creerà <@ba.key>sfere di fulmini</>. L'operatore controllato può raccogliere una <@ba.key>sfera di fulmine</> per ottenere uno scudo che blocca i danni di <@ba.key>1</> Colpo di tuono.\n - Una volta che l'ombra contaminante di bestiaspina sarà scesa a pochi PS, lo stato <@ba.key>Etereo</> dell'ombra contaminante di rastrobestia terminerà. Poi, i nemici attaccheranno insieme.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
   },
   "indie_hard026_s": {
     "name": "Carneficina selvaggia dell'ombra: Agonia",
     "description": "I lunghi artigli ritorti delle bestie selvagge emersero per primi dalle ombre. In seguito scoprimmo che quella luce spietata aveva lasciato il segno sulla loro natura feroce.",
-    "featureDesc": " - Un nemico in stato <@ba.key>Etereo</> è immune ai danni e non può essere scelto come bersaglio.\n - Una volta cominciata la battaglia, l'ombra contaminante di bestiaspina entrerà nello stato <@ba.key>Etereo</> ed eseguirà costantemente attacchi in carica. Nel frattempo, l'ombra contaminante di rastrobestia attiverà regolarmente <@ba.key>Scudo</> su se stessa. Le cariche dell'ombra contaminante di bestiaspina possono distruggere questo <@ba.key>Scudo</>.\n - Quando i PS dell'ombra contaminante di rastrobestia scendono a un livello più basso, entrerà nello stato <@ba.key>Etereo</> mentre lo stato <@ba.key>Etereo</> dell'ombra contaminante di bestiaspina terminerà. Successivamente, l'ombra contaminante di rastrobestia scaglierà regolarmente Colpi di tuono sull'operatore controllato (fino a <@ba.key>7</> in totale). I danni del Colpo di tuono non possono essere schivati. Attivare <@ba.key>Esplosione delle Arti</>, <@ba.phy>Sfondamento</> o <@ba.phy>Distruzione</> sull'ombra contaminante di bestiaspina creerà <@ba.key>sfere di fulmine</>. L'operatore controllato può raccogliere una <@ba.key>sfera di fulmine</> per ottenere uno scudo che blocca i danni di <@ba.key>1</> Colpo di tuono.\n - Una volta che l'ombra contaminante di bestiaspina sarà scesa a pochi PS, il suo stato <@ba.key>Etereo</> terminerà. Poi, i nemici attaccheranno insieme.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+    "featureDesc": " - Un nemico in stato <@ba.key>Etereo</> è immune ai danni e non può essere scelto come bersaglio.\n - Una volta cominciata la battaglia, l'ombra contaminante di bestiaspina entrerà nello stato <@ba.key>Etereo</> ed eseguirà costantemente attacchi in carica. Nel frattempo, l'ombra contaminante di rastrobestia attiverà regolarmente <@ba.key>Scudo</> su se stessa. Le cariche dell'ombra contaminante di bestiaspina possono distruggere questo <@ba.key>Scudo</>.\n - Quando i PS dell'ombra contaminante di rastrobestia scendono a un livello più basso, entrerà nello stato <@ba.key>Etereo</> mentre lo stato <@ba.key>Etereo</> dell'ombra contaminante di bestiaspina terminerà. Successivamente, l'ombra contaminante di rastrobestia scaglierà regolarmente Colpi di tuono sull'operatore controllato (fino a <@ba.key>7</> colpi in totale). I danni del Colpo di tuono non possono essere schivati. Attivare <@ba.key>Esplosione delle Arti</>, <@ba.phy>Sfondamento</> o <@ba.phy>Distruzione</> sull'ombra contaminante di bestiaspina creerà <@ba.key>sfere di fulmini</>. L'operatore controllato può raccogliere una <@ba.key>sfera di fulmine</> per ottenere uno scudo che blocca i danni di <@ba.key>1</> Colpo di tuono.\n - Una volta che l'ombra contaminante di bestiaspina sarà scesa a pochi PS, lo stato <@ba.key>Etereo</> dell'ombra contaminante di rastrobestia terminerà. Poi, i nemici attaccheranno insieme.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
   },
   "indie_hard027": {
     "name": "Arco della vampa d'ombra",
@@ -638,5 +728,85 @@
     "name": "Creature che scavano: Agonia",
     "description": "La stagione glaciale e oscura è giunta al termine. Le creature uscite dal letargo si richiamano a vicenda... Sono una legione, e si stanno risvegliando.",
     "featureDesc": " - Attenzione alla nebbia: infligge di continuo a tutti gli operatori <@ba.key>danni progressivamente crescenti</>. <@ba.key>I danni della nebbia aumentano notevolmente</>.\n - A intervalli regolari, le lumache del bosco si interrano e ripristinano periodicamente tutti gli <@ba.key>accumuli di scudo</>. Sconfiggere una lumaca del bosco riduce temporaneamente i danni della nebbia.\n - Dopo l'inizio della battaglia, 1 lumaca del bosco casuale perde tutti i suoi <@ba.key>accumuli di scudo</> e non li ripristina più. Quando viene sconfitta, 1 altra lumaca del bosco casuale perde tutti i suoi <@ba.key>accumuli di scudo</> e non li ripristina più.\n\n<@ba.info> - Gadget e consumabili non possono essere usati.</>\n<@ba.info> - I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Il male svelato: Triaggelos I",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Il male svelato: Triaggelos II",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Il male svelato: Triaggelos III",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Il male svelato: Triaggelos IV",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n - Ogni volta che si rigenera, Triaggelos ottiene un aumento permanente di PS max e Vacillamento max.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Il male svelato: Triaggelos V",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n - Ogni volta che si rigenera, Triaggelos ottiene un aumento permanente di PS max e Vacillamento max.\n - Ogni volta che un operatore usa un'abilità di combattimento e un'abilità combo per <@ba.key>3</> volte, Triaggelos lancia <@ba.key>1</> meteorite all'operatore controllato.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Il male svelato: Triaggelos VI",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n - Ogni volta che si rigenera, Triaggelos ottiene un aumento permanente di PS max e Vacillamento max.\n - Ogni volta che un operatore usa un'abilità di combattimento e un'abilità combo per <@ba.key>3</> volte, Triaggelos lancia <@ba.key>1</> meteorite all'operatore controllato.\n - Nella sua <@ba.key>Forma furtiva</>, le abilità di Triaggelos diventano più potenti.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Il male svelato: Triaggelos VII",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n - Ogni volta che si rigenera, Triaggelos ottiene un aumento permanente di PS max e Vacillamento max.\n- Ogni volta che un operatore usa un'abilità di combattimento e un'abilità combo per <@ba.key>3</> volte, Triaggelos lancia <@ba.key>1</> meteorite all'operatore controllato.\n - Nella sua <@ba.key>Forma furtiva</>, le abilità di Triaggelos diventano più potenti.\n - Dopo aver lanciato <@ba.key>3</> meteoriti, Triaggelos usa la sua abilità suprema, infliggendo danni ingenti all'operatore controllato. Questi danni non possono essere schivati.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Il male svelato: Triaggelos VIII",
+    "description": "",
+    "featureDesc": " - Nuova azione Strumenti rapidi: usare il pulsante Strumenti rapidi crea un <@ba.key>alberello di Originium</> nel punto in cui si trova l'operatore controllato. Gli operatori all'interno del raggio protettivo dell'<@ba.key>alberello di Originium</> sono immuni ai danni di qualsiasi tipo.\n - Le onde d'urto di Ankhor non possono essere schivate.\n - Ogni volta che è Vacillante, Triaggelos rimuove da sé tutti gli accumuli di <@ba.key>Afflizione da Arti</> e <@ba.phy>Vulnerabilità</> e ottiene in modo permanente una certa quantità di ATT.\n - Nella sua <@ba.key>Forma di ricerca</>, Triaggelos evoca altri potenti Aggeloi.\n - Ogni volta che si rigenera, Triaggelos ottiene un aumento permanente di PS max e Vacillamento max.\n - Ogni volta che un operatore usa un'abilità di combattimento e un'abilità combo per <@ba.key>3</> volte, Triaggelos lancia <@ba.key>1</> meteorite all'operatore controllato.\n - Nella sua <@ba.key>Forma furtiva</>, le abilità di Triaggelos diventano più potenti.\n - Dopo aver lanciato <@ba.key>3</> meteoriti, Triaggelos usa la sua abilità suprema, infliggendo danni ingenti all'operatore controllato. Questi danni non possono essere schivati.\n - <@ba.key>Non è possibile eseguire schivate perfette</>.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Il male svelato: Nefarith I",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Il male svelato: Nefarith II",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Il male svelato: Nefarith III",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Il male svelato: Nefarith IV",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n - Alcune abilità di <@ba.key>Nefarith \"Conquistatrice\"</> possono essere fermate solo con <@ba.key>più colpi che causano interruzione</>.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Il male svelato: Nefarith V",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n - Alcune abilità di <@ba.key>Nefarith \"Conquistatrice\"</> possono essere fermate solo con <@ba.key>più colpi che causano interruzione</>.\n - L'azione di Strumenti rapidi <@ba.key>Supporto xiranite</> ha un tempo di recupero molto più lungo. Anche il raggio dei danni inflitti dallo speciale ATT dall'alto dopo aver usato <@ba.key>Supporto xiranite</> è molto più limitato.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Il male svelato: Nefarith VI",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n - Alcune abilità di <@ba.key>Nefarith \"Conquistatrice\"</> possono essere fermate solo con <@ba.key>più colpi che causano interruzione</>.\n - L'azione di Strumenti rapidi <@ba.key>Supporto xiranite</> ha un tempo di recupero molto più lungo. Anche il raggio dei danni inflitti dallo speciale ATT dall'alto dopo aver usato <@ba.key>Supporto xiranite</> è molto più limitato.\n - Tutte le <@ba.fire>Afflizioni da fuoco</> applicate agli operatori vengono convertite direttamente in <@ba.fire>Combustione</>.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Il male svelato: Nefarith VII",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n - Alcune abilità di <@ba.key>Nefarith \"Conquistatrice\"</> possono essere fermate solo con <@ba.key>più colpi che causano interruzione</>.\n - L'azione di Strumenti rapidi <@ba.key>Supporto xiranite</> ha un tempo di recupero molto più lungo. Anche il raggio dei danni inflitti dallo speciale ATT dall'alto dopo aver usato <@ba.key>Supporto xiranite</> è molto più limitato.\n - Tutte le <@ba.fire>Afflizioni da fuoco</> applicate agli operatori vengono convertite direttamente in <@ba.fire>Combustione</>.\n - A intervalli regolari, <@ba.key>Nefarith \"Conquistatrice\"</> intrappola un operatore non controllato casuale con un <@ba.key>Ankhor</>.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Il male svelato: Nefarith VIII",
+    "description": "",
+    "featureDesc": " - Ogni volta che <@ba.key>Nefarith \"Spacca-Ossa\"</> squarcia lo spazio-tempo, le sue abilità diventano più potenti.\n - Ogni volta che <@ba.key>Nefarith \"Conquistatrice\"</> ripristina il suo scudo di Æther, lancia nuovi, continui attacchi a distanza all'operatore controllato.\n - Le ondate di Æther non possono essere schivate e infliggono molti più danni.\n - Alcune abilità di <@ba.key>Nefarith \"Conquistatrice\"</> possono essere fermate solo con <@ba.key>più colpi che causano interruzione</>.\n - L'azione di Strumenti rapidi <@ba.key>Supporto xiranite</> ha un tempo di recupero molto più lungo. Anche il raggio dei danni inflitti dallo speciale ATT dall'alto dopo aver usato <@ba.key>Supporto xiranite</> è molto più limitato.\n - Tutte le <@ba.fire>Afflizioni da fuoco</> applicate agli operatori vengono convertite direttamente in <@ba.fire>Combustione</>.\n - A intervalli regolari, <@ba.key>Nefarith \"Conquistatrice\"</> intrappola un operatore non controllato casuale con un <@ba.key>Ankhor</>.\n - <@ba.key>Quando la sconfitta sembra inevitabile, Nefarith gioca la sua ultima carta e costringe l'operatore controllato ad affrontarla da solo.</>\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
   }
 }

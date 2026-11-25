@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "Mestre dos Caixotes do Mundo dos Cogumelos",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Na Barragem Antiga, abra 47 caixotes",
+        "completeDesc": "Você abriu a maioria dos caixotes de armazenamento em Wuling. Eles valem toneladas de waffles de mel."
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "\"Uma Lesma de Objetivo\"",
     "category": "Regional",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "Na Floresta Nevada e na Pintura de Si, desbloqueie 18 Pontos de TP",
         "completeDesc": "Você estendeu a Rede do Protocolo até as regiões mais profundas de Wuling, mesmo que essas regiões existam apenas em reinos de outro mundo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "Ancorado em Wuling V",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Na Barragem Antiga, desbloqueie 7 Pontos de TP",
+        "completeDesc": "Você estendeu a Rede do Protocolo até as regiões mais profundas de Wuling. Felizmente, nenhum dos nós da rede decidiu falar diretamente com você."
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "Na Floresta Nevada e na Pintura de Si, colete 41 Aurilenos",
         "completeDesc": "Fragmentos perdidos do artefato primal estão novamente reunidos em suas mãos. Eles podem ser fragmentos de luz encontrados em um reino de outro mundo, mas esses artefatos antigos respondem a você."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "\"Fragmentos Recongregados\" V",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Na Barragem Antiga, colete 17 Aurilenos",
+        "completeDesc": "Muitos fragmentos perdidos do artefato primal se reuniram novamente em suas mãos. Hum... Esses Aurilenos parecem esporos, não acha?"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "Na Pintura de Si, resolva 11 quebra-cabeças de Lanterna de Pedra",
         "completeDesc": "Você resolveu os muitos quebra-cabeças que Si deixou para trás. Até mesmo os Espíritos de Tinta que passarem tempo suficiente na pintura assumirão uma natureza lúdica."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "Andarilho da Barragem",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Na Barragem Antiga, use o Golpe de Waffle ou ataques de operador para interagir com cogumelos especiais (incluindo Cogumelos Energéticos, Cogumelos Arco-Íris, Videiras de Cogumelos e Muros de Ilusões) 20 vezes",
+        "completeDesc": "Na verdade, você pode saber mais sobre essa barragem do que seus projetistas originais."
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "Em [Monumento Umbral], conclua todos os estágios de \"Murmúrios da Floresta Profunda\" no modo Agonia"
     }
   },
+  "achv_bat_hard_9": {
+    "name": "\"Brutalidade Despótica\"",
+    "category": "Técnico",
+    "group": "Espaço do Protocolo",
+    "levels": {
+      "2": {
+        "desc": "Em [Monumento Umbral], conclua todos os estágios Dificuldade III de \"Déspota Armado\"",
+        "completeDesc": "Você esmagou os déspotas fortemente armados e expôs sua brutalidade nas telas de cinema."
+      }
+    },
+    "plating": {
+      "desc": "Em [Monumento Umbral], conclua todos os estágios Dificuldade VI de \"Déspota Armado\""
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "\"Arte dos Vazios\"",
     "category": "Técnico",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "Aplique 500 Status Físicos durante o combate",
         "completeDesc": "Você é o indiscutível mestre do combate."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "\"Elasticidade Fúngica\"",
+    "category": "Técnico",
+    "group": "Técnica de Combate",
+    "levels": {
+      "2": {
+        "desc": "Deixe o operador controlado ser levantado ≥ 4 vezes por 1 rodada do ataque sísmico contínuo dos Cogumurros Quebramelos",
+        "completeDesc": "Parece que você experimentou uma verdadeira elasticidade fúngica. É maravilhoso, como brincar em um trampolim."
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "\"Feitiçaria 21\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Ganhe ≥ 21 pontos sem estourar o limite",
+        "completeDesc": "Você parece estar se saindo muito bem com a atividade de bruxaria apresentada por \"Cenoura da Sorte\"."
+      }
+    },
+    "plating": {
+      "desc": "Ganhe ≥ 30 pontos sem estourar o limite"
+    }
+  },
   "achv_event_clean": {
     "name": "\"Totalmente Limpo e Enxaguado\"",
     "category": "Evento",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "Em [Contrato de Contingência: Operação Experimental Índigo], conclua com êxito um desafio com ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> de Total de Critérios de Teste"
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "\"Poder de Senhor da Guerra do Coringa\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Jogue 1 carta de Coringa Preto",
+        "completeDesc": "E com aquela poderosa explosão, o déspota Senhor da Guerra finalmente caiu... No entanto, sua lenda continua a se espalhar por todos os tipos de mesas de cartas."
+      }
+    },
+    "plating": {
+      "desc": "Jogue 1 carta de Coringa Vermelho"
     }
   },
   "achv_event_dungfight": {
@@ -1045,7 +1147,7 @@
     "group": "Evento",
     "levels": {
       "2": {
-        "desc": "Em um único Desafio, alcance uma pontuação máxima ≥ 500 mil",
+        "desc": "Em um único Desafio, alcance uma Pontuação da Arena de ≥ 500 mil",
         "completeDesc": "Você não é apenas excepcional em combate, mas também é excelente com números e tem uma sorte incrível."
       }
     },
@@ -1079,6 +1181,20 @@
     },
     "plating": {
       "desc": "Conclua todos os estágios de [FÚRIA TÉRMICA! MEGA-ARENA!] no Modo NÍVEL MÁXIMO e conclua qualquer um dos seguintes estágios em 180 s:\n· [Profano! Invasores e Insetos! NÍVEL MÁXIMO!]\n· [Táticas! Derrotem os Domadores de Bestas! NÍVEL MÁXIMO!]\n· [Caos! Carnificina Total! NÍVEL MÁXIMO!]"
+    }
+  },
+  "achv_event_takestwo_2": {
+    "name": "\"A MELHOR! ARENA DE TALOS-II!\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Em [LEVANTEM-SE! MEGA-ARENA!], conclua todos os estágios no Modo Normal",
+        "completeDesc": "Em Wuling, uma grande arena capaz de inflamar ao máximo a paixão dos guerreiros pela batalha chegou à sua conclusão perfeita! Tenham fé em nós! Outra grande arena está em construção!"
+      }
+    },
+    "plating": {
+      "desc": "Em [LEVANTEM-SE! MEGA-ARENA!], conclua estes estágios em até 200 segundos:\n· [Yuanyuan! Aberta ao Público! NÍVEL MÁXIMO!]\n· [Lutem! Wuling em Chamas! NÍVEL MÁXIMO!]"
     }
   },
   "achv_event_tundra_challenge_dung": {
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "Em [Explorador do Enigmático], conclua com perfeição todos os Espaços do Protocolo \"Esmaecimento Além da Pintura\""
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "\"Cidade dos Cogumelos\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Em [Explorador do Enigmático], conclua todos os Espaços do Protocolo de \"Micologia Esotérica\"",
+        "completeDesc": "Um por um, você iluminou o fragmentado Espaço do Protocolo. A Cidade dos Cogumelos abriu seus portões para você (e não, você não está alucinando desta vez)."
+      }
+    },
+    "plating": {
+      "desc": "Em [Explorador do Enigmático], conclua com perfeição todos os Espaços do Protocolo de \"Micologia Esotérica\""
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "Pioneiro da Fábrica de Wuling V",
+    "category": "Construção",
+    "group": "Fábrica do CAI",
+    "levels": {
+      "1": {
+        "desc": "Pesquise 50 tecnologias no Plano do CAI de Wuling",
+        "completeDesc": "Você pesquisou com êxito mais tecnologias no Plano do CAI de Wuling.\nNossas tecnologias se entrelaçaram com a visão de Wuling e desabrocharam em uma flor totalmente nova."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "Pioneiro da Fábrica do Vale",
     "category": "Construção",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "No [Estande de Arco e Flecha de Typhoeus], conclua todo o \"Treinamento Avançado\" e o \"Exercício Diário 04\" com 3★"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "\"Nossas Vidas Reconstruídas\"",
+    "category": "Construção",
+    "group": "Fábrica do CAI",
+    "levels": {
+      "2": {
+        "desc": "Em Wuling, avance a Reconstrução da Zona de Exclusão para a Fase 4 (Manutenção de Rotina)",
+        "completeDesc": "Lembre-se do passado. Dê as boas-vindas ao futuro."
+      }
+    },
+    "plating": {
+      "desc": "Conclua 5 suprimentos de Manutenção de Rotina"
     }
   },
   "achv_growth_adventure_level": {
@@ -1665,7 +1821,7 @@
     "group": "Maravilhoso",
     "levels": {
       "1": {
-        "desc": "Ao combater Expurgo de Simmer, Nuvem Trovejante pode desferir Raios que causam Atordoamento.",
+        "desc": "Ao lutar no Expurgo de Simmer, Nuvem Trovejante pode lançar Raios que causam Atordoamento.",
         "completeDesc": "Talvez o Expurgo de Simmer só quisesse ajudar você a se acalmar e esfriar as coisas."
       }
     },
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "\"Venha, Deslize para Fora dos Tubos\"",
+    "category": "Maravilhoso",
+    "group": "Maravilhoso",
+    "levels": {
+      "2": {
+        "desc": "Quando o Verminídeo Quebramelos está se escondendo, use waffles de mel para atraí-lo para fora do chão",
+        "completeDesc": "As equipes de manutenção de túneis e tubulações do STUT frequentemente se deparam com um deles. Atraí-los com uma isca seria uma ótima ideia."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "\"Dominação do Criador\"",
     "category": "Maravilhoso",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "Enquanto Ruan Yi estiver enfurecido, mantenha ativo seu Toque Enfraquecedor por pelo menos 60 s",
         "completeDesc": "Com galhos ressecados, ele criou um reino mortal, mas você o percorria livremente."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "\"Esconderijo Profissional\"",
+    "category": "Maravilhoso",
+    "group": "Maravilhoso",
+    "levels": {
+      "1": {
+        "desc": "Na Barragem Antiga, chegue à Base Secreta",
+        "completeDesc": "Uma operadora profissional sempre prepara seu esconderijo antes de qualquer operação. Nunca subestime o profissionalismo de Kay... ou a falta dele."
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "Missão Principal",
     "levels": {
       "3": {
-        "desc": "Conclua a missão principal [Capítulo II Processo VI: Forjado no Princípio]",
+        "desc": "Conclua a missão principal [Capítulo II Processo VI: Almas Gêmeas que Compartilham uma Visão]",
         "completeDesc": "Zhuang Fangyi esperou, e você finalmente chegou."
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "Missão Principal",
     "levels": {
       "3": {
-        "desc": "Conclua a missão principal [Capítulo II Processo VIII: Na Pintura]",
+        "desc": "Conclua a missão principal [Capítulo II Processo VIII: Entre no Mundo Pintado]",
         "completeDesc": "Eles viram a bela pintura e avançaram mais fundo para o interior da montanha."
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "Missão Principal",
     "levels": {
       "3": {
-        "desc": "Conclua a missão principal [Capítulo II Processo VIII: Desafio III – Um Caminho Onde Não Há Nenhum]",
+        "desc": "Conclua a missão principal [Capítulo II Processo VIII: Veja Através de Si]",
         "completeDesc": "Para elucidar minha obsessão e curar meus males mais profundos."
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "Missão Principal",
     "levels": {
       "3": {
-        "desc": "Conclua a missão principal [Capítulo II Processo VIII: A Conclusão]",
+        "desc": "Conclua a missão principal [Capítulo II Processo VIII: Pintura com Tinta Fresca]",
         "completeDesc": "Dilua as manchas de tinta antigas e, assim, você poderá aplicar pinceladas mais vibrantes para renovar a pintura."
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "Missão Principal",
     "levels": {
       "3": {
-        "desc": "Conclua a missão principal [Capítulo II Processo V: Batalha do Pilar Principal]",
+        "desc": "Conclua a missão principal [Capítulo II Processo V: O Rompimento]",
         "completeDesc": "Ela é uma conquistadora cujo coração foi inflamado pela ambição, que busca sacrificar dezenas de milhares por um vislumbre do reino proibido. Você destruiu a malícia de Nefarith."
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "Conclua a missão secundária [Um Dia Memorável]",
         "completeDesc": "Verdadeiramente maravilhoso. Uma ave-fera que compõe poesia e um fogão fumegante que toca nossos corações."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "\"Um Bom Casamento Precisa de um Bom Kohl\"",
+    "category": "Capítulo",
+    "group": "Missão de Exploração",
+    "levels": {
+      "2": {
+        "desc": "Conclua a missão secundária [O Dia Seguinte]",
+        "completeDesc": "E com isso, o noivo e a cogumelo... Isso está certo mesmo? Não podemos simplesmente chamá-la de noiva? Enfim, eles viveram felizes para sempre."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "\"Eu Sonho com Waffles de Mel\"",
+    "category": "Capítulo",
+    "group": "Missão de Exploração",
+    "levels": {
+      "2": {
+        "desc": "Conclua a missão secundária [Eu Sonho com Waffles de Mel]",
+        "completeDesc": "Você e Kay embarcaram em uma jornada por um mundo maravilhoso de cogumelos, waffles de mel e uma boa dose de fantasia. Não se preocupe, e não duvide. Esta é uma verdadeira aventura."
       }
     },
     "plating": null

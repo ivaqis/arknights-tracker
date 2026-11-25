@@ -171,22 +171,22 @@
       },
       {
         "voId": "chr_0015_lifeng_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "P-Promoção? Ufa... Achei que estava encrencado por causa de alguma coisa que eu fiz errado!"
       },
       {
         "voId": "chr_0015_lifeng_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "No começo é sempre difícil, mas agora peguei o jeito. Endmin, você viu meu desempenho recente. Acha que consigo ganhar a Corrida de Cadeiras de Escritório deste mês?"
       },
       {
         "voId": "chr_0015_lifeng_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Ei, Endmin, só por curiosidade — quantas classificações vêm depois desta? Estou pensando em adicionar seções de \"Metas Mensais\" ao meu diário!"
       },
       {
         "voId": "chr_0015_lifeng_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "\"Desempenho excepcional\", \"fácil adaptabilidade e trabalho em equipe\"... Já estou até acostumado com esses elogios! Enfim, Endmin, estou pronto para começar. Prometo me esforçar ao máximo para me tornar seu companheiro mais confiável."
       },
       {
@@ -196,12 +196,12 @@
       },
       {
         "voId": "chr_0015_lifeng_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Moleza!"
       },
       {
         "voId": "chr_0015_lifeng_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Deixe comigo!"
       },
       {

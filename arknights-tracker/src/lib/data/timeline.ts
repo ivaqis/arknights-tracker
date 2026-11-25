@@ -1674,7 +1674,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev1-v1.7",
-        title: "events.",
+        title: "events.roamingWilderpawSignIn",
         name: "Roaming Wilderpaw Sign-In",
         startTime: "2026-11-24 22:00:00",
         startTimeAsia: "2026-11-25 11:00:00",
@@ -1689,7 +1689,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev2-v1.7",
-        title: "events.",
+        title: "events.arrayBuildingMendTheOldGash",
         name: "Array Building: Mend the Old Gash",
         startTime: "2026-11-24 22:00:00",
         startTimeAsia: "2026-11-25 11:00:00",
@@ -1705,7 +1705,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev3-v1.7",
-        title: "events.",
+        title: "events.luckyCarrotsGamesOfWonder",
         name: "Lucky Carrot's Games of Wonder",
         startTime: "2026-12-16 12:00:00",
         endTime: "2027-01-06 17:00:00",
@@ -1720,7 +1720,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev4-v1.7",
-        title: "events.",
+        title: "events.riseMegaArena",
         name: "RISE! MEGA ARENA!",
         startTime: "2026-12-16 12:00:00",
         endTime: "2027-01-06 17:00:00",
@@ -1750,8 +1750,8 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev6-v1.7",
-        title: "events.",
-        name: "Caps! Shrooms! FUNG!",
+        title: "events.capsShroomsFungi",
+        name: "Caps! Shrooms! FUNGI!",
         startTime: "2026-11-24 22:00:00",
         startTimeAsia: "2026-11-25 11:00:00",
         endTime: "2026-12-23 12:00:00",
@@ -1794,7 +1794,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev9-v1.7",
-        title: "",
+        title: "events.endminLetsSortThePrezzies",
         name: "Endmin! Let's Sort the Prezzies!",
         startTime: "2026-12-23 12:00:00",
         endTime: "2027-01-06 17:00:00",
@@ -1823,7 +1823,7 @@ export const rawEvents: GenericEventData[] = [
         version: "1.7"
     },
     {
-        id: "ev10-v1.7",
+        id: "ev10-2-v1.7",
         title: "events.echoesOfWarSeasonOfWariness",
         name: "Echoes of War: Season of Wariness",
         startTime: "2026-12-16 12:00:00",
@@ -1855,7 +1855,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev12-v1.7",
-        title: "",
+        title: "events.protocolPassShroomWorld",
         name: "Protocol Pass: Shroom World",
         startTime: "2026-11-24 22:00:00",
         startTimeAsia: "2026-11-25 11:00:00",
@@ -1872,8 +1872,8 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev13-v1.7",
-        title: "",
-        name: "Umbral Monument: Depost Weaponized",
+        title: "events.umbralMonumentDespotWeaponized",
+        name: "Umbral Monument: Despot Weaponized",
         startTime: "2026-12-02 12:00:00",
         endTime: "2027-01-06 17:00:00",
         endTimeAsia: "2027-01-07 04:00:00",
@@ -1888,7 +1888,7 @@ export const rawEvents: GenericEventData[] = [
     },
     {
         id: "ev14-v1.7",
-        title: "",
+        title: "events.monumentalRevelationTyranny",
         name: "Monumental Revelation: Tyranny",
         startTime: "2026-12-02 12:00:00",
         endTime: "2026-12-23 04:00:00",

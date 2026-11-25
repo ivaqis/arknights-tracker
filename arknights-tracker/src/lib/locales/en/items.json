@@ -118,6 +118,22 @@
       "Protocol Pass: Protocol Customized"
     ]
   },
+  "business_card_topic_bp_1_7": {
+    "name": "City of Shrooms and Honey",
+    "type": "Profile Theme",
+    "desc": "A theme for the Profile screen. Profile themes are shown at various places.",
+    "decoDesc": "It is at a city of sweetness and wild imaginations that our story begins.",
+    "obtainWays": [
+      "Protocol Pass: Protocol Customized"
+    ]
+  },
+  "business_card_topic_channel_1_7": {
+    "name": "Echoing Loop",
+    "type": "Profile Theme",
+    "desc": "A theme for the Profile screen. Profile themes are shown at various places.",
+    "decoDesc": "Music makes the universe. Music gives birth to life. Music creates everything.",
+    "obtainWays": []
+  },
   "business_card_topic_chr_0009_azrila": {
     "name": "The Bastion Never Breached",
     "type": "Profile Theme",
@@ -276,6 +292,15 @@
     "type": "Profile Theme",
     "desc": "A theme for the Profile screen. Profile themes are shown at various places.",
     "decoDesc": "A bright electrifying arc, a commitment ever burning, he made a wish to bring everlasting peace to the world.",
+    "obtainWays": [
+      "Gift: Reach Specific Operator Potentials"
+    ]
+  },
+  "business_card_topic_chr_0040_sweetpie": {
+    "name": "Secret Base",
+    "type": "Profile Theme",
+    "desc": "A theme for the Profile screen. Profile themes are shown at various places.",
+    "decoDesc": "\"Shh. I hid a huge stash of yummies here. You're the only one who knows of this place. Please keep it a secret for me!\"",
     "obtainWays": [
       "Gift: Reach Specific Operator Potentials"
     ]
@@ -839,6 +864,13 @@
     "decoDesc": "An intricate yet naturally picturesque cake that Perlica baked for you. She used fondant icing decor to depict the roads and sights you went through together. She remembers everything.",
     "obtainWays": []
   },
+  "item_birthday_ap_supply_2027": {
+    "name": "Year 2 Birthday Cake",
+    "type": "Sanity Meds",
+    "desc": "Use this to recover 40 Sanity.",
+    "decoDesc": "A very well-baked cake. A whiff of its delicious smell is therapeutic and comforting. The world is becoming a better place, and we believe that a beautiful journey lies in wait for you.",
+    "obtainWays": []
+  },
   "item_book_002_01": {
     "name": "Real Estate Ad",
     "type": "Mission Item",
@@ -1348,9 +1380,9 @@
     ]
   },
   "item_bp_liquid_cleaner_1": {
-    "name": "Water Treatment Unit Template",
+    "name": "Waste Treatment Unit Template",
     "type": "Standard Template Assembly",
-    "desc": "This template lets the Protocol Automation-Core (PAC) construct Water Treatment Units.",
+    "desc": "This template lets the Protocol Automation-Core (PAC) construct Waste Treatment Units.",
     "decoDesc": "",
     "obtainWays": [
       "Research: AIC Factory Plan Technologies"
@@ -1414,6 +1446,60 @@
     "name": "Depot Bus Port Template",
     "type": "Standard Template Assembly",
     "desc": "This template lets the Protocol Automation-Core (PAC) construct Depot Bus Ports.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_balancer_1": {
+    "name": "Forge of Equilibrium Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template lets the Protocol Automation-Core (PAC) construct Forges of Equilibrium.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_spawner_1": {
+    "name": "Forge of Luminance Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template lets the Protocol Automation-Core (PAC) construct Forges of Luminance.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_spawner_2": {
+    "name": "Bipolar Forge of Luminance Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template lets the Protocol Automation-Core (PAC) construct Bipolar Forges of Luminance.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_spawner_heng": {
+    "name": "E-Array Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template allows the stacking of L-Arrays and T-Arrays to create E-Arrays.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_spawner_hui": {
+    "name": "T-Array Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template adds the option to project T-arrays for Forges of Luminance.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_bp_magic_spawner_ming": {
+    "name": "L-Array Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template adds the option to project L-arrays for Forges of Luminance.",
     "decoDesc": "",
     "obtainWays": [
       "Research: AIC Factory Plan Technologies"
@@ -1734,6 +1820,15 @@
       "Research: AIC Factory Plan Technologies"
     ]
   },
+  "item_bp_wonder_supply_port_1": {
+    "name": "Rebuilding Supply Port Template",
+    "type": "Standard Template Assembly",
+    "desc": "This template lets the Protocol Automation-Core (PAC) construct Rebuilding Supply Ports.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
   "item_bp_xiranite_oven_1": {
     "name": "Forge of the Sky Template",
     "type": "Standard Template Assembly",
@@ -2022,6 +2117,15 @@
       "Reward: Protocol Pass"
     ]
   },
+  "item_case_wpn_selfselect_bp_8": {
+    "name": "Weapon Supply: Shroom World",
+    "type": "Crate",
+    "desc": "Open this to select and receive one weapon provided within.",
+    "decoDesc": "A supply option with plenty of weapons. Most soldiers who fought in the Second Aggeloi War mastered so many weapons that they could take anything from this and put up quite an impressive fight.",
+    "obtainWays": [
+      "Reward: Protocol Pass"
+    ]
+  },
   "item_case_wpn_selfselect_common_advlevel": {
     "name": "Curated Weapon Supply",
     "type": "Crate",
@@ -2171,6 +2275,24 @@
       "Arms Offering"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_7_1": {
+    "name": "Arms OC: Casual Roamer",
+    "type": "Crate",
+    "desc": "Open this to select and receive one weapon provided within.",
+    "decoDesc": "A heavy crate with incredibly tight seals. \"The aim of providing diverse weapon choices is to ensure safer battlefield operations,\" thought the Arsenal Engineers. And thus they filled up the crate with weaponry that reflects casual roaming.",
+    "obtainWays": [
+      "Arms Offering"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_aglina": {
+    "name": "Arms OC: Floaty Traveler",
+    "type": "Crate",
+    "desc": "Open this to select and receive one weapon provided within.",
+    "decoDesc": "A heavy crate with incredibly tight seals. \"The aim of providing diverse weapon choices is to ensure safer battlefield operations,\" thought the Arsenal Engineers. And thus they filled up the crate with weaponry that reflects floaty traveling.",
+    "obtainWays": [
+      "Arms Offering"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "Arms OC: Solid Ice",
     "type": "Crate",
@@ -2221,6 +2343,15 @@
     "type": "Crate",
     "desc": "Open this to select and receive one weapon provided within.",
     "decoDesc": "A heavy crate with incredibly tight seals. \"The aim of providing diverse weapon choices is to ensure safer battlefield operations,\" thought the Arsenal Engineers. And thus they filled up the crate with weaponry that reflected the Tender Sprig.",
+    "obtainWays": [
+      "Arms Offering"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_wulfa": {
+    "name": "Arms OC: Scarlet Claws",
+    "type": "Crate",
+    "desc": "Open this to select and receive one weapon provided within.",
+    "decoDesc": "A heavy crate with incredibly tight seals. \"The aim of providing diverse weapon choices is to ensure safer battlefield operations,\" thought the Arsenal Engineers. And thus they filled up the crate with weaponry that reflects the scarlet claws.",
     "obtainWays": [
       "Arms Offering"
     ]
@@ -2311,6 +2442,13 @@
     "type": "Sanity Meds",
     "desc": "Use this to recover 40 Sanity.",
     "decoDesc": "A box of small cakes that resemble Argent Flow's close companion. Every piece shows a different temperament. Some look happy, while others look haughty. The box is quite an attractive display of fine baking techniques and clever designs galloping side by side.",
+    "obtainWays": []
+  },
+  "item_char_ap_supply_sweetpie": {
+    "name": "Mound of Waffles",
+    "type": "Sanity Meds",
+    "desc": "Use this to recover 40 Sanity.",
+    "decoDesc": "Very sweet waffles in a very generous portion and comes with very delicious flavors.",
     "obtainWays": []
   },
   "item_char_ap_supply_tangtang": {
@@ -2404,6 +2542,13 @@
     "type": "Crate",
     "desc": "Contains a set of gear with maxed artificing that fits a specified operator. Defense Crates are automatically opened upon acquisition. The gear within will be stored in the Valuables Stash.",
     "decoDesc": "The Arsenal Engineers have painstakingly prepared this α-type defensive gear bundle with pieces of equipment that fit Operator Argent Flow.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_sweetpie": {
+    "name": "Arsenal Defense Crate α: Wild Roamer",
+    "type": "Crate",
+    "desc": "Contains a set of gear with maxed artificing that fits a specified operator. Defense Crates are automatically opened upon acquisition. The gear within will be stored in the Valuables Stash.",
+    "decoDesc": "The Arsenal Engineers have painstakingly prepared this α-type defensive gear bundle with pieces of equipment that fit Operator Kay.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2838,7 +2983,7 @@
     "name": "Si's Token",
     "type": "Operator Token",
     "desc": "Raises Si's potential.",
-    "decoDesc": "An accounting book that does not look very thick. They say this is the \"top secret ledger\" of Yuanyuan Innkeeper after all those years in business. However, when you flipped it open for a read, you find instead a casually written set of records and notes about things, sayings, and people that Si cares most about. After all, the principles of running Yuanyuan Manor rest in the name of the inn itself.",
+    "decoDesc": "An accounting book that does not look very thick. They say this is the \"top secret ledger\" of Yuanyuan Innkeeper after all those years in business. However, when you flip it open for a read, you find instead a casually written set of records and notes about things, sayings, and people that Si cares most about. After all, the principles of running Yuanyuan Manor rest in the name of the inn itself.",
     "obtainWays": [
       "Gift: Operator Onboarding"
     ]
@@ -2857,6 +3002,15 @@
     "type": "Operator Token",
     "desc": "Raises Purrchena's Potential.",
     "decoDesc": "A cake-shaped medal inscribed with Purrchena's name. It seems to be giving off the sweet smell of a freshly baked cake. But what is this medal for? Excellent grades? For being a Brand Ambassador? Or is it a gift from a patient whom Purrchena once helped? Its purpose may be a mystery, but Purrchena would hold it close, even while asleep. There is no doubt that it is a keepsake of a beautiful experience.",
+    "obtainWays": [
+      "Gift: Operator Onboarding"
+    ]
+  },
+  "item_charpotentialup_chr_0040_sweetpie": {
+    "name": "Kay's Token",
+    "type": "Operator Token",
+    "desc": "Raises Kay's potential.",
+    "decoDesc": "A freshly forged ferrium blade. The smith's proficiency (or lack thereof) is rather obvious from its uneven, pitted appearance and dull edge. However, it remains a treasured piece of Kay's arsenal.",
     "obtainWays": [
       "Gift: Operator Onboarding"
     ]
@@ -2906,6 +3060,15 @@
       "Exploring and Gathering"
     ]
   },
+  "item_collection_sweetpie_mushroom": {
+    "name": "Romantic Mushroom",
+    "type": "Mission Item",
+    "desc": "Romantic Mushroom",
+    "decoDesc": "A mushroom that symbolizes romance",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
   "item_collection_trstar": {
     "name": "Talosite",
     "type": "Mission Item",
@@ -2920,6 +3083,27 @@
     "type": "Material",
     "desc": "A metallic bottle made by processing Cuprium. Can be used to produce other items. Often used for filling fluids.",
     "decoDesc": "Cuprium bottles are pretty rare in the market because Cuprium is a more expensive metal than Ferrium.",
+    "obtainWays": []
+  },
+  "item_copper_bright": {
+    "name": "Lucidolite",
+    "type": "Material",
+    "desc": "An alloy made by processing Equprium and Equiranite at a Forge of Equilibrium. Can be used to produce other materials.",
+    "decoDesc": "Let luminous and turbid qi infuse cuprium properties into Xiranite. Let the glowing qi of the forge illuminate the land for all to see.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cmpt": {
+    "name": "Lucidolite Part",
+    "type": "Material",
+    "desc": "A device part made by processing Lucidolite. Can be used to produce other items.",
+    "decoDesc": "A Lucidolite Part with a wide range of uses.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cube": {
+    "name": "Lucidolite Energy Brick",
+    "type": "Material",
+    "desc": "An energy brick produced by packaging Lucidolite Part with Dense Originium Powder. Can be used for North Wuling Exclusion Zone Rebuilding.",
+    "decoDesc": "An important Lucidolite-sealed energy brick. It must be properly kept as the wrong storage conditions might set off powerful explosions.",
     "obtainWays": []
   },
   "item_copper_cmpt": {
@@ -2964,11 +3148,46 @@
     "decoDesc": "A Hetonite Part with a wide range of uses.",
     "obtainWays": []
   },
+  "item_copper_enr_heng": {
+    "name": "Equprium",
+    "type": "Material",
+    "desc": "A form of Cuprium that has undergone E-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Harmonized Cuprium exhibits highly equilibrated (E) properties. Holding an ingot of equilibrated cuprium seems to impart a soothing sensation (though this may simply be a placebo effect).",
+    "obtainWays": []
+  },
+  "item_copper_hui": {
+    "name": "T-Cuprium",
+    "type": "Material",
+    "desc": "A form of Cuprium that has undergone T-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Cuprium infused with turbid (T) properties is heavier and exhibits better malleability.",
+    "obtainWays": []
+  },
+  "item_copper_hui_cmpt": {
+    "name": "T-Cuprium Part",
+    "type": "Material",
+    "desc": "A device part made by processing T-Cuprium. Can be used to produce other items.",
+    "decoDesc": "A T-Cuprium Part with a wide range of uses.",
+    "obtainWays": []
+  },
   "item_copper_jar": {
     "name": "Cuprium Canister",
     "type": "Material",
     "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
     "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
+    "obtainWays": []
+  },
+  "item_copper_ming": {
+    "name": "L-Cuprium",
+    "type": "Material",
+    "desc": "A form of Cuprium that has undergone L-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Cuprium infused with luminous (L) properties is lighter and exhibits higher tensile strength.",
+    "obtainWays": []
+  },
+  "item_copper_ming_cmpt": {
+    "name": "L-Cuprium Part",
+    "type": "Material",
+    "desc": "A device part made by processing L-Cuprium. Can be used to produce other items.",
+    "decoDesc": "An L-Cuprium Part with a wide range of uses.",
     "obtainWays": []
   },
   "item_copper_nugget": {
@@ -2994,6 +3213,20 @@
     "type": "Material",
     "desc": "Shredded and powdered Cuprium. Can be used to produce other items.",
     "decoDesc": "Products made using shredded Cuprium yield a more homogenized texture.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_hui": {
+    "name": "CuPKG Heavy IC",
+    "type": "Material",
+    "desc": "A component produced by packaging Heavy Xiranite with T-Cuprium Parts. Can be used for North Wuling Exclusion Zone Rebuilding.",
+    "decoDesc": "An important cuprium-packaged (CuPKG) integrated component (IC). Heavy and corrosion resistant, this IC can operate in extreme environments without failing.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_ming": {
+    "name": "CuPKG Luminarite Component",
+    "type": "Material",
+    "desc": "A component produced by packaging Luminarite with L-Cuprium Parts. Can be used for North Wuling Exclusion Zone Rebuilding.",
+    "decoDesc": "An important cuprium-packaged (CuPKG) component. Lightweight, durable, and capable of functioning in various environments.",
     "obtainWays": []
   },
   "item_corp1_animal_1": {
@@ -3371,6 +3604,27 @@
     "type": "Personal Device",
     "desc": "Place this in the personal device slot of the Backpack to grant 10 SP/s regeneration after entering battle in the region of Wuling. Duration: 5s.",
     "decoDesc": "An old painting by Si. It measures six feet in length, and depicts a bright, beautiful landscape that invigorates one's spirit.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_1": {
+    "name": "Brooding Mushroom",
+    "type": "Personal Device",
+    "desc": "Place this in the personal device slot of the Backpack to grant Industrial Explosive DMG +<@ba.vup>100%</> in the region of Wuling.",
+    "decoDesc": "In secret darkness its grudges fester as it attempts to detonate all the industrial explosives in your backpack.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_2": {
+    "name": "Angry Mushroom",
+    "type": "Personal Device",
+    "desc": "Place this in the personal device slot of the Backpack to grant Industrial Explosive DMG +<@ba.vup>300%</> in the region of Wuling.",
+    "decoDesc": "With volcanic fury it roars and screeches as it attempts to detonate all the industrial explosives in your backpack.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_3": {
+    "name": "Furious Mushroom",
+    "type": "Personal Device",
+    "desc": "Place this in the personal device slot of the Backpack to grant Industrial Explosive DMG +<@ba.vup>500%</> in the region of Wuling.",
+    "decoDesc": "BLIGHTY ME! IT'S GONNA GO KABABOOM!",
     "obtainWays": []
   },
   "item_device_buff_snow_1": {
@@ -3958,7 +4212,7 @@
   "item_drop_klcaps_1": {
     "name": "Glaive Fragment",
     "type": "Material",
-    "desc": "Gatherable from defeated YSTF Glaiver Blightshades and YSTF Captain Blightshades. Can be used to make fine food and medicine (Fine F&M).",
+    "desc": "Gatherable from defeated YSTF Glaiver Blightshades and YSTF Captain Blightshades. Can be used at a depot node for Pack and Deliver.",
     "decoDesc": "This fragment of a polearm looks utterly broken and seems to be on the verge of total disintegration. A special container must be used to retain its current shape. Nevertheless, it offers an important sample for the study of Blightshades.",
     "obtainWays": [
       "Chance Drop: YSTF Glaiver Blightshade"
@@ -4025,6 +4279,26 @@
     "decoDesc": "Nidwyrms have \"whiskers\" growing on their heads. These appendages appear like tree roots and serve as sensory organs. These whiskers are naturally shed when spring gives way to summer. Although they offer limited nutritional value, they have an incredible texture.",
     "obtainWays": [
       "Chance Drop: Tunneling Nidwyrm"
+    ]
+  },
+  "item_drop_mushbug_1": {
+    "name": "Fungal King's Dust",
+    "type": "Material",
+    "desc": "Gatherable from defeated Shroomkrusher Nidwyrms and Bolete Princes. Can be used to make fine food and medicine (Fine F&M).",
+    "decoDesc": "A mass of spore build-up found within the tender shoulder gills and folds of the Bolete Prince. The dust gets sprinkled around whenever the Prince rubs its head.",
+    "obtainWays": [
+      "Chance Drop: Shroomkrusher Nidwyrm",
+      "Chance Drop: Bolete Prince"
+    ]
+  },
+  "item_drop_mushro_1": {
+    "name": "Shiny Mycelial Mass",
+    "type": "Material",
+    "desc": "Gatherable from defeated Shroomkrusher Sporeknuckles and Shroomkrusher Sporeguards. Can be used at a depot node for Pack and Deliver.",
+    "decoDesc": "A mycelial mass with strange hues and colors. We are unable to determine if this mass came from a Shroomkrusher's head or weapon.",
+    "obtainWays": [
+      "Chance Drop: Shroomkrusher Sporeknuckles",
+      "Chance Drop: Shroomkrusher Sporeguard"
     ]
   },
   "item_drop_sandb_1": {
@@ -4134,6 +4408,15 @@
     "obtainWays": [
       "Purchase: Wuling Stock Redistribution",
       "Stock Redistribution Terminal Upgrade"
+    ]
+  },
+  "item_equip_prime_enhance_wuling": {
+    "name": "Origo-Artificing Fluid Mk Ⅰ",
+    "type": "Artificing Fluid",
+    "desc": "A rare material for gear artificing. Guarantees the success of 1 artificing attempt of Wuling gear without using any Gear Artificing Catalyst.",
+    "decoDesc": "An extremely rare Mk Ⅰ artificing fluid that uses very scarce and barely replaceable materials. The fluid guarantees the success of an artificing attempt. Huge amounts of Originium-primed metals were consumed during the Aggeloi War. Fortunately, people now have a chance to witness their shimmering gleam once more.",
+    "obtainWays": [
+      "Exclusion Zone Rebuilding"
     ]
   },
   "item_equip_script_1": {
@@ -4428,6 +4711,15 @@
   },
   "item_factech_wuling_oven_amount_4": {
     "name": "Forge Expansion IV",
+    "type": "Standard Template Assembly",
+    "desc": "Allows 4 more Forges of the Sky to be placed in Wuling.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Research: AIC Factory Plan Technologies"
+    ]
+  },
+  "item_factech_wuling_oven_amount_5": {
+    "name": "Forge Expansion V",
     "type": "Standard Template Assembly",
     "desc": "Allows 4 more Forges of the Sky to be placed in Wuling.",
     "decoDesc": "",
@@ -5002,6 +5294,20 @@
     "decoDesc": "PPE must be properly worn when operating the Solid-Gas Transmuting Unit. Do not be misled by the innocuous-looking red vapors. They can set a person's soul on fire.",
     "obtainWays": []
   },
+  "item_gas_copper_bright_clear": {
+    "name": "Clean Lucidolite Gas",
+    "type": "Material",
+    "desc": "A product acquired by chemically reacting Equiragen and Equprium Gas. Can be used to produce other materials.",
+    "decoDesc": "Fine, clean Lucidolite Gas. Holding a canister of the gas feels as though one is held aloft by flowing cirrus.",
+    "obtainWays": []
+  },
+  "item_gas_copper_bright_turbid": {
+    "name": "Turbid Lucidolite Gas",
+    "type": "Material",
+    "desc": "A byproduct of chemically reacting Equprium Gas with Equiragen. It can be processed at the Waste Treatment Unit for discharge, or purified at a Purification Unit.",
+    "decoDesc": "Coarse, turbid Lucidolite Gas. Holding a canister of the gas feels as though one is holding an entire mountain.",
+    "obtainWays": []
+  },
   "item_gas_copper_enr": {
     "name": "Hetonite Gas",
     "type": "Material",
@@ -5014,6 +5320,13 @@
     "type": "Material",
     "desc": "The gaseous state of Pyrrolite. Can be used to produce other materials.",
     "decoDesc": "A number of scientists believe that Pyrrolite Gas can be weaponized. Gently unleash it and watch the enemy downwind disintegrate at a visible rate.",
+    "obtainWays": []
+  },
+  "item_gas_copper_enr_heng": {
+    "name": "Equprium Gas",
+    "type": "Material",
+    "desc": "The gaseous state of Equprium. Can be used to produce other materials.",
+    "decoDesc": "Equprium Gas is very stable. Infusing luminous (L) and turbid (T) properties into cuprium has achieved perfect equilibrium (E) within the metal and grants higher fluidity to the gas.",
     "obtainWays": []
   },
   "item_gas_inert": {
@@ -5052,6 +5365,13 @@
     "decoDesc": "To protect the innate \"dynamic equilibrium\" of Heavy Xiranite during the transmutation process, the engineers furnished the instruments with additional real-time monitoring and modulating modules.",
     "obtainWays": []
   },
+  "item_gas_xiranite_enr_heng": {
+    "name": "Equiragen",
+    "type": "Material",
+    "desc": "The gaseous state of Equiranite. Can be used to produce other materials.",
+    "decoDesc": "Equiragen is a stable form of Xiragen. Infusing Xiranite with luminous (L) and turbid (T) properties has achieved perfect equilibrium (E), and made the \"heavy\" Xiragen even heavier.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_acid": {
     "name": "Cuprium Canister (Acridgen)",
     "type": "Material",
@@ -5066,6 +5386,20 @@
     "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
     "obtainWays": []
   },
+  "item_gasjar_copper_gas_copper_bright_clear": {
+    "name": "Cuprium Canister (Clean Lucidolite Gas)",
+    "type": "Material",
+    "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
+    "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_bright_turbid": {
+    "name": "Cuprium Canister (Turbid Lucidolite Gas)",
+    "type": "Material",
+    "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
+    "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_copper_enr": {
     "name": "Cuprium Canister (Hetonite Gas)",
     "type": "Material",
@@ -5075,6 +5409,13 @@
   },
   "item_gasjar_copper_gas_copper_enr2": {
     "name": "Cuprium Canister (Pyrrolite Gas)",
+    "type": "Material",
+    "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
+    "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_enr_heng": {
+    "name": "Cuprium Canister (Equprium Gas)",
     "type": "Material",
     "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
     "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
@@ -5103,6 +5444,13 @@
   },
   "item_gasjar_copper_gas_xiranite_enr": {
     "name": "Cuprium Canister (Heavy Xiragen)",
+    "type": "Material",
+    "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
+    "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_xiranite_enr_heng": {
+    "name": "Cuprium Canister (Equiragen)",
     "type": "Material",
     "desc": "A pressurized canister made by moulding Cuprium. Can be used to produce other items. Often used for storing gases.",
     "decoDesc": "An intricate metal container once highly sought after by metallurgy hobbyists.",
@@ -5209,6 +5557,16 @@
       "Stock Redistribution Terminal Upgrade"
     ]
   },
+  "item_gemcustomization_wuling_4": {
+    "name": "Wuling Multi-Line Engraving Kit",
+    "type": "Essence Engraving Kit",
+    "desc": "Use this to acquire an essence with 3 customized stats.",
+    "decoDesc": "An engraving kit for customizing essences.\nTechno-Protocol has made overall improvements that have broadened its applications in precision machinery. This led to the successful development of the multi-line engraving kit.",
+    "obtainWays": [
+      "Purchase: Wuling Stock Redistribution",
+      "Stock Redistribution Terminal Upgrade"
+    ]
+  },
   "item_gift_jinlong_1": {
     "name": "Eureka Teabox",
     "type": "Gift",
@@ -5254,6 +5612,26 @@
     "type": "Gift",
     "desc": "Give it to operators whose hobbies are [Lifestyle] and/or [Nature] to build trust with them.",
     "decoDesc": "Many people of Hongshan often place swords fashioned out of scented wood at home. Though its ability to ward off evil is questionable, it remains a useful training tool.",
+    "obtainWays": [
+      "Purchase: Wuling Stock Redistribution",
+      "Stock Redistribution Terminal Upgrade"
+    ]
+  },
+  "item_gift_jinlong_14": {
+    "name": "WOW-FFLE: Fusion Event",
+    "type": "Gift",
+    "desc": "Give it to operators whose hobbies are [Creative] and/or [Lifestyle] to build trust with them.",
+    "decoDesc": "A honey waffle featuring a new flavor, jointly prepared by LA-ME-DA Hotpot and Hongwei. Features a unique blend of flavors and all-natural ingredients rich in fungal-biotic derivatives that help one's digestion. This has the potential of becoming an incredibly popular snack.",
+    "obtainWays": [
+      "Purchase: Wuling Stock Redistribution",
+      "Stock Redistribution Terminal Upgrade"
+    ]
+  },
+  "item_gift_jinlong_15": {
+    "name": "The Unicity",
+    "type": "Gift",
+    "desc": "Give it to operators whose hobbies are [Sports] and/or [Technology] to build trust with them.",
+    "decoDesc": "\"Forward, workers! Through the mountains and over the rivers! Let the steam whistle sing and echo in the wilds! In our wake we shall leave behind roads, factories, and the future for all humanity!\"",
     "obtainWays": [
       "Purchase: Wuling Stock Redistribution",
       "Stock Redistribution Terminal Upgrade"
@@ -5531,7 +5909,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "A good kettle of quality crushed tea. Emerald crushing brewed in cascading water. The aroma can be picked up for miles.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_10": {
@@ -5540,7 +5919,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "The highest quality berries are often known as \"Evening Dusk in Circulation\". Nevertheless, everyone who tasted this duskberry juice agrees on this fact: \"It's just liquid state sourberry.\"",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_2": {
@@ -5549,7 +5929,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "There is empirical evidence that children who drink milk often tend to be taller.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_3": {
@@ -5558,7 +5939,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "\"I'm not trying to be picky, but your corn juice is just like corn porridge. Can you explain what 'juice' means to you?\"",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_4": {
@@ -5567,7 +5949,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "People might complain how sweet it is, or how it gives you ulcers if you drink too much. But in the end, this is still the most popular thing on the menu.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_5": {
@@ -5576,7 +5959,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "A pinch of pear blossom, a token of yearning and nostalgia.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_6": {
@@ -5585,7 +5969,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "A famous distilled liquor falsely attributed to the Songseekers of the Hannabit Circuit. The kohl greets one's throat like oil poured over a red-hot pan, giving one a historical lesson on the brutality of the Aggeloi War.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_7": {
@@ -5594,7 +5979,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "There is empirical evidence that children can still reach impressive heights without drinking this religiously. But this can be forgiven since this particular drink tastes great.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_8": {
@@ -5603,7 +5989,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "Will this drop of aromatic grapedew remind you of the unforgiving weather, the carnage, and poetry of home?",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_9": {
@@ -5612,7 +5999,8 @@
     "desc": "A drink that can be served in Innkeeping. Grants certain effects when used.",
     "decoDesc": "Brewed from leaves plucked from shrubs growing in the peripheral regions of Wuling before High Blight Tide. The tea is remarkably expensive due to its limited production.",
     "obtainWays": [
-      "Shop: Pantry Keep \"Job Rusher\""
+      "Shop: Pantry Keep \"Job Rusher\"",
+      "Ingredients Crate"
     ]
   },
   "item_inn_drink_water": {
@@ -5628,7 +6016,7 @@
     "desc": "Can be used for Innkeeping and purchasing Inn Renovations.",
     "decoDesc": "The spirit of daily life lingers in every bustle and taste.",
     "obtainWays": [
-      "Obtained from Innkeeping"
+      "Innkeeping Earnings"
     ]
   },
   "item_iron_bottle": {
@@ -5703,6 +6091,13 @@
     "type": "Consumable",
     "desc": "Use this consumable to improve the operator's combat performance.",
     "decoDesc": "A delicious cold dish. Crunchy with a refreshing aroma. According to some veteran chef from Hongshan, the older the rind, the better the taste.",
+    "obtainWays": []
+  },
+  "item_jzmonk_1_mushbug_spmushroom1_1": {
+    "name": "Usurper's Waffle",
+    "type": "Consumable",
+    "desc": "It shall redefine your eyes, your legs, and the entire world.",
+    "decoDesc": "A food that attempts to mimic the honey waffle. It has a strange taste of artificial sweeteners. The Loquacious Shroom, however, refuses to say anything about the practical effects of this consumable.",
     "obtainWays": []
   },
   "item_klbuds_1_hsfly_1_1": {
@@ -5795,7 +6190,7 @@
   "item_liquid_sewage": {
     "name": "Sewage",
     "type": "Material",
-    "desc": "Sewage is basically water with all sorts of suspended and/or dissolved materials. It must be processed at a Water Treatment Unit to render it harmless.",
+    "desc": "Sewage is basically water with all sorts of suspended and/or dissolved materials. It must be processed at a Waste Treatment Unit to render it harmless.",
     "decoDesc": "Sewage and polluted bodies of water found in the wildlands often contain a plethora of contaminants. Advanced technology is required to clean them properly.",
     "obtainWays": []
   },
@@ -5826,14 +6221,14 @@
   "item_liquid_xiranite_lowpoly": {
     "name": "Inert Xircon Effluent",
     "type": "Material",
-    "desc": "A solution acquired by chemically reacting Liquid Xiranite with Sewage. It must be processed at the Water Treatment Unit to render it harmless.",
+    "desc": "A byproduct of reacting Liquid Xiranite with Sewage. It must be processed at the Waste Treatment Unit to render it harmless.",
     "decoDesc": "A type of Xircon Effluent from various applications that completely exhausted the energy of its Originium constituents. Only a minute fraction of Feranmut power has entered an active state. Such effluents can largely be regarded as chemically inert.",
     "obtainWays": []
   },
   "item_liquid_xiranite_poly": {
     "name": "Xircon Effluent",
     "type": "Material",
-    "desc": "A solution acquired by chemically reacting Liquid Xiranite with Sewage. It can be used to produce other materials, or processed at the Water Treatment Unit to render it harmless.",
+    "desc": "A solution acquired by chemically reacting Liquid Xiranite with Sewage. It can be used to produce other materials, or processed at the Waste Treatment Unit to render it harmless.",
     "decoDesc": "Xircon Effluent is a form of partially inactivated Liquid Xiranite, but a fraction of its constituents remains in a hyperactive state. Energy of the Originium constituents within Liquid Xiranite gradually dissipates during various applications. This \"desiccation\" process would occasionally trigger the activation of Feranmut power within the Xiranite.",
     "obtainWays": []
   },
@@ -6452,6 +6847,15 @@
       "Reward: Mission"
     ]
   },
+  "item_mission_gm02m28_sample": {
+    "name": "Test Fertilizer Sample",
+    "type": "Mission Item",
+    "desc": "Contains a test sample for a prototype fertilizer.",
+    "decoDesc": "Residual matter of a prototype fertilizer found at the deepest recesses of the old dam. Its once terrible smell has greatly mellowed out.",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
   "item_mission_sm1l2m2_key": {
     "name": "Distorted Key",
     "type": "Mission Item",
@@ -6666,6 +7070,24 @@
     "type": "Vinyl",
     "desc": "This can be played with Phonograph MKV-I in the Reception Room aboard Dijiang.",
     "decoDesc": "The light sprinkles through the groves of Jingyu, as rafts ferry travelers across the rivers.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
+  "item_music_exp_wuling_10": {
+    "name": "Where We Go, When We Return",
+    "type": "Vinyl",
+    "desc": "This can be played with Phonograph MKV-I in the Reception Room aboard Dijiang.",
+    "decoDesc": "Where there is a place to go, there will be a time of return.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
+  "item_music_exp_wuling_11": {
+    "name": "Drifting Raft",
+    "type": "Vinyl",
+    "desc": "This can be played with Phonograph MKV-I in the Reception Room aboard Dijiang.",
+    "decoDesc": "Upon a raft adrift, into autumn it carries me.",
     "obtainWays": [
       "Talosite Exchange"
     ]
@@ -7068,6 +7490,15 @@
     "decoDesc": "Yazhen plant can be shredded to a powder form. This must then be dissolved and packaged in a container for easier use.",
     "obtainWays": []
   },
+  "item_plant_grass_spmushroom_1": {
+    "name": "Loquacious Shroom",
+    "type": "Material",
+    "desc": "A special fungus that grows at the Old Dam. Can be used to make honey waffles.",
+    "decoDesc": "\"You know I've elucidated the true nature of the cosmos and everything between the heavens and earth 'cos you know everything refers to me and the rest of the real world and I got it all figured out so what are you waiting for just start chomping on me already PLEASE just do it and hurry up 'cos you totally won't regret it I promise!\"",
+    "obtainWays": [
+      "Old Dam"
+    ]
+  },
   "item_plant_moss_1": {
     "name": "Buckflower",
     "type": "Material",
@@ -7081,7 +7512,7 @@
   "item_plant_moss_2": {
     "name": "Citrome",
     "type": "Material",
-    "desc": "A fruit  that can be gathered from the wilderness or planted in the AIC. Shred it to make food or materials for other products.",
+    "desc": "A fruit that can be gathered from the wilderness or planted in the AIC. Shred it to make food or materials for other products.",
     "decoDesc": "Citromes are part of the botanical genus of Zitros that usually grows in the central continental region of Talos-II. The species and cultivars grown in the Civilization Band tend to yield large fruits with tough, fibrous flesh.",
     "obtainWays": [
       "The Hub: Construction Site",
@@ -7350,7 +7781,6 @@
     "desc": "This crop can only be grown with fine cultivation. Can be directly used in making quality food and pharmaceuticals.",
     "decoDesc": "Redjade Ginseng is a mild herb often consumed by people in Hongshan as a fortifying supplement.",
     "obtainWays": [
-      "Originium Science Park: Cliffside Trail",
       "Plant crops at the Eco-Farm"
     ]
   },
@@ -7569,6 +7999,13 @@
       "Gatherable: World Exploration"
     ]
   },
+  "item_plantpoint_chalk_1": {
+    "name": "Ocellate Orchid Patch",
+    "type": "Gas Vent",
+    "desc": "A reservoir of Xiragen in the wilderness. Rig it with Gas Extractors to extract Xiragen.",
+    "decoDesc": "A Xiranite connection port that may have been designed for certain Xiranite facilities. It contains a generous reserve of Xiragen.",
+    "obtainWays": []
+  },
   "item_port_air_dancer_1": {
     "name": "Tube Professor",
     "type": "Ornamental",
@@ -7713,6 +8150,15 @@
     "decoDesc": "A new gun tower that is strongly recommended by arsenal engineers of Endfield Industries. An engineer ran for miles in a torrential hailstorm. It comes as no surprise that she'd design a weapon platform that unleashes fusillades of extreme devastation.",
     "obtainWays": []
   },
+  "item_port_biscuitmountain_1": {
+    "name": "Sweet Prayer",
+    "type": "Ornamental",
+    "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
+    "decoDesc": "Listen to her prayer for sweetness never-ending.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
   "item_port_burger_1": {
     "name": "Lord of the Hamburgers",
     "type": "Ornamental",
@@ -7768,6 +8214,15 @@
     "type": "Ornamental",
     "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
     "decoDesc": "Slowly She gave Her love in this tiny and serene snowscape.",
+    "obtainWays": [
+      "Reward: Mission"
+    ]
+  },
+  "item_port_dg017oven_1": {
+    "name": "\"Forge of Sweetness\"",
+    "type": "Ornamental",
+    "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
+    "decoDesc": "One small step for Endfield Industries, one solid stride into the culinary sector.",
     "obtainWays": [
       "Reward: Mission"
     ]
@@ -7874,10 +8329,10 @@
     ]
   },
   "item_port_liquid_cleaner_1": {
-    "name": "Water Treatment Unit",
+    "name": "Waste Treatment Unit",
     "type": "Basic Facility",
-    "desc": "A facility for processing Sewage. It can also process Xircon Effluent and Inert Xircon Effluent, albeit with limited efficiency.",
-    "decoDesc": "Endfield greatly improved the efficiency of its water treatment process by employing Techno-Protocol in the steps of disinfection and remediation.",
+    "desc": "A facility for processing waste. It can also process Sewage, Xircon Effluent, Inert Xircon Effluent, and Turbid Lucidolite Gas.",
+    "decoDesc": "Now with a more comprehensive and effective suite of functional upgrades.",
     "obtainWays": []
   },
   "item_port_liquid_purifier_1": {
@@ -7913,6 +8368,27 @@
     "type": "Basic Facility",
     "desc": "The origin of the Depot Bus. The Depot Bus Port can be placed anywhere in the Core AIC Area.",
     "decoDesc": "For some engineers, Xiranite would often inspire crazy ideas that they themselves couldn't even explain. What is the endpoint of industry? Are there other possibilities for Xiranite, the material of unprecedented \"freedom\"? Will human industrial technology ever reach the \"formless\" state? The more the engineers think, the more they believe that every step they take is a revolutionary one.",
+    "obtainWays": []
+  },
+  "item_port_magic_balancer_1": {
+    "name": "Forge of Equilibrium",
+    "type": "Basic Facility",
+    "desc": "A facility that can combine Luminous and Turbid forms of a material to create a novel, equilibrated form.",
+    "decoDesc": "A facility for the process of harmonization. After a material is sorted into its luminous (L) and turbid (T) forms, they can be recombined to create something novel and open up additional possibilities for material scientists.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_1": {
+    "name": "Forge of Luminance",
+    "type": "Basic Facility",
+    "desc": "A facility that can be activated with Xiragen to project 1 specified array in front of it.",
+    "decoDesc": "This forge precisely sorts Xiranite to change its activity levels. The lighter form is called Luminarite, while the heavier form is called Turbidarite.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_2": {
+    "name": "Bipolar Forge of Luminance",
+    "type": "Basic Facility",
+    "desc": "A facility that can be activated with Xiragen to project 2 specified arrays to its front and side.",
+    "decoDesc": "An upgrade of the original Forge of Luminance that features greatly enhanced performance efficiency.",
     "obtainWays": []
   },
   "item_port_marker_1": {
@@ -7972,6 +8448,15 @@
     "desc": "A facility for running solid or liquid-state chemical reactions. It also comes with additional input and output ports and the ability to run multiple reactions simultaneously.",
     "decoDesc": "Higher capacity. Better safety.",
     "obtainWays": []
+  },
+  "item_port_mushman_1": {
+    "name": "\"Eukaryotic Prince\"",
+    "type": "Ornamental",
+    "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
+    "decoDesc": "Comes with a confounding backstory, yet gazes upon the world with clarity.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
   },
   "item_port_pear_blossom_bonsai_1": {
     "name": "Miniature Tree on a Hill",
@@ -8310,7 +8795,7 @@
   "item_port_stock_board_1": {
     "name": "Redistribution Made Manifest",
     "type": "Ornamental",
-    "desc": "An ornamental item. It is stored in the Ornamental panel of the Facility List.",
+    "desc": "An ornamental that can be placed. It is stored in the Ornamental panel of the Facility List.",
     "decoDesc": "\"Lucky Carrot has restocked? Time to dump it all.\"",
     "obtainWays": [
       "Talosite Exchange"
@@ -8414,6 +8899,13 @@
     "type": "Basic Facility",
     "desc": "A facility that laminates different materials together to create gear components.",
     "decoDesc": "A top-tier piece of equipment must undergo multiple processing steps that include textile weaving and compression lamination of various fabric and lining.",
+    "obtainWays": []
+  },
+  "item_port_wonder_supply_port_1": {
+    "name": "Rebuilding Supply Port",
+    "type": "Basic Facility",
+    "desc": "A supply port for the North Wuling Exclusion Zone (NWEZ) Rebuilding project. Input the required rebuilding materials into this port to automatically raise project progression.",
+    "decoDesc": "A special supply port for transporting special cuprium-packaged (CuPKG) items. It is safe and easy to use.",
     "obtainWays": []
   },
   "item_port_xiranite_oven_1": {
@@ -8656,6 +9148,13 @@
     "type": "Material",
     "desc": "A battery packaged by AIC Factory facilities. It can be used to supply power, charge up facilities, or traded at various outposts.",
     "decoDesc": "The biggest advantage offered by this battery is zero risks of spontaneous combustion.",
+    "obtainWays": []
+  },
+  "item_proc_battery_6": {
+    "name": "HC Wuling Battery",
+    "type": "Material",
+    "desc": "A battery packaged by AIC Factory facilities. It can be used to supply power, charge up facilities, or traded at various outposts.",
+    "decoDesc": "A battery to last as long as the universe itself. This is the core design goal of the HC batteries.",
     "obtainWays": []
   },
   "item_proc_bomb_1": {
@@ -9149,7 +9648,7 @@
   "item_regionbuff_wuling_4_1": {
     "name": "Outdoors Expert",
     "type": "Regional Buff",
-    "desc": "Gathering plants have a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
+    "desc": "Gathering plants has a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
     "decoDesc": "Having searched high and low for Aurylenes, you now know every blade of grass and every lump of ore in this region. You have become an expert of the natural wilderness.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
@@ -9158,7 +9657,7 @@
   "item_regionbuff_wuling_4_2": {
     "name": "Outdoors Expert",
     "type": "Regional Buff",
-    "desc": "Gathering plants have a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
+    "desc": "Gathering plants has a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
     "decoDesc": "Having searched high and low for Aurylenes, you now know every blade of grass and every lump of ore in this region. You have become an expert of the natural wilderness.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
@@ -9167,7 +9666,7 @@
   "item_regionbuff_wuling_4_3": {
     "name": "Outdoors Expert",
     "type": "Regional Buff",
-    "desc": "Gathering plants have a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
+    "desc": "Gathering plants has a chance to give 1 more material (does not work for rare materials). \nOnly effective in Wuling.",
     "decoDesc": "Having searched high and low for Aurylenes, you now know every blade of grass and every lump of ore in this region. You have become an expert of the natural wilderness.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
@@ -9177,7 +9676,7 @@
     "name": "Medical Reserves",
     "type": "Regional Buff",
     "desc": "After resting at a TP Point, acquire 1 stack of Medical Reserves buff. When any operator in the team drops below a certain HP, automatically consume the buff and immediately restore the HP of every teammate. \nOnly effective in Wuling.",
-    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel",
+    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9186,7 +9685,7 @@
     "name": "Medical Reserves",
     "type": "Regional Buff",
     "desc": "After resting at a TP Point, acquire 1 stack of Medical Reserves buff. When any operator in the team drops below a certain HP, automatically consume the buff and immediately restore the HP of every teammate. \nOnly effective in Wuling.",
-    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel",
+    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9195,7 +9694,7 @@
     "name": "Medical Reserves",
     "type": "Regional Buff",
     "desc": "After resting at a TP Point, acquire 1 stack of Medical Reserves buff. When any operator in the team drops below a certain HP, automatically consume the buff and immediately restore the HP of every teammate. \nOnly effective in Wuling.",
-    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel",
+    "decoDesc": "You are always medically prepared, thanks to your familiarity with local intel.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9204,7 +9703,7 @@
     "name": "Full Vigor",
     "type": "Regional Buff",
     "desc": "Stamina regenerates faster. \nOnly effective in Wuling.",
-    "decoDesc": "Scientific stamina management gives improved endurance recovery",
+    "decoDesc": "Scientific stamina management gives improved endurance recovery.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9213,7 +9712,7 @@
     "name": "Full Vigor",
     "type": "Regional Buff",
     "desc": "Stamina regenerates faster. \nOnly effective in Wuling.",
-    "decoDesc": "Scientific stamina management gives improved endurance recovery",
+    "decoDesc": "Scientific stamina management gives improved endurance recovery.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9222,7 +9721,7 @@
     "name": "Full Vigor",
     "type": "Regional Buff",
     "desc": "Stamina regenerates faster. \nOnly effective in Wuling.",
-    "decoDesc": "Scientific stamina management gives improved endurance recovery",
+    "decoDesc": "Scientific stamina management gives improved endurance recovery.",
     "obtainWays": [
       "Submit Aurylene at TP Points"
     ]
@@ -9479,6 +9978,15 @@
       "Talosite Exchange"
     ]
   },
+  "item_shot_anim_sweetpie_m_1": {
+    "name": "Thinking in Lost",
+    "type": "Camera Pose",
+    "desc": "A camera pose that operators can use.",
+    "decoDesc": "An interpretation of the meaning behind \"Thinking in Lost\". This impression is quite clear, yet esoteric at the same time.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
   "item_shot_anim_tangtang_m_1": {
     "name": "EYE AM SUPREME",
     "type": "Camera Pose",
@@ -9497,11 +10005,38 @@
       "Talosite Exchange"
     ]
   },
+  "item_shot_anim_whiten_s_1": {
+    "name": "Shush Please",
+    "type": "Camera Pose",
+    "desc": "A camera pose that operators can use.",
+    "decoDesc": "An interpretation of the meaning behind \"Shush Please\". This impression is quite clear, yet esoteric at the same time.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
+  "item_shot_anim_wulfa_m_1": {
+    "name": "Competitive Measuring",
+    "type": "Camera Pose",
+    "desc": "A camera pose that operators can use.",
+    "decoDesc": "An interpretation of the meaning behind \"Competitive Measuring\". This impression is quite clear, yet esoteric at the same time.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
   "item_shot_anim_yvonne_m_1": {
     "name": "Neo-Nista's Hot Steps",
     "type": "Camera Pose",
     "desc": "A camera pose that operators can use.",
     "decoDesc": "An interpretation of the meaning behind \"Neo-Nista's Hot Steps\". This impression is quite clear, yet esoteric at the same time.",
+    "obtainWays": [
+      "Talosite Exchange"
+    ]
+  },
+  "item_shot_anim_zhuangfy_m_1": {
+    "name": "As We Can See",
+    "type": "Camera Pose",
+    "desc": "A camera pose that operators can use.",
+    "decoDesc": "An interpretation of the meaning behind \"As We Can See\". This impression is quite clear, yet esoteric at the same time.",
     "obtainWays": [
       "Talosite Exchange"
     ]
@@ -9629,6 +10164,15 @@
     "type": "Camera Filter",
     "desc": "A filter for adjusting the color of a photograph. Can be used in the Camera feature.",
     "decoDesc": "Endfield photography enthusiasts identified this as one of the most popular filters. People often talk about the beauty of spring in Wuling.",
+    "obtainWays": [
+      "Reward: Protocol Pass"
+    ]
+  },
+  "item_shot_filter_sp_8": {
+    "name": "Filter: Golden Sunset",
+    "type": "Camera Filter",
+    "desc": "A filter for adjusting the color of a photograph. Can be used in the Camera feature.",
+    "decoDesc": "Endfield photography enthusiasts identified this as one of the most popular filters. Doesn't it remind you of your first hot drink after returning home at sunset?",
     "obtainWays": [
       "Reward: Protocol Pass"
     ]
@@ -9770,6 +10314,13 @@
     "decoDesc": "A sticker received as birthday gift. We wish you bliss and happiness in every year that follows.",
     "obtainWays": []
   },
+  "item_shot_sticker_birthday_2027": {
+    "name": "Sticker: Year 2 Birthday",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "A sticker from \"Birthday Celebration\". May you enjoy happiness for every day that follows and may all your wishes come true.",
+    "obtainWays": []
+  },
   "item_shot_sticker_bp_1": {
     "name": "Sticker: Memories",
     "type": "Photograph Sticker",
@@ -9833,6 +10384,15 @@
       "Reward: Protocol Pass"
     ]
   },
+  "item_shot_sticker_bp_8": {
+    "name": "Sticker: Clingy & Sweet",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "A sticker from \"Sweet Aromas\". Let the syrup flow! Today I got a craving, for wuvvy-wuv of tomorrow!",
+    "obtainWays": [
+      "Reward: Protocol Pass"
+    ]
+  },
   "item_shot_sticker_channel_v1d3d6_1": {
     "name": "Sticker: Safety Helmet",
     "type": "Photograph Sticker",
@@ -9848,6 +10408,41 @@
     "obtainWays": [
       "Acquisition Center: Bundles"
     ]
+  },
+  "item_shot_sticker_channel_v1d7_1": {
+    "name": "Sticker: Pudding Hood",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "This sticker made it to the most recommended list amongst Endfield photography enthusiasts. It looks cozily sweet already.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_2": {
+    "name": "Sticker: PIZZA-LA",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "This sticker made it to the most recommended list amongst Endfield photography enthusiasts. A flavor that no one's ever tired of.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_3": {
+    "name": "Sticker: Pattern of the Echoes",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "A sticker from the \"Echoes\". The grand concert is about to start.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_4": {
+    "name": "Sticker: OriGO-GO Stick",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "A sticker from the \"OriGO-GO\" fan group, a symbol of passionate love, fan support, and the Originium Arts.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_5": {
+    "name": "Sticker: Scarred Crown of Metal",
+    "type": "Photograph Sticker",
+    "desc": "A decorative sticker that can be applied to a photograph. Can be used in the Camera feature.",
+    "decoDesc": "A sticker from \"Metal Scar Unleashed\". Wear this, and rise as Lord of Metal Scar.",
+    "obtainWays": []
   },
   "item_shot_sticker_giftpack_1": {
     "name": "Sticker: Suppressor",
@@ -10106,6 +10701,13 @@
       "Purchase: Wuling Stock Redistribution",
       "Stock Redistribution Terminal Upgrade"
     ]
+  },
+  "item_spaceship_exhibits_mushroom": {
+    "name": "Luxurious Mushroom Mascot",
+    "type": "Dijiang: Display Items",
+    "desc": "This can be showcased at the Tower of Trails at the Central Ring of Dijiang.",
+    "decoDesc": "A memorial mascot for the Wuling Old Dam Eco-Park. Rumor has it that the inspirations came to the designer in a dream. The mascot is intended to symbolize the friendship of UWST and Hongshan Academy of Sciences.",
+    "obtainWays": []
   },
   "item_spaceship_exhibits_shanshantu": {
     "name": "Companions Figurine",
@@ -10377,6 +10979,15 @@
     "name": "The Stars Are With Me HH Permit",
     "type": "LTO Valuable",
     "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting. This certificate will expire when [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting ends.",
+    "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
+    "obtainWays": [
+      "Acquisition Center: Bundles"
+    ]
+  },
+  "item_ticketgacha_special_single_lt_1_7_1": {
+    "name": "Roaming Wilderpaw HH Permit",
+    "type": "LTO Valuable",
+    "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [Anvil, Backpack, Plus A Pot o'Honey] Chartered Headhunting. This certificate will expire when [Anvil, Backpack, Plus A Pot o'Honey] Chartered Headhunting ends.",
     "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
     "obtainWays": [
       "Acquisition Center: Bundles"
@@ -10722,6 +11333,15 @@
       "Protocol Pass: Protocol Customized"
     ]
   },
+  "item_user_avatar_bp_1_7": {
+    "name": "Homely Shrooms",
+    "type": "Portrait",
+    "desc": "A portrait that can be switched to at the Profile screen. Profile portraits are shown at various places.",
+    "decoDesc": "On a particular day of a particular month of a particular year, a photo was taken of two proud Shroom World residents.",
+    "obtainWays": [
+      "Protocol Pass: Protocol Customized"
+    ]
+  },
   "item_user_avatar_chr_0002_endminm": {
     "name": "The Endministrator",
     "type": "Portrait",
@@ -11037,6 +11657,15 @@
       "Gift: Operator Onboarding"
     ]
   },
+  "item_user_avatar_chr_0040_sweetpie": {
+    "name": "Kay",
+    "type": "Portrait",
+    "desc": "A portrait that can be switched to at the Profile screen. Profile portraits are shown at various places.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Gift: Operator Onboarding"
+    ]
+  },
   "item_user_avatar_frame_activity_1": {
     "name": "Carly's Fairytale",
     "type": "Portrait Frame",
@@ -11116,6 +11745,15 @@
       "Contingency Contract: Indigo Experimental Operation"
     ]
   },
+  "item_user_avatar_frame_activity_takestwo_2": {
+    "name": "Crown-Snatcher's Bright Star",
+    "type": "Portrait Frame",
+    "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
+    "decoDesc": "A proof given to the champion who has lorded over the utterly burning RISE ARENA (though the process was not without accidents). A true warrior shall have the might to grasp the very stars themselves.",
+    "obtainWays": [
+      "Event: [RISE! MEGA ARENA!]"
+    ]
+  },
   "item_user_avatar_frame_bp_1_0": {
     "name": "New Horizons",
     "type": "Portrait Frame",
@@ -11175,6 +11813,15 @@
     "type": "Portrait Frame",
     "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
     "decoDesc": "The brush creates the rivers and peaks, a frame for beautifully layered scenes.",
+    "obtainWays": [
+      "Protocol Pass: Protocol Customized"
+    ]
+  },
+  "item_user_avatar_frame_bp_1_7": {
+    "name": "Colors After a Bite",
+    "type": "Portrait Frame",
+    "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
+    "decoDesc": "Actually, accepting the friendship from the fungal-kind should open up your senses to far beyond the rainbow spectrum of seven colors.",
     "obtainWays": [
       "Protocol Pass: Protocol Customized"
     ]
@@ -11253,7 +11900,7 @@
     "name": "Sweet & Snowy",
     "type": "Portrait Frame",
     "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
-    "decoDesc": "Fruity aromas, soft rustles in the straw... Hear that? The memories are coming back.",
+    "decoDesc": "Fruity aromas, soft rustle in the straw... Hear that? The memories are coming back.",
     "obtainWays": []
   },
   "item_user_avatar_frame_channel_v1d5_2": {
@@ -11268,6 +11915,13 @@
     "type": "Portrait Frame",
     "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
     "decoDesc": "Let every heart burn with hope, and simmer with every turn of the cog.",
+    "obtainWays": []
+  },
+  "item_user_avatar_frame_channel_v1d7_1": {
+    "name": "Retro-Metal Stage",
+    "type": "Portrait Frame",
+    "desc": "A portrait frame that can be switched to at the Profile screen. Portrait frames are shown at various places.",
+    "decoDesc": "Metal Scar always has a taste for the retro. But if time is a cycle, they might retro themselves so far back that they reach into the future.",
     "obtainWays": []
   },
   "item_user_avatar_frame_endfield_1": {
@@ -12900,6 +13554,13 @@
     "decoDesc": "A dish that poses a serious challenge to the chef. Quillbeast livers can quickly overcook and assume a texture similar to rubbery leather. A skilled cook must first come up with a way to give it the same tender crisp of young bamboo sprouts.",
     "obtainWays": []
   },
+  "item_wgthorns_1_mushbug_spmushroom1_1": {
+    "name": "Fungal King's Blood",
+    "type": "Tactical",
+    "desc": "Use this tactical to resuscitate an operator who could no longer fight.",
+    "decoDesc": "A refreshing beverage with a rich, fungal aroma and a vegetable-like taste. Drinking it seems to evoke the sound of a loved one calling one home.",
+    "obtainWays": []
+  },
   "item_wpngem_enhance_dust": {
     "name": "Coolant Gel",
     "type": "Essence Material",
@@ -12962,6 +13623,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "item_xiranite_enr_heng": {
+    "name": "Equiranite",
+    "type": "Material",
+    "desc": "A form of Xiranite that has undergone E-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Xiranite with harmonized equilibrium can be flexibly adapted to uses in both highly reactive and highly stable environments.",
+    "obtainWays": []
+  },
   "item_xiranite_enr_powder": {
     "name": "Heavy Xiranite",
     "type": "Material",
@@ -12969,11 +13637,25 @@
     "decoDesc": "Heavy Xiranite was first discovered in an attempt to improve Xiranite yield. During the test, the Tianshi experimented with various Xiranite polymorphic mixtures and achieved a type of dynamic-static co-equilibrium. Though the test failed to achieve its aim, it yielded a form of Xiranite with a small yet significant improvement to durability.",
     "obtainWays": []
   },
+  "item_xiranite_hui": {
+    "name": "Turbidarite",
+    "type": "Material",
+    "desc": "A form of Xiranite that has undergone T-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Induction by coarse and heavy Xiragen has increased the stability of this Xiranite mass.",
+    "obtainWays": []
+  },
   "item_xiranite_lowpoly": {
     "name": "Light Xircon",
     "type": "Material",
     "desc": "Acquired via crystal precipitation. Can be used to produce other materials.",
     "decoDesc": "Light Xircon has a lower density than Xircon. Currently, Wuling Tianshi are trying to use this material for constructing personal body armor for members of the Yinglung Special Task Force.",
+    "obtainWays": []
+  },
+  "item_xiranite_ming": {
+    "name": "Luminarite",
+    "type": "Material",
+    "desc": "A form of Xiranite that has undergone L-Array transmutation. Can be used to produce other materials.",
+    "decoDesc": "Induction by fine and light Xiragen has increased the activity of this Xiranite mass.",
     "obtainWays": []
   },
   "item_xiranite_poly": {
@@ -13347,6 +14029,20 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_copper_bright_cube_01": {
+    "name": "Lucidolite Energy Brick",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Cuprium</>, <@gd.key>Xiranite</>, <@gd.key>Dense Originium Powder</>, and <@gd.key>Xiragen</> to auto-produce <@gd.key>Lucidolite Energy Bricks</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_bright_cube_02": {
+    "name": "Efficient Lucidolite",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Equprium</>, <@gd.key>Equiranite</>, <@gd.key>Separator Cores</>, and <@gd.key>Xiragen</> to auto-produce <@gd.key>Lucidolite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_copper_cmpt_1": {
     "name": "Cuprium Part",
     "type": "System Blueprint",
@@ -13358,6 +14054,20 @@
     "name": "Hetonite Part",
     "type": "System Blueprint",
     "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Hetonite Solution</> and <@gd.key>Ferrium Ore</> to auto-produce <@gd.key>Hetonite Parts</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_hui_01": {
+    "name": "CuPKG Heavy IC",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Cuprium</>, <@gd.key>Heavy Xiranite</>, and <@gd.key>Xiragen</> to auto-produce <@gd.key>CuPKG Heavy ICs</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_ming_01": {
+    "name": "CuPKG Luminarite Component",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Cuprium</>, <@gd.key>Xiranite</>, and <@gd.key>Xiragen</> to auto-produce <@gd.key>CuPKG Luminarite Components</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13452,6 +14162,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_magic_spawner_1_heng_01": {
+    "name": "\"E\" Products",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>materials that can be infused with Equilibrated (E) properties</> and <@gd.key>Xiragen</> to auto-produce the <@gd.key>E-form of the input material</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_proc_battery_4_1": {
     "name": "LC Wuling Battery",
     "type": "System Blueprint",
@@ -13491,6 +14208,20 @@
     "name": "Efficient Xiranite",
     "type": "System Blueprint",
     "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Inergen</>, <@gd.key>Clean Water</>, and <@gd.key>Carbon</> to auto-produce <@gd.key>Xiranite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_01": {
+    "name": "Forge of Equilibrium: Heavy Xiranite",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Xiranite</> and <@gd.key>Xiragen</> to auto-produce <@gd.key>Heavy Xiranite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_02": {
+    "name": "Efficient Heavy Xiranite",
+    "type": "System Blueprint",
+    "desc": "Place this blueprint in the Core AIC Area, then input <@gd.key>Xiranite</> and <@gd.key>Xiragen</> to auto-produce <@gd.key>Heavy Xiranite</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13652,6 +14383,15 @@
     "name": "The Stars Are With Me HH Permit",
     "type": "LTO Valuable",
     "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting. This certificate will expire when [The Hearth Fire Beckons the Starry Flow] Chartered Headhunting ends.",
+    "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
+    "obtainWays": [
+      "Acquisition Center: Bundles"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_7_1": {
+    "name": "Roaming Wilderpaw HH Permit",
+    "type": "LTO Valuable",
+    "desc": "A limited-time Endfield Industries certificate. Use this to perform 1 headhunting in [Anvil, Backpack, Plus A Pot o'Honey] Chartered Headhunting. This certificate will expire when [Anvil, Backpack, Plus A Pot o'Honey] Chartered Headhunting ends.",
     "decoDesc": "A special HR permit for headhunting operators who meet various unique requirements. Given the emergency of this request, this permit will inevitably expire after a certain time limit.",
     "obtainWays": [
       "Acquisition Center: Bundles"

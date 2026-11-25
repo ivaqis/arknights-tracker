@@ -189,12 +189,12 @@
       },
       {
         "voId": "chr_0009_azrila_mono_switch_01",
-        "title": "Standing by 1",
+        "title": "Standing By 1",
         "text": "My Crusade is far from over..."
       },
       {
         "voId": "chr_0009_azrila_mono_switch_02",
-        "title": "Standing by 2",
+        "title": "Standing By 2",
         "text": "The battlefield shows no mercy for mistakes. We must hone our skills with true devotion."
       },
       {
@@ -230,7 +230,7 @@
       {
         "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
-        "text": "High-altitude drops into warzones are standard for my unit. Yet, up here, the very idea of altitude starts to fade."
+        "text": "High-altitude drops into warzones are standard for my Assault Banner — we even train specifically for them. Yet, up here, the very idea of altitude starts to fade."
       },
       {
         "voId": "chr_0009_azrila_sim_talk_max_02",

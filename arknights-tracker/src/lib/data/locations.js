@@ -294,5 +294,26 @@ export const locations = {
       60,
       60
     ]
+  },
+  "world_energy_point14_7": {
+    "id": "world_energy_point14_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0065_lbmob2",
+      "eny_0066_lbhunt2",
+      "eny_0158_mushbug",
+      "eny_0159_mushman",
+      "eny_0160_mushro",
+      "eny_0161_mushshd"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
   }
 };

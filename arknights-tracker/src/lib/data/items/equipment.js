@@ -5243,6 +5243,108 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.04425,
+          0.04867500066757202,
+          0.05310000106692314,
+          0.05752500146627426
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 30
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 2
+        }
+      ]
+    ]
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "level": 60,
     "tier": "T3.5",
@@ -5855,6 +5957,108 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.0885,
+          0.09735000133514404,
+          0.10620000213384628,
+          0.11505000293254852
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 30
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 2
+        }
+      ]
+    ]
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "level": 60,
     "tier": "T3.5",
@@ -6407,6 +6611,108 @@ export const equipment = {
           0.1802777796983719,
           0.1966666728258133,
           0.2130555510520935
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4",
+          "name": "item_equip_script_4",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_1",
+          "name": "item_equip_script_4_1",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 3000
+        },
+        {
+          "id": "item_equip_script_4_2",
+          "name": "item_equip_script_4_2",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 30
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "packIcon": "icon_pack_wuling_suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.07375,
+          0.08112499862909317,
+          0.0885000005364418,
+          0.09587500244379044
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7331,6 +7637,110 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11999999999999998,
+          0.13199999928474426,
+          0.14399999380111694,
+          0.15600000321865082
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.26999999999999996,
+          0.296999990940094,
+          0.3240000009536743,
+          0.35100001096725464
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "level": 70,
     "tier": "T4.3_star",
@@ -7415,6 +7825,58 @@ export const equipment = {
           0.28285714983940125,
           0.3085714280605316,
           0.334285706281662
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.43199999999999994,
+          0.47519999742507935,
+          0.5184000134468079,
+          0.5616000294685364
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7623,6 +8085,110 @@ export const equipment = {
           0.2639999985694885,
           0.2879999876022339,
           0.31200000643730164
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.36,
+          0.3959999978542328,
+          0.4320000112056732,
+          0.46799999475479126
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "packIcon": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.2,
+          0.2199999988079071,
+          0.23999999463558197,
+          0.25999999046325684
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8145,6 +8711,138 @@ export const equipment = {
       ]
     ],
     "url": "https://oem.re/1aPV20g"
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
   },
   "item_equip_t4_suit_atb01_edc_01": {
     "level": 70,
@@ -8696,6 +9394,138 @@ export const equipment = {
     ],
     "url": "https://oem.re/0PPNGEr"
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "level": 70,
     "tier": "T4",
@@ -8968,6 +9798,138 @@ export const equipment = {
       ]
     ],
     "url": "https://oem.re/0PPNGEr"
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "packIcon": "icon_pack_wuling_suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
   },
   "item_equip_t4_suit_atk02_body_01": {
     "level": 70,
@@ -21092,5 +22054,71 @@ export const equipment = {
       ]
     ],
     "url": "https://oem.re/0CWQXMV"
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "packIcon": "icon_pack_wuling_suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "id": "item_domain_jinlong_coupon",
+          "name": "item_domain_jinlong_coupon",
+          "amount": 360
+        },
+        {
+          "id": "item_equip_script_4_3",
+          "name": "item_equip_script_4_3",
+          "amount": 50
+        }
+      ]
+    ]
   }
 };

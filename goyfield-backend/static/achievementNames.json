@@ -52,6 +52,10 @@
     "name": "Outworldly Crate Master"
   },
   {
+    "id": "achv_adv_wuling_box_5",
+    "name": "Shroom World Crate Master"
+  },
+  {
     "id": "achv_adv_wuling_bugball",
     "name": "\"A Goal Truly Slugged\""
   },
@@ -70,6 +74,10 @@
   {
     "id": "achv_adv_wuling_campfire_4",
     "name": "Anchored to Wuling Ⅳ"
+  },
+  {
+    "id": "achv_adv_wuling_campfire_5",
+    "name": "Anchored to Wuling Ⅴ"
   },
   {
     "id": "achv_adv_wuling_clean",
@@ -94,6 +102,10 @@
   {
     "id": "achv_adv_wuling_ether_4",
     "name": "\"Re-Congregated Fragments\" Ⅳ"
+  },
+  {
+    "id": "achv_adv_wuling_ether_5",
+    "name": "\"Re-Congregated Fragments\" Ⅴ"
   },
   {
     "id": "achv_adv_wuling_find_difference",
@@ -130,6 +142,10 @@
   {
     "id": "achv_adv_wuling_password",
     "name": "\"Brilliant Dabs and Strokes\""
+  },
+  {
+    "id": "achv_adv_wuling_sweetpie",
+    "name": "Dam Treader"
   },
   {
     "id": "achv_adv_wuling_watergun_1",
@@ -264,12 +280,20 @@
     "name": "\"Murmurs of the Deep Forest\""
   },
   {
+    "id": "achv_bat_hard_9",
+    "name": "\"Despotic Brutality\""
+  },
+  {
     "id": "achv_bat_jsspsi_reverse_color",
     "name": "\"Art of Blanks\""
   },
   {
     "id": "achv_bat_magical_AS",
     "name": "Superb Physicals"
+  },
+  {
+    "id": "achv_bat_mushro_blowoff",
+    "name": "\"Fungal Bounciness\""
   },
   {
     "id": "achv_bat_physical_AS",
@@ -284,6 +308,10 @@
     "name": "\"Completely Uprooted\""
   },
   {
+    "id": "achv_event_blackjack_1",
+    "name": "\"Witchcraft 21\""
+  },
+  {
     "id": "achv_event_clean",
     "name": "\"Totally Cleansed and Rinsed\""
   },
@@ -294,6 +322,10 @@
   {
     "id": "achv_event_contingency_contract_1",
     "name": "\"Indigo Cleansed\""
+  },
+  {
+    "id": "achv_event_doudizhu_1",
+    "name": "\"Joker's Warlord Power\""
   },
   {
     "id": "achv_event_dungfight",
@@ -320,6 +352,10 @@
     "name": "\"Nocturnal Tactics\""
   },
   {
+    "id": "achv_event_takestwo_2",
+    "name": "\"BEST! ARENA OF TALOS-II!\""
+  },
+  {
     "id": "achv_event_tundra_challenge_dung",
     "name": "\"In the Cryptics of the Valley\""
   },
@@ -334,6 +370,10 @@
   {
     "id": "achv_event_wuling_challenge_dung_03",
     "name": "\"Fade Beyond the Painting\""
+  },
+  {
+    "id": "achv_event_wuling_challenge_dung_04",
+    "name": "\"Shroom City\""
   },
   {
     "id": "achv_event_wuling_racing_1",
@@ -436,12 +476,20 @@
     "name": "Wuling Factory Pioneer Ⅳ"
   },
   {
+    "id": "achv_fac_techtree_jinlong_5",
+    "name": "Wuling Factory Pioneer Ⅴ"
+  },
+  {
     "id": "achv_fac_techtree_tundra",
     "name": "Valley Factory Pioneer"
   },
   {
     "id": "achv_fac_typhoea_archery",
     "name": "\"Archer's Epiphany\""
+  },
+  {
+    "id": "achv_fac_wonder_build",
+    "name": "\"Our Lives Rebuilt\""
   },
   {
     "id": "achv_growth_adventure_level",
@@ -504,6 +552,10 @@
     "name": "\"Protocol ε 20.00m\""
   },
   {
+    "id": "achv_hide_mushbug_attract",
+    "name": "\"Come, Slither Out of the Pipes\""
+  },
+  {
     "id": "achv_hide_no_parry",
     "name": "\"Maker's Domination\""
   },
@@ -526,6 +578,10 @@
   {
     "id": "achv_hide_ruanyi",
     "name": "\"Traveler of the Deathly Realms\""
+  },
+  {
+    "id": "achv_hide_secretbase_v1d7",
+    "name": "\"Professional Safe House\""
   },
   {
     "id": "achv_hide_slime",
@@ -658,6 +714,14 @@
   {
     "id": "achv_quest_sm2l10m3",
     "name": "\"A Day to Remember\""
+  },
+  {
+    "id": "achv_quest_sm2l11m1",
+    "name": "\"A Good Marriage Needs Good Kohl\""
+  },
+  {
+    "id": "achv_quest_sweetpie",
+    "name": "\"I Dream of Honey Waffles\""
   },
   {
     "id": "achv_quest_typhoea",

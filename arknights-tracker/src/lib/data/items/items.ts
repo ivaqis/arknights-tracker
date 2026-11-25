@@ -1163,7 +1163,6 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "plant",
         "material": "plant_sp_3",
         "obtainWayIds": [
-            "item_obtain_gather_map01_lv005_1",
             "item_obtain_plant"
         ]
     },
@@ -3292,6 +3291,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3344,6 +3344,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3394,6 +3395,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3444,6 +3446,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3496,6 +3499,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3546,6 +3550,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -3643,13 +3648,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -3744,13 +3752,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -3843,13 +3854,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -4674,7 +4688,7 @@ export const items: Readonly<Record<string, ItemData>> = {
     "item_inkbiter_1_wgshoal_1_1": {
         "id": "item_inkbiter_1_wgshoal_1_1",
         "iconId": "item_inkbiter_1_wgshoal_1_1",
-        "rarity": 4,
+        "rarity": 5,
         "groupId": "usable",
         "type": "other",
         "material": null
@@ -4695,7 +4709,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_10": {
@@ -4706,7 +4721,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": "strawberry_1",
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_2": {
@@ -4717,7 +4733,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_3": {
@@ -4728,7 +4745,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_4": {
@@ -4739,7 +4757,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": "sugarcane_1",
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_5": {
@@ -4750,7 +4769,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_6": {
@@ -4761,7 +4781,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_7": {
@@ -4772,7 +4793,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_8": {
@@ -4783,7 +4805,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "item_inn_drink_9": {
@@ -4794,7 +4817,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "drink",
         "material": null,
         "obtainWayIds": [
-            "item_obtain_inn_shop_1"
+            "item_obtain_inn_shop_1",
+            "item_obtain_inn_food_box_drink_1"
         ]
     },
     "ap_supply_lt_abs1": {
@@ -7039,6 +7063,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7091,6 +7116,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7181,6 +7207,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7243,6 +7270,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7295,6 +7323,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7341,6 +7370,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "daPan",
             "endministrator1",
             "endministrator2",
+            "kay",
             "laevatain",
             "lifeng",
             "liino",
@@ -7429,6 +7459,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "seekerOfDarkLung",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge"
@@ -7579,6 +7610,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "daPan",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -7626,12 +7658,15 @@ export const items: Readonly<Record<string, ItemData>> = {
         ],
         "usedByChars": [
             "argentFlow",
+            "kay",
             "si"
         ],
         "usedByWeapons": [
             "jadeVessel",
             "longHeritage",
-            "lunarCalling"
+            "lunarCalling",
+            "raidComet",
+            "starOfTomorrow"
         ]
     },
     "item_charpotentialup_chr_0002_endminm": {
@@ -9260,7 +9295,8 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": 60,
         "material": null,
         "obtainWayIds": [
-            "item_obtain_explore"
+            "item_obtain_domain_shop_2",
+            "item_obtain_domain_shop_levelup"
         ]
     },
     "item_gift_jinlong_1": {
@@ -9558,6 +9594,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "estella",
             "fluorite",
             "gilberta",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -9642,13 +9679,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -10821,6 +10861,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "chenQianyu",
             "ember",
             "fluorite",
+            "kay",
             "laevatain",
             "lastRite",
             "lifeng",
@@ -10969,6 +11010,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "endministrator1",
             "endministrator2",
             "gilberta",
+            "kay",
             "lastRite",
             "lifeng",
             "mifu",
@@ -11153,6 +11195,7 @@ export const items: Readonly<Record<string, ItemData>> = {
             "seekerOfDarkLung",
             "sufferingsEnd",
             "sunderedPrince",
+            "sweetDeal",
             "thermiteCutter",
             "thunderberge",
             "umbralTorch",
@@ -11231,6 +11274,8 @@ export const items: Readonly<Record<string, ItemData>> = {
             "farsight",
             "longHeritage",
             "lunarCalling",
+            "raidComet",
+            "starOfTomorrow",
             "type42SolemnPhalanx",
             "umbraOfFrigidEventide"
         ]
@@ -15054,13 +15099,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -15154,13 +15202,16 @@ export const items: Readonly<Record<string, ItemData>> = {
             "phantomPain",
             "prominentEdge",
             "quencher",
+            "raidComet",
             "rapidAscent",
             "rationalFarewell",
             "seekerOfDarkLung",
             "stanzaOfMemorials",
+            "starOfTomorrow",
             "sufferingsEnd",
             "sunderedPrince",
             "sunderingSteel",
+            "sweetDeal",
             "tarr11",
             "thermiteCutter",
             "thunderberge",
@@ -18180,6 +18231,867 @@ export const items: Readonly<Record<string, ItemData>> = {
     "ticketgacha_special_single_lt_1_6_2": {
         "id": "ticketgacha_special_single_lt_1_6_2",
         "iconId": "item_ticketgacha_special_single_lt_1_6_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 81,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_pack"
+        ]
+    },
+    "business_card_topic_bp_1_7": {
+        "id": "business_card_topic_bp_1_7",
+        "iconId": "item_topic_bp_1_7",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 68,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp_pay"
+        ]
+    },
+    "business_card_topic_channel_1_7": {
+        "id": "business_card_topic_channel_1_7",
+        "iconId": "item_topic_channel_1_7",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 68,
+        "material": null
+    },
+    "business_card_topic_chr_0040_sweetpie": {
+        "id": "business_card_topic_chr_0040_sweetpie",
+        "iconId": "item_topic_chr_0040_sweetpie",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 68,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential_gift"
+        ]
+    },
+    "item_birthday_ap_supply_2027": {
+        "id": "item_birthday_ap_supply_2027",
+        "iconId": "item_birthday_ap_supply_2027",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 22,
+        "material": null
+    },
+    "item_bp_magic_balancer_1": {
+        "id": "item_bp_magic_balancer_1",
+        "iconId": "item_port_magic_balancer_1",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_magic_spawner_1": {
+        "id": "item_bp_magic_spawner_1",
+        "iconId": "item_port_magic_spawner_1",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_magic_spawner_2": {
+        "id": "item_bp_magic_spawner_2",
+        "iconId": "item_port_magic_spawner_2",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_magic_spawner_heng": {
+        "id": "item_bp_magic_spawner_heng",
+        "iconId": "item_bp_magic_spawner_heng",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_magic_spawner_hui": {
+        "id": "item_bp_magic_spawner_hui",
+        "iconId": "item_bp_magic_spawner_hui",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_magic_spawner_ming": {
+        "id": "item_bp_magic_spawner_ming",
+        "iconId": "item_bp_magic_spawner_ming",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_bp_wonder_supply_port_1": {
+        "id": "item_bp_wonder_supply_port_1",
+        "iconId": "item_port_wonder_supply_port_1",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_case_wpn_selfselect_bp_8": {
+        "id": "item_case_wpn_selfselect_bp_8",
+        "iconId": "item_case_wpn_selfselect_bp_8",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 43,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp"
+        ]
+    },
+    "item_case_wpn_selfselect_gahca_1_7_1": {
+        "id": "item_case_wpn_selfselect_gahca_1_7_1",
+        "iconId": "item_case_wpn_selfselect_gahca_1_7_1",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 43,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_weapon_gift"
+        ]
+    },
+    "item_case_wpn_selfselect_gahca_aglina": {
+        "id": "item_case_wpn_selfselect_gahca_aglina",
+        "iconId": "item_case_wpn_selfselect_gahca_0_3",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 43,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_weapon_gift"
+        ]
+    },
+    "item_case_wpn_selfselect_gahca_wulfa": {
+        "id": "item_case_wpn_selfselect_gahca_wulfa",
+        "iconId": "item_case_wpn_selfselect_gahca_1_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 43,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_weapon_gift"
+        ]
+    },
+    "item_char_ap_supply_sweetpie": {
+        "id": "item_char_ap_supply_sweetpie",
+        "iconId": "item_char_ap_supply_sweetpie",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 22,
+        "material": null
+    },
+    "item_char_equip_supply_sweetpie": {
+        "id": "item_char_equip_supply_sweetpie",
+        "iconId": "item_char_equip_supply_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 43,
+        "material": null
+    },
+    "item_charpotentialup_chr_0040_sweetpie": {
+        "id": "item_charpotentialup_chr_0040_sweetpie",
+        "iconId": "item_charpotentialup_chr_0040_sweetpie",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 42,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential"
+        ]
+    },
+    "item_collection_sweetpie_mushroom": {
+        "id": "item_collection_sweetpie_mushroom",
+        "iconId": "item_collection_sweetpie_mushroom",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_copper_bright": {
+        "id": "item_copper_bright",
+        "iconId": "item_copper_bright",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_bright_cmpt": {
+        "id": "item_copper_bright_cmpt",
+        "iconId": "item_copper_bright_cmpt",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_bright_cube": {
+        "id": "item_copper_bright_cube",
+        "iconId": "item_copper_bright_cube",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_enr_heng": {
+        "id": "item_copper_enr_heng",
+        "iconId": "item_copper_enr_heng",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_hui": {
+        "id": "item_copper_hui",
+        "iconId": "item_copper_hui",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_hui_cmpt": {
+        "id": "item_copper_hui_cmpt",
+        "iconId": "item_copper_hui_cmpt",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_ming": {
+        "id": "item_copper_ming",
+        "iconId": "item_copper_ming",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_ming_cmpt": {
+        "id": "item_copper_ming_cmpt",
+        "iconId": "item_copper_ming_cmpt",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_xiranite_hui": {
+        "id": "item_copper_xiranite_hui",
+        "iconId": "item_copper_xiranite_hui",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_copper_xiranite_ming": {
+        "id": "item_copper_xiranite_ming",
+        "iconId": "item_copper_xiranite_ming",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_device_buff_mushroom_1": {
+        "id": "item_device_buff_mushroom_1",
+        "iconId": "item_device_buff_mushroom_1",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 101,
+        "material": null
+    },
+    "item_device_buff_mushroom_2": {
+        "id": "item_device_buff_mushroom_2",
+        "iconId": "item_device_buff_mushroom_2",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 101,
+        "material": null
+    },
+    "item_device_buff_mushroom_3": {
+        "id": "item_device_buff_mushroom_3",
+        "iconId": "item_device_buff_mushroom_3",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 101,
+        "material": null
+    },
+    "item_drop_mushbug_1": {
+        "id": "item_drop_mushbug_1",
+        "iconId": "item_drop_mushbug_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_eny_0158_mushbug",
+            "item_obtain_eny_0159_mushman"
+        ],
+        "droppedByEnemies": [
+            "eny_0158_mushbug",
+            "eny_0159_mushman"
+        ]
+    },
+    "item_drop_mushro_1": {
+        "id": "item_drop_mushro_1",
+        "iconId": "item_drop_mushro_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_eny_0160_mushro",
+            "item_obtain_eny_0161_mushshd"
+        ],
+        "droppedByEnemies": [
+            "eny_0160_mushro",
+            "eny_0161_mushshd"
+        ]
+    },
+    "item_equip_prime_enhance_wuling": {
+        "id": "item_equip_prime_enhance_wuling",
+        "iconId": "item_equip_prime_enhance_wuling",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 125,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_fac_wonder_build"
+        ]
+    },
+    "item_factech_wuling_oven_amount_5": {
+        "id": "item_factech_wuling_oven_amount_5",
+        "iconId": "item_factech_wuling_oven_amount_5",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 12,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_techtree"
+        ]
+    },
+    "item_gas_copper_bright_clear": {
+        "id": "item_gas_copper_bright_clear",
+        "iconId": "item_gas_copper_bright_clear",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gas_copper_bright_turbid": {
+        "id": "item_gas_copper_bright_turbid",
+        "iconId": "item_gas_copper_bright_turbid",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gas_copper_enr_heng": {
+        "id": "item_gas_copper_enr_heng",
+        "iconId": "item_gas_copper_enr_heng",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gas_xiranite_enr_heng": {
+        "id": "item_gas_xiranite_enr_heng",
+        "iconId": "item_gas_xiranite_enr_heng",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper_bright_clear": {
+        "id": "item_gasjar_copper_gas_copper_bright_clear",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper_bright_turbid": {
+        "id": "item_gasjar_copper_gas_copper_bright_turbid",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper_enr_heng": {
+        "id": "item_gasjar_copper_gas_copper_enr_heng",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gasjar_copper_gas_xiranite_enr_heng": {
+        "id": "item_gasjar_copper_gas_xiranite_enr_heng",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_gift_jinlong_14": {
+        "id": "item_gift_jinlong_14",
+        "iconId": "item_gift_jinlong_14",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 33,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_domain_shop_2",
+            "item_obtain_domain_shop_levelup"
+        ]
+    },
+    "item_gift_jinlong_15": {
+        "id": "item_gift_jinlong_15",
+        "iconId": "item_gift_jinlong_15",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 33,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_domain_shop_2",
+            "item_obtain_domain_shop_levelup"
+        ]
+    },
+    "item_jzmonk_1_mushbug_spmushroom1_1": {
+        "id": "item_jzmonk_1_mushbug_spmushroom1_1",
+        "iconId": "item_jzmonk_1_mushbug_spmushroom1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 52,
+        "material": null
+    },
+    "item_mission_gm02m28_sample": {
+        "id": "item_mission_gm02m28_sample",
+        "iconId": "item_mission_gm02m28_yangben",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 13,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_music_exp_wuling_10": {
+        "id": "item_music_exp_wuling_10",
+        "iconId": "item_spaceship_music",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 59,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_music_exp_wuling_11": {
+        "id": "item_music_exp_wuling_11",
+        "iconId": "item_spaceship_music",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 59,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_plant_grass_spmushroom_1": {
+        "id": "item_plant_grass_spmushroom_1",
+        "iconId": "item_plant_grass_spmushroom_1",
+        "rarity": 1,
+        "groupId": "usable",
+        "type": 8,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_gather_map02_lv011",
+            "item_obtain_gather_map02_lv011_sct"
+        ]
+    },
+    "item_plantpoint_chalk_1": {
+        "id": "item_plantpoint_chalk_1",
+        "iconId": "item_plantpoint_chalk_1",
+        "rarity": 1,
+        "groupId": "usable",
+        "type": 102,
+        "material": null
+    },
+    "item_port_biscuitmountain_1": {
+        "id": "item_port_biscuitmountain_1",
+        "iconId": "item_port_biscuitmountain_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 111,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_port_dg017oven_1": {
+        "id": "item_port_dg017oven_1",
+        "iconId": "item_port_dg017oven_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 111,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_mission"
+        ]
+    },
+    "item_port_magic_balancer_1": {
+        "id": "item_port_magic_balancer_1",
+        "iconId": "item_port_magic_balancer_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 9,
+        "material": null
+    },
+    "item_port_magic_spawner_1": {
+        "id": "item_port_magic_spawner_1",
+        "iconId": "item_port_magic_spawner_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 9,
+        "material": null
+    },
+    "item_port_magic_spawner_2": {
+        "id": "item_port_magic_spawner_2",
+        "iconId": "item_port_magic_spawner_2",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 9,
+        "material": null
+    },
+    "item_port_mushman_1": {
+        "id": "item_port_mushman_1",
+        "iconId": "item_port_mushman_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 111,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_port_wonder_supply_port_1": {
+        "id": "item_port_wonder_supply_port_1",
+        "iconId": "item_port_wonder_supply_port_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 9,
+        "material": null
+    },
+    "item_proc_battery_6": {
+        "id": "item_proc_battery_6",
+        "iconId": "item_proc_battery_6",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_shot_anim_sweetpie_m_1": {
+        "id": "item_shot_anim_sweetpie_m_1",
+        "iconId": "item_shot_anim_sweetpie_m_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 105,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_shot_anim_whiten_s_1": {
+        "id": "item_shot_anim_whiten_s_1",
+        "iconId": "item_shot_anim_whiten_s_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 105,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_shot_anim_wulfa_m_1": {
+        "id": "item_shot_anim_wulfa_m_1",
+        "iconId": "item_shot_anim_wulfa_m_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 105,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_shot_anim_zhuangfy_m_1": {
+        "id": "item_shot_anim_zhuangfy_m_1",
+        "iconId": "item_shot_anim_zhuangfy_m_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 105,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_shop_star"
+        ]
+    },
+    "item_shot_filter_sp_8": {
+        "id": "item_shot_filter_sp_8",
+        "iconId": "item_shot_filter_sp_8",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 58,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp"
+        ]
+    },
+    "item_shot_sticker_birthday_2027": {
+        "id": "item_shot_sticker_birthday_2027",
+        "iconId": "item_shot_sticker_birthday_2027",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_shot_sticker_bp_8": {
+        "id": "item_shot_sticker_bp_8",
+        "iconId": "item_shot_sticker_bp_8",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp"
+        ]
+    },
+    "item_shot_sticker_channel_v1d7_1": {
+        "id": "item_shot_sticker_channel_v1d7_1",
+        "iconId": "item_shot_sticker_channel_v1d7_1",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_shot_sticker_channel_v1d7_2": {
+        "id": "item_shot_sticker_channel_v1d7_2",
+        "iconId": "item_shot_sticker_channel_v1d7_2",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_shot_sticker_channel_v1d7_3": {
+        "id": "item_shot_sticker_channel_v1d7_3",
+        "iconId": "item_shot_sticker_channel_v1d7_3",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_shot_sticker_channel_v1d7_4": {
+        "id": "item_shot_sticker_channel_v1d7_4",
+        "iconId": "item_shot_sticker_channel_v1d7_4",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_shot_sticker_channel_v1d7_5": {
+        "id": "item_shot_sticker_channel_v1d7_5",
+        "iconId": "item_shot_sticker_channel_v1d7_5",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 70,
+        "material": null
+    },
+    "item_spaceship_exhibits_mushroom": {
+        "id": "item_spaceship_exhibits_mushroom",
+        "iconId": "item_spaceship_exhibits_mushroom",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 69,
+        "material": null
+    },
+    "item_ticketgacha_special_single_lt_1_7_1": {
+        "id": "item_ticketgacha_special_single_lt_1_7_1",
+        "iconId": "item_ticketgacha_special_single_lt_1_7_1",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 82,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_payshop_pack"
+        ]
+    },
+    "item_user_avatar_bp_1_7": {
+        "id": "item_user_avatar_bp_1_7",
+        "iconId": "item_user_avatar_bp_1_7",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 66,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp_pay"
+        ]
+    },
+    "item_user_avatar_chr_0040_sweetpie": {
+        "id": "item_user_avatar_chr_0040_sweetpie",
+        "iconId": "item_chr_0040_sweetpie",
+        "rarity": 5,
+        "groupId": "usable",
+        "type": 66,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_char_potential"
+        ]
+    },
+    "item_user_avatar_frame_activity_takestwo_2": {
+        "id": "item_user_avatar_frame_activity_takestwo_2",
+        "iconId": "item_user_avatar_frame_activity_takestwo_2",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 67,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_activity_takestwo_2"
+        ]
+    },
+    "item_user_avatar_frame_bp_1_7": {
+        "id": "item_user_avatar_frame_bp_1_7",
+        "iconId": "item_user_avatar_frame_bp_1_7",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 67,
+        "material": null,
+        "obtainWayIds": [
+            "item_obtain_bp_pay"
+        ]
+    },
+    "item_user_avatar_frame_channel_v1d7_1": {
+        "id": "item_user_avatar_frame_channel_v1d7_1",
+        "iconId": "item_user_avatar_frame_channel_v1d7_1",
+        "rarity": 6,
+        "groupId": "usable",
+        "type": 67,
+        "material": null
+    },
+    "item_wgthorns_1_mushbug_spmushroom1_1": {
+        "id": "item_wgthorns_1_mushbug_spmushroom1_1",
+        "iconId": "item_wgthorns_1_mushbug_spmushroom1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": 48,
+        "material": null
+    },
+    "item_xiranite_enr_heng": {
+        "id": "item_xiranite_enr_heng",
+        "iconId": "item_xiranite_enr_heng",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_xiranite_hui": {
+        "id": "item_xiranite_hui",
+        "iconId": "item_xiranite_hui",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "item_xiranite_ming": {
+        "id": "item_xiranite_ming",
+        "iconId": "item_xiranite_ming",
+        "rarity": 3,
+        "groupId": "usable",
+        "type": 8,
+        "material": null
+    },
+    "sysbp_wuling_copper_bright_cube_01": {
+        "id": "sysbp_wuling_copper_bright_cube_01",
+        "iconId": "item_copper_bright_cube",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_copper_bright_cube_02": {
+        "id": "sysbp_wuling_copper_bright_cube_02",
+        "iconId": "item_copper_bright",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_copper_xiranite_hui_01": {
+        "id": "sysbp_wuling_copper_xiranite_hui_01",
+        "iconId": "item_copper_xiranite_hui",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_copper_xiranite_ming_01": {
+        "id": "sysbp_wuling_copper_xiranite_ming_01",
+        "iconId": "item_copper_xiranite_ming",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_magic_spawner_1_heng_01": {
+        "id": "sysbp_wuling_magic_spawner_1_heng_01",
+        "iconId": "item_port_magic_spawner_1",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_xiranite_enr_easy_01": {
+        "id": "sysbp_wuling_xiranite_enr_easy_01",
+        "iconId": "item_xiranite_enr_powder",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "sysbp_wuling_xiranite_enr_easy_02": {
+        "id": "sysbp_wuling_xiranite_enr_easy_02",
+        "iconId": "item_xiranite_enr_powder",
+        "rarity": 2,
+        "groupId": "usable",
+        "type": 64,
+        "material": null
+    },
+    "ticketgacha_special_single_lt_1_7_1": {
+        "id": "ticketgacha_special_single_lt_1_7_1",
+        "iconId": "item_ticketgacha_special_single_lt_1_7_1",
         "rarity": 6,
         "groupId": "usable",
         "type": 81,

@@ -783,6 +783,39 @@
       "Si can create very dangerous Ink Pools. Do not step into these ink-tainted zones."
     ]
   },
+  "eny_0158_mushbug": {
+    "name": "Shroomkrusher Nidwyrm",
+    "nickname": "Shroomkrusher Nidwyrm",
+    "description": "A normal nidwyrm tends to tunnel underground to stay hidden. This spore-affected variant has erratic behavior. It also wants to spread more spores around.",
+    "abilities": [
+      "When the Shroomkrusher Nidwyrm tunnels underground, its top is exposed as a weakpoint.",
+      "The Vine Cage lasts for a while. It deals DMG to operators who touch it."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Bolete Prince",
+    "nickname": "Bolete Prince",
+    "description": "A strange mushroom. It has a mild personality and can be quite dependable. It is the future and hope of the mushroom family.",
+    "abilities": [
+      "When the Bolete Prince tunnels underground, its top is exposed as a weakpoint."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Shroomkrusher Sporeknuckles",
+    "nickname": "Shroomkrusher Sporeknuckles",
+    "description": "A spore-affected Landbreaker with erratic behavior. Be careful. Despite their soft, plushy fists, they are just as dangerous.",
+    "abilities": [
+      "The Shroomkrusher Sporeknuckles can swing his arms to create a whirlwind that continuously sucks in operators."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Shroomkrusher Sporeguard",
+    "nickname": "Shroomkrusher Sporeguard",
+    "description": "A spore-affected Landbreaker with erratic behavior. Their shield is now ... complete.",
+    "abilities": [
+      "The Shroomkrusher Sporeguard can raise his shield to block the operators' basic attacks."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Basic Target",
     "nickname": "Basic Target",

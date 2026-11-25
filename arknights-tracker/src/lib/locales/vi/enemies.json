@@ -783,6 +783,39 @@
       "Si có thể tạo ra những Vũng Mực vô cùng nguy hiểm. Đừng bước vào các khu vực nhuốm mực này."
     ]
   },
+  "eny_0158_mushbug": {
+    "name": "Shroomkrusher Nidwyrm",
+    "nickname": "Shroomkrusher Nidwyrm",
+    "description": "Một nidwyrm bình thường thường đào hang dưới lòng đất để ẩn mình. Biến thể bị ảnh hưởng bởi bào tử này có hành vi thất thường. Nó còn muốn phát tán thêm nhiều bào tử hơn nữa.",
+    "abilities": [
+      "Khi Shroomkrusher Nidwyrm đào hang dưới đất, phần đỉnh lộ ra sẽ trở thành điểm yếu.",
+      "Lồng Dây Leo tồn tại trong một khoảng thời gian. Nó gây ST lên cán viên chạm phải."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Hoàng Tử Nấm Đùi Gà",
+    "nickname": "Hoàng Tử Nấm Đùi Gà",
+    "description": "Một cây nấm kỳ lạ. Tính tình ôn hòa và khá đáng tin cậy. Nó chính là tương lai và hy vọng của cả họ nhà nấm.",
+    "abilities": [
+      "Khi Hoàng Tử Nấm Đùi Gà đào hang dưới đất, phần đỉnh lộ ra sẽ trở thành điểm yếu."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Quyền Thủ Bào Tử Shroomkrusher",
+    "nickname": "Quyền Thủ Bào Tử Shroomkrusher",
+    "description": "Một Landbreaker bị ảnh hưởng bởi bào tử với hành vi thất thường. Hãy cẩn thận. Dù đôi nắm đấm mềm xốp của chúng trông vô hại, chúng vẫn nguy hiểm chẳng kém gì.",
+    "abilities": [
+      "Quyền Thủ Bào Tử Shroomkrusher có thể vung tay tạo ra một cơn lốc, liên tục hút các cán viên vào."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Vệ Binh Bào Tử Shroomkrusher",
+    "nickname": "Vệ Binh Bào Tử Shroomkrusher",
+    "description": "Một Landbreaker bị ảnh hưởng bởi bào tử với hành vi thất thường. Chiếc khiên của chúng giờ đã... hoàn thiện.",
+    "abilities": [
+      "Vệ Binh Bào Tử Shroomkrusher có thể giơ khiên để chặn đòn đánh thường của cán viên."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Bia Cơ Bản",
     "nickname": "Bia Cơ Bản",

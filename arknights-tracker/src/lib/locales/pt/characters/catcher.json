@@ -171,22 +171,22 @@
       },
       {
         "voId": "chr_0020_meurs_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Obrigado. Pode contar com o melhor de mim em nossas futuras missões."
       },
       {
         "voId": "chr_0020_meurs_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Agora você pode me dar as atribuições mais difíceis. Acredito que agora consigo realizá-las."
       },
       {
         "voId": "chr_0020_meurs_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Agradeço muito a sua aprovação, Endmin. Em troca, concluí a preparação de missões para os... próximos noventa dias. Você pode revisá-la a qualquer momento."
       },
       {
         "voId": "chr_0020_meurs_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Às vezes penso no que poderia ter acontecido se eu tivesse seguido os desejos da minha família. Talvez eu estivesse vivendo uma vida diferente. Uma mais simples, porém mais confortável... Mas eu já tinha me decidido quando peguei a espada e saí de casa naquela manhã. Não pretendo olhar para trás."
       },
       {
@@ -196,12 +196,12 @@
       },
       {
         "voId": "chr_0020_meurs_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Precisa de cobertura defensiva? Vou te dar o meu melhor."
       },
       {
         "voId": "chr_0020_meurs_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Acho que deveríamos estar mais bem preparados."
       },
       {

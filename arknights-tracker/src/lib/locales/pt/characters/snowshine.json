@@ -167,22 +167,22 @@
       },
       {
         "voId": "chr_0014_aurora_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Hum! O trabalho duro sempre compensa! Não vou decepcionar a Endfield nem ninguém!"
       },
       {
         "voId": "chr_0014_aurora_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Isso amplia meu alcance operacional, certo? Não se preocupe! Pode contar comigo para todas as suas necessidades em resgates de emergência, coleta de dados, apoio logístico e todos os tipos de trabalho de campo!"
       },
       {
         "voId": "chr_0014_aurora_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Desta vez, aprimorei todas as minhas Unidades de Artes de fabricação de gelo de BER, Endmin! Olhe só! Acabei de construir um iglu temporário! Venham dormir aqui!"
       },
       {
         "voId": "chr_0014_aurora_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "O tempo que passei na Endfield me ensinou muitas coisas novas e me proporcionou muitas lembranças maravilhosas... Obrigado por confiar em mim, Endmin. De agora em diante, continuarei a escalar picos cada vez mais altos... e a resgatar o máximo de pessoas que puder."
       },
       {
@@ -192,12 +192,12 @@
       },
       {
         "voId": "chr_0014_aurora_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Quer praticar snowboard comigo, Endmin?"
       },
       {
         "voId": "chr_0014_aurora_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "A velocidade do vento está OK. A visibilidade é boa. Clima perfeito para snowboarding."
       },
       {

@@ -1,5 +1,477 @@
 export const warEchoesSeasons = [
     {
+        "id": "8",
+        "name": "Season of Wariness",
+        "startTime": "2026-12-16 12:00:00",
+        "endTime": "2027-01-07 06:00:00",
+        "weeks": [
+            {
+                "id": "1",
+                "name": "Cycle of Wariness Ⅰ",
+                "startTime": "2026-12-16 12:00:00",
+                "endTime": "2026-12-23 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower022",
+                        "hardId": "indie_battletower022_s",
+                        "brutalId": "indie_battletower022_ex",
+                        "name": "Codex File: Measurer-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0133_inklion_tower022"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower023",
+                        "hardId": "indie_battletower023_s",
+                        "brutalId": "indie_battletower023_ex",
+                        "name": "Traced File: Hunter-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0131_inkscroll_tower021",
+                            "eny_0106_wgthorns2",
+                            "eny_0105_wgslime2",
+                            "eny_0118_klhog"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower019",
+                        "hardId": "indie_battletower019_s",
+                        "brutalId": "indie_battletower019_ex",
+                        "name": "Construct File: Geist",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0127_bigents_tower019"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Cycle of Wariness Ⅱ",
+                "startTime": "2026-12-23 04:00:00",
+                "endTime": "2026-12-30 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower026",
+                        "hardId": "indie_battletower026_s",
+                        "brutalId": "indie_battletower026_ex",
+                        "name": "Destruction File: Æthillu-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0095_ethillu_tower026"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower020",
+                        "hardId": "indie_battletower020_s",
+                        "brutalId": "indie_battletower020_ex",
+                        "name": "Defense File: Shield",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0074_lbshield"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower007",
+                        "hardId": "indie_battletower007_s",
+                        "brutalId": "indie_battletower007_ex",
+                        "name": "Howling of Undying Beasts",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0082_hsbear_race007"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Cycle of Wariness Ⅲ",
+                "startTime": "2026-12-30 04:00:00",
+                "endTime": "2027-01-07 06:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower002",
+                        "hardId": "indie_battletower002_s",
+                        "brutalId": "indie_battletower002_ex",
+                        "name": "Old Tales of the Wild",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower004",
+                        "hardId": "indie_battletower004_s",
+                        "brutalId": "indie_battletower004_ex",
+                        "name": "Age of Axes",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0068_lbtough2"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower003",
+                        "hardId": "indie_battletower003_s",
+                        "brutalId": "indie_battletower003_ex",
+                        "name": "Skirmishers' Æthillu",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0033_lbhunt_hdg005",
+                            "eny_0095_ethillu_race003"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Season of Scattering",
+        "startTime": "2026-11-25 06:00:00",
+        "startTimeAsia": "2026-11-24 17:00:00",
+        "endTime": "2026-12-16 12:00:00",
+        "weeks": [
+            {
+                "id": "1",
+                "name": "Cycle of Scattering Ⅰ",
+                "startTime": "2026-11-25 06:00:00",
+                "startTimeAsia": "2026-11-24 17:00:00",
+                "endTime": "2026-12-02 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower021",
+                        "hardId": "indie_battletower021_s",
+                        "brutalId": "indie_battletower021_ex",
+                        "name": "Dominance File: Howler-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0114_jzmking_tower021"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower024",
+                        "hardId": "indie_battletower024_s",
+                        "brutalId": "indie_battletower024_ex",
+                        "name": "Siege File: Heavy Armor-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0075_lbroshan_tower024"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower002",
+                        "hardId": "indie_battletower002_s",
+                        "brutalId": "indie_battletower002_ex",
+                        "name": "Old Tales of the Wild",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0092_slbomb_race003",
+                            "eny_0073_slimerg_race002",
+                            "eny_0050_hound_race002",
+                            "eny_0096_hsmob2_race002"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Cycle of Scattering Ⅱ",
+                "startTime": "2026-12-02 04:00:00",
+                "endTime": "2026-12-09 04:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower025",
+                        "hardId": "indie_battletower025_s",
+                        "brutalId": "indie_battletower025_ex",
+                        "name": "Pierced File: Ballista-N",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0048_hvybow_tower025"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower009",
+                        "hardId": "indie_battletower009_s",
+                        "brutalId": "indie_battletower009_ex",
+                        "name": "Buried Frontlines",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0007_mimicw",
+                            "eny_0122_kltdbud_tower009"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower015",
+                        "hardId": "indie_battletower015_s",
+                        "brutalId": "indie_battletower015_ex",
+                        "name": "Blightshade File: Thunderclap",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0120_klbear_tower015"
+                        ],
+                        "enemyLevels": [
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Cycle of Scattering Ⅲ",
+                "startTime": "2026-12-09 04:00:00",
+                "endTime": "2026-12-16 12:00:00",
+                "stages": [
+                    {
+                        "id": "indie_battletower013",
+                        "hardId": "indie_battletower013_s",
+                        "brutalId": "indie_battletower013_ex",
+                        "name": "Powerful Decapitation",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0018_lbtough_tower013",
+                            "eny_0054_hsmino_tower013"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower005",
+                        "hardId": "indie_battletower005_s",
+                        "brutalId": "indie_battletower005_ex",
+                        "name": "Pulverizing Ammunition",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0093_hshog_race005",
+                            "eny_0055_hscrane_race005"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90
+                        ]
+                    },
+                    {
+                        "id": "indie_battletower006",
+                        "hardId": "indie_battletower006_s",
+                        "brutalId": "indie_battletower006_ex",
+                        "name": "Scars of Landbreaking",
+                        "picPath": "",
+                        "enemyIds": [
+                            "eny_0074_lbshield_race006",
+                            "eny_0023_aghornb_race006",
+                            "eny_0047_firebat_race006",
+                            "eny_0018_lbtough_race006"
+                        ],
+                        "enemyLevels": [
+                            60,
+                            60,
+                            60,
+                            60
+                        ],
+                        "hardEnemyLevels": [
+                            75,
+                            75,
+                            75,
+                            75
+                        ],
+                        "brutalEnemyLevels": [
+                            90,
+                            90,
+                            90,
+                            90
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "6",
         "name": "Season of Fervor",
         "startTime": "2026-11-05 12:00:00",

@@ -581,6 +581,12 @@
     "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nUna modifica dell'equipaggiamento difensivo per il lavoro sul campo del SIA, destinato all'addestramento al combattimento ravvicinato. Garantisce una protezione efficace durante le azioni corpo a corpo.",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "Armatura mecha per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nOra dotato di porte multiple facili da calibrare per poter montare efficacemente più sistemi d'arma.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machete per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
@@ -617,6 +623,12 @@
     "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Ho pensato: anche una sega elettrica in miniatura è un'arma da mischia, giusto?\"",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "Lastra mecha per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Vedi? Un bastardoide si è scontrato con me e mi ha fatto fare un volo di dieci metri. Ma sulla lastra è rimasto solo un graffietto.\"",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Guanti per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
@@ -651,6 +663,12 @@
     "name": "Coprimani da combattimento ravvicinato per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le abilità di combattimento di chi lo usa.",
     "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nLo spessore perfetto permette a chi li indossa di eseguire senza difficoltà varie mosse di scherma o spadamanzia.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "Guanti mecha per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nOra dotati di rinforzi extra ai polsi per consentire a chi li indossa di manovrare le armi montate su veicoli con maggiore facilità.",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "Il Dipartimento degli Spadamanti ha progettato uno speciale equipaggiamento per i combattenti che si recano frequentemente in aree ad alto rischio per svolgere varie missioni. \"Ho scritto libri e pergamene per svelare i segreti celati dal cielo.\"",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Corazza PES da pioniere di spaccature",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Infiammo il mio corpo come una fornace per portare luce nell'oscurità.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Armatura LEGG da pioniere di spaccature",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Scalo ripidi picchi e raccolgo le nuvole e le nebbie attorno a me.\"",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Lastra per armatura per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
@@ -735,6 +765,12 @@
     "name": "Lama d'argento da pioniere di spaccature",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le abilità di combattimento di chi lo usa.",
     "decoDesc": "Il Dipartimento degli Spadamanti ha progettato uno speciale equipaggiamento per i combattenti che si recano frequentemente in aree ad alto rischio per svolgere varie missioni. \"Ho forgiato una lama d'argento per eliminare le ombre maligne.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Piccone da roccia da pioniere di spaccature",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Porto con me intere montagne per resistere ai bagliori tonanti.\"",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Coprimani da pioniere di spaccature",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le abilità di combattimento di chi lo usa.",
     "decoDesc": "Il Dipartimento degli Spadamanti ha progettato uno speciale equipaggiamento per i combattenti che si recano frequentemente in aree ad alto rischio per svolgere varie missioni. \"Ho fatto rimbombare i tamburi cremisi per scuotere le montagne.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Fasce LEGG da pioniere di spaccature",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Purifico i miei desideri più profondi per intimidire il fuoco celeste.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Coprimani PES da pioniere di spaccature",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Nelle fiamme fumanti vedo il crollo della fama.\"",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Tuta protettiva della frontiera",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Il modello cardine della linea di armature da frontiera. Le piastre protettive sono più sottili per fare spazio all'arma a distanza e ai moduli per la cifratura delle comunicazioni.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Corazza d'acciaio PES della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un'armatura da frontiera con struttura superpesante: il prodotto di punta del Polo di supporto Northmarch. Chi la indossa può affrontare in solitaria un combattimento contro quattro o cinque entità aggeloidi.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Armatura LEGG della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un'armatura integrata di supporto da frontiera, pensata per la mobilità sul campo. Con te a ogni passo, dalla Cintura civilizzata fino al distante e gelido Nord.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "Il tubo di ossigeno standard della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno. La versione migliorata estende ulteriormente questa durata a sei ore.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "RHA in compositi della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Inserto per armatura con struttura superpesante da frontiera. Dona coraggio e sicurezza nell'affrontare l'artiglieria nemica.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Lastra compressa della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Parte di un kit integrato di supporto da frontiera, pensata per la mobilità sul campo. Leggera, sottile, impeccabile e pratica. Prova a tagliarla con un'arma affilata: siamo certi che non riuscirai a lasciare nemmeno un graffio.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Guanti anti-Contaminazione da frontiera",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
@@ -843,6 +915,18 @@
     "name": "Guanti in fibra della frontiera O1",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Questo modello della linea di armature da frontiera è pensato per il combattimento sottomarino. Grazie a una speciale tecnologia di tessitura delle fibre, questi guanti sono dotati di funzioni di ricircolo dell'ossigeno.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Coprimani PES della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set da frontiera di protezioni per mani con struttura superpesante. Trasformare manualmente gli Aggeloi in aggagrit non è mai stato così facile.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Guanti LEGG della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set integrato di supporto da frontiera di protezioni per mani, pensate per la mobilità sul campo. Ben bilanciate, non affaticano le dita... Ci scusiamo, è difficile inventare uno slogan creativo per i prodotti secondari.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -1653,6 +1737,12 @@
     "name": "Guanti di canalizzazione di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le abilità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\".\n\"La conduttività energetica non è male... ma scotta un po' le mani.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Coprimani PES di xiranite eterna",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\".\n\"Per tanto tempo hai risposto alla mia pazzia con amicizia. Ho esaudito il tuo ultimo desiderio. Il mondo conoscerà la serie di armature di xiranite eterna e ricorderà il tuo nome.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   }
 }

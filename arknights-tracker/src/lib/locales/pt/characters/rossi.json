@@ -173,22 +173,22 @@
       },
       {
         "voId": "chr_0028_wulfa_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Pro...moção? Ah, entendi! Temos cerimônias semelhantes no clã, embora eu nunca tenha participado de uma. Sabe de uma coisa? Isso não é... tão ruim assim."
       },
       {
         "voId": "chr_0028_wulfa_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Hehe, estou indo muito bem, né? Preciso ser boa assim para assumir as responsabilidades do clã. Afinal, vou tornar a Matilha famosa em todo Talos-II!"
       },
       {
         "voId": "chr_0028_wulfa_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Promoções são moleza para alguém como eu! Quando será a próxima? Estou totalmente pronto! Preciso esperar a oportunidade certa? Bom... então tá."
       },
       {
         "voId": "chr_0028_wulfa_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Isso não prova que agora sou a melhor operadora? Será que Catello teve tanta facilidade assim? Da próxima vez que eu o vir, vou esfregar isso na cara dele!"
       },
       {
@@ -198,12 +198,12 @@
       },
       {
         "voId": "chr_0028_wulfa_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "A hora do derramamento de sangue está chegando. É hora de caçar. Quero dizer... é hora de comer."
       },
       {
         "voId": "chr_0028_wulfa_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Presas, cuidado! Eu sou as garras da Matilha! ... Espere, isso não soa bem? Enfim... Awoo!"
       },
       {

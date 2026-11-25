@@ -1,0 +1,574 @@
+{
+  "baseInfo": {
+    "tags": [
+      "FP-Wiederherstellung",
+      "Natur"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Kochen",
+      "Überleben im Freien"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Touristen empfohlen"
+    ],
+    "hobbyTags": [
+      "Natur",
+      "Lifestyle"
+    ],
+    "raceTag": "Perro"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Ich klopp dich bekloppt",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+    },
+    "battleSkill": {
+      "name": "„Heftiges Scheppern“",
+      "description": "Kay springt in die Luft, um sich kurz aufzuladen und ihre <@ba.key>Waffen</> zu sammeln, und schlägt anschließend kräftig mit ihrem Hammer auf den Boden. Der Bodenschlag verursacht <@ba.natur>Natur-SDN</> (basierend auf ihren Kumulierungen <@ba.key>Heiße, scharfe Naiv(k)linge</>), belegt Gegner im Wirkungsbereich mit <#ba.naturalinflict>Natur</> und verbraucht alle Kumulierungen <@ba.key>Heiße, scharfe Naiv(k)linge</>. Wenn Kay 3 Kumulierungen <@ba.key>Heiße, scharfe Naiv(k)linge</> verbraucht, belegt sie Gegner mit <#ba.burning>Verbrannt</>.\n<@ba.info>Wenn mehr als 3 Kumulierungen Heiße, scharfe Naiv(k)linge verbraucht werden, sind die Effekte dieselben wie bei 3 verbrauchten Kumulierungen.</>",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "bonusDmgMultiplierPerHotEdgyNaives": "Bonus-SDN-Multiplikator pro „Heiße, scharfe Naiv(k)linge“",
+      "combustionDurationS": "Dauer: Verbrannt (Sek.)"
+    },
+    "comboSkill": {
+      "name": "„Flitzi-Schmetter“",
+      "description": "KOMBOAUSLÖSER: Solange Kay mindestens eine <@ba.key>Waffe</> hat und der Gegner entweder mit <#ba.naturalinflict>Natur</> belegt wird ODER ihm <#ba.spellburst>Technikexplosion-SDN</> zugefügt wird.\nKay wirft eine <@ba.key>Waffe</> auf das Ziel, um ihm <@ba.natur>Natur-SDN</> zuzufügen. Wenn der Gegner getroffen wird, regeneriert Kay außerdem einige FP und wendet eine <#ba.naturalburst>Naturexplosion</> gewaltsam an. Die <@ba.key>Waffe</> wird dann an einem zufälligen Ort auf dem Schlachtfeld fallen gelassen. Kay <@ba.key>birgt</> diese <@ba.key>Waffe</>, wenn der gesteuerte Operator sie berührt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
+      "spRecovery": "FP-Wiederherstellung"
+    },
+    "ultimate": {
+      "name": "„Echt süßer Kombi-Klopper!“",
+      "description": "Kay bastelt einen Kombi-Klopper zusammen, den sie mehrere Male schwingt und dann wirft. Beim Aufprall explodiert er. Die Explosion fügt Gegnern im Wirkungsbereich <@ba.natur>Natur-SDN</> zu, belegt sie mit <#ba.naturalinflict>Natur</>, regeneriert einige FP und hinterlässt mehrere <@ba.key>Picknick-Snacks</>. Wenn der gesteuerte Operator einen <@ba.key>Picknick-Snack</> berührt und aufhebt, gewährt Kay dem entsprechenden Operator LP-Behandlung und regeneriert einige FP. Die Wirksamkeit der LP-Behandlung erhöht sich durch das Beweglichkeit-Attribut.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "spRecovery": "FP-Wiederherstellung",
+      "baseTreatment": "Grundbehandlung",
+      "treatmentIncreasePerAgility": "Behandlungssteigerung pro Beweglichkeit",
+      "spRecoveryPerPicnicSnack": "FP-Wiederherstellung pro Einsatz von Picknick-Snack."
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Stärke +10.",
+        "Operator-Stärke +15.",
+        "Operator-Stärke +15.",
+        "Operator-Stärke +20."
+      ],
+      "name": "Geschmiedet"
+    },
+    "talent1": {
+      "levels": [
+        "Kay beginnt mit 3 <@ba.key>Waffen</>. Wenn der Kampf endet, birgt Kay alle geworfenen <@ba.key>Waffen</>.\nWenn Kay eine <@ba.key>Waffe</> birgt, erhält sie 1 Kumulierung <@ba.key>Heiße, scharfe Naiv(k)linge</>.",
+        "Kay beginnt mit 3 <@ba.key>Waffen</>. Wenn der Kampf endet, birgt Kay alle geworfenen <@ba.key>Waffen</>.\nWenn Kay eine <@ba.key>Waffe</> birgt, erhält sie 1 Kumulierung <@ba.key>Heiße, scharfe Naiv(k)linge</> und gewährt dem gesamten Team <#ba.spelldmg>Verursachter Technik-SDN</> <@ba.vup>+{atk_up:0%}</>, wobei der <@ba.natur>Verursachte Natur-SDN</> zusätzlich um <@ba.vup>+{atk_up:0%}</> steigt. Dauer: <@ba.vup>{duration:0}</> Sek. Max. Kumulierungen für diesen Effekt: {stack:0}.",
+        "Kay beginnt mit 3 <@ba.key>Waffen</>. Wenn der Kampf endet, birgt Kay alle geworfenen <@ba.key>Waffen</>.\nWenn Kay eine <@ba.key>Waffe</> birgt, erhält sie 1 Kumulierung <@ba.key>Heiße, scharfe Naiv(k)linge</> und gewährt dem gesamten Team <#ba.spelldmg>Verursachter Technik-SDN</> <@ba.vup>+{atk_up:0.0%}</>, wobei der <@ba.natur>Verursachte Natur-SDN</> zusätzlich um <@ba.vup>+{atk_up:0.0%}</> steigt. Dauer: <@ba.vup>{duration:0}</> Sek. Max. Kumulierungen für diesen Effekt: {stack:0}."
+      ],
+      "name": "Arsenal ohne Boden"
+    },
+    "talent2": {
+      "levels": [
+        "Befindet sich ein Gegner im <@ba.poise>Taumelnd</>-Zustand oder löst er einen <#ba.poiseknot>Taumel-Knoten</> aus, lässt er 1 <@ba.key>Picknick-Waffel</> fallen. Der Effekt wird nur einmal alle {cd:0} Sek. ausgelöst.\n<@ba.info>Die Picknick-Waffel wendet dieselben Effekte an wie der Picknick-Snack.</>",
+        "Befindet sich ein Gegner im <@ba.poise>Taumelnd</>-Zustand oder löst er einen <#ba.poiseknot>Taumel-Knoten</> aus, lässt er 1 <@ba.key>Picknick-Waffel</> fallen. Der Effekt wird nur einmal alle {cd:0} Sek. ausgelöst.\n<@ba.info>Die Picknick-Waffel wendet dieselben Effekte an wie der Picknick-Snack.</>"
+      ],
+      "name": "Gönn dir eine Waffel!"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+        "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +30 % zu erhöhen."
+      ],
+      "name": "Vogelwilde Schmiedekunst"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 14 % zu verlangsamen.",
+        "Der Herstellungskabine zuweisen, um Stimmungsverlust aller Operatoren in der Kabine um 18 % zu verlangsamen."
+      ],
+      "name": "Honigwaffelpause"
+    },
+    "files": {
+      "main": "DECKNAME: Kay\nGESCHLECHT: Weiblich\nAUTHENTIFIZIERUNG: Rhodes Island\nGeb.: 25. Feb.\nSPEZIES: Perro\n[ORIPATHIE-INFEKTIONSSTATUS]\nOripathie-negativ, basierend auf ärztlichen Befunden.\n\n[INTEGRIERTE KÖRPERLICHE UNTERSUCHUNG]\nPHYSIOLOGISCHE STÄRKE: Ausgezeichnet\nKAMPFFERTIGKEIT: Standard\nTAKTISCHER SCHARFSINN: Normal\nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Ausgezeichnet\n\nPS: Kays Verdauungssystem scheint außergewöhnlich robust zu sein, was bei der Erstellung eines Ernährungsplans berücksichtigt werden sollte.\nPPS: Ich muss herausfinden, wie sie es schafft, so viel zu essen und dabei ihre Figur zu halten!\n\nVersuch doch mal, dich so viel zu bewegen wie sie?\n– Chen Qianyu",
+      "humanResources": "Operatorin Kay, echter Name Cerube, ist eine Wiederherstellerin aus Rhodes Island. Auf Anweisung von Warfarin hat sie Rhodes Island verlassen, um Talos-II zu bereisen. \n \n Kays Beitritt zu Endfield war kein reiner Zufall. Tatsächlich könnte man Endfield als das eigentliche Ziel ihrer Reise bezeichnen. Vor etwas über einem halben Jahr erhielten wir eine Nachricht von Rhodes Island: Eine junge Wiederherstellerin hatte Rhodes Island verlassen und würde bald bei Endfield eintreffen, um sich zum Dienst zu melden. „Bald“ bedeutete zu diesem Zeitpunkt in einhundertfünfundachtzig Tagen, acht Stunden, zwölf Minuten und fünfundfünfzig Sekunden. Es dauerte fast eine halbe Sekunde, ihren Namen wieder aus meinem Postfach heraussuchen zu lassen. \n Sie erklärte ihre gewaltige Verspätung damit, dass sie Rhodes Island mit dem expliziten Ziel verlassen hatte, den Endministrator zu finden. In Warfarins Erzählungen hatte der Endministrator sich stets an Bord der Dijiang aufgehalten. Also bereiste sie die Oberfläche von Talos-II auf der Suche nach einem Arbeits-Fluggerät mit dem Namen „Dijiang“. Wäre es nicht zufällig in den Außenbezirken von Wuling zu einem Treffen zwischen ihr und dem Endministrator gekommen, hätte sie ihre Suche vermutlich noch fortgesetzt. \n Dass sie Talos-II so lange allein bereist hat und dennoch völlig unverletzt bei uns Meldung erstattete, zeigt eindrücklich, dass sie eine Expertin für Reisen durch die Wildnis sein muss. \n – Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "Auf die Frage hin, welchen Decknamen sie während ihrer Arbeit bei Endfield verwenden möchte, nannte Cerube einfach den Namen, bei dem ihre Freunde sie rufen: „Kay“. \nBei Endfield zeichnet sie sich meist durch eine einfache, direkte Herangehensweise aus. \nSie versucht gar nicht erst, komplexe Verwaltungshierarchien oder Kampfsequenzen zu verstehen. Nachdem sie eine gewisse Zeit bei Endfield verbracht hatte, hatte sie alle Personen dort in eine ihrer drei Kategorien eingeteilt: „Nette Leute, die mir was zu essen geben“, „Starke Leute, an deren Seite ich kämpfen kann“ und „Sehr beschäftigte Leute, die nicht viel Zeit haben“. Diese minimalistische Herangehensweise lässt sie besonders entspannt und nahbar wirken, sodass sie nach ihrer Ankunft bei Endfield schnell Freundschaften schließen konnte. Wer könnte schon jemanden zurückweisen, der so kompromisslos ehrlich und scheinbar voll endloser Energie ist? \nMan findet Kay also oft in der Nähe verschiedener anderer Operatoren. Oft wartet sie vor dem Trainingsraum auf einen Operator, um ihn oder sie dann voller Begeisterung in ihre neue „Geheimbasis“ einzuladen (bei der es sich meist um ein Panoramafenster mit einem guten Blick auf Talos-II oder um eine kleine Festung handelt, die sie aus alten Teilen hinter der Ingenieurabteilung zusammengezimmert hat). Außerdem sieht man sie oft mit Laevatain ein Eis genießen oder sich tagelang mit Yvonne im Waffentestzentrum verschanzen. Gelegentlich erwischen Operatoren der Logistikabteilung sie auch dabei, wie sie versucht, sich Zutritt zu den Kochräumen der Kantine zu verschaffen, und unterbinden ihre Versuche. \nKay geht mit allen anderen sehr direkt um, und unsere Operatoren erwidern ihre Freundlichkeit auf ebenso direkte Weise. Alle haben schnell herausgefunden, dass Kay niemals eine Mahlzeit ablehnt und so füllte ihre Tasche sich mit der Zeit mit allen möglichen ungewöhnlichen Lebensmitteln. Das ging so weiter, bis ihre Tasche eines Tages bei einer Überprüfung als zu schwer herausgewinkt wurde. Kay schlug daraufhin vor, alle Snacks, die sie erhält, zur Aufbewahrung an Aufseherin Perlica weiterzuleiten. Dieser Vorschlag wurde angenommen. \n„Gib dich keinen Illusionen hin. Nur, weil du ihr was zu Futtern gegeben hast, wirst du das nächste Wettessen noch lange nicht gewinnen … Sie hat nämlich gar kein Sättigungsgefühl.“",
+      "file2": "In all meiner Zeit bei Endfield habe ich noch nie eine Operatorin erlebt, die so versessen auf Feldmissionen ist. \nDie Landschaften auf Talos-II sind komplex und ständig im Wandel, und auch Gegner sorgen oft für Probleme. Man muss nicht extra betonen, wie gefährlich es ist, sich in die Wildnis zu begeben, und die große Verantwortung sorgt bei den meisten Operatoren für beachtlichen Druck. Operatorin Kay hingegen scheint Feldmissionen eher als offiziell abgenickte Expeditionen zu verstehen. Manchmal steht sie nur Sekunden, nachdem sie einem Missionsteam zugeteilt wurde, auf der Matte, um die Aufbruchszeit zu bestätigen, und kann dabei ihre Begeisterung kaum zurückhalten. Verglichen mit den engeren Räumen auf der Dijiang scheint die Weite von Talos-II eher eine Umgebung zu sein, in der Kay sich wohlfühlt. Bis heute verstehe ich das nicht wirklich … Wie kann sie nach ihrer langen Zeit auf Reisen noch immer so neugierig auf alles um sich herum sein? \nWegen ihrer langen Reiseerfahrung durch die Wildnis dient Kay oft als Ortsführerin ihres Missionsteams. Während ihrer Missionen scheint sie jedoch immer zu testen, wie weit sie sich von der Gruppe entfernen kann: Sie schnuppert hier, schaut da mal kurz was nach und ehe man sich versieht, hat man sie aus den Augen verloren. Besonders verblüffend ist, dass sie, wenn man sie ruft, direkt wieder hinter einem Busch in der Nähe hervorkommt, und sich zeigt, dass sie nie weit entfernt war. Meist bringt sie dann einen Stein mit zurück, der auffallend an die Dijiang erinnert, oder eine bunte Blume mit unbekanntem Namen und angenehmem Duft. \nMan darf ihr Verhalten nicht missverstehen. Sie würde niemals allein aufgrund ihrer Verspieltheit ihre Pflichten als Ortsführerin vernachlässigen. Ich würde sogar so weit gehen, zu behaupten, dass sie ihre Umgebung nur deshalb so genau im Auge behalten kann, weil sie stets etwas findet, worauf sie sich konzentrieren kann. Oft bemerkt sie Veränderungen in der Umgebung schneller als der Rest ihres Teams und begibt sich mit großer Motivation in den Kampfmodus. Gerät ihr Team in einen Hinterhalt, kann sie oft vor feindlichen Aktivitäten warnen, ehe die Sensoren ausschlagen, und ihre Kameraden darüber informieren, von wo aus sich Gefahr nähert. Fragt man sie, wie ihr das gelingt, antwortet sie etwas wie „die Luft roch da drüben nicht gut“ oder „die Stelle hat eine fiese Ausstrahlung“. Wenn es sich dabei nicht um eine Originium-Technik handelt, hat sie diese Fähigkeit vermutlich während ihrer langen Reisen durch Talos-II erlernt.",
+      "file3": "[Waffen-Reparaturauftrag D1] \nReparaturbedarf besteht bei: Kinetischer Schockhammer \nHersteller: Mieszko Industries (Morospolis) \nJetzt verstehe ich endlich, warum Kay sich immer beim Arsenal herumtreibt. So, wie sie ihre Ausrüstung verbraucht, werden unsere Reserven früher oder später aufgebraucht sein. \nGestern hat sie bei Ausräumarbeiten in einem verlassenen Stützpunkt einen Kinetischen Schockhammer von Mieszko aus dem Nichts herbeigezaubert. Soweit ich weiß, braucht es eine Crew von drei Personen, um ein solches Gerät sicher zu bedienen, aber Kay hob ihn einfach alleine hoch. Sie hat den Kinetischen Hammer auch nicht mit einem Exoskelett verbunden. Sie packte den noch immer aktiven und überhitzten Griff einfach mit bloßen Händen. Die Temperatur hätte ausgereicht, um die Hand eines gewöhnlichen Operators zu verbrennen. Kay jedoch schwang die schwere Waffe so einfach herum wie einen dünnen Zweig. Sie musste nicht mal den Schock-Komprimierungsmodus aktivieren. Nur durch den Schwung, den das Eigengewicht des Hammers erzeugt, klatschte sie einen Aggelos, der uns angreifen wollte, mit einer Leichtigkeit an die Wand, als würde sie einen Nagel einschlagen. \nIch habe zum ersten Mal gesehen, wie Kay solche Waffen verwendet. Ehrlich gesagt grenzt es an ein Wunder, dass keiner ihrer „Schätze“ auseinandergefallen ist. \n\nDem Hammer geht es gut, siehst du? Er steckt voller Energie! \n— Kay \n\n[Waffen-Reparaturauftrag E3] \nReparaturbedarf besteht bei: Stahlaxt \nHersteller: Unbekannt \nDie für die Herstellung dieser Waffe verwendete Schmiedetechnik ist ziemlich alt. Ich kenne keinen Hersteller auf Talos-II, der diese Technik noch verwendet. \nAuf dem Axtkopf findet sich eine uralte Minos-Gravur. Es könnte sich um den Namen des Herstellers oder einer anderen Person handeln. Vielleicht sollte ich jemanden fragen, der sich mit Minos auskennt. \n\n[Waffen-Reparaturauftrag I4] \nReparaturbedarf besteht bei: Standard-Lanze \nHersteller: Schmelzofenfestung \nAls ich ihr begegnete, verfolgten wir einen großen Aggelos. \nEr lockte uns auf die schneebedeckten Ebenen, wo wir drei Tage lang herumirrten, bis unsere Vorräte aufgebraucht waren. Gerade, als wir uns auf einen Kampf um Leben und Tod gegen den Aggelos vorbereiteten, schoss plötzlich eine Lanze durch unser Sichtfeld. Die Lanze lag in den Händen einer jungen Frau. Mit einer Stärke, die so gar nicht zu ihrer Körpergröße passen wollte, durchbohrte sie den Aggelos mit der Lanze … \nDer Aggelos krachte zu Boden, und die Frau erhob endlich die Stimme. Sie meinte, der Orden des Stahlschwurs hätte sie geschickt, um uns nach Hause zu bringen …",
+      "file4": "Nach ihrem Erwachen auf Rhodes Island verbrachte Kay eine lange Zeit an Bord des Schiffes. Rhodes Island schien sich nicht verändert zu haben. Alle Operatoren hatten weiterhin ihre eigenen Missionen, und viele von ihnen waren nicht häufig an Bord. Niemand wies ihr irgendwelche konkreten Aufgaben zu. Es reichte, wenn sie trainierte, sich ausruhte und ordentlich aß, genau, wie sie es sich gewünscht hatte. Manchmal suchte sie Warfarin auf und ließ sich Geschichten über diesen Planeten, über Terra oder über sich selbst erzählen. Sie konnte stundenlang vor einem Bullauge sitzen und zusehen, wie draußen schneebedeckte Berge, Wälder, Wüsten und wieder Berge vorbeizogen. Wäre es nach ihr gegangen, hätten diese Zeiten sich wohl nicht ändern müssen. \nDoch eines Tages entschied sie, ihre Taschen zu packen. \nSie saß lange vor ihrem Bullauge, und ihre Ohren zuckten, als würden sie Echos entfernter Geräusche vernehmen. Die Geschichten, die Warfarin ihr erzählt hatte, verbanden sich in ihrem Kopf zu einem Weg. Am Ende dieses Weges wartete ein Ort namens „Endfield“. \nDie Bedeutung dieses Wortes war ihr nicht ganz klar. Ein Ende? Ein Ort, an den sie gehören konnte? Eine Antwort, die auf sie wartete? Sie konnte es nicht deuten, aber sie hatte das vage Gefühl, dass etwas nach ihr rief. \nAlso erhob sie sich. \nDie Vorbereitungen kamen ihr eher vor wie ein witziges Spiel. Sie suchte sich den größten, robustesten Rucksack, den sie finden konnte, und stopfte ihn voll mit Snacks und Trockenrationen. Den größten Anteil machten dabei Honigwaffeln aus. Dann versuchte sie, ein paar praktische Waffen zu beschwören, beobachtete, wie diese um sie herum erschienen und wieder verschwanden, und nickte zufrieden. Sie war bereit. \nWarfarin schien ihre Abreise erwartet zu haben. Sie reichte ihr eine kleine Packung mit weiteren Honigwaffeln. „Wenn du dich verirrst“, sagte Warfarin, „wird der Endmin dir den richtigen Weg zeigen.“ \nKay nickte bedächtig, obwohl sie nicht sicher war, was „sich verirren“ bedeutete. Sie brach zum ersten Mal auf, um diese brandneue Welt zu erkunden. \nAm Tag ihrer Abreise trat sie mit ihrem vollgestopften Rucksack auf den Schultern in die Schleusentür. Die Tür öffnete sich, und der Wind wehte ihr entgegen und brachte unbekannte Gerüche mit. Vor ihr lag Talos-II. \n„Endfield …“ Leise sprach sie den Namen aus, als wolle sie ihre Marschrichtung überprüfen. \nDann machte sie ihren ersten Schritt. \nSie wusste nicht, was vor ihr lag, wie lang diese Reise dauern, oder wie oft sie in Zukunft noch zu ähnlichen Reisen aufbrechen würde. Allerdings hatte sie eine leise Ahnung, dass es bei einer Reise nicht ausschließlich darum ging, neue Köstlichkeiten zu entdecken und neue Orte zu sehen … \nSie war auf der Suche nach einem Gefühl, das sich nur auf Reisen finden lässt. \nSie wollte das Gefühl haben, „nach Hause“ zu kommen."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Kochen",
+        "description": "Kochen: Alles Waffel? Alles gut! \nDas Reisen erfordert kein besonderes Können. Man muss nur wissen, wie man alles, was man findet, in eine Waffel verwandelt."
+      },
+      "expert2": {
+        "name": "Überleben im Freien",
+        "description": "Überleben im Freien: Auf unbekannten Pfaden reisen \nDie Umwege mögen durch wildes Terrain führen, aber letztendlich bist du doch pünktlich an deinem Ziel angekommen, oder?"
+      },
+      "hobby1": {
+        "name": "Natur",
+        "description": "Natur: Die Wildnis durchstöbern \nSpüre jeden Wind, zeichne jede Wolke."
+      },
+      "hobby2": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: Loch im Bauch \nDer ungeschlagene Champion mehrerer Wettessen will sich immer noch im Wettbewerb messen. Wer hat genug Appetit, um sie herauszufordern?"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_01",
+        "title": "Einsatzvorbereitung 1",
+        "text": "Wohin, wohin? Darf ich mitkommen?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_02",
+        "title": "Einsatzvorbereitung 2",
+        "text": "Schöner Tag da draußen! Gehen wir!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_01",
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ta-da, hier bin ich! Hast du was Leckeres für mich?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_02",
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Legen wir los! Wenn dir das Knabberzeug ausgeht, kann ich dir welches leihen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_weap_01",
+        "title": "Waffe wird gewechselt",
+        "text": "Für mich auch? Juhu! Meine Waffensammlung wird größer!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_gear_01",
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Diese Ausrüstung … ist gut bei mir aufgehoben! Ich werde vorbildlich darauf aufpassen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_skill_01",
+        "title": "Talentknoten-Aktivierung",
+        "text": "Ah, der Trick ist super-duper-cool! Jede Wette, dass ich gerade ein wenig stärker geworden bin!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_level_01",
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Ich pass auf! Wirklich!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt01_01",
+        "title": "Operator-Beförderung 1",
+        "text": "Eine Beförderung? Wie wäre es dann mit einer neuen Waffe als kleine Belohnung für mich?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt02_01",
+        "title": "Operator-Beförderung 2",
+        "text": "Mein Bauch grummelt schon seit Stunden. Nach der Sache hier essen wir was, ja?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt03_01",
+        "title": "Operator-Beförderung 3",
+        "text": "Das da abkühlen, das da verbrennen. Dabei reicht doch ein wenig Bumm, Zack, Bämm! Uund erledigt! Ich mag es lieber unkompliziert."
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt04_01",
+        "title": "Operator-Beförderung 4",
+        "text": "Eine so lange Reise … Woah, ich bin so weit gekommen und habe so viele Bösewichte erledigt! Endmin! Heißt das, dass ich stark genug bin, für immer und ewig bei dir zu bleiben?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_introduce_01",
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Hallo! Ich bin Cerube, aber meine Freunde nennen mich Kay. Mein großer, riesiger, enormer Traum ist es, jeden Winkel von Talos-II eine Milliarde Mal zu erkunden! Du darfst auch mitkommen, solange du deine eigenen Snacks mitbringst."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_01",
+        "title": "Warten 1",
+        "text": "Was isst du da? Bekomm ich einen Bissen ab?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_02",
+        "title": "Warten 2",
+        "text": "Waffentest? Exkursion? Ich bin für beides dein bester Kumpel!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_assign_work_01",
+        "title": "Zuweisung zur Anlage",
+        "text": "Ooh, super, Essenszeit! Oh … Nicht die Kantine?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_lower_01",
+        "title": "Gruß 1",
+        "text": "Hiii, Endmin! Geht’s in die Kantine? Nimm mich mit!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_max_01",
+        "title": "Gruß 2",
+        "text": "Endmin! Siehst du diese funkelnagelneue Axt? Meinst du, das wäre eine Waffe für mich?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv01_01",
+        "title": "Dijiang-Geplauder 1",
+        "text": "Essen gibt’s da vorn, Waffen da drüben, da hinten wird trainiert, und die Nickerchen-Nester sind da ums Eck … Wo schläft der Endmin? Waaah, zu viele Kabinen! Wie kann sich irgendwer auf der Dijiang zurechtfinden?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_01",
+        "title": "Dijiang-Geplauder 2",
+        "text": "Dieses große Ding ist ein Raumschiff, und es heißt Dijiang. Die Dijiang gehört Endfield, und du bist der Endministrator … Was bedeutet … dass du der Kapitän dieses Schiffs bist! Hab ich recht, Endministrator?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_02",
+        "title": "Dijiang-Geplauder 3",
+        "text": "Auch wenn die Dijiang uns im Nu überall hinbringen kann, reise ich doch lieber zu Fuß. Endmin, sind die kleinen Dinge, die man unterwegs findet, nicht spaßiger, als einfach nur das Ziel zu erreichen?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_01",
+        "title": "Dijiang-Geplauder 4",
+        "text": "Eins, zwei, drei, vier … Hm? Endmin, hast du diese tolle neue Axt gesehen, die ich auf die Dijiang gebracht habe? Gerade war sie noch hier … Oh-oh, ich hab sie sicher im Trainingsraum vergessen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_02",
+        "title": "Dijiang-Geplauder 5",
+        "text": "Darf ich vorstellen: mein Dolch „Honigmund“, mein Hammer „Eisenkopf“ und meine Kettensäge „Superschneller Schnetzelsäger“! Was? Du findest die Namen komisch? Hmpf! Ich hab sie mir nicht ausgedacht! Sie haben sie mir verraten!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_03",
+        "title": "Dijiang-Geplauder 6",
+        "text": "In der Kantine gibt es heute Hackbraten, Linsensuppe, Pastete und Risotto. Oh, und psst … Es gibt auch eine geheime Speisekarte mit superleckerer Sahnetorte. Willst du sie versuchen? Und das bleibt unter uns. Es ist streng geheim!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_give_01",
+        "title": "Geschenke anbieten",
+        "text": "Endmin, Endmin! Ich hab dir ein Geschenk besorgt! Neeein, ich hab nicht einfach einen albernen Stein vom Weg aufgehoben!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_recv_01",
+        "title": "Geschenke annehmen",
+        "text": "Oh-oh-oh! Das sieht cool aus! Tauscht du es gegen eine Honigwaffel? Hm? Das ist ein Geschenk? Oooh, du bist so süß!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line01",
+        "title": "Vertrauensgespräch 1",
+        "text": "Auf Rhodes Island sagte jeder, dass meine Originium-Techniken superstark sind und dass ich weiter trainieren muss, um sie zu kontrollieren. Also hab ich das getan! Jeden Tag! Und daher kann ich dir und Endfield helfen! Also … Bin ich wirklich eine Hilfe?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line02",
+        "title": "Vertrauensgespräch 2",
+        "text": "Taktische Prozeduren, Befehlsketten, oje … Soll ich das alles auswendig lernen? Ich könnte doch auch … einfach dir das Denken überlassen und mich auf mein Grrr-Gekämpfe gegen die bösen Feinde konzentrieren? Dadurch könnte ich die Trainingszeit für ein Nickerchen nutzen! Bitte, Endmin, bitte-bitte!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line03",
+        "title": "Vertrauensgespräch 3",
+        "text": "Ich muss dir was sagen! Ich hatte zum Frühstück eine Honigwaffel, dann mittags noch eine und zum Abendessen dann wieder eine. Ich krieg einfach nicht genug von den Dingern. Bei dir ist es genau wie mit Honigwaffeln, weißt du? Ich hab dich morgens gesehen, dann mittags wieder, und am Abend möchte ich noch immer mit dir abhängen."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line04",
+        "title": "Vertrauensgespräch 4",
+        "text": "Ich kann mir die Form einer Waffe einprägen, wie sie sich in meiner Hand anfühlt, und wie sie swuuusch macht, wenn ich sie schwinge. Später denk ich einfach daran und bämm! Hab ich sie in der Hand. Ziemlich cool, nicht wahr? Wenn ich nur an dich denken müsste, damit du neben mir auftauchst, Endmin … Wäre das nicht total toll?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line05",
+        "title": "Vertrauensgespräch 5",
+        "text": "Dieses Kuschelkissen ist für dich. Und ich hab hier eine supergemütliche Decke … Warum? Du hast gesagt, wenn ich mich benehme, nicht faulenze und kein Essen klaue, darf ich mein kleines Nest neben deins bauen! Und das gilt jetzt auch! Hilf mir jetzt bitte einzuziehen, bitte!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line01",
+        "title": "Geplauder 1",
+        "text": "Wenn du mal Zeit hast, könnten wir einen Ausflug machen, Endmin! Keine Arbeit, einfach nur wir beide, die gemeinsam ziemlich geheime Orte erkunden. Du arbeitest viel zu viel. Hin und wieder musst du dich auch entspannen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line02",
+        "title": "Geplauder 2",
+        "text": "Bevor ich zu Endfield kam, hörte ich überall von dir und Endfield. Je mehr ich sah, desto mehr wurde mir klar, wie hart du für Talos-II arbeitest … Damals warst du noch in deinem Schlaf, also half ich den Leuten, wie du es getan hättest. Dadurch habe ich so viele gute Freunde kennengelernt! Und jetzt ist der ganze große Planet voll von meinen Kumpels!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line03",
+        "title": "Geplauder 3",
+        "text": "Endmin, hast du gerade zu tun? Was schaust du dir da an? Ist das mein Kampfbericht? Zeig her, zeig her! Wie war ich? Hab ich mich herausragend geschlagen? Ich hab sicher supercool ausgesehen! Aaalso … Honigwaffel-Zuschlag für mich? Ich nehme das als ein Ja! Juhuu! Gut gemacht, ich!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line04",
+        "title": "Geplauder 4",
+        "text": "Irgendwie kommt mir dein Geruch bekannt vor … Aber ich komm nicht ganz drauf. Ungefähr so wie frisch gebackene Honigwaffel, ein warmes Schmiedefeuer oder ein gemütliches Bett an einem frostigen Tag. So behaglich … Wo hab ich das schon mal gerochen …?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line05",
+        "title": "Geplauder 5",
+        "text": "Wenn mein Magen knurrt, schmecken Honigwaffeln besonders lecker. Wenn ich müde bin, fühlt sich meine Decke besonders kuschlig an. Wie Frau Warfarin sagte: Je weiter ich von zu Hause weg war, desto deutlicher sah ich es in meinem Herzen. Also wanderte ich durch ganz Talos-II … Und am Ende fand ich dich. … Hm? Aber du stehst genau vor mir, Endmin. Natürlich sehe ich dich klar und deutlich …"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line01",
+        "title": "Thema: Rhodes Island",
+        "text": "Bevor ich Rhodes Island verließ, warnte Frau Warfarin mich, nicht mit Fremden zu reden. Sie sagte, es geht um eine neue Mission auf Talos-II, und je weniger Leute davon wissen, desto besser. Hmm … Frau Warfarin kann manchmal echt ernst sein. Oh-oh … Ich hoffe, ich hab nicht zu viel gesagt …"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line02",
+        "title": "Thema: Da Pans Kochkünste",
+        "text": "Herr Da Pan ist ein wahrer Hexer mit dem Kochlöffel! Alles, was er kocht, ist einfach lecker-schmecker in meinem Bäuchlein! Und sein scharfes Zeug ist einfach BOMBE! Einmal hat er mir eine scharfe Honigwaffel gemacht, und er meinte: „Wenn du die isst, rülpst du Feuer!“ Also hab ich das getan. Und wooooah, bester Zaubertrick aller Zeiten!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line03",
+        "title": "Thema: Wildnisabenteuer",
+        "text": "Durch die Wildnis zu reisen, ist supergefährlich! Böse Burschen, schlechtes Wetter … aber der böseste Bursche von allen ist ein leerer Bauch. Weil: kein Essen, keine Energie. Keine Energie heißt, nicht kämpfen und Schlangenlinien gehen … Hunger haben ist das Schlimmste. So schlimm, dass man es niemals mehr vergessen kann. Also packe ich mir meinen Ranzen immer supervoll, bevor ich irgendwohin gehe!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line04",
+        "title": "Thema: Reisefreunde",
+        "text": "Ich habe unterwegs gern meine Waffen dabei. In der Wildnis sind sie meine allerbesten Freunde. Wenn Ärger kommt, stehen sie mir bei, und das gibt mir zusätzliche Kraft! Und jetzt, da ich sie nicht mehr alle auf dem Rücken tragen muss, kann ich mehr leckeres Essen mitnehmen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line05",
+        "title": "Thema: Orden des Stahlschwurs",
+        "text": "Ich war eeeewig bei den Eidwächtern im Norden. Die sind fast wie Endfield: eine Menge starker Leute, die etwas Großes erreichen wollen. Sie haben keine Dijiang, aber einen Schmelzofen, der groß ist wie ein Berg. Die Schmiede hämmern und scheppern ständig herum und stellen alle möglichen unglaublichen Waffen her. Ich bin dort so gern weggedöst … Das Scheppern und Klirren beschert mir immer gute Träume."
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_common_01",
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Oooh … das riecht aber gut. Wollen wir mal linsen?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_valub_01",
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Schatz-Alarm! Da lang!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_locked_01",
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Vielleicht sollten wir uns noch etwas besser vorbereiten. Wir könnten zum Beispiel mehr leckere Knabbereien einpacken!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_danger_01",
+        "title": "Starker Gegner entdeckt",
+        "text": "Da vorne wartet ein starker Gegner. Soll ich mal eine Kostprobe nehmen?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_01",
+        "title": "Abbau 1",
+        "text": "Wow, du sammelst wirklich gerne Steine, was?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_echo2_01",
+        "title": "Abbau 2",
+        "text": "Diese Steine sind kleine Schätze, ja? Dann helfe ich auch!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_treasure_valub_01",
+        "title": "Kiste öffnen",
+        "text": "Das sind alles super nützliche Sachen! Wir hatten richtig Glück, oder?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_etherium_01",
+        "title": "Aurylen erhalten",
+        "text": "Diese Funkel-Dinger heißen „Aurylene“, oder? Davon habe ich ganz viele in der Wildnis gesehen. Ich hätte sie alle mitnehmen sollen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_blight_break_01",
+        "title": "Eliminierung der Verderbnis",
+        "text": "Ganz ordentlich erledigt! Die Honigwaffel duftet jetzt doppelt so gut!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_rest_01",
+        "title": "Ausruhen",
+        "text": "Puh! Eine gute Ruhepause ist genauso gut wie ein köstliches Festmahl!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_using_01",
+        "title": "Taktische Nutzung 1",
+        "text": "Beeilt euch! Probiert mal!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_getheal_01",
+        "title": "Taktische Nutzung 2",
+        "text": "Ich bin wieder zum Leben erwacht! Prima!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_danger_01",
+        "title": "Gefahrenwarnung",
+        "text": "Schnell, ausweichen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_hurt_lowhp_01",
+        "title": "Verletzt",
+        "text": "Komm doch wieder, wenn du dich traust. Ich beiße!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_dead_01",
+        "title": "0 LP",
+        "text": "Die Bösewichte … gehören jetzt dir …"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_01",
+        "title": "Teammotivation 1",
+        "text": "Wow, das war supermegacool!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_02",
+        "title": "Teammotivation 2",
+        "text": "Ihr alle seid so stark!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_01",
+        "title": "Motivationsreaktion 1",
+        "text": "Hey, ich bin auch richtig super-stark!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_02",
+        "title": "Motivationsreaktion 2",
+        "text": "Du kannst dich auf mich verlassen, kein Problem!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_01",
+        "title": "Kampf beginnt 1",
+        "text": "Kays Snack-Trupp, jetzt wird gespachtelt!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_echo2_01",
+        "title": "Kampf beginnt 2",
+        "text": "Also gut, Kay, jetzt heißt es konzentrieren!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_01",
+        "title": "Kampfsieg 1",
+        "text": "Genau so! Wir haben sie alle umgehauen, Team!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_02",
+        "title": "Kampfsieg 2",
+        "text": "Was für ein köstlicher Sieg! Dafür habe ich mir eine Waffel verdient!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_echo2_01",
+        "title": "Kampfsieg 3",
+        "text": "Ich habe auch geholfen, oder?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_hard_01",
+        "title": "Kampfsieg 4",
+        "text": "Was für eine harte Nuss. Gut … und wann gibt es Essen? Ich wette, eure Bäuche knurren auch schon!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_battle_defeat_01",
+        "title": "Niederlage im Kampf",
+        "text": "Gut, dass wir alle entkommen konnten. Okay, erst die Bäuchlein und dann machen wir weiter!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_01",
+        "title": "Abschlussangriff 1",
+        "text": "Los!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_02",
+        "title": "Abschlussangriff 2",
+        "text": "Bumm! Zack!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_01",
+        "title": "Kampffertigkeit 1",
+        "text": "Hier wird nicht davongelaufen!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_02",
+        "title": "Kampffertigkeit 2",
+        "text": "Stillhalten, meine Beute!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_03",
+        "title": "Kampffertigkeit 3",
+        "text": "Überlass das mir!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_01",
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Bin so was von bereit!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_02",
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Kay ist vorbereitet!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_01",
+        "title": "Kombo wirken 1",
+        "text": "Dadadadada!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_02",
+        "title": "Kombo wirken 2",
+        "text": "Haa-ja!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_01",
+        "title": "Wuchtschlag 1",
+        "text": "Eine Schwachstelle!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_02",
+        "title": "Wuchtschlag 2",
+        "text": "Los, beiß ab!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_01",
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Probier mal!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_02",
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Honigattacke! Volle Kraft!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_03",
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Ich mach dich platt wie einen Pfannkuchen!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kay erhält zu Kampfbeginn 1 Kumulierung <@ba.key>Heiße, scharfe Naiv(k)linge</>.\nTalent <@ba.key>Arsenal ohne Boden</> verbessert: Jede Bergung von <@ba.key>Waffen</> verleiht dem gesamten Team zusätzlich <#ba.spelldmg>Verursachter Technik-SDN</> <@ba.vup>+{atk_up:0.0%}</>, wobei der <@ba.natur>Verursachte Natur-SDN</> für weitere <@ba.vup>+{duration:0}</> Sek. um zusätzliche <@ba.vup>+{atk_up:0.0%}</> steigt.",
+      "name": "Entfachte Wildheit"
+    },
+    "potential2": {
+      "description": "Stärke <@ba.vup>+{Str:0}</>, <@ba.natur>Verursachter Natur-SDN</> <@ba.vup>+{NaturalDamageIncrease:0%}</>.",
+      "name": "Wildnisexpertin"
+    },
+    "potential3": {
+      "description": "Kampffertigkeit <@ba.key>„Heftiges Scheppern“</> verstärkt: Der Bonus-SDN-Multiplikator pro Kumulierung von <@ba.key>Heiße, scharfe Naiv(k)linge</> wird auf das <@ba.vup>{atk_scale_per_weapon:0.0}</>-Fache des Ursprungswerts erhöht. Ultimative Fertigkeit <@ba.key>„Echt süßer Kombi-Klopper!“</> verbessert: SDN-Multiplikator auf das <@ba.vup>{atk_scale:0.0}</>-Fache des Originalwerts erhöht.",
+      "name": "Picknick-Vorbereitung"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>„Echt süßer Kombi-Klopper!“</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "„Hämmerli von mir“"
+    },
+    "potential5": {
+      "description": "Kombofertigkeit <@ba.key>„Flitzi-Schmetter“</> verbessert. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek. Der SDN-Multiplikator wird auf das <@ba.vup>{atk_scale:0.0}</>-Fache des Ursprungswertes erhöht. Die FP-Wiederherstellung wird auf das <@ba.vup>{atb:0.0}</>-Fache des Ursprungswertes erhöht.",
+      "name": "„Schneller Flitzi-Schmetter“"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Überrascht?",
+      "author": "LM7",
+      "description": "Du weißt immer genau, welche Geschmacksrichtung ihre Neugier stillen wird."
+    },
+    "potential3": {
+      "name": "Onboarding-Schnappschuss",
+      "author": "八雲Crack",
+      "description": "„Hör auf so gekünstelt ernst zu schauen! So erwachsen bist du nicht!“"
+    },
+    "potential5": {
+      "name": "Geheimbasis",
+      "author": "수줍(Sjoop)",
+      "description": "„Psst. Ich hab hier einen fetten Vorrat Leckereien versteckt. Nur du weißt von diesem Ort. Das soll unser Geheimnis bleiben.“"
+    }
+  }
+}

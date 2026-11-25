@@ -118,6 +118,22 @@
       "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
     ]
   },
+  "business_card_topic_bp_1_7": {
+    "name": "Thành Phố Nấm và Mật Ong",
+    "type": "Chủ Đề Hồ Sơ",
+    "desc": "Chủ đề giao diện Hồ Sơ. Chủ Đề Hồ Sơ sẽ được hiển thị ở nhiều khu vực khác nhau.",
+    "decoDesc": "Câu chuyện của chúng ta bắt đầu tại một thành phố ngập tràn vị ngọt và những tưởng tượng hoang dã.",
+    "obtainWays": [
+      "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
+    ]
+  },
+  "business_card_topic_channel_1_7": {
+    "name": "Vòng Lặp Vang Âm",
+    "type": "Chủ Đề Hồ Sơ",
+    "desc": "Chủ đề giao diện Hồ Sơ. Chủ Đề Hồ Sơ sẽ được hiển thị ở nhiều khu vực khác nhau.",
+    "decoDesc": "Âm nhạc tạo nên vũ trụ. Âm nhạc khai sinh sự sống. Âm nhạc kiến tạo vạn vật.",
+    "obtainWays": []
+  },
   "business_card_topic_chr_0009_azrila": {
     "name": "Thành Lũy Chưa Bao Giờ Bị Công Phá",
     "type": "Chủ Đề Hồ Sơ",
@@ -276,6 +292,15 @@
     "type": "Chủ Đề Hồ Sơ",
     "desc": "Chủ đề giao diện Hồ Sơ. Chủ Đề Hồ Sơ sẽ được hiển thị ở nhiều khu vực khác nhau.",
     "decoDesc": "Một đường hồ quang rực sáng, một lời nguyện luôn cháy bỏng. Anh đã ước cho thế gian mãi được thái bình.",
+    "obtainWays": [
+      "Quà Tặng: Đạt Tiềm Năng Cán Viên Cụ Thể"
+    ]
+  },
+  "business_card_topic_chr_0040_sweetpie": {
+    "name": "Căn Cứ Bí Mật",
+    "type": "Chủ Đề Hồ Sơ",
+    "desc": "Chủ đề giao diện Hồ Sơ. Chủ Đề Hồ Sơ sẽ được hiển thị ở nhiều khu vực khác nhau.",
+    "decoDesc": "\"Suỵt. Tôi đã giấu một kho bánh kẹo khổng lồ ở đây. Chỉ có bạn biết nơi này thôi. Hãy giữ bí mật giúp tôi nhé!\"",
     "obtainWays": [
       "Quà Tặng: Đạt Tiềm Năng Cán Viên Cụ Thể"
     ]
@@ -839,6 +864,13 @@
     "decoDesc": "Một chiếc bánh tinh xảo mà vẫn đẹp tự nhiên như tranh vẽ, do Perlica tự tay nướng cho bạn. Cô dùng lớp trang trí fondant để tái hiện những cung đường và phong cảnh hai người từng cùng nhau đi qua. Cô vẫn nhớ tất cả.",
     "obtainWays": []
   },
+  "item_birthday_ap_supply_2027": {
+    "name": "Bánh Sinh Nhật Năm Thứ 2",
+    "type": "Thuốc Tỉnh Táo",
+    "desc": "Dùng vật phẩm này để hồi 40 Tỉnh Táo.",
+    "decoDesc": "Một chiếc bánh được nướng cực kỳ hoàn hảo. Chỉ cần ngửi mùi thơm thôi cũng khiến bạn cảm thấy thư thái và ấm áp. Thế giới đang dần trở nên tốt đẹp hơn và chúng tôi tin rằng một hành trình tuyệt vời đang chờ đón bạn phía trước.",
+    "obtainWays": []
+  },
   "item_book_002_01": {
     "name": "Quảng Cáo Bất Động Sản",
     "type": "Vật Phẩm Nhiệm Vụ",
@@ -1348,9 +1380,9 @@
     ]
   },
   "item_bp_liquid_cleaner_1": {
-    "name": "Mẫu Bộ Xử Lý Nước Thải",
+    "name": "Mẫu Bộ Xử Lý Chất Thải",
     "type": "Lắp Ráp Mẫu Chuẩn",
-    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Bộ Xử Lý Nước Thải.",
+    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Bộ Xử Lý Chất Thải.",
     "decoDesc": "",
     "obtainWays": [
       "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
@@ -1414,6 +1446,60 @@
     "name": "Mẫu Cổng Tổng Tuyến Kho Hàng",
     "type": "Lắp Ráp Mẫu Chuẩn",
     "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng những Cổng Tổng Tuyến Kho Hàng.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_balancer_1": {
+    "name": "Mẫu Lò Cân Bằng",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Lò Cân Bằng.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_spawner_1": {
+    "name": "Mẫu Lò Sáng & Tối",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Lò Sáng & Tối.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_spawner_2": {
+    "name": "Mẫu Lò Sáng & Tối Lưỡng Cực",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Lò Sáng & Tối Lưỡng Cực.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_spawner_heng": {
+    "name": "Mẫu Trận E",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này cho phép xếp chồng các Trận L và Trận T để tạo thành Trận E.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_spawner_hui": {
+    "name": "Mẫu Trận T",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này bổ sung tùy chọn chiếu Trận T cho Lò Sáng & Tối.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_bp_magic_spawner_ming": {
+    "name": "Mẫu Trận L",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này bổ sung tùy chọn chiếu Trận L cho Lò Sáng & Tối.",
     "decoDesc": "",
     "obtainWays": [
       "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
@@ -1734,6 +1820,15 @@
       "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
     ]
   },
+  "item_bp_wonder_supply_port_1": {
+    "name": "Mẫu Cổng Tái Thiết Cung Ứng",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Mẫu này cho phép Lõi Tự Động Hóa Giao Thức xây dựng Cổng Tái Thiết Cung Ứng.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
   "item_bp_xiranite_oven_1": {
     "name": "Mẫu Lò Rèn Bầu Trời",
     "type": "Lắp Ráp Mẫu Chuẩn",
@@ -2022,6 +2117,15 @@
       "Phần Thưởng: Thẻ Giao Thức"
     ]
   },
+  "item_case_wpn_selfselect_bp_8": {
+    "name": "Tiếp Tế Vũ Khí: Xứ Nấm",
+    "type": "Thùng",
+    "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
+    "decoDesc": "Một lựa chọn tiếp tế với rất nhiều vũ khí. Hầu hết binh lính tham gia Cuộc Chiến Aggeloi II lần thứ hai đều thành thạo rất nhiều vũ khí đến mức có thể nhặt bất kỳ thứ gì từ đây và vẫn tung ra một trận chiến cực kỳ ấn tượng.",
+    "obtainWays": [
+      "Phần Thưởng: Thẻ Giao Thức"
+    ]
+  },
   "item_case_wpn_selfselect_common_advlevel": {
     "name": "Tiếp Tế Vũ Khí Chọn Lọc",
     "type": "Thùng",
@@ -2171,6 +2275,24 @@
       "Quà Tặng Vũ Khí"
     ]
   },
+  "item_case_wpn_selfselect_gahca_1_7_1": {
+    "name": "Thùng Cấp VK: Lữ Khách Thảnh Thơi",
+    "type": "Thùng",
+    "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
+    "decoDesc": "Một thùng hàng nặng dán lớp niêm phong cực kỳ kín. Các Kỹ Sư Kho Vũ Khí cho rằng \"Mục đích khi cung cấp nhiều lựa chọn vũ khí khác nhau là để đảm bảo các hoạt động tác chiến trên chiến trường an toàn hơn\". Và thế là họ chất vào thùng các loại vũ khí mang phong cách của một Lữ Khách Thảnh Thơi.",
+    "obtainWays": [
+      "Quà Tặng Vũ Khí"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_aglina": {
+    "name": "Thùng Cấp VK: Lữ Khách Bồng Bềnh",
+    "type": "Thùng",
+    "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
+    "decoDesc": "Một thùng hàng nặng dán lớp niêm phong cực kỳ kín. Các Kỹ Sư Kho Vũ Khí cho rằng \"Mục đích khi cung cấp nhiều lựa chọn vũ khí khác nhau là để đảm bảo các hoạt động tác chiến trên chiến trường an toàn hơn\". Và thế là họ chất vào thùng các loại vũ khí mang phong cách của một Lữ Khách Bồng Bềnh.",
+    "obtainWays": [
+      "Quà Tặng Vũ Khí"
+    ]
+  },
   "item_case_wpn_selfselect_gahca_c_1": {
     "name": "Thùng Cấp VK: Băng Cứng",
     "type": "Thùng",
@@ -2221,6 +2343,15 @@
     "type": "Thùng",
     "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
     "decoDesc": "Một thùng hàng nặng dán lớp niêm phong cực kỳ kín. Các Kỹ Sư Kho Vũ Khí cho rằng \"Mục đích khi cung cấp nhiều lựa chọn vũ khí khác nhau là để đảm bảo các hoạt động tác chiến trên chiến trường an toàn hơn\". Và thế là họ chất vào thùng các loại vũ khí mang dáng dấp của Nhánh Non.",
+    "obtainWays": [
+      "Quà Tặng Vũ Khí"
+    ]
+  },
+  "item_case_wpn_selfselect_gahca_wulfa": {
+    "name": "Thùng Cấp VK: Vuốt Đỏ",
+    "type": "Thùng",
+    "desc": "Mở để chọn và nhận một vũ khí có trong thùng.",
+    "decoDesc": "Một thùng hàng nặng dán lớp niêm phong cực kỳ kín. Các Kỹ Sư Kho Vũ Khí cho rằng \"Mục đích khi cung cấp nhiều lựa chọn vũ khí khác nhau là để đảm bảo các hoạt động tác chiến trên chiến trường an toàn hơn\". Và thế là họ chất vào thùng các loại vũ khí mang phong cách nanh vuốt đỏ thẫm.",
     "obtainWays": [
       "Quà Tặng Vũ Khí"
     ]
@@ -2313,18 +2444,25 @@
     "decoDesc": "Một hộp bánh nhỏ có hình dáng giống người bạn đồng hành thân thiết của Argent Flow. Mỗi chiếc bánh lại mang một thần thái khác nhau. Có chiếc trông vui vẻ, có chiếc lại kiêu kỳ. Cả hộp bánh là màn trình diễn bắt mắt của kỹ thuật làm bánh tinh tế và thiết kế khéo léo, cùng nhau phi nước đại.",
     "obtainWays": []
   },
-  "item_char_ap_supply_tangtang": {
-    "name": "Cánh Khô",
+  "item_char_ap_supply_sweetpie": {
+    "name": "Đống Waffle Mật Ong",
     "type": "Thuốc Tỉnh Táo",
     "desc": "Dùng vật phẩm này để hồi 40 Tỉnh Táo.",
-    "decoDesc": "Được phơi khô kỳ công và chế biến qua vô số công đoạn khắc nghiệt, kéo dài gần hai tháng. Chỉ riêng món ăn vặt này thôi, khi nhai đã lan tỏa vị mặn ngọt đậm đà đặc trưng của vây cá. Những thứ bắt đầu đắng chát và khó nhai thường kết thúc có hậu. Đó là điều Tangtang muốn chia sẻ với bạn.",
+    "decoDesc": "Waffle siêu ngọt, khẩu phần siêu hào phóng, lại còn đủ vị ngon mê ly.",
+    "obtainWays": []
+  },
+  "item_char_ap_supply_tangtang": {
+    "name": "Vây Khô",
+    "type": "Thuốc Tỉnh Táo",
+    "desc": "Dùng vật phẩm này để hồi 40 Tỉnh Táo.",
+    "decoDesc": "Được phơi khô kỳ công và chế biến qua vô số công đoạn khắc nghiệt, kéo dài gần hai tháng. Chỉ riêng món ăn vặt này thôi, khi nhai đã lan tỏa vị ngọt đậm đà đặc trưng của vây. Những thứ bắt đầu đắng chát và khó nhai thường kết thúc có hậu. Đó là điều Tangtang muốn chia sẻ với bạn.",
     "obtainWays": []
   },
   "item_char_ap_supply_typhoea": {
-    "name": "Cá Muối Samivegric",
+    "name": "Vây Muối Samivegric",
     "type": "Thuốc Tỉnh Táo",
     "desc": "Dùng vật phẩm này để hồi 40 Tỉnh Táo.",
-    "decoDesc": "Cá muối đặc sản của Samivegr. Hương vị của món này khá độc đáo, nhưng nếu được sơ chế và chế biến đúng cách, vị ngon đậm đà mà nó mang lại sẽ khó món nào sánh bằng.",
+    "decoDesc": "Vây muối đặc sản của Samivegr. Hương vị của món này khá độc đáo, nhưng nếu được sơ chế và chế biến đúng cách, vị ngon đậm đà mà nó mang lại sẽ khó món nào sánh bằng.",
     "obtainWays": []
   },
   "item_char_ap_supply_wulfa": {
@@ -2404,6 +2542,13 @@
     "type": "Thùng",
     "desc": "Chứa một bộ trang bị đã được chế tác tối đa, phù hợp với cán viên được chỉ định. Thùng Phòng Thủ sẽ tự động mở khi nhận được. Trang bị bên trong sẽ được lưu vào Kho Đồ Giá Trị.",
     "decoDesc": "Các Kỹ Sư Kho Vũ Khí đã dày công chuẩn bị gói trang bị phòng vệ loại α này, bao gồm những món trang bị phù hợp với Cán Viên Argent Flow.",
+    "obtainWays": []
+  },
+  "item_char_equip_supply_sweetpie": {
+    "name": "Thùng Trang Bị Phòng Vệ Kho Vũ Khí α: Lãng Khách Hoang Địa",
+    "type": "Thùng",
+    "desc": "Chứa một bộ trang bị đã được chế tác tối đa, phù hợp với cán viên được chỉ định. Thùng Phòng Thủ sẽ tự động mở khi nhận được. Trang bị bên trong sẽ được lưu vào Kho Đồ Giá Trị.",
+    "decoDesc": "Các Kỹ Sư Kho Vũ Khí đã dày công chuẩn bị gói trang bị phòng vệ loại α này, bao gồm những món trang bị phù hợp với Cán Viên Kay.",
     "obtainWays": []
   },
   "item_char_equip_supply_typhoea": {
@@ -2730,7 +2875,7 @@
     "name": "Tín Vật Của Alesh",
     "type": "Tín vật Cán Viên",
     "desc": "Tăng Tiềm Năng Của Alesh.",
-    "decoDesc": "Một mồi câu sống động như thật. Đây là chiêu trò mới của Alesh, một chiêu trò toát ra sức hấp dẫn chết người đối với những con cá săn mồi hung dữ. Không ai biết con nào sẽ cắn câu tiếp theo.",
+    "decoDesc": "Một mồi câu sống động như thật. Đây là chiêu trò mới của Alesh, một chiêu trò toát ra sức hấp dẫn chết người đối với những con vây săn mồi hung dữ. Không ai biết con nào sẽ cắn câu tiếp theo.",
     "obtainWays": [
       "Quà Tặng: Cán Viên Mới Gia Nhập"
     ]
@@ -2861,6 +3006,15 @@
       "Quà Tặng: Cán Viên Mới Gia Nhập"
     ]
   },
+  "item_charpotentialup_chr_0040_sweetpie": {
+    "name": "Tín Vật của Kay",
+    "type": "Tín vật Cán Viên",
+    "desc": "Tăng tiềm năng của Kay.",
+    "decoDesc": "Một thanh đao sắt vừa được rèn xong. Tay nghề (hoặc sự thiếu hụt kỹ năng) của thợ rèn hiện lên khá rõ ràng qua bề mặt lồi lõm, không đều và lưỡi dao cùn mòn. Tuy vậy, đây vẫn là món vũ khí quý giá trong kho vũ khí của Kay.",
+    "obtainWays": [
+      "Quà Tặng: Cán Viên Mới Gia Nhập"
+    ]
+  },
   "item_charpotentialup_chr_9000_endmin": {
     "name": "Tín Vật của Endministrator",
     "type": "Tín vật Cán Viên",
@@ -2906,6 +3060,15 @@
       "Thám Hiểm Và Thu Thập"
     ]
   },
+  "item_collection_sweetpie_mushroom": {
+    "name": "Nấm Lãng Mạn",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Nấm Lãng Mạn",
+    "decoDesc": "Một loại nấm biểu trưng cho sự lãng mạn.",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
   "item_collection_trstar": {
     "name": "Talosite",
     "type": "Vật Phẩm Nhiệm Vụ",
@@ -2920,6 +3083,27 @@
     "type": "Vật liệu",
     "desc": "Lọ kim loại được tạo ra từ quy trình xử lý Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường dùng để đựng chất lỏng.",
     "decoDesc": "Lọ Đồng khá hiếm trên thị trường vì đồng là kim loại đắt hơn sắt.",
+    "obtainWays": []
+  },
+  "item_copper_bright": {
+    "name": "Lucidolite",
+    "type": "Vật liệu",
+    "desc": "Hợp kim được tạo ra từ quy trình xử lý Đồng Loại E và Xiranite Loại E tại Lò Cân Bằng. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Hãy để khí sáng và khí đục đã dung hợp đặc tính của đồng được nạp vào Xiranite. Hãy để tất cả mọi người chiêm ngưỡng chân khí rực rỡ của lò rèn soi sáng vùng đất này.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cmpt": {
+    "name": "Mảnh Lucidolite",
+    "type": "Vật liệu",
+    "desc": "Một bộ phận thiết bị được tạo ra từ quy trình xử lý Lucidolite. Có thể dùng để sản xuất vật phẩm khác.",
+    "decoDesc": "Mảnh Lucidolite có nhiều công dụng khác nhau.",
+    "obtainWays": []
+  },
+  "item_copper_bright_cube": {
+    "name": "Gạch Năng Lượng Lucidolite",
+    "type": "Vật liệu",
+    "desc": "Một viên gạch năng lượng được sản xuất bằng cách bọc Bột Originium Đặc cho Mảnh Lucidolite. Có thể sử dụng cho việc tái thiết Khu Cấm Bắc Võ Lăng.",
+    "decoDesc": "Một viên gạch năng lượng quan trọng được niêm phong bằng Lucidolite. Cần được bảo quản đúng cách vì điều kiện bảo quản không phù hợp có thể gây ra những vụ nổ mạnh.",
     "obtainWays": []
   },
   "item_copper_cmpt": {
@@ -2964,11 +3148,46 @@
     "decoDesc": "Mảnh Huyết Đồng có nhiều công dụng khác nhau.",
     "obtainWays": []
   },
+  "item_copper_enr_heng": {
+    "name": "Đồng Loại E",
+    "type": "Vật liệu",
+    "desc": "Một dạng Đồng đã trải qua quá trình chuyển hóa Trận E. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Đồng Điều Hòa mang đặc tính cân bằng (E) ở mức độ cao. Cầm một thỏi đồng cân bằng trên tay dường như mang lại cảm giác thư thái, dễ chịu (dù cũng có thể đây chỉ là hiệu ứng giả dược).",
+    "obtainWays": []
+  },
+  "item_copper_hui": {
+    "name": "Đồng Loại T",
+    "type": "Vật liệu",
+    "desc": "Một dạng Đồng đã trải qua quá trình chuyển hóa Trận T. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Đồng được dung hợp các đặc tính đục (T), nặng hơn và có độ dẻo cao hơn.",
+    "obtainWays": []
+  },
+  "item_copper_hui_cmpt": {
+    "name": "Mảnh Đồng Loại T",
+    "type": "Vật liệu",
+    "desc": "Một bộ phận thiết bị được tạo ra từ quy trình xử lý Đồng Loại T. Có thể dùng để sản xuất vật phẩm khác.",
+    "decoDesc": "Mảnh Đồng Loại T có nhiều công dụng khác nhau.",
+    "obtainWays": []
+  },
   "item_copper_jar": {
     "name": "Bình Chứa Đồng",
     "type": "Vật liệu",
     "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
     "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
+    "obtainWays": []
+  },
+  "item_copper_ming": {
+    "name": "Đồng Loại L",
+    "type": "Vật liệu",
+    "desc": "Một dạng Đồng đã trải qua quá trình chuyển hóa Trận L. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Đồng được dung hợp các thuộc tính sáng (L), nhẹ hơn và có độ bền kéo cao hơn.",
+    "obtainWays": []
+  },
+  "item_copper_ming_cmpt": {
+    "name": "Mảnh Đồng Loại L",
+    "type": "Vật liệu",
+    "desc": "Một bộ phận thiết bị được tạo ra từ quy trình xử lý Đồng Loại L. Có thể dùng để sản xuất vật phẩm khác.",
+    "decoDesc": "Mảnh Đồng Loại L có nhiều công dụng khác nhau.",
     "obtainWays": []
   },
   "item_copper_nugget": {
@@ -2994,6 +3213,20 @@
     "type": "Vật liệu",
     "desc": "Đồng dạng nghiền và bột. Có thể được sử dụng để sản xuất các vật phẩm khác.",
     "decoDesc": "Các sản phẩm làm từ Đồng nghiền mịn sẽ có kết cấu đồng nhất hơn.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_hui": {
+    "name": "Linh Kiện Tích Hợp Nặng Bọc Đồng",
+    "type": "Vật liệu",
+    "desc": "Một linh kiện được sản xuất bằng cách bọc Xiranite Nặng cho Mảnh Đồng Loại T. Có thể sử dụng cho dự án Tái Thiết Khu Cấm Bắc Võ Lăng.",
+    "decoDesc": "Một linh kiện tích hợp bọc đồng quan trọng. Nặng và chống ăn mòn, linh kiện tích hợp này có thể hoạt động trong môi trường khắc nghiệt mà không bị hỏng hóc.",
+    "obtainWays": []
+  },
+  "item_copper_xiranite_ming": {
+    "name": "Linh Kiện Luminarite Bọc Đồng",
+    "type": "Vật liệu",
+    "desc": "Một linh kiện được sản xuất bằng cách bọc Luminarite cho Mảnh Đồng Loại L. Có thể sử dụng cho dự án Tái Thiết Khu Cấm Bắc Võ Lăng.",
+    "decoDesc": "Một linh kiện bọc đồng quan trọng. Nhẹ, bền và có thể hoạt động trong nhiều môi trường khác nhau.",
     "obtainWays": []
   },
   "item_corp1_animal_1": {
@@ -3371,6 +3604,27 @@
     "type": "Thiết Bị Cá Nhân",
     "desc": "Đặt vào ngăn thiết bị cá nhân trong Túi để sau khi vào chiến đấu tại Võ Lăng, tự hồi 10 Điểm Kỹ Năng mỗi giây trong 5 giây.",
     "decoDesc": "Một cuộn tranh cổ của Si, dài sáu thước, khắc họa phong cảnh tươi sáng, mỹ lệ, khiến lòng người phấn chấn.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_1": {
+    "name": "Nấm Hậm Hực",
+    "type": "Thiết Bị Cá Nhân",
+    "desc": "Đặt vào ngăn thiết bị cá nhân trong Túi để nhận +<@ba.vup>100%</> ST Thuốc Nổ Công Nghiệp trong khu vực Thành Phố Võ Lăng.",
+    "decoDesc": "Trong bóng tối bí mật, mọi oán hận của nó cứ âm ỉ, cố gắng kích nổ tất cả các loại thuốc nổ công nghiệp trong túi của bạn.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_2": {
+    "name": "Nấm Giận Dữ",
+    "type": "Thiết Bị Cá Nhân",
+    "desc": "Đặt vào ngăn thiết bị cá nhân trong Túi để nhận +<@ba.vup>300%</> ST Thuốc Nổ Công Nghiệp trong khu vực Thành Phố Võ Lăng.",
+    "decoDesc": "Gầm rú dữ dội như núi lửa phun trào, nó cố gắng kích nổ tất cả các loại thuốc nổ công nghiệp trong túi của bạn.",
+    "obtainWays": []
+  },
+  "item_device_buff_mushroom_3": {
+    "name": "Nấm Cuồng Nộ",
+    "type": "Thiết Bị Cá Nhân",
+    "desc": "Đặt vào ngăn thiết bị cá nhân trong Túi để nhận +<@ba.vup>500%</> ST Thuốc Nổ Công Nghiệp trong khu vực Thành Phố Võ Lăng.",
+    "decoDesc": "TRỜI ƠI! SẮP NỔ BÙM RỒI!",
     "obtainWays": []
   },
   "item_device_buff_snow_1": {
@@ -3958,7 +4212,7 @@
   "item_drop_klcaps_1": {
     "name": "Mảnh Đao Cán Dài",
     "type": "Vật liệu",
-    "desc": "Vật liệu thu thập từ Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ và Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm bị đánh bại. Có thể dùng để chế biến thực phẩm và thuốc thượng hạng (Linh Dược & Mỹ Vị).",
+    "desc": "Có thể thu thập từ Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ và Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm bị đánh bại. Có thể sử dụng tại Nút Kho Hàng để Đóng Gói Và Giao Hàng.",
     "decoDesc": "Mảnh vỡ của món vũ khí cán dài này đã hư hại nặng nề, tưởng chừng có thể tan rã hoàn toàn bất cứ lúc nào. Cần sử dụng vật chứa chuyên dụng để duy trì hình dạng hiện tại của nó. Dẫu vậy, đây vẫn là một mẫu vật quan trọng phục vụ công tác nghiên cứu Bóng Nhiễm Khuẩn.",
     "obtainWays": [
       "Xác Suất Xuất Hiện: Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ"
@@ -4025,6 +4279,26 @@
     "decoDesc": "Nidwyrm có \"râu\" mọc trên đầu. Những phần phụ này trông giống như rễ cây và có chức năng như cơ quan xúc giác. Những sợi râu này sẽ rụng tự nhiên khi mùa xuân chuyển sang mùa hè. Mặc dù giá trị dinh dưỡng của chúng có hạn nhưng lại có kết cấu vô cùng tuyệt vời.",
     "obtainWays": [
       "Xác Suất Xuất Hiện: Nidwyrm Đào Hầm"
+    ]
+  },
+  "item_drop_mushbug_1": {
+    "name": "Bụi Vua Nấm",
+    "type": "Vật liệu",
+    "desc": "Có thể thu thập từ Shroomkrusher Nidwyrm và Hoàng Tử Nấm Đùi Gà bị đánh bại. Có thể dùng để chế biến thực phẩm và thuốc thượng hạng (Linh Dược & Mỹ Vị).",
+    "decoDesc": "Một lượng lớn bào tử tích tụ bên trong các khe mang và nếp gấp mềm ở vai của Hoàng Tử Nấm Đùi Gà. Bụi bào tử sẽ vương vãi ra xung quanh mỗi khi Hoàng Tử Nấm Đùi Gà cọ đầu.",
+    "obtainWays": [
+      "Xác Suất Xuất Hiện: Shroomkrusher Nidwyrm",
+      "Xác Suất Xuất Hiện: Hoàng Tử Nấm Đùi Gà"
+    ]
+  },
+  "item_drop_mushro_1": {
+    "name": "Khối Sợi Nấm Sắc Màu",
+    "type": "Vật liệu",
+    "desc": "Có thể thu thập từ Quyền Thủ Bào Tử Shroomkrusher và Vệ Binh Bào Tử Shroomkrusher bị đánh bại. Có thể sử dụng tại nút kho hàng để Đóng Gói Và Giao Hàng.",
+    "decoDesc": "Một khối sợi nấm có màu và sắc độ kỳ lạ. Không thể xác định khối này tách ra từ đầu hay vũ khí của Shroomkrusher.",
+    "obtainWays": [
+      "Xác Suất Xuất Hiện: Quyền Thủ Bào Tử Shroomkrusher",
+      "Xác Suất Xuất Hiện: Vệ Binh Bào Tử Shroomkrusher"
     ]
   },
   "item_drop_sandb_1": {
@@ -4134,6 +4408,15 @@
     "obtainWays": [
       "Mua: Điều Phối Vật Tư Võ Lăng",
       "Nâng Cấp Trạm Điều Phối Vật Tư"
+    ]
+  },
+  "item_equip_prime_enhance_wuling": {
+    "name": "Chất Lỏng Chế Tác Origo Mk I",
+    "type": "Chất Lỏng Chế Tác",
+    "desc": "Một vật liệu hiếm dùng để chế tác trang bị. Đảm bảo thành công cho 1 lần chế tác trang bị Võ Lăng mà không cần sử dụng Chất Xúc Tác Chế Tác Trang Bị.",
+    "decoDesc": "Một loại chất lỏng chế tác Mk I cực kỳ hiếm, sử dụng nguyên liệu có độ hiếm cao, khó có thể thay thế. Chất lỏng này đảm bảo thành công cho một lần chế tác. Một lượng lớn kim loại tẩm Originium đã bị tiêu thụ trong Cuộc Chiến Aggeloi. May mắn thay, giờ đây mọi người lại có cơ hội chiêm ngưỡng ánh sáng lấp lánh của chúng một lần nữa.",
+    "obtainWays": [
+      "Tái Thiết Khu Cấm"
     ]
   },
   "item_equip_script_1": {
@@ -4428,6 +4711,15 @@
   },
   "item_factech_wuling_oven_amount_4": {
     "name": "Mở Rộng Lò Rèn IV",
+    "type": "Lắp Ráp Mẫu Chuẩn",
+    "desc": "Cho phép đặt thêm 4 Lò Rèn Bầu Trời tại Võ Lăng.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Nghiên Cứu: Công Nghệ Sơ Đồ Nhà Máy Khu Phức Hợp"
+    ]
+  },
+  "item_factech_wuling_oven_amount_5": {
+    "name": "Mở Rộng Lò Rèn V",
     "type": "Lắp Ráp Mẫu Chuẩn",
     "desc": "Cho phép đặt thêm 4 Lò Rèn Bầu Trời tại Võ Lăng.",
     "decoDesc": "",
@@ -5002,6 +5294,20 @@
     "decoDesc": "Phải mặc trang bị bảo hộ đúng quy cách khi vận hành Máy Chuyển Hóa Khí Rắn. Đừng để những làn hơi đỏ trông có vẻ vô hại kia đánh lừa. Chúng có thể thiêu cháy cả linh hồn con người.",
     "obtainWays": []
   },
+  "item_gas_copper_bright_clear": {
+    "name": "Khí Lucidolite Sạch",
+    "type": "Vật liệu",
+    "desc": "Sản phẩm thu được từ quá trình phản ứng hóa học giữa Khí Đồng Loại E và Khí Xiranite Loại E. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Khí Lucidolite sạch và tinh khiết. Cầm một bình chứa khí này tưởng như được nâng bổng bởi những làn mây lơ đãng.",
+    "obtainWays": []
+  },
+  "item_gas_copper_bright_turbid": {
+    "name": "Khí Lucidolite Đục",
+    "type": "Vật liệu",
+    "desc": "Sản phẩm phụ từ quá trình phản ứng hóa học giữa Khí Đồng Loại E và Khí Xiranite Loại E. Có thể xử lý tại Bộ Xử Lý Chất Thải để xả thải ra ngoài hoặc tinh chế tại Máy Tinh Chế.",
+    "decoDesc": "Khí Lucidolite đục thô. Cầm một bình chứa khí này trên tay mà tưởng như đang giữ cả một ngọn núi.",
+    "obtainWays": []
+  },
   "item_gas_copper_enr": {
     "name": "Khí Huyết Đồng",
     "type": "Vật liệu",
@@ -5014,6 +5320,13 @@
     "type": "Vật liệu",
     "desc": "Thể khí của Nham Đồng. Có thể sử dụng để sản xuất các vật liệu khác.",
     "decoDesc": "Một số nhà khoa học tin rằng Khí Nham Đồng có thể được vũ khí hóa. Chỉ cần nhẹ nhàng phóng thích nó, rồi nhìn kẻ địch ở cuối hướng gió tan rã với tốc độ có thể thấy bằng mắt thường.",
+    "obtainWays": []
+  },
+  "item_gas_copper_enr_heng": {
+    "name": "Khí Đồng Loại E",
+    "type": "Vật liệu",
+    "desc": "Thể khí của Đồng Loại E. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Khí Đồng Loại E rất ổn định. Việc dung hợp các thuộc tính sáng (L) và đục (T) vào đồng đã đạt được trạng thái cân bằng hoàn hảo (E) trong kim loại và mang lại tính lưu động cao hơn cho chất khí này.",
     "obtainWays": []
   },
   "item_gas_inert": {
@@ -5052,6 +5365,13 @@
     "decoDesc": "Để bảo toàn “cân bằng động” nội tại của Xiranite Nặng trong quá trình chuyển hóa, các kỹ sư đã trang bị thêm cho hệ thống thiết bị các mô-đun giám sát và điều tiết theo thời gian thực.",
     "obtainWays": []
   },
+  "item_gas_xiranite_enr_heng": {
+    "name": "Khí Xiranite Loại E",
+    "type": "Vật liệu",
+    "desc": "Thể khí của Xiranite Loại E. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Khí Xiranite Loại E là dạng ổn định của Khí Xiranite. Việc dung hợp các thuộc tính sáng (L) và đục (T) vào Xiranite đã đạt được trạng thái cân bằng hoàn hảo (E), khiến Khí Xiranite \"đậm đặc\" càng nặng hơn.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_acid": {
     "name": "Bình Chứa Đồng (Khí Axit)",
     "type": "Vật liệu",
@@ -5066,6 +5386,20 @@
     "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
     "obtainWays": []
   },
+  "item_gasjar_copper_gas_copper_bright_clear": {
+    "name": "Bình Chứa Đồng (Khí Lucidolite Sạch)",
+    "type": "Vật liệu",
+    "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
+    "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_bright_turbid": {
+    "name": "Bình Chứa Đồng (Khí Lucidolite Đục)",
+    "type": "Vật liệu",
+    "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
+    "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
+    "obtainWays": []
+  },
   "item_gasjar_copper_gas_copper_enr": {
     "name": "Bình Chứa Đồng (Khí Huyết Đồng)",
     "type": "Vật liệu",
@@ -5075,6 +5409,13 @@
   },
   "item_gasjar_copper_gas_copper_enr2": {
     "name": "Bình Chứa Đồng (Khí Nham Đồng)",
+    "type": "Vật liệu",
+    "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
+    "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_copper_enr_heng": {
+    "name": "Bình Chứa Đồng (Khí Đồng Loại E)",
     "type": "Vật liệu",
     "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
     "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
@@ -5103,6 +5444,13 @@
   },
   "item_gasjar_copper_gas_xiranite_enr": {
     "name": "Bình Chứa Đồng (Khí Xiranite Đậm Đặc)",
+    "type": "Vật liệu",
+    "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
+    "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
+    "obtainWays": []
+  },
+  "item_gasjar_copper_gas_xiranite_enr_heng": {
+    "name": "Bình Chứa Đồng (Khí Xiranite Loại E)",
     "type": "Vật liệu",
     "desc": "Một bình chứa áp suất được đúc từ Đồng. Có thể dùng để sản xuất vật phẩm khác. Thường được dùng để lưu trữ khí.",
     "decoDesc": "Một vật chứa kim loại tinh xảo từng được những người đam mê luyện kim săn đón.",
@@ -5209,6 +5557,16 @@
       "Nâng Cấp Trạm Điều Phối Vật Tư"
     ]
   },
+  "item_gemcustomization_wuling_4": {
+    "name": "Bộ Dụng Cụ Khắc Nhiều Dòng Võ Lăng",
+    "type": "Bộ Dụng Cụ Khắc Tinh Chất",
+    "desc": "Sử dụng để nhận một tinh chất với 3 chỉ số tùy chỉnh.",
+    "decoDesc": "Một bộ khắc để tùy chỉnh tinh chất.\nGiao Thức Công Nghệ đã thực hiện những cải tiến toàn diện giúp mở rộng ứng dụng của nó trong lĩnh vực máy móc chính xác. Việc này đã dẫn đến sự phát triển thành công của bộ dụng cụ khắc nhiều dòng.",
+    "obtainWays": [
+      "Mua: Điều Phối Vật Tư Võ Lăng",
+      "Nâng Cấp Trạm Điều Phối Vật Tư"
+    ]
+  },
   "item_gift_jinlong_1": {
     "name": "Hộp Trà Eureka",
     "type": "Quà",
@@ -5259,6 +5617,26 @@
       "Nâng Cấp Trạm Điều Phối Vật Tư"
     ]
   },
+  "item_gift_jinlong_14": {
+    "name": "WOW-FFLE: Đại Tiệc Kết Hợp",
+    "type": "Quà",
+    "desc": "Đưa cho cán viên thích [Sáng Tạo] và/hoặc [Phong Cách Sống] để tăng độ tín nhiệm với họ.",
+    "decoDesc": "Một chiếc bánh waffle mật ong hương vị mới, được Lẩu LA-ME-DA và Hồng Vị chung tay chế biến. Sự kết hợp độc đáo của các hương vị cùng nguyên liệu hoàn toàn tự nhiên giàu dẫn xuất nấm sinh học giúp hỗ trợ tiêu hóa. Món ăn này có tiềm năng trở thành một món ăn vặt vô cùng được yêu thích.",
+    "obtainWays": [
+      "Mua: Điều Phối Vật Tư Võ Lăng",
+      "Nâng Cấp Trạm Điều Phối Vật Tư"
+    ]
+  },
+  "item_gift_jinlong_15": {
+    "name": "Khối Đại Đoàn Kết",
+    "type": "Quà",
+    "desc": "Đưa cho các cán viên thích [Thể Thao] và/hoặc [Công Nghệ] để tăng độ tín nhiệm với họ.",
+    "decoDesc": "\"Tiến lên, hỡi các công nhân! Hãy vượt núi băng sông! Hãy để tiếng còi hơi ngân vang khắp miền hoang dã! Nơi chúng ta đi qua sẽ hiện lên các con đường, nhà máy và tương lai cho toàn nhân loại!\"",
+    "obtainWays": [
+      "Mua: Điều Phối Vật Tư Võ Lăng",
+      "Nâng Cấp Trạm Điều Phối Vật Tư"
+    ]
+  },
   "item_gift_jinlong_2": {
     "name": "Tạ Tay Yinglung",
     "type": "Quà",
@@ -5300,10 +5678,10 @@
     ]
   },
   "item_gift_jinlong_6": {
-    "name": "Cá và Khoai Chiên",
+    "name": "Vây và Khoai Chiên",
     "type": "Quà",
     "desc": "Đưa cho cán viên thích [Phong Cách Sống] và/hoặc [Văn Hóa] để tăng độ tín nhiệm với họ.",
-    "decoDesc": "\"Khoai hữu cơ, cá tươi vừa đánh bắt! Tẩm ướp bằng công thức bí truyền, gọi món mới chiên nóng tại chỗ - hương vị Victoria cổ truyền chính hiệu sắp hiện diện trên Đại Lộ Phương Hưng của Thành Phố Võ Lăng! Lần đầu tiên từ trước đến nay! Trời ạ, đúng là chuyện khó tin! Chờ ngày này cũng lâu lắm rồi!\"",
+    "decoDesc": "\"Khoai hữu cơ, vây tươi vừa đánh bắt! Tẩm ướp bằng công thức bí truyền, gọi món mới chiên nóng tại chỗ - hương vị Victoria cổ truyền chính hiệu sắp hiện diện trên Đại Lộ Phương Hưng của Thành Phố Võ Lăng! Lần đầu tiên từ trước đến nay! Trời ạ, đúng là chuyện khó tin! Chờ ngày này cũng lâu lắm rồi!\"",
     "obtainWays": [
       "Mua: Điều Phối Vật Tư Võ Lăng",
       "Nâng Cấp Trạm Điều Phối Vật Tư"
@@ -5531,7 +5909,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Một ấm trà nghiền hảo hạng. Trà nghiền xanh ngọc được pha cùng dòng nước cuồn cuộn, hương thơm lan xa cả dặm.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_10": {
@@ -5540,7 +5919,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Những quả dâu chất lượng nhất thường được gọi là \"Hoàng Hôn Luân Chuyển\". Tuy vậy, ai từng nếm thứ nước ép này cũng đều thống nhất: \"Chỉ là dâu chua ở dạng lỏng thôi.\"",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_2": {
@@ -5549,7 +5929,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Có bằng chứng thực nghiệm cho thấy trẻ em thường xuyên uống sữa thường có xu hướng cao lớn hơn.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_3": {
@@ -5558,7 +5939,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "\"Không phải tôi kén chọn đâu, nhưng nước ép ngô của anh chẳng khác gì cháo ngô cả. Anh giải thích giúp tôi 'nước ép' theo anh nghĩa là gì được không?\"",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_4": {
@@ -5567,7 +5949,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Có người chê nó quá ngọt, cũng có người bảo uống nhiều sẽ bị loét dạ dày. Nhưng suy cho cùng, đây vẫn là món được ưa chuộng nhất thực đơn.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_5": {
@@ -5576,7 +5959,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Một nhúm hoa lê, gửi gắm nỗi nhớ nhung hoài niệm.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_6": {
@@ -5585,7 +5969,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Một loại rượu chưng cất nổi tiếng, bị gán nhầm là của các Kẻ Tầm Ca thuộc Trường Địa Hannabit. Rượu lướt qua cổ họng như dầu đổ lên chảo nung đỏ, cho người uống nếm trải bài học lịch sử về sự tàn khốc của Cuộc Chiến Aggeloi.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_7": {
@@ -5594,7 +5979,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Thực tế chứng minh rằng trẻ em không uống nó thường xuyên vẫn có thể cao lớn. Nhưng tại nó ngon quá, nên đành phải uống thôi, thông cảm nhé!",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_8": {
@@ -5603,7 +5989,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Liệu giọt sương nho thơm ngát này có khiến bạn nhớ về tiết trời khắc nghiệt, cảnh máu đổ và những vần thơ nơi quê nhà không?",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_9": {
@@ -5612,7 +5999,8 @@
     "desc": "Một loại đồ uống có thể phục vụ trong Quản Lý Quán Trọ. Cung cấp một số hiệu ứng nhất định khi sử dụng.",
     "decoDesc": "Được pha từ những lá trà hái tại Võ Lăng trước đợt Cao Triều Nhiễm Khuẩn. Sản lượng hạn chế khiến loại trà này đắt đỏ đến lạ.",
     "obtainWays": [
-      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\""
+      "Cửa Hàng: Quản Kho Lương \"Nghiện Việc\"",
+      "Thùng Nguyên Liệu"
     ]
   },
   "item_inn_drink_water": {
@@ -5628,7 +6016,7 @@
     "desc": "Có thể dùng cho Quản Lý Quán Trọ và mua Cải Tạo Quán Trọ.",
     "decoDesc": "Hơi thở đời thường len vào từng nhịp tất bật, lưu lại trong từng tầng hương vị.",
     "obtainWays": [
-      "Nhận được từ Quản Lý Quán Trọ"
+      "Thu Nhập Quản Lý Quán Trọ"
     ]
   },
   "item_iron_bottle": {
@@ -5703,6 +6091,13 @@
     "type": "Vật Phẩm Tiêu Hao",
     "desc": "Sử dụng vật phẩm tiêu hao này để tăng hiệu quả chiến đấu của cán viên.",
     "decoDesc": "Một món nguội ngon miệng, giòn tan và thoảng hương thanh mát. Theo lời một đầu bếp kỳ cựu ở Hongshan, vỏ càng để lâu năm, hương vị càng thêm tuyệt hảo.",
+    "obtainWays": []
+  },
+  "item_jzmonk_1_mushbug_spmushroom1_1": {
+    "name": "Bánh Waffle Kẻ Soán Vị",
+    "type": "Vật Phẩm Tiêu Hao",
+    "desc": "Định nghĩa lại cách nhìn, cách bước đi và cả thế giới xung quanh bạn.",
+    "decoDesc": "Một loại thực phẩm cố gắng bắt chước bánh waffle mật ong, nhưng lại có vị lạ của chất tạo ngọt nhân tạo. Tuy nhiên, Nấm Lắm Lời lại từ chối hé lời về tác dụng thực tế của món ăn này.",
     "obtainWays": []
   },
   "item_klbuds_1_hsfly_1_1": {
@@ -5795,7 +6190,7 @@
   "item_liquid_sewage": {
     "name": "Nước Thải",
     "type": "Vật liệu",
-    "desc": "Nước thải về cơ bản là nước chứa đủ loại chất lơ lửng và/hoặc hòa tan. Cần được xử lý tại một Bộ Xử Lý Nước Thải để không gây hại.",
+    "desc": "Nước thải về cơ bản là nước chứa đủ loại chất lơ lửng và/hoặc hòa tan. Cần được xử lý tại một Bộ Xử Lý Chất Thải để không gây hại.",
     "decoDesc": "Nước thải và các nguồn nước ô nhiễm ở hoang địa thường chứa rất nhiều chất gây ô nhiễm. Cần có công nghệ tiên tiến để làm sạch một cách hiệu quả.",
     "obtainWays": []
   },
@@ -5826,14 +6221,14 @@
   "item_liquid_xiranite_lowpoly": {
     "name": "Xircon Trơ Thải",
     "type": "Vật liệu",
-    "desc": "Dung dịch này thu được bằng cách cho Xiranite Lỏng phản ứng hóa học với Nước Thải. Dung dịch phải được xử lý tại Bộ Xử Lý Nước Thải để loại bỏ chất gây hại.",
+    "desc": "Sản phẩm phụ từ quá trình phản ứng hóa học giữa Xiranite Lỏng với Nước Thải. Dung dịch phải được xử lý tại Bộ Xử Lý Chất Thải để không gây hại.",
     "decoDesc": "Một loại Xircon Thải từ các ứng dụng đã hoàn toàn tiêu hao năng lượng của thành phần Originium. Chỉ còn một lượng nhỏ năng lượng Cự Thú bước vào trạng thái hoạt hóa. Những chất thải như vậy phần lớn có thể được coi là trơ về mặt hóa học.",
     "obtainWays": []
   },
   "item_liquid_xiranite_poly": {
     "name": "Xircon Thải",
     "type": "Vật liệu",
-    "desc": "Dung dịch này thu được bằng cách cho Xiranite Lỏng phản ứng với Nước thải. Có thể dùng để sản xuất các vật liệu khác, hoặc xử lý tại Bộ Xử Lý Nước Thải để thành vô hại.",
+    "desc": "Dung dịch này thu được bằng cách cho Xiranite Lỏng phản ứng với Nước Thải. Có thể sử dụng để sản xuất các vật liệu khác hoặc xử lý tại Bộ Xử Lý Chất Thải để không gây hại.",
     "decoDesc": "Xircon Thải là dạng Xiranite Lỏng đã bị vô hiệu hóa một phần, nhưng vẫn còn một phần nhỏ trong trạng thái hoạt hóa mạnh. Năng lượng của Originium có trong Xiranite Lỏng dần dần tiêu tan trong các ứng dụng khác nhau. Quá trình \"làm khô\" này đôi khi sẽ kích hoạt năng lượng Cự Thú còn tiềm ẩn trong Xiranite.",
     "obtainWays": []
   },
@@ -6452,6 +6847,15 @@
       "Phần Thưởng: Nhiệm Vụ"
     ]
   },
+  "item_mission_gm02m28_sample": {
+    "name": "Mẫu Phân Bón Thử Nghiệm",
+    "type": "Vật Phẩm Nhiệm Vụ",
+    "desc": "Chứa mẫu thử của một loại phân bón nguyên mẫu.",
+    "decoDesc": "Phần vật chất còn sót lại của một loại phân bón nguyên mẫu được tìm thấy ở nơi sâu nhất trong Đập Nước Cũ. Mùi hôi kinh khủng trước kia nay đã dịu đi rất nhiều.",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
   "item_mission_sm1l2m2_key": {
     "name": "Chìa Khóa Biến Dạng",
     "type": "Vật Phẩm Nhiệm Vụ",
@@ -6613,10 +7017,10 @@
     ]
   },
   "item_muck_xiranite_1": {
-    "name": "Giàu Dinh Dưỡng",
+    "name": "Bumper-Giàu Dinh Dưỡng",
     "type": "Vật liệu",
     "desc": "Một loại phân bón được tạo ra bằng cách trộn phân đà thú với Xiranite Lỏng. Có thể dùng để bón cho ô trồng trong giai đoạn sinh trưởng, giúp tăng năng suất thu hoạch.",
-    "decoDesc": "Phân bón từ phân đà thú đã qua xử lý. Có thể dùng để bón cho các luống cây trồng. \n\"Hãy rải một thanh phân bón Giàu Dinh Dưỡng lên những cánh đồng tươi đẹp của bạn! Ai có thể từ chối năng suất 88 tấn/mẫu chứ?\"",
+    "decoDesc": "Phân bón từ phân đà thú đã qua xử lý. Có thể dùng để bón cho các luống cây trồng. \n\"Hãy rải một thanh phân bón Bumper-Giàu Dinh Dưỡng lên những cánh đồng tươi đẹp của bạn! Ai có thể từ chối năng suất 88 tấn/mẫu chứ?\"",
     "obtainWays": []
   },
   "item_music_exp_tundra_1": {
@@ -6666,6 +7070,24 @@
     "type": "Đĩa Than",
     "desc": "Có thể phát bản nhạc này bằng Máy Hát MKV-I trong Phòng Tiếp Khách trên Dijiang.",
     "decoDesc": "Ánh sáng rải xuống những lùm cây Jingyu khi những chuyến bè đưa lữ khách sang sông.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
+  "item_music_exp_wuling_10": {
+    "name": "Where We Go, When We Return",
+    "type": "Đĩa Than",
+    "desc": "Có thể phát bản nhạc này bằng Máy Hát MKV-I trong Phòng Tiếp Khách trên Dijiang.",
+    "decoDesc": "Nơi nào có chốn để đi, nơi đó rồi sẽ có lúc trở về.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
+  "item_music_exp_wuling_11": {
+    "name": "Drifting Raft",
+    "type": "Đĩa Than",
+    "desc": "Có thể phát bản nhạc này bằng Máy Hát MKV-I trong Phòng Tiếp Khách trên Dijiang.",
+    "decoDesc": "Trên chiếc bè trôi dạt, ta theo dòng bước vào mùa thu.",
     "obtainWays": [
       "Trao Đổi Talosite"
     ]
@@ -7048,7 +7470,7 @@
     "name": "Mầm Lá Kim Gai",
     "type": "Vật liệu",
     "desc": "Một loại cây đặc biệt chỉ mọc ở nơi hoang dã. Nghiền để lấy nguyên liệu chế biến thực phẩm hoặc các sản phẩm khác.",
-    "decoDesc": "Lá có gai của cây Mầm Lá Kim có thể dùng để câu cá. Chỉ cần vài bước đơn giản và uốn cong là có thể tạo ra một chiếc lưỡi câu rất hiệu quả.",
+    "decoDesc": "Lá có gai của cây Mầm Lá Kim có thể dùng để câu vây. Chỉ cần vài bước đơn giản và uốn cong là có thể tạo ra một chiếc lưỡi câu rất hiệu quả.",
     "obtainWays": [
       "Xác Suất Xuất Hiện: Mầm Lá Kim",
       "Trồng cây tại Nông Trại Sinh Thái"
@@ -7068,6 +7490,15 @@
     "decoDesc": "Cây Mầm Lá Kim có thể được nghiền thành dạng bột. Sau đó phải hòa tan và đóng gói trong hộp đựng để sử dụng dễ dàng hơn.",
     "obtainWays": []
   },
+  "item_plant_grass_spmushroom_1": {
+    "name": "Nấm Lắm Lời",
+    "type": "Vật liệu",
+    "desc": "Một loại nấm đặc biệt mọc ở Đập Nước Cũ. Có thể dùng để làm bánh waffle mật ong.",
+    "decoDesc": "\"Bạn biết đấy, tôi đã làm sáng tỏ bản chất thực sự của vũ trụ và mọi thứ giữa trời và đất, bởi vì bạn biết đấy, tất cả mọi thứ đều liên quan đến tôi và phần còn lại của thế giới thực, tôi đã hiểu hết rồi, vậy bạn còn chờ gì nữa, hãy bắt đầu cắn tôi đi! LÀM ƠN, hãy ăn nhanh lên, vì bạn chắc chắn sẽ không hối hận đâu, tôi hứa đấy!\"",
+    "obtainWays": [
+      "Đập Nước Cũ"
+    ]
+  },
   "item_plant_moss_1": {
     "name": "Hoa Kiều Mạch",
     "type": "Vật liệu",
@@ -7081,7 +7512,7 @@
   "item_plant_moss_2": {
     "name": "Cam",
     "type": "Vật liệu",
-    "desc": "Một loại trái cây có thể được hái từ nơi hoang dã hoặc được trồng trong Khu Phức Hợp. Nghiền để làm thực phẩm hoặc nguyên liệu cho các sản phẩm khác.",
+    "desc": "Một loại trái cây có thể được hái từ nơi hoang địa hoặc được trồng trong Khu Phức Hợp. Nghiền để làm thực phẩm hoặc nguyên liệu cho các sản phẩm khác.",
     "decoDesc": "Cam là một loài thực vật thuộc họ Cam Quýt, thường mọc ở khu vực trung tâm lục địa Talos-II. Các giống loài và cây trồng tại Vành Đai Văn Minh thường cho ra quả lớn, có phần thịt dai và xơ cứng.",
     "obtainWays": [
       "Trung Tâm: Công Trường Xây Dựng",
@@ -7350,7 +7781,6 @@
     "desc": "Loại cây trồng này chỉ có thể phát triển khi được chăm sóc kỹ lưỡng. Có thể được sử dụng để chế biến thực phẩm chất lượng và dược phẩm.",
     "decoDesc": "Hồng Sâm là một loại thảo mộc nhẹ thường được người dân Hongshan sử dụng như một loại thực phẩm bổ sung tăng cường sức khỏe.",
     "obtainWays": [
-      "Công Viên Khoa Học Originium: Đường Mòn Vách Đá",
       "Trồng cây tại Nông Trại Sinh Thái"
     ]
   },
@@ -7569,6 +7999,13 @@
       "Thu Thập Từ: Khám Phá Thế Giới"
     ]
   },
+  "item_plantpoint_chalk_1": {
+    "name": "Luống Lan Đốm Mắt",
+    "type": "Lỗ Thông Khí",
+    "desc": "Một hồ chứa Khí Xiranite ngoài hoang dã. Lắp đặt Máy Tách Khí tại đây để chiết xuất Khí Xiranite.",
+    "decoDesc": "Một cổng kết nối Xiranite có thể được thiết kế cho một số cơ sở Xiranite nhất định. Bên trong chứa trữ lượng Khí Xiranite dồi dào.",
+    "obtainWays": []
+  },
   "item_port_air_dancer_1": {
     "name": "Giáo Sư Ống",
     "type": "Đồ Trang Trí",
@@ -7713,6 +8150,15 @@
     "decoDesc": "Một tháp đại bác mới được các kỹ sư kho vũ khí của Tập Đoàn Endfield hết sức khuyến nghị. Từng có một kỹ sư chạy hàng dặm giữa cơn mưa đá xối xả. Vì vậy, cũng chẳng có gì lạ khi cô ấy thiết kế nên một bệ vũ khí có thể trút xuống những loạt hỏa lực hủy diệt cực độ.",
     "obtainWays": []
   },
+  "item_port_biscuitmountain_1": {
+    "name": "Lời Nguyện Ngọt Ngào",
+    "type": "Đồ Trang Trí",
+    "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
+    "decoDesc": "Hãy lắng nghe lời nguyện cầu cho vị ngọt mãi không dứt.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
   "item_port_burger_1": {
     "name": "Chúa Tể Hamburger",
     "type": "Đồ Trang Trí",
@@ -7768,6 +8214,15 @@
     "type": "Đồ Trang Trí",
     "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
     "decoDesc": "Người chậm rãi gửi trao tình yêu của mình vào tiểu cảnh tuyết nhỏ bé và tĩnh lặng này.",
+    "obtainWays": [
+      "Phần Thưởng: Nhiệm Vụ"
+    ]
+  },
+  "item_port_dg017oven_1": {
+    "name": "\"Lò Rèn Ngọt Ngào\"",
+    "type": "Đồ Trang Trí",
+    "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
+    "decoDesc": "Một bước nhỏ của Tập Đoàn Endfield, một bước tiến vững chắc vào lĩnh vực ẩm thực.",
     "obtainWays": [
       "Phần Thưởng: Nhiệm Vụ"
     ]
@@ -7874,10 +8329,10 @@
     ]
   },
   "item_port_liquid_cleaner_1": {
-    "name": "Bộ Xử Lý Nước Thải",
+    "name": "Bộ Xử Lý Chất Thải",
     "type": "Công Trình Cơ Bản",
-    "desc": "Một công trình xử lý Nước Thải. Cũng có thể xử lý Xircon Thải và Xircon Trơ Thải, mặc dù hiệu quả còn hạn chế.",
-    "decoDesc": "Endfield đã cải thiện đáng kể hiệu quả của quy trình xử lý nước bằng cách sử dụng Giao Thức Công Nghệ trong các bước khử trùng và phục hồi.",
+    "desc": "Một công trình dùng để xử lý chất thải. Cũng có thể xử lý Nước Thải, Xircon Thải, Xircon Trơ Thải và Khí Lucidolite Đục.",
+    "decoDesc": "Nay đã có bộ nâng cấp chức năng toàn diện và hiệu quả hơn.",
     "obtainWays": []
   },
   "item_port_liquid_purifier_1": {
@@ -7913,6 +8368,27 @@
     "type": "Công Trình Cơ Bản",
     "desc": "Điểm khởi đầu của hệ thống Tổng Tuyến Kho Hàng. Cổng Tổng Tuyến Kho Hàng có thể đặt ở bất kỳ vị trí nào trong Khu Phức Hợp Trung Tâm.",
     "decoDesc": "Đối với một số kỹ sư, Xiranite thường gợi lên những ý tưởng điên rồ mà chính họ cũng không thể giải thích được. Điểm cuối của ngành công nghiệp là gì? Liệu còn có những khả năng nào khác cho Xiranite, vật liệu với \"tính tự do\" chưa từng có không? Liệu công nghệ công nghiệp của con người có bao giờ đạt tới trạng thái \"vô hình\" không? Các kỹ sư càng suy nghĩ nhiều, thì họ càng tin rằng mỗi bước mình thực hiện đều là một bước tiến mang tính cách mạng.",
+    "obtainWays": []
+  },
+  "item_port_magic_balancer_1": {
+    "name": "Lò Cân Bằng",
+    "type": "Công Trình Cơ Bản",
+    "desc": "Một công trình có thể kết hợp các dạng Sáng và Đục của một nguyên liệu để tạo ra một dạng cân bằng mới.",
+    "decoDesc": "Một công trình dùng để xử lý quá trình hài hòa hóa nguyên liệu. Sau khi nguyên liệu được phân loại thành thuộc tính sáng (L) và dạng đục (T), chúng có thể được kết hợp trở lại để tạo ra một dạng nguyên liệu mới, mở ra những khả năng bổ sung cho các nhà khoa học vật chất.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_1": {
+    "name": "Lò Sáng & Tối",
+    "type": "Công Trình Cơ Bản",
+    "desc": "Một công trình có thể được kích hoạt bằng Khí Xiranite để tạo 1 trận chỉ định ở phía trước.",
+    "decoDesc": "Lò này phân loại Xiranite một cách chính xác để thay đổi mức độ hoạt tính của nó. Dạng nhẹ hơn được gọi là Luminarite, trong khi dạng nặng hơn được gọi là Turbidarite.",
+    "obtainWays": []
+  },
+  "item_port_magic_spawner_2": {
+    "name": "Lò Sáng & Tối Lưỡng Cực",
+    "type": "Công Trình Cơ Bản",
+    "desc": "Một công trình có thể được kích hoạt bằng Khí Xiranite để phóng 2 trận cụ thể ra phía trước và phía cạnh.",
+    "decoDesc": "Phiên bản nâng cấp của Lò Sáng & Tối ban đầu với hiệu suất hoạt động được cải thiện đáng kể.",
     "obtainWays": []
   },
   "item_port_marker_1": {
@@ -7972,6 +8448,15 @@
     "desc": "Công trình chuyên thực hiện phản ứng hóa học ở trạng thái rắn hoặc lỏng. Ngoài ra còn được trang bị thêm cổng vào và cổng ra để vận hành nhiều phản ứng cùng lúc.",
     "decoDesc": "Sức chứa lớn hơn. An toàn hơn.",
     "obtainWays": []
+  },
+  "item_port_mushman_1": {
+    "name": "\"Hoàng Tử Nhân Thực\"",
+    "type": "Đồ Trang Trí",
+    "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
+    "decoDesc": "Mang theo một quá khứ khó hiểu, nhưng vẫn nhìn thế giới bằng ánh mắt sáng trong.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
   },
   "item_port_pear_blossom_bonsai_1": {
     "name": "Cây Nhỏ Trên Đồi",
@@ -8310,7 +8795,7 @@
   "item_port_stock_board_1": {
     "name": "Bảng Tái Phân Phối",
     "type": "Đồ Trang Trí",
-    "desc": "Một vật phẩm trang trí. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
+    "desc": "Món đồ trang trí có thể đặt được. Món đồ này được lưu trong bảng Đồ Trang Trí của Danh Sách Công Trình.",
     "decoDesc": "\"Cà Rốt May Mắn nhập hàng lại rồi à? Vét sạch thôi.\"",
     "obtainWays": [
       "Trao Đổi Talosite"
@@ -8414,6 +8899,13 @@
     "type": "Công Trình Cơ Bản",
     "desc": "Công trình lắp ghép các nguyên liệu khác nhau lại để tạo thành linh kiện trang bị.",
     "decoDesc": "Một thiết bị cao cấp nhất phải trải qua nhiều bước xử lý bao gồm dệt vải và ép nhiều loại vải và lớp lót khác nhau.",
+    "obtainWays": []
+  },
+  "item_port_wonder_supply_port_1": {
+    "name": "Cổng Tái Thiết Cung Ứng",
+    "type": "Công Trình Cơ Bản",
+    "desc": "Cổng cung ứng vật tư cho dự án Tái Thiết Khu Cấm Bắc Võ Lăng (KCBVL). Đưa các vật liệu tái thiết cần thiết vào cổng này để tự động tăng tiến trình dự án.",
+    "decoDesc": "Cổng tiếp tế đặc biệt dành cho việc vận chuyển các vật phẩm bọc đồng đặc biệt. An toàn và dễ sử dụng.",
     "obtainWays": []
   },
   "item_port_xiranite_oven_1": {
@@ -8656,6 +9148,13 @@
     "type": "Vật liệu",
     "desc": "Một viên pin đóng gói của công trình Nhà Máy Khu Phức Hợp. Có thể dùng để cấp điện, sạc các công trình hoặc trao đổi giữa các tiền đồn.",
     "decoDesc": "Ưu điểm lớn nhất của loại pin này là không có nguy cơ tự bốc cháy.",
+    "obtainWays": []
+  },
+  "item_proc_battery_6": {
+    "name": "Pin Võ Lăng Dung Lượng Cao",
+    "type": "Vật liệu",
+    "desc": "Một viên pin đóng gói tại công trình Nhà Máy Khu Phức Hợp. Có thể dùng để cấp điện, sạc các công trình hoặc trao đổi tại các tiền đồn.",
+    "decoDesc": "Một viên pin được tạo ra để trường tồn lâu như chính vũ trụ. Đây chính là mục tiêu cốt lõi trong thiết kế của dòng pin dung lượng cao.",
     "obtainWays": []
   },
   "item_proc_bomb_1": {
@@ -8973,10 +9472,10 @@
     ]
   },
   "item_ranch_fishmeat_1": {
-    "name": "Phi Lê Cá",
+    "name": "Phi Lê Vây",
     "type": "Vật liệu",
     "desc": "Sản phẩm từ chăn nuôi. Có thể dùng để nấu ăn trong lối chơi Quản Lý Quán Trọ.",
-    "decoDesc": "Phi lê từ cá nuôi. Chúng tôi không khuyến khích ăn sống, xét theo loài cá và cách chúng được nuôi.",
+    "decoDesc": "Phi lê từ vây nuôi. Chúng tôi không khuyến khích ăn sống, xét theo loài vây và cách chúng được nuôi.",
     "obtainWays": [
       "Trại Chăn Nuôi: Nuôi Thú",
       "Thùng Nguyên Liệu",
@@ -8984,10 +9483,10 @@
     ]
   },
   "item_ranch_fishmeat_2": {
-    "name": "Phi Lê Cá [A]",
+    "name": "Phi Lê Vây [A]",
     "type": "Vật liệu",
     "desc": "Sản phẩm từ chăn nuôi. Có thể dùng để nấu ăn trong lối chơi Quản Lý Quán Trọ.",
-    "decoDesc": "Phi lê cá có vị ngọt thơm. Những con cá bơi nhiều thường cho phần phi lê ngon nhất. Oho! Đến lúc vận động rồi!",
+    "decoDesc": "Phi lê vây có vị ngọt thơm. Những con vây bơi nhiều thường cho phần phi lê ngon nhất. Oho! Đến lúc vận động rồi!",
     "obtainWays": [
       "Trại Chăn Nuôi: Nuôi Thú",
       "Thùng Nguyên Liệu",
@@ -9149,7 +9648,7 @@
   "item_regionbuff_wuling_4_1": {
     "name": "Chuyên Gia Ngoài Trời",
     "type": "Buff Lãnh Thổ",
-    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm) \nChỉ hiệu lực ở Võ Lăng.",
+    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm). \nChỉ hiệu lực ở Võ Lăng.",
     "decoDesc": "Sau khi lặn lội khắp nơi tìm Aurylene, bạn đã thuộc lòng từng ngọn cỏ, từng khối quặng trong vùng này. Bạn đã trở thành chuyên gia thiên nhiên hoang dã.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
@@ -9158,7 +9657,7 @@
   "item_regionbuff_wuling_4_2": {
     "name": "Chuyên Gia Ngoài Trời",
     "type": "Buff Lãnh Thổ",
-    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm) \nChỉ hiệu lực ở Võ Lăng.",
+    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm). \nChỉ hiệu lực ở Võ Lăng.",
     "decoDesc": "Sau khi lặn lội khắp nơi tìm Aurylene, bạn đã thuộc lòng từng ngọn cỏ, từng khối quặng trong vùng này. Bạn đã trở thành chuyên gia thiên nhiên hoang dã.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
@@ -9167,7 +9666,7 @@
   "item_regionbuff_wuling_4_3": {
     "name": "Chuyên Gia Ngoài Trời",
     "type": "Buff Lãnh Thổ",
-    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm) \nChỉ hiệu lực ở Võ Lăng.",
+    "desc": "Thu thập thực vật có cơ hội mang lại thêm 1 vật liệu (không có tác dụng với vật liệu hiếm). \nChỉ hiệu lực ở Võ Lăng.",
     "decoDesc": "Sau khi lặn lội khắp nơi tìm Aurylene, bạn đã thuộc lòng từng ngọn cỏ, từng khối quặng trong vùng này. Bạn đã trở thành chuyên gia thiên nhiên hoang dã.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
@@ -9177,7 +9676,7 @@
     "name": "Dự Trữ Y Tế",
     "type": "Buff Lãnh Thổ",
     "desc": "Sau khi nghỉ ngơi tại một Điểm Dịch Chuyển, nhận 1 lớp buff Dự Trữ Y Tế. Khi bất kỳ cán viên nào trong đội có HP giảm xuống dưới mức nhất định, tự động tiêu hao buff và hồi phục HP ngay lập tức cho mọi đồng đội. \nChỉ có hiệu lực tại Võ Lăng.",
-    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương",
+    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9186,7 +9685,7 @@
     "name": "Dự Trữ Y Tế",
     "type": "Buff Lãnh Thổ",
     "desc": "Sau khi nghỉ ngơi tại một Điểm Dịch Chuyển, nhận 1 lớp buff Dự Trữ Y Tế. Khi bất kỳ cán viên nào trong đội có HP giảm xuống dưới mức nhất định, tự động tiêu hao buff và hồi phục HP ngay lập tức cho mọi đồng đội. \nChỉ có hiệu lực tại Võ Lăng.",
-    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương",
+    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9195,7 +9694,7 @@
     "name": "Dự Trữ Y Tế",
     "type": "Buff Lãnh Thổ",
     "desc": "Sau khi nghỉ ngơi tại một Điểm Dịch Chuyển, nhận 1 lớp buff Dự Trữ Y Tế. Khi bất kỳ cán viên nào trong đội có HP giảm xuống dưới mức nhất định, tự động tiêu hao buff và hồi phục HP ngay lập tức cho mọi đồng đội. \nChỉ có hiệu lực tại Võ Lăng.",
-    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương",
+    "decoDesc": "Bạn luôn được chuẩn bị về mặt y tế, nhờ vào sự quen thuộc của bạn với thông tin tình báo địa phương.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9204,7 +9703,7 @@
     "name": "Đủ Sinh Lực",
     "type": "Buff Lãnh Thổ",
     "desc": "Thể Lực hồi phục nhanh hơn. \nChỉ hiệu lực ở Võ Lăng.",
-    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền",
+    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9213,7 +9712,7 @@
     "name": "Đủ Sinh Lực",
     "type": "Buff Lãnh Thổ",
     "desc": "Thể Lực hồi phục nhanh hơn. \nChỉ hiệu lực ở Võ Lăng.",
-    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền",
+    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9222,7 +9721,7 @@
     "name": "Đủ Sinh Lực",
     "type": "Buff Lãnh Thổ",
     "desc": "Thể Lực hồi phục nhanh hơn. \nChỉ hiệu lực ở Võ Lăng.",
-    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền",
+    "decoDesc": "Quản lý thể lực khoa học giúp cải thiện khả năng phục hồi sức bền.",
     "obtainWays": [
       "Nộp Aurylene tại Điểm Dịch Chuyển"
     ]
@@ -9479,6 +9978,15 @@
       "Trao Đổi Talosite"
     ]
   },
+  "item_shot_anim_sweetpie_m_1": {
+    "name": "Suy Nghĩ Trong Lạc Lối",
+    "type": "Tư Thế Chụp Ảnh",
+    "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
+    "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Suy Nghĩ Trong Lạc Lối\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
   "item_shot_anim_tangtang_m_1": {
     "name": "MẮT TA VÔ ĐỊCH",
     "type": "Tư Thế Chụp Ảnh",
@@ -9497,11 +10005,38 @@
       "Trao Đổi Talosite"
     ]
   },
+  "item_shot_anim_whiten_s_1": {
+    "name": "Xin Im Lặng Giùm",
+    "type": "Tư Thế Chụp Ảnh",
+    "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
+    "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Xin Im Lặng Giùm\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
+  "item_shot_anim_wulfa_m_1": {
+    "name": "Đo Lường Hiếu Thắng",
+    "type": "Tư Thế Chụp Ảnh",
+    "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
+    "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Đo Lường Hiếu Thắng\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
   "item_shot_anim_yvonne_m_1": {
     "name": "Bước Nhảy Rực Lửa Của Neo-Nista",
     "type": "Tư Thế Chụp Ảnh",
     "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
     "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Bước Nhảy Rực Lửa Của Neo-Nista\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
+    "obtainWays": [
+      "Trao Đổi Talosite"
+    ]
+  },
+  "item_shot_anim_zhuangfy_m_1": {
+    "name": "Như Ta Có Thể Thấy",
+    "type": "Tư Thế Chụp Ảnh",
+    "desc": "Một tư thế chụp ảnh mà cán viên có thể sử dụng.",
+    "decoDesc": "Một cách diễn giải ý nghĩa đằng sau \"Như Ta Có Thể Thấy\". Ấn tượng ấy vừa rõ ràng, lại vừa huyền bí.",
     "obtainWays": [
       "Trao Đổi Talosite"
     ]
@@ -9629,6 +10164,15 @@
     "type": "Bộ Lọc Máy Ảnh",
     "desc": "Một bộ lọc dùng để điều chỉnh màu sắc của bức ảnh. Có thể sử dụng trong tính năng Camera.",
     "decoDesc": "Được những người đam mê nhiếp ảnh tại Endfield đánh giá là một trong các bộ lọc được ưa chuộng nhất. Mọi người thường nhắc đến vẻ đẹp của mùa xuân ở Võ Lăng.",
+    "obtainWays": [
+      "Phần Thưởng: Thẻ Giao Thức"
+    ]
+  },
+  "item_shot_filter_sp_8": {
+    "name": "Bộ Lọc: Hoàng Hôn Hoàng Kim",
+    "type": "Bộ Lọc Máy Ảnh",
+    "desc": "Một bộ lọc dùng để điều chỉnh màu sắc của bức ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Những người đam mê nhiếp ảnh Endfield nhận định đây là một trong những bộ lọc phổ biến nhất. Những màu sắc này có khiến bạn nhớ đến thức uống nóng đầu tiên mà bạn thưởng thức sau khi trở về nhà lúc mặt trời lặn không?",
     "obtainWays": [
       "Phần Thưởng: Thẻ Giao Thức"
     ]
@@ -9770,6 +10314,13 @@
     "decoDesc": "Một nhãn dán nhận được làm quà sinh nhật. Chúc bạn trong những năm tháng sau này luôn tràn đầy niềm vui và hạnh phúc.",
     "obtainWays": []
   },
+  "item_shot_sticker_birthday_2027": {
+    "name": "Nhãn Dán: Sinh Nhật Năm Thứ 2",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Một nhãn dán từ \"Mừng Sinh Nhật\". Chúc bạn hạnh phúc mỗi ngày và mọi nguyện ước đều thành hiện thực.",
+    "obtainWays": []
+  },
   "item_shot_sticker_bp_1": {
     "name": "Nhãn Dán: Ký Ức",
     "type": "Nhãn Dán Ảnh",
@@ -9833,6 +10384,15 @@
       "Phần Thưởng: Thẻ Giao Thức"
     ]
   },
+  "item_shot_sticker_bp_8": {
+    "name": "Nhãn Dán: Dính Rịt & Ngọt Ngào",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Một nhãn dán từ \"Hương Thơm Ngọt Ngào\". Cứ để si-rô tuôn trào! Hôm nay tự dưng thèm quá, thèm tình iu iu của ngày mai!",
+    "obtainWays": [
+      "Phần Thưởng: Thẻ Giao Thức"
+    ]
+  },
   "item_shot_sticker_channel_v1d3d6_1": {
     "name": "Nhãn dán: Mũ Bảo Hộ",
     "type": "Nhãn Dán Ảnh",
@@ -9848,6 +10408,41 @@
     "obtainWays": [
       "Trung Tâm Mua Sắm: Gói"
     ]
+  },
+  "item_shot_sticker_channel_v1d7_1": {
+    "name": "Nhãn Dán: Mũ Trùm Pudding",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Nhãn dán này đã lọt vào danh sách được đề xuất nhiều nhất trong số các tín đồ nhiếp ảnh Endfield. Chỉ nhìn là đã thấy ngọt ngào ấm áp rồi.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_2": {
+    "name": "Nhãn dán: PIZZA-LA",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Nhãn dán này đã lọt vào danh sách được đề xuất nhiều nhất trong số các tín đồ nhiếp ảnh Endfield. Hương vị mà không một ai thấy chán.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_3": {
+    "name": "Nhãn Dán: Họa Tiết Vọng Âm",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Một nhãn dán từ \"Vọng Âm\". Đại hòa nhạc sắp bắt đầu.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_4": {
+    "name": "Nhãn Dán: Que Cổ Vũ OriGO-GO",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Một nhãn dán từ nhóm người hâm mộ \"OriGO-GO\", biểu tượng của tình yêu cuồng nhiệt, sự cổ vũ của fan và Thuật Pháp Originium.",
+    "obtainWays": []
+  },
+  "item_shot_sticker_channel_v1d7_5": {
+    "name": "Nhãn Dán: Vương Miện Sẹo Kim Loại",
+    "type": "Nhãn Dán Ảnh",
+    "desc": "Nhãn dán trang trí có thể dán lên ảnh. Có thể sử dụng trong tính năng Camera.",
+    "decoDesc": "Một nhãn dán từ \"Metal Scar Bùng Nổ\". Đội nó lên và trở thành Chúa Tể Metal Scar.",
+    "obtainWays": []
   },
   "item_shot_sticker_giftpack_1": {
     "name": "Nhãn dán: Bộ Áp Chế",
@@ -10106,6 +10701,13 @@
       "Mua: Điều Phối Vật Tư Võ Lăng",
       "Nâng Cấp Trạm Điều Phối Vật Tư"
     ]
+  },
+  "item_spaceship_exhibits_mushroom": {
+    "name": "Linh Vật Nấm Sang Trọng",
+    "type": "Dijiang: Vật Phẩm Trưng Bày",
+    "desc": "Những vật phẩm này có thể được trưng bày tại Tháp Theo Dấu ở Khoang Trung Tâm của Dijiang.",
+    "decoDesc": "Linh vật kỷ niệm dành cho Công Viên Sinh Thái Đập Nước Cũ Võ Lăng. Nghe đồn ý tưởng đến với nhà thiết kế trong một giấc mơ. Linh vật này được tạo ra để hình tượng hóa tình hữu nghị giữa Đại Công Đoàn Talos II và Học Viện Khoa Học Hongshan.",
+    "obtainWays": []
   },
   "item_spaceship_exhibits_shanshantu": {
     "name": "Tượng Hộ Đồng Hành",
@@ -10378,6 +10980,15 @@
     "type": "Vật phẩm giá trị có thời hạn",
     "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà]. Chứng nhận này sẽ hết hạn khi Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà] kết thúc.",
     "decoDesc": "Giấy phép nhân sự đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
+    "obtainWays": [
+      "Trung Tâm Mua Sắm: Gói"
+    ]
+  },
+  "item_ticketgacha_special_single_lt_1_7_1": {
+    "name": "Vé Chiêu Mộ Thám Hiểm Hoang Dã",
+    "type": "Vật phẩm giá trị có thời hạn",
+    "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong [Đe Rèn, Ba Lô Và Hũ Mật Ong] của Chiêu Mộ Đặc Quyền. Chứng nhận này sẽ hết hạn khi kết thúc [Đe Rèn, Ba Lô Và Hũ Mật Ong] của Chiêu Mộ Đặc Quyền.",
+    "decoDesc": "Giấy phép HR đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
     "obtainWays": [
       "Trung Tâm Mua Sắm: Gói"
     ]
@@ -10722,6 +11333,15 @@
       "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
     ]
   },
+  "item_user_avatar_bp_1_7": {
+    "name": "Nấm Thân Thiện",
+    "type": "Chân dung",
+    "desc": "Chân dung có thể thay đổi trong màn hình Hồ Sơ. Chân dung hồ sơ sẽ được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "Vào một ngày nào đó của một tháng nào đó trong một năm nào đó, người ta đã chụp lại bức ảnh của hai cư dân đầy kiêu hãnh của Xứ Nấm.",
+    "obtainWays": [
+      "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
+    ]
+  },
   "item_user_avatar_chr_0002_endminm": {
     "name": "Endministrator",
     "type": "Chân dung",
@@ -11037,6 +11657,15 @@
       "Quà Tặng: Cán Viên Mới Gia Nhập"
     ]
   },
+  "item_user_avatar_chr_0040_sweetpie": {
+    "name": "Kay",
+    "type": "Chân dung",
+    "desc": "Chân dung có thể thay đổi trong màn hình Hồ Sơ. Chân dung hồ sơ sẽ được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "",
+    "obtainWays": [
+      "Quà Tặng: Cán Viên Mới Gia Nhập"
+    ]
+  },
   "item_user_avatar_frame_activity_1": {
     "name": "Câu Chuyện Cổ Tích về Carly",
     "type": "Khung Chân Dung",
@@ -11116,6 +11745,15 @@
       "Hợp Đồng Điều Kiện: Chiến Dịch Thử Nghiệm Lam Chàm"
     ]
   },
+  "item_user_avatar_frame_activity_takestwo_2": {
+    "name": "Ngôi Sao Sáng của Quán Quân",
+    "type": "Khung Chân Dung",
+    "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "Bằng chứng được trao cho nhà vô địch đã chinh phục ĐẤU TRƯỜNG BÙNG NỔ rực lửa (dù quá trình không tránh khỏi một vài sự cố). Một chiến binh thực thụ phải có đủ sức mạnh để nắm lấy những vì sao.",
+    "obtainWays": [
+      "Sự Kiện: [BÙNG NỔ! SIÊU ĐẤU TRƯỜNG!]"
+    ]
+  },
   "item_user_avatar_frame_bp_1_0": {
     "name": "Chân Trời Mới",
     "type": "Khung Chân Dung",
@@ -11175,6 +11813,15 @@
     "type": "Khung Chân Dung",
     "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
     "decoDesc": "Nét bút tạo nên sông dài núi thẳm, thành khung cảnh tầng tầng lớp lớp đẹp tựa tranh.",
+    "obtainWays": [
+      "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
+    ]
+  },
+  "item_user_avatar_frame_bp_1_7": {
+    "name": "Sắc Màu Sau Một Miếng Cắn",
+    "type": "Khung Chân Dung",
+    "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "Quả thật, khi đón nhận tình bằng hữu từ họ nấm, các giác quan của bạn sẽ được khai mở vượt xa cả dải cầu vồng bảy sắc.",
     "obtainWays": [
       "Thẻ Giao Thức: Giao Thức Tùy Chỉnh"
     ]
@@ -11253,7 +11900,7 @@
     "name": "Ngọt Ngào & Tuyết Mát",
     "type": "Khung Chân Dung",
     "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
-    "decoDesc": "Hương trái cây thoang thoảng, tiếng rơm khẽ xào xạc... Nghe thấy không? Ký ức đang dần hiện về.",
+    "decoDesc": "Hương trái cây thoang thoảng, tiếng ống hút sột soạt khe khẽ... Nghe thấy không? Ký ức đang dần hiện về.",
     "obtainWays": []
   },
   "item_user_avatar_frame_channel_v1d5_2": {
@@ -11268,6 +11915,13 @@
     "type": "Khung Chân Dung",
     "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
     "decoDesc": "Hãy để mọi trái tim cháy lên hy vọng, và âm ỉ theo từng vòng quay của bánh răng.",
+    "obtainWays": []
+  },
+  "item_user_avatar_frame_channel_v1d7_1": {
+    "name": "Sân Khấu Retro-Metal",
+    "type": "Khung Chân Dung",
+    "desc": "Khung chân dung có thể thay đổi trong màn hình Hồ Sơ. Khung chân dung được hiển thị ở nhiều vị trí khác nhau.",
+    "decoDesc": "Metal Scar vốn luôn mê phong cách hoài cổ. Nhưng nếu thời gian là một vòng tuần hoàn, biết đâu họ có thể ngược dòng quá xa đến mức... chạm tới cả tương lai.",
     "obtainWays": []
   },
   "item_user_avatar_frame_endfield_1": {
@@ -12900,6 +13554,13 @@
     "decoDesc": "Một món ăn đặt ra thách thức lớn cho đầu bếp. Gan Quái Lông Nhọn có thể nhanh chóng bị nấu quá chín và có kết cấu giống như da cao su. Một đầu bếp lành nghề trước tiên phải nghĩ ra cách để món ăn có được độ giòn mềm như mầm tre non.",
     "obtainWays": []
   },
+  "item_wgthorns_1_mushbug_spmushroom1_1": {
+    "name": "Máu Vua Nấm",
+    "type": "Vật Phẩm Chiến Thuật",
+    "desc": "Sử dụng vật phẩm chiến thuật này để hồi tỉnh cán viên không còn khả năng chiến đấu.",
+    "decoDesc": "Một thức uống sảng khoái đậm hương nồng nàn của nấm và có vị như rau củ. Khi uống, ta có cảm giác như có thể nghe thấy tiếng người thân yêu gọi mình trở về nhà.",
+    "obtainWays": []
+  },
   "item_wpngem_enhance_dust": {
     "name": "Keo Làm Mát",
     "type": "Vật Liệu Tinh Chất",
@@ -12962,6 +13623,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "item_xiranite_enr_heng": {
+    "name": "Xiranite Loại E",
+    "type": "Vật liệu",
+    "desc": "Một dạng Xiranite đã trải qua quá trình chuyển hóa Trận E. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Xiranite ở trạng thái cân bằng hài hòa, có thể thích ứng linh hoạt trong cả môi trường có tính phản ứng cao lẫn môi trường có tính ổn định cao.",
+    "obtainWays": []
+  },
   "item_xiranite_enr_powder": {
     "name": "Xiranite Nặng",
     "type": "Vật liệu",
@@ -12969,11 +13637,25 @@
     "decoDesc": "Xiranite Nặng lần đầu tiên được phát hiện trong nỗ lực cải thiện sản lượng Xiranite. Trong quá trình thử nghiệm, các Thiên Sư đã thử nhiều hỗn hợp đa hình khác nhau của Xiranite và đạt được trạng thái cân bằng động - tĩnh. Dù thử nghiệm không đạt được mục tiêu ban đầu, kết quả lại cho ra loại Xiranite có độ bền được cải thiện đôi chút nhưng đáng kể.",
     "obtainWays": []
   },
+  "item_xiranite_hui": {
+    "name": "Turbidarite",
+    "type": "Vật liệu",
+    "desc": "Một dạng Xiranite đã trải qua quá trình chuyển hóa Trận T. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Quy nạp bằng Khí Xiranite dạng thô và đậm đặc đã gia tăng sự ổn định của khối Xiranite này.",
+    "obtainWays": []
+  },
   "item_xiranite_lowpoly": {
     "name": "Xircon Nhẹ",
     "type": "Vật liệu",
     "desc": "Thu được thông qua quá trình lắng đọng tinh thể. Có thể sử dụng để sản xuất các vật liệu khác.",
     "decoDesc": "Xircon Nhẹ có mật độ thấp hơn Xircon. Hiện nay, Thiên Sư tại Võ Lăng đang thử nghiệm sử dụng vật liệu này để chế tạo giáp cá nhân cho các thành viên của Đội Đặc Nhiệm Yinglung.",
+    "obtainWays": []
+  },
+  "item_xiranite_ming": {
+    "name": "Luminarite",
+    "type": "Vật liệu",
+    "desc": "Một dạng Xiranite đã trải qua quá trình chuyển hóa Trận L. Có thể sử dụng để sản xuất các vật liệu khác.",
+    "decoDesc": "Quy nạp bằng Khí Xiranite dạng mịn và nhẹ đã gia tăng hoạt tính của khối Xiranite này.",
     "obtainWays": []
   },
   "item_xiranite_poly": {
@@ -13347,6 +14029,20 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_copper_bright_cube_01": {
+    "name": "Gạch Năng Lượng Lucidolite",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Đồng</>, <@gd.key>Xiranite</>, <@gd.key>Bột Originium Đặc</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Gạch Năng Lượng Lucidolite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_bright_cube_02": {
+    "name": "Lucidolite Hiệu Quả",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Đồng Loại E</>, <@gd.key>Xiranite Loại E</>, <@gd.key>Lõi Phân Tách</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Lucidolite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_copper_cmpt_1": {
     "name": "Mảnh Đồng",
     "type": "Bản Vẽ Hệ Thống",
@@ -13358,6 +14054,20 @@
     "name": "Mảnh Huyết Đồng",
     "type": "Bản Vẽ Hệ Thống",
     "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Dung Dịch Huyết Đồng</> và <@gd.key>Quặng Sắt</> vào để tự sản xuất <@gd.key>Mảnh Huyết Đồng</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_hui_01": {
+    "name": "Linh Kiện Tích Hợp Nặng Bọc Đồng",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Đồng</>, <@gd.key>Xiranite Nặng</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Linh Kiện Tích Hợp Nặng Bọc Đồng</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_copper_xiranite_ming_01": {
+    "name": "Linh Kiện Luminarite Bọc Đồng",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Đồng</>, <@gd.key>Xiranite</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Linh Kiện Luminarite Bọc Đồng</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13452,6 +14162,13 @@
     "decoDesc": "",
     "obtainWays": []
   },
+  "sysbp_wuling_magic_spawner_1_heng_01": {
+    "name": "Sản Phẩm \"E\"",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>vật liệu có thể được truyền thuộc tính Cân Bằng (E)</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>dạng E của vật liệu đầu vào</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
   "sysbp_wuling_proc_battery_4_1": {
     "name": "Pin Võ Lăng Dung Lượng Thấp",
     "type": "Bản Vẽ Hệ Thống",
@@ -13491,6 +14208,20 @@
     "name": "Xiranite Hiệu Quả",
     "type": "Bản Vẽ Hệ Thống",
     "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Khí Trơ</>, <@gd.key>Nước Sạch</> và <@gd.key>Carbon</> vào để tự động sản xuất <@gd.key>Xiranite</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_01": {
+    "name": "Lò Cân Bằng: Xiranite Nặng",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Xiranite</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Xiranite Nặng</>.",
+    "decoDesc": "",
+    "obtainWays": []
+  },
+  "sysbp_wuling_xiranite_enr_easy_02": {
+    "name": "Xiranite Nặng Hiệu Quả",
+    "type": "Bản Vẽ Hệ Thống",
+    "desc": "Đặt bản vẽ này vào Khu Phức Hợp Trung Tâm, sau đó đưa <@gd.key>Xiranite</> và <@gd.key>Khí Xiranite</> vào để tự động sản xuất <@gd.key>Xiranite Nặng</>.",
     "decoDesc": "",
     "obtainWays": []
   },
@@ -13653,6 +14384,15 @@
     "type": "Vật phẩm giá trị có thời hạn",
     "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà]. Chứng nhận này sẽ hết hạn khi Chiêu Mộ Đặc Quyền [Bếp Lửa Nhân Gian Gọi Tinh Hà] kết thúc.",
     "decoDesc": "Giấy phép nhân sự đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
+    "obtainWays": [
+      "Trung Tâm Mua Sắm: Gói"
+    ]
+  },
+  "ticketgacha_special_single_lt_1_7_1": {
+    "name": "Vé Chiêu Mộ Thám Hiểm Hoang Dã",
+    "type": "Vật phẩm giá trị có thời hạn",
+    "desc": "Một chứng nhận Tập Đoàn Endfield có thời hạn. Dùng nó để chiêu mộ 1 lần trong [Đe Rèn, Ba Lô Và Hũ Mật Ong] của Chiêu Mộ Đặc Quyền. Chứng nhận này sẽ hết hạn khi kết thúc [Đe Rèn, Ba Lô Và Hũ Mật Ong] của Chiêu Mộ Đặc Quyền.",
+    "decoDesc": "Giấy phép HR đặc biệt dành cho các cán viên chiêu mộ đáp ứng nhiều yêu cầu riêng biệt. Do tính cấp bách của yêu cầu này, giấy phép này chắc chắn sẽ hết hạn sau một thời hạn nhất định.",
     "obtainWays": [
       "Trung Tâm Mua Sắm: Gói"
     ]

@@ -166,22 +166,22 @@
       },
       {
         "voId": "chr_0007_ikut_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Promoção? Quer dizer que conquistei sua aprovação? Então eu... eu estou muito feliz por ter sido aprovada."
       },
       {
         "voId": "chr_0007_ikut_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Com a honra vem o dever. Tudo isso serve como um lembrete para ajudar mais pessoas."
       },
       {
         "voId": "chr_0007_ikut_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "A natureza não nos ensina a sobreviver. Ela apenas deixa um rastro para que possamos seguir. Eu já fiz o meu melhor para me adaptar... Agora... estou começando a entender como funciona."
       },
       {
         "voId": "chr_0007_ikut_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Aprendi muito viajando com você. Estou começando a entender por que os versos de Hanna me trouxeram até aqui, ao seu lado. Usarei bem esse conhecimento."
       },
       {
@@ -191,12 +191,12 @@
       },
       {
         "voId": "chr_0007_ikut_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "O caminho à frente foi revelado."
       },
       {
         "voId": "chr_0007_ikut_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Estou preparada para o desempenho máximo."
       },
       {

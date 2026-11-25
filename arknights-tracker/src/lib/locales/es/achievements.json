@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "Maestría de las cajas del mundo de los hongos",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "En la Presa Antigua, abre 47 cajas",
+        "completeDesc": "Has abierto la mayoría de las cajas de almacenamiento en Wuling. Valen toneladas de waffles con miel."
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "“Un gol contundente”",
     "category": "Regional",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "En el Bosque Nevado y la Pintura de Si, desbloquea 18 Puntos de TP",
         "completeDesc": "Extendiste la Red de protocolo hasta las zonas más profundas de Wuling, incluso si dichas zonas existen en reinos de otro mundo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "Wuling interminable V",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "En la Presa Antigua, desbloquea 7 Puntos de TP",
+        "completeDesc": "Extendiste la Red de Protocolo hasta las zonas más profundas de Wuling. Por fortuna, ninguno de los nodos de la red ha decidido hablarte directamente."
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "En el Bosque Nevado y la Pintura de Si, reúne 41 Aurilenos",
         "completeDesc": "Los fragmentos perdidos del artefacto fundamental se han reunido nuevamente en tus manos. Puede que sean esquirlas de luz halladas en un reino de otro mundo, pero estos artefactos antiguos te responden a ti."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "“Fragmentos reagrupados” V",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "En la Presa Antigua, recolecta 17 Aurilenos",
+        "completeDesc": "Muchos fragmentos perdidos del artefacto fundamental se han reunido de nuevo en tus manos. Mmm... Estos Aurilenos parecen esporas, ¿no crees?"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "En la Pintura de Si, resuelve 11 acertijos de Faroles de piedra",
         "completeDesc": "Resolviste los numerosos acertijos que Si dejó atrás. Incluso los Espíritus de tinta que pasan suficiente tiempo en la pintura adoptan una naturaleza juguetona."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "Caminante de la presa",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "En la Presa Antigua, usa el Golpe de waffle o los ataques de los operadores para interactuar 20 veces con hongos especiales (incluidos: hongos de energía, hongos arcoíris, enredaderas de hongos y Muros ilusorios)",
+        "completeDesc": "A estas alturas, puede que sepas más de esta presa que quienes la diseñaron."
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "En [Monumento del Umbral], completa todas las fases de “Murmullos del bosque profundo” en el modo Agonía"
     }
   },
+  "achv_bat_hard_9": {
+    "name": "“Brutalidad despótica”",
+    "category": "Técnico",
+    "group": "Espacio de protocolo",
+    "levels": {
+      "2": {
+        "desc": "En [Monumento del Umbral], completa todas las etapas de dificultad III de “Déspota armado”",
+        "completeDesc": "Aplastaste a los déspotas fuertemente armados y expusiste su brutalidad en la gran pantalla."
+      }
+    },
+    "plating": {
+      "desc": "En [Monumento del Umbral], completa todas las etapas de dificultad VI de “Déspota armado”"
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "“Arte del espacio en blanco”",
     "category": "Técnico",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "Aplica 500 Estados físicos durante el combate",
         "completeDesc": "Eres el maestro indiscutible del combate."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "“Elasticidad fúngica”",
+    "category": "Técnico",
+    "group": "Técnica de combate",
+    "levels": {
+      "2": {
+        "desc": "Haz que el operador controlado sea levantado ≥ 4 veces durante 1 ronda del ataque sísmico continuo de Puñoespora Rompehongos",
+        "completeDesc": "Parece que has experimentado la auténtica elasticidad fúngica. Es asombroso, como jugar en un trampolín."
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "“Hechicería 21”",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Obtén ≥ 21 puntos sin pasarte",
+        "completeDesc": "Parece que se te da bastante bien esa afición a la hechicería que te enseñó “Zanahoria de la suerte”."
+      }
+    },
+    "plating": {
+      "desc": "Obtén ≥ 30 puntos sin pasarte"
+    }
+  },
   "achv_event_clean": {
     "name": "“Limpieza total y reluciente”",
     "category": "Evento",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "En [Contrato de Contingencia: Operación Experimental Índigo], completa con éxito un desafío con ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criterios de prueba totales"
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "“El poder de señor de la guerra del Jóker”",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Juega 1 carta de Jóker negro",
+        "completeDesc": "Y con aquella tremenda explosión, el déspota señor de la guerra cayó al fin... Sin embargo, su leyenda sigue extendiéndose por toda clase de mesas de juego."
+      }
+    },
+    "plating": {
+      "desc": "Juega 1 carta de Jóker rojo"
     }
   },
   "achv_event_dungfight": {
@@ -1045,7 +1147,7 @@
     "group": "Evento",
     "levels": {
       "2": {
-        "desc": "En una sola Prueba, obtén una puntuación alta de ≥ 500K",
+        "desc": "En una sola Prueba, obtén una Puntuación de la arena ≥ 500K",
         "completeDesc": "No solo eres un combatiente excepcional, sino que también se te dan muy bien los números y tienes muchísima suerte."
       }
     },
@@ -1079,6 +1181,20 @@
     },
     "plating": {
       "desc": "Completa todos los escenarios de [¡FURIA ARDIENTE! ¡MEGA ARENA!] en el modo AL MÁXIMO y completa cualquiera de las siguientes fases en 180 s:\n· [¡Profanos! ¡Rompedores y bichos! ¡AL MÁXIMO!]\n· [¡Tácticas! ¡Derroten a sus domabestias! ¡AL MÁXIMO!]\n· [¡Caos! ¡Carnicería total! ¡AL MÁXIMO!]"
+    }
+  },
+  "achv_event_takestwo_2": {
+    "name": "\"¡LA MEJOR! ¡ARENA DE TALOS-II!\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "En [¡ÁLZATE! ¡MEGA ARENA!], completa todas las etapas en el modo Normal",
+        "completeDesc": "¡En Wuling, una gran arena capaz de encender de verdad la pasión de los guerreros por el combate ha llegado a su perfecto desenlace! ¡Confía en nosotros! ¡Ya estamos preparando otra gran arena!"
+      }
+    },
+    "plating": {
+      "desc": "En [¡ÁLZATE! ¡MEGA ARENA!], completa estas etapas en 200 s o menos:\n· [¡Yuanyuan! ¡Abierto al público! ¡AL MÁXIMO!]\n· [¡Pelea! ¡Wuling en llamas! ¡AL MÁXIMO!]"
     }
   },
   "achv_event_tundra_challenge_dung": {
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "En [Explorador de lo críptico], completa a la perfección todos los Espacios de protocolo de “Desvanecerse más allá de la pintura”"
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "“Ciudad de los Hongos”",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "En [Explorador de lo críptico], completa todos los Espacios de protocolo de “Micología esotérica”",
+        "completeDesc": "Uno por uno, iluminaste el Espacio de protocolo fragmentado. La Ciudad de los Hongos ha abierto sus puertas para ti (y no, esta vez no estás alucinando)."
+      }
+    },
+    "plating": {
+      "desc": "En [Explorador de lo críptico], completa a la perfección todos los Espacios de protocolo de “Micología Esotérica”"
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "Especialista de fábrica de Wuling V",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "1": {
+        "desc": "Investiga 50 tecnologías en el Plan del CAI de Wuling",
+        "completeDesc": "Investigaste con éxito más tecnologías en el Plan del CAI de Wuling.\nNuestras tecnologías se han entrelazado con la visión de Wuling y han dado lugar a una flor completamente nueva."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "Especialista de fábrica del Valle",
     "category": "Construcción",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "En [Campo de tiro con arco de Typhoeus], completa todos los “Entrenamientos avanzados” y completa “Ejercicio diario 04” con 3★"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "“Nuestras vidas reconstruidas”",
+    "category": "Construcción",
+    "group": "Fábrica del CAI",
+    "levels": {
+      "2": {
+        "desc": "En Wuling, avanza la Reconstrucción de la Zona de Exclusión hasta la Fase 4 (Mantenimiento de rutina)",
+        "completeDesc": "Recuerda el pasado. Dale la bienvenida al futuro."
+      }
+    },
+    "plating": {
+      "desc": "Completa 5 suministros de Mantenimiento de rutina"
     }
   },
   "achv_growth_adventure_level": {
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "“Ven, sal reptando de las tuberías”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "2": {
+        "desc": "Cuando el Nidwyrm Rompehongos se esconda, atráelo con waffles con miel para que salga",
+        "completeDesc": "Los equipos de reparación de túneles y tuberías de los S.T.U.T. suelen encontrarse con nidwyrms. Sería buena idea usar un cebo para hacerlos salir."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "“El dominio del Creador”",
     "category": "Asombroso",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "Mientras Ruan Yi esté furioso, mantén activo su Toque marchitante por al menos 60 s",
         "completeDesc": "Con ramas secas creó un reino mortífero, y aun así lo recorriste con total libertad."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "“Refugio profesional”",
+    "category": "Asombroso",
+    "group": "Asombroso",
+    "levels": {
+      "1": {
+        "desc": "En la Presa Antigua, llega a la Base secreta",
+        "completeDesc": "Una operadora profesional siempre tiene preparado su refugio antes de una operación. Nunca subestimes el profesionalismo de Kay... ni su falta de él."
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VI: Forjada desde el comienzo]",
+        "desc": "Completa la misión principal [Capítulo II Proceso VI: Almas afines que comparten una visión]",
         "completeDesc": "Zhuang Fangyi esperó, y por fin llegaste."
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Posada en la pintura]",
+        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Adéntrate en el mundo pintado]",
         "completeDesc": "Contemplaron la hermosa pintura, y se adentraron en la montaña."
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Prueba III - Un camino donde no lo hay]",
+        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Contempla más allá del Ser]",
         "completeDesc": "Para esclarecer mi obsesión, y sanar mis malestares más profundos."
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso VIII: La conclusión]",
+        "desc": "Completa la misión principal [Capítulo II Proceso VIII: Pinta con Tinta fresca]",
         "completeDesc": "Diluye las viejas manchas de tinta, y podrán darse pinceladas más brillantes para renovar la pintura."
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "Misión principal",
     "levels": {
       "3": {
-        "desc": "Completa la misión principal [Capítulo II Proceso V: Batalla del Pilar Principal]",
+        "desc": "Completa la misión principal [Capítulo II Proceso V: La brecha]",
         "completeDesc": "Ella es una conquistadora cuyo corazón fue encendido por la ambición, que busca sacrificar a decenas de miles por un vistazo al reino prohibido. Has aplastado la malicia de Nefarith."
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "Completa la misión secundaria [Un día para recordar]",
         "completeDesc": "Verdaderamente maravilloso. Una bestia voladora que compone poesía, y un fogón humeante que nos conmueve."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "“Un buen matrimonio necesita un buen kohl”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [El día después]",
+        "completeDesc": "Y así, el novio y el hongo... ¿Así se dice? ¿No podemos llamarla simplemente la novia? En fin, vivieron felices para siempre."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "“Sueño con waffles con miel”",
+    "category": "Capítulo",
+    "group": "Misión de exploración",
+    "levels": {
+      "2": {
+        "desc": "Completa la misión secundaria [Sueño con Waffles con miel]",
+        "completeDesc": "Kay y tú viajaron por un mundo maravilloso de hongos, waffles con miel y una buena dosis de fantasía. No te preocupes y no dudes. Esta sí que es una auténtica aventura."
       }
     },
     "plating": null

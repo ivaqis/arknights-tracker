@@ -581,6 +581,12 @@
     "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nEine Modifikation der AIK-Einsatzschutzausrüstung für Nahkampfübungen. Bietet dem Träger effektiven Schutz im Getümmel.",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "AIK-Einsatz-Mecha-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nJetzt mit einfach kalibrierbaren Mehrfachanschlüssen, die das Montieren mehrerer Waffensysteme effektiv unterstützen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "AIK-Einsatzmachete",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
@@ -617,6 +623,12 @@
     "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Ich dachte mir also: Eine Miniatur-Bügelsäge mit Motor ist doch eigentlich auch eine Nahkampfwaffe, oder?“",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "AIK-Einsatz-Mecha-Platte",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Siehst du? Ein Dämloid hat mich mit voller Kraft gerammt, und ich bin ein Dutzend Meter weit geflogen. Aber die Platte hat alles abgefangen und nur diesen winzigen Kratzer davongetragen.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "AIK-Einsatzhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
@@ -651,6 +663,12 @@
     "name": "AIK-NK-Einsatzhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
     "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nDank optimaler Materialstärke lassen sich Fecht- und Schwertkunstmanöver absolut makellos ausführen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "AIK-Einsatz-Mecha-Handschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nJetzt mit besonders verstärkter Handgelenksunterstützung, damit der Träger montierte Waffen problemlos führen kann.",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. „Ich schrieb in Buch und Rolle, was des Himmels Mächte hegen.“",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Schwere Rissforscher-Plattenrüstung",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich schüre meinen Körper an wie einen Hochofen, auf dass er Licht spende in der Dunkelheit.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Rissforscher-Rüstung LITE",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich erklimme die höchsten Gipfel und sammle die schwebenden Wolken und den Nebel ein.“",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Rissforscher-Rüstungsteil",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -735,6 +765,12 @@
     "name": "Rissforscher-Silberklinge",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. „Eine silbergeschmiedete Klinge hob ich den bösen Schatten entgegen.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Rissforscher-Felsenhacke",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich trage ganze Berge, um die Einschläge des hellen Blitzes zu ertragen.“",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Rissforscher-Fingerhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. „Ich schlug die roten Trommeln, dass selbst die Berge bebten.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Rissforscher-Wickel LITE",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich reinige die Begierde in meinem Herzen, um das himmlische Feuer einzuschüchtern.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Schwere Rissforscher-Fingerhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich sehe den rauchenden Flammen zu, um den Fall vom Ruhm zu bezeugen.“",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Grenzgebiet-Schutzanzug",
     "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Eine Kommandantenrüstung aus der Grenzgebietler-Rüstungsreihe. Es wurden dünnere Schutzplatten verbaut, um den Einsatz von Fernkampfwaffen und Chiffrier-Komm-Modulen zu ermöglichen.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Schwere Grenzgebiet-Stahlplattenrüstung",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Dieser Satz superschwerer Grenzgebietler-Rüstung ist das Flaggschiffprodukt des Northmarch-Support-Zentrums. Damit kann der Träger sich alleine vier oder fünf Aggeloi stellen.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Grenzgebiet-Rüstung LITE",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Dieser Satz integrierter Grenzgebietler-Unterstützungsrüstung bietet volle Feldmobilität. Grenzgebietler ist immer bei dir, vom Zivilisationsgürtel bis in den fernen und eisigen Norden.",
     "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "Der gewöhnliche Sauerstoffzylinder der Grenzgebietler-Reihe für Unterwasser-Einsätze mit schwerer Ausrüstung verwendet Sauerstoff-Zyklustechnologie und garantiert dem Träger mindestens 4 Stunden Sauerstoff unter Wasser. Die Haltbarkeit der verbesserten Version beträgt sogar 6 Stunden.",
     "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "Grenzgebiet-Komposit-RHA",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Eine superschwere Grenzgebietler-Rüstungseinlage. Gewährt dem Träger Mut und Zuversicht unter feindlichem Artilleriebeschuss.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Verdichtete Grenzgebiet-Platte",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein auf Feldmobilität ausgelegtes Teil des Grenzgebietler-Unterstützungskits: leicht, platzsparend, makellos und praktisch. Hack ruhig ein wenig mit deinen eigenen Klingenwaffen darauf herum. Wir garantieren, dass sie keinen Kratzer hinterlassen werden.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Grenzgebiet-Verderbnis-Schutzhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -843,6 +915,18 @@
     "name": "Grenzgebiet-Faserhandschuhe S1",
     "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Modell für Kämpfe unter Wasser aus der Grenzgebietler-Rüstungsreihe. Dank spezieller Faser-Webtechnologien können diese Handschuhe einen Sauerstoff-Zyklus unterstützen.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Schwere Grenzgebiet-Fingerhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Satz superschwerer Grenzgebietler-Handschutz. Hiermit fühlt sich die manuelle Umwandlung von Aggeloi zu Aggagrit an, als würde man einen Erdbrocken zerkrümeln.",
+    "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Grenzgebiet-Handschuhe LITE",
+    "description": "Dieses Ausrüstungsteil wurde vom Northmarch-Support-Zentrum entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Satz integrierter Grenzgebietler-Unterstützungshandschuhe, die volle Feldmobilität gewährleisten. Gut ausgewogen und angenehm zu tragen. Entschuldigung. Es ist echt schwierig, sich Werbung für Hilfsprodukte auszudenken.",
     "setBonus": "3-Stück-Setbonus: Abklingzeitverringerung der Kombofertigkeit des Trägers <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nNachdem der Träger mit einer Fertigkeit FP wiederhergestellt hat, erhält das Team {duration} Sek. lang <@ba.vup>+{dmg_up:0%}</> SDN. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -1653,6 +1737,12 @@
     "name": "Ewiges-Xiranit-Kanalisierungshandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Die Energieleitung ist akzeptabel … Aber die Hände werden eventuell ein bisschen heiß.“",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Schwere Ewiges-Xiranit-Fingerhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi.\n„Über Jahre war ich dein wahnsinniger Begleiter, mein alter Freund. Ich habe dir deinen letzten Wunsch erfüllt. Diese Welt wird von der Ewiges-Xiranit-Rüstung erfahren, und sie werden sich an deinen Namen erinnern.“",
     "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   }
 }

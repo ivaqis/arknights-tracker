@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "蘑境儲藏家獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於舊水壩開啟47個儲藏箱",
+        "completeDesc": "您已開啟了武陵的大部分儲藏箱。這值不少蜜餅呢。"
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "「蟲球滿貫」",
     "category": "地區獎章",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "於雪松林和祀的畫解鎖18個協議傳送點",
         "completeDesc": "您已更深度地喚醒了武陵的協議網路。即便它身在異境。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "錨定武陵獎章·V",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於舊水壩解鎖7個協議傳送點",
+        "completeDesc": "您已更深度地喚醒了武陵的協議網路。萬幸的是它們沒有開口和您講話。"
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "於雪松林和祀的畫收集41個醚質",
         "completeDesc": "初始之物的大量遺失片段正於您手中重聚。或許它們僅是異境的幾縷光影，但這些舊物仍理應歸順於您。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "「碎片的重聚」·V",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於舊水壩收集17個醚質",
+        "completeDesc": "初始之物的大量遺失片段正於您手中重聚。嗯……您有沒有覺得醚質也像是一種孢子？"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "於祀的畫中解開11個燈柱機關",
         "completeDesc": "您解開了祀留下的諸多小謎題。久在畫中遊，須知墨魎亦有童心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "水壩行者獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於舊水壩，使用蜜餅撞擊或幹員攻擊，與供能蘑菇、彩虹菇、蘑菇藤或幻覺牆共計互動20次。",
+        "completeDesc": "或許您已經比設計者更瞭解這座水壩了。"
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "在「影拓豐碑」中，通關苦難模式「深林囈語」的所有關卡"
     }
   },
+  "achv_bat_hard_9": {
+    "name": "「殘暴者的凶行」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關「暴君武裝」的所有難度III關卡",
+        "completeDesc": "您擊潰了重裝來襲的暴君，她與牠的凶行得見於銀幕之上。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關「暴君武裝」的所有難度VI關卡"
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "「留白」",
     "category": "技藝獎章",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "於戰鬥中累計施加500次物理異常",
         "completeDesc": "您是當之無愧的格鬥宗師。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "「蘑菇的彈性」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "在碾菇破城者的1輪連續震地攻擊中，主控幹員被擊飛4次及以上",
+        "completeDesc": "您似乎已經體會到了蘑菇的彈性，如同玩彈跳床一般的絕妙體驗。"
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "「巫術21」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在未爆牌的情況下，獲得至少21點",
+        "completeDesc": "看來，您已經頗為適應「幸運蘿蔔」帶回來的巫術小遊戲了。"
+      }
+    },
+    "plating": {
+      "desc": "在未爆牌的情況下，獲得至少30點"
+    }
+  },
   "achv_event_clean": {
     "name": "「諸塵皆淨」",
     "category": "活動獎章",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "在「危機合約 浸藍測試作戰」中，成功達成指標總計30<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑戰"
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "「JOKER的軍權」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "打出1張黑Joker",
+        "completeDesc": "一聲巨響後，肆虐許久的軍閥倒下了……但他的故事還在牌桌上流傳。"
+      }
+    },
+    "plating": {
+      "desc": "打出1張紅Joker"
     }
   },
   "achv_event_dungfight": {
@@ -1081,6 +1183,20 @@
       "desc": "通關「熾燃！競技大會！」所有關卡的全功率模式，並在180秒內通關以下任意一關：\n· 「聯合！人與岩石！全功率！」\n· 「戰術！驅獸妙計！全功率！」\n· 「混亂！終極廝殺！全功率！」"
     }
   },
+  "achv_event_takestwo_2": {
+    "name": "「塔衛二第一競技會」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "通關「方興！競技大會！」所有關卡的普通模式",
+        "completeDesc": "在武陵，真正能夠點燃鬥士們熱血的競技大會已然完美落幕，請相信下一場大賽很快就要到來！"
+      }
+    },
+    "plating": {
+      "desc": "在200秒內，通關「方興！競技大會！」以下所有關卡：\n· 「緣緣！開業酬賓！全功率！」\n· 「鬥志！點燃武陵！全功率！」"
+    }
+  },
   "achv_event_tundra_challenge_dung": {
     "name": "「於谷地的密境中」",
     "category": "活動獎章",
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "在「密境行者」中，完美通關所有「畫外遺光」協議空間"
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "「蕈城」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通關所有「菌類秘事」協議空間",
+        "completeDesc": "碎片化的協議空間被您逐一探明，蘑菇們的城向您敞開大門（並不是幻覺）。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通關所有「菌類秘事」協議空間"
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "武陵工業先驅獎章·V",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工業計劃的50個技術研究",
+        "completeDesc": "您已實現了武陵工業計劃的更多內容。\n我們的技術與武陵的願望交織於一處，綻放出了嶄新的花朵。"
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "谷地工業先驅獎章",
     "category": "建設獎章",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "在「提弗洛斯的靶場」中，通關所有進階訓練，且三星通關日常訓練04"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "「重塑我們的生活」",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "將武陵地區的重建禁區進度推進至階段4（持續維護階段）",
+        "completeDesc": "銘記過去，迎接未來。"
+      }
+    },
+    "plating": {
+      "desc": "完成5次持續維護"
     }
   },
   "achv_growth_adventure_level": {
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "「來吧，從管道出來」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "碾菇虯獸處於潛伏狀態時，利用蜜餅使其破土而出",
+        "completeDesc": "據說聯盟工團的管道維修工人經常在施工作業時遭遇虯獸，把牠們釣出來的確是個好方法。"
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "「造主的盛勢」",
     "category": "奇想獎章",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "在阮一進入激怒狀態後，使其「枯朽之觸」存在至少60秒。",
         "completeDesc": "他以枯枝朽木圍成一片死域，而您仍能在其中自在穿行。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "「專業安全屋」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "1": {
+        "desc": "於舊水壩到達秘密基地",
+        "completeDesc": "專業的幹員總會在行動時準備好安全屋，可不要低估小刻的專業程度……或許。"
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "主線任務獎章",
     "levels": {
       "3": {
-        "desc": "完成主線任務「第二章 - 進度VI - 終則有始」",
+        "desc": "完成主線任務「第二章 - 進度VI - 志同道合」",
         "completeDesc": "莊方宜等到了您。"
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "主線任務獎章",
     "levels": {
       "3": {
-        "desc": "完成主線任務「第二章 - 進度VIII - 畫中客棧」",
+        "desc": "完成主線任務「第二章 - 進度VIII - 入丹青」",
         "completeDesc": "卻見丹青好，便向山中行。"
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "主線任務獎章",
     "levels": {
       "3": {
-        "desc": "完成主線任務「第二章 - 進度VIII - 試煉三·非路之路」",
+        "desc": "完成主線任務「第二章 - 進度VIII - 洞我執」",
         "completeDesc": "洞我之執，癒我沉痾。"
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "主線任務獎章",
     "levels": {
       "3": {
-        "desc": "完成主線任務「第二章 - 進度VIII - 尾聲」",
+        "desc": "完成主線任務「第二章 - 進度VIII - 著新墨」",
         "completeDesc": "暈開幾分舊墨痕，揮毫便得妙筆，應見萬物新。"
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "主線任務獎章",
     "levels": {
       "3": {
-        "desc": "完成主線任務「第二章 - 進度V - 決戰總樁」",
+        "desc": "完成主線任務「第二章 - 進度V - 破陣」",
         "completeDesc": "被野心之火點燃，欲以萬千生命為代價窺伺絕境的征服者，聶菲斯的惡意被您粉碎。"
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "完成支線任務「紀念日」",
         "completeDesc": "妙哉妙哉，羽獸有詩興，煙火在人心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "「醉後方知好姻緣」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「醉後派對」",
+        "completeDesc": "他和她，噢不，是它……嗯也可能是她……就這樣幸福快樂地生活了下去。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "「蜜餅是我的祈願」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「蜜餅是我的祈願」",
+        "completeDesc": "您和小刻穿過了蘑菇、蜜餅和些許幻想構成的奇妙世界，沒關係，不必懷疑，這是一場真實的冒險。"
       }
     },
     "plating": null

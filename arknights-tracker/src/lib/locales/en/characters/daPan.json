@@ -186,12 +186,12 @@
       },
       {
         "voId": "chr_0018_dapan_mono_switch_01",
-        "title": "Standing by 1",
+        "title": "Standing By 1",
         "text": "Where to next, Endmin?"
       },
       {
         "voId": "chr_0018_dapan_mono_switch_02",
-        "title": "Standing by 2",
+        "title": "Standing By 2",
         "text": "Got a job for me? I'll handle it."
       },
       {
@@ -247,7 +247,7 @@
       {
         "voId": "chr_0018_dapan_sim_gift_recv_01",
         "title": "Accepting Gifts",
-        "text": "I am deeply honored!"
+        "text": "I'm truly honored!"
       },
       {
         "voId": "chr_0018_dapan_mono_self_line01",

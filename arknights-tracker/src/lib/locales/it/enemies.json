@@ -1,7 +1,7 @@
 {
   "eny_0007_mimicw": {
-    "name": "Drago delle sabbie",
-    "nickname": "Drago delle sabbie",
+    "name": "Drago delle sabbie scavatore",
+    "nickname": "Drago delle sabbie scavatore",
     "description": "Una creatura che sputa fluidi altamente corrosivi. In genere, il drago delle sabbie vive sottoterra ed è solito dissolvere materiali metallici con l'acido, per poi consumarli. Infatti, ai cacciatori di Nidwyrm si consiglia di sottoporre le proprie armi a una regolare manutenzione.",
     "abilities": [
       "Evita lo sputo velenoso. Se lo calpesti, l'operatore subirà danni da natura continui."
@@ -781,6 +781,39 @@
     "abilities": [
       "Quando Si dispiega il suo dipinto, memorizza la posizione delle zone d'attacco, quindi schivale nella sequenza corretta.",
       "Si può creare Pozze d'inchiostro estremamente pericolose. Non entrare nelle zone contaminate dall'inchiostro."
+    ]
+  },
+  "eny_0158_mushbug": {
+    "name": "Drago delle sabbie Schiacciafunghi",
+    "nickname": "Drago delle sabbie Schiacciafunghi",
+    "description": "Un normale drago delle sabbie tende a scavare sottoterra per restare nascosto. Questa variante contaminata dalle spore ha un comportamento imprevedibile. Inoltre, cerca di diffondere ancora più spore.",
+    "abilities": [
+      "Quando il drago delle sabbie Schiacciafunghi scava un tunnel sotterraneo, espone la sua parte superiore, che diventa un punto debole.",
+      "La gabbia di viticci dura per un po'. Infligge danni agli operatori che la toccano."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Principe cardoncello",
+    "nickname": "Principe cardoncello",
+    "description": "Uno strano fungo. Ha un carattere mite e sa essere piuttosto affidabile. È il futuro e la speranza della famiglia dei funghi.",
+    "abilities": [
+      "Quando il principe cardoncello scava un tunnel sotterraneo, espone la sua parte superiore, che diventa un punto debole."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Nocchespora Schiacciafunghi",
+    "nickname": "Nocchespora Schiacciafunghi",
+    "description": "Fenditerra dal comportamento imprevedibile a causa delle spore. Fai attenzione. Nonostante i suoi pugni morbidi e soffici, è temibile quanto gli altri.",
+    "abilities": [
+      "La nocchespora Schiacciafunghi può muovere le braccia per creare un vortice che risucchia continuamente gli operatori."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Guardiaspora Schiacciafunghi",
+    "nickname": "Guardiaspora Schiacciafunghi",
+    "description": "Fenditerra dal comportamento imprevedibile a causa delle spore. Il suo scudo ora è... completo.",
+    "abilities": [
+      "Il guardiaspora Schiacciafunghi può alzare lo scudo per bloccare gli attacchi base degli operatori."
     ]
   },
   "tatget_001_normal": {

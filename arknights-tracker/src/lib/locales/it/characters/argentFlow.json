@@ -34,7 +34,7 @@
     },
     "battleSkill": {
       "name": "Ombra domata",
-      "description": "Flusso argentato brandisce la lancia, infligge <@ba.pd>danni fisici</> ai nemici nelle vicinanze e applica <#ba.airborne>Sospensione</> a uno o più bersagli davanti a sé.\nDopo che Flusso argentato usa la sua abilità combo, la sua abilità di combattimento viene temporaneamente sostituita da <@ba.key>Impeto fulmineo</>.\n<@ba.key>Impeto fulmineo</>: Flusso argentato monta il suo cavalcone Nuli, balza in aria, accumula rapidamente potenza e poi carica verso il bersaglio, applicando forzatamente <#ba.conduct>Elettrificazione</> e infliggendo <@ba.pulse>danni da elettricità</> ai nemici in un'ampia area davanti a sé. Quando questa <#ba.conduct>Elettrificazione</> è applicata a un bersaglio affetto da <#ba.pulseinflict>Afflizione da elettricità</>, <#ba.consume>consuma</> tutti gli accumuli di <#ba.pulseinflict>Afflizione da elettricità</> del bersaglio e <#ba.statuslevel>aumenta di +1 il livello di stato</> di <#ba.conduct>Elettrificazione</> per ogni accumulo consumato. Dopo aver <#ba.consume>consumato</> l'<#ba.pulseinflict>Afflizione da elettricità</> del bersaglio, Flusso argentato applica anche 1 accumulo di <#ba.noguard>Vulnerabilità</>.",
+      "description": "Flusso argentato brandisce la lancia, infligge <@ba.pd>danni fisici</> ai nemici nelle vicinanze e applica <#ba.airborne>Sospensione</> a uno o più bersagli davanti a sé.\nDopo che Flusso argentato usa la sua abilità combo, la sua abilità di combattimento viene temporaneamente sostituita da <@ba.key>Impeto fulmineo</>.\n<@ba.key>Impeto fulmineo</>: Flusso argentato monta il suo cavalcone Nuli, balza in aria, accumula rapidamente potenza e poi carica verso il bersaglio, applicando forzatamente <#ba.conduct>Elettrificazione</> e infliggendo <@ba.pulse>danni da elettricità</> ai nemici in un'ampia area davanti a sé. Quando questa <#ba.conduct>Elettrificazione</> è applicata a un bersaglio affetto da <#ba.pulseinflict>Afflizione da elettricità</>, <#ba.consume>consuma</> tutti gli accumuli di <#ba.pulseinflict>Afflizione da elettricità</> del bersaglio e aumenta di +1 il <#ba.statuslevel>livello di stato</> di <#ba.conduct>Elettrificazione</> per ogni accumulo consumato. Dopo aver <#ba.consume>consumato</> l'<#ba.pulseinflict>Afflizione da elettricità</> del bersaglio, Flusso argentato applica anche 1 accumulo di <#ba.noguard>Vulnerabilità</>.",
       "baseDmgMultiplier": "Moltiplicatore danni base",
       "baseStagger": "Vacillamento base",
       "boltRushDmgMultiplier": "Moltiplicatore danni Impeto fulmineo",
@@ -258,7 +258,7 @@
       {
         "voId": "chr_0037_minghe_mono_self_line02",
         "title": "Dialogo fiducia 2",
-        "text": "Un aroma delicato? Probabilmente è questa pallina diffusore d'incenso. Quando mi sono arruolato, non ero esattamente una persona paziente. Mi costringevo a restare sveglio e vigile per adempiere al meglio ai miei doveri. Ma così ho solo messo a dura prova la mia salute mentale. I miei colleghi mi hanno dato una ricetta per un incenso che mi aiutasse a calmare la mente. Dicevano che un buon sonno è la chiave per superare le difficoltà. E la realtà ha confermato la saggezza delle loro parole... Endmin? Mmh. Già dormi. Allora farò la guardia per te."
+        "text": "Un aroma delicato? Probabilmente è questo diffusore sferico, lo uso per l'incenso. Quando mi sono arruolato, non ero esattamente una persona paziente. Mi costringevo a restare sveglio e vigile per adempiere al meglio ai miei doveri. Ma così ho solo messo a dura prova la mia salute mentale. I miei colleghi mi hanno dato una ricetta a base di incenso per aiutarmi a calmare la mente. Mi hanno detto che un buon sonno è la chiave per superare le difficoltà. E la realtà ha confermato la saggezza delle loro parole... Endmin? Mmh. Già dormi. Allora farò la guardia per te."
       },
       {
         "voId": "chr_0037_minghe_mono_self_line03",
@@ -545,7 +545,7 @@
       "name": "Flusso stellare radioso"
     },
     "potential5": {
-      "description": "Talento <@ba.key>Tripudio di fulmini primaverili</> migliorato: quando viene usata l'abilità di combattimento <@ba.key>Impeto fulmineo</>, tutta la squadra ottiene <@ba.vup>+{extra_yuanshi_add:0}</> punti di intensità delle Arti.\nIl bonus ai danni dell'esplosione di <@ba.key>Tuono lacerante</> per ogni punto di intensità delle Arti di Flusso argentato aumenta a <@ba.vup>{thunderdamage_multi:0.0}</> volte il valore originale.",
+      "description": "Talento <@ba.key>Tripudio di fulmini primaverili</> migliorato: quando viene usata l'abilità di combattimento <@ba.key>Impeto fulmineo</>, tutta la squadra ottiene <@ba.vup>+{extra_yuanshi_add:0}</> punti aggiuntivi di intensità delle Arti.\nIl bonus ai danni dell'esplosione di <@ba.key>Tuono lacerante</> per ogni punto di intensità delle Arti di Flusso argentato aumenta a <@ba.vup>{thunderdamage_multi:0.0}</> volte il valore originale.",
       "name": "Invito alle luci celesti"
     }
   },

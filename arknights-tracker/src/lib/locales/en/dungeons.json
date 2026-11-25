@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Blightshade File: Thunderclap - Normal",
     "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
-    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The Blitzcrash Blightshade will not enter its Enraged state.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower015_ex": {
     "name": "Blightshade File: Thunderclap - Brutal",
     "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
-    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The Blitzcrash Blightshade will not enter its Enraged state.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower015_s": {
     "name": "Blightshade File: Thunderclap - Hard",
     "description": "FILE 01: Taken from a beast claw fragment acquired in the ruins. We have temporarily attributed the beast's aggression to either the Ætherside or its own predatory instincts.",
-    "featureDesc": "- The Blitzcrash Blightshade will not enter its Enraged state. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The Blitzcrash Blightshade will not enter its Enraged state.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower016": {
     "name": "Glaiver File: Yinglung - Normal",
     "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
-    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>.\n - All SP recovery and regeneration -50%.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower016_ex": {
     "name": "Glaiver File: Yinglung - Brutal",
     "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
-    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>.\n - All SP recovery and regeneration -50%.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower016_s": {
     "name": "Glaiver File: Yinglung - Hard",
     "description": "FILE 22: Taken from the personal weaponry of a YSTF member. The blade has over 20 notches, most of which resonated with defensive operations and assault missions.",
-    "featureDesc": "- After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>. \n- All SP recovery and regeneration -50%. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After the battle begins, operators' starting SP and Max SP are increased to <@ba.vup>700</>.\n - All SP recovery and regeneration -50%.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower017": {
     "name": "Avenger File: Bonekrusher - Normal",
     "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
-    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The entire team's Arts Intensity <@ba.vup>+100%</>.\n - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower017_ex": {
     "name": "Avenger File: Bonekrusher - Brutal",
     "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
-    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The entire team's Arts Intensity <@ba.vup>+100%</>.\n - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower017_s": {
     "name": "Avenger File: Bonekrusher - Hard",
     "description": "FILE 07: Taken from a roughly-made Bonekrusher weapon salvaged from a site of internecine battle between rival clan members. It presents a solid proof of internal conflicts and blood feuds.",
-    "featureDesc": "- The entire team's Arts Intensity <@ba.vup>+100%</>. \n- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - The entire team's Arts Intensity <@ba.vup>+100%</>.\n - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower018": {
     "name": "Beast File: Qingbo Stockade - Normal",
     "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
-    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied.\n - After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied.\n - After defeating Heavy Sting α, consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks immediately recovers <@ba.vup>+25</> SP.\n - Defeating any set of enemies grants HP +50% to the remaining enemies.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower018_ex": {
     "name": "Beast File: Qingbo Stockade - Brutal",
     "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
-    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied.\n - After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied.\n - After defeating Heavy Sting α, consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks immediately recovers <@ba.vup>+25</> SP.\n - Defeating any set of enemies grants HP +50% to the remaining enemies.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower018_s": {
     "name": "Beast File: Qingbo Stockade - Hard",
     "description": "FILE 19: Taken from a beast cage in Qingbo Stockade. The enclosure has been forged from broken weaponry. Before the builders of Qingbo Stockade could tame the beasts, they must first defeat the wildlife.",
-    "featureDesc": "- After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied. \n- After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied. \n- After defeating Heavy Sting α, immediately recover <@ba.vup>+25</> SP when consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks. \n- Defeating any set of enemies grants HP +50% to the remaining enemies. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - After defeating the Cloud Stalker, <@ba.vup>+1</> to the stacks of <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> applied.\n - After defeating the Quillbeast, <@ba.vup>+1</> to the Status Level of <@ba.key>Arts Reactions</> / <@ba.key>Crush</> / <@ba.key>Breach</> applied.\n - After defeating Heavy Sting α, consuming <@ba.key>Arts Infliction</> / <@ba.key>Vulnerability</> stacks immediately recovers <@ba.vup>+25</> SP.\n - Defeating any set of enemies grants HP +50% to the remaining enemies.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower019": {
     "name": "Construct File: Geist - Normal",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n - Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower019_ex": {
     "name": "Construct File: Geist - Brutal",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n - Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower019_s": {
     "name": "Construct File: Geist - Hard",
     "description": "FILE 50: Taken from a small carving knife. The creator of the woodcrafts sculpted the heart of the woods with gentleness, giving them the ability to guard the forest even till this day.",
-    "featureDesc": "- Operators enter battle with max <@ba.key>Ultimate Energy</>. \n- Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>. \n\n<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " - Operators enter battle with max <@ba.key>Ultimate Energy</>.\n - Gloomwald's Rage starts with 3 <@ba.key>shield stack(s)</>.\n\n <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower020": {
     "name": "Defense File: Shield - Normal",
     "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
-    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower020_ex": {
     "name": "Defense File: Shield - Brutal",
     "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
-    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_battletower020_s": {
     "name": "Defense File: Shield - Hard",
     "description": "FILE 99: Taken from a shattered shield with the structural simplicity on par with that of an insect carapace. The specimen has received plenty of welding, creating a roaring echo of war.",
-    "featureDesc": "<@ba.info>- Enemies have better stats.</> \n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+    "featureDesc": " <@ba.info>- Enemies have better stats.</>\n <@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower021": {
+    "name": "Dominance File: Howler-N",
+    "description": "Salvaged from damaged data storage device No. 17. The craghowler tore open the head of another. The bleached skull became its new crown and symbol of its authority. Only one may lord over the mountain.",
+    "featureDesc": "- SP Regen Rate: -30%.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "Dominance File: Howler-B",
+    "description": "Salvaged from damaged data storage device No. 17. The craghowler tore open the head of another. The bleached skull became its new crown and symbol of its authority. Only one may lord over the mountain.",
+    "featureDesc": "- SP Regen Rate: -30%.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "Dominance File: Howler-H",
+    "description": "Salvaged from damaged data storage device No. 17. The craghowler tore open the head of another. The bleached skull became its new crown and symbol of its authority. Only one may lord over the mountain.",
+    "featureDesc": "- SP Regen Rate: -30%.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower022": {
+    "name": "Codex File: Measurer-N",
+    "description": "Salvaged from damaged data storage device No. 653. The Maned Measure ... the guardian of law... and surveyor of the ink-washed realm. Decreed by its master to roam mortal lands that touch the heavens, and to censure the world and bring upon it a measure of order.",
+    "featureDesc": "- For every instance of Skill DMG taken by Maned Measure, it suffers <@ba.vup>5</> additional Stagger. Effect only triggers once every 0.05s.\n- When Maned Measure becomes Staggered, the jade orb hemispheres on its sides no longer provide DMG Reduction.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "Codex File: Measurer-B",
+    "description": "Salvaged from damaged data storage device No. 653. The Maned Measure ... the guardian of law... and surveyor of the ink-washed realm. Decreed by its master to roam mortal lands that touch the heavens, and to censure the world and bring upon it a measure of order.",
+    "featureDesc": "- For every instance of Skill DMG taken by Maned Measure, it suffers <@ba.vup>5</> additional Stagger. Effect only triggers once every 0.05s.\n- When Maned Measure becomes Staggered, the jade orb hemispheres on its sides no longer provide DMG Reduction.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "Codex File: Measurer-H",
+    "description": "Salvaged from damaged data storage device No. 653. The Maned Measure ... the guardian of law... and surveyor of the ink-washed realm. Decreed by its master to roam mortal lands that touch the heavens, and to censure the world and bring upon it a measure of order.",
+    "featureDesc": "- For every instance of Skill DMG taken by Maned Measure, it suffers <@ba.vup>5</> additional Stagger. Effect only triggers once every 0.05s.\n- When Maned Measure becomes Staggered, the jade orb hemispheres on its sides no longer provide DMG Reduction.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower023": {
+    "name": "Traced File: Hunter-N",
+    "description": "Salvaged from damaged data storage device No. 23. Through the deep woods and with great haste, the Scrolls of Tactics chase the ever-morphing entities and beasts... None is allowed to defile the painted realm.",
+    "featureDesc": "- After defeating any group of enemies, each operator gets a free ultimate casting that becomes available after casting an ultimate.\n- Defeating any set of enemies grants HP +20% to the remaining enemies.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "Traced File: Hunter-B",
+    "description": "Salvaged from damaged data storage device No. 23. Through the deep woods and with great haste, the Scrolls of Tactics chase the ever-morphing entities and beasts... None is allowed to defile the painted realm.",
+    "featureDesc": "- After defeating any group of enemies, each operator gets a free ultimate casting that becomes available after casting an ultimate.\n- Defeating any set of enemies grants HP +20% to the remaining enemies.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "Traced File: Hunter-H",
+    "description": "Salvaged from damaged data storage device No. 23. Through the deep woods and with great haste, the Scrolls of Tactics chase the ever-morphing entities and beasts... None is allowed to defile the painted realm.",
+    "featureDesc": "- After defeating any group of enemies, each operator gets a free ultimate casting that becomes available after casting an ultimate.\n- Defeating any set of enemies grants HP +20% to the remaining enemies.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower024": {
+    "name": "Siege File: Heavy Armor-N",
+    "description": "Salvaged from damaged data storage device No. 37. A warrior who once defended Warlord Jakub. He fought with great armored fists capable of breaching fortress walls. He was slain by a focused barrage of fire.",
+    "featureDesc": "- For every 1 stack of <@ba.key>Arts Infliction</> consumed or absorbed, apply 1 stack of <@ba.key>Vulnerability</> and recover <@ba.vup>10</> SP.\n- For every 1 stack of <@ba.key>Vulnerability</> consumed or absorbed, apply 1 stack of <@ba.key>Arts Infliction</> (of the element first applied in this battle) and recover <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "Siege File: Heavy Armor-B",
+    "description": "Salvaged from damaged data storage device No. 37. A warrior who once defended Warlord Jakub. He fought with great armored fists capable of breaching fortress walls. He was slain by a focused barrage of fire.",
+    "featureDesc": "- For every 1 stack of <@ba.key>Arts Infliction</> consumed or absorbed, apply 1 stack of <@ba.key>Vulnerability</> and recover <@ba.vup>10</> SP.\n- For every 1 stack of <@ba.key>Vulnerability</> consumed or absorbed, apply 1 stack of <@ba.key>Arts Infliction</> (of the element first applied in this battle) and recover <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "Siege File: Heavy Armor-H",
+    "description": "Salvaged from damaged data storage device No. 37. A warrior who once defended Warlord Jakub. He fought with great armored fists capable of breaching fortress walls. He was slain by a focused barrage of fire.",
+    "featureDesc": "- For every 1 stack of <@ba.key>Arts Infliction</> consumed or absorbed, apply 1 stack of <@ba.key>Vulnerability</> and recover <@ba.vup>10</> SP.\n- For every 1 stack of <@ba.key>Vulnerability</> consumed or absorbed, apply 1 stack of <@ba.key>Arts Infliction</> (of the element first applied in this battle) and recover <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower025": {
+    "name": "Pierced File: Ballista-N",
+    "description": "Salvaged from damaged data storage device No. 38. A warrior who once defended Warlord Jakub. His great bolts could ram through entire hilltops. He was crushed and slain by a colossus.",
+    "featureDesc": "- Combo Skill DMG Dealt <@ba.vup>+50%</>.\n- When casting a combo skill, the entire team gains Combo Skill Cooldown Reduction <@ba.vup>+4%</> (max stacks of this effect: 40) and recovers <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "Pierced File: Ballista-B",
+    "description": "Salvaged from damaged data storage device No. 38. A warrior who once defended Warlord Jakub. His great bolts could ram through entire hilltops. He was crushed and slain by a colossus.",
+    "featureDesc": "- Combo Skill DMG Dealt <@ba.vup>+50%</>.\n- When casting a combo skill, the entire team gains Combo Skill Cooldown Reduction <@ba.vup>+4%</> (max stacks of this effect: 40) and recovers <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "Pierced File: Ballista-H",
+    "description": "Salvaged from damaged data storage device No. 38. A warrior who once defended Warlord Jakub. His great bolts could ram through entire hilltops. He was crushed and slain by a colossus.",
+    "featureDesc": "- Combo Skill DMG Dealt <@ba.vup>+50%</>.\n- When casting a combo skill, the entire team gains Combo Skill Cooldown Reduction <@ba.vup>+4%</> (max stacks of this effect: 40) and recovers <@ba.vup>10</> SP.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower026": {
+    "name": "Destruction File: Æthillu-N",
+    "description": "Salvaged from damaged data storage device No. 66. An Æthillu that refuses to dissipate. Its twisted, struggling form has been captured and recorded.",
+    "featureDesc": "- After being defeated, an Æthillu comes back to life after a while (this revival only happens once). If all Æthillu are defeated during this time, none will come back to life.\n- The Æthillu are immune to Basic Attack DMG dealt by non-controlled operators.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "Destruction File: Æthillu-B",
+    "description": "Salvaged from damaged data storage device No. 66. An Æthillu that refuses to dissipate. Its twisted, struggling form has been captured and recorded.",
+    "featureDesc": "- After being defeated, an Æthillu comes back to life after a while (this revival only happens once). If all Æthillu are defeated during this time, none will come back to life.\n- The Æthillu are immune to Basic Attack DMG dealt by non-controlled operators.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "Destruction File: Æthillu-H",
+    "description": "Salvaged from damaged data storage device No. 66. An Æthillu that refuses to dissipate. Its twisted, struggling form has been captured and recorded.",
+    "featureDesc": "- After being defeated, an Æthillu comes back to life after a while (this revival only happens once). If all Æthillu are defeated during this time, none will come back to life.\n- The Æthillu are immune to Basic Attack DMG dealt by non-controlled operators.\n\n<@ba.info>- Enemies have better stats.</>\n<@ba.info>- Only HP Treatment tacticals and consumables can be used.</>"
   },
   "indie_contract001": {
     "name": "Re-Ignition Experimental Operation",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Indigo Experimental Operation",
     "description": "- The operation comprises 3 consecutive enemy waves to fight. Defeat all enemy waves to complete the operation.\n- Healing Masses will be dropped between the waves. Touch them to restore HP to every teammate.\n- There is a resting session between waves, during which the operators are still considered to be in battle.\n- The operation has a countdown timer. Once the timer ends or all operators in the team are reduced to ZERO HP, the operation is interrupted.\n- Tacticals and consumables cannot be used.",
-    "featureDesc": "- Enemies include various blightshades, witchcraft creations, feral beasts, and Cangzei pirates such as Cloud Obliterators.\n- You can still apply Vulnerability, Arts Inflictions, Physical Statuses, and Arts Reactions to enemies with shield stacks."
+    "featureDesc": "- Enemies include: Various Blightshades, Witchcraft creations, feral beasts, and Cloud Obliterator (Cangzei pirate).\n- Vulnerability, Arts Inflictions, Physical Statuses, and Arts Reactions can still be applied on enemies with shield stacks."
   },
   "indie_hard001": {
     "name": "Rampaging Shields",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Feral Carnage of Shadow",
     "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
-    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>5</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>5</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, the Rakerbeast Blightshade's <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard026_s": {
     "name": "Feral Carnage of Shadow: Agony",
     "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
-    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>7</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>7</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, the Rakerbeast Blightshade's <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   },
   "indie_hard027": {
     "name": "Arc of Shadow Flare",
@@ -638,5 +728,85 @@
     "name": "Critters That Dig: Agony",
     "description": "The frigid and dark season has ended. The hibernating critters stir and call to each other... They are legion, and they are waking.",
     "featureDesc": " - Careful. The Mist continuously deals <@ba.key>gradually increasing DMG</> to all operators. <@ba.key>Mist DMG is also greatly increased</>.\n - The Woodcraft Slug will burrow underground and restore all its <@ba.key>shield stacks</> on a regular basis. Defeating a Woodcraft Slug will temporarily reduce Mist DMG.\n - After the battle begins, 1 random Woodcraft Slug will lose all its <@ba.key>shield stacks</> and no longer restore them. Defeating it will cause 1 random Woodcraft Slug to lose all its <@ba.key>shield stacks</> and no longer restore them.\n\n<@ba.info> - Tacticals and consumables cannot be used.</>\n<@ba.info> - Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Nefarious Revealed: Triaggelos Ⅰ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Nefarious Revealed: Triaggelos Ⅱ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Nefarious Revealed: Triaggelos Ⅲ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Nefarious Revealed: Triaggelos Ⅳ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n - Whenever Triaggelos reconstitutes itself, it gains a permanent increase to its Max HP and Max Stagger.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Nefarious Revealed: Triaggelos Ⅴ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n - Whenever Triaggelos reconstitutes itself, it gains a permanent increase to its Max HP and Max Stagger.\n - Whenever an operator casts battle skill and combo skill <@ba.key>3</> times, Triaggelos launches <@ba.key>1</> meteor at the controlled operator.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Nefarious Revealed: Triaggelos Ⅵ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n - Whenever Triaggelos reconstitutes itself, it gains a permanent increase to its Max HP and Max Stagger.\n - Whenever an operator casts battle skill and combo skill <@ba.key>3</> times, Triaggelos launches <@ba.key>1</> meteor at the controlled operator.\n - In its <@ba.key>Trickery Form</>, the skills of Triaggelos become more powerful.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Nefarious Revealed: Triaggelos Ⅶ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n - Whenever Triaggelos reconstitutes itself, it gains a permanent increase to its Max HP and Max Stagger.\n - Whenever an operator casts battle skill and combo skill <@ba.key>3</> times, Triaggelos launches <@ba.key>1</> meteor at the controlled operator.\n - In its <@ba.key>Trickery Form</>, the skills of Triaggelos become more powerful.\n - After launching <@ba.key>3</> meteors, Triaggelos casts its ultimate that deals massive DMG to the controlled operator. This DMG cannot be dodged.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Nefarious Revealed: Triaggelos Ⅷ",
+    "description": "",
+    "featureDesc": " - New Easy Tools Action: Using the Easy Tools button creates an <@ba.key>Originium Sapling</> at the controlled operator's location. Operators within the <@ba.key>Originium Sapling's</> protective radius are immune to all forms of DMG.\n - The Ankhor shockwaves cannot be dodged.\n - Whenever Triaggelos is Staggered, it removes all <@ba.key>Arts Infliction</> and <@ba.phy>Vulnerability</> stacks from itself, and permanently gains some ATK.\n - In its <@ba.key>Search Form</>, Triaggelos summons more powerful Aggeloi.\n - Whenever Triaggelos reconstitutes itself, it gains a permanent increase to its Max HP and Max Stagger.\n - Whenever an operator casts battle skill and combo skill <@ba.key>3</> times, Triaggelos launches <@ba.key>1</> meteor at the controlled operator.\n - In its <@ba.key>Trickery Form</>, the skills of Triaggelos become more powerful.\n - After launching <@ba.key>3</> meteors, Triaggelos casts its ultimate that deals massive DMG to the controlled operator. This DMG cannot be dodged.\n - <@ba.key>Perfect dodges cannot be performed</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Nefarious Revealed: Nefarith Ⅰ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Nefarious Revealed: Nefarith Ⅱ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Nefarious Revealed: Nefarith Ⅲ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Nefarious Revealed: Nefarith Ⅳ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n - Certain skills of <@ba.key>\"Conqueror\" Nefarith</> can only be stopped by <@ba.key>multiple interrupting hits</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Nefarious Revealed: Nefarith Ⅴ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n - Certain skills of <@ba.key>\"Conqueror\" Nefarith</> can only be stopped by <@ba.key>multiple interrupting hits</>.\n - Easy Tools action <@ba.key>Xiranite Support</> has a much longer cooldown. DMG radius of the special Dive ATK after using <@ba.key>Xiranite Support</> is also much smaller.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Nefarious Revealed: Nefarith Ⅵ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n - Certain skills of <@ba.key>\"Conqueror\" Nefarith</> can only be stopped by <@ba.key>multiple interrupting hits</>.\n - Easy Tools action <@ba.key>Xiranite Support</> has a much longer cooldown. DMG radius of the special Dive ATK after using <@ba.key>Xiranite Support</> is also much smaller.\n - All <@ba.fire>Heat Inflictions</> applied to operators are directly converted to <@ba.fire>Combustion</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Nefarious Revealed: Nefarith Ⅶ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n - Certain skills of <@ba.key>\"Conqueror\" Nefarith</> can only be stopped by <@ba.key>multiple interrupting hits</>.\n - Easy Tools action <@ba.key>Xiranite Support</> has a much longer cooldown. DMG radius of the special Dive ATK after using <@ba.key>Xiranite Support</> is also much smaller.\n - All <@ba.fire>Heat Inflictions</> applied to operators are directly converted to <@ba.fire>Combustion</>.\n - <@ba.key>\"Conqueror\" Nefarith</> will, at regular intervals, trap a random non-controlled operator with an <@ba.key>Ankhor</>.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Nefarious Revealed: Nefarith Ⅷ",
+    "description": "",
+    "featureDesc": " - Whenever <@ba.key>\"Bonekrusher\" Nefarith</> tears the space-time, her skills become more powerful.\n - Whenever <@ba.key>\"Conqueror\" Nefarith</> restores her Æther Shield, she launches more continuous ranged attacks at the controlled operator.\n - Æther Waves cannot be dodged and deal massively more DMG.\n - Certain skills of <@ba.key>\"Conqueror\" Nefarith</> can only be stopped by <@ba.key>multiple interrupting hits</>.\n - Easy Tools action <@ba.key>Xiranite Support</> has a much longer cooldown. DMG radius of the special Dive ATK after using <@ba.key>Xiranite Support</> is also much smaller.\n - All <@ba.fire>Heat Inflictions</> applied to operators are directly converted to <@ba.fire>Combustion</>.\n - <@ba.key>\"Conqueror\" Nefarith</> will, at regular intervals, trap a random non-controlled operator with an <@ba.key>Ankhor</>.\n - <@ba.key>When defeat seems inevitable, Nefarith will make one final gambit and force the controlled operator to fight her alone.</>\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   }
 }

@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Thường",
     "description": "HỒ SƠ 01: Lấy từ mảnh vuốt thú thu được trong khu phế tích. Chúng tôi tạm thời cho rằng sự hung hãn của con thú này bắt nguồn từ Ætherside hoặc bản năng săn mồi của chính nó.",
-    "featureDesc": "- Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower015_ex": {
     "name": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Tàn Bạo",
     "description": "HỒ SƠ 01: Lấy từ mảnh vuốt thú thu được trong khu phế tích. Chúng tôi tạm thời cho rằng sự hung hãn của con thú này bắt nguồn từ Ætherside hoặc bản năng săn mồi của chính nó.",
-    "featureDesc": "- Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower015_s": {
     "name": "Hồ Sơ Bóng Nhiễm Khuẩn: Sấm Sét - Khó",
     "description": "HỒ SƠ 01: Lấy từ mảnh vuốt thú thu được trong khu phế tích. Chúng tôi tạm thời cho rằng sự hung hãn của con thú này bắt nguồn từ Ætherside hoặc bản năng săn mồi của chính nó.",
-    "featureDesc": "- Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Bóng Nhiễm Khuẩn Chớp Nhoáng sẽ không tiến vào trạng thái Điên Cuồng.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower016": {
     "name": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Thường",
     "description": "HỒ SƠ 22: Lấy từ vũ khí cá nhân của một thành viên ĐĐNY. Lưỡi đao có hơn 20 vết mẻ, phần lớn trong số đó cộng hưởng với các chiến dịch phòng thủ và nhiệm vụ đột kích.",
-    "featureDesc": "- Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng hồi ĐKN và tự hồi ĐKN -50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng Hồi Điểm KN và tự Hồi Điểm KN -50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower016_ex": {
     "name": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Tàn Bạo",
     "description": "HỒ SƠ 22: Lấy từ vũ khí cá nhân của một thành viên ĐĐNY. Lưỡi đao có hơn 20 vết mẻ, phần lớn trong số đó cộng hưởng với các chiến dịch phòng thủ và nhiệm vụ đột kích.",
-    "featureDesc": "- Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng hồi ĐKN và tự hồi ĐKN -50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng Hồi Điểm KN và tự Hồi Điểm KN -50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower016_s": {
     "name": "Hồ Sơ Đao Thủ: Đặc Nhiệm - Khó",
     "description": "HỒ SƠ 22: Lấy từ vũ khí cá nhân của một thành viên ĐĐNY. Lưỡi đao có hơn 20 vết mẻ, phần lớn trong số đó cộng hưởng với các chiến dịch phòng thủ và nhiệm vụ đột kích.",
-    "featureDesc": "- Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng hồi ĐKN và tự hồi ĐKN -50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi bắt đầu giao tranh, Điểm Kỹ Năng ban đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên <@ba.vup>700</>.\n- Tất cả hiệu ứng Hồi Điểm KN và tự Hồi Điểm KN -50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower017": {
     "name": "Hồ Sơ Báo Thù: Bonekrusher - Thường",
     "description": "HỒ SƠ 07: Lấy từ một vũ khí Bonekrusher chế tác thô sơ, được thu hồi từ địa điểm xảy ra giao tranh nội bộ giữa các thành viên thuộc những thị tộc đối địch. Nó là bằng chứng rõ ràng cho những xung đột nội bộ và mối huyết thù giữa họ.",
-    "featureDesc": "- Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower017_ex": {
     "name": "Hồ Sơ Báo Thù: Bonekrusher - Tàn Bạo",
     "description": "HỒ SƠ 07: Lấy từ một vũ khí Bonekrusher chế tác thô sơ, được thu hồi từ địa điểm xảy ra giao tranh nội bộ giữa các thành viên thuộc những thị tộc đối địch. Nó là bằng chứng rõ ràng cho những xung đột nội bộ và mối huyết thù giữa họ.",
-    "featureDesc": "- Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower017_s": {
     "name": "Hồ Sơ Báo Thù: Bonekrusher - Khó",
     "description": "HỒ SƠ 07: Lấy từ một vũ khí Bonekrusher chế tác thô sơ, được thu hồi từ địa điểm xảy ra giao tranh nội bộ giữa các thành viên thuộc những thị tộc đối địch. Nó là bằng chứng rõ ràng cho những xung đột nội bộ và mối huyết thù giữa họ.",
-    "featureDesc": "- Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Công Phép của cả đội <@ba.vup>+100%</>.\n- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower018": {
     "name": "Hồ Sơ Quái Thú: Trại Thanh Ba - Thường",
     "description": "HỒ SƠ 19: Lấy từ một chuồng thú tại Trại Thanh Ba. Khu chuồng này được rèn từ các vũ khí gãy hỏng. Trước khi những người xây dựng Trại Thanh Ba có thể thuần hóa dã thú, trước hết họ phải đánh bại chúng.",
-    "featureDesc": "- Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n- Sau khi đánh bại Sting Hạng Nặng α, lập tức hồi thêm <@ba.vup>+25</> Điểm Kỹ Năng khi tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</>.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n - Sau khi đánh bại Sting Hạng Nặng α, tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> sẽ lập tức hồi <@ba.vup>+25</> ĐKN.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower018_ex": {
     "name": "Hồ Sơ Quái Thú: Trại Thanh Ba - Tàn Bạo",
     "description": "HỒ SƠ 19: Lấy từ một chuồng thú tại Trại Thanh Ba. Khu chuồng này được rèn từ các vũ khí gãy hỏng. Trước khi những người xây dựng Trại Thanh Ba có thể thuần hóa dã thú, trước hết họ phải đánh bại chúng.",
-    "featureDesc": "- Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n- Sau khi đánh bại Sting Hạng Nặng α, lập tức hồi thêm <@ba.vup>+25</> Điểm Kỹ Năng khi tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</>.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n - Sau khi đánh bại Sting Hạng Nặng α, tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> sẽ lập tức hồi <@ba.vup>+25</> ĐKN.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower018_s": {
     "name": "Hồ Sơ Quái Thú: Trại Thanh Ba - Khó",
     "description": "HỒ SƠ 19: Lấy từ một chuồng thú tại Trại Thanh Ba. Khu chuồng này được rèn từ các vũ khí gãy hỏng. Trước khi những người xây dựng Trại Thanh Ba có thể thuần hóa dã thú, trước hết họ phải đánh bại chúng.",
-    "featureDesc": "- Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n- Sau khi đánh bại Sting Hạng Nặng α, lập tức hồi thêm <@ba.vup>+25</> Điểm Kỹ Năng khi tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</>.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Sau khi đánh bại Thợ Săn Mây, <@ba.vup>+1</> vào số tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> được áp dụng.\n- Sau khi đánh bại Quái Lông Nhọn, <@ba.vup>+1</> vào Cấp Trạng Thái của <@ba.key>Phản Ứng Thuật Pháp</> / <@ba.key>Nghiền</> / <@ba.key>Phá Giáp</> được áp dụng.\n - Sau khi đánh bại Sting Hạng Nặng α, tiêu hao tầng <@ba.key>Nhiễm Thuật Pháp</> / <@ba.key>Trừ Giáp</> sẽ lập tức hồi <@ba.vup>+25</> ĐKN.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ cho các kẻ địch còn lại HP +50%.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower019": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Thường",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower019_ex": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Tàn Bạo",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower019_s": {
     "name": "Hồ Sơ Tạo Vật: Linh Thể - Khó",
     "description": "HỒ SƠ 50: Lấy từ một con dao khắc nhỏ. Người tạo ra các mộc ngẫu đã dịu dàng chạm khắc trái tim của khu rừng, trao cho chúng khả năng bảo vệ rừng xanh cho đến tận hôm nay.",
-    "featureDesc": "- Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa.\n- Cơn Thịnh Nộ Của Gloomwald bắt đầu với 3 <@ba.key>tầng khiên</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower020": {
     "name": "Hồ Sơ Phòng Thủ: Khiên - Thường",
     "description": "HỒ SƠ 99: Lấy từ một chiếc khiên vỡ có kết cấu đơn giản chẳng kém gì lớp vỏ côn trùng. Mẫu vật này đã trải qua rất nhiều lần hàn nối, tạo nên tiếng vọng chiến tranh vang dội.",
-    "featureDesc": "<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower020_ex": {
     "name": "Hồ Sơ Phòng Thủ: Khiên - Tàn Bạo",
     "description": "HỒ SƠ 99: Lấy từ một chiếc khiên vỡ có kết cấu đơn giản chẳng kém gì lớp vỏ côn trùng. Mẫu vật này đã trải qua rất nhiều lần hàn nối, tạo nên tiếng vọng chiến tranh vang dội.",
-    "featureDesc": "<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_battletower020_s": {
     "name": "Hồ Sơ Phòng Thủ: Khiên - Khó",
     "description": "HỒ SƠ 99: Lấy từ một chiếc khiên vỡ có kết cấu đơn giản chẳng kém gì lớp vỏ côn trùng. Mẫu vật này đã trải qua rất nhiều lần hàn nối, tạo nên tiếng vọng chiến tranh vang dội.",
-    "featureDesc": "<@ba.info>- Kẻ địch có chỉ số tốt hơn.</> \n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower021": {
+    "name": "Hồ Sơ Áp Chế: Howler-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 17 bị hư hỏng. Craghowler đã xé toạc đầu một con khác. Hộp sọ bạc trắng trở thành vương miện mới và biểu tượng cho quyền uy của nó. Trên ngọn núi này, chỉ có thể có một kẻ làm chủ.",
+    "featureDesc": "- Tỉ Lệ Tự Hồi ĐKN: -30%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "Hồ Sơ Áp Chế: Howler-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 17 bị hư hỏng. Craghowler đã xé toạc đầu một con khác. Hộp sọ bạc trắng trở thành vương miện mới và biểu tượng cho quyền uy của nó. Trên ngọn núi này, chỉ có thể có một kẻ làm chủ.",
+    "featureDesc": "- Tỉ Lệ Tự Hồi ĐKN: -30%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "Hồ Sơ Áp Chế: Howler-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 17 bị hư hỏng. Craghowler đã xé toạc đầu một con khác. Hộp sọ bạc trắng trở thành vương miện mới và biểu tượng cho quyền uy của nó. Trên ngọn núi này, chỉ có thể có một kẻ làm chủ.",
+    "featureDesc": "- Tỉ Lệ Tự Hồi ĐKN: -30%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower022": {
+    "name": "Hồ Sơ Quy Chuẩn: Kẻ Định Độ-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 653 bị hư hỏng. Bờm Sư Khuôn Thước... kẻ gìn giữ phép tắc... và người đo đạc cõi thủy mặc. Phụng mệnh chủ nhân, nó du hành khắp chốn phàm trần nơi đất trời giao nhau, răn xét thế gian và lập lại một thước mực trật tự.",
+    "featureDesc": "- Mỗi lần Bờm Sư Khuôn Thước chịu ST Kỹ Năng, nó sẽ chịu thêm <@ba.vup>5</> Suy Sụp. Hiệu ứng này chỉ kích hoạt 1 lần mỗi 0.05 giây.\nKhi Bờm Sư Khuôn Thước rơi vào trạng thái Suy Sụp, hai bán cầu ngọc bích ở hai bên sẽ không còn cung cấp Giảm ST.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "Hồ Sơ Quy Chuẩn: Kẻ Định Độ-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 653 bị hư hỏng. Bờm Sư Khuôn Thước... kẻ gìn giữ phép tắc... và người đo đạc cõi thủy mặc. Phụng mệnh chủ nhân, nó du hành khắp chốn phàm trần nơi đất trời giao nhau, răn xét thế gian và lập lại một thước mực trật tự.",
+    "featureDesc": "- Mỗi lần Bờm Sư Khuôn Thước chịu ST Kỹ Năng, nó sẽ chịu thêm <@ba.vup>5</> Suy Sụp. Hiệu ứng này chỉ kích hoạt 1 lần mỗi 0.05 giây.\nKhi Bờm Sư Khuôn Thước rơi vào trạng thái Suy Sụp, hai bán cầu ngọc bích ở hai bên sẽ không còn cung cấp Giảm ST.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "Hồ Sơ Quy Chuẩn: Kẻ Định Độ-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 653 bị hư hỏng. Bờm Sư Khuôn Thước... kẻ gìn giữ phép tắc... và người đo đạc cõi thủy mặc. Phụng mệnh chủ nhân, nó du hành khắp chốn phàm trần nơi đất trời giao nhau, răn xét thế gian và lập lại một thước mực trật tự.",
+    "featureDesc": "- Mỗi lần Bờm Sư Khuôn Thước chịu ST Kỹ Năng, nó sẽ chịu thêm <@ba.vup>5</> Suy Sụp. Hiệu ứng này chỉ kích hoạt 1 lần mỗi 0.05 giây.\nKhi Bờm Sư Khuôn Thước rơi vào trạng thái Suy Sụp, hai bán cầu ngọc bích ở hai bên sẽ không còn cung cấp Giảm ST.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower023": {
+    "name": "Hồ Sơ Truy Dấu: Thợ Săn-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 23 bị hư hỏng. Băng qua rừng sâu với tốc độ kinh người, những Cuộn Chiến Thuật truy đuổi các thực thể và mãnh thú không ngừng biến đổi... Không một kẻ nào được phép làm ô uế cõi họa.",
+    "featureDesc": "- Sau khi đánh bại bất kỳ nhóm kẻ địch nào, mỗi cán viên sẽ nhận 1 lần thi triển tuyệt kỹ miễn phí, khả dụng sau khi thi triển tuyệt kỹ.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ khiến những kẻ địch còn lại nhận HP +20%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "Hồ Sơ Truy Dấu: Thợ Săn-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 23 bị hư hỏng. Băng qua rừng sâu với tốc độ kinh người, những Cuộn Chiến Thuật truy đuổi các thực thể và mãnh thú không ngừng biến đổi... Không một kẻ nào được phép làm ô uế cõi họa.",
+    "featureDesc": "- Sau khi đánh bại bất kỳ nhóm kẻ địch nào, mỗi cán viên sẽ nhận 1 lần thi triển tuyệt kỹ miễn phí, khả dụng sau khi thi triển tuyệt kỹ.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ khiến những kẻ địch còn lại nhận HP +20%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "Hồ Sơ Truy Dấu: Thợ Săn-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 23 bị hư hỏng. Băng qua rừng sâu với tốc độ kinh người, những Cuộn Chiến Thuật truy đuổi các thực thể và mãnh thú không ngừng biến đổi... Không một kẻ nào được phép làm ô uế cõi họa.",
+    "featureDesc": "- Sau khi đánh bại bất kỳ nhóm kẻ địch nào, mỗi cán viên sẽ nhận 1 lần thi triển tuyệt kỹ miễn phí, khả dụng sau khi thi triển tuyệt kỹ.\n- Đánh bại bất kỳ nhóm kẻ địch nào sẽ khiến những kẻ địch còn lại nhận HP +20%.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower024": {
+    "name": "Hồ Sơ Công Thành: Giáp Hạng Nặng-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 37 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Hắn chiến đấu bằng đôi thiết quyền bọc giáp, đủ sức phá thủng tường thành. Cuối cùng, hắn bị hạ gục bởi một loạt hỏa lực tập trung.",
+    "featureDesc": "- Với mỗi 1 tầng <@ba.key>Nhiễm Thuật Pháp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Trừ Giáp</> và hồi <@ba.vup>10</> ĐKN.\n- Với mỗi 1 tầng <@ba.key>Trừ Giáp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Nhiễm Thuật Pháp</> (thuộc nguyên tố được áp dụng đầu tiên trong trận chiến này) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "Hồ Sơ Công Thành: Giáp Hạng Nặng-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 37 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Hắn chiến đấu bằng đôi thiết quyền bọc giáp, đủ sức phá thủng tường thành. Cuối cùng, hắn bị hạ gục bởi một loạt hỏa lực tập trung.",
+    "featureDesc": "- Với mỗi 1 tầng <@ba.key>Nhiễm Thuật Pháp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Trừ Giáp</> và hồi <@ba.vup>10</> ĐKN.\n- Với mỗi 1 tầng <@ba.key>Trừ Giáp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Nhiễm Thuật Pháp</> (thuộc nguyên tố được áp dụng đầu tiên trong trận chiến này) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "Hồ Sơ Công Thành: Giáp Hạng Nặng-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 37 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Hắn chiến đấu bằng đôi thiết quyền bọc giáp, đủ sức phá thủng tường thành. Cuối cùng, hắn bị hạ gục bởi một loạt hỏa lực tập trung.",
+    "featureDesc": "- Với mỗi 1 tầng <@ba.key>Nhiễm Thuật Pháp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Trừ Giáp</> và hồi <@ba.vup>10</> ĐKN.\n- Với mỗi 1 tầng <@ba.key>Trừ Giáp</> bị tiêu hao hoặc hấp thụ, áp dụng 1 tầng <@ba.key>Nhiễm Thuật Pháp</> (thuộc nguyên tố được áp dụng đầu tiên trong trận chiến này) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower025": {
+    "name": "Hồ Sơ Xuyên Phá: Nỏ Bắn Đá-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 38 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Những mũi tên cỡ lớn của hắn có thể xuyên phá cả đỉnh đồi. Cuối cùng, hắn bị một cự vật nghiền nát và hạ sát.",
+    "featureDesc": "- ST KN liên hoàn Gây Ra <@ba.vup>+50%</>.\n- Khi thi triển KN liên hoàn, toàn đội nhận Giảm Thời Gian Hồi KN Liên Hoàn <@ba.vup>+4%</> (số tầng tối đa của hiệu ứng này: 40) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "Hồ Sơ Xuyên Phá: Nỏ Bắn Đá-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 38 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Những mũi tên cỡ lớn của hắn có thể xuyên phá cả đỉnh đồi. Cuối cùng, hắn bị một cự vật nghiền nát và hạ sát.",
+    "featureDesc": "- ST KN liên hoàn Gây Ra <@ba.vup>+50%</>.\n- Khi thi triển KN liên hoàn, toàn đội nhận Giảm Thời Gian Hồi KN Liên Hoàn <@ba.vup>+4%</> (số tầng tối đa của hiệu ứng này: 40) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "Hồ Sơ Xuyên Phá: Nỏ Bắn Đá-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 38 bị hư hỏng. Một chiến binh từng bảo vệ Quân Phiệt Jakub. Những mũi tên cỡ lớn của hắn có thể xuyên phá cả đỉnh đồi. Cuối cùng, hắn bị một cự vật nghiền nát và hạ sát.",
+    "featureDesc": "- ST KN liên hoàn Gây Ra <@ba.vup>+50%</>.\n- Khi thi triển KN liên hoàn, toàn đội nhận Giảm Thời Gian Hồi KN Liên Hoàn <@ba.vup>+4%</> (số tầng tối đa của hiệu ứng này: 40) và hồi <@ba.vup>10</> ĐKN.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower026": {
+    "name": "Hồ Sơ Hủy Diệt: Æthillu-N",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 66 bị hư hỏng. Một Æthillu không chịu tan biến. Hình hài méo mó, quằn quại của nó đã được ghi lại.",
+    "featureDesc": "- Sau khi bị đánh bại, Æthillu sẽ hồi sinh sau một khoảng thời gian (hồi sinh chỉ xảy ra 1 lần). Nếu tất cả Æthillu đều bị đánh bại trong khoảng thời gian này, sẽ không có Æthillu nào hồi sinh.\n- Æthillu miễn nhiễm với ST Đòn Đánh Thường do cán viên không được điều khiển gây ra.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "Hồ Sơ Hủy Diệt: Æthillu-B",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 66 bị hư hỏng. Một Æthillu không chịu tan biến. Hình hài méo mó, quằn quại của nó đã được ghi lại.",
+    "featureDesc": "- Sau khi bị đánh bại, Æthillu sẽ hồi sinh sau một khoảng thời gian (hồi sinh chỉ xảy ra 1 lần). Nếu tất cả Æthillu đều bị đánh bại trong khoảng thời gian này, sẽ không có Æthillu nào hồi sinh.\n- Æthillu miễn nhiễm với ST Đòn Đánh Thường do cán viên không được điều khiển gây ra.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "Hồ Sơ Hủy Diệt: Æthillu-H",
+    "description": "Được thu hồi từ thiết bị lưu trữ dữ liệu số 66 bị hư hỏng. Một Æthillu không chịu tan biến. Hình hài méo mó, quằn quại của nó đã được ghi lại.",
+    "featureDesc": "- Sau khi bị đánh bại, Æthillu sẽ hồi sinh sau một khoảng thời gian (hồi sinh chỉ xảy ra 1 lần). Nếu tất cả Æthillu đều bị đánh bại trong khoảng thời gian này, sẽ không có Æthillu nào hồi sinh.\n- Æthillu miễn nhiễm với ST Đòn Đánh Thường do cán viên không được điều khiển gây ra.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
   },
   "indie_contract001": {
     "name": "Chiến Dịch Thử Nghiệm Tái Kích Hoạt",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Chiến Dịch Thử Nghiệm Lam Chàm",
     "description": "- Chiến dịch này bao gồm 3 đợt kẻ địch liên tiếp. Đánh bại toàn bộ kẻ địch để hoàn thành chiến dịch.\n- Khối Hồi Phục sẽ xuất hiện giữa các đợt. Chạm vào Khối Hồi Phục để hồi HP cho toàn bộ thành viên trong đội.\n- Giữa các đợt có giai đoạn nghỉ; trong thời gian này, các cán viên vẫn được xem là đang trong trạng thái chiến đấu.\n- Chiến dịch có giới hạn thời gian. Khi thời gian kết thúc hoặc HP của toàn bộ cán viên trong đội giảm về 0, chiến dịch sẽ bị gián đoạn.\n- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.",
-    "featureDesc": "- Kẻ địch bao gồm nhiều loại bóng nhiễm khuẩn, tạo vật phù thuật, thú hoang và Hải Tặc Cangzei như Khai Thiên Tướng.\n- Bạn vẫn có thể áp dụng Trừ Giáp, Nhiễm Thuật Pháp, Trạng Thái Vật Lý và Phản Ứng Thuật Pháp lên các kẻ địch có tầng khiên."
+    "featureDesc": "- Kẻ địch bao gồm: nhiều loại Bóng Nhiễm Khuẩn, tạo vật Phù Thuật, thú hoang và Khai Thiên Tướng (Hải Tặc Cangzei).\n- Vẫn có thể áp dụng tầng Trừ Giáp, Nhiễm Thuật Pháp, Trạng Thái Vật Lý và Phản Ứng Thuật Pháp lên kẻ địch đang có tầng khiên."
   },
   "indie_hard001": {
     "name": "Khiên Cuồng Nộ",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Cuồng Sát Trong Bóng Tối",
     "description": "Những vuốt thú vặn vẹo là thứ đầu tiên vươn ra từ bóng tối. Mãi về sau, chúng ta mới biết thứ ánh sáng tàn nhẫn ấy đã in dấu lên bản tính hung bạo của chúng.",
-    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>5</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của nó sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>5</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Cào sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
   },
   "indie_hard026_s": {
     "name": "Cuồng Sát Trong Bóng Tối: Đoạn Nộ",
     "description": "Những vuốt thú vặn vẹo là thứ đầu tiên vươn ra từ bóng tối. Mãi về sau, chúng ta mới biết thứ ánh sáng tàn nhẫn ấy đã in dấu lên bản tính hung bạo của chúng.",
-    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>7</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của nó sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công. \n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>7</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Cào sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
   },
   "indie_hard027": {
     "name": "Cung Lửa Bóng Tối",
@@ -638,5 +728,85 @@
     "name": "Sinh Vật Đào Hang: Đoạn Nộ",
     "description": "Mùa lạnh giá tối tăm đã qua. Những sinh vật ngủ đông bắt đầu cựa mình và gọi nhau... Chúng đông như đoàn quân, và chúng đang thức giấc.",
     "featureDesc": " - Cẩn thận. Sương Mù liên tục gây <@ba.key>ST tăng dần</> lên tất cả cán viên. <@ba.key>ST Sương Mù cũng đồng thời được tăng mạnh</>.\n - Mộc Ngẫu Dạng Sên sẽ định kỳ đào hang xuống lòng đất và hồi lại toàn bộ <@ba.key>tầng Khiên</>. Đánh bại một Mộc Ngẫu Dạng Sên sẽ tạm thời giảm ST từ Sương Mù.\n - Sau khi bắt đầu giao tranh, 1 Mộc Ngẫu Dạng Sên ngẫu nhiên sẽ mất toàn bộ <@ba.key>tầng Khiên</> và không còn hồi lại chúng. Đánh bại nó sẽ khiến 1 Mộc Ngẫu Dạng Sên ngẫu nhiên mất toàn bộ <@ba.key>tầng Khiên</> và không còn hồi lại chúng.\n\n<@ba.info> - Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n<@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos Ⅰ",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos II",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n- Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos III",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n- Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n - Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos IV",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n- Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n - Mỗi khi Triaggelos tái cấu thành, nó sẽ vĩnh viễn tăng HP Tối Đa và Suy Sụp Tối Đa.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos V",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n- Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n - Mỗi khi Triaggelos tái cấu thành, nó sẽ vĩnh viễn tăng HP Tối Đa và Suy Sụp Tối Đa.\n - Mỗi khi cán viên thi triển KN chiến đấu và KN liên hoàn tổng cộng <@ba.key>3</> lần, Triaggelos sẽ phóng <@ba.key>1</> thiên thạch vào cán viên đang điều khiển.\n\n <@ba.info> - Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos VI",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n- Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n - Mỗi khi Triaggelos tái cấu thành, nó sẽ vĩnh viễn tăng HP Tối Đa và Suy Sụp Tối Đa.\n - Mỗi khi cán viên thi triển KN chiến đấu và KN liên hoàn tổng cộng <@ba.key>3</> lần, Triaggelos sẽ phóng <@ba.key>1</> thiên thạch vào cán viên đang điều khiển.\n - Ở <@ba.key>Dạng Xảo Trá</>, các kỹ năng của Triaggelos sẽ trở nên mạnh hơn.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos VII",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n- Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n - Mỗi khi Triaggelos tái cấu thành, nó sẽ vĩnh viễn tăng HP Tối Đa và Suy Sụp Tối Đa.\n - Mỗi khi cán viên thi triển KN chiến đấu và KN liên hoàn tổng cộng <@ba.key>3</> lần, Triaggelos sẽ phóng <@ba.key>1</> thiên thạch vào cán viên đang điều khiển.\n - Ở <@ba.key>Dạng Xảo Trá</>, các kỹ năng của Triaggelos sẽ trở nên mạnh hơn.\n - Sau khi phóng <@ba.key>3</> thiên thạch, Triaggelos sẽ thi triển tuyệt kỹ gây lượng ST lớn lên cán viên đang điều khiển. ST này không thể né tránh.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Nefarious Đã Lộ Diện: Triaggelos Ⅷ",
+    "description": "",
+    "featureDesc": " - Thao tác Công Cụ Tiện Lợi mới: Dùng nút Công Cụ Tiện Lợi để tạo một <@ba.key>Chồi Originium</> tại vị trí của cán viên đang điều khiển. Các cán viên trong phạm vi bảo hộ của <@ba.key>Chồi Originium</> miễn nhiễm với mọi dạng ST.\n - Không thể né sóng xung kích của Ankhor.\n - Mỗi khi Triaggelos rơi vào trạng thái Suy Sụp, nó sẽ xóa toàn bộ tầng <@ba.key>Nhiễm Thuật Pháp</> và <@ba.phy>Trừ Giáp</> trên bản thân, đồng thời vĩnh viễn nhận thêm một lượng Tấn Công.\n- Ở <@ba.key>Dạng Tìm Kiếm</>, Triaggelos sẽ triệu hồi những Aggeloi mạnh hơn.\n - Mỗi khi Triaggelos tái cấu thành, nó sẽ vĩnh viễn tăng HP Tối Đa và Suy Sụp Tối Đa.\n - Mỗi khi cán viên thi triển KN chiến đấu và KN liên hoàn tổng cộng <@ba.key>3</> lần, Triaggelos sẽ phóng <@ba.key>1</> thiên thạch vào cán viên đang điều khiển.\n - Ở <@ba.key>Dạng Xảo Trá</>, các kỹ năng của Triaggelos sẽ trở nên mạnh hơn.\n - Sau khi phóng <@ba.key>3</> thiên thạch, Triaggelos sẽ thi triển tuyệt kỹ gây lượng ST lớn lên cán viên đang điều khiển. ST này không thể né tránh.\n - <@ba.key>Không thể thực hiện né chuẩn xác</>.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith Ⅰ",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith II",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith III",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith IV",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n - Một số kỹ năng của <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> chỉ có thể bị ngắt bằng <@ba.key>nhiều đòn đánh gây gián đoạn</>.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith V",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n - Một số kỹ năng của <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> chỉ có thể bị ngắt bằng <@ba.key>nhiều đòn đánh gây gián đoạn</>.\n - Thao tác Công Cụ Tiện Lợi <@ba.key>Hỗ Trợ Xiranite</> có thời gian hồi lâu hơn đáng kể. Phạm vi gây ST của Đòn Bổ Nhào đặc biệt sau khi dùng <@ba.key>Hỗ Trợ Xiranite</> cũng nhỏ hơn đáng kể.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith VI",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n - Một số kỹ năng của <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> chỉ có thể bị ngắt bằng <@ba.key>nhiều đòn đánh gây gián đoạn</>.\n - Thao tác Công Cụ Tiện Lợi <@ba.key>Hỗ Trợ Xiranite</> có thời gian hồi lâu hơn đáng kể. Phạm vi gây ST của Đòn Bổ Nhào đặc biệt sau khi dùng <@ba.key>Hỗ Trợ Xiranite</> cũng nhỏ hơn đáng kể.\n - Mọi <@ba.fire>Nhiễm Nhiệt</> áp dụng lên cán viên đều được chuyển trực tiếp thành <@ba.fire>Thiêu Đốt</>.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith VII",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n - Một số kỹ năng của <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> chỉ có thể bị ngắt bằng <@ba.key>nhiều đòn đánh gây gián đoạn</>.\n - Thao tác Công Cụ Tiện Lợi <@ba.key>Hỗ Trợ Xiranite</> có thời gian hồi lâu hơn đáng kể. Phạm vi gây ST của Đòn Bổ Nhào đặc biệt sau khi dùng <@ba.key>Hỗ Trợ Xiranite</> cũng nhỏ hơn đáng kể.\n - Mọi <@ba.fire>Nhiễm Nhiệt</> áp dụng lên cán viên đều được chuyển trực tiếp thành <@ba.fire>Thiêu Đốt</>.\n - <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> sẽ định kỳ dùng <@ba.key>Ankhor</> giam giữ ngẫu nhiên một cán viên không được điều khiển.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Nefarious Đã Lộ Diện: Nefarith Ⅷ",
+    "description": "",
+    "featureDesc": " - Mỗi khi <@ba.key>\"Bonekrusher\" Nefarith</> xé rách không-thời gian, các kỹ năng của cô ta sẽ trở nên mạnh hơn.\n - Mỗi khi <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> hồi phục Khiên Æther, cô ta sẽ tung ra thêm nhiều đòn tấn công tầm xa liên tục vào cán viên đang điều khiển.\n - Sóng Æther không thể né tránh và gây ST lớn hơn rất nhiều.\n - Một số kỹ năng của <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> chỉ có thể bị ngắt bằng <@ba.key>nhiều đòn đánh gây gián đoạn</>.\n - Thao tác Công Cụ Tiện Lợi <@ba.key>Hỗ Trợ Xiranite</> có thời gian hồi lâu hơn đáng kể. Phạm vi gây ST của Đòn Bổ Nhào đặc biệt sau khi dùng <@ba.key>Hỗ Trợ Xiranite</> cũng nhỏ hơn đáng kể.\n - Mọi <@ba.fire>Nhiễm Nhiệt</> áp dụng lên cán viên đều được chuyển trực tiếp thành <@ba.fire>Thiêu Đốt</>.\n - <@ba.key>\"Kẻ Chinh Phục\" Nefarith</> sẽ định kỳ dùng <@ba.key>Ankhor</> giam giữ ngẫu nhiên một cán viên không được điều khiển.\n - <@ba.key>Khi thất bại dường như đã không thể tránh khỏi, Nefarith sẽ tung ra nước cờ cuối cùng và ép cán viên đang điều khiển phải đơn độc chiến đấu với cô ta.</>\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
   }
 }

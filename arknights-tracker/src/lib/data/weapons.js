@@ -586,6 +586,30 @@ export const weapons = {
       "combo"
     ]
   },
+  "sweetDeal": {
+    "id": "sweetDeal",
+    "gameId": "wpn_lance_0017",
+    "name": "Sweet Deal",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_str",
+      "attr_naturaldam",
+      "tacafter"
+    ]
+  },
+  "raidComet": {
+    "id": "raidComet",
+    "gameId": "wpn_lance_0018",
+    "name": "Raid Comet",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_str",
+      "attr_usp",
+      "burst"
+    ]
+  },
   "peco5": {
     "id": "peco5",
     "gameId": "wpn_pistol_0001",
@@ -1003,50 +1027,6 @@ export const weapons = {
       "attr_physpell",
       "force"
     ]
-  },
-  "sweetDeal": {
-    "id": "sweetDeal",
-    "gameId": "wpn_lance_0017",
-    "name": "Sweet Deal",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_str",
-      "attr_naturaldam",
-      "tacafter"
-    ],
-    "materials": [
-      "item_weapon_break_low",
-      "item_plant_spcstone_1_1",
-      "item_plant_spcstone_1_2",
-      "item_weapon_break_high",
-      "item_plant_spcstone_1_3",
-      "item_plant_spcstone_2_1",
-      "item_char_skill_specialize_2"
-    ],
-    "isForesight": true
-  },
-  "raidComet": {
-    "id": "raidComet",
-    "gameId": "wpn_lance_0018",
-    "name": "Raid Comet",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_str",
-      "attr_usp",
-      "burst"
-    ],
-    "materials": [
-      "item_weapon_break_low",
-      "item_plant_spcstone_1_1",
-      "item_plant_spcstone_1_2",
-      "item_weapon_break_high",
-      "item_plant_spcstone_1_3",
-      "item_plant_spcstone_2_3",
-      "item_char_skill_specialize_6"
-    ],
-    "isForesight": true
   },
   "starOfTomorrow": {
     "id": "starOfTomorrow",

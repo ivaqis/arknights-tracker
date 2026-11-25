@@ -783,6 +783,39 @@
       "Si bisa menciptakan Kolam Tinta yang sangat berbahaya. Jangan melangkah ke dalam zona yang tergenang tinta ini."
     ]
   },
+  "eny_0158_mushbug": {
+    "name": "Shroomkrusher Nidwyrm",
+    "nickname": "Shroomkrusher Nidwyrm",
+    "description": "Nidwyrm normal suka menggali ke bawah tanah untuk bersembunyi. Varian yang terinfeksi spora ini punya perilaku yang tak menentu dan ingin menyebarkan lebih banyak spora ke sekitarnya.",
+    "abilities": [
+      "Saat Shroomkrusher Nidwyrm menggali ke bawah tanah, bagian atasnya akan terbuka dan menjadi titik lemahnya.",
+      "Kurungan Sulur bisa bertahan selama beberapa saat dan akan menimbulkan DMG kepada operator yang menyentuhnya."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Pangeran Boletus",
+    "nickname": "Pangeran Boletus",
+    "description": "Jamur yang aneh. Sifatnya lembut dan cukup bisa diandalkan. Ia adalah masa depan dan harapan keluarga jamur.",
+    "abilities": [
+      "Saat Pangeran Boletus menggali ke bawah tanah, bagian atasnya akan terbuka dan menjadi titik lemahnya."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Shroomkrusher Sporeknuckle",
+    "nickname": "Shroomkrusher Sporeknuckle",
+    "description": "Landbreaker yang terinfeksi spora dengan perilaku tak menentu. Hati-hati. Meski kepalan tangannya empuk dan lembut, mereka tetap berbahaya.",
+    "abilities": [
+      "Shroomkrusher Sporeknuckle bisa mengayunkan lengannya untuk menciptakan angin puyuh yang akan terus-menerus menyedot operator."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Shroomkrusher Sporeguard",
+    "nickname": "Shroomkrusher Sporeguard",
+    "description": "Landbreaker yang terinfeksi spora dengan perilaku tak menentu. Perisainya sekarang sudah ... sempurna.",
+    "abilities": [
+      "Shroomkrusher Sporeguard bisa mengangkat perisai untuk memblokir serangan dasar operator."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Target Biasa",
     "nickname": "Target Biasa",

@@ -212,92 +212,182 @@
   "indie_battletower015": {
     "name": "Arquivo de Sombra da Praga: Estampido do Trovão – Normal",
     "description": "ARQUIVO 01: Retirado de um fragmento de garra de besta obtido nas ruínas. Atribuímos temporariamente a agressividade da besta ao Ætherside ou aos seus próprios instintos predatórios.",
-    "featureDesc": "- O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower015_ex": {
     "name": "Arquivo de Sombra da Praga: Estampido do Trovão – Brutal",
     "description": "ARQUIVO 01: Retirado de um fragmento de garra de besta obtido nas ruínas. Atribuímos temporariamente a agressividade da besta ao Ætherside ou aos seus próprios instintos predatórios.",
-    "featureDesc": "- O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower015_s": {
     "name": "Arquivo de Sombra da Praga: Estampido do Trovão – Difícil",
     "description": "ARQUIVO 01: Retirado de um fragmento de garra de besta obtido nas ruínas. Atribuímos temporariamente a agressividade da besta ao Ætherside ou aos seus próprios instintos predatórios.",
-    "featureDesc": "- O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - O Sombra da Praga de Blitzcrash não entrará em seu estado Enfurecido.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower016": {
     "name": "Arquivo de Guja: Yinglung – Normal",
     "description": "ARQUIVO 22: Retirado do arsenal pessoal de um membro da FTEY. A lâmina possui mais de 20 entalhes, a maioria dos quais relacionados a operações defensivas e missões de assalto.",
-    "featureDesc": "- Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>. \n- Toda a recuperação e regeneração de PH -50%. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>.\n - Toda a recuperação e regeneração de PH -50%.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower016_ex": {
     "name": "Arquivo de Guja: Yinglung – Brutal",
     "description": "ARQUIVO 22: Retirado do arsenal pessoal de um membro da FTEY. A lâmina possui mais de 20 entalhes, a maioria dos quais relacionados a operações defensivas e missões de assalto.",
-    "featureDesc": "- Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>. \n- Toda a recuperação e regeneração de PH -50%. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>.\n - Toda a recuperação e regeneração de PH -50%.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower016_s": {
     "name": "Arquivo de Guja: Yinglung – Difícil",
     "description": "ARQUIVO 22: Retirado do arsenal pessoal de um membro da FTEY. A lâmina possui mais de 20 entalhes, a maioria dos quais relacionados a operações defensivas e missões de assalto.",
-    "featureDesc": "- Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>. \n- Toda a recuperação e regeneração de PH -50%. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para <@ba.vup>700</>.\n - Toda a recuperação e regeneração de PH -50%.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower017": {
     "name": "Arquivo de Vingador: Quebra-Ossos – Normal",
     "description": "ARQUIVO 07: Retirado de uma arma rudimentar de Quebra-Ossos recuperada de um local de batalha interna entre membros de clãs rivais. Ele apresenta provas concretas de conflitos internos e rixas sangrentas.",
-    "featureDesc": "- A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>. \n- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>.\n - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower017_ex": {
     "name": "Arquivo de Vingador: Quebra-Ossos – Brutal",
     "description": "ARQUIVO 07: Retirado de uma arma rudimentar de Quebra-Ossos recuperada de um local de batalha interna entre membros de clãs rivais. Ele apresenta provas concretas de conflitos internos e rixas sangrentas.",
-    "featureDesc": "- A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>. \n- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>.\n - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower017_s": {
     "name": "Arquivo de Vingador: Quebra-Ossos – Difícil",
     "description": "ARQUIVO 07: Retirado de uma arma rudimentar de Quebra-Ossos recuperada de um local de batalha interna entre membros de clãs rivais. Ele apresenta provas concretas de conflitos internos e rixas sangrentas.",
-    "featureDesc": "- A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>. \n- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - A Intensidade das Artes da equipe inteira <@ba.vup>+ 100%</>.\n - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower018": {
     "name": "Arquivo de Bestas: Paliçada de Qingbo – Normal",
     "description": "ARQUIVO 19: Obtido em jaula de bestas na Paliçada de Qingbo. A estrutura foi forjada com armas quebradas. Antes que os construtores da Paliçada de Qingbo pudessem domar as bestas, precisavam derrotar a vida selvagem.",
-    "featureDesc": "- Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados. \n- Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado. \n- Após derrotar o Ferrão Pesado α, recupera imediatamente <@ba.vup>+ 25</> de PH ao consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</>. \n- Derrotar qualquer grupo de inimigos concede PV +50% aos inimigos restantes. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados.\n - Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado.\n - Após derrotar o Ferrão Pesado α, consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> recupera imediatamente <@ba.vup>+ 25</> de PH.\n - Derrotar qualquer grupo de inimigos concede PV + 50% aos inimigos restantes.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower018_ex": {
     "name": "Arquivo de Bestas: Paliçada de Qingbo – Brutal",
     "description": "ARQUIVO 19: Obtido em jaula de bestas na Paliçada de Qingbo. A estrutura foi forjada com armas quebradas. Antes que os construtores da Paliçada de Qingbo pudessem domar as bestas, precisavam derrotar a vida selvagem.",
-    "featureDesc": "- Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados. \n- Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado. \n- Após derrotar o Ferrão Pesado α, recupera imediatamente <@ba.vup>+ 25</> de PH ao consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</>. \n- Derrotar qualquer grupo de inimigos concede PV +50% aos inimigos restantes. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados.\n - Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado.\n - Após derrotar o Ferrão Pesado α, consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> recupera imediatamente <@ba.vup>+ 25</> de PH.\n - Derrotar qualquer grupo de inimigos concede PV + 50% aos inimigos restantes.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower018_s": {
     "name": "Arquivo de Bestas: Paliçada de Qingbo – Difícil",
     "description": "ARQUIVO 19: Obtido em jaula de bestas na Paliçada de Qingbo. A estrutura foi forjada com armas quebradas. Antes que os construtores da Paliçada de Qingbo pudessem domar as bestas, precisavam derrotar a vida selvagem.",
-    "featureDesc": "- Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados. \n- Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado. \n- Após derrotar o Ferrão Pesado α, recupera imediatamente <@ba.vup>+ 25</> de PH ao consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</>. \n- Derrotar qualquer grupo de inimigos concede PV +50% aos inimigos restantes. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Após derrotar o Perseguidor de Nuvens, <@ba.vup>+ 1</> aos acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> aplicados.\n - Após derrotar o Penoso, <@ba.vup>+ 1</> ao Nível de Status de <@ba.key>Reações de Artes</>/<@ba.key>Esmagar</>/<@ba.key>Romper</> aplicado.\n - Após derrotar o Ferrão Pesado α, consumir acúmulos de <@ba.key>Inflição de Artes</>/<@ba.key>Vulnerabilidade</> recupera imediatamente <@ba.vup>+ 25</> de PH.\n - Derrotar qualquer grupo de inimigos concede PV + 50% aos inimigos restantes.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower019": {
     "name": "Arquivo de Construção: Espírito – Normal",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n - A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower019_ex": {
     "name": "Arquivo de Construção: Espírito – Brutal",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n - A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower019_s": {
     "name": "Arquivo de Construção: Espírito – Difícil",
     "description": "ARQUIVO 50: Retirado de uma pequena faca de entalhar. O criador das peças de madeira esculpiu o coração das árvores com delicadeza, conferindo a elas a capacidade de proteger a floresta até os dias de hoje.",
-    "featureDesc": "- Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima. \n- A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>. \n\n<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n - A Fúria de Gloomwald começa com 3 <@ba.key>acúmulo(s) de escudos</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower020": {
     "name": "Arquivo de Defesa: Escudo – Normal",
     "description": "ARQUIVO 99: Retirado de um escudo fragmentado cuja simplicidade estrutural se assemelha à da carapaça de um inseto. O espécime foi submetido a inúmeras soldagens, criando um estrondoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower020_ex": {
     "name": "Arquivo de Defesa: Escudo – Brutal",
     "description": "ARQUIVO 99: Retirado de um escudo fragmentado cuja simplicidade estrutural se assemelha à da carapaça de um inseto. O espécime foi submetido a inúmeras soldagens, criando um estrondoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_battletower020_s": {
     "name": "Arquivo de Defesa: Escudo – Difícil",
     "description": "ARQUIVO 99: Retirado de um escudo fragmentado cuja simplicidade estrutural se assemelha à da carapaça de um inseto. O espécime foi submetido a inúmeras soldagens, criando um estrondoso eco de guerra.",
-    "featureDesc": "<@ba.info>- Os inimigos têm atributos melhores.</> \n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower021": {
+    "name": "Arquivo de Dominância: Uivante-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 17. O uivante dos penhascos abriu a cabeça de outro. O crânio alvejado tornou-se sua nova coroa e símbolo de sua autoridade. Apenas um pode reinar sobre a montanha.",
+    "featureDesc": "- Taxa de Regeneração de PH: -30%.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower021_ex": {
+    "name": "Arquivo de Dominância: Uivante-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 17. O uivante dos penhascos abriu a cabeça de outro. O crânio alvejado tornou-se sua nova coroa e símbolo de sua autoridade. Apenas um pode reinar sobre a montanha.",
+    "featureDesc": "- Taxa de Regeneração de PH: -30%.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower021_s": {
+    "name": "Arquivo de Dominância: Uivante-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 17. O uivante dos penhascos abriu a cabeça de outro. O crânio alvejado tornou-se sua nova coroa e símbolo de sua autoridade. Apenas um pode reinar sobre a montanha.",
+    "featureDesc": "- Taxa de Regeneração de PH: -30%.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower022": {
+    "name": "Arquivo de Codex: Medidor-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 653. A Medida com Juba... o guardião da lei... e inspetor do reino pintado de tinta. Comandado por seu mestre para vagar pelas terras mortais que tocam os céus, para censurar o mundo e trazer sobre ele um pouco de ordem.",
+    "featureDesc": "- Para cada instância de DNO Habilidade recebido por Medida com Juba, ela sofre <@ba.vup>5</> de Desorientação adicional. O efeito só é ativado uma vez a cada 0.05 s.\n- Quando a Medida com Juba fica Desorientada, os hemisférios do orbe de jade nos seus lados não fornecem mais Redução DNO.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower022_ex": {
+    "name": "Arquivo de Codex: Medidor-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 653. A Medida com Juba... o guardião da lei... e inspetor do reino pintado de tinta. Comandado por seu mestre para vagar pelas terras mortais que tocam os céus, para censurar o mundo e trazer sobre ele um pouco de ordem.",
+    "featureDesc": "- Para cada instância de DNO Habilidade recebido por Medida com Juba, ela sofre <@ba.vup>5</> de Desorientação adicional. O efeito só é ativado uma vez a cada 0.05 s.\n- Quando a Medida com Juba fica Desorientada, os hemisférios do orbe de jade nos seus lados não fornecem mais Redução DNO.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower022_s": {
+    "name": "Arquivo de Codex: Medidor-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 653. A Medida com Juba... o guardião da lei... e inspetor do reino pintado de tinta. Comandado por seu mestre para vagar pelas terras mortais que tocam os céus, para censurar o mundo e trazer sobre ele um pouco de ordem.",
+    "featureDesc": "- Para cada instância de DNO Habilidade recebido por Medida com Juba, ela sofre <@ba.vup>5</> de Desorientação adicional. O efeito só é ativado uma vez a cada 0.05 s.\n- Quando a Medida com Juba fica Desorientada, os hemisférios do orbe de jade nos seus lados não fornecem mais Redução DNO.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower023": {
+    "name": "Arquivo Tracejado: Caçador-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 23. Através da floresta densa e com grande pressa, os Pergaminhos de Táticas perseguem as entidades e bestas em constante transformação... Ninguém tem permissão para profanar o reino pintado.",
+    "featureDesc": "- Após derrotar qualquer grupo de inimigos, cada operador recebe uma conjuração gratuita da habilidade suprema que se torna disponível após usá-la normalmente.\n- Derrotar qualquer grupo de inimigos concede PV + 20% aos inimigos restantes.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower023_ex": {
+    "name": "Arquivo Tracejado: Caçador-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 23. Através da floresta densa e com grande pressa, os Pergaminhos de Táticas perseguem as entidades e bestas em constante transformação... Ninguém tem permissão para profanar o reino pintado.",
+    "featureDesc": "- Após derrotar qualquer grupo de inimigos, cada operador recebe uma conjuração gratuita da habilidade suprema que se torna disponível após usá-la normalmente.\n- Derrotar qualquer grupo de inimigos concede PV + 20% aos inimigos restantes.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower023_s": {
+    "name": "Arquivo Tracejado: Caçador-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 23. Através da floresta densa e com grande pressa, os Pergaminhos de Táticas perseguem as entidades e bestas em constante transformação... Ninguém tem permissão para profanar o reino pintado.",
+    "featureDesc": "- Após derrotar qualquer grupo de inimigos, cada operador recebe uma conjuração gratuita da habilidade suprema que se torna disponível após usá-la normalmente.\n- Derrotar qualquer grupo de inimigos concede PV + 20% aos inimigos restantes.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower024": {
+    "name": "Arquivo de Cerco: Armadura Pesada-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado, Nº 37. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Ele lutou com punhos blindados poderosos capazes de romper muralhas de fortalezas. Ele foi morto por uma saraivada de fogo concentrada.",
+    "featureDesc": "- Para cada acúmulo de <@ba.key>Inflição de Artes</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Vulnerabilidade</> e recupere <@ba.vup>10</> PH.\n- Para cada acúmulo de <@ba.key>Vulnerabilidade</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Inflição de Artes</> (do elemento aplicado pela primeira vez nesta batalha) e recupere <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower024_ex": {
+    "name": "Arquivo de Cerco: Armadura Pesada-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado, Nº 37. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Ele lutou com punhos blindados poderosos capazes de romper muralhas de fortalezas. Ele foi morto por uma saraivada de fogo concentrada.",
+    "featureDesc": "- Para cada acúmulo de <@ba.key>Inflição de Artes</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Vulnerabilidade</> e recupere <@ba.vup>10</> PH.\n- Para cada acúmulo de <@ba.key>Vulnerabilidade</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Inflição de Artes</> (do elemento aplicado pela primeira vez nesta batalha) e recupere <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower024_s": {
+    "name": "Arquivo de Cerco: Armadura Pesada-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado, Nº 37. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Ele lutou com punhos blindados poderosos capazes de romper muralhas de fortalezas. Ele foi morto por uma saraivada de fogo concentrada.",
+    "featureDesc": "- Para cada acúmulo de <@ba.key>Inflição de Artes</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Vulnerabilidade</> e recupere <@ba.vup>10</> PH.\n- Para cada acúmulo de <@ba.key>Vulnerabilidade</> consumido ou absorvido, aplique 1 acúmulo de <@ba.key>Inflição de Artes</> (do elemento aplicado pela primeira vez nesta batalha) e recupere <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower025": {
+    "name": "Arquivo Perfurado: Balista-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 38. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Seus enormes dardos podiam atravessar colinas inteiras. Ele foi esmagado e morto por um colosso.",
+    "featureDesc": "- DNO Combo de Habilidades Causado <@ba.vup>+ 50%</>.\n- Quando um combo de habilidades é conjurado, a equipe inteira ganha Redução do Tempo de Recarga do Combo de Habilidades <@ba.vup>+ 4%</> (máximo de acúmulos desse efeito: 40) e recupera <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower025_ex": {
+    "name": "Arquivo Perfurado: Balista-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 38. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Seus enormes dardos podiam atravessar colinas inteiras. Ele foi esmagado e morto por um colosso.",
+    "featureDesc": "- DNO Combo de Habilidades Causado <@ba.vup>+ 50%</>.\n- Quando um combo de habilidades é conjurado, a equipe inteira ganha Redução do Tempo de Recarga do Combo de Habilidades <@ba.vup>+ 4%</> (máximo de acúmulos desse efeito: 40) e recupera <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower025_s": {
+    "name": "Arquivo Perfurado: Balista-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 38. Um guerreiro que outrora defendeu o Senhor da Guerra Jakub. Seus enormes dardos podiam atravessar colinas inteiras. Ele foi esmagado e morto por um colosso.",
+    "featureDesc": "- DNO Combo de Habilidades Causado <@ba.vup>+ 50%</>.\n- Quando um combo de habilidades é conjurado, a equipe inteira ganha Redução do Tempo de Recarga do Combo de Habilidades <@ba.vup>+ 4%</> (máximo de acúmulos desse efeito: 40) e recupera <@ba.vup>10</> PH.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower026": {
+    "name": "Arquivo de Destruição: Æthillu-N",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 66. Um Æthillu que se recusa a dissipar. Sua forma retorcida e agitada foi capturada e registrada.",
+    "featureDesc": "- Após ser derrotado, um Æthillu volta à vida depois de algum tempo (essa ressuscitação ocorre apenas uma vez). Se todos os Æthillu forem derrotados durante esse período, nenhum deles retornará à vida.\n- Os Æthillu são imunes a DNO de Ataque Básico causado por operadores não controlados.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower026_ex": {
+    "name": "Arquivo de Destruição: Æthillu-B",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 66. Um Æthillu que se recusa a dissipar. Sua forma retorcida e agitada foi capturada e registrada.",
+    "featureDesc": "- Após ser derrotado, um Æthillu volta à vida depois de algum tempo (essa ressuscitação ocorre apenas uma vez). Se todos os Æthillu forem derrotados durante esse período, nenhum deles retornará à vida.\n- Os Æthillu são imunes a DNO de Ataque Básico causado por operadores não controlados.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower026_s": {
+    "name": "Arquivo de Destruição: Æthillu-D",
+    "description": "Recuperado do dispositivo de armazenamento de dados danificado Nº 66. Um Æthillu que se recusa a dissipar. Sua forma retorcida e agitada foi capturada e registrada.",
+    "featureDesc": "- Após ser derrotado, um Æthillu volta à vida depois de algum tempo (essa ressuscitação ocorre apenas uma vez). Se todos os Æthillu forem derrotados durante esse período, nenhum deles retornará à vida.\n- Os Æthillu são imunes a DNO de Ataque Básico causado por operadores não controlados.\n\n<@ba.info>- Os inimigos têm atributos melhores.</>\n<@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
   },
   "indie_contract001": {
     "name": "Operação Experimental de Reignição",
@@ -307,7 +397,7 @@
   "indie_contract002": {
     "name": "Operação Experimental Índigo",
     "description": "- A operação compreende 3 ondas consecutivas de combate contra o inimigo. Derrote todas as ondas inimigas para concluir a operação.\n- Massas de Cura serão lançadas entre as ondas. Toque nelas para restaurar PV para todos os membros da equipe.\n- Há um período de descanso entre as ondas durante o qual os operadores ainda são considerados em combate.\n- A operação possui um temporizador com contagem regressiva. Quando o temporizador zerar ou o PV de todos os operadores da equipe for reduzido a ZERO, a operação será interrompida.\n- Não é possível usar itens táticos nem consumíveis.",
-    "featureDesc": "- Os inimigos incluem vários Sombras da Praga, criações da feitiçaria, feras selvagens e piratas Cangzei, como os Obliteradores de Nuvens.\n- Você ainda pode aplicar Vulnerabilidade, Inflições de Artes, Status Físicos e Reações de Artes a inimigos com acúmulos de escudo."
+    "featureDesc": "- Os inimigos incluem: Sombras da Praga diversos, Criações da feitiçaria, feras selvagens e o Obliterador de Nuvens (pirata Cangzei).\n- Vulnerabilidade, Inflições de Artes, Status Físicos e Reações de Artes ainda podem ser aplicados a inimigos com acúmulos de escudo."
   },
   "indie_hard001": {
     "name": "Escudos Furiosos",
@@ -562,12 +652,12 @@
   "indie_hard026": {
     "name": "Carnificina Selvagem das Sombras",
     "description": "Garras retorcidas de feras selvagens surgiram primeiro das sombras. Mais tarde, descobrimos que a luz impiedosa deixou sua marca em sua natureza feroz.",
-    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>5</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, seu estado <@ba.key>Etéreo</> terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>5</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, o estado <@ba.key>Etéreo</> do Sombra da Praga de Rastejante terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
   },
   "indie_hard026_s": {
     "name": "Carnificina Selvagem das Sombras: Agonia",
     "description": "Garras retorcidas de feras selvagens surgiram primeiro das sombras. Mais tarde, descobrimos que a luz impiedosa deixou sua marca em sua natureza feroz.",
-    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>7</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, seu estado <@ba.key>Etéreo</> terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>7</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, o estado <@ba.key>Etéreo</> do Sombra da Praga de Rastejante terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
   },
   "indie_hard027": {
     "name": "Arco da Sombra Flamejante",
@@ -638,5 +728,85 @@
     "name": "Criaturas que Escavam: Agonia",
     "description": "A estação fria e escura chegou ao fim. As criaturas hibernantes se mexem e chamam umas às outras... Elas são uma legião, e estão despertando.",
     "featureDesc": " - Cuidado. A Névoa causa continuamente <@ba.key>DNO que aumenta gradativamente</> a todos os operadores. <@ba.key>O DNO causado pela névoa também aumenta consideravelmente</>.\n - A Lesma da Madeira irá cavar embaixo da terra e restaurar todos os seus <@ba.key>acúmulos de escudo</> regularmente. Derrotar uma Lesma da Madeira reduzirá temporariamente o DNO da Névoa.\n - Após o início da batalha, 1 Lesma da Madeira aleatória perderá todos os seus <@ba.key>acúmulos de escudo</> e não poderá mais restaurá-los. Derrotá-la fará com que 1 Lesma da Madeira aleatória perca todos os seus <@ba.key>acúmulos de escudo</> e não possa mais restaurá-los.\n\n<@ba.info> - Não é possível usar itens táticos nem consumíveis.</>\n<@ba.info> - Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n1": {
+    "name": "Nefasto Revelado: Triaggelos I",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n2": {
+    "name": "Nefasto Revelado: Triaggelos II",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n3": {
+    "name": "Nefasto Revelado: Triaggelos III",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n4": {
+    "name": "Nefasto Revelado: Triaggelos IV",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n - Sempre que o Triaggelos se reconstitui, ele ganha um aumento permanente em seu PV máximo e na Desorientação máxima.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n5": {
+    "name": "Nefasto Revelado: Triaggelos V",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n - Sempre que o Triaggelos se reconstitui, ele ganha um aumento permanente em seu PV máximo e na Desorientação máxima.\n - Sempre que um operador conjura uma habilidade de batalha e um combo de habilidades <@ba.key>3</> vezes, o Triaggelos lança <@ba.key>1</> meteoro no operador controlado.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n6": {
+    "name": "Nefasto Revelado: Triaggelos VI",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n - Sempre que o Triaggelos se reconstitui, ele ganha um aumento permanente em seu PV máximo e na Desorientação máxima.\n - Sempre que um operador conjura uma habilidade de batalha e um combo de habilidades <@ba.key>3</> vezes, o Triaggelos lança <@ba.key>1</> meteoro no operador controlado.\n - Em sua <@ba.key>Forma de Trapaça</>, as habilidades do Triaggelos se tornam mais poderosas.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n7": {
+    "name": "Nefasto Revelado: Triaggelos VII",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n - Sempre que o Triaggelos se reconstitui, ele ganha um aumento permanente em seu PV máximo e na Desorientação máxima.\n - Sempre que um operador conjura uma habilidade de batalha e um combo de habilidades <@ba.key>3</> vezes, o Triaggelos lança <@ba.key>1</> meteoro no operador controlado.\n - Em sua <@ba.key>Forma de Trapaça</>, as habilidades do Triaggelos se tornam mais poderosas.\n - Após lançar <@ba.key>3</> meteoros, o Triaggelos conjura sua habilidade suprema que causa DNO significativo ao operador controlado. Não é possível desviar deste DNO.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard034_n8": {
+    "name": "Nefasto Revelado: Triaggelos VIII",
+    "description": "",
+    "featureDesc": " - Nova ação das Ferramentas Práticas: usar o botão Ferramentas Práticas cria uma <@ba.key>Muda de Originium</> na posição do operador controlado. Os operadores dentro do raio de proteção da <@ba.key>Muda de Originium</> são imunes a todas as formas de DNO.\n - Não é possível desviar das ondas de choque do Ankhor.\n - Sempre que o Triaggelos fica Desorientado, ele remove todos os acúmulos de <@ba.key>Inflição de Artes</> e <@ba.phy>Vulnerabilidade</> de si mesmo e ganha permanentemente um pouco de ATQ.\n - Em sua <@ba.key>Forma de Busca</>, o Triaggelos invoca Aggeloi mais poderosos.\n - Sempre que o Triaggelos se reconstitui, ele ganha um aumento permanente em seu PV máximo e na Desorientação máxima.\n - Sempre que um operador conjura uma habilidade de batalha e um combo de habilidades <@ba.key>3</> vezes, o Triaggelos lança <@ba.key>1</> meteoro no operador controlado.\n - Em sua <@ba.key>Forma de Trapaça</>, as habilidades do Triaggelos se tornam mais poderosas.\n - Após lançar <@ba.key>3</> meteoros, o Triaggelos conjura sua habilidade suprema que causa DNO significativo ao operador controlado. Não é possível desviar deste DNO.\n - <@ba.key>Não é possível fazer desvios perfeitos</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n1": {
+    "name": "Nefasto Revelado: Nefarith I",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n2": {
+    "name": "Nefasto Revelado: Nefarith II",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n3": {
+    "name": "Nefasto Revelado: Nefarith III",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n4": {
+    "name": "Nefasto Revelado: Nefarith IV",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n - Algumas habilidades de <@ba.key>Nefarith \"Conquistadora\"</> só podem ser interrompidas por <@ba.key>vários golpes de interrupção</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n5": {
+    "name": "Nefasto Revelado: Nefarith V",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n - Algumas habilidades de <@ba.key>Nefarith \"Conquistadora\"</> só podem ser interrompidas por <@ba.key>vários golpes de interrupção</>.\n - A ação <@ba.key>Apoio de Xiranita</> das Ferramentas Práticas tem um tempo de recarga muito maior. O raio de DNO do ATQ Mergulho especial após o uso do <@ba.key>Apoio de Xiranita</> também é muito menor.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n6": {
+    "name": "Nefasto Revelado: Nefarith VI",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n - Algumas habilidades de <@ba.key>Nefarith \"Conquistadora\"</> só podem ser interrompidas por <@ba.key>vários golpes de interrupção</>.\n - A ação <@ba.key>Apoio de Xiranita</> das Ferramentas Práticas tem um tempo de recarga muito maior. O raio de DNO do ATQ Mergulho especial após o uso do <@ba.key>Apoio de Xiranita</> também é muito menor.\n - Todas as <@ba.fire>Inflições Térmicas</> aplicadas aos operadores são convertidas diretamente em <@ba.fire>Combustão</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n7": {
+    "name": "Nefasto Revelado: Nefarith VII",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n - Algumas habilidades de <@ba.key>Nefarith \"Conquistadora\"</> só podem ser interrompidas por <@ba.key>vários golpes de interrupção</>.\n - A ação <@ba.key>Apoio de Xiranita</> das Ferramentas Práticas tem um tempo de recarga muito maior. O raio de DNO do ATQ Mergulho especial após o uso do <@ba.key>Apoio de Xiranita</> também é muito menor.\n - Todas as <@ba.fire>Inflições Térmicas</> aplicadas aos operadores são convertidas diretamente em <@ba.fire>Combustão</>.\n - <@ba.key>Nefarith \"Conquistadora\"</> irá, periodicamente, prender um operador não controlado aleatório com um <@ba.key>Ankhor</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard035_n8": {
+    "name": "Nefasto Revelado: Nefarith VIII",
+    "description": "",
+    "featureDesc": " - Sempre que <@ba.key>Nefarith \"Quebra-Ossos\"</> rasga o espaço-tempo, suas habilidades se tornam mais poderosas.\n - Sempre que <@ba.key>Nefarith \"Conquistadora\"</> restaura seu Escudo do Æther, ela lança mais ataques contínuos à distância contra o operador controlado.\n - Não é possível desviar das Ondas do Æther, que causam significativamente mais DNO.\n - Algumas habilidades de <@ba.key>Nefarith \"Conquistadora\"</> só podem ser interrompidas por <@ba.key>vários golpes de interrupção</>.\n - A ação <@ba.key>Apoio de Xiranita</> das Ferramentas Práticas tem um tempo de recarga muito maior. O raio de DNO do ATQ Mergulho especial após o uso do <@ba.key>Apoio de Xiranita</> também é muito menor.\n - Todas as <@ba.fire>Inflições Térmicas</> aplicadas aos operadores são convertidas diretamente em <@ba.fire>Combustão</>.\n - <@ba.key>Nefarith \"Conquistadora\"</> irá, periodicamente, prender um operador não controlado aleatório com um <@ba.key>Ankhor</>.\n - <@ba.key>Quando a derrota parecer inevitável, Nefarith fará uma última jogada e forçará o operador controlado a lutar contra ela sozinho.</>\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
   }
 }

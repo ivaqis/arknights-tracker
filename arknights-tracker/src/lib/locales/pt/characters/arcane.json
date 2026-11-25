@@ -253,12 +253,12 @@
       },
       {
         "voId": "chr_0032_lizhiyan_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Seja de vontade férrica, mova-se como o fio de uma navalha. Yinglung vence pelo ímpeto."
       },
       {
         "voId": "chr_0032_lizhiyan_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Considere-me uma lâmina às suas ordens. Aponte-me para o alvo e eu atacarei."
       },
       {
@@ -458,7 +458,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_combat_remind_danger_01",
-        "title": "Alertando Companheiro de Equipe",
+        "title": "Aviso de Perigo",
         "text": "Cuidado! Atenção!"
       },
       {

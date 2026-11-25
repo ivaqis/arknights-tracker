@@ -752,7 +752,7 @@
   "eny_0131_inkscroll": {
     "name": "Pergaminho de Táticas",
     "nickname": "Pergaminho de Táticas",
-    "description": "Uma aparição iluminada por Si. Mestre da batalha, sabe o que é um engano. Portador de armas e defensor da paz.",
+    "description": "Uma aparição iluminada por Si. Mestre da batalha, não é estranho ao engano. Portador de armas e defensor da paz.",
     "abilities": [
       "As alabardas arremessadas criam Poças de Tinta ao atingirem o solo. Essas poças poderão deixar uma Marca de Tinta nos operadores que pisarem nelas. Tente evitá-las."
     ]
@@ -781,6 +781,39 @@
     "abilities": [
       "Quando Si desenrolar sua pintura, tente se lembrar de onde as zonas de ataque estão e, em seguida, evite-as na sequência correta.",
       "Si pode criar Poças de Tinta muito perigosas. Não pise nessas zonas manchadas de tinta."
+    ]
+  },
+  "eny_0158_mushbug": {
+    "name": "Verminídeo Quebramelos",
+    "nickname": "Verminídeo Quebramelos",
+    "description": "Um verminídeo normal tende a cavar túneis subterrâneos para ficar escondido. Essa variante afetada por esporos tem um comportamento errático. Ela também procura espalhar mais esporos.",
+    "abilities": [
+      "Quando o Verminídeo Quebramelos cava túneis embaixo da terra, sua parte de cima fica exposta, tornando-se um ponto fraco.",
+      "A Gaiola de Videiras dura algum tempo, causando DNO aos operadores que a tocam."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Boleta Príncipe",
+    "nickname": "Boleta Príncipe",
+    "description": "Um cogumelo estranho. Tem uma personalidade dócil e pode ser bastante confiável. É o futuro e a esperança da família dos cogumelos.",
+    "abilities": [
+      "Quando o Boleta Príncipe cava túneis embaixo da terra, sua parte de cima fica exposta, tornando-se um ponto fraco."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Cogumurros Quebramelos",
+    "nickname": "Cogumurros Quebramelos",
+    "description": "Um Invasor de Terras afetado por esporos com comportamento errático. Cuidado. Apesar de seus punhos macios e fofinhos, eles são igualmente perigosos.",
+    "abilities": [
+      "Os Cogumurros Quebramelos podem balançar os braços para criar um redemoinho que suga continuamente os operadores."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Guarda-Esporos Quebramelos",
+    "nickname": "Guarda-Esporos Quebramelos",
+    "description": "Um Invasor de Terras afetado por esporos com comportamento errático. O escudo dele agora está... completo.",
+    "abilities": [
+      "O Guarda-Esporos Quebramelo pode erguer seu escudo para bloquear os ataques básicos dos operadores."
     ]
   },
   "tatget_001_normal": {

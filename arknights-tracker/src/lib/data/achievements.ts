@@ -489,6 +489,29 @@ export const achievements: Record<string, AchievementData> = {
         },
         "plateConditions": []
     },
+    "achv_adv_wuling_box_5": {
+        "id": "achv_adv_wuling_box_5",
+        "type": "achv_type_adventure",
+        "groupId": "achv_group_adv_wuling",
+        "order": 31,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_adv_wuling_box_5_1_cond_1",
+                        "progressToCompare": 47
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
     "achv_adv_wuling_bugball": {
         "id": "achv_adv_wuling_bugball",
         "type": "achv_type_adventure",
@@ -598,6 +621,29 @@ export const achievements: Record<string, AchievementData> = {
                     {
                         "conditionId": "achv_adv_wuling_campfire_4_1_cond_1",
                         "progressToCompare": 18
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_adv_wuling_campfire_5": {
+        "id": "achv_adv_wuling_campfire_5",
+        "type": "achv_type_adventure",
+        "groupId": "achv_group_adv_wuling",
+        "order": 29,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_adv_wuling_campfire_5_1_cond_1",
+                        "progressToCompare": 7
                     }
                 ]
             }
@@ -741,6 +787,29 @@ export const achievements: Record<string, AchievementData> = {
                     {
                         "conditionId": "achv_adv_wuling_ether_4_2_cond_1",
                         "progressToCompare": 41
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_adv_wuling_ether_5": {
+        "id": "achv_adv_wuling_ether_5",
+        "type": "achv_type_adventure",
+        "groupId": "achv_group_adv_wuling",
+        "order": 30,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_adv_wuling_ether_5_1_cond_1",
+                        "progressToCompare": 17
                     }
                 ]
             }
@@ -948,6 +1017,29 @@ export const achievements: Record<string, AchievementData> = {
                     {
                         "conditionId": "achv_adv_wuling_password_2_cond_1",
                         "progressToCompare": 11
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_adv_wuling_sweetpie": {
+        "id": "achv_adv_wuling_sweetpie",
+        "type": "achv_type_adventure",
+        "groupId": "achv_group_adv_wuling",
+        "order": 32,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_adv_wuling_sweetpie_1_cond_1",
+                        "progressToCompare": 20
                     }
                 ]
             }
@@ -2058,6 +2150,42 @@ export const achievements: Record<string, AchievementData> = {
             }
         ]
     },
+    "achv_bat_hard_9": {
+        "id": "achv_bat_hard_9",
+        "type": "achv_type_battle",
+        "groupId": "achv_group_bat_dung",
+        "order": 13,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_bat_hard_9_2_cond_1",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_bat_hard_9_2_cond_2",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_bat_hard_9_plating_cond_1",
+                "progressToCompare": 1
+            },
+            {
+                "conditionId": "achv_bat_hard_9_plating_cond_2",
+                "progressToCompare": 1
+            }
+        ]
+    },
     "achv_bat_jsspsi_reverse_color": {
         "id": "achv_bat_jsspsi_reverse_color",
         "type": "achv_type_battle",
@@ -2116,6 +2244,29 @@ export const achievements: Record<string, AchievementData> = {
                     {
                         "conditionId": "achv_bat_magical_AS_3_cond_1",
                         "progressToCompare": 500
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_bat_mushro_blowoff": {
+        "id": "achv_bat_mushro_blowoff",
+        "type": "achv_type_battle",
+        "groupId": "achv_group_bat_skill",
+        "order": 26,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_bat_mushro_blowoff_2_cond_1",
+                        "progressToCompare": 1
                     }
                 ]
             }
@@ -2208,6 +2359,34 @@ export const achievements: Record<string, AchievementData> = {
             }
         },
         "plateConditions": []
+    },
+    "achv_event_blackjack_1": {
+        "id": "achv_event_blackjack_1",
+        "type": "achv_type_event",
+        "groupId": "achv_group_event_default",
+        "order": 16,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_event_blackjack_1_2_cond_1",
+                        "progressToCompare": 21
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_event_blackjack_1_plating_cond_1",
+                "progressToCompare": 30
+            }
+        ]
     },
     "achv_event_clean": {
         "id": "achv_event_clean",
@@ -2309,6 +2488,34 @@ export const achievements: Record<string, AchievementData> = {
             {
                 "conditionId": "achv_event_contingency_contract_1_plating_cond_1",
                 "progressToCompare": 30
+            }
+        ]
+    },
+    "achv_event_doudizhu_1": {
+        "id": "achv_event_doudizhu_1",
+        "type": "achv_type_event",
+        "groupId": "achv_group_event_default",
+        "order": 17,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_event_doudizhu_1_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_event_doudizhu_1_plating_cond_1",
+                "progressToCompare": 1
             }
         ]
     },
@@ -2565,6 +2772,70 @@ export const achievements: Record<string, AchievementData> = {
             {
                 "conditionId": "achv_event_takestwo_1_plating_cond_9",
                 "progressToCompare": 0
+            }
+        ]
+    },
+    "achv_event_takestwo_2": {
+        "id": "achv_event_takestwo_2",
+        "type": "achv_type_event",
+        "groupId": "achv_group_event_default",
+        "order": 15,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": true,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_1",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_2",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_3",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_4",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_5",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_6",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_7",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_8",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_takestwo_2_2_cond_9",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_event_takestwo_2_plating_cond_1",
+                "progressToCompare": 200
+            },
+            {
+                "conditionId": "achv_event_takestwo_2_plating_cond_2",
+                "progressToCompare": 200
             }
         ]
     },
@@ -2860,6 +3131,50 @@ export const achievements: Record<string, AchievementData> = {
             },
             {
                 "conditionId": "achv_event_wuling_challenge_dung_03_plating_cond_6",
+                "progressToCompare": 1
+            }
+        ]
+    },
+    "achv_event_wuling_challenge_dung_04": {
+        "id": "achv_event_wuling_challenge_dung_04",
+        "type": "achv_type_event",
+        "groupId": "achv_group_event_default",
+        "order": 18,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_event_wuling_challenge_dung_04_2_cond_1",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_wuling_challenge_dung_04_2_cond_2",
+                        "progressToCompare": 1
+                    },
+                    {
+                        "conditionId": "achv_event_wuling_challenge_dung_04_2_cond_3",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_event_wuling_challenge_dung_04_plating_cond_1",
+                "progressToCompare": 1
+            },
+            {
+                "conditionId": "achv_event_wuling_challenge_dung_04_plating_cond_2",
+                "progressToCompare": 1
+            },
+            {
+                "conditionId": "achv_event_wuling_challenge_dung_04_plating_cond_3",
                 "progressToCompare": 1
             }
         ]
@@ -3640,6 +3955,29 @@ export const achievements: Record<string, AchievementData> = {
         },
         "plateConditions": []
     },
+    "achv_fac_techtree_jinlong_5": {
+        "id": "achv_fac_techtree_jinlong_5",
+        "type": "achv_type_factory",
+        "groupId": "achv_group_fac_factory",
+        "order": 24,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_fac_techtree_jinlong_5_1_cond_1",
+                        "progressToCompare": 50
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
     "achv_fac_techtree_tundra": {
         "id": "achv_fac_techtree_tundra",
         "type": "achv_type_factory",
@@ -3696,6 +4034,34 @@ export const achievements: Record<string, AchievementData> = {
             {
                 "conditionId": "achv_fac_typhoea_archery_plating_cond_2",
                 "progressToCompare": 1
+            }
+        ]
+    },
+    "achv_fac_wonder_build": {
+        "id": "achv_fac_wonder_build",
+        "type": "achv_type_factory",
+        "groupId": "achv_group_fac_factory",
+        "order": 23,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": true,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_fac_wonder_build_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": [
+            {
+                "conditionId": "achv_fac_wonder_build_plating_cond_1",
+                "progressToCompare": 5
             }
         ]
     },
@@ -4157,6 +4523,29 @@ export const achievements: Record<string, AchievementData> = {
         },
         "plateConditions": []
     },
+    "achv_hide_mushbug_attract": {
+        "id": "achv_hide_mushbug_attract",
+        "type": "achv_type_hide",
+        "groupId": "achv_group_hide_default",
+        "order": 18,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_hide_mushbug_attract_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
     "achv_hide_no_parry": {
         "id": "achv_hide_no_parry",
         "type": "achv_type_hide",
@@ -4288,6 +4677,29 @@ export const achievements: Record<string, AchievementData> = {
                 "conditions": [
                     {
                         "conditionId": "achv_hide_ruanyi_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_hide_secretbase_v1d7": {
+        "id": "achv_hide_secretbase_v1d7",
+        "type": "achv_type_hide",
+        "groupId": "achv_group_hide_default",
+        "order": 19,
+        "initLevel": 1,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "1": {
+                "achieveLevel": 1,
+                "conditions": [
+                    {
+                        "conditionId": "achv_hide_secretbase_v1d7_1_cond_1",
                         "progressToCompare": 1
                     }
                 ]
@@ -5051,6 +5463,52 @@ export const achievements: Record<string, AchievementData> = {
                 "conditions": [
                     {
                         "conditionId": "achv_quest_sm2l10m3_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_quest_sm2l11m1": {
+        "id": "achv_quest_sm2l11m1",
+        "type": "achv_type_quest",
+        "groupId": "achv_group_quest_side",
+        "order": 16,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_quest_sm2l11m1_2_cond_1",
+                        "progressToCompare": 1
+                    }
+                ]
+            }
+        },
+        "plateConditions": []
+    },
+    "achv_quest_sweetpie": {
+        "id": "achv_quest_sweetpie",
+        "type": "achv_type_quest",
+        "groupId": "achv_group_quest_side",
+        "order": 15,
+        "initLevel": 2,
+        "upgradable": false,
+        "plateable": false,
+        "specialProgress": false,
+        "applyRareEffect": false,
+        "levelInfos": {
+            "2": {
+                "achieveLevel": 2,
+                "conditions": [
+                    {
+                        "conditionId": "achv_quest_sweetpie_2_cond_1",
                         "progressToCompare": 1
                     }
                 ]

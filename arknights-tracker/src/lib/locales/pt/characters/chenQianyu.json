@@ -163,22 +163,22 @@
       },
       {
         "voId": "chr_0005_chen_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Pedi à Perlica que adiasse minha promoção até este momento! Só ficarei tranquila quando minha aprovação da Endfield for entregue pessoalmente por você, Endmin!"
       },
       {
         "voId": "chr_0005_chen_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "{F}O que você acha? Será que consegui a promoção mais rápida já registrada? Afinal, eu pulei alguns anos no Tanjian Hall. Surpresa? Heheh. Eu sempre fui a melhor da minha turma.{M}O que você acha? Será que consegui a promoção mais rápida já registrada? Afinal, eu pulei alguns anos no Tanjian Hall. Surpreso? Heheh. Eu sempre fui a melhor da minha turma."
       },
       {
         "voId": "chr_0005_chen_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Pois é, descobri que sou ótima em outras coisas além de artes marciais. É impossível não acabar sendo a sua melhor operadora. Ah, seus elogios já estão me fazendo corar — continue assim!"
       },
       {
         "voId": "chr_0005_chen_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Ainda estou longe do auge. Dizem que a lâmina da minha mãe agitou as próprias nuvens, Endmin. E farei exatamente isso... e me tornarei aquela com quem você e Perlica sempre poderão contar!"
       },
       {
@@ -188,12 +188,12 @@
       },
       {
         "voId": "chr_0005_chen_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Olha isso! Hehe, incrível, não é?"
       },
       {
         "voId": "chr_0005_chen_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Aqui, Endmin! Heehee."
       },
       {

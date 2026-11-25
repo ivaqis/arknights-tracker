@@ -168,22 +168,22 @@
       },
       {
         "voId": "chr_0011_seraph_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Eis que a benevolência da Lei se manifestou... Ah, e com ela flui a confiança do Endministrator! Não é justo render-te graças?"
       },
       {
         "voId": "chr_0011_seraph_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "A Lei zela e preserva os mansos, mas não os eruditos, os sábios ou os ricos. Embora elevada por tamanha glória, permaneço humilde e grata a ti."
       },
       {
         "voId": "chr_0011_seraph_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Tudo é tão claro e distinto quanto os veios de Originium. Esta promoção se alinha com o resultado projetado. Hein? Apertar as mãos? Eu... eu não sou muito boa nisso..."
       },
       {
         "voId": "chr_0011_seraph_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Certa vez, reestruturei a cúpula do codec da Catedralis para aumentar sua eficiência operacional. No entanto, ressonâncias inesperadas ocorreram enquanto o algoritmo antigo processava o fluxo de dados. O resultado foi... complexo. E, no entanto, o que antes exilava alguém de sua terra natal... tornou-se uma fonte de graça aqui em Endfield. Talvez seja isso que a Lei desejava me revelar!"
       },
       {
@@ -193,12 +193,12 @@
       },
       {
         "voId": "chr_0011_seraph_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Contemplação... Computação... Elocução... Abandono."
       },
       {
         "voId": "chr_0011_seraph_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Ofereço o diálogo e a contemplação de hoje ao seu terminal, em reverência..."
       },
       {

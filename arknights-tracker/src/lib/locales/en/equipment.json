@@ -581,6 +581,12 @@
     "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \nA modification of AIC Fieldwork defensive equipment for close-quarters battle training. It provides wearers with effective protection during melee action.",
     "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_07": {
+    "name": "AIC Fieldwork Mecha-Armor",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \nNow with easy-to-calibrate multi-ports to effectively accommodate the mounting of multiple weapon systems.",
+    "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "AIC Fieldwork Machete",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -617,6 +623,12 @@
     "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \n\"So I thought, a miniature powered hacksaw is also a melee weapon, right?\"",
     "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_07": {
+    "name": "AIC Fieldwork Mecha-Slab",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \n\"See? A buggerloid rammed straight into me and I flew a dozen yards. But it only left this tiny scratch on the slab.\"",
+    "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "AIC Fieldwork Gloves",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -651,6 +663,12 @@
     "name": "AIC Fieldwork CQB Gloves",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \nPerfect thickness allows the wearer to flawlessly perform various fencing or swordmancy moves.",
+    "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_07": {
+    "name": "AIC Fieldwork Mecha-Gloves",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A set of combat equipment designed by Endfield Industries for operator training. This series is well-received by the market due to its great value for money. \nNow with extra-reinforced wrist braces to help the wearer wield vehicle-mounted weapons with ease.",
     "setBonus": "3-piece set effect: Wearer gains DMG Dealt <@ba.vup>+{dmg_up:0%}</> for all types of DMG, <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG, and Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -725,6 +743,18 @@
     "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequent high-threat areas to carry out various missions. \"I authored the books and scrolls, to reveal secrets heaven has made.\"",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_05": {
+    "name": "Rift Trekker HVY Plate",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequently carry out missions in high threat areas. \n\"I burn my body like a furnace, to lend light to the darkness.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_06": {
+    "name": "Rift Trekker LITE Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequently carry out missions in high threat areas. \n\"I scale precipitous peaks, and gather the flowing clouds and mists.\"",
+    "setBonus": ""
+  },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Rift Trekker Armor Slab",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
@@ -735,6 +765,12 @@
     "name": "Rift Trekker Silver Blade",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequent high-threat areas to carry out various missions. \"I forged a silver blade, to purge the malicious shades.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_03": {
+    "name": "Rift Trekker Rock Pick",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequently carry out missions in high threat areas. \n\"I carry entire mountains, to bear the strikes of bright thunder.\"",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
@@ -759,6 +795,18 @@
     "name": "Rift Trekker Gauntlets",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequent high-threat areas to carry out various missions. \"I thundered the crimson drums, to make the mountains quake.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_05": {
+    "name": "Rift Trekker LITE Wraps",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequently carry out missions in high threat areas. \n\"I cleanse my heart's desires, to intimidate the heavenly fire.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_06": {
+    "name": "Rift Trekker HVY Gauntlets",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "The Bureau of Swordmancers designed this special set of equipment for combatants who frequently carry out missions in high threat areas. \n\"I watch the smoking flames, to witness the collapse from fame.\"",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -789,6 +837,18 @@
     "name": "Frontiers Protection Suit",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "The commander model of the Frontiersmate Armor series. Features thinner protective plating to accommodate ranged weaponry and encrypted communications modules.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_body_06": {
+    "name": "Frontiers HVY Steel Plate",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A suit of super-heavy frame Frontiersmate armor — and the flagship ace product of Northmarch Support Hub. The wearer is guaranteed to solo an encounter against four to five Aggeloid entities.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_body_07": {
+    "name": "Frontiers LITE Armor",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A suit of integrated Frontiersmate support armor for field mobility — Frontiersmate is with you every step of the way, from the Civilization Band to the distant and frigid North.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_atb01_edc_01": {
@@ -827,6 +887,18 @@
     "decoDesc": "The standard Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology. The upgraded version further extends this duration to 6 hours.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
+  "item_equip_t4_suit_atb01_edc_07": {
+    "name": "Frontiers Composite RHA",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A piece of super-heavy frame Frontiersmate armor insert — It grants the wearer courage and confidence in facing hostile artillery.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_edc_08": {
+    "name": "Frontiers Compressed Slab",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A piece of integrated Frontiersmate support kit field mobility — Lightweight, slim, flawless, and practical. Try cutting it with your own edged weapons. We are confident that you won't leave a scratch.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
   "item_equip_t4_suit_atb01_hand_01": {
     "name": "Frontiers Blight RES Gloves",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -843,6 +915,18 @@
     "name": "Frontiers Fiber Gloves T1",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "The underwater combat model of the Frontiersmate Armor series. Special fiber weaving technology gave these gloves oxygen cycling functions.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_hand_04": {
+    "name": "Frontiers HVY Gauntlets",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A set of super-heavy frame Frontiersmate hand protectors — Makes manual conversion of Aggeloi to Aggagrit feel like crushing a dry piece of mud.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_hand_05": {
+    "name": "Frontiers LITE Gloves",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A set of integrated Frontiersmate support handwear for field mobility — Well-balanced and does not wear down your fingers ... Apologies. It is hard to come up with a creative promo slogan for auxiliary products.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_atk02_body_01": {
@@ -1653,6 +1737,12 @@
     "name": "Eternal Xiranite Channeling Gloves",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "Legacy of a \"mad\" Tianshi. \n\"Energy conductivity is decent ... but things can get a little hot for the hands.\"",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protection</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakness</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_usp02_hand_06": {
+    "name": "Eternal Xiranite HVY Gauntlets",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Legacy of a \"mad\" Tianshi.\n\"I've been your mad lad for years, old friend. I've fulfilled your dying wish. This world will know of the Eternal Xiranite Armor series, and they shall remember your name.\"",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protection</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakness</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   }
 }

@@ -35,7 +35,7 @@
     },
     "battleSkill": {
       "name": "Dimension der Pinselkunst",
-      "description": "Si verursacht <@ba.cryst>Kryo-SDN</> und bewirkt <@ba.key>Künstlerische Absicht</>, <#ba.static>Bewegungsunfähigkeit</> und <#ba.crystinflict>Kryo</> (oder <#ba.fireinflict>Hitze</>, falls sich ein Operator mit dem Element <@ba.fire>Hitze</> in <@ba.key>Team-Position 01</> befindet). Wenn ein Ziel mit <@ba.key>Künstlerische Absicht</> SDN erleidet, wird ein Teil des erlittenen SDN gespeichert. Wenn die Dauer von <@ba.key>Künstlerische Absicht</> abläuft, explodiert der Effekt und verursacht <#ba.fixeddamage>Fix-SDN</> in Höhe des gespeicherten SDN. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Erster Pinselstrich</> geändert.\n<@ba.key>Erster Pinselstrich</>: Kostet <@ba.vup>15</> FP. Si zieht eine <@ba.key>Tintenseele</> aus einem mit <@ba.key>Künstlerische Absicht</> belegten Ziel. Alle Arten von SDN und alle Effekte, die der <@ba.key>Tintenseele</> zugefügt werden bzw. mit der sie belegt wird, werden auch dem ursprünglichen Ziel zugefügt. Die <@ba.key>Tintenseele</> bleibt so lange bestehen, bis die verbleibende Dauer von <@ba.key>Künstlerische Absicht</> abgelaufen ist. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Letzter Pinselstrich</> geändert.\n<@ba.key>Letzter Pinselstrich</>: Kostet keine FP. Lässt die <@ba.key>Tintenseele</> frühzeitig verschwinden. Wenn die <@ba.key>Tintenseele</> verschwindet, kehrt sie zum ursprünglichen Ziel zurück und löst eine Explosion aus, die jener am Ende von <@ba.key>Künstlerische Absicht</> ähnelt.\n<@ba.info>Beim Verursachen von Schaden oder beim Anwenden von Effekten auf sowohl die Tintenseele als auch das ursprüngliche Ziel wird jeweils nur eine Instanz des Schadens oder Effekts verursacht/angewendet. Wenn das ursprüngliche Ziel während der Dauer der Tintenseele besiegt wird, verbindet sie sich mit einem anderen Gegner im Kampf und belegt diesen mit Künstlerische Absicht. Dadurch wird die Dauer von Künstlerische Absicht nicht zurückgesetzt. Wenn ein Ziel mit Künstlerische Absicht besiegt wird, ohne dass ihm seine Tintenseele entzogen wurde, hinterlässt das besiegte Ziel an seiner Position eine Tintenseele.</>",
+      "description": "Si verursacht <@ba.cryst>Kryo-SDN</> und bewirkt <@ba.key>Künstlerische Absicht</>, <#ba.static>Bewegungsunfähigkeit</> und <#ba.crystinflict>Kryo</> (oder <#ba.fireinflict>Hitze</>, falls sich ein Operator mit dem Element <@ba.fire>Hitze</> in <@ba.key>Teamposition 1</> befindet). Wenn ein Ziel mit <@ba.key>Künstlerische Absicht</> SDN erleidet, wird ein Teil des erlittenen SDN gespeichert. Wenn die Dauer von <@ba.key>Künstlerische Absicht</> abläuft, explodiert der Effekt und verursacht <#ba.fixeddamage>Festen SDN</> in Höhe des gespeicherten SDN. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Erster Pinselstrich</> geändert.\n<@ba.key>Erster Pinselstrich</>: Kostet <@ba.vup>15</> FP. Si zieht eine <@ba.key>Tintenseele</> aus einem mit <@ba.key>Künstlerische Absicht</> belegten Ziel. Alle Arten von SDN und alle Effekte, die der <@ba.key>Tintenseele</> zugefügt werden bzw. mit denen sie belegt wird, werden auch dem ursprünglichen Ziel zugefügt. Die <@ba.key>Tintenseele</> bleibt so lange bestehen, bis die verbleibende Dauer von <@ba.key>Künstlerische Absicht</> abgelaufen ist. Nach dem Wirken der Fertigkeit wird Sis Kampffertigkeit vorübergehend zu <@ba.key>Letzter Pinselstrich</> geändert.\n<@ba.key>Letzter Pinselstrich</>: Kostet keine FP. Lässt die <@ba.key>Tintenseele</> frühzeitig verschwinden. Wenn die <@ba.key>Tintenseele</> verschwindet, kehrt sie zum ursprünglichen Ziel zurück und löst eine Explosion aus, die jener am Ende von <@ba.key>Künstlerische Absicht</> ähnelt.\n<@ba.info>Beim Verursachen von Schaden oder beim Anwenden von Effekten auf sowohl die Tintenseele als auch das ursprüngliche Ziel wird jeweils nur eine Instanz des Schadens oder Effekts verursacht/angewendet. Wenn das ursprüngliche Ziel während der Dauer der Tintenseele besiegt wird, verbindet sie sich mit einem anderen Gegner im Kampf und belegt diesen mit „Künstlerische Absicht“. Dadurch wird die Dauer von „Künstlerische Absicht“ nicht zurückgesetzt. Wenn ein Ziel mit „Künstlerische Absicht“ besiegt wird, ohne dass ihm seine Tintenseele entzogen wurde, hinterlässt das besiegte Ziel an seiner Position eine Tintenseele.</>",
       "dmgMultiplier": "SDN-Multiplikator",
       "immobilizationDurationS": "Dauer: Bewegungsunfähigkeit (Sek.)",
       "artfulIntentDurationS": "Dauer: Künstlerische Absicht (Sek.)",
@@ -216,7 +216,7 @@
       {
         "voId": "chr_0036_jsspsi_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
-        "text": "Ich? Ist dir langweilig? Siehst du das Bullauge da drüben? Ich habe ein Gemälde mit dem Titel „Reisende von Talos-II“ darauf gemalt … Aber jemand hat sich wirklich Zeit gelassen, um herzukommen, darum habe ich alles entfernt."
+        "text": "Ich? Faulenzen? Siehst du das Bullauge da drüben? Ich habe ein Gemälde mit dem Titel „Reisende von Talos-II“ darauf gemalt … Aber jemand hat sich wirklich Zeit gelassen, um herzukommen, darum habe ich alles entfernt."
       },
       {
         "voId": "chr_0036_jsspsi_sim_talk_lv02_01",
@@ -311,7 +311,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line02",
         "title": "Thema: Feranmut-Energie",
-        "text": "Mit dieser Endfield-Personal-Datenbank stimmt etwas nicht. Ich habe unter „Fertigkeiten“ zwölf Punkte angegeben, darunter Kampfkunst, Literatur, Malen, Metallurgie, Rechtswissenschaften, Gartenbau … und dann kam eine Fehlermeldung. Was soll das heißen, ich hätte zu viele Fähigkeiten? Sieh mal, nur weil nicht immer alles perfekt läuft, nimmt mir die niemand weg. Du solltest dich lieber klar ausdrücken, sonst lass ich das nicht auf sich beruhen!"
+        "text": "Mit dieser Endfield-Personal-Datenbank stimmt etwas nicht. Ich habe unter „Fertigkeiten“ zwölf Punkte angegeben, darunter Kampfkunst, Literatur, Malen, Metallurgie, Rechtswissenschaften, Gartenbau … und dann kam eine Fehlermeldung. Und jetzt heißt es plötzlich, ich hätte zu viele Fertigkeiten? Sieh mal, nur, weil nicht immer alles perfekt läuft, nimmt mir das eine Fertigkeit nicht weg. Drück dich etwas deutlicher aus, sonst lasse ich da nicht locker!"
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line03",
@@ -321,7 +321,7 @@
       {
         "voId": "chr_0036_jsspsi_mono_about_line04",
         "title": "Thema: Ye Minghe",
-        "text": "Dieser Jungspund mit den hellen Haaren? Wir kennen uns jetzt schon seit einer Weile. Er ist immer so nervig. Manchmal wirkt es, als wäre er von dieser tintenschwarzen Galoppbestie besessen, und er redet immer davon, dass „die Kaiserlichen Wächter ihre Pflichten erfüllen müssen …“ Und genau das macht ihn so anstrengend. Er meint nämlich jedes Wort davon ernst. Ehrlich gesagt ähnelt er dir in dieser Hinsicht. Warte mal, du hattest diesen Einfluss auf ihn! Wie auch immer. Wenn er noch mal in meine Rolle platzt, wirst du dafür geradestehen."
+        "text": "Dieser Jungspund mit den hellen Haaren? Wir kennen uns jetzt schon seit einer Weile. Er ist immer so nervig. Manchmal wirkt es, als wäre er von dieser tintenschwarzen Galoppbestie besessen, und er redet immer davon, dass „die Kaiserlichen Wächter ihre Pflichten erfüllen müssen“ … Und genau das macht ihn so anstrengend. Er meint nämlich jedes Wort davon ernst. Ehrlich gesagt ähnelt er dir in dieser Hinsicht. Warte mal, du hattest diesen Einfluss auf ihn! Wie auch immer. Wenn er noch mal in meine Rolle platzt, wirst du dafür geradestehen."
       },
       {
         "voId": "chr_0036_jsspsi_mono_about_line05",
@@ -371,7 +371,7 @@
       {
         "voId": "chr_0036_jsspsi_interact_etherium_01",
         "title": "Aurylen erhalten",
-        "text": "Hmm. Wenn ich Aurylen in Tinte auflöse, könnte ich dann damit malen?"
+        "text": "Hmm. Wenn ich Aurylen in Tinte auflöse, was könnte ich dann damit malen?"
       },
       {
         "voId": "chr_0036_jsspsi_interact_blight_break_01",
@@ -421,7 +421,7 @@
       {
         "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
-        "text": "Du bist nicht gerade „höflich“, oder?"
+        "text": "Du bist aber nicht bloß „höflich“, oder?"
       },
       {
         "voId": "chr_0036_jsspsi_combat_remind_praise_echo2_02",
@@ -541,8 +541,8 @@
       "name": "Frühling und Herbst in Tinte"
     },
     "potential2": {
-      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Beim Wirken erhält Si für <@ba.vup>{potential2_duration:0}</> Sek. ANG <@ba.vup>+[{potential2_base:0%} + {potential2_enhance:0%} × (höchste Anzahl <#ba.consume>verbrauchter</> oder <#ba.absorb>absorbierter</> Kumulierungen von Technikkumulierung eines einzelnen Ziels)]</>. Dieser Effekt kann nicht kumuliert werden.",
-      "name": "Drei tiefe Zeichen im Holz"
+      "description": "Kombofertigkeit <@ba.key>Vision vor Auge</> verbessert: Beim Wirken gewährt Si für <@ba.vup>{potential2_duration:0}</> Sek. ANG <@ba.vup> + [{potential2_base:0%} + {potential2_enhance:0%} × (Höchste Anzahl Technikkumulierungen, die bei einem Ziel <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wurden)]</>. Dieser Effekt kann nicht kumuliert werden.",
+      "name": "Drei Kerben im Holz"
     },
     "potential3": {
       "description": "Ultimative Fertigkeit <@ba.key>Spielverderber verboten</> verbessert: Der verursachte SDN wird auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts erhöht, der <#ba.enhance>Verstärkungs</>-Effekt wird auf das <@ba.vup>{enhance_final:0.0}</>-Fache des ursprünglichen Werts erhöht.",

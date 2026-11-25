@@ -205,12 +205,12 @@
       },
       {
         "voId": "chr_0035_liino_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Hehe! Que pose fofa, não é?"
       },
       {
         "voId": "chr_0035_liino_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Lá-lá-lá! Teste de microfone concluído! Estou pronta para ir!"
       },
       {
@@ -405,7 +405,7 @@
       },
       {
         "voId": "chr_0035_liino_combat_remind_danger_01",
-        "title": "Alertando Companheiro de Equipe",
+        "title": "Aviso de Perigo",
         "text": "Abaixe-se! Não se force!"
       },
       {

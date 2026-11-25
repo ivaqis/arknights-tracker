@@ -34,7 +34,7 @@
     },
     "battleSkill": {
       "name": "Escuridão Intimidada",
-      "description": "Argent Flow brande sua lança e causa <@ba.pd>DNO Físico</> aos inimigos próximos e aplica <#ba.airborne>Levantar</> aos alvos em sua frente.\nApós Argent Flow conjurar seu combo de habilidades, sua habilidade de batalha é temporariamente alterada para <@ba.key>Investida Relâmpago</>.\n<@ba.key>Investida Relâmpago</>: Argent Flow monta em sua galopante Nuli para saltar no ar, carregar energia rapidamente e, em seguida, atacar o alvo para aplicar <#ba.conduct>Eletrificação</> à força e causar <@ba.pulse>DNO Elétrico</> a inimigos em uma grande área em frente a ele. Quando essa <#ba.conduct>Eletrificação</> é aplicada em um alvo com <#ba.pulseinflict>Inflição Elétrica</>, ela <#ba.consume>consome</> todos os acúmulos de <#ba.pulseinflict>Inflição Elétrica</> do alvo e concede <#ba.statuslevel>Nível de Status + 1</> de <#ba.conduct>Eletrificação</> por acúmulo consumido. Após <#ba.consume>consumir</> a <#ba.pulseinflict>Inflição Elétrica</> do alvo, Argent Flow também aplica 1 acúmulo de <#ba.noguard>Vulnerabilidade</>.",
+      "description": "Argent Flow brande sua lança e causa <@ba.pd>DNO Físico</> aos inimigos próximos e aplica <#ba.airborne>Levantar</> a alvos na frente dele.\nApós Argent Flow conjurar seu combo de habilidades, sua habilidade de batalha é alterada temporariamente para <@ba.key>Investida Relâmpago</>.\n<@ba.key>Investida Relâmpago</>: Argent Flow monta em sua galopante Nuli para saltar no ar, carregar energia rapidamente e, em seguida, atacar o alvo para aplicar <#ba.conduct>Eletrificação</> à força e causar <@ba.pulse>DNO Elétrico</> a inimigos em uma grande área em frente a ele. Quando esta <#ba.conduct>Eletrificação</> é aplicada em um alvo com <#ba.pulseinflict>Inflição Elétrica</>, ela <#ba.consume>consome</> todos os acúmulos de <#ba.pulseinflict>Inflição Elétrica</> do alvo e concede <#ba.statuslevel>Nível de Status + 1</> de <#ba.conduct>Eletrificação</> por acúmulo consumido. Após <#ba.consume>consumir</> a <#ba.pulseinflict>Inflição Elétrica</> do alvo, Argent Flow também aplica 1 acúmulo de <#ba.noguard>Vulnerabilidade</>.",
       "baseDmgMultiplier": "Multiplicador DNO Base",
       "baseStagger": "Desorientação Base",
       "boltRushDmgMultiplier": "Multiplicador DNO Investida Relâmpago",
@@ -187,12 +187,12 @@
       },
       {
         "voId": "chr_0037_minghe_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Por favor, esquente um pouco de vinho para mim. Essa batalha não vai demorar muito."
       },
       {
         "voId": "chr_0037_minghe_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Apresentando-se para o trabalho. Qual exército vamos derrotar hoje?"
       },
       {
@@ -213,7 +213,7 @@
       {
         "voId": "chr_0037_minghe_sim_talk_lv01_01",
         "title": "Conversa Informal na Dijiang 1",
-        "text": "Eu o vi chegando de longe... E não, eu não ativei minha audição aprimorada. É apenas uma vantagem de altura."
+        "text": "Eu vi você chegando de  longe... E não, eu não ativei minha audição aprimorada. É apenas uma vantagem  de altura."
       },
       {
         "voId": "chr_0037_minghe_sim_talk_lv02_01",
@@ -258,7 +258,7 @@
       {
         "voId": "chr_0037_minghe_mono_self_line02",
         "title": "Diálogo de Confiança 2",
-        "text": "Um aroma suave? Provavelmente é essa bola difusora de incenso. Quando me alistei pela primeira vez, eu não era exatamente paciente. Eu me forcei a ficar acordado e alerta para melhor cumprir minhas obrigações. Mas isso só agravou ainda mais a minha saúde mental. Meus colegas então me deram uma receita de incenso para acalmar minha mente. Disseram que uma boa noite de sono é a chave para superar as adversidades. E a realidade comprovou a sabedoria das suas palavras... Endmin? Humm. Já está dormindo. Pois bem, ficarei de vigília por sua causa."
+        "text": "Um aroma suave? Provavelmente é essa bola difusora de incenso. Quando me alistei pela primeira vez, eu não era exatamente paciente. Eu me forcei a ficar acordado e alerta para melhor cumprir minhas obrigações. Mas isso só agravou ainda mais a minha saúde mental. Meus colegas então me deram uma receita de incenso para acalmar minha mente. Disseram que uma boa noite de sono é a chave para superar as adversidades. E a realidade comprovou a sabedoria das suas palavras... Endmin? Hmm. Já está dormindo. Pois bem, ficarei de vigília por sua causa."
       },
       {
         "voId": "chr_0037_minghe_mono_self_line03",
@@ -545,7 +545,7 @@
       "name": "Fluxo Estelar Iluminado"
     },
     "potential5": {
-      "description": "Talento <@ba.key>Abundância Elétrica</> melhorado: quando a habilidade de batalha <@ba.key>Investida Relâmpago</> é conjurada, a equipe inteira ganha Intensidade das Artes adicional <@ba.vup>+ {extra_yuanshi_add:0}</>.\n<@ba.key>O bônus de DNO de explosão de Ruptura Violenta</> por ponto de Intensidade das Artes de Argent Flow é aumentado para <@ba.vup>{thunderdamage_multi:0.0}</> vezes o original.",
+      "description": "Talento <@ba.key>Abundância Elétrica</> melhorado: quando a habilidade de batalha <@ba.key>Investida Relâmpago</> é conjurada, a equipe inteira ganha Intensidade das Artes adicional <@ba.vup>+ {extra_yuanshi_add:0}</>.\nO bônus de DNO de explosão de <@ba.key>Ruptura Violenta</> por ponto de Intensidade das Artes de Argent Flow é aumentado para <@ba.vup>{thunderdamage_multi:0.0}</> vezes o original.",
       "name": "Convite às Luzes Celestiais"
     }
   },

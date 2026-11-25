@@ -1,0 +1,574 @@
+{
+  "baseInfo": {
+    "tags": [
+      "SP Recovery",
+      "Nature Infliction"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Cooking",
+      "Outdoors Survival"
+    ],
+    "giftPreferTags": [
+      "Wuling Sightseeker's Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Lifestyle"
+    ],
+    "raceTag": "Perro"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Wild Wacky-Whack",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
+    },
+    "battleSkill": {
+      "name": "\"Really Heavy Bash\"",
+      "description": "Kay leaps into mid-air for a short power-up, salvages all her <@ba.key>Weapons</>, then unleashes a powerful ground bash with her heavy hammer. The bash deals <@ba.natur>Nature DMG</> (based on her <@ba.key>Hot Edgy Naives</> stacks), applies <#ba.naturalinflict>Nature Infliction</> on enemies within the area of effect, and consumes all <@ba.key>Hot Edgy Naives</> stacks. If Kay consumes 3 <@ba.key>Hot Edgy Naives</> stacks, she also forcibly applies <#ba.burning>Combustion</> on enemies.\n<@ba.info>If ＞ 3 Hot Edgy Naives stacks are consumed, the effects will be the same as those for 3 stacks.</>",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "bonusDmgMultiplierPerHotEdgyNaives": "Bonus DMG Multiplier per Hot Edgy Naives",
+      "combustionDurationS": "Combustion Duration (s)"
+    },
+    "comboSkill": {
+      "name": "\"Really Kwik Smash\"",
+      "description": "COMBO TRIGGER: While Kay has ≥ 1 <@ba.key>Weapon</> and either <#ba.naturalinflict>Nature Infliction</> is applied OR <#ba.spellburst>Arts Burst</> DMG is dealt to the enemy.\nKay throws a <@ba.key>Weapon</> at the target to deal <@ba.natur>Nature DMG</>. Hitting the enemy recovers some SP and also forcibly applies a <#ba.naturalburst>Nature Burst</>. The <@ba.key>Weapon</> will then drop at a random location in the battlefield. Kay <@ba.key>salvages</> the said <@ba.key>Weapon</> when the controlled operator touches it.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "spRecovery": "SP Recovery"
+    },
+    "ultimate": {
+      "name": "\"Really Sweet Combi-Bonker!\"",
+      "description": "Kay kitbashes a combi-bonker that she swings multiple times before throwing it to cause an explosion that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> on enemies within the area of effect, recovers some SP, and leaves behind multiple <@ba.key>Picnic Snacks</>. When the controlled operator touches a <@ba.key>Picnic Snack</> and picks it up, Kay grants HP treatment to the said operator and recovers some SP. The attribute of Agility increases the amount of HP treatment.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
+      "stagger": "Stagger",
+      "spRecovery": "SP Recovery",
+      "baseTreatment": "Base Treatment",
+      "treatmentIncreasePerAgility": "Treatment Increase per Agility",
+      "spRecoveryPerPicnicSnack": "SP Recovery per Picnic Snack"
+    },
+    "indicator": {
+      "levels": [
+        "Operator Strength +10.",
+        "Operator Strength +15.",
+        "Operator Strength +15.",
+        "Operator Strength +20."
+      ],
+      "name": "Forged"
+    },
+    "talent1": {
+      "levels": [
+        "Kay starts with 3 <@ba.key>Weapons</>. When the battle ends, Kay salvages all thrown <@ba.key>Weapons</>.\nSalvaging a <@ba.key>Weapon</> grants Kay 1 stack of <@ba.key>Hot Edgy Naives</>.",
+        "Kay starts with 3 <@ba.key>Weapons</>. When the battle ends, Kay salvages all thrown <@ba.key>Weapons</>.\nSalvaging a <@ba.key>Weapon</> grants Kay 1 stack of <@ba.key>Hot Edgy Naives</> and grants the entire team <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0%}</>, with <@ba.natur>Nature DMG Dealt</> getting another <@ba.vup>+{atk_up:0%}</>. Duration: <@ba.vup>{duration:0}</>s. Max stacks for this effect: {stack:0}.",
+        "Kay starts with 3 <@ba.key>Weapons</>. When the battle ends, Kay salvages all thrown <@ba.key>Weapons</>.\nSalvaging a <@ba.key>Weapon</> grants Kay 1 stack of <@ba.key>Hot Edgy Naives</> and grants the entire team <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>, with <@ba.natur>Nature DMG Dealt</> getting another <@ba.vup>+{atk_up:0.0%}</>. Duration: <@ba.vup>{duration:0}</>s. Max stacks for this effect: {stack:0}."
+      ],
+      "name": "Bottomless Arsenal"
+    },
+    "talent2": {
+      "levels": [
+        "When an enemy is <@ba.poise>Staggered</> or triggers a <#ba.poiseknot>Stagger Node</>, it drops 1 <@ba.key>Picnic Waffle</>. Effect only triggers once every {cd:0}s.\n<@ba.info>Picnic Waffle has the same effects as Picnic Snack.</>",
+        "When an enemy is <@ba.poise>Staggered</> or triggers a <#ba.poiseknot>Stagger Node</>, it drops 1 <@ba.key>Picnic Waffle</>. Effect only triggers once every {cd:0}s.\n<@ba.info>Picnic Waffle has the same effects as Picnic Snack.</>"
+      ],
+      "name": "Have a Waffle!"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Manufacturing Cabin to grant weapon EXP material production efficiency +20%",
+        "Assign to Manufacturing Cabin to grant weapon EXP material production efficiency +30%"
+      ],
+      "name": "Truly Wild Smithing"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 14%",
+        "Assign to Manufacturing Cabin to slow Mood Drop of all operators in it by 18%"
+      ],
+      "name": "Honey Waffle Break"
+    },
+    "files": {
+      "main": "CODENAME: Kay\nGENDER: Female\nAUTHENTICATION: Rhodes Island\nDOB: Feb. 25\nRACE: Perro\n[ORIPATHY INFECTION STATUS]\nOripathy negative, based on medical examination reports.\n\n[INTEGRATED PHYSICAL EXAMINATION]\nPHYSIOLOGICAL STRENGTH: Excellent\nCOMBAT SKILL: Standard\nTACTICAL ACUMEN: Normal\nORIGINIUM ARTS ASSIMILATION: Excellent\n\nP.S. Kay's digestive system seems to be abnormally strong, so special attention should be paid to this when formulating a corresponding nutrition plan.\nP.P.S. I really want to know how she can eat so much and still keep her figure!\n\nWhy don't you try moving around like her?\n— Chen Qianyu",
+      "humanResources": "Operator Kay, real name Cerube, is a reconvener from Rhodes Island. Under Warfarin's instruction, she left Rhodes Island to journey across Talos-II. \n\nKay joining Endfield wasn't entirely a coincidence. In fact, Endfield was the final destination of her journey. More than half a year ago, we received word from Rhodes Island: a young reconvener had already set out from Rhodes Island and would arrive at Endfield to report in shortly. \"Shortly\" meaning this very moment, one hundred eighty-five days, eight hours, twelve minutes, and fifty-five seconds later. My retrieval system took nearly half a second to respond before I found her name in the personnel to-do list. \nAs for her greatly delayed reporting, she explained: she had left Rhodes Island precisely to find the Endministrator. In Warfarin's stories, the Endministrator had always remained aboard Dijiang. So she traveled across the surface of Talos-II, searching for an aerospace work vessel called \"Dijiang\". If she hadn't happened to run into the Endministrator in the outskirts of Wuling, she probably would have kept searching. \nHaving traveled alone across Talos-II for so long and still appearing before us safe and sound, at least by this alone, she is unquestionably an expert in wilderness travel. \n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "When asked what codename she wished to use while operating at Endfield, Cerube simply chose the name her friends called her: \"Kay\". \nAt Endfield, her way of handling things can indeed be simple enough. \nShe doesn't try to understand complex administrative hierarchies or combat sequences. After spending some time with everyone at Endfield, everyone was simply sorted by her into three major categories: \"good people who can give me food\", \"strong people who can fight with me\", and \"very busy people who don't have much time\". This minimalistic interpersonal logic actually made her seem especially relaxed in the tense and orderly life, and it also allowed her to quickly make quite a few friends after arriving at Endfield. With her blunt simplicity and seemingly inexhaustible energy, who could bear to refuse her? \nSo you can see Kay darting around among the various operators. She'll excitedly drag an operator who just came out of the training room to visit a \"secret base\" she newly discovered: usually some observation window with a view of Talos-II, or a little castle built from old parts behind the engineering division. You can also often see her sharing a new ice cream dessert with Laevatain, or spending an entire day holed up in the weapons testing room with Yvonne. Occasionally, you can also see her being caught on the spot by logistics operators and stopped outside the door after trying to break into the food preparation area of the canteen. \nKay interacts with everyone in the simplest way, and the operators often choose the simplest way to repay her friendliness. Everyone discovered that Kay can be said to never turn down any kind of food, so over time, her pack became stuffed with all sorts of foods with peculiar flavors. Until one day, her backpack full of snacks triggered a warning during boarding inspection due to being overweight. Since then, on Kay's suggestion, all the snacks given to her were handed over to Perlica to supervise and keep on her behalf. \n\"Don't get any funny ideas. Don't think that just because you feed her, you'll be able to win the next eating contest... You can't feed her enough.\"",
+      "file2": "Having been with Endfield for so long, I've never seen an operator so enthusiastic about field missions. \nTalos-II's environment is complex and ever-changing, and enemies often become troublesome too. The dangers go without saying, and the heavy responsibility also puts most operators under considerable pressure. But for operator Kay, field missions are more like officially approved expeditions. Sometimes, the moment she's added to the personnel list, she'll come running to confirm the departure time, with an eagerness in her tone that she clearly can't hide. Compared to the enclosed Dijiang, the vast world of Talos-II seems to be the playground Kay prefers. But to this day, I still can't understand... After such a long journey, how can she still maintain such intense curiosity about everything around her? \nBecause of her long experience traveling in the wilderness, Kay often serves as a guide during missions. But when out in the field with her, she always keeps testing the edge of leaving the group: sniffing here, poking around there, and if you don't pay attention for even a moment, she'll disappear from everyone's sight. The amazing thing is, with just one call, you'll hear her respond from behind some nearby bush, and you'll find she was actually right there beside you all along. Then she'll bring back a pebble shaped remarkably like Dijiang, or a brightly colored flower of unknown name but with an unusually pleasant scent. \nOh, please don't misunderstand. She won't neglect her duties as a guide just because she's playful. I even think the reason she can constantly maintain awareness of her surroundings is precisely because she always keeps herself highly energized mentally. She often senses changes in the surrounding environment earlier than anyone else in the team, and immediately enters combat mode with high morale. When encountering sudden situations, she can even warn of enemy movements before the sensors respond, or tell us the exact location of danger. And when asked how she actually does it, she'll only give answers like \"the smell of the air is wrong\" or \"that direction feels uncomfy\". If this isn't some kind of Originium Arts, then it's probably intuition and premonition honed from long years of roaming Talos-II.",
+      "file3": "[Weapon Repair Order D1] \nFacility awaiting repair: Kinetic Shock Hammer \nOriginal manufacturer: Mieszko Industries (Morospolis) \nI finally understand why Kay is always running to the arsenal. With the way she uses things, our armory reserves will be emptied by her sooner or later. \nYesterday, while clearing out an abandoned stronghold, she pulled out a Mieszko-made Kinetic Shock Hammer out of thin air. As far as I know, this hammer is supposed to require a three-person crew to operate safely, but Kay lifted it all by herself. She didn't connect the kinetic hammer to a powered exoskeleton. She just grabbed the grip, which was still undergoing high-frequency overheating, bare-handed. That temperature would be enough to cook an ordinary operator's hand. The way she swung this heavy weapon was no different from swinging a light twig. She didn't even activate the shock-pressurization mode. She simply used the inertia generated by the great hammer's own weight to pin an Aggelos that tried to ambush us into the wall alive, like driving a nail. \nThis was the first time I saw with my own eyes how Kay uses these weapons. To be honest, it's really something of a miracle that her \"treasures\" haven't all fallen apart. \n\nThe hammer's not broken, you see? It's full of spirit! \n— Kay \n\n[Weapon Repair Order E3] \nFacility awaiting repair: Steel Axe \nOriginal manufacturer: Unknown \nThe forging technique on this weapon is quite old-school. As far as I know, no manufacturer on Talos-II still uses this kind of craftsmanship. \nThere's a string of ancient Minos script engraved on the axe head. It could be the manufacturer's name, or maybe a person's name? Maybe I should go ask a colleague who knows Minos. \n\n[Weapon Repair Order I4] \nFacility awaiting repair: Standard-Issue Lance \nOriginal manufacturer: Fort Forgefane \nWhen we met her, we were tracking a large Aggelos. \nIt lured us into the snow plains, and we circled for three days until all our supplies ran out. Just as we were preparing for a life-or-death struggle with that Aggelos, a massive lance suddenly pierced into our field of view. At the other end, gripping the shaft, was a young girl. With strength utterly disproportionate to her own body, she ran the Aggelos through with the lance... \nAfter the Aggelos crashed to the ground, the girl finally spoke. She said she had been sent by the Order of Steel Oath, and had come to bring us home...",
+      "file4": "Ever since she woke up on Rhodes Island, Kay stayed aboard the ship for a long time. Rhodes Island seemed no different from before. The operators all had their own missions, and many weren't often on the ship. No one ever assigned her any particular duties. She only needed to train, sleep well, and eat well, just as she had originally wished. Sometimes she would go find Warfarin and listen to her tell stories about this planet, about Terra, and about Kay herself. She could stare blankly at the scenery outside the porthole for ages, as it changed from snowy mountains to forests, then to deserts, and then back to snowy mountains. It seemed that as long as she was willing, this kind of time would never end. \nUntil one day, she decided to pack her bags. \nShe sat before the porthole for a long time, her ears twitching slightly, as if catching a sound echoing by her ear. The stories Warfarin had told slowly linked together in her mind into a road. At the end of that road was a place called \"Endfield\". \nShe didn't know what that really meant. An endpoint? A place to belong? Or some kind of answer waiting for her? She couldn't figure it out, but she vaguely felt that something there was calling to her. \nAnd so she stood. \nThe preparation process felt more like a fun game to her. She picked the biggest, sturdiest backpack and stuffed it with all kinds of snacks and dry rations, honey waffles in particular took the most important spot. Then she tried summoning a few handy weapons, watching them appear and fade away around her, and nodded in satisfaction. She was ready. \nWarfarin seemed to have anticipated her departure. She handed over a small extra bag of honey waffles. \"If you get lost,\" Warfarin said, \"the Endmin will tell you which way to go.\" \nShe nodded earnestly, though she wasn't sure what \"getting lost\" felt like. This was her first time setting out to explore this brand-new world. \nOn the day of departure, she walked to the cabin door with her bulging pack on her back. The door slowly opened, and the wind outside rushed in, carrying unfamiliar scents. Talos-II lay before her. \n\"Endfield...\" She softly repeated the name, as if confirming her direction. \nThen she took her first step. \nShe didn't know what lay ahead, nor how long this journey would last, nor how many times in the future she would set out on journeys like this. But she vaguely understood that setting out on a journey wasn't just to find delicious things she hadn't tasted, nor just to see scenery she hadn't seen before— \nShe was searching for that feeling that could only be found on a journey. \nOne that was called \"going home\"."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Cooking",
+        "description": "Cooking: All Can be Waffled \nTraveling takes no skill except knowing how to waffle everything you can get."
+      },
+      "expert2": {
+        "name": "Outdoors Survival",
+        "description": "Outdoors Survival: Art of Traveling if Lost \nThe detours might be wild, but still, she brought you to your intended destination on time, right?"
+      },
+      "hobby1": {
+        "name": "Nature",
+        "description": "Nature: Wildlands Scavenging \nTaste every wind, draw every cloud."
+      },
+      "hobby2": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: Me Tummy Empty \nThe undefeated champ of multiple Bigeater contests still seeks to compete. Who's hungry enough to challenge her?"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_01",
+        "title": "Operation Prep 1",
+        "text": "Where to, where to? Can I come along?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_02",
+        "title": "Operation Prep 2",
+        "text": "Nice day out! Let's go!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_01",
+        "title": "Adding to Team 1",
+        "text": "Ta-da, here I am! Got anything yummy?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_02",
+        "title": "Adding to Team 2",
+        "text": "Let's roll! If you're short on nibbles, I'll sneak you some of mine!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_weap_01",
+        "title": "Switching Weapon",
+        "text": "For me too? Yay! My weapon collection is getting bigger!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_gear_01",
+        "title": "Switching Gear",
+        "text": "This gear... will be fine with me! I'll take super good care of it!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_skill_01",
+        "title": "Talent Node Activation",
+        "text": "Ah, this trick is super duper cool! Bet I just got a little stronger!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_level_01",
+        "title": "Watching Combat Records",
+        "text": "I'm watching! I really am!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt01_01",
+        "title": "Operator Promotion 1",
+        "text": "A promotion? Then how about a new weapon for me as a little reward?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt02_01",
+        "title": "Operator Promotion 2",
+        "text": "My tummy's been grumbling for hours. We get to eat after this, right?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt03_01",
+        "title": "Operator Promotion 3",
+        "text": "Chill this, sizzle that. All you need is a little boom, bam, pow! Annnd done! I've always kept things easy peasy."
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt04_01",
+        "title": "Operator Promotion 4",
+        "text": "All the way from there to here... Whoa, I've come so far and taken down so many bad guys! Endmin, does this mean I'm strong enough to stay with you forever and ever?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_introduce_01",
+        "title": "Operator Reporting for Duty",
+        "text": "Hiya! I'm Cerube, but my friends call me Kay. My big, huge, enormous dream is to explore every corner of Talos-II a bazillion times! You can come along too, as long as you bring your own snacks."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_01",
+        "title": "Standing By 1",
+        "text": "Whatcha eatin'? Can I have a bite?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_02",
+        "title": "Standing By 2",
+        "text": "Weapon test? Field trip? I'm your best buddy for both!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_assign_work_01",
+        "title": "Assigning to Facility",
+        "text": "Ooh, yay, food time! Oh ... it's not the canteen?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_lower_01",
+        "title": "Greeting 1",
+        "text": "Hiii, Endmin! Off to the canteen? Take me with you!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_max_01",
+        "title": "Greeting 2",
+        "text": "Endmin! See this shiny new axe? Think it's my kinda weapon?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv01_01",
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Food's this way, weapons that way, training's back there, and everyone's nap nests over there... Where's the Endmin's snooze spot? Waaah, too many cabins! How does anyone not get lost on Dijiang?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_01",
+        "title": "Dijiang Idle Chatter 2",
+        "text": "This big thing is a spaceship, its name is Dijiang, Dijiang belongs to Endfield, and you are the Endministrator... Which means ... that means you're the captain of this ship! Am I right, Endministrator?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_02",
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Even though Dijiang can take us super far in just a blink, I still prefer the journey on foot. Endmin, isn't finding the little things along the way way more fun than just reaching the destination?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_01",
+        "title": "Dijiang Idle Chatter 4",
+        "text": "One, two, three, four... Huh? Endmin, did you see that shiny new axe I brought back to Dijiang? It was just here... Uh-oh, I bet I left it in the training room!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_02",
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Meet my dagger, \"Honeyplum\", my hammer, \"Ironhead\", and my chainsaw, \"Super-Speed Spinning Shredder\"! What? You think the names are weird? Hmph! I didn't pick them — they told me so!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_03",
+        "title": "Dijiang Idle Chatter 6",
+        "text": "The canteen's got meatloaf, lentil soup, pastries, and risotto today. Oh, and shh ... there's also a secret menu with super yummy cream tarts. Wanna try? And keep this between us. It's a top secret!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_give_01",
+        "title": "Offering Gifts",
+        "text": "Endmin, Endmin! I got you a gift! Noooo, I didn't just grab some silly rock from the ground!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_recv_01",
+        "title": "Accepting Gifts",
+        "text": "Oh-oh-oh! This looks cool! I'll trade it with a honey waffle... Huh? It's a gift? Aww, you're so sweet!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line01",
+        "title": "Trust Dialog 1",
+        "text": "Back in Rhodes Island, everyone said my Originium Arts were super strong, and I should keep training to control them. So I did! Every single day! That's how I can help you and Endfield! So ... have I been helping?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line02",
+        "title": "Trust Dialog 2",
+        "text": "Tactical procedures, command hierarchies, oh dear. I'm supposed to memorize that? Why don't I ... you know, let you do the thinking stuff and I'll focus my fighty rawr-rawr against them nenemies? That way, I can spend all that training time napping! Please, Endmin, please!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line03",
+        "title": "Trust Dialog 3",
+        "text": "Got something to tell you! I ate a honey waffle for brekkie, then I ate another for lunch, and one more for dinner. I can't get enough of them. You're just like honey waffles, you know. I saw you in the morning, saw you again at noon, and I still wanna hang around with you in the evening."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line04",
+        "title": "Trust Dialog 4",
+        "text": "I can memorize a weapon's shape, how it feels in my hand, and how it whooshes when I swing it. Then, I just think about it, and bam! It's right in my hands. Pretty cool, right? If thinking like that could make you pop up next to me too, Endmin ... wouldn't that be super nice?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line05",
+        "title": "Trust Dialog 5",
+        "text": "This squishy cushion's for you. And I also grabbed a super cozy blankie... Why? You said if I behaved, no slacking off, no nibble nabbing, I could move my little nest next to yours! No takesies-backsies! Now help me move in, pleeease!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line01",
+        "title": "Chat 1",
+        "text": "Endmin, when you're free, let's go on a little trip together! No work, just us exploring pretty secret spots. You work way too hard, you gotta relax a little, don't you think?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line02",
+        "title": "Chat 2",
+        "text": "Before joining Endfield, I kept hearing about you and Endfield everywhere I went. The more I saw, the more I understood how hard you worked for Talos-II... You were still sleeping back then, so I helped people like you would. And that's how I made so many good friends! Now this whole big planet is full of my buddies!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line03",
+        "title": "Chat 3",
+        "text": "Endmin, are you busy? Whatcha looking at? Is that my combat report? Lemme see, lemme see! How'd I do? Did I do awesome? I bet I looked super cool, right? Sooo ... extra honey waffles for me? I'll count that as a yes! Whoohoo! Yay me!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line04",
+        "title": "Chat 4",
+        "text": "You smell familiar somehow ... but I can't quite say what it is. It's kind of like fresh-baked honey waffle, a warm forge fire, or a cozy bed on a chilly day. It's so comforting... Where have I smelled it before...?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line05",
+        "title": "Chat 5",
+        "text": "When my tummy growls, honey waffle tastes extra yummy. When I'm sleepy, my blankie feels extra toasty. Just like Miss Warfarin said: the farther I wandered, the clearer home became in my heart. So I walked all across Talos-II ... and at the end, I found you. ... Huh? But you're right here, Endmin. Of course I can see you clearly..."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line01",
+        "title": "Topic: Rhodes Island",
+        "text": "Before I left Rhodes Island, Miss Warfarin told me not to talk about it with strangers. She said it has a new mission on Talos-II, so the fewer people who know, the safer it is. Hmm ... Miss Warfarin can get really serious sometimes. Uh-oh ... I hope I didn't say too much..."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line02",
+        "title": "Topic: Da Pan's Cooking Skills",
+        "text": "Mr. Da Pan cooks like a wizard with a spoon! Everything he makes is yummy yummy in my tummy! And his spicy stuff is DA BOMB! One time, he made me spicy honey waffle and said, \"Eat this and you'll hiccup fire!\" So I did. And whoaaa, best magic trick ever!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line03",
+        "title": "Topic: Wilderness Adventure",
+        "text": "Roaming in the wilderness is super dangerous! There are baddies, bad weather ... but the baddest baddie of all is an empty tummy. 'Cause no food, no energy. No energy means no fighting or walking straight... Being hungry is so so bad. So bad you can't forget it ever. So now I always pack my bag super full before I go anywhere!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line04",
+        "title": "Topic: Travel Buddies",
+        "text": "I like to bring all my weapons wherever I go. Out in the wilderness, they're my bestest buddies. When trouble comes, they got my back, that's extra strength right there! And now that I don't have to carry them all on my back, I can bring more yummy food instead!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line05",
+        "title": "Topic: Order of Steel Oath",
+        "text": "I stayed with the Oathkeepers up north for a loooong time. They're a lot like Endfield — full of strong people, all chasing something big. They don't have Dijiang, but they do have a mountain-high Forgefane. The smiths are always clanking and hammering, making all kinds of amazing weapons. I loved dozing off there ... the clang and clatter always bring me good dreams."
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_common_01",
+        "title": "Resource/Collectible Detected 1",
+        "text": "Oooh ... smells like something yummy. Wanna go take a peek?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_valub_01",
+        "title": "Resource/Collectible Detected 2",
+        "text": "Treasure alert! That-a-way!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_locked_01",
+        "title": "Unexplored Area Detected",
+        "text": "Maybe we should do more prep work first. Like, pack more yummies?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_danger_01",
+        "title": "Powerful Enemy Discovered",
+        "text": "There's a strong one up ahead. Wanna send me in for a little taste test?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_01",
+        "title": "Mining 1",
+        "text": "Whoa, you're really into collecting rocks, huh!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_echo2_01",
+        "title": "Mining 2",
+        "text": "These rocks are little treasures, right? Then I'm gonna help too!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_treasure_valub_01",
+        "title": "Opening a Crate",
+        "text": "These are all super useful things! We got pretty lucky, didn't we!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_etherium_01",
+        "title": "Acquiring Aurylene",
+        "text": "This sparkly stuff is \"Aurylene\", right? I saw lots and lots of it out in the wilderness. I should've taken it all!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_blight_break_01",
+        "title": "Eliminating the Blight",
+        "text": "Tidy tidy done! The honey waffle smells twice as nice now!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_rest_01",
+        "title": "Rest",
+        "text": "Whew! A good rest is just as good as a big feast!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_using_01",
+        "title": "Tactical Use 1",
+        "text": "Hurry! Take a bite!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_getheal_01",
+        "title": "Tactical Use 2",
+        "text": "I'm back to life! Cool!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_danger_01",
+        "title": "Danger Warning",
+        "text": "Quick, dodge!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_hurt_lowhp_01",
+        "title": "Injured",
+        "text": "I dare you come closer. I'll chomp you!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_dead_01",
+        "title": "0 HP",
+        "text": "The baddies ... are yours now..."
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_01",
+        "title": "Team Encouragement 1",
+        "text": "Woah, that was super duper cool!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_02",
+        "title": "Team Encouragement 2",
+        "text": "Everyone's so strong!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_01",
+        "title": "Encouragement Response 1",
+        "text": "Hehe, I'm actually really, really strong!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_02",
+        "title": "Encouragement Response 2",
+        "text": "You can bet on me, no problem!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_01",
+        "title": "Combat Begins 1",
+        "text": "Kay's snack squad, let's munch!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_echo2_01",
+        "title": "Combat Begins 2",
+        "text": "Alrighty, Kay, time to get focused!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_01",
+        "title": "Combat Victory 1",
+        "text": "Just like that! We knocked them all out as a team!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_02",
+        "title": "Combat Victory 2",
+        "text": "That was a yummy victory! I'm getting waffles for this!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_echo2_01",
+        "title": "Combat Victory 3",
+        "text": "I chipped in too, right?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_hard_01",
+        "title": "Combat Victory 4",
+        "text": "What a tough cookie. So ... when are we eating? Bet everyone's tummies are growling!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_battle_defeat_01",
+        "title": "Combat Defeat",
+        "text": "Good thing everyone got away. Okay, tummies first, then we go again!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Go!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Boom! Pow!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_01",
+        "title": "Battle Skill 1",
+        "text": "No running away!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_02",
+        "title": "Battle Skill 2",
+        "text": "Stay still, my prey!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_03",
+        "title": "Battle Skill 3",
+        "text": "Leave it to me!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_01",
+        "title": "Combo Skill Ready 1",
+        "text": "Ready to jump in!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_02",
+        "title": "Combo Skill Ready 2",
+        "text": "Kay's all set!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_01",
+        "title": "Combo Casting 1",
+        "text": "Dadadadada!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_02",
+        "title": "Combo Casting 2",
+        "text": "Ha-yah!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_01",
+        "title": "Finisher 1",
+        "text": "An opening!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_02",
+        "title": "Finisher 2",
+        "text": "Go bite'em!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Have a bite of this!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Honey attack! Full power!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "I'll flatten you like a pancake!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "When entering battle, Kay gains 1 stack of <@ba.key>Hot Edgy Naives</>.\nTalent <@ba.key>Bottomless Arsenal</> improved: Each <@ba.key>Weapon</> salvage gives the entire team an additional <#ba.spelldmg>Arts DMG Dealt</> <@ba.vup>+{atk_up:0.0%}</>, with additional <@ba.natur>Nature DMG Dealt</> getting another <@ba.vup>+{atk_up:0.0%}</>, for an additional duration of <@ba.vup>+{duration:0}</>s.",
+      "name": "Wildness Ignited"
+    },
+    "potential2": {
+      "description": "Strength <@ba.vup>+{Str:0}</>, <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{NaturalDamageIncrease:0%}</>.",
+      "name": "Expert Roamer"
+    },
+    "potential3": {
+      "description": "Battle skill <@ba.key>\"Really Heavy Bash\"</> enhanced: Bonus DMG Multiplier per <@ba.key>Hot Edgy Naives</> stack is increased to <@ba.vup>{atk_scale_per_weapon:0.0}</> times the original. Ultimate <@ba.key>\"Really Sweet Combi-Bonker!\"</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale:0.0}</> times the original.",
+      "name": "Picnic Prep"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>\"Really Sweet Combi-Bonker!\"</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "\"Bonkie I Made\""
+    },
+    "potential5": {
+      "description": "Combo skill <@ba.key>\"Really Kwik Smash\"</> improved: Length of cooldown <@ba.vup>{coolDown:0}</>s. DMG Multiplier is increased to <@ba.vup>{atk_scale:0.0}</> times the original. SP Recovery is increased to <@ba.vup>{atb:0.0}</> times the original.",
+      "name": "\"Kwikker Smash\""
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Surprised?",
+      "author": "LM7",
+      "description": "You always know the exact flavor to satisfy her curiosities."
+    },
+    "potential3": {
+      "name": "Onboarding Snapshot",
+      "author": "八雲Crack",
+      "description": "\"Stop that dumbo serious look! Stop being so cereal!\""
+    },
+    "potential5": {
+      "name": "Secret Base",
+      "author": "수줍(Sjoop)",
+      "description": "\"Shh. I hid a huge stash of yummies here. You're the only one who knows of this place. Please keep it a secret for me!\""
+    }
+  }
+}

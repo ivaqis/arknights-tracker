@@ -161,22 +161,22 @@
       },
       {
         "voId": "chr_0018_dapan_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Não sou a melhor escolha nem o melhor guerreiro, e me sinto muito lisonjeado com a sua gentileza. Não tenho vinho comigo, então vou esvaziar este bule como sinal da minha gratidão!"
       },
       {
         "voId": "chr_0018_dapan_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Embora meus talentos sejam limitados, sempre cumpro a tarefa. Então, vou aceitar esta promoção. Me avise se precisar de algo. Não vou deixar você na mão."
       },
       {
         "voId": "chr_0018_dapan_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Isso é muito gentil da sua parte, mas significa que minha loja em Wuling deve ficar fechada por um tempo. Assim que tiver tempo, voltaremos, daremos um banquete para você... e pediremos aos meus parentes para cuidar dos meus negócios."
       },
       {
         "voId": "chr_0018_dapan_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Durante minha última visita a Hongshan, minha Mestra fez de tudo para me vincular a um projeto na Academia. Ela parou quando eu disse que agora estou trabalhando na Endfield. Não vou mentir, Endmin, estou REALMENTE honrado em receber um posto oficial a bordo da Dijiang — Ei, por que você está corando?"
       },
       {
@@ -186,12 +186,12 @@
       },
       {
         "voId": "chr_0018_dapan_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Aonde agora, Endmin?"
       },
       {
         "voId": "chr_0018_dapan_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Tem um trabalho para mim? Sem problemas."
       },
       {
@@ -247,7 +247,7 @@
       {
         "voId": "chr_0018_dapan_sim_gift_recv_01",
         "title": "Aceitando presentes",
-        "text": "Sinto-me profundamente honrado!"
+        "text": "Estou realmente honrado!"
       },
       {
         "voId": "chr_0018_dapan_mono_self_line01",

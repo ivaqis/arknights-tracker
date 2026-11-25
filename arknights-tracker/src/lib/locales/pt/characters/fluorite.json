@@ -166,22 +166,22 @@
       },
       {
         "voId": "chr_0022_bounda_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Parece que o trabalho de verdade está apenas começando."
       },
       {
         "voId": "chr_0022_bounda_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Estou realmente honrada... mas acho que isso significa ainda mais horas em missões de campo, certo?"
       },
       {
         "voId": "chr_0022_bounda_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Talvez uma medalha da próxima vez. Nunca tive uma antes."
       },
       {
         "voId": "chr_0022_bounda_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Se as Margens do Cinturão fazem parte do \"mundo melhor\" que estamos tentando construir, então temos muito trabalho pela frente, não é?"
       },
       {
@@ -191,12 +191,12 @@
       },
       {
         "voId": "chr_0022_bounda_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Quem vai ter um pouco de azar dessa vez?"
       },
       {
         "voId": "chr_0022_bounda_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Distraí-los? Desabilitá-los? Ou... simplesmente destruí-los?"
       },
       {

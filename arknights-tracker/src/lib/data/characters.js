@@ -386,6 +386,17 @@ export const characters = {
     apiId: "",
     gameId: "chr_0037_minghe"
   },
+  kay: {
+    id: "kay",
+    name: "Kay",
+    rarity: 6,
+    element: "nature",
+    class: "vanguard",
+    weapon: "polearm",
+    birthDate: "",
+    apiId: "",
+    gameId: "chr_0040_sweetpie"
+  },
   mimino: {
     id: "mimino",
     name: "Mimino",
@@ -397,52 +408,22 @@ export const characters = {
     apiId: "",
     gameId: "chr_0039_mimino",
     materials: [
-      "item_plant_crylplant_1_1",
-      "item_plant_crylplant_1_2",
-      "item_char_skill_level_1_6",
-      "item_char_break_stage_1_2",
-      "item_plant_mushroom_1_1",
-      "item_plant_mushroom_1_2",
-      "item_plant_crylplant_1_3",
-      "item_char_skill_level_7_12",
-      "item_char_break_stage_3_4",
-      "item_plant_mushroom_1_3",
       "item_plant_mushroom_2_3",
       "item_char_skill_specialize_6",
       "item_plant_crylplant_2_3",
       "item_char_skill_crown",
       "item_char_skill_specialize_3",
-      "item_char_skill_specialize_4"
-    ],
-    isForesight: true
-  },
-  kay: {
-    id: "kay",
-    name: "Kay",
-    rarity: 6,
-    element: "nature",
-    class: "vanguard",
-    weapon: "polearm",
-    birthDate: "",
-    apiId: "",
-    gameId: "chr_0040_sweetpie",
-    materials: [
+      "item_char_skill_specialize_4",
       "item_plant_crylplant_1_1",
       "item_plant_crylplant_1_2",
-      "item_char_skill_level_1_6",
-      "item_char_break_stage_1_2",
       "item_plant_mushroom_1_1",
       "item_plant_mushroom_1_2",
       "item_plant_crylplant_1_3",
       "item_char_skill_level_7_12",
       "item_char_break_stage_3_4",
       "item_plant_mushroom_1_3",
-      "item_plant_mushroom_2_1",
-      "item_char_skill_specialize_1",
-      "item_plant_crylplant_2_1",
-      "item_char_skill_crown",
-      "item_char_skill_specialize_5",
-      "item_char_skill_specialize_6"
+      "item_char_skill_level_1_6",
+      "item_char_break_stage_1_2"
     ],
     isForesight: true
   }

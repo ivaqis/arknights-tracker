@@ -161,22 +161,22 @@
       },
       {
         "voId": "chr_0023_antal_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Um aumento? Agradeço fundos adicionais para adquirir mais dispositivos de Originium e Unidades de Artes. Minha pesquisa e meu acervo pessoal aumentarão."
       },
       {
         "voId": "chr_0023_antal_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Uma promoção, mas que implica trabalho adicional no futuro? Entendido. Então, há alguma nova missão para mim?"
       },
       {
         "voId": "chr_0023_antal_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Isso é um incentivo para a minha sede de conhecimento? Acabei de terminar um relatório sobre o Núcleo de Automação do Protocolo. Você pode revisá-lo para ver se eu esqueci de algo."
       },
       {
         "voId": "chr_0023_antal_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "A vida na Endfield é muito diferente dos meus dias na Academia. Naquela época, eu conseguia manter meu coeficiente de rendimento facilmente com minhas pesquisas, mas isso não parece importante agora. Preciso aprender e conviver confiando em meus companheiros de equipe e com a conquista de resultados como um time."
       },
       {
@@ -186,12 +186,12 @@
       },
       {
         "voId": "chr_0023_antal_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Você gostaria de discutir algo comigo?"
       },
       {
         "voId": "chr_0023_antal_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Estou tentando montar uma piada ruim para você."
       },
       {

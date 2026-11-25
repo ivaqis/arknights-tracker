@@ -164,22 +164,22 @@
       },
       {
         "voId": "chr_0025_ardelia_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Certo, Ardelia! Concentre-se nesse caminho! Continue explorando e melhorando!"
       },
       {
         "voId": "chr_0025_ardelia_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "{F}Agradeço muito a sua aprovação, Professora! Vou me esforçar ainda mais e conquistar muito mais na Endfield!{M}Agradeço muito a sua aprovação, Professor! Vou me esforçar ainda mais e conquistar muito mais na Endfield!"
       },
       {
         "voId": "chr_0025_ardelia_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "{F}Não se preocupe comigo, professora. Definitivamente não estou trabalhando demais. Como? E as olheiras? Ah, uh... o livro era simplesmente muito interessante. Não consegui me conter.{M}Não se preocupe comigo, professor. Definitivamente não estou trabalhando demais. Como? E as olheiras? Ah, uh... o livro era simplesmente muito interessante. Não consegui me conter."
       },
       {
         "voId": "chr_0025_ardelia_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "{F}Este mundo tem tantos mistérios a serem desvendados. Deveríamos conhecê-lo melhor, assim como... assim como deveríamos aprender mais sobre nós mesmos. Não concorda, Professora?{M}Este mundo tem tantos mistérios a serem desvendados. Deveríamos conhecê-lo melhor, assim como... assim como deveríamos aprender mais sobre nós mesmos. Não concorda, Professor?"
       },
       {
@@ -189,12 +189,12 @@
       },
       {
         "voId": "chr_0025_ardelia_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "{F}Continue positiva neste dia também, Professora.{M}Continue positivo neste dia também, Professor."
       },
       {
         "voId": "chr_0025_ardelia_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "Ouvi seus passos, Professor."
       },
       {

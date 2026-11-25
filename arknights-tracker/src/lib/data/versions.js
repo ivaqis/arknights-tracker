@@ -2049,5 +2049,18 @@ export const changelogData = [
         startTimeAsia: "2026-10-15 11:00:00",
         endTime: "2026-11-24 17:00:00",
         endTimeAsia: "2026-11-25 04:00:00"
+    },
+    {
+        version: "1.7",
+        characters: ["kay"],
+        weapons: ["sweetDeal", "raidComet", "starOfTomorrow"],
+        equipment: ["item_equip_t4_parts_wuling00_body_07", "item_equip_t4_parts_wuling00_edc_07", "item_equip_t4_parts_wuling00_hand_07", "item_equip_t4_parts_wuling02_body_05", "item_equip_t4_parts_wuling02_body_06", "item_equip_t4_parts_wuling02_edc_03", "item_equip_t4_parts_wuling02_hand_05", "item_equip_t4_parts_wuling02_hand_06", "item_equip_t4_suit_atb01_body_06", "item_equip_t4_suit_atb01_body_07", "item_equip_t4_suit_atb01_edc_07", "item_equip_t4_suit_atb01_edc_08", "item_equip_t4_suit_atb01_hand_04", "item_equip_t4_suit_atb01_hand_05", "item_equip_t4_suit_usp02_hand_06"],
+        enemies: ["eny_0159_mushman", "eny_0160_mushro", "eny_0158_mushbug", "eny_0161_mushshd"],
+        achievements: ["achv_adv_wuling_campfire_5", "achv_adv_wuling_ether_5", "achv_adv_wuling_box_5", "achv_adv_wuling_sweetpie", "achv_bat_mushro_blowoff", "achv_bat_hard_9", "achv_event_takestwo_2", "achv_event_blackjack_1", "achv_event_doudizhu_1", "achv_event_wuling_challenge_dung_04", "achv_fac_wonder_build", "achv_fac_techtree_jinlong_5", "achv_hide_mushbug_attract", "achv_hide_secretbase_v1d7", "achv_quest_sweetpie", "achv_quest_sm2l11m1"],
+        items: ["item_case_wpn_selfselect_gahca_aglina", "item_case_wpn_selfselect_gahca_wulfa", "item_char_equip_supply_sweetpie", "item_gasjar_copper_gas_copper_bright_clear", "item_gasjar_copper_gas_copper_bright_turbid", "item_gasjar_copper_gas_copper_enr_heng", "item_gasjar_copper_gas_xiranite_enr_heng", "item_music_exp_wuling_10", "item_music_exp_wuling_11", "sysbp_wuling_xiranite_enr_easy_01", "sysbp_wuling_xiranite_enr_easy_02"],
+        startTime: "2026-11-24 22:00:00",
+        startTimeAsia: "2026-11-25 11:00:00",
+        endTime: "2027-01-06 17:00:00",
+        endTimeAsia: "2027-01-07 04:00:00"
     }
 ];

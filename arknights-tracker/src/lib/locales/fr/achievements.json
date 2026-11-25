@@ -189,6 +189,18 @@
     },
     "plating": null
   },
+  "achv_adv_wuling_box_5": {
+    "name": "Virtuose des caisses du champimonde",
+    "category": "Régionales",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Ouvrir 47 caisses à l'ancien barrage",
+        "completeDesc": "Vous avez ouvert la plupart des caisses de stockage de la ville de Wuling. Elles valent une tonne de gaufres au miel."
+      }
+    },
+    "plating": null
+  },
   "achv_adv_wuling_bugball": {
     "name": "« Au pied, les limaces ! »",
     "category": "Régionales",
@@ -245,6 +257,18 @@
       "1": {
         "desc": "Dans la forêt enneigée et la peinture de Si, débloquer 18 points TP",
         "completeDesc": "Vous avez étendu le réseau du Protocole jusque dans les profondeurs de Wuling, bien qu'elles se trouvent dans les confins d'un autre monde."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_5": {
+    "name": "Ancre de Wuling V",
+    "category": "Régionales",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Débloquer 7 points TP à l'ancien barrage",
+        "completeDesc": "Vous avez étendu le réseau du Protocole jusque dans les profondeurs de Wuling. Heureusement, aucun de ses nœuds n'a décidé de s'adresser directement à vous."
       }
     },
     "plating": null
@@ -319,6 +343,18 @@
       "2": {
         "desc": "Dans la forêt enneigée et la peinture de Si, récolter 41 échantillons d'aurylène",
         "completeDesc": "Des fragments perdus de l'artéfact originel sont à nouveau réunis par vos soins. Il ne s'agit peut-être que d'éclats de lumière trouvés dans un autre monde, mais ces artéfacts anciens réagissent à votre présence."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_5": {
+    "name": "« Fragments rassemblés » V",
+    "category": "Régionales",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Récolter 17 échantillons d'aurylène à l'ancien barrage",
+        "completeDesc": "De nombreux fragments perdus de l'artéfact originel sont à nouveau réunis par vos soins. Hmm... Ces aurylènes ressemblent étrangement à des spores, non ?"
       }
     },
     "plating": null
@@ -427,6 +463,18 @@
       "2": {
         "desc": "Dans la peinture de Si, résoudre 11 énigmes des lanternes de pierre",
         "completeDesc": "Vous avez résolu les nombreuses énigmes que Si a laissées derrière elle. Même les esprits d'encre qui passent suffisamment de temps dans la peinture finissent par devenir joueurs."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_sweetpie": {
+    "name": "Arpenteur du barrage",
+    "category": "Régionales",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "À l'ancien barrage, exécuter une Frappe gaufrée ou attaquer avec un opérateur 20 fois pour interagir avec des champignons spéciaux (y compris des champignons électrophages, des champignons arc-en-ciel, des lianes fongiques et des murs illusoires)",
+        "completeDesc": "En fait, vous en savez probablement plus sur ce barrage que ceux qui l'ont conçu à l'origine."
       }
     },
     "plating": null
@@ -881,6 +929,20 @@
       "desc": "Dans [Monument de l'ombre], terminer tous les niveaux de « Murmures de la forêt profonde » en mode Agonie"
     }
   },
+  "achv_bat_hard_9": {
+    "name": "« Brutalité despotique »",
+    "category": "Techniques",
+    "group": "Espace de Protocole",
+    "levels": {
+      "2": {
+        "desc": "Dans [Monument de l'ombre], terminer tous les niveaux de « Despote transformé en arme » en difficulté III",
+        "completeDesc": "Vous avez vaincu les despotes lourdement armés et révélé leur brutalité sur le grand écran."
+      }
+    },
+    "plating": {
+      "desc": "Dans [Monument de l'ombre], terminer tous les niveaux de « Despote transformé en arme » en difficulté VI"
+    }
+  },
   "achv_bat_jsspsi_reverse_color": {
     "name": "« L'art du blanc »",
     "category": "Techniques",
@@ -909,6 +971,18 @@
       "3": {
         "desc": "Appliquer 500 statuts physiques en combat",
         "completeDesc": "Vous détenez le titre de virtuose du combat, sans conteste."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_mushro_blowoff": {
+    "name": "« Élasticité des champis »",
+    "category": "Techniques",
+    "group": "Techniques de combat",
+    "levels": {
+      "2": {
+        "desc": "Laisser l'opérateur contrôlé être soulevé au moins 4 fois lors d'un tour de l'attaque séisme des poings de spores Broyeur de champis",
+        "completeDesc": "On dirait que vous avez goûté à l'élasticité des champis. C'est un plaisir incroyable, comme de sauter sur un trampoline."
       }
     },
     "plating": null
@@ -957,6 +1031,20 @@
     },
     "plating": null
   },
+  "achv_event_blackjack_1": {
+    "name": "« Sorcellerie 21 »",
+    "category": "Événements",
+    "group": "Événements",
+    "levels": {
+      "2": {
+        "desc": "Obtenir au moins 21 points sans sauter",
+        "completeDesc": "On dirait que vous développez un certain talent pour ce loisir de sorcellerie que la « Carotte porte-bonheur » nous a fait découvrir."
+      }
+    },
+    "plating": {
+      "desc": "Obtenir au moins 30 points sans sauter"
+    }
+  },
   "achv_event_clean": {
     "name": "« Tout propre, tout neuf »",
     "category": "Événements",
@@ -995,6 +1083,20 @@
     },
     "plating": {
       "desc": "Dans [Contrat de crise : Opération expérimentale indigo], réussir un défi avec ≥ 30 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> critères de test totaux"
+    }
+  },
+  "achv_event_doudizhu_1": {
+    "name": "« Puissance guerrière du joker »",
+    "category": "Événements",
+    "group": "Événements",
+    "levels": {
+      "2": {
+        "desc": "Jouer 1 joker noir",
+        "completeDesc": "Et dans cette puissante explosion, le seigneur de guerre despotique est enfin tombé... Mais sa légende continuera à vivre sur les tables de jeu."
+      }
+    },
+    "plating": {
+      "desc": "Jouer 1 joker rouge"
     }
   },
   "achv_event_dungfight": {
@@ -1045,7 +1147,7 @@
     "group": "Événements",
     "levels": {
       "2": {
-        "desc": "Obtenir un meilleur score d'au moins 500 000 en une seule épreuve",
+        "desc": "Obtenir un score d'arène d'au moins 500 000 en une seule épreuve",
         "completeDesc": "Vos aptitudes au combat sont exceptionnelles, mais vous êtes également à l'aise avec les chiffres et avez une chance incroyable."
       }
     },
@@ -1079,6 +1181,20 @@
     },
     "plating": {
       "desc": "Terminer tous les niveaux de [COMBAT DOUBLE ! MÉGA ARÈNE !] en mode ULTIME et terminer l'un de ces niveaux en moins de 180 s :\n· [Brise-Terres et bestioles, une alliance contre nature ! - ULTIME]\n· [Place à la stratégie ! Éliminez leurs dresseurs ! - ULTIME]\n· [Chaos ! Carnage total ! - ULTIME]"
+    }
+  },
+  "achv_event_takestwo_2": {
+    "name": "« LE TOP ! ARÈNE DE TALOS-II ! »",
+    "category": "Événements",
+    "group": "Événements",
+    "levels": {
+      "2": {
+        "desc": "Dans [ASCENSION ! MÉGA ARÈNE !], terminer tous les niveaux en mode Normal",
+        "completeDesc": "À Wuling, une formidable arène capable d'enflammer la passion des guerriers pour le combat vient d'atteindre sa conclusion parfaite ! Ayez foi en nous ! Nous préparons une nouvelle grande arène !"
+      }
+    },
+    "plating": {
+      "desc": "Dans [ASCENSION ! MÉGA ARÈNE !], terminer les niveaux suivants en moins de 200 s :\n· [Yuanyuan ! Ouverte au public ! ULTIME !]\n· [Aux Armes ! Wuling s'embrase ! ULTIME !]"
     }
   },
   "achv_event_tundra_challenge_dung": {
@@ -1135,6 +1251,20 @@
     },
     "plating": {
       "desc": "Dans [Exploration du mystère], terminer entièrement tous les espaces de Protocole de « Disparaître par-delà la toile »"
+    }
+  },
+  "achv_event_wuling_challenge_dung_04": {
+    "name": "« Ville des champis »",
+    "category": "Événements",
+    "group": "Événements",
+    "levels": {
+      "2": {
+        "desc": "Dans [Exploration du mystère], terminer tous les espaces de Protocole de « Mycologie ésotérique »",
+        "completeDesc": "Vous avez illuminé les fragments de l'espace de Protocole un par un. La ville des champis vous a ouvert ses portes (et non, ce n'est pas une hallucination, cette fois)."
+      }
+    },
+    "plating": {
+      "desc": "Dans [Exploration du mystère], terminer entièrement tous les espaces de Protocole de « Mycologie ésotérique »"
     }
   },
   "achv_event_wuling_racing_1": {
@@ -1487,6 +1617,18 @@
     },
     "plating": null
   },
+  "achv_fac_techtree_jinlong_5": {
+    "name": "Pionnier de l'industrie de Wuling V",
+    "category": "Construction",
+    "group": "Usine du GIA",
+    "levels": {
+      "1": {
+        "desc": "Rechercher 50 technologies du plan du GIA de Wuling",
+        "completeDesc": "Vous avez réussi à rechercher d'autres technologies du plan du GIA de Wuling.\nNos technologies se sont mêlées à la vision de Wuling pour former une nouvelle branche florissante."
+      }
+    },
+    "plating": null
+  },
   "achv_fac_techtree_tundra": {
     "name": "Pionnier de l'industrie de la Vallée",
     "category": "Construction",
@@ -1511,6 +1653,20 @@
     },
     "plating": {
       "desc": "Dans [Pas de tir à l'arc de Typhoeus], terminer tous les niveaux d'« Entraînement avancé » et terminer « Exercice quotidien 04 » avec 3★"
+    }
+  },
+  "achv_fac_wonder_build": {
+    "name": "« Nos vies reconstruites »",
+    "category": "Construction",
+    "group": "Usine du GIA",
+    "levels": {
+      "2": {
+        "desc": "Passer à la phase 4 (maintenance de routine) de la reconstruction de la zone d'exclusion de Wuling",
+        "completeDesc": "Souvenez-vous du passé. Ouvrez-vous à l'avenir."
+      }
+    },
+    "plating": {
+      "desc": "Compléter 5 approvisionnements pour la maintenance de routine"
     }
   },
   "achv_growth_adventure_level": {
@@ -1743,6 +1899,18 @@
     },
     "plating": null
   },
+  "achv_hide_mushbug_attract": {
+    "name": "« Sortez de ces conduites »",
+    "category": "Merveilleuses",
+    "group": "Merveilleuses",
+    "levels": {
+      "2": {
+        "desc": "Lorsque le nidwyrm Broyeur de champis se cache, utilisez des gaufres au miel pour l'attirer à la surface.",
+        "completeDesc": "Les équipes du STUT chargées d'entretenir les tunnels et les canalisations tombent souvent sur des nidwyrms. Il serait judicieux de les attirer à la surface."
+      }
+    },
+    "plating": null
+  },
   "achv_hide_no_parry": {
     "name": "« Domination du Créateur »",
     "category": "Merveilleuses",
@@ -1811,6 +1979,18 @@
       "2": {
         "desc": "Pendant que Ruan Yi est furieux, faire en sorte que son Toucher flétrissant dure au moins 60 s",
         "completeDesc": "Il a créé, à partir de branches séchées, un royaume de mort, que vous avez traversé sans problème."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_secretbase_v1d7": {
+    "name": "« Abri professionnel »",
+    "category": "Merveilleuses",
+    "group": "Merveilleuses",
+    "levels": {
+      "1": {
+        "desc": "Atteindre la base secrète de l'ancien barrage",
+        "completeDesc": "Une opératrice professionnelle prépare toujours son abri avant de partir en mission. Ne sous-estimez jamais le professionnalisme de Kay ! Hum hum..."
       }
     },
     "plating": null
@@ -1905,7 +2085,7 @@
     "group": "Mission principale",
     "levels": {
       "3": {
-        "desc": "Terminer la mission principale [Chapitre II - Processus VI : Forgée à la source]",
+        "desc": "Terminer la mission principale [Chapitre II - Processus VI : Des âmes sœurs, une même vision]",
         "completeDesc": "Zhuang Fangyi a attendu, et vous avez fini par arriver."
       }
     },
@@ -1977,7 +2157,7 @@
     "group": "Mission principale",
     "levels": {
       "3": {
-        "desc": "Terminer la mission principale [Chapitre II - Processus VIII : L'auberge dans la peinture]",
+        "desc": "Terminer la mission principale [Chapitre II - Processus VIII : Entrer dans le monde peint]",
         "completeDesc": "Ils contemplèrent la magnifique peinture, puis s'enfoncèrent plus profondément dans la montagne."
       }
     },
@@ -1989,7 +2169,7 @@
     "group": "Mission principale",
     "levels": {
       "3": {
-        "desc": "Terminer la mission principale [Chapitre II - Processus VIII : Épreuve III - Tracer son propre chemin]",
+        "desc": "Terminer la mission principale [Chapitre II - Processus VIII : Voir à travers soi]",
         "completeDesc": "Pour expliquer mon obsession et guérir mes plus grands maux."
       }
     },
@@ -2001,7 +2181,7 @@
     "group": "Mission principale",
     "levels": {
       "3": {
-        "desc": "Terminer la mission principale [Chapitre II - Processus VIII : Conclusion]",
+        "desc": "Terminer la mission principale : [Chapitre II - Processus VIII : Une peinture à l'encre fraîche]",
         "completeDesc": "Diluer les vieilles taches d'encre pour qu'un trait plus éclatant redonne vie à la toile."
       }
     },
@@ -2121,7 +2301,7 @@
     "group": "Mission principale",
     "levels": {
       "3": {
-        "desc": "Terminer la mission principale [Chapitre II - Processus V : La bataille du pilier principal]",
+        "desc": "Terminer la mission principale [Chapitre II - Processus V : La brèche]",
         "completeDesc": "C'est une conquérante animée par l'ambition, prête à sacrifier des dizaines de milliers de personnes dans l'espoir d'apercevoir le royaume interdit. Vous avez vaincu la malveillance de Nefarith."
       }
     },
@@ -2207,6 +2387,30 @@
       "2": {
         "desc": "Terminer la mission annexe [Une journée inoubliable]",
         "completeDesc": "Un aviliaire qui compose des poèmes, et un fourneau fumant qui touche nos cœurs. C'est vraiment merveilleux."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sm2l11m1": {
+    "name": "« Pas de bon mariage sans bon cohl »",
+    "category": "Chapitres",
+    "group": "Mission d'exploration",
+    "levels": {
+      "2": {
+        "desc": "Terminer la mission annexe [Le lendemain]",
+        "completeDesc": "Je vous déclare mari et champi... Vraiment ? On ne pourrait pas juste l'appeler sa femme ? Bref. Ils vécurent heureux et eurent beaucoup d'enfants."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_sweetpie": {
+    "name": "« Rêve de gaufres au miel »",
+    "category": "Chapitres",
+    "group": "Mission d'exploration",
+    "levels": {
+      "2": {
+        "desc": "Terminer la mission annexe [Rêve de gaufres au miel]",
+        "completeDesc": "Kay et vous avez exploré un monde merveilleux peuplé de champignons et de gaufres au miel, saupoudré d'une bonne dose de fantaisie. N'ayez crainte et ne doutez de rien. C'est une aventure des plus authentiques."
       }
     },
     "plating": null

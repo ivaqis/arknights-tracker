@@ -1,0 +1,574 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Hồi Điểm KN",
+      "Nhiễm Tự Nhiên"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Nấu Ăn",
+      "Sinh Tồn Ngoài Trời"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Du Khách Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Tự Nhiên",
+      "Phong Cách Sống"
+    ],
+    "raceTag": "Perro"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Hoang Dại Đập Loạn",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+    },
+    "battleSkill": {
+      "name": "\"Cú Nện Đau Thiệt Đau\"",
+      "description": "Kay nhảy lên không trung và tụ lực trong thời gian ngắn, thu hồi toàn bộ <@ba.key>Vũ Khí</>, sau đó dùng chiếc búa nặng giáng một cú nện cực mạnh xuống đất. Cú nện gây <@ba.natur>ST Tự Nhiên</> (dựa trên số tầng <@ba.key>Ngây Thơ Rực Lửa</>), áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong khu vực ảnh hưởng và tiêu hao toàn bộ tầng <@ba.key>Ngây Thơ Rực Lửa</>. Nếu Kay tiêu hao 3 tầng <@ba.key>Ngây Thơ Rực Lửa</>, cô cũng sẽ cưỡng chế áp dụng <#ba.burning>Thiêu Đốt</> lên kẻ địch.\n<@ba.info>Nếu tiêu hao > 3 tầng Ngây Thơ Rực Lửa, hiệu ứng sẽ giống như khi tiêu hao 3 tầng.</>",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "bonusDmgMultiplierPerHotEdgyNaives": "Hệ Số ST Cộng Thêm mỗi Ngây Thơ Rực Lửa",
+      "combustionDurationS": "Hiệu Lực Thiêu Đốt (giây)"
+    },
+    "comboSkill": {
+      "name": "\"Cú Đập Siêu Nhanh\"",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi Kay có ≥ 1 <@ba.key>Vũ Khí</> và kẻ địch bị <#ba.naturalinflict>Nhiễm Tự Nhiên</> hoặc chịu ST <#ba.spellburst>Bùng Nổ Thuật Pháp</>.\nKay ném một <@ba.key>Vũ Khí</> vào mục tiêu để gây <@ba.natur>ST Tự Nhiên</>. Khi trúng kẻ địch, Kay hồi một lượng ĐKN và đồng thời cưỡng chế kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</>. Sau đó, <@ba.key>Vũ Khí</> sẽ rơi xuống một vị trí ngẫu nhiên trên chiến trường. Kay <@ba.key>thu hồi</> <@ba.key>Vũ Khí</> đó khi cán viên đang điều khiển chạm vào.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
+      "spRecovery": "Hồi Điểm KN"
+    },
+    "ultimate": {
+      "name": "\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"",
+      "description": "Kay chắp ghép một cây đập tổ hợp, vung nó nhiều lần rồi ném ra để gây một vụ nổ, gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong khu vực ảnh hưởng, hồi một phần ĐKN, đồng thời để lại nhiều <@ba.key>Món Nhẹ Dã Ngoại</>. Khi cán viên đang điều khiển chạm vào <@ba.key>Món Nhẹ Dã Ngoại</> và nhặt nó lên, Kay sẽ trao Hồi Phục HP cho cán viên đó và hồi một phần ĐKN. Thuộc tính Nhanh Nhẹn giúp tăng lượng Hồi HP.",
+      "seq1DmgMultiplier": "Hệ Số ST Trình Tự 1",
+      "seq2DmgMultiplier": "Hệ Số ST Trình Tự 2",
+      "seq3DmgMultiplier": "Hệ Số ST Trình Tự 3",
+      "stagger": "Suy Sụp",
+      "spRecovery": "Hồi Điểm KN",
+      "baseTreatment": "Hồi Phục Cơ Bản",
+      "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn",
+      "spRecoveryPerPicnicSnack": "Hồi Điểm KN mỗi Món Nhẹ Dã Ngoại"
+    },
+    "indicator": {
+      "levels": [
+        "Sức Mạnh Cán Viên +10.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +20."
+      ],
+      "name": "Rèn"
+    },
+    "talent1": {
+      "levels": [
+        "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>.",
+        "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>, đồng thời toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+{atk_up:0%}</>, riêng <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+{atk_up:0%}</>. Hiệu Lực: <@ba.vup>{duration:0}</> giây. Số tầng tối đa của hiệu ứng này: {stack:0}.",
+        "Kay bắt đầu với 3 <@ba.key>Vũ Khí</>. Khi trận chiến kết thúc, Kay thu hồi toàn bộ <@ba.key>Vũ Khí</> đã ném.\nThu hồi 1 <@ba.key>Vũ Khí</> sẽ giúp Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>, đồng thời toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+{atk_up:0.0%}</>, riêng <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+{atk_up:0.0%}</>. Hiệu Lực: <@ba.vup>{duration:0}</> giây. Số tầng tối đa của hiệu ứng này: {stack:0}."
+      ],
+      "name": "Kho Vũ Khí Vô Tận"
+    },
+    "talent2": {
+      "levels": [
+        "Khi kẻ địch rơi vào trạng thái <@ba.poise>Suy Sụp</> hoặc kích hoạt <#ba.poiseknot>Điểm Suy Sụp</>, chúng sẽ rơi ra 1 <@ba.key>Waffle Dã Ngoại</>. Hiệu ứng này chỉ kích hoạt 1 lần mỗi {cd:0} giây.\n<@ba.info>Waffle Dã Ngoại có hiệu ứng tương tự Món Nhẹ Dã Ngoại.</>",
+        "Khi kẻ địch rơi vào trạng thái <@ba.poise>Suy Sụp</> hoặc kích hoạt <#ba.poiseknot>Điểm Suy Sụp</>, chúng sẽ rơi ra 1 <@ba.key>Waffle Dã Ngoại</>. Hiệu ứng này chỉ kích hoạt 1 lần mỗi {cd:0} giây.\n<@ba.info>Waffle Dã Ngoại có hiệu ứng tương tự Món Nhẹ Dã Ngoại.</>"
+      ],
+      "name": "Bón Waffle Nào!"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +20%",
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +30%"
+      ],
+      "name": "Rèn Đồ Hoang Dã Thứ Thiệt"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 14%",
+        "Khi phân công vào Khoang Sản Xuất, làm chậm mức Giảm Tâm Trạng của tất cả cán viên trong đó đi 18%"
+      ],
+      "name": "Giờ Nghỉ Waffle Mật Ong"
+    },
+    "files": {
+      "main": "MẬT DANH: Kay\nGIỚI TÍNH: Nữ\nNHẬN DẠNG: Rhodes Island\nNGÀY SINH: 25 tháng 02\nCHỦNG TỘC: Perro\n[TÌNH TRẠNG NHIỄM ORIPATHY]\nÂm tính với Oripathy, theo báo cáo kiểm tra y tế.\n\n[KHÁM SỨC KHỎE TỔNG HỢP]\nTHỂ CHẤT: Xuất Sắc\nKN CHIẾN ĐẤU: Cơ Bản\nTƯ DUY CHIẾN THUẬT: Bình Thường\nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc\n\nTái bút: Hệ tiêu hóa của Kay có vẻ khỏe một cách bất thường, vì vậy khi xây dựng chế độ dinh dưỡng tương ứng cần đặc biệt lưu ý điều này.\nTái bút lần nữa: Tôi thực sự rất muốn biết tại sao cô ấy ăn nhiều như thế mà vẫn giữ được vóc dáng!\n\nSao cô không thử vận động nhiều như cô ấy xem?\n— Chen Qianyu",
+      "humanResources": "Cán viên Kay, tên thật Cerube, là một người trở về đến từ Rhodes Island. Theo chỉ dẫn của Warfarin, cô rời Rhodes Island để lên đường chu du khắp Talos-II. \n\nViệc Kay gia nhập Endfield thực ra không hoàn toàn là tình cờ. Endfield vốn chính là điểm đến cuối cùng trong hành trình của cô. Hơn nửa năm trước, chúng tôi đã nhận được thông báo từ Rhodes Island rằng một người trở về trẻ tuổi đã khởi hành và sẽ \"sớm\" đến Endfield báo danh. \"Sớm\" ở đây tức là đúng vào lúc này, sau một trăm tám mươi lăm ngày, tám giờ, mười hai phút và năm mươi lăm giây. Hệ thống truy xuất của tôi mất gần nửa giây mới phản hồi, rồi tôi mới tìm thấy tên cô trong danh sách nhân sự chờ xử lý. \nVề việc báo danh trễ nghiêm trọng, cô giải thích rằng mình rời Rhodes Island chính là để tìm Endministrator. Trong những câu chuyện Warfarin từng kể, Endministrator luôn ở trên Dijiang. Vì vậy, cô đã đi khắp bề mặt Talos-II để tìm một tàu công trình hàng không vũ trụ mang tên \"Dijiang\". Nếu không tình cờ gặp Endministrator ở vùng ngoại ô Võ Lăng, có lẽ cô vẫn còn tiếp tục tìm đến tận bây giờ. \nMột mình chu du trên Talos-II lâu đến vậy mà vẫn bình an vô sự xuất hiện trước mặt chúng tôi, chỉ riêng điều này thôi cũng đủ chứng minh cô chắc chắn là một chuyên gia sinh tồn nơi hoang địa. \n—Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Khi được hỏi muốn dùng mật danh gì trong thời gian hoạt động tại Endfield, Cerube chỉ đơn giản chọn cái tên mà bạn bè vẫn thường gọi cô: \"Kay\". \nỞ Endfield, cách xử lý mọi việc của cô quả thực có thể đơn giản đến mức ấy. \nCô không cố hiểu những hệ thống hành chính phức tạp hay trình tự tác chiến rắc rối. Sau một thời gian ở bên mọi người tại Endfield, toàn bộ nhân sự trong mắt cô chỉ đơn giản được chia thành ba nhóm lớn: \"người tốt có thể cho mình đồ ăn\", \"người mạnh có thể đánh nhau với mình\" và \"người rất bận, chẳng có mấy thời gian\". Cách tư duy tối giản đến mức đáng kinh ngạc này lại khiến cô trở nên đặc biệt thoải mái giữa nhịp sống căng thẳng và quy củ, đồng thời cũng giúp cô nhanh chóng kết bạn với không ít người ngay sau khi tới Endfield. Trước sự thẳng thắn đơn giản và nguồn năng lượng dường như vô tận ấy, mấy ai nỡ lòng từ chối cô? \nVì vậy, người ta thường thấy Kay chạy thoăn thoắt giữa các cán viên. Cô có thể phấn khích kéo một cán viên vừa bước ra khỏi phòng huấn luyện đi xem một \"căn cứ bí mật\" mới phát hiện, mà phần lớn chỉ là một ô cửa quan sát nhìn ra Talos-II, hoặc một pháo đài tí hon được dựng bằng linh kiện cũ phía sau bộ phận kỹ thuật. Người ta cũng thường thấy cô chia sẻ món kem tráng miệng mới với Laevatain, hay chui lì trong phòng thử nghiệm vũ khí suốt cả ngày cùng Yvonne. Thỉnh thoảng, cô còn bị cán viên hậu cần bắt quả tang ngay tại trận rồi chặn lại ngoài cửa sau khi cố lẻn vào khu sơ chế thực phẩm của nhà ăn. \nKay dùng cách đơn giản nhất để đối xử với tất cả mọi người, và các cán viên cũng thường chọn cách đơn giản nhất để đáp lại sự thân thiện của cô. Mọi người dần phát hiện Kay gần như không bao giờ từ chối bất cứ loại đồ ăn nào, thế là lâu dần chiếc túi của cô bị nhét đầy đủ thứ thức ăn có hương vị kỳ quặc. Cho đến một ngày, chiếc ba lô chất đầy đồ ăn vặt ấy vượt quá tải trọng và kích hoạt cảnh báo trong lúc kiểm tra lên tàu. Kể từ đó, theo đề nghị của Kay, toàn bộ đồ ăn vặt mọi người tặng cô đều được giao cho Perlica trông nom và giữ hộ. \n\"Đừng có nghĩ linh tinh. Đừng tưởng cứ cho cô ấy ăn là lần thi ăn tiếp theo mấy người sẽ thắng được... Có cho bao nhiêu cũng chẳng đủ đâu.\"",
+      "file2": "Ở Endfield lâu như vậy rồi, tôi chưa từng gặp cán viên nào nhiệt tình với nhiệm vụ thực địa đến thế. \nMôi trường Talos-II phức tạp và biến đổi không ngừng, kẻ địch cũng thường rất khó đối phó. Mức độ nguy hiểm thì khỏi phải nói, mà trách nhiệm nặng nề cũng khiến phần lớn cán viên chịu áp lực không nhỏ. Nhưng với cán viên Kay, nhiệm vụ thực địa lại giống những chuyến thám hiểm được cấp phép chính thức hơn. Đôi khi vừa thấy tên mình được thêm vào danh sách nhân sự, cô đã chạy ngay tới để xác nhận giờ xuất phát, trong giọng nói còn chẳng buồn che giấu vẻ mong chờ. So với Dijiang khép kín, thế giới rộng lớn của Talos-II dường như mới là sân chơi Kay yêu thích hơn. Nhưng đến tận bây giờ tôi vẫn không hiểu... Sau một hành trình dài đến vậy, làm sao cô vẫn giữ được sự tò mò mãnh liệt với mọi thứ xung quanh? \nNhờ có kinh nghiệm lâu năm lang bạt nơi hoang dã, Kay thường đảm nhiệm vai trò dẫn đường trong các nhiệm vụ. Nhưng khi ra ngoài cùng cô, lúc nào cô cũng như đang thử giới hạn xem mình có thể tách khỏi đội đến mức nào: lúc thì ngửi ngửi chỗ này, lúc lại chọc ngoáy chỗ kia, chỉ cần lơ là một chút là cô đã biến mất khỏi tầm mắt mọi người. Điều kỳ lạ là chỉ cần gọi một tiếng, ngay lập tức sẽ nghe cô đáp lại từ sau một bụi cây gần đó, rồi mới phát hiện hóa ra cô vẫn ở ngay cạnh mọi người suốt từ đầu. Sau đó cô sẽ mang về một viên đá có hình dáng giống Dijiang đến khó tin, hoặc một bông hoa màu sắc rực rỡ chẳng ai biết tên nhưng lại tỏa hương thơm dễ chịu lạ thường. \nÀ, xin đừng hiểu lầm. Cô không vì ham chơi mà lơ là trách nhiệm dẫn đường. Thậm chí tôi còn cho rằng sở dĩ cô có thể duy trì nhận thức về môi trường xung quanh liên tục chính là vì tinh thần luôn ở trạng thái vô cùng sung mãn. Cô thường nhận ra những biến đổi trong môi trường xung quanh sớm hơn bất kỳ ai trong đội, rồi lập tức bước vào trạng thái chiến đấu với tinh thần cực kỳ hưng phấn. Khi gặp tình huống bất ngờ, cô thậm chí có thể cảnh báo động tĩnh của kẻ địch trước cả cảm biến, hoặc chỉ chính xác vị trí nguy hiểm cho chúng tôi. Nhưng khi được hỏi rốt cuộc làm thế nào mà cô biết, câu trả lời thường chỉ là kiểu như \"mùi trong không khí có gì đó không đúng\" hay \"hướng đó làm mình thấy khó chịu\". Nếu đây không phải một dạng Thuật Pháp Originium nào đó, vậy thì rất có thể đó chính là trực giác và linh cảm được mài giũa qua nhiều năm lang bạt trên Talos-II.",
+      "file3": "[Phiếu Sửa Chữa Vũ Khí D1] \nThiết bị cần sửa chữa: Búa Chấn Động Động Năng \nNhà sản xuất ban đầu: Tập Đoàn Mieszko (Morospolis) \nCuối cùng tôi cũng hiểu tại sao Kay cứ suốt ngày chạy tới kho vũ khí. Với kiểu sử dụng đồ đạc của cô ấy, sớm muộn gì kho dự trữ vũ khí của chúng ta cũng bị cô ấy vét sạch. \nHôm qua, trong lúc dọn dẹp một cứ điểm bỏ hoang, cô ấy không biết từ đâu lôi ra một cây Búa Chấn Động Động Năng do Mieszko sản xuất. Theo tôi biết, loại búa này đáng lẽ cần tổ ba người mới có thể vận hành an toàn, vậy mà Kay lại tự mình nhấc nó lên. Cô ấy không hề kết nối cây búa động năng với bộ xương ngoài trợ lực, mà chỉ dùng tay trần nắm thẳng vào phần tay cầm vẫn đang quá nhiệt ở tần số cao. Nhiệt độ ấy đủ sức nướng chín tay một cán viên bình thường. Thế mà khi vung món vũ khí hạng nặng này, cô ấy nhẹ nhàng chẳng khác gì đang quơ một cành cây. Cô ấy thậm chí còn không kích hoạt chế độ gia áp chấn động, chỉ đơn giản lợi dụng quán tính do chính trọng lượng khổng lồ của cây búa tạo ra để ghim sống một Aggelos đang định phục kích chúng tôi vào tường, chẳng khác gì đóng một cây đinh. \nĐây là lần đầu tiên tôi tận mắt chứng kiến Kay sử dụng những món vũ khí ấy. Nói thật, đám \"bảo bối\" của cô ấy đến giờ vẫn chưa tan thành từng mảnh quả đúng là một kỳ tích. \n\n\"Búa có hỏng đâu, thấy chưa? Nó còn sung sức lắm!\" \n— Kay \n\n[Phiếu Sửa Chữa Vũ Khí E3] \nThiết bị cần sửa chữa: Rìu Thép \nNhà sản xuất ban đầu: Không rõ \nKỹ thuật rèn của món vũ khí này khá cổ điển. Theo tôi biết, hiện nay trên Talos-II không còn nhà sản xuất nào sử dụng phương pháp gia công kiểu này. \nTrên đầu rìu có khắc một chuỗi ký tự Minos cổ. Có thể là tên nhà sản xuất, cũng có thể là tên một người? Chắc tôi nên đi hỏi đồng nghiệp nào biết tiếng Minos. \n\n[Phiếu Sửa Chữa Vũ Khí I4] \nThiết bị cần sửa chữa: Thương Tiêu Chuẩn \nNhà sản xuất ban đầu: Pháo Đài Forgefane \nKhi gặp cô ấy, chúng tôi đang truy đuổi một Aggeloi cỡ lớn. \nNó dụ chúng tôi vào vùng đồng tuyết rồi quần nhau suốt ba ngày cho đến khi toàn bộ tiếp tế cạn sạch. Đúng lúc chúng tôi chuẩn bị liều mạng quyết chiến với con Aggeloi ấy, một cây thương khổng lồ bỗng xuyên thẳng vào tầm mắt. Ở đầu bên kia, đang siết chặt cán thương, là một cô gái trẻ. Bằng sức mạnh hoàn toàn không tương xứng với vóc người của mình, cô ấy dùng ngọn thương xuyên thẳng qua cơ thể Aggeloi... \nSau khi Aggeloi đổ sầm xuống đất, cô gái ấy mới cất tiếng. Cô nói mình được Hội Lời Thề Thép phái tới, và tới đây để đưa chúng tôi về nhà...",
+      "file4": "Kể từ khi tỉnh lại trên Rhodes Island, Kay đã ở trên con tàu ấy suốt một thời gian rất dài. Rhodes Island dường như chẳng khác gì trước đây. Các cán viên đều có nhiệm vụ riêng, nhiều người cũng hiếm khi ở lại trên tàu. Chẳng ai giao cho cô công việc gì đặc biệt. Cô chỉ cần huấn luyện, ngủ thật ngon và ăn thật no, đúng như điều mình từng mong muốn. Thỉnh thoảng cô sẽ đi tìm Warfarin để nghe kể chuyện về hành tinh này, về Terra, và về chính Kay. Cô có thể ngồi ngẩn người nhìn phong cảnh ngoài ô cửa sổ hàng giờ liền, nhìn nó đổi từ núi tuyết sang rừng rậm, rồi từ sa mạc lại trở về núi tuyết. Cứ như chỉ cần cô muốn, quãng thời gian ấy sẽ chẳng bao giờ kết thúc. \nCho đến một ngày, cô quyết định thu dọn hành lý. \nCô ngồi trước ô cửa sổ rất lâu, đôi tai khẽ giật giật, như đang bắt lấy một âm thanh nào đó vọng đến bên tai. Những câu chuyện Warfarin từng kể dần nối liền với nhau trong đầu cô, hóa thành một con đường. Cuối con đường ấy là một nơi mang tên \"Endfield\". \nCô không biết cái tên ấy thực sự có ý nghĩa gì. Là điểm cuối? Là một nơi để thuộc về? Hay là một lời giải nào đó đang chờ cô? Cô không hiểu nổi, chỉ mơ hồ cảm thấy ở đó có thứ gì đang gọi mình. \nVậy là cô đứng dậy. \nQuá trình chuẩn bị đối với cô giống một trò chơi thú vị hơn. Cô chọn chiếc ba lô lớn nhất, chắc chắn nhất rồi nhét vào đủ loại đồ ăn vặt và lương khô, trong đó bánh waffle mật ong chiếm vị trí quan trọng nhất. Sau đó cô thử triệu hồi vài món vũ khí thuận tay, nhìn chúng lần lượt xuất hiện rồi tan biến quanh mình, sau đó hài lòng gật đầu. Cô đã sẵn sàng. \nWarfarin dường như đã đoán trước được ngày cô rời đi. Cô ấy đưa thêm cho Kay một túi nhỏ đựng bánh waffle mật ong. \"Nếu em bị lạc,\" Warfarin nói, \"Endmin sẽ chỉ cho em phải đi hướng nào.\" \nKay nghiêm túc gật đầu, dù cô cũng không chắc cảm giác \"bị lạc\" rốt cuộc là như thế nào. Đây là lần đầu tiên cô lên đường khám phá thế giới hoàn toàn mới này. \nNgày khởi hành, cô đeo chiếc ba lô căng phồng sau lưng rồi bước tới cửa khoang. Cánh cửa từ từ mở ra, gió bên ngoài ùa vào, mang theo những mùi hương xa lạ. Talos-II trải rộng trước mắt cô. \n\"Endfield...\" Cô khẽ lặp lại cái tên ấy, như thể đang xác nhận phương hướng. \nRồi cô bước bước đầu tiên. \nCô không biết phía trước có gì, không biết hành trình này sẽ kéo dài bao lâu, cũng không biết trong tương lai mình còn lên đường như thế này thêm bao nhiêu lần nữa. Nhưng cô mơ hồ hiểu rằng lên đường không chỉ là để tìm những món ngon mình chưa từng nếm thử, cũng không chỉ là để nhìn những phong cảnh mình chưa từng thấy- \nCô đang tìm kiếm thứ cảm giác chỉ có thể tìm thấy trong một chuyến hành trình. \nMột cảm giác mang tên \"trở về nhà\"."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Nấu Ăn",
+        "description": "Nấu Ăn: Gì Cũng Làm Waffle Được \nĐi xa chẳng cần kỹ năng gì, ngoài việc biết biến mọi thứ kiếm được thành waffle."
+      },
+      "expert2": {
+        "name": "Sinh Tồn Ngoài Trời",
+        "description": "Sinh Tồn Ngoài Trời: Nghệ Thuật Đi Lạc \nĐường vòng có thể hơi hoang dã, nhưng cuối cùng cô vẫn đưa bạn đến đúng nơi đúng lúc, phải không?"
+      },
+      "hobby1": {
+        "name": "Tự Nhiên",
+        "description": "Tự Nhiên: Nhặt Nhạnh Nơi Hoang Địa \nNếm từng ngọn gió, vẽ từng áng mây."
+      },
+      "hobby2": {
+        "name": "Phong Cách Sống",
+        "description": "Phong Cách Sống: Bụng Tui Đói Meo \nNhà vô địch bất bại của vô số cuộc thi ăn khỏe vẫn đang tìm đối thủ. Ai đủ đói để thách đấu với cô nào?"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_01",
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đi đâu thế, đi đâu thế? Cho tôi đi cùng với!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_squad_02",
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Hôm nay trời đẹp ghê! Đi thôi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_01",
+        "title": "Đang thêm vào Đội 1",
+        "text": "Ta-da! Tôi tới rồi đây! Có gì ngon không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_join_02",
+        "title": "Đang thêm vào Đội 2",
+        "text": "Xuất phát nào! Nếu ngài thiếu đồ ăn vặt, tôi lén chia cho ngài ít của tôi nhé!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_weap_01",
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Tôi cũng có phần à? Yay! Bộ sưu tập vũ khí của tôi lại to thêm rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrbark_gear_01",
+        "title": "Đang Đổi Trang Bị",
+        "text": "Trang bị này... giao cho tôi là ổn! Tôi sẽ giữ gìn thật cẩn thận!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_skill_01",
+        "title": "Kích Hoạt Mốc Thiên Phú",
+        "text": "Ah, chiêu này siêu siêu ngầu luôn! Chắc tôi vừa mạnh thêm một chút rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_level_01",
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Tôi đang nhìn mà! Thật đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt01_01",
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Thăng bậc à? Vậy thưởng cho tôi một món vũ khí mới được không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt02_01",
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Bụng tôi réo mấy tiếng đồng hồ rồi. Xong việc là được ăn, đúng không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt03_01",
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Cái này thì làm lạnh, cái kia thì nướng lên. Chỉ cần thêm tí bùm, chát, đoàng nữa là... xong! Tôi lúc nào cũng thích làm mọi thứ thật đơn giản."
+      },
+      {
+        "voId": "chr_0040_sweetpie_chrup_promt04_01",
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Từ tận đằng kia đi một mạch đến đây... Whoa, tôi đã đi xa thật xa, còn hạ được bao nhiêu kẻ xấu nữa! Endmin, vậy có phải tôi đã đủ mạnh để ở bên ngài mãi mãi rồi không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_introduce_01",
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Hiya! Tôi là Cerube, nhưng bạn bè đều gọi tôi là Kay. Ước mơ siêu to, siêu khổng lồ của tôi là khám phá mọi ngóc ngách trên Talos-II cả tỷ tỷ lần! Ngài cũng đi cùng được, miễn là tự mang đồ ăn vặt nhé."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_01",
+        "title": "Chờ Lệnh 1",
+        "text": "Ngài đang ăn gì thế? Cho tôi cắn một miếng được không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_switch_02",
+        "title": "Chờ Lệnh 2",
+        "text": "Thử vũ khí? Đi thực địa? Cả hai việc đó tôi đều là bạn đồng hành số một!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_assign_work_01",
+        "title": "Phân Công Vào Công Trình",
+        "text": "Ooh, yay, tới giờ ăn rồi! Ơ... không phải nhà ăn à?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_lower_01",
+        "title": "Lời Chào 1",
+        "text": "Hiiii, Endmin! Ngài đi nhà ăn hả? Cho tôi đi cùng với!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_hello_max_01",
+        "title": "Lời Chào 2",
+        "text": "Endmin! Nhìn cây rìu mới sáng loáng này đi! Ngài thấy có hợp với tôi không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv01_01",
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Đồ ăn ở hướng này, vũ khí ở hướng kia, chỗ huấn luyện ở đằng sau, còn ổ ngủ của mọi người thì ở bên đó... Thế chỗ ngủ của Endmin ở đâu? Waaah, nhiều khoang quá! Sao mọi người ở Dijiang không bị lạc nhỉ?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_01",
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Cái thứ to đùng này là tàu vũ trụ, tên là Dijiang. Dijiang thuộc về Endfield, còn ngài là Endministrator... Vậy nghĩa là... nghĩa là ngài chính là thuyền trưởng của con tàu này! Đúng không, Endministrator?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_lv02_02",
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Dù Dijiang chỉ trong chớp mắt là có thể đưa chúng ta đi thật xa, tôi vẫn thích tự đi bộ hơn. Endmin, chẳng phải vừa đi vừa tìm thấy những thứ nho nhỏ dọc đường vui hơn là chỉ chăm chăm tới đích sao?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_01",
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Một, hai, ba, bốn... Hả? Endmin, ngài có thấy cây rìu mới sáng loáng tôi mang về Dijiang không? Rõ ràng vừa nãy còn ở đây mà... Úi, chắc tôi lại bỏ quên trong phòng huấn luyện rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_02",
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Đây là dao găm \"Quả Mật\", búa \"Đầu Sắt\", còn đây là cưa máy \"Vua Phá Hoại Xoay Siêu Tốc\"! Hả? Ngài thấy mấy cái tên này kỳ quặc á? Hmph! Đâu phải tôi đặt - chính chúng tự nói tên mình với tôi mà!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_talk_max_03",
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Hôm nay nhà ăn có thịt hầm, súp đậu lăng, bánh ngọt với risotto. À, mà suỵt... còn có thực đơn bí mật với món tart kem siêu ngon nữa. Ngài muốn thử không? Nhưng chuyện này chỉ hai chúng ta biết thôi nhé. Tuyệt mật đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_give_01",
+        "title": "Tặng Quà",
+        "text": "Endmin, Endmin! Tôi có quà cho ngài này! Khôngggg, tôi đâu có tiện tay nhặt đại cục đá ngớ ngẩn nào dưới đất!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_sim_gift_recv_01",
+        "title": "Nhận Quà",
+        "text": "Ô-ô-ô! Cái này trông ngầu ghê! Tôi đổi bằng một cái bánh waffle mật ong nhé... Hả? Là quà tặng tôi á? Aww, ngài tốt quá!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line01",
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Hồi còn ở Rhodes Island, ai cũng bảo Thuật Pháp Originium của tôi mạnh lắm, nên phải tiếp tục luyện tập để kiểm soát cho thật tốt. Thế là tôi luyện! Ngày nào cũng luyện luôn! Có vậy tôi mới giúp được ngài với Endfield chứ! Vậy... tôi có giúp được thật không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line02",
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Quy trình chiến thuật, hệ thống chỉ huy... ôi trời. Tôi phải nhớ hết mấy thứ đó thật hả? Hay là... ngài lo phần nghĩ ngợi, còn tôi lo phần gầm gừ đánh đám kẻ xấu nhé? Thế thì thời gian huấn luyện còn lại tôi có thể đem đi ngủ trưa! Đi mà, Endmin, xin đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line03",
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Tôi có chuyện muốn kể ngài nghe này! Sáng tôi ăn một cái bánh waffle mật ong, trưa ăn thêm một cái, tối lại ăn thêm một cái nữa. Ăn mãi vẫn không chán! Ngài cũng giống bánh waffle mật ong vậy đó. Sáng gặp ngài rồi, trưa lại gặp nữa, mà đến tối tôi vẫn muốn ở cạnh ngài."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line04",
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Tôi có thể nhớ hình dáng của một món vũ khí, cảm giác khi cầm nó trong tay, cả tiếng vun vút lúc vung lên nữa. Sau đó chỉ cần nghĩ tới nó, bùm! Nó đã nằm ngay trong tay tôi rồi. Ngầu lắm đúng không? Nếu chỉ cần nghĩ như thế mà ngài cũng xuất hiện ngay bên cạnh tôi được, Endmin... vậy chẳng phải tuyệt lắm sao?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_self_line05",
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Cái gối mềm mềm này là cho ngài. Tôi còn lấy cả một cái chăn siêu ấm nữa... Sao á? Ngài đã bảo nếu tôi ngoan, không lười biếng, không lén chôm đồ ăn vặt, thì tôi được dời cái ổ nhỏ của mình tới cạnh chỗ ngài mà! Đã nói rồi thì không được nuốt lời! Giờ giúp tôi chuyển đồ đi màaaa!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line01",
+        "title": "Trò Chuyện 1",
+        "text": "Endmin, khi nào rảnh chúng ta đi chơi đâu đó cùng nhau nhé! Không công việc gì hết, chỉ đi khám phá mấy chỗ bí mật thật đẹp thôi. Ngài làm việc nhiều quá rồi, cũng phải nghỉ ngơi một chút chứ, đúng không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line02",
+        "title": "Trò Chuyện 2",
+        "text": "Trước khi gia nhập Endfield, đi đến đâu tôi cũng nghe người ta nhắc về ngài với Endfield. Càng đi nhiều, tôi càng hiểu ngài đã vất vả vì Talos-II đến mức nào... Hồi đó ngài vẫn còn đang ngủ, nên tôi đã thử giúp mọi người theo cách mà tôi nghĩ ngài sẽ làm. Nhờ vậy tôi kết bạn được với bao nhiêu người tốt luôn! Giờ cả hành tinh to đùng này đâu đâu cũng có bạn của tôi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line03",
+        "title": "Trò Chuyện 3",
+        "text": "Endmin, ngài đang bận à? Ngài xem gì thế? Báo cáo chiến đấu của tôi hả? Cho tôi xem với, cho tôi xem với! Tôi làm thế nào? Có giỏi không? Trông chắc ngầu lắm đúng không? Vậy thì... được thêm bánh waffle mật ong nhé? Tôi coi như ngài đồng ý rồi! Whoohoo! Quá là tuyệt vời!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line04",
+        "title": "Trò Chuyện 4",
+        "text": "Không hiểu sao mùi của ngài quen lắm... nhưng tôi lại chẳng nói được giống mùi gì. Hơi giống bánh waffle mật ong vừa nướng xong, giống hơi ấm từ lò rèn, lại giống cái giường ấm áp trong một ngày lạnh nữa. Dễ chịu lắm... Rốt cuộc tôi đã ngửi thấy mùi này ở đâu rồi nhỉ...?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_chat_line05",
+        "title": "Trò Chuyện 5",
+        "text": "Lúc bụng réo, bánh waffle mật ong sẽ ngon hơn hẳn. Lúc buồn ngủ, chăn cũng thấy ấm hơn hẳn. Giống như cô Warfarin từng nói: càng đi xa, hình bóng mái nhà trong lòng lại càng rõ hơn. Vậy nên tôi đã đi khắp Talos-II... rồi cuối cùng, tôi tìm thấy ngài. ... Hả? Nhưng ngài đang ở ngay đây mà, Endmin. Tất nhiên là tôi nhìn thấy ngài rất rõ rồi..."
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line01",
+        "title": "Chủ Đề: Rhodes Island",
+        "text": "Trước khi tôi rời Rhodes Island, cô Warfarin dặn tôi không được kể chuyện về nơi đó cho người lạ. Cô ấy bảo Rhodes Island đang có nhiệm vụ mới ở Talos-II, càng ít người biết thì càng an toàn. Hmm... Có lúc cô Warfarin nghiêm túc lắm luôn. Úi... Tôi chưa lỡ kể nhiều quá đâu nhỉ...?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line02",
+        "title": "Chủ Đề: Tài Nấu Nướng Của Da Pan",
+        "text": "Chú Da Pan nấu ăn cứ như phù thủy cầm muỗng ấy! Chú ấy nấu món gì cũng ngon ơi là ngon, ăn vào bụng vui ơi là vui! Còn mấy món cay thì ĐỈNH CỰC KỲ! Có lần chú ấy làm cho tôi bánh waffle mật ong cay rồi bảo: \"Ăn cái này vào là nấc ra lửa đấy!\" Thế là tôi ăn luôn. Rồi whoaaa! Đúng là màn ảo thuật tuyệt nhất trên đời!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line03",
+        "title": "Chủ Đề: Phiêu Lưu Nơi Hoang Địa",
+        "text": "Đi lang thang ngoài hoang địa nguy hiểm lắm! Có kẻ xấu này, thời tiết xấu này... nhưng thứ xấuuuu xaaa nhất vẫn là cái bụng đói meo! Không có đồ ăn thì không có sức. Không có sức thì chẳng đánh nhau nổi, đi còn chẳng thẳng nữa... Đói bụng tệ lắm. Tệ ơi là tệ luôn. Tệ đến mức nhớ mãi không quên! Nên giờ trước khi đi đâu, tôi cũng nhét ba lô đầy ắp đồ ăn mới chịu!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line04",
+        "title": "Chủ Đề: Bạn Đồng Hành",
+        "text": "Đi đâu tôi cũng thích mang tất cả vũ khí theo. Ở ngoài hoang địa, chúng là bạn thân nhất của tôi! Có chuyện là chúng giúp tôi đánh lại ngay. Thế là tôi mạnh thêm một đống luôn! Mà giờ tôi không cần đeo hết chúng trên lưng nữa, nên chỗ trống đó có thể nhét thêm thật nhiều đồ ăn ngon. Quá lời!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_about_line05",
+        "title": "Chủ Đề: Hội Lời Thề Thép",
+        "text": "Tôi từng ở với các Hội Lời Thề Thép ngoài phương Bắc lâu ơi là lâu luôn. Họ khá giống Endfield đấy! Ở đó có rất nhiều người mạnh, ai cũng có một chuyện thật lớn mà mình muốn làm. Họ không có Dijiang, nhưng có một Forgefane cao ơi là cao, cứ như một ngọn núi vậy! Các thợ rèn lúc nào cũng leng keng, chan chát, làm ra đủ thứ vũ khí siêu tuyệt. Tôi thích ngủ gật ở đó lắm... Tiếng leng keng với chan chát nghe một lúc là tôi ngủ ngon ngay, còn toàn mơ thấy chuyện vui nữa!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_common_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Oooh... thơm như có gì ngon lắm ấy. Đi xem thử không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_point_valub_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Báo động kho báu! Hướng kia kìa!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_locked_01",
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Hay là chuẩn bị thêm chút nữa đã. Ví dụ như... mang thêm đồ ăn ngon?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_explore_find_danger_01",
+        "title": "Phát Hiện Kẻ Địch Mạnh",
+        "text": "Phía trước có một tên mạnh lắm. Cho tôi lên thử một miếng nhé?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_01",
+        "title": "Khai Thác 1",
+        "text": "Whoa, ngài thích nhặt đá thật đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_mine_valub_echo2_01",
+        "title": "Khai Thác 2",
+        "text": "Mấy cục đá này cũng là kho báu nho nhỏ đúng không? Vậy tôi cũng giúp!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_treasure_valub_01",
+        "title": "Mở Thùng",
+        "text": "Toàn là đồ siêu hữu dụng! Chúng ta hên ghê, đúng không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_etherium_01",
+        "title": "Nhận Aurylene",
+        "text": "Thứ lấp lánh này gọi là \"Aurylene\", đúng không? Hồi ở ngoài hoang địa tôi thấy nhiều ơi là nhiều luôn. Biết thế tôi lấy hết rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_blight_break_01",
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Dọn dẹp sạch sẽ xong rồi! Giờ bánh waffle mật ong thơm gấp đôi luôn!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_interact_rest_01",
+        "title": "Nghỉ ngơi",
+        "text": "Phù! Nghỉ một giấc ngon cũng tuyệt chẳng kém gì ăn một bữa thật to!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_using_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Mau lên! Cắn một miếng đi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_suppuse_getheal_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Tôi sống lại rồi! Tuyệt!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_danger_01",
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Mau né đi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_hurt_lowhp_01",
+        "title": "Bị Thương",
+        "text": "Giỏi thì lại gần đây! Tôi cắn đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_dead_01",
+        "title": "0 HP",
+        "text": "Đám kẻ xấu... giao cho ngài nhé..."
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_01",
+        "title": "Cổ Vũ Đội 1",
+        "text": "Wow, đỉnh nóc kịch trần luôn!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_02",
+        "title": "Cổ Vũ Đội 2",
+        "text": "Ai cũng mạnh quá!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_01",
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Hehe, thật ra tôi mạnh lắm lắm luôn đấy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_remind_praise_echo2_02",
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Cứ trông cậy vào tôi, không sao đâu!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_01",
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Biệt đội ăn vặt của Kay, măm măm thôi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_intobattle_echo2_01",
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Được rồi, Kay, tập trung nào!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_01",
+        "title": "Thắng Trận 1",
+        "text": "Đúng thế! Cả đội cùng nhau hạ gục hết bọn chúng rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_02",
+        "title": "Thắng Trận 2",
+        "text": "Một chiến thắng ngon lành! Phải thưởng bánh waffle mới được!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_nor_echo2_01",
+        "title": "Thắng Trận 3",
+        "text": "Tôi cũng góp công mà, đúng không?"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_outbattle_hard_01",
+        "title": "Thắng Trận 4",
+        "text": "Tên này dai thật đấy. Thế... bao giờ mới được ăn? Bụng mọi người chắc réo hết rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_battle_defeat_01",
+        "title": "Bại Trận",
+        "text": "May quá, mọi người đều thoát được rồi. Giờ thì lo cái bụng trước đã rồi hẵng đánh tiếp!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_01",
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Xông lên!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_last_02",
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Bùm! Chát!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_01",
+        "title": "KN Chiến Đấu 1",
+        "text": "Không được chạy!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_02",
+        "title": "KN Chiến Đấu 2",
+        "text": "Đứng yên nào, con mồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_nor_03",
+        "title": "KN Chiến Đấu 3",
+        "text": "Cứ để tôi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_01",
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Sẵn sàng nhảy vào!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_combat_skill_comb_ready_02",
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Kay sẵn sàng rồi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_01",
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Dadadadada!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_comb_release_02",
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Hây da!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_01",
+        "title": "Kết Liễu 1",
+        "text": "Có sơ hở!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_attack_extra_02",
+        "title": "Kết Liễu 2",
+        "text": "Cắn nó đi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_01",
+        "title": "Tuyệt Kỹ 1",
+        "text": "Nếm thử cái này đi!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_02",
+        "title": "Tuyệt Kỹ 2",
+        "text": "Đòn Mật Ong! Toàn lực!"
+      },
+      {
+        "voId": "chr_0040_sweetpie_mono_skill_ultimate_03",
+        "title": "Tuyệt Kỹ 3",
+        "text": "Tôi sẽ ép ngươi dẹp lép như bánh kếp!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Khi vào trận, Kay nhận 1 tầng <@ba.key>Ngây Thơ Rực Lửa</>.\nThiên phú <@ba.key>Kho Vũ Khí Vô Tận</> được cường hóa: Mỗi lần thu hồi <@ba.key>Vũ Khí</> sẽ giúp toàn đội nhận thêm <#ba.spelldmg>ST Thuật Pháp Gây Ra</> <@ba.vup>+{atk_up:0.0%}</>, đồng thời <@ba.natur>ST Tự Nhiên Gây Ra</> được tăng thêm <@ba.vup>+{atk_up:0.0%}</> và thời gian hiệu lực kéo dài thêm <@ba.vup>+{duration:0}</> giây.",
+      "name": "Hoang Dại Bùng Cháy"
+    },
+    "potential2": {
+      "description": "Sức Mạnh <@ba.vup>+{Str:0}</>, <@ba.natur>ST Tự Nhiên Gây Ra</> <@ba.vup>+{NaturalDamageIncrease:0%}</>.",
+      "name": "Lãng Khách Lão Luyện"
+    },
+    "potential3": {
+      "description": "KN chiến đấu <@ba.key>\"Cú Nện Đau Thiệt Đau\"</> được cường hóa: Hệ Số ST cộng thêm từ mỗi tầng <@ba.key>Ngây Thơ Rực Lửa</> tăng lên <@ba.vup>{atk_scale_per_weapon:0.0}</> lần so với ban đầu. Tuyệt kỹ <@ba.key>\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"</> được cường hóa: Hệ Số ST tăng lên <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu.",
+      "name": "Chuẩn Bị Dã Ngoại"
+    },
+    "potential4": {
+      "description": "Tuyệt kỹ <@ba.key>\"Cây Đập Tổ Hợp Ngọt Ơi Là Ngọt!\"</> được cường hóa: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "\"Cây Đập Tự Làm\""
+    },
+    "potential5": {
+      "description": "KN liên hoàn <@ba.key>\"Cú Đập Siêu Nhanh\"</> được cường hóa: Thời gian hồi <@ba.vup>{coolDown:0}</> giây. Hệ Số ST tăng lên <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu. Hồi Điểm KN tăng lên <@ba.vup>{atb:0.0}</> lần so với ban đầu.",
+      "name": "\"Đập Siêu Nhanh Hơn\""
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Ngạc Nhiên Chưa?",
+      "author": "LM7",
+      "description": "Bạn luôn biết chính xác hương vị sẽ thỏa mãn sự tò mò của nàng."
+    },
+    "potential3": {
+      "name": "Khoảnh Khắc Nhập Đội",
+      "author": "八雲Crack",
+      "description": "\"Đừng có tỏ vẻ nghiêm nghị ngu ngốc đó nữa! Đừng quá nghiêm túc như ăn ngũ cốc!\""
+    },
+    "potential5": {
+      "name": "Căn Cứ Bí Mật",
+      "author": "수줍(Sjoop)",
+      "description": "\"Suỵt. Tôi đã giấu một kho bánh kẹo khổng lồ ở đây. Chỉ có bạn biết nơi này thôi. Hãy giữ bí mật giúp tôi nhé!\""
+    }
+  }
+}

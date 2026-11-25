@@ -783,6 +783,39 @@
       "Si peut créer des flaques d'encre très dangereuses. Ne pénétrez pas dans ces zones contaminées par l'encre."
     ]
   },
+  "eny_0158_mushbug": {
+    "name": "Nidwyrm Broyeur de champis",
+    "nickname": "Nidwyrm Broyeur de champis",
+    "description": "D'ordinaire, les nidwyrms creusent des tunnels pour se cacher sous terre. Cette variante affectée par les spores présente un comportement erratique et cherche à les répandre.",
+    "abilities": [
+      "Lorsque le nidwyrm Broyeur de champis se réfugie sous terre, la partie supérieure de son corps reste exposée et constitue un point faible.",
+      "La Cage de lianes dure un certain temps. Elle inflige des DÉG aux opérateurs qui la touchent."
+    ]
+  },
+  "eny_0159_mushman": {
+    "name": "Prince bolet",
+    "nickname": "Prince bolet",
+    "description": "Un curieux champignon. Il a bon caractère et peut se montrer très fiable. Il est l'avenir et l'espoir de la famille des champignons.",
+    "abilities": [
+      "Lorsque le prince bolet se réfugie sous terre, la partie supérieure de son corps reste exposée et constitue un point faible."
+    ]
+  },
+  "eny_0160_mushro": {
+    "name": "Poings de spores Broyeurs de champis",
+    "nickname": "Poings de spores Broyeurs de champis",
+    "description": "Un Brise-Terre au comportement erratique, affecté par les spores. Prudence : malgré ses poings en mousse, il reste très dangereux.",
+    "abilities": [
+      "Les poings de spores Broyeurs de champis peuvent créer un tourbillon qui attire les opérateurs en agitant leurs bras."
+    ]
+  },
+  "eny_0161_mushshd": {
+    "name": "Garde de spores Broyeur de champis",
+    "nickname": "Garde de spores Broyeur de champis",
+    "description": "Un Brise-Terre au comportement erratique, affecté par les spores. Son bouclier est à présent... complet.",
+    "abilities": [
+      "Le garde de spores Broyeur de champis peut lever son bouclier pour bloquer les attaques de base des opérateurs."
+    ]
+  },
   "tatget_001_normal": {
     "name": "Cible de base",
     "nickname": "Cible de base",

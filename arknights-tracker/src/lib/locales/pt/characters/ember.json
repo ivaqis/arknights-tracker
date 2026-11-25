@@ -164,22 +164,22 @@
       },
       {
         "voId": "chr_0009_azrila_chrup_promt01_01",
-        "title": "Promoção do Operador 1",
+        "title": "Promoção de Operador 1",
         "text": "Sua confiança é bem-vinda. Não vou decepcionar você."
       },
       {
         "voId": "chr_0009_azrila_chrup_promt02_01",
-        "title": "Promoção do Operador 2",
+        "title": "Promoção de Operador 2",
         "text": "Entendido. Agora que tarefas mais críticas foram atribuídas a mim, posso dar minha opinião sobre o plano de combate?"
       },
       {
         "voId": "chr_0009_azrila_chrup_promt03_01",
-        "title": "Promoção do Operador 3",
+        "title": "Promoção de Operador 3",
         "text": "Na Ordem, o comandante nos dava insígnias por momentos como este... Não, não é necessário. Que continue assim, pois o que busco aqui não é honra."
       },
       {
         "voId": "chr_0009_azrila_chrup_promt04_01",
-        "title": "Promoção do Operador 4",
+        "title": "Promoção de Operador 4",
         "text": "Não posso dizer quando esta Cruzada terminará, mas estou cada vez mais ciente de que ela deve ser levada com a maior seriedade... Espero que você me conceda a honra de ir até o fim ao seu lado."
       },
       {
@@ -189,12 +189,12 @@
       },
       {
         "voId": "chr_0009_azrila_mono_switch_01",
-        "title": "Em espera 1",
+        "title": "Em Espera 1",
         "text": "Minha Cruzada está longe de terminar..."
       },
       {
         "voId": "chr_0009_azrila_mono_switch_02",
-        "title": "Em espera 2",
+        "title": "Em Espera 2",
         "text": "O campo de batalha não é piedoso com erros. Devemos aprimorar nossas habilidades com devoção verdadeira."
       },
       {
@@ -230,7 +230,7 @@
       {
         "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
-        "text": "Descidas de grandes altitudes em zonas de guerra são comuns na minha unidade. No entanto, aqui em cima, a própria ideia de altitude começa a desaparecer."
+        "text": "Quedas de grandes altitudes em zonas de guerra são comuns no meu Estandarte de Assalto — até treinamos especificamente para elas. No entanto, aqui em cima, a própria ideia de altitude começa a desaparecer."
       },
       {
         "voId": "chr_0009_azrila_sim_talk_max_02",
