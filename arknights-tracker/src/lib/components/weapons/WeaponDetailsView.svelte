@@ -358,6 +358,7 @@
                     parsedLevel <= maxLevel
                 ) {
                     level = parsedLevel;
+                    targetLevel = parsedLevel;
                 }
             }
             if (pRefine !== null) {
@@ -646,6 +647,7 @@
     }
     function setMinAll() {
         level = 1;
+        targetLevel = 1;
         previewPot = 0;
         lastLevel = 1;
         lastPreviewPot = 0;
@@ -653,6 +655,7 @@
     }
     function setMaxAll() {
         level = maxLevel;
+        targetLevel = maxLevel;
         previewPot = 5;
         lastLevel = maxLevel;
         lastPreviewPot = 5;
