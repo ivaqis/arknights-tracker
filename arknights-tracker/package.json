@@ -8,6 +8,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"build": "svelte-kit sync && cross-env NODE_OPTIONS='--max-old-space-size=2548' vite build",
 		"preview": "vite preview",
+		"test": "node test/run-all.mjs",
+		"verify": "npm run check && npm test",
 		"prepare": "svelte-kit sync || echo ''"
 	},
 	"dependencies": {
