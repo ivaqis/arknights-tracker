@@ -3,6 +3,75 @@ const BLACKBOARD_FALLBACKS: Record<string, string[]> = {
     NormalSkillDamageIncrease: ["NormalSkillEfficiency"],
 };
 
+export function evaluateSafeMath(expr: string): number {
+    let pos = 0;
+    const skipWs = () => {
+        while (pos < expr.length && expr[pos] === " ") pos++;
+    };
+    const parseExpr = (): number => {
+        let left = parseTerm();
+        while (true) {
+            skipWs();
+            const ch = expr[pos];
+            if (ch === "+" || ch === "-") {
+                pos++;
+                const right = parseTerm();
+                left = ch === "+" ? left + right : left - right;
+            } else {
+                return left;
+            }
+        }
+    };
+    const parseTerm = (): number => {
+        let left = parseFactor();
+        while (true) {
+            skipWs();
+            const ch = expr[pos];
+            if (ch === "*" || ch === "/") {
+                pos++;
+                const right = parseFactor();
+                left = ch === "*" ? left * right : left / right;
+            } else {
+                return left;
+            }
+        }
+    };
+    const parseFactor = (): number => {
+        skipWs();
+        if (expr[pos] === "+") {
+            pos++;
+            return parseFactor();
+        }
+        if (expr[pos] === "-") {
+            pos++;
+            return -parseFactor();
+        }
+        if (expr[pos] === "(") {
+            pos++;
+            const val = parseExpr();
+            skipWs();
+            if (expr[pos] !== ")") throw new Error("Unclosed parenthesis");
+            pos++;
+            return val;
+        }
+        const start = pos;
+        let hasDigit = false;
+        while (pos < expr.length && ((expr[pos] >= "0" && expr[pos] <= "9") || expr[pos] === ".")) {
+            if (expr[pos] >= "0" && expr[pos] <= "9") hasDigit = true;
+            pos++;
+        }
+        if (!hasDigit) throw new Error("Invalid number");
+        return Number(expr.slice(start, pos));
+    };
+
+    const result = parseExpr();
+    skipWs();
+    if (pos !== expr.length || !Number.isFinite(result)) {
+        throw new Error("Invalid math expression");
+    }
+    return result;
+}
+
 export function interpolateBlackboard(
     text: string,
     bb?: Record<string, any> | null,
@@ -38,7 +107,7 @@ export function interpolateBlackboard(
 
         let result: any = 0;
         try {
-            result = new Function("return " + mathStr)();
+            result = evaluateSafeMath(mathStr);
         } catch {
             return match;
         }

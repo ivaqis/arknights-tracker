@@ -1,6 +1,7 @@
 import { get } from "svelte/store";
 import { t, isI18nReady } from "$lib/i18n";
 import { tags } from "$lib/data/contractTags.js";
+import { evaluateSafeMath } from "$lib/utils/blackboardUtils";
 
 const tagIdToKey = {};
 const tagIdToBlackboard = {};
@@ -560,7 +561,7 @@ function evaluateMath(expr, bb) {
     let sanitized = resolved.replace(/[^0-9.+\-*/() ]/g, '');
     sanitized = sanitized.replaceAll('--', ' - -').replaceAll('++', ' + +');
     try {
-        return new Function(`"use strict"; return (${sanitized})`)();
+        return evaluateSafeMath(sanitized);
     } catch {
         return 0;
     }

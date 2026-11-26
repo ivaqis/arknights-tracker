@@ -9,7 +9,8 @@ export default {
             mode: 'auto',
             directives: {
                 'default-src': ['self'],
-                'script-src': ['self', 'unsafe-inline', 'unsafe-eval', 'https://www.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.gstatic.com', 'https://apis.google.com', 'https://*.firebaseapp.com'],
+                'script-src': ['self', 'unsafe-inline', 'https://www.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.gstatic.com', 'https://apis.google.com', 'https://*.firebaseapp.com'],
+                'worker-src': ['self', 'blob:'],
                 'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
                 'font-src': ['self', 'https://fonts.gstatic.com', 'data:'],
                 'img-src': ['self', 'data:', 'blob:', 'https:', 'http:'],
