@@ -1000,7 +1000,7 @@
                                         ? 'bg-[#FFE145] border-[#FFE145] text-gray-900 shadow-sm'
                                         : 'bg-white dark:bg-[#383838] border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300 hover:border-gray-300 dark:hover:border-white/20'}"
                                 >
-                                    {dungeonLocales[stage.id]?.name ? dungeonLocales[stage.id].name.replace(/[:—\-\u00a0·]+\s*(Normal|Hard|Brutal|обычная|сложная|жестокая|обычный|сложный|жестокий|普通|困难|残酷|困難|殘酷).*$/i, '').trim() : stage.name}
+                                    {dungeonLocales[stage.id]?.name ? dungeonLocales[stage.id].name.replace(/[:—\-\u00a0·・]+\s*(Normal|Hard|Brutal|обычная|сложная|жестокая|обычный|сложный|жестокий|普通|困难|残酷|困難|殘酷|通常|苦難|苛烈|일반|고난|잔혹).*$/i, '').replace(/[\u200b\s\-]+[NHBSD]$/, '').trim() : stage.name}
                                 </button>
                             {/each}
                         </div>

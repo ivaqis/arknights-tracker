@@ -1,5 +1,125 @@
 [
   {
+    "id": "s8_w1",
+    "seasonId": "8",
+    "weekId": "1",
+    "normalDungeons": [
+      "indie_battletower022",
+      "indie_battletower023",
+      "indie_battletower019"
+    ],
+    "hardDungeons": [
+      "indie_battletower022_s",
+      "indie_battletower023_s",
+      "indie_battletower019_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower022_ex",
+      "indie_battletower023_ex",
+      "indie_battletower019_ex"
+    ]
+  },
+  {
+    "id": "s8_w2",
+    "seasonId": "8",
+    "weekId": "2",
+    "normalDungeons": [
+      "indie_battletower026",
+      "indie_battletower020",
+      "indie_battletower007"
+    ],
+    "hardDungeons": [
+      "indie_battletower026_s",
+      "indie_battletower020_s",
+      "indie_battletower007_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower026_ex",
+      "indie_battletower020_ex",
+      "indie_battletower007_ex"
+    ]
+  },
+  {
+    "id": "s8_w3",
+    "seasonId": "8",
+    "weekId": "3",
+    "normalDungeons": [
+      "indie_battletower002",
+      "indie_battletower004",
+      "indie_battletower003"
+    ],
+    "hardDungeons": [
+      "indie_battletower002_s",
+      "indie_battletower004_s",
+      "indie_battletower003_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower002_ex",
+      "indie_battletower004_ex",
+      "indie_battletower003_ex"
+    ]
+  },
+  {
+    "id": "s7_w1",
+    "seasonId": "7",
+    "weekId": "1",
+    "normalDungeons": [
+      "indie_battletower021",
+      "indie_battletower024",
+      "indie_battletower002"
+    ],
+    "hardDungeons": [
+      "indie_battletower021_s",
+      "indie_battletower024_s",
+      "indie_battletower002_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower021_ex",
+      "indie_battletower024_ex",
+      "indie_battletower002_ex"
+    ]
+  },
+  {
+    "id": "s7_w2",
+    "seasonId": "7",
+    "weekId": "2",
+    "normalDungeons": [
+      "indie_battletower025",
+      "indie_battletower009",
+      "indie_battletower015"
+    ],
+    "hardDungeons": [
+      "indie_battletower025_s",
+      "indie_battletower009_s",
+      "indie_battletower015_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower025_ex",
+      "indie_battletower009_ex",
+      "indie_battletower015_ex"
+    ]
+  },
+  {
+    "id": "s7_w3",
+    "seasonId": "7",
+    "weekId": "3",
+    "normalDungeons": [
+      "indie_battletower013",
+      "indie_battletower005",
+      "indie_battletower006"
+    ],
+    "hardDungeons": [
+      "indie_battletower013_s",
+      "indie_battletower005_s",
+      "indie_battletower006_s"
+    ],
+    "brutalDungeons": [
+      "indie_battletower013_ex",
+      "indie_battletower005_ex",
+      "indie_battletower006_ex"
+    ]
+  },
+  {
     "id": "s6_w1",
     "seasonId": "6",
     "weekId": "1",

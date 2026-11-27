@@ -29,11 +29,16 @@ export class WarEchoesRecord implements IEntityClass<WarEchoesRecordEntity> {
             return null;
         }
 
-        let nameKey = data.name;
-        if (difficulty === "hard") nameKey = `${data.name}: Hard`;
-        if (difficulty === "brutal") nameKey = `${data.name}: Brutal`;
+        const baseName = data.name
+            .replace(/-(N|H|B)$/, "")
+            .replace(/[:\-—]\s*(Normal|Hard|Brutal)$/i, "")
+            .trim();
 
-        let dungeonId = warEchoesNameRecords.getId(nameKey) || warEchoesNameRecords.getId(data.name);
+        let nameKey = baseName;
+        if (difficulty === "hard") nameKey = `${baseName}: Hard`;
+        if (difficulty === "brutal") nameKey = `${baseName}: Brutal`;
+
+        let dungeonId = warEchoesNameRecords.getId(nameKey) || warEchoesNameRecords.getId(baseName) || warEchoesNameRecords.getId(data.name);
 
         if (!dungeonId) {
             logger.warn(`WarEchoes dungeonId not found: ${data.name} (${difficulty})`);

@@ -238,5 +238,77 @@
   {
     "id": "indie_battletower020_ex",
     "name": "Defense File: Shield: Brutal"
+  },
+  {
+    "id": "indie_battletower021",
+    "name": "Dominance File: Howler"
+  },
+  {
+    "id": "indie_battletower021_s",
+    "name": "Dominance File: Howler: Hard"
+  },
+  {
+    "id": "indie_battletower021_ex",
+    "name": "Dominance File: Howler: Brutal"
+  },
+  {
+    "id": "indie_battletower022",
+    "name": "Codex File: Measurer"
+  },
+  {
+    "id": "indie_battletower022_s",
+    "name": "Codex File: Measurer: Hard"
+  },
+  {
+    "id": "indie_battletower022_ex",
+    "name": "Codex File: Measurer: Brutal"
+  },
+  {
+    "id": "indie_battletower023",
+    "name": "Traced File: Hunter"
+  },
+  {
+    "id": "indie_battletower023_s",
+    "name": "Traced File: Hunter: Hard"
+  },
+  {
+    "id": "indie_battletower023_ex",
+    "name": "Traced File: Hunter: Brutal"
+  },
+  {
+    "id": "indie_battletower024",
+    "name": "Siege File: Heavy Armor"
+  },
+  {
+    "id": "indie_battletower024_s",
+    "name": "Siege File: Heavy Armor: Hard"
+  },
+  {
+    "id": "indie_battletower024_ex",
+    "name": "Siege File: Heavy Armor: Brutal"
+  },
+  {
+    "id": "indie_battletower025",
+    "name": "Pierced File: Ballista"
+  },
+  {
+    "id": "indie_battletower025_s",
+    "name": "Pierced File: Ballista: Hard"
+  },
+  {
+    "id": "indie_battletower025_ex",
+    "name": "Pierced File: Ballista: Brutal"
+  },
+  {
+    "id": "indie_battletower026",
+    "name": "Destruction File: Æthillu"
+  },
+  {
+    "id": "indie_battletower026_s",
+    "name": "Destruction File: Æthillu: Hard"
+  },
+  {
+    "id": "indie_battletower026_ex",
+    "name": "Destruction File: Æthillu: Brutal"
   }
 ]
